@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -52,8 +53,9 @@ public class LoadXML {
 				
 				while(!directories_to_scan.isEmpty()) {
 					File dir = directories_to_scan.poll();
-					System.out.println ("Scanning " + dir);
 					File[] files = dir.listFiles();
+					if(files.length > 50)
+						System.out.println ("Scanning " + dir);
 					for(File file : files) {
 						if(file.isDirectory()) {
 							directories_to_scan.addFirst(file);
@@ -99,7 +101,7 @@ public class LoadXML {
 					Pattern p = Pattern.compile("\\s+");
 					try {
 						fields.put("pub_id", xp.compile("/DMLDOC/pmdt/pmid"));
-						fields.put("section_raw", xp.compile("/DMDLDOC/docdt/docsec"));
+						fields.put("section_raw", xp.compile("/DMLDOC/docdt/docsec"));
 						fields.put("date", xp.compile("/DMLDOC/pcdt/pcdtn"));
 						fields.put("doc_id", xp.compile("/DMLDOC/docdt/docid"));
 						fields.put("title", xp.compile("/DMLDOC/docdt/doctitle"));
@@ -121,7 +123,7 @@ public class LoadXML {
 						} catch (InterruptedException e) {
 							throw new RuntimeException("Unknown interupt while inserting into file queue", e);
 						}
-						System.out.println ("Processing " + f);
+						//System.out.println ("Processing " + f);
 						Document doc;
 						try {
 							 doc = db.parse(f);
@@ -170,7 +172,7 @@ public class LoadXML {
 			});
 			processing_threads[i].start();
 		}
-		final int BATCH_SIZE = 100;
+		final int BATCH_SIZE = 200;
 		final String TABLE_NAME = "rawdoc";
 		Thread mysql_thread = new Thread(new Runnable() {
 			public void run() {
@@ -179,9 +181,9 @@ public class LoadXML {
 				try
 				{
 					System.out.println ("Trying to connect to database");
-					String userName = "testuser";
-					String password = "testpass";
-					String url = "jdbc:mysql://localhost/test";
+					String userName = "vis";
+					String password = "vis";
+					String url = "jdbc:mysql://localhost/vis";
 					Class.forName ("com.mysql.jdbc.Driver").newInstance ();
 					conn = DriverManager.getConnection (url, userName, password);
 					if(conn == null)
@@ -193,7 +195,8 @@ public class LoadXML {
 					System.err.println ("Cannot connect to database server");
 					throw new RuntimeException("Sql connection failed", e);
 				}
-				int current_batch = 0;
+				int current_batch_partial = 0;
+				int batch = 0;
 				PreparedStatement insert = null;
 				try {
 					for(;;) {
@@ -201,8 +204,12 @@ public class LoadXML {
 							boolean still_running = false;
 							for(int i = 0; i < processing_threads.length; ++i)
 								still_running |= processing_threads[i].isAlive();
-							if(!still_running)
+							if(!still_running) {
+								//submit the remaining incomplete batch
+								if(current_batch_partial != 0)
+									insert.executeBatch();
 								break;
+							}
 						}
 						TreeMap<String, String> data;
 						try {
@@ -215,27 +222,38 @@ public class LoadXML {
 						}
 						//lazily create this so we don't have to have a copy of the field list in multiple places
 						if(insert == null) {
+							//also create the table... die if you run this without deleting the old table
+							StringBuilder table_spec = new StringBuilder("id INT AUTO_INCREMENT PRIMARY KEY");
+							for(String s : data.keySet()) {
+								table_spec.append(", ");
+								table_spec.append(s);
+								table_spec.append(" TEXT");
+							}
+							Statement st = conn.createStatement();
+							st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
+							
 							StringBuilder questions = new StringBuilder("?");
 							Iterator<String> j = data.keySet().iterator();
 							StringBuilder parameters = new StringBuilder(j.next());
 							for(int i = 1; i < data.size(); ++i) {
 								questions.append(", ?");
-								parameters.append(", " + j.next());
+								parameters.append(", ");
+								parameters.append(j.next());
 							}
-							insert = conn.prepareStatement("INSERT INTO " + TABLE_NAME + "VALUES(" + questions + ")");
+							insert = conn.prepareStatement("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")");
 						}
 						
 						Iterator<String> j = data.values().iterator();
 						int param_count = data.size();
-						for(int i = 0; i < param_count; ++i) {
+						for(int i = 1; i <= param_count; ++i) {
 							insert.setString(i, j.next());
 						}
 						insert.addBatch();
 
-						if(++current_batch == BATCH_SIZE) {
-							System.out.println ("Inserting Batch " + current_batch);
+						if(++current_batch_partial == BATCH_SIZE) {
+							System.out.println ("Inserting Batch " + batch++);
 							insert.executeBatch();
-							current_batch = 0;
+							current_batch_partial = 0;
 						}
 						
 					}
@@ -255,19 +273,14 @@ public class LoadXML {
 		});
 		mysql_thread.start();
 		
-		//join on them all
-		
-		String cmd = "";
-		for(String s : args)
-		    cmd += s + " ";
-		System.out.println("cmd: " + cmd);
-		
 		//wait until all scanning is complete
 		try {
 			file_scan_thread.join();
 			//then wait until all processing is complete
 			for(Thread t : processing_threads)
 				t.join();
+			//then wait until all the sql is complete
+			mysql_thread.join();
 		} catch (InterruptedException e) {
 			throw new RuntimeException("unknwon interrupt", e);
 		}
