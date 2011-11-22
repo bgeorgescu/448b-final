@@ -2,6 +2,7 @@ package vis.data;
 
 import java.io.File;
 import java.lang.reflect.Array;
+import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -20,6 +21,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Table;
 import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -33,6 +37,9 @@ import javax.xml.xpath.XPathFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import vis.data.model.RawDoc;
+import vis.data.model.annotations.DML;
 
 //load the raw xml files
 public class LoadXML {	
@@ -78,7 +85,7 @@ public class LoadXML {
 		
 		
 		//threads to process individual files
-		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
+		final Thread processing_threads[] = new Thread[1];//Runtime.getRuntime().availableProcessors()];
 		
 		
 		final BlockingQueue<TreeMap<String, String>> documents_to_process = new ArrayBlockingQueue<TreeMap<String, String>>(1000);
@@ -100,18 +107,31 @@ public class LoadXML {
 					XPathExpression para_xp;
 					Pattern p = Pattern.compile("\\s+");
 					try {
-						fields.put("pub_id", xp.compile("/DMLDOC/pmdt/pmid"));
-						fields.put("section_raw", xp.compile("/DMLDOC/docdt/docsec"));
-						fields.put("date", xp.compile("/DMLDOC/pcdt/pcdtn"));
-						fields.put("doc_id", xp.compile("/DMLDOC/docdt/docid"));
-						fields.put("title", xp.compile("/DMLDOC/docdt/doctitle"));
-						fields.put("subtitle", xp.compile("/DMLDOC/docdt/docsubt"));
-						fields.put("page", xp.compile("/DMLDOC/docdt/docpgn"));
+						Field model_fields[] = RawDoc.class.getFields();
+						for(Field f : model_fields) {
+							System.out.println(f.getName());
+							DML dml = f.getAnnotation(DML.class);
+							if(dml == null)
+								continue;
+							System.out.println("has dml");
+							Column col = f.getAnnotation(Column.class);
+							if(col == null)
+								continue;
+							fields.put(col.name(), xp.compile(dml.xpath()));
+						}
 						para_xp = xp.compile("/DMLDOC/txtdt/text/paragraph");
 					} catch (XPathExpressionException e) {
 						throw new RuntimeException("failed to create xpath expressions", e);
 					}
 					TreeMap<String, String> data = new TreeMap<String, String>();
+					
+					String FULL_TEXT_COLUMN;
+					try {
+						FULL_TEXT_COLUMN = RawDoc.class.getField("fullText_").getAnnotation(Column.class).name();
+					} catch (Exception e) {
+						throw new RuntimeException("failed to get column name for full text");
+					}
+					
 	
 					while(!files_to_process.isEmpty() || file_scan_thread.isAlive()) {
 						File f;
@@ -121,7 +141,7 @@ public class LoadXML {
 							if(f == null)
 								continue;
 						} catch (InterruptedException e) {
-							throw new RuntimeException("Unknown interupt while inserting into file queue", e);
+							throw new RuntimeException("Unknown interupt while pulling from file queue", e);
 						}
 						//System.out.println ("Processing " + f);
 						Document doc;
@@ -140,6 +160,7 @@ public class LoadXML {
 								String result =  xp_field.evaluate(doc);
 								data.put(sql_field, result);
 							} catch (XPathExpressionException e) {
+								data.put(sql_field, null);
 								System.err.println("Failed to run xpath query on " + f + " " + e.getMessage() + ":");
 								e.printStackTrace(System.err);
 							}
@@ -157,7 +178,7 @@ public class LoadXML {
 								text.append(partial);
 								text.append('\n');
 							}
-							data.put("full_text", text.toString());
+							data.put(FULL_TEXT_COLUMN, text.toString());
 						} catch (XPathExpressionException e) {
 							System.err.println("Failed to run xpath query on " + f + " " + e.getMessage() + ":");
 							e.printStackTrace(System.err);
@@ -173,7 +194,7 @@ public class LoadXML {
 			processing_threads[i].start();
 		}
 		final int BATCH_SIZE = 200;
-		final String TABLE_NAME = "rawdoc";
+		final String TABLE_NAME = RawDoc.class.getAnnotation(Table.class).name();
 		Thread mysql_thread = new Thread(new Runnable() {
 			public void run() {
 				Connection conn = null;
@@ -199,6 +220,56 @@ public class LoadXML {
 				int batch = 0;
 				PreparedStatement insert = null;
 				try {
+					LinkedList<String> generated = new LinkedList<String>();
+					TreeMap<String, String> col_def = new TreeMap<String, String>();
+					Field model_fields[] = RawDoc.class.getFields();
+					for(Field f : model_fields) {
+						Column col = f.getAnnotation(Column.class);
+						if(col == null)
+							continue;
+						GeneratedValue gen = f.getAnnotation(GeneratedValue.class);
+						if(gen != null) {
+							generated.add(col.name());
+						}
+						col_def.put(col.name(), col.columnDefinition());
+					}
+
+					//also create the table... die if you run this without deleting the old table
+					Iterator<String> i_name = col_def.keySet().iterator();
+					Iterator<String> i_type = col_def.values().iterator();
+					StringBuilder table_spec = new StringBuilder();
+					table_spec.append(i_name.next());
+					table_spec.append(' ');
+					table_spec.append(i_type.next());
+					for(;i_name.hasNext();) {
+						table_spec.append(',');
+						table_spec.append(i_name.next());
+						table_spec.append(' ');
+						table_spec.append(i_type.next());
+						
+					}
+					System.out.println(table_spec);
+					Statement st = conn.createStatement();
+					st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
+					st.close();
+					
+					//remove the ones the db will generate
+					for(String g : generated) {
+						col_def.remove(g);
+					}
+					
+					StringBuilder questions = new StringBuilder("?");
+					Iterator<String> j = col_def.keySet().iterator();
+					StringBuilder parameters = new StringBuilder(j.next());
+					for(int i = 1; i < col_def.size(); ++i) {
+						questions.append(", ?");
+						parameters.append(", ");
+						parameters.append(j.next());
+					}
+					System.out.println("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")");
+					insert = conn.prepareStatement("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")");
+
+					
 					for(;;) {
 						if(documents_to_process.isEmpty()) {
 							boolean still_running = false;
@@ -218,38 +289,15 @@ public class LoadXML {
 							if(data == null)
 								continue;
 						} catch (InterruptedException e) {
-							throw new RuntimeException("Unknown interupt while inserting into mysql queue", e);
+							throw new RuntimeException("Unknown interupt while pulling from document mysql queue", e);
 						}
-						//lazily create this so we don't have to have a copy of the field list in multiple places
-						if(insert == null) {
-							//also create the table... die if you run this without deleting the old table
-							StringBuilder table_spec = new StringBuilder("id INT AUTO_INCREMENT PRIMARY KEY");
-							for(String s : data.keySet()) {
-								table_spec.append(", ");
-								table_spec.append(s);
-								if(s.equals("full_text"))
-									table_spec.append(" MEDIUMTEXT");
-								else
-									table_spec.append(" TEXT");
-							}
-							Statement st = conn.createStatement();
-							st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
-							
-							StringBuilder questions = new StringBuilder("?");
-							Iterator<String> j = data.keySet().iterator();
-							StringBuilder parameters = new StringBuilder(j.next());
-							for(int i = 1; i < data.size(); ++i) {
-								questions.append(", ?");
-								parameters.append(", ");
-								parameters.append(j.next());
-							}
-							insert = conn.prepareStatement("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")");
-						}
+
+						assert(data.size() == col_def.size());
 						
-						Iterator<String> j = data.values().iterator();
+						Iterator<String> k = data.values().iterator();
 						int param_count = data.size();
 						for(int i = 1; i <= param_count; ++i) {
-							insert.setString(i, j.next());
+							insert.setString(i, k.next());
 						}
 						insert.addBatch();
 
