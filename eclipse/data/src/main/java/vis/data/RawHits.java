@@ -51,12 +51,14 @@ public class RawHits {
 		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(10000);
 		//thread to scan for documents to process
 		
+		final int BATCH_SIZE = 200;
 		final Thread doc_scan_thread = new Thread(new Runnable() {
 			public void run() {
 				Connection conn = SQL.open();
 				try {
 					Statement st = null;
-					st = conn.createStatement();
+					st = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
+					st.setFetchSize(BATCH_SIZE);
 					ResultSet rs = st.executeQuery("SELECT " + RawDoc.ID + "," + RawDoc.FULL_TEXT + " FROM " + RawDoc.TABLE);
 
 					if(!rs.first())
@@ -136,7 +138,6 @@ public class RawHits {
 			});
 			processing_threads[i].start();
 		}
-		final int BATCH_SIZE = 200;
 		Thread mysql_thread = new Thread(new Runnable() {
 			public void run() {
 				Connection conn = SQL.open();
