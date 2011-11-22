@@ -47,7 +47,7 @@ to xpath query to extract those properties
 */
 $xpath_mappings = array(
 	"pub_id" => "/DMLDOC/pmdt/pmid",
-	"section_raw" => "/DMDLDOC/docdt/docsec",
+	"section_raw" => "/DMLDOC/docdt/docsec",
 	"date" => "/DMLDOC/pcdt/pcdtn",
 	"doc_id" => "/DMLDOC/docdt/docid",
 	"title" => "/DMLDOC/docdt/doctitle",
