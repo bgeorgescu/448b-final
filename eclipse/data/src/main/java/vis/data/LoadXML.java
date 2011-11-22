@@ -227,7 +227,10 @@ public class LoadXML {
 							for(String s : data.keySet()) {
 								table_spec.append(", ");
 								table_spec.append(s);
-								table_spec.append(" TEXT");
+								if(s.equals("full_text"))
+									table_spec.append(" MEDIUMTEXT");
+								else
+									table_spec.append(" TEXT");
 							}
 							Statement st = conn.createStatement();
 							st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
