@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -40,6 +41,7 @@ import org.w3c.dom.NodeList;
 
 import vis.data.model.RawDoc;
 import vis.data.model.annotations.DML;
+import vis.data.util.SQL;
 
 //load the raw xml files
 public class LoadXML {	
@@ -85,7 +87,7 @@ public class LoadXML {
 		
 		
 		//threads to process individual files
-		final Thread processing_threads[] = new Thread[1];//Runtime.getRuntime().availableProcessors()];
+		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
 		
 		
 		final BlockingQueue<TreeMap<String, String>> documents_to_process = new ArrayBlockingQueue<TreeMap<String, String>>(1000);
@@ -109,11 +111,9 @@ public class LoadXML {
 					try {
 						Field model_fields[] = RawDoc.class.getFields();
 						for(Field f : model_fields) {
-							System.out.println(f.getName());
 							DML dml = f.getAnnotation(DML.class);
 							if(dml == null)
 								continue;
-							System.out.println("has dml");
 							Column col = f.getAnnotation(Column.class);
 							if(col == null)
 								continue;
@@ -220,48 +220,13 @@ public class LoadXML {
 				int batch = 0;
 				PreparedStatement insert = null;
 				try {
-					LinkedList<String> generated = new LinkedList<String>();
-					TreeMap<String, String> col_def = new TreeMap<String, String>();
-					Field model_fields[] = RawDoc.class.getFields();
-					for(Field f : model_fields) {
-						Column col = f.getAnnotation(Column.class);
-						if(col == null)
-							continue;
-						GeneratedValue gen = f.getAnnotation(GeneratedValue.class);
-						if(gen != null) {
-							generated.add(col.name());
-						}
-						col_def.put(col.name(), col.columnDefinition());
-					}
+					Collection<String> insert_fields = SQL.getNonGenerated(RawDoc.class);
+					SQL.createTable(conn, RawDoc.class);
 
-					//also create the table... die if you run this without deleting the old table
-					Iterator<String> i_name = col_def.keySet().iterator();
-					Iterator<String> i_type = col_def.values().iterator();
-					StringBuilder table_spec = new StringBuilder();
-					table_spec.append(i_name.next());
-					table_spec.append(' ');
-					table_spec.append(i_type.next());
-					for(;i_name.hasNext();) {
-						table_spec.append(',');
-						table_spec.append(i_name.next());
-						table_spec.append(' ');
-						table_spec.append(i_type.next());
-						
-					}
-					System.out.println(table_spec);
-					Statement st = conn.createStatement();
-					st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
-					st.close();
-					
-					//remove the ones the db will generate
-					for(String g : generated) {
-						col_def.remove(g);
-					}
-					
 					StringBuilder questions = new StringBuilder("?");
-					Iterator<String> j = col_def.keySet().iterator();
+					Iterator<String> j = insert_fields.iterator();
 					StringBuilder parameters = new StringBuilder(j.next());
-					for(int i = 1; i < col_def.size(); ++i) {
+					for(int i = 1; i < insert_fields.size(); ++i) {
 						questions.append(", ?");
 						parameters.append(", ");
 						parameters.append(j.next());
@@ -291,8 +256,6 @@ public class LoadXML {
 						} catch (InterruptedException e) {
 							throw new RuntimeException("Unknown interupt while pulling from document mysql queue", e);
 						}
-
-						assert(data.size() == col_def.size());
 						
 						Iterator<String> k = data.values().iterator();
 						int param_count = data.size();
