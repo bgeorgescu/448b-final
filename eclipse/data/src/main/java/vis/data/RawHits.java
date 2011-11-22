@@ -48,7 +48,7 @@ import vis.data.util.WordCache;
 //write count for the words out in a rawhit table
 public class RawHits {	
 	public static void main(String[] args) {
-		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(10000);
+		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(100);
 		//thread to scan for documents to process
 		
 		final int BATCH_SIZE = 200;
@@ -57,11 +57,12 @@ public class RawHits {
 				Connection conn = SQL.open();
 				try {
 					Statement st = null;
+					//TODO: better to split slice this across a few threads because it is the bottleneck
 					st = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
-					st.setFetchSize(BATCH_SIZE);
+					st.setFetchSize(Integer.MIN_VALUE);
 					ResultSet rs = st.executeQuery("SELECT " + RawDoc.ID + "," + RawDoc.FULL_TEXT + " FROM " + RawDoc.TABLE);
 
-					if(!rs.first())
+					if(!rs.next())
 						throw new RuntimeException("no docs to processs");
 					
 					do {
