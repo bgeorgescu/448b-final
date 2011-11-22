@@ -40,6 +40,7 @@ import org.w3c.dom.NodeList;
 import vis.data.model.RawDoc;
 import vis.data.model.RawHit;
 import vis.data.model.RawWord;
+import vis.data.util.SQL;
 import vis.data.util.WordCache;
 
 //take the raw table and process the full_text into words
@@ -47,30 +48,12 @@ import vis.data.util.WordCache;
 //write count for the words out in a rawhit table
 public class RawHits {	
 	public static void main(String[] args) {
-		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(1000);
+		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(10000);
 		//thread to scan for documents to process
 		
 		final Thread doc_scan_thread = new Thread(new Runnable() {
 			public void run() {
-				Connection conn = null;
-
-				try
-				{
-					System.out.println ("Trying to connect to database");
-					String userName = "vis";
-					String password = "vis";
-					String url = "jdbc:mysql://localhost/vis";
-					Class.forName ("com.mysql.jdbc.Driver").newInstance ();
-					conn = DriverManager.getConnection (url, userName, password);
-					if(conn == null)
-						throw new RuntimeException("unknown sql connection creation returned null");
-					System.out.println ("Database connection established");
-				}
-				catch (Exception e)
-				{
-					System.err.println ("Cannot connect to database server");
-					throw new RuntimeException("Sql connection failed", e);
-				}
+				Connection conn = SQL.open();
 				try {
 					Statement st = null;
 					st = conn.createStatement();
@@ -105,12 +88,13 @@ public class RawHits {
 			}
 		});
 		doc_scan_thread.start();
-		assert(false); //need to make this table
-		WordCache wc = new WordCache();
+		final WordCache wc = WordCache.getInstance();
 		
+		//TODO: XXXX super lame, neglects punctuation, etc
+		final Pattern word_pattern = Pattern.compile("\\w+");
 		//threads to process individual files
 		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
-		final BlockingQueue<RawHit> hits_to_record = new ArrayBlockingQueue<RawHit>(10000);
+		final BlockingQueue<RawHit> hits_to_record = new ArrayBlockingQueue<RawHit>(1000);
 		for(int i = 0; i < processing_threads.length; ++i) {
 			processing_threads[i] = new Thread(new Runnable() {
 				public void run() {
@@ -125,39 +109,43 @@ public class RawHits {
 							throw new RuntimeException("Unknown interupt while pulling from doc queue", e);
 						}
 						
-						throw new RuntimeException("need to iterate through the words and make an intermediate set of hit entries");
-
+						Matcher m = word_pattern.matcher(doc.fullText_);
+						HashMap<Integer, Integer> counts = new HashMap<Integer, Integer>();
+						while(m.find()) {
+							int word_id = wc.getOrAddWord(m.group());
+							Integer count = counts.get(word_id);
+							if(count == null) {
+								counts.put(word_id, 1);
+							} else {
+								counts.put(word_id, count.intValue() + 1);
+							}
+						}
+						for(Entry<Integer, Integer> entry : counts.entrySet()) {
+							RawHit hit = new RawHit();
+							hit.docId_ = doc.id_;
+							hit.wordId_ = entry.getKey();
+							hit.count_ = entry.getValue();
+							try {
+								hits_to_record.put(hit);
+							} catch (InterruptedException e) {
+								throw new RuntimeException("failure record hit results", e);
+							}
+						}
 					}
 				}
 			});
 			processing_threads[i].start();
 		}
-		assert(false); //need to make this table too
-		final int BATCH_SIZE = 1000;
+		final int BATCH_SIZE = 200;
 		Thread mysql_thread = new Thread(new Runnable() {
 			public void run() {
-				Connection conn = null;
-
-				try
-				{
-					System.out.println ("Trying to connect to database");
-					String userName = "vis";
-					String password = "vis";
-					String url = "jdbc:mysql://localhost/vis";
-					Class.forName ("com.mysql.jdbc.Driver").newInstance ();
-					conn = DriverManager.getConnection (url, userName, password);
-					if(conn == null)
-						throw new RuntimeException("unknown sql connection creation returned null");
-					System.out.println ("Database connection established");
-				}
-				catch (Exception e)
-				{
-					System.err.println ("Cannot connect to database server");
-					throw new RuntimeException("Sql connection failed", e);
-				}
+				Connection conn = SQL.open();
+				
 				int current_batch_partial = 0;
 				int batch = 0;
 				try {
+					SQL.createTable(conn, RawHit.class);
+
 					PreparedStatement insert = conn.prepareStatement(
 							"INSERT INTO " + RawHit.TABLE + "(" + RawHit.DOC_ID + "," + RawHit.WORD_ID + "," + RawHit.COUNT + ") " + 
 							"VALUES (?, ?, ?)");

@@ -197,25 +197,7 @@ public class LoadXML {
 		final String TABLE_NAME = RawDoc.class.getAnnotation(Table.class).name();
 		Thread mysql_thread = new Thread(new Runnable() {
 			public void run() {
-				Connection conn = null;
-
-				try
-				{
-					System.out.println ("Trying to connect to database");
-					String userName = "vis";
-					String password = "vis";
-					String url = "jdbc:mysql://localhost/vis";
-					Class.forName ("com.mysql.jdbc.Driver").newInstance ();
-					conn = DriverManager.getConnection (url, userName, password);
-					if(conn == null)
-						throw new RuntimeException("unknown sql connection creation returned null");
-					System.out.println ("Database connection established");
-				}
-				catch (Exception e)
-				{
-					System.err.println ("Cannot connect to database server");
-					throw new RuntimeException("Sql connection failed", e);
-				}
+				Connection conn = SQL.open();
 				int current_batch_partial = 0;
 				int batch = 0;
 				PreparedStatement insert = null;

@@ -2,6 +2,7 @@ package vis.data.util;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Iterator;
@@ -62,5 +63,27 @@ public class SQL {
 		Statement st = conn.createStatement();
 		st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
 		st.close();
+	}
+
+	public static Connection open() {
+		Connection conn = null;
+		try
+		{
+			System.out.println ("Trying to connect to database");
+			String userName = "vis";
+			String password = "vis";
+			String url = "jdbc:mysql://localhost/vis";
+			Class.forName ("com.mysql.jdbc.Driver").newInstance ();
+			conn = DriverManager.getConnection (url, userName, password);
+			if(conn == null)
+				throw new RuntimeException("unknown sql connection creation returned null");
+			System.out.println ("Database connection established");
+			return conn;
+		}
+		catch (Exception e)
+		{
+			System.err.println ("Cannot connect to database server");
+			throw new RuntimeException("Sql connection failed", e);
+		}
 	}
 }
