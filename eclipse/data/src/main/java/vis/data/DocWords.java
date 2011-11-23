@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -14,8 +15,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import vis.data.model.RawDoc;
 import vis.data.model.DocWord;
+import vis.data.model.RawDoc;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 import vis.data.util.WordCache;
@@ -27,6 +28,7 @@ public class DocWords {
 	static int g_next_doc = 0;
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
+		Date start = new Date();
 		
 		Connection conn = SQL.open();
 
@@ -131,7 +133,7 @@ public class DocWords {
 							doc = doc_to_process.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(doc == null) {
-								System.out.println("starving counter");
+								//System.out.println("starving counter");
 								continue;
 							}
 						} catch (InterruptedException e) {
@@ -196,7 +198,7 @@ public class DocWords {
 							hit = hits_to_record.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(hit == null) {
-								System.out.println("starving mysql");
+								//System.out.println("starving mysql");
 								continue;
 							}
 						} catch (InterruptedException e) {
@@ -239,6 +241,9 @@ public class DocWords {
 				t.join();
 			//then wait until all the sql is complete
 			mysql_thread.join();
+			Date end = new Date();
+			long millis = end.getTime() - start.getTime();
+			System.err.println("completed insert in " + millis + " milliseconds");
 		} catch (InterruptedException e) {
 			throw new RuntimeException("unknwon interrupt", e);
 		}
