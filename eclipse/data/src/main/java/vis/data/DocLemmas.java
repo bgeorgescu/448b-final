@@ -135,7 +135,7 @@ public class DocLemmas {
 	    //props.put("ner.useSUTime", "false"); //?
 	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
 	    final StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		
+		final Pattern p = Pattern.compile("(?:-|(?:\\/))");
 		//threads to process individual files
 		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
 		final BlockingQueue<DocLemma> hits_to_record = new ArrayBlockingQueue<DocLemma>(10000);
@@ -167,8 +167,8 @@ public class DocLemmas {
 						}
 						
 						
-						//this is dehyphenating.
-					    Annotation document = new Annotation(doc.fullText_.replace('-', ' '));
+						//this is dehyphenating and weirdo slashing
+					    Annotation document = new Annotation(p.matcher(doc.fullText_).replaceAll(" "));
 					    pipeline.annotate(document);
 					    
 					    lemma_counts.clear();
