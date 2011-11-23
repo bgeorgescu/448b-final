@@ -60,7 +60,7 @@ public class DocWords {
 		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(100);
 		//thread to scan for documents to process
 		
-		final int BATCH_SIZE = 200;
+		final int BATCH_SIZE = 1000;
  		final Thread doc_scan_thread[] = new Thread[Runtime.getRuntime().availableProcessors()];
 		for(int i = 0; i < doc_scan_thread.length; ++i) {
 			doc_scan_thread[i] = new Thread() {
