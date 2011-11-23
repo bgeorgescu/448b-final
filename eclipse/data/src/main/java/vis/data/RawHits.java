@@ -84,7 +84,7 @@ public class RawHits {
 							doc = doc_to_process.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(doc == null) {
-								System.out.println("starving counter");
+								//System.out.println("starving counter");
 								continue;
 							}
 						} catch (InterruptedException e) {
@@ -147,7 +147,7 @@ public class RawHits {
 							hit = hits_to_record.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(hit == null) {
-								System.out.println("starving mysql");
+								//System.out.println("starving mysql");
 								continue;
 							}
 						} catch (InterruptedException e) {
