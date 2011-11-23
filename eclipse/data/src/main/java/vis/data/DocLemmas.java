@@ -127,6 +127,11 @@ public class DocLemmas {
 		final EntityCache ec = EntityCache.getInstance();
 	    Properties props = new Properties();
 	    props.put("ner.applyNumericClassifiers", "false"); //?
+	    
+	    //didnt do what i wanted
+	    //props.put("ner.useNGrams", "true");
+	    //props.put("ner.dehyphenateNGrams", "true");
+	    
 	    //props.put("ner.useSUTime", "false"); //?
 	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
 	    final StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
@@ -162,7 +167,8 @@ public class DocLemmas {
 						}
 						
 						
-					    Annotation document = new Annotation(doc.fullText_);
+						//this is dehyphenating.
+					    Annotation document = new Annotation(doc.fullText_.replace('-', ' '));
 					    pipeline.annotate(document);
 					    
 					    lemma_counts.clear();
