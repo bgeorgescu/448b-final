@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
@@ -39,6 +40,7 @@ import vis.data.util.SQL;
 //load the raw xml files
 public class LoadXML {	
 	public static void main(String[] args) {
+		Date start = new Date();
 		ExceptionHandler.terminateOnUncaught();
 		if(args.length < 1) {
 			throw new RuntimeException("must specify a directory of xml files to scan");
@@ -187,7 +189,7 @@ public class LoadXML {
 			};
 			processing_threads[i].start();
 		}
-		final int BATCH_SIZE = 200;
+		final int BATCH_SIZE = 1000;
 		final String TABLE_NAME = RawDoc.class.getAnnotation(Table.class).name();
 		Thread mysql_thread = new Thread(){
 			public void run() {
@@ -271,6 +273,9 @@ public class LoadXML {
 				t.join();
 			//then wait until all the sql is complete
 			mysql_thread.join();
+			Date end = new Date();
+			long millis = end.getTime() - start.getTime();
+			System.err.println("completed insert in " + millis + " milliseconds");
 		} catch (InterruptedException e) {
 			throw new RuntimeException("unknwon interrupt", e);
 		}
