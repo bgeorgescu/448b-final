@@ -5,10 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
-import vis.data.model.RawDoc;
 import vis.data.model.RawWord;
 
 //basically this talks to the db and caches the word to id mapping.

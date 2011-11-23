@@ -1,7 +1,6 @@
 package vis.data.model;
 
 import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 
 @Table(name=RawHit.TABLE)

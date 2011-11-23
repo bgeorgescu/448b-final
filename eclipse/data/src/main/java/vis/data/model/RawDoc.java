@@ -2,12 +2,11 @@ package vis.data.model;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 import vis.data.model.annotations.DML;
 
-@Table(name="rawdoc")
+@Table(name=RawDoc.TABLE)
 public class RawDoc {
 	public static final String TABLE = "rawdoc";
 	

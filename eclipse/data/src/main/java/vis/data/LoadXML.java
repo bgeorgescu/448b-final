@@ -1,20 +1,14 @@
 package vis.data;
 
 import java.io.File;
-import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -23,9 +17,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
-import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -41,11 +33,13 @@ import org.w3c.dom.NodeList;
 
 import vis.data.model.RawDoc;
 import vis.data.model.annotations.DML;
+import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 
 //load the raw xml files
 public class LoadXML {	
 	public static void main(String[] args) {
+		ExceptionHandler.terminateOnUncaught();
 		if(args.length < 1) {
 			throw new RuntimeException("must specify a directory of xml files to scan");
 		}
@@ -55,7 +49,7 @@ public class LoadXML {
 		}
 		final BlockingQueue<File> files_to_process = new ArrayBlockingQueue<File>(1000);
 		//thread to scan for file to load
-		final Thread file_scan_thread = new Thread(new Runnable() {
+		final Thread file_scan_thread = new Thread() {
 			public void run() {
 				LinkedList<File> directories_to_scan = new LinkedList<File>();
 				directories_to_scan.add(root);
@@ -82,7 +76,7 @@ public class LoadXML {
 					}
 				}
 			}
-		});
+		};
 		file_scan_thread.start();
 		
 		
@@ -102,7 +96,7 @@ public class LoadXML {
 				throw new RuntimeException("failed to create document builder", e);
 			}
 			final DocumentBuilder db = builder;
-			processing_threads[i] = new Thread(new Runnable() {
+			processing_threads[i] = new Thread() {
 				XPath xp = xpf.newXPath();
 				public void run() {
 					Map<String, XPathExpression> fields = new TreeMap<String, XPathExpression>();
@@ -136,7 +130,7 @@ public class LoadXML {
 					while(!files_to_process.isEmpty() || file_scan_thread.isAlive()) {
 						File f;
 						try {
-							f = files_to_process.poll(5, TimeUnit.SECONDS);
+							f = files_to_process.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(f == null)
 								continue;
@@ -190,12 +184,12 @@ public class LoadXML {
 						}
 					}
 				}
-			});
+			};
 			processing_threads[i].start();
 		}
 		final int BATCH_SIZE = 200;
 		final String TABLE_NAME = RawDoc.class.getAnnotation(Table.class).name();
-		Thread mysql_thread = new Thread(new Runnable() {
+		Thread mysql_thread = new Thread(){
 			public void run() {
 				Connection conn = SQL.open();
 				int current_batch_partial = 0;
@@ -231,7 +225,7 @@ public class LoadXML {
 						}
 						TreeMap<String, String> data;
 						try {
-							data = documents_to_process.poll(5, TimeUnit.SECONDS);
+							data = documents_to_process.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(data == null)
 								continue;
@@ -266,7 +260,7 @@ public class LoadXML {
 					}
 				}
 			}
-		});
+		};
 		mysql_thread.start();
 		
 		//wait until all scanning is complete

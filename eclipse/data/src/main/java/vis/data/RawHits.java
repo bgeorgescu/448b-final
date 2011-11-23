@@ -1,45 +1,21 @@
 package vis.data;
 
-import java.io.File;
-import java.lang.reflect.Array;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
 import java.util.Map.Entry;
-import java.util.TreeMap;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.persistence.Column;
-import javax.persistence.Table;
-import javax.xml.namespace.QName;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
 import vis.data.model.RawDoc;
 import vis.data.model.RawHit;
-import vis.data.model.RawWord;
+import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 import vis.data.util.WordCache;
 
@@ -48,11 +24,12 @@ import vis.data.util.WordCache;
 //write count for the words out in a rawhit table
 public class RawHits {	
 	public static void main(String[] args) {
+		ExceptionHandler.terminateOnUncaught();
 		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(100);
 		//thread to scan for documents to process
 		
 		final int BATCH_SIZE = 200;
-		final Thread doc_scan_thread = new Thread(new Runnable() {
+		final Thread doc_scan_thread = new Thread() {
 			public void run() {
 				Connection conn = SQL.open();
 				try {
@@ -89,7 +66,7 @@ public class RawHits {
 					}
 				}
 			}
-		});
+		};
 		doc_scan_thread.start();
 		final WordCache wc = WordCache.getInstance();
 		
@@ -99,12 +76,12 @@ public class RawHits {
 		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
 		final BlockingQueue<RawHit> hits_to_record = new ArrayBlockingQueue<RawHit>(1000);
 		for(int i = 0; i < processing_threads.length; ++i) {
-			processing_threads[i] = new Thread(new Runnable() {
+			processing_threads[i] = new Thread() {
 				public void run() {
 					while(!doc_to_process.isEmpty() || doc_scan_thread.isAlive()) {
 						RawDoc doc;
 						try {
-							doc = doc_to_process.poll(5, TimeUnit.SECONDS);
+							doc = doc_to_process.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(doc == null)
 								continue;
@@ -136,10 +113,10 @@ public class RawHits {
 						}
 					}
 				}
-			});
+			};
 			processing_threads[i].start();
 		}
-		Thread mysql_thread = new Thread(new Runnable() {
+		Thread mysql_thread = new Thread() {
 			public void run() {
 				Connection conn = SQL.open();
 				
@@ -165,7 +142,7 @@ public class RawHits {
 						}
 						RawHit hit;
 						try {
-							hit = hits_to_record.poll(5, TimeUnit.SECONDS);
+							hit = hits_to_record.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(hit == null)
 								continue;
@@ -198,7 +175,7 @@ public class RawHits {
 					}
 				}
 			}
-		});
+		};
 		mysql_thread.start();
 		
 		//wait until all scanning is complete

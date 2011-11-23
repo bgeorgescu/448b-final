@@ -14,11 +14,9 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 
-import vis.data.model.RawDoc;
-
 public class SQL {
 
-	public static java.util.Collection<String> getNonGenerated(Class cls) {
+	public static <T> java.util.Collection<String> getNonGenerated(Class<T> cls) {
 		Set<String> fields = new TreeSet<String>();
 		Field model_fields[] = cls.getFields();
 		for(Field f : model_fields) {
@@ -33,8 +31,8 @@ public class SQL {
 		return fields;
 	}
 
-	public static void createTable(Connection conn, Class cls) throws SQLException {
-		String TABLE_NAME = ((Table)cls.getAnnotation(Table.class)).name();
+	public static <T> void createTable(Connection conn, Class<T> cls) throws SQLException {
+		String TABLE_NAME = cls.getAnnotation(Table.class).name();
 
 		TreeMap<String, String> col_def = new TreeMap<String, String>();
 		Field model_fields[] = cls.getFields();
