@@ -59,7 +59,7 @@ public class WordCache {
 		try {
 			SQL.createTable(conn, RawWord.class);
 		} catch(SQLException e) {
-			throw new RuntimeException("failed to create raw word table", e);
+			System.err.println("WARNING rawword table already exists!");
 		}
 		return new WordCache(conn);
 	}
