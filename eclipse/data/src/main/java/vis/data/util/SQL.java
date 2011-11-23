@@ -13,6 +13,7 @@ import java.util.TreeSet;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 public class SQL {
 
@@ -60,6 +61,19 @@ public class SQL {
 		System.out.println(table_spec);
 		Statement st = conn.createStatement();
 		st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
+		
+		UniqueConstraint uniq[] = cls.getAnnotation(Table.class).uniqueConstraints();
+		for(UniqueConstraint u : uniq) {
+			String index_name = TABLE_NAME + "_by";
+			String index_fields = "";
+			for(String s : u.columnNames()) {
+				if(!index_fields.isEmpty())
+					index_fields += ", ";
+				index_fields += s;
+				index_name += "_" + s;
+			}
+			st.execute("CREATE UNIQUE INDEX " + index_name + " ON " + TABLE_NAME + " (" + index_fields + ")");
+		}
 		st.close();
 	}
 

@@ -2,8 +2,9 @@ package vis.data.model;
 
 import javax.persistence.Column;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
-@Table(name=RawHit.TABLE)
+@Table(name=RawHit.TABLE,uniqueConstraints=@UniqueConstraint(columnNames={RawHit.DOC_ID, RawHit.WORD_ID}))
 public class RawHit {
 	public static final String TABLE = "rawhit";
 	
