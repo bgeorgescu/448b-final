@@ -125,9 +125,6 @@ public class DocLemmas {
 		final WordCache wc = WordCache.getInstance();
 		final LemmaCache lc = LemmaCache.getInstance();
 		final EntityCache ec = EntityCache.getInstance();
-	    Properties props = new Properties();
-	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
-	    final StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		
 		//TODO: XXXX super lame, neglects punctuation, etc
 		final Pattern word_pattern = Pattern.compile("\\w+");
@@ -141,7 +138,11 @@ public class DocLemmas {
 					ByteBuffer entity_bb = ByteBuffer.allocate(1024 * 1024);
 					HashMap<Integer, Integer> lemma_counts = new HashMap<Integer, Integer>();
 					HashMap<Integer, Integer> entity_counts = new HashMap<Integer, Integer>();
-									    				    
+
+				    Properties props = new Properties();
+				    props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+				    final StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+					
 					for(;;) {
 						if(doc_to_process.isEmpty()) {
 							boolean still_running = false;
