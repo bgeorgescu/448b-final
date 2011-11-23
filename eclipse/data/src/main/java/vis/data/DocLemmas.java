@@ -131,10 +131,8 @@ public class DocLemmas {
 	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
 	    final StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		
-		//TODO: XXXX super lame, neglects punctuation, etc
-		final Pattern word_pattern = Pattern.compile("\\w+");
 		//threads to process individual files
-		final Thread processing_threads[] = new Thread[1];//Runtime.getRuntime().availableProcessors()];
+		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
 		final BlockingQueue<DocLemma> hits_to_record = new ArrayBlockingQueue<DocLemma>(10000);
 		for(int i = 0; i < processing_threads.length; ++i) {
 			processing_threads[i] = new Thread() {
