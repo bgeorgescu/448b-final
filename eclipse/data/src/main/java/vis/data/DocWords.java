@@ -198,7 +198,7 @@ public class DocWords {
 							hit = hits_to_record.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
 							if(hit == null) {
-								System.out.println("starving mysql");
+								//System.out.println("starving mysql");
 								continue;
 							}
 						} catch (InterruptedException e) {
