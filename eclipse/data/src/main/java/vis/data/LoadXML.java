@@ -132,8 +132,10 @@ public class LoadXML {
 						try {
 							f = files_to_process.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
-							if(f == null)
-								continue;
+							if(f == null) {
+								System.out.println("starving parser");
+							continue;
+							}
 						} catch (InterruptedException e) {
 							throw new RuntimeException("Unknown interupt while pulling from file queue", e);
 						}
@@ -227,8 +229,10 @@ public class LoadXML {
 						try {
 							data = documents_to_process.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
-							if(data == null)
+							if(data == null) {
+								System.out.println("starving mysql");
 								continue;
+							}
 						} catch (InterruptedException e) {
 							throw new RuntimeException("Unknown interupt while pulling from document mysql queue", e);
 						}

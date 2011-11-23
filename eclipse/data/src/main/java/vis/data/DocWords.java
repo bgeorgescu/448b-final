@@ -1,5 +1,6 @@
 package vis.data;
 
+import java.nio.ByteBuffer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,71 +15,117 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import vis.data.model.RawDoc;
-import vis.data.model.RawHit;
+import vis.data.model.DocWord;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 import vis.data.util.WordCache;
 
-//take the raw table and process the full_text into words
-//insert those words into a rawword table
-//write count for the words out in a rawhit table
-public class RawHits {	
+//take the raw table and process each doc into a list of words that hit
+//insert those words into a worddoc table
+//later we transform this to a docword table
+public class DocWords {	
+	static int g_next_doc = 0;
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
+		
+		Connection conn = SQL.open();
+
+		//first load all the document ids
+		int[] doc_ids;
+		try {
+			Statement st = conn.createStatement();
+			ResultSet rs = st.executeQuery("SELECT COUNT(*) FROM " + RawDoc.TABLE);
+			if(!rs.next())
+				throw new RuntimeException("fatal sql mistake");
+			int doc_count = rs.getInt(1);
+			rs.close();
+			doc_ids = new int[doc_count];
+			rs = st.executeQuery("SELECT " + RawDoc.ID + " FROM " + RawDoc.TABLE);
+			int i = 0;
+			while(rs.next()) {
+				doc_ids[i++] = rs.getInt(1);
+			}
+			rs.close();
+		} catch(Exception e) {
+			throw new RuntimeException("failed to load doc list", e);
+		}
+		final int[] all_doc_ids = doc_ids;
+		
+		try {
+			SQL.createTable(conn, DocWord.class);
+		} catch (SQLException e) {
+			throw new RuntimeException("failed to create table of words for documents", e);
+		}
+		
 		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(100);
 		//thread to scan for documents to process
 		
-		final int BATCH_SIZE = 1000;
-		final Thread doc_scan_thread = new Thread() {
-			public void run() {
-				Connection conn = SQL.open();
-				try {
-					Statement st = null;
-					//TODO: better to split slice this across a few threads because it is the bottleneck
-					st = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
-					st.setFetchSize(Integer.MIN_VALUE);
-					ResultSet rs = st.executeQuery("SELECT " + RawDoc.ID + "," + RawDoc.FULL_TEXT + " FROM " + RawDoc.TABLE);
-
-					if(!rs.next())
-						throw new RuntimeException("no docs to processs");
-					
-					do {
-						RawDoc doc = new RawDoc();
-						doc.id_ = rs.getInt(1);
-						doc.fullText_ = rs.getString(2);
-						try {
-							doc_to_process.put(doc);
-						} catch (InterruptedException e) {
-							throw new RuntimeException("Unknown interupt while pulling inserting in doc queue", e);
-						}
-					} while(rs.next());
-					st.close();
-				} catch (SQLException e) {
-					throw new RuntimeException("failed to enumerate documents", e);
-				}
-				finally
-				{
+		final int BATCH_SIZE = 200;
+ 		final Thread doc_scan_thread[] = new Thread[Runtime.getRuntime().availableProcessors()];
+		for(int i = 0; i < doc_scan_thread.length; ++i) {
+			doc_scan_thread[i] = new Thread() {
+				public void run() {
+					Connection conn = SQL.open();
 					try {
-						conn.close();
-						System.out.println ("Database connection terminated");
+						PreparedStatement query_fulltext = conn.prepareStatement("SELECT " + RawDoc.FULL_TEXT + " FROM " + RawDoc.TABLE + " WHERE " + RawDoc.ID + " = ?");
+
+						for(;;) {
+							int doc_id = -1;
+							synchronized(doc_scan_thread) {
+								if(g_next_doc == all_doc_ids.length) {
+									break;
+								}
+								doc_id = all_doc_ids[g_next_doc++];
+							}
+							query_fulltext.setInt(1, doc_id);
+							ResultSet rs = query_fulltext.executeQuery();
+							if(!rs.next()) {
+								throw new RuntimeException("failed to get full text for doc " + doc_id);
+							}
+							RawDoc doc = new RawDoc();
+							doc.id_ = doc_id;
+							doc.fullText_ = rs.getString(1);
+							try {
+								doc_to_process.put(doc);
+							} catch (InterruptedException e) {
+								throw new RuntimeException("Unknown interupt while pulling inserting in doc queue", e);
+							}
+						}
 					} catch (SQLException e) {
-						throw new RuntimeException("Database connection terminated funny", e);
+						throw new RuntimeException("failed to enumerate documents", e);
+					}
+					finally
+					{
+						try {
+							conn.close();
+							System.out.println ("Database connection terminated");
+						} catch (SQLException e) {
+							throw new RuntimeException("Database connection terminated funny", e);
+						}
 					}
 				}
-			}
-		};
-		doc_scan_thread.start();
+			};
+			doc_scan_thread[i].start();
+		}
 		final WordCache wc = WordCache.getInstance();
 		
 		//TODO: XXXX super lame, neglects punctuation, etc
 		final Pattern word_pattern = Pattern.compile("\\w+");
 		//threads to process individual files
 		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
-		final BlockingQueue<RawHit> hits_to_record = new ArrayBlockingQueue<RawHit>(1000);
+		final BlockingQueue<DocWord> hits_to_record = new ArrayBlockingQueue<DocWord>(10000);
 		for(int i = 0; i < processing_threads.length; ++i) {
 			processing_threads[i] = new Thread() {
 				public void run() {
-					while(!doc_to_process.isEmpty() || doc_scan_thread.isAlive()) {
+					for(;;) {
+						if(doc_to_process.isEmpty()) {
+							boolean still_running = false;
+							for(int i = 0; i < doc_scan_thread.length; ++i)
+								still_running |= doc_scan_thread[i].isAlive();
+							if(!still_running) {
+								break;
+							}
+						}
 						RawDoc doc;
 						try {
 							doc = doc_to_process.poll(5, TimeUnit.MILLISECONDS);
@@ -102,16 +149,18 @@ public class RawHits {
 								counts.put(word_id, count.intValue() + 1);
 							}
 						}
+						ByteBuffer bb = ByteBuffer.allocate(counts.size() * 2 * Integer.SIZE / 8);
 						for(Entry<Integer, Integer> entry : counts.entrySet()) {
-							RawHit hit = new RawHit();
-							hit.docId_ = doc.id_;
-							hit.wordId_ = entry.getKey();
-							hit.count_ = entry.getValue();
-							try {
-								hits_to_record.put(hit);
-							} catch (InterruptedException e) {
-								throw new RuntimeException("failure record hit results", e);
-							}
+							bb.putInt(entry.getKey()); //word id
+							bb.putInt(entry.getValue()); //count
+						}
+						DocWord wd = new DocWord();
+						wd.docId_ = doc.id_;
+						wd.wordList_ = bb.array();
+						try {
+							hits_to_record.put(wd);
+						} catch (InterruptedException e) {
+							throw new RuntimeException("failure record hit results", e);
 						}
 					}
 				}
@@ -125,11 +174,11 @@ public class RawHits {
 				int current_batch_partial = 0;
 				int batch = 0;
 				try {
-					SQL.createTable(conn, RawHit.class);
+					conn.setAutoCommit(false);
 
 					PreparedStatement insert = conn.prepareStatement(
-							"INSERT INTO " + RawHit.TABLE + "(" + RawHit.DOC_ID + "," + RawHit.WORD_ID + "," + RawHit.COUNT + ") " + 
-							"VALUES (?, ?, ?)");
+							"INSERT INTO " + DocWord.TABLE + "(" + DocWord.DOC_ID + "," + DocWord.WORD_LIST + ") " + 
+							"VALUES (?, ?)");
 					for(;;) {
 						if(hits_to_record.isEmpty()) {
 							boolean still_running = false;
@@ -142,7 +191,7 @@ public class RawHits {
 								break;
 							}
 						}
-						RawHit hit;
+						DocWord hit;
 						try {
 							hit = hits_to_record.poll(5, TimeUnit.MILLISECONDS);
 							//maybe we are out of work
@@ -155,8 +204,7 @@ public class RawHits {
 						}
 
 						insert.setInt(1, hit.docId_);
-						insert.setInt(2, hit.wordId_);
-						insert.setInt(3, hit.count_);
+						insert.setBytes(2, hit.wordList_);
 						insert.addBatch();
 
 						if(++current_batch_partial == BATCH_SIZE) {
@@ -184,7 +232,8 @@ public class RawHits {
 		
 		//wait until all scanning is complete
 		try {
-			doc_scan_thread.join();
+			for(Thread t : doc_scan_thread)
+				t.join();
 			//then wait until all processing is complete
 			for(Thread t : processing_threads)
 				t.join();
