@@ -75,7 +75,7 @@ public class DocLemmas {
 		final BlockingQueue<RawDoc> doc_to_process = new ArrayBlockingQueue<RawDoc>(100);
 		//thread to scan for documents to process
 		
-		final int BATCH_SIZE = 1000;
+		final int BATCH_SIZE = 100;
  		final Thread doc_scan_thread[] = new Thread[Runtime.getRuntime().availableProcessors()];
 		for(int i = 0; i < doc_scan_thread.length; ++i) {
 			doc_scan_thread[i] = new Thread() {
@@ -126,6 +126,8 @@ public class DocLemmas {
 		final LemmaCache lc = LemmaCache.getInstance();
 		final EntityCache ec = EntityCache.getInstance();
 	    Properties props = new Properties();
+	    props.put("ner.applyNumericClassifiers", "false"); //?
+	    //props.put("ner.useSUTime", "false"); //?
 	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
 	    final StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		
@@ -137,8 +139,6 @@ public class DocLemmas {
 		for(int i = 0; i < processing_threads.length; ++i) {
 			processing_threads[i] = new Thread() {
 				public void run() {
-					ByteBuffer lemma_bb = ByteBuffer.allocate(1024 * 1024);
-					ByteBuffer entity_bb = ByteBuffer.allocate(1024 * 1024);
 					HashMap<Integer, Integer> lemma_counts = new HashMap<Integer, Integer>();
 					HashMap<Integer, Integer> entity_counts = new HashMap<Integer, Integer>();
 									    				    
@@ -207,12 +207,12 @@ public class DocLemmas {
 			    				handleEntity(ec, last_ner, entity, entity_counts);
 					    	}
 					    }
-					    lemma_bb.clear();
+						ByteBuffer lemma_bb = ByteBuffer.allocate(lemma_counts.size() * 2 * Integer.SIZE / 8);
+						ByteBuffer entity_bb = ByteBuffer.allocate(entity_counts.size() * 2 * Integer.SIZE / 8);
 						for(Entry<Integer, Integer> entry : lemma_counts.entrySet()) {
 							lemma_bb.putInt(entry.getKey()); //lemma id
 							lemma_bb.putInt(entry.getValue()); //count
 						}
-					    entity_bb.clear();
 						for(Entry<Integer, Integer> entry : entity_counts.entrySet()) {
 							entity_bb.putInt(entry.getKey()); //entity id
 							entity_bb.putInt(entry.getValue()); //count
@@ -315,6 +315,7 @@ public class DocLemmas {
 			String entity, HashMap<Integer, Integer> entity_counts) {
 		switch(ne) {
 		case "O":
+			break;
 		case "NUMBER":
 		case "DURATION":
 		case "DATE":
@@ -324,6 +325,7 @@ public class DocLemmas {
 		case "MISC":
 		case "PERCENT":
 		case "SET":
+			//System.err.println("wanted to be disabled named entity type: " + ne);
 			break;
 		case "PERSON":
 		case "LOCATION":
