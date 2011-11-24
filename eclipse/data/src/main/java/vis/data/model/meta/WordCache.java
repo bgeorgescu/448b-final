@@ -35,7 +35,7 @@ public class WordCache {
 			} while(rs.next());
 			st.close();
 			
-			insert_ = conn_.prepareStatement("INSERT IGNORE INTO " + RawWord.TABLE + " (" + RawWord.ID + "," + RawWord.WORD + ") VALUES (?, ?)");
+			insert_ = conn_.prepareStatement("INSERT INTO " + RawWord.TABLE + " (" + RawWord.ID + "," + RawWord.WORD + ") VALUES (?, ?)");
 		} catch(SQLException e) {
 			try {
 				conn_.close();

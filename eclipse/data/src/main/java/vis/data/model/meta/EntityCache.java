@@ -38,7 +38,7 @@ public class EntityCache {
 			} while(rs.next());
 			st.close();
 			
-			insert_ = conn_.prepareStatement("INSERT IGNORE INTO " + RawEntity.TABLE + " (" + RawEntity.ID + "," + RawEntity.ENTITY + "," + RawEntity.TYPE + ") VALUES (?, ?, ?)");
+			insert_ = conn_.prepareStatement("INSERT INTO " + RawEntity.TABLE + " (" + RawEntity.ID + "," + RawEntity.ENTITY + "," + RawEntity.TYPE + ") VALUES (?, ?, ?)");
 		} catch(SQLException e) {
 			try {
 				conn_.close();

@@ -38,7 +38,7 @@ public class LemmaCache {
 			} while(rs.next());
 			st.close();
 			
-			insert_ = conn_.prepareStatement("INSERT IGNORE INTO " + RawLemma.TABLE + " (" + RawLemma.ID + "," + RawLemma.LEMMA + "," + RawLemma.POS + ") VALUES (?, ?, ?)");
+			insert_ = conn_.prepareStatement("INSERT INTO " + RawLemma.TABLE + " (" + RawLemma.ID + "," + RawLemma.LEMMA + "," + RawLemma.POS + ") VALUES (?, ?, ?)");
 		} catch(SQLException e) {
 			try {
 				conn_.close();

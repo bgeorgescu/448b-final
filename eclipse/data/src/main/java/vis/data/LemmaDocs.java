@@ -134,10 +134,6 @@ public class LemmaDocs {
 						//this is just a 1-1 re-transform of the data
 						for(int i = 0; i < doc.lemmaId_.length; ++i) {
 							PartialDocLemmaHitsCounts pdc = lemma_doc.get(doc.lemmaId_[i]);
-							if(pdc == null) {
-								System.err.println("missing " + doc.lemmaId_[i]);
-								continue;
-							}
 							synchronized (pdc) {
 								pdc.docId_.add(doc.docId_);
 								pdc.count_.add(doc.count_[i]);
