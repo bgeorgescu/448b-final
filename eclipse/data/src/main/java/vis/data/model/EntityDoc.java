@@ -12,6 +12,6 @@ public class EntityDoc {
 	public int entityId_;
 
 	public static final String DOC_LIST="doc_list";
-	@Column(name=DOC_LIST, columnDefinition="LARGEBLOB")
+	@Column(name=DOC_LIST, columnDefinition="LONGBLOB")
 	public byte[] docList_;
 }
