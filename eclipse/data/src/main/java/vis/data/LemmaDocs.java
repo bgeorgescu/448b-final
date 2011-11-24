@@ -25,6 +25,7 @@ import vis.data.util.SQL;
 //take doc lemma lists, load them in
 //transform them to be by lemma with doc lists
 public class LemmaDocs {	
+	static int g_batch = 0;
 	static int g_next_doc = 0;
 	static int g_next_lemma = 0;
 	public static void main(String[] args) {
@@ -167,7 +168,6 @@ public class LemmaDocs {
 					Connection conn = SQL.open();
 					
 					int current_batch_partial = 0;
-					int batch = 0;
 					try {
 						conn.setAutoCommit(false);
 	
@@ -196,7 +196,9 @@ public class LemmaDocs {
 							insert.addBatch();
 	
 							if(++current_batch_partial == BATCH_SIZE) {
-								System.out.println ("Inserting Batch " + batch++);
+								synchronized(LemmaDocs.class) {
+									System.out.println ("Inserting Batch " + g_batch++);
+								}
 								insert.executeBatch();
 								current_batch_partial = 0;
 							}

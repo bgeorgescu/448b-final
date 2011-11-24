@@ -65,4 +65,16 @@ public class DocEntityHits {
 			rs.close();
 		}
 	}
+	public static EntityDoc pack(Counts c) {
+		int num = c.docId_.length;
+		ByteBuffer bb = ByteBuffer.allocate(num * 2 * Integer.SIZE / 8);
+		for(int i = 0; i < num; ++i) {
+			bb.putInt(c.docId_[i]);
+			bb.putInt(c.count_[i]);
+		}
+		EntityDoc ed = new EntityDoc();
+		ed.entityId_ = c.entityId_;
+		ed.docList_ = bb.array();
+		return ed;
+	}
 }

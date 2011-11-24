@@ -60,4 +60,14 @@ public class LemmaHits {
 			rs.close();
 		}
 	}
+	public static void pack(DocLemma dl, Counts c) {
+		int num = c.lemmaId_.length;
+		ByteBuffer bb = ByteBuffer.allocate(num * 2 * Integer.SIZE / 8);
+		for(int i = 0; i < num; ++i) {
+			bb.putInt(c.lemmaId_[i]);
+			bb.putInt(c.count_[i]);
+		}
+		dl.lemmaList_ = bb.array();
+		dl.docId_ = c.docId_;
+	}
 }
