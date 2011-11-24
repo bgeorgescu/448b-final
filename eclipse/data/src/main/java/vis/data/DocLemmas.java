@@ -22,7 +22,6 @@ import vis.data.util.EntityCache;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.LemmaCache;
 import vis.data.util.SQL;
-import vis.data.util.WordCache;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
@@ -122,7 +121,6 @@ public class DocLemmas {
 			};
 			doc_scan_thread[i].start();
 		}
-		final WordCache wc = WordCache.getInstance();
 		final LemmaCache lc = LemmaCache.getInstance();
 		final EntityCache ec = EntityCache.getInstance();
 	    Properties props = new Properties();
