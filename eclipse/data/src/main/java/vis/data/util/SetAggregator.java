@@ -3,7 +3,10 @@ package vis.data.util;
 import org.apache.commons.lang3.ArrayUtils;
 
 public class SetAggregator {
-	int[] or(int a[], int b[]) {
+	public static int[] filter(int a[], int f[]) {
+		return and(a, f);
+	}
+	public static int[] or(int a[], int b[]) {
 		int c[] = new int[a.length + b.length];
 		int i = 0, j = 0, k = 0;
 		for(; i < a.length && j < b.length;) {
@@ -21,7 +24,7 @@ public class SetAggregator {
 			c = ArrayUtils.subarray(c, 0, k);
 		return c;
 	}
-	int[] and(int a[], int b[]) {
+	public static int[] and(int a[], int b[]) {
 		int c[] = new int[Math.min(a.length, b.length)];
 		int i = 0, j = 0, k = 0;
 		for(; i < a.length && j < b.length;) {
