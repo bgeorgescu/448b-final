@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.ConcurrentHashMap;
 
-import edu.stanford.nlp.util.Pair;
+import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawLemma;
 
@@ -31,7 +31,7 @@ public class LemmaCache {
 				int i = rs.getInt(1);
 				String w = rs.getString(2);
 				String p = rs.getString(3);
-				mapping_.put(new Pair<String, String>(w, p), i);
+				mapping_.put(Pair.of(w, p), i);
 				if(i > maxId_)
 					maxId_ = i;
 			} while(rs.next());
@@ -68,13 +68,13 @@ public class LemmaCache {
 	}
 	public int getLemma(String word, String pos) {
 		word = word.toLowerCase();
-		Pair<String, String> key = new Pair<String, String>(word, pos);
+		Pair<String, String> key = Pair.of(word, pos);
 		return mapping_.get(key);
 	}
 	public int getOrAddLemma(String word, String pos) {
 		word = word.toLowerCase();
 		try {
-			Pair<String, String> key = new Pair<String, String>(word, pos);
+			Pair<String, String> key = Pair.of(word, pos);
 			Integer i = mapping_.get(key);
 			if(i != null)
 				return i;

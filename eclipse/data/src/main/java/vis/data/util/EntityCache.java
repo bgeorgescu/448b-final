@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.ConcurrentHashMap;
 
-import edu.stanford.nlp.util.Pair;
+import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawEntity;
 
@@ -31,7 +31,7 @@ public class EntityCache {
 				int i = rs.getInt(1);
 				String w = rs.getString(2);
 				String t = rs.getString(3);
-				mapping_.put(new Pair<String, String>(w, t), i);
+				mapping_.put(Pair.of(w, t), i);
 				if(i > maxId_)
 					maxId_ = i;
 			} while(rs.next());
@@ -68,13 +68,13 @@ public class EntityCache {
 	}
 	public int getEntity(String entity, String type) {
 		entity = entity.toLowerCase();
-		Pair<String, String> key = new Pair<String, String>(entity, type);
+		Pair<String, String> key = Pair.of(entity, type);
 		return mapping_.get(key);
 	}
 	public int getOrAddEntity(String entity, String type) {
 		entity = entity.toLowerCase();
 		try {
-			Pair<String, String> key = new Pair<String, String>(entity, type);
+			Pair<String, String> key = Pair.of(entity, type);
 			Integer i = mapping_.get(key);
 			if(i != null)
 				return i;
