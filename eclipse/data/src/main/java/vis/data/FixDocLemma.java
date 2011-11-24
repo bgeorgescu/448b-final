@@ -50,11 +50,20 @@ public class FixDocLemma {
 							}
 							LemmaHits.Counts lc = lh.getLemmaCounts(doc_id);
 							EntityHits.Counts ec = eh.getEntityCounts(doc_id);
+							
+							//actual bug was that sql transparent remaps insert (primary key) values (0) to have a key of 1
+							//then the subsequent insert of item one fails.  So we lost the real item 1 effectively
 							for(int i = 0; i < lc.lemmaId_.length; ++i) {
-								lc.lemmaId_[i]++;
+								if(lc.lemmaId_[i] == 0)
+									lc.lemmaId_[i] = 1;
+								else if(lc.lemmaId_[i] == 1)
+									lc.lemmaId_[i] = 0;
 							}
 							for(int i = 0; i < ec.entityId_.length; ++i) {
-								ec.entityId_[i]++;
+								if(ec.entityId_[i] == 0)
+									ec.entityId_[i] = 1;
+								else if(ec.entityId_[i] == 1)
+									ec.entityId_[i] = 0;
 							}
 							DocLemma dl = new DocLemma();
 							dl.docId_ = doc_id;
