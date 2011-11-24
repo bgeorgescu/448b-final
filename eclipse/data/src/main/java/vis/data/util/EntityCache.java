@@ -66,6 +66,11 @@ public class EntityCache {
 		}
 		return new EntityCache(conn);
 	}
+	public int getEntity(String entity, String type) {
+		entity = entity.toLowerCase();
+		Pair<String, String> key = new Pair<String, String>(entity, type);
+		return mapping_.get(key);
+	}
 	public int getOrAddEntity(String entity, String type) {
 		entity = entity.toLowerCase();
 		try {

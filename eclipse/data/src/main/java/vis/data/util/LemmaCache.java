@@ -66,6 +66,11 @@ public class LemmaCache {
 		}
 		return new LemmaCache(conn);
 	}
+	public int getLemma(String word, String pos) {
+		word = word.toLowerCase();
+		Pair<String, String> key = new Pair<String, String>(word, pos);
+		return mapping_.get(key);
+	}
 	public int getOrAddLemma(String word, String pos) {
 		word = word.toLowerCase();
 		try {

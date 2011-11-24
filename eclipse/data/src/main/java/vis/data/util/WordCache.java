@@ -63,6 +63,10 @@ public class WordCache {
 		}
 		return new WordCache(conn);
 	}
+	public int getWord(String word) {
+		word = word.toLowerCase();
+		return mapping_.get(word);
+	}
 	public int getOrAddWord(String word) {
 		word = word.toLowerCase();
 		try {
