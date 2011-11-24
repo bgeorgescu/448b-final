@@ -28,6 +28,7 @@ public class LemmaDocs {
 	static int g_batch = 0;
 	static int g_next_doc = 0;
 	static int g_next_lemma = 0;
+	static int g_max_err = 100;
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
 		Date start = new Date();
@@ -135,6 +136,16 @@ public class LemmaDocs {
 						//this is just a 1-1 re-transform of the data
 						for(int i = 0; i < doc.lemmaId_.length; ++i) {
 							PartialDocLemmaHitsCounts pdc = lemma_doc.get(doc.lemmaId_[i]);
+							if(pdc == null) {
+								if(g_max_err > 0) {
+									g_max_err--;
+									System.err.println("fail " + doc.docId_ + " " + doc.lemmaId_[i]);
+									if(g_max_err == 0)
+										System.err.println("failed too many times supressing");
+									
+								}
+								continue;
+							}
 							synchronized (pdc) {
 								pdc.docId_.add(doc.docId_);
 								pdc.count_.add(doc.count_[i]);
