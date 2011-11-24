@@ -5,7 +5,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -18,6 +17,7 @@ import java.util.regex.Pattern;
 
 import vis.data.model.DocLemma;
 import vis.data.model.RawDoc;
+import vis.data.model.meta.IdLists;
 import vis.data.util.EntityCache;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.LemmaCache;
@@ -45,25 +45,7 @@ public class DocLemmas {
 		Connection conn = SQL.open();
 
 		//first load all the document ids
-		int[] doc_ids;
-		try {
-			Statement st = conn.createStatement();
-			ResultSet rs = st.executeQuery("SELECT COUNT(*) FROM " + RawDoc.TABLE);
-			if(!rs.next())
-				throw new RuntimeException("fatal sql mistake");
-			int doc_count = rs.getInt(1);
-			rs.close();
-			doc_ids = new int[doc_count];
-			rs = st.executeQuery("SELECT " + RawDoc.ID + " FROM " + RawDoc.TABLE);
-			int i = 0;
-			while(rs.next()) {
-				doc_ids[i++] = rs.getInt(1);
-			}
-			rs.close();
-		} catch(Exception e) {
-			throw new RuntimeException("failed to load doc list", e);
-		}
-		final int[] all_doc_ids = doc_ids;
+		final int[] all_doc_ids = IdLists.allDocs(conn);
 		
 		try {
 			SQL.createTable(conn, DocLemma.class);
