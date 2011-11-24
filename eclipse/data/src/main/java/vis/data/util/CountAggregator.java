@@ -1,9 +1,24 @@
 package vis.data.util;
 
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
 public class CountAggregator {
+	public static void sort(int a[], int a_count[]) {
+		TreeMap<Integer, Integer> v = new TreeMap<Integer, Integer>();
+		for(int i = 0; i < a.length; ++i) {
+			v.put(a[i], a_count[i]);
+		}
+		int i = 0;
+		for(Entry<Integer, Integer> e : v.entrySet()) {
+			a[i] = e.getKey();
+			a_count[i] = e.getValue();
+			++i;
+		}
+	}	
 	public static Pair<int[], int[]> filter(int a[], int a_count[], int[] f) {
 		int max_size = a.length;
 		int c[] = new int[max_size];

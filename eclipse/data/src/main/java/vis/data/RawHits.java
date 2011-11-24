@@ -15,9 +15,9 @@ import java.util.regex.Pattern;
 
 import vis.data.model.RawDoc;
 import vis.data.model.RawHit;
+import vis.data.model.meta.WordCache;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
-import vis.data.util.WordCache;
 
 //take the raw table and process the full_text into words
 //insert those words into a rawword table

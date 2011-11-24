@@ -11,7 +11,7 @@ import vis.data.model.DocLemma;
 public class LemmaHits {
 	PreparedStatement query_;
 	public LemmaHits(Connection conn) throws SQLException {
-		query_ = conn.prepareStatement("SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE + " WHERE doc_id = ?");
+		query_ = conn.prepareStatement("SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 	}
 	public int[] getLemmas(int doc_id) throws SQLException {
 		query_.setInt(1, doc_id);
@@ -32,13 +32,13 @@ public class LemmaHits {
 			rs.close();
 		}
 	}
-	public class LemmaCount {
-		int docId_;
-		int[] lemmaId_;
-		int[] count_;
+	public static class Counts {
+		public int docId_;
+		public int[] lemmaId_;
+		public int[] count_;
 	}
-	public LemmaCount getLemmaCounts(int doc_id) throws SQLException {
-		LemmaCount c = new LemmaCount();
+	public Counts getLemmaCounts(int doc_id) throws SQLException {
+		Counts c = new Counts();
 		c.docId_ = doc_id;
 		query_.setInt(1, doc_id);
 		ResultSet rs = query_.executeQuery();

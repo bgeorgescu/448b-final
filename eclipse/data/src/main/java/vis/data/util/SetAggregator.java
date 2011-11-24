@@ -1,8 +1,13 @@
 package vis.data.util;
 
+import java.util.Arrays;
+
 import org.apache.commons.lang3.ArrayUtils;
 
 public class SetAggregator {
+	public static void sort(int a[]) {
+		Arrays.sort(a);
+	}
 	public static int[] filter(int a[], int f[]) {
 		return and(a, f);
 	}

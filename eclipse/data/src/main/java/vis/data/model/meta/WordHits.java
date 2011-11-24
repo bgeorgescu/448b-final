@@ -6,12 +6,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import vis.data.model.DocLemma;
 import vis.data.model.DocWord;
 
 public class WordHits {
 	PreparedStatement query_;
 	public WordHits(Connection conn) throws SQLException {
-		query_ = conn.prepareStatement("SELECT " + DocWord.WORD_LIST + " FROM " + DocWord.TABLE + " WHERE doc_id = ?");
+		query_ = conn.prepareStatement("SELECT " + DocWord.WORD_LIST + " FROM " + DocWord.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 	}
 	public int[] getWords(int doc_id) throws SQLException {
 		query_.setInt(1, doc_id);
@@ -32,13 +33,13 @@ public class WordHits {
 			rs.close();
 		}
 	}
-	public class WordCount {
-		int docId_;
-		int[] wordId_;
-		int[] count_;
+	public static class Counts {
+		public int docId_;
+		public int[] wordId_;
+		public int[] count_;
 	}
-	public WordCount getWordCounts(int doc_id) throws SQLException {
-		WordCount c = new WordCount();
+	public Counts getWordCounts(int doc_id) throws SQLException {
+		Counts c = new Counts();
 		c.docId_ = doc_id;
 		query_.setInt(1, doc_id);
 		ResultSet rs = query_.executeQuery();

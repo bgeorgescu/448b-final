@@ -17,10 +17,10 @@ import java.util.regex.Pattern;
 
 import vis.data.model.DocLemma;
 import vis.data.model.RawDoc;
+import vis.data.model.meta.EntityCache;
 import vis.data.model.meta.IdLists;
-import vis.data.util.EntityCache;
+import vis.data.model.meta.LemmaCache;
 import vis.data.util.ExceptionHandler;
-import vis.data.util.LemmaCache;
 import vis.data.util.SQL;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
@@ -46,6 +46,7 @@ public class DocLemmas {
 
 		//first load all the document ids
 		final int[] all_doc_ids = IdLists.allDocs(conn);
+		//final int[] all_doc_ids = ArrayUtils.subarray(IdLists.allDocs(conn), 0, 1000);
 		
 		try {
 			SQL.createTable(conn, DocLemma.class);
@@ -75,16 +76,20 @@ public class DocLemmas {
 							}
 							query_fulltext.setInt(1, doc_id);
 							ResultSet rs = query_fulltext.executeQuery();
-							if(!rs.next()) {
-								throw new RuntimeException("failed to get full text for doc " + doc_id);
-							}
-							RawDoc doc = new RawDoc();
-							doc.id_ = doc_id;
-							doc.fullText_ = rs.getString(1);
 							try {
-								doc_to_process.put(doc);
-							} catch (InterruptedException e) {
-								throw new RuntimeException("Unknown interupt while pulling inserting in doc queue", e);
+								if(!rs.next()) {
+									throw new RuntimeException("failed to get full text for doc " + doc_id);
+								}
+								RawDoc doc = new RawDoc();
+								doc.id_ = doc_id;
+								doc.fullText_ = rs.getString(1);
+								try {
+									doc_to_process.put(doc);
+								} catch (InterruptedException e) {
+									throw new RuntimeException("Unknown interupt while pulling inserting in doc queue", e);
+								}
+							} finally {
+								rs.close();
 							}
 						}
 					} catch (SQLException e) {

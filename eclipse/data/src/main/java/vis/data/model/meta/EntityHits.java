@@ -11,7 +11,7 @@ import vis.data.model.DocLemma;
 public class EntityHits {
 	PreparedStatement query_;
 	public EntityHits(Connection conn) throws SQLException {
-		query_ = conn.prepareStatement("SELECT " + DocLemma.ENTITY_LIST + " FROM " + DocLemma.TABLE + " WHERE doc_id = ?");
+		query_ = conn.prepareStatement("SELECT " + DocLemma.ENTITY_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 	}
 	public int[] getEntities(int doc_id) throws SQLException {
 		query_.setInt(1, doc_id);
@@ -32,13 +32,13 @@ public class EntityHits {
 			rs.close();
 		}
 	}
-	public class EntityCount {
-		int docId_;
-		int[] entityId_;
-		int[] count_;
+	public static class Counts {
+		public int docId_;
+		public int[] entityId_;
+		public int[] count_;
 	}
-	public EntityCount getEntityCounts(int doc_id) throws SQLException {
-		EntityCount c = new EntityCount();
+	public Counts getEntityCounts(int doc_id) throws SQLException {
+		Counts c = new Counts();
 		c.docId_ = doc_id;
 		query_.setInt(1, doc_id);
 		ResultSet rs = query_.executeQuery();

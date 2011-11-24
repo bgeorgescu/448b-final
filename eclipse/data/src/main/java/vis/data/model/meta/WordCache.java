@@ -1,4 +1,4 @@
-package vis.data.util;
+package vis.data.model.meta;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.concurrent.ConcurrentHashMap;
 
 import vis.data.model.RawWord;
+import vis.data.util.SQL;
 
 //basically this talks to the db and caches the word to id mapping.
 //it will automatically add new words, so no one else should mess with
@@ -16,7 +17,7 @@ public class WordCache {
 	private static WordCache g_instance;
 	private ConcurrentHashMap<String, Integer> mapping_ = new ConcurrentHashMap<String, Integer>();
 	private PreparedStatement insert_;
-	private int maxId_ = -1;
+	private int maxId_ = 0;
 	private Connection conn_;
 	private WordCache(Connection conn){
 		conn_ = conn;

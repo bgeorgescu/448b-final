@@ -17,9 +17,9 @@ import java.util.regex.Pattern;
 import vis.data.model.DocWord;
 import vis.data.model.RawDoc;
 import vis.data.model.meta.IdLists;
+import vis.data.model.meta.WordCache;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
-import vis.data.util.WordCache;
 
 //take the raw table and process each doc into a list of words that hit
 //insert those words into a worddoc table
@@ -63,16 +63,20 @@ public class DocWords {
 							}
 							query_fulltext.setInt(1, doc_id);
 							ResultSet rs = query_fulltext.executeQuery();
-							if(!rs.next()) {
-								throw new RuntimeException("failed to get full text for doc " + doc_id);
-							}
-							RawDoc doc = new RawDoc();
-							doc.id_ = doc_id;
-							doc.fullText_ = rs.getString(1);
 							try {
-								doc_to_process.put(doc);
-							} catch (InterruptedException e) {
-								throw new RuntimeException("Unknown interupt while pulling inserting in doc queue", e);
+								if(!rs.next()) {
+									throw new RuntimeException("failed to get full text for doc " + doc_id);
+								}
+								RawDoc doc = new RawDoc();
+								doc.id_ = doc_id;
+								doc.fullText_ = rs.getString(1);
+								try {
+									doc_to_process.put(doc);
+								} catch (InterruptedException e) {
+									throw new RuntimeException("Unknown interupt while pulling inserting in doc queue", e);
+								}
+							} finally {
+								rs.close();
 							}
 						}
 					} catch (SQLException e) {
