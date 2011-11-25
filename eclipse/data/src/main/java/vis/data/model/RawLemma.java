@@ -5,7 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-@Table(name=RawLemma.TABLE, uniqueConstraints=@UniqueConstraint(columnNames={RawLemma.LEMMA, RawLemma.POS}))
+@Table(name=RawLemma.TABLE, 
+	uniqueConstraints={
+		@UniqueConstraint(columnNames={RawLemma.LEMMA, RawLemma.POS}), 
+		@UniqueConstraint(columnNames={RawLemma.POS, RawLemma.LEMMA})})
 public class RawLemma {
 	public static final String TABLE = "rawlemma";
 	

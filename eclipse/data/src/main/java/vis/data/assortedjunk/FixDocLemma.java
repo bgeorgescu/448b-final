@@ -1,4 +1,4 @@
-package vis.data;
+package vis.data.assortedjunk;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

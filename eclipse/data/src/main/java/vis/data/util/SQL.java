@@ -60,8 +60,15 @@ public class SQL {
 		}
 		System.out.println(table_spec);
 		Statement st = conn.createStatement();
-		st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
-		
+		try {
+			st.execute("CREATE TABLE " + TABLE_NAME + "(" + table_spec  + ")");
+		} finally {
+			st.close();
+		}
+		createIndices(conn, cls);
+	}
+	public static <T> void createIndices(Connection conn, Class<T> cls) throws SQLException {
+		String TABLE_NAME = cls.getAnnotation(Table.class).name();
 		UniqueConstraint uniq[] = cls.getAnnotation(Table.class).uniqueConstraints();
 		for(UniqueConstraint u : uniq) {
 			String index_name = TABLE_NAME + "_by";
@@ -72,9 +79,14 @@ public class SQL {
 				index_fields += s;
 				index_name += "_" + s;
 			}
-			st.execute("CREATE UNIQUE INDEX " + index_name + " ON " + TABLE_NAME + " (" + index_fields + ")");
+			Statement st = conn.createStatement();
+			try {
+				st.execute("CREATE UNIQUE INDEX " + index_name + " ON " + TABLE_NAME + " (" + index_fields + ")");
+			} finally {
+				st.close();
+			}
 		}
-		st.close();
+		
 	}
 
 	public static Connection open() {
