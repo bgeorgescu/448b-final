@@ -19,7 +19,7 @@ public class RawLemma {
 
 	public static final String LEMMA="lemma";
 
-	@Column(name=LEMMA, columnDefinition="VARCHAR(255) NOT NULL")
+	@Column(name=LEMMA, columnDefinition="VARCHAR(256) NOT NULL")
 	public String lemma_;
 	public static final String POS="pos";
 

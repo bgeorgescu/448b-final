@@ -19,7 +19,7 @@ public class RawEntity {
 
 	public static final String ENTITY="entity";
 	//also want index
-	@Column(name=ENTITY, columnDefinition="VARCHAR(255) NOT NULL")
+	@Column(name=ENTITY, columnDefinition="VARCHAR(1024) NOT NULL")
 	public String entity_;
 
 	public static final String TYPE="type";
