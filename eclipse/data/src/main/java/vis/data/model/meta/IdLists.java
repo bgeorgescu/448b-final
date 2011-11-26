@@ -39,7 +39,9 @@ public class IdLists {
 			}
 			return ids;
 		} catch(Exception e) {
-			throw new RuntimeException("failed to load list of " + table, e);
+			System.err.println("failed to load list of " + table);
+			e.printStackTrace(System.err);
+			return new int[0];
 		}
 	}
 	public static int[] allCoreferencedDocuments() {
