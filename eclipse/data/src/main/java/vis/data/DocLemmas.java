@@ -49,9 +49,9 @@ public class DocLemmas {
 		Connection conn = SQL.forThread();
 
 		//first load all the document ids that are unprocesssed
-		final int[] all_processed_doc_ids = IdLists.allProcessedDocs(conn);
+		final int[] all_processed_doc_ids = IdLists.allProcessedDocs();
 		Arrays.sort(all_processed_doc_ids);
-		int[] doc_ids = IdLists.allDocs(conn);
+		int[] doc_ids = IdLists.allDocs();
 		Arrays.sort(doc_ids);
 		final int[] all_doc_ids = SetAggregator.remove(doc_ids, all_processed_doc_ids);
 		
