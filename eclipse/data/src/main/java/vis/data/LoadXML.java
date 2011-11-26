@@ -83,8 +83,7 @@ public class LoadXML {
 		
 		
 		//threads to process individual files
-		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
-		
+		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];		
 		
 		final BlockingQueue<TreeMap<String, String>> documents_to_process = new ArrayBlockingQueue<TreeMap<String, String>>(1000);
 		final XPathFactory xpf = XPathFactory.newInstance();
@@ -211,8 +210,11 @@ public class LoadXML {
 						parameters.append(", ");
 						parameters.append(j.next());
 					}
-					System.out.println("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")");
-					insert = conn.prepareStatement("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")");
+					System.out.println("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ") ... ");
+					//always take the longer full_text
+					insert = conn.prepareStatement("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")" +
+							" ON DUPLICATE KEY UPDATE " + RawDoc.FULL_TEXT + " = IF(LENGTH(VALUES(" + RawDoc.FULL_TEXT + ")) > LENGTH(" + RawDoc.FULL_TEXT + 
+							"), VALUES(" + RawDoc.FULL_TEXT + "), " + RawDoc.FULL_TEXT + ")");
 
 					
 					for(;;) {
