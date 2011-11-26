@@ -20,7 +20,13 @@
       <name>PrPl Public Repository</name>
       <url>http://prpl.stanford.edu:8081/nexus/content/repositories/public</url>
   </repository>
-  </repositories>
+  <repository>
+      <id>java-net</id>
+      <name>Maven java.net</name>
+      <layout>default</layout>
+      <url>http://maven.java.net/</url>
+    </repository>
+    </repositories>
     <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -68,6 +74,31 @@
     	<groupId>net.sf.trove4j</groupId>
     	<artifactId>trove4j</artifactId>
     	<version>3.0.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-server</artifactId>
+    	<version>1.10</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-json</artifactId>
+    	<version>1.10</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-servlet</artifactId>
+    	<version>1.10</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.eclipse.jetty</groupId>
+    	<artifactId>jetty-annotations</artifactId>
+    	<version>8.0.4.v20111024</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.eclipse.jetty</groupId>
+    	<artifactId>jetty-servlet</artifactId>
+    	<version>8.0.4.v20111024</version>
     </dependency>
     </dependencies>
   
