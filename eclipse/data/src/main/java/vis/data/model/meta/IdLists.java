@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import vis.data.model.DocCoref;
 import vis.data.model.DocLemma;
 import vis.data.model.RawDoc;
 import vis.data.model.RawEntity;
@@ -38,6 +39,9 @@ public class IdLists {
 		} catch(Exception e) {
 			throw new RuntimeException("failed to load list of " + table, e);
 		}
+	}
+	public static int[] allCoreferencedDocuments(Connection conn) {
+		return all(conn, DocCoref.TABLE, DocCoref.DOC_ID);
 	}
 	public static int[] allDocs(Connection conn) {
 		return all(conn, RawDoc.TABLE, RawDoc.ID);

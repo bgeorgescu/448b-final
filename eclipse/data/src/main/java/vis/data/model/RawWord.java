@@ -16,5 +16,5 @@ public class RawWord {
 	public static final String WORD="word";
 	//also want index
 	@Column(name=WORD, columnDefinition="VARCHAR(255) UNIQUE NOT NULL")
-	public int word_;
+	public String word_;
 }

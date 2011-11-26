@@ -5,7 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-@Table(name=RawEntity.TABLE,uniqueConstraints=@UniqueConstraint(columnNames={RawEntity.ENTITY, RawEntity.TYPE}))
+@Table(name=RawEntity.TABLE,
+	uniqueConstraints={
+		@UniqueConstraint(columnNames={RawEntity.ENTITY, RawEntity.TYPE}), 
+		@UniqueConstraint(columnNames={RawEntity.TYPE, RawEntity.ENTITY})})
 public class RawEntity {
 	public static final String TABLE = "rawentity";
 	
@@ -17,10 +20,10 @@ public class RawEntity {
 	public static final String ENTITY="entity";
 	//also want index
 	@Column(name=ENTITY, columnDefinition="VARCHAR(255) NOT NULL")
-	public int entity_;
+	public String entity_;
 
 	public static final String TYPE="type";
 	//also want index
 	@Column(name=TYPE, columnDefinition="VARCHAR(32) NOT NULL")
-	public int type_;
+	public String type_;
 }

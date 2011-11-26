@@ -1,5 +1,6 @@
 package vis.data.model.meta;
 
+import java.io.PrintStream;
 import java.nio.ByteBuffer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import vis.data.model.DocCoref;
+import vis.data.model.RawEntity;
+import vis.data.model.RawLemma;
 
 public class LemmaEntityCorefs {
 	PreparedStatement query_;
@@ -41,8 +44,7 @@ public class LemmaEntityCorefs {
 			for(int set = 0; set < sets; ++set) {
 				int equivalences = bb.getInt();
 				c.ref_[set] = new Ref[equivalences];
-				int items = bb.getInt();
-				for(int item = 0; item < items; ++item) {
+				for(int item = 0; item < equivalences; ++item) {
 					c.ref_[set][item] = new Ref();
 					int words = bb.getInt();
 					c.ref_[set][item].type_ = new PhraseType[words];
@@ -67,12 +69,12 @@ public class LemmaEntityCorefs {
 			sz += INT_SIZE; // # of equivalences
 			for(int item = 0; item < c.ref_[set].length; ++item) {
 				sz += INT_SIZE; // # of words
-				sz += c.ref_[set][item].id_.length;
+				sz += c.ref_[set][item].id_.length * INT_SIZE;
 			}
 		}
 		return sz;
 	}
-	public DocCoref pack(Corefs c) {
+	public static DocCoref pack(Corefs c) {
 		ByteBuffer bb = ByteBuffer.allocate(computeSize(c));
 		
 		bb.putInt(c.ref_.length);
@@ -81,7 +83,14 @@ public class LemmaEntityCorefs {
 			for(int item = 0; item < c.ref_[set].length; ++item) {
 				bb.putInt(c.ref_[set][item].id_.length);
 				for(int word = 0; word < c.ref_[set][item].id_.length; ++word) {
-					bb.putInt(c.ref_[set][item].id_[word]);
+					switch(c.ref_[set][item].type_[word]) {
+					case Entity:
+						bb.putInt(-c.ref_[set][item].id_[word]);
+						break;
+					case Lemma:
+						bb.putInt(c.ref_[set][item].id_[word]);
+						break;
+					}
 				}
 			}
 		}
@@ -89,5 +98,26 @@ public class LemmaEntityCorefs {
 		dc.docId_ = c.docId_;
 		dc.corefList_ = bb.array();
 		return dc;
+	}
+	public static void dumpCorefs(PrintStream o, String title, EntityRaw er, LemmaRaw lr, Corefs c) throws SQLException {
+		o.println("--- " + title + " ---");
+		for(int set = 0; set < c.ref_.length; ++set) {
+			for(int item = 0; item < c.ref_[set].length; ++item) {
+				for(int word = 0; word < c.ref_[set][item].id_.length; ++word) {
+					switch(c.ref_[set][item].type_[word]) {
+					case Entity:
+						RawEntity re = er.getEntity(c.ref_[set][item].id_[word]);
+						o.print(" " + re.entity_ + "/" + re.type_);
+						break;
+					case Lemma:
+						RawLemma rl = lr.getLemma(c.ref_[set][item].id_[word]);
+						o.print(" " + rl.lemma_ + "/" + rl.pos_);
+						break;
+					}
+				}
+				o.print(",");
+			}
+			o.println();
+		}
 	}
 }

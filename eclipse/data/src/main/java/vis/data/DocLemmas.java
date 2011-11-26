@@ -162,14 +162,14 @@ public class DocLemmas {
 					    entity_counts.clear();
 					    List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 					    for(CoreMap sentence: sentences) {
-						    String last_ner = "O";
+						    String last_ner = null;
 						    String entity = "";
 					    	for (CoreLabel token: sentence.get(TokensAnnotation.class)) {
 					    		String word = token.get(TextAnnotation.class);
 					    		String ne = token.get(NamedEntityTagAnnotation.class);
 					    		String lemma = token.get(LemmaAnnotation.class);
 					    		String pos = token.get(PartOfSpeechAnnotation.class);
-					    		if(ne.equals("O") || !last_ner.equals(ne)) {
+					    		if(last_ner != null && !last_ner.equals("O") && !last_ner.equals(ne)) {
 				    				handleEntity(ec, last_ner, entity, entity_counts);
 				    				entity = "";
 					    		} 

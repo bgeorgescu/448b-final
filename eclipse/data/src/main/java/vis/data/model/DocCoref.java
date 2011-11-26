@@ -12,10 +12,6 @@ public class DocCoref {
 	public int docId_;
 
 	public static final String COREF_LIST="coref_list";
-	@Column(name=COREF_LIST, columnDefinition="LARGEBLOB")
+	@Column(name=COREF_LIST, columnDefinition="LONGBLOB")
 	public byte[] corefList_;
-
-	public static final String ENTITY_LIST="entity_list";
-	@Column(name=ENTITY_LIST, columnDefinition="MEDIUMBLOB")
-	public byte[] entityList_;
 }

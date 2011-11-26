@@ -20,9 +20,9 @@ public class RawLemma {
 	public static final String LEMMA="lemma";
 
 	@Column(name=LEMMA, columnDefinition="VARCHAR(255) NOT NULL")
-	public int lemma_;
+	public String lemma_;
 	public static final String POS="pos";
 
 	@Column(name=POS, columnDefinition="VARCHAR(8) NOT NULL")
-	public int pos_;
+	public String pos_;
 }
