@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -24,6 +25,7 @@ import vis.data.model.meta.LemmaCache;
 import vis.data.model.meta.LemmaHits;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
+import vis.data.util.SetAggregator;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
@@ -46,11 +48,16 @@ public class DocLemmas {
 		
 		Connection conn = SQL.open();
 
-		//first load all the document ids
-		final int[] all_doc_ids = IdLists.allDocs(conn);
+		//first load all the document ids that are unprocesssed
+		final int[] all_processed_doc_ids = IdLists.allProcessedDocs(conn);
+		Arrays.sort(all_processed_doc_ids);
+		int[] doc_ids = IdLists.allDocs(conn);
+		Arrays.sort(doc_ids);
+		final int[] all_doc_ids = SetAggregator.remove(doc_ids, all_processed_doc_ids);
+		
 		//final int[] all_doc_ids = ArrayUtils.subarray(IdLists.allDocs(conn), 0, 1000);
 		
-		try {
+		if(all_processed_doc_ids.length == 0) try {
 			SQL.createTable(conn, DocLemma.class);
 		} catch (SQLException e) {
 			throw new RuntimeException("failed to create table of words for documents", e);
