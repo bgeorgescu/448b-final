@@ -5,6 +5,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import vis.data.model.DocLemma;
 
@@ -69,5 +71,14 @@ public class EntityHits {
 		}
 		dl.entityList_ = bb.array();
 		dl.docId_ = c.docId_;
+	}
+	public static void pack(DocLemma dl, int doc_id, Map<Integer, Integer> counts) {
+		ByteBuffer bb = ByteBuffer.allocate(counts.size() * 2 * Integer.SIZE / 8);
+		for(Entry<Integer, Integer> entry : counts.entrySet()) {
+			bb.putInt(entry.getKey()); //lemma id
+			bb.putInt(entry.getValue()); //count
+		}
+		dl.entityList_ = bb.array();
+		dl.docId_ = doc_id;
 	}
 }
