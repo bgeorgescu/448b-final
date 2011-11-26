@@ -18,6 +18,7 @@ public class WordCache {
 	private ConcurrentHashMap<String, Integer> mapping_ = new ConcurrentHashMap<String, Integer>();
 	private PreparedStatement insert_;
 	private int maxId_ = 0;
+	//this has ites own connection which they handle synchronization because it does insertion on whatever thread happens to call
 	private Connection conn_;
 	private WordCache(Connection conn){
 		conn_ = conn;
@@ -56,7 +57,7 @@ public class WordCache {
 	public static synchronized WordCache getInstance() {
 		if(g_instance != null)
 			return g_instance;
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 		try {
 			SQL.createTable(conn, RawWord.class);
 		} catch(SQLException e) {

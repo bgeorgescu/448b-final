@@ -11,7 +11,7 @@ import vis.data.util.SQL;
 public class RunSomeSQL {
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 		try {
 			Statement st = conn.createStatement();
 			try {

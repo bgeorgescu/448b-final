@@ -20,17 +20,17 @@ public class FixDocLemma {
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
 		
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 
 		//first load all the document ids and lemma ids
-		final int[] all_doc_ids = IdLists.allProcessedDocs(conn);
+		final int[] all_doc_ids = IdLists.allProcessedDocs();
 		
 		final int BATCH_SIZE = 100;
  		final Thread doc_scan_thread[] = new Thread[Runtime.getRuntime().availableProcessors()];
 		for(int i = 0; i < doc_scan_thread.length; ++i) {
 			doc_scan_thread[i] = new Thread() {
 				public void run() {
-					Connection conn = SQL.open();
+					Connection conn = SQL.forThread();
 					int current_batch_partial = 0;
 					try {
 						LemmaHits lh = new LemmaHits(conn);

@@ -10,9 +10,11 @@ import vis.data.model.RawDoc;
 import vis.data.model.RawEntity;
 import vis.data.model.RawLemma;
 import vis.data.model.RawWord;
+import vis.data.util.SQL;
 
 public class IdLists {
-	public static int[] all(Connection conn, String table, String field) {
+	public static int[] all(String table, String field) {
+		Connection conn = SQL.forThread();
 		int[] ids;
 		try {
 			Statement st = conn.createStatement();
@@ -40,22 +42,22 @@ public class IdLists {
 			throw new RuntimeException("failed to load list of " + table, e);
 		}
 	}
-	public static int[] allCoreferencedDocuments(Connection conn) {
-		return all(conn, DocCoref.TABLE, DocCoref.DOC_ID);
+	public static int[] allCoreferencedDocuments() {
+		return all(DocCoref.TABLE, DocCoref.DOC_ID);
 	}
-	public static int[] allDocs(Connection conn) {
-		return all(conn, RawDoc.TABLE, RawDoc.ID);
+	public static int[] allDocs() {
+		return all(RawDoc.TABLE, RawDoc.ID);
 	}
-	public static int[] allProcessedDocs(Connection conn) {
-		return all(conn, DocLemma.TABLE, DocLemma.DOC_ID);
+	public static int[] allProcessedDocs() {
+		return all(DocLemma.TABLE, DocLemma.DOC_ID);
 	}
-	public static int[] allLemmas(Connection conn) {
-		return all(conn, RawLemma.TABLE, RawLemma.ID);
+	public static int[] allLemmas() {
+		return all(RawLemma.TABLE, RawLemma.ID);
 	}
-	public static int[] allWords(Connection conn) {
-		return all(conn, RawWord.TABLE, RawWord.ID);
+	public static int[] allWords() {
+		return all(RawWord.TABLE, RawWord.ID);
 	}
-	public static int[] allEntities(Connection conn) {
-		return all(conn, RawEntity.TABLE, RawEntity.ID);
+	public static int[] allEntities() {
+		return all(RawEntity.TABLE, RawEntity.ID);
 	}
 }

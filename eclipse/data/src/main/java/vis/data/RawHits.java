@@ -31,7 +31,7 @@ public class RawHits {
 		final int BATCH_SIZE = 1000;
 		final Thread doc_scan_thread = new Thread() {
 			public void run() {
-				Connection conn = SQL.open();
+				Connection conn = SQL.forThread();
 				try {
 					Statement st = null;
 					//TODO: better to split slice this across a few threads because it is the bottleneck
@@ -120,7 +120,7 @@ public class RawHits {
 		}
 		Thread mysql_thread = new Thread() {
 			public void run() {
-				Connection conn = SQL.open();
+				Connection conn = SQL.forThread();
 				
 				int current_batch_partial = 0;
 				int batch = 0;

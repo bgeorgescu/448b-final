@@ -10,10 +10,12 @@ import java.sql.SQLException;
 import vis.data.model.DocCoref;
 import vis.data.model.RawEntity;
 import vis.data.model.RawLemma;
+import vis.data.util.SQL;
 
 public class LemmaEntityCorefs {
 	PreparedStatement query_;
-	public LemmaEntityCorefs(Connection conn) throws SQLException {
+	public LemmaEntityCorefs() throws SQLException {
+		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + DocCoref.COREF_LIST + " FROM " + DocCoref.TABLE + " WHERE " + DocCoref.DOC_ID + " = ?");
 	}
 	public static enum PhraseType {

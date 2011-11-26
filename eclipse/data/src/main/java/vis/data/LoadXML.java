@@ -194,7 +194,7 @@ public class LoadXML {
 		final String TABLE_NAME = RawDoc.class.getAnnotation(Table.class).name();
 		Thread mysql_thread = new Thread(){
 			public void run() {
-				Connection conn = SQL.open();
+				Connection conn = SQL.forThread();
 				int current_batch_partial = 0;
 				int batch = 0;
 				PreparedStatement insert = null;

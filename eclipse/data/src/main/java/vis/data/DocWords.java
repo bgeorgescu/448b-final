@@ -30,10 +30,10 @@ public class DocWords {
 		ExceptionHandler.terminateOnUncaught();
 		Date start = new Date();
 		
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 
 		//first load all the document ids
-		final int[] all_doc_ids = IdLists.allDocs(conn);
+		final int[] all_doc_ids = IdLists.allDocs();
 		
 		try {
 			SQL.createTable(conn, DocWord.class);
@@ -49,7 +49,7 @@ public class DocWords {
 		for(int i = 0; i < doc_scan_thread.length; ++i) {
 			doc_scan_thread[i] = new Thread() {
 				public void run() {
-					Connection conn = SQL.open();
+					Connection conn = SQL.forThread();
 					try {
 						PreparedStatement query_fulltext = conn.prepareStatement("SELECT " + RawDoc.FULL_TEXT + " FROM " + RawDoc.TABLE + " WHERE " + RawDoc.ID + " = ?");
 
@@ -157,7 +157,7 @@ public class DocWords {
 		}
 		Thread mysql_thread = new Thread() {
 			public void run() {
-				Connection conn = SQL.open();
+				Connection conn = SQL.forThread();
 				
 				int current_batch_partial = 0;
 				int batch = 0;

@@ -20,6 +20,7 @@ public class EntityCache {
 	private ConcurrentHashMap<Pair<String, String>, Integer> mapping_ = new ConcurrentHashMap<Pair<String, String>, Integer>();
 	private PreparedStatement insert_;
 	private int maxId_ = 0;
+	//this has ites own connection which they handle synchronization because it does insertion on whatever thread happens to call
 	private Connection conn_;
 	private EntityCache(Connection conn){
 		conn_ = conn;
@@ -59,7 +60,7 @@ public class EntityCache {
 	public static synchronized EntityCache getInstance() {
 		if(g_instance != null)
 			return g_instance;
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 		try {
 			SQL.createTable(conn, RawEntity.class);
 		} catch(SQLException e) {

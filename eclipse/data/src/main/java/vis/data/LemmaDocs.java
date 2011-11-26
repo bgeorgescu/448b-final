@@ -33,11 +33,11 @@ public class LemmaDocs {
 		ExceptionHandler.terminateOnUncaught();
 		Date start = new Date();
 		
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 
 		//first load all the document ids and lemma ids
-		final int[] all_doc_ids = IdLists.allProcessedDocs(conn);
-		final int[] all_lemma_ids = IdLists.allLemmas(conn);
+		final int[] all_doc_ids = IdLists.allProcessedDocs();
+		final int[] all_lemma_ids = IdLists.allLemmas();
 
 		class PartialDocLemmaHitsCounts {
 			TIntArrayList docId_ = new TIntArrayList();
@@ -62,7 +62,7 @@ public class LemmaDocs {
 		for(int i = 0; i < doc_scan_thread.length; ++i) {
 			doc_scan_thread[i] = new Thread() {
 				public void run() {
-					Connection conn = SQL.open();
+					Connection conn = SQL.forThread();
 					try {
 						LemmaHits lh = new LemmaHits(conn);
 						PreparedStatement query_lemma_list = conn.prepareStatement("SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
@@ -176,7 +176,7 @@ public class LemmaDocs {
 		for(int i = 0; i < mysql_threads.length; ++i) {
 			mysql_threads[i] = new Thread() {
 				public void run() {
-					Connection conn = SQL.open();
+					Connection conn = SQL.forThread();
 					
 					int current_batch_partial = 0;
 					try {

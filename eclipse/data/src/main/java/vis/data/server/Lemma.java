@@ -17,17 +17,22 @@ public class Lemma {
 	public static class LemmasForWord {
 		@GET
 		@Produces("application/json")
-		public RawLemma[] get(@PathParam("word") String word){
+		public RawLemma[] get(@PathParam("word") String word) throws SQLException {
 			//TODO: actually stem the word	
-			Connection conn = SQL.open();
-			try {
-				LemmaRaw lr = new LemmaRaw(conn);
-				return lr.lookupLemma(word);
-			} catch (SQLException e) {
-				throw new RuntimeException("sql fail", e);
-			} finally {
-				try { conn.close(); } catch (SQLException e) {}
-			}
+			Connection conn = SQL.forThread();
+			LemmaRaw lr = new LemmaRaw(conn);
+			return lr.lookupLemma(word);
+		}
+	}
+	@Path("/word/{word}/pos/{pos}/lemma")
+	public static class LemmasForWordAndPos {
+		@GET
+		@Produces("application/json")
+		public RawLemma get(@PathParam("word") String word, @PathParam("pos") String pos) throws SQLException {
+			//TODO: actually stem the word	
+			Connection conn = SQL.forThread();
+			LemmaRaw lr = new LemmaRaw(conn);
+			return lr.lookupLemma(word, pos);
 		}
 	}
 }

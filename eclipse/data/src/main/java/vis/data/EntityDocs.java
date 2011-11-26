@@ -33,11 +33,11 @@ public class EntityDocs {
 		ExceptionHandler.terminateOnUncaught();
 		Date start = new Date();
 		
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 
 		//first load all the document ids and entity ids
-		final int[] all_doc_ids = IdLists.allProcessedDocs(conn);
-		final int[] all_entity_ids = IdLists.allEntities(conn);
+		final int[] all_doc_ids = IdLists.allProcessedDocs();
+		final int[] all_entity_ids = IdLists.allEntities();
 
 		class PartialDocEntityHitsCounts {
 			TIntArrayList docId_ = new TIntArrayList();
@@ -62,7 +62,7 @@ public class EntityDocs {
 		for(int i = 0; i < doc_scan_thread.length; ++i) {
 			doc_scan_thread[i] = new Thread() {
 				public void run() {
-					Connection conn = SQL.open();
+					Connection conn = SQL.forThread();
 					try {
 						EntityHits lh = new EntityHits(conn);
 						PreparedStatement query_entity_list = conn.prepareStatement("SELECT " + DocLemma.ENTITY_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
@@ -176,7 +176,7 @@ public class EntityDocs {
 		for(int i = 0; i < mysql_threads.length; ++i) {
 			mysql_threads[i] = new Thread() {
 				public void run() {
-					Connection conn = SQL.open();
+					Connection conn = SQL.forThread();
 					
 					int current_batch_partial = 0;
 					try {

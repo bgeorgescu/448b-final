@@ -15,10 +15,10 @@ import vis.data.util.SQL;
 public class DumpCoreferences {
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
-		Connection conn = SQL.open();
+		Connection conn = SQL.forThread();
 		try {
-			int[] all_corefed = IdLists.allCoreferencedDocuments(conn);
-			LemmaEntityCorefs lec = new LemmaEntityCorefs(conn);
+			int[] all_corefed = IdLists.allCoreferencedDocuments();
+			LemmaEntityCorefs lec = new LemmaEntityCorefs();
 			DocRaw dr = new DocRaw(conn);
 			//note this is not particularly efficient because these do not cache
 			EntityRaw er = new EntityRaw(conn);

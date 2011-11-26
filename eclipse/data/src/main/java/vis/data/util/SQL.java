@@ -1,5 +1,6 @@
 package vis.data.util;
 
+import java.io.IOException;
 import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -13,6 +14,12 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource;
 
@@ -96,12 +103,49 @@ public class SQL {
 		cpds.setUrl("jdbc:mysql://127.0.0.1/vis");
 	}
 
-	public static Connection open() {
+	static Connection open() {
 		try {
 			return cpds.getConnection();
 		} catch (SQLException e) {
 			System.err.println ("Cannot connect to database server");
 			throw new RuntimeException("Sql connection failed", e);
 		}
+	}
+	final static ThreadLocal<Connection> tlc = new ThreadLocal<>();
+	public static Connection forThread() {
+		Connection for_thread = tlc.get();
+		if(for_thread == null) {
+			for_thread = open();
+		}
+		return for_thread;
+	}
+	public static class SQLCloseFilter implements Filter {
+
+		@Override
+		public void destroy() {
+		}
+
+		@Override
+		public void doFilter(ServletRequest req, ServletResponse resp,
+				FilterChain chain) throws IOException, ServletException {
+			try {
+				chain.doFilter(req, resp);
+			} catch(Throwable t) {
+				throw t;
+			} finally {
+				Connection conn = tlc.get();
+				if(conn != null)
+					try {
+						conn.close();
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+			}
+		}
+
+		@Override
+		public void init(FilterConfig arg0) throws ServletException {
+		}
+		
 	}
 }
