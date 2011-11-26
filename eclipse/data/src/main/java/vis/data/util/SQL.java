@@ -2,7 +2,6 @@ package vis.data.util;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Iterator;
@@ -14,6 +13,8 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+
+import com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource;
 
 public class SQL {
 
@@ -88,24 +89,17 @@ public class SQL {
 		}
 		
 	}
+	final static MysqlConnectionPoolDataSource cpds = new MysqlConnectionPoolDataSource();
+	static {
+		cpds.setUser("vis");
+		cpds.setPassword("vis");
+		cpds.setUrl("jdbc:mysql://127.0.0.1/vis");
+	}
 
 	public static Connection open() {
-		Connection conn = null;
-		try
-		{
-			System.out.println ("Trying to connect to database");
-			String userName = "vis";
-			String password = "vis";
-			String url = "jdbc:mysql://localhost/vis";
-			Class.forName ("com.mysql.jdbc.Driver").newInstance ();
-			conn = DriverManager.getConnection (url, userName, password);
-			if(conn == null)
-				throw new RuntimeException("unknown sql connection creation returned null");
-			System.out.println ("Database connection established");
-			return conn;
-		}
-		catch (Exception e)
-		{
+		try {
+			return cpds.getConnection();
+		} catch (SQLException e) {
 			System.err.println ("Cannot connect to database server");
 			throw new RuntimeException("Sql connection failed", e);
 		}
