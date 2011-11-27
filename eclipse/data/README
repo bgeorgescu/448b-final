@@ -1,0 +1,7 @@
+This is the code for the query engine for our newspaper dataset project.
+
+Process the data 
+mvn exec:java -Dexec.mainClass="vis.data.All" [-Dexec.args="PATH_TO_XML_FILES"]
+
+Run the server with
+mvn exec:java -Dexec.mainClass="vis.data.server.Launcher"

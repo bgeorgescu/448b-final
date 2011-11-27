@@ -13,7 +13,7 @@ import vis.data.model.meta.LemmaRaw;
 import vis.data.util.SQL;
 
 public class Lemma {
-	@Path("/word/{word}/lemma")
+	@Path("/api/word/{word}/lemma")
 	public static class LemmasForWord {
 		@GET
 		@Produces("application/json")
@@ -24,7 +24,7 @@ public class Lemma {
 			return lr.lookupLemmaByWord(word);
 		}
 	}
-	@Path("/pos/{pos}/lemma")
+	@Path("/api/pos/{pos}/lemma")
 	public static class LemmasForPos {
 		@GET
 		@Produces("application/json")
@@ -35,7 +35,7 @@ public class Lemma {
 			return lr.lookupLemmaByPos(pos);
 		}
 	}
-	@Path("/word/{word}/pos/{pos}/lemma")
+	@Path("/api/word/{word}/pos/{pos}/lemma")
 	public static class LemmasForWordAndPos {
 		@GET
 		@Produces("application/json")

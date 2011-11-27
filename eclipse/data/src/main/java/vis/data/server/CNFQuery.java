@@ -24,7 +24,7 @@ public class CNFQuery {
 	}
 	
 	
-	@Path("/query/doc")
+	@Path("/api/query/doc")
 	public static class MatchingDocs {
 		@POST
 		@Consumes("application/json")
