@@ -1,10 +1,17 @@
 package vis.data.server;
 
 import java.io.File;
+import java.net.URI;
 import java.util.EnumSet;
 
 import javax.servlet.DispatcherType;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.Response;
 
+import org.eclipse.jetty.rewrite.handler.RewriteHandler;
+import org.eclipse.jetty.rewrite.handler.RewriteRegexRule;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.FilterHolder;
@@ -16,6 +23,14 @@ import vis.data.util.SQL.SQLCloseFilter;
 import com.sun.jersey.spi.container.servlet.ServletContainer;
 
 public class Launcher {
+	
+//	@Path("/$")
+//	public static class Root {
+//		@GET
+//		public void redirect() {
+//			throw new WebApplicationException(Response.seeOther(URI.create("/index.html")).build());
+//		}
+//	}
 
 	public static void main(String[] args) {
 		ServletHolder sh = new ServletHolder(ServletContainer.class);
@@ -29,25 +44,37 @@ public class Launcher {
 
 		ServletHolder ssh = new ServletHolder(DefaultServlet.class);
 
-		Server server = new Server(8080);
+        Server server = new Server(8080);
 		ServletContextHandler root = new ServletContextHandler(ServletContextHandler.SESSIONS);
 		root.setContextPath("/");
 		root.setResourceBase(new File(".").getAbsolutePath());
 		//make the default page go to the top level thing
 		root.setWelcomeFiles(new String[] { "index.html" } );
-		server.setHandler(root);
+
 		//clean up sql automatically
-		root.addFilter(fh, "/api/*", fd);
-		root.addFilter(fh, "/heartbeat/*", fd);
+		root.addFilter(fh, "/", fd);
 		//map api
-		root.addServlet(sh, "/api/*");
+		root.addServlet(sh, "/");
 		//add static content path
-		root.addServlet(ssh, "/");
 		root.addServlet(ssh, "/index.html");
+		root.addServlet(ssh, "/images/*");
 		root.addServlet(ssh, "/html/*");
 		root.addServlet(ssh, "/css/*");
 		root.addServlet(ssh, "/js/*");
+
 		
+		//add redirects for the root
+		RewriteHandler rh = new RewriteHandler(); 
+		rh.setRewriteRequestURI(true); 
+		rh.setRewritePathInfo(false); 
+		rh.setOriginalPathAttribute("requestedPath"); 
+		RewriteRegexRule rule = new RewriteRegexRule(); 
+		rule.setRegex("/"); 
+		rule.setReplacement("/index.html"); 
+		rh.addRule(rule); 
+		rh.setHandler(root); 
+		server.setHandler(rh);         
+
 		try {
 			server.start();
 		} catch (Exception e) {
