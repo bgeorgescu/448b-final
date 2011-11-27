@@ -10,12 +10,13 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
+import vis.data.model.RawLemma;
 import vis.data.model.query.LemmaFilterTerm;
 import vis.data.model.query.Term.Filter;
 
 public class CNFQuery {
 	public static class Term {
-		public LemmaFilterTerm.Parameters lemmas_;
+		public RawLemma lemma_;
 		//public EntityFilterTerm.Parameters entities_;
 	}
 	public static class Conjunction {
@@ -31,7 +32,7 @@ public class CNFQuery {
 		public int[] post(Conjunction conj) throws SQLException {
 			ArrayList<Filter> filters = new ArrayList<>(conj.terms_.length * 2);
 			for(int i = 0; i < conj.terms_.length; ++i) {
-				filters.add(new LemmaFilterTerm(conj.terms_[i].lemmas_));
+				filters.add(new LemmaFilterTerm(conj.terms_[i].lemma_));
 			}
 			//put them in reverse order so that we get the fastest removal of items
 			Collections.sort(filters, new Comparator<Filter>() {

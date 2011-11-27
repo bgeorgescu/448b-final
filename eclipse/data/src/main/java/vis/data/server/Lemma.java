@@ -21,7 +21,18 @@ public class Lemma {
 			//TODO: actually stem the word	
 			Connection conn = SQL.forThread();
 			LemmaRaw lr = new LemmaRaw(conn);
-			return lr.lookupLemma(word);
+			return lr.lookupLemmaByWord(word);
+		}
+	}
+	@Path("/pos/{pos}/lemma")
+	public static class LemmasForPos {
+		@GET
+		@Produces("application/json")
+		public RawLemma[] get(@PathParam("pos") String pos) throws SQLException {
+			//TODO: actually stem the word	
+			Connection conn = SQL.forThread();
+			LemmaRaw lr = new LemmaRaw(conn);
+			return lr.lookupLemmaByPos(pos);
 		}
 	}
 	@Path("/word/{word}/pos/{pos}/lemma")

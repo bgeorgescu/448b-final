@@ -9,11 +9,12 @@ import java.util.ArrayList;
 import vis.data.model.RawLemma;
 
 public class LemmaRaw {
-	PreparedStatement query_, queryByWord_, queryByLemma_;
+	PreparedStatement query_, queryByWord_, queryByLemma_, queryByPos_;
 	public LemmaRaw(Connection conn) throws SQLException {
 		query_ = conn.prepareStatement("SELECT " + RawLemma.LEMMA + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.ID + " = ?");
 		queryByWord_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.LEMMA + " = ?");
 		queryByLemma_ = conn.prepareStatement("SELECT " + RawLemma.ID + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.LEMMA + " = ? AND " + RawLemma.POS + " = ?");
+		queryByPos_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.LEMMA + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.POS + " = ?");
 	}
 	public RawLemma getLemma(int lemma_id) throws SQLException {
 		query_.setInt(1, lemma_id);
@@ -31,7 +32,7 @@ public class LemmaRaw {
 			rs.close();
 		}
 	}
-	public RawLemma[] lookupLemma(String word) throws SQLException {
+	public RawLemma[] lookupLemmaByWord(String word) throws SQLException {
 		word = word.toLowerCase();
 		queryByWord_.setString(1, word);
 		ResultSet rs = queryByWord_.executeQuery();
@@ -45,6 +46,27 @@ public class LemmaRaw {
 				rl.id_ =  rs.getInt(1);
 				rl.lemma_ = word;
 				rl.pos_ = rs.getString(2);
+				hits.add(rl);
+			} while(rs.next());
+			return hits.toArray(new RawLemma[hits.size()]);
+		} finally {
+			rs.close();
+		}
+	}
+	public RawLemma[] lookupLemmaByPos(String pos) throws SQLException {
+		pos = pos.toUpperCase();
+		queryByPos_.setString(1, pos);
+		ResultSet rs = queryByPos_.executeQuery();
+		try {
+			if(!rs.next())
+				return new RawLemma[0];
+			
+			ArrayList<RawLemma> hits = new ArrayList<>(32);
+			do {
+				RawLemma rl = new RawLemma();
+				rl.id_ =  rs.getInt(1);
+				rl.lemma_ = rs.getString(2);
+				rl.pos_ = pos;
 				hits.add(rl);
 			} while(rs.next());
 			return hits.toArray(new RawLemma[hits.size()]);

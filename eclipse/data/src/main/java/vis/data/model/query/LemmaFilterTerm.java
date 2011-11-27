@@ -16,60 +16,37 @@ public class LemmaFilterTerm extends Term.Filter {
 	Pair<String, String> f;
 	DocLemmaHits dlh = new DocLemmaHits();
 	
-	public static class Lemma {
-		public String word_;
-		public String pos_;
-	}
-
-	public static class Parameters {
-		public Lemma lemmas_[];
-		public int lemmaIds_[];
-	}
-	
 	public final int[] lemmas_;
-	public LemmaFilterTerm(Parameters p) throws SQLException {
-		if(p.lemmaIds_ != null) {
-			lemmas_ = p.lemmaIds_;
-		} else if (p.lemmas_ != null){
+	public LemmaFilterTerm(RawLemma p) throws SQLException {
+		if(p.id_ != 0) {
+			lemmas_ = new int[1];
+			lemmas_[0] = p.id_;
+		} else if (p.lemma_ != null || p.pos_ != null){
 			Connection conn = SQL.forThread();
 			LemmaRaw lr = new LemmaRaw(conn);
-			int[] lemmas = null;
-			for(Lemma l : p.lemmas_) {
-				if(lemmas != null && lemmas.length == 0)
-					break;
-				int[] ids = null;					
-				if(l.pos_ == null && l.word_ != null) {
-					RawLemma[] rls = lr.lookupLemma(l.word_);
-					if(rls == null) {
-						ids = new int[0];
-					} else {
-						ids = new int[rls.length];
-						for(int i = 0; i < ids.length; ++i) {
-							ids[i] = rls[i].id_;
-						}
-					}
-				}
-				if(l.pos_ != null && l.word_ != null) {
-					RawLemma rl = lr.lookupLemma(l.word_, l.pos_);
-					if(rl == null) {
-						ids = new int[0];
-					} else {
-						ids = new int[1];
-						ids[0] = rl.id_;
-					}
-					
-				}
-				if(ids == null)
-					throw new RuntimeException("incomplete lemma term");
-				//may not come back from the db sorted
-				Arrays.sort(ids);
-				if(lemmas == null) {
-					lemmas = ids;
+			RawLemma rls[] = null;
+			if(p.lemma_ != null && p.pos_ != null) {
+				RawLemma rl = lr.lookupLemma(p.lemma_, p.pos_);
+				if(rl == null) {
+					rls = new RawLemma[0];
 				} else {
-					lemmas = SetAggregator.and(lemmas, ids);
+					rls = new RawLemma[1];
+					rls[0] = rl; 
 				}
-			}				
-			lemmas_ = lemmas;
+			} else if(p.lemma_ != null) {
+				rls = lr.lookupLemmaByWord(p.lemma_);
+			} else if(p.pos_ != null) {
+				rls = lr.lookupLemmaByPos(p.pos_);
+			} else {
+				throw new RuntimeException("incomplete lemma term");
+			}
+			
+			int[] ids = new int[rls.length];
+			for(int i = 0; i < ids.length; ++i) {
+				ids[i] = rls[i].id_;
+			}
+			Arrays.sort(ids);
+			lemmas_ = ids;
 		} else {
 			throw new RuntimeException("failed setting up LemmaTerm");
 		}
@@ -88,7 +65,7 @@ public class LemmaFilterTerm extends Term.Filter {
 			if(docs == null)
 				docs = partial_docs;
 			else 
-				docs = SetAggregator.and(docs, partial_docs);
+				docs = SetAggregator.or(docs, partial_docs);
 		}
 		if(items == null)
 			return docs;
