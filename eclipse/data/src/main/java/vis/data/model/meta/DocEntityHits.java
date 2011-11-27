@@ -19,8 +19,9 @@ public class DocEntityHits {
 		query_.setInt(1, entity_id);
 		ResultSet rs = query_.executeQuery();
 		try {
-			if(!rs.next())
-				throw new RuntimeException("failed to find lemma_id " + entity_id);
+			if(!rs.next()) {
+				return new int[0];
+			}
 			
 			byte[] data = rs.getBytes(1);
 			int[] doc_ids = new int[data.length / (Integer.SIZE / 8) / 2];
@@ -50,8 +51,11 @@ public class DocEntityHits {
 		query_.setInt(1, entity_id);
 		ResultSet rs = query_.executeQuery();
 		try {
-			if(!rs.next())
-				throw new RuntimeException("failed to find doc_id " + entity_id);
+			if(!rs.next()) {
+				c.count_ = new int[0];
+				c.docId_ = new int[0];
+				return c;
+			}
 			
 			byte[] data = rs.getBytes(1);
 			int num = data.length / (Integer.SIZE / 8) / 2;

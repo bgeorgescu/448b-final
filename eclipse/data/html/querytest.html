@@ -3,11 +3,33 @@
   <head>
     <title>Query Test</title>
     <script type="text/javascript" src="/js/query.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/global.css" type="text/css" />
   </head>
   <body>
     <h1>Query Test</h1>
     <script type="text/javascript">
+        function report(query, code, result, duration) {
+            $("<div/>")
+                .text("query for " + query)
+                .appendTo("body");
+            if(!success(code)) {
+                $("<div/>")
+                    .html(result)
+                    .css("color", "red")
+                    .appendTo("body");
+            } else {
+                $("<div/>")
+                    .text("Success " + code + " in " + duration + "ms")
+                    .appendTo("body");
+                $("<div/>")
+                    .text(JSON.stringify(result))
+                    .appendTo("body");
+            }
+        }
+        getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
+        getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
+        getDocumentsForMultipleLemmas(["dog", "cat"], function(c,r,d){report("cat,dog",c,r,d);});
     </script>
   </body>
 </html>

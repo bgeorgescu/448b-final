@@ -41,8 +41,12 @@ public class CNFQuery {
 		return new LemmaAggregateTerm(t.lemma_);
 	};
 	static ArrayList<Filter>[] filterPipeline(Conjunction conj) throws SQLException {
+		if(conj.terms_ == null || conj.terms_.length == 0) {
+			throw new RuntimeException("missing filter terms");
+		}
 		ArrayList<Filter> pipeline[] = new ArrayList[conj.terms_.length];
 		for(int i = 0; i < conj.terms_.length; ++i) {
+			pipeline[i] = new ArrayList<Filter>();
 			for(int j = 0; j < conj.terms_[i].length; ++j) {
 				pipeline[i].add(filterFor(conj.terms_[i][j]));
 			}
@@ -54,6 +58,9 @@ public class CNFQuery {
 
 	
 	static Aggregate[][] aggregatePipeline(Conjunction conj) throws SQLException {
+		if(conj.terms_ == null || conj.terms_.length == 0) {
+			throw new RuntimeException("missing aggregate terms");
+		}
 		Aggregate pipeline[][] = new Aggregate[conj.terms_.length][];
 		for(int i = 0; i < conj.terms_.length; ++i) {
 			pipeline[i] = new Aggregate[conj.terms_[i].length];
@@ -73,9 +80,6 @@ public class CNFQuery {
 		public int[] filterDocs(Conjunction conj) throws SQLException {
 			ArrayList<Filter>[] pipeline = filterPipeline(conj);
 
-			if(pipeline.length == 0) {
-				throw new RuntimeException("no query terms");
-			}
 			int[] docs = null;
 			for(int i = 0; i < pipeline.length; ++i) {
 				int[] partial_docs = null;
@@ -85,7 +89,7 @@ public class CNFQuery {
 				if(docs == null) {
 					docs = partial_docs;
 				} else {
-					SetAggregator.or(docs, partial_docs);
+					docs = SetAggregator.or(docs, partial_docs);
 				}
 			}
 			return docs;
@@ -99,13 +103,16 @@ public class CNFQuery {
 		public int docs[][][];
 		public int counts[][][];
 	}
-	@Path("/api/evaluate/clause")
+	@Path("/api/evaluate/clauses")
 	public static class EvaluateClauses {
 		FilterDocs md = new FilterDocs();
 		@POST
 		@Consumes("application/json")
 		@Produces("application/json")
 		public ClauseResults evaluateClauses(Aggregations aggr) throws SQLException {
+			if(aggr.buckets_ == null || aggr.buckets_.length == 0) {
+				throw new RuntimeException("missing buckets for aggregation");
+			}
 			//TODO: merge filter terms with the aggregation terms (but flag them for not participating in the counts)
 			//first do the filter part
 			int base_docs[] = md.filterDocs(aggr.filter_);

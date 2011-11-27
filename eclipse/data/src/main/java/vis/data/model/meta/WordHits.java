@@ -18,8 +18,9 @@ public class WordHits {
 		query_.setInt(1, doc_id);
 		ResultSet rs = query_.executeQuery();
 		try {
-			if(!rs.next())
-				throw new RuntimeException("failed to find doc_id " + doc_id);
+			if(!rs.next()) {
+				return new int[0];
+			}
 			
 			byte[] data = rs.getBytes(1);
 			int[] word_ids = new int[data.length / (Integer.SIZE / 8) / 2];
@@ -44,8 +45,11 @@ public class WordHits {
 		query_.setInt(1, doc_id);
 		ResultSet rs = query_.executeQuery();
 		try {
-			if(!rs.next())
-				throw new RuntimeException("failed to find doc_id " + doc_id);
+			if(!rs.next()) {
+				c.count_ = new int[0];
+				c.wordId_ = new int[0];
+				return c;
+			}
 			
 			byte[] data = rs.getBytes(1);
 			int num = data.length / (Integer.SIZE / 8) / 2;

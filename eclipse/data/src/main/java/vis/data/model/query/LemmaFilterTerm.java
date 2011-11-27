@@ -53,13 +53,12 @@ public class LemmaFilterTerm extends Term.Filter {
 
 	@Override
 	public int[] filter(int[] items) throws SQLException {
-		int[] docs = null;
-		for(int lemma : lemmas_) {
-			int[] partial_docs = dlh.getDocs(lemma);
-			if(docs == null)
-				docs = partial_docs;
-			else 
-				docs = SetAggregator.or(docs, partial_docs);
+		if(lemmas_.length == 0)
+			return new int[0];
+		int[] docs = dlh.getDocs(lemmas_[0]);
+		for(int i = 1; i < lemmas_.length; ++i) {
+			int[] partial_docs = dlh.getDocs(lemmas_[i]);
+			docs = SetAggregator.or(docs, partial_docs);
 		}
 		if(items == null)
 			return docs;

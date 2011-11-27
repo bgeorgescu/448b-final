@@ -1,6 +1,8 @@
 package vis.data.server;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.ServerSocket;
 import java.util.EnumSet;
 
 import javax.servlet.DispatcherType;
@@ -38,6 +40,15 @@ public class Launcher {
 		EnumSet<DispatcherType> fd = EnumSet.of(DispatcherType.REQUEST);
 
 		ServletHolder ssh = new ServletHolder(DefaultServlet.class);
+		
+		final int PORT = 8080;
+		try {
+			//make sure the port is available,jetty won't
+			ServerSocket s = new ServerSocket(PORT);
+			s.close();
+		} catch (IOException e) {
+			throw new RuntimeException("port in use " + PORT);
+		}
 
         Server server = new Server(8080);
 		ServletContextHandler root = new ServletContextHandler(ServletContextHandler.SESSIONS);
@@ -50,6 +61,7 @@ public class Launcher {
 		root.addFilter(fh, "/", fd);
 		//map api
 		root.addServlet(sh, "/");
+		root.addServlet(sh, "/*");
 		//add static content path
 		root.addServlet(ssh, "/index.html");
 		root.addServlet(ssh, "/images/*");

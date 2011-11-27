@@ -56,19 +56,17 @@ public class LemmaAggregateTerm extends Term.Aggregate {
 	@Override
 	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
 			throws SQLException {
-		int[] docs = null;
-		int[] counts = null;
+		if(lemmas_.length == 0)
+			return Pair.of(new int[0], new int[0]);
+		DocLemmaHits.Counts initial = dlh.getDocCounts(lemmas_[0]);
+		int[] docs = initial.docId_;
+		int[] counts = initial.count_;
 		//TODO: absolutely must be cached if it is applied to multiple items
-		for(int lemma : lemmas_) {
-			DocLemmaHits.Counts partial = dlh.getDocCounts(lemma);
-			if(docs == null) {
-				docs = partial.docId_;
-				counts = partial.count_;
-			} else { 
-				Pair<int[], int[]> res = CountAggregator.or(docs, counts, partial.docId_, partial.count_);
-				docs = res.getKey();
-				counts = res.getValue();
-			}
+		for(int i = 1; i < lemmas_.length; ++i) {
+			DocLemmaHits.Counts partial = dlh.getDocCounts(lemmas_[1]);
+			Pair<int[], int[]> res = CountAggregator.or(docs, counts, partial.docId_, partial.count_);
+			docs = res.getKey();
+			counts = res.getValue();
 		}
 		if(in_docs == null)
 			return Pair.of(docs, counts);

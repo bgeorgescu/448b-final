@@ -20,7 +20,7 @@ public class DocLemmaHits {
 		ResultSet rs = query_.executeQuery();
 		try {
 			if(!rs.next())
-				throw new RuntimeException("failed to find lemma_id " + lemma_id);
+				return new int[0];
 			
 			byte[] data = rs.getBytes(1);
 			int[] doc_ids = new int[data.length / (Integer.SIZE / 8) / 2];
@@ -45,8 +45,11 @@ public class DocLemmaHits {
 		query_.setInt(1, lemma_id);
 		ResultSet rs = query_.executeQuery();
 		try {
-			if(!rs.next())
-				throw new RuntimeException("failed to find doc_id " + lemma_id);
+			if(!rs.next()) {
+				c.count_ = new int[0];
+				c.docId_ = new int[0];
+				return c;
+			}
 			
 			byte[] data = rs.getBytes(1);
 			int num = data.length / (Integer.SIZE / 8) / 2;
