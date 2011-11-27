@@ -8,6 +8,7 @@ import org.apache.commons.lang3.tuple.Pair;
 
 public class CountAggregator {
 	public static void sort(int a[], int a_count[]) {
+		assert(a.length == a_count.length);
 		TreeMap<Integer, Integer> v = new TreeMap<Integer, Integer>();
 		for(int i = 0; i < a.length; ++i) {
 			v.put(a[i], a_count[i]);
@@ -20,6 +21,7 @@ public class CountAggregator {
 		}
 	}	
 	public static Pair<int[], int[]> remove(int a[], int a_count[], int[] f) {
+		assert(a.length == a_count.length);
 		int max_size = a.length;
 		int c[] = new int[max_size];
 		int c_count[] = new int[max_size];
@@ -44,6 +46,7 @@ public class CountAggregator {
 		return Pair.of(c, c_count);
 	}
 	public static Pair<int[], int[]> filter(int a[], int a_count[], int[] f) {
+		assert(a.length == a_count.length);
 		int max_size = a.length;
 		int c[] = new int[max_size];
 		int c_count[] = new int[max_size];
@@ -66,6 +69,8 @@ public class CountAggregator {
 		return Pair.of(c, c_count);
 	}
 	public static Pair<int[], int[]> or(int a[], int a_count[], int b[], int b_count[]) {
+		assert(a.length == a_count.length);
+		assert(b.length == b_count.length);
 		int max_size = a.length + b.length;
 		int c[] = new int[max_size];
 		int c_count[] = new int[max_size];
@@ -79,7 +84,7 @@ public class CountAggregator {
 				c_count[k++] = a_count[i++];
 			} else {
 				c[k] = b[j];
-				c_count[k++] = b_count[i++];
+				c_count[k++] = b_count[j++];
 			}
 		}
 		while(i < a.length)
@@ -94,6 +99,8 @@ public class CountAggregator {
 		return Pair.of(c, c_count);
 	}
 	public static Pair<int[], int[]> and(int a[], int a_count[], int b[], int b_count[]) {
+		assert(a.length == a_count.length);
+		assert(b.length == b_count.length);
 		int max_size = Math.min(a.length, b.length);
 		int c[] = new int[max_size];
 		int c_count[] = new int[max_size];
