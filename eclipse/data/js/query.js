@@ -40,18 +40,33 @@ getDocumentsForLemmas = function(lemma, onResult) {
     xhr.send(JSON.stringify(query));
 }
 
-getDocumentsForMultipleLemmas = function(lemmas, onResult) {
+getDocumentsForAnyLemmas = function(lemmas, onResult) {
     var xhr = buildXHR("/api/filter/docs", onResult);
     var query = {
         terms_:[
             //add CNF clauses
         ],
     };
-    for(var lemma in lemmas) {
+    for(var i in lemmas) {
         query.terms_.push(
             [ //one CNF clause
-                {lemma_:{lemma_:lemma}},
+                {lemma_:{lemma_:lemmas[i]}},
             ]);
+    }
+    xhr.send(JSON.stringify(query));
+}
+getDocumentsForAllLemmas = function(lemmas, onResult) {
+    var xhr = buildXHR("/api/filter/docs", onResult);
+    var query = {
+        terms_:[
+            [ //one CNF clause
+            ],
+        ],
+    };
+    for(var i in lemmas) {
+        query.terms_[0].push(
+            {lemma_:{lemma_:lemmas[i]}}
+        );
     }
     xhr.send(JSON.stringify(query));
 }

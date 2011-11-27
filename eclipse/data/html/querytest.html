@@ -29,7 +29,8 @@
         }
         getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
-        getDocumentsForMultipleLemmas(["dog", "cat"], function(c,r,d){report("cat,dog",c,r,d);});
+        getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
+        getDocumentsForAnyLemmas(["dog", "cat"], function(c,r,d){report("cat,dog",c,r,d);});
     </script>
   </body>
 </html>

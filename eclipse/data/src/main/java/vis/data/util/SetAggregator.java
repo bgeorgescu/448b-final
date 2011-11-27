@@ -35,8 +35,12 @@ public class SetAggregator {
 		for(; i < a.length && j < b.length;) {
 			if(a[i] < b[j])
 				c[k++] = a[i++];
-			else
+			else if(a[i] > b[j]) {
 				c[k++] = b[j++];
+			} else {
+				c[k++] = a[i++];
+				j++;
+			}
 		}
 		while(i < a.length)
 			c[k++] = a[i++];
