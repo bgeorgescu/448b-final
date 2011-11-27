@@ -7,10 +7,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import vis.data.model.LemmaDoc;
+import vis.data.util.SQL;
 
 public class DocLemmaHits {
 	PreparedStatement query_;
-	public DocLemmaHits(Connection conn) throws SQLException {
+	public DocLemmaHits() throws SQLException {
+		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + LemmaDoc.DOC_LIST + " FROM " + LemmaDoc.TABLE + " WHERE " + LemmaDoc.LEMMA_ID + " = ?");
 	}
 	public int[] getDocs(int lemma_id) throws SQLException {

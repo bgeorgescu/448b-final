@@ -7,25 +7,26 @@ import java.util.Arrays;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawLemma;
+import vis.data.model.meta.DocLemmaHits;
 import vis.data.model.meta.LemmaRaw;
 import vis.data.util.SQL;
 import vis.data.util.SetAggregator;
 
 public class LemmaFilterTerm extends Term.Filter {
 	Pair<String, String> f;
+	DocLemmaHits dlh = new DocLemmaHits();
 	
 	public static class Lemma {
-		String word_;
-		String pos_;
+		public String word_;
+		public String pos_;
 	}
 
 	public static class Parameters {
-		Lemma lemmas_[];
-		int lemmaIds_[];
+		public Lemma lemmas_[];
+		public int lemmaIds_[];
 	}
 	
 	public final int[] lemmas_;
-	
 	public LemmaFilterTerm(Parameters p) throws SQLException {
 		if(p.lemmaIds_ != null) {
 			lemmas_ = p.lemmaIds_;
@@ -80,8 +81,19 @@ public class LemmaFilterTerm extends Term.Filter {
 	}
 
 	@Override
-	public int[] filter(int[] items) {
-		return SetAggregator.and(lemmas_, items);
+	public int[] filter(int[] items) throws SQLException {
+		int[] docs = null;
+		for(int lemma : lemmas_) {
+			int[] partial_docs = dlh.getDocs(lemma);
+			if(docs == null)
+				docs = partial_docs;
+			else 
+				docs = SetAggregator.and(docs, partial_docs);
+		}
+		if(items == null)
+			return docs;
+		else
+			return SetAggregator.and(docs, items);
 	}
 
 	@Override
@@ -94,10 +106,5 @@ public class LemmaFilterTerm extends Term.Filter {
 	@Override
 	public int hashCode() {
 		return Arrays.hashCode(lemmas_) ^ LemmaFilterTerm.class.hashCode();
-	}
-
-	@Override
-	public int[] prefilter(int[] items) {
-		return SetAggregator.and(lemmas_, items);
 	}
 }

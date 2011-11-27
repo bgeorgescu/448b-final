@@ -33,8 +33,8 @@ public class FixDocLemma {
 					Connection conn = SQL.forThread();
 					int current_batch_partial = 0;
 					try {
-						LemmaHits lh = new LemmaHits(conn);
-						EntityHits eh = new EntityHits(conn);
+						LemmaHits lh = new LemmaHits();
+						EntityHits eh = new EntityHits();
 						PreparedStatement update = conn.prepareStatement("UPDATE " + DocLemma.TABLE+ " SET " + DocLemma.LEMMA_LIST + " = ?, " + 
 								DocLemma.ENTITY_LIST + " = ? WHERE " + DocLemma.DOC_ID + " = ?");
 

@@ -64,7 +64,7 @@ public class EntityDocs {
 				public void run() {
 					Connection conn = SQL.forThread();
 					try {
-						EntityHits lh = new EntityHits(conn);
+						EntityHits lh = new EntityHits();
 						PreparedStatement query_entity_list = conn.prepareStatement("SELECT " + DocLemma.ENTITY_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 
 						for(;;) {

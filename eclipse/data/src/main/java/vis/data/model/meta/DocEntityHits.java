@@ -7,10 +7,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import vis.data.model.EntityDoc;
+import vis.data.util.SQL;
 
 public class DocEntityHits {
 	PreparedStatement query_;
-	public DocEntityHits(Connection conn) throws SQLException {
+	public DocEntityHits() throws SQLException {
+		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + EntityDoc.DOC_LIST + " FROM " + EntityDoc.TABLE + " WHERE " + EntityDoc.ENTITY_ID + " = ?");
 	}
 	public int[] getDocs(int entity_id) throws SQLException {

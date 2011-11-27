@@ -1,15 +1,12 @@
 package vis.data;
 
-import java.nio.ByteBuffer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -36,6 +33,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import gnu.trove.map.hash.TIntIntHashMap;
 
 //take the raw table and process each doc into a list of words that hit
 //insert those words into a worddoc table
@@ -136,8 +134,8 @@ public class DocLemmas {
 		for(int i = 0; i < processing_threads.length; ++i) {
 			processing_threads[i] = new Thread() {
 				public void run() {
-					HashMap<Integer, Integer> lemma_counts = new HashMap<Integer, Integer>();
-					HashMap<Integer, Integer> entity_counts = new HashMap<Integer, Integer>();
+					TIntIntHashMap lemma_counts = new TIntIntHashMap();
+					TIntIntHashMap entity_counts = new TIntIntHashMap();
 									    				    
 					for(;;) {
 						if(doc_to_process.isEmpty()) {
@@ -205,20 +203,18 @@ public class DocLemmas {
 			    				handleEntity(ec, last_ner, entity, entity_counts);
 					    	}
 					    }
-						ByteBuffer lemma_bb = ByteBuffer.allocate(lemma_counts.size() * 2 * Integer.SIZE / 8);
-						ByteBuffer entity_bb = ByteBuffer.allocate(entity_counts.size() * 2 * Integer.SIZE / 8);
-						for(Entry<Integer, Integer> entry : lemma_counts.entrySet()) {
-							lemma_bb.putInt(entry.getKey()); //lemma id
-							lemma_bb.putInt(entry.getValue()); //count
-						}
-						for(Entry<Integer, Integer> entry : entity_counts.entrySet()) {
-							entity_bb.putInt(entry.getKey()); //entity id
-							entity_bb.putInt(entry.getValue()); //count
-						}
 						DocLemma dl = new DocLemma();
 						dl.docId_ = doc.id_;
-						LemmaHits.pack(dl, doc.id_, lemma_counts);
-						EntityHits.pack(dl, doc.id_, entity_counts);
+						LemmaHits.Counts lc = new LemmaHits.Counts();
+						lc.docId_ = doc.id_;
+						lc.lemmaId_ = lemma_counts.keys();
+						lc.count_ = lemma_counts.values();
+						EntityHits.Counts ec = new EntityHits.Counts();
+						ec.docId_ = doc.id_;
+						ec.entityId_ = entity_counts.keys();
+						ec.count_ = entity_counts.values();
+						LemmaHits.pack(dl, lc);
+						EntityHits.pack(dl, ec);
 						try {
 							hits_to_record.put(dl);
 						} catch (InterruptedException e) {
@@ -310,7 +306,7 @@ public class DocLemmas {
 		}
 	}
 	private static void handleEntity(final EntityCache ec, String ne,
-			String entity, HashMap<Integer, Integer> entity_counts) {
+			String entity, TIntIntHashMap entity_counts) {
 		switch(ne) {
 		case "O":
 			break;

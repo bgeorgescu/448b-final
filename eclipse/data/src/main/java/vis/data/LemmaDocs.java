@@ -64,7 +64,7 @@ public class LemmaDocs {
 				public void run() {
 					Connection conn = SQL.forThread();
 					try {
-						LemmaHits lh = new LemmaHits(conn);
+						LemmaHits lh = new LemmaHits();
 						PreparedStatement query_lemma_list = conn.prepareStatement("SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 
 						for(;;) {
