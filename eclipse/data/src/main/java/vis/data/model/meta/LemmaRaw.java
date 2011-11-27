@@ -40,13 +40,13 @@ public class LemmaRaw {
 				return new RawLemma[0];
 			
 			ArrayList<RawLemma> hits = new ArrayList<>(32);
-			while(rs.next()) {
+			do {
 				RawLemma rl = new RawLemma();
 				rl.id_ =  rs.getInt(1);
 				rl.lemma_ = word;
 				rl.pos_ = rs.getString(2);
 				hits.add(rl);
-			}
+			} while(rs.next())
 			return hits.toArray(new RawLemma[hits.size()]);
 		} finally {
 			rs.close();
