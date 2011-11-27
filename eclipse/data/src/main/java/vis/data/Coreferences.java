@@ -72,7 +72,7 @@ public class Coreferences {
 				public void run() {
 					Connection conn = SQL.forThread();
 					try {
-						DocRaw dr = new DocRaw(conn);
+						DocRaw dr = new DocRaw();
 						for(;;) {
 							int doc_id = -1;
 							synchronized(doc_scan_thread) {
@@ -128,8 +128,8 @@ public class Coreferences {
 					Connection conn = SQL.forThread();
 					try {
 						//used for logging only
-						EntityRaw er = new EntityRaw(conn);
-						LemmaRaw lr = new LemmaRaw(conn);
+						EntityRaw er = new EntityRaw();
+						LemmaRaw lr = new LemmaRaw();
 						for(;;) {
 							if(doc_to_process.isEmpty()) {
 								boolean still_running = false;

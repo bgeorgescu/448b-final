@@ -19,10 +19,10 @@ public class DumpCoreferences {
 		try {
 			int[] all_corefed = IdLists.allCoreferencedDocuments();
 			LemmaEntityCorefs lec = new LemmaEntityCorefs();
-			DocRaw dr = new DocRaw(conn);
+			DocRaw dr = new DocRaw();
 			//note this is not particularly efficient because these do not cache
-			EntityRaw er = new EntityRaw(conn);
-			LemmaRaw lr = new LemmaRaw(conn);
+			EntityRaw er = new EntityRaw();
+			LemmaRaw lr = new LemmaRaw();
 			
 			for(int i : all_corefed) {
 				RawDoc rd = dr.getDocMeta(i);
@@ -30,6 +30,8 @@ public class DumpCoreferences {
 			}
 		} catch (SQLException e) {
 			throw new RuntimeException("sql error", e);
+		} finally {
+			try { conn.close(); } catch (SQLException e) {}
 		}
 
 	}

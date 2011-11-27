@@ -3,16 +3,18 @@ package vis.data.model.query;
 import java.sql.SQLException;
 import java.util.Arrays;
 
+import org.apache.commons.lang3.tuple.Pair;
+
 import vis.data.model.RawLemma;
 import vis.data.model.meta.DocLemmaHits;
 import vis.data.model.meta.LemmaRaw;
-import vis.data.util.SetAggregator;
+import vis.data.util.CountAggregator;
 
-public class LemmaFilterTerm extends Term.Filter {
+public class LemmaAggregateTerm extends Term.Aggregate {
 	DocLemmaHits dlh = new DocLemmaHits();
 	
 	public final int[] lemmas_;
-	public LemmaFilterTerm(RawLemma p) throws SQLException {
+	public LemmaAggregateTerm(RawLemma p) throws SQLException {
 		if(p.id_ != 0) {
 			lemmas_ = new int[1];
 			lemmas_[0] = p.id_;
@@ -52,20 +54,28 @@ public class LemmaFilterTerm extends Term.Filter {
 	}
 
 	@Override
-	public int[] filter(int[] items) throws SQLException {
+	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
+			throws SQLException {
 		int[] docs = null;
+		int[] counts = null;
+		//TODO: absolutely must be cached if it is applied to multiple items
 		for(int lemma : lemmas_) {
-			int[] partial_docs = dlh.getDocs(lemma);
-			if(docs == null)
-				docs = partial_docs;
-			else 
-				docs = SetAggregator.or(docs, partial_docs);
+			DocLemmaHits.Counts partial = dlh.getDocCounts(lemma);
+			if(docs == null) {
+				docs = partial.docId_;
+				counts = partial.count_;
+			} else { 
+				Pair<int[], int[]> res = CountAggregator.or(docs, counts, partial.docId_, partial.count_);
+				docs = res.getKey();
+				counts = res.getValue();
+			}
 		}
-		if(items == null)
-			return docs;
+		if(in_docs == null)
+			return Pair.of(docs, counts);
 		else
-			return SetAggregator.and(docs, items);
+			return CountAggregator.and(docs, counts, in_docs, in_counts);
 	}
+
 
 	@Override
 	public boolean equals(Object other) {
@@ -76,6 +86,6 @@ public class LemmaFilterTerm extends Term.Filter {
 	}
 	@Override
 	public int hashCode() {
-		return Arrays.hashCode(lemmas_) ^ LemmaFilterTerm.class.hashCode();
-	}
+		return Arrays.hashCode(lemmas_) ^ LemmaAggregateTerm.class.hashCode();
+	}	
 }

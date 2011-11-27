@@ -7,10 +7,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import vis.data.model.RawLemma;
+import vis.data.util.SQL;
 
 public class LemmaRaw {
 	PreparedStatement query_, queryByWord_, queryByLemma_, queryByPos_;
-	public LemmaRaw(Connection conn) throws SQLException {
+	public LemmaRaw() throws SQLException {
+		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + RawLemma.LEMMA + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.ID + " = ?");
 		queryByWord_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.LEMMA + " = ?");
 		queryByLemma_ = conn.prepareStatement("SELECT " + RawLemma.ID + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.LEMMA + " = ? AND " + RawLemma.POS + " = ?");

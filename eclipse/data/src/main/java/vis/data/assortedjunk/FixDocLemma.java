@@ -20,8 +20,6 @@ public class FixDocLemma {
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
 		
-		Connection conn = SQL.forThread();
-
 		//first load all the document ids and lemma ids
 		final int[] all_doc_ids = IdLists.allProcessedDocs();
 		

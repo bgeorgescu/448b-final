@@ -1,6 +1,5 @@
 package vis.data.server;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 import javax.ws.rs.GET;
@@ -10,7 +9,6 @@ import javax.ws.rs.Produces;
 
 import vis.data.model.RawLemma;
 import vis.data.model.meta.LemmaRaw;
-import vis.data.util.SQL;
 
 public class Lemma {
 	@Path("/api/word/{word}/lemma")
@@ -19,8 +17,7 @@ public class Lemma {
 		@Produces("application/json")
 		public RawLemma[] get(@PathParam("word") String word) throws SQLException {
 			//TODO: actually stem the word	
-			Connection conn = SQL.forThread();
-			LemmaRaw lr = new LemmaRaw(conn);
+			LemmaRaw lr = new LemmaRaw();
 			return lr.lookupLemmaByWord(word);
 		}
 	}
@@ -30,8 +27,7 @@ public class Lemma {
 		@Produces("application/json")
 		public RawLemma[] get(@PathParam("pos") String pos) throws SQLException {
 			//TODO: actually stem the word	
-			Connection conn = SQL.forThread();
-			LemmaRaw lr = new LemmaRaw(conn);
+			LemmaRaw lr = new LemmaRaw();
 			return lr.lookupLemmaByPos(pos);
 		}
 	}
@@ -41,8 +37,7 @@ public class Lemma {
 		@Produces("application/json")
 		public RawLemma get(@PathParam("word") String word, @PathParam("pos") String pos) throws SQLException {
 			//TODO: actually stem the word	
-			Connection conn = SQL.forThread();
-			LemmaRaw lr = new LemmaRaw(conn);
+			LemmaRaw lr = new LemmaRaw();
 			return lr.lookupLemma(word, pos);
 		}
 	}

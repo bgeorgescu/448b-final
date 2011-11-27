@@ -6,11 +6,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import vis.data.model.RawDoc;
+import vis.data.util.SQL;
 
 public class DocRaw {
 	PreparedStatement queryAll_;
 	PreparedStatement queryMeta_;
-	public DocRaw(Connection conn) throws SQLException {
+	public DocRaw() throws SQLException {
+		Connection conn = SQL.forThread();
 		queryAll_ = conn.prepareStatement("SELECT " + 
 					RawDoc.DATE + 
 					"," + RawDoc.PAGE + 

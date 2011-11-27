@@ -1,14 +1,9 @@
 package vis.data.server;
 
 import java.io.File;
-import java.net.URI;
 import java.util.EnumSet;
 
 import javax.servlet.DispatcherType;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.Response;
 
 import org.eclipse.jetty.rewrite.handler.RewriteHandler;
 import org.eclipse.jetty.rewrite.handler.RewriteRegexRule;

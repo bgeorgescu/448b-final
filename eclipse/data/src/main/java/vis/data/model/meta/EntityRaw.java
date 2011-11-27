@@ -6,10 +6,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import vis.data.model.RawEntity;
+import vis.data.util.SQL;
 
 public class EntityRaw {
 	PreparedStatement query_;
-	public EntityRaw(Connection conn) throws SQLException {
+	public EntityRaw() throws SQLException {
+		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + RawEntity.ENTITY + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + " = ?");
 	}
 	public RawEntity getEntity(int entity_id) throws SQLException {
