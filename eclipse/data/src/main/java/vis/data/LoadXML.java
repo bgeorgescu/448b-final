@@ -179,6 +179,10 @@ public class LoadXML {
 							System.err.println("Failed to run xpath query on " + f + " " + e.getMessage() + ":");
 							e.printStackTrace(System.err);
 						}
+						if(f.getPath().indexOf(data.get(RawDoc.ORIGINAL_DOC_ID)) == -1) {
+							throw new RuntimeException("confused xml?");
+						}
+						data.put(RawDoc.ORIGINAL_FILENAME, f.getAbsolutePath());
 						try {
 							documents_to_process.put(data);
 						} catch (InterruptedException e) {

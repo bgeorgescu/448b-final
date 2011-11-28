@@ -22,6 +22,7 @@ public class DocRaw {
 					"," + RawDoc.SUBTITLE + 
 					"," + RawDoc.FULL_TEXT + 
 					"," + RawDoc.ORIGINAL_DOC_ID + 
+					"," + RawDoc.ORIGINAL_FILENAME + 
 					" FROM " + RawDoc.TABLE + " WHERE " + RawDoc.ID + " = ?");
 		queryMeta_ = conn.prepareStatement("SELECT " +
 				RawDoc.DATE + 
@@ -31,6 +32,7 @@ public class DocRaw {
 				"," + RawDoc.TITLE + 
 				"," + RawDoc.SUBTITLE + 
 				"," + RawDoc.ORIGINAL_DOC_ID + 
+				"," + RawDoc.ORIGINAL_FILENAME + 
 				" FROM " + RawDoc.TABLE + " WHERE " + RawDoc.ID + " = ?");
 	}
 	public RawDoc getDocMeta(int doc_id) throws SQLException {
@@ -49,6 +51,7 @@ public class DocRaw {
 			rd.title_ = rs.getString(5);
 			rd.subtitle_ = rs.getString(6);
 			rd.docId_ = rs.getLong(7);
+			rd.originalFilename_ = rs.getString(8);
 			return rd;
 		} finally {
 			rs.close();
@@ -71,6 +74,7 @@ public class DocRaw {
 			rd.subtitle_ = rs.getString(6);
 			rd.fullText_ = rs.getString(7);
 			rd.docId_ = rs.getLong(8);
+			rd.originalFilename_ = rs.getString(9);
 			return rd;
 		} finally {
 			rs.close();

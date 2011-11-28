@@ -54,4 +54,8 @@ public class RawDoc {
 	public static final String FULL_TEXT="full_text";
 	@Column(name=FULL_TEXT, columnDefinition="MEDIUMTEXT")
 	public String fullText_;
+
+	public static final String ORIGINAL_FILENAME="original_filename";
+	@Column(name=ORIGINAL_FILENAME, columnDefinition="VARCHAR(256)")
+	public String originalFilename_;
 }
