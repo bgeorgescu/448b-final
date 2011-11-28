@@ -307,31 +307,30 @@ public class DocLemmas {
 	}
 	private static void handleEntity(final EntityCache ec, String ne,
 			String entity, TIntIntHashMap entity_counts) {
-		switch(ne) {
-		case "O":
-			break;
-		case "NUMBER":
-		case "DURATION":
-		case "DATE":
-		case "TIME":
-		case "MONEY":
-		case "ORDINAL":
-		case "MISC":
-		case "PERCENT":
-		case "SET":
+		if(ne.equals("O")) {
+			//nuttin
+		} else if(ne.equals("NUMBER") ||
+			ne.equals("DURATION") ||
+			ne.equals("DATE") ||
+			ne.equals("TIME") ||
+			ne.equals("MONEY") ||
+			ne.equals("ORDINAL") ||
+			ne.equals("MISC") ||
+			ne.equals("PERCENT") ||
+			ne.equals("SET")) 
+		{
 			//System.err.println("wanted to be disabled named entity type: " + ne);
-			break;
-		case "PERSON":
-		case "LOCATION":
-		case "ORGANIZATION":
+		} else if(ne.equals("PERSON") ||
+			ne.equals("LOCATION") ||
+			ne.equals("ORGANIZATION")) 
+		{
 			int entity_id = ec.getOrAddEntity(entity, ne);
 			Integer v = entity_counts.get(entity_id);
 			if(v == null)
 				entity_counts.put(entity_id, 1);
 			else
 				entity_counts.put(entity_id, v + 1);
-			break;
-		default:
+		} else {
 			System.err.println("unknown named entity type: " + ne);
 		}
 	}

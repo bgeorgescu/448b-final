@@ -28,7 +28,7 @@ public class CNFQuery {
 		public QueryTerm[][] terms_;
 	}
 	
-	static WeakHashMap<Object, Term> g_term_cache = new WeakHashMap<>();
+	static WeakHashMap<Object, Term> g_term_cache = new WeakHashMap<Object, Term>();
 	static Term termFor(QueryTerm t) throws SQLException {
 		Term filter = null;
 		if(t.lemma_ != null) {
@@ -130,7 +130,7 @@ public class CNFQuery {
 				int clause_;
 			}
 			HashMap<Term, List<TermRef>> plan_elements = new HashMap<Term, List<TermRef>>();
-			ArrayList<Term> plan = new ArrayList<>();
+			ArrayList<Term> plan = new ArrayList<Term>();
 			
 			Term[][][] buckets = new Term[aggr.buckets_.length][][]; 
 			int docs[][][] = new int[buckets.length][][];
@@ -145,7 +145,7 @@ public class CNFQuery {
 					for(Term t : buckets[i][j]) {
 						List<TermRef> uses = plan_elements.get(t);
 						if(uses == null) {
-							uses = new ArrayList<>();
+							uses = new ArrayList<TermRef>();
 							plan.add(t);
 							plan_elements.put(t, uses);
 						}

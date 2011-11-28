@@ -161,9 +161,9 @@ public class Coreferences {
 						    List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 	
 	
-						    ArrayList<LemmaEntityCorefs.Ref[]> corefs = new ArrayList<>();
-						    ArrayList<LemmaEntityCorefs.Ref> active_set = new ArrayList<>();
-						    ArrayList<LemmaEntityCorefs.PhraseType> active_type = new ArrayList<>();
+						    ArrayList<LemmaEntityCorefs.Ref[]> corefs = new ArrayList<Ref[]>();
+						    ArrayList<LemmaEntityCorefs.Ref> active_set = new ArrayList<Ref>();
+						    ArrayList<LemmaEntityCorefs.PhraseType> active_type = new ArrayList<PhraseType>();
 						    TIntArrayList active_id = new TIntArrayList();
 	
 						    Map<Integer, CorefChain> graph = document.get(CorefChainAnnotation.class);
@@ -334,28 +334,27 @@ public class Coreferences {
     	}
 	}
 	private static void handleEntity(final EntityCache ec, String ne, String entity, ArrayList<PhraseType> active_type, TIntArrayList active_id) {
-		switch(ne) {
-		case "O":
-			break;
-		case "NUMBER":
-		case "DURATION":
-		case "DATE":
-		case "TIME":
-		case "MONEY":
-		case "ORDINAL":
-		case "MISC":
-		case "PERCENT":
-		case "SET":
+		if(ne.equals("O")) {
+			//nuttin
+		} else if(ne.equals("NUMBER") ||
+			ne.equals("DURATION") ||
+			ne.equals("DATE") ||
+			ne.equals("TIME") ||
+			ne.equals("MONEY") ||
+			ne.equals("ORDINAL") ||
+			ne.equals("MISC") ||
+			ne.equals("PERCENT") ||
+			ne.equals("SET")) 
+		{
 			//System.err.println("wanted to be disabled named entity type: " + ne);
-			break;
-		case "PERSON":
-		case "LOCATION":
-		case "ORGANIZATION":
+		} else if(ne.equals("PERSON") ||
+			ne.equals("LOCATION") ||
+			ne.equals("ORGANIZATION")) 
+		{
 			int entity_id = ec.getOrAddEntity(entity, ne);
 			active_type.add(LemmaEntityCorefs.PhraseType.Entity);
 			active_id.add(entity_id);
-			break;
-		default:
+		} else {
 			System.err.println("unknown named entity type: " + ne);
 		}
 	}

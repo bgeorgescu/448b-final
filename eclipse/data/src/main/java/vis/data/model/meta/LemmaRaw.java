@@ -42,7 +42,7 @@ public class LemmaRaw {
 			if(!rs.next())
 				return new RawLemma[0];
 			
-			ArrayList<RawLemma> hits = new ArrayList<>(32);
+			ArrayList<RawLemma> hits = new ArrayList<RawLemma>(32);
 			do {
 				RawLemma rl = new RawLemma();
 				rl.id_ =  rs.getInt(1);
@@ -63,7 +63,7 @@ public class LemmaRaw {
 			if(!rs.next())
 				return new RawLemma[0];
 			
-			ArrayList<RawLemma> hits = new ArrayList<>(32);
+			ArrayList<RawLemma> hits = new ArrayList<RawLemma>(32);
 			do {
 				RawLemma rl = new RawLemma();
 				rl.id_ =  rs.getInt(1);

@@ -137,7 +137,7 @@ public class SQL {
 			throw new RuntimeException("Sql connection failed", e);
 		}
 	}
-	final static ThreadLocal<Connection> tlc = new ThreadLocal<>();
+	final static ThreadLocal<Connection> tlc = new ThreadLocal<Connection>();
 	public static Connection forThread() {
 		Connection for_thread = tlc.get();
 		if(for_thread == null) {
@@ -157,8 +157,6 @@ public class SQL {
 				FilterChain chain) throws IOException, ServletException {
 			try {
 				chain.doFilter(req, resp);
-			} catch(Throwable t) {
-				throw t;
 			} finally {
 				Connection conn = tlc.get();
 				tlc.remove();
