@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import vis.data.model.RawDoc;
 import vis.data.model.RawLemma;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
@@ -16,7 +17,8 @@ public class RunSomeSQL {
 			Statement st = conn.createStatement();
 			try {
 				
-				SQL.createIndices(conn, RawLemma.class);
+				SQL.createIndexes(conn, RawLemma.class);
+				SQL.createNonUniqueIndexes(conn, RawDoc.class);
 				
 			} finally {
 				st.close();

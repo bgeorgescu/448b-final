@@ -9,12 +9,19 @@ import vis.data.model.RawLemma;
 import vis.data.model.meta.DocLemmaHits;
 import vis.data.model.meta.LemmaRaw;
 import vis.data.util.CountAggregator;
+import vis.data.util.SetAggregator;
 
-public class LemmaAggregateTerm extends Term.Aggregate {
+public class LemmaTerm extends Term {
+	public static class Parameters extends RawLemma {
+		public boolean filterOnly_;
+	}
+
 	DocLemmaHits dlh = new DocLemmaHits();
 	
 	public final int[] lemmas_;
-	public LemmaAggregateTerm(RawLemma p) throws SQLException {
+	public final boolean filterOnly_;
+	public LemmaTerm(Parameters p) throws SQLException {
+		filterOnly_ = p.filterOnly_;
 		if(p.id_ != 0) {
 			lemmas_ = new int[1];
 			lemmas_[0] = p.id_;
@@ -49,8 +56,45 @@ public class LemmaAggregateTerm extends Term.Aggregate {
 	}
 
 	@Override
+	public boolean isFilter() {
+		return filterOnly_;
+	}
+
+	@Override
 	public int size() {
 		return lemmas_.length;
+	}
+
+	@Override
+	public int[] filter(int[] items) throws SQLException {
+		if(lemmas_.length == 0)
+			return new int[0];
+		int[] docs = dlh.getDocs(lemmas_[0]);
+		for(int i = 1; i < lemmas_.length; ++i) {
+			int[] partial_docs = dlh.getDocs(lemmas_[i]);
+			docs = SetAggregator.or(docs, partial_docs);
+		}
+		if(items == null)
+			return docs;
+		else
+			return SetAggregator.and(docs, items);
+	}
+
+	@Override
+	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
+			throws SQLException {
+		if(lemmas_.length == 0)
+			return Pair.of(new int[0], new int[0]);
+		int[] docs = dlh.getDocs(lemmas_[0]);
+		//TODO: absolutely must be cached if it is applied to multiple items
+		for(int i = 1; i < lemmas_.length; ++i) {
+			int[] partial_docs = dlh.getDocs(lemmas_[i]);
+			docs = SetAggregator.or(docs, partial_docs);
+		}
+		if(in_docs == null)
+			return Pair.of(docs, new int[docs.length]);
+		else
+			return CountAggregator.filter(in_docs, in_counts, docs);
 	}
 
 	@Override
@@ -74,16 +118,16 @@ public class LemmaAggregateTerm extends Term.Aggregate {
 			return CountAggregator.and(docs, counts, in_docs, in_counts);
 	}
 
-
 	@Override
 	public boolean equals(Object other) {
-		if(other.getClass() != LemmaFilterTerm.class)
+		if(other.getClass() != LemmaTerm.class)
 			return false;
-		LemmaFilterTerm o = (LemmaFilterTerm)other;
-		return Arrays.equals(lemmas_, o.lemmas_);
+		LemmaTerm o = (LemmaTerm)other;
+		return filterOnly_ == o.filterOnly_ &&  Arrays.equals(lemmas_, o.lemmas_);
 	}
+	
 	@Override
 	public int hashCode() {
-		return Arrays.hashCode(lemmas_) ^ LemmaAggregateTerm.class.hashCode();
-	}	
+		return Arrays.hashCode(lemmas_) ^ LemmaTerm.class.hashCode() ^ new Boolean(filterOnly_).hashCode();
+	}
 }

@@ -21,6 +21,9 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+import vis.data.model.annotations.Index;
+import vis.data.model.annotations.NonUniqueIndexes;
+
 import com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource;
 
 public class SQL {
@@ -73,9 +76,10 @@ public class SQL {
 		} finally {
 			st.close();
 		}
-		createIndices(conn, cls);
+		createIndexes(conn, cls);
+		createNonUniqueIndexes(conn, cls);
 	}
-	public static <T> void createIndices(Connection conn, Class<T> cls) throws SQLException {
+	public static <T> void createIndexes(Connection conn, Class<T> cls) throws SQLException {
 		String TABLE_NAME = cls.getAnnotation(Table.class).name();
 		UniqueConstraint uniq[] = cls.getAnnotation(Table.class).uniqueConstraints();
 		for(UniqueConstraint u : uniq) {
@@ -94,7 +98,29 @@ public class SQL {
 				st.close();
 			}
 		}
-		
+	}
+	public static <T> void createNonUniqueIndexes(Connection conn, Class<T> cls) throws SQLException {
+		String TABLE_NAME = cls.getAnnotation(Table.class).name();
+		NonUniqueIndexes nui = cls.getAnnotation(NonUniqueIndexes.class);
+		if(nui == null)
+			return;
+		Index uniq[] = nui.indexes();
+		for(Index u : uniq) {
+			String index_name = TABLE_NAME + "_by";
+			String index_fields = "";
+			for(String s : u.columnNames()) {
+				if(!index_fields.isEmpty())
+					index_fields += ", ";
+				index_fields += s;
+				index_name += "_" + s;
+			}
+			Statement st = conn.createStatement();
+			try {
+				st.execute("CREATE INDEX " + index_name + " ON " + TABLE_NAME + " (" + index_fields + ")");
+			} finally {
+				st.close();
+			}
+		}
 	}
 	final static MysqlConnectionPoolDataSource cpds = new MysqlConnectionPoolDataSource();
 	static {

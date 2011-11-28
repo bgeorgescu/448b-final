@@ -14,41 +14,44 @@ import javax.ws.rs.Produces;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawEntity;
-import vis.data.model.RawLemma;
-import vis.data.model.query.LemmaAggregateTerm;
-import vis.data.model.query.LemmaFilterTerm;
-import vis.data.model.query.Term.Aggregate;
-import vis.data.model.query.Term.Filter;
+import vis.data.model.query.DateTerm;
+import vis.data.model.query.LemmaTerm;
+import vis.data.model.query.Term;
 import vis.data.util.SetAggregator;
 
 public class CNFQuery {
-	public static class Term {
-		public RawLemma lemma_;
+	public static class QueryTerm {
+		public LemmaTerm.Parameters lemma_;
 		public RawEntity entity_; // not hooked up yet
+		public DateTerm.Parameters date_;
 	}
 	public static class Conjunction {
-		public Term[][] terms_;
+		public QueryTerm[][] terms_;
 	}
 	
-	static Filter filterFor(Term t) throws SQLException {
+	static Term termFor(QueryTerm t) throws SQLException {
 		//TODO: cache terms
+		Term filter = null;
+		if(t.lemma_ != null) {
+			if(filter != null) throw new RuntimeException("a term can only have one clause");
+			filter = new LemmaTerm(t.lemma_);
+		}
+		if(t.date_ != null) {
+			if(filter != null) throw new RuntimeException("a term can only have one clause");
+			filter = new DateTerm(t.date_);
+		}
 		//TODO: other types
-		return new LemmaFilterTerm(t.lemma_);
+		return filter;
 	};
-	static Aggregate aggregateFor(Term t) throws SQLException {
-		//TODO: cache terms
-		//TODO: other types
-		return new LemmaAggregateTerm(t.lemma_);
-	};
-	static ArrayList<Filter>[] filterPipeline(Conjunction conj) throws SQLException {
+	static ArrayList<Term>[] filterPipeline(Conjunction conj) throws SQLException {
 		if(conj.terms_ == null || conj.terms_.length == 0) {
 			throw new RuntimeException("missing filter terms");
 		}
-		ArrayList<Filter> pipeline[] = new ArrayList[conj.terms_.length];
+		ArrayList<Term> pipeline[] = new ArrayList[conj.terms_.length];
 		for(int i = 0; i < conj.terms_.length; ++i) {
-			pipeline[i] = new ArrayList<Filter>();
+			pipeline[i] = new ArrayList<Term>();
 			for(int j = 0; j < conj.terms_[i].length; ++j) {
-				pipeline[i].add(filterFor(conj.terms_[i][j]));
+				pipeline[i].add(termFor(conj.terms_[i][j]));
 			}
 			//put them in reverse order so that we get the fastest removal of items
 			Collections.sort(pipeline[i], new vis.data.model.query.Term.WorkOrder());
@@ -57,15 +60,15 @@ public class CNFQuery {
 	}
 
 	
-	static Aggregate[][] aggregatePipeline(Conjunction conj) throws SQLException {
+	static Term[][] aggregatePipeline(Conjunction conj) throws SQLException {
 		if(conj.terms_ == null || conj.terms_.length == 0) {
 			throw new RuntimeException("missing aggregate terms");
 		}
-		Aggregate pipeline[][] = new Aggregate[conj.terms_.length][];
+		Term pipeline[][] = new Term[conj.terms_.length][];
 		for(int i = 0; i < conj.terms_.length; ++i) {
-			pipeline[i] = new Aggregate[conj.terms_[i].length];
+			pipeline[i] = new Term[conj.terms_[i].length];
 			for(int j = 0; j < conj.terms_[i].length; ++j) {
-				pipeline[i][j] = aggregateFor(conj.terms_[i][j]);
+				pipeline[i][j] = termFor(conj.terms_[i][j]);
 			}
 		}
 		return pipeline;
@@ -78,12 +81,12 @@ public class CNFQuery {
 		@Consumes("application/json")
 		@Produces("application/json")
 		public int[] filterDocs(Conjunction conj) throws SQLException {
-			ArrayList<Filter>[] pipeline = filterPipeline(conj);
+			ArrayList<Term>[] pipeline = filterPipeline(conj);
 
 			int[] docs = null;
 			for(int i = 0; i < pipeline.length; ++i) {
 				int[] partial_docs = null;
-				for(Filter f : pipeline[i])
+				for(Term f : pipeline[i])
 					partial_docs = f.filter(partial_docs);	
 				
 				if(docs == null) {
@@ -121,10 +124,10 @@ public class CNFQuery {
 				int bucket_;
 				int clause_;
 			}
-			HashMap<Aggregate, List<TermRef>> plan_elements = new HashMap<Aggregate, List<TermRef>>();
-			ArrayList<Aggregate> plan = new ArrayList<>();
+			HashMap<Term, List<TermRef>> plan_elements = new HashMap<Term, List<TermRef>>();
+			ArrayList<Term> plan = new ArrayList<>();
 			
-			Aggregate[][][] buckets = new Aggregate[aggr.buckets_.length][][]; 
+			Term[][][] buckets = new Term[aggr.buckets_.length][][]; 
 			int docs[][][] = new int[buckets.length][][];
 			int counts[][][] = new int[buckets.length][][];
 			for(int i = 0; i < aggr.buckets_.length; ++i) {
@@ -134,7 +137,7 @@ public class CNFQuery {
 				for(int j = 0; j < buckets[i].length; ++j) {
 					counts[i][j] = new int[base_docs.length];
 					docs[i][j] = base_docs;
-					for(Aggregate t : buckets[i][j]) {
+					for(Term t : buckets[i][j]) {
 						List<TermRef> uses = plan_elements.get(t);
 						if(uses == null) {
 							uses = new ArrayList<>();
@@ -154,9 +157,14 @@ public class CNFQuery {
 			
 			
 			//do all the work for each term
-			for(Aggregate phase : plan) {
+			for(Term phase : plan) {
 				for(TermRef term : plan_elements.get(phase)) {
-					Pair<int[], int[]> result = phase.aggregate(docs[term.bucket_][term.clause_], counts[term.bucket_][term.clause_]);
+					Pair<int[], int[]> result;
+					if(phase.isFilter()) {
+						result = phase.filter(docs[term.bucket_][term.clause_], counts[term.bucket_][term.clause_]);
+					} else {
+						result = phase.aggregate(docs[term.bucket_][term.clause_], counts[term.bucket_][term.clause_]);
+					}
 					docs[term.bucket_][term.clause_] = result.getKey();
 					counts[term.bucket_][term.clause_] = result.getValue();
 				}
@@ -206,7 +214,7 @@ public class CNFQuery {
 			for(int b = 0; b < buckets; ++b) {
 				int docs[] = cr.docs[b][0];
 				for(int i = 1; i < cr.counts[b].length; ++i) {
-					docs = SetAggregator.and(docs, cr.docs[b][i]);
+					docs = SetAggregator.or(docs, cr.docs[b][i]);
 				}
 				tallies[b] = docs.length;
 			}

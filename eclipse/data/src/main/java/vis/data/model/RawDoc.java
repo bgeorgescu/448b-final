@@ -6,8 +6,12 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 import vis.data.model.annotations.DML;
+import vis.data.model.annotations.Index;
+import vis.data.model.annotations.NonUniqueIndexes;
+
 
 @Table(name=RawDoc.TABLE, uniqueConstraints=@UniqueConstraint(columnNames=RawDoc.ORIGINAL_DOC_ID))
+@NonUniqueIndexes(indexes={@Index(columnNames=RawDoc.DATE), @Index(columnNames=RawDoc.PUB_ID)})
 public class RawDoc {
 	public static final String TABLE = "rawdoc";
 	

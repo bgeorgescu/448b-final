@@ -12,19 +12,19 @@ public abstract class Term {
 	//terms are cached
 	public abstract int hashCode();
 	public abstract boolean equals(Object other);
+
+	//is this forced to be a filter term? or natively a filter term (date)
+	public abstract boolean isFilter();
+
+	//take the item/count list and apply this term to it
+	//null is passed in if the item set is **ALL** items, e.g. at first
+	public abstract int[] filter(int items[]) throws SQLException;
+	public abstract Pair<int[], int[]> filter(int items[], int counts[]) throws SQLException;
 	
-	public static abstract class Filter extends Term {
-		//take the item/count list and apply this term to it
-		//null is passed in if the item set is **ALL** items, e.g. at first
-		public abstract int[] filter(int items[]) throws SQLException;
+	//take the item/count list and filter it by this term to it
+	//null is passed in if the item set is **ALL** items, e.g. at first
+	public abstract Pair<int[], int[]> aggregate (int items[], int counts[]) throws SQLException;
 
-	}
-	public static abstract class Aggregate extends Term {
-		//take the item/count list and filter it by this term to it
-		//null is passed in if the item set is **ALL** items, e.g. at first
-		public abstract Pair<int[], int[]> aggregate (int items[], int counts[]) throws SQLException;
-
-	}
 	public static class WorkOrder implements Comparator<Term> {
 		@Override
 		public int compare(Term o1, Term o2) {

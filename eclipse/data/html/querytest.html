@@ -35,6 +35,10 @@
             function(c,r,d){report("cat,dog X cat,dog,bite,scratch,bark",c,r,d);});
         getComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
             function(c,r,d){report("cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
+        getYearlyComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
+            function(c,r,d){report("yearly: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
+        getYearlyComboDocHitsForAnyLemmas(["the"], [['the']],
+            function(c,r,d){report("the by year",c,r,d);});
         getHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
             function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,bark",c,r,d);});
         getComboHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
