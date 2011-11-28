@@ -1,1 +1,7 @@
 .DS_Store
+/eclipse/.metadata
+/eclipse/data/target
+/eclipse/data/.settings
+/eclipse/data/bin
+/eclipse/data/.classpath
+/eclipse/data/.project
