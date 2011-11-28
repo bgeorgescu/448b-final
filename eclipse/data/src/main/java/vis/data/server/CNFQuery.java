@@ -30,7 +30,6 @@ public class CNFQuery {
 	
 	static WeakHashMap<Object, Term> g_term_cache = new WeakHashMap<>();
 	static Term termFor(QueryTerm t) throws SQLException {
-		//TODO: cache terms
 		Term filter = null;
 		if(t.lemma_ != null) {
 			if(filter != null) throw new RuntimeException("a term can only have one clause");

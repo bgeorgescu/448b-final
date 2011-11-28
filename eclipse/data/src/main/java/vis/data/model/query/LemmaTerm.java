@@ -100,7 +100,6 @@ public class LemmaTerm extends Term {
 			count_ = new int[0];
 		} else {
 			DocLemmaHits.Counts initial = dlh.getDocCounts(lemmas_[0]);
-			//TODO: absolutely must be cached if it is applied to multiple items
 			for(int i = 1; i < lemmas_.length; ++i) {
 				DocLemmaHits.Counts partial = dlh.getDocCounts(lemmas_[1]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
