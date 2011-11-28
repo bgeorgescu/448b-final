@@ -200,26 +200,24 @@ getComboDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
             ]
         );
     }
-    for(var y = 2000; y <= 2010; ++y) {
-        for(var i in buckets) {
-            var agg = {
-                terms_:[
-                    [ //one CNF clause
-                    ],
+    for(var i in buckets) {
+        var agg = {
+            terms_:[
+                [ //one CNF clause
                 ],
-            };
-            for(var j in buckets[i]) {
-                agg.terms_[0].push(LemmaTerm(buckets[i][j]));
-            }               
-            query.buckets_.push(agg);
-        }
+            ],
+        };
+        for(var j in buckets[i]) {
+            agg.terms_[0].push(LemmaTerm(buckets[i][j]));
+        }               
+        query.buckets_.push(agg);
     }
     xhr.send(JSON.stringify(query));
 }
 //lemmas = ['a','b']
 //buckets = [['a', 'c'], ['a','d'}, {'b','c'}, {'b', 'd'}]
 getYearlyComboDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
-    var xhr = buildXHR("/api/tally/hits", 
+    var xhr = buildXHR("/api/tally/docs", 
         function(code, body, duration) {
             var res = body;
             //transform the data

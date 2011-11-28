@@ -8,14 +8,46 @@ public class DateTerm extends SQLTerm {
 	public static class Parameters {
 		public Integer before_;
 		public Integer after_;
+		
+		@Override
+		public int hashCode() {
+			int hashCode = 0;
+			if(before_ != null)
+				hashCode ^= before_.hashCode();
+			if(after_ != null)
+				hashCode ^= after_.hashCode();
+			return hashCode;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if(!Parameters.class.isInstance(obj))
+				return false;
+			Parameters p = (Parameters)obj;
+			if(before_ != null ^ p.before_ != null) {
+				return false;
+			}
+			if(before_ != null && !before_.equals(p.before_)) {
+				return false;
+			}
+			if(after_ != null ^ p.after_ != null) {
+				return false;
+			}
+			if(after_ != null && !after_.equals(p.after_)) {
+				return false;
+			}
+			return true;
+		}
 	}
 	
 	@Override
 	public boolean isFilter() {
 		return false;
 	}
+	public final Parameters parameters_;
 	public DateTerm(Parameters p) throws SQLException {
 		super(buildQuery(p));
+		parameters_ = p;
 	}
 
 	private static String buildQuery(Parameters p) {
@@ -31,5 +63,10 @@ public class DateTerm extends SQLTerm {
 		}
 		//the order by is critical!
 		return "SELECT " + RawDoc.ID + " FROM " + RawDoc.TABLE + " WHERE " + filter + " ORDER BY " + RawDoc.ID;
+	}
+
+	@Override
+	public Object parameters() {
+		return parameters_;
 	}	
 }

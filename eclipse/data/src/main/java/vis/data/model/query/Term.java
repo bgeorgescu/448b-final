@@ -8,10 +8,9 @@ import org.apache.commons.lang3.tuple.Pair;
 public abstract class Term {
 	//return the amount of work this term does, so the terms can be applied in an appropriate order
 	public abstract int size();
-
+	
 	//terms are cached
-	public abstract int hashCode();
-	public abstract boolean equals(Object other);
+	public abstract Object parameters();
 
 	//is this forced to be a filter term? or natively a filter term (date)
 	public abstract boolean isFilter();

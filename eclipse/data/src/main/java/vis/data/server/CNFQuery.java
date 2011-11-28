@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.WeakHashMap;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -13,7 +14,6 @@ import javax.ws.rs.Produces;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import vis.data.model.RawEntity;
 import vis.data.model.query.DateTerm;
 import vis.data.model.query.LemmaTerm;
 import vis.data.model.query.Term;
@@ -22,23 +22,29 @@ import vis.data.util.SetAggregator;
 public class CNFQuery {
 	public static class QueryTerm {
 		public LemmaTerm.Parameters lemma_;
-		public RawEntity entity_; // not hooked up yet
 		public DateTerm.Parameters date_;
 	}
 	public static class Conjunction {
 		public QueryTerm[][] terms_;
 	}
 	
+	static WeakHashMap<Object, Term> g_term_cache = new WeakHashMap<>();
 	static Term termFor(QueryTerm t) throws SQLException {
 		//TODO: cache terms
 		Term filter = null;
 		if(t.lemma_ != null) {
 			if(filter != null) throw new RuntimeException("a term can only have one clause");
-			filter = new LemmaTerm(t.lemma_);
+			filter = g_term_cache.get(t.lemma_);
+			if(filter == null)
+				filter = new LemmaTerm(t.lemma_);
+			g_term_cache.put(t.lemma_, filter);
 		}
 		if(t.date_ != null) {
 			if(filter != null) throw new RuntimeException("a term can only have one clause");
-			filter = new DateTerm(t.date_);
+			filter = g_term_cache.get(t.date_);
+			if(filter == null)
+				filter = new DateTerm(t.date_);
+			g_term_cache.put(t.date_, filter);
 		}
 		//TODO: other types
 		return filter;

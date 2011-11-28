@@ -42,19 +42,6 @@ public abstract class SQLTerm extends Term {
 	}
 
 	@Override
-	public int hashCode() {
-		return query_.hashCode() ^ LemmaTerm.class.hashCode();
-	}
-
-	@Override
-	public boolean equals(Object other) {
-		if(other.getClass() != getClass())
-			return false;
-		SQLTerm o = (SQLTerm)other;
-		return query_.equals(o.query_);
-	}
-
-	@Override
 	public int[] filter(int[] items) throws SQLException {
 		if(ids_.length == 0)
 			return new int[0];
