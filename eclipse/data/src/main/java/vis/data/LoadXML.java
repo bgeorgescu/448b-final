@@ -118,7 +118,6 @@ public class LoadXML {
 					} catch (XPathExpressionException e) {
 						throw new RuntimeException("failed to create xpath expressions", e);
 					}
-					TreeMap<String, String> data = new TreeMap<String, String>();
 					
 					String FULL_TEXT_COLUMN;
 					try {
@@ -127,7 +126,6 @@ public class LoadXML {
 						throw new RuntimeException("failed to get column name for full text");
 					}
 					
-	
 					while(!files_to_process.isEmpty() || file_scan_thread.isAlive()) {
 						File f;
 						try {
@@ -149,6 +147,7 @@ public class LoadXML {
 							continue;
 						}
 						
+						TreeMap<String, String> data = new TreeMap<String, String>();
 						for(Map.Entry<String, XPathExpression> entry : fields.entrySet()) {
 							String sql_field = entry.getKey();
 							XPathExpression xp_field = entry.getValue();
@@ -213,8 +212,9 @@ public class LoadXML {
 					System.out.println("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ") ... ");
 					//always take the longer full_text
 					insert = conn.prepareStatement("INSERT INTO " + TABLE_NAME + " (" + parameters + ") VALUES(" + questions + ")" +
-							" ON DUPLICATE KEY UPDATE " + RawDoc.FULL_TEXT + " = IF(LENGTH(VALUES(" + RawDoc.FULL_TEXT + ")) > LENGTH(" + RawDoc.FULL_TEXT + 
-							"), VALUES(" + RawDoc.FULL_TEXT + "), " + RawDoc.FULL_TEXT + ")");
+					"");
+//							" ON DUPLICATE KEY UPDATE " + RawDoc.FULL_TEXT + " = IF(LENGTH(VALUES(" + RawDoc.FULL_TEXT + ")) > LENGTH(" + RawDoc.FULL_TEXT + 
+//							"), VALUES(" + RawDoc.FULL_TEXT + "), " + RawDoc.FULL_TEXT + ")");
 
 					
 					for(;;) {
@@ -241,8 +241,11 @@ public class LoadXML {
 							throw new RuntimeException("Unknown interupt while pulling from document mysql queue", e);
 						}
 						
-						Iterator<String> k = data.values().iterator();
 						int param_count = data.size();
+						if(data.size() != param_count) {
+							throw new RuntimeException("missing some parameter");
+						}
+						Iterator<String> k = data.values().iterator();
 						for(int i = 1; i <= param_count; ++i) {
 							insert.setString(i, k.next());
 						}
