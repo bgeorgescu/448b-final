@@ -27,6 +27,30 @@
                     .appendTo("body");
             }
         }
+        arbitraryQuery("/api/tally/docs", 
+            {
+                "filter_":{
+                    "terms_":[
+                        [{"lemma_":{"lemma_":"dog"}},{"date_":{"after_":20099999}}],
+                        [{"lemma_":{"lemma_":"cat"}},{"date_":{"after_":20099999}}],
+                    ]
+                },
+                "buckets_":[
+                    {
+                        "terms_":[
+                            [{"lemma_":{"lemma_":"scratch"}}]
+                        ]
+                    },
+                    {   
+                        "terms_":[
+                            [{"lemma_":{"lemma_":"bite"}}]
+                        ]
+                    }
+                ]
+            },
+            function(c,r,d){report("arbitrary query",c,r,d);}
+        );
+        
         getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
         getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});

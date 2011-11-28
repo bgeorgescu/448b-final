@@ -29,7 +29,14 @@ function buildXHR(service, callback) {
 function LemmaTerm(word) {
     return {lemma_:{lemma_:word}};
 }
+function YearTerm(year) {
+    return {date_:{before_:(year+1)*10000, after_:(year*10000 - 1)}};
+}
 
+arbitraryQuery = function(endpoint, query, onResult) {
+    var xhr = buildXHR(endpoint, onResult);
+    xhr.send(JSON.stringify(query));
+}
 //lemmas = 'a'
 getDocumentsForLemmas = function(lemma, onResult) {
     var xhr = buildXHR("/api/filter/docs", onResult);
@@ -174,9 +181,6 @@ getDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
         );
     }
     xhr.send(JSON.stringify(query));
-}
-function YearTerm(year) {
-    return {date_:{before_:(year+1)*10000, after_:(year*10000 - 1)}};
 }
 
 //lemmas = ['a','b']
