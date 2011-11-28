@@ -116,6 +116,7 @@ public class SQL {
 		Connection for_thread = tlc.get();
 		if(for_thread == null) {
 			for_thread = open();
+			tlc.set(for_thread);
 		}
 		return for_thread;
 	}
@@ -134,6 +135,7 @@ public class SQL {
 				throw t;
 			} finally {
 				Connection conn = tlc.get();
+				tlc.remove();
 				if(conn != null)
 					try {
 						conn.close();

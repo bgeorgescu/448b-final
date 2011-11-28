@@ -27,7 +27,7 @@ function buildXHR(service, callback) {
 }
 
 
-//exported
+//lemmas = 'a'
 getDocumentsForLemmas = function(lemma, onResult) {
     var xhr = buildXHR("/api/filter/docs", onResult);
     var query = {
@@ -40,6 +40,7 @@ getDocumentsForLemmas = function(lemma, onResult) {
     xhr.send(JSON.stringify(query));
 }
 
+//lemmas = ['a','b']
 getDocumentsForAnyLemmas = function(lemmas, onResult) {
     var xhr = buildXHR("/api/filter/docs", onResult);
     var query = {
@@ -48,13 +49,13 @@ getDocumentsForAnyLemmas = function(lemmas, onResult) {
         ],
     };
     for(var i in lemmas) {
-        query.terms_.push(
-            [ //one CNF clause
-                {lemma_:{lemma_:lemmas[i]}},
-            ]);
+        query.terms_.push([ //one CNF clause
+            {lemma_:{lemma_:lemmas[i]}},
+        ]);
     }
     xhr.send(JSON.stringify(query));
 }
+//lemmas = ['a','b']
 getDocumentsForAllLemmas = function(lemmas, onResult) {
     var xhr = buildXHR("/api/filter/docs", onResult);
     var query = {
@@ -64,9 +65,153 @@ getDocumentsForAllLemmas = function(lemmas, onResult) {
         ],
     };
     for(var i in lemmas) {
-        query.terms_[0].push(
-            {lemma_:{lemma_:lemmas[i]}}
+        query.terms_[0].push({ //one CNF term
+            lemma_:{
+                lemma_:lemmas[i]
+            },
+        });
+    }
+    xhr.send(JSON.stringify(query));
+}
+//lemmas = ['a','b']
+//buckets = ['c', 'd']
+getHitsForAnyLemmas = function(lemmas, buckets, onResult) {
+    var xhr = buildXHR("/api/tally/hits", onResult);
+    var query = {
+        filter_:{
+            terms_:[
+                //add CNF clauses
+            ],
+        },
+        buckets_:[
+            //add bucket expresions
+        ],
+    };
+    for(var i in lemmas) {
+        query.filter_.terms_.push(
+            [ //one CNF clause
+                {lemma_:{lemma_:lemmas[i]}},
+            ]
         );
+    }
+    for(var i in buckets) {
+        query.buckets_.push({
+            terms_:[
+                [ //one CNF clause
+                    {lemma_:{lemma_:buckets[i]}},
+                ]
+            ],
+        });
+    }
+    xhr.send(JSON.stringify(query));
+}
+//lemmas = ['a','b']
+//buckets = [['a', 'c'], ['a','d'}, {'b','c'}, {'b', 'd'}]
+getComboHitsForAnyLemmas = function(lemmas, buckets, onResult) {
+    var xhr = buildXHR("/api/tally/hits", onResult);
+    var query = {
+        filter_:{
+            terms_:[
+                //add CNF clauses
+            ],
+        },
+        buckets_:[
+            //add bucket expresions
+        ],
+    };
+    for(var i in lemmas) {
+        query.filter_.terms_.push(
+            [ //one CNF clause
+                {lemma_:{lemma_:lemmas[i]}},
+            ]
+        );
+    }
+    for(var i in buckets) {
+        var agg = {
+            terms_:[
+                [ //one CNF clause
+                ],
+            ],
+        };
+        for(var j in buckets[i]) {
+            agg.terms_[0].push({ //one CNF term
+                lemma_:{
+                    lemma_:buckets[i][j]
+                },
+            });
+        }               
+        query.buckets_.push(agg);
+    }
+    xhr.send(JSON.stringify(query));
+}
+//lemmas = ['a','b']
+//buckets = ['c', 'd']
+getDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
+    var xhr = buildXHR("/api/tally/docs", onResult);
+    var query = {
+        filter_:{
+            terms_:[
+                //add CNF clauses
+            ],
+        },
+        buckets_:[
+            //add bucket expresions
+        ],
+    };
+    for(var i in lemmas) {
+        query.filter_.terms_.push(
+            [ //one CNF clause
+                {lemma_:{lemma_:lemmas[i]}},
+            ]
+        );
+    }
+    for(var i in buckets) {
+        query.buckets_.push({
+            terms_:[
+                [ //one CNF clause
+                    {lemma_:{lemma_:buckets[i]}},
+                ]
+            ],
+        });
+    }
+    xhr.send(JSON.stringify(query));
+}
+//lemmas = ['a','b']
+//buckets = [['a', 'c'], ['a','d'}, {'b','c'}, {'b', 'd'}]
+getComboDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
+    var xhr = buildXHR("/api/tally/docs", onResult);
+    var query = {
+        filter_:{
+            terms_:[
+                //add CNF clauses
+            ],
+        },
+        buckets_:[
+            //add bucket expresions
+        ],
+    };
+    for(var i in lemmas) {
+        query.filter_.terms_.push(
+            [ //one CNF clause
+                {lemma_:{lemma_:lemmas[i]}},
+            ]
+        );
+    }
+    for(var i in buckets) {
+        var agg = {
+            terms_:[
+                [ //one CNF clause
+                ],
+            ],
+        };
+        for(var j in buckets[i]) {
+            agg.terms_[0].push({ //one CNF term
+                lemma_:{
+                    lemma_:buckets[i][j]
+                },
+            });
+        }               
+        query.buckets_.push(agg);
     }
     xhr.send(JSON.stringify(query));
 }

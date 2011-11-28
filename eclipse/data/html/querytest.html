@@ -31,6 +31,14 @@
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
         getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
         getDocumentsForAnyLemmas(["dog", "cat"], function(c,r,d){report("cat,dog",c,r,d);});
+        getDocHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+            function(c,r,d){report("cat,dog X cat,dog,bite,scratch,bark",c,r,d);});
+        getComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
+            function(c,r,d){report("cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
+        getHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+            function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,bark",c,r,d);});
+        getComboHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
+            function(c,r,d){report("hitcount: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
     </script>
   </body>
 </html>

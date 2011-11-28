@@ -59,6 +59,7 @@ public class Launcher {
 
 		//clean up sql automatically
 		root.addFilter(fh, "/", fd);
+		root.addFilter(fh, "/*", fd);
 		//map api
 		root.addServlet(sh, "/");
 		root.addServlet(sh, "/*");
