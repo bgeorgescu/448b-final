@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.WeakHashMap;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -125,6 +124,25 @@ public class CNFQuery {
 		public int docs[][][];
 		public int counts[][][];
 	}
+	public static QueryTerm[][] combineExpressions(QueryTerm a[][], QueryTerm b[][]) {
+		if(a == null || b == null)
+			throw new RuntimeException("an expression was not properly filled in");
+		QueryTerm c[][] = new QueryTerm[a.length * b.length][];
+		int k = 0;
+		for(int i = 0; i < a.length; ++i) {
+			for (int j = 0; j < b.length; ++j, ++k) {
+				if(a[i] == null || b[j] == null)
+					throw new RuntimeException("a term was not properly filled in");
+				c[k] = new QueryTerm[a[i].length + b[i].length]; 
+				int l = 0;
+				for(int m = 0; m < a[i].length; ++m, ++l)
+					c[k][l] = a[i][m];
+				for(int m = 0; m < b[i].length; ++m, ++l)
+					c[k][l] = b[i][m];
+			}
+		}
+		return c;
+	}
 	@Path("/api/evaluate/clauses")
 	public static class EvaluateClauses {
 		FilterDocs md = new FilterDocs();
@@ -135,11 +153,14 @@ public class CNFQuery {
 			if(aggr.buckets_ == null || aggr.buckets_.length == 0) {
 				throw new RuntimeException("missing buckets for aggregation");
 			}
-			//TODO: merge filter terms with the aggregation terms (but flag them for not participating in the counts)
-			//first do the filter part
-			int base_docs[] = md.filterDocs(aggr.filter_);
-			int base_counts[] = new int[base_docs.length];
-			
+
+			//merge the filter into the aggregations, so all steps can be done in an 'optimal' order
+			if(aggr.filter_ != null) {
+				for(int i = 0; i < aggr.buckets_.length; ++i) {
+					aggr.buckets_[i].terms_ = CNFQuery.combineExpressions(aggr.buckets_[i].terms_, aggr.filter_.terms_);
+				}
+			}
+
 			class TermRef {
 				int bucket_;
 				int clause_;
@@ -155,8 +176,6 @@ public class CNFQuery {
 				counts[i] = new int[buckets[i].length][];
 				docs[i] = new int[buckets[i].length][];
 				for(int j = 0; j < buckets[i].length; ++j) {
-					counts[i][j] = base_counts;
-					docs[i][j] = base_docs;
 					for(Term t : buckets[i][j]) {
 						List<TermRef> uses = plan_elements.get(t);
 						if(uses == null) {
