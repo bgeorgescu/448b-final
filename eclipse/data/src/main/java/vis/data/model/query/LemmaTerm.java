@@ -122,7 +122,7 @@ public class LemmaTerm extends Term {
 
 	@Override
 	public int size() {
-		return lemmas_.length;
+		return docs_.length;
 	}
 
 	@Override

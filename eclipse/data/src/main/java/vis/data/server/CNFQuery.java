@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -124,21 +125,26 @@ public class CNFQuery {
 		public int docs[][][];
 		public int counts[][][];
 	}
-	public static QueryTerm[][] combineExpressions(QueryTerm a[][], QueryTerm b[][]) {
-		if(a == null || b == null)
+	public static QueryTerm[][] combineExpressions(QueryTerm a[][], QueryTerm filter[][]) {
+		if(a == null || filter == null)
 			throw new RuntimeException("an expression was not properly filled in");
-		QueryTerm c[][] = new QueryTerm[a.length * b.length][];
+		QueryTerm c[][] = new QueryTerm[a.length * filter.length][];
 		int k = 0;
 		for(int i = 0; i < a.length; ++i) {
-			for (int j = 0; j < b.length; ++j, ++k) {
-				if(a[i] == null || b[j] == null)
+			for (int j = 0; j < filter.length; ++j, ++k) {
+				if(a[i] == null || filter[j] == null)
 					throw new RuntimeException("a term was not properly filled in");
-				c[k] = new QueryTerm[a[i].length + b[j].length]; 
+				c[k] = new QueryTerm[a[i].length + filter[j].length]; 
 				int l = 0;
 				for(int m = 0; m < a[i].length; ++m, ++l)
 					c[k][l] = a[i][m];
-				for(int m = 0; m < b[j].length; ++m, ++l)
-					c[k][l] = b[j][m];
+				for(int m = 0; m < filter[j].length; ++m, ++l) {
+					c[k][l] = filter[j][m];
+					
+					//todo mark other terms that have a filter only mode
+					if(c[k][l].lemma_ != null)
+						c[k][l].lemma_.filterOnly_ = true;
+				}
 			}
 		}
 		return c;
@@ -179,7 +185,7 @@ public class CNFQuery {
 					for(Term t : buckets[i][j]) {
 						List<TermRef> uses = plan_elements.get(t);
 						if(uses == null) {
-							uses = new ArrayList<TermRef>();
+							uses = new LinkedList<TermRef>();
 							plan.add(t);
 							plan_elements.put(t, uses);
 						}
