@@ -21,6 +21,7 @@ public class CountAggregator {
 			++i;
 		}
 	}	
+	//TODO:big/small size mismatch optimized version
 	public static Pair<int[], int[]> remove(int a[], int a_count[], int[] f) {
 		assert(a.length == a_count.length);
 		int max_size = a.length;
@@ -46,6 +47,7 @@ public class CountAggregator {
 		}
 		return Pair.of(c, c_count);
 	}
+	//TODO:ratio should include something about the overlap of the ranges too
 	static final int MIN_SPAN_RATIO = 16;
 	public static Pair<int[], int[]> filter(int a[], int a_count[], int[] f) {
 		int min_length = Math.min(a.length, f.length);

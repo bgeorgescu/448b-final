@@ -1,10 +1,15 @@
 package vis.data.model.query;
 
 import java.sql.SQLException;
+import java.util.Arrays;
 
-import vis.data.model.RawDoc;
+import org.apache.commons.lang3.tuple.Pair;
 
-public class DateTerm extends SQLTerm {
+import vis.data.model.meta.TimeSortedDoc;
+import vis.data.util.CountAggregator;
+import vis.data.util.SetAggregator;
+
+public class DateTerm extends Term {
 	public static class Parameters {
 		public Integer before_;
 		public Integer after_;
@@ -40,33 +45,58 @@ public class DateTerm extends SQLTerm {
 		}
 	}
 	
-	@Override
-	public boolean isFilter() {
-		return false;
-	}
 	public final Parameters parameters_;
+	public final int docs_[];
 	public DateTerm(Parameters p) throws SQLException {
-		super(buildQuery(p));
 		parameters_ = p;
-	}
-
-	private static String buildQuery(Parameters p) {
-		String filter;
+		TimeSortedDoc tsd = new TimeSortedDoc();
 		if(p.before_ != null && p.after_ != null) {
-			filter = RawDoc.DATE + " < " + p.before_ + " AND " + RawDoc.DATE + " > " +p.after_;
+			docs_ = tsd.getDocsBetween(p.before_, p.after_);
 		} else if(p.before_ != null) {
-			filter = RawDoc.DATE + " < " + p.before_;
+			docs_ = tsd.getDocsBefore(p.before_);
 		} else if(p.after_ != null) {
-			filter = RawDoc.DATE + " > " + p.after_;
+			docs_ = tsd.getDocsAfter(p.after_);
 		} else {
 			throw new RuntimeException("date term missing a filter");
 		}
-		//the order by is critical!
-		return "SELECT " + RawDoc.ID + " FROM " + RawDoc.TABLE + " WHERE " + filter + " ORDER BY " + RawDoc.ID;
+		//must be in doc id order
+		Arrays.sort(docs_);
 	}
 
-	@Override
 	public Object parameters() {
 		return parameters_;
 	}	
+
+	@Override
+	public boolean isFilter() {
+		return true;
+	}
+
+	@Override
+	public int size() {
+		return docs_.length;
+	}
+
+	@Override
+	public int[] filter(int[] items) throws SQLException {
+		if(items == null)
+			return docs_;
+		else
+			return SetAggregator.and(docs_, items);
+	}
+
+	@Override
+	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
+			throws SQLException {
+		if(in_docs == null)
+			return Pair.of(docs_, new int[docs_.length]);
+		else
+			return CountAggregator.filter(in_docs, in_counts, docs_);
+	}
+
+	@Override
+	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
+			throws SQLException {
+		return filter(in_docs, in_counts);
+	}
 }

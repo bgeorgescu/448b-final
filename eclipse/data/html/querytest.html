@@ -51,10 +51,29 @@
             function(c,r,d){report("arbitrary query",c,r,d);}
         );
         
-        getMonthlyComboDocHits([['clinton'], ['obama'], ['mccain'], ['edwards']], function(c,r,d){report("[['clinton'], ['obama'], ['mccain'], ['edwards']]",c,r,d);});
+        getMonthlyDocHits(
+            [
+                [
+                    [EntityTerm('hillary clinton')],
+                    [EntityTerm('clinton')],
+                ],
+                [
+                    [EntityTerm('sarah palin')],
+                    [EntityTerm('palin')],
+                ],
+                [
+                    [EntityTerm('barack obama')],
+                    [EntityTerm('obama')],
+                ],
+                [
+                    [EntityTerm('john mccain')],
+                    [EntityTerm('mccain')],
+                ],
+            ], function(c,r,d){report("clinton, palin, obama, mccain",c,r,d);});
 
         getMonthlyComboDocHits([['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']],  function(c,r,d){report("[['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']]",c,r,d);});
         
+        getDocumentsForEntity("clinton", function(c,r,d){report("clinton docs",c,r,d);});
         getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
         getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});

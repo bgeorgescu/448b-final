@@ -26,13 +26,16 @@ function buildXHR(service, callback) {
     return xhr;
 }
 
-function LemmaTerm(word) {
+LemmaTerm = function(word) {
     return {lemma_:{lemma_:word}};
 }
-function YearTerm(year) {
+EntityTerm = function(entity) {
+    return {entity_:{entity_:entity}};
+}
+YearTerm = function(year) {
     return {date_:{before_:(year+1)*10000, after_:(year*10000 - 1)}};
 }
-function MonthTerm(year, month) {
+MonthTerm = function(year, month) {
     return {date_:{before_:(year+1)*10000+(month+2)*100, after_:(year*10000 - 1)+(month+1)*100}};
 }
 
@@ -53,7 +56,18 @@ getDocumentsForLemmas = function(lemma, onResult) {
     };
     xhr.send(JSON.stringify(query));
 }
-
+//lemmas = 'a'
+getDocumentsForEntity = function(entity, onResult) {
+    var xhr = buildXHR("/api/filter/docs", onResult);
+    var query = {
+        terms_:[
+            [ //one CNF clause
+                EntityTerm(entity),
+            ],
+        ],
+    };
+    xhr.send(JSON.stringify(query));
+}
 //lemmas = ['a','b']
 getDocumentsForAnyLemmas = function(lemmas, onResult) {
     var xhr = buildXHR("/api/filter/docs", onResult);
@@ -315,6 +329,47 @@ getMonthlyComboDocHits = function(buckets, onResult) {
         }
     }
 
+    xhr.send(JSON.stringify(query));
+}
+
+
+//buckets = [   [[Term(), Term()], [Term()], ...]  , ... ]
+getMonthlyDocHits = function(buckets, onResult) {
+    var xhr = buildXHR("/api/tally/docs", 
+        function(code, body, duration) {
+            var res = body;
+            //transform the data
+            if(success(code)) {
+                res = {};
+                for(var y = 2000; y <= 2010; ++y) {
+   	                for(var m = 0; m < 12; ++m) {
+                            res[y + MONTHS[m]] = body.splice(0, buckets.length);
+	                }
+                }
+            }
+            onResult(code, res, duration);
+        }
+    );
+    var query = {
+        buckets_:[
+            //add bucket expresions
+        ],
+    };
+    for(var y = 2000; y <= 2010; ++y) {
+        for(var m = 0; m < 12; ++m) {
+            for(var i in buckets) {
+                var term_copy = $.extend(true, [], buckets[i]);
+                term_copy.shift().shift();
+                var agg = {
+                    terms_:term_copy,
+                };
+                for(var j in agg.terms_) {
+                    agg.terms_[j].push(MonthTerm(y,m));
+                }
+                query.buckets_.push(agg);
+            }
+        }
+    }
     xhr.send(JSON.stringify(query));
 }
 

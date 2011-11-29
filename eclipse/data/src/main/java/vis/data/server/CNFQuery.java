@@ -17,6 +17,7 @@ import javax.ws.rs.Produces;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.query.DateTerm;
+import vis.data.model.query.EntityTerm;
 import vis.data.model.query.LemmaTerm;
 import vis.data.model.query.Term;
 import vis.data.util.SetAggregator;
@@ -24,6 +25,7 @@ import vis.data.util.SetAggregator;
 public class CNFQuery {
 	public static class QueryTerm {
 		public LemmaTerm.Parameters lemma_;
+		public EntityTerm.Parameters entity_;
 		public DateTerm.Parameters date_;
 	}
 	public static class Conjunction {
@@ -51,6 +53,13 @@ public class CNFQuery {
 			if(filter == null)
 				filter = new LemmaTerm(t.lemma_);
 			putCache(t.lemma_, filter);
+		}
+		if(t.entity_ != null) {
+			if(filter != null) throw new RuntimeException("a term can only have one clause");
+			filter = getCache(t.entity_);
+			if(filter == null)
+				filter = new EntityTerm(t.entity_);
+			putCache(t.entity_, filter);
 		}
 		if(t.date_ != null) {
 			if(filter != null) throw new RuntimeException("a term can only have one clause");
@@ -144,6 +153,8 @@ public class CNFQuery {
 					//todo mark other terms that have a filter only mode
 					if(c[k][l].lemma_ != null)
 						c[k][l].lemma_.filterOnly_ = true;
+					if(c[k][l].entity_ != null)
+						c[k][l].entity_.filterOnly_ = true;
 				}
 			}
 		}
