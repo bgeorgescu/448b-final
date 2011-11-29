@@ -290,7 +290,7 @@ bencmarkHitsForAnyLemmas = function(lemmas, buckets, onResult) {
             ]
         );
     }
-    for(var j = 0; j < 10000; ++j)
+    for(var j = 0; j < 100; ++j)
     for(var i in buckets) {
         query.buckets_.push({
             terms_:[

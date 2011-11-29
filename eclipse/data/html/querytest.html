@@ -51,9 +51,9 @@
             function(c,r,d){report("arbitrary query",c,r,d);}
         );
         bencmarkHitsForAnyLemmas(["the"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("benmark 10000x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
+            function(c,r,d){report("benmark 100x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
         bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("benmark 10000x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
+            function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
         getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
         getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
