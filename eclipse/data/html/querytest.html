@@ -50,7 +50,10 @@
             },
             function(c,r,d){report("arbitrary query",c,r,d);}
         );
-        
+        bencmarkHitsForAnyLemmas(["the"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+            function(c,r,d){report("benmark 10000x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+            function(c,r,d){report("benmark 10000x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
         getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
         getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
@@ -64,7 +67,7 @@
         getYearlyComboDocHitsForAnyLemmas(["the"], [['the']],
             function(c,r,d){report("the by year",c,r,d);});
         getHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,bark",c,r,d);});
+            function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
         getComboHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
             function(c,r,d){report("hitcount: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
     </script>

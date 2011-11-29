@@ -138,6 +138,7 @@ public class CNFQuery {
 			//TODO: merge filter terms with the aggregation terms (but flag them for not participating in the counts)
 			//first do the filter part
 			int base_docs[] = md.filterDocs(aggr.filter_);
+			int base_counts[] = new int[base_docs.length];
 			
 			class TermRef {
 				int bucket_;
@@ -154,7 +155,7 @@ public class CNFQuery {
 				counts[i] = new int[buckets[i].length][];
 				docs[i] = new int[buckets[i].length][];
 				for(int j = 0; j < buckets[i].length; ++j) {
-					counts[i][j] = new int[base_docs.length];
+					counts[i][j] = base_counts;
 					docs[i][j] = base_docs;
 					for(Term t : buckets[i][j]) {
 						List<TermRef> uses = plan_elements.get(t);

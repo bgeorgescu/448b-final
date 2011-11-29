@@ -268,3 +268,37 @@ getYearlyComboDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
     }
     xhr.send(JSON.stringify(query));
 }
+
+//lemmas = ['a','b']
+//buckets = ['c', 'd']
+bencmarkHitsForAnyLemmas = function(lemmas, buckets, onResult) {
+    var xhr = buildXHR("/api/tally/hits", onResult);
+    var query = {
+        filter_:{
+            terms_:[
+                //add CNF clauses
+            ],
+        },
+        buckets_:[
+            //add bucket expresions
+        ],
+    };
+    for(var i in lemmas) {
+        query.filter_.terms_.push(
+            [ //one CNF clause
+                LemmaTerm(lemmas[i]),
+            ]
+        );
+    }
+    for(var j = 0; j < 10000; ++j)
+    for(var i in buckets) {
+        query.buckets_.push({
+            terms_:[
+                [ //one CNF clause
+                    LemmaTerm(buckets[i]),
+                ]
+            ],
+        });
+    }
+    xhr.send(JSON.stringify(query));
+}
