@@ -15,12 +15,18 @@ import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
+import vis.data.util.CrossDomainRequestFilter;
 import vis.data.util.SQL.SQLCloseFilter;
 
 import com.sun.jersey.spi.container.servlet.ServletContainer;
 
 public class Launcher {
 	public static void main(String[] args) {
+		int port = 8080;
+		if(args.length > 0) {
+			port = Integer.parseInt(args[0]);
+		}
+		
 		ServletHolder sh = new ServletHolder(ServletContainer.class);
 		sh.setInitParameter("com.sun.jersey.config.property.resourceConfigClass", "com.sun.jersey.api.core.PackagesResourceConfig");
 		sh.setInitParameter("com.sun.jersey.config.property.packages", "vis.data.server");
@@ -30,18 +36,19 @@ public class Launcher {
 		FilterHolder fh = new FilterHolder(SQLCloseFilter.class);
 		EnumSet<DispatcherType> fd = EnumSet.of(DispatcherType.REQUEST);
 
+		FilterHolder xfh = new FilterHolder(CrossDomainRequestFilter.class);
+
 		ServletHolder ssh = new ServletHolder(DefaultServlet.class);
 		
-		final int PORT = 8080;
 		try {
 			//make sure the port is available,jetty won't
-			ServerSocket s = new ServerSocket(PORT);
+			ServerSocket s = new ServerSocket(port);
 			s.close();
 		} catch (IOException e) {
-			throw new RuntimeException("port in use " + PORT);
+			throw new RuntimeException("port in use " + port);
 		}
 
-        Server server = new Server(8080);
+        Server server = new Server(port);
 		ServletContextHandler root = new ServletContextHandler(ServletContextHandler.SESSIONS);
 		root.setContextPath("/");
 		root.setResourceBase(new File(".").getAbsolutePath());
@@ -51,6 +58,7 @@ public class Launcher {
 		//clean up sql automatically
 		root.addFilter(fh, "/", fd);
 		root.addFilter(fh, "/*", fd);
+		root.addFilter(xfh, "/api/*", fd);
 		//map api
 		root.addServlet(sh, "/");
 		root.addServlet(sh, "/*");

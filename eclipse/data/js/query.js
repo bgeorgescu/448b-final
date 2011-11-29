@@ -1,5 +1,3 @@
-var SERVER = "http://localhost:8080";
-
 function success(code) {
     return code >= 200 && code <= 300;
 }
