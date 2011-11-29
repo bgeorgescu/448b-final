@@ -358,8 +358,7 @@ getMonthlyDocHits = function(buckets, onResult) {
     for(var y = 2000; y <= 2010; ++y) {
         for(var m = 0; m < 12; ++m) {
             for(var i in buckets) {
-                var term_copy = $.extend(true, [], buckets[i]);
-                term_copy.shift().shift();
+                var term_copy = JSON.parse(JSON.stringify(buckets[i]));
                 var agg = {
                     terms_:term_copy,
                 };

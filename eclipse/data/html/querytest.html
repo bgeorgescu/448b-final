@@ -50,7 +50,15 @@
             },
             function(c,r,d){report("arbitrary query",c,r,d);}
         );
-        
+        getMonthlyDocHits(
+            [
+                [
+                    [EntityTerm('cato institute')],
+                ],
+            ], 
+
+            function(c,r,d){report("cato institute",c,r,d);});
+    
         getMonthlyDocHits(
             [
                 [
@@ -69,10 +77,12 @@
                     [EntityTerm('john mccain')],
                     [EntityTerm('mccain')],
                 ],
-            ], function(c,r,d){report("clinton, palin, obama, mccain",c,r,d);});
+            ], 
+            function(c,r,d){report("clinton, palin, obama, mccain",c,r,d);});
 
         getMonthlyComboDocHits([['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']],  function(c,r,d){report("[['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']]",c,r,d);});
         
+        getDocumentsForEntity("cato institute", function(c,r,d){report("cato institute",c,r,d);});
         getDocumentsForEntity("clinton", function(c,r,d){report("clinton docs",c,r,d);});
         getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
