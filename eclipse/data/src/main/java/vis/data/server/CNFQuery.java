@@ -133,12 +133,12 @@ public class CNFQuery {
 			for (int j = 0; j < b.length; ++j, ++k) {
 				if(a[i] == null || b[j] == null)
 					throw new RuntimeException("a term was not properly filled in");
-				c[k] = new QueryTerm[a[i].length + b[i].length]; 
+				c[k] = new QueryTerm[a[i].length + b[j].length]; 
 				int l = 0;
 				for(int m = 0; m < a[i].length; ++m, ++l)
 					c[k][l] = a[i][m];
-				for(int m = 0; m < b[i].length; ++m, ++l)
-					c[k][l] = b[i][m];
+				for(int m = 0; m < b[j].length; ++m, ++l)
+					c[k][l] = b[j][m];
 			}
 		}
 		return c;
