@@ -8,7 +8,8 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletResponse;
+
+import org.eclipse.jetty.server.Response;
 
 public class CrossDomainRequestFilter implements Filter {
 
@@ -19,11 +20,14 @@ public class CrossDomainRequestFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp,
 			FilterChain chain) throws IOException, ServletException {
-		chain.doFilter(req, resp);
-		if(HttpServletResponse.class.isInstance(resp)) {
-			HttpServletResponse hsr = (HttpServletResponse)resp;
+		//this has to come in advance 
+		if(Response.class.isInstance(resp)) {
+			Response hsr = (Response)resp;
 			hsr.setHeader("Access-Control-Allow-Origin", "*");
+			hsr.setHeader("Access-Control-Allow-Methods", "POST,GET,OPTIONS");
+			hsr.setHeader("Access-Control-Allow-Headers", "Content-Type,X-Requested-With");
 		}
+		chain.doFilter(req, resp);
 	}
 
 	@Override
