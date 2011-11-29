@@ -20,15 +20,6 @@ import vis.data.util.SQL.SQLCloseFilter;
 import com.sun.jersey.spi.container.servlet.ServletContainer;
 
 public class Launcher {
-	
-//	@Path("/$")
-//	public static class Root {
-//		@GET
-//		public void redirect() {
-//			throw new WebApplicationException(Response.seeOther(URI.create("/index.html")).build());
-//		}
-//	}
-
 	public static void main(String[] args) {
 		ServletHolder sh = new ServletHolder(ServletContainer.class);
 		sh.setInitParameter("com.sun.jersey.config.property.resourceConfigClass", "com.sun.jersey.api.core.PackagesResourceConfig");
