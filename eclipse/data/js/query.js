@@ -32,6 +32,10 @@ function LemmaTerm(word) {
 function YearTerm(year) {
     return {date_:{before_:(year+1)*10000, after_:(year*10000 - 1)}};
 }
+function MonthTerm(year, month) {
+    return {date_:{before_:(year+1)*10000+(month+2)*100, after_:(year*10000 - 1)+(month+1)*100}};
+}
+
 
 arbitraryQuery = function(endpoint, query, onResult) {
     var xhr = buildXHR(endpoint, onResult);
@@ -219,7 +223,7 @@ getComboDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
     xhr.send(JSON.stringify(query));
 }
 //lemmas = ['a','b']
-//buckets = [['a', 'c'], ['a','d'}, {'b','c'}, {'b', 'd'}]
+//buckets = [['a', 'c'], ['a','d'], ['b','c'], ['b', 'd']]
 getYearlyComboDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
     var xhr = buildXHR("/api/tally/docs", 
         function(code, body, duration) {
@@ -268,6 +272,52 @@ getYearlyComboDocHitsForAnyLemmas = function(lemmas, buckets, onResult) {
     }
     xhr.send(JSON.stringify(query));
 }
+
+var MONTHS = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+
+//buckets = [['a', 'c'], ['a','d'], ['b','c'], ['b', 'd']]
+getMonthlyComboDocHits = function(buckets, onResult) {
+    var xhr = buildXHR("/api/tally/docs", 
+        function(code, body, duration) {
+            var res = body;
+            //transform the data
+            if(success(code)) {
+                res = {};
+                for(var y = 2000; y <= 2010; ++y) {
+	                for(var m = 0; m < 12; ++m) {
+                        res[y + MONTHS[m]] = body.splice(0, buckets.length);
+	                }
+                }
+            }
+            onResult(code, res, duration);
+        }
+    );
+    var query = {
+        buckets_:[
+            //add bucket expresions
+        ],
+    };
+    for(var y = 2000; y <= 2010; ++y) {
+        for(var m = 0; m < 12; ++m) {
+            for(var i in buckets) {
+                var agg = {
+                    terms_:[
+                        [ //one CNF clause
+                            MonthTerm(y, m),
+                        ],
+                    ],
+                };
+                for(var j in buckets[i]) {
+                    agg.terms_[0].push(LemmaTerm(buckets[i][j]));
+                }               
+                query.buckets_.push(agg);
+            }
+        }
+    }
+
+    xhr.send(JSON.stringify(query));
+}
+
 
 //lemmas = ['a','b']
 //buckets = ['c', 'd']

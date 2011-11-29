@@ -50,10 +50,11 @@
             },
             function(c,r,d){report("arbitrary query",c,r,d);}
         );
-        bencmarkHitsForAnyLemmas(["the"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("benmark 100x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
-        bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        
+        getMonthlyComboDocHits([['clinton'], ['obama'], ['mccain'], ['edwards']], function(c,r,d){report("[['clinton'], ['obama'], ['mccain'], ['edwards']]",c,r,d);});
+
+        getMonthlyComboDocHits([['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']],  function(c,r,d){report("[['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']]",c,r,d);});
+        
         getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
         getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
         getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
@@ -70,6 +71,10 @@
             function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
         getComboHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
             function(c,r,d){report("hitcount: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
+        bencmarkHitsForAnyLemmas(["the"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+            function(c,r,d){report("benmark 100x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+            function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
     </script>
   </body>
 </html>
