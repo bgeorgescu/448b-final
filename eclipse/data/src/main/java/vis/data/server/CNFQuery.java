@@ -1,10 +1,12 @@
 package vis.data.server;
 
+import java.lang.ref.SoftReference;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.WeakHashMap;
 
 import javax.ws.rs.Consumes;
@@ -28,22 +30,34 @@ public class CNFQuery {
 		public QueryTerm[][] terms_;
 	}
 	
-	static WeakHashMap<Object, Term> g_term_cache = new WeakHashMap<Object, Term>();
+	//this discards stuff too early
+	//static Map<Object, Term> g_term_cache = Collections.synchronizedMap(new WeakHashMap<Object, Term>());
+	//this "leaks" term parameter blocks
+	static Map<Object, SoftReference<Term>> g_term_cache = Collections.synchronizedMap(new HashMap<Object, SoftReference<Term>>());
+	static Term getCache(Object param) {
+		SoftReference<Term> srt = g_term_cache.get(param);
+		if(srt == null)
+			return null;
+		return srt.get();
+	}
+	static void putCache(Object param, Term t) {
+		g_term_cache.put(param, new SoftReference<Term>(t));
+	}
 	static Term termFor(QueryTerm t) throws SQLException {
 		Term filter = null;
 		if(t.lemma_ != null) {
 			if(filter != null) throw new RuntimeException("a term can only have one clause");
-			filter = g_term_cache.get(t.lemma_);
+			filter = getCache(t.lemma_);
 			if(filter == null)
 				filter = new LemmaTerm(t.lemma_);
-			g_term_cache.put(t.lemma_, filter);
+			putCache(t.lemma_, filter);
 		}
 		if(t.date_ != null) {
 			if(filter != null) throw new RuntimeException("a term can only have one clause");
-			filter = g_term_cache.get(t.date_);
+			filter = getCache(t.date_);
 			if(filter == null)
 				filter = new DateTerm(t.date_);
-			g_term_cache.put(t.date_, filter);
+			putCache(t.date_, filter);
 		}
 		//TODO: other types
 		return filter;
