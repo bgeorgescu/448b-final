@@ -327,7 +327,7 @@ getMonthlyDocHits = function(buckets, onResult) {
 }
 
 //expr = [[Term(), Term()], [Term()]
-getLemmaCountsForMatchingDocs = function(expr, need_text, onResult) {
+getLemmaCountsForMatchingDocs = function(expr, need_text, threshold, limit, onResult) {
     var xhr = buildXHR(TALLY_LEMMAS, 
         function(code, body, duration) {
             var res = body;
@@ -361,12 +361,14 @@ getLemmaCountsForMatchingDocs = function(expr, need_text, onResult) {
             terms_:expr,
         },
         includeText_:need_text,
+        threshold_:threshold,
+        maxResults_:limit,
     };
     xhr.send(JSON.stringify(query));
 }
 
 //expr = [[Term(), Term()], [Term()]
-getEntityCountsForMatchingDocs = function(expr, need_text, onResult) {
+getEntityCountsForMatchingDocs = function(expr, need_text, threshold, limit, onResult) {
     var xhr = buildXHR(TALLY_ENTITIES, 
         function(code, body, duration) {
             var res = body;
@@ -400,6 +402,8 @@ getEntityCountsForMatchingDocs = function(expr, need_text, onResult) {
             terms_:expr,
         },
         includeText_:need_text,
+        threshold_:threshold,
+        maxResults_:limit,
     };
     xhr.send(JSON.stringify(query));
 }

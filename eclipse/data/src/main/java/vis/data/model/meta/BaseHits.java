@@ -70,6 +70,8 @@ public abstract class BaseHits {
 				items[i] = bb.getInt();
 				counts[i] = bb.getInt();
 			}
+			//TODO: XXXX evil and slow and wasteful... resort the lists in the doc table
+			CountAggregator.sortByIdAsc(items, counts);
 			return Pair.of(items, counts);
 		} finally {
 			rs.close();

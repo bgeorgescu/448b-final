@@ -14,6 +14,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawEntity;
@@ -26,6 +27,7 @@ import vis.data.model.query.DateTerm;
 import vis.data.model.query.EntityTerm;
 import vis.data.model.query.LemmaTerm;
 import vis.data.model.query.Term;
+import vis.data.util.CountAggregator;
 import vis.data.util.SetAggregator;
 
 public class CNFQuery {
@@ -136,6 +138,8 @@ public class CNFQuery {
 	public static class CrossAggregation {
 		public Conjunction filter_;
 		public Boolean includeText_;
+		public Integer threshold_;
+		public Integer maxResults_;
 	}
 	
 	
@@ -159,9 +163,19 @@ public class CNFQuery {
 
 			LemmaHits lh = new LemmaHits();
 			Pair<int[], int[]> result = lh.getLemmaCounts(docs); 
+			if(cross.threshold_ != null) {
+				result = CountAggregator.threshold(result.getKey(), result.getValue(), cross.threshold_);
+			}
+			if(cross.maxResults_ != null) {
+				CountAggregator.sortByCountDesc(result.getKey(), result.getValue());
+				result = Pair.of(
+					ArrayUtils.subarray(result.getKey(), 0, cross.maxResults_),
+					ArrayUtils.subarray(result.getValue(), 0, cross.maxResults_));
+			}
 			LemmaCounts lc = new LemmaCounts();
 			lc.id_ = result.getKey();
 			lc.count_ = result.getValue();
+			
 			
 			if(cross.includeText_) {
 				LemmaRaw lr = new LemmaRaw();
@@ -197,6 +211,15 @@ public class CNFQuery {
 
 			EntityHits eh = new EntityHits();
 			Pair<int[], int[]> result = eh.getEntityCounts(docs); 
+			if(cross.threshold_ != null) {
+				result = CountAggregator.threshold(result.getKey(), result.getValue(), cross.threshold_);
+			}
+			if(cross.maxResults_ != null) {
+				CountAggregator.sortByCountDesc(result.getKey(), result.getValue());
+				result = Pair.of(
+					ArrayUtils.subarray(result.getKey(), 0, cross.maxResults_),
+					ArrayUtils.subarray(result.getValue(), 0, cross.maxResults_));
+			}
 			EntityCounts ec = new EntityCounts();
 			ec.id_ = result.getKey();
 			ec.count_ = result.getValue();

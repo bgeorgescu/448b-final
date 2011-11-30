@@ -198,7 +198,7 @@ public class LemmaDocs {
 							PartialDocLemmaHitsCounts pdc = lemma_doc.get(dlc.lemmaId_);
 							dlc.docId_ = pdc.docId_.toArray();
 							dlc.count_ = pdc.count_.toArray();
-							CountAggregator.sort(dlc.docId_, dlc.count_);
+							CountAggregator.sortByIdAsc(dlc.docId_, dlc.count_);
 							LemmaDoc ld = DocLemmaHits.pack(dlc);
 							
 							insert.setInt(1, ld.lemmaId_);

@@ -11,6 +11,31 @@
   <body>
     <h1>Query Test</h1>
     <script type="text/javascript">
+        //gimme bind!
+        if (!Function.prototype.bind) {
+          Function.prototype.bind = function (oThis) {
+            if (typeof this !== "function") {
+              // closest thing possible to the ECMAScript 5 internal IsCallable function
+              throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+            }
+
+            var aArgs = Array.prototype.slice.call(arguments, 1), 
+                fToBind = this, 
+                fNOP = function () {},
+                fBound = function () {
+                  return fToBind.apply(this instanceof fNOP
+                                         ? this
+                                         : oThis || window,
+                                       aArgs.concat(Array.prototype.slice.call(arguments)));
+                };
+
+            fNOP.prototype = this.prototype;
+            fBound.prototype = new fNOP();
+
+            return fBound;
+          };
+        }
+
         function report(query, code, result, duration) {
             $("<div/>")
                 .text("query for " + query)
@@ -151,14 +176,7 @@
             bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
                 function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
         });
-        queries.push(function() { 
-            getEntityCountsForMatchingDocs(
-                [
-                    [LemmaTerm('election')],
-                ],
-                true,
-                function(c,r,d){report("entities for election",c,r,d);});
-        });
+
         queries.push(function() { 
             getLemmaCountsForMatchingDocs(
                 [
@@ -167,8 +185,24 @@
                     [LemmaTerm('clinton')],
                 ],
                 false,
+                100000,
+                undefined,
                 function(c,r,d){report("terms (no word fetch) for clinton",c,r,d);});
         });
+        for(var i = 2000; i <= 2010; ++i) {
+            queries.push(function(y) { 
+                getLemmaCountsForMatchingDocs(
+                    [
+                        [EntityTerm('hillary clinton'), YearTerm(y)],
+                        [EntityTerm('clinton'), YearTerm(y)],
+                        [LemmaTerm('clinton'), YearTerm(y)],
+                    ],
+                    true,
+                    undefined,
+                    60,
+                    function(c,r,d){report("terms  for clinton for " + y ,c,r,d);});
+            }.bind(undefined, i));
+        }
         queries.push(function() { 
             getLemmaCountsForMatchingDocs(
                 [
@@ -177,6 +211,8 @@
                     [LemmaTerm('clinton')],
                 ],
                 true,
+                undefined,
+                10,
                 function(c,r,d){report("terms for clinton",c,r,d);});
         });
 
@@ -188,9 +224,23 @@
                     [LemmaTerm('obama')],
                 ],
                 true, 
+                undefined,
+                10,
                 function(c,r,d){report("obama",c,r,d);});
         });
-
+        for(var i = 2000; i <= 2010; ++i) {
+            queries.push(function(y) { 
+                getEntityCountsForMatchingDocs(
+                    [
+                        [LemmaTerm('election'), YearTerm(y)],
+                        [LemmaTerm('vote'), YearTerm(y)],
+                    ],
+                    true,
+                    undefined,
+                    10,
+                    function(c,r,d){report("entities for election or vote for " + y,c,r,d);});
+            }.bind(undefined, i));
+        }
         doNextQuery();
     </script>
   </body>

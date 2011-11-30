@@ -198,7 +198,7 @@ public class EntityDocs {
 							PartialDocEntityHitsCounts pdc = entity_doc.get(dec.entityId_);
 							dec.docId_ = pdc.docId_.toArray();
 							dec.count_ = pdc.count_.toArray();
-							CountAggregator.sort(dec.docId_, dec.count_);
+							CountAggregator.sortByIdAsc(dec.docId_, dec.count_);
 							EntityDoc ld = DocEntityHits.pack(dec);
 							
 							insert.setInt(1, ld.entityId_);

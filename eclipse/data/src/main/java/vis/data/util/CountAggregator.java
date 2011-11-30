@@ -1,6 +1,8 @@
 package vis.data.util;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
@@ -8,7 +10,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
 public class CountAggregator {
-	public static void sort(int a[], int a_count[]) {
+	public static void sortByIdAsc(int a[], int a_count[]) {
 		assert(a.length == a_count.length);
 		TreeMap<Integer, Integer> v = new TreeMap<Integer, Integer>();
 		for(int i = 0; i < a.length; ++i) {
@@ -18,6 +20,39 @@ public class CountAggregator {
 		for(Entry<Integer, Integer> e : v.entrySet()) {
 			a[i] = e.getKey();
 			a_count[i] = e.getValue();
+			++i;
+		}
+	}	
+	public static void sortByCountDesc(int a[], int a_count[]) {
+		assert(a.length == a_count.length);
+		class CountTuple implements Comparable<CountTuple>{ 
+			int a, count;
+
+			@Override
+			public int compareTo(CountTuple o) {
+				if(count > o.count)
+					return -1;
+				if(count < o.count)
+					return 1;
+				if(a < o.a)
+					return -1;
+				if(a > o.a)
+					return 1;
+				return 0;
+			}
+		}
+		ArrayList<CountTuple> act = new ArrayList<>(a.length);
+		for(int i = 0; i < a.length; ++i) {
+			CountTuple ct = new CountTuple();
+			ct.a = a[i];
+			ct.count = a_count[i];
+			act.add(ct);
+		}
+		Collections.sort(act);
+		int i = 0;
+		for(CountTuple e : act) {
+			a[i] = e.a;
+			a_count[i] = e.count;
 			++i;
 		}
 	}	
@@ -215,6 +250,24 @@ public class CountAggregator {
 		if(c.length != k) {
 			c = ArrayUtils.subarray(c, 0, k);
 			c_count = ArrayUtils.subarray(c_count, 0, k);
+		}
+		return Pair.of(c, c_count);
+	}
+	public static Pair<int[], int[]> threshold(int[] a, int[] a_count, int min) {
+		assert(a.length == a_count.length);
+		int max_size = a.length;
+		int c[] = new int[max_size];
+		int c_count[] = new int[max_size];
+		int i = 0, j = 0;
+		for(; i < a.length; ++i) {
+			if(a_count[i] > min) {
+				c[j] = a[i];
+				c_count[j++] = a_count[i];
+			}
+		}
+		if(c.length != j) {
+			c = ArrayUtils.subarray(c, 0, j);
+			c_count = ArrayUtils.subarray(c_count, 0, j);
 		}
 		return Pair.of(c, c_count);
 	}
