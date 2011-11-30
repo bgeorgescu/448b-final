@@ -100,11 +100,11 @@
         });
 
         queries.push(function() { 
-            getDocumentsForAllLemmas(["the", "and", "or", "but", "then"], function(c,r,d){report("cat+dog",c,r,d);});
+            getDocumentsForAllLemmas(["the", "and", "or", "but", "then"], function(c,r,d){report("5 stop words",c,r,d);});
         });
 
         queries.    push(function() { 
-            getDocumentsForAllLemmas(["the", "and", "or", "but", "then", "be", "make", "say", "of", "not"], function(c,r,d){report("cat+dog",c,r,d);});
+            getDocumentsForAllLemmas(["the", "and", "or", "but", "then", "be", "make", "say", "of", "not"], function(c,r,d){report("10 stop words",c,r,d);});
         });
 
         queries.push(function() { 
