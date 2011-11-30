@@ -41,7 +41,7 @@ public class CountAggregator {
 				return 0;
 			}
 		}
-		ArrayList<CountTuple> act = new ArrayList<>(a.length);
+		ArrayList<CountTuple> act = new ArrayList<CountTuple>(a.length);
 		for(int i = 0; i < a.length; ++i) {
 			CountTuple ct = new CountTuple();
 			ct.a = a[i];
