@@ -16,6 +16,12 @@ import javax.ws.rs.Produces;
 
 import org.apache.commons.lang3.tuple.Pair;
 
+import vis.data.model.RawEntity;
+import vis.data.model.RawLemma;
+import vis.data.model.meta.EntityHits;
+import vis.data.model.meta.EntityRaw;
+import vis.data.model.meta.LemmaHits;
+import vis.data.model.meta.LemmaRaw;
 import vis.data.model.query.DateTerm;
 import vis.data.model.query.EntityTerm;
 import vis.data.model.query.LemmaTerm;
@@ -126,6 +132,89 @@ public class CNFQuery {
 			return docs;
 		}
 	}
+
+	public static class CrossAggregation {
+		public Conjunction filter_;
+		public Boolean includeText_;
+	}
+	
+	
+	public static class LemmaCounts {
+		public int id_[];
+		public int count_[];
+		public String lemma_[];
+		public String pos_[];
+	}
+	@Path("/api/tally/lemmas")
+	public static class TallyLemmas {
+		FilterDocs fd = new FilterDocs();
+		@POST
+		@Consumes("application/json")
+		@Produces("application/json")
+		public LemmaCounts tallyLemmas(CrossAggregation cross) throws SQLException {
+			if(cross.filter_ == null) {
+				throw new RuntimeException("missing filter for cross aggregation");
+			}
+			int[] docs = fd.filterDocs(cross.filter_);
+
+			LemmaHits lh = new LemmaHits();
+			Pair<int[], int[]> result = lh.getLemmaCounts(docs); 
+			LemmaCounts lc = new LemmaCounts();
+			lc.id_ = result.getKey();
+			lc.count_ = result.getValue();
+			
+			if(cross.includeText_) {
+				LemmaRaw lr = new LemmaRaw();
+				//TODO: make this batched
+				lc.lemma_ = new String[lc.id_.length];
+				lc.pos_ = new String[lc.id_.length];
+				for(int i = 0; i < lc.id_.length; ++i) {
+					RawLemma rl = lr.getLemma(lc.id_[i]);
+					lc.lemma_[i] = rl.lemma_;
+					lc.pos_[i] = rl.pos_;
+				}
+			}
+			return lc;
+		}
+	}	
+	public static class EntityCounts {
+		public int id_[];
+		public int count_[];
+		public String entity_[];
+		public String type_[];
+	}
+	@Path("/api/tally/entities")
+	public static class TallyEntities {
+		FilterDocs fd = new FilterDocs();
+		@POST
+		@Consumes("application/json")
+		@Produces("application/json")
+		public EntityCounts tallyEntities(CrossAggregation cross) throws SQLException {
+			if(cross.filter_ == null) {
+				throw new RuntimeException("missing filter for cross aggregation");
+			}
+			int[] docs = fd.filterDocs(cross.filter_);
+
+			EntityHits eh = new EntityHits();
+			Pair<int[], int[]> result = eh.getEntityCounts(docs); 
+			EntityCounts ec = new EntityCounts();
+			ec.id_ = result.getKey();
+			ec.count_ = result.getValue();
+			
+			if(cross.includeText_) {
+				EntityRaw er = new EntityRaw();
+				//TODO: make this batched
+				ec.entity_ = new String[ec.id_.length];
+				ec.type_ = new String[ec.id_.length];
+				for(int i = 0; i < ec.id_.length; ++i) {
+					RawEntity rl = er.getEntity(ec.id_[i]);
+					ec.entity_[i] = rl.entity_;
+					ec.type_[i] = rl.type_;
+				}
+			}
+			return ec;
+		}
+	}	
 	public static class Aggregations {
 		public Conjunction filter_;
 		public Conjunction buckets_[];
@@ -162,7 +251,6 @@ public class CNFQuery {
 	}
 	@Path("/api/evaluate/clauses")
 	public static class EvaluateClauses {
-		FilterDocs md = new FilterDocs();
 		@POST
 		@Consumes("application/json")
 		@Produces("application/json")

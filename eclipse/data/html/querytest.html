@@ -83,6 +83,7 @@
                     ],
                 ], function(c,r,d){report("clinton, palin, obama, mccain",c,r,d);});
         });
+
         queries.push(function() { 
             getMonthlyComboDocHits([['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']],  function(c,r,d){report("[['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']]",c,r,d);});
         });
@@ -150,6 +151,46 @@
             bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
                 function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
         });
+        queries.push(function() { 
+            getEntityCountsForMatchingDocs(
+                [
+                    [LemmaTerm('election')],
+                ],
+                true,
+                function(c,r,d){report("entities for election",c,r,d);});
+        });
+        queries.push(function() { 
+            getLemmaCountsForMatchingDocs(
+                [
+                    [EntityTerm('hillary clinton')],
+                    [EntityTerm('clinton')],
+                    [LemmaTerm('clinton')],
+                ],
+                false,
+                function(c,r,d){report("terms (no word fetch) for clinton",c,r,d);});
+        });
+        queries.push(function() { 
+            getLemmaCountsForMatchingDocs(
+                [
+                    [EntityTerm('hillary clinton')],
+                    [EntityTerm('clinton')],
+                    [LemmaTerm('clinton')],
+                ],
+                true,
+                function(c,r,d){report("terms for clinton",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getLemmaCountsForMatchingDocs(
+                [
+                    [EntityTerm('barack obama')],
+                    [EntityTerm('obama')],
+                    [LemmaTerm('obama')],
+                ],
+                true, 
+                function(c,r,d){report("obama",c,r,d);});
+        });
+
         doNextQuery();
     </script>
   </body>

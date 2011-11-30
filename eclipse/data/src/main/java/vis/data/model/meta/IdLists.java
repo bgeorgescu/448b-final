@@ -44,6 +44,24 @@ public class IdLists {
 			return new int[0];
 		}
 	}
+	public static int max(String table, String field) {
+		Connection conn = SQL.forThread();
+		try {
+			Statement st = conn.createStatement();
+			ResultSet rs = st.executeQuery("SELECT MAX(" + field + ") FROM " + table);
+			try {
+				if(!rs.next())
+					throw new RuntimeException("fatal sql mistake");
+				return rs.getInt(1);
+			} finally {
+				rs.close();
+			}
+		} catch(Exception e) {
+			System.err.println("failed to load list of " + table);
+			e.printStackTrace(System.err);
+			return 0;
+		}
+	}
 	public static int[] allCoreferencedDocuments() {
 		return all(DocCoref.TABLE, DocCoref.DOC_ID);
 	}
@@ -62,4 +80,15 @@ public class IdLists {
 	public static int[] allEntities() {
 		return all(RawEntity.TABLE, RawEntity.ID);
 	}
+
+	public static int maxDocs() {
+		return max(RawDoc.TABLE, RawDoc.ID);
+	}
+	public static int maxLemmas() {
+		return max(RawLemma.TABLE, RawLemma.ID);
+	}
+	public static int maxEntities() {
+		return max(RawEntity.TABLE, RawEntity.ID);
+	}
+
 }

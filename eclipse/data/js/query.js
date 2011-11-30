@@ -2,6 +2,12 @@ success = function(code){
     return code >= 200 && code <= 300;
 }
 
+FILTER_DOCS = "/api/filter/docs";
+TALLY_HITS = "/api/tally/hits";
+TALLY_DOCS = "/api/tally/docs";
+TALLY_LEMMAS = "/api/tally/lemmas";
+TALLY_ENTITIES = "/api/tally/entities";
+
 //error callbacks get the raw text
 //success ones are preprocessed from JSON
 wrappedXHRCallback = function(xhr,callback) {
