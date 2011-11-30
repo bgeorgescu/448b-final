@@ -27,84 +27,129 @@
                     .text(JSON.stringify(result))
                     .appendTo("body");
             }
+            doNextQuery();
         }
-        arbitraryQuery("/api/tally/docs", 
-            {
-                "filter_":{
-                    "terms_":[
-                        [{"lemma_":{"lemma_":"dog"}},{"date_":{"after_":20099999}}],
-                        [{"lemma_":{"lemma_":"cat"}},{"date_":{"after_":20099999}}],
-                    ]
-                },
-                "buckets_":[
-                    {
+    
+        queries = [];
+        function doNextQuery() {
+            var q = queries.shift();
+            q();
+        }
+        
+        queries.push(function() { 
+            arbitraryQuery("/api/tally/docs", 
+                {
+                    "filter_":{
                         "terms_":[
-                            [{"lemma_":{"lemma_":"scratch"}}]
+                            [{"lemma_":{"lemma_":"dog"}},{"date_":{"after_":20099999}}],
+                            [{"lemma_":{"lemma_":"cat"}},{"date_":{"after_":20099999}}],
                         ]
                     },
-                    {   
-                        "terms_":[
-                            [{"lemma_":{"lemma_":"bite"}}]
-                        ]
-                    }
-                ]
-            },
-            function(c,r,d){report("arbitrary query",c,r,d);}
-        );
-        getMonthlyDocHits(
-            [
+                    "buckets_":[
+                        {
+                            "terms_":[
+                                [{"lemma_":{"lemma_":"scratch"}}]
+                            ]
+                        },
+                        {   
+                            "terms_":[
+                                [{"lemma_":{"lemma_":"bite"}}]
+                            ]
+                        }
+                    ]
+                },
+                function(c,r,d){report("arbitrary query",c,r,d);}
+            );
+        });
+        queries.push(function() { 
+            getMonthlyDocHits(
                 [
-                    [EntityTerm('cato institute')],
-                ],
-            ], 
-
-            function(c,r,d){report("cato institute",c,r,d);});
-    
-        getMonthlyDocHits(
-            [
-                [
-                    [EntityTerm('hillary clinton')],
-                    [EntityTerm('clinton')],
-                ],
-                [
-                    [EntityTerm('sarah palin')],
-                    [EntityTerm('palin')],
-                ],
-                [
-                    [EntityTerm('barack obama')],
-                    [EntityTerm('obama')],
-                ],
-                [
-                    [EntityTerm('john mccain')],
-                    [EntityTerm('mccain')],
-                ],
-            ], 
-            function(c,r,d){report("clinton, palin, obama, mccain",c,r,d);});
-
-        getMonthlyComboDocHits([['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']],  function(c,r,d){report("[['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']]",c,r,d);});
+                    [
+                        [EntityTerm('hillary clinton')],
+                        [EntityTerm('clinton')],
+                    ],
+                    [
+                        [EntityTerm('sarah palin')],
+                        [EntityTerm('palin')],
+                    ],
+                    [
+                        [EntityTerm('barack obama')],
+                        [EntityTerm('obama')],
+                    ],
+                    [
+                        [EntityTerm('john mccain')],
+                        [EntityTerm('mccain')],
+                    ],
+                ], function(c,r,d){report("clinton, palin, obama, mccain",c,r,d);});
+        });
+        queries.push(function() { 
+            getMonthlyComboDocHits([['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']],  function(c,r,d){report("[['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']]",c,r,d);});
+        });
         
-        getDocumentsForEntity("cato institute", function(c,r,d){report("cato institute",c,r,d);});
-        getDocumentsForEntity("clinton", function(c,r,d){report("clinton docs",c,r,d);});
-        getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
-        getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
-        getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
-        getDocumentsForAnyLemmas(["dog", "cat"], function(c,r,d){report("cat,dog",c,r,d);});
-        getDocHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
-        getComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
-            function(c,r,d){report("cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
-        getYearlyComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
-            function(c,r,d){report("yearly: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
-        getYearlyComboDocHitsForAnyLemmas(["the"], [['the']],
-            function(c,r,d){report("the by year",c,r,d);});
-        getHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
-        getComboHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
-            function(c,r,d){report("hitcount: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
-        bencmarkHitsForAnyLemmas(["the"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("benmark 100x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
-        bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-            function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
+
+        queries.push(function() { 
+            getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
+        });
+        
+        queries.push(function() { 
+            getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
+        });
+        
+        queries.push(function() { 
+            getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getDocumentsForAllLemmas(["the", "and", "or", "but", "then"], function(c,r,d){report("cat+dog",c,r,d);});
+        });
+
+        queries.    push(function() { 
+            getDocumentsForAllLemmas(["the", "and", "or", "but", "then", "be", "make", "say", "of", "not"], function(c,r,d){report("cat+dog",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getDocumentsForAnyLemmas(["dog", "cat"], function(c,r,d){report("cat,dog",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getDocHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+                function(c,r,d){report("cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
+                function(c,r,d){report("cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getYearlyComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
+                function(c,r,d){report("yearly: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getYearlyComboDocHitsForAnyLemmas(["the"], [['the']],
+                function(c,r,d){report("the by year",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+                function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        });
+
+        queries.push(function() { 
+            getComboHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
+                function(c,r,d){report("hitcount: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
+        });
+        queries.push(function() { 
+            bencmarkHitsForAnyLemmas(["the"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+                function(c,r,d){report("benmark 100x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        });
+
+        queries.push(function() { 
+            bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
+                function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        });
+        doNextQuery();
     </script>
   </body>
 </html>
