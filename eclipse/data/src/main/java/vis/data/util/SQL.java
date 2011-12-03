@@ -8,7 +8,10 @@ import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -177,14 +180,18 @@ public class SQL {
 		}
 		
 	}
-	public static void importMysqlDump(File f)  {
+	public static void importMysqlDump(File f, String... options)  {
+		System.out.println("loading mysql dump " + f.getName());
 		try {
-			ProcessBuilder pb = new ProcessBuilder(
+			List<String> args = new ArrayList<String>();
+			args.addAll(Arrays.asList(
 				"mysql",
 				"--user=vis",
 				"--password=vis",
 				"vis"
-			);
+			));
+			args.addAll(Arrays.asList(options));
+			ProcessBuilder pb = new ProcessBuilder(args);
 			pb.redirectInput(f);
 			Process pr = pb.start();
 			int res = pr.waitFor();

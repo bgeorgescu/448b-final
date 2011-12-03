@@ -11,7 +11,7 @@ public class LoadWordNet {
 		ExceptionHandler.terminateOnUncaught();
 		SQL.importMysqlDump(new File("extra/wordnet/mysql-wn-schema.sql"));
 		SQL.importMysqlDump(new File("extra/wordnet/mysql-wn-data.sql"));
-		SQL.importMysqlDump(new File("extra/wordnet/mysql-wn-constraints.sql"));
+		SQL.importMysqlDump(new File("extra/wordnet/mysql-wn-constraints.sql"), "--force");
 		SQL.importMysqlDump(new File("extra/wordnet/mysql-wn-views.sql"));
 	}
 
