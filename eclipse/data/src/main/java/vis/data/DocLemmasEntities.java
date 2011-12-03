@@ -38,7 +38,7 @@ import gnu.trove.map.hash.TIntIntHashMap;
 //take the raw table and process each doc into a list of words that hit
 //insert those words into a worddoc table
 //later we transform this to a docword table
-public class DocLemmas {	
+public class DocLemmasEntities {	
 	static int g_next_doc = 0;
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();

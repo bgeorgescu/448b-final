@@ -7,8 +7,8 @@ import javax.persistence.UniqueConstraint;
 
 @Table(name=RawEntity.TABLE,
 	uniqueConstraints={
-		@UniqueConstraint(columnNames={RawEntity.ENTITY, RawEntity.TYPE}), 
-		@UniqueConstraint(columnNames={RawEntity.TYPE, RawEntity.ENTITY})})
+		@UniqueConstraint(columnNames={RawEntity.ENTITY + "(255)", RawEntity.TYPE}), 
+		@UniqueConstraint(columnNames={RawEntity.TYPE, RawEntity.ENTITY + "(255)"})})
 public class RawEntity {
 	public static final String TABLE = "rawentity";
 	
@@ -19,7 +19,7 @@ public class RawEntity {
 
 	public static final String ENTITY="entity";
 	//also want index
-	@Column(name=ENTITY, columnDefinition="VARCHAR(1024) NOT NULL")
+	@Column(name=ENTITY, columnDefinition="VARCHAR(500) NOT NULL")
 	public String entity_;
 
 	public static final String TYPE="type";

@@ -11,7 +11,7 @@ public class All {
 		//RawHits.main(new String[]);
 		
 		//extract all entities and lemmas using stanford corenlp
-		DocLemmas.main(new String[0]);
+		DocLemmasEntities.main(new String[0]);
 		
 		//load up all of the extracted list that are stored per document
 		//and convert them into lists of documents for each entity/lemma

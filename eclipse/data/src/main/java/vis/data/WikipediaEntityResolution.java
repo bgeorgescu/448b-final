@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.zip.GZIPInputStream;
 
@@ -14,8 +15,10 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import vis.data.model.RawEntity;
 import vis.data.model.WikiPage;
 import vis.data.model.WikiRedirect;
+import vis.data.model.meta.EntityAccessor;
 import vis.data.model.meta.WikiRedirectAccessor;
 import vis.data.util.SQL;
 import vis.data.util.StringArrayResultSetIterator;
@@ -87,6 +90,9 @@ public class WikipediaEntityResolution {
 	    }
         SQL.importMysqlDump(f);
 	}
+	public static String clean(String s) {
+		return s.toLowerCase().replaceAll("_", " ").replaceAll("(\\s|\\(|\\))+", " ");
+	}
 	public static void main(String[] args) {
 		redirects();
 		pages();
@@ -94,13 +100,24 @@ public class WikipediaEntityResolution {
 		try {
 			WikiRedirectAccessor wra = new WikiRedirectAccessor();
 			StringArrayResultSetIterator i = wra.redirectIterator();
-			String redirect[];
-			while((redirect = i.next()) != null) {
-				System.out.println(redirect[0] + " => " + redirect[1]);
+			Connection second = SQL.open(); //need because previous is streaming mode now
+			try {
+				EntityAccessor ea = new EntityAccessor(second);
+				String redirect[];
+				int count = 0;
+				while((redirect = i.next()) != null) {
+					RawEntity re[] = ea.lookupEntityByName(redirect[0]);
+					if(re.length == 0)
+						continue;
+					System.out.println(count + ":" + clean(redirect[0]) + " => " + clean(redirect[1]));
+					++count;
+				}
+			} finally {
+				second.close();
 			}
 			
 		} catch (SQLException e) {
-			throw new RuntimeException("wiki redirect processing failed");
+			throw new RuntimeException("wiki redirect processing failed", e);
 		}
 	}
 

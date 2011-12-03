@@ -12,7 +12,9 @@ import vis.data.util.SQL;
 public class EntityAccessor {
 	PreparedStatement query_, queryByEntity_, queryByBoth_, queryByType_;
 	public EntityAccessor() throws SQLException {
-		Connection conn = SQL.forThread();
+		this(SQL.forThread());
+	}
+	public EntityAccessor(Connection conn) throws SQLException {
 		query_ = conn.prepareStatement("SELECT " + RawEntity.ENTITY + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + " = ?");
 		queryByEntity_ = conn.prepareStatement("SELECT " + RawEntity.ID + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ENTITY + " = ?");
 		queryByBoth_ = conn.prepareStatement("SELECT " + RawEntity.ID + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ENTITY + " = ? AND " + RawEntity.TYPE + " = ?");

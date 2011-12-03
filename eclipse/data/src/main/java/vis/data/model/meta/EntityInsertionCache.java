@@ -85,8 +85,8 @@ public class EntityInsertionCache {
 				if(i != null)
 					return i;
 				insert_.setInt(1, ++maxId_);
-				if(entity.length() > 1024)
-					entity = entity.substring(0, entity.lastIndexOf(' ', 1019)) + " ...";
+				if(entity.length() > 500)
+					entity = entity.substring(0, entity.lastIndexOf(' ', 495)) + " ...";
 				insert_.setString(2, entity);
 				insert_.setString(3, type);
 				insert_.executeUpdate();

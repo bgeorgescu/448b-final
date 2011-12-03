@@ -92,7 +92,7 @@ public class SQL {
 				if(!index_fields.isEmpty())
 					index_fields += ", ";
 				index_fields += s;
-				index_name += "_" + s;
+				index_name += "_" + s.replaceAll("[^_a-zA-Z0-9]", "_");
 			}
 			Statement st = conn.createStatement();
 			try {
@@ -115,7 +115,7 @@ public class SQL {
 				if(!index_fields.isEmpty())
 					index_fields += ", ";
 				index_fields += s;
-				index_name += "_" + s;
+				index_name += "_" + s.replaceAll("[^_a-zA-Z0-9]", "_");
 			}
 			Statement st = conn.createStatement();
 			try {
@@ -132,7 +132,7 @@ public class SQL {
 		cpds.setUrl("jdbc:mysql://127.0.0.1/vis");
 	}
 
-	static Connection open() {
+	public static Connection open() {
 		try {
 			return cpds.getConnection();
 		} catch (SQLException e) {
