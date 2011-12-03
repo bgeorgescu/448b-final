@@ -15,10 +15,10 @@ public class WikiRedirectAccessor {
 	PreparedStatement queryList_, queryListLimited_;
 	public WikiRedirectAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
-		queryList_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM);
+		queryList_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM + " WHERE " + WikiPage.IS_REDIRECT + " = 1");
 		//stream these
 		queryList_.setFetchSize(Integer.MIN_VALUE);
-		queryListLimited_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM + " WHERE " + WikiRedirect.FROM + " >= ? AND " + WikiRedirect.FROM + " < ?");
+		queryListLimited_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM + " WHERE " + WikiRedirect.FROM + " >= ? AND " + WikiRedirect.FROM + " < ? AND " + WikiPage.IS_REDIRECT + " = 1");
 		//stream these
 		queryListLimited_.setFetchSize(Integer.MIN_VALUE);
 	}

@@ -131,12 +131,18 @@ public class WikipediaEntityResolution {
 								RawEntity re[] = ea.lookupEntityByName(redirect[0]);
 								if(re.length == 0)
 									continue;
-								int to = eic.getOrAddEntity(redirect[1], re[0].type_);
-								rea.setResolution(re[0].id_, to);  // batch?
+								for(int i = 0; i < re.length; ++i) {
+									int to = eic.getOrAddEntity(redirect[1], re[i].type_);
+									rea.setResolution(re[i].id_, to);  // batch?
+								}
+							}
+						} catch(RuntimeException e) {
+							if(!e.getMessage().toLowerCase().startsWith("after end of result set")) {
+								throw e;
 							}
 						} finally {
 							second.close();
-						}
+						} 
 					} catch (SQLException e) {
 						throw new RuntimeException("wiki redirect processing failed", e);
 					}
