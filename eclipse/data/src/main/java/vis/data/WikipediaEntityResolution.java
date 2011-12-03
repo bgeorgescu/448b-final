@@ -1,5 +1,8 @@
 package vis.data;
 
+import gnu.trove.iterator.TObjectIntIterator;
+import gnu.trove.map.hash.TObjectIntHashMap;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -7,6 +10,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.zip.GZIPInputStream;
 
@@ -167,6 +173,62 @@ public class WikipediaEntityResolution {
 		loadPages();
 		resolveEntities();
 
+		//experimental stuff
+		
+		try {
+			TObjectIntHashMap<String> hs = new TObjectIntHashMap<String>();
+			Connection second = SQL.open();
+			EntityAccessor ea = new EntityAccessor(second);
+			try {
+				StringArrayResultSetIterator it = ea.entityIterator();
+				String entity[];
+				while((entity = it.next()) != null) {
+					String e = entity[0];
+					String parts[] = e.split("\\s+");
+					for(int i = 0; i < 1/*parts.length*/; ++i) {
+						if(parts[i].indexOf('.') == -1)
+							continue;
+						hs.adjustOrPutValue(parts[i], 1, 1);
+					}
+				}
+			} catch(RuntimeException e) {
+				if(!e.getMessage().toLowerCase().startsWith("after end of result set")) {
+					throw e;
+				}
+			} finally {
+				second.close();
+			} 
+			class Word {
+				String word_;
+				int hits_;
+			}
+			ArrayList<Word> words = null;
+			words = new ArrayList<Word>(hs.size());
+			for(TObjectIntIterator<String> i = hs.iterator(); i.hasNext();) {
+				i.advance();
+				Word w = new Word();
+				w.word_ = i.key();
+				w.hits_ = i.value();
+				words.add(w);
+			}
+			Collections.sort(words, new Comparator<Word>() {
+
+				@Override
+				public int compare(Word o1, Word o2) {
+					if(o1.hits_ < o2.hits_)
+						return 1;
+					if(o1.hits_ > o2.hits_)
+						return -1;
+					return 0;
+				}
+			});
+			for(int i = words.size() - 1; i >= 0; --i) {
+				System.out.println("hits: " + words.get(i).hits_ + " word: " + words.get(i).word_);
+			}
+		} catch (SQLException e) {
+			throw new RuntimeException("error scanning for features to handle", e);
+		}
+		
 	}
 
 }
