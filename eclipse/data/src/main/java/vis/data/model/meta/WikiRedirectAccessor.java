@@ -7,14 +7,13 @@ import java.sql.SQLException;
 
 import vis.data.model.WikiPage;
 import vis.data.model.WikiRedirect;
-import vis.data.util.SQL;
 import vis.data.util.StringArrayResultSetIterator;
 
 
 public class WikiRedirectAccessor {
 	PreparedStatement queryList_, queryListLimited_;
-	public WikiRedirectAccessor() throws SQLException {
-		Connection conn = SQL.forThread();
+	//requires a fresh connection because it is a streaming result set (otherwise the thread local paradigm for the connection is confusing)
+	public WikiRedirectAccessor(Connection conn) throws SQLException {
 		queryList_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM + " WHERE " + WikiPage.IS_REDIRECT + " = 1 AND " + WikiPage.NAMESPACE + " = 0");
 		//stream these
 		queryList_.setFetchSize(Integer.MIN_VALUE);

@@ -120,12 +120,12 @@ public class WikipediaEntityResolution {
 			processing_threads[i] = new Thread() {
 				public void run() {
 					try {
-						WikiRedirectAccessor wra = new WikiRedirectAccessor();
-						StringArrayResultSetIterator it = wra.redirectIterator(minId, maxId);
-						Connection second = SQL.open(); //need because previous is streaming mode now
+						ResolvedEntityAccessor rea = new ResolvedEntityAccessor();
+						EntityAccessor ea = new EntityAccessor();
+						Connection second = SQL.open();
 						try {
-							ResolvedEntityAccessor rea = new ResolvedEntityAccessor(second);
-							EntityAccessor ea = new EntityAccessor(second);
+							WikiRedirectAccessor wra = new WikiRedirectAccessor(second);
+							StringArrayResultSetIterator it = wra.redirectIterator(minId, maxId);
 							String redirect[];
 							while((redirect = it.next()) != null) {
 								RawEntity re[] = ea.lookupEntityByName(redirect[0]);
