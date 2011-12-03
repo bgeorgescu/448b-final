@@ -19,10 +19,10 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawEntity;
 import vis.data.model.RawLemma;
-import vis.data.model.meta.EntityHits;
-import vis.data.model.meta.EntityRaw;
-import vis.data.model.meta.LemmaHits;
-import vis.data.model.meta.LemmaRaw;
+import vis.data.model.meta.EntityForDocAccessor;
+import vis.data.model.meta.EntityAccessor;
+import vis.data.model.meta.LemmaForDocHitsAccessor;
+import vis.data.model.meta.LemmaAccessor;
 import vis.data.model.query.DateTerm;
 import vis.data.model.query.EntityTerm;
 import vis.data.model.query.LemmaTerm;
@@ -161,7 +161,7 @@ public class CNFQuery {
 			}
 			int[] docs = fd.filterDocs(cross.filter_);
 
-			LemmaHits lh = new LemmaHits();
+			LemmaForDocHitsAccessor lh = new LemmaForDocHitsAccessor();
 			Pair<int[], int[]> result = lh.getLemmaCounts(docs); 
 			if(cross.threshold_ != null) {
 				result = CountAggregator.threshold(result.getKey(), result.getValue(), cross.threshold_);
@@ -178,7 +178,7 @@ public class CNFQuery {
 			
 			
 			if(cross.includeText_) {
-				LemmaRaw lr = new LemmaRaw();
+				LemmaAccessor lr = new LemmaAccessor();
 				//TODO: make this batched
 				lc.lemma_ = new String[lc.id_.length];
 				lc.pos_ = new String[lc.id_.length];
@@ -209,7 +209,7 @@ public class CNFQuery {
 			}
 			int[] docs = fd.filterDocs(cross.filter_);
 
-			EntityHits eh = new EntityHits();
+			EntityForDocAccessor eh = new EntityForDocAccessor();
 			Pair<int[], int[]> result = eh.getEntityCounts(docs); 
 			if(cross.threshold_ != null) {
 				result = CountAggregator.threshold(result.getKey(), result.getValue(), cross.threshold_);
@@ -225,7 +225,7 @@ public class CNFQuery {
 			ec.count_ = result.getValue();
 			
 			if(cross.includeText_) {
-				EntityRaw er = new EntityRaw();
+				EntityAccessor er = new EntityAccessor();
 				//TODO: make this batched
 				ec.entity_ = new String[ec.id_.length];
 				ec.type_ = new String[ec.id_.length];

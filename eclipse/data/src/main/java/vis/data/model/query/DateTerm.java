@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import vis.data.model.meta.TimeSortedDoc;
+import vis.data.model.meta.TimeSortedDocCache;
 import vis.data.util.CountAggregator;
 import vis.data.util.SetAggregator;
 
@@ -49,7 +49,7 @@ public class DateTerm extends Term {
 	public final int docs_[];
 	public DateTerm(Parameters p) throws SQLException {
 		parameters_ = p;
-		TimeSortedDoc tsd = new TimeSortedDoc();
+		TimeSortedDocCache tsd = new TimeSortedDocCache();
 		if(p.before_ != null && p.after_ != null) {
 			docs_ = tsd.getDocsBetween(p.before_, p.after_);
 		} else if(p.before_ != null) {

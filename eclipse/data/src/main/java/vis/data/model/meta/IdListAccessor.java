@@ -9,10 +9,9 @@ import vis.data.model.DocLemma;
 import vis.data.model.RawDoc;
 import vis.data.model.RawEntity;
 import vis.data.model.RawLemma;
-import vis.data.model.RawWord;
 import vis.data.util.SQL;
 
-public class IdLists {
+public class IdListAccessor {
 	public static int[] all(String table, String field) {
 		Connection conn = SQL.forThread();
 		int[] ids;
@@ -73,9 +72,6 @@ public class IdLists {
 	}
 	public static int[] allLemmas() {
 		return all(RawLemma.TABLE, RawLemma.ID);
-	}
-	public static int[] allWords() {
-		return all(RawWord.TABLE, RawWord.ID);
 	}
 	public static int[] allEntities() {
 		return all(RawEntity.TABLE, RawEntity.ID);

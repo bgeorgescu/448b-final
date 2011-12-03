@@ -6,8 +6,8 @@ import java.util.Arrays;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawLemma;
-import vis.data.model.meta.DocLemmaHits;
-import vis.data.model.meta.LemmaRaw;
+import vis.data.model.meta.DocForLemmaAccessor;
+import vis.data.model.meta.LemmaAccessor;
 import vis.data.util.CountAggregator;
 import vis.data.util.SetAggregator;
 
@@ -53,7 +53,7 @@ public class LemmaTerm extends Term {
 		}	
 	}
 
-	DocLemmaHits dlh = new DocLemmaHits();
+	DocForLemmaAccessor dlh = new DocForLemmaAccessor();
 	
 	public final int[] lemmas_;
 	public final boolean filterOnly_;
@@ -67,7 +67,7 @@ public class LemmaTerm extends Term {
 			lemmas_ = new int[1];
 			lemmas_[0] = p.id_;
 		} else if (p.lemma_ != null || p.pos_ != null){
-			LemmaRaw lr = new LemmaRaw();
+			LemmaAccessor lr = new LemmaAccessor();
 			RawLemma rls[] = null;
 			if(p.lemma_ != null && p.pos_ != null) {
 				RawLemma rl = lr.lookupLemma(p.lemma_, p.pos_);
@@ -99,9 +99,9 @@ public class LemmaTerm extends Term {
 			docs_ = new int[0];
 			count_ = new int[0];
 		} else {
-			DocLemmaHits.Counts initial = dlh.getDocCounts(lemmas_[0]);
+			DocForLemmaAccessor.Counts initial = dlh.getDocCounts(lemmas_[0]);
 			for(int i = 1; i < lemmas_.length; ++i) {
-				DocLemmaHits.Counts partial = dlh.getDocCounts(lemmas_[1]);
+				DocForLemmaAccessor.Counts partial = dlh.getDocCounts(lemmas_[1]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
 				initial.docId_ = res.getKey();
 				initial.count_ = res.getValue();

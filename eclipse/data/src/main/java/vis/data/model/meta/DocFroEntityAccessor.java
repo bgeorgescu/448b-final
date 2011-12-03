@@ -6,21 +6,22 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import vis.data.model.LemmaDoc;
+import vis.data.model.EntityDoc;
 import vis.data.util.SQL;
 
-public class DocLemmaHits {
+public class DocFroEntityAccessor {
 	PreparedStatement query_;
-	public DocLemmaHits() throws SQLException {
+	public DocFroEntityAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
-		query_ = conn.prepareStatement("SELECT " + LemmaDoc.DOC_LIST + " FROM " + LemmaDoc.TABLE + " WHERE " + LemmaDoc.LEMMA_ID + " = ?");
+		query_ = conn.prepareStatement("SELECT " + EntityDoc.DOC_LIST + " FROM " + EntityDoc.TABLE + " WHERE " + EntityDoc.ENTITY_ID + " = ?");
 	}
-	public int[] getDocs(int lemma_id) throws SQLException {
-		query_.setInt(1, lemma_id);
+	public int[] getDocs(int entity_id) throws SQLException {
+		query_.setInt(1, entity_id);
 		ResultSet rs = query_.executeQuery();
 		try {
-			if(!rs.next())
+			if(!rs.next()) {
 				return new int[0];
+			}
 			
 			byte[] data = rs.getBytes(1);
 			int[] doc_ids = new int[data.length / (Integer.SIZE / 8) / 2];
@@ -35,14 +36,19 @@ public class DocLemmaHits {
 		}
 	}
 	public static class Counts {
-		public int lemmaId_;
+		public Counts(){
+		}
+		public Counts(int entityId){
+			entityId_ = entityId;
+		}
+		public int entityId_;
 		public int[] docId_;
 		public int[] count_;
 	}
-	public Counts getDocCounts(int lemma_id) throws SQLException {
+	public Counts getDocCounts(int entity_id) throws SQLException {
 		Counts c = new Counts();
-		c.lemmaId_ = lemma_id;
-		query_.setInt(1, lemma_id);
+		c.entityId_ = entity_id;
+		query_.setInt(1, entity_id);
 		ResultSet rs = query_.executeQuery();
 		try {
 			if(!rs.next()) {
@@ -65,16 +71,16 @@ public class DocLemmaHits {
 			rs.close();
 		}
 	}
-	public static LemmaDoc pack(Counts c) {
+	public static EntityDoc pack(Counts c) {
 		int num = c.docId_.length;
 		ByteBuffer bb = ByteBuffer.allocate(num * 2 * Integer.SIZE / 8);
 		for(int i = 0; i < num; ++i) {
 			bb.putInt(c.docId_[i]);
 			bb.putInt(c.count_[i]);
 		}
-		LemmaDoc ld = new LemmaDoc();
-		ld.lemmaId_ = c.lemmaId_;
-		ld.docList_ = bb.array();
-		return ld;
+		EntityDoc ed = new EntityDoc();
+		ed.entityId_ = c.entityId_;
+		ed.docList_ = bb.array();
+		return ed;
 	}
 }

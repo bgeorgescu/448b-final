@@ -1,5 +1,6 @@
 package vis.data.util;
 
+import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.sql.Connection;
@@ -173,5 +174,22 @@ public class SQL {
 		public void init(FilterConfig arg0) throws ServletException {
 		}
 		
+	}
+	public static void importMysqlDump(File f)  {
+		try {
+			ProcessBuilder pb = new ProcessBuilder(
+				"mysql",
+				"--user=vis",
+				"--password=vis",
+				"vis"
+			);
+			pb.redirectInput(f);
+			Process pr = pb.start();
+			int res = pr.waitFor();
+			if(res != 0)
+				throw new RuntimeException("failed to import database code " + res);
+		} catch (Exception e) {
+			throw new RuntimeException("failed to import database", e);
+		}
 	}
 }

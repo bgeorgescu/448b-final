@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
 import vis.data.model.RawSentiment;
-import vis.data.model.meta.SentimentRaw;
+import vis.data.model.meta.SentimentAccessor;
 
 public class Sentiments {
 	@Path("/api/sentiments")
@@ -16,7 +16,7 @@ public class Sentiments {
 		@GET
 		@Produces("application/json")
 		public List<RawSentiment> listAll() throws SQLException {
-			SentimentRaw sr = new SentimentRaw();
+			SentimentAccessor sr = new SentimentAccessor();
 			return sr.listSentiments();
 		}
 	}

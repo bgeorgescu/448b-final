@@ -8,7 +8,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 
 import vis.data.model.RawLemma;
-import vis.data.model.meta.LemmaRaw;
+import vis.data.model.meta.LemmaAccessor;
 
 public class Lemma {
 	@Path("/api/word/{word}/lemma")
@@ -17,7 +17,7 @@ public class Lemma {
 		@Produces("application/json")
 		public RawLemma[] get(@PathParam("word") String word) throws SQLException {
 			//TODO: actually stem the word	
-			LemmaRaw lr = new LemmaRaw();
+			LemmaAccessor lr = new LemmaAccessor();
 			return lr.lookupLemmaByWord(word);
 		}
 	}
@@ -27,7 +27,7 @@ public class Lemma {
 		@Produces("application/json")
 		public RawLemma[] get(@PathParam("pos") String pos) throws SQLException {
 			//TODO: actually stem the word	
-			LemmaRaw lr = new LemmaRaw();
+			LemmaAccessor lr = new LemmaAccessor();
 			return lr.lookupLemmaByPos(pos);
 		}
 	}
@@ -37,7 +37,7 @@ public class Lemma {
 		@Produces("application/json")
 		public RawLemma get(@PathParam("word") String word, @PathParam("pos") String pos) throws SQLException {
 			//TODO: actually stem the word	
-			LemmaRaw lr = new LemmaRaw();
+			LemmaAccessor lr = new LemmaAccessor();
 			return lr.lookupLemma(word, pos);
 		}
 	}

@@ -15,11 +15,11 @@ import java.util.regex.Pattern;
 
 import vis.data.model.DocLemma;
 import vis.data.model.RawDoc;
-import vis.data.model.meta.EntityCache;
-import vis.data.model.meta.EntityHits;
-import vis.data.model.meta.IdLists;
-import vis.data.model.meta.LemmaCache;
-import vis.data.model.meta.LemmaHits;
+import vis.data.model.meta.EntityInsertionCache;
+import vis.data.model.meta.EntityForDocAccessor;
+import vis.data.model.meta.IdListAccessor;
+import vis.data.model.meta.LemmaInsertionCache;
+import vis.data.model.meta.LemmaForDocHitsAccessor;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 import vis.data.util.SetAggregator;
@@ -47,9 +47,9 @@ public class DocLemmas {
 		Connection conn = SQL.forThread();
 
 		//first load all the document ids that are unprocesssed
-		final int[] all_processed_doc_ids = IdLists.allProcessedDocs();
+		final int[] all_processed_doc_ids = IdListAccessor.allProcessedDocs();
 		Arrays.sort(all_processed_doc_ids);
-		int[] doc_ids = IdLists.allDocs();
+		int[] doc_ids = IdListAccessor.allDocs();
 		Arrays.sort(doc_ids);
 		final int[] all_doc_ids = SetAggregator.remove(doc_ids, all_processed_doc_ids);
 		
@@ -115,8 +115,8 @@ public class DocLemmas {
 			};
 			doc_scan_thread[i].start();
 		}
-		final LemmaCache lc = LemmaCache.getInstance();
-		final EntityCache ec = EntityCache.getInstance();
+		final LemmaInsertionCache lc = LemmaInsertionCache.getInstance();
+		final EntityInsertionCache ec = EntityInsertionCache.getInstance();
 	    Properties props = new Properties();
 	    props.put("ner.applyNumericClassifiers", "false"); //?
 	    
@@ -205,16 +205,16 @@ public class DocLemmas {
 					    }
 						DocLemma dl = new DocLemma();
 						dl.docId_ = doc.id_;
-						LemmaHits.Counts lc = new LemmaHits.Counts();
+						LemmaForDocHitsAccessor.Counts lc = new LemmaForDocHitsAccessor.Counts();
 						lc.docId_ = doc.id_;
 						lc.lemmaId_ = lemma_counts.keys();
 						lc.count_ = lemma_counts.values();
-						EntityHits.Counts ec = new EntityHits.Counts();
+						EntityForDocAccessor.Counts ec = new EntityForDocAccessor.Counts();
 						ec.docId_ = doc.id_;
 						ec.entityId_ = entity_counts.keys();
 						ec.count_ = entity_counts.values();
-						LemmaHits.pack(dl, lc);
-						EntityHits.pack(dl, ec);
+						LemmaForDocHitsAccessor.pack(dl, lc);
+						EntityForDocAccessor.pack(dl, ec);
 						try {
 							hits_to_record.put(dl);
 						} catch (InterruptedException e) {
@@ -305,7 +305,7 @@ public class DocLemmas {
 			throw new RuntimeException("unknwon interrupt", e);
 		}
 	}
-	private static void handleEntity(final EntityCache ec, String ne,
+	private static void handleEntity(final EntityInsertionCache ec, String ne,
 			String entity, TIntIntHashMap entity_counts) {
 		if(ne.equals("O")) {
 			//nuttin

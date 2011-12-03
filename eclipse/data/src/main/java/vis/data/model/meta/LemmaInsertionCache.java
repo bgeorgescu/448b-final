@@ -15,14 +15,14 @@ import vis.data.util.SQL;
 //basically this talks to the db and caches the word to id mapping.
 //it will automatically add new words, so no one else should mess with
 //this table while the cache is active
-public class LemmaCache {
-	private static LemmaCache g_instance;
+public class LemmaInsertionCache {
+	private static LemmaInsertionCache g_instance;
 	private ConcurrentHashMap<Pair<String, String>, Integer> mapping_ = new ConcurrentHashMap<Pair<String, String>, Integer>();
 	private PreparedStatement insert_;
 	private int maxId_ = 0;
 	//this has ites own connection which they handle synchronization because it does insertion on whatever thread happens to call
 	private Connection conn_;
-	private LemmaCache(Connection conn){
+	private LemmaInsertionCache(Connection conn){
 		conn_ = conn;
 		try {
 			//load the whole word list
@@ -57,7 +57,7 @@ public class LemmaCache {
 			throw new RuntimeException("weird close failure", e);
 		}
 	}
-	public static synchronized LemmaCache getInstance() {
+	public static synchronized LemmaInsertionCache getInstance() {
 		if(g_instance != null)
 			return g_instance;
 		Connection conn = SQL.forThread();
@@ -66,7 +66,7 @@ public class LemmaCache {
 		} catch(SQLException e) {
 			System.err.println("WARNING rawlemma table already exists!");
 		}
-		return new LemmaCache(conn);
+		return new LemmaInsertionCache(conn);
 	}
 	public int getLemma(String word, String pos) {
 		word = word.toLowerCase();

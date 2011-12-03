@@ -12,7 +12,7 @@ import org.apache.commons.io.IOUtils;
 
 import vis.data.model.RawSentiment;
 import vis.data.model.RawSentimentWord;
-import vis.data.model.meta.SentimentRaw;
+import vis.data.model.meta.SentimentAccessor;
 import vis.data.util.SQL;
 
 public class GeneralInquirerSentiment {
@@ -40,7 +40,7 @@ public class GeneralInquirerSentiment {
 			SQL.createTable(conn, RawSentimentWord.class);
 			SQL.createTable(conn, RawSentiment.class);
 			
-			SentimentRaw sr = new SentimentRaw();
+			SentimentAccessor sr = new SentimentAccessor();
 			for(File f : files) {
 				String sentiment = f.getName();
 				String bits[] = sentiment.split("\\.");

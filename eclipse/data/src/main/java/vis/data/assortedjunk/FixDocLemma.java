@@ -5,9 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import vis.data.model.DocLemma;
-import vis.data.model.meta.EntityHits;
-import vis.data.model.meta.IdLists;
-import vis.data.model.meta.LemmaHits;
+import vis.data.model.meta.EntityForDocAccessor;
+import vis.data.model.meta.IdListAccessor;
+import vis.data.model.meta.LemmaForDocHitsAccessor;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 
@@ -21,7 +21,7 @@ public class FixDocLemma {
 		ExceptionHandler.terminateOnUncaught();
 		
 		//first load all the document ids and lemma ids
-		final int[] all_doc_ids = IdLists.allProcessedDocs();
+		final int[] all_doc_ids = IdListAccessor.allProcessedDocs();
 		
 		final int BATCH_SIZE = 100;
  		final Thread doc_scan_thread[] = new Thread[Runtime.getRuntime().availableProcessors()];
@@ -31,8 +31,8 @@ public class FixDocLemma {
 					Connection conn = SQL.forThread();
 					int current_batch_partial = 0;
 					try {
-						LemmaHits lh = new LemmaHits();
-						EntityHits eh = new EntityHits();
+						LemmaForDocHitsAccessor lh = new LemmaForDocHitsAccessor();
+						EntityForDocAccessor eh = new EntityForDocAccessor();
 						PreparedStatement update = conn.prepareStatement("UPDATE " + DocLemma.TABLE+ " SET " + DocLemma.LEMMA_LIST + " = ?, " + 
 								DocLemma.ENTITY_LIST + " = ? WHERE " + DocLemma.DOC_ID + " = ?");
 
@@ -46,8 +46,8 @@ public class FixDocLemma {
 								}
 								doc_id = all_doc_ids[g_next_doc++];
 							}
-							LemmaHits.Counts lc = lh.getLemmaCounts(doc_id);
-							EntityHits.Counts ec = eh.getEntityCounts(doc_id);
+							LemmaForDocHitsAccessor.Counts lc = lh.getLemmaCounts(doc_id);
+							EntityForDocAccessor.Counts ec = eh.getEntityCounts(doc_id);
 							
 							//actual bug was that sql transparent remaps insert (primary key) values (0) to have a key of 1
 							//then the subsequent insert of item one fails.  So we lost the real item 1 effectively
@@ -65,8 +65,8 @@ public class FixDocLemma {
 							}
 							DocLemma dl = new DocLemma();
 							dl.docId_ = doc_id;
-							LemmaHits.pack(dl, lc);
-							EntityHits.pack(dl, ec);
+							LemmaForDocHitsAccessor.pack(dl, lc);
+							EntityForDocAccessor.pack(dl, ec);
 							update.setBytes(1, dl.lemmaList_);
 							update.setBytes(2, dl.entityList_);
 							update.setInt(3, doc_id);

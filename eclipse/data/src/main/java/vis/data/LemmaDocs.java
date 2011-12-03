@@ -14,10 +14,10 @@ import java.util.concurrent.TimeUnit;
 
 import vis.data.model.DocLemma;
 import vis.data.model.LemmaDoc;
-import vis.data.model.meta.DocLemmaHits;
-import vis.data.model.meta.IdLists;
-import vis.data.model.meta.LemmaHits;
-import vis.data.model.meta.LemmaHits.Counts;
+import vis.data.model.meta.DocForLemmaAccessor;
+import vis.data.model.meta.IdListAccessor;
+import vis.data.model.meta.LemmaForDocHitsAccessor;
+import vis.data.model.meta.LemmaForDocHitsAccessor.Counts;
 import vis.data.util.CountAggregator;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
@@ -36,8 +36,8 @@ public class LemmaDocs {
 		Connection conn = SQL.forThread();
 
 		//first load all the document ids and lemma ids
-		final int[] all_doc_ids = IdLists.allProcessedDocs();
-		final int[] all_lemma_ids = IdLists.allLemmas();
+		final int[] all_doc_ids = IdListAccessor.allProcessedDocs();
+		final int[] all_lemma_ids = IdListAccessor.allLemmas();
 
 		class PartialDocLemmaHitsCounts {
 			TIntArrayList docId_ = new TIntArrayList();
@@ -54,7 +54,7 @@ public class LemmaDocs {
 			throw new RuntimeException("failed to create table of words for documents", e);
 		}
 
-		final BlockingQueue<LemmaHits.Counts> doc_to_process = new ArrayBlockingQueue<LemmaHits.Counts>(100);
+		final BlockingQueue<LemmaForDocHitsAccessor.Counts> doc_to_process = new ArrayBlockingQueue<LemmaForDocHitsAccessor.Counts>(100);
 		//thread to scan for documents to process
 		
 		final int BATCH_SIZE = 100;
@@ -64,7 +64,7 @@ public class LemmaDocs {
 				public void run() {
 					Connection conn = SQL.forThread();
 					try {
-						LemmaHits lh = new LemmaHits();
+						LemmaForDocHitsAccessor lh = new LemmaForDocHitsAccessor();
 						PreparedStatement query_lemma_list = conn.prepareStatement("SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 
 						for(;;) {
@@ -81,7 +81,7 @@ public class LemmaDocs {
 								if(!rs.next()) {
 									throw new RuntimeException("failed to get doc list for  " + doc_id);
 								}
-								LemmaHits.Counts doc = lh.getLemmaCounts(doc_id);
+								LemmaForDocHitsAccessor.Counts doc = lh.getLemmaCounts(doc_id);
 								try {
 									doc_to_process.put(doc);
 								} catch (InterruptedException e) {
@@ -186,7 +186,7 @@ public class LemmaDocs {
 								"INSERT INTO " + LemmaDoc.TABLE + "(" + LemmaDoc.LEMMA_ID + "," + LemmaDoc.DOC_LIST  + ") " + 
 								"VALUES (?, ?)");
 						for(;;) {
-							DocLemmaHits.Counts dlc = new DocLemmaHits.Counts();
+							DocForLemmaAccessor.Counts dlc = new DocForLemmaAccessor.Counts();
 							dlc.lemmaId_ = -1;
 							synchronized(mysql_threads) {
 								if(g_next_lemma == all_lemma_ids.length) {
@@ -199,7 +199,7 @@ public class LemmaDocs {
 							dlc.docId_ = pdc.docId_.toArray();
 							dlc.count_ = pdc.count_.toArray();
 							CountAggregator.sortByIdAsc(dlc.docId_, dlc.count_);
-							LemmaDoc ld = DocLemmaHits.pack(dlc);
+							LemmaDoc ld = DocForLemmaAccessor.pack(dlc);
 							
 							insert.setInt(1, ld.lemmaId_);
 							insert.setBytes(2, ld.docList_);

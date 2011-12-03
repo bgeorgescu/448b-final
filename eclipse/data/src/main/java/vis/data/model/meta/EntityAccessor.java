@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import vis.data.model.RawEntity;
 import vis.data.util.SQL;
 
-public class EntityRaw {
+public class EntityAccessor {
 	PreparedStatement query_, queryByEntity_, queryByBoth_, queryByType_;
-	public EntityRaw() throws SQLException {
+	public EntityAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + RawEntity.ENTITY + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + " = ?");
 		queryByEntity_ = conn.prepareStatement("SELECT " + RawEntity.ID + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ENTITY + " = ?");

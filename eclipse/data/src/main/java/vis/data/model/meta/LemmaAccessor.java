@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import vis.data.model.RawLemma;
 import vis.data.util.SQL;
 
-public class LemmaRaw {
+public class LemmaAccessor {
 	PreparedStatement query_, queryByWord_, queryByLemma_, queryByPos_;
-	public LemmaRaw() throws SQLException {
+	public LemmaAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + RawLemma.LEMMA + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.ID + " = ?");
 		queryByWord_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.LEMMA + " = ?");

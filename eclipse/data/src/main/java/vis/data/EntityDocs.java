@@ -14,10 +14,10 @@ import java.util.concurrent.TimeUnit;
 
 import vis.data.model.DocLemma;
 import vis.data.model.EntityDoc;
-import vis.data.model.meta.DocEntityHits;
-import vis.data.model.meta.EntityHits;
-import vis.data.model.meta.EntityHits.Counts;
-import vis.data.model.meta.IdLists;
+import vis.data.model.meta.DocFroEntityAccessor;
+import vis.data.model.meta.EntityForDocAccessor;
+import vis.data.model.meta.EntityForDocAccessor.Counts;
+import vis.data.model.meta.IdListAccessor;
 import vis.data.util.CountAggregator;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
@@ -36,8 +36,8 @@ public class EntityDocs {
 		Connection conn = SQL.forThread();
 
 		//first load all the document ids and entity ids
-		final int[] all_doc_ids = IdLists.allProcessedDocs();
-		final int[] all_entity_ids = IdLists.allEntities();
+		final int[] all_doc_ids = IdListAccessor.allProcessedDocs();
+		final int[] all_entity_ids = IdListAccessor.allEntities();
 
 		class PartialDocEntityHitsCounts {
 			TIntArrayList docId_ = new TIntArrayList();
@@ -54,7 +54,7 @@ public class EntityDocs {
 			throw new RuntimeException("failed to create table of words for documents", e);
 		}
 
-		final BlockingQueue<EntityHits.Counts> doc_to_process = new ArrayBlockingQueue<EntityHits.Counts>(100);
+		final BlockingQueue<EntityForDocAccessor.Counts> doc_to_process = new ArrayBlockingQueue<EntityForDocAccessor.Counts>(100);
 		//thread to scan for documents to process
 		
 		final int BATCH_SIZE = 100;
@@ -64,7 +64,7 @@ public class EntityDocs {
 				public void run() {
 					Connection conn = SQL.forThread();
 					try {
-						EntityHits lh = new EntityHits();
+						EntityForDocAccessor lh = new EntityForDocAccessor();
 						PreparedStatement query_entity_list = conn.prepareStatement("SELECT " + DocLemma.ENTITY_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 
 						for(;;) {
@@ -81,7 +81,7 @@ public class EntityDocs {
 								if(!rs.next()) {
 									throw new RuntimeException("failed to get doc list for  " + doc_id);
 								}
-								EntityHits.Counts doc = lh.getEntityCounts(doc_id);
+								EntityForDocAccessor.Counts doc = lh.getEntityCounts(doc_id);
 								try {
 									doc_to_process.put(doc);
 								} catch (InterruptedException e) {
@@ -186,7 +186,7 @@ public class EntityDocs {
 								"INSERT INTO " + EntityDoc.TABLE + "(" + EntityDoc.ENTITY_ID + "," + EntityDoc.DOC_LIST  + ") " + 
 								"VALUES (?, ?)");
 						for(;;) {
-							DocEntityHits.Counts dec = new DocEntityHits.Counts();
+							DocFroEntityAccessor.Counts dec = new DocFroEntityAccessor.Counts();
 							dec.entityId_ = -1;
 							synchronized(mysql_threads) {
 								if(g_next_entity == all_entity_ids.length) {
@@ -199,7 +199,7 @@ public class EntityDocs {
 							dec.docId_ = pdc.docId_.toArray();
 							dec.count_ = pdc.count_.toArray();
 							CountAggregator.sortByIdAsc(dec.docId_, dec.count_);
-							EntityDoc ld = DocEntityHits.pack(dec);
+							EntityDoc ld = DocFroEntityAccessor.pack(dec);
 							
 							insert.setInt(1, ld.entityId_);
 							insert.setBytes(2, ld.docList_);

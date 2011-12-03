@@ -4,11 +4,11 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import vis.data.model.RawDoc;
-import vis.data.model.meta.DocRaw;
-import vis.data.model.meta.EntityRaw;
-import vis.data.model.meta.IdLists;
-import vis.data.model.meta.LemmaEntityCorefs;
-import vis.data.model.meta.LemmaRaw;
+import vis.data.model.meta.DocAccessor;
+import vis.data.model.meta.EntityAccessor;
+import vis.data.model.meta.IdListAccessor;
+import vis.data.model.meta.LemmaEntityCorefForDocAccessor;
+import vis.data.model.meta.LemmaAccessor;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 
@@ -17,16 +17,16 @@ public class DumpCoreferences {
 		ExceptionHandler.terminateOnUncaught();
 		Connection conn = SQL.forThread();
 		try {
-			int[] all_corefed = IdLists.allCoreferencedDocuments();
-			LemmaEntityCorefs lec = new LemmaEntityCorefs();
-			DocRaw dr = new DocRaw();
+			int[] all_corefed = IdListAccessor.allCoreferencedDocuments();
+			LemmaEntityCorefForDocAccessor lec = new LemmaEntityCorefForDocAccessor();
+			DocAccessor dr = new DocAccessor();
 			//note this is not particularly efficient because these do not cache
-			EntityRaw er = new EntityRaw();
-			LemmaRaw lr = new LemmaRaw();
+			EntityAccessor er = new EntityAccessor();
+			LemmaAccessor lr = new LemmaAccessor();
 			
 			for(int i : all_corefed) {
 				RawDoc rd = dr.getDocMeta(i);
-				LemmaEntityCorefs.dumpCorefs(System.out, rd.title_, er, lr, lec.getCorefs(i));
+				LemmaEntityCorefForDocAccessor.dumpCorefs(System.out, rd.title_, er, lr, lec.getCorefs(i));
 			}
 		} catch (SQLException e) {
 			throw new RuntimeException("sql error", e);

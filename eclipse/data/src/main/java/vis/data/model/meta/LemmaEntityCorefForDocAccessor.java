@@ -12,9 +12,9 @@ import vis.data.model.RawEntity;
 import vis.data.model.RawLemma;
 import vis.data.util.SQL;
 
-public class LemmaEntityCorefs {
+public class LemmaEntityCorefForDocAccessor {
 	PreparedStatement query_;
-	public LemmaEntityCorefs() throws SQLException {
+	public LemmaEntityCorefForDocAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + DocCoref.COREF_LIST + " FROM " + DocCoref.TABLE + " WHERE " + DocCoref.DOC_ID + " = ?");
 	}
@@ -101,7 +101,7 @@ public class LemmaEntityCorefs {
 		dc.corefList_ = bb.array();
 		return dc;
 	}
-	public static void dumpCorefs(PrintStream o, String title, EntityRaw er, LemmaRaw lr, Corefs c) throws SQLException {
+	public static void dumpCorefs(PrintStream o, String title, EntityAccessor er, LemmaAccessor lr, Corefs c) throws SQLException {
 		o.println("--- " + title + " ---");
 		for(int set = 0; set < c.ref_.length; ++set) {
 			for(int item = 0; item < c.ref_[set].length; ++item) {

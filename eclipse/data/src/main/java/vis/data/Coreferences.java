@@ -15,16 +15,16 @@ import java.util.regex.Pattern;
 
 import vis.data.model.DocCoref;
 import vis.data.model.RawDoc;
-import vis.data.model.meta.DocRaw;
-import vis.data.model.meta.EntityCache;
-import vis.data.model.meta.EntityRaw;
-import vis.data.model.meta.IdLists;
-import vis.data.model.meta.LemmaCache;
-import vis.data.model.meta.LemmaEntityCorefs;
-import vis.data.model.meta.LemmaEntityCorefs.Corefs;
-import vis.data.model.meta.LemmaEntityCorefs.PhraseType;
-import vis.data.model.meta.LemmaEntityCorefs.Ref;
-import vis.data.model.meta.LemmaRaw;
+import vis.data.model.meta.DocAccessor;
+import vis.data.model.meta.EntityInsertionCache;
+import vis.data.model.meta.EntityAccessor;
+import vis.data.model.meta.IdListAccessor;
+import vis.data.model.meta.LemmaInsertionCache;
+import vis.data.model.meta.LemmaEntityCorefForDocAccessor;
+import vis.data.model.meta.LemmaEntityCorefForDocAccessor.Corefs;
+import vis.data.model.meta.LemmaEntityCorefForDocAccessor.PhraseType;
+import vis.data.model.meta.LemmaEntityCorefForDocAccessor.Ref;
+import vis.data.model.meta.LemmaAccessor;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 import edu.stanford.nlp.dcoref.CorefChain;
@@ -54,7 +54,7 @@ public class Coreferences {
 		Connection conn = SQL.forThread();
 
 		//first load all the document ids
-		final int[] all_doc_ids = IdLists.allDocs();
+		final int[] all_doc_ids = IdListAccessor.allDocs();
 		
 		try {
 			SQL.createTable(conn, DocCoref.class);
@@ -72,7 +72,7 @@ public class Coreferences {
 				public void run() {
 					Connection conn = SQL.forThread();
 					try {
-						DocRaw dr = new DocRaw();
+						DocAccessor dr = new DocAccessor();
 						for(;;) {
 							int doc_id = -1;
 							synchronized(doc_scan_thread) {
@@ -104,8 +104,8 @@ public class Coreferences {
 			};
 			doc_scan_thread[i].start();
 		}
-		final LemmaCache lc = LemmaCache.getInstance();
-		final EntityCache ec = EntityCache.getInstance();
+		final LemmaInsertionCache lc = LemmaInsertionCache.getInstance();
+		final EntityInsertionCache ec = EntityInsertionCache.getInstance();
 	    Properties props = new Properties();
 	    props.put("ner.applyNumericClassifiers", "false"); //?
 	    
@@ -128,8 +128,8 @@ public class Coreferences {
 					Connection conn = SQL.forThread();
 					try {
 						//used for logging only
-						EntityRaw er = new EntityRaw();
-						LemmaRaw lr = new LemmaRaw();
+						EntityAccessor er = new EntityAccessor();
+						LemmaAccessor lr = new LemmaAccessor();
 						for(;;) {
 							if(doc_to_process.isEmpty()) {
 								boolean still_running = false;
@@ -161,9 +161,9 @@ public class Coreferences {
 						    List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 	
 	
-						    ArrayList<LemmaEntityCorefs.Ref[]> corefs = new ArrayList<Ref[]>();
-						    ArrayList<LemmaEntityCorefs.Ref> active_set = new ArrayList<Ref>();
-						    ArrayList<LemmaEntityCorefs.PhraseType> active_type = new ArrayList<PhraseType>();
+						    ArrayList<LemmaEntityCorefForDocAccessor.Ref[]> corefs = new ArrayList<Ref[]>();
+						    ArrayList<LemmaEntityCorefForDocAccessor.Ref> active_set = new ArrayList<Ref>();
+						    ArrayList<LemmaEntityCorefForDocAccessor.PhraseType> active_type = new ArrayList<PhraseType>();
 						    TIntArrayList active_id = new TIntArrayList();
 	
 						    Map<Integer, CorefChain> graph = document.get(CorefChainAnnotation.class);
@@ -189,7 +189,7 @@ public class Coreferences {
 	
 							//LemmaEntityCorefs.dumpCorefs(System.out, doc.title_, er, lr, c);
 						    
-						    DocCoref dc = LemmaEntityCorefs.pack(c);
+						    DocCoref dc = LemmaEntityCorefForDocAccessor.pack(c);
 	
 							try {
 								hits_to_record.put(dc);
@@ -288,7 +288,7 @@ public class Coreferences {
 			throw new RuntimeException("unknwon interrupt", e);
 		}
 	}
-	protected static void handleMention(EntityCache ec, LemmaCache lc, List<CoreMap> sentences, ArrayList<Ref> active_set, ArrayList<PhraseType> active_type, TIntArrayList active_id, CorefMention cm) {
+	protected static void handleMention(EntityInsertionCache ec, LemmaInsertionCache lc, List<CoreMap> sentences, ArrayList<Ref> active_set, ArrayList<PhraseType> active_type, TIntArrayList active_id, CorefMention cm) {
 		CoreMap sentence = sentences.get(cm.sentNum - 1);
 		List<CoreLabel> ta = sentence.get(TokensAnnotation.class);
 	    String last_ner = null;
@@ -320,7 +320,7 @@ public class Coreferences {
     			continue;
     		}
     		int lemma_id = lc.getOrAddLemma(lemma, pos);
-			active_type.add(LemmaEntityCorefs.PhraseType.Lemma);
+			active_type.add(LemmaEntityCorefForDocAccessor.PhraseType.Lemma);
 			active_id.add(lemma_id);
     	}
     	if(!last_ner.equals("O")) {
@@ -328,12 +328,12 @@ public class Coreferences {
     	}
     	if(!active_id.isEmpty()) {
 	    	Ref r = new Ref();
-	    	r.type_ = active_type.toArray(new LemmaEntityCorefs.PhraseType[active_type.size()]);
+	    	r.type_ = active_type.toArray(new LemmaEntityCorefForDocAccessor.PhraseType[active_type.size()]);
 	    	r.id_ = active_id.toArray();
 	    	active_set.add(r);
     	}
 	}
-	private static void handleEntity(final EntityCache ec, String ne, String entity, ArrayList<PhraseType> active_type, TIntArrayList active_id) {
+	private static void handleEntity(final EntityInsertionCache ec, String ne, String entity, ArrayList<PhraseType> active_type, TIntArrayList active_id) {
 		if(ne.equals("O")) {
 			//nuttin
 		} else if(ne.equals("NUMBER") ||
@@ -352,7 +352,7 @@ public class Coreferences {
 			ne.equals("ORGANIZATION")) 
 		{
 			int entity_id = ec.getOrAddEntity(entity, ne);
-			active_type.add(LemmaEntityCorefs.PhraseType.Entity);
+			active_type.add(LemmaEntityCorefForDocAccessor.PhraseType.Entity);
 			active_id.add(entity_id);
 		} else {
 			System.err.println("unknown named entity type: " + ne);

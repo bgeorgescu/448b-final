@@ -15,14 +15,14 @@ import vis.data.util.SQL;
 //basically this talks to the db and caches the word to id mapping.
 //it will automatically add new words, so no one else should mess with
 //this table while the cache is active
-public class EntityCache {
-	private static EntityCache g_instance;
+public class EntityInsertionCache {
+	private static EntityInsertionCache g_instance;
 	private ConcurrentHashMap<Pair<String, String>, Integer> mapping_ = new ConcurrentHashMap<Pair<String, String>, Integer>();
 	private PreparedStatement insert_;
 	private int maxId_ = 0;
 	//this has ites own connection which they handle synchronization because it does insertion on whatever thread happens to call
 	private Connection conn_;
-	private EntityCache(Connection conn){
+	private EntityInsertionCache(Connection conn){
 		conn_ = conn;
 		try {
 			//load the whole word list
@@ -57,7 +57,7 @@ public class EntityCache {
 			throw new RuntimeException("weird close failure", e);
 		}
 	}
-	public static synchronized EntityCache getInstance() {
+	public static synchronized EntityInsertionCache getInstance() {
 		if(g_instance != null)
 			return g_instance;
 		Connection conn = SQL.forThread();
@@ -66,7 +66,7 @@ public class EntityCache {
 		} catch(SQLException e) {
 			System.err.println("WARNING RawEntity table already exists!");
 		}
-		return new EntityCache(conn);
+		return new EntityInsertionCache(conn);
 	}
 	public int getEntity(String entity, String type) {
 		entity = entity.toLowerCase();

@@ -11,11 +11,11 @@ import org.apache.commons.lang3.ArrayUtils;
 import vis.data.model.RawDoc;
 import vis.data.util.SQL;
 
-public class TimeSortedDoc {
+public class TimeSortedDocCache {
 	static int[] date_ = null;
 	static int[] id_ = null;
-	public TimeSortedDoc() throws SQLException {
-		synchronized(TimeSortedDoc.class) {
+	public TimeSortedDocCache() throws SQLException {
+		synchronized(TimeSortedDocCache.class) {
 			if(date_ != null)
 				return;
 			Connection conn = SQL.forThread();

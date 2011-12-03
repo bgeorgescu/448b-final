@@ -10,9 +10,9 @@ import java.util.List;
 import vis.data.model.RawSentiment;
 import vis.data.util.SQL;
 
-public class SentimentRaw {
+public class SentimentAccessor {
 	PreparedStatement query_, queryBySentiment_, queryList_;
-	public SentimentRaw() throws SQLException {
+	public SentimentAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + RawSentiment.SENTIMENT  + " FROM " + RawSentiment.TABLE + " WHERE " + RawSentiment.ID + " = ?");
 		queryBySentiment_ = conn.prepareStatement("SELECT " + RawSentiment.ID + " FROM " + RawSentiment.TABLE + " WHERE " + RawSentiment.SENTIMENT + " = ?");

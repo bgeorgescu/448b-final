@@ -6,8 +6,8 @@ import java.util.Arrays;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawEntity;
-import vis.data.model.meta.DocEntityHits;
-import vis.data.model.meta.EntityRaw;
+import vis.data.model.meta.DocFroEntityAccessor;
+import vis.data.model.meta.EntityAccessor;
 import vis.data.util.CountAggregator;
 import vis.data.util.SetAggregator;
 
@@ -53,7 +53,7 @@ public class EntityTerm extends Term {
 		}	
 	}
 
-	DocEntityHits deh = new DocEntityHits();
+	DocFroEntityAccessor deh = new DocFroEntityAccessor();
 	
 	public final int[] entities_;
 	public final boolean filterOnly_;
@@ -67,7 +67,7 @@ public class EntityTerm extends Term {
 			entities_ = new int[1];
 			entities_[0] = p.id_;
 		} else if (p.entity_ != null || p.type_ != null){
-			EntityRaw er = new EntityRaw();
+			EntityAccessor er = new EntityAccessor();
 			RawEntity rls[] = null;
 			if(p.entity_ != null && p.type_ != null) {
 				RawEntity rl = er.lookupEntity(p.entity_, p.type_);
@@ -99,9 +99,9 @@ public class EntityTerm extends Term {
 			docs_ = new int[0];
 			count_ = new int[0];
 		} else {
-			DocEntityHits.Counts initial = deh.getDocCounts(entities_[0]);
+			DocFroEntityAccessor.Counts initial = deh.getDocCounts(entities_[0]);
 			for(int i = 1; i < entities_.length; ++i) {
-				DocEntityHits.Counts partial = deh.getDocCounts(entities_[1]);
+				DocFroEntityAccessor.Counts partial = deh.getDocCounts(entities_[1]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
 				initial.docId_ = res.getKey();
 				initial.count_ = res.getValue();

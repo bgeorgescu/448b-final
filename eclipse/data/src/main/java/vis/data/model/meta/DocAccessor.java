@@ -8,10 +8,10 @@ import java.sql.SQLException;
 import vis.data.model.RawDoc;
 import vis.data.util.SQL;
 
-public class DocRaw {
+public class DocAccessor {
 	PreparedStatement queryAll_;
 	PreparedStatement queryMeta_;
-	public DocRaw() throws SQLException {
+	public DocAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		queryAll_ = conn.prepareStatement("SELECT " + 
 					RawDoc.DATE + 

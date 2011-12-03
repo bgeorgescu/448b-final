@@ -10,7 +10,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import vis.data.util.CountAggregator;
 import vis.data.util.SetAggregator;
 
-public abstract class BaseHits {
+public abstract class BaseHitsAccessor {
 	final static int BATCH_SIZE = 1024;
 	abstract PreparedStatement countsQuery();
 	abstract int maxItemId();

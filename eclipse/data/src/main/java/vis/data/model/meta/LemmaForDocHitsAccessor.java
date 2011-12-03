@@ -9,11 +9,11 @@ import org.apache.commons.lang3.tuple.Pair;
 import vis.data.model.DocLemma;
 import vis.data.util.SQL;
 
-public class EntityHits extends BaseHits {
+public class LemmaForDocHitsAccessor extends BaseHitsAccessor {
 	PreparedStatement query_;
-	public EntityHits() throws SQLException {
+	public LemmaForDocHitsAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
-		query_ = conn.prepareStatement("SELECT " + DocLemma.ENTITY_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
+		query_ = conn.prepareStatement("SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
 	}
 	@Override
 	PreparedStatement countsQuery() {
@@ -21,37 +21,38 @@ public class EntityHits extends BaseHits {
 	}
 	@Override
 	int maxItemId() {
-		return IdLists.maxEntities();
+		return IdListAccessor.maxLemmas();
 	}
 	@Override
 	int maxCountedItemId() {
-		return IdLists.maxDocs();
+		return IdListAccessor.maxDocs();
 	}
-	public int[] getEntities(int doc_id) throws SQLException {
+	public int[] getLemmas(int doc_id) throws SQLException {
 		return getItems(doc_id);
 	}
 	final static int BATCH_SIZE = 1024;
-	public int[] getEntities(int docs[]) throws SQLException {
+	public int[] getLemmas(int docs[]) throws SQLException {
 		return getItems(docs);
 	}
 	public static class Counts {
 		public int docId_;
-		public int[] entityId_;
+		public int[] lemmaId_;
 		public int[] count_;
 	}
-	public Counts getEntityCounts(int doc_id) throws SQLException {
+	public Counts getLemmaCounts(int doc_id) throws SQLException {
 		Pair<int[], int[]> rc = getCounts(doc_id);
 		Counts c = new Counts();
 		c.docId_ = doc_id;
-		c.entityId_ = rc.getKey();
+		c.lemmaId_ = rc.getKey();
 		c.count_ = rc.getValue();
 		return c;
 	}
-	public Pair<int[], int[]> getEntityCounts(int docs[]) throws SQLException {
+	public Pair<int[], int[]> getLemmaCounts(int docs[]) throws SQLException {
 		return getCounts(docs);
 	}
+
 	public static void pack(DocLemma dl, Counts c) {
-		dl.entityList_ = pack(c.entityId_, c.count_);
+		dl.lemmaList_ = pack(c.lemmaId_, c.count_);
 		dl.docId_ = c.docId_;
 	}
 }
