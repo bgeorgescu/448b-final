@@ -13,10 +13,12 @@ import org.apache.commons.io.IOUtils;
 import vis.data.model.RawSentiment;
 import vis.data.model.RawSentimentWord;
 import vis.data.model.meta.SentimentAccessor;
+import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 
 public class GeneralInquirerSentiment {
 	public static void main(String[] args) {
+		ExceptionHandler.terminateOnUncaught();
 		File dir = new File("extra/sentiments/");
 		if(!dir.exists())
 			throw new RuntimeException("sentiment list folder not found");

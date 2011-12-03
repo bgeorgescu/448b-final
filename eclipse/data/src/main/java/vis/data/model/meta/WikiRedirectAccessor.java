@@ -12,15 +12,24 @@ import vis.data.util.StringArrayResultSetIterator;
 
 
 public class WikiRedirectAccessor {
-	PreparedStatement queryList_;
+	PreparedStatement queryList_, queryListLimited_;
 	public WikiRedirectAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		queryList_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM);
 		//stream these
 		queryList_.setFetchSize(Integer.MIN_VALUE);
+		queryListLimited_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM + " WHERE " + WikiRedirect.FROM + " >= ? AND " + WikiRedirect.FROM + " < ?");
+		//stream these
+		queryListLimited_.setFetchSize(Integer.MIN_VALUE);
 	}
 	public StringArrayResultSetIterator redirectIterator() throws SQLException {
 		ResultSet rs = queryList_.executeQuery();
+		return new StringArrayResultSetIterator(rs);
+	}
+	public StringArrayResultSetIterator redirectIterator(int beginInclusive, int endExclusive) throws SQLException {
+		queryListLimited_.setInt(1, beginInclusive);
+		queryListLimited_.setInt(2, endExclusive);
+		ResultSet rs = queryListLimited_.executeQuery();
 		return new StringArrayResultSetIterator(rs);
 	}
 }

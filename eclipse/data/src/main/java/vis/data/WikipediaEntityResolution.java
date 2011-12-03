@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.zip.GZIPInputStream;
 
 import org.apache.http.HttpResponse;
@@ -16,15 +17,20 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import vis.data.model.RawEntity;
+import vis.data.model.ResolvedEntity;
 import vis.data.model.WikiPage;
 import vis.data.model.WikiRedirect;
 import vis.data.model.meta.EntityAccessor;
+import vis.data.model.meta.EntityInsertionCache;
+import vis.data.model.meta.IdListAccessor;
+import vis.data.model.meta.ResolvedEntityAccessor;
 import vis.data.model.meta.WikiRedirectAccessor;
+import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 import vis.data.util.StringArrayResultSetIterator;
 
 public class WikipediaEntityResolution {
-	public static void pages() {
+	public static void loadPages() {
 		if(SQL.tableExists(WikiPage.TABLE))
 			return;
 		HttpClient hc = new DefaultHttpClient();
@@ -57,7 +63,7 @@ public class WikipediaEntityResolution {
         }
         SQL.importMysqlDump(f);
 	}
-	public static void redirects() {
+	public static void loadRedirects() {
 		if(SQL.tableExists(WikiRedirect.TABLE))
 			return;
 		HttpClient hc = new DefaultHttpClient();
@@ -91,34 +97,70 @@ public class WikipediaEntityResolution {
         SQL.importMysqlDump(f);
 	}
 	public static String clean(String s) {
-		return s.toLowerCase().replaceAll("_", " ").replaceAll("(\\s|\\(|\\))+", " ");
+		return s.toLowerCase()
+				.replaceAll("\\([^\\)]+\\)", " ")  // parentheticals
+				.replaceAll("_", " ") //underbars
+				.replaceAll("\\s+", " "); // whitespace
+	}
+	public static void resolveEntities() {
+		if(SQL.tableExists(ResolvedEntity.TABLE))
+			return;
+		try {
+			SQL.createTable(SQL.forThread(), ResolvedEntity.class);
+		} catch (SQLException e) {
+			throw new RuntimeException("failed to create resolved entity table", e);
+		}
+		final EntityInsertionCache eic = EntityInsertionCache.getInstance();
+		Date start = new Date();
+		int mr = IdListAccessor.maxRedirect() + 1;
+		final Thread processing_threads[] = new Thread[Runtime.getRuntime().availableProcessors()];
+		for(int i = 0; i < processing_threads.length; ++i) {
+			final int minId = mr * i / (processing_threads.length);
+			final int maxId = mr * (i + 1) / (processing_threads.length);
+			processing_threads[i] = new Thread() {
+				public void run() {
+					try {
+						WikiRedirectAccessor wra = new WikiRedirectAccessor();
+						StringArrayResultSetIterator it = wra.redirectIterator(minId, maxId);
+						Connection second = SQL.open(); //need because previous is streaming mode now
+						try {
+							ResolvedEntityAccessor rea = new ResolvedEntityAccessor(second);
+							EntityAccessor ea = new EntityAccessor(second);
+							String redirect[];
+							while((redirect = it.next()) != null) {
+								RawEntity re[] = ea.lookupEntityByName(redirect[0]);
+								if(re.length == 0)
+									continue;
+								int to = eic.getOrAddEntity(redirect[1], re[0].type_);
+								rea.setResolution(re[0].id_, to);  // batch?
+							}
+						} finally {
+							second.close();
+						}
+					} catch (SQLException e) {
+						throw new RuntimeException("wiki redirect processing failed", e);
+					}
+				}
+			};
+			processing_threads[i].start();
+		}
+		try {
+			//wait until all processing is complete
+			for(Thread t : processing_threads)
+				t.join();
+			Date end = new Date();
+			long millis = end.getTime() - start.getTime();
+			System.err.println("completed redir processing in " + millis + " milliseconds");
+		} catch (InterruptedException e) {
+			throw new RuntimeException("unknwon interrupt", e);
+		}
 	}
 	public static void main(String[] args) {
-		redirects();
-		pages();
+		ExceptionHandler.terminateOnUncaught();
+		loadRedirects();
+		loadPages();
+		resolveEntities();
 
-		try {
-			WikiRedirectAccessor wra = new WikiRedirectAccessor();
-			StringArrayResultSetIterator i = wra.redirectIterator();
-			Connection second = SQL.open(); //need because previous is streaming mode now
-			try {
-				EntityAccessor ea = new EntityAccessor(second);
-				String redirect[];
-				int count = 0;
-				while((redirect = i.next()) != null) {
-					RawEntity re[] = ea.lookupEntityByName(redirect[0]);
-					if(re.length == 0)
-						continue;
-					System.out.println(count + ":" + clean(redirect[0]) + " => " + clean(redirect[1]));
-					++count;
-				}
-			} finally {
-				second.close();
-			}
-			
-		} catch (SQLException e) {
-			throw new RuntimeException("wiki redirect processing failed", e);
-		}
 	}
 
 }

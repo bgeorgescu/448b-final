@@ -9,6 +9,7 @@ import vis.data.model.DocLemma;
 import vis.data.model.RawDoc;
 import vis.data.model.RawEntity;
 import vis.data.model.RawLemma;
+import vis.data.model.WikiRedirect;
 import vis.data.util.SQL;
 
 public class IdListAccessor {
@@ -85,6 +86,9 @@ public class IdListAccessor {
 	}
 	public static int maxEntities() {
 		return max(RawEntity.TABLE, RawEntity.ID);
+	}
+	public static int maxRedirect() {
+		return max(WikiRedirect.TABLE, WikiRedirect.FROM);
 	}
 
 }
