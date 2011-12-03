@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.sql.SQLException;
 import java.util.zip.GZIPInputStream;
 
 import org.apache.http.HttpResponse;
@@ -15,7 +16,9 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 import vis.data.model.WikiPage;
 import vis.data.model.WikiRedirect;
+import vis.data.model.meta.WikiRedirectAccessor;
 import vis.data.util.SQL;
+import vis.data.util.StringArrayResultSetIterator;
 
 public class WikipediaEntityResolution {
 	public static void pages() {
@@ -87,7 +90,18 @@ public class WikipediaEntityResolution {
 	public static void main(String[] args) {
 		redirects();
 		pages();
-        
+
+		try {
+			WikiRedirectAccessor wra = new WikiRedirectAccessor();
+			StringArrayResultSetIterator i = wra.redirectIterator();
+			String redirect[];
+			while((redirect = i.next()) != null) {
+				System.out.println(redirect[0] + " => " + redirect[1]);
+			}
+			
+		} catch (SQLException e) {
+			throw new RuntimeException("wiki redirect processing failed");
+		}
 	}
 
 }

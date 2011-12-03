@@ -16,6 +16,8 @@ public class WikiRedirectAccessor {
 	public WikiRedirectAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		queryList_ = conn.prepareStatement("SELECT " + WikiPage.TITLE + "," + WikiRedirect.TITLE + " FROM " + WikiPage.TABLE + " JOIN " + WikiRedirect.TABLE + " ON " + WikiPage.ID + " = " + WikiRedirect.FROM);
+		//stream these
+		queryList_.setFetchSize(Integer.MIN_VALUE);
 	}
 	public StringArrayResultSetIterator redirectIterator() throws SQLException {
 		ResultSet rs = queryList_.executeQuery();

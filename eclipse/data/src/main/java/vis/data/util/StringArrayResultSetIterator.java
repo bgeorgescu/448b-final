@@ -12,7 +12,7 @@ public class StringArrayResultSetIterator extends ResultSetIterator {
 			public Object[] toArray(ResultSet rs) throws SQLException {
 				String[] res = new String[rs.getMetaData().getColumnCount()];
 				for(int i = 0; i < res.length; ++i)
-					res[i] = rs.getString(i);
+					res[i] = rs.getString(i + 1);
 				return res;
 			}
 		});
