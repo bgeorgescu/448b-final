@@ -1,0 +1,33 @@
+word	tags	comments
+COURSE	Yes Intj Ovrst 	44% interjec: "Of course"--naturally, as would be expected 
+DAMN	Neg Intj Hostile Ngtv 	
+DEAL	Neg Intj Hostile Ngtv 	1% idiom-noun: 'big deal'--sarcastic admiration 
+DEFINITELY	Yes Intj  	
+FAREWELL	Noun COM Comform Intj Affil 	
+FUCK	IAV SUPV Intj Strng Actv Natpro 	
+FURTHER	LY Intj 	1% interj-adv: Furthermore 
+FURTHERMORE	LY Intj Ovrst 	
+GODDAMN	Neg Intj Hostile Ngtv 	
+GOODBYE	Pos Intj Pstv Affil 	
+KNOW	Intj  	7% idiom-interj: 'you know'--essentially meaningless interjection 
+LEAST	Yes Intj Ovrst 	2% idiom-interject: 'to say the least' 
+LET	IAV SUPV Intj Power Intrel 	33% verb: Used as an auxiliary in the hortatory 
+MIND	IAV SUPV Intj Intrel Affil 	3% idiom: "Never mind"--don't bother, don't worry, pay no attention 
+NO	No Intj Negate Hostile 	49% adv: Used as interjection expressing refusal, denial, etc., or with  comparatives meaning "not at all" 
+OKAY	Yes Intj  	adjective: All right 
+ONCE	Intj Time* Ovrst Strng 	0% idiom: 'once and for all'--with decision and finality 
+RIGHT	Yes Intj Noun Virtue Pstv 	22% idiom: "All right"--okay 
+SURE	Yes Intj Ovrst 	26% adv: "Surely," "sure"--certainly, of course 
+SURE	Yes Intj Ovrst 	2% idiom-adv: "To be sure"--certainly 
+THANK	Pos Intj Comform Affil Pstv 	37% idiom-interj: "Thank you," "thanks" 
+VERY	Yes Intj  	1% idiom-interj: 'very well'--o.k., all right 
+WAY	LY Intj Comform Undrst 	0% idiom-adv: 'by the way'--incidentally 
+WELL	Intj Undrst 	60% interjec: E.g. "well, that's nice"--essentially meaningless interjection 
+WHAT	Intj Ovrst 	2% adv: Intensifier--"what a pity," "what lovely flowers" 
+WHATEVER	Intj Ovrst 	28% adj: Whatsoever, at all--"none whatever," "nothing whatever," "whatever ideas" 
+WHATSOEVER	Intj Ovrst 	
+WHY	Intj  	4% interjec: 'why, that's ridiculous' 
+YA	Yes Intj  	
+YEA	Yes Intj  	
+YEAH	Yes Intj  	
+YES	Yes Intj  	adv-noun: A word used to express affirmation contradiction of a previously  negative statement. 

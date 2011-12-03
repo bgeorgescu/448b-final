@@ -1,0 +1,798 @@
+word	tags	comments
+ACQUAINTANCE	Pos Noun HU Affil Pstv Role 	
+ACTOR	Noun HU MALE Exprs Actv Role 	
+ADDICT	Neg Noun Need Weak HU 	
+ADMINISTRATION	Noun HU COLL ABS TIME POLIT Polit* Power Strng 	69% noun-adj: A body entrusted with executive or administrative powers,  the time span over which such power is exercised (2) 
+ADMINISTRATOR	Noun HU POLIT ECON Power Strng Role 	
+ADMIRER	Pos Noun HU Emot Strng 	
+ADULT	Noun HU Strng Role 	70% noun: A mature organism, almost always human 
+ADVERSARY	Neg Noun Intrel HU Polit Role Hostile 	
+ADVISER	Noun HU Power Role 	
+ADVISOR	Noun HU Power Role 	
+ADVOCATE	Noun HU POLIT Legal Strng Actv Role 	
+AGE	Noun HU S Role 	21% noun-adj: "Aged"--the old, old 
+AGENCY	Noun HU COLL POLIT ECON Econ* Power 	noun: A commercial or other bureau furnishing some form of service for  the public, the office of an agent. 
+AGENT	Noun HU Legal Role 	
+AGGRESSOR	Neg Noun HU Hostile Exert Intrel 	
+AGITATOR	Neg Noun HU Hostile Exert Intrel 	
+AIDE	Noun HU POLIT Role 	
+AIR	Noun HU COLL POLIT Milit 	12% adj: "Air force," "air defense"--referring to airborne military divisions,  and operations 
+ALCOHOLIC	Noun HU Role 	
+ALIEN	Neg Noun HU POLIT Ngtv Role 	
+ALLIANCE	Pos Noun HU COLL POLIT Polit* Power Pstv Strng 	
+ALLIES	Pos Noun HU Role Affil Intrel 	
+ALLY	Pos Noun HU POLIT Affil Polit* Pstv Strng Role 	
+AMATEUR	Noun HU Weak Role 	
+AMBASSADOR	Noun HU POLIT Polit* Power Role 	
+ANARCHIST	Neg Noun HU Hostile Polit Doctr 	
+ANCESTOR	Noun HU KIN Kin* Role 	
+ANGEL	Pos Noun HU Role Virtue Affil Relig 	
+ANTAGONIST	Neg Noun HU Hostile Intrel 	
+APPLICANT	Noun HU Subm Role 	
+ARBITER	Pos Noun HU Role Solve Affil Intrel Comform 	
+ARCHITECT	Noun HU Exprs Role 	
+ARISTOCRACY	Pos Noun HU Role Econ Power 	
+ARISTOCRAT	Pos Noun HU Role Econ Power 	
+ARMY	Noun HU COLL POLIT Milit Strng Power Hosti 	noun: The military forces of a nation 
+ARTIST	Noun HU Exprs Role 	noun: One who creates works of art, especially a painter 
+ASSAILANT	Neg Noun HU Hostile Exert Other 	
+ASSASSIN	Neg Noun HU Hostile Exert 	
+ASSEMBLY	Noun HU COLL 	
+ASSESSOR	Noun HU ECON Power Role 	
+ASSISTANT	Pos Noun HU Subm Pstv Actv Role 	
+ASSOCIATE	Pos Noun HU ECON Econ* Pstv Actv Role 	33% noun-adj: A partner or peer 
+ASSOCIATION	Pos Noun HU COLL Affil Pstv Strng Actv 	79% noun: An organization of people with a common purpose, having a formal  structure 
+ATTACKER	Noun HU Hostile Role 	
+ATTENDANT	Noun HU Subm Actv Role 	
+ATTORNEY	Noun HU POLIT ECON Legal Power Role 	
+AUDIENCE	Noun HU COLL 	
+AUDITOR	Noun HU ECON Econ* Power Legal Role 	
+AUNT	Noun HU Female KIN Kin* Role 	noun: The sister of one's father or mother 
+AUTHOR	Noun HU Exprs Role 	
+AUTHORITARIAN	Noun HU Power Strng POLIT Role 	
+AUTOCRAT	Neg Noun HU Polit Doctr Power Strng 	
+BABY	Noun HU KIN Nonadlt Weak PFREQ Role 	95% noun-adj: An infant 
+BABY	Noun HU Econ* Role 	3% idiom-noun: "Baby sitter"--a person given charge of a child 
+BACHELOR	Noun HU MALE Role 	
+BACKER	Pos Noun HU Econ* Pstv Strng Role 	
+BAKER	Noun HU Econ* Role 	
+BAND	Noun HU COLL PFREQ 	97% noun: A company of persons, a group of animals (1), a group of musicians  (4), a strip, stripe or binding (4) 
+BANDIT	Neg Noun HU Hostile Fetch 	
+BANK	Noun HU COLL ECON Econ* 	62% noun: Financial institution . . . the business of finance ('banking') 
+BANKER	Noun HU ECON Econ* Role 	
+BAR	Noun HU COLL Legal 	4% noun: The legal profession 
+BARBARIAN	Neg Noun HU Hostile Vice 	
+BARBER	Noun HU Econ* Role 	
+BARD	Noun HU Exprs Role 	
+BASTARD	Neg Noun HU Hostile Ngtv Role 	
+BEARER	Noun HU Role Subm 	
+BEGGAR	Neg Noun HU Weak Econ 	
+BEGINNER	Noun HU Role 	
+BEING	Noun HU Role 	11% noun: Living creature, usually human, life, substance, nature 
+BELIEVER	Noun HU Relig Psv Role Subm 	
+BENEFACTOR	Pos Noun HU Role Econ Fetch Virtue 	
+BENEFICIARY	Pos Noun HU Role Econ Exch 	
+BEREFT	Neg Noun HU Weak Role 	
+BISHOP	Noun HU Power Relig Role 	
+BLACK	Noun HU POLIT Race Role 	17% noun-adj: Negro 
+BLIND	Neg Noun HU Ngtv Weak Role 	71% noun-adj: (those who are) without sight; without understanding or control (2) 
+BLOC	Noun HU POLIT COLL Strng 	
+BLUE	Noun HU COLL ECON Econ* 	11% noun-idiom: "Blue cross"--insurance company 
+BOARD	Noun HU COLL POLIT ECON Acad Power 	48% noun: An administrative body, examination ("college boards") 
+BOARDER	Noun HU Econ* Role 	
+BOATSWAIN	Noun HU Econ* Role 	
+BODY	Noun HU COLL POLIT Polit* Power Strng 	8% noun: A group of people, often political--as "electoral body," "student body" 
+BOSS	Noun HU ECON Econ* Power Strng Actv Role 	noun: Person in charge of something 
+BOXER	Noun HU Exprs Strng Actv Role 	
+BOY	Noun HU MALE Nonadlt Role 	noun: A male child 
+BRANCH	Noun HU COLL POLIT ECON Econ* Polit* 	21% noun: Political#economic subdivision 
+BREADWINNER	Pos Noun HU Role Econ Work Ach 	
+BRIDE	Noun HU Female KIN Affil Kin* Role 	
+BROKER	Noun HU ECON Econ* Role 	
+BROTHER	Noun HU MALE KIN Kin* Affil Role 	noun: Male sibling; fellow member of a religious or other organization  or group; comrade (13) 
+BRUTE	Neg Noun HU Hostile Vice 	
+BUDDY	Noun HU MALE Affil Role 	
+BUILDER	Noun HU Econ* Role 	
+BURGLAR	Neg Noun HU Fetch Hostile Vice 	
+BUSINESSMAN	Noun HU MALE ECON Econ* Role 	
+BUSINESSMEN	Noun HU MALE ECON S Econ* Role 	
+BUSYBODY	Neg Noun HU Comform Vice 	
+BUTCHER	Noun HU Econ* Role 	
+CABINET	Noun HU COLL POLIT Polit* 	
+CALLER	Noun HU Role 	
+CAMPAIGNER	Noun HU Polit* Actv Role 	
+CANDIDATE	Noun HU POLIT Polit* Role 	noun: Person considered for selection 
+CANNERY	Noun HU COLL ECON Econ* 	
+CANNIBAL	Neg Noun HU Vice Hostile Exert 	
+CAPTAIN	Noun HU Power Strng Role 	
+CARPENTER	Noun HU Econ* Role 	
+CARRIER	Noun HU Role 	
+CASUALTY	Neg Noun HU Natpro Finish 	
+CATCHER	Noun HU Exprs Role 	
+CATHOLIC	Noun Relig HU COLL 	
+CAVALRY	Noun HU COLL POLIT Milit Strng 	
+CELEBRITY	Pos Noun HU Role Ovrst Power 	
+CHAIRMAN	Noun HU POLIT ECON Power Strng Role 	noun: Presiding officer 
+CHAIRMEN	Noun HU POLIT ECON S Power Strng Role 	
+CHAMP	Pos Noun HU Role Power Strng Ach 	
+CHAMPION	Pos Noun HU Pstv Strng Actv Power Role 	
+CHANCELLOR	Noun HU POLIT Polit* Power Strng Role 	noun: Title of west german chief of state, an executive title 
+CHARACTER	Noun HU Exprs Role 	51% noun: A person, often as in a play or other piece of writing 
+CHEAT	Noun HU Econ* Role 	
+CHEATER	Neg Noun HU Vice 	
+CHERUB	Pos Noun HU Role Virtue 	
+CHIEF	Noun HU Power Strng PFREQ Role 	92% noun: Person highest in authority 
+CHILD	Noun HU Nonadlt Role 	noun: Young ungrown human being, boy or girl 
+CHILDREN	Noun HU S Nonadlt Role 	noun: Boys and or girls, animal young (rare) 
+CHRIST	Noun HU MALE Relig Role 	
+CHUM	Pos Noun HU Role Intrel 	
+CITIZEN	Noun HU POLIT Polit* Role 	noun: A member of a nation, state, city, or other political body 
+CIVIC	Modif POLIT HU COLL 	
+CIVIL	Modif POLIT Polit* PFREQ HU COLL 	85% idiom-noun: "Civil rights," "civil liberties" 
+CIVIL	Noun HU POLIT COLL Polit* 	1% idiom-noun: "Civil service" 
+CIVIL	Noun HU POLIT Polit* Role 	1% idiom-noun: "Civil servant" 
+CIVILIAN	Noun HU POLIT Role 	
+CLASS	Noun ABS Abs* COLL HU 	noun-adj: The instruction of a given set of students, usually by a teacher,  any or all the things associated with it--the instruction itself, the  group of students, or the period or place in which they meet 
+CLERGYMAN	Noun HU MALE Relig Role 	
+CLERK	Noun HU Econ* Role 	
+CLIENT	Noun HU ECON Econ* Role 	
+CLIQUE	Neg Noun Affil HU Ovrst 	
+CLUB	Noun HU COLL Affil Strng PFREQ 	86% noun: A group of persons organized for social or other activities 
+COACH	Noun HU Acad Actv Role 	
+COACHMAN	Noun HU MALE Econ* Role 	
+COALITION	Noun HU COLL POLIT Affil Polit* Power Strng 	
+COLLEAGUE	Pos Noun HU Affil Pstv Role 	
+COLLECTIVE	Noun HU COLL ECON Econ* Strng 	
+COLONEL	Noun HU POLIT Milit Power Strng Role 	
+COLONY	Neg Noun HU COLL POLIT ECON Polit* Ngtv Subm 	
+COLOR	Modif POLIT Race HU COLL 	37% noun-adj: "Color"--racial complexion; "colored"--having a racial complexion  other than white 
+COMER	Noun HU Role 	
+COMIC	Pos Noun HU Role Work Pleasure 	
+COMMANDER	Noun HU POLIT Milit Power Strng Actv Role 	
+COMMISSIONER	Noun HU POLIT Power Polit* Strng Role 	
+COMMITTEE	Noun HU COLL POLIT Power Strng 	noun adjective: Group of persons elected or appointed to carry out a specific  task or function 
+COMMON	Noun HU COLL POLIT ECON Econ* 	18% noun-idiom: "Common market"--the eec 
+COMMON	Noun HU COLL Polit* 	1% noun: House of commons 
+COMMONER	Neg Noun HU POLIT Econ* Subm Ngtv Weak Psv Role 	
+COMMONWEALTH	Noun HU COLL POLIT ECON Polit* Power 	
+COMMUNIST	Noun HU POLIT Econ* Polit* Role 	noun-adj: Anyone or anything characterized by communism 
+COMMUNITY	Pos Noun HU COLL POLIT ECON Affil Pstv Strng 	noun-adjective: Town, collectivity formed by proximity or common interest. 
+COMMUTER	Noun Role HU 	
+COMPANION	Pos Noun HU Affil Pstv Role 	
+COMPANY	Noun HU COLL ECON Econ* Strng 	78% noun-adj: A body of men joined in a common purpose, usually economic 
+COMPANY	Pos Noun HU COLL Affil Pstv 	22% noun: Society, companionship 
+COMPETITOR	Neg Noun HU Hostile Intrel 	
+COMPOSER	Noun HU Exprs Role 	
+CONCERN	Noun HU COLL ECON Econ* 	1% noun: Business concern--commercial enterprise 
+CONDUCTOR	Noun HU Exprs Role 	
+CONFEDERATE	Noun HU POLIT Affil Polit* Role 	
+CONFERENCE	Noun HU COLL POLIT ECON Polit* 	noun: A meeting for consultation or negotiation 
+CONFIDANT	Pos Noun HU Role Affil 	
+CONGREGATION	Noun HU COLL Relig Strng 	
+CONGREGATIONAL	Modif Relig HU COLL 	
+CONGRESS	Noun HU COLL POLIT Polit* Power Strng PFREQ 	97% noun: The legislative branch of the u.s. government 
+CONGRESS	Noun HU COLL Polit* Strng 	3% noun: An organization, society, etc., an official gathering of same 
+CONGRESSIONAL	Modif POLIT Polit* Strng HU COLL 	
+CONGRESSMAN	Noun HU MALE POLIT Polit* Strng Role 	
+CONGRESSMEN	Noun HU S Polit* Power Strng Role 	
+CONQUEROR	Pos Noun HU Role Power Strng Travel Intrel 	
+CONSERVATIVE	Noun HU POLIT ECON Polit* Psv Role 	19% noun: A group or individual committed to the status quo 
+CONSPIRACY	Neg Noun HU COLL POLIT Hostile Polit* Ngtv 	
+CONSPIRATOR	Neg Noun HU Intrel Affil Conform 	
+CONSTABLE	Noun HU Legal Power Strng Role 	
+CONSULTANT	Noun HU ECON Econ* Role 	
+CONSUMER	Noun HU ECON Econ* Role 	
+CONTRIBUTOR	Pos Noun HU Role Affil Intrel 	
+CONTROLLER	Noun HU Econ* Power Strng Role 	
+CONVENTION	Noun HU COLL POLIT Polit* PFREQ 	noun: A meeting or assembly of delegates or representatives for action  on particular matters 
+CONVERT	Noun HU Relig Actv Role 	
+CONVICT	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+COOK	Noun HU Econ* Role 	9% noun: One who cooks 
+COOPERATIVE	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	68% noun-adj: An organization for the benefit of producers or consumers 
+COP	Noun HU POLIT Legal Power Strng Role 	
+CORP	Noun HU COLL ECON Econ* 	
+CORPORAL	Noun HU Milit Power Strng Role 	
+CORPORATE	Modif ECON POLIT Strng HU COLL 	
+CORPORATION	Noun HU COLL ECON Econ* Strng 	
+CORPS	Noun HU COLL POLIT ECON Milit 	7% noun: A unit or group, usually of the military 
+CORRESPONDENT	Noun HU Role 	
+COUNCIL	Pos Noun HU COLL POLIT Power Pstv Polit* Strng 	noun-adj: A body of persons summoned or convened for deliberation, consultation  or advice 
+COUNSEL	Pos Noun HU Legal Pstv Role 	
+COUNSELOR	Noun HU Acad Role 	
+COUNTRY	Noun HU COLL POLIT ECON Polit* PFREQ 	90% noun: A nation or sovereign territory, a region, area (e.g. "indian country") 
+COUPLE	Noun HU COLL Affil 	41% noun: Two persons of opposite sex considered together 
+COURT	Noun POLIT Legal HU COLL Polit* Strng 	65% noun-adj: A place where trials are held and the law is carried on--by  metonymy the process or authority of the law, or a given court or judge;  a sovereign entourage (3); a courtyard (0) 
+COURT	Noun HU COLL POLIT Legal Power Strng Polit* 	26% idiom-noun: "Supreme court" 
+COUSIN	Noun HU KIN Kin* Role 	
+COWARD	Neg Noun HU Subm Ngtv Weak Psv Role 	
+CREATOR	Noun HU Exprs Strng Actv Role 	
+CREW	Noun HU COLL 	
+CRIMINAL	Neg Noun HU Modif Legal Ngtv Role Hostile 	
+CRITIC	Neg Noun HU Exprs Ngtv Role Hostile 	
+CROOK	Neg Noun HU Vice 	
+CROSS	Noun HU COLL Affil 	3% idiom-noun: "Red cross" 
+CROSS	Noun HU COLL 	6% idiom-noun: "Blue cross"--handled by "blue" 
+CROWD	Noun HU COLL Strng 	62% noun: A throng 
+CRUSADER	Pos Noun HU Role Polit Travel Affil 	
+CULPRIT	Neg Noun Vice Causal HU 	
+CULT	Noun HU COLL Relig 	
+CUPID	Pos Noun HU Emot Pleasure 	
+CUSTOMER	Noun HU ECON Econ* Role 	
+DAD	Noun HU MALE KIN Kin* Role 	noun: A nickname for father 
+DADDY	Noun HU MALE KIN Kin* Role 	noun: Father 
+DANCER	Noun HU Exprs Role 	
+DARLING	IndAdj Pos Noun HU Pstv Role Affil Eval Virtue 	
+DAUGHTER	Noun HU Female KIN Kin* Role 	noun: Female child. 
+DEALER	Noun HU ECON Econ* Role 	
+DEAN	Noun HU Acad Power Strng Role 	
+DEBTOR	Neg Noun HU Weak Econ 	
+DEFENDANT	Neg Noun HU Role Weak 	
+DEFENDER	Pos Noun HU Pstv Strng Actv Role Affil 	
+DELEGATE	Noun HU Polit* Role Power 	
+DELEGATION	Noun HU COLL POLIT Polit* Power 	
+DEMOCRAT	Noun HU POLIT Polit* Role 	noun: Member of a democratic party 
+DEMOCRATIC	Modif Virtue POLIT Polit* HU COLL 	50% adj: In accord with the western philosophy of political and/or social equality 
+DEMOCRATIC	Modif POLIT Polit* HU COLL 	50% adj: Pertaining to a specific political party--usually the american 
+DENOMINATIONAL	Modif Relig HU COLL 	
+DENTIST	Noun HU Econ* Role 	
+DEPARTMENT	Noun HU COLL POLIT PFREQ 	96% noun: A division of a complex whole, as of a government, business, or faculty 
+DEPUTY	Noun HU POLIT Role 	
+DESIGNER	Noun HU Econ* Role 	
+DETECTIVE	Noun HU Legal Actv Role 	
+DEVIL	Neg Noun HU Hostile Relig Ngtv Role 	noun-adj: Evil spirit 
+DICTATOR	Noun HU POLIT Polit* Power Strng Role 	
+DIRECTOR	Noun HU ECON Power Strng Role 	
+DISCIPLE	Noun HU Subm Psv Role Affil 	noun: Follower 
+DISTRIBUTOR	Noun HU ECON Econ* Role 	
+DIVER	Noun HU Actv Role 	
+DIVISION	Neg Noun HU COLL POLIT Ngtv Weak 	
+DOCTOR	Noun HU Econ* PFREQ Role 	96% noun: A practitioner of medicine 
+DOER	Noun HU Actv Role 	
+DOPE	Neg Noun HU Vice 	
+DR	Modif HU Acad Role 	
+DREAMER	Noun HU Psv Role 	76% noun: One who is dreaming, literally 
+DREAMER	Noun HU Psv Role 	24% noun: A visionary or utopian, as opposed to the practical man 
+DRIFTER	Noun HU Psv Role 	
+DRINKER	Noun HU Role 	
+DRIVER	Noun HU Role Actv 	
+DROVE	Noun HU COLL 	13% noun: A flock, herd, crowd 
+DRUNK	Neg Noun HU Ngtv Weak Psv Role 	4% noun: An intoxicated person, one perpetually so 
+DRUNKARD	Neg Noun HU Vice Weak 	
+DUNCE	Neg Noun HU Vice 	
+EARNER	Noun HU Econ* Strng Role 	
+EASTERNER	Noun HU Role 	
+EATER	Noun HU Role 	
+EDITOR	Noun HU Econ* Power Strng Role 	
+EGO	Noun HU Role 	
+ELDER	Noun HU POLIT Power Strng Role 	33% noun: One of the older and more influential men of a tribe or community;  an adult (9) 
+ELECTORAL	Modif POLIT HU COLL Power 	
+ELITE	Noun HU COLL POLIT ECON Polit* Power 	
+EMPEROR	Noun HU MALE POLIT Polit* Power Strng Role 	
+EMPLOYEE	Noun HU ECON Econ* Subm Weak Role 	
+EMPLOYER	Noun HU ECON Power Econ* Strng Role 	noun: One who employs labor 
+ENEMY	Neg Noun HU POLIT Hostile Ngtv Role 	noun adjective: Foe, antagonist 
+ENGINEER	Noun Econ* Role HU 	
+ENSEMBLE	Pos Noun HU Coll 	
+ENTERPRISE	Noun HU COLL ECON Econ* Actv Strng 	
+EQUAL	Noun HU Role 	4% noun: Equivalents (persons or things) 
+ESTABLISHMENT	Noun HU COLL POLIT ECON Econ* Polit* Ovrst 	
+EXAMINER	Noun HU Acad Power Role 	
+EXECUTIVE	Noun HU POLIT ECON Econ* Power Strng Role 	
+EXPERIENCER	Noun HU Psv Role 	
+EXPERT	Pos Noun HU Power Pstv Strng Role 	77% noun: "One who knows a great deal about something, and nothing about  a great deal." 
+EXPLORER	Noun HU Actv Role 	
+EYE	Noun HU Legal Handels Role 	1% idiom-noun: "Private eye" (handled by private) 
+FACULTY	Noun HU COLL Acad PFREQ 	91% noun-adj: All the teachers of a school 
+FAMILY	Noun HU KIN COLL Kin* 	noun adjective: A specifically related group, usually referring to the  immediate kinship group of father, mother, and children, sometimes a biological  term. 
+FAN	Noun HU Affil Subm Psv Role 	76% noun: Devotee, enthusiast 
+FANATIC	Neg Noun HU Need Vice 	
+FARMER	Noun HU ECON Econ* Role 	noun: One who farms 
+FATHER	Noun HU MALE KIN Kin* Strng Role Affil 	noun: A male parent 
+FEDERAL	Modif POLIT Polit* HU COLL Affil 	adjective: Pertaining to the independent central government of a union of states. 
+FEDERATION	Noun HU COLL POLIT Affil Polit* Strng 	
+FELLOW	Noun HU MALE Role 	73% noun: A person; a member or trustee (1) 
+FEMALE	Noun HU Female Role 	noun-adj: The sex that bears offspring 
+FEMININE	Modif Female Weak HU Role 	
+FIEND	Neg Noun HU Hostile 	
+FIGHTER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+FIRM	Noun HU COLL ECON Econ* 	15% noun: A partnership or unincorporated association for carrying out business 
+FLEET	Noun HU COLL POLIT Milit Strng 	
+FLYER	Noun HU Econ* Role 	
+FOE	Neg Noun HU Hostile 	
+FOLK	Noun HU COLL Kin* 	67% noun: People in general or people as a representation of a culture  esp. the composite of social mores, customs 
+FOLK	Modif HU COLL 	19% adjective: Originating among the common people 
+FOLK	Noun HU KIN Kin* Role 	15% noun: Kin or relatives 
+FOLLOW	Noun HU COLL Psv 	0% noun: "Following"--a group of followers 
+FOLLOWER	Noun HU Subm Psv Role 	
+FOOL	Neg Noun HU Ngtv Weak Role 	48% noun: Simpleton 
+FORCE	Noun HU COLL POLIT Milit Strng 	24% noun: A body of men, usually military, "the armed forces" 
+FORERUNNER	Noun HU Role 	
+FORM	Noun HU COLL Acad 	6% noun: Grade in british secondary school 
+FORTUNE	Noun HU Role 	10% idiom-noun: "Soldier of fortune"--explorer of fate, a vagabond 
+FOUNDER	Noun HU Power Strng Role 	
+FOX	Noun HU Role 	2% noun: A sly or clever person 
+FREAK	Neg Noun HU Qual 	
+FRESHMAN	Noun HU Acad Role 	
+FRESHMEN	Noun HU S Acad Role 	
+FRIEND	Pos Noun HU Affil Pstv Role 	noun: Person attached to another by feelings of affection or personal regard 
+FUGITIVE	Neg Noun HU Travel Legal 	
+GAINER	Noun HU Role 	
+GANG	Noun HU COLL Strng 	
+GARDENER	Noun HU Econ* Role 	
+GATHER	Noun HU COLL 	11% noun-adj: A group or collection of things or individuals--'gathering' 
+GENERAL	Noun HU POLIT Milit Power Strng Role 	10% noun: A very high military rank--having extended command or superior  rank (e.g. general chairman) 
+GENERATION	Noun HU COLL TIME 	noun: A set of people of the same general age group or the period of time  identified with a generation of men 
+GENIUS	Pos Noun HU Pstv Strng Role 	
+GENTLEMAN	Noun HU MALE Role 	noun-adj: A man, especially one of good breeding or manners 
+GENTLEMEN	Noun HU MALE S Role 	
+GHOST	Noun HU Relig Role 	
+GIANT	Noun HU Strng PFREQ Role 	85% noun: A human or animal extreme in size or some other aspect 
+GIANT	Noun HU COLL Exprs 	0% noun: (the baseball team) 
+GIRL	Noun HU Female Nonadlt Role 	noun: Female child or young person 
+GIVER	Noun HU Power Role Affil 	
+GOD	Noun HU Power Relig Strng Role 	noun: Deity; includes exclamations employing the word "god" with varying  degrees of irreverence 
+GODDESS	Noun HU Female Power Relig Strng Role 	
+GOVERN	Noun HU COLL Polit* Strng 	
+GOVERNMENT	Noun HU COLL POLIT Polit* Power Strng 	noun adjective: A specific administrative mechanism by which a body of  people is ruled, an abstract concept of the ruling power 
+GOVERNOR	Noun HU POLIT Polit* Power Strng Role 	
+GRADUATE	Noun HU Acad Role 	30% noun: A person who has received a diploma on completing a course of  study, as in a university or school 
+GRANDCHILD	Noun HU KIN Kin* Nonadlt Role 	noun: Son or daughter of someone's son or daughter. 
+GRANDCHILDREN	Noun HU KIN S Kin* Nonadlt Role 	noun: Plural of grandchild--sons or daughters of someone's son(s) or daughter(s) 
+GRANDFATHER	Noun HU MALE KIN Kin* Role 	noun: Father of someone's mother or father. 
+GRANDMA	Noun HU Female KIN Kin* Role 	
+GRANDMOTHER	Noun HU Female KIN Kin* Role 	noun: Mother of someone's mother or father. 
+GRANDPA	Noun HU MALE KIN Kin* Role 	
+GRANNY	Noun HU Female KIN Kin* Role 	
+GRIND	Noun HU Acad Subm Role 	
+GROUP	Noun HU COLL 	noun-adj: A collection (usually small) of individuals (almost never of  things) related in some way 
+GROWER	Noun HU Econ* Strng Actv Role 	
+GUARD	Noun HU Milit Strng Role 	32% noun: Someone or something that guards 
+GUARDIAN	Pos Noun HU Role Strng 	
+GUERRILLA	Neg Noun HU POLIT Hostile Milit Ngtv Strng Actv 	
+GUEST	Noun HU Affil Role 	noun-adj: Recipient of hospitality 
+GUIDE	Pos Noun HU Econ* Strng Actv Pstv Role 	32% noun: Someone or something that directs 
+GUILD	Noun HU COLL ECON Affil Econ* Strng 	
+GUNMEN	Neg Noun HU MALE S Hostile Strng Ngtv Role 	
+GUY	Noun HU MALE Role 	noun: Fellow, person 
+GYMNAST	Noun HU Exprs Actv Role 	
+HACK	Neg Noun Vice HU Weak 	
+HAG	Neg Noun HU Female 	
+HANGER	Noun HU Econ* Role 	
+HATER	Neg Noun HU Ngtv Psv Hostile Role 	
+HEAD	Noun HU Power Strng Role 	12% noun-adj: The highest in authority, to be this 
+HEAD	Noun HU COLL Acad 	0% noun-idiom: 'head start' 
+HEARER	Noun HU Psv Role 	
+HELPER	Noun HU Role Affil 	
+HERO	Pos Noun HU MALE Power Pstv Strng Role Ovrst 	
+HEROINE	Pos Noun HU Female Pstv Role Ovrst 	
+HISTORIAN	Noun HU Acad Role 	
+HORSEMEN	Noun HU MALE S Role 	
+HOST	Noun HU MALE Affil Role 	
+HOUSE	Noun HU COLL POLIT Polit* Power 	2% noun-adj: Legislative body (includes idiom "house of representatives") 
+HUDDLE	Noun HU COLL 	
+HUMAN	Pos Noun Pstv Role HU 	noun-adjective: Of or pertaining to homo sapiens (half the uses are with  the word "being" to designate the creature itself); the creature itself (2) 
+HUMANITY	Pos Noun HU COLL ABS Pstv 	
+HUNTER	Neg Noun HU Exprs Hostile Ngtv Actv Role 	noun: One who chases and kills animals 
+HUSBAND	Noun HU MALE KIN Kin* Role 	noun: Male spouse 
+HUSTLER	Neg Noun HU Role Hostile Comform Econ 	
+IDOL	Pos Noun HU Role Goal 	
+INC.	Modif ECON Econ* Legal HU COLL 	
+INCORPORATE	Modif Econ* HU COLL 	
+INDEPENDENT	Noun POLIT Polit* Role HU 	14% noun-adj: Free of party constraints, someone who votes thus 
+INDIVIDUAL	Noun HU Role 	70% noun: A (unique) person 
+INFANT	Noun HU Nonadlt Weak Role 	
+INFANTRY	Noun HU COLL POLIT Milit Strng 	
+INHABITANT	Noun HU Role 	
+INSTRUCTOR	Noun HU Acad Power Strng Role 	noun: One who teaches 
+INTELLECTUAL	Pos Noun HU Acad Pstv Role Strng 	24% noun: Person with intellectual interests or tastes 
+INTRUDER	Neg Noun HU Role Intrel Move 	
+INVENTOR	Pos Noun HU Role Pstv Actv 	
+INVESTOR	Noun HU Econ* Actv Role 	
+JANITOR	Noun HU Econ* Role 	
+JERK	Neg Noun HU Ngtv Role 	
+JEW	Noun HU Race Role 	
+JOINER	Noun HU Affil Role 	
+JOKER	Noun HU Exprs Role 	
+JOURNALIST	Noun HU Econ* Role 	
+JUDGE	Noun HU POLIT Legal Power Strng Actv Role 	41% noun: An appointed legal arbitrator 
+JUDGE	Noun HU Power Strng Actv Role 	10% noun: A person who evaluates or has the ability to evaluate--"he is  a judge of character" 
+JUNTA	Noun HU COLL POLIT Legal Polit* Power 	
+JUROR	Noun HU Legal Power Strng Role 	
+JURY	Noun HU COLL POLIT Legal Power Strng 	
+KEEPER	Noun HU Power Strng Role 	
+KID	Noun HU Nonadlt PFREQ Role 	97% noun: A child 
+KILLER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+KIN	Noun HU Kin* Role 	
+KINDRED	Noun HU Kin* COLL 	
+KING	Noun HU MALE POLIT Polit* Power Strng Role 	noun-adj: A male sovereign or monarch 
+LABOR	Noun HU COLL ECON Econ* Strng Actv 	69% noun: Hard work, effort, wage workers 
+LABOR	Noun HU COLL ECON POLIT Polit* 	25% noun-adj: Specifically used to denote political office, party or organization--  secretary of labor, labor unions, labor party, labor movement 
+LABORER	Noun HU ECON Econ* Subm Role 	
+LADY	Noun HU Female Role 	noun-adjective: Polite term for a female, female. 
+LANDLORD	Noun HU ECON Econ* Power Strng Role 	
+LAWYER	Noun HU Legal Role 	noun: A person whose profession is to conduct lawsuits for clients in  a court of law or advise them in other legal matters. 
+LAY	Noun HU COLL 	1% noun-adj: Non-professional; not clergy (0) 
+LEADER	Noun HU POLIT Power Strng Actv Role 	noun: One who guides or leads others 
+LEAGUE	Noun HU COLL Affil Polit* Strng PFREQ 	86% noun: An association or alliance 
+LEARNER	Pos Noun HU Acad Subm Role Pstv 	
+LEFT	Noun HU COLL POLIT Polit* 	3% noun: Political left 
+LEGION	Noun HU COLL POLIT Polit* Milit PFREQ 	98% idiom-noun: "American legion" 
+LEGION	Noun HU COLL Strng 	3% noun-adj: A multitude; an army division (0); numerous (0) 
+LEGISLATOR	Noun HU POLIT Legal Power Strng Role Polit* 	
+LIAR	Neg Noun HU Hostile Ngtv Role 	
+LIBERAL	Pos Noun HU POLIT Modif Polit* Pstv Role 	77% noun-adj: Political-social viewpoint, innovative, progressive, democratic;  generous (1) 
+LIEUTENANT	Noun HU POLIT Milit Power Strng Role 	
+LINGUIST	Noun HU Acad Role 	
+LISTENER	Noun HU Psv Role 	
+LITIGANT	Noun HU Hostile Legal Role 	
+LONER	Neg Noun HU Affil Role Ngtv Weak Psv 	
+LORD	Noun HU MALE POLIT Polit* Power Role 	noun: The supreme being or his secular counterpart, one who has dominion  over others, a master, chief, or ruler. 
+LOSER	Neg Noun HU Ngtv Weak Role 	
+LOVER	Pos Noun HU Affil Pstv Role 	41% noun: A person in love, or involved in a sexual relationship, usually the man 
+LOVER	Pos Noun HU Role Affil Pstv 	59% noun: A person with a strong liking for something--"a music lover,"  "a lover of nature" 
+LUNATIC	Neg Noun HU Role Eval Vice 	
+MA	Noun HU Female KIN Kin* Role 	
+MADAME	Noun HU Female Role 	
+MADMAN	Neg Noun HU Role Vice 	
+MAID	Noun HU Female Econ* Role Subm 	
+MAJORITY	Noun HU COLL POLIT Power Strng Ovrst 	noun: The number greater than half or the excess of this greater number--state  of being major or greater, superiority. 
+MAKER	Noun HU Role Exprs 	
+MALE	Noun HU MALE Role 	noun-adj: Consisting of men or boys; a male plant, person, animal; masculine 
+MAMA	Noun HU Female KIN Kin* Role 	
+MAN	Noun HU MALE Role 	noun: An adult male person, a given type of such a person--"a working  man," "the common man"; mankind, humanity (24); used as an interjection  in slang (5) 
+MANAGEMENT	Noun HU COLL ECON Econ* Power Strng Actv 	
+MANAGER	Noun HU ECON Econ* Power Strng Role 	
+MANAGERIAL	Modif ECON Econ* Power Strng HU Role 	
+MANKIND	Noun HU COLL 	
+MANUFACTURER	Noun HU Econ* Strng Role 	
+MARCHER	Noun HU Milit Actv Role Strng 	
+MARKSMAN	Noun HU MALE Exprs Role Hostile 	
+MARSHALL	Noun HU POLIT Legal Power Role 	
+MASCULINE	Modif MALE Strng HU Role 	
+MASS	Noun HU COLL POLIT Strng 	21% noun: "The masses"--the lower class, population at large 
+MASTER	Noun HU Power Strng Role 	79% noun-adj: Person or thing which exercises control or is of the greatest  importance 
+MATE	Pos Noun HU Affil Pstv Role 	
+MAYOR	Noun HU POLIT Polit* Power Strng Role 	
+MECHANIC	Noun HU Econ* Role 	
+MEMBER	Noun HU Affil Role 	noun: An element of a set, usually a person in a group 
+MEMBERSHIP	Noun HU COLL Affil 	noun: The relation holding between an element and a set to which it belongs,  the credentials for belonging, or the members collectively. 
+MEN	Noun HU MALE S Role 	noun: Human beings, especially males 
+MENTOR	Pos Noun HU Role Power Know 	
+MERCHANT	Noun HU ECON Econ* Role 	noun: Tradesman 
+MIDDLE-CLASS	Modif ECON POLIT Econ* Polit* HU COLL 	
+MILITIA	Noun HU COLL POLIT Milit Strng 	
+MILLER	Noun HU ECON Econ* Role 	
+MINER	Noun HU ECON Econ* Role 	
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	65% idiom-noun: "Prime minister"--executive head of government 
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	16% noun: Person in charge of a department of state, a diplomatic officer 
+MINISTER	Noun HU Relig Role 	16% noun: Person authorized to conduct religious worship 
+MINISTRY	Noun HU COLL POLIT Polit* Power Strng 	
+MINORITY	Noun HU COLL POLIT Polit* Subm Weak 	
+MINUTEMEN	Noun HU POLIT S Milit Polit* Role 	
+MISER	Neg Noun HU Role Econ Fetch 	
+MISS	Noun HU Female Role 	8% noun: An unmarried girl 
+MISSIONARY	Noun HU Relig Role Actv 	
+MISTER	Noun HU MALE Role 	
+MOB	Noun HU COLL Hostile 	
+MODERN	Noun HU COLL 	0% noun: Modern people 
+MONOPOLY	Noun HU COLL ECON Econ* Strng Power 	
+MOTHER	Noun HU Female KIN Kin* Role Affil 	noun: Female parent 
+MOTORIST	Noun HU Role 	
+MOURNER	Neg Noun HU Role Emot Pain 	
+MOVEMENT	Noun HU COLL POLIT Polit* Strng PFREQ 	85% noun: Group of persons or an organization tending toward a common goal 
+MOVER	NOUN HU Role Actv Strng 	
+MR.	Modif HU MALE Role 	
+MRS.	Modif HU Female Role 	
+MS.	Modif HU Female Role 	
+MUSICIAN	Noun HU Exprs Role 	noun: Person who plays a musical instrument 
+MUTUAL	Pos Modif Affil Pstv HU COLL 	91% adjective: Common, joint, reciprocal, reciprocated. 
+MUTUAL	Pos LY Affil Pstv HU COLL 	9% adverb: "Mutually"--jointly, reciprocally 
+NATION	Noun HU COLL POLIT ECON Polit* 	noun: A country or people of a country, political unit 
+NATIONAL	Modif POLIT Polit* HU COLL 	adjective: Of or pertaining to, or maintained by a nation as an organized  whole or independent political unit 
+NATIVE	Modif HU Role 	50% adj: Indigenous 
+NATIVE	Noun HU POLIT Race Role 	50% noun: One of the original inhabitants of a place 
+NAVY	Noun HU COLL POLIT Milit Strng 	
+NEGRO	Noun HU POLIT Race Role 	
+NEIGHBOR	Noun HU Affil PFREQ Role 	93% noun-adj: A person or thing that is near another; one's fellow human being (1) 
+NEPHEW	Noun HU MALE Kin* Role 	
+NEWSMEN	Noun HU S Econ* Role 	
+NEWSPAPERMAN	Noun HU Econ* Role 	
+NIGGER	Noun HU POLIT Race Role Hostile 	noun-adj: Negro, vulgar term used by negrophobes 
+NOBILITY	Pos Noun HU Role Coll Power Econ 	
+NOBLEMAN	Pos Noun HU Role Power Econ 	
+NOVELIST	Noun HU Exprs Role 	
+NURSE	Noun HU Econ* Role 	63% noun: A medical aid, usually female 
+OBSERVER	Noun HU Psv Role 	
+OFFENDER	Neg Noun HU Causal Hostile 	
+OFFICER	Noun HU POLIT Power Strng Role 	noun: One who holds a position of rank or authority in an organi- zation,  especially a policeman. 
+OFFICIAL	Noun HU POLIT Power Legal Strng Role 	69% noun: A person granted some authority 
+OPERATOR	Noun HU Econ* Role Actv 	
+OPPONENT	Neg Noun HU POLIT Hostile Ngtv Role 	noun: Adversary 
+ORATOR	Noun HU Exprs Role 	
+ORCHESTRA	Noun HU COLL Exprs 	
+ORGANIZATION	Noun HU COLL ABS Abs* Strng 	noun: A body of people organized for a purpose--"the veteran's organization";  the quality of having order, being organized, organizing (23) 
+ORPHAN	Neg Noun HU Role Ovrst 	
+OUTLAW	Neg Noun HU Legal Hostile 	
+OUTSIDER	Neg Noun HU Ngtv Role 	
+OVERNIGHTER	Noun HU Role 	
+OVERSEER	Noun HU Econ* Power Strng Role 	
+OWNER	Noun HU ECON Legal Strng Role 	noun: One who owns, a proprietor 
+PAINTER	Noun HU Exprs Role 	
+PAPA	Noun HU MALE KIN Kin* Role 	
+PARACHUTER	Noun HU Milit Role 	
+PARENT	Noun HU KIN Kin* Role Affil 	noun: One who has offspring 
+PARLIAMENT	Noun HU COLL POLIT Polit* Power Strng 	
+PART	Noun HU Role Actv 	8% noun: A role, one's function, share of work--"to do one's part" 
+PARTICIPANT	Noun HU Affil Subm Actv Role 	noun: One who participates or shares 
+PARTISAN	Noun HU POLIT Polit* Role 	
+PARTNER	Pos Noun HU ECON Affil Econ* Pstv Strng Role 	noun: One of two or more associated as joint principals in carrying on  some action, etc. 
+PARTNERSHIP	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	
+PARTY	Noun HU COLL POLIT Polit* Strng 	58% noun-adj: Organized political group 
+PARTY	Noun HU COLL Exprs Affil 	32% noun-adj: A social gathering 
+PARTY	Noun HU Role 	7% noun: A group of people acting together; an individual viewed as a  participant in some process 
+PASSENGER	Noun HU Role Psv 	
+PASTOR	Noun HU Relig Role 	
+PATIENT	Noun HU Subm Weak Psv Role 	74% noun: Human or animal (0) under treatment 
+PATRIOT	Pos Noun HU Role Polit Affil 	
+PATROL	Noun HU COLL POLIT Milit Strng Power 	
+PATRON	Pos Noun HU ECON Econ* Power Pstv Strng Role 	
+PAYER	Noun HU ECON Econ* Role 	
+PEASANT	Noun HU POLIT ECON Subm Econ* Weak Role 	noun-adj: A tiller of the soil, rustic 
+PEER	Noun HU Role 	
+PEOPLE	Noun HU COLL 	noun: Human beings, whether individually--as persons--or collectively  --as a community, group, type, race, tribe, or nation (less frequent) 
+PERFECTIONIST	Pos Noun HU Role Work Ovrst Ach 	
+PERFORMER	Noun HU Exprs Actv Role 	
+PERSON	Noun HU Role 	noun: An individual human being, a man or woman 
+PERSONAL	Modif HU Role 	adj: Of or pertaining to a particular individual or person 
+PERSONAL	Modif HU Role 	1% adv: "Personally"--as regards oneself, in person 
+PERSONALITY	Noun HU Role 	noun: Personal existence or identity, an individual's characteristics. 
+PERSONNEL	Noun HU COLL ECON S Econ* 	
+PERVERT	Neg Noun HU Vice 	
+PETITIONER	Noun HU POLIT Subm Weak Actv Role 	
+PHILOSOPHER	Noun HU Acad Role 	
+PHYSICIAN	Noun HU Role Acad 	
+PHYSICIST	Noun HU Acad Role 	
+PILOT	Noun HU Econ* Role 	
+PIONEER	Noun HU Actv Role 	
+PLANER	Noun HU Econ* Role 	
+PLANNER	Noun HU ECON Econ* Role 	
+PLANTER	Noun HU ECON Econ* Role 	
+PLAYER	Noun HU Exprs Role 	noun: Participant in an activity 
+PLAYMATE	Pos Noun HU Role Nonadlt 	
+PLUMBER	Noun HU ECON Econ* Role 	
+POET	Noun HU Exprs Role 	
+POLICE	Noun HU COLL POLIT Legal Power Strng 	noun-adjective: Of or pertaining to officers of the law. 
+POLICEMAN	Noun HU MALE POLIT Legal Power Strng Role 	
+POLICEMEN	Noun HU MALE POLIT S Legal Power Strng Role 	
+POLITICIAN	Noun HU POLIT Polit* Power Strng Role 	noun: One versed or experienced in politics 
+POOR	Neg Noun HU COLL POLIT ECON Weak Psv Ngtv 	8% noun: Those wanting in material goods 
+POPE	Noun HU MALE POLIT ECON Power Relig Role 	
+POPULATION	Noun HU COLL POLIT 	noun: The body of inhabitants of a given locality 
+POPULOUS	Pos Noun HU Coll 	
+PORTER	Noun HU Econ* Subm Role 	
+POSITION	Noun PFREQ HU Role 	87% noun: Status, situation, attitude 
+POSSE	Noun HU COLL Legal Power Hostile Strng 	
+POST	Noun ECON POLIT Econ* HU Role 	14% noun: A position, as of employment 
+POSTERITY	Pos Noun HU Coll Time 	
+POWER	Noun HU COLL POLIT Power Strng Polit* 	23% noun: Nation, group or individual having power 
+PREACHER	Noun HU Power Relig Role 	
+PRESIDENT	Noun HU POLIT Polit* Power Strng Role 	noun: Highest officer of a country or other body. 
+PRESIDENTIAL	Modif POLIT Polit* Power Strng HU Role 	
+PRESS	Noun HU COLL ECON COM Econ* 	30% noun-adj: The body of newsmen, news media 
+PRIEST	Noun HU Power Relig Role 	noun: One authorized or ordained to perform religious rites 
+PRINCE	Noun HU MALE POLIT Polit* Power Strng Role 	noun: The one of highest rank, a sovereign, a title of nobility. 
+PRINCIPAL	Noun HU Power Strng Role 	44% noun: A leader, chief, or head 
+PRISONER	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+PRIVATE	Modif PFREQ HU COLL 	95% adj: Relating to a particular person or group of people, not public 
+PRIVATE	Noun HU Legal Role 	3% idiom-noun: "Private eye," "private detective" 
+PRIVATE	Noun HU Milit Subm Weak Role 	0% noun: Lowest rank of enlisted man in the u.s. armed forces 
+PRO	Pos Noun HU Role Know 	
+PROCTOR	Noun HU Acad Power Strng Role 	
+PRODIGY	Pos Noun HU Role Know 	
+PRODUCER	Noun HU ECON Econ* Role 	
+PROFESSION	Noun HU COLL ECON Econ* 	noun: Technically specialized vocation 
+PROFESSIONAL	Modif EVAL ECON Econ* HU Role 	
+PROFESSOR	Noun HU Acad Power Role 	noun: A college-level teacher 
+PROGRAMMER	Noun HU Econ* Role 	
+PROPONENT	Noun HU Power Strng Role 	
+PROPRIETOR	Noun HU ECON Econ* Power Legal Strng Role 	
+PROTECTOR	Pos Noun HU Role Affil Other Strng 	
+PSYCHIATRIST	Noun HU Acad Role 	noun: A physician who treats mental disorders 
+PSYCHOLOGIST	Noun HU Acad Role 	
+PTA	Noun HU COLL Acad 	
+PUBLIC	Noun HU COLL POLIT PFREQ 	83% adj: Not private, of the people 
+PUBLIC	Modif HU COLL 	9% noun: The people collectively 
+PUPIL	Noun HU Acad Subm Role 	
+PURSUER	Noun HU Actv Role 	
+QUARTET	Noun HU COLL Exprs 	
+QUEEN	Noun HU Female POLIT Polit* Power Role 	
+QUESTIONER	Noun HU Role Subm 	
+QUITTER	Neg Noun HU Fail Weak 	
+RACE	Noun HU COLL POLIT Race 	71% noun-adj: A major group of persons united by descent--pertaining to  groupings of this sort 
+RACER	Noun HU Exprs Role Actv 	
+RACIAL	Modif POLIT Race PFREQ HU COLL 	adjective: Concerning relations between races, e.g., 'racial discrimina-  tion', or characteristic of a race of people. 
+RALLY	IAV Pos Noun HU Coll Comform Polit Actv 	
+RANCHER	Noun HU Econ* Role 	
+RANGER	Noun HU Econ* Role 	
+RASCAL	Neg Noun HU Vice 	
+RAT	Neg Noun HU Comform Vice 	
+READER	Noun HU Role 	noun: A person (or machine) who reads 
+REBEL	Neg Noun HU POLIT Hostile Ngtv Strng Actv Role 	
+RECEIVER	Noun HU Subm Psv Role 	
+RECRUIT	Noun HU Milit Subm Role 	
+RECTOR	Noun HU Power Relig Role 	
+REDHEAD	Noun HU Role 	
+REDS	Noun HU COLL POLIT S Polit* 	
+REFUGEE	Neg Noun HU Weak Polit 	
+REGIME	Noun HU COLL POLIT Polit* Power Strng 	
+REGIMENT	Noun HU COLL POLIT Milit Strng 	
+REGISTRANT	Noun HU Legal Psv Role 	
+RELATION	Noun HU KIN Kin* Role 	9% noun: A person in a family strain, connection by marriage or origin 
+RELATIVE	Noun HU KIN Kin* Role 	55% noun: Blood or marriage relation 
+REPORTER	Noun HU Econ* Role 	
+REPRESENTATIVE	Noun HU POLIT Polit* Role 	73% noun: Delegate or agent 
+REPUBLIC	Noun HU COLL POLIT Polit* 	noun: A representative government 
+REPUBLICAN	Noun HU POLIT Polit* Role 	noun-adj: Pertaining to the american political party 
+RESEARCHER	Noun HU Acad Role Actv 	
+RESIDENT	Noun HU Role Psv 	
+REVEREND	Noun HU Relig Role 	
+RIDER	Noun HU COM Role 	
+RIVAL	Neg Noun HU Hostile Ngtv Strng Role 	
+ROBBER	Neg Noun HU Fetch Hostile Legal 	
+ROGUE	Neg Noun HU Hostile Ngtv Role 	
+ROLE	Noun HU Role 	noun: Proper or customary part or function 
+ROOFER	Noun HU ECON Econ* Role 	
+ROOMMATE	Noun HU Affil Role 	noun: Person sharing a room 
+ROYAL	Modif POLIT Polit* Power Strng HU COLL 	
+ROYALTY	Noun HU COLL POLIT Polit* Power Strng 	
+RUFFIAN	Neg Noun HU Hostile 	
+RULER	Noun HU POLIT Power Role Polit* 	
+RUNAWAY	Neg Noun HU Nonadlt Travel Weak 	
+RUNNER	Noun HU Exprs Role Actv 	
+SAINT	Pos Noun HU Relig Pstv Role 	
+SALESMAN	Noun HU MALE ECON Econ* Role Actv 	
+SALESMEN	Noun HU MALE ECON S Econ* Role Actv 	
+SAP	Neg Noun HU Weak Subm 	
+SCAPEGOAT	Neg Noun HU Weak 	
+SCHOLAR	Noun HU Acad Role 	
+SCIENTIST	Noun HU Acad Role 	
+SCOUNDREL	Neg Noun Hostile Vice HU 	
+SEAMAN	Noun HU Econ* Role 	
+SEAMEN	Noun HU S Econ* Role 	
+SEARCHER	Noun HU Role Actv 	
+SECRETARY	Noun HU ECON Econ* Subm Role 	43% noun: Office helper 
+SECRETARY	Noun HU POLIT Polit* Role 	57% noun: An official or governmental position or its incumbent (should  be capitalized) 
+SECURITY	Noun Means ECON Econ* HU COLL 	5% idiom-noun: "Security council"--organ of the united nations 
+SEEKER	Noun HU Relig Role Actv 	
+SELF	Noun HU Role 	noun-adj: Ego, consciousness, personality, "the self" 
+SELLER	Noun HU Econ* Role 	
+SENATE	Noun HU COLL POLIT Polit* Power Strng 	
+SENATOR	Noun HU POLIT ECON Polit* Power Strng Role 	
+SERGEANT	Noun HU Power Milit Role 	
+SERVANT	Noun HU ECON Econ* Subm Role 	noun: A person employed in the service of another person or a cause 
+SETTLER	Noun HU Role 	
+SHERIFF	Noun HU POLIT Legal Power Strng Role 	
+SHIP	Noun HU COLL POLIT Polit* Power 	2% idiom-noun: "Ship of state" - government 
+SHREW	Neg Noun HU Hostile Female 	
+SIGNER	Noun HU Role 	
+SINGER	Noun HU Exprs Role Actv 	
+SIR	Noun HU MALE Role Power 	noun-adj: Title of respect applied to men 
+SISTER	Noun HU Female KIN Kin* Role Affil 	noun: Female sibling 
+SITTER	Noun HU Role Psv 	
+SLANDERER	Neg Noun HU Hostile Ngtv Actv Role 	
+SLAVE	Noun HU POLIT ECON Econ* Subm Weak PFREQ Role 	81% noun-adj: One who is the property of another 
+SLAYER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+SMOKER	Noun HU Role 	
+SOCIAL	Modif POLIT Polit* HU COLL 	62% adj: Of or pertaining to human society or collective activity 
+SOCIAL	Noun HU POLIT ECON Econ* Role 	5% idiom-noun: "Social work(er)"--work for (or one who works toward) the  betterment of social conditions in the community 
+SOCIALIST	Noun HU POLIT ECON Polit* Role 	
+SOCIETY	Noun HU COLL POLIT Polit* 	noun: The socio-political unit, a system of persons and institutions,  society at large 
+SOFT	Noun HU Handels Weak Psv Role 	3% idiom-noun: "Soft touch"--credulous person--handled by "touch" 
+SOLDIER	Noun HU Milit Role 	noun: A person engaged in military service 
+SOLICITOR	Noun HU ECON Legal Role 	
+SON	Noun HU KIN Kin* MALE Role Affil 	noun: Male offspring. 
+SOUL	Noun HU ABS Abs* Relig Role 	noun: The living spirit of a person or group - especially in a religious  sense; a person (2) 
+SPEAKER	Noun HU POLIT Role Actv 	
+SPECIALIST	Noun HU Econ* Role 	
+SPECTATOR	Noun HU Exprs Role Psv 	
+SPINSTER	Neg Noun HU Female Role 	
+SPOKESMAN	Noun HU Polit* Role Actv 	
+SPONSOR	Noun HU ECON Econ* Role Actv 	
+SQUAD	Noun HU COLL Power 	
+STAFF	Noun HU COLL 	
+STAR	Noun HU Exprs Role Ovrst 	0% noun-adj: A leading role or person in such position, leading in quality 
+STATE	Noun HU COLL POLIT Polit* Power Strng 	39% noun: Body politic--area of government 
+STATESMAN	Noun HU MALE POLIT Polit* Power Strng Role 	
+STATESMEN	Noun HU MALE POLIT S Polit* Power Strng Role 	
+STRANGER	Noun HU Role 	
+STUD	Pos Noun HU Role Male Power 	
+STUDENT	Noun HU Acad Subm Role 	noun adjective: One who engages in study or who participates in a course  of instruction and study 
+SUBORDINATE	Noun HU Subm Weak Psv Role 	
+SUBSCRIBER	Noun HU Econ* Role 	
+SUCCESSOR	Noun HU POLIT Role Strng 	
+SUCKER	Neg Noun Weak Subm HU 	
+SUFFERER	Neg Noun HU Subm Weak Psv Role Ngtv 	
+SUPERINTENDENT	Noun HU ECON Power Strng Role 	
+SUPPLIER	Noun HU ECON Econ* Role Strng 	
+SUPPORTER	Noun HU POLIT Affil Subm Role 	
+SUPREME	Noun HU COLL Legal Handels Strng PFREQ 	90% idiom-noun: "Supreme court" - handled by "court" 
+SURGEON	Noun HU Econ* Role 	
+SURVIVOR	Pos Noun HU Role Power Stay 	
+SUSPECT	Neg Noun HU Legal Ngtv Role Hostile 	
+SWEETHEART	Pos Noun HU Role Intrel 	
+SWIMMER	Noun HU Exprs Role Actv 	
+SYNDICATE	Noun HU COLL ECON Econ* 	
+TAILOR	Noun HU Econ* Role 	
+TALKER	Noun HU Role Actv 	
+TAXPAYER	Noun HU POLIT ECON Econ* Role 	
+TEACHER	Noun HU Acad Power Role 	noun: One who instructs, especially as a profession. 
+TEAM	Noun HU COLL Affil 	
+TEAMSTER	Noun HU ECON Econ* Role 	
+TECHNICIAN	Noun HU Econ* Role 	
+TEENAGE	Modif Nonadlt HU Role 	
+TEENAGER	Noun HU Nonadlt Role 	
+TELLER	Noun HU ECON Econ* Role 	
+THERAPIST	Noun HU Econ* Role 	
+THIEF	Neg Noun HU Role Hostile Fetch Legal 	
+THINKER	Noun HU Acad Role 	
+TOURIST	Noun HU ECON Econ* Exprs Role 	
+TRADER	Noun HU ECON Econ* Role 	
+TRADITIONALIST	Noun HU Role 	
+TRAITOR	Neg Noun HU Role Fail Hostile Affil Ovrst 	
+TRAMP	Neg Noun HU Role Weak Need 	
+TRAVELER	Noun HU Exprs Role 	
+TREASURER	Noun HU ECON Econ* Power Role 	
+TRIBAL	Modif PFREQ HU COLL Polit* 	adj: Of or pertaining to a tribe 
+TRIBE	Noun HU COLL POLIT Polit* 	noun: A group of people united by common ancestry or by common custom 
+TROOP	Noun HU COLL POLIT Milit Strng 	
+TRUST	Noun HU COLL Econ* Power Strng 	0% noun: A monopolistic organization, usually economic 
+TWIN	Noun HU Kin* Role 	
+UNANIMOUS	Modif Strng HU COLL Ovrst 	
+UNCLE	Noun HU MALE KIN Kin* Role 	noun: A brother of one's parent (in our society) 
+UNDERGRADUATE	Noun HU Acad Subm Role 	
+UNDERTAKER	Noun HU Econ* Role 	
+UNFORTUNATE	Neg Noun HU COLL Negate Ngtv Weak Subm 	3% noun: "Unfortunates" - unlucky people 
+UNION	Noun HU COLL POLIT ECON Econ* Polit* 	18% noun-adj: A labor organization 
+UNION	Noun HU COLL POLIT Polit* Power Strng 	31% noun-adj: The state of being united, usually a political union 
+USER	Noun HU Econ* Role 	
+VACATIONER	Noun HU Exprs Role 	
+VAGABOND	Neg Noun HU Role Econ Weak Travel 	
+VAGRANT	Neg Noun HU Role Econ Weak Travel 	
+VETERAN	Noun HU POLIT Milit Role 	
+VICE	Noun HU POLIT ECON Polit* Power Role 	65% adj: Deputy--e.g. "vice president" 
+VICTIM	Noun HU Hostile Subm Weak Psv Role 	
+VICTOR	Noun HU POLIT Power Strng Role 	
+VIEWER	Noun HU Role 	
+VILLAGER	Noun HU Polit* Role 	
+VILLAIN	Neg Noun HU Role Hostile 	
+VISIONARY	Pos Noun HU Role Know Think 	
+VISITOR	Noun HU Affil Role 	
+VOLUNTEER	Noun HU Affil PFREQ Role Subm 	96% noun-adj: A person who offers himself for a service or undertaking 
+VOTER	Noun HU POLIT Polit* Role 	noun: One who votes 
+WAITER	Noun HU Econ* Subm Role 	
+WALK	Noun Econ* HU Role 	0% idiom-noun: 'walk of life'--one's occupation or position 
+WALKER	Noun HU Exprs Role Actv 	
+WANDERER	Noun HU Psv Role 	
+WARRIOR	Noun HU Hostile Milit Strng Actv Role 	
+WEARER	Noun HU Role 	
+WELFARE	Noun HU COLL POLIT ECON Econ* Polit* 	44% noun-adj: Political-economic organizations of various kinds 
+WENCH	Neg Noun HU Role Female Hostile 	
+WESTERNER	Noun HU Role 	
+WHIP	Noun HU Subm Weak Psv Role 	4% idiom-noun: "Whipping boy" - scapegoat 
+WHITE	Noun HU POLIT Race Role 	47% noun-adj: Caucasoid 
+WHITE	Modif Econ* ECON POLIT HU Role 	1% idiom-adj: 'white collar' 
+WIDOW	Noun HU Female KIN Kin* PFREQ Role 	91% noun: A deceased man's wife 
+WIDOW	Modif Kin* Female Psv HU Role 	9% adj: "Widowed"--rendered a widow, husbandless 
+WIFE	Noun HU KIN Kin* Female Role 	noun: A man's spouse 
+WINNER	Noun HU Role Power Strng 	
+WITCH	Noun HU Female Hostile Relig Role 	63% noun: A sorcerer or sorceress 
+WITCH	Noun HU Relig Role 	26% idiom-noun: "Witch doctor" - shaman 
+WITNESS	Noun HU Legal Role 	
+WIVES	Noun HU Female KIN S Kin* Role 	noun: Female spouses 
+WOMAN	Noun HU Female Role 	noun: Female adult human 
+WOMEN	Noun HU Female S Role 	noun: Female adult humans 
+WORKER	Noun HU ECON Econ* Role 	noun-adj: A laborer, employee, or any person engaged in a particular field,  activity, or cause 
+WORRIER	Neg Noun HU Role Weak Psv Ngtv 	
+WRITER	Noun HU Exprs Role Actv 	
+YOUNGSTER	Noun HU Nonadlt Role 	noun: A young person (or animal) 
+YOUTH	Noun HU Nonadlt Role 	76% noun-adj: A young person or young persons collectively, or pertaining to same 

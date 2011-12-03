@@ -1,0 +1,88 @@
+word	tags	comments
+ABDICATE	IAV Neg SUPV Finish Weak Psv Subm 	
+ANNIHILATE	IAV Neg SUPV Hostile Finish Exert Actv 	
+ANNIHILATION	Neg Noun Vice Finish Hostile 	
+BEHEAD	Neg Noun Hostile Exert Other Finish 	
+BURN	Neg Modif Finish Ngtv Psv 	2% adj: "Burned," "burnt"--consumed or injured by fire 
+CANCEL	DAV Neg SUPV Finish 	
+CANCELLATION	Neg Noun Finish 	
+CASUALTY	Neg Noun HU Natpro Finish 	
+CATACLYSM	Neg Noun Finish Hostile 	
+CEASE	DAV SUPV Finish Weak Psv 	
+CLIMAX	Noun Strng Finish 	
+CLOSE	DAV Neg SUPV Finish Actv Ngtv 	17% verb: To stop or obstruct, make imperceptible, inaccessible--to shut,  to come or bring t 
+CLOSE	Noun Finish 	0% noun: "Close"--the end 
+COMPLETE	IAV Pos SUPV Strng Pstv Finish 	23% verb: To finish, to bring to a conclusion or consummation, to fulfill  or make whole or entire 
+COMPLETE	Modif Psv Finish 	2% adjective: "Completed"--finished, terminated 
+COMPLETION	Pos Noun Finish Pstv 	
+CONCLUDE	IAV SUPV Finish Actv 	
+CONCLUSION	Noun Finish Actv 	
+CONSUME	DAV SUPV Finish Econ* Actv 	
+CROAK	IAV Neg SUPV Psv Natpro Finish 	
+CRUMBLE	IAV Neg SUPV Psv Finish Weak Subm 	
+CRUMPLE	IAV Neg SUPV Psv Finish Weak Subm 	
+DECEASE	IAV Neg SUPV Actv Finish 	
+DEMISE	Neg Noun Finish Ngtv Weak Psv 	
+DISCARD	Modif Actv Finish 	
+DISCARD	IAV SUPV Finish Actv 	
+DISCONTINUE	Modif Negate Finish 	
+DISCONTINUE	IAV SUPV Finish Negate 	
+DISMISS	Neg Modif Ngtv Actv Finish Hostile 	
+DISPOSE	IAV Neg SUPV Finish Ngtv Strng Actv 	
+DISSOLVE	IAV SUPV Finish Strng Actv 	
+DOOM	IAV Neg SUPV Finish Ngtv Weak Psv 	
+DOOMSDAY	Neg Noun Finish 	
+DOWNFALL	Neg Noun Finish Pain 	
+ELIMINATE	IAV Neg SUPV Ngtv Strng Actv Finish 	
+ELIMINATION	Neg Noun Ngtv Actv Finish Strng 	
+END	Noun Finish 	55% noun-adj: Termination, conclusion, final or farthest point 
+END	DAV SUPV Finish Actv 	29% verb: To finish, terminate 
+END	DAV SUPV Handels Finish 	2% noun-adj: 'ending'--conclusion, concluding 
+ERADICATE	IAV Neg SUPV Actv Finish Decr Power 	
+ERASE	DAV Neg SUPV Finish Decr Actv 	
+EXECUTE	IAV Neg SUPV Finish Work Hostile 	
+EXPIRE	IAV SUPV Finish Weak Psv 	
+EXPLODE	IAV Neg SUPV Psv Exert Finish 	
+EXTERMINATE	IAV Neg SUPV Actv Finish Decr Power 	
+EXTERMINATION	Neg Noun Finish Decr Power 	
+EXTINCT	IndAdj Neg Modif Qual Quan Finish 	
+EXTINGUISH	IAV Neg SUPV Finish Ngtv Strng Actv 	
+FATAL	IndAdj Neg Modif Finish Natpro 	
+FATALISTIC	IndAdj Neg Modif Think Finish 	
+FELL	IAV SUPV Finish 	0% verb-idiom: "Fell apart"--disintegrated 
+FINISH	DAV SUPV Finish Actv PFREQ 	verb: To complete, end, draw to a close, put the final touches on 
+FINISH	Noun Finish 	0% noun-adj: The end 
+FINISH	Modif Finish 	0% adj: "Finished"--completed, done--"a finished work" 
+FINISH	Modif Finish 	1% adj: "Finishing"--completing, final 
+FOSSILIZE	IAV SUPV Finish Psv 	
+GONE	Modif Finish Psv 	13% adj: 'gone'--absent, departed, past, dead, consumed 
+GRADUATION	Pos Noun Finish Acad 	
+KNOCK	IAV SUPV Finish 	4% idiom-verb: "(to) knock off"--to quit 
+LOST	Neg Modif Ngtv Weak Finish 	0% adj: "Lost on (someone)"--wasted, without effect 
+MASSACRE	IAV Neg SUPV Finish Hostile Actv Exert 	
+NIX	IAV Neg SUPV Finish Power 	
+NULLIFICATION	Neg Noun Finish Negate 	
+NULLIFY	IAV Neg SUPV Negate Finish 	
+OBLITERATE	IAV Neg SUPV Finish Power Hostile 	
+OVER	Modif Finish 	5% adj: Terminated--"i wish this job were over" 
+PERISH	IAV Neg SUPV Natpro Finish 	
+QUIT	IAV Neg SUPV Finish Ngtv Weak Psv Subm 	verb: To stop, cease, give up; to leave (2) 
+RESULT	IAV SUPV Finish 	26% verb: To yield an outcome 
+RUN	IAV Neg SUPV Finish Weak Ngtv Psv 	1% verb: 'run out'--to become depleted 
+SHUT	IAV SUPV Finish Actv Strng 	12% verb: "Shut off," "shut out"--to close off, to stop, exclude 
+SLAUGHTER	IAV Neg SUPV Natpro Finish Hostile Exert Actv 	
+STOP	Noun Finish 	1% noun-adj: A halt, cessation, sojourn, place stopped at 
+SUFFICE	IAV Pos SUPV Pstv Strng Finish 	
+TERMINATE	IAV SUPV Finish Strng Actv 	
+THROUGH	Modif Finish 	2% adj-adv: Finished--'i'm through with this word,' 'we finally got through  working' 
+THROW	IAV SUPV Finish Actv 	7% verb: "Throw away" - to discard 
+THROW	IAV SUPV Strng Actv Finish 	5% verb: "Throw out"--to expel 
+TURN	IAV SUPV Finish Actv 	12% verb: "Turn out"--to produce as a result, to issue or result 
+UNFINISHED	IAV SUPV Finish Negate Weak 	
+USE	IAV SUPV Finish Actv 	1% idiom-verb: "Use up"--to exhaust 
+VETO	DAV Neg SUPV Actv Comform Finish Power 	
+WEAR	IAV Neg SUPV Finish Ngtv 	2% verb: To deteriorate, cause to deteriorate 
+WIND	IAV SUPV Finish Psv Actv 	4% verb: "Wind up"--to end up, terminate, arrive at a certain condition 
+WORN	IAV Neg SUPV Finish ED Ngtv 	60% verb: Past tense of "wear"--deteriorated, caused to deteriorate 
+WOUND	IAV SUPV Finish ED Psv 	4% idiom-verb: 'wound up'--ended up 
+WRECK	IAV Neg SUPV Actv Hostile Exert Finish Other 	

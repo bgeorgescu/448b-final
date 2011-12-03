@@ -1,0 +1,43 @@
+word	tags	comments
+BAG	IAV SUPV Fall PFREQ 	3% verb-adj: To sag (1), sagging (0); load, put in a sack (0) 
+BURST	IAV SUPV Fall Strng Actv 	
+BURY	DAV Neg SUPV Fall Ngtv Actv 	verb: To inter, immerse, conceal 
+CAVE	IAV Neg SUPV Fall Weak Psv Ngtv 	5% idiom-verb: "Cave in"--collapse 
+COLLAPSE	IAV Neg SUPV Fall Ngtv Weak Psv 	
+CRASH	IAV SUPV Fall 	
+DESCEND	DAV SUPV Fall Weak 	verb: To come down 
+DIP	DAV SUPV Fall Actv 	
+DIVE	DAV SUPV Fall Actv 	
+DOUBLE	IAV SUPV Fall 	3% idiom-verb: "Double over"--to bend over in the middle 
+DROP	Neg Noun Ngtv Weak Psv Fall 	5% noun: Fall or decline 
+DROP	DAV Neg SUPV Fall Ngtv Weak Psv 	32% verb: To fall--intransitive 
+FALL	DAV SUPV Fall Weak Psv 	74% verb: General verb sense--drop, descend, collapse, sink, decline 
+FALL	Modif Weak Psv Fall 	1% adj: 'fallen' 
+FALL	Modif Weak Psv Fall 	4% adj: 'falling' 
+FELL	DAV SUPV Fall PFREQ 	89% verb: Past tense of "to fall"--drop, descend, collapse, sink 
+KNOCK	IAV Neg SUPV Fall Ngtv Strng Actv 	39% verb: To knock down, over or out--to topple, dislodge, defeat, make unconscious 
+LOWER	DAV SUPV Fall Strng Actv 	36% verb: To reduce, let down 
+PARACHUTE	DAV SUPV Fall 	6% verb: To jump at a high altitude, using the apparatus above. 
+PLUNGE	DAV SUPV Fall Psv 	
+RAIN	DAV SUPV Fall 	29% verb: To fall (as drops of water from the sky) 
+SANK	DAV Neg SUPV Fall ED Ngtv Weak 	
+SET	IAV SUPV Fall 	1% verb: To go down ("the sun set") 
+SINK	DAV SUPV Fall Weak Psv 	
+SLID	DAV SUPV Fall ED 	
+SLIDE	Noun Psv Fall Psv 	
+SLIDE	DAV SUPV Fall Psv 	
+SLIP	DAV SUPV Psv PFREQ Fall Psv 	88% verb: To slide, to move without control or friction, to move stealthily 
+SLUMP	DAV Neg SUPV Fall Ngtv Psv 	
+SPRAY	DAV SUPV Fall 	
+SPRINKLE	IAV SUPV Fall 	
+STAGGER	IAV SUPV Fall Weak Psv 	
+STUMBLE	IAV SUPV Weak Psv Fall 	
+SUBMERGE	IAV SUPV Fall 	
+SUNK	DAV SUPV Fall Weak Psv 	
+SUNKEN	SV SUPV ED Fall Weak Psv 	
+SWOON	SV Pos SUPV Psv Arousal Fall 	
+TOPPLE	IAV Neg SUPV Fall 	
+TORRENT	Neg Noun Fall Ovrst 	
+TRIP	DAV SUPV Fall 	8% verb: To stumble 
+TUMBLE	Noun Psv Fall 	
+TUMBLE	IAV SUPV Fall Psv 	

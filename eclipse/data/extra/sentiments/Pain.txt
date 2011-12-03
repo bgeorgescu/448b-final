@@ -1,0 +1,255 @@
+word	tags	comments
+ACHE	SV Neg SUPV Pain Psv 	
+AFRAID	Modif EMOT Subm Psv PFREQ Pain 	adjective: Feeling fear, filled with apprehension 
+AGONIZE	SV Neg SUPV Pain Psv 	
+AGONY	Neg Noun Ngtv Pain 	
+AIL	SV Neg SUPV Pain Psv 	
+AILMENT	Neg Noun Pain 	
+AMBIVALENT	Neg Modif EMOT Ngtv Weak Pain 	
+ANGUISH	Neg Noun EMOT Hostile Ngtv Psv Pain 	
+ANXIETY	Neg Noun EMOT Ngtv Weak Psv Pain 	noun: Mental distress or uneasiness caused by apprehension of danger or misfortune. 
+ANXIOUS	Neg Modif EMOT Ngtv Weak Psv Pain 	21% adjective: Apprehensive, worried 
+ANXIOUS	Neg Modif Ngtv Weak Psv Pain 	13% adverb: "Anxiously"--nervously, excitedly 
+ANXIOUSNESS	Neg Noun EMOT Ngtv Weak Psv Pain 	
+APOLOGETIC	IPadj Modif Pain Weak Subm Intrel 	
+APPREHENSION	Neg Noun EMOT Pain Ngtv Strng Actv 	
+APPREHENSIVE	IPadj Neg Modif Psv Emot Pain Weak 	
+ASHAMED	Neg Modif EMOT Pain Ngtv Weak Psv 	
+BESET	IndAdj Neg Modif Pain Emot Arousal 	
+BITTER	Neg Modif EMOT EVAL Pain Ngtv Psv Hostile 	
+BITTERNESS	Neg Noun EMOT Pain Ngtv Psv 	
+BLOODSHED	Neg Noun Hostile Pain Weak 	
+BLUE	Modif Noun PFREQ Pain 	89% noun-adj: The color; depressed 
+BROKEN-HEARTED	IPadj Neg Modif Weak Pain Emot Intrel 	
+BROOD	SV Neg SUPV Think Emot Pain 	
+BRUISE	Neg Noun Pain 	
+BURDENSOME	IPadj Neg Modif Pain Vice 	
+CHAFE	IndAdj Neg Modif Pain 	
+CLAMOR	Neg Noun Pain Comform Vice 	
+CLAMOROUS	IndAdj Neg Modif Pain Comform 	
+CLATTER	Neg Noun Pain Comform 	
+COMMISERATION	Neg Noun Emot Pain Vice Intrel 	
+COMMIT	Modif Subm Psv Pain 	15% adj: Consigned, bound 
+CONCERN	Neg Noun EMOT Ngtv Pain 	26% noun: Worry, solicitude, or anxiety 
+CONFLICT	Neg Modif Pain Ngtv 	18% adj: "Conflicting"--opposed, discordant 
+CONFLICT	Neg Modif Pain Ngtv Psv 	3% adj: "Conflicted"--ambivalent 
+CRAMP	IAV Neg SUPV Actv Pain 	
+CRINGE	IAV Neg SUPV Psv Feel Pain 	
+CRIPPLE	IAV Neg SUPV Actv Pain Stay Hostile Exert 	
+DEJECTED	IndAdj Neg Modif Weak Emot Pain 	
+DEPRESS	Neg Modif EMOT Pain Ngtv Weak Psv 	71% adj: "Depressed"--dejected, low; lower than some norm (0) 
+DEPRESS	IAV Neg SUPV Ngtv Pain EMOT 	13% verb: To discourage, sadden; to lower, reduce, press down on (2) 
+DEPRESSION	Neg Noun EMOT Pain Ngtv Weak 	23% noun: Psychological decline; a hole or hollow (0) 
+DESPAIR	Neg Noun EMOT Ngtv Weak Psv Pain Subm 	
+DESPAIR	SV Neg SUPV Ngtv Weak Psv Pain 	
+DESPERATE	Neg Modif EMOT Ngtv Weak Pain 	
+DESPERATION	Neg Noun Emot Pain 	
+DESPISE	SV Neg SUPV Pain Hostile Ngtv Strng 	
+DESTITUTE	IndAdj Neg Modif Econ Pain Weak Subm 	
+DISAGREEABLE	Neg Modif Hostile Negate Ngtv Pain 	
+DISAPPOINT	Neg Modif EMOT Ngtv Psv Pain 	76% adj: "Disappointed"--let down, displeased 
+DISAPPOINTMENT	Neg Noun EMOT Ngtv Psv Pain 	
+DISCOMFORT	Neg Noun Negate Ngtv Pain 	
+DISCONCERTED	Neg Modif Pain Ngtv Weak Psv Undrst 	
+DISCONTENT	Neg Modif Ngtv Weak Psv Pain Negate 	
+DISCOURAGE	Neg Modif EMOT Pain Negate Ngtv Psv 	
+DISCOURAGE	IAV Neg SUPV Negate Ngtv Actv Pain Hostile 	
+DISGUST	Neg Noun EMOT Pain Ngtv Weak Psv Hostile 	16% noun: Revulsion 
+DISGUST	IAV Neg SUPV Ngtv Hostile Pain 	6% verb: To be revolting or abhorrent to someone 
+DISGUST	Neg LY Ngtv Pain Weak 	6% adv: "Disgustingly"--revoltingly 
+DISGUST	Neg Modif EMOT Pain Ngtv Weak Psv Hostile 	59% adj: "Disgusted"--revolted 
+DISGUST	Neg Modif EVAL Ngtv Pain Weak 	13% adj: "Disgusting"--revolting 
+DISHEARTEN	IndAdj Neg Modif Weak Subm Pain Emot 	
+DISHONOR	IAV Neg SUPV Actv Weak Subm Pain 	
+DISILLUSION	Noun EMOT Pain 	
+DISMAY	Noun EMOT Pain Undrst 	
+DISPLEASURE	Neg Noun EMOT Hostile Pain Negate Ngtv Weak Psv 	
+DISSATISFACTION	Neg Noun Pain Vice 	
+DISSATISFIED	IndAdj Neg Modif Hostile Pain 	
+DISSOLUTION	Neg Noun Think Affil Pain Percv 	
+DISTRESS	Neg Noun EMOT Pain Ngtv Weak Psv 	
+DISTRESS	IAV Neg SUPV Ngtv Weak Psv Pain 	
+DISTRUSTFUL	IPadj Neg Modif Percv Pain 	
+DISTURB	Neg Modif EMOT Pain Ngtv Psv 	33% adj: "Disturbed"--upset, disrupted 
+DIZZY	IndAdj Neg Modif Pain 	
+DOLDRUMS	Neg Noun Pain Vice 	
+DOWNCAST	IndAdj Neg Modif Pain 	
+DOWNFALL	Neg Noun Finish Pain 	
+DOWNHEARTED	IndAdj Neg Modif Pain Emot 	
+DREAD	SV Neg SUPV Psv Emot Pain 	
+EDGE	Neg Modif EMOT Pain Ngtv Weak 	0% idiom-adj: "On edge"--nervous, irritable, keyed up 
+ESTRANGED	IPadj Neg Modif Intrel Pain 	
+EXASPERATION	Neg Noun Emot Pain 	
+EXHAUSTION	IndAdj Neg Modif Emot Pain Work 	
+FAMINE	Neg Noun Weak Need Pain 	
+FATIGUE	Neg Noun Pain Ngtv Weak Psv 	
+FEAR	Neg Noun EMOT Pain Ngtv Weak Psv Subm 	67% noun-adj: Anxiety, dread, fright 
+FEAR	SV Neg SUPV Ngtv Weak Psv Subm Pain 	33% verb: To be afraid of 
+FEAR	Neg Modif Ngtv Pain Strng 	0% adj: "Feared" - arousing fear 
+FEARFUL	Neg Modif EMOT Subm Pain Ngtv Weak Psv 	
+FEARSOME	IndAdj Neg Modif Emot Pain 	
+FED	Neg Modif EMOT Pain Hostile Ngtv Psv 	28% idiom-adj-adv: "Fed up" - disgusted 
+FORLORN	IndAdj Neg Modif Emot Pain Weak 	
+FRANTIC	Neg Modif EMOT Pain Ngtv Weak 	
+FRIGHTEN	IAV Neg SUPV Hostile Ngtv Actv Pain 	19% verb: To scare 
+FRIGHTEN	Neg Modif EMOT Pain Ngtv 	62% adjective: "Frightened"--scared, afraid 
+FRIGHTEN	Neg Modif EVAL Pain Ngtv Actv 	19% adjective: "Frightening"--scary, terrifying 
+FRIGHTFUL	IndAdj Neg Modif Pain Qual 	
+FRUSTRATE	Neg Modif EMOT Pain Ngtv Psv 	43% adj: "Frustrated"--vexed, unsatisfied, thwarted 
+FRUSTRATE	Neg Modif Pain Ngtv 	37% adj: "Frustrating"--unsatisfying, tending to thwart 
+FRUSTRATION	Neg Noun EMOT Pain Ngtv Psv 	noun-adj: A condition producing or resulting from thwarted desires or plans 
+FURY	Neg Noun EMOT Hostile Ngtv Pain Arousal Ovrst 	
+GASH	Neg Noun Pain Natpro 	
+GLOOM	Neg Modif Pain Ngtv Psv 	
+GLOOMY	Neg Modif EMOT Pain Ngtv Psv 	
+GLUM	IndAdj Neg Modif Emot Pain 	
+GRIEF	Neg Noun EMOT Pain Ngtv Weak Psv Affil 	
+GRIEVANCE	Neg Noun Comform Pain 	
+GRIEVE	SV Neg SUPV Actv Emot Pain Comform 	
+GRIZZLY	IndAdj Neg Modif Eval Pain 	
+GRUDGE	Neg Noun Hostile Ngtv Pain 	
+GUILT	Neg Noun EMOT Pain Ngtv Psv 	
+HARD	Neg Modif Pain Ngtv Psv Weak 	1% idiom-adj: 'hard up' 
+HOPELESS	Neg Modif Pain Ngtv Weak Psv Ovrst 	
+HORROR	Neg Noun EMOT Pain Ngtv Hostile 	
+HOSTILE	Neg Modif EMOT Hostile Ngtv Pain Arousal 	
+HOSTILITY	Neg Noun EMOT Hostile Ngtv Pain Arousal 	
+HUMILIATION	Neg Noun Emot Pain 	
+HUNG	Neg Modif Pain Ngtv Psv 	22% idiom-adj-adv: 'hung up'--impeded by, caught up in 
+HURT	Neg Noun EMOT Pain Ngtv Psv 	11% noun-adj: Injury or pain, injured 
+HURTFUL	IPadj Neg Modif Vice Emot Pain 	
+HYSTERIA	Neg Noun Vice Emot Pain 	
+HYSTERICAL	Neg Modif EMOT Pain Ngtv Weak Psv 	
+ILL	Neg Modif Pain Ngtv Psv 	7% adj-idiom: "Ill at ease"--uncomfortable 
+INDIGNATION	Neg Noun Emot Pain Hostile 	
+INJURE	IAV Neg SUPV Psv Pain Fail 	
+INTOLERABLE	IPadj Neg Modif Emot Pain Weak 	
+IRK	IAV Neg SUPV Psv Pain Hostile 	
+IRRITABLE	Neg Modif EMOT Pain Ngtv Psv Hostile 	
+IRRITATION	Neg Noun Hostile Pain Ngtv Psv 	
+JITTERY	IndAdj Neg Modif Emot Pain 	
+LAMENT	SV Neg SUPV Actv Think Emot Pain 	
+LAMENTABLE	IndAdj Neg Modif Emot Pain 	
+LONE	Neg Modif Affil Pain Weak Ngtv Psv PFREQ 	97% adj: "Lonely" - sad and alone 
+LONELINESS	Neg Noun Affil Pain Ngtv Weak Psv 	
+LONELY	Neg Modif Affil Pain Ngtv Weak Psv 	
+LONESOME	IPadj Neg Modif Emot Pain Other 	
+MALICE	Neg Noun Hostile Pain 	
+MALICIOUS	IPadj Neg Modif Hostile Pain Other 	
+MELANCHOLY	IndAdj Neg Modif Emot Pain 	
+MISERABLE	Neg Modif EVAL EMOT Pain Ngtv Weak Psv 	
+MISERY	Neg Noun Pain Ngtv Weak Psv 	
+MOAN	DAV Neg SUPV Actv Comform Pain 	
+MORTIFY	IAV Neg SUPV Psv Emot Pain 	
+MOURN	Neg Noun Affil Pain Ngtv Psv Weak 	
+MOURN	IAV Neg SUPV Affil Ngtv Psv Weak Pain 	
+MOURNER	Neg Noun HU Role Emot Pain 	
+MYSELF>	Neg Modif EMOT Pain Ngtv Weak Psv 	0% idiom-adj: "Beside myself"--almost out of one's senses with fear or  other emotion 
+NERVOUS	Neg Modif EMOT Pain Ngtv Weak Psv 	adj: Uneasy, excitable; pertaining to the nerves (1) 
+NERVOUSNESS	Neg Noun Weak Emot Pain 	
+NEUROTIC	IndAdj Neg Modif Emot Pain 	
+NUMB	IndAdj Neg Modif Emot Pain 	
+OPPRESSIVE	IndAdj Neg Modif Emot Pain Power Subm 	
+OUTRAGE	Neg Noun Emot Pain Hostile 	
+PAIN	Neg Noun Pain Ngtv 	noun: Bodily or psychological suffering 
+PANIC	Neg Noun EMOT Pain Ngtv Weak Psv 	
+PARANOID	IndAdj Neg Modif Weak Emot Pain Undrst Percv 	
+PERTURB	IAV Neg SUPV Ngtv Pain 	
+PHOBIA	Neg Noun Emot Pain Weak 	
+PLIGHT	Neg Noun Hostile Emot Pain 	
+POUT	SV Neg SUPV Emot Pain Comform 	
+PRESS	Neg Modif Pain Ngtv Weak Psv 	8% adj: "Pressed"--under pressure, strained 
+REGRET	SV Neg SUPV Ngtv Weak Psv Pain 	79% verb: To feel sorry about 
+REGRET	Neg Noun EMOT Ngtv Weak Psv Pain 	21% noun: A sense of loss, sorrow, dismay, disappointment 
+REGRETTABLE	IndAdj Neg Modif Emot Pain Vice 	
+REMORSE	Neg Noun Emot Pain 	
+RESENTFUL	IndAdj Neg Modif Emot Pain Hostile 	
+RESENTMENT	Neg Modif EMOT Pain Ngtv Psv Hostile 	
+RESTLESSNESS	Neg Noun Emot Pain 	
+RUE	SV Neg SUPV Ngtv Pain 	
+SAD	Neg Modif EMOT Ngtv Psv Pain PFREQ 	adj: Unhappy 
+SADNESS	Neg Noun EMOT Pain Ngtv Psv 	
+SCALD	IAV Neg SUPV Psv Pain 	
+SCARE	Neg Noun EMOT Pain Ngtv Psv Subm Weak 	17% noun: A sudden or prolonged fright 
+SCARED	Neg Modif EMOT Pain Subm Ngtv Weak Psv PFREQ 	96% adj: Frightened, afraid 
+SCARY	IndAdj Neg Modif Emot Pain 	
+SCRAPE	IAV Neg SUPV Actv Pain 	
+SHAME	Neg Noun EMOT Pain Ngtv Psv 	
+SHAMEFUL	IPadj Neg Modif Emot Pain Feel 	
+SHIVER	IAV Neg SUPV Psv Pain 	
+SHOCK	Neg Noun Pain Ngtv Strng 	40% noun-adj: Sudden disturbance of mental equilibrium; less frequently,  of physical equilibrium (1) 
+SHOCK	Neg Modif EMOT Ngtv Weak Pain Psv 	29% adj: "Shocked"--jarred with intense surprise, etc. 
+SHOCK	Neg Modif Pain Ngtv Strng 	2% adj: "Shocking"--having a disturbing, surprising, etc., effect 
+SHOCK	Neg LY Ovrst Ngtv Strng Pain 	0% adv: "Shockingly" 
+SHRIEK	DAV Neg SUPV Comform Strng Pain 	
+SHRILL	IndAdj Neg Modif Pain Comform 	
+SMART	IAV SUPV Pain 	0% verb: To sting 
+SOB	DAV Neg SUPV Actv Emot Pain 	
+SOMBER	IndAdj Neg Modif Emot Pain 	
+SORE	IndAdj Neg Modif Emot Pain 	
+SORENESS	Neg Noun Emot Pain 	
+SORROW	Neg Noun EMOT Pain Ngtv Affil Weak Psv 	noun: Sadness, grief 
+SORROWFUL	IndAdj Neg Modif Emot Pain 	
+SORRY	Neg Modif EMOT Ngtv Weak Psv Pain PFREQ 	98% adj: Feeling regret or sorrow 
+SPRAIN	IAV Neg SUPV Psv Pain 	
+STING	IAV Neg SUPV Actv Pain Hostile Exert 	
+STINK	IAV Neg SUPV Percv Pain 	
+STRAIN	Neg Noun Ngtv Pain 	
+STRESS	Neg Noun Ngtv Pain 	
+STRICKEN	IndAdj Neg Modif Weak Pain 	
+SUFFER	IAV Neg SUPV Subm Ngtv Weak Psv Pain 	69% verb: To experience or tolerate physical or psychological pain or  other unpleasantness 
+SUFFER	Neg Modif EMOT Pain Ngtv Weak Psv Weak 	30% noun-adj: "Suffering" 
+SULLEN	IndAdj Neg Modif Pain 	
+TENSE	IndAdj Neg Modif Emot Pain Hostile 	
+TENSION	Neg Noun EMOT Ngtv Weak Pain 	noun: Stress 
+TERRIFY	IAV Neg SUPV Actv Emot Pain Other 	
+TERROR	Neg Noun EMOT Pain Ngtv 	
+THOUGHTLESS	IndAdj Neg Modif Emot Pain Think Fail 	
+TIRE	IAV Neg SUPV Subm Ngtv Pain 	0% verb: To fatigue 
+TIRE	IAV Neg SUPV Hostile Ngtv Weak Psv Pain 	13% verb: To become bored or disinterested--"tire of" 
+TIRE	Neg Modif Subm Weak Pain Ngtv Psv 	25% adj: "Tiring"--exhausting 
+TIRED	Neg Modif Pain Subm Ngtv Weak Psv 	70% adj: Weary, exhausted, fatigued 
+TIRED	Neg Modif Pain Hostile Ngtv Weak Psv 	27% adj: Exhausted in patience or interest, bored--"tired of doing this" 
+TIRED	SV Neg SUPV Subm Pain Ngtv Weak Psv 	4% verb: To become weary or exhausted 
+TIRED	SV Neg SUPV Hostile Pain Ngtv Weak Psv 	0% verb: To become bored or uninterested 
+TOLERABLE	IPadj Neg Modif Emot Pain 	
+TORTUROUS	IndAdj Neg Modif Emot Pain 	
+TOUCHY	IndAdj Neg Modif Emot Pain Vice 	
+TRAGEDY	Neg Noun Emot Pain 	
+TRAUMATIC	IndAdj Neg Modif Emot Pain 	
+TROUBLE	IAV Neg SUPV Ngtv Pain 	5% verb: To disturb or worry 
+TROUBLE	Neg Modif EMOT Pain Ngtv Psv 	5% adj: "Troubled"--disturbed 
+TROUBLE	Neg Modif Pain Ngtv 	1% adj: "Troubling"--disturbing 
+UNASSURED	Modif Negate Weak Pain 	
+UNBEARABLE	IPadj Neg Modif Pain 	
+UNCOMFORTABLE	Neg Modif Negate Ngtv Pain EMOT 	
+UNEASINESS	Neg Noun Emot Pain 	
+UNEASY	IndAdj Neg Modif EMOT Negate Ngtv Weak Pain 	
+UNHAPPINESS	Neg Noun Emot Pain 	
+UNHAPPY	IndAdj Neg Modif EMOT Pain Negate Ngtv 	adj: Sad, unfortunate 
+UNNERVE	IAV Neg SUPV Psv Emot Pain Other 	
+UNSETTLING	IndAdj Neg Modif Emot Pain 	
+UNSPEAKABLE	IndAdj Neg Modif Comform Emot Pain 	
+UNWILLING	Neg Modif Hostile Negate Ngtv Pain Power Hostile 	
+UNWILLINGNESS	Neg Noun Hostile Negate Ngtv Strng Pain Power 	
+UPSET	Neg Modif EMOT Ngtv Weak Pain Psv 	62% adj: "Upset"--disturbed 
+UPSET	Neg Modif Pain Ngtv Actv Strng 	8% adj: "Upsetting"--disturbing 
+UPSET	IAV Neg SUPV Ngtv Actv Strng Pain 	14% verb: To disturb emotionally (of persons) 
+WAIL	IAV Neg SUPV Actv Comform Pain 	
+WALLOW	SV Neg SUPV Actv Stay Emot Pain 	
+WARY	IndAdj Neg Modif Emot Pain 	
+WEARY	Modif EMOT Subm Pain Weak 	
+WEEP	IAV Neg SUPV Actv Emot Pain Comform 	
+WHIMPER	DAV Neg SUPV Actv Comform Emot Pain 	
+WINCE	IAV Neg SUPV Psv Pain 	
+WIND	Modif Pain Weak Psv 	0% adj: "Winded"--out of breath 
+WOE	Neg Noun Pain 	
+WOEFUL	IndAdj Neg Modif Emot Pain 	
+WORRY	SV Neg SUPV Ngtv Weak Psv Pain 	49% verb: To feel anxious (includes gerunds--"stop worrying") 
+WORRY	Neg Noun EMOT Pain Ngtv 	12% noun: A cause of uneasiness 
+WORRY	Neg Modif EMOT Pain Ngtv Weak Psv 	29% adj: "Worried"--anxious 
+WORRY	Neg LY Pain Ngtv Weak Psv 	0% adv: "Worriedly"--in a worried manner 
+WRETCH	IAV Neg SUPV Actv Pain Natpro 	
+WRETCHEDNESS	Neg Noun Pain Eval Vice 	
+WRITHE	IAV Neg SUPV Actv Pain 	
+YELP	IAV Neg SUPV Actv Comform Pain 	

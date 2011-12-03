@@ -1,0 +1,345 @@
+word	tags	comments
+ACUTE	Modif Ovrst Qual 	
+ADVISABLE	IPadj Pos Modif Eval Qual Know 	
+AFFLUENCE	Pos Noun Econ Qual 	
+AFFLUENT	IndAdj Pos Modif Econ Qual 	
+ALLOWABLE	IPadj Pos Modif Eval Qual 	
+ALOUD	LY Qual 	
+ANIMATION	Noun Actv Qual 	
+ATTRACTIVENESS	Pos Noun Eval Qual 	
+ATTRIBUTE	Modif Qual 	
+AUSPICIOUS	IndAdj Pos Modif Eval Qual 	
+BARK	Modif Qual 	
+BEAR	Noun Qual 	0% noun: "Bearing"--carriage, mien 
+BEAUTEOUS	IndAdj Pos Modif Eval Qual 	
+BENT	Modif Qual Weak Psv 	
+BLUNT	IPadj Neg Modif Qual Strng Ngtv 	
+BOARD	LY Ovrst Qual 	2% idiom-adv: 'across the board,' without exception, general 
+BODY	Modif Qual 	3% adj-adv: "Bodily"--physical, physically, in entirety 
+BRIGHT	Pos Modif EVAL Qual Pstv 	adj-adv: Full of light, literally or figuratively (includes comparative  (1), superlative (2) and adverb (1) for 
+BRIGHTNESS	Pos Noun Qual Pstv 	
+BRILLIANCE	Pos Noun Qual Pstv 	
+BRILLIANT	Pos Modif EVAL Qual Pstv Ovrst 	
+CHARGE	Modif Qual Strng 	2% adj: "Charged"--loaded, usually with some form of energy 
+CHIC	IndAdj Pos Modif Eval Qual 	
+CHILL	Modif Qual 	
+CHILLY	Modif Qual 	
+CLARITY	Pos Modif Ovrst Pstv Qual 	
+CLEAR	Pos Modif Pstv Ovrst Qual 	52% adj: Distinct, limpid, certain, lucid, free of obstructions, orderly  (mostly abstract) 
+CLEAR	Pos Modif Qual Pstv 	2% adj: "Clearer"--comparative of sense 1 
+CLEAR	Pos Modif Qual Pstv 	0% adj: "Clearest"--superlative of sense 1 
+CLOTHE	Modif Qual 	3% adjective: "Clothed"--covered with or as with clothing 
+COARSE	IndAdj Neg Modif Qual Ngtv 	
+COARSENESS	Neg Noun Vice Qual Eval 	
+COLD	Neg Modif Qual EVAL Ngtv Psv PFREQ 	82% noun-adj: Very cool, lacking in heat; the absence of heat (2); unfriendly,  forbidding (2); absolutely, without preparation, abruptly (0) 
+COLD	Modif Qual 	1% adjective: "Colder"--comparative of sense 1 
+COLD	Modif Qual 	1% adjective: "Coldest"--superlative of sense 1 
+COLOSSAL	IndAdj Pos Modif Ovrst Eval Qual 	
+COMELY	IndAdj Pos Modif Eval Qual 	
+COMMENSURATE	IPadj Pos Modif Rel Eval Qual 	
+COMMONPLACE	Neg Noun Modif Ovrst Ngtv Qual 	
+COMPLEMENTARY	IndAdj Pos Modif Eval Qual Rel 	
+COMPOSITE	Modif Qual 	
+CONCRETE	Modif Qual Strng 	
+CONTRAST	Noun Qual 	
+COOK	Modif Qual 	8% adj: "Cooked"--heated, prepared 
+COZY	IndAdj Pos Modif Eval Qual Pleasure 	
+CRACK	Modif Qual Weak 	
+CREDENTIALS	Pos Noun Qual Eval Affil 	
+CREDIBILITY	Pos Noun Eval Qual 	
+CREDIBLE	IndAdj Pos Modif Eval Qual 	
+CRISP	Modif Qual 	
+CRUSH	Neg Modif Qual Ngtv Strng Actv 	
+CUBIC	Modif Qual 	
+CUMBERSOME	IndAdj Neg Modif Qual Eval Strng 	
+CURL	Modif Qual 	
+CURVE	Modif Qual 	
+DAMP	Modif Qual 	
+DARING	IndAdj Pos Modif Virtue Pstv Strng Eval Qual 	
+DARK	Neg Modif Qual Ngtv 	noun-adj: Night, absence of light, blackness--black, obscure, gloomy 
+DARKNESS	Neg Noun Ngtv Qual 	
+DELICACY	Pos Noun Eval Qual Ovrst 	
+DELICATE	Pos Modif Qual EVAL Pstv Weak 	
+DENSE	Modif Qual Strng 	
+DENSITY	Noun Qual Strng 	
+DESIROUS	IndAdj Pos Modif Eval Qual Need 	
+DIM	Neg Modif Qual Ngtv Undrst 	
+DRY	Noun Qual 	65% noun-adj: Free from moisture 
+DULL	Neg Modif Qual EVAL Ngtv Weak Psv 	
+DUSTY	Modif Modif Qual 	
+ECCENTRIC	IndAdj Neg Modif Ovrst Eval Qual 	
+ECCENTRICITY	Neg Noun Ovrst Eval Qual 	
+ECHO	Noun Qual 	
+EDIBLE	IndAdj Pos Modif Natpro Eval Qual 	
+ELASTIC	Modif Qual Weak 	
+ELASTICITY	Noun Qual Weak 	
+EPIDEMIC	Neg Noun Natpro Qual 	
+ERECT	Noun Qual Strng Actv 	
+EVEN	LY Ovrst PFREQ Qual 	90% adv: Used to suggest that something is extreme, remarkable, unexpected--"the  dictionary doesn't even define it" 
+EVEN	Pos LY Qual Pstv 	0% adv: "Evenly"--smoothly, uniformly 
+EVEN	Pos Modif Qual Pstv 	0% adj: Regular, smooth, balanced . . . "an even surface" 
+EXEMPT	IndAdj Neg Modif Qual Ovrst 	
+EXOTIC	IndAdj Pos Modif Eval Qual 	
+EXQUISITE	IndAdj Pos Modif Eval Qual 	
+EXTINCT	IndAdj Neg Modif Qual Quan Finish 	
+EXTRAORDINARY	IndAdj Pos Modif Ovrst EVAL Virtue Pstv Qual 	
+FABULOUS	IndAdj Pos Modif Eval Qual 	
+FADE	Modif Qual Psv 	
+FAIR	Pos Modif Qual Pstv 	3% adj: Beautiful, light, unblemished (includes comparative (0) + superlative (0)) 
+FAKE	IndAdj Neg Modif Eval Qual 	
+FALLACY	Neg Noun Eval Qual 	
+FALSEHOOD	Neg Noun Eval Qual 	
+FASHIONABLE	IndAdj Pos Modif Eval Qual 	
+FEATHER	Modif Qual 	0% adj: "Feathered"--covered with feathers 
+FINE	Pos Modif Qual EVAL Pstv 	56% adj: Of high quality, excellent; light, slender, delicate (7) 
+FINE	Pos LY Qual Pstv 	1% adv: "Finely"--in a fine manner 
+FIRM	Modif Qual Strng 	56% adj: Not yielding--solid 
+FIRM	LY Qual Strng 	23% adv: "Firmly"--solidly, stiffly 
+FIRM	Modif Qual Strng 	5% adj: "Firmer"--more solid 
+FIRM	Modif Qual Strng 	0% adj: "Firmest"--most firm 
+FIRMNESS	Pos Noun Pstv Strng Qual 	
+FIX	Modif Qual 	6% adj: "Fixed"--determined, unmoving 
+FLAGRANT	IndAdj Neg Modif Eval Qual Ovrst 	
+FLASHY	IndAdj Pos Modif Ovrst Eval Qual 	
+FLAVOR	Modif Qual 	
+FLEXIBLE	Pos Modif Qual Pstv 	
+FLOWER	Modif Qual 	0% adj: "Flowered"--bearing, containing or decorated with flowers 
+FOGGY	Modif Qual 	
+FORCE	LY Qual Strng 	1% idiom-adv: "In force"--in operation, effective, enforced 
+FORM	Noun Qual 	62% noun: Shape, type, manner, document to be filled in (3) 
+FRAGRANT	IndAdj Pos Modif Percv Eval Qual 	
+FRANTICALLY	Neg Modif Ovrst Qual 	
+FRAUGHT	IndAdj Neg Modif Ovrst Eval Qual 	
+FREAK	Neg Noun HU Qual 	
+FRIGHTFUL	IndAdj Neg Modif Pain Qual 	
+FRIVOLOUS	IndAdj Neg Modif Qual Eval 	
+FROZEN	Modif Qual 	
+FRUGAL	IndAdj Pos Modif Econ Qual 	
+FRY	Modif Qual 	
+GAIT	Noun Qual 	
+GAUDY	Neg Modif Qual Ngtv Ovrst 	
+GINGERLY	LY Qual Subm Weak Undrst 	
+GLAMOROUS	IndAdj Pos Modif Eval Qual 	
+GLAMOUR	Pos Noun Eval Qual 	
+GLEAM	Pos Noun Qual Pstv 	
+GLISTEN	Pos Modif Qual Pstv 	
+GLITTER	Pos Modif Qual Pstv 	
+GLOSSY	IndAdj Pos Modif Qual 	
+GODLIKE	IndAdj Pos Modif Qual Power Strng 	
+GORGEOUS	IndAdj Pos Modif Eval Qual 	
+GRANULAR	Modif Qual 	
+GRUFF	IndAdj Neg Modif Qual Strng 	
+GULLIBLE	IPadj Neg Modif Weak Think Qual 	
+HACKNEY	IndAdj Neg Modif Qual Eval 	
+HALLOWED	IndAdj Pos Modif Qual Intrel Subm 	
+HARD	Modif Qual Strng 	4% adj: Solid, brittle, unyielding (of physical things) 
+HARDY	IndAdj Pos Modif Virtue Pstv Strng Qual 	
+HEAT	Noun Qual 	49% noun-adj: Quality or condition of being hot 
+HEAT	Noun Actv Qual 	3% noun-adj: "Heating", creating heat 
+HEAT	Modif Qual Actv 	17% adj-adv: "Heated", hot, excited 
+HEAVY	Modif Qual EVAL Strng 	76% adj: Of great weight, intensity, degree, severity, etc. 
+HEAVY	LY Qual Strng 	18% adv: "Heavily", with great weight or force 
+HEAVY	Modif EVAL Qual Strng 	4% adj: "Heavier", greater in weight, intensity, etc. 
+HEAVY	Modif EVAL Qual Strng 	2% adj: "Heaviest", greatest in weight, intensity, etc. 
+HILARIOUS	IndAdj Pos Modif Eval Qual Pleasure 	
+HOLLOW	Neg Modif Qual Ngtv Weak 	
+HOMOGENEOUS	Modif Qual 	
+HOT	Modif Qual 	80% adj: High in temperature 
+HOW	LY INT Qual 	adverb: To what extent or degree, the manner, state or way in which 
+ICE	Modif Qual 	5% adj: "Iced"--covered or cooled with ice 
+ICY	Modif Qual 	
+ILLUMINATION	Noun Qual 	
+ILLUSTRIOUS	IndAdj Pos Modif Ovrst Eval Qual 	
+IMPERVIOUS	IndAdj Pos Modif Strng Qual 	
+INCONVENIENT	IndAdj Neg Modif Eval Qual 	
+INDESCRIBABLE	IndAdj Pos Modif Negate Comform Eval Qual 	
+INEQUALITY	Neg Noun Eval Intrel Qual 	
+INTACT	Modif Qual Strng Psv 	
+INTANGIBLE	Modif Qual Negate 	
+INTENSE	Modif Qual Strng Ovrst Actv 	adj: Very strong, fervent 
+INVALUABLE	IndAdj Pos Modif Eval Qual Econ 	
+IRREGULARITY	Neg Noun Qual Negate Ngtv 	
+JAGGED	Modif Qual Hostile 	
+JUICY	Modif Qual 	
+JUNK	Neg Noun Eval Qual 	
+LAUDABLE	IPadj Pos Modif Eval Qual Affil 	
+LAVISH	IndAdj Pos Modif Eval Qual 	
+LEAN	Modif Qual DIM 	26% adj: Thin 
+LEVEL	Modif Qual 	1% adj: Flat, horizontal 
+LIGHT	Pos Modif Qual Pstv 	5% adj: Not dark, bright, pale (includes -er, -est) 
+LIGHT	Modif Weak Undrst Qual 	4% adj: Not heavy (includes -er, -est) 
+LIGHT	LY Qual Undrst 	2% adv: 'lightly'--delicately, without effort, not heavily 
+LIKABLE	IPadj Pos Modif Eval Qual Virtue 	
+LIVELY	Pos Modif Pstv Strng Actv Qual 	adj: Animated 
+LOOSE	Modif Qual 	
+LOOSENESS	Noun Qual 	
+LOUD	Modif Qual Strng 	56% adj: Intense, often harsh, usually refers to sound 
+LOUD	Modif Qual Strng 	12% adj: "Louder" - comparative 
+LOUD	Modif Qual Strng 	0% adj: "Loudest" - superlative 
+LOUD	LY Qual Strng 	16% adv: "Loudly" 
+LUSTER	Pos Noun Qual 	
+LUSTROUS	IndAdj Pos Modif Eval Qual 	
+LUXURIANT	IndAdj Pos Modif Eval Qual 	
+LUXURIOUS	IndAdj Pos Modif Eval Qual 	
+MAGICAL	IndAdj Pos Modif Eval Qual Relig 	
+MEMORABLE	IndAdj Pos Modif Eval Qual 	
+METICULOUS	IndAdj Pos Modif Eval Qual Work 	
+MILD	IndAdj Pos Modif Eval Qual 	
+MISCHIEVOUS	IndAdj Neg Modif Qual Actv 	
+MIX	Modif Qual Psv 	10% adj: "Mixed"--mingled 
+MIXTURE	Noun Qual 	
+MODESTY	Pos Noun Undrst Arousal Qual 	
+MOMENTOUS	IndAdj Pos Modif Ovrst Qual 	
+MONUMENTAL	IndAdj Pos Modif Ovrst Qual Dimn 	
+MORALISTIC	IndAdj Pos Modif Ought Qual 	
+MOTLEY	Neg Modif Qual Ngtv 	
+MOTTLED	Modif Qual 	
+MUFFLE	Modif Qual Actv 	
+NAKED	Modif Qual 	
+NOISE	Neg Noun Qual Ngtv 	noun: Sound, usually discordant 
+NOTORIOUS	IndAdj Neg Modif Eval Qual Ovrst Vice 	
+NUDE	Modif Qual 	
+ODDITY	Neg Noun Eval Qual 	
+ODOR	Noun Qual 	
+OPEN	Pos Modif Qual Pstv 	36% adj-adv-noun: Not closed - exposed, accessible, frank, public, in the open 
+ORDINARY	Modif EVAL Ovrst Qual 	adj: Common, usual, plain 
+ORIGINALITY	Pos Noun Ovrst Qual Think 	
+OVERLYING	Modif Qual Strng 	
+PAINT	Modif Qual Psv 	5% adj: "Painted"--covered with or represented in paint 
+PALE	Modif Qual Weak 	
+PEEL	Modif Qual 	
+PERFUME	Pos Noun Qual Pstv 	
+PERIL	Neg Noun Eval Qual 	
+PHYSICAL	LY Qual Strng 	27% adverb: "Physically"--bodily, materially 
+PICTURESQUE	IndAdj Pos Modif Percv Eval Qual 	
+PITCH	Modif Qual 	
+PLASTICITY	Noun Qual 	
+POINT	Modif Qual 	2% noun: Distinguishing feature or characteristic, usually of a person--  'good points' 
+POISE	Pos Modif Pstv Strng Qual 	
+PORTABLE	IndAdj Pos Modif Fetch Dimn Qual 	
+POTENCY	Pos Noun Qual Quan Strng Power 	
+POTENT	IndAdj Pos Modif Strng Qual 	
+PRODIGIOUS	IndAdj Pos Modif Ovrst Eval Qual Dimn 	
+QUALITY	Noun Qual 	56% noun: Attribute, characteristic, character, property 
+QUIET	Modif Qual Psv 	69% adj-noun: Noiseless, silent, silence 
+QUIET	LY Qual Psv 	22% adv: Silently, noiselessly 
+QUIET	Modif Qual Psv 	1% adj: "Quieter" 
+RADIANCE	Pos Noun Qual Strng 	
+RADIANT	IndAdj Pos Modif Eval Qual 	
+RAW	Modif Qual Strng 	
+REAL	LY Ovrst Qual 	20% adj: Actual, true, genuine 
+RICH	Pos Modif Qual Pstv Strng 	13% adj: Full, abounding in 
+RICH	Pos LY Qual Pstv ECON Strng 	3% adv: "Richly" 
+RING	Modif Qual 	0% noun-adj: "Ringing", resounding 
+RIP	Neg Modif Qual Ngtv 	
+RIPE	Pos Modif Qual Pstv 	
+RIPPLE	Noun Qual 	
+ROCKY	Modif Qual 	
+ROUGH	Neg Modif Qual EVAL Ngtv PFREQ 	85% adj: Coarse, uneven, difficult; approximate (2) 
+ROUND	Modif Qual 	12% adj: Spherical, curved 
+RUGGED	Modif Qual Power Strng Psv 	
+SALINE	Modif Qual 	
+SANDY	Modif Qual 	
+SECURE	Pos LY Qual Ovrst Pstv Strng 	0% adv: "Securely"--safely, firmly 
+SEPARATE	LY Qual 	12% adv: "Separately"--individually 
+SET	Modif Qual Psv Strng 	3% adj: Fixed, determined, established 
+SHAPELY	Modif Qual EVAL 	
+SHARP	Modif Qual Strng Ovrst 	
+SHEER	Modif Qual Ovrst 	
+SHELL	Noun Qual Strng PFREQ 	89% noun-adj: A hard protective covering, a framework or structure 
+SHINE	Modif Qual 	38% noun-adj: Radiance, radiant--includes "shining" 
+SHINY	IndAdj Pos Modif Eval Qual 	
+SILENCE	Noun Qual 	
+SILENT	Modif Qual Psv PFREQ 	adj: Noiseless 
+SILHOUETTE	Noun Qual 	
+SLACK	IAV Modif Qual 	
+SLEEK	IndAdj Pos Modif Eval Qual 	
+SLENDER	Modif Qual DIM Weak 	
+SLIM	Modif Qual DIM Weak 	
+SMELL	Noun Qual 	
+SMOKY	Modif Qual 	
+SMOOTH	Modif Qual 	50% adj: Without roughness; without difficulty (4) 
+SMOOTH	LY Qual 	29% adv: "Smoothly"--without difficulty, easily 
+SMOOTH	Modif Qual 	4% adj: "Smoothest"--superlative form of sense 1 
+SMOOTH	Modif Qual 	0% adj: "Smoother"--comparative form of sense 1 
+SOFT	Modif Qual Weak 	67% adj: Not hard or harsh, gentle, quiet 
+SOFT	Modif Qual Weak 	3% adj: "Softer" - comparative form of sense 1 
+SOFT	LY Qual Weak 	20% adv: "Softly" - adverb form of sense 1 
+SOFTNESS	Pos Noun Eval Qual 	
+SOLID	Modif Qual EVAL Strng 	
+SOLIDITY	Noun Qual Strng 	
+SOUND	Noun Qual 	38% noun-adj: Noise 
+SOUND	LY Qual Strng Ovrst 	1% adv: "Soundly"--thoroughly 
+SPLIT	Noun Qual Weak Psv 	28% noun-adj: A division; divided (2) 
+SPLIT	Neg Modif Qual Ngtv 	4% adj-noun: "Splitting" - (splitting headache) 
+SPOT	Modif Qual 	22% adj: "Spotted"--covered with spots 
+SPUN	Modif Qual 	
+STABLE	Pos Modif Qual Pstv Strng 	
+STAND	Noun Qual Strng 	2% noun-adj: "Standing"--being in or moving into an upright position,  remaining fixed 
+STANDARD	Modif Qual 	4% adj: Meeting certain specifications 
+STARK	Neg Modif Qual Ovrst Ngtv 	
+STEADY	Pos Modif Qual Pstv Strng 	
+STEEP	Modif Qual 	
+STIFF	Modif Qual Strng 	
+STIFFLY	Modif Qual Strng 	
+STILL	Modif Qual 	4% adj: Quiet, motionless 
+STRAIGHT	Modif Qual 	9% adj-adv: Consecutive, in sequence 
+STRANGE	Modif EVAL Qual 	adj: Bizarre, unusual, foreign to one's experience 
+STREAK	Modif Qual 	
+STRIKE	LY Ovrst Strng Qual 	2% adv: "Strikingly" - markedly 
+STRONG	Modif Qual Strng Power 	67% adjective: Powerful, intense, secure 
+STRONG	Modif Qual Strng Power 	9% adjective: "Stronger"--comparative 
+STRONG	Modif Qual Strng Power 	5% adjective: "Strongest"--superlative 
+STRONG	LY Ovrst Strng Qual 	19% adverb: "Strongly"--powerfully, forcefully 
+STUFF	Modif Qual Psv 	2% adj: "Stuffed" - crammed, filled 
+STURDY	Pos Modif Qual Power Pstv Strng 	
+STYLE	Noun Qual 	
+SURFACE	Noun Qual PFREQ 	86% noun-adj: Outer or top layer 
+SWOLLEN	Modif Psv Qual 	
+SYMMETRY	Pos Noun Qual 	
+SYNTHETIC	Modif Qual 	
+TANGIBLE	Modif Qual 	
+TASTE	Noun Qual 	25% noun: Oral sensation, a particular oral sensation, a morsel or bit of something 
+TAUT	Modif Qual Strng 	
+TEMPERATE	IndAdj Pos Modif Eval Qual Undrst 	
+TEMPERATURE	Noun Qual 	
+TENDER	Modif Qual Weak Affil 	
+TEXTURE	Noun Qual 	
+THREE-DIMENSIONAL	Modif Qual 	
+THRIFT	Pos Noun Econ Eval Qual 	
+THRIFTY	IndAdj Pos Modif Econ Eval Qual 	
+TIGHT	Modif Qual 	
+TONE	Noun Qual 	
+TOPMOST	IndAdj Pos Modif Qual Dimn 	
+TOUGH	Modif EVAL Hostile Strng Qual 	
+TRANQUIL	Pos Modif Qual Pstv Psv 	
+UNEVEN	Neg Modif Negate Ngtv Qual 	
+UNFORGETTABLE	IndAdj Pos Modif Negate Eval Qual 	
+UNRESTRICTED	Modif Power Negate Ovrst EVAL Qual 	
+UNSTEADINESS	Neg Noun Qual Negate Weak Ngtv 	
+UNSTEADY	Neg Modif Qual Negate Weak Ngtv 	
+UNUSUAL	Noun Negate Ovrst Qual 	adjective: Not common or ordinary. 
+UPTURN	Modif Qual 	
+UTTERMOST	IndAdj Pos Modif Ovrst Eval Qual 	
+VERY	LY Ovrst PFREQ Qual 	93% adv: To a high or superlative degree 
+VIABILITY	Pos Noun Causal Eval Qual 	
+VISCOSITY	Noun Qual 	
+VIVID	Pos Modif Qual Pstv Strng 	
+WARM	Pos Modif Qual Pstv 	68% adj: Having or releasing a moderate degree of heat; characterized  by showing lively, friendly feeli 
+WARM	Pos LY Pstv Qual 	0% adv: "Warmly" 
+WARM	Pos Modif Qual Pstv 	11% adj: "Warmer"--comparative of sense 1 
+WARM	Pos Modif Qual Pstv 	0% adj: "Warmest"--superlative of sense 1 
+WARMTH	Pos Noun Qual EMOT Pstv 	
+WEAK	Modif EVAL Weak PFREQ Qual Undrst 	95% adj: Lacking strength 
+WEAK	Modif EVAL Weak Qual Undrst 	5% adj: "Weaker", comparative of sense 1 
+WEAKLY	Modif Weak Undrst Subm Qual 	
+WEIGHT	Noun Strng Qual 	83% noun-adj: Specific value in amount of heaviness; importance (8) 
+WET	Modif Qual 	
+WILD	Neg Modif Ngtv Strng Qual 	80% adj: Untamed, undomesticated, uncontrolled 
+WILD	Neg Modif Ngtv Strng Qual 	7% adj: "Wilder" - comparative of sense 1 
+WILD	Neg Modif Ngtv Strng Qual 	2% adj: "Wildest" - superlative of sense 1 
+WILD	Neg LY Ovrst Qual Ngtv Strng 	11% adv: "Wildly" - adverbial form of sense 1 
+WOODEN	Modif Qual 	
+WORKMANSHIP	Pos Noun Try Work Eval Qual 	
+WORLDLY	LY Qual 	
+WORTHINESS	IndAdj Pos Modif Eval Qual 	

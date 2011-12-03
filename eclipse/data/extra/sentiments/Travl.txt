@@ -1,0 +1,173 @@
+word	tags	comments
+ABSENT	DAV SUPV Travl Psv 	
+ACCOMPANY	IAV SUPV Travl Affil Actv 	59% verb-adj: To go along in company with, to escort; "accompanying"--  attendant (no adjective occurrences this sample) 
+ACROSS	LY Travl 	25% adv: From one point to another, over, transversely so as to be understood  (usually with "get" or "put"--8 occurrences) 
+ADVANCE	IAV Pos SUPV Travl Pstv Strng Actv 	47% verb: To move or bring forward, improve, promote 
+ADVENTURE	Noun Actv Travl 	
+APPROACH	IAV Pos SUPV Travl Pstv Actv 	66% verb: To come near or nearer to, or to set about a task 
+ARRIVAL	Noun Travl Actv 	
+ARRIVE	DAV SUPV Travl Actv 	verb: To reach one's destination, to reach a conclusion, goal, etc. (5);  to come to pass ("the time has arrived") (3) 
+ASSEMBLE	DAV SUPV Travl Actv 	
+ATTEND	IAV Pos SUPV Travl Subm Pstv PFREQ 	83% verb: To be present at. 
+AWAY	IAV SUPV Travl 	9% idiom-verb: 'get away'--avoid, escape 
+BANK	DAV SUPV Travl 	0% verb: To turn, as an airplane 
+BOARD	IAV SUPV Travl 	13% verb-adj: Into or on a ship or other carrier 
+CHARGE	IAV Neg SUPV Travl Hostile Strng Actv Ngtv 	7% verb: To attack, to rush or thrust forward 
+CHASE	Neg Noun Travl Hostile Ngtv Actv 	3% noun: Swift pursuit, hunt 
+CHASE	DAV Neg SUPV Travl Hostile Ngtv Actv PFREQ 	97% verb: To pursue, to hunt 
+CIRCLE	DAV SUPV Travl Actv Strng 	14% verb: To encircle, to move in a circle 
+CIRCULATION	Noun Actv Travl 	
+COAST	IAV SUPV Travl Psv 	
+COME	IAV SUPV Travl Actv PFREQ 	90% verb: To move from place to place in time and/or space, generally  toward the speaker; abstract--to reach, arrive at--"he came to decide  otherwise" (20); derive from or be caused by (4) 
+COME	IAV SUPV Work Actv Travl 	0% idiom-verb: "Coming along"--proceeding, progressing 
+CRAWL	DAV SUPV Travl Weak Actv PFREQ 	92% verb: To move laboriously, close to the ground 
+CRAWL	Modif Weak Travl 	4% adj: Having a crawl as mode of locomotion 
+CREEP	DAV SUPV Travl Weak Actv 	
+CREPT	DAV SUPV Travl ED Weak Actv 	
+CROSS	IAV SUPV Travl 	34% verb: To go across; to intersect, overlap (5) 
+CURRENT	Noun Travl 	20% noun: A flow or stream 
+DANCE	DAV Pos SUPV Exprs Pstv Actv Travl 	49% verb: To move rhythmically 
+DANCE	Pos Modif Exprs Pstv Actv Travl 	13% noun-adj: "Dancing"--moving rhythmically 
+DASH	IAV SUPV Travl Actv Ovrst 	
+DEPART	DAV SUPV Travl Actv 	
+DEPARTURE	Noun Travl Actv 	
+DISPERSE	DAV SUPV Travl Actv 	
+DITCH	IAV SUPV Travl Hostile 	
+DRIFT	Noun Travl Psv 	
+DRIFT	IAV SUPV Travl Psv 	
+DRIVE	Noun Power Actv Travl 	7% noun-adj: "Driving"--the act of driving; forceful (0) 
+EDGE	IAV SUPV Travl 	0% verb: To advance by small steps, to win by a small margin 
+ENTER	DAV SUPV Travl Actv 	verb: To make entry, literally -'enter the house'- or figuratively -'enter  college'; to begin, become involved in- 'enter into a contract', 'enter  upon a new phase' 
+ENTRANCE	Noun Actv Travl 	19% noun-adj: Admission, coming or going in 
+ESCAPE	IAV SUPV Travl Strng Actv Hostile PFREQ 	89% verb: To slip or get away, as from confinement or restraint, gain  or regain liberty--avoid capture, punishment or any threatened evil 
+ESCAPE	Noun Travl Strng Actv Hostile 	9% noun-adj: The act or an instance of escaping--the means of escape 
+EXPEDITION	Noun Travl Actv 	
+FARE	IAV SUPV Travl 	
+FLED	IAV Neg SUPV Travl ED Hostile Actv Ngtv Weak 	verb: To have run or passed away quickly 
+FLIGHT	Noun Travl 	
+FLOW	Noun Travl Actv 	53% noun: Anything that moves as a liquid, the act or manner of flowing 
+FLOW	IAV SUPV Travl Actv 	47% verb: To move as a liquid 
+FLOW	Modif Actv Travl 	0% noun-adj: "Flowing"--moving as a liquid 
+FLOWN	IAV SUPV Travl Actv ED 	
+FLY	Modif Strng Actv Travl 	6% noun-adj: "Flying," airborne, pertaining to aviation 
+FOLLOW	DAV SUPV Travl 	22% verb: To come after in sequence or time, succeed 
+FOLLOW	IAV SUPV Travl Actv 	21% verb: To move behind in the same direction--"i followed him to the  station"; to pursue, trail, track (infrequent) 
+FOOT	LY Travl 	6% idiom: 'on foot'--walking 
+FORWARD	IAV SUPV Travl 	3% verb: Send forward 
+FREQUENT	IAV SUPV Travl 	0% verb: To go to habitually 
+GET	Handels Travl 	3% idiom-verb: "Get away"--avoid, escape--handled by "away" 
+GO	Noun Travl Actv 	0% noun: "Going" 
+GO	IAV SUPV VERB GO Strng Actv Travl 	0% idiom-adj: "On the go" 
+HASTE	Noun Travl Actv 	
+HASTEN	IAV SUPV Travl Actv 	
+HEAD	IAV SUPV Travl Actv 	2% verb: To set out for or be going toward--'be headed for home' 
+HOP	Noun Exprs Actv Travl 	
+HOP	DAV SUPV Travl Actv 	
+HURRY	Noun Actv Travl 	28% noun: A rush (almost always "in a hurry") 
+INCOME	Modif Travl 	0% adj: "Incoming", coming in, arriving 
+JOURNEY	Noun Travl Actv PFREQ 	96% noun: A trip, travel, traveling 
+JOURNEY	IAV SUPV Travl Actv 	4% verb: To travel 
+LAND	DAV SUPV Travl Actv 	13% verb: To arrive, debark, deliver 
+LEAVE	DAV SUPV Travl Actv PFREQ 	89% verb: Depart, quit, abandon, bequeath, cause to remain 
+LEAVE	Noun Travl Actv 	1% noun: Departure, farewell 
+LEFT	DAV SUPV Travl ED Actv 	75% verb: Departed, quit, abandoned, bequeathed, caused to remain 
+MARCH	SUPV Travl Milit Strng Actv 	29% verb: To walk with measured tread 
+MARCH	Noun Travl Strng Actv 	16% noun-adj: A parade or the accompanying music; a metaphorical advance--  "the march of progress" (2) 
+MOBILE	Modif Strng Actv Travl 	
+MOTION	Noun Actv Travl 	
+MOVE	DAV SUPV Travl Strng Actv PFREQ 	82% verb: To change or cause to change place or position, to set in motion 
+MOVE	Noun Strng Actv Travl 	12% noun-adj: "Move," "moving"--changing or causing to change place or  position, an action, often strategic 
+MOVE	Modif Actv Travl 	1% idiom-adj: "On the move"--busy, progressing, going from place to place 
+MOVEMENT	Noun Actv Travl Strng 	noun: The act, process, or result of moving 
+NEAR	IAV SUPV Travl Actv 	2% verb: To approach 
+PACE	Noun Travl Actv 	52% noun: Rate of movement, speed, activity, performance 
+PACE	DAV SUPV Travl Actv 	17% verb: To move with slow or measured steps 
+PARADE	DAV SUPV Travl Actv Milit 	
+PASS	DAV SUPV Travl Actv 	60% verb: Indicates a general sense of motion in relationship to the speaker,  thus, in particular, circulate, leave behind, exceed 
+PATROL	IAV SUPV Travl Milit Power Strng 	
+PILE	IAV SUPV Travl Actv 	3% verb: "Pile (down) (out)"--to swarm 
+PLUNGE	Noun Travl 	
+PROCEED	IAV SUPV Travl Actv PFREQ 	86% verb: To move, pass, or go forward or onward, to advance, to begin or carry on 
+PURSUE	IAV SUPV Travl Strng Actv 	verb: To chase, follow, follow up 
+PURSUIT	Noun Actv Travl 	
+PUT	IAV SUPV Travl Actv 	0% verb: 'put out'--to depart 
+RACE	IAV SUPV Travl Actv 	11% verb: To run or move rapidly, usually competitively 
+RACE	Noun Travl Actv 	4% noun-adj: 'racing' 
+REMOVAL	Noun Travl Strng Actv 	
+RETREAT	IAV Neg SUPV Travl Milit Ngtv Weak Actv 	
+RETURN	IAV SUPV Travl Actv 	79% verb: To go or come back, revert, recur 
+RIDE	DAV SUPV Travl Actv 	70% verb: To travel on or in some form of conveyance 
+RIDE	Noun Travl Actv 	23% noun: A journey on or in some form of conveyance 
+RIDE	Modif Travl Actv 	2% noun-adj: "Riding", traveling on or in some form of conveyance, especially  a horse; relating to same 
+ROCK	Modif Travl 	2% adj: "Rocking" as in rocking chair, rocking horse 
+RODE	DAV SUPV Travl ED 	verb: Past tense of ride; traveled on or in some form of conveyance 
+ROLL	Modif Travl 	2% noun-adj: "Rolling"--characterized by height and depth of movement or sound 
+ROLL	Noun Actv Travl 	0% noun: Movement characterized by a complete turn 
+ROUND	IAV SUPV Travl Actv 	0% verb: To make a circuit of, to turn 
+RUN	DAV SUPV Travl Actv 	61% verb: General sense of motion, defined differently for different classes  of moving things--to move quickly, proceed, extend, pass, flow, etc. 
+RUN	IAV SUPV Travl Actv 	3% verb: 'run after'--to pursue 
+RUN	IAV SUPV Travl Actv Weak 	16% verb: 'run away,' 'run off'--to flee, escape 
+RUN	Noun Travl Actv 	1% noun-adj: An occasion or instance of running--'a run,' or the activity  in general--"running" 
+RUSH	IAV SUPV Travl Actv PFREQ 	94% verb: To hurry--infrequently-- to attack suddenly, ambush 
+RUSH	Noun Travl Actv 	3% noun: The actof rushing, rapid directed movement 
+SAIL	DAV SUPV Travl Exprs Actv 	
+SCRAMBLE	IAV SUPV Travl Actv Weak 	
+SEND	Noun Actv Travl 	0% noun-adj: "Sending"--the dispatch (of or for) 
+SHIP	DAV SUPV Travl Actv 	7% verb: To transport by naval vessel 
+SHOW	IAV SUPV Travl 	1% idiom-verb: "Show up"--to make an appearance 
+SKI	DAV SUPV Travl Exprs Actv 	
+SPEED	IAV SUPV Travl Strng Actv 	
+SPIN	DAV SUPV Travl 	
+SPRANG	IAV SUPV Travl ED Actv 	
+SPRING	IAV SUPV Travl Actv 	10% verb: To leap (2); to appear or emerge suddenly (0); to snap shut  (0); to bend or split (0) 
+SPRUNG	IAV SUPV Travl ED Actv 	
+START	IAV SUPV Travl Psv 	0% verb: To jerk or flinch suddenly 
+STEER	DAV SUPV Travl Power Actv 	
+STEP	DAV SUPV Travl Actv 	29% verb: To walk, set the foot down, hurry (e.g. "step on it," "step it up") 
+STREAM	Noun Travl 	22% noun: A flowing sequence 
+STREAM	IAV SUPV Travl 	13% verb: To flow as a stream 
+STREAM	Modif Travl 	9% adj: "Streaming" - flowing, coursing 
+STRIDE	Noun ABS DIST Travl 	
+STRIDE	IAV SUPV Travl 	
+SUCCEED	IAV SUPV Travl 	0% verb: To follow, as in a sequence 
+SWAM	DAV SUPV Travl ED Exprs Actv 	
+SWEEP	Noun Econ* Travl Actv 	
+SWEEP	DAV SUPV Actv Travl 	
+SWEPT	DAV SUPV ED Actv Travl 	
+SWIM	DAV SUPV Travl Actv 	57% verb: To move in water by strokes 
+SWIM	Noun Travl Actv 	37% noun-adj: "Swimming"--moving through water 
+SWING	DAV SUPV Travl Actv 	64% verb: To make or cause angular motion, to bring around 
+SWING	Noun Travl Actv 	27% noun: Angular motion with fixed radius, act of making such motion,  device that makes such motion 
+SWING	Noun Strng Travl Ovrst Actv 	9% idiom-noun: "(in#into) full swing"--high gear, at full capacity 
+SWUNG	DAV SUPV Travl ED Actv 	
+TAIL	IAV SUPV Travl Actv 	2% verb: To follow 
+TEAR	IAV Neg SUPV Travl Ngtv Psv 	10% verb: To race around without apparent control 
+TIME	IAV SUPV Travl 	1% idiom-adv: 'from time to time'--occasionally 
+TOUR	IAV SUPV Travl 	
+TRAFFIC	Noun Travl 	
+TRAIL	IAV SUPV Travl Actv 	
+TRANSFER	IAV SUPV Travl Actv 	
+TRANSIT	Noun Travl 	
+TRANSPORT	IAV SUPV Travl Actv 	
+TRANSPORTATION	Noun Travl 	
+TRAVEL	DAV SUPV Travl Actv 	80% verb: To journey from place to place 
+TRAVEL	Noun Travl Actv 	14% noun-adj: A journey from place to place 
+TRAVEL	Modif Actv Travl 	6% noun-adj: "Traveling"--journeying 
+TRAVEL	Pos Modif Pstv Travl 	0% adj: "Traveled"--experienced in travel; frequented in travel 
+TRAVERSE	IAV SUPV Travl Actv 	
+TRIP	Noun Travl PFREQ 	92% noun: Journey, voyage 
+TROT	Noun Actv Travl 	
+TROT	IAV SUPV Travl Actv 	
+VACATION	IAV SUPV Travl 	0% verb: To take a holiday 
+VISIT	IAV SUPV Travl Affil 	77% verb: To go and stay with someone or at some place for a short time 
+VISIT	Noun Travl Affil 	19% noun: An instance of visiting 
+VOYAGE	Noun Travl 	
+WALK	DAV SUPV Travl Actv PFREQ 	89% verb: To go or travel on foot at a moderate speed, proceed by steps 
+WALK	Noun Travl Actv 	7% noun: A period of walking for exercise or pleasure, an amount of walking;  a place for walking (0) 
+WALK	IAV SUPV Travl Hostile Actv 	2% idiom-verb: 'walk out'--to leave in protest 
+WALK	Noun Travl Actv 	1% noun-adj: "Walking"--the act of going on foot 
+WANDER	IAV SUPV Travl Psv 	verb: To move or go aimlessly about, roam, ramble 
+WASH	IAV SUPV Travl Actv 	6% verb: To transport or move, as by water 
+WAY	Modif Strng Travl 	0% idiom-adj: 'under way'--in progress 
+WITHDRAW	IAV SUPV Travl Subm Weak Subm 	
+WITHDREW	IAV SUPV Travl ED Subm Weak 	

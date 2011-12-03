@@ -1,0 +1,65 @@
+word	tags	comments
+ACCUSTOM	IAV SUPV Psv Persist 	
+ALWAYS	LY Ovrst Persist 	adverb: Perpetually, everlastingly, continually. 
+CONSOLIDATE	IAV Pos SUPV Pstv Strng Persist 	
+CONSTANT	Modif Strng Ovrst Persist 	40% adj: Steady, without interruption or variation 
+CONTINUAL	Modif Persist Ovrst Strng Actv 	10% adj: Constant 
+CONTINUAL	Modif Persist Ovrst Strng Actv 	90% adv: "Continually"--constantly 
+CONTINUE	IAV SUPV Persist Strng Actv PFREQ 	95% verb: To go on, keep on, extend 
+CONTINUE	Modif Strng Actv Persist 	5% adj: "Continued," "continuing," still in progress 
+CONTINUITY	Pos Noun ABS Abs* Persist Strng Actv Rel 	
+CONTINUOUS	Modif Ovrst Strng Actv Persist 	
+COURSE	Noun ABS Abs* Persist 	14% noun: A continuous passage or progress through time, through a succession  of stages, or in a particular direction 
+DEADLOCK	Neg Noun Persist Ngtv Weak Hostile 	
+DELAY	IAV Neg SUPV Persist Ngtv Weak Psv 	
+ELAPSE	IAV SUPV Persist Psv 	
+ENDURANCE	Pos Noun Persist Ovrst Strng 	
+ENDURE	Modif Ovrst Persist Strng Psv 	
+ENDURE	IAV SUPV Persist Strng Psv 	
+EQUILIBRIUM	Noun Strng Persist 	
+ETERNAL	Modif Relig Strng Ovrst Persist 	
+EVER	LY Ovrst Persist 	19% adverb: At all times, always, continuously 
+FAST	Modif Strng Persist 	16% adj-adv: Firm, not easily swayed 
+FOREVER	LY Strng Ovrst Persist 	
+GO	DAV SUPV VERB GO Persist Actv Strng 	6% verb: "Go on"--continue, proceed, take place 
+GONE	DAV SUPV Persist ED Actv Strng 	10% verb: 'gone on'--continued, proceeded, taken place 
+GRADUAL	LY Undrst Persist 	adjective: Slow and continual. 
+HABITUAL	Modif Persist Psv 	
+INCESSANT	Neg Modif Ngtv Strng Ovrst Persist 	
+INEVITABILITY	Noun Strng Ovrst Persist 	
+INEVITABLE	Modif Persist Ovrst Strng 	adj: Unavoidable, certain to happen 
+INVARIABLE	Modif Negate Persist Strng Ovrst 	
+INVARIABLY	LY Ovrst Persist Strng Negate 	
+KEEP	IAV SUPV Persist Actv 	79% verb: Cause to remain, continue, persist in some state or activity--  "keep alert," "keep your eyes open"; hold, possess, retain, maintain,  manage, "keep the peace," "don't give them away, keep them" (71) 
+LAST	IAV SUPV Persist Strng 	6% verb: Endure, remain 
+LAST	Modif Strng Persist 	4% adj: "Lasting"--enduring, remaining 
+LEAD	IAV SUPV Persist Actv 	13% verb: To manage or carry on--"i lead my life as best i can" 
+MAINTAIN	IAV SUPV Persist Strng Actv PFREQ 	86% verb: To preserve, continue, retain, keep in good condition 
+PASS	IAV SUPV Psv Persist 	9% verb: Of time--to spend or elapse 
+PERMANENT	Modif Strng Undrst Persist 	
+PERPETUAL	Modif Strng Persist Ovrst 	
+PERPETUATE	IAV SUPV Persist Strng Actv Ovrst 	
+PERSEVERE	IAV Pos SUPV Persist Actv Strng Pstv 	
+PERSIST	IAV SUPV Persist Strng Actv 	
+PERSISTENCE	Noun Strng Actv Persist 	
+PREVAIL	IAV SUPV Persist Strng Actv 	
+PROGRESS	Modif Persist 	3% idiom-adj: "In progress"--under way 
+PROLONG	IAV SUPV Persist Actv Strng 	
+STATUS	Noun Persist 	19% idiom-noun: 'status quo' the state in which anything was or is. 
+STAUNCH	IndAdj Pos Modif Persist Strng Pstv 	
+STAUNCHNESS	Pos Noun Persist Strng Pstv 	
+STEADFAST	Pos Modif Persist Pstv Strng Ovrst 	
+STEADFASTNESS	Pos Noun Persist Pstv Strng Ovrst 	
+STEADILY	LY Strng Persist 	
+STEADINESS	Pos Noun Pstv Strng Persist 	
+SUCCESSION	Noun ABS Abs* Persist 	
+SUCCESSIVE	Modif Persist 	
+TEND	SV SUPV Persist Undrst Psv PFREQ 	92% verb: To be inclined, to habitually behave 
+UNCHANGED	Modif Negate Persist 	
+UNDERWAY	Modif Persist 	
+UNFAILING	Modif Persist Ovrst Strng Negate 	
+UNWAVERING	Modif Persist Negate Ovrst Strng Power 	
+USUAL	Modif Persist Ovrst 	22% adj: Habitual, customary, ordinary 
+USUAL	LY Persist Ovrst 	67% adv: "Usually"--habitually, customarily, ordinarily 
+USUAL	LY Undrst Persist 	6% adv-idiom: 'as usual'--in the ordinary or expected manner 
+USUAL	LY Ovrst Persist 	5% adv-idiom: 'than usual'--in contrast with the ordinary or normal 

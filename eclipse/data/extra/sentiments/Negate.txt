@@ -1,0 +1,219 @@
+word	tags	comments
+ACCOUNT	LY Ovrst FREQ Negate 	3% adv: "On no account"--under no circumstances 
+AFRAID	Neg LY Negate Ngtv Weak 	1% idiom: "Afraid not" 
+AIN'T	SV SUPV VERB BE NEG Negate 	
+AVERSION	Neg Noun Negate Psv Hostile Arousal 	
+CAN'T	SV SUPV VERB MOD NEG Weak Negate 	verb: Contraction of "cannot" 
+CANNOT	SV Negate SUPV VERB MOD NEG Weak 	verb: A form of can not. 
+CEASELESS	IndAdj Pos Modif Negate Freq 	
+CONTRADICTORY	Neg Noun COM Comform Negate Ngtv Ovrst 	
+CONTRARY	Neg Modif Negate Ngtv 	
+COUNTERACT	IAV Neg SUPV Ngtv Strng Actv Negate Decr 	
+COUNTERACTION	Neg Noun Ngtv Strng Actv Negate Decr 	
+DISADVANTAGE	Neg Noun Vice Ngtv Weak Negate 	
+DISADVANTAGEOUS	Neg Modif EVAL Negate Ngtv Weak Vice 	
+DISAGREEABLE	Neg Modif Hostile Negate Ngtv Pain 	
+DISAGREEMENT	Neg Noun COM Comform Hostile Negate Ngtv 	
+DISAPPROVE	IAV Neg SUPV Negate Hostile Comform Ngtv 	
+DISAVOW	IAV Neg SUPV Negate Ngtv Comform Hostile 	
+DISAVOWAL	Neg Noun COM Comform Negate Ngtv Hostile 	
+DISBELIEF	Neg Noun Doctr Negate Ngtv Undrst Hostile 	
+DISCOMFORT	Neg Noun Negate Ngtv Pain 	
+DISCONTENT	Neg Modif Ngtv Weak Psv Pain Negate 	
+DISCONTINUE	Modif Negate Finish 	
+DISCONTINUE	IAV SUPV Finish Negate 	
+DISCOUNT	IAV SUPV Decr Negate Psv 	
+DISCOURAGE	Neg Modif EMOT Pain Negate Ngtv Psv 	
+DISCOURAGE	IAV Neg SUPV Negate Ngtv Actv Pain Hostile 	
+DISLIKE	DAV Neg SUPV Negate Ngtv Psv Hostile Arousal 	71% verb: To have an aversion toward 
+DISLIKE	Neg Modif EMOT Ngtv Hostile Psv Arousal Negate 	29% noun: An aversion 
+DISORDER	Neg Noun Negate Ngtv Weak Vice 	
+DISORGANIZED	IndAdj Neg Modif Ngtv Weak Psv Vice Negate 	
+DISPLEASURE	Neg Noun EMOT Hostile Pain Negate Ngtv Weak Psv 	
+DISPROVE	IAV Neg SUPV Solve Negate Ngtv Actv 	
+DISPUTE	Neg Noun Comform Hostile POLIT Ngtv COM Negate Actv 	
+DISPUTE	IAV Neg SUPV Comform Hostile POLIT Ngtv COM Negate Actv 	
+DISSIMILAR	Modif Negate Rel 	
+DON'T	SV SUPV DO VERB NEG LY Negate 	
+IMPATIENCE	Neg Noun Negate Ngtv Psv Arousal Hostile 	
+IMPLAUSIBILITY	Noun Negate Causal 	
+IMPLAUSIBLE	Modif Negate Causal 	
+IMPOSSIBILITY	Noun Negate Causal Undrst 	
+IMPOSSIBLE	Modif Causal Negate PFREQ Undrst 	94% adjective: Not able to be done, happen, etc. 
+IMPOSSIBLE	Noun Negate Subm Causal 	6% noun: That which cannot be done 
+IMPROBABILITY	Noun Negate Causal Undrst 	
+IMPROBABLE	Modif Negate Causal Undrst 	
+INABILITY	Neg Noun Negate Ngtv Weak Psv Vice 	
+INACCESSIBLE	IPadj Neg Modif Negate Eval Vice 	
+INADEQUATE	IndAdj Neg Modif Vice EVAL Negate Ngtv Weak Subm Psv 	
+INCALCULABLE	Modif Negate Undrst Quan 	
+INCAPABLE	Neg Modif Vice EVAL Ngtv Weak Psv Subm Negate 	
+INCOMPATIBILITY	Neg Noun Negate Ngtv Vice 	
+INCOMPATIBLE	Neg Modif Negate Ngtv Vice 	
+INCOMPLETE	Modif Negate Weak Quan 	
+INCONCEIVABLE	Modif Negate Ovrst Know 	
+INCONTESTABILITY	Noun Negate Ovrst Know 	
+INCONTESTABLE	Modif Negate Ovrst Know 	
+INCORRECT	Neg Modif Negate Ngtv Weak Vice Undrst 	
+INCREDIBILITY	Modif Ovrst Know Negate 	
+INCREDIBLE	Neg Modif EVAL Negate Ngtv Ovrst Know 	
+INDECISION	Noun Negate Weak Psv Undrst Vice 	
+INDECISIVE	Modif Negate Weak Psv Undrst Vice 	
+INDECISIVENESS	Noun Negate Weak Psv Undrst Vice 	
+INDEFINITE	Neg Modif Negate Ngtv Psv Undrst Vice 	
+INDESCRIBABLE	IndAdj Pos Modif Negate Comform Eval Qual 	
+INDIFFERENT	IndAdj Neg Modif Emot Negate 	
+INDIRECT	Modif Means Negate Weak Undrst 	
+INDISPUTABLE	Modif Negate Ovrst Strng Virtue 	
+INDISTINCT	Modif Percv Undrst Negate 	
+INDISTINGUISHABLE	Modif Percv Negate Undrst 	
+INEXACT	Neg Modif Negate Vice Ngtv Undrst 	
+INEXPENSIVE	IndAdj Pos Modif Econ Negate 	
+INEXPLICABLE	Neg Modif Causal Negate Ngtv 	
+INFALLIBLE	Pos Modif Negate Ovrst Pstv Strng Virtue 	
+INFORMAL	Modif Affil Know Negate 	
+INFREQUENT	Modif FREQ Negate Undrst 	
+INNUMERABLE	Modif Quan Ovrst Negate Strng 	
+INSECURE	Neg Modif Negate Ngtv Weak Psv Vice Undrst 	
+INSECURITY	Neg Noun Negate Ngtv Weak Psv Vice Undrst 	
+INSEPARABLE	IPadj Pos Modif Negate Affil Intrel 	
+INSIGNIFICANT	Neg Modif Negate Ngtv Weak EVAL Undrst Vice 	
+INSTABILITY	Neg Noun Negate Vice Ngtv Weak Psv 	
+INSTABLE	Neg Modif Negate Vice Ngtv Weak Psv 	
+INSUFFICIENT	Neg Modif Vice EVAL Ngtv Weak Negate 	
+INTANGIBLE	Modif Qual Negate 	
+INVARIABLE	Modif Negate Persist Strng Ovrst 	
+INVARIABLY	LY Ovrst Persist Strng Negate 	
+INVINCIBLE	IndAdj Pos Modif Strng Power Virtue Negate 	
+INVISIBLE	IndAdj Neg Modif Percv Negate 	
+INVOLUNTARY	IndAdj Neg Modif Feel Negate 	
+INVULNERABLE	IndAdj Pos Modif Strng Power Virtue Negate 	
+IRREFUTABLE	Modif Negate Ovrst Strng Know 	
+IRREGULAR	Neg Modif Negate Ngtv Vary 	
+IRREGULARITY	Neg Noun Qual Negate Ngtv 	
+IRRESISTIBLE	IPadj Pos Modif Negate Need Eval 	
+IRRESPONSIBLE	Neg Modif Vice EVAL Negate Ngtv Weak 	
+LEAST	LY Negate Ovrst 	4% idiom-adv: '(not) in the least,' (not) at all 
+LULL	Neg Noun Stay Work Negate 	
+MATCHLESS	IndAdj Pos Modif Ovrst Negate 	
+MEAN	No LY Negate Ovrst 	1% idiom-adv: "By no means"--not at all 
+NEGATE	IAV Neg SUPV Negate Ngtv Intrel Hostile 	
+NEGATION	Neg Noun Ngtv Negate Vice 	
+NEITHER	Negate DET PRE PRE1 CONJ CONJ2 PRON LY 	adj-pron-conj: Not either 
+NEVER	Negate LY Undrst FREQ 	adv: Not ever, not at all 
+NO	Negate DET PRE PRE2 Negate Quan Undrst 	42% adj: Not any 
+NO	Negate DET PRE PRE2 Negate Quan Undrst 	42% adj: Not any 
+NO	No Intj Negate Hostile 	49% adv: Used as interjection expressing refusal, denial, etc., or with  comparatives meaning "not at all" 
+NO	Negate PRON DEF DEF4 Other 	5% idiom-pron: "No one" 
+NO	Negate Handels  	4% idiom-adv: "No longer"--expresses termination of a state or action--  handled by "long" 
+NOBODY	PRON DEF DEF4 LY Negate Other Undrst 	pron: No person, a person of no importance 
+NOISELESS	IndAdj Pos Modif Negate Comform 	
+NON	LY Negate 	
+NONE	PRON LY Negate Impers 	pronoun: Not one, not any. 
+NONSPECIFIC	Modif Negate Know 	
+NOR	Negate CONJ CONJ1 Know 	conjunction: Used in negative phrases--negative or 
+NOT	Negate LY  	adv: Expresses negation 
+NOTHING	PRON INDEF LY Negate Weak Undrst Impers 	noun-adv: Not anything--not a thing, not at all 
+NULLIFICATION	Neg Noun Finish Negate 	
+NULLIFY	IAV Neg SUPV Negate Finish 	
+OPPOSITE	PREP Rel Negate 	noun-adj: Anything symmetrically opposed, antithetical 
+RATHER	LY Negate Know 	44% adv: Instead, on the contrary, instead of, "rather than," etc. 
+SANS	PREP Negate 	
+SLEEPLESS	IndAdj Neg Modif Natpro Negate 	
+UNABLE	Modif Vice Weak Negate Psv 	adj: Not able 
+UNASSURED	Modif Negate Weak Pain 	
+UNAUTHENTIC	Neg Modif Negate Vice Ngtv 	
+UNAVOIDABLE	Neg Modif Negate Ngtv Means Ovrst 	
+UNAWARE	Modif Know Negate Weak Psv 	
+UNBELIEVABLE	Neg Modif Negate Ngtv Ovrst Vice 	
+UNBOUND	IndAdj Pos Modif Negate Dimn Freq 	
+UNBROKEN	IndAdj Pos Modif Negate Virtue 	
+UNCERTAIN	Modif Negate Weak Undrst Know 	
+UNCERTAINTY	Noun Know Negate Weak Undrst 	
+UNCHANGED	Modif Negate Persist 	
+UNCHECKED	Modif Negate Strng Vice 	
+UNCLEAR	Neg Modif Vice Negate Ngtv Undrst 	
+UNCOMFORTABLE	Neg Modif Negate Ngtv Pain EMOT 	
+UNCOMMON	Pos Modif FREQ Negate Pstv Ovrst 	
+UNCONDITIONAL	Modif Negate Ovrst Intrel Subm 	
+UNCONSCIOUS	Modif Know Negate Psv 	
+UNCONTESTED	Modif Negate Ovrst Strng Intrel Subm 	
+UNDAUNTED	Modif Negate Strng Virtue Power 	
+UNDECIDED	Modif Know Negate Weak Psv Undrst 	
+UNDEFINED	Modif Know Negate Undrst 	
+UNDENIABLE	Modif Know Negate Ovrst Strng 	
+UNDEPENDABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNDEPENDABLE	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNDETERMINED	Modif Know Negate Undrst 	
+UNDID	IAV Neg SUPV ED Work Hostile Negate Ngtv Actv 	
+UNDISPUTED	Modif Negate Ovrst Strng Intrel Power 	
+UNDO	IAV Neg SUPV Work Hostile Negate Ngtv Actv 	
+UNDONE	IAV Neg SUPV ED Work Hostile Negate Ngtv Psv 	
+UNDOUBTED	Pos Modif Virtue Negate Pstv Ovrst Strng 	
+UNDOUBTEDLY	Pos LY Negate Ovrst Strng Virtue Pstv 	
+UNDUE	Neg Modif Vice EVAL Negate Ngtv 	
+UNEASY	IndAdj Neg Modif EMOT Negate Ngtv Weak Pain 	
+UNEMPLOYMENT	Noun Econ* ECON POLIT Vice Negate 	
+UNEQUAL	Neg Modif Quan Negate Ngtv 	
+UNEQUIVOCAL	Modif Negate Ovrst Strng Comform 	
+UNEVEN	Neg Modif Negate Ngtv Qual 	
+UNEXPECTED	Modif Negate Arousal 	
+UNFAILING	Modif Persist Ovrst Strng Negate 	
+UNFAIR	Neg Modif Vice EVAL Negate Ngtv Hostile 	
+UNFAVORABLE	Neg Modif Ngtv Vice Negate Undrst 	
+UNFINISHED	IAV SUPV Finish Negate Weak 	
+UNFIT	Neg Modif Vice Negate Ngtv Weak 	
+UNFORGETTABLE	IndAdj Pos Modif Negate Eval Qual 	
+UNFORTUNATE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	49% adj: Unlucky, inauspicious 
+UNFORTUNATE	Neg LY Vice Negate Ngtv Undrst 	49% adv: "Unfortunately"--inauspiciously 
+UNFORTUNATE	Neg Noun HU COLL Negate Ngtv Weak Subm 	3% noun: "Unfortunates" - unlucky people 
+UNHAPPY	IndAdj Neg Modif EMOT Pain Negate Ngtv 	adj: Sad, unfortunate 
+UNHURRIED	IndAdj Pos Modif Negate Ovrst 	
+UNIMPEACHABLE	IndAdj Pos Modif Negate Polit Virtue 	
+UNIMPORTANT	Neg Modif Vice EVAL Negate Ngtv Undrst 	
+UNJUST	IndAdj Neg Modif Vice EVAL Legal Hostile Ngtv Negate 	
+UNJUSTIFIED	Neg Modif Vice Negate Ngtv Hostile 	
+UNKNOWN	Modif Know Negate 	noun-adj: Not known 
+UNLEASH	IAV SUPV Intrel Hostile Negate Strng Actv 	
+UNLIKE	IndAdj PREP Negate Rel Vary 	
+UNLIKELIHOOD	Noun Negate Causal Undrst 	
+UNLIKELY	LY Negate Causal Undrst 	
+UNLIMITED	IndAdj Pos Modif Quan Ovrst Negate Strng Freq 	
+UNLUCKY	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNMISTAKABLE	Modif Percv Negate Strng Ovrst 	
+UNMITIGATED	Modif Negate Ovrst Strng Vice 	
+UNNECESSARY	Neg Modif EVAL Negate Ngtv Vice Undrst 	
+UNPLEASANT	Neg Modif Vice EVAL Negate Ngtv Undrst 	
+UNPRECEDENTED	Modif Time* Negate Ovrst 	
+UNPREDICTABLE	Modif Negate Vice Undrst 	
+UNPREPARED	Modif Negate Weak Vice 	
+UNQUALIFIED	Neg Modif Vice Negate Ngtv 	
+UNQUESTIONABLE	Modif Negate Ovrst Strng Know 	
+UNQUESTIONED	Modif Negate Ovrst Strng Know 	
+UNREAL	Modif Negate Vice 	
+UNREALISTIC	Modif Vice EVAL Negate 	
+UNRELIABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNRELIABLE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	
+UNRESTRICTED	Modif Power Negate Ovrst EVAL Qual 	
+UNSATISFACTORY	Neg Modif Vice Negate Ngtv Undrst 	
+UNSELFISH	IPadj Pos Modif Negate Virtue 	
+UNSOUND	IndAdj Neg Modif Vice Negate Weak Undrst 	
+UNSOUNDNESS	Noun Vice Negate Weak Undrst 	
+UNSPECIFIED	Modif Comform Negate Undrst 	
+UNSTABLE	Neg Modif EVAL Vice Negate Weak Ngtv 	
+UNSTEADINESS	Neg Noun Qual Negate Weak Ngtv 	
+UNSTEADY	Neg Modif Qual Negate Weak Ngtv 	
+UNSUCCESSFUL	IndAdj Neg Modif Vice Negate Ngtv Weak Subm Fail 	
+UNSURE	Modif Negate Weak Undrst Vice 	
+UNSURENESS	Noun Negate Weak Undrst Vice 	
+UNTOLD	Modif Negate Strng Ovrst Comform 	
+UNTOUCHED	IndAdj Pos Modif Negate Virtue 	
+UNTRUE	Neg Modif Vice Negate Ngtv Undrst 	
+UNTRUSTWORTHY	Neg Modif Vice Negate Ngtv 	
+UNUSUAL	Noun Negate Ovrst Qual 	adjective: Not common or ordinary. 
+UNWAVERING	Modif Persist Negate Ovrst Strng Power 	
+UNWILLING	Neg Modif Hostile Negate Ngtv Pain Power Hostile 	
+UNWILLINGNESS	Neg Noun Hostile Negate Ngtv Strng Pain Power 	
+UNWISE	Neg Modif Vice Negate Ngtv 	
+VICE	LY Know Negate 	10% idiom-adv: "Vice versa" - conversely 
+WON'T	SV SUPV VERB MOD NEG Negate 	verb: Contraction for "will not" 

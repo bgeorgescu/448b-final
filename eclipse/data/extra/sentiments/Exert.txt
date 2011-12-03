@@ -1,0 +1,194 @@
+word	tags	comments
+ACCOST	IAV Neg SUPV Exert Hostile Actv 	
+ACT	DAV SUPV Exert Strng Actv 	52% verb: To do something, to operate, perform a function; to feign (2),  to perform in the theatre (0) 
+ACT	Noun Strng Exert Actv 	25% noun: A deed, performance, anything done; a law--"the mills act" (7) 
+ACTION	Noun ABS Abs* Strng Actv Exert 	noun: The doing or performance of something; an act or thing done 
+ACTIVE	Modif Strng Actv Exert 	86% adjective: In a state of action, in actual progress or motion, busy. 
+ACTIVE	LY Ovrst Actv Exert 	14% adverb: "Actively"--busily, energetically 
+ACTIVITY	Noun ABS Abs* Actv Exert 	noun: The state of being active, a specific action or pursuit 
+ADULTERATE	IAV Neg SUPV Change Exert 	
+AFFIX	DAV Pos SUPV Actv Exert Affil 	
+AGGRESSOR	Neg Noun HU Hostile Exert Intrel 	
+AGITATE	IAV Neg SUPV Exert Ngtv Strng Actv 	
+AGITATOR	Neg Noun HU Hostile Exert Intrel 	
+ALLEVIATE	IAV Pos SUPV Actv Affil Exert Decr 	
+ALTERCATION	Neg Noun Hostile Exert Intrel 	
+ANNIHILATE	IAV Neg SUPV Hostile Finish Exert Actv 	
+ANOINT	DAV Pos SUPV Actv Affil Other Exert 	
+ARREST	Neg Modif Hostile Legal Power Ngtv Strng Actv Exert 	15% noun-adj: Halting, seizure, usually by legal authority, seized, halted, stopped 
+ASSAILANT	Neg Noun HU Hostile Exert Other 	
+ASSASSIN	Neg Noun HU Hostile Exert 	
+ASSASSINATE	IAV Neg SUPV Actv Hostile Exert Other 	
+AWAKE	DAV SUPV Exert Natpro 	
+BARBAROUS	IndAdj Neg Modif Hostile Exert Vice 	
+BAT	DAV SUPV Exert Exprs 	
+BATTLEFIELD	Neg Noun Hostile Place Intrel Exert 	
+BEHEAD	Neg Noun Hostile Exert Other Finish 	
+BESIEGE	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BLOCK	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	28% verb: To thwart or barricade 
+BLOW	Neg Noun Hostile Ngtv Strng Actv Exert 	24% noun: A hit or stroke, forcible effort, calamity 
+BLOW	IAV SUPV Exert Hostile Strng Actv 	60% verb: To propel as with wind, to set air in motion; fellation 
+BLOW	IAV Neg SUPV Ngtv Strng Actv Exert 	17% verb: "Blow up," "blow out"--to explode physically or emotionally 
+BOUNCE	DAV SUPV Exert Actv 	
+BOUND	IAV SUPV ED Exert Strng 	10% verb: Past tense of "bind" 
+BOWL	IAV SUPV Exprs Exert 	
+BOX	IAV SUPV Exert Actv 	4% verb: To put in a box, constrain 
+BRANDISH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+BRAWL	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BREAK	DAV Neg SUPV Ngtv Strng Actv Hostile Exert 	75% verb: To fracture, split, stop or cause to stop functioning, cause  a division or change, enter forcibly, escape, begin suddenly, interrupt, etc. 
+BROKE	DAV SUPV ED Hostile Actv Strng Exert 	72% verb: Past tense of "break"--fractured, split, stopped functioning,  caused a division or change; entered forcibly (1); escaped (3); interrupted  (1), etc. 
+CANNIBAL	Neg Noun HU Vice Hostile Exert 	
+CAST	IAV SUPV Exert Hostile Actv 	64% verb: To throw, project; to aim (of eyes) (2) 
+CHARGE	Neg Noun Hostile Strng Actv Ngtv Exert 	2% noun: Attack, forward rush or thrust 
+CHIP	IAV SUPV Exert Hostile 	
+CHOKE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+CLASH	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+CLEAR	IAV Pos SUPV Exert Pstv 	13% verb: To make or become free of obstructions, blemishes or obscurity;  to pass by, over, through or away from (0) 
+CLUB	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	5% verb: To beat with, or as with, a club 
+COLLIDE	IAV Neg SUPV Actv Exert Hostile 	
+COLLISION	Neg Noun Exert Intrel Hostile 	
+COMBATANT	IPadj Neg Modif Hostile Exert Intrel 	
+COME	IAV SUPV Exert 	0% idiom-verb: "Come about"--occur; change direction (nautical) 
+CONTROL	Noun Power Strng Actv Exert 	61% noun: The agency, act or power of control 
+CRIPPLE	IAV Neg SUPV Actv Pain Stay Hostile Exert 	
+CROP	DAV SUPV Exert Hostile 	4% verb: To cut off the tops or ends of 
+CRUSH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+CRUSHING	IndAdj Neg Modif Power Strng Hostile Exert 	
+CUT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	88% verb-adj-noun: To penetrate or divide with or as with a sharp-edged  instrument; the resulting penetration or division (3); to isolate, snub,  or humiliate (1); the result of such action (0) 
+DAMAGE	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+DEFILE	IAV Neg SUPV Hostile Actv Exert 	
+DEMOLISH	IAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+DENT	DAV Neg SUPV Actv Exert 	
+DESTROY	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	verb: To put an end to or reduce to useless form 
+DEVASTATE	IAV Neg SUPV Ngtv Strng Actv Hostile Exert 	
+DIG	DAV Pos SUPV Exert Pstv PFREQ 	93% verb: To excavate, to bore into; slang--to understand or appreciate (2) 
+DISH	IAV SUPV Exert 	
+DRAG	DAV Neg SUPV Exert Hostile Actv Ngtv 	
+DUMP	IAV Neg SUPV Exert Hostile Ngtv Actv 	
+EFFORT	Noun ABS Abs* Actv Exert 	noun: Deliberate exertion of physical or mental power 
+ENERGETIC	Pos Modif EVAL Pstv Strng Actv Exert 	
+EVICT	IAV Neg SUPV Power Legal Exert 	
+EXERT	IAV SUPV Exert Strng Actv 	
+EXILE	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXPEL	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXPLODE	IAV Neg SUPV Psv Exert Finish 	
+FAN	IAV SUPV Exert Actv 	19% verb: To stir up, cause air to blow on 
+FIRE	Neg Noun Hostile Ngtv Exert Actv 	5% noun-adj: Gunfire, shooting, attack 
+FIT	Noun Exert 	3% noun: A temporary burst (of activity or disease) 
+FLUNG	IAV SUPV Exert ED Actv 	
+FORCE	Neg Modif Power Hostile Ngtv Strng Actv Exert 	3% idiom-adv: "By force"--using physical force, generally against another's will 
+GRAB	DAV Neg SUPV Exert Hostile Ngtv Actv 	verb: To seize or clutch. 
+GRAPPLE	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+HARASS	IAV Neg SUPV Actv Hostile Other Exert 	
+HARASSMENT	Neg Noun Other Hostile Intrel Exert 	
+HIT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	verb: To strike or collide against, present and past tense 
+HUNT	Neg Noun Ngtv Hostile Actv Exert 	1% noun: A chasing and killing of animals; a searching out (0) 
+HUNT	IAV Neg SUPV Ngtv Actv Hostile PFREQ Exert 	94% verb: To chase and kill animals; to search out (14) 
+HUNT	Neg Modif Ngtv Actv Exert 	5% adj: "Hunting"--related to searching out 
+HURRY	IAV SUPV Exert Actv 	48% verb: To rush or cause to rush 
+HURTLE	IAV SUPV Exert Actv 	
+IMPEL	IAV SUPV Exert Power Strng Actv 	
+INFLICT	IAV Neg SUPV Actv Other Exert 	
+INTERCEDE	IAV Pos SUPV Actv Exert Intrel 	
+INTERPOSE	IAV Pos SUPV Actv Exert Intrel 	
+INTERVENE	IAV Actv Exert Intrel 	
+ISSUE	IAV SUPV Exert Strng Actv 	4% verb: To go, pass, or flow out, come forth, discharge, emit 
+JAR	IAV Neg SUPV Exert Ngtv Actv Strng 	
+JERK	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+KICK	DAV Neg SUPV Exert Hostile Strng Actv Ngtv 	75% verb: To strike with one's foot 
+KICK	Neg Noun Strng Actv Hostile Ngtv Exert 	3% noun: The act of, or the blow from kicking 
+KNIFE	DAV Neg SUPV Exert Hostile Ngtv Strng 	3% verb: To stab 
+KNOCK	Neg Noun Hostile Ngtv Actv Strng Exert 	21% noun: A blow, rap, rattling, beating, or rapping; criticism (0) 
+LIGHT	DAV SUPV Exert Actv 	10% verb: To ignite, turn on 
+LIT	SV SUPV Exert ED Actv 	
+MANGLE	IAV Neg SUPV Actv Exert Hostile Other 	
+MAR	Neg SUPV Exert Hostile Ngtv Strng Actv 	
+MASSACRE	IAV Neg SUPV Finish Hostile Actv Exert 	
+MUFFLE	IAV SUPV Exert Power Strng Actv 	
+MUSTER	IAV SUPV Exert Strng Actv 	
+OVERPOWER	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERRUN	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERTHROW	IAV Neg SUPV Actv Other Power Strng Exert 	
+PENETRATE	IAV SUPV Strng Actv Hostile Exert 	
+PINCH	DAV Neg SUPV Exert Hostile Ngtv Actv 	
+PITCH	DAV SUPV Exert Actv 	
+PLAY	DAV SUPV Exert Exprs Actv 	87% verb: To perform some activity for recreation--playing games, sports,  also, playing a musical instrument (27) 
+POUND	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	27% verb: To strike heavily or repeatedly, pommel 
+PRESS	DAV SUPV Exert Strng Actv 	43% verb: To exert pressure physically or verbally 
+PRESSURE	IAV SUPV Exert Power Strng Actv 	14% verb: To attempt to influence or force 
+PROACTIVE	IndAdj Pos Modif Actv Strng Exert 	
+PROSECUTE	IAV Pos SUPV Actv Other Legal Exert 	
+PRY	IAV Neg SUPV Intrel Comform Exert 	
+PULL	IAV SUPV Strng Actv Exert 	verb: To tug at, draw, drag, move 
+PUNCH	IAV Neg SUPV Actv Other Hostile Exert 	
+PUSH	DAV Neg SUPV Exert Ngtv Strng Actv PFREQ 	89% verb-adj: To exert force or pressure on something (or someone) in  order to move it (them) 
+PUSH	Neg Modif Ngtv Strng Actv Exert 	5% noun: A shove, or the act of shoving ("pushing") 
+RATTLE	IAV Neg SUPV Exert Ngtv Strng 	
+RECLAIM	IAV Pos SUPV Actv Fetch Power Comform Exert 	
+RETALIATE	IAV Neg SUPV Actv Hostile Intrel Exert 	
+RETARD	IAV Neg SUPV Actv Hostile Exert 	
+RIP	DAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+ROCK	DAV SUPV Exert Actv 	1% verb: To move back and forth 
+ROOT	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	0% idiom-verb: To "root out", to extirpate 
+ROUSE	IAV Pos SUPV Actv Exert Intrel Causal 	
+ROW	DAV SUPV Exert Exprs Actv 	
+RUPTURE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+SABOTAGE	IAV Neg SUPV Actv Hostile Other Exert 	
+SCATTER	IAV SUPV Exert Actv Strng 	
+SCORCH	IAV Neg SUPV Hostile Exert Actv 	
+SCUFFLE	Neg Noun Intrel Hostile Exert 	
+SHAKE	DAV Neg SUPV Exert Ngtv Actv PFREQ 	86% verb: To rapidly move back and forth; abstract--to loosen, weaken,  disrupt, upset (2) 
+SHATTER	DAV SUPV Exert Hostile Strng Actv 	
+SHOOT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	68% verb: To send forth or discharge a projectile, generally with a gun,  in order to hit or damage some object; to take pictures (0) 
+SHOT	DAV Neg SUPV ED Exert Hostile Ngtv Strng Actv 	81% verb: Past participle of "shoot"--to launch or discharge a projectile; 
+SHOULDER	IAV SUPV Exert Strng Actv 	15% verb: To take upon, to support or carry, to apply the shoulder 
+SHOVE	DAV Neg SUPV Actv Hostile Exert 	
+SHRED	IAV Neg SUPV Actv Hostile Exert Decr 	
+SKIRMISH	Neg Noun Hostile Intrel Exert 	
+SLAM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+SLAP	DAV Neg SUPV Actv Exert Hostile 	
+SLASH	DAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+SLAUGHTER	IAV Neg SUPV Natpro Finish Hostile Exert Actv 	
+SMACK	IAV Neg SUPV Actv Hostile Exert 	
+SMASH	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	85% verb: To strike violently, shatter, destroy 
+SMASH	Neg Noun Hostile Ngtv Strng Actv Exert 	10% noun: A violent blow, a crash 
+SNAP	Noun Exert 	
+SNAP	DAV SUPV Actv Exert 	
+SPANK	DAV Neg SUPV Actv Exert Hostile 	
+SPEAR	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	12% verb: To lance someone, or something 
+SPLIT	DAV SUPV Strng Actv Exert Hostile 	68% verb: To divide or to cut apart 
+SPOIL	IAV Neg SUPV Ngtv Exert Hostile 	
+SQUEEZE	DAV SUPV Exert Actv Strng 	
+STAB	DAV Neg SUPV Actv Hostile Exert Try 	
+STAMP	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+START	Noun Psv Exert 	0% noun: A jerk or sudden flinch 
+STICK	DAV SUPV Exert Strng Actv 	27% verb: Thrust into, pierce, put, extend 
+STING	IAV Neg SUPV Actv Pain Hostile Exert 	
+STIR	DAV SUPV Exert 	
+STONE	DAV SUPV Exert Hostile Actv 	1% verb: To assail with rocks 
+STORM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	7% verb: To rush, attack, rage 
+STRAIN	IAV Neg SUPV Exert Ngtv Actv 	
+STRANGLE	DAV Neg SUPV Hostile Exert Actv Other 	
+STRIKE	DAV Neg SUPV Exert Ngtv Actv Hostile Strng 	56% verb: To attack, injure, hit (generally in retaliation and with speed),  hit upon and remove, move sharply, make an (physical) impact 
+STROKE	IAV SUPV Exert Actv 	
+STRUCK	DAV Neg SUPV Exert ED Ngtv Hostile Actv Strng 	82% verb: Hit, hit upon, made an impact, attacked 
+SUBVERSION	Neg Noun Power Hostile Exert Intrel 	
+SUBVERT	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+TANTRUM	Neg Noun Hostile Exert Comform 	
+TEAR	DAV Neg SUPV Exert Hostile Ngtv Actv 	59% verb: To rip, destroy, divide 
+TERRORISM	Neg Noun Hostile Exert Other 	
+TERRORIZE	IAV Neg SUPV Actv Hostile Exert Other 	
+THROW	DAV SUPV Exert Strng Actv PFREQ 	85% verb: To hurl, to toss 
+THRUST	Noun Strng Actv Exert 	
+THRUST	IAV SUPV Exert Strng Actv 	
+TORMENT	IAV Neg SUPV Actv Hostile Exert Other 	
+UPSET	IAV Neg SUPV Hostile Ngtv Actv Strng Exert 	9% verb: To disrupt or overturn 
+USURP	IAV Neg SUPV Actv Hostile Polit Fetch Exert Intrel Power 	
+VANQUISH	IAV Pos SUPV Actv Power Exert Other 	
+WAR	Neg Noun Hostile Exert Polit Means 	
+WHACK	IAV Neg SUPV Actv Hostile Exert Strng Other 	
+WHEEL	IAV SUPV Exert Hostile 	
+WHIP	IAV SUPV Exert Strng Actv 	4% idiom-verb: "Whip up" - stir up 
+WHIRL	IAV SUPV Exert Strng 	
+WRECK	IAV Neg SUPV Actv Hostile Exert Finish Other 	
+WRESTLE	IAV Neg SUPV Actv Hostile Exert Think 	

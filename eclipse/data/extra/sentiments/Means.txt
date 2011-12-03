@@ -1,0 +1,245 @@
+word	tags	comments
+ABSORB	Modif Means 	
+ACCESS	Noun Means 	
+ACCORD	Pos LY Means Pstv 	3% adv: "Of one's own accord"--voluntarily 
+ADVANCE	Pos Noun Pstv Strng Actv Means 	20% noun-adj: A moving forward, improvement, approach, in front, prior 
+ALONG	PREP LY Means 	79% prep-adverb: Through, beside, on, during, with progressive motion,  in accordance with. 
+ALONGSIDE	PREP LY Means 	
+ALTERNATE	Modif Means 	
+APPLY	Modif Means 	3% adj: "Applied"--used in practice or to work out practical problems 
+APPRAISAL	Noun Means Power 	
+APPROACH	Pos Noun Pstv Psv Means Actv 	34% noun: The method used or steps taken in setting about a task, problem;  a coming toward 
+ASCERTAINMENT	Noun Means Ovrst Actv 	
+ASSESSMENT	Noun ECON Means 	
+ATTEMPT	Noun Actv Means 	59% noun: A try or effort 
+ATTEMPT	Modif Means 	1% adj: "Attempted"--essayed, ventured 
+BALANCE	Modif Means Strng 	
+BOOKKEEPING	Noun Means Econ* 	
+BOUND	Modif Means 	15% adj: Headed, aimed, going--"bound for" 
+BUDGET	Noun ECON Means Econ* 	
+BUILD	Noun ECON Means Actv 	8% noun-adj: "Building"--construction 
+BY	PREP LY Means 	prep-adv: By means of, indicates actor when used with passive voice, infrequently  used with reference to space, time, size 
+CALCULATE	Modif Means Actv 	
+CAMPAIGN	Noun POLIT Polit* Actv Power PFREQ Means 	95% noun: An effort toward a goal 
+CAPABILITY	Pos Noun Means Power Strng Pstv 	noun: Power or potential 
+CAPACITY	Noun Means Power Strng 	72% noun: Ability to do or hold 
+CAPACITY	Noun Means 	24% noun: Position, role, status 
+CAREER	Noun Means Econ* 	noun: General course of action or development of some phase of one's life,  especially the occupational. 
+CASEWORK	Noun ECON Means 	
+CHALLENGE	Neg Noun Ngtv Strng Means Actv 	72% noun: Confrontation, contest, difficult task, generally with a connotation  of provocativeness or stimulation 
+CHARGE	Noun Means Power Strng 	35% noun: Authority, responsibility, custody 
+CHECK	Noun Means Actv 	14% noun-adj: An investigation (0); a restraint (1); a mark or token of  verification, approval or custody (0) 
+CHORE	Neg Noun Means Ngtv 	
+COMPEL	Neg Modif Means Ngtv Strng Actv 	
+COMPETITION	Neg Noun Hostile Actv Ngtv Means 	
+COMPULSION	Neg Noun Power Ngtv Strng Actv Hostile Means 	
+CONDITION	Noun Actv Means 	1% noun-adj: "Conditioning"--process of rendering in a specified condition 
+CONSIDER	Pos Modif Means Pstv 	1% adj: "Considered"--thoughtful--e.g. "a considered decision" 
+CONSIDERATION	Noun Means 	31% noun: Factor to be taken into account 
+CORRELATE	Modif Means 	
+CRITICAL	Modif Means Ovrst 	
+CRUCIAL	Noun Means Ovrst 	
+CURE	Pos Noun Means Pstv 	11% noun: A method or course of remedial treatment 
+DATA	Noun Means S 	
+DEAL	Noun Means 	5% noun: Affair, arrangement, bargain, treatment 
+DEBT	Noun Means ECON Econ* Weak 	
+DECIDE	Modif Means Ovrst Strng 	1% adjective: "Decided"--definite, pronounced 
+DELIVERY	Noun Strng Actv Means 	
+DEMONSTRATION	Noun Means Strng Actv 	10% noun-adj: A proof, a display of how something works 
+DETERRENT	Neg Noun Hostile Ngtv Strng Means 	
+DISARMAMENT	Noun Means POLIT Actv Affil 	
+DISPOSAL	Neg Noun Means Ngtv 	
+DOUBT	Neg Noun Means EMOT Undrst Ngtv Psv 	49% noun: Uncertainty, question 
+DOUBT	Neg Modif Means Ngtv Psv 	2% adj: "Doubting"--questionning, uncertain, unbelieving 
+DURABLE	Pos Modif Means Pstv Strng 	
+EASY	Pos Modif Means Pstv 	31% adverb: Easily--in an easy manner, with ease, without trouble. 
+EFFECT	Modif Means Actv 	1% adj: 'in effect'--working, functional 
+END	Noun Means 	1% verb-idiom: 'make ends meet'--live within one's means--handled by "meet" 
+EVIDENCE	Noun Means Legal Strng 	83% noun: Something which tends to prove or suggest a fact 
+EXACT	Modif Means Strng Actv 	0% adj: "Exacting" - demanding 
+EXPEDIENT	Neg Modif Means Ngtv 	
+EXPENSE	Neg Noun Means Ngtv 	10% idiom: 'at the expense of'--to the detriment or sacrifice of 
+EXPERIENCE	Pos Noun Means Pstv Strng 	82% noun: What one has encountered or undergone and the knowledge gained thereby 
+EXPLORATION	Noun Means Actv 	
+FACILITY	Noun Strng Means 	noun-adj: Physical means for expediting performance of an action, institutions  and equipment 
+FACULTY	Noun Means Strng 	9% noun: Ability 
+FAVOR	Pos Noun Pstv Means 	35% idiom: "In favor of," in support of 
+FOOT	Noun Means 	1% noun: "Footing"--position, standing 
+FORMATION	Noun Means Strng 	
+FORMULATE	Modif Means Actv 	
+FREE	Pos Modif Means Pstv Strng 	10% adverb: "Freely"--in a free manner, openly 
+FUND	Handels Means Econ* 	34% idiom-noun: "Trust fund"--handled by "trust" 
+GRADUATE	Modif Acad Means 	1% noun-adj: "Graduating"--receiving a diploma or degree 
+GRADUATE	Modif Means 	0% adj: "Graduated"--marked with degrees for measuring 
+GROUND	Modif Means Strng 	0% adj: "Grounded"--based 
+GUESS	Noun Means 	0% noun: A conjecture 
+GUESS	Modif Means Actv 	1% noun-adj: 'guessing' 
+HAND	Pos Modif Pstv Means 	0% idiom-adj: "In hand"--under control 
+HAND	LY Means Strng Actv 	0% idiom-adv: "By hand"--manually 
+IDENTIFICATION	Noun Means Psv 	
+IMAGE	Noun Means 	58% noun: The way a person (or organization) is seen by other people--i  am concerned about my image" 
+IMPLEMENTATION	Noun Means Power Strng Actv 	
+INCIDENTAL	Modif Means 	
+INDIRECT	Modif Means Negate Weak Undrst 	
+INDISPENSABLE	Pos Modif Pstv Strng Ovrst Means 	
+INFORM	Pos Modif Means EVAL Pstv Psv 	36% adj: "Informed"--having information, knowledge, or education 
+INSTRUMENTAL	Modif Means Strng Actv 	
+INSURANCE	Noun Means ECON Econ* 	noun: The system or act of insuring by contract against loss 
+INTEGRATION	Noun Means POLIT Strng 	noun: The bringing together of various races, especially black and white;  the bringing of previously separated elements into one uniform system (10) 
+INVENTORY	Noun Means ECON Econ* Strng 	
+INVESTIGATION	Noun Means Actv 	
+INVOLVE	Modif Means 	13% verb-adj: 'involved'--of relevance, included as an integral part, in question 
+JOB	Noun Means ECON Econ* 	noun: Piece of work, task, occupation 
+JUDGMENT	Noun Means Power Strng 	21% noun: The faculty or capacity of decision 
+KEEP	Noun Means 	1% noun: Accord, conformity--"in keeping with" 
+LEAD	Noun Means Ovrst Strng 	6% noun-adj: 'lead,' 'leading'--fact or position of leadership; the heavy metal (0) 
+LIVE	Noun Means ECON Econ* 	13% noun-adj: Pertaining to the process or conditions of life, livelihood--  "he makes a good living," "my living conditions" 
+LIVE	Modif Means 	0% adj: 'live'--in person--'live music' 
+LIVELIHOOD	Noun Means ECON Econ* 	
+MAINTENANCE	Noun Means 	
+MAKE	Noun Means Strng Actv 	0% noun: "Making"--creation, production, execution 
+MANEUVER	IAV Noun Actv Strng Means Try Move 	
+MANNER	Noun Means PFREQ 	85% noun: A way of acting, a mode of procedure, a sort, kind, or style 
+MANNER	Modif Means 	2% adj: "Mannered"--having manners of a specific sort 
+MANPOWER	Noun ABS Abs* POLIT ECON Strng Means 	
+MARK	Modif Means Ovrst Strng 	9% adv-adj: "Marked," "markedly"--considerable, conspicuously 
+MEAN	Noun Means 	13% noun: Agency, instrument, method, or financial resources--"through  various means," "by means of a carriage" 
+MEASURE	Noun Means Actv 	56% noun: Action, means--"emergency measures" 
+MEASURE	Noun Means 	3% noun: "Measuring"--act of quantifying, etc. 
+METHOD	Noun Means 	noun: A manner or mode of proceeding 
+METHODICAL	Modif Means Strng 	
+MODE	Noun Means 	
+MOVABLE	Modif Means Psv 	
+NAME	Noun Means 	3% noun: Reputation 
+NECESSARY	Modif Means EVAL Strng Ovrst 	84% adj: Essential, required 
+NECESSARY	LY Means Ovrst Strng 	16% adv: "Necessarily"--of necessity 
+NECESSARY	Noun Means Strng Ovrst 	0% noun: Essentials 
+NECESSITY	Noun ABS Abs* Means Strng Ovrst 	noun: Need, something indispensible or required 
+NEGLECT	Neg Noun Means Ngtv Hostile 	
+NETWORK	Noun Means ECON Strng 	
+NORM	Noun Means Strng 	
+OMISSION	Neg Noun Means Ngtv Weak Psv 	
+OPERATIONAL	Modif Means Strng 	
+OPERATIVE	Modif Strng Means 	
+ORDER	Pos Noun Means Pstv Strng 	18% noun: Condition or sequence in general, proper condition or sequence,  an arrangement or system of arrangement, an organization 
+ORDER	Pos Modif Means Pstv Strng 	4% adj-noun: "Orderly"--methodical, systematic; a soldier or hospital attendant (1) 
+ORDER	Pos Modif Means Pstv Strng 	2% adj: "Ordered"--methodically or suitably arranged 
+PATTERN	Noun ABS Abs* Means 	noun-adj: Any phenomenon, arrangement, condition, etc. that suggests or  reveals a design or regularity. 
+PAYMENT	Noun Means ECON Econ* 	noun: The act of paying, also that which is paid. 
+PAYROLL	Noun Means ECON Econ* 	
+PICK	Modif Means 	0% adj: "Picked"--selected 
+PLAN	Noun Means POLIT Strng Actv 	57% noun: An organized program for some action 
+PLAN	Noun Means Strng Actv 	8% noun-adj: "Planning"--the act of constructing such programs 
+PLAN	Modif Means Strng 	1% adj: "Planned"--prepared in advance, programmed for 
+PREPARE	Modif Means Strng 	26% adj: "Prepared"--ready 
+PREREQUISITE	Noun Means 	
+PRESERVATION	Noun Means 	
+PRESS	Modif Means Strng 	5% adj: "Pressing"--urgent 
+PRIORITY	Noun Means Strng 	
+PROBE	Noun Means Strng Actv 	
+PROCEDURAL	Modif Means 	
+PROCEDURE	Noun ABS Abs* Means 	
+PROCUREMENT	Noun Means ECON Strng 	
+PRODUCTION	Noun Means ECON 	noun: Act of producing, creation, manufacture 
+PROGRAM	Noun Means POLIT PFREQ 	noun-adj: A plan for action of some kind, or the action itself 
+PROGRAM	Noun Means 	1% noun-adj: "Programming," "programmed"--the act of making a program,  pertaining to a program, planned 
+PROJECT	Noun Means ECON POLIT PFREQ 	91% noun-adj: Large or major undertaking 
+PROJECT	Modif Means 	2% adj: "Projecting"--standing out, forecasting, externalizing thoughts  or feelings, casting an image 
+PROVISION	Noun Means 	
+QUALIFICATION	Noun Means Undrst 	
+QUEST	Noun Strng Actv Means 	
+READY	Modif Means Strng PFREQ 	95% adj: Completely prepared, likely at any moment, prompt or quick in  action, manifestation, etc.; set, able to be used, etc. 
+RECONSTRUCTION	Noun Means ECON POLIT Strng Actv 	
+RECRUITMENT	Noun Means Strng Actv Power 	
+REDEVELOPMENT	Noun Means ECON 	
+REGARD	PREP Means 	49% prep: "Regarding," "in (with) regard to," "as regards"; with reference  to, concerning 
+REMEDY	Pos Noun Means Pstv 	
+RENTAL	Noun Means ECON Econ* 	
+REPAIR	Pos Noun Pstv Strng Actv Means 	
+REPRESENTATIVE	Modif Means 	27% adj: Portraying, exemplifying, acting or speaking for, having elected delegates 
+REQUIRE	Modif Means Power 	2% adj: "Required", obligatory, needed 
+REQUIREMENT	Noun Power Strng Means 	
+REQUISITE	Modif Means 	
+RESEARCH	Noun Means Acad Actv 	
+RESERVATION	Noun Means Undrst 	
+RESERVE	Modif Means 	0% adj: "Reserved"--withheld, restrained 
+RESERVE	Noun Means ECON Strng Undrst 	62% noun-adj: Surplus, secondary supply 
+RESOURCE	Noun Means ECON Strng 	noun: Source of supply, support, aid 
+RETAIL	Noun Means ECON Econ* 	
+RETIREMENT	Noun Means ECON 	
+REVENUE	Noun Means ECON POLIT Econ* Strng 	
+REVIEW	Noun Means 	
+RIGHT	Pos Noun ABS Abs* Means Legal Power Pstv Strng 	14% noun: Legal or moral prerogative 
+RISK	Noun Means 	
+ROAD	Noun Means 	7% noun: A way or course--"road to peace" 
+ROOM	Noun Means Econ* 	1% idiom-noun: 'room and board'--referring to living and eating expenses 
+ROUTINE	Noun Means 	
+SALARY	Noun Means ECON Econ* 	
+SALE	Noun Means ECON Econ* 	
+SALESMANSHIP	Noun Means Econ* Actv 	
+SAVE	Noun Means ECON Econ* 	15% noun-adj: "Savings" - accumulated wealth, advantage 
+SAY	Noun Means Power Strng 	6% noun: The right or opportunity to speak, decide, exercise, influence 
+SCHEDULE	Noun Means 	
+SCHEME	Neg Noun Means Ngtv 	
+SCORE	Noun Means 	
+SEARCH	Noun Means Actv 	22% noun: Careful investigation, hunt, includes "searching"--the act of  carefully looking or investigating 
+SEARCH	Modif Means Strng Actv 	2% adj: "Searching"--keenly observant, penetrating 
+SECURITY	Noun Means ECON Econ* HU COLL 	5% idiom-noun: "Security council"--organ of the united nations 
+SECURITY	Noun POLIT Polit* Econ* Means 	49% idiom-noun: "Social security"--handled by "social" 
+SHARE	Noun Means 	19% noun: A portion or part 
+SHIPMENT	Noun Means ECON Econ* 	
+SHOP	Noun Means ECON Econ* Actv 	29% noun-adj: "Shopping"--the act of one who shops 
+SHOT	Noun Means 	7% noun: Injection of medicine by needle 
+SHOT	Noun Means 	1% idiom-noun: "Long shot"--an undertaking or selection which has little  chance of success (but may offer much if successful) 
+SOMEHOW	LY Undrst PFREQ Means 	95% adverb: In some unspecified or unknown way 
+SOMEHOW	LY Undrst Means 	5% idiom-adv: 'somehow or other'- by whatever means possible or necessary 
+SOMETHING	Noun Means Undrst 	0% noun: "Something to do with"--some (little) relevance 
+SPEAK	Modif Means 	1% idiom-adv: "So to speak"--in a manner of speaking, speaking figuratively 
+STAGE	Noun Means 	68% noun: A phase or step 
+STAKE	Noun ECON Means 	
+STAND	Noun Means 	2% noun: "Standing"--rank, situation (e.g. "financial standing") 
+STATUS	Noun ECON POLIT Means Power 	81% noun-adj: Condition or rank (socially, legally, financially) ("status"  often implies "high status" (6)) 
+STEP	Noun ABS DIST Means 	59% noun-adj: A stage, interval, increment or action, generally positive,  in a hierarchy or progressive sequence (36); a pace, tread (7); rest for  the foot in climbing (4) 
+STOCK	Noun Means ECON 	
+STORAGE	Noun Means 	
+STORE	Noun Econ* ECON Means 	4% noun: Supplies 
+STRATEGIC	Modif Means POLIT Strng 	
+STRATEGY	Noun Means POLIT 	
+STUDY	Noun Means Acad Actv 	22% noun-adj: Application of oneself to acquiring knowledge, a course of learning 
+STUDY	Noun Acad Actv Means 	4% noun: "Studying" 
+SUBSTITUTE	Noun Means 	
+SUPPLEMENT	Noun Means ECON 	
+SURVEY	Noun Means POLIT 	
+SYSTEMATIC	Modif Means Strng 	
+SYSTEMATICALLY	Modif Means Strng 	
+TABLE	Noun Means 	3% noun: An arrangement or list of numbers and the like in a given order 
+TACTIC	Noun Means POLIT Polit* 	
+TACTICAL	Modif Means 	
+TACTICS	Pos Noun Means Polit 	
+TASK	Noun Means Actv 	noun: A piece of work, a job, a project 
+TAX	Noun Means ECON POLIT Econ* 	71% noun-adj: Payment of money to government for public services, etc. 
+TAXABLE	Modif Means Econ* 	
+TAXATION	Noun Means ECON POLIT Econ* 	
+TECHNIQUE	Noun Means 	
+TENACITY	Pos Noun Strng Actv Means 	
+TEST	Noun Means 	7% noun: 'testing'--experimentation, exploratory application 
+THERAPY	Noun Means 	
+TOUCH	Noun Means 	2% noun: A knack 
+TREATMENT	Noun Means 	
+TRUST	Noun Means ECON Econ* 	28% idiom-noun: "Trust fund" 
+TRUST	Pos Noun Means Pstv 	1% noun: Safekeeping 
+TRY	Noun Actv Means 	0% noun: An attempt 
+UNAVOIDABLE	Neg Modif Negate Ngtv Means Ovrst 	
+UNDERTAKE	Noun Means Strng Actv 	
+USE	Noun Means Actv 	12% noun: Implementation, employment 
+USE	Noun ABS Abs* Means 	5% noun: Purpose, avail, worth, function, utility 
+UTILITY	Noun Means ECON Econ* Strng 	
+VALUATION	Noun ECON Means Econ* 	
+VENTURE	Noun ECON POLIT Actv Means 	
+WAGE	Noun Means ECON Econ* 	
+WANT	Modif Means Strng Psv 	0% adj: "Wanted"--desired, required (occasionally) 
+WAR	Neg Noun Hostile Exert Polit Means 	
+WAY	Noun Means 	71% noun: Aspect, manner, mode, fashion, means, method 
+WAY	PREP Means 	0% idiom-prep: 'by way of'--as a means or mode of 
+WITCHCRAFT	Neg Noun Hostile Means 	
+WORK	Noun ECON Means Actv 	50% noun-adj: Act of working, type or place (infrequent) of work, assigned  task, product (infrequent) 

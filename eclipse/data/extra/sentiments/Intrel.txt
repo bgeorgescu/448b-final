@@ -1,0 +1,579 @@
+word	tags	comments
+ABOLISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+ABSENTEE	Neg Noun Hostile Weak Fail Intrel Vice 	
+ABSOLVE	IAV Pos SUPV Actv Comform Intrel 	
+ABUSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ACCEPT	IAV Pos SUPV Intrel Subm Pstv Psv 	verb: To take, receive or accede to something 
+ACCEPTANCE	Pos Noun Affil Pstv Psv Intrel 	
+ACCOMPANIMENT	Pos Noun Intrel 	
+ACCORD	IAV Pos SUPV Intrel Pstv 	3% verb: "Accord with" to be consistent with 
+ACCORD	IAV Pos SUPV Intrel Power Pstv 	8% verb: To grant, bestow 
+ACCUSATION	Neg Noun Comform Hostile Intrel 	
+ACKNOWLEDGE	IAV SUPV Intrel 	
+ACT	IAV SUPV Intrel Hostile Actv 	2% verb: 'act up'--to misbehave, malfunction. 
+ADMINISTER	IAV SUPV Intrel Power Strng Actv 	
+ADMIT	DAV Pos SUPV Intrel Power Pstv Psv 	33% verb: To grant entry, membership or access to something 
+ADMONISH	IAV Neg SUPV Intrel Hostile Power Strng Actv 	
+ADOPT	Modif Affil Psv Intrel 	4% adj: "Adopted"--chosen, accepted 
+ADULTERY	Neg Noun Vice Intrel 	
+ADVERSARY	Neg Noun Intrel HU Polit Role Hostile 	
+ADVISE	IAV SUPV Affil Intrel 	
+AFFLICT	IAV Neg SUPV Ngtv Strng Actv Intrel Hostile 	
+AGGRAVATE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+AGGRESSOR	Neg Noun HU Hostile Exert Intrel 	
+AGITATOR	Neg Noun HU Hostile Exert Intrel 	
+AID	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	16% verb: To give help 
+ALIENATE	IAV Neg SUPV Affil Intrel Hostile Other 	
+ALLIED	IAV Pos SUPV Intrel Affil Polit* Strng Pstv 	
+ALLIES	Pos Noun HU Role Affil Intrel 	
+ALLOT	IAV SUPV Intrel Power 	
+ALLOW	IAV Pos SUPV Intrel Power Pstv Psv PFREQ 	97% verb: Permit 
+ALLY	IAV SUPV Intrel Affil Polit* 	
+ALONG	IAV SUPV Intrel Affil 	14% idiom-verb: 'get along'--co-exist or exist in harmony and comfort. 
+ALTERCATION	Neg Noun Hostile Exert Intrel 	
+AMBUSH	IAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+AMELIORATE	IAV Pos SUPV Intrel Pstv Actv Affil 	
+ANIMOSITY	Neg Noun Hostile Intrel Vice 	
+ANNOY	IAV Neg SUPV Actv Hostile Intrel Other 	
+ANTAGONIST	Neg Noun HU Hostile Intrel 	
+ANTI-SOCIAL	IPadj Neg Modif Ovrst Intrel Vice 	
+APOLOGETIC	IPadj Modif Pain Weak Subm Intrel 	
+APOLOGIZE	IAV SUPV Subm Other Weak Intrel 	
+APPEAL	IAV SUPV Legal Subm Psv Affil Intrel 	59% verb: To request a decision, help, sympathy, etc. (10), to arouse  a favorable response (9) 
+APPOINT	DAV Pos SUPV Intrel Power Pstv Actv 	
+APPRECIATIVE	IPadj Pos Modif Intrel Eval Pleasure 	
+APPROPRIATE	IAV SUPV Intrel Power Strng 	
+ARBITER	Pos Noun HU Role Solve Affil Intrel Comform 	
+ARBITRATE	IAV Pos SUPV Actv Solve Affil Intrel Comform 	
+ARBITRATION	Pos Noun Solve Affil Intrel Comform 	
+ARM	IAV SUPV Intrel Milit Strng Actv Power 	1% verb: To equip with weapons 
+ARMED	IAV SUPV ED Intrel Milit Strng Actv Power Hostile 	0% verb: To equip with weapons (past tense) 
+ASSAIL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ASSAULT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ASSIST	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+ASSUME	IAV SUPV Intrel Power 	44% verb: To undertake, take over the duties of, or adopt 
+ATTACHMENT	Pos Noun Emot Pleasure Affil Intrel 	
+ATTACK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	34% verb: To assault (physically or figuratively) 
+ATTRACT	IAV Pos SUPV Intrel Affil Pstv Strng 	
+AVERT	IAV Neg SUPV Intrel Hostile Weak Psv 	
+AVOID	IAV Neg SUPV Intrel Hostile Ngtv Weak Psv 	verb: To keep away from, keep clear of 
+AVOIDANCE	Neg Noun Hostile Ngtv Weak Psv Intrel 	
+BACK	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	1% verb: To support 
+BACK	Pos Noun Power Pstv Strng Intrel Affil Actv 	0% noun: "Backing"--support 
+BAND	IAV SUPV Intrel Affil Strng 	3% verb: To group together 
+BANISH	Neg Modif Polit* Ngtv Strng Actv Intrel Power 	
+BANISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+BANISHMENT	Neg Noun Power Intrel Affil Polit 	
+BAR	DAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	19% verb: To obstruct or exclude 
+BARGAIN	IAV Pos SUPV Actv Comform Intrel Econ 	
+BATTLE	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	14% verb: To engage in a fight 
+BATTLEFIELD	Neg Noun Hostile Place Intrel Exert 	
+BEFRIEND	IAV Pos SUPV Actv Affil Intrel 	
+BEG	IAV Neg SUPV Intrel Subm Ngtv Weak Actv 	
+BEHAVE	IAV SUPV Actv Intrel 	
+BEHAVIOR	Noun Actv Intrel 	noun: Manner of behaving, conduct 
+BELIE	IAV Neg SUPV Intrel Hostile Actv 	
+BELIEVE	IAV SUPV Psv Intrel 	12% verb: To have specific confidence that someone is making a true statement  or that a statement is true 
+BELITTLE	IAV Neg SUPV Hostile Ngtv Intrel 	
+BELONG	IAV SUPV Intrel Subm Weak Psv PFREQ 	98% verb: To be in relation to something as owned or as a member or inhabitant 
+BELT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BENEFIT	IAV Pos SUPV Intrel Affil Power Pstv Strng 	21% verb: Gain, do good for, to 
+BESEECH	IAV Neg SUPV Intrel Subm Weak Actv 	
+BESIEGE	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BESTOW	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+BETRAY	IAV Neg SUPV Intrel Hostile Ngtv 	
+BETRAYAL	Neg Noun Hostile Comform Intrel 	
+BIT	IAV Neg SUPV ED Hostile Ngtv Actv Intrel 	7% verb: Past tense of "bite" 
+BITCHY	IndAdj Neg Modif Arousal Hostile Intrel 	
+BITE	IAV Neg SUPV Ngtv Actv Hostile Intrel 	74% verb: To grip, injure or cut off with or as with teeth 
+BLACKMAIL	IAV Neg SUPV Actv Power Intrel Other Econ 	
+BLAME	IAV Neg SUPV Intrel Hostile Ngtv 	75% verb: To hold responsible for failure, to censure 
+BLESS	IAV Pos SUPV Intrel Affil Relig Pstv Psv 	32% verb: To consecrate, favor or endow, make happy or prosperous 
+BLIND	IAV Neg SUPV Intrel Hostile Ngtv 	10% verb: To deprive of sight 
+BOLT	IAV Neg SUPV Move Actv Fail Intrel 	
+BOMB	DAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+BOTHER	IAV Neg SUPV Intrel Hostile Ngtv Actv PFREQ 	91% verb: To give trouble to, annoy, worry--to bewilder, confuse--to be  troubled, etc. 
+BOX	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	9% verb: To fight with fists, strike 
+BRAWL	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BREACH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BREAK	IAV Neg SUPV Intrel Hostile Legal Ngtv Actv 	2% verb-idiom: "Break a law" 
+BRING	IAV SUPV Intrel Affil Power Actv 	13% verb: Bring up--to rear, educate, care for during childhood 
+BROKE	IAV Neg SUPV ED Intrel Hostile Legal Ngtv Actv 	1% idiom-verb: "Broke (broken) a law" 
+BROKEN-HEARTED	IPadj Neg Modif Weak Pain Emot Intrel 	
+BROTHERLY	IPadj Pos Modif Affil Intrel 	
+CALL	DAV Pos SUPV Intrel Affil Pstv 	1% verb: To visit 
+CAPTURE	Neg Modif Subm Ngtv Intrel 	
+CAPTURE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+CARE	SV Pos SUPV Affil Pstv Actv Intrel 	41% verb: To be concerned with, to mind about, prefer, be solicitous of;  to provide for (much less frequen 
+CARESS	IAV Pos SUPV Intrel Affil Pstv 	
+CAST	IAV SUPV Intrel Power Strng 	7% verb: To place in a role 
+CAUGHT	IAV SUPV Intrel ED Hostile Strng Actv PFREQ 	96% verb: Past tense of "catch"--to have captured, ensnared, attracted  (0); contracted (0); to have absorbed, as to hear and understand (0) 
+CHALLENGE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	19% verb: To confront with a contest or problem 
+CHARM	IAV Pos SUPV Intrel Affil Pstv 	
+CHEAT	IAV SUPV Hostile Intrel 	
+CHERISH	IAV Pos SUPV Pstv Psv Intrel Affil 	
+CHUM	Pos Noun HU Role Intrel 	
+CLASH	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+CLOSENESS	Pos Noun Intrel  Space 	
+COACH	IAV SUPV Intrel Acad Actv Affil 	
+COAX	IAV Pos SUPV Actv Intrel Comform Other 	
+CODDLE	IAV Pos SUPV Actv Intrel Other Affil 	
+COERCE	IAV Neg SUPV Actv Power Comform Intrel 	
+COERCION	Neg Noun Power Comform Intrel Vice 	
+COERCIVE	IPadj Neg Modif Power Comform Intrel 	
+COLLABORATE	IAV Pos SUPV Actv Intrel Affil Comform Ach 	
+COLLAR	IAV SUPV Intrel Power Strng Actv 	
+COLLISION	Neg Noun Exert Intrel Hostile 	
+COLLUSION	IAV Neg SUPV Actv Affil Intrel 	
+COMBAT	Neg Noun POLIT Ngtv Actv Strng Intrel Hostile 	
+COMBAT	IAV Neg SUPV Intrel Hostile Polit* Ngtv Actv Strng 	
+COMBATANT	IPadj Neg Modif Hostile Exert Intrel 	
+COMFORT	IAV Pos SUPV Intrel Affil Pstv Strng 	29% verb: To solace 
+COMMISERATION	Neg Noun Emot Pain Vice Intrel 	
+COMPEL	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+COMPETITOR	Neg Noun HU Hostile Intrel 	
+COMPLIANCE	Pos Noun Affil Intrel Comform 	
+COMPLY	IAV SUPV Intrel Subm Psv 	
+COMPROMISE	Pos Modif POLIT Subm Pstv Psv Intrel 	
+COMPROMISE	IAV Pos SUPV Intrel Subm Pstv Psv 	
+CONCEAL	IAV Neg SUPV Intrel Hostile Ngtv 	
+CONCESSION	Pos Noun Pstv Weak Psv Intrel Subm 	
+CONDEMN	Neg Modif Ngtv Strng Intrel Hostile 	
+CONDEMN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+CONDESCENSION	Neg Noun Vice Power Hostile Intrel 	
+CONDUCT	Noun Actv Intrel 	43% noun: Behavior 
+CONDUCT	IAV SUPV Intrel 	7% verb: To behave 
+CONFEDERATION	Pos Noun Affil Intrel Polit 	
+CONFINE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+CONFLICT	IAV Neg SUPV Intrel Hostile Ngtv Actv 	0% verb: To disagree or struggle 
+CONFORM	IAV SUPV Intrel Subm Weak Psv 	
+CONFRONT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To challenge, face 
+CONQUER	IAV Pos SUPV Actv Strng Power Travel Intrel Ach 	
+CONQUEROR	Pos Noun HU Role Power Strng Travel Intrel 	
+CONSIDERATE	IPadj Pos Modif Intrel Virtue 	
+CONSPIRATOR	Neg Noun HU Intrel Affil Conform 	
+CONSPIRE	IAV Neg SUPV Actv Affil Intrel Conform 	
+CONSTRAIN	IAV Neg SUPV Intrel Hostile Power Ngtv Strng 	
+CONTEMPT	Neg Noun Hostile Intrel Emot Vice 	
+CONTEMPTIBLE	IndAdj Neg Modif Hostile Intrel Vice 	
+CONTEMPTUOUS	IndAdj Neg Modif Hostile Intrel Vice 	
+CONTRIBUTE	Pos Modif Pstv Strng Actv Intrel Affil 	0% adj: "Contributing"--giving or adding 
+CONTRIBUTOR	Pos Noun HU Role Affil Intrel 	
+CONTROL	IAV SUPV Intrel Power Strng Actv 	26% verb: To restrain, direct, regulate 
+CONVICT	IAV Neg SUPV Intrel Hostile Legal Actv Ngtv Strng 	
+COOPERATE	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+COORDINATE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+COURT	IAV SUPV Intrel Affil Actv 	9% verb: To woo or try to get, seek 
+COVER	IAV SUPV Intrel Power Actv 	87% verb: To conceal, protect; to coat, be smeared or buried (25); to  encompass, deal with, range over (11); meet an expense (6) 
+CROSS	IAV Neg SUPV Intrel Hostile Ngtv Actv 	3% verb: To confuse, frustrate 
+CURB	IAV SUPV Intrel Power Strng Actv 	
+CURTSEY	DAV Pos SUPV Actv Move Intrel 	
+DATE	IAV SUPV Intrel Affil 	43% verb: To go out socially with someone 
+DEFEND	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	verb: To ward off or repulse attacks, to uphold 
+DEFENSE	Pos Noun POLIT Strng Actv Affil Intrel Pstv 	noun-adj: Resistance or protection against attack, whether physical, verbal  or otherwise 
+DEFENSIVE	Neg Modif Hostile Ngtv Weak Psv Intrel 	
+DEFER	IAV SUPV Intrel Subm Psv 	
+DEFY	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+DEMORALIZE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+DEPEND	IAV SUPV Intrel Subm Weak Psv 	27% verb: Rely (upon) 
+DEPLOY	IAV SUPV Intrel Power Strng Actv 	
+DEPRIVE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+DESERT	DAV Neg SUPV Intrel Hostile Ngtv 	14% verb: To abandon, forsake 
+DESERVE	IAV Pos SUPV Intrel Affil Pstv 	
+DESIGNATE	IAV SUPV Intrel Power Actv Strng 	
+DETER	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+DIRECT	IAV SUPV Intrel Power Strng Actv 	44% verb: To manage, control, instruct, guide, aim 
+DISCHARGE	IAV Neg SUPV Intrel Legal Ngtv Strng Actv Power 	
+DISCIPLINE	IAV SUPV Intrel Power Strng Actv 	25% verb-adj: To train, drill--especially in a punitive sense 
+DISMISS	IAV Neg SUPV Intrel Hostile Ngtv Actv Power 	
+DIVORCE	DAV Neg SUPV Intrel Hostile Kin* Legal Ngtv Actv 	14% verb: To separate, usually to dissolve a marriage 
+DIVORCE	Neg Modif Hostile Kin* Legal Ngtv Intrel 	3% adj: "Divorced"--legally separated from a spouse 
+DOCTOR	IAV SUPV Intrel Affil 	0% verb: To act as a doctor, to fix 
+DOMINATE	IAV Neg SUPV Intrel Power Ngtv Strng Actv PFREQ 	92% verb: To control 
+DOMINATE	Neg Modif Power Ngtv Strng Actv Intrel 	4% adj: "Dominating"--imperious 
+DOMINATE	Neg Modif Power Ngtv Strng Actv Intrel 	4% adv: "Dominatingly"--imperiously 
+DRAW	IAV SUPV Intrel Power Strng 	6% verb-idiom: "Draw the line," stop, take a negative stand 
+DRIVE	IAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	20% verb: To force, impel or push into some psychological or other state,  generally negative--"he is driving me crazy" 
+ELECT	DAV SUPV Intrel Polit* Actv Power 	verb: To choose, usually by vote 
+ELECT	Modif POLIT Polit* Intrel Power 	0% adj: "Elected"--chosen by vote 
+EMBRACE	IAV Pos SUPV Intrel Affil Pstv Actv 	
+EMPLOY	IAV SUPV Intrel Econ* Power Strng 	
+ENCHANT	IAV Pos SUPV Intrel Affil Pstv 	
+ENCOUNTER	IAV SUPV Intrel Affil 	
+ENCOURAGE	IAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	98% verb: To inspire with confidence, hearten, urge 
+ENDANGER	IAV Neg SUPV Intrel Hostile Ngtv 	
+ENFORCE	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+ENGAGE	Modif Intrel Affil Kin* 	38% adj: "Engaged"--bethrothed 
+ENGAGE	IAV SUPV Intrel Affil 	14% verb: To involve, employ or betroth 
+ENROLL	DAV SUPV Intrel Subm Actv 	
+ENSURE	IAV Pos SUPV Intrel Power Pstv Ovrst Strng 	
+ENTERTAIN	Pos Modif EVAL Exprs Pstv Actv Intrel Affil 	
+ENTITLE	IAV SUPV Intrel Legal Power Strng 	
+ENTREAT	IAV Neg SUPV Subm Weak Intrel 	
+ESTRANGED	IPadj Neg Modif Intrel Pain 	
+EVEN	IAV Neg SUPV Intrel Hostile Ngtv 	2% idiom-verb: "Get even"--to have one's revenge, square accounts 
+EXACT	IAV SUPV Intrel Power Strng Actv 	2% verb: To force from, obtain 
+EXALT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXAMINE	IAV SUPV Intrel Acad Power Actv 	verb: To scrutinize or test 
+EXCLUDE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXCLUSION	Neg Noun Hostile Ngtv Strng Actv Intrel Power 	
+EXECUTION	Noun Strng Actv Intrel Hostile 	
+EXPLOIT	Modif Hostile Power Strng Intrel 	
+EXPLOIT	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXTOL	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXULT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXULTATION	Pos Noun Psv Intrel Subm Eval 	
+FALL	IAV SUPV Intrel Affil Psv 	6% verb-idiom: "Fall in love,"--become enamored 
+FALL	IAV SUPV Intrel Affil Psv 	1% verb: "Fall for"--become enamored 
+FEAST	IAV Pos SUPV Pstv Actv Intrel Affil 	17% verb: To celebrate, usually by gorging oneself 
+FEED	DAV SUPV Intrel Affil Power Strng 	78% verb: To supply a necessary input, usually nutritional 
+FELL	IAV SUPV Intrel Affil 	8% verb-idiom: "Fell in love,"--became enamored 
+FELL	IAV SUPV Intrel Affil 	0% verb: "Fell for"--became enamored 
+FEUD	Neg Noun Hostile Intrel 	
+FIGHT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To engage in conflict 
+FIGHT	Handels Intrel Hostile 	2% idiom-verb: "To pick a fight"--to tease, bully, encourage a fight--handled  by "pick" 
+FILIAL	IPadj Pos Modif Doctr Affil Intrel 	
+FLATTER	IAV Pos SUPV Intrel Affil Subm Psv Weak Comform 	
+FLATTERY	Pos Noun Intrel Affil Subm Psv Weak Comform 	
+FLOOR	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	2% verb: To provide with a floor; to knock to the floor (0) 
+FOLLOW	IAV SUPV Intrel Subm Weak Psv 	42% verb: To give allegiance to, obey, act in accordance with, "i wish  he would follow my advice," infrequently, understand--"i didn't follow  your argument" 
+FOOL	IAV Neg SUPV Intrel Hostile Ngtv 	37% verb: To deceive or joke with 
+FOOL	IAV SUPV Actv Intrel Hostile 	15% verb: 'fool around,' 'fool with'--to trifle, to have fun 
+FORCE	IAV Neg SUPV Intrel Power Strng Actv Ngtv 	39% verb: To compel, impose, overcome the resistance of 
+FORGAVE	IAV Pos SUPV ED Intrel Affil Pstv 	
+FORGIVE	IAV Pos SUPV Intrel Affil Pstv 	
+FORGIVENESS	Pos Noun Intrel Virtue Comform 	
+FOUGHT	DAV Neg SUPV Intrel ED Hostile Ngtv Strng Actv 	verb: Past tense of "fight"--engaged in conflict 
+FREE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	5% verb: To make free, set at liberty, release from bondage, restraint 
+FRUSTRATE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	20% verb: To thwart 
+GET	IAV Neg SUPV Intrel Hostile Actv Ngtv Strng 	1% idiom-verb: "Get rid of"--get free from, destroy 
+GET	Handels Intrel Hostile 	2% idiom-verb: "Get even"--have one's revenge--handled by "even" 
+GET	Handels Intrel Affil 	3% idiom-verb: "Get along"--co-exist or exist in harmony and comfort--handled  by "along" 
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	90% verb: To donate, provide (with), present, hand over, emit or issue,  cause to have; prone, wont--"he is given to drink" (2) 
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv 	1% noun-adj: "Given"--specific, assumed, granted 
+GIVE	DAV SUPV Handels Intrel Affil 	0% noun: "Giving"--providing 
+GO	IAV SUPV VERB GO Actv Intrel Affil Subm 	1% idiom-verb: 'go along with'--accord, acquiesce--handled by 'along' 
+GONE	Handels Intrel Affil Subm 	0% verb: 'gone along with'--accorded, agreed, acquiesced; handled by 'along' 
+GOVERN	IAV SUPV Polit* Power Strng Intrel 	
+GRANT	IAV SUPV Intrel Affil Power Strng 	42% verb: To confer or give in promise, to allow, acknowledge 
+GUARD	IAV SUPV Intrel Affil Milit Power Strng Actv 	55% verb: To protect or watch out for 
+GUIDE	IAV Pos SUPV Intrel Power Strng Actv Pstv 	50% verb: To direct 
+GUIDE	Modif Psv Intrel 	14% adj: 'guided'--given direction 
+GUIDE	Pos Modif Pstv Strng Actv Intrel 	5% adj: 'guiding'--giving direction 
+HALLOWED	IndAdj Pos Modif Qual Intrel Subm 	
+HAMPER	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+HANDLE	IAV SUPV Intrel Power Actv Strng 	83% verb: To manage, guide, have under one's jurisdiction or control 
+HANG	IAV Neg SUPV Intrel Hostile Ngtv 	3% verb: To suspend by the throat (transitive) 
+HARASSMENT	Neg Noun Other Hostile Intrel Exert 	
+HARM	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To injure, damage, or hurt 
+HARMONIOUS	IPadj Pos Modif Affil Intrel Pleasure 	
+HARMONIZE	IAV Pos SUPV Actv Comform Intrel Affil 	
+HAUNT	IAV Neg SUPV Intrel Hostile Ngtv Power Actv 	
+HEAD	IAV SUPV Intrel Power Strng Actv 	1% verb: To direct or lead 
+HEDGE	IAV Neg SUPV Intrel Hostile Ngtv Weak 	
+HEED	IAV SUPV Intrel Psv Subm Undrst 	
+HELP	IAV Pos SUPV Intrel Affil Pstv Actv 	75% verb: To aid, assist 
+HERD	IAV SUPV Intrel Power Strng Actv 	35% verb: To form and maintain such groups 
+HIDDEN	IAV SUPV Intrel ED Hostile 	38% verb: Past tense of "hide"--concealed 
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	57% verb: To conceal oneself 
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	28% verb: To conceal something other than oneself 
+HINDER	IAV Neg SUPV Intrel Ngtv Strng Hostile 	
+HIT	IAV Pos SUPV Affil Pstv Intrel Affil 	0% idiom-verb: "Hit it off"--get along well 
+HONOR	IAV Pos SUPV Intrel Subm Pstv Psv 	35% verb: To esteem, exalt, respect 
+HOUSE	DAV SUPV Intrel Affil 	0% verb: To shelter, lodge, accommodate 
+HUG	DAV Pos SUPV Actv Intrel Other 	
+HURT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv PFREQ 	89% verb: To injure or harm, to cause or experience pain or distress 
+IMITATION	Noun Subm Weak Actv Intrel 	
+IMPAIR	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile Power 	
+IMPASSE	Neg Noun Stay Comform Intrel 	
+IMPEDE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+IMPOSE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+INDEBTED	Modif Subm Weak Psv Intrel 	
+INEQUALITY	Neg Noun Eval Intrel Qual 	
+INFLUENCE	IAV SUPV Intrel Power Strng Actv 	48% verb: To exercise such power 
+INHIBIT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INSEPARABLE	IPadj Pos Modif Negate Affil Intrel 	
+INSOLENCE	Neg Noun Hostile Intrel 	
+INSOLENT	IndAdj Neg Modif Hostile Intrel 	
+INSPIRE	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	
+INTERCEDE	IAV Pos SUPV Actv Exert Intrel 	
+INTERCOURSE	DAV Pos SUPV Actv Intrel Natpro 	
+INTERFERE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INTERPOSE	IAV Pos SUPV Actv Exert Intrel 	
+INTERVENE	IAV Actv Exert Intrel 	
+INTIMACY	Pos Noun Intrel Emot Pleasure 	
+INTRUDE	IAV Neg SUPV Actv Move Intrel 	
+INTRUDER	Neg Noun HU Role Intrel Move 	
+INTRUSION	Neg Noun Hostile Intrel 	
+INVITE	DAV Pos SUPV Intrel Affil Pstv Actv 	verb: To ask to a dinner, party, or for a visit or other social event;  more generally, to ask, request, call for (9) 
+INVOLVE	IAV SUPV Intrel Power Strng 	6% verb: To engage or cause to become involved 
+JAIL	DAV Neg SUPV Intrel Hostile Legal Power Ngtv Strng Actv 	4% verb: To imprison 
+JEOPARDIZE	IAV Neg SUPV Intrel Hostile Ngtv 	
+JOIN	DAV SUPV Intrel Affil Actv 	59% verb: To become a member of a group or organization 
+JOIN	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	33% verb: To unite with, agree with, come together--"let us join together,"  "i join you in praising him"; to get or come together in an informal way--'i'll  join you later' 
+KEEP	IAV SUPV Intrel Hostile Power Strng Actv 	4% verb: Bar, restrain, prevent, preserve against 
+KICK	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	6% verb-idiom: 'kick out'--eject, expel 
+KILL	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv PFREQ 	98% verb: To deprive of life; figuratively 
+KILL	Neg Noun Hostile Ngtv Strng Actv Intrel 	2% noun: "Kill," "killing"--slaying, murder 
+KISS	DAV Pos SUPV Affil Pstv Actv Intrel 	
+KNOCK	DAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	36% verb: To strike, rap, collide, rattle, to criticize (1) 
+LAID	IAV Neg SUPV Intrel Econ* Power Hostile Ngtv 	28% idiom-verb: "Laid off"--discharged employees 
+LAY	IAV Neg SUPV Intrel Econ* Hostile Power Ngtv Strng Actv 	1% idiom-verb: "Lay off"--discharge employees 
+LEAD	IAV SUPV Intrel Power Strng Actv 	42% verb: To supply direction, orientation, guidance, to be in the vanguard 
+LEAGUE	IAV SUPV Intrel Affil Strng 	5% idiom: "In league with", allied with 
+LEAN	IAV SUPV Intrel Subm Weak 	9% idiom-verb: "Lean on"--depend or rely on 
+LET	IAV SUPV VERB MOD Intrel Power Strng 	63% verb: To allow, release, relax control, lease 
+LET	IAV SUPV Intj Power Intrel 	33% verb: Used as an auxiliary in the hortatory 
+LIMIT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	19% verb: To restrict by or confine within limits 
+LIQUIDATE	IAV Neg SUPV Intrel Ngtv Strng Actv Econ* Hostile 	
+LOOK	IAV SUPV Intrel Subm Weak 	1% verb-idiom: "Look up to"--to respect or esteem 
+LOOK	IAV SUPV Intrel Power Strng Actv 	1% verb-idiom: "Look after"--to minister to, care for, concern oneself with 
+LOVE	SV Pos SUPV Intrel Affil Pstv Psv 	48% verb: To have affection or strong liking for, especially for one of  opposite sex 
+LOVE	IAV SUPV Intrel Affil Strng Actv 	1% idiom-verb: 'make love' 
+LOVE	Noun Affil Intrel 	1% idiom-noun: 'love life'--one's sexual or romantic relations 
+MAKE	IAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	12% verb: Coerce, force to, cause to--"make him go" 
+MAKE	IAV Pos SUPV Intrel Affil Pstv Actv 	0% verb: "Make up (for)"--compensate, make reparation 
+MAKE	IAV Pos SUPV Intrel Affil Pstv 	3% idiom-verb: "Make friends," "make a friend" 
+MANAGE	IAV SUPV Intrel Power Strng Actv 	26% verb: To handle, control, get along. 
+MANAGE	Modif Power Strng Actv Intrel 	6% adjective: "Managing"--directing, in charge 
+MANIPULATE	IAV Neg SUPV Intrel Ngtv Strng Actv Power 	
+MARRY	DAV Pos SUPV Affil Kin* Pstv Intrel 	83% verb: To take a husband or wife 
+MARRY	Pos Modif Affil Kin* Pstv Intrel 	17% adj: "Married"--wedded 
+MATE	DAV Pos SUPV Intrel Affil Pstv 	
+MAY	SUPV VERB MOD PFREQ Intrel Power 	97% verb: Used to express possibility, opportunity, permission, or wish 
+MEDDLE	IAV Neg SUPV Actv Intrel Comform 	
+MEDIATE	IAV Pos SUPV Actv Comform Intrel Solve 	
+MEET	DAV SUPV Intrel Affil Actv 	43% verb: Having to do with persons--to encounter, to be in the physical  presence of, to group with (of people) 
+MERIT	IAV Pos SUPV Pstv Strng Intrel Affil 	
+MESH	IAV Pos SUPV Actv Intrel 	
+MIND	IAV SUPV Intrel Subm Weak 	2% verb: Pay attention to; obey--"mind your master;" tend--"mind the children" 
+MIND	IAV SUPV Intj Intrel Affil 	3% idiom: "Never mind"--don't bother, don't worry, pay no attention 
+MINISTER	IAV Pos SUPV Intrel Affil Actv Pstv 	3% verb: To care for, aid, service 
+MISLEAD	IAV Neg SUPV Intrel Ngtv Hostile Actv 	
+MONITOR	IAV SUPV Intrel Power Strng 	
+MOVE	IAV SUPV Intrel Power Strng Actv 	2% verb: To rouse by appeal to the mind or emotions, to influence 
+MURDER	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+NAME	Modif Intrel Subm Weak Psv 	4% idiom: "In (one's) name"; "in the name of"--with appeal to, on behalf of 
+NEGATE	IAV Neg SUPV Negate Ngtv Intrel Hostile 	
+NEGOTIATE	IAV Pos SUPV Actv Comform Intrel Exch Solve 	
+NOSEY	IPadj Neg Modif Intrel Comform 	
+NURSE	IAV Pos SUPV Intrel Affil Pstv Actv 	5% verb: To care for, foster, cherish, nurture 
+OBEY	IAV Pos SUPV Intrel Power Subm Pstv Weak Psv 	verb: To comply 
+OBLIGE	IAV Pos SUPV Intrel Subm Pstv Weak 	
+OBSTRUCT	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+OFFER	IAV Pos SUPV Affil Actv Pstv PFREQ Intrel 	84% verb: To present, propose, give 
+OFFICIATE	IAV SUPV Intrel Power Legal Strng 	
+OPPOSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	41% verb: To resist, combat, place opposite 
+OPPRESSION	Neg Noun Power Hostile Subm Intrel 	
+OUST	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+OUTFIT	IAV SUPV Intrel Power Strng Actv 	
+OVERBEARING	IndAdj Neg Modif Intrel Power 	
+OVERCAME	IAV SUPV Intrel Power Strng Actv 	
+OVERCOME	IAV Pos SUPV Intrel Power Strng Actv 	
+OVERWHELM	IAV SUPV Power Strng Arousal Intrel Ovrst 	
+PAMPER	IAV Pos SUPV Actv Other Intrel Affil Arousal 	
+PARTAKE	IAV SUPV Intrel Affil Actv 	
+PARTICIPATE	DAV SUPV Intrel Affil Actv PFREQ 	95% verb: To partake of, to share in some action 
+PARTICIPATE	Modif Actv Intrel Affil 	5% adj: "Participating"--sharing in some action 
+PARTICIPATION	Noun Actv Intrel Affil 	
+PARTOOK	IAV SUPV Intrel Actv Affil 	
+PASS	IAV SUPV Intrel Hostile 	1% verb: "Pass up"--to refuse, forego 
+PASS	IAV Neg SUPV Intrel Ngtv Actv 	1% verb: "Pass off"--to take place, be accepted or cause to be accepted as genuine 
+PAY	IAV Pos SUPV Affil Actv Pstv Intrel 	2% verb: Pay a visit or call 
+PAY	IAV SUPV Intrel Subm Actv Weak 	2% verb: To offer or give (tribute, honors, etc.) 
+PEACE	IAV Pos SUPV Intrel Affil Pstv Actv 	11% idiom-verb: "Make peace," to end strife 
+PERMIT	IAV Pos SUPV Intrel Power Pstv Strng Psv PFREQ 	94% verb: To allow, to make possible 
+PERSECUTION	Neg Noun Intrel Hostile 	
+PERSUASIVE	IPadj Pos Modif Comform Affil Intrel 	
+PEST	Neg Noun Vice Intrel 	
+PICK	IAV Neg SUPV Intrel Hostile Power Actv Strng Ngtv 	9% idiom-verb: "(to) pick on, a fight"--to tease, bully, encourage a fight 
+PITY	SV SUPV Intrel Affil Power Psv 	
+PLAGUE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+PLEASE	IAV Pos SUPV Intrel Affil Pstv 	23% verb: To satisfy, to make enjoyable for 
+PLEASED	IAV Pos SUPV Intrel ED Affil Pstv 	3% verb: To make enjoyable for, to satisfy (past tense) 
+POPULARITY	Pos Noun Affil Intrel Virtue 	
+PREDOMINATE	IAV SUPV Strng Ovrst Intrel Power 	
+PRESENT	IAV SUPV Actv Intrel Affil 	20% verb: To bestow, proffer, show, introduce, manifest 
+PRESIDE	IAV SUPV Intrel Power Strng Actv 	
+PREVENT	IAV SUPV Intrel Power Strng Actv 	verb: Hinder, keep from occurring 
+PREVENTION	IAV SUPV Intrel Power Strng 	
+PROHIBIT	IAV Neg SUPV Power Ngtv Strng Actv Intrel Legal 	
+PROMOTE	IAV SUPV Intrel Econ* Power Strng Actv 	
+PROMPT	IAV Pos SUPV Intrel Power Pstv Strng 	
+PROTECT	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	verb: To defend or guard from attack, damage, loss, etc. 
+PROVIDE	IAV Pos SUPV Intrel Affil Power Pstv Strng PFREQ 	97% verb: To furnish, supply, afford 
+PROVOKE	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+PRY	IAV Neg SUPV Intrel Comform Exert 	
+PUNISH	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+PUSH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	6% idiom-verb: "Push around"--to bully 
+PUT	IAV SUPV Psv Intrel Subm 	0% verb: 'put up with'--to bear or suffer, to tolerate 
+QUARRELSOME	IPadj Neg Modif Hostile Intrel 	
+QUARTER	DAV SUPV Intrel Power Affil 	4% verb: To provide with housing 
+QUIET	DAV SUPV Intrel Power Strng Actv 	7% verb: To silence 
+RAID	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+RAPPORT	Pos Noun Intrel Comform 	
+REACT	IAV SUPV Intrel Psv Subm 	
+REBEL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+RECEIVE	IAV SUPV Intrel Affil Psv Subm 	verb: To get, accept, admit, apprehend 
+RECONCILE	IAV Pos SUPV Intrel Pstv Affil 	
+RECONCILIATION	Pos Noun Comform Intrel Solve 	
+RECRUIT	IAV SUPV Intrel Power Milit Strng Actv 	
+REDEMPTION	Pos Noun Subm Exch Intrel Solve 	
+REGULATE	IAV SUPV Intrel Strng Actv Power 	
+REINFORCE	IAV SUPV Intrel Strng Actv Power 	
+REJECT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To refuse, cast off, rebuff 
+RELEASE	Modif Actv Intrel Affil 	32% noun-adj: A letting out, letting go, or freeing 
+RELIANCE	IAV SUPV Intrel Weak Subm 	
+RELIEVE	IAV SUPV Intrel Power Strng 	75% verb: To alleviate, disburden, ease 
+RELINQUISH	DAV SUPV Intrel Weak Psv Subm 	
+RELY	IAV SUPV Intrel Subm Weak Psv Ovrst 	
+RENUNCIATION	Neg Noun Intrel Comform Hostile 	
+REPARATION	Pos Noun Subm Exch Intrel Solve 	
+REPULSE	IAV Neg SUPV Intrel Ngtv Strng Actv Power Hostile 	
+REQUIRE	IAV SUPV Intrel Power Actv Strng PFREQ 	98% verb: To need, demand, compel 
+RESCUE	IAV Pos SUPV Pstv Actv Affil Intrel 	
+RESENT	IAV Neg SUPV Intrel Hostile Ngtv Psv 	verb: To react with displeasure or indignation from a sense of injury,  especially towards someone 
+RESIGN	IAV SUPV Intrel Subm Weak Psv 	
+RESIST	IAV SUPV Intrel Hostile Strng Actv 	
+RESPECT	IAV Pos SUPV Intrel Subm Pstv Psv 	48% verb-adj: To hold in esteem--esteemed 
+RESTRAIN	IAV SUPV Intrel Hostile Power Strng Actv 	
+RESTRICT	IAV Neg SUPV Intrel Hostile Power Strng Actv PFREQ Ngtv 	96% verb: To confine or limit 
+RETALIATE	IAV Neg SUPV Actv Hostile Intrel Exert 	
+REVENGE	Neg Noun Intrel Hostile 	
+RIVALRY	Neg Noun Intrel Hostile 	
+ROMANCE	Pos Noun Emot Pleasure Intrel 	
+ROOM	DAV SUPV Intrel Affil 	1% verb: To reside with or at 
+ROPE	DAV SUPV Intrel Power Actv 	2% verb: To lasso, to tie 
+ROUSE	IAV Pos SUPV Actv Exert Intrel Causal 	
+RULE	IAV SUPV Intrel Polit* Power Strng Actv 	13% verb: To govern, guide, determine 
+RULE	Modif Polit* Strng Actv Intrel Power 	12% noun-adj: "Ruling", judgement, determination, governing, in power 
+RUN	IAV SUPV Intrel Power Actv Strng 	9% verb: To manage, direct, control, guide, drive 
+RUN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	2% verb: "Run down"--to defame or speak ill of (4), destroy or injure  (2), wear down (2) 
+RUN	IAV SUPV Psv Intrel 	0% verb: "Run into"--encounter 
+SACRIFICE	IAV SUPV Intrel Subm 	
+SANCTION	IAV SUPV Intrel Legal Power Strng Psv 	
+SATISFY	IAV Pos SUPV Intrel Pstv Strng Affil 	28% verb: To give enjoyment or contentment, to fulfill 
+SCARE	IAV Neg SUPV Ngtv Strng Intrel Hostile Actv 	83% verb: To frighten 
+SCARED	IAV Neg SUPV Intrel ED Hostile Ngtv Strng 	4% verb: To frighten (past tense) 
+SCREW	IAV Neg SUPV Intrel Hostile Actv Ngtv 	
+SCUFFLE	Neg Noun Intrel Hostile Exert 	
+SECOND	IAV SUPV Intrel Affil Strng 	2% verb: To assist or support 
+SERVE	IAV SUPV Intrel Econ* Subm Actv Weak 	82% verb: To work for, be of assistance, or do one's duty; to answer the  purpose of, function as (17) 
+SERVICE	IAV Neg SUPV Intrel Hostile Subm Ngtv Weak 	2% idiom: "Lip service" - insincere expression of support 
+SERVITUDE	Neg Noun Weak Subm Intrel 	
+SETTLE	IAV SUPV Intrel Power Actv Strng 	31% verb: To resolve a dispute or problem, to calm. 
+SHADOW	IAV Neg SUPV Intrel Hostile Actv Ngtv 	
+SHAFT	IAV SUPV Intrel Hostile 	
+SHARE	DAV Pos SUPV Intrel Affil Pstv 	67% verb: To have, use or experience in common 
+SHELL	DAV Neg SUPV Intrel Hostile Milit Strng Ngtv Actv 	5% verb: To use (an) artillery warhead(s) 
+SHELTER	IAV Pos SUPV Intrel Power Pstv Strng Affil 	
+SHOCK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	29% verb: To jar with intense surprise, horror, disgust 
+SIDE	IAV SUPV Intrel Affil 	0% verb: To side with or against, agree or disagree 
+SIEGE	Neg Noun Hostile Polit Intrel 	
+SIGNIFY	IAV Pos SUPV Psv Comform Intrel Causal 	
+SKIRMISH	Neg Noun Hostile Intrel Exert 	
+SLIGHT	IAV Neg SUPV Intrel Hostile Ngtv Actv 	8% verb: To malign or insult 
+SMITTEN	SV Pos SUPV Psv Emot Pleasure Need Intrel 	
+SMOTHER	IAV Neg SUPV Actv Power Intrel Compl 	
+SOCIABLE	IPadj Pos Modif Affil Intrel Virtue 	
+SOCIAL	LY Affil Intrel 	5% adv: "Socially"--in the social sphere 
+SPARE	DAV Pos SUPV Intrel Affil Power Pstv Strng 	48% verb: To save from ill fortune 
+SPEAK	IAV SUPV Intrel Affil Actv 	2% verb: 'speak for'--represent 
+SPOKE	IAV SUPV Intrel Affil Actv 	1% idiom: "Spoke for"--represented 
+SPONSOR	IAV SUPV Intrel Power Strng Actv 	
+SPUR	IAV SUPV Intrel Power 	
+STALEMATE	Neg Noun Stay Comform Intrel 	
+STAND	IAV SUPV Affil Strng Actv Intrel 	7% verb: "Stand for," "stand up for"; represent, favor, defend 
+STAND	IAV SUPV Strng Psv Intrel Subm 	6% verb: Tolerate, bear, withstand 
+STANDSTILL	Neg Noun Stay Intrel Comform 	
+STARTLE	IAV Neg SUPV Intrel Hostile Ngtv Psv 	
+STEAL	DAV Neg SUPV Intrel Hostile Ngtv Legal Actv 	60% verb: To rob, thieve 
+STEP	IAV SUPV Intrel Power Actv Strng 	8% verb: "To step in"--to intervene 
+STICK	DAV SUPV Strng Actv Intrel 	18% verb: Adhere, remain, remain loyal 
+STIFLE	IAV Neg SUPV Intrel Ngtv Strng Power Hostile Actv 	
+STILL	IAV SUPV Intrel Power Strng Actv 	0% verb: To make quiet 
+STOLE	DAV Neg SUPV Intrel ED Hostile Ngtv Actv Legal 	verb: Past tense of steal 
+STOLEN	IAV Neg SUPV Intrel ED Hostile Ngtv Legal 	
+STOMACH	IAV SUPV Strng Intrel Subm 	3% verb: To endure 
+STOOD	IAV SUPV Intrel ED Affil Strng Actv 	4% verb: "Stood for," "stood up for"--favored, defended, represented 
+STOOD	IAV SUPV ED Strng Psv Intrel Subm 	2% verb: Tolerated, withstood 
+STOP	DAV SUPV Intrel Hostile Power Actv Strng 	18% verb: To restrain, hinder, prevent 
+STRUGGLE	Neg Noun Hostile Ngtv Actv Intrel 	55% noun: A fight, contention, effort 
+STRUGGLE	IAV Neg SUPV Intrel Hostile Ngtv Actv 	36% verb: To contend, fight 
+STRUGGLE	Neg Noun Ngtv Actv Intrel Hostile 	9% noun-adj: "Struggling"--contending or fighting 
+STUN	IAV SUPV Strng Intrel Hostile 	
+SUBDUE	IAV SUPV Intrel Strng Actv Power Hostile 	
+SUBJUGATE	IAV Neg SUPV Weak Subm Intrel Psv 	
+SUBJUGATION	Neg Noun Weak Subm Intrel 	
+SUBMISSIVE	IPadj Neg Modif Weak Subm Intrel 	
+SUBMIT	IAV SUPV Intrel Subm Weak Psv 	
+SUBSERVIENCE	Neg Noun Weak Subm Intrel 	
+SUBVERSION	Neg Noun Power Hostile Exert Intrel 	
+SUBVERT	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+SUFFER	IAV SUPV Intrel Subm Weak Psv 	0% verb: To allow, permit, or let some action take place 
+SUPPLY	IAV SUPV Intrel Affil Power Strng Actv 	32% verb: To provide 
+SUPPORT	IAV Pos SUPV Intrel Power Affil Pstv Strng Actv 	44% verb: Sustain, provide for, maintain, encourage, back--"i support  the program" (48); to hold up (0) 
+SUPPOSE	IAV SUPV Intrel Psv Power Subm 	36% adj: "Supposed (to)"--expected, under obligation 
+SUPPRESS	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+SUPPRESSION	Neg Noun Ngtv Strng Actv Power Hostile Intrel 	
+SURPRISE	IAV SUPV Intrel Actv 	45% verb: To catch unprepared, to provoke a feeling of surprise or wonder 
+SURRENDER	DAV SUPV Intrel Polit* Subm Milit Weak Psv 	
+SWEETHEART	Pos Noun HU Role Intrel 	
+SYMBOLIZE	IAV Pos SUPV Psv Intrel Comform 	
+TAKE	IAV SUPV Intrel Power Strng Actv 	3% verb-idiom: "Take advantage (of)"--make use (of), occasionally with  connotation of unfairness 
+TAKE	IAV SUPV Intrel Strng Actv Power Affil 	5% verb-idiom: "Take care (of)"--cure or solve, attend to, protect or nurse 
+TAKE	IAV SUPV Intrel Power Strng Actv 	2% verb-idiom: "Take over"--assume control 
+TAKE	IAV SUPV Intrel Affil 	1% verb: "Take to"--become fond of 
+TAX	IAV Neg SUPV Intrel Hostile Ngtv 	6% verb-adj: To burden or place a strain on, to demand taxes from (1) 
+TEND	IAV SUPV Intrel Power Strng Actv Affil 	6% verb: To care for 
+TERM	Noun Affil Intrel 	4% noun: Relations or standing with another 
+TEST	IAV SUPV Actv Intrel Power Acad 	28% verb: To examine, to determine competence 
+THREATEN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	verb: To menace 
+THROW	IAV SUPV Intrel Affil Actv 	1% verb: "Throw a party" - to organize or sponsor a party 
+THWART	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+TRAIN	IAV SUPV Intrel Power Actv 	11% verb: To subject to instruction and/or discipline 
+TRANSACTION	Noun Actv Intrel 	
+TRAP	DAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	43% verb: To capture or ensnare 
+TREASURE	IAV Pos SUPV Pstv Affil Intrel 	
+TRICK	IAV Neg SUPV Intrel Hostile Ngtv Actv 	
+TRUST	IAV Pos SUPV Intrel Affil Subm Pstv Psv 	46% verb: To place or have confidence in someone or something 
+TRUST	Pos Noun EMOT Affil Pstv Intrel 	19% noun: The confidence placed in someone or something 
+TRY	IAV SUPV Intrel Legal Power Actv Hostile 	1% verb: To ascertain th rough judiciary means 
+TURN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	1% verb: Become suddenly hostile--to "turn on," "turn upon" 
+TURN	IAV SUPV Intrel Subm Psv 	2% verb: "Turn in"--deliver up, submit, tender 
+TURN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	0% verb: "Turn down"--to reject 
+UNCONDITIONAL	Modif Negate Ovrst Intrel Subm 	
+UNCONTESTED	Modif Negate Ovrst Strng Intrel Subm 	
+UNDER	PREP Power Intrel Subm 	51% prep-adv: Subject to the influence, authority, guidance, supervision  or direction of 
+UNDERGO	IAV SUPV Psv Intrel Subm 	
+UNDERGONE	IAV SUPV Psv Intrel Subm 	
+UNDERMINE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+UNDERWENT	IAV SUPV Subm Psv Intrel 	
+UNDISPUTED	Modif Negate Ovrst Strng Intrel Power 	
+UNIFY	IAV SUPV Intrel Affil Strng Actv 	
+UNITE	IAV SUPV Intrel Affil Actv 	4% verb: To join, combine, or incorporate so as to form a single whole or unit 
+UNLEASH	IAV SUPV Intrel Hostile Negate Strng Actv 	
+UPROOT	IAV Neg SUPV Actv Travel Intrel 	
+URGE	IAV SUPV Intrel Power Strng Actv 	
+USURP	IAV Neg SUPV Actv Hostile Polit Fetch Exert Intrel Power 	
+VIE	IAV Neg SUPV Actv Intrel Hostile Try 	
+VIOLATE	IAV Neg SUPV Intrel Hostile Ngtv Actv 	
+VOLUNTEER	IAV SUPV Intrel Subm Affil 	4% verb: To offer oneself for a service or undertaking 
+WAIT	IAV SUPV Intrel Subm 	4% verb: "Wait on"--to serve 
+WAIT	Neg Modif Hostile Actv Intrel Ngtv 	1% idiom-adj: "In wait"--in ambush 
+WAKE	DAV SUPV Intrel Actv 	19% verb: Rouse from sleep 
+WARLIKE	IPadj Neg Modif Hostile exert Polit Intrel Affil 	
+WAY	Handels Intrel 	1% idiom-verb: 'give way'--yield--handled by "give" 
+WAY	IAV SUPV Intrel Power 	0% verb: 'have one's way'--prevail 
+WAY	IAV SUPV Intrel Affil Actv Strng 	0% verb: "Go out of one's way"--make an unusual effort 
+WED	DAV SUPV Affil Intrel Kin* 	
+WHIP	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	50% verb: To hit, beat, drive, vanquish 
+WITCH	IAV SUPV Intrel Hostile Relig 	9% verb: To cast spells upon 
+WITHHELD	IAV Neg SUPV Intrel ED Hostile Strng Actv Ngtv 	
+WITHHOLD	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	
+WITHSTAND	IAV SUPV Intrel Strng Actv Power Hostile 	
+WOO	IAV Pos SUPV Actv Other Affil Intrel Comform 	
+WORRY	IAV Neg SUPV Intrel Ngtv Actv Hostile 	10% verb: To cause to feel anxious 
+WOUND	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	46% verb: Physically or emotionally injure 
+WRONG	IAV Neg SUPV Intrel Hostile Ngtv 	1% verb: To injure, malign, treat unfairly 
+YIELD	SUPV Intrel Subm Weak 	

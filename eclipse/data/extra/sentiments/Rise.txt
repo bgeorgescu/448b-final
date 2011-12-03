@@ -1,0 +1,26 @@
+word	tags	comments
+ARISE	IAV SUPV Rise Strng Actv 	
+AROSE	IAV SUPV ED Rise Strng Actv 	
+ASCEND	DAV SUPV Rise Strng Actv 	
+ASCENT	Noun Rise Strng Actv 	
+BLAST	IAV Neg SUPV Rise Ngtv Strng Actv 	
+CLIMB	IAV SUPV Rise Strng Actv 	verb: To move upward, to ascend. 
+COME	IAV SUPV Rise 	4% idiom-verb: "Come up"--about to occur, rise or arise 
+ELEVATE	DAV SUPV Rise Strng Actv 	
+FLEW	IAV SUPV Rise ED Strng Actv 	verb: Moved swiftly, usually through the air (past tense of fly) 
+FLOAT	DAV SUPV Rise Psv 	
+FLOOD	IAV SUPV Rise Strng 	
+FLY	IAV SUPV Rise Strng Actv 	62% verb: To move swiftly, usually through the air 
+JUMP	DAV SUPV Rise Actv PFREQ 	95% verb: To leap; to rise or increase suddenly (1) 
+LEAP	Noun Actv Rise 	
+LEAP	DAV SUPV Actv Rise 	
+OUTREACH	IAV SUPV Rise Strng Actv 	
+PEAK	IAV SUPV Rise Strng 	
+RAISE	DAV SUPV Rise Strng Actv 	57% verb: To elevate, to make rise, to increase in number or volume; in  relation to money 
+RISE	DAV SUPV Rise Strng Actv 	56% verb: To move upward or ahead, increase in degree or capacity, expand 
+ROSE	DAV SUPV Rise ED Strng Actv 	75% verb: Moved upward or ahead, increased in degree or capacity, expanded 
+SCALE	IAV SUPV Actv Rise 	
+SOAR	IAV SUPV Rise Strng 	
+STRETCH	DAV SUPV Rise Actv 	
+SURFACE	IAV SUPV Rise 	0% verb: To come to the top, to put a top on 
+WELL	IAV SUPV Rise Strng 	0% verb: To overflow, gush 

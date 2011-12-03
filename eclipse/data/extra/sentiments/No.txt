@@ -1,0 +1,8 @@
+word	tags	comments
+DISAGREE	IAV No SUPV Hostile Ngtv Comform 	verb: To differ 
+MEAN	No LY Negate Ovrst 	1% idiom-adv: "By no means"--not at all 
+NAY	No Intrj  	
+NO	No Intj Negate Hostile 	49% adv: Used as interjection expressing refusal, denial, etc., or with  comparatives meaning "not at all" 
+NOPE	No Intrj  	
+UGH	No Intrj  	
+WRONG	No Noun Vice Ngtv PFREQ 	noun-adj: Not in accordance with truth, morality, appropriateness, justice,  or the like 

@@ -1,0 +1,54 @@
+word	tags	comments
+ACCOMPLISHMENT	Pos Noun Goal Pstv Strng Actv Power 	
+ACHIEVEMENT	Pos Noun Goal Pstv Actv Power 	
+AIM	Noun ABS Abs* Goal Actv 	76% noun: Something intended or desired to be attained by one's efforts-  goal, purpose. 
+ASPIRATION	Pos Noun Think Goal Ach 	
+ASPIRE	SV Pos SUPV Actv Goal Try Ach 	
+BENEFIT	Pos Noun Goal Pstv Strng 	29% noun: Gain, good deed 
+CAUSE	Noun ABS Abs* Goal 	18% noun: A collective end or purpose 
+CHANCE	Noun Goal 	66% noun: An opportunity 
+CHOICE	Noun Goal Psv 	noun-adj: Act or object of choosing, that which is preferred or preferable  to others. 
+CONQUEST	Pos Noun Goal Ach 	
+DECISION	Noun ABS Abs* Goal Strng Actv 	noun: A judgment, deciding 
+DESERT	Noun Goal 	17% noun: Punishment or reward as 'just deserts' or 'deserts' 
+DESTINATION	Noun Goal 	
+DESTINY	Noun ABS Abs* Goal Strng 	
+END	Noun ABS Abs* Goal Psv Actv 	7% noun: Goal, purpose 
+FILL	Pos Noun Goal Pstv 	2% noun: Condition of satisfaction as 'to have one's fill' 
+FIND	Noun Goal Psv 	0% noun: "Finding"--a judgment or discovery 
+FULFILLMENT	Pos Noun Goal Pstv Strng 	
+GAIN	Pos Noun Goal ECON Econ* Pstv Strng 	17% noun: Profit, advantage, progress 
+GOAL	Noun ABS Abs* Goal 	noun: Aim, end, point of achievement or success 
+HEART	Noun Goal Strng 	6% noun-adj: The center or vital part of anything non-organismic 
+IDOL	Pos Noun HU Role Goal 	
+IDOLIZE	SV Pos SUPV Actv Other Goal 	
+INNOVATION	Noun Goal 	
+INSPIRATION	Pos Noun Other Ach Goal Arousal 	
+INSPIRATIONAL	IndAdj Pos Modif Other Ach Goal Arousal 	
+INTENTION	Noun Goal Actv 	
+INVENTION	Noun Goal 	
+MERITORIOUS	IndAdj Pos Modif Econ Goal Virtue 	
+OBJECT	Noun ABS Abs* Goal 	19% noun: A goal, desired outcome, focal point 
+OBJECTIVE	Noun ABS Abs* Goal Strng 	83% noun: Aim or goal 
+OUTCOME	Noun Goal 	
+PERFECTION	Pos Noun Compl Virtue Ovrst Goal 	
+PINNACLE	Pos Noun Compl Virtue Goal 	
+PRIZE	Pos Noun Goal Pstv Strng 	
+PROCEED	Noun Goal ECON Econ* 	3% noun: "Proceeds"--that which results or accrues from some action 
+PROFIT	Pos Noun Goal ECON Econ* Pstv Strng 	
+PURPOSEFUL	IndAdj Pos Modif Think Strng Goal Ach 	
+RESULT	Noun Goal 	74% noun: Outcome, consequence 
+RESULTANT	Noun Goal 	
+RETURN	Noun Goal ECON Econ* 	3% noun: Yield, profit 
+REWARD	Pos Noun Goal ECON Econ* Pstv Strng 	33% noun: Compensation, profit, return 
+SELECTION	Noun Goal Actv 	
+SOLUTION	Pos Noun ABS Abs* Goal Pstv 	noun: Answer, means of solving a problem 
+SURVIVAL	Pos Noun ABS Abs* Goal Pstv Strng 	
+TARGET	Noun Goal 	
+TRIUMPH	Pos Noun Goal Pstv Strng Power 	
+VENGEANCE	Neg Noun Goal Hostile Ngtv Strng Actv 	
+VICTORY	Noun Goal POLIT Polit* Power Strng 	noun: Triumph 
+WIN	Noun Goal Strng Power 	2% noun-adj: "Winning" - victory, producing victory 
+WIN	Noun Goal ECON Econ* Strng 	5% noun: "Winnings" - profit, usually from gambling 
+WIN	Noun Goal Strng Power 	0% noun: "Win" - a victory 
+YIELD	Noun Econ* ECON Goal 	

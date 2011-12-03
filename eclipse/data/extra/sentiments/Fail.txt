@@ -1,0 +1,138 @@
+word	tags	comments
+ABANDON	IAV Neg SUPV Fail Ngtv Weak 	
+ABANDONMENT	Neg Noun Fail Weak 	
+ABSENCE	Neg Noun Weak Fail 	
+ABSENT	IndAdj Neg Modif Weak Psv Fail 	
+ABSENT-MINDED	IndAdj Neg Modif Weak Psv Fail 	
+ABSENTEE	Neg Noun Hostile Weak Fail Intrel Vice 	
+AIMLESS	IndAdj Neg Modif Subm Psv Fail 	
+ASTRAY	Neg Modif Weak Psv Fail 	
+ASUNDER	IndAdj Neg Modif Weak Psv Fail 	
+BACK	IAV SUPV Fail Strng Actv 	1% verb: To move or cause to move backwards, to abandon a position or argument 
+BAIL	IAV Neg SUPV Fail Weak Actv 	
+BALK	IAV Neg SUPV Psv Weak Fail 	
+BANKRUPT	IndAdj Neg Modif Vice Econ Fail Quan 	
+BANKRUPTCY	Neg Noun Vice Econ Fail Quan 	
+BLOCKHEAD	IndAdj Neg Modif Weak Fail Vice 	
+BLUNDER	Neg Noun Ngtv Weak Actv Fail 	
+BOLT	IAV Neg SUPV Move Actv Fail Intrel 	
+BREAK	IAV Neg SUPV Fail Ngtv Weak Psv 	8% verb: "Break down"--to collapse, go out of working order 
+BREAKDOWN	IAV Neg SUPV Psv Weak Fail 	
+BROKE	IAV Neg SUPV ED Fail Ngtv Weak Psv 	3% verb: "Broke (broken) down"--collapsed, went out of working order 
+BUCKLE	IAV Neg SUPV Weak Subm Fail Psv 	
+CALAMITY	Neg Noun Undrst Fail 	
+CAPITULATE	IAV Neg SUPV Psv Subm Weak Fail 	
+CAPSIZE	IAV Neg SUPV Fail 	
+CLOG	IAV Neg SUPV Psv Fail 	
+DEFAULT	IAV Neg SUPV Actv Fail Econ 	
+DELINQUENCY	Neg Noun Vice Weak Fail 	
+DELINQUENT	IndAdj Neg Modif Vice Weak Fail 	
+DESTRUCTION	Neg Noun Hostile Ngtv Actv Vice Power Fail 	noun: The act of destroying, fact or state of being destroyed 
+DISABLE	IAV Neg SUPV Actv Fail 	
+DISAPPOINT	IAV Neg SUPV Fail Ngtv 	12% verb: To displease 
+DISARM	IAV Neg SUPV Actv Fail 	
+DISSATISFY	IAV Neg SUPV Weak Fail 	
+DROOP	DAV Neg SUPV Psv Weak Fail 	
+DROP	DAV Neg SUPV Fail Ngtv Weak Actv 	56% verb: To let fall, give up--transitive 
+DROUGHT	Neg Noun Quan Fail 	
+ERR	IAV Neg SUPV Actv Fail Weak 	
+ERRONEOUS	IndAdj Neg Modif Fail Weak 	
+FAIL	IAV Neg SUPV Fail Ngtv Weak Psv 	56% verb: To be unsuccessful or lose strength 
+FAIL	IAV Neg SUPV Fail Ngtv Weak Psv 	39% verb: To neglect, omit, or fall short of - "fail to" 
+FAIL	IAV Neg SUPV Hostile Ngtv Weak Psv Fail 	2% verb: To disappoint or be inadequate for 
+FIASCO	Neg Noun Weak Fail Ovrst 	
+FLAW	Neg Noun Weak Fail 	
+FLOUNDER	IAV Neg SUPV Fail Weak Psv 	
+FOIBLE	Neg Noun Weak Fail 	
+FORFEIT	IAV Neg SUPV Fail Ngtv Weak Psv 	
+FOUNDER	IAV Neg SUPV Fail Ngtv Weak Psv 	
+FRAUD	Neg Noun Weak Comform Fail 	
+FRAUDULENT	IndAdj Neg Modif Weak Comform Fail 	
+FUMBLE	IAV Neg SUPV Actv Weak Fail 	
+GIVE	DAV SUPV Fail Weak 	6% idiom-verb: "Give up," "give in," "give way," "give ground"--yield 
+GIVE	DAV SUPV Weak Psv Fail 	2% verb: "Give up"--abandon hope, cease effort 
+HELPLESS	Neg Modif EVAL Subm Ngtv Weak Psv Fail 	
+ILLITERATE	IndAdj Neg Modif Weak Fail 	
+ILLOGICAL	IndAdj Neg Modif Weak Fail 	
+IMPERFECT	IndAdj Neg Modif Vice Fail 	
+IMPURITY	Neg Noun Eval Vice Fail 	
+INACCURACY	Neg Noun Fail Eval 	
+INCOMPETENCE	Neg Noun Fail Eval 	
+INCOMPETENT	IndAdj Neg Modif Fail Eval 	
+INCURABLE	IndAdj Neg Modif Fail Stay 	
+INEFFECTIVE	IndAdj Neg Modif Stay Fail 	
+INEFFECTIVENESS	Neg Noun Stay Fail 	
+INEFFECTUAL	IndAdj Neg Modif Stay Fail 	
+INEFFECTUALNESS	Neg Noun Stay Fail 	
+INEFFICIENCY	Neg Noun Stay Fail Work 	
+INJURE	IAV Neg SUPV Psv Pain Fail 	
+INSANE	IndAdj Neg Modif Think Fail Vice 	
+INSENSIBLE	IndAdj Neg Modif Think Fail 	
+INSUFFICIENCY	Neg Noun Fail Decr Weak 	
+INTOXICATE	IAV Neg SUPV Natpro Think Fail Actv 	
+JOBLESS	IndAdj Neg Modif Econ Work Fail 	
+LAG	IAV Neg SUPV Fail Weak Psv 	
+LAME	IndAdj Neg Modif Weak Fail 	
+LANGUISH	SV Neg SUPV Psv Fail Weak Decr 	
+LAPSE	Neg Noun Fail 	
+LAZILY	Neg Modif Weak Fail 	
+LEAK	IAV Neg SUPV Psv Fail Comform 	
+LET	IAV Neg SUPV Fail Ngtv 	1% idiom-verb: "Let down"--to disappoint or be disappointed 
+LOSE	DAV Neg SUPV Fail Ngtv Weak 	20% verb: To be defeated, to fail 
+LOST	DAV Neg SUPV ED Ngtv Weak Fail Psv 	6% verb: Past tense of "lose"--failed, was defeated 
+MESS	IAV Neg SUPV Fail Ngtv 	10% verb: Make a mess of 
+MIND	IAV Neg SUPV Fail Ngtv Weak Psv 	0% idiom-verb: "Lose (one's) mind"--lose one's sanity 
+MISHANDLE	IAV Neg SUPV Actv Fail 	
+MISHAP	Neg Noun Fail 	
+MISINFORM	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISINFORMED	IndAdj Neg Modif Comform Fail Undrst 	
+MISREPRESENT	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISS	IAV Neg SUPV Fail Ngtv Weak 	80% verb: To fail to do or take advantage of, to escape, to notice or  regret the absence of 
+MISS	Modif Weak Psv Fail 	8% adj: "Missing"--absent, lacking 
+MISTAKEN	IAV Neg SUPV Actv Percv Fail Undrst 	
+MISTRUST	IAV Neg SUPV Actv Percv Fail Undrst 	
+MISUNDERSTANDING	Neg Noun Comform Fail Undrst 	
+MISUSE	Neg Noun Fail Vice 	
+NEGLECT	IAV Neg SUPV Fail Ngtv Hostile 	
+NIGHTMARE	Neg Noun Hostile Fail 	
+OMIT	IAV Neg SUPV Fail Ngtv Weak Psv 	
+ORDER	IAV Neg SUPV Fail Weak Psv Ngtv 	1% idiom-adj: "Out of order"--not functioning, disabled 
+OVERSIGHT	Neg Noun Percv Fail Vice 	
+PERPLEXITY	Neg Noun Think Fail 	
+PIECE	IAV Neg SUPV Ngtv Weak Psv Fail 	1% verb: "Go to pieces"--suffer a breakdown 
+PRETENSE	Neg Noun Comform Fail Hostile 	
+QUITTER	Neg Noun HU Fail Weak 	
+RASH	IndAdj Neg Modif Think Fail Vice 	
+REGRESS	IAV Neg SUPV Fail Ngtv Weak Psv 	
+RESIGNATION	Neg Noun Fail Affil 	
+RUIN	IAV Neg SUPV Fail Ngtv Strng Actv 	65% verb: To destroy or spoil 
+RUN	IAV SUPV Fail Actv 	1% idiom: 'run riot'--get out of control 
+SENILE	IndAdj Neg Modif Think Fail 	
+SENSELESS	IndAdj Neg Modif Think Fail 	
+SHIRK	IAV Neg SUPV Fail Weak Actv 	
+SHODDY	IndAdj Neg Modif Weak Fail 	
+SINFUL	IndAdj Neg Modif Doctr Fail 	
+SNOW	IAV SUPV Fail Psv 	5% verb: 'snowed under'--to be buried as with snow, overcome 
+SPILL	IAV Neg SUPV Actv Fail 	
+STUPOR	Neg Noun Think Fail 	
+TARDY	IndAdj Neg Modif Time Fail 	
+THOUGHTLESS	IndAdj Neg Modif Emot Pain Think Fail 	
+THROW	IAV Neg SUPV Fail Ngtv Actv 	1% verb-idiom: "Throw the game" - to arrange to lose 
+TRAITOR	Neg Noun HU Role Fail Hostile Affil Ovrst 	
+TRUANT	IndAdj Neg Modif Fail Legal 	
+UNCIVIL	IndAdj Neg Modif Doctr Fail 	
+UNFAITHFUL	IPadj Neg Modif Fail Vice Weak 	
+UNFORESEEN	IndAdj Neg Modif Percv Fail 	
+UNLAWFUL	IndAdj Neg Modif Legal Fail 	
+UNNOTICED	IndAdj Neg Modif Percv Fail 	
+UNOBSERVED	IndAdj Neg Modif Percv Fail 	
+UNPROFITABLE	IndAdj Neg Modif Econ Fail 	
+UNREASONABLE	IndAdj Neg Modif Think Fail Stay 	
+UNSEEN	IndAdj Neg Modif Percv Fail 	
+UNSUCCESSFUL	IndAdj Neg Modif Vice Negate Ngtv Weak Subm Fail 	
+UNTIMELY	IndAdj Neg Modif Time Fail 	
+UNTRAINED	IndAdj Neg Modif Weak Fail 	
+VEX	IAV Neg SUPV Think Fail Stay 	
+VEXATION	Neg Noun Undrst Think Fail 	
+VEXING	IndAdj Neg Modif Undrst Think Fail 	
+WEAKEN	IAV Neg SUPV Fail Weak Subm Decr 	

@@ -1,0 +1,105 @@
+word	tags	comments
+ALBUM	Noun Object COM Comnobj 	
+ART	Pos Noun Object COM Exprs Pstv Comnobj 	63% noun-adj: Painting, and more generally all the 'fine arts,' having  to do with beauty 
+ATLAS	Noun Object COM Comnobj 	
+BIBLE	Noun Object COM Relig Comnobj 	
+BIBLICAL	Modif Relig Object Comnobj 	
+BILL	Noun Object POLIT COM Polit* Comnobj 	33% noun: Draft of proposed, or enacted statute (rarely, playbill, notice,  advertisement (0)) 
+BILL	Noun Object ECON COM Econ* Comnobj 	53% noun: Statement of money owed for goods or services 
+BOARD	Noun Object COM Acad Comnobj 	7% noun: Blackboard 
+BOOK	Noun Object COM Comnobj 	noun-adj: Printed volume 
+BULLETIN	Noun Object COM Comnobj 	
+CASH	Noun Object COM ECON Econ* Comnobj 	
+CENT	Noun Object COM ECON Econ* Comnobj 	
+CERTIFICATE	Noun Object Legal Power Comnobj 	
+CHART	Noun Object COM Comnobj 	
+CHARTER	Noun Object COM Comnobj 	
+CHECK	Noun Object COM ECON Econ* Comnobj 	41% noun: A bank money order, a bill 
+CHEQUE	Noun Object COM Econ* ECON Comnobj 	
+COIN	Noun Object COM ECON Econ* Comnobj 	
+CONSTITUTION	Noun Object COM POLIT Polit* Strng Comnobj 	
+CONTENT	Noun Object Comnobj 	8% noun: "Contents"--that which is contained 
+COPY	Noun Object COM Actv Comnobj 	
+CORPUS	Noun Object COM Comnobj 	
+CURRENCY	Noun Object COM ECON Econ* Comnobj 	
+DICTIONARY	Noun Object COM Comnobj 	
+DOCUMENT	Noun Object COM Comnobj 	
+DOLLAR	Noun Object ECON POLIT COM Econ* Comnobj 	noun-adj: Monetary unit 
+DRAW	Noun Object COM Comnobj 	5% noun-adj: "Drawing"--a picture, the making of sketches 
+EDITION	Noun Object COM Comnobj 	
+FILM	Noun Object COM Comnobj 	noun-adj: Motion pictures or photographs, pertaining to same 
+FLAG	Noun Object COM POLIT Polit* Comnobj 	
+FOLDER	Noun Object COM Comnobj 	
+GAZETTE	Noun Object COM Comnobj 	
+GIFT	Pos Noun Object COM ECON Affil Pstv Comnobj 	
+GOSPEL	Noun Object COM Relig Comnobj 	
+HEAD	Noun Object COM Comnobj 	0% noun: 'heading'--top line, caption 
+ILLUSTRATION	Noun Object COM Comnobj 	
+INDEX	Noun Object COM Comnobj 	
+INSERT	Noun Object COM Actv Comnobj 	
+ISSUE	Noun Object COM Comnobj 	5% noun: That which is printed or published and distributed 
+JOURNAL	Noun Object COM Comnobj 	
+LABEL	Noun Object COM Comnobj 	
+LEDGER	Noun Object COM ECON Econ* Comnobj 	
+LETTER	Noun Object COM PFREQ Comnobj 	90% noun: A communication in writing or printing addressed to a person  or a number of persons 
+LETTER	Noun Object COM Comnobj 	6% noun: One of the marks or signs conventionally used in writing and  printing to represent speech sounds 
+LICENSE	Noun Object COM Legal Comnobj 	
+LIST	Noun Object COM Comnobj 	
+LOAN	Noun Object COM ECON Econ* PFREQ Comnobj 	90% noun: Something lent or furnished on condition of being returned,  especially a sum of money 
+MAGAZINE	Noun Object COM Comnobj 	
+MAIL	Noun Object COM Comnobj 	
+MAP	Noun Object COM Comnobj 	
+MARK	Noun Object COM Comnobj 	47% noun-adj: A symbol, indication, differentiated by a sign 
+MARK	Noun Object COM Comnobj 	3% noun-adj: "Marking(s)"--a written or visual pattern 
+MARKER	Noun Object COM Comnobj 	
+MEDAL	Noun Object COM Exprs Comnobj 	
+MONETARY	Modif Object ECON Econ* Comnobj 	adjective: Pertaining to money or finance 
+MONEY	Noun Object COM ECON Econ* Comnobj 	noun-adj: Currency, medium of exchange, wealth 
+MONUMENT	Noun Object COM POLIT Strng Comnobj 	
+MOVIE	Noun Object COM Exprs Comnobj 	
+NEWSPAPER	Noun Object COM Comnobj 	noun-adj: Periodical containing current news and events 
+NOTE	Noun Object COM Comnobj 	56% noun: Memorandum, letter, annotation (16); mark of some quality, condition  or fact (9); tone, hint (4); musical tone (4) 
+NOTICE	Noun Object COM Comnobj 	14% noun: Perception, recognition, information, announcement, warning 
+NOVEL	Noun Object COM Exprs Comnobj 	
+OFFER	Pos Noun Object COM Affil Pstv Strng Psv Comnobj 	11% noun: "Offering", something presented, a donation 
+PACKAGE	Noun Object Comnobj 	
+PAGE	Noun Object COM Comnobj 	
+PAINT	Noun Object COM Exprs Comnobj 	27% noun: 'painting' . . . the end product of an artist's work 
+PASS	Noun Object COM Comnobj Power 	1% noun: A certificate or other token giving permission or authorization;  a route of access (0) 
+PATENT	Noun Object COM ECON Legal Comnobj Ovrst 	
+PENSION	Noun Object COM ECON Econ* Comnobj 	
+PERMIT	Noun Object COM Legal Comnobj Power 	6% noun: A written license 
+PHOTO	Noun Object COM Comnobj 	
+PHOTOGRAPH	Noun Object COM Comnobj 	
+PHOTOGRAPHIC	Modif Object Comnobj 	
+PICTURE	Noun Object COM Exprs Comnobj 	noun: A visual representation--a painting, drawing, photograph, movie mental image 
+PIECE	Noun Object COM Econ* Comnobj 	3% noun: A coin 
+POINTER	Noun Object COM Comnobj 	
+PORTRAIT	Noun Object COM Exprs Comnobj 	
+POSTER	Noun Object COM Comnobj 	
+PRESENT	Noun Affil Object Comnobj 	7% noun: A gift 
+PRINT	Noun Object COM Actv Comnobj 	
+PUBLICATION	Noun Object COM Comnobj 	
+QUESTIONNAIRE	Noun Object COM Acad Comnobj 	
+RECORD	Noun Object COM Exprs Comnobj 	29% noun-adj: "Record," "recording"--a disk or tape imprinted with sound,  the act of such imprinting 
+REGISTER	Noun Object Comnobj 	
+REPORT	Noun Object COM Actv Comnobj 	52% noun-adj: A document describing something used for official business 
+RESUME	Noun Object COM Comnobj 	
+RICH	Pos Noun Object ECON Econ* Power Pstv Strng Comnobj 	11% noun: Monetary wealth, "riches" 
+ROLL	Noun Object COM Comnobj 	5% noun: A list or scroll ('roll call,' 'welfare roll') 
+SCULPTURE	Noun Object COM Exprs Comnobj 	
+SECURITY	Pos Noun Econ* Pstv Object Comnobj 	5% noun: Bonds etc., issues of capital surety, or generalized body of issues 
+SIGNATURE	Noun Object COM Comnobj 	
+SKETCH	Noun Object COM Exprs Actv Comnobj 	
+STAMP	Noun Object COM Econ* Comnobj 	
+SUMMON	Noun Object COM Legal Power Strng Actv Comnobj 	
+TELEGRAM	Noun Object COM Comnobj 	
+TELEVISION	Noun Object COM Comnobj 	noun-adj: Mass (visual) medium 
+TESTAMENT	Noun Object COM Legal Relig Comnobj 	
+TESTIMONY	Noun Object COM Legal Comnobj 	
+TEXT	Noun Object COM Acad Comnobj 	
+TICKET	Noun Object COM Econ* Comnobj 	
+TYPEWRITER	Noun Object COM Comnobj 	
+VERSE	Noun Object COM Exprs Comnobj 	
+WARRANT	Noun Object COM Legal Comnobj 	
+WILL	Noun Legal Object Comnobj 	0% noun: Legal document 

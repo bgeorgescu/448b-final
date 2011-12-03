@@ -1,0 +1,896 @@
+word	tags	comments
+ABSOLVE	IAV Pos SUPV Actv Comform Intrel 	
+ACCEDE	IAV Pos SUPV Actv Comform Affil 	
+ACCLAIM	Pos Noun Comform Virtue 	
+ACCLAMATION	Pos Noun Comform Virtue 	
+ACCOLADE	Pos Noun Comform Virtue 	
+ACCOUNT	Noun ECON Econ* Comform 	26% noun: A bank account, charge account, etc.--a business relation; a  record of business transactions 
+ACCOUNT	Noun COM Comform 	16% noun: A narration, explanation 
+ACCUSATION	Neg Noun Comform Hostile Intrel 	
+ACCUSE	Neg Modif Legal Ngtv Comform Hostile 	
+ACCUSE	IAV Neg SUPV Hostile Ngtv Comform 	
+ACKNOWLEDGEMENT	Pos Noun Comform Ovrst 	
+ADDRESS	IAV SUPV Actv Comform 	41% verb: To direct spoken or written communication to 
+ADDRESS	Noun COM Comform Actv 	48% noun: A speech (7), the place where mail can be sent (6) 
+ADJUDICATION	Noun COM Comform Power 	
+ADMISSIBLE	Modif Comform Subm Psv 	
+ADMISSION	Noun COM Comform Subm Psv 	
+ADMIT	IAV Pos SUPV Subm Pstv Weak Psv Comform 	63% verb: To acknowledge, confess, agree 
+ADMIT	Pos LY Ovrst Comform Subm Pstv Weak Psv 	3% adv: "Admittedly"--adverbial form of sense 1 
+ADMONITION	Neg Noun Comform Actv 	
+ADULATION	Pos Noun Comform Emot Pleasure Strng Eval 	
+ADVICE	Noun COM Comform Affil 	noun: An opinion recommended, or offered, as worthy to be followed. 
+ADVISORY	Modif Comform 	
+ADVOCACY	Pos Noun Comform Affil 	
+ADVOCATE	IAV SUPV Power Strng Actv Comform 	
+AFFIRM	IAV Pos SUPV Power Pstv Strng Comform 	
+AFFIRMATION	Pos Noun Eval Comform 	
+AGGRIEVE	SV Neg SUPV Hostile Actv Comform 	
+AGREE	Modif Comform Affil Psv 	4% adj: "Agreed"--settled or determined by mutual consent, as "the agreed  price"; of the same opinion, as "we are agreed" 
+AGREEABLE	Pos Modif Comform EVAL Pstv 	
+AGREEMENT	Pos Noun COM Comform Affil Pstv Strng 	noun: Unanimity of opinion, state of accord, mutual arrangement. 
+AIR	Noun COM Comform 	5% noun: A characteristic quality, or trait; affectation (1) 
+AIR	IAV SUPV Strng Comform 	1% verb: To expose to air (0), to make known, publicize (1) 
+AIR	Noun COM Comform 	0% noun: Broadcast medium 
+ALARM	Noun COM Comform Actv 	
+ALARM	IAV Neg SUPV Ngtv Actv Comform 	
+ALIBI	Neg Noun Comform Subm Psv Weak 	
+ALLEGATION	Neg Noun COM Comform Hostile Legal Ngtv 	
+ALLEGE	IAV Neg SUPV Comform Weak Undrst 	
+ALLUSION	Noun COM Comform 	
+ALONG	IAV SUPV Affil Comform 	6% idiom-verb: "Go along (with)"--agree 
+AMENDMENT	Noun POLIT COM Comform Legal Polit* 	
+ANECDOTE	Noun COM Comform Exprs 	
+ANNOUNCE	Modif Comform 	
+ANNOUNCE	DAV SUPV Comform 	
+ANNOUNCEMENT	Noun COM Comform 	
+ANONYMOUS	Modif Comform 	
+ANSWER	IAV SUPV Actv Comform 	57% verb: To respond to a question, challenge, or statement 
+ANSWER	Noun COM Comform Actv 	43% noun: A reply, response, solution, given to a question, statement or problem 
+APOLOGY	Noun COM Comform Affil Subm Weak 	
+APPALL	IAV Neg SUPV Ngtv Comform 	
+APPEAL	Noun COM Comform Subm Psv Affil 	38% noun-adj: A request for a decision, help, sympathy, etc. (6), a quality  arousing a favorable response (6) 
+APPLAUD	DAV Pos SUPV Actv Comform Eval 	
+APPLAUSE	Pos Noun COM Comform Pstv 	
+APPLICATION	Noun COM Comform Subm 	
+APPLY	DAV SUPV Legal Subm Comform Actv 	12% verb: To make application or request--'to apply for a job' 
+APPROPRIATION	Noun ECON COM Comform Power 	
+APPROVAL	Pos Noun COM Comform Affil Pstv 	
+APPROVE	IAV Pos SUPV Affil Pstv Strng Comform 	
+ARBITER	Pos Noun HU Role Solve Affil Intrel Comform 	
+ARBITRATE	IAV Pos SUPV Actv Solve Affil Intrel Comform 	
+ARBITRATION	Pos Noun Solve Affil Intrel Comform 	
+ARGUE	IAV Neg SUPV Hostile Ngtv Actv Comform 	44% verb: To dispute, to contend in argument--'they argue a lot' (sense  of animosity) 
+ARGUMENT	Neg Noun COM Comform Hostile Ngtv Actv 	63% noun: A (heated) discussion involving different points of view 
+ARRANGE	IAV SUPV Power Actv Comform 	59% verb: To come to an agreement concerning, to prepare or plan--'we  arranged to meet them.' 
+ARTICULATE	Modif Comform 	
+ARTICULATE	Modif Comform SUPV Strng Actv 	
+ASK	DAV SUPV Actv Comform 	65% verb: To inquire about 
+ASK	DAV SUPV Subm Comform Actv 	31% verb: To request, invite 
+ASSENT	Pos Noun Affil Comform 	
+ASSERT	IAV SUPV Power Strng Actv Comform 	
+ASSERTION	Pos Noun Know Strng Comform Arousal 	
+ASSIGN	Modif Comform Actv 	
+ASSIGN	DAV SUPV Power Actv Comform 	
+ASSIGNMENT	Noun Actv Comform Exprs 	
+ASSURANCE	Pos Noun COM Comform Affil Pstv Strng Ovrst 	
+ASSURE	IAV Pos SUPV Power Pstv Strng Ovrst Comform 	33% verb: To pledge, to state with confidence, to make confident 
+ATTEST	IAV SUPV Subm Psv Comform 	
+AUDIBLE	IndAdj Pos Modif Comform Strng 	
+AUTHORIZE	Modif Power Strng Legal Comform 	
+AUTHORIZE	IAV SUPV Power Strng Actv Comform Legal 	
+AWARD	Pos Modif Comform Power Pstv Strng 	
+AWARD	IAV Pos SUPV Power Pstv Strng Comform Actv 	
+BABBLE	DAV Neg SUPV Comform Actv 	
+BAIT	IAV Neg SUPV Actv Other Comform 	
+BANTER	Noun COM Comform Weak 	
+BANTER	IAV SUPV Weak Comform 	
+BARGAIN	IAV Pos SUPV Actv Comform Intrel Econ 	
+BARK	DAV SUPV Comform 	
+BEAM	IAV SUPV Comform 	
+BECKON	IAV SUPV Affil Actv Comform 	
+BEEP	Noun COM Comform 	
+BENEFIT	Pos Noun ECON COM Comform Econ* Pstv 	50% noun: Incremental monetary payments 
+BEREAVE	SV Neg SUPV Hostile Comform 	
+BET	Noun ECON COM Comform Econ* Actv 	25% noun: A wager, a risk 
+BETRAYAL	Neg Noun Hostile Comform Intrel 	
+BID	Noun POLIT ECON COM Econ* Actv Comform 	
+BID	IAV SUPV Econ* Actv Comform 	
+BIOGRAPHY	Noun COM Comform Exprs 	
+BLESS	Pos Noun Comform Relig Pstv 	64% noun: "Blessing"--a benediction, good fortune 
+BLUE	Noun COM Comform Exprs 	0% noun: "Blues"--type of music, depression 
+BLUE	Noun COM Comform Legal 	0% noun-idiom: "Blue laws"--puritanical laws 
+BLUR	IAV Neg SUPV Undrst Weak Comform Actv 	
+BLURT	IAV Neg SUPV Comform Hostile Ovrst Actv 	
+BOARD	Noun ECON COM Comform Econ* 	4% noun: Provision of food for pay 
+BOARD	Modif Comform Econ* 	7% adj: 'boarding,' pertaining to food and lodging 
+BOAST	IAV Neg SUPV Comform Power Vice Actv 	
+BOASTFUL	IndAdj Neg Modif Comform Power Vice 	
+BOISTEROUS	IndAdj Neg Modif Comform Strng 	
+BOND	Noun ECON COM Comform Affil Strng 	
+BONUS	Pos Noun ECON Pstv Econ* Comform 	
+BOW	DAV SUPV Subm Weak Comform 	6% verb: To bend forward, usually in formal acknowledgement, submission or greeting 
+BOYCOTT	Noun ECON COM Comform Hostile Actv 	
+BOYCOTT	IAV SUPV Hostile Actv Comform 	
+BRAG	IAV Neg SUPV Actv Comform Power 	
+BRAND	Noun ECON COM Comform Econ* 	
+BRAND	IAV SUPV Hostile Comform 	
+BREAK	IAV SUPV Comform 	5% verb-idiom: "Break the news" 
+BRING	IAV SUPV Actv Comform 	6% verb: Bring up--to introduce for consideration, mention 
+BRING	IAV SUPV Power Actv Comform 	7% idiom-verb: "Bring out"--to expose, reveal, to transfer out (16) 
+BROADCAST	Noun COM Comform 	
+BROADCAST	IAV SUPV Comform 	
+BROKE	IAV SUPV Comform 	0% idiom-verb: "Broke (broken) the news" 
+BRUSQUE	IPadj Neg Modif Comform Hostile Undrst 	
+BUG	IAV Neg SUPV Hostile Ngtv Comform 	
+BUSYBODY	Neg Noun HU Comform Vice 	
+CALL	DAV SUPV Comform 	55% verb: To beckon, summon, command, demand, vocally communicate with,  either in person or by telephone, request; predict (e.g. "call the shots") (0) 
+CALL	Noun COM Comform 	4% noun: A summons; a vocal communication (3); a visit (2) 
+CANDID	IPadj Pos Modif Comform Strng 	
+CANDOR	Pos Noun Comform Strng 	
+CARESS	Pos Noun Comform Affil Pstv 	
+CAUTION	Noun COM Comform Undrst 	
+CAUTION	IAV SUPV Undrst Comform 	
+CENSOR	IAV Neg SUPV Actv Power Ovrst Comform 	
+CENSORSHIP	Neg Noun Power Ovrst Comform 	
+CENSURE	IAV Neg SUPV Power Actv Other Hostile Comform 	
+CERTIFICATION	Noun Comform Power Legal Ovrst 	
+CERTIFY	IAV SUPV Power Legal Ovrst Comform 	
+CHAPTER	Noun COM Comform 	noun: A division of a book 
+CHARGE	Neg Noun COM Comform Hostile Ngtv 	15% noun: Accusation, injunction 
+CHARGE	IAV Neg SUPV Hostile Strng Actv Ngtv Comform 	9% verb: To accuse, enjoin, attribute 
+CHARGE	Noun COM ECON Econ* Comform 	15% noun-adj: Cost, fee, liability to pay, system of deferred payment 
+CHASTISE	IAV Neg SUPV Actv Power Other Hostile Comform 	
+CHATTER	Noun COM Comform 	
+CHATTER	DAV SUPV Comform 	
+CHEER	IAV Pos SUPV Actv Comform Affil 	
+CHIDE	IAV Neg SUPV Actv Hostile Comform Power Other 	
+CHUCKLE	Noun Psv Comform 	
+CHUCKLE	DAV SUPV Psv Comform 	
+CITE	Noun COM Comform 	
+CITE	DAV SUPV Comform 	
+CLAIM	Noun Comform ECON 	
+CLAIM	IAV SUPV Comform 	
+CLAMOR	Neg Noun Pain Comform Vice 	
+CLAMOROUS	IndAdj Neg Modif Pain Comform 	
+CLARIFY	IAV Pos SUPV Pstv Actv Comform 	
+CLASSIC	Pos Noun COM Acad Pstv Comform 	
+CLATTER	Neg Noun Pain Comform 	
+CLEAR	IAV SUPV Power Comform 	3% verb: To absolve from blame 
+COAX	IAV Pos SUPV Actv Intrel Comform Other 	
+CODE	Noun COM Comform 	
+COERCE	IAV Neg SUPV Actv Power Comform Intrel 	
+COERCION	Neg Noun Power Comform Intrel Vice 	
+COERCIVE	IPadj Neg Modif Power Comform Intrel 	
+COGENT	IndAdj Pos Modif Power Comform Strng Ovrst 	
+COLD	Neg LY Comform Hostile Ngtv Ngtv 	1% adverb: "Coldly"--indifferently, in a cool manner 
+COLLABORATE	IAV Pos SUPV Actv Intrel Affil Comform Ach 	
+COMMAND	Noun COM Comform Power Strng Actv 	
+COMMAND	IAV SUPV Power Strng Actv Comform 	
+COMMEND	IAV Pos SUPV Actv Comform Affil 	
+COMMENDABLE	IndAdj Pos Modif Comform Affil Virtue 	
+COMMENT	Noun COM Comform 	84% noun: A remark, observation, or criticism 
+COMMENT	IAV SUPV Comform 	16% verb: To make a remark 
+COMMIT	IAV SUPV Subm Actv Comform 	15% verb: To bind, to consign 
+COMMUNICATE	IAV Pos SUPV Pstv PFREQ Comform 	96% verb: To make known, to impart to someone else 
+COMMUNICATE	Pos Noun COM Comform Pstv 	4% noun: "Communicating"--act of imparting information 
+COMMUNICATION	Noun ABS Abs* COM Comform 	noun-adj: Transmission or exchange of information 
+COMMUNICATIVE	Pos Modif Comform Pstv 	
+COMPLAIN	IAV Neg SUPV Hostile Ngtv Actv Comform 	verb: To express dissatisfaction or pain 
+COMPLAINT	Neg Noun COM Comform Hostile Ngtv Actv 	
+COMPLIANCE	Pos Noun Affil Intrel Comform 	
+COMPLIMENT	IAV Pos SUPV Actv Comform Affil 	
+CONCEDE	IAV SUPV Subm Weak Psv Comform 	
+CONCUR	SV Pos SUPV Actv Comform Affil 	
+CONFER	IAV Pos SUPV Actv Comform Think 	
+CONFESS	IAV Neg SUPV Subm Ngtv Weak Psv Comform 	
+CONFESSION	Neg Noun COM Comform Subm Ngtv Weak Psv 	
+CONFIDE	IAV Pos SUPV Affil Pstv Psv Comform Ovrst 	
+CONFIDENCE	LY Comform Affil 	3% idiom-adj-adv: "In confidence"--private, privately 
+CONFIRMATION	Noun COM Comform Ovrst Strng 	
+CONFLICT	Neg Noun POLIT Hostile Ngtv Actv Comform 	80% noun: Disagreement or struggle 
+CONFUSE	IAV Neg SUPV Ngtv Undrst Comform 	9% verb: To make unclear, to temporarily disturb the clear working of the mind 
+CONGRATULATE	IAV Pos SUPV Actv Comform Other  Affil 	
+CONGRATULATION	Pos Noun COM Comform Affil Pstv 	
+CONGRATULATORY	IPadj Pos Modif Comform Affil 	
+CONSENSUS	Pos Noun Comform Affil Compl 	
+CONSENT	Pos Noun COM Comform Subm Pstv Strng Psv 	
+CONSENT	DAV Pos SUPV Subm Pstv Strng Psv Comform 	
+CONSTRAINT	Neg Noun COM Comform Power Ngtv Strng 	
+CONSULT	IAV Pos SUPV Pstv Comform 	
+CONSULTATION	Pos Noun COM Comform Pstv 	
+CONSUMMATE	IAV Pos SUPV Actv Compl Comform 	
+CONTACT	Pos Noun Affil Pstv Actv COM Comform PFREQ 	93% noun: A meeting, acquaintance, or communication with or exposure to  another person or other people generally over some period of time in some  generally social regard--the meeting with such a person, the person himself,  or the relationship so develo 
+CONTACT	DAV Pos SUPV Pstv Actv Comform 	1% verb: To communicate with, meet 
+CONTENTION	Noun Strng Actv Comform 	
+CONTEST	IAV SUPV Hostile Power Strng Actv Comform 	
+CONTRACT	Noun COM ECON Econ* Legal Strng PFREQ Comform 	95% noun-adj: "Contract," "contracting"--a legally binding agreement;  the making of same (1) 
+CONTRADICT	IAV Neg SUPV Ngtv Comform Hostile 	
+CONTRADICTION	Neg Noun Comform 	
+CONTRADICTORY	Neg Noun COM Comform Negate Ngtv Ovrst 	
+CONTROVERSIAL	Neg Noun COM Comform Ngtv Undrst 	
+CONTROVERSY	Neg Noun COM Comform POLIT Ngtv EMOT 	
+CONVERSATION	Noun COM Comform 	noun: Informal interchange of thoughts and/or information by spoken words 
+CONVERSE	IAV SUPV Comform 	
+CONVINCE	IAV Pos SUPV Power Pstv Strng Actv Comform 	83% verb: To persuade by argument or proof, cause to believe 
+CONVINCE	Pos Modif Comform Power Pstv Strng Actv 	17% noun-adj: "Convincing"--persuasive; the act of persuading (1) 
+CONVINCED	Modif Comform Power Psv PFREQ 	85% adj: Persuaded 
+CONVINCED	IAV SUPV ED Power Psv Comform 	15% verb: Caused to believe 
+COPY	DAV SUPV Actv Comform 	
+CORRESPOND	IAV SUPV Rel Comform 	
+CORRESPONDENCE	Noun COM Comform 	
+COUNSEL	IAV Pos SUPV Affil Power Pstv Comform 	
+COURTEOUS	Pos Modif Comform Affil Pstv Virtue 	
+COVENANT	Pos Noun Comform Affil Doctr 	
+COVERAGE	Noun COM Comform ECON Econ* 	
+CREDIT	Noun COM Comform ECON Econ* 	66% noun-adj: Deferred payment, borrowing, financial trust 
+CREDIT	IAV Pos SUPV Pstv Comform 	3% verb: To give recognition, to ascribe 
+CRITICISM	Neg Noun COM Comform Hostile Ngtv 	noun: Analysis and/or evaluation, usually censuring 
+CRITICIZE	IAV Neg SUPV Hostile Ngtv Comform 	
+CROSS	DAV SUPV Relig Comform 	3% verb: To make the sign of the cross 
+CRY	DAV SUPV Psv PFREQ Comform 	95% verb: To utter inarticulate or loud sounds, especially of lamentation,  grief, suffering or fright--usually with tears 
+CRY	Noun Comform Psv 	5% noun: Any loud utterance or exclamation, a shout, scream, or wail 
+CURSE	Neg Noun COM Comform Hostile Ngtv 	
+CURSE	IAV Neg SUPV Hostile Ngtv Comform 	
+CURT	Neg Modif Comform Hostile Ngtv 	
+CUSTOM	Noun ECON POLIT COM Econ* Comform 	43% noun-adj: Duties on the import and export of goods 
+DEAL	Noun COM Comform 	5% noun: "Dealings"--relations 
+DEBATABLE	IPadj Neg Modif Ovrst Comform 	
+DEBATE	Noun COM Comform Polit* Actv 	62% noun-adj: A formal discussion of an issue 
+DEBATE	IAV SUPV Polit* Actv Comform 	38% verb: To carry on a debate 
+DECEIVE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+DECIPHER	IAV Pos SUPV Actv Comform Solve 	
+DECLARATION	Noun COM Comform Strng 	
+DECLARE	IAV SUPV Strng Comform 	verb: Proclaim or manifest 
+DEFAME	IAV Neg SUPV Actv Comform 	
+DEGRADE	IAV Neg SUPV Hostile Actv Comform 	
+DEGREE	Noun COM Comform Acad 	28% noun: A title conferred at various stages of higher education 
+DELIBERATE	IAV SUPV Strng Actv Comform 	
+DEMAND	Noun COM Comform Power Strng 	37% noun: Strong or authoritative request or inquiry, something asked  of one, need, requirement--"he put forth several demands," "the job makes  great demands on our time" 
+DEMAND	IAV SUPV Power Strng Actv Comform 	52% verb: To ask for or about boldly or urgently, to need, require 
+DEMONSTRATE	IAV SUPV Strng Actv Comform 	
+DENIAL	Neg Noun COM Comform Ngtv Hostile 	
+DENOUNCE	IAV Neg SUPV Actv Hostile Power Comform 	
+DENY	IAV Neg SUPV Hostile Ngtv Comform 	verb: To maintain that something is not true, negate; refuse to grant, withhold 
+DEPICT	IAV SUPV Comform 	
+DEPLORE	IAV Neg SUPV Hostile Ngtv Psv Comform 	
+DEPOSE	IAV Neg SUPV Comform Power Hostile Actv 	
+DEPOSITION	Noun COM Comform Legal Actv 	
+DERIDE	IAV Neg SUPV Comform Hostile Actv 	
+DEROGATORY	IndAdj Neg Modif Hostile Comform Power 	
+DESCRIBE	SUPV Comform 	verb: To depict in words 
+DIALECT	Noun COM Comform 	
+DIALOGUE	Noun COM Comform 	noun-adj: Conversation, exchange of opinions on an issue 
+DICTION	Noun COM Comform 	
+DIGITAL	Noun COM Comform 	
+DIGNIFY	IAV Pos SUPV Actv Comform Other 	
+DIN	Neg Noun Comform Strng 	
+DIPLOMATIC	Modif Comform POLIT Polit* Power 	
+DIRECTION	Noun Power Comform 	29% noun: Instruction or guidance to some end, or that end or purpose 
+DISAGREE	IAV No SUPV Hostile Ngtv Comform 	verb: To differ 
+DISAGREEMENT	Neg Noun COM Comform Hostile Negate Ngtv 	
+DISAPPROVE	IAV Neg SUPV Negate Hostile Comform Ngtv 	
+DISAVOW	IAV Neg SUPV Negate Ngtv Comform Hostile 	
+DISAVOWAL	Neg Noun COM Comform Negate Ngtv Hostile 	
+DISCLAIM	IAV Neg SUPV Ngtv Comform 	
+DISCLOSE	Modif Comform 	
+DISCLOSE	IAV SUPV Comform 	
+DISCORDANT	IndAdj Neg Modif Eval Hostile Comform 	
+DISCOURSE	Noun COM Comform Acad 	
+DISCREDIT	IAV Neg SUPV Actv Comform Hostile 	
+DISCREPANT	IndAdj Neg Modif Eval Comform Hostile 	
+DISCUSS	IAV Pos SUPV Pstv Comform 	verb: To talk over, negotiate, inquire into, explore verbally 
+DISCUSSION	Noun COM Comform 	noun: An act or an instance of conversation or argument 
+DISHONEST	IPadj Neg Modif Weak Comform 	
+DISINGENUOUS	IPadj Neg Modif Weak Comform 	
+DISPEL	IAV Neg SUPV Actv Comform Power Decr 	
+DISPLAY	Noun Comform 	
+DISPLAY	DAV SUPV Comform 	
+DISPUTE	Neg Noun Comform Hostile POLIT Ngtv COM Negate Actv 	
+DISPUTE	IAV Neg SUPV Comform Hostile POLIT Ngtv COM Negate Actv 	
+DISTORT	IAV Neg SUPV Ngtv Hostile Comform 	
+DISTURB	IAV Neg SUPV Hostile Ngtv Actv Comform 	44% verb: To disquiet, to interrupt 
+DOUBLE	Neg Noun COM Comform Hostile Ngtv 	3% idiom-noun: 'double talk'--deceiving speech 
+DOUBT	SV Neg SUPV Ngtv Psv Undrst Comform 	41% verb: To question, be uncertain about 
+DRAW	DAV SUPV Exprs Comform 	16% verb: To sketch, depict, compose; to form or make (abstract)--"to  draw a conclusion or analogy 
+DUE	Noun COM ECON Econ* Comform 	3% noun: Dues--a regular fee or charge payable at specific intervals 
+DUMB	Neg Modif Comform Ngtv Weak Psv 	
+EARNESTNESS	Pos Noun Feel Comform 	
+EDITORIAL	Noun COM POLIT Comform 	
+EDUCATE	IAV SUPV Acad Power Actv Strng Comform 	verb: To instruct. 
+EDUCATED	IAV SUPV ED Acad Power Comform 	0% verb: Taught, instructed 
+ELABORATE	IAV Pos SUPV Actv Comform Incr 	
+ELABORATION	Pos Noun Comform Incr 	
+EMBELLISH	IAV Pos SUPV Actv Comform Incr 	
+EMBRACE	Pos Noun Affil Pstv Actv Comform 	
+EMPHASIZE	IAV SUPV Ovrst Strng Comform 	
+EMPHATIC	Modif Strng Ovrst Actv Comform 	
+ENCOUNTER	Noun COM Comform 	
+ENDORSE	IAV Pos SUPV Affil Pstv Strng Comform Power 	
+ENGAGEMENT	Noun COM Comform 	
+ENGLISH	Noun Name POLIT ECON COM Comform Acad 	
+ENROLLMENT	Noun Comform Econ* 	
+ENTERTAIN	IAV Pos SUPV Pstv Actv Comform 	
+EPITHET	Neg Noun COM Comform Hostile Ngtv 	
+EQUITY	Pos Noun COM Comform ECON Econ* Legal Pstv 	
+ESSAY	Noun COM Exprs Comform Acad 	
+ESTIMATE	Noun COM Comform Econ* 	
+EVIDENCE	IAV SUPV Legal Actv Strng Comform 	17% verb: To show, make evident 
+EXAGGERATE	IAV SUPV Comform Ovrst 	
+EXAGGERATION	Neg Noun Ovrst Eval Comform 	
+EXAM	Noun COM Acad Comform 	
+EXCEPTION	IAV Neg SUPV Hostile Ngtv Comform 	9% idiom-verb: Make an objection- 'take exception' 
+EXCERPT	Noun COM Comform 	
+EXCHANGE	Noun ECON POLIT COM Comform Econ* Polit* Actv 	94% noun-adj: Giving of like for like, dialogue, trade, commerce 
+EXCLAMATION	Noun COM Comform Ovrst 	
+EXCUSE	Noun COM Comform Subm Psv Weak 	
+EXCUSE	IAV SUPV Power Strng Comform 	
+EXHIBIT	Noun COM Comform Actv 	
+EXHIBIT	IAV SUPV Actv Comform 	
+EXPENDITURE	Noun ECON POLIT COM Comform Econ* 	
+EXPENSE	Neg Noun COM Comform ECON Econ* Ngtv PFREQ 	90% noun: Cost, price of exchange 
+EXPLAIN	IAV SUPV Actv Comform 	verb: To make plain or clear, render intelligible, make clear the cause  or reason of. 
+EXPLANATION	Noun COM Comform Actv 	noun: Reason, excuse, or exposition 
+EXPLICIT	Modif Comform 	
+EXPOSE	IAV Neg SUPV Percv Actv Comform 	
+EXPRESS	IAV SUPV Actv Comform Exprs 	verb: To render in communicable form ideas, opinions, or feelings-- to  manifest, show or reveal 
+EXPRESSION	Noun ABS Abs* COM Comform Actv Exprs 	67% noun: The act or process of expressing 
+EXPRESSION	Noun COM Comform Psv Exprs 	30% noun: A look, expressing personal reaction or feeling 
+EXPRESSIVE	Modif Exprs Psv Comform 	
+EXTEND	IAV SUPV Affil Actv Comform 	13% verb: To hold out to, offer 
+EYE	Pos LY Comform Pstv 	1% idiom: "Eye to eye"--in agreement 
+FABRICATE	IAV Neg SUPV Actv Comform 	
+FABRICATION	Neg Noun Vice Comform 	
+FACE	LY Comform 	1% idiom-adv: 'face to face' 
+FACE	IAV SUPV Comform 	0% idiom: "Save face" 
+FARCE	Neg Noun Comform 	
+FARE	Noun COM Comform Econ* 	
+FAREWELL	Noun COM Comform Intj Affil 	
+FEATURE	IAV SUPV Ovrst Comform 	
+FEE	Noun COM Comform ECON Econ* 	
+FEIGN	IAV Neg SUPV Actv Comform 	
+FEINT	IAV Neg SUPV Actv Comform 	
+FICTION	Noun COM Comform Exprs 	
+FIGURE	Noun COM Comform Psv 	42% noun: Form, representation, schema, shape, illustration, diagram, number 
+FIGURE	Noun COM Comform Exprs 	1% idiom-noun: "Figure of speech" 
+FINE	Neg Noun COM Comform ECON Econ* Legal Ngtv 	0% noun: A violator's fee 
+FINGER	IAV SUPV Hostile Comform 	
+FLATTER	IAV Pos SUPV Intrel Affil Subm Psv Weak Comform 	
+FLATTERY	Pos Noun Intrel Affil Subm Psv Weak Comform 	
+FLUENT	IndAdj Pos Modif Comform Virtue 	
+FOLKLORE	Noun COM Comform 	
+FOLKTALES	Noun COM Comform 	
+FORBID	Neg Modif Comform Power Ngtv Strng 	
+FORBIDDEN	Neg Modif Comform Power Ngtv 	
+FORECAST	Noun COM Comform 	
+FORGIVENESS	Pos Noun Intrel Virtue Comform 	
+FORUM	Noun COM Comform 	
+FRAUD	Neg Noun Weak Comform Fail 	
+FRAUDULENT	IndAdj Neg Modif Weak Comform Fail 	
+FROWN	Neg Noun Ngtv Psv Comform Hostile 	
+FROWN	IAV Neg SUPV Hostile Ngtv Psv Comform 	
+FUN	SV Neg SUPV Hostile Ngtv Comform 	3% idiom-verb: "Make fun (of)"--to tease, parody 
+FUSS	IAV Neg SUPV Actv Weak Comform 	
+GASP	Noun COM Comform 	
+GESTURE	Noun COM Comform Actv 	
+GESTURE	IAV SUPV Actv Comform 	
+GLOAT	IAV Neg SUPV Actv Comform Strng 	
+GOSSIP	Noun COM Comform 	
+GOSSIP	IAV SUPV Affil Comform 	
+GRADE	Noun ABS Abs* Comform 	71% noun-adj: A mark or rating, generally academic; a stage in a systematic  progression (1); a sloping part (0) 
+GRAMMAR	Noun Comform Acad 	
+GREET	Pos Noun COM Comform Affil Pstv 	
+GREET	IAV Pos SUPV Affil Pstv Comform 	
+GRIEVANCE	Neg Noun Comform Pain 	
+GRIEVE	SV Neg SUPV Actv Emot Pain Comform 	
+GRIN	Noun COM Comform Affil 	
+GRIN	DAV SUPV Comform Affil 	
+GROWL	IAV Neg SUPV Comform Actv 	
+GRUMBLE	IAV Neg SUPV Hostile Ngtv Comform 	
+GUARANTEE	Pos Noun COM Comform Power Pstv Strng Legal 	
+GUARANTEE	IAV Pos SUPV Power Pstv Strng Legal Comform 	
+HAIR	IAV SUPV Comform 	2% noun: 'let one's hair down'-habitual demeanor 
+HAND	IAV SUPV Power Comform 	0% idiom-verb: "Hand down"--to deliver a judgment 
+HAND	LY Undrst Comform Affil 	2% idiom-verb: "Shake hands"--to greet in the western manner--handled by "shake" 
+HARMONIZE	IAV Pos SUPV Actv Comform Intrel Affil 	
+HEAR	IAV SUPV Psv Comform 	29% verb: To be informed, to receive information, to learn 
+HEEDLESS	IndAdj Neg Modif Comform 	
+HUSTLE	IAV Neg SUPV Comform Hostile Econ 	
+HUSTLER	Neg Noun HU Role Hostile Comform Econ 	
+HYMN	Noun COM Comform Relig 	
+HYPOCRISY	Neg Noun Vice Comform 	
+HYPOCRITE	Neg Noun Comform Vice 	
+ILLUMINATE	IAV Pos SUPV Actv Ovrst Comform 	
+ILLUSTRATE	IAV SUPV Actv Comform 	
+IMAGE	Noun COM Exprs Comform 	42% noun: A visual or mental representation, a picture 
+IMAGERY	Noun COM Comform Exprs 	
+IMPASSE	Neg Noun Stay Comform Intrel 	
+IMPLICATE	IAV Neg SUPV Comform Hostile Causal Other Actv 	
+IMPLY	IAV SUPV Psv Comform 	
+INCENTIVE	Noun COM Comform ECON 	
+INCOME	Noun COM Comform ECON Econ* 	79% noun-adj: Revenue received periodically 
+INDESCRIBABLE	IndAdj Pos Modif Negate Comform Eval Qual 	
+INDICATE	IAV SUPV Comform 	verb: To point out, signify, or intimate 
+INDICATIVE	IndAdj Pos Modif Comform Causal 	
+INDICTMENT	Neg Noun COM Comform POLIT Hostile Legal Ngtv 	
+INFORM	IAV Pos SUPV Pstv Comform Actv 	64% verb: To notify, to give information to 
+INFORMATION	Noun COM Comform 	noun-adj: Facts, data, knowledge 
+INJUNCTION	Neg Noun COM Comform Hostile Legal Ngtv Strng 	
+INQUIRE	IAV SUPV Actv Comform 	
+INQUIRY	Noun COM Comform Actv 	
+INQUISITIVE	IndAdj Pos Modif Comform Think 	
+INSINUATE	IAV Neg SUPV Actv Comform 	
+INSIST	IAV SUPV Power Strng Actv Comform 	verb: To be emphatic or persistent in asserting or demanding 
+INSISTENCE	Noun COM Comform Power Strng Actv 	
+INSISTENT	IndAdj Pos Modif Arousal Know Strng Comform 	
+INSTRUCT	IAV SUPV Acad Power Actv Strng Comform 	
+INSTRUCTION	Noun COM Comform Acad Actv Power Strng 	
+INSULT	IAV Neg SUPV Actv Comform Other 	
+INTELLIGIBLE	Pos Modif Comform Pstv 	
+INTEREST	Noun COM Comform ECON Econ* 	4% noun: The cost of borrowing money 
+INTERRUPT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+INTERRUPTION	Neg Noun COM Comform Hostile Ngtv 	
+INTERVIEW	Noun COM Comform Actv 	
+INTERVIEW	IAV SUPV Actv Comform 	
+INTRODUCE	DAV SUPV Actv Comform 	
+INVESTMENT	Noun COM Comform ECON Econ* Actv 	
+INVITATION	Pos Noun COM Comform Affil Actv Pstv 	
+ISSUANCE	Noun COM Comform 	
+JAZZ	Noun COM Comform Exprs 	
+JEER	IAV Neg SUPV Actv Comform Hostile 	
+JEST	IAV Pos SUPV Actv Comform Pleasure 	
+JOKE	Pos Noun Comform Exprs Pstv PFREQ 	85% noun-adj: A jest, funny story 
+JOKE	IAV Pos SUPV Exprs Pstv Comform 	10% verb: To jest, be funny 
+JOKE	Pos Modif Comform Pstv 	5% adv: "Jokingly", humorously 
+JUDGMENT	Noun COM Comform Legal 	79% noun: A decision, opinion, evaluation, verdict 
+JUSTIFY	IAV Pos SUPV Pstv Comform Ovrst 	
+KID	IAV Pos SUPV Affil Pstv Comform Exprs 	3% verb: To jest 
+KIND	LY Comform 	0% idiom-adv: "In kind"--in like manner 
+KISS	Pos Noun Comform Affil Pstv Actv 	
+LABEL	IAV SUPV Comform 	
+LANGUAGE	Noun COM Comform 	noun: Any set or system of verbal or visual symbols used in a more or  less uniform fashion by a number of people to communicate with one another 
+LAUGH	Pos Noun COM Comform Exprs Pstv Psv 	3% noun: Expression of mirth or amusement 
+LAUGH	DAV Pos SUPV Exprs Pstv Psv Comform 	40% verb: To express mirth or amusement by laughter 
+LAUGH	IAV Neg SUPV Hostile Ngtv Actv Comform 	10% verb-idiom: "Laugh at" - ridicule, deride 
+LAUGH	IAV SUPV Actv Comform Undrst 	1% verb-idiom: "Laugh off" - dismiss as inconsequential 
+LAUGH	Pos Modif Exprs Pstv Psv Comform 	2% noun-adj: "Laughing" - laughter, expressive of amusement 
+LAUGH	Pos Noun COM Comform Exprs Pstv Psv 	45% noun: Same as sense 1, but inserted into text as editorial comment,  parenthesized. 
+LAUGHTER	Pos Noun COM Comform Exprs Pstv Psv 	noun: The act or sound of laughing, an expression of amusement. 
+LEAD	Noun Comform Hostile 	0% idiom-noun: "A leading question"--a loaded question 
+LEAK	IAV Neg SUPV Psv Fail Comform 	
+LEAVE	Noun COM Comform Power 	1% noun: Permission to do something, or the time in which such permission  is in force 
+LECTURE	Noun COM Comform Acad Actv 	
+LECTURE	DAV SUPV Acad Comform Actv 	
+LEGEND	Noun COM Comform Exprs 	
+LESSON	Noun COM Comform Acad 	noun: Something from which one learns or should learn 
+LETTER	Noun Comform 	0% noun: "Lettering"--a series of letters inscribed, the act of inscribing letters 
+LIE	DAV Neg SUPV Hostile Ngtv Comform 	20% verb: To tell falsehoods 
+LIE	Neg Noun COM Comform Hostile Ngtv 	9% noun: A falsehood 
+LIGHT	IAV SUPV Comform 	1% idiom: "Make light" of 
+LIST	DAV SUPV Comform 	
+LISTEN	DAV SUPV Psv Comform 	verb: Attend closely for the purpose of hearing 
+LITERARY	Modif Acad Exprs Comform 	
+LITERATURE	Noun COM Comform Acad Exprs 	
+LOOK	Noun COM Comform Psv 	2% noun: Aspect, mein, appearance, expression 
+LOUD	LY Comform Strng 	12% idiom-adv: "Out loud" - aloud 
+LUCID	IndAdj Pos Modif Ovrst Comform 	
+LYING	DAV Neg SUPV Hostile Ngtv ING Actv Comform 	6% verb: To tell a falsehood 
+LYING	Neg Noun COM Comform Hostile Ngtv Actv 	6% noun: The act of telling a falsehood 
+LYRIC	Pos Noun COM Comform Exprs Pstv 	
+LYRICAL	Pos Modif Comform Exprs Pstv 	
+MAIL	DAV SUPV Comform 	
+MAINTAIN	IAV SUPV Power Strng Actv Comform 	14% verb: To assert, contend 
+MANIPULATION	Neg Noun Other Percv Comform 	
+MARK	DAV SUPV Actv Comform 	34% verb: To label, indicate, make a sign, to characterize 
+MEAN	IAV SUPV Actv Comform 	71% verb: To intend, indicate, signify, imply--occurs 170 times in the  phrase "i mean," used conversationally to connote precision or emphasis 
+MEANT	IAV SUPV ED Actv Comform 	verb: Past tense of mean--to have signified, indicated, implied, intended 
+MEDDLE	IAV Neg SUPV Actv Intrel Comform 	
+MEDIA	Noun COM Comform 	
+MEDIATE	IAV Pos SUPV Actv Comform Intrel Solve 	
+MEET	Pos Noun COM Comform Affil Pstv 	1% idiom: A "meeting of the minds"--agreement 
+MELODRAMATIC	Neg Modif Comform Exprs Ngtv 	
+MELODY	Pos Noun COM Comform Exprs Pstv 	
+MENTION	IAV SUPV Psv PFREQ Comform Undrst 	97% verb: To speak of casually, to refer to, include passingly. 
+MENTION	Noun COM Comform 	3% noun: A reference to 
+MESSAGE	Noun COM Comform 	noun: Any notice or communication sent from one person to another . 
+MISINFORM	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISINFORMED	IndAdj Neg Modif Comform Fail Undrst 	
+MISREPRESENT	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISUNDERSTANDING	Neg Noun Comform Fail Undrst 	
+MOAN	DAV Neg SUPV Actv Comform Pain 	
+MOCK	IAV Neg SUPV Actv Comform Other Power 	
+MOCKERY	Neg Noun Comform Other Power 	
+MORTGAGE	Noun COM Comform ECON Econ* 	
+MOUTH	DAV SUPV Comform 	0% verb: To move the lips or speak, usually excessively or loudly 
+MUMBLE	DAV Neg SUPV Comform Undrst 	
+MURMUR	Noun COM Comform Subm Weak 	
+MURMUR	DAV SUPV Subm Weak Comform 	
+MUSIC	Noun COM Comform Exprs 	noun: An art of sound in time, the actual sounds employed in this art 
+MUSICAL	Modif Comform Exprs 	
+MUTTER	DAV Neg SUPV Hostile Ngtv Weak Comform 	
+MYTH	Noun COM Comform Relig 	
+NAG	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+NAME	Noun COM Comform 	80% noun: Words by which a person or thing is known or designated 
+NAME	DAV SUPV Comform 	12% verb: To identify, call, designate 
+NAME	Noun Comform 	1% noun: "Naming"--designation 
+NARRATIVE	Noun COM Comform Exprs 	
+NEEDLE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+NEGOTIATE	IAV Pos SUPV Actv Comform Intrel Exch Solve 	
+NEW	Noun COM Comform 	5% noun: "News"--tidings, reports of recent events 
+NICKNAME	Noun COM Comform 	
+NO	Noun COM Comform Hostile 	0% noun: "A no" 
+NOD	Noun COM Comform 	
+NOD	DAV SUPV Comform 	
+NOISELESS	IndAdj Pos Modif Negate Comform 	
+NOMINATE	DAV Pos SUPV Actv Comform Affil Polit Other 	
+NON-FICTION	Modif Comform 	
+NONVERBAL	Modif Comform Exprs 	
+NOSEY	IPadj Neg Modif Intrel Comform 	
+NOUN	Noun COM Comform 	
+OATH	Noun COM Comform Legal 	
+OBJECT	IAV Neg SUPV Hostile Ngtv Actv Comform 	19% verb: To voice aversion 
+OBJECTION	Neg Noun Comform Feel 	
+OFFER	Pos Noun COM Comform Affil Pstv Actv 	6% noun: A presentation, proposal 
+OPERA	Noun COM Comform Exprs 	
+OPINION	Noun COM Comform Undrst 	noun: Judgment, sentiment, feeling, etc. 
+ORDER	Noun COM Power Strng Comform Actv 	17% noun: Command, directive, request 
+ORDER	IAV SUPV Power Strng Actv Comform 	7% verb: To command, direct, request; to arrange methodically or properly (2) 
+ORDER	Modif Comform Strng Actv 	1% noun: "Ordering"--commanding, requesting; arranging methodically or properly (2) 
+ORDINANCE	Noun COM Comform Legal Power Strng 	
+OUTBURST	Neg Noun Comform 	
+OUTCRY	Neg Noun Comform Feel 	
+OUTLINE	Noun COM Comform Undrst 	
+OUTLINE	IAV SUPV Actv Comform 	
+PACE	IAV SUPV Exprs Comform 	0% noun: "Paces"--act or performance, as in "she put her pupils through  their paces"--to show or cause to show ability or skill 
+PAGE	IAV SUPV Comform 	
+PAN	IAV SUPV Hostile Comform 	
+PARDON	Pos Noun COM Comform Power Pstv Actv Strng 	
+PARDON	DAV Pos SUPV Power Pstv Actv Strng Comform 	
+PART	Noun Comform Affil 	1% noun-adj: "Parting"--farewell, separation 
+PAY	Noun COM ECON Econ* Comform 	4% noun-adj: Remuneration, return 
+PERFORM	DAV SUPV Exprs Actv Comform 	
+PERMISSION	Pos Noun COM Comform Power Pstv Strng Psv 	
+PERSUADE	IAV SUPV Power Strng Actv Comform 	
+PERSUASIVE	IPadj Pos Modif Comform Affil Intrel 	
+PETITION	IAV SUPV Polit* Actv Comform Subm Weak Actv 	
+PHONE	DAV SUPV Comform 	
+PHOTOGRAPH	DAV SUPV Comform 	
+PHRASE	Noun COM Comform 	
+PLAINTIFF	Neg Noun Legal Comform 	
+PLEA	Noun COM Comform Subm Weak Psv 	
+PLEAD	DAV SUPV Subm Weak Psv Comform 	
+PLEASANTRY	Pos Noun Comform Ritual 	
+PLEASE	LY Subm Comform 	70% adv: Shortened form of adverb phrase 'if you please.' cooperation  or obliging action. 
+PLEDGE	IAV Pos SUPV Actv Comform Affil Polit 	
+PLOT	Noun Comform 	
+POEM	Noun COM Exprs Comform 	
+POETIC	IndAdj Pos Modif Exprs Comform Pleasure 	
+POETRY	Noun COM Comform Exprs 	
+POIGNANT	IndAdj Pos Modif Ovrst Strng Comform 	
+POINT	LY Comform Strng 	9% idiom-noun: "Point of view"--viewpoint (handled by view) 
+POSE	Noun Psv Comform 	
+POST	DAV SUPV Actv Comform 	7% verb: To affix to a post, wall, etc. for public notices; publicly (0);  to mail (0) 
+POUT	SV Neg SUPV Emot Pain Comform 	
+PRAISE	Pos Noun COM Comform Pstv Affil 	
+PRAISE	IAV Pos SUPV Affil Pstv Actv Comform 	
+PRAY	DAV SUPV Relig Subm Comform 	verb: To offer devout petition 
+PRAYER	Noun COM Comform Relig Subm 	noun: The act, practice, or instance of praying, entreaty, earnest request 
+PREACH	Noun COM Comform Relig Actv 	
+PRESCRIPTION	Noun COM Comform 	
+PRESENTATION	Noun COM Comform 	
+PRETEND	IAV Neg SUPV Actv Comform Hostile Ngtv 	verb: To hold out the appearance of being, doing, having, feeling, etc., feign. 
+PRETENSE	Neg Noun Comform Fail Hostile 	
+PRICE	Noun COM Comform ECON Econ* PFREQ 	noun-adj: Cost--usually in money but figuratively in sacrifice (3), of  or pertaining to determining a price 
+PRINT	DAV SUPV Actv Comform 	
+PRIVATE	LY Comform 	0% adv: "Privately"--not in public 
+PRIVY	IndAdj Pos Modif Ovrst Comform 	
+PROCLAIM	IAV SUPV Power Strng Comform 	
+PROCLAMATION	Noun COM Comform POLIT Power Strng 	
+PROD	IAV Neg SUPV Strng Comform 	
+PROFESS	IAV Pos SUPV Actv Comform 	
+PROFFER	IAV Pos SUPV Actv Comform 	
+PROMISE	Noun COM Comform 	32% noun-adj: A declaration of intent made by one person or set of persons  to another 
+PROMISE	IAV SUPV Affil Comform 	48% verb: To make such a declaration 
+PROMISE	Modif Comform Psv 	1% adj: "Promised"--pledged 
+PROPAGANDA	Neg Noun COM Comform POLIT Polit* Ngtv 	
+PROPOSAL	Noun COM Comform Actv 	noun: A plan or scheme proposed. 
+PROPOSE	IAV SUPV Actv Comform 	verb: To offer or suggest for consideration 
+PROPOSE	Modif Comform Psv Actv 	0% adj: "Proposed"--suggested 
+PROPOSITION	Noun COM Comform 	
+PROSE	Noun COM Comform Exprs 	
+PROSECUTION	Neg Noun Hostile Legal Ngtv Actv Strng Comform 	
+PROTEST	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+PRY	IAV Neg SUPV Intrel Comform Exert 	
+PUBLICITY	Noun COM Comform POLIT 	
+PUBLISH	IAV SUPV Econ* Actv Comform 	
+PURCHASE	Noun ECON Econ* Comform 	
+PURR	IAV Pos SUPV Actv Comform Pleasure 	
+QUALIFY	IAV SUPV Strng Comform 	16% verb: To impose conditions on the validity of a statement 
+QUARREL	Neg Noun COM Comform Hostile Ngtv Actv 	
+QUARREL	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+QUESTION	Noun COM Comform PFREQ Undrst 	89% noun: A request for information, problem, unresolved issue 
+QUESTION	DAV SUPV Hostile Comform Undrst 	10% verb: To ask, interrogate, raise doubts 
+QUESTION	Modif Comform 	1% noun-adj: "Questioning"--inquiring 
+QUIBBLE	IAV Neg SUPV Actv Comform Hostile 	
+QUOTE	Noun COM Comform 	
+QUOTE	DAV SUPV Comform 	
+RAISE	IAV SUPV Actv Comform 	19% verb: To introduce, bring forward--"raise the question" 
+RALLY	IAV Pos Noun HU Coll Comform Polit Actv 	
+RAMBLE	IAV Neg SUPV Actv Comform 	
+RANG	DAV SUPV ED Comform 	
+RAPPORT	Pos Noun Intrel Comform 	
+RAT	Neg Noun HU Comform Vice 	
+RATE	Noun COM Comform ECON 	
+RAVE	IAV Pos SUPV Actv Comform Affil Strng 	
+REACH	IAV SUPV Actv Comform 	6% verb: To establish communication with 
+REACTION	Noun Psv Comform Subm 	noun: Response 
+READ	DAV SUPV Comform 	78% verb: To apprehend the meaning of something written, to pronounce  a text out loud (infrequent) 
+READ	Noun COM Comform Acad 	21% noun-adj: Material thus apprehended, an occasion or the practise of reading 
+REAFFIRM	IAV SUPV Strng Power Comform 	
+REASSURANCE	Pos Noun COM Comform Affil Pstv Strng 	
+REASSURE	IAV Pos SUPV Pstv Strng Affil Power Comform 	
+REBUFF	IAV Neg SUPV Actv Other Hostile Comform 	
+REBUKE	IAV Neg SUPV Actv Other Hostile Comform 	
+REBUT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+RECEPTIVE	IPadj Pos Modif Affil Comform 	
+RECLAIM	IAV Pos SUPV Actv Fetch Power Comform Exert 	
+RECOMMEND	IAV SUPV Strng Comform 	
+RECOMMENDATION	Noun COM Comform Strng 	
+RECONCILIATION	Pos Noun Comform Intrel Solve 	
+RECORD	Noun COM Comform 	62% noun-adj: An account in writing or the like delineating a set of historical  facts, generally used in reference to one person's or group of persons'  (a government, racial group or the like) performance over a given period  of time; equalling or surpa 
+RECORD	IAV SUPV Comform 	9% verb: To set down in writing, to imprint sound on a disk or tape 
+RECORD	Modif Comform 	0% adj: "Recorded"--set down in writing or in sound 
+REFER	IAV SUPV Psv Comform 	verb: To direct attention or a person to someone or something; to mention  or allude to 
+REFERENCE	Noun COM Comform 	noun: An allusion; direction to some source of information, or a source  of information 
+REFUND	Noun COM Comform ECON Econ* 	
+REFUSAL	Neg Noun COM Comform Hostile Ngtv 	
+REGISTRATION	Noun COM Comform Legal 	
+REITERATE	IAV SUPV Strng Actv Comform 	
+RELATE	IAV SUPV Comform 	14% verb: To tell, recount 
+RELATED	IAV SUPV ED Comform 	4% verb: Told, recounted 
+REMARK	Noun COM Comform 	75% noun: A comment 
+REMARK	IAV SUPV Comform 	25% verb: To comment, point out 
+REMIND	IAV SUPV Comform 	verb: To cause to remember 
+REMINDER	Noun COM Comform 	
+RENOUNCE	IAV Neg SUPV Actv Other Comform Hostile 	
+RENT	Noun COM ECON POLIT Comform Econ* 	57% noun-adj: Payment for temporary possession or use of something 
+RENUNCIATION	Neg Noun Intrel Comform Hostile 	
+REPEAL	IAV Neg SUPV Legal Comform Change 	
+REPEAT	DAV SUPV Actv Comform 	55% verb: To do again, especially to say again 
+REPLY	IAV SUPV Psv Comform 	79% verb: To respond 
+REPLY	Noun COM Comform Psv 	21% noun: A response 
+REPORT	Modif Comform 	0% adj: "Reported," according to such a document or to rumor 
+REPORT	IAV SUPV Actv Comform 	44% verb: To relate some fact or situation, usually to an authority or  the general public 
+REPORT	Noun COM Comform Actv 	2% noun: "Reporting"--the relating of such facts or situations 
+REPORT	LY Comform 	0% adv: "Reportedly"--adverb of sense 2 
+REPRESENT	IAV SUPV Comform Actv 	verb: To describe, to stand or act for 
+REPRESENTATION	Noun COM Comform POLIT Actv 	
+REPROACH	IAV Neg SUPV Other Actv Hostile Comform 	
+REPUDIATE	IAV Neg SUPV Actv Comform Strng 	
+REQUEST	Noun COM Comform Subm Psv Weak 	48% noun: A favor, petition, something asked 
+REQUEST	IAV SUPV Psv Weak Comform Subm 	40% verb: To ask for, to petition 
+REQUEST	Modif Comform Psv Weak 	0% adj: "Requested", asked for 
+RESOLUTION	Noun COM Comform POLIT Strng 	
+RESOUND	IAV Pos SUPV Actv Comform Travel Strng 	
+RESPECT	IAV Pos SUPV Affil Subm Pstv Psv Comform 	2% idiom-verb: 'pay one's respects'--visit, call on formally 
+RESPOND	IAV SUPV Subm Psv Comform Affil 	
+RESPONSE	Noun ABS Abs* COM Comform Psv Affil 	noun: Answer, reaction 
+REVEAL	IAV SUPV PFREQ Comform 	85% verb: To make known, disclose 
+REVEAL	Modif Comform 	10% adj: "Revealing", tending to disclose 
+REVEAL	Modif Comform Psv 	5% adj: "Revealed", disclosed, open 
+RIDE	IAV Neg SUPV Hostile Ngtv Actv Comform 	5% verb: To ridicule or harass 
+RIDICULE	Neg Noun COM Comform Hostile Ngtv Actv 	
+RIDICULE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+RING	DAV SUPV Comform 	15% verb: To telephone (2); to produce a resonant sound (1); to summon (1) 
+ROAR	Noun COM Comform Strng Actv 	
+ROAR	DAV SUPV Strng Actv Comform 	
+ROCK	Noun COM Comform Exprs 	2% idiom: Genre of music--"rock (and) roll" 
+ROLL	Noun COM Comform Exprs Handels 	5% idiom-noun: "Rock (and) roll"--handled by rock 
+ROOT	DAV SUPV Comform Actv 	4% verb: To cheer 
+RULE	Noun COM Comform Power Strng Legal 	58% noun: Regulation, standard, guideline 
+RUMOR	Neg Noun Comform 	
+SAGA	Noun COM Comform Exprs Ovrst 	
+SAID	Modif Comform 	1% adj: "Said"--reputed 
+SAKE	Noun Comform 	
+SALUTATION	Pos Noun Comform 	
+SALUTE	IAV Pos SUPV Actv Other Comform Legal Subm 	
+SANCTION	Noun ECON POLIT COM Comform Legal Power Strng 	
+SANG	DAV SUPV ED Exprs Actv Comform 	
+SARCASM	Neg Noun Comform Hostile 	
+SARCASTIC	IPadj Neg Modif Comform Hostile 	
+SATIRE	Noun COM Comform Exprs 	
+SAY	Noun COM Comform POLIT 	0% noun: "Saying"--aphorism, epigram, saw 
+SCHOOL	IAV SUPV Acad Actv Comform Power 	0% verb: To teach 
+SCIENCE	Noun COM Comform Exprs 	7% noun-idiom: "Science fiction"--type of literature 
+SCOFF	IAV Neg SUPV Comform Power 	
+SCOLD	DAV Neg SUPV Hostile Ngtv Actv PFREQ Comform 	95% verb: Admonish 
+SCOLD	Neg Noun COM Comform Hostile Ngtv Actv 	5% noun: "Scolding" - verbal rebuke 
+SCOWL	IAV Neg SUPV Comform Hostile Actv 	
+SCRAWL	IAV SUPV Comform Weak 	
+SCREAM	Neg Noun COM Comform Ngtv 	3% noun: A sharp, piercing cry 
+SCREAM	DAV Neg SUPV Ngtv PFREQ Comform 	97% verb: To utter a sharp, piercing cry, to utter words in such a way 
+SCREECH	Neg Noun COM Comform Ngtv 	
+SCREECH	DAV Neg SUPV Comform Ngtv 	
+SECRECY	Neg Noun Comform 	
+SECRET	Neg Noun COM Comform Ngtv 	noun-adj: Something hidden or not generally known 
+SEETHE	SV Neg SUPV Comform Hostile Actv 	
+SENTENCE	Noun COM Comform 	
+SENTENCE	DAV Neg SUPV Legal Power Ngtv Strng Actv Comform 	
+SERMON	Noun COM Comform Relig 	
+SERVE	IAV Neg SUPV Comform Hostile Ngtv 	1% idiom-verb: "Serve notice"--give warning 
+SHAKE	IAV SUPV Affil Comform 	14% verb-idiom: "Shake hands" - to greet in the western manner 
+SHOOT	IAV SUPV Comform 	2% idiom-verb: "Shoot the bull"--talk 
+SHOOT	IAV Neg SUPV Hostile Ngtv Comform 	4% idiom-verb: "Shoot...mouth off"--to talk indiscreetly 
+SHOUT	DAV SUPV Actv PFREQ Comform 	96% verb: To cry out or yell loudly 
+SHOUT	Noun COM Comform Actv 	2% noun: A loud cry or yell 
+SHOUT	Noun COM Comform Actv 	2% noun: "Shouting"--loud crying or yelling 
+SHOW	IAV SUPV Strng PFREQ Comform Actv 	89% verb: To demonstrate, make evident, manifest, exhibit, often with  implication of guidance 
+SHOW	Noun COM Comform Exprs 	8% noun: Exhibition, manifestation, demonstration 
+SHOW	IAV SUPV Power Strng Actv Comform 	1% verb: "Show (in, around, out)"--to usher (in, around, out) 
+SHOW	IAV Neg SUPV Actv Ngtv Comform 	0% idiom-verb: "Show off"--to display ostentatiously 
+SHRIEK	DAV Neg SUPV Comform Strng Pain 	
+SHRILL	IndAdj Neg Modif Pain Comform 	
+SHRUG	Neg Noun Comform Hostile Ngtv 	
+SHRUG	DAV Neg SUPV Comform Hostile Ngtv 	
+SHUDDER	Noun Psv Comform Hostile 	
+SHUDDER	DAV SUPV Psv Comform Hostile 	
+SHUT	IAV SUPV Hostile Comform 	23% idiom-verb: "Shut up"--keep quiet 
+SIGH	Noun COM Comform Psv 	
+SIGH	DAV SUPV Actv Psv Comform 	
+SIGHT	IAV SUPV Comform 	2% verb-idiom: "Sight read"--not handled 
+SIGN	Noun COM Comform 	36% noun-adj: Symptom, indicator, signal, symbol 
+SIGN	IAV SUPV Actv Comform Actv 	19% verb: To affix a signature, thereby to endorse or certify 
+SIGN	Noun COM Comform Actv 	2% noun: "Signing"--act of signature 
+SIGN	Modif Comform 	0% adj: "Signed"--bearing signature 
+SIGNAL	Noun COM Comform 	
+SIGNAL	IAV SUPV Actv Comform 	
+SIGNIFY	IAV Pos SUPV Psv Comform Intrel Causal 	
+SING	DAV SUPV Exprs Actv Comform 	69% verb: To produce melodious sounds 
+SING	Noun COM Comform Exprs Actv 	29% noun-adj: "Singing" - melodious sounds, producing or pertaining to 
+SLANDER	IAV Neg SUPV Comform Hostile Other Actv 	
+SLANDEROUS	IPadj Neg Modif Comform Hostile Other 	
+SLIGHT	Neg Noun COM Comform Hostile Ngtv 	3% noun: An insult 
+SMEAR	IAV Neg SUPV Comform Hostile Actv 	
+SMILE	Pos Noun Pstv Psv Comform Affil 	46% noun: Upturning of corners of mouth usually indicating pleasure, favor  or amusement 
+SMILE	DAV Pos SUPV Affil Pstv Psv Comform 	46% verb: To form a smile 
+SMILE	Pos Modif Pstv Psv Comform Affil 	4% adj: "Smiling" 
+SMILE	Pos LY Pstv Psv Comform Affil 	4% adv: "Smilingly" 
+SNARL	DAV Neg SUPV Hostile Ngtv Comform 	
+SNEER	IAV Neg SUPV Actv Comform 	
+SONG	Noun COM Exprs Comform 	noun-adj: Melody (usually worded) 
+SOUND	IAV SUPV VERB LINK Comform 	38% verb: To convey as an impression or appearance; to measure or plumb (1) 
+SPEAK	DAV SUPV Actv PFREQ Comform 	90% verb: To communicate or express oneself through vocal means 
+SPEAK	IAV SUPV Power Actv Comform 	5% verb: 'speak out'--speak audibly or clearly, without hesitation, freely 
+SPEAK	Modif Comform Undrst 	1% verb (adj phrase): 'to speak of'--worthy of note 
+SPEAK	Modif Comform 	2% adj: "Spoken"--articulated 
+SPECIFY	IAV SUPV Actv Comform 	
+SPEECH	Noun ABS Abs* Comform 	24% noun-adj: Verbal communication, the faculty or power of speaking 
+SPEECH	Noun COM Comform Exprs 	71% noun: That which is spoken, a speech 
+SPEECHLESS	Modif Comform Ovrst Psv Weak 	
+SPELL	DAV SUPV Comform 	
+SPOKE	DAV SUPV ED Actv PFREQ Comform 	96% verb: Communicated or expressed through vocal means, past tense of "speak" 
+SPOKE	IAV SUPV Power Actv Comform 	1% verb: "Spoke out"--expressed an emphatic opinion, spoke loudly, freely, clearly 
+SPUTTER	IAV Neg SUPV Actv Comform 	
+STALEMATE	Neg Noun Stay Comform Intrel 	
+STAMMER	DAV Neg SUPV Actv Comform 	
+STANCE	Noun COM Comform 	
+STANDPOINT	Noun COM Comform 	
+STANDSTILL	Neg Noun Stay Intrel Comform 	
+STATE	DAV SUPV Actv Comform 	6% verb-adj: To declare 
+STATEMENT	Noun COM Comform 	noun: A communication or declaration in speech or in writing setting forth  particulars of a situation. 
+STATUTE	Noun COM Comform POLIT Legal Power 	
+STIMULUS	Noun COM Comform 	
+STIPULATE	IAV SUPV Legal Comform Power 	
+STIPULATION	Noun COM Comform Legal Power 	
+STORY	Noun COM Comform Exprs PFREQ 	97% noun-adj: A tale 
+STRAIGHTFORWARD	IndAdj Pos Modif Comform Strng 	
+SUGGEST	IAV SUPV Psv PFREQ Comform 	98% verb: To mention for consideration or possible action; to stimulate  certain thoughts, conclusions or emotions 
+SUGGEST	Modif Comform Undrst 	2% adj: "Suggested" 
+SUGGESTION	Noun COM Comform Undrst 	noun: An idea or proposal offered from one to another 
+SUIT	Noun COM Comform Legal ECON POLIT 	20% noun: Process of litigation 
+SUMMARIZE	IAV SUPV Actv Comform 	
+SUMMARY	Noun COM Comform 	
+SUMMON	IAV SUPV Legal Power Strng Actv Comform 	
+SUNG	DAV SUPV ED Exprs Actv Comform 	
+SWEAR	DAV Neg SUPV Hostile Ngtv Comform 	
+SWORE	DAV Neg SUPV ED Hostile Ngtv Comform 	
+SYMBOL	Noun ABS Abs* COM Comform Exprs 	
+SYMBOLISM	Noun COM Comform Exprs 	
+SYMBOLIZE	IAV Pos SUPV Psv Intrel Comform 	
+SYMPHONIC	Modif Comform Exprs 	
+SYMPHONY	Noun COM Comform Exprs 	
+TALE	Noun COM Comform Exprs 	
+TALK	DAV SUPV Actv Comform 	83% verb: To communicate, discuss, speak; includes pseudo-adjectival forms  like "they stood 
+TALK	Noun COM Comform Actv 	12% noun: Conversation, discussion, speech 
+TALK	Noun COM Comform Actv 	4% noun-adj: "Talking"--conversation, conversing or able to converse;  "talking is fun," "a talking bird" 
+TANTRUM	Neg Noun Hostile Exert Comform 	
+TAUGHT	IAV SUPV ED Acad Power Actv Comform 	verb: Past tense of teach 
+TAUNT	Neg Noun COM Comform Hostile Ngtv Actv 	
+TAUNT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+TAX	Noun COM ECON POLIT Comform Econ* 	13% noun-idiom: "Income tax" 
+TAX	Noun COM ECON POLIT Comform Econ* 	10% noun-idiom: "Social security tax" 
+TEACH	IAV SUPV Acad Power Actv Comform 	61% verb: Impart knowledge or skill, give instruction, train; includes  gerundive forms like "he will start teaching soon." 
+TEASE	IAV Neg SUPV Actv Comform Hostile Other 	
+TELEGRAPH	Noun COM Comform 	
+TELEGRAPH	IAV SUPV Comform 	
+TERM	Noun COM Comform 	20% noun: Specific word or expression 
+TERM	Noun COM Comform Power 	9% noun: Conditions or stipulations 
+TERM	IAV SUPV Comform 	0% verb: To denote, designate, call 
+TESTIFY	IAV SUPV Legal Comform 	
+THANK	DAV Pos SUPV Affil Pstv Comform 	49% verb: To express gratitude, give thanks to 
+THANK	Pos Noun COM Comform Affil Pstv 	6% noun: Acknowledgement of gratitude 
+THANK	Pos Intj Comform Affil Pstv 	37% idiom-interj: "Thank you," "thanks" 
+TITLE	Noun COM Comform Legal 	
+TOAST	IAV SUPV Comform Affil 	
+TOLL	Noun COM Comform ECON Econ* 	
+TOPIC	Noun COM Comform 	noun: Subject or theme 
+TOUCH	Noun Actv Comform 	13% noun: Physical contact 
+TOUCH	Noun COM Comform Affil Actv 	15% noun: Contact or communication--"in touch" 
+TOUCH	IAV SUPV Actv Comform 	6% verb: "Touch on," "touch upon"--mention briefly or casually 
+TRANSGRESS	IAV Neg SUPV Actv Comform Change 	
+TRANSLATE	IAV SUPV Actv Comform 	
+TREATY	Pos Noun COM POLIT Polit* Pstv Comform 	noun: An agreement between governments 
+TREMBLE	IAV SUPV Weak Psv Subm Comform 	
+TRIBUTE	Pos Noun COM Comform Subm Affil 	
+TUNE	Noun COM Comform Exprs 	
+TYPE	DAV SUPV Actv Comform 	2% verb: To print or typewrite 
+TYPE	Modif Comform 	9% noun-adj: "Typing"--typewriting 
+ULTIMATUM	Neg Noun Comform Hostile 	
+UNDERSTANDABLE	IndAdj Pos Modif Comform Eval Virtue 	
+UNEQUIVOCAL	Modif Negate Ovrst Strng Comform 	
+UNSPEAKABLE	IndAdj Neg Modif Comform Emot Pain 	
+UNSPECIFIED	Modif Comform Negate Undrst 	
+UNTOLD	Modif Negate Strng Ovrst Comform 	
+UPFRONT	IndAdj Pos Modif Comform 	
+UPROAR	Neg Noun Comform Affil Change 	
+UTTER	DAV SUPV Psv Comform Ovrst 	
+UTTERANCE	Neg Noun Comform 	
+VENOMOUS	IndAdj Neg Modif Hostile Comform 	
+VERB	Noun COM Comform 	
+VERBAL	Modif Comform Exprs 	
+VERDICT	Noun COM Comform Legal 	
+VETO	DAV Neg SUPV Actv Comform Finish Power 	
+VOCABULARY	Noun COM Comform 	
+VOICE	Noun COM Comform PFREQ 	88% noun: The sound or sounds uttered through the mouths of living creatures  esp. human beings 
+VOICE	IAV SUPV Actv Comform 	7% verb: To give utterance or expression, to declare, proclaim 
+VOTE	Noun COM Comform POLIT Polit* 	18% noun: A ballot, the political representation of an individual or an  elective body 
+VOTE	DAV SUPV Polit* Actv Comform 	69% verb: To cast a ballot 
+VOTE	Modif Comform POLIT Polit* Actv 	12% noun-adj: "Voting" 
+VOUCHSAFE	IAV Pos SUPV Actv Comform Fetch Other 	
+WAIL	IAV Neg SUPV Actv Comform Pain 	
+WARN	Noun COM Comform Actv 	15% noun: "Warning" - a notice of impending danger or misfortune 
+WARN	IAV SUPV Actv PFREQ Comform 	85% verb: To notify of impending danger or misfortune 
+WATCH	IAV SUPV Comform 	4% idiom: "Watch out"--be careful of, guard against 
+WAVE	DAV SUPV Exprs Comform 	
+WAY	LY Intj Comform Undrst 	0% idiom-adv: 'by the way'--incidentally 
+WEEP	IAV Neg SUPV Actv Emot Pain Comform 	
+WELCOME	IAV Pos SUPV Affil Pstv Comform 	31% verb: To greet, receive or accept with pleasure 
+WELCOME	Pos Noun COM Comform Affil Pstv 	10% noun: A kindly greeting or reception 
+WELCOME	Pos Modif Comform Affil Pstv 	33% adj: "Welcome," "welcomed"--kindly received 
+WELCOME	Pos Modif Comform Affil Pstv 	2% noun-adj: "Welcoming"--greeting kindly 
+WHIMPER	DAV Neg SUPV Actv Comform Emot Pain 	
+WHINE	DAV Neg SUPV Hostile Subm Ngtv Weak Comform 	
+WHISPER	Noun COM Comform Undrst 	
+WHISPER	DAV SUPV Comform Undrst 	
+WHISTLE	Noun COM Comform Exprs 	
+WHISTLE	DAV SUPV Exprs Actv Comform 	
+WHOLESALE	Noun Comform ECON Econ* 	
+WOO	IAV Pos SUPV Actv Other Affil Intrel Comform 	
+WORD	Noun COM Comform 	70% noun: The unit of speech, generally preceded by "every" or "not a"  or put in the plural or used by metonymy to indicate speech itself or  a particular speech, rather than a specifically grammatical designation 
+WORD	Noun COM Comform Subm Affil 	5% noun: Promise, assurance, affirmation 
+WORD	Noun COM Comform 	3% noun: News, information--"he brought word of it" 
+WORD	Noun Power Comform 	1% noun: 'the final word,' 'the last word'--the conclusive comment 
+WORD	DAV SUPV Acad Comform 	1% verb: To phrase 
+WORD	Noun COM Comform 	1% noun-adj: 'wording'--phrasing 
+WORD	LY Comform Undrst 	14% adv-idiom: 'in other words' 
+WORSHIP	IAV SUPV Relig Subm Comform 	
+WRITE	Noun COM Comform Actv 	18% noun-adj: "Writing"--composition, production, work; penmanship, the  act of handwriting (6) production, work 
+WRITE	DAV SUPV Actv Comform Exprs 	82% verb: To form words, etc., on some material, or more generally to  express ideas, compose, produce 
+WRITTEN	DAV SUPV ED Comform 	77% verb: Past participle of write (includes post-nominal forms) 
+WRITTEN	Modif Comform Exprs 	23% adj: Set down verbally 
+WROTE	DAV SUPV ED Comform 	verb: Past tense of "write"--to form words, etc. on some material, or  more generally to express ideas, compose, produce 
+YAWN	IAV Neg SUPV Psv Comform Natpro 	
+YELL	Noun COM Comform 	
+YELL	DAV SUPV Actv Comform 	
+YELP	IAV Neg SUPV Actv Comform Pain 	
+ZEALOUS	Modif Strng Comform Eval 	

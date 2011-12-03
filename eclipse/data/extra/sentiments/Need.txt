@@ -1,0 +1,77 @@
+word	tags	comments
+ADDICT	Neg Noun Need Weak HU 	
+ADDICTION	Neg Noun Need Weak Ovrst 	
+CONCERN	IAV Neg SUPV Need Ngtv Psv 	58% verb-adj: To be of interest or importance to--to trouble, worry, or  disquiet, to be interested in, relevant to, or worried about 
+COVET	SV Neg SUPV Psv Need Feel Weak 	
+CRAVE	SV Neg SUPV Psv Need Feel Weak 	
+CURIOSITY	Noun EMOT Psv Need 	
+CURIOUS	Modif EMOT Psv Need 	
+DECADENCE	Neg Noun Vice Need Ovrst 	
+DECADENT	IndAdj Neg Modif Vice Need Ovrst 	
+DEDICATE	Pos Modif Need Pstv Strng 	
+DESIRE	Noun Need EMOT Psv 	64% noun: Longing, yearning 
+DESIRE	SV SUPV Need Psv 	32% verb: To long or yearn, earnestly wish 
+DESIROUS	IndAdj Pos Modif Eval Qual Need 	
+ENGAGE	Pos Modif EVAL Need Pstv 	0% adj: "Engaging"--interesting, challenging 
+ENVIOUS	IPadj Neg Modif Vice Other Need 	
+ENVY	Neg Noun Vice Need Other 	
+FAMINE	Neg Noun Weak Need Pain 	
+FAMISHED	IndAdj Neg Modif Natpro Need 	
+FANATIC	Neg Noun HU Need Vice 	
+FANATICAL	IndAdj Neg Modif Need Vice 	
+FASCINATION	Pos Noun Need Think Other 	
+FORWARD	IAV SUPV Need Handels 	35% idiom-verb: 'look forward (to)'--to anticipate with pleasure--(handled  by 'look') 
+HAVE	SV SUPV VERB HAV MOD Need Power Weak Psv 	7% verb: To be compelled or under obligation to do something--"have to" 
+HEDONISTIC	IndAdj Neg Modif Vice Need 	
+HELP	IAV Neg SUPV Need Subm Passive Ngtv Weak Psv 	3% verb: To avoid or refrain from--"i can't help but . . . ," "not if  i can help it" 
+HOPE	IAV Pos SUPV Need Pstv Psv 	74% verb: To look forward with desire and trust to something happening,  to feel that something desired may happe 
+HOPE	Pos Noun Need Pstv Psv 	26% noun: The feeling that what is desired is also possible, that all  will turn out for the best, a desire or wish 
+HOPEFUL	Pos Modif Pstv EMOT Psv Need 	
+IMPATIENT	IndAdj Neg Modif Vice Need 	
+IMPLORE	IAV Neg SUPV Need Weak Subm Actv 	
+INCLINATION	Noun Need Psv 	
+INCLINE	IAV SUPV Need Psv 	
+INTEND	IAV SUPV Need Actv PFREQ 	95% verb: To have as plan or purpose 
+INTENT	Noun Need Actv 	
+INTEREST	Pos Noun Need EMOT Pstv Psv 	63% noun: Curiosity, concern, involvement, stake 
+INTEREST	IAV Pos SUPV Pstv Need 	5% verb: To arouse interest 
+INTEREST	Pos Modif Modif Need EVAL Pstv 	28% adj: 'interesting'--productive of a feeling of interest 
+INTERESTED	IAV Pos SUPV Pstv Need 	2% verb: To arouse interest 
+INTERESTED	Pos Modif Need Pstv Psv PFREQ 	98% adj: "Interested"--characterized by a feeling of interest 
+IRRESISTIBLE	IPadj Pos Modif Negate Need Eval 	
+LACK	IAV Neg SUPV Need Ngtv Weak Psv 	11% verb: To need, be deficient in 
+LONG	SV SUPV Need Weak Psv 	2% verb: To yearn 
+LONG	Noun EMOT Affil Weak Psv Need 	1% noun: 'longing'--an intense desire 
+LUST	Pos Noun Need Emot Pleasure 	
+MOTIVATED	Pos Modif EMOT Need Pstv Actv 	
+MOTIVATION	Pos Noun Need Pstv Actv 	
+MOTIVE	Pos Noun Need Pstv Actv 	
+NEED	SV Neg SUPV Need Weak Psv Ngtv 	67% verb: To want, lack, require, have (to) 
+NEED	Neg Noun ABS Abs* Ngtv Weak Need Psv 	29% noun: Lack of something wanted, requirement, exigency 
+NEED	Neg Modif Need Psv Ngtv 	3% adj: "Needed"--wanted, requisite 
+NEEDY	IndAdj Neg Modif Weak Need 	
+PREFER	IAV SUPV Psv Need 	verb: Like better, have preference for 
+QUENCH	IAV Pos SUPV Psv Need 	
+RELISH	IAV Pos SUPV Psv Emot Pleasure Need 	
+SAVOR	SV Pos SUPV Psv Need Pleasure 	
+SCARCITY	Neg Noun Decr Need 	
+SELFISHNESS	IPadj Neg Modif Need Fetch Feel 	
+SMITTEN	SV Pos SUPV Psv Emot Pleasure Need Intrel 	
+STARVATION	Neg Noun Need Weak Natpro 	
+STARVE	IAV Neg SUPV Psv Need Weak Natpro 	
+SUFFOCATE	IAV Neg SUPV Psv Weak Need 	
+TAKE	IAV SUPV Need Strng 	6% verb: Require, demand, need, "it takes great courage" 
+TEMPT	IAV Pos SUPV Actv Other Need 	
+THANKFUL	IPadj Pos Modif Subm Need Other 	
+THIRST	Neg Noun Natpro Need 	
+THIRSTY	IndAdj Neg Modif Natpro Need 	
+TRAMP	Neg Noun HU Role Weak Need 	
+URGE	Noun Strng Need 	
+VOID	Neg Noun Need Vice 	
+WANT	Noun Need 	0% noun: What is lacking, needs 
+WANT	SV SUPV Need Psv PFREQ 	verb: To wish, desire, hope for 
+WANTON	IndAdj Neg Modif Need Weak 	
+WISH	Noun EMOT Weak Need 	9% noun: A desire or hope 
+WISH	IAV SUPV Need Weak PFREQ 	91% verb: To desire or hope for something 
+WISHFUL	Modif Subm Weak Need 	
+YEARN	IAV Neg SUPV Actv Need Feel 	

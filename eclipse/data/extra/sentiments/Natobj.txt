@@ -1,0 +1,62 @@
+word	tags	comments
+ASH	Noun Object Natobj 	noun: Powdery residue of burned matter 
+ATOM	Noun POLIT ECON Object Natobj 	
+ATOMIC	Modif POLIT ECON Strng Object Natobj 	
+BED	Noun Object Natobj 	1% noun: Foundation layer or stratum 
+BOULDER	Noun Object Natobj 	
+BUSH	Noun Object Natobj 	noun: A shrub, shrubbery 
+CALCIUM	Noun Object Natobj 	
+CATCH	Noun Psv Object Natobj 	3% noun: That which is caught, such as game or fish 
+CHIP	Noun Object Natobj 	
+CLAY	Noun Object Natobj 	
+COAL	Noun ECON Object Natobj 	
+COPPER	Noun ECON Object Natobj Econ* 	
+DIRT	Neg Noun Ngtv Object Natobj 	
+DROP	Noun Object Natobj 	5% noun: A particle, usually of liquid, a minute amount 
+DUST	Noun Object Natobj 	
+ELECTRON	Noun Object Natobj 	
+FLINT	Noun Object Natobj 	
+FLOWER	Noun Object Natobj 	noun-adj: Blossom, blossoming plant 
+GOLD	Pos Noun ECON Pstv Object Natobj Econ* 	
+GRASS	Noun Object Natobj 	noun: A thin green plant, a lawn 
+HEAP	Noun Psv Object Natobj 	
+HOLLY	Noun Object Natobj 	
+ICE	Noun Object Natobj 	62% noun-adj: Frozen water, of or as cold as frozen water 
+LEAF	Noun Natpro Object Natobj 	
+LEAVE	Noun Object Natobj 	9% noun: Plural of "leaf" 
+LIGNITE	Noun Object Natobj 	
+LOG	Noun Object Natobj 	
+MAHOGANY	Noun Object Natobj 	
+MANURE	Noun Object Natobj 	
+MAPLE	Noun Object Natobj 	
+MARBLE	Noun Object Natobj 	
+METAL	Noun Object Natobj Econ* 	
+MINERAL	Noun Object Natobj Econ* 	
+MOLECULAR	Modif Object Natobj 	
+MUD	Noun Object Natobj 	noun: A slimy, sticky mixture of dirt with water. 
+NEST	Noun Object Natobj 	
+NICKEL	Noun Object Natobj Econ* 	
+OAK	Noun Object Natobj 	
+OBSTACLE	Neg Noun Ngtv Strng Object Natobj 	
+OIL	Noun ECON Object Natobj Econ* 	
+ORE	Noun Object Natobj 	
+PART	Noun Object Natobj 	59% noun: A piece, portion or aspect of something 
+PARTICLE	Noun Object Natobj Undrst 	
+PEONY	Noun Object Natobj 	
+PIECE	Noun PFREQ Object Natobj 	92% noun-adj: A part, section, bit, fragment, specimen or example of something.  vivaldi' (6) 
+PILE	Noun Object Natobj 	28% noun: A heap or stack of something 
+PLANT	Noun Natpro Object Natobj 	21% noun: Member of the vegetable group of living organisms 
+POD	Noun Object Natobj 	
+ROCK	Noun PFREQ Object Natobj 	80% noun: Stone 
+ROSE	Noun Object Natobj 	19% noun: The flower 
+SEDIMENT	Noun Object Natobj 	
+SEED	Noun Object Natobj 	
+SOIL	Noun Object Natobj 	
+STEM	Noun Object Natobj 	
+STICK	Noun Object Natobj 	39% noun: A bar-shaped object 
+STRAW	Noun Object Natobj 	
+STUFF	Noun Object Natobj 	63% noun: Unspecified material, matter, things 
+THING	Noun Object Natobj 	noun: A tangible or intangible object, an entity, matter, state of affairs,  action, idea or emotion 
+THORN	Noun Object Natobj 	
+TREE	Noun Object Natobj 	noun-adj: Plant 
+URANIUM	Noun ECON POLIT Object Natobj Econ* 	

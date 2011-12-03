@@ -1,0 +1,560 @@
+word	tags	comments
+ABIDE	IAV Pos SUPV Actv Affil  Doctr 	
+ABSORPTION	Pos Noun Incr Affil 	
+ACCEDE	IAV Pos SUPV Actv Comform Affil 	
+ACCEPTANCE	Pos Noun Affil Pstv Psv Intrel 	
+ACCOMPANY	IAV SUPV Travl Affil Actv 	59% verb-adj: To go along in company with, to escort; "accompanying"--  attendant (no adjective occurrences this sample) 
+ACQUAINTANCE	Pos Noun HU Affil Pstv Role 	
+ADHERENCE	Pos Noun Affil 	
+ADHERENT	IndAdj Pos Modif Affil 	
+ADMIRE	SV Pos SUPV Affil Subm Pstv Psv Pleasur 	
+ADOPT	Modif Affil Psv Intrel 	4% adj: "Adopted"--chosen, accepted 
+ADOPT	IAV SUPV Work Affil Actv PFREQ 	96% verb: To choose or accept, take as one's own child (2) 
+ADVICE	Noun COM Comform Affil 	noun: An opinion recommended, or offered, as worthy to be followed. 
+ADVISE	IAV SUPV Affil Intrel 	
+ADVOCACY	Pos Noun Comform Affil 	
+AFFAIR	Noun Ritual Affil 	21% noun: A love affair 
+AFFECTION	Pos Noun EMOT Affil Pstv Arousal 	
+AFFECTIONATE	Pos Modif EMOT Affil Pstv Arousal 	
+AFFILIATE	IAV Pos SUPV Actv Affil 	
+AFFILIATION	Pos Noun Affil 	
+AFFIX	DAV Pos SUPV Actv Exert Affil 	
+AGREE	IAV Yes SUPV Affil Pstv 	96% verb: To be of one mind, harmonize in opinion or feeling, give consent, assent 
+AGREE	Modif Comform Affil Psv 	4% adj: "Agreed"--settled or determined by mutual consent, as "the agreed  price"; of the same opinion, as "we are agreed" 
+AGREEMENT	Pos Noun COM Comform Affil Pstv Strng 	noun: Unanimity of opinion, state of accord, mutual arrangement. 
+AID	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	16% verb: To give help 
+AID	Pos Noun Affil Pstv Virtue Actv 	81% noun: Help, a helper 
+ALIENATE	IAV Neg SUPV Affil Intrel Hostile Other 	
+ALLEGIANCE	Pos Noun Affil Virtue 	
+ALLEVIATE	IAV Pos SUPV Actv Affil Exert Decr 	
+ALLIED	IAV Pos SUPV Intrel Affil Polit* Strng Pstv 	
+ALLIES	Pos Noun HU Role Affil Intrel 	
+ALLY	Pos Noun HU POLIT Affil Polit* Pstv Strng Role 	
+ALLY	IAV SUPV Intrel Affil Polit* 	
+ALONG	IAV SUPV Intrel Affil 	14% idiom-verb: 'get along'--co-exist or exist in harmony and comfort. 
+ALONG	IAV SUPV Affil Comform 	6% idiom-verb: "Go along (with)"--agree 
+ALTRUISTIC	IPadj Pos Modif Virtue Affil Fetch 	
+AMELIORATE	IAV Pos SUPV Intrel Pstv Actv Affil 	
+AMENABLE	IndAdj Pos Modif Affil Vary Virtue 	
+AMIABILITY	Pos Noun Affil Virtue 	
+AMIABLE	IPadj Pos Modif Affil Virtue 	
+AMICABLE	IPadj Pos Modif Affil Virtue 	
+ANGEL	Pos Noun HU Role Virtue Affil Relig 	
+ANGELIC	IndAdj Pos Modif Virtue Affil Relig 	
+ANOINT	DAV Pos SUPV Actv Affil Other Exert 	
+ANTITRUST	IndAdj Neg Modif Polit Affil Legal 	
+APOLOGY	Noun COM Comform Affil Subm Weak 	
+APPEAL	Noun COM Comform Subm Psv Affil 	38% noun-adj: A request for a decision, help, sympathy, etc. (6), a quality  arousing a favorable response (6) 
+APPEAL	IAV SUPV Legal Subm Psv Affil Intrel 	59% verb: To request a decision, help, sympathy, etc. (10), to arouse  a favorable response (9) 
+APPEAL	Pos Modif Affil Psv Pleasur Pstv 	3% adj: "Appealing"--arousing a favorable response 
+APPRECIATE	SV Pos SUPV Subm Pstv Psv Arousal Affil 	verb: To be aware of, to be grateful 
+APPRECIATION	Pos Noun Pleasur Pstv Psv Affil 	
+APPROVAL	Pos Noun COM Comform Affil Pstv 	
+APPROVE	Pos Modif Virtue Affil Pstv 	
+APPROVE	IAV Pos SUPV Affil Pstv Strng Comform 	
+ARBITER	Pos Noun HU Role Solve Affil Intrel Comform 	
+ARBITRATE	IAV Pos SUPV Actv Solve Affil Intrel Comform 	
+ARBITRATION	Pos Noun Solve Affil Intrel Comform 	
+ARDENT	IndAdj Pos Modif Strng Power Affil 	
+ARMISTICE	Noun POLIT Ritual Affil Milit Polit* 	
+ASCRIBE	IAV Pos SUPV Actv Affil Doctr 	
+ASSENT	Pos Noun Affil Comform 	
+ASSET	Pos Noun Strng Affil 	
+ASSIST	Pos Noun Affil Pstv Strng Actv Virtue 	
+ASSIST	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+ASSISTANCE	Pos Noun Affil Pstv Strng Actv Virtue 	noun: Act of assisting, help, aid. 
+ASSOCIATION	Pos Noun HU COLL Affil Pstv Strng Actv 	79% noun: An organization of people with a common purpose, having a formal  structure 
+ASSURANCE	Pos Noun COM Comform Affil Pstv Strng Ovrst 	
+ATTACHMENT	Pos Noun Emot Pleasure Affil Intrel 	
+ATTRACT	IAV Pos SUPV Intrel Affil Pstv Strng 	
+ATTRACTION	Pos Noun Affil Pstv Pleasur Strng 	
+BABY	Noun Affil Virtue 	2% noun: Affectionate or familiar form of address or reference 
+BACK	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	1% verb: To support 
+BACK	Pos Noun Power Pstv Strng Intrel Affil Actv 	0% noun: "Backing"--support 
+BACKING	Pos Noun Affil 	
+BAND	IAV SUPV Intrel Affil Strng 	3% verb: To group together 
+BANISHMENT	Neg Noun Power Intrel Affil Polit 	
+BANQUET	Noun Ritual Affil 	
+BAPTISM	Pos Noun Affil Doctr 	
+BAPTIZE	DAV Pos SUPV Actv Affil Doctr 	
+BECKON	IAV SUPV Affil Actv Comform 	
+BEFRIEND	IAV Pos SUPV Actv Affil Intrel 	
+BEHALF	Pos Noun Affil Pstv Virtue 	
+BELOVED	Pos Modif Affil Pstv Arousal 	
+BENEFIT	IAV Pos SUPV Intrel Affil Power Pstv Strng 	21% verb: Gain, do good for, to 
+BENIGN	Pos Modif Pstv Psv Virtue Power Affil 	
+BLESS	IAV Pos SUPV Intrel Affil Relig Pstv Psv 	32% verb: To consecrate, favor or endow, make happy or prosperous 
+BOLSTER	IAV Pos SUPV Actv Affil Strng Incr 	
+BOND	Noun ECON COM Comform Affil Strng 	
+BOOT	IAV Neg SUPV Actv Affil Power Other 	
+BRIDE	Noun HU Female KIN Affil Kin* Role 	
+BRING	IAV SUPV Intrel Affil Power Actv 	13% verb: Bring up--to rear, educate, care for during childhood 
+BROTHER	Noun HU MALE KIN Kin* Affil Role 	noun: Male sibling; fellow member of a religious or other organization  or group; comrade (13) 
+BROTHERHOOD	Pos Noun Virtue Affil Pstv Strng 	
+BROTHERLY	IPadj Pos Modif Affil Intrel 	
+BUDDY	Noun HU MALE Affil Role 	
+BUOYANT	IndAdj Pos Modif Strng Affil 	
+CALL	DAV Pos SUPV Intrel Affil Pstv 	1% verb: To visit 
+CARE	Pos Noun Affil Pstv Actv Undrst Arousal 	26% noun: Attention, concern, thought, worry, assistance 
+CARE	SV Pos SUPV Affil Pstv Actv Intrel 	41% verb: To be concerned with, to mind about, prefer, be solicitous of;  to provide for (much less frequen 
+CARESS	Pos Noun Comform Affil Pstv 	
+CARESS	IAV Pos SUPV Intrel Affil Pstv 	
+CELEBRATION	Pos Noun Ritual Affil Pstv Actv 	
+CHARM	Pos Noun Affil Virtue Pstv 	
+CHARM	IAV Pos SUPV Intrel Affil Pstv 	
+CHEER	IAV Pos SUPV Actv Comform Affil 	
+CHERISH	IAV Pos SUPV Pstv Psv Intrel Affil 	
+CLIQUE	Neg Noun Affil HU Ovrst 	
+CLOSE	Modif Rel Affil 	59% adj: Near or nearby in kind or relationship--having proximity or similarity  in time, space, quality, or number; intimate, confidential, warm, dear (48) 
+CLUB	Noun HU COLL Affil Strng PFREQ 	86% noun: A group of persons organized for social or other activities 
+CO-OPERATION	Pos Noun Affil Pstv Virtue 	
+COACH	IAV SUPV Intrel Acad Actv Affil 	
+COALITION	Noun HU COLL POLIT Affil Polit* Power Strng 	
+CODDLE	IAV Pos SUPV Actv Intrel Other Affil 	
+COHESION	Pos Noun Affil Rel Ovrst Strng 	
+COHORT	Pos Noun Coll Affil Ovrst 	
+COLLABORATE	IAV Pos SUPV Actv Intrel Affil Comform Ach 	
+COLLABORATION	Pos Noun COM POLIT Affil Pstv Strng Actv Virtue 	
+COLLEAGUE	Pos Noun HU Affil Pstv Role 	
+COLLUSION	IAV Neg SUPV Actv Affil Intrel 	
+COMFORT	IAV Pos SUPV Intrel Affil Pstv Strng 	29% verb: To solace 
+COMFORT	Pos Modif Pstv Strng Affil Arousal 	10% adj: "Comforting"--consoling, heartening 
+COMMEND	IAV Pos SUPV Actv Comform Affil 	
+COMMENDABLE	IndAdj Pos Modif Comform Affil Virtue 	
+COMMENDATION	Pos Noun Ritual Affil 	
+COMMISSION	Pos Noun Affil Ovrst Know Strng 	
+COMMITMENT	Pos Noun Virtue Affil Pstv Actv 	
+COMMODIOUS	IPadj Pos Modif Affil Ovrst 	
+COMMON	Pos Modif Virtue Affil Pstv 	40% adj: Shared, mutual 
+COMMUNAL	IPadj Pos Modif Social Affil 	
+COMMUNE	Pos Noun Social Affil 	
+COMMUNION	Pos Noun Ritual Affil Relig Pstv 	
+COMMUNITY	Pos Noun HU COLL POLIT ECON Affil Pstv Strng 	noun-adjective: Town, collectivity formed by proximity or common interest. 
+COMPANION	Pos Noun HU Affil Pstv Role 	
+COMPANIONSHIP	Pos Noun Affil 	
+COMPANY	Pos Noun HU COLL Affil Pstv 	22% noun: Society, companionship 
+COMPASSION	Pos Noun Virtue EMOT Affil Pstv 	
+COMPASSIONATE	Pos Modif Virtue EMOT Affil Pstv 	
+COMPATIBLE	Pos Modif Virtue Pstv Affil 	
+COMPLIANCE	Pos Noun Affil Intrel Comform 	
+COMPLIMENT	IAV Pos SUPV Actv Comform Affil 	
+CONCUR	SV Pos SUPV Actv Comform Affil 	
+CONDONE	SV Pos SUPV Actv Other Power Affil 	
+CONDUCIVE	IndAdj Pos Modif Affil Rel 	
+CONFEDERATE	Noun HU POLIT Affil Polit* Role 	
+CONFEDERATION	Pos Noun Affil Intrel Polit 	
+CONFIDANT	Pos Noun HU Role Affil 	
+CONFIDE	IAV Pos SUPV Affil Pstv Psv Comform Ovrst 	
+CONFIDENCE	LY Comform Affil 	3% idiom-adj-adv: "In confidence"--private, privately 
+CONGENIAL	IPadj Pos Modif Affil Virtue 	
+CONGRATULATE	IAV Pos SUPV Actv Comform Other  Affil 	
+CONGRATULATION	Pos Noun COM Comform Affil Pstv 	
+CONGRATULATORY	IPadj Pos Modif Comform Affil 	
+CONGREGATE	IAV Pos SUPV Actv Affil Coll 	
+CONSENSUS	Pos Noun Comform Affil Compl 	
+CONSOLE	IAV Pos SUPV Actv Affil Other 	
+CONSPIRATOR	Neg Noun HU Intrel Affil Conform 	
+CONSPIRE	IAV Neg SUPV Actv Affil Intrel Conform 	
+CONTACT	Pos Noun Affil Pstv Actv COM Comform PFREQ 	93% noun: A meeting, acquaintance, or communication with or exposure to  another person or other people generally over some period of time in some  generally social regard--the meeting with such a person, the person himself,  or the relationship so develo 
+CONTRIBUTE	IAV Pos SUPV Work Affil Actv Econ* PFREQ Pstv Strng 	97% verb: To give or add 
+CONTRIBUTE	Pos Modif Pstv Strng Actv Intrel Affil 	0% adj: "Contributing"--giving or adding 
+CONTRIBUTION	Pos Noun ECON POLIT Affil Pstv Strng Actv Virt 	noun: Something given or added 
+CONTRIBUTOR	Pos Noun HU Role Affil Intrel 	
+CONVENE	IAV Pos SUPV Actv Begin Travel Affil Coll 	
+COOPERATE	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+COOPERATION	Pos Noun ABS Abs* Affil Pstv Strng Actv Virtue 	noun: Working together 
+COOPERATIVE	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	68% noun-adj: An organization for the benefit of producers or consumers 
+COOPERATIVE	Pos Modif Affil Pstv Actv Virtue 	27% adj: Willing to act with others, or doing so 
+COOPERATIVE	Pos LY Affil Pstv Strng Virtue Actv 	5% adv: "Cooperatively"--with cooperation 
+COORDINATION	Pos Noun Strng Rel Affil Virtue 	
+COUNSEL	IAV Pos SUPV Affil Power Pstv Comform 	
+COUPLE	Noun HU COLL Affil 	41% noun: Two persons of opposite sex considered together 
+COURT	IAV SUPV Intrel Affil Actv 	9% verb: To woo or try to get, seek 
+COURTEOUS	Pos Modif Comform Affil Pstv Virtue 	
+COURTESY	Pos Noun Ritual Affil Pstv Virtue 	
+COVENANT	Pos Noun Comform Affil Doctr 	
+CREDENTIALS	Pos Noun Qual Eval Affil 	
+CROSS	Noun HU COLL Affil 	3% idiom-noun: "Red cross" 
+CRUSADE	Pos Noun Travel Polit Affil 	
+CRUSADER	Pos Noun HU Role Polit Travel Affil 	
+CURE	IAV Pos SUPV Complt Power Affil Pstv PFREQ 	89% verb: To restore to health 
+DARLING	IndAdj Pos Noun HU Pstv Role Affil Eval Virtue 	
+DATE	Noun Ritual Affil 	26% noun: A social occasion and/or the person one accompanies on such an occasion 
+DATE	IAV SUPV Intrel Affil 	43% verb: To go out socially with someone 
+DEAR	Pos Modif Virtue Pstv PFREQ Affil 	98% noun-adj: A conventional form of address used either in speech or  writing indicating belovedness, intimacy or attachment--"my dear isabel"  (includes 11 cases of "dearest" similarly used); beloved or precious (9);  expensive (1); an interjection indi 
+DEAR	Pos Modif Virtue Pstv Affil 	2% adv: "Dearly" 
+DEFEND	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	verb: To ward off or repulse attacks, to uphold 
+DEFENDER	Pos Noun HU Pstv Strng Actv Role Affil 	
+DEFENSE	Pos Noun POLIT Strng Actv Affil Intrel Pstv 	noun-adj: Resistance or protection against attack, whether physical, verbal  or otherwise 
+DESERTION	Neg Noun Travel Affil Vice Ovrst 	
+DESERVE	IAV Pos SUPV Intrel Affil Pstv 	
+DEVOTION	Pos Noun EMOT Relig Subm Pstv Psv Arousal Affil 	
+DEVOUT	IndAdj Pos Modif Strng Affil Doctr Other 	
+DICTATE	IAV Neg SUPV Actv Power Affil Polit 	
+DICTATORIAL	IPadj Neg Modif Actv Power Affil Polit 	
+DISARMAMENT	Noun Means POLIT Actv Affil 	
+DISCIPLE	Noun HU Subm Psv Role Affil 	noun: Follower 
+DISSENT	Neg Noun Vice Affil Hostile 	
+DISSENTION	Neg Noun Vice Affil Hostile 	
+DISSOLUTION	Neg Noun Think Affil Pain Percv 	
+DOCTOR	IAV SUPV Intrel Affil 	0% verb: To act as a doctor, to fix 
+EMBRACE	Pos Noun Affil Pstv Actv Comform 	
+EMBRACE	IAV Pos SUPV Intrel Affil Pstv Actv 	
+ENCHANT	IAV Pos SUPV Intrel Affil Pstv 	
+ENCOUNTER	IAV SUPV Intrel Affil 	
+ENCOURAGE	IAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	98% verb: To inspire with confidence, hearten, urge 
+ENCOURAGEMENT	Pos Noun Affil Pstv Actv Virtue 	
+ENDEAR	IAV Pos SUPV Actv Other Pleasure Affil 	
+ENDORSE	IAV Pos SUPV Affil Pstv Strng Comform Power 	
+ENGAGE	Modif Intrel Affil Kin* 	38% adj: "Engaged"--bethrothed 
+ENGAGE	IAV SUPV Intrel Affil 	14% verb: To involve, employ or betroth 
+ENTERTAIN	Pos Modif EVAL Exprs Pstv Actv Intrel Affil 	
+ENTHUSIASM	Pos Noun EMOT Affil Pstv Pleasur 	
+ENTHUSIASTIC	IndAdj Pos Modif EMOT Pleasur Pstv Affil Feel Strng 	
+ESOTERIC	IndAdj Neg Modif Affil Think Power 	
+EXCOMMUNICATION	Neg Noun Hostile Legal Affil 	
+EXILE	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXPEL	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXTEND	IAV SUPV Affil Actv Comform 	13% verb: To hold out to, offer 
+FACILITATE	IAV Pos SUPV Work Pstv Strng Affil 	
+FAITH	Pos Noun Virtue Affil Subm Pstv Psv 	10% idiom-noun: "Good faith"--honesty, trustworthiness 
+FALL	IAV SUPV Intrel Affil Psv 	6% verb-idiom: "Fall in love,"--become enamored 
+FALL	IAV SUPV Intrel Affil Psv 	1% verb: "Fall for"--become enamored 
+FAN	Noun HU Affil Subm Psv Role 	76% noun: Devotee, enthusiast 
+FAREWELL	Noun COM Comform Intj Affil 	
+FASCIST	IndAdj Neg Modif Polit Affil Doctr 	
+FATHER	Noun HU MALE KIN Kin* Strng Role Affil 	noun: A male parent 
+FAVOR	Pos Noun Affil Pstv Virtue 	15% noun: A kind act 
+FAVOR	Pos Noun Virtue Pstv Affil 	15% noun: The state of being approved, an advantageous state 
+FAVOR	Pos Modif Virtue EVAL Affil Pstv Psv 	7% adjective: "Favored"--treated with preference, approved 
+FAVORABLE	Pos Modif Virtue EVAL Pstv Affil 	
+FAVORITE	Pos Modif Virtue EVAL Pstv Affil 	
+FEAST	IAV Pos SUPV Pstv Actv Intrel Affil 	17% verb: To celebrate, usually by gorging oneself 
+FEDERAL	Modif POLIT Polit* HU COLL Affil 	adjective: Pertaining to the independent central government of a union of states. 
+FEDERATION	Noun HU COLL POLIT Affil Polit* Strng 	
+FEED	DAV SUPV Intrel Affil Power Strng 	78% verb: To supply a necessary input, usually nutritional 
+FELL	IAV SUPV Intrel Affil 	8% verb-idiom: "Fell in love,"--became enamored 
+FELL	IAV SUPV Intrel Affil 	0% verb: "Fell for"--became enamored 
+FELLOW	Pos Modif Affil Pstv Rel 	27% adj: Associated, in the same situation 
+FELLOWSHIP	Pos Noun ECON Virtue Affil Pstv Strng 	
+FERVENT	IndAdj Pos Modif Strng Affil Feel 	
+FERVOR	Pos Noun Strng Affil Feel 	
+FESTIVAL	Pos Noun Ritual Affil Actv Pstv 	
+FIDELITY	Pos Noun Doctr Subm Pstv Affil 	
+FILIAL	IPadj Pos Modif Doctr Affil Intrel 	
+FLATTER	IAV Pos SUPV Intrel Affil Subm Psv Weak Comform 	
+FLATTERY	Pos Noun Intrel Affil Subm Psv Weak Comform 	
+FOND	Pos Modif Affil Pstv Arousal 	5% adj: Enamored of 
+FOND	Pos Modif Virtue Pstv Affil PFREQ 	90% adj: Affectionate, cherished 
+FOND	Pos LY Affil Pstv Arousal 	5% adv: 'fondly'--with affection 
+FOND	Pos Modif Affil Pstv Arousal 	0% adj: 'fonder'--more enamored of 
+FOND	Pos Modif Virtue Pstv Affil 	0% adj: 'fonder'--more affectionate, cherished 
+FOND	Pos Modif Affil Pstv Arousal 	0% adj: 'fondest'--most enamored of 
+FOND	Pos Modif Virtue Pstv Affil 	0% adj: 'fondest'--most affectionate, cherished 
+FORGAVE	IAV Pos SUPV ED Intrel Affil Pstv 	
+FORGIVE	IAV Pos SUPV Intrel Affil Pstv 	
+FORGIVEN	Pos Modif Affil Pstv Psv 	
+FOSTER	IAV Pos SUPV Actv Begin Affil 	
+FRIEND	Pos Noun HU Affil Pstv Role 	noun: Person attached to another by feelings of affection or personal regard 
+FRIENDLY	Pos Modif EVAL EMOT Virtue Affil Pstv 	adjective: Kind, helpful, amicable 
+FRIENDSHIP	Pos Noun ABS Abs* Virtue Affil Pstv 	noun: A friendly relation 
+FUNERAL	Noun Ritual Affil 	
+GENERATE	DAV Pos SUPV Actv Begin Affil Work Incr 	
+GENIAL	Pos Modif EVAL Affil Pstv Arousal 	
+GENTLE	Pos Modif EVAL Affil Pstv Weak Psv Virtue 	
+GET	Handels Intrel Affil 	3% idiom-verb: "Get along"--co-exist or exist in harmony and comfort--handled  by "along" 
+GIFT	Pos Noun Object COM ECON Affil Pstv Comnobj 	
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	90% verb: To donate, provide (with), present, hand over, emit or issue,  cause to have; prone, wont--"he is given to drink" (2) 
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv 	1% noun-adj: "Given"--specific, assumed, granted 
+GIVE	DAV SUPV Handels Intrel Affil 	0% noun: "Giving"--providing 
+GIVER	Noun HU Power Role Affil 	
+GLAD	Pos LY Affil Pstv Psv Pleasur 	4% adv: "Gladly"--with pleasure 
+GLORIFY	IAV Pos SUPV Actv Other Strng Affil Power 	
+GO	IAV SUPV VERB GO Actv Intrel Affil Subm 	1% idiom-verb: 'go along with'--accord, acquiesce--handled by 'along' 
+GONE	Handels Intrel Affil Subm 	0% verb: 'gone along with'--accorded, agreed, acquiesced; handled by 'along' 
+GOODBYE	Pos Intj Pstv Affil 	
+GOSSIP	IAV SUPV Affil Comform 	
+GRACIOUS	Pos Modif EVAL Affil Pstv Virtue Power 	
+GRANT	IAV SUPV Intrel Affil Power Strng 	42% verb: To confer or give in promise, to allow, acknowledge 
+GRATEFUL	Pos Modif EMOT Affil Subm Pstv Pleasur Arousal 	
+GREET	Pos Noun COM Comform Affil Pstv 	
+GREET	IAV Pos SUPV Affil Pstv Comform 	
+GRIEF	Neg Noun EMOT Pain Ngtv Weak Psv Affil 	
+GRIN	Noun COM Comform Affil 	
+GRIN	DAV SUPV Comform Affil 	
+GUARD	IAV SUPV Intrel Affil Milit Power Strng Actv 	55% verb: To protect or watch out for 
+GUEST	Noun HU Affil Role 	noun-adj: Recipient of hospitality 
+GUILD	Noun HU COLL ECON Affil Econ* Strng 	
+HAND	LY Undrst Comform Affil 	2% idiom-verb: "Shake hands"--to greet in the western manner--handled by "shake" 
+HARMONIOUS	IPadj Pos Modif Affil Intrel Pleasure 	
+HARMONIZE	IAV Pos SUPV Actv Comform Intrel Affil 	
+HEART	Pos Modif Affil Pstv Arousal 	1% idiom-adj: "Heart to heart" - intimate 
+HEAT	Modif Psv Arousal Affil 	3% idiom-adj: "In heat", in a state of sexual readiness 
+HELP	Pos Noun Affil Pstv Actv Virtue 	22% noun: Aid, assistance, assistants 
+HELP	IAV Pos SUPV Intrel Affil Pstv Actv 	75% verb: To aid, assist 
+HELP	Pos Modif Affil Pstv Actv Virtue 	0% adj-noun: 'helping' 
+HELPER	Noun HU Role Affil 	
+HELPFUL	Pos Modif EVAL Affil Pstv Actv Virtue 	
+HIT	IAV Pos SUPV Affil Pstv Intrel Affil 	0% idiom-verb: "Hit it off"--get along well 
+HIT	IAV Pos SUPV Affil Pstv Intrel Affil 	0% idiom-verb: "Hit it off"--get along well 
+HONEYMOON	Pos Noun Ritual Affil Kin* Pstv 	
+HOSPITABLE	Pos Modif Virtue EVAL Affil Pstv 	
+HOST	Noun HU MALE Affil Role 	
+HOUSE	DAV SUPV Intrel Affil 	0% verb: To shelter, lodge, accommodate 
+INAUGURATE	IAV Pos SUPV Actv Begin Affil Ritual 	
+INFORMAL	Modif Affil Know Negate 	
+INSEPARABLE	IPadj Pos Modif Negate Affil Intrel 	
+INSPIRE	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	
+INTERTWINE	IAV SUPV Space Affil 	
+INTIMATE	Pos Modif Affil Pstv Psv Arousal 	
+INVADE	IAV Neg SUPV Travel Affil Polit 	
+INVITATION	Pos Noun COM Comform Affil Actv Pstv 	
+INVITE	DAV Pos SUPV Intrel Affil Pstv Actv 	verb: To ask to a dinner, party, or for a visit or other social event;  more generally, to ask, request, call for (9) 
+INVOLVEMENT	Noun Affil Arousal 	
+JOIN	DAV SUPV Intrel Affil Actv 	59% verb: To become a member of a group or organization 
+JOIN	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	33% verb: To unite with, agree with, come together--"let us join together,"  "i join you in praising him"; to get or come together in an informal way--'i'll  join you later' 
+JOINER	Noun HU Affil Role 	
+JOINTLY	Pos LY Affil Pstv Strng Rel 	
+KID	IAV Pos SUPV Affil Pstv Comform Exprs 	3% verb: To jest 
+KIND	Pos Modif Virtue EVAL Affil Pstv 	16% adj: Benevolent, charitable--"kind," "kindly" 
+KIND	Pos LY Virtue Affil Pstv 	0% adv: "Kindly"--benevolently, charitably 
+KINDNESS	Pos Noun Virtue Pstv Affil 	
+KISS	Pos Noun Comform Affil Pstv Actv 	
+KISS	DAV Pos SUPV Affil Pstv Actv Intrel 	
+LAUDABLE	IPadj Pos Modif Eval Qual Affil 	
+LEAGUE	Noun HU COLL Affil Polit* Strng PFREQ 	86% noun: An association or alliance 
+LEAGUE	IAV SUPV Intrel Affil Strng 	5% idiom: "In league with", allied with 
+LEND	DAV SUPV Exch Affil Econ* Actv 	
+LENT	DAV SUPV ED Exch Affil Econ* Actv 	
+LIBERAL	Pos LY Virtue Pstv Affil 	0% adv: "Liberally" - freely, generously 
+LIBERATE	IAV Pos SUPV Actv Other Power Affil 	
+LIKE	SV Pos SUPV Affil Pstv Psv Arousal 	47% verb: To derive pleasure from, to find agreeable or congenial, to  feel attracted to someone or som 
+LIKE	Pos Noun EMOT Affil Pstv Psv Arousal 	2% noun: "Liking"--the attraction to, pleasure in, or enjoyment of something  or someone, fancy or inclination 
+LONE	Neg Modif Affil Pain Weak Ngtv Psv PFREQ 	97% adj: "Lonely" - sad and alone 
+LONELINESS	Neg Noun Affil Pain Ngtv Weak Psv 	
+LONELY	Neg Modif Affil Pain Ngtv Weak Psv 	
+LONER	Neg Noun HU Affil Role Ngtv Weak Psv 	
+LONG	Noun EMOT Affil Weak Psv Need 	1% noun: 'longing'--an intense desire 
+LOVE	SV Pos SUPV Intrel Affil Pstv Psv 	48% verb: To have affection or strong liking for, especially for one of  opposite sex 
+LOVE	Pos Noun EMOT Affil Pleasur Pstv Psv 	30% noun: The affection 
+LOVE	Pos Modif Affil EMOT Pstv Psv Pleasur 	12% idiom-adj: 'in love'--enamored 
+LOVE	Pos Modif EMOT Affil Pleasur Pstv Psv 	4% adj: 'loving'--feeling or showing love 
+LOVE	IAV SUPV Intrel Affil Strng Actv 	1% idiom-verb: 'make love' 
+LOVE	Noun Affil Intrel 	1% idiom-noun: 'love life'--one's sexual or romantic relations 
+LOVELESS	Neg Modif Vice Affil Ngtv Psv 	
+LOVER	Pos Noun HU Affil Pstv Role 	41% noun: A person in love, or involved in a sexual relationship, usually the man 
+LOVER	Pos Noun HU Role Affil Pstv 	59% noun: A person with a strong liking for something--"a music lover,"  "a lover of nature" 
+MAKE	IAV Pos SUPV Intrel Affil Pstv Actv 	0% verb: "Make up (for)"--compensate, make reparation 
+MAKE	IAV Pos SUPV Intrel Affil Pstv 	3% idiom-verb: "Make friends," "make a friend" 
+MARRIAGE	Pos Noun Ritual Affil Kin* Pstv 	noun-adj: Act of marrying or state of being married 
+MARRY	DAV Pos SUPV Affil Kin* Pstv Intrel 	83% verb: To take a husband or wife 
+MARRY	Pos Modif Affil Kin* Pstv Intrel 	17% adj: "Married"--wedded 
+MATE	Pos Noun HU Affil Pstv Role 	
+MATE	DAV Pos SUPV Intrel Affil Pstv 	
+MEET	DAV SUPV Intrel Affil Actv 	43% verb: Having to do with persons--to encounter, to be in the physical  presence of, to group with (of people) 
+MEET	Pos Noun COM Comform Affil Pstv 	1% idiom: A "meeting of the minds"--agreement 
+MEMBER	Noun HU Affil Role 	noun: An element of a set, usually a person in a group 
+MEMBERSHIP	Noun HU COLL Affil 	noun: The relation holding between an element and a set to which it belongs,  the credentials for belonging, or the members collectively. 
+MERIT	IAV Pos SUPV Pstv Strng Intrel Affil 	
+MIND	IAV SUPV Intj Intrel Affil 	3% idiom: "Never mind"--don't bother, don't worry, pay no attention 
+MINISTER	IAV Pos SUPV Intrel Affil Actv Pstv 	3% verb: To care for, aid, service 
+MOTHER	Noun HU Female KIN Kin* Role Affil 	noun: Female parent 
+MOURN	Neg Noun Affil Pain Ngtv Psv Weak 	
+MOURN	IAV Neg SUPV Affil Ngtv Psv Weak Pain 	
+MUTUAL	Pos Modif Affil Pstv HU COLL 	91% adjective: Common, joint, reciprocal, reciprocated. 
+MUTUAL	Pos LY Affil Pstv HU COLL 	9% adverb: "Mutually"--jointly, reciprocally 
+NEIGHBOR	Noun HU Affil PFREQ Role 	93% noun-adj: A person or thing that is near another; one's fellow human being (1) 
+NOMINATE	DAV Pos SUPV Actv Comform Affil Polit Other 	
+NON-VIOLENCE	Pos Noun Virtue Affil Pstv 	
+NON-VIOLENT	Pos Modif Virtue Affil Pstv 	
+NOTORIETY	Pos Noun Ovrst Affil Arousal 	
+NOURISH	IAV Pos SUPV Actv Affil Food Incr 	
+NURSE	IAV Pos SUPV Intrel Affil Pstv Actv 	5% verb: To care for, foster, cherish, nurture 
+NURTURE	IAV Pos SUPV Actv Affil Other 	
+OBEDIENCE	Pos Noun Affil Subm Actv 	
+OBEDIENT	IPadj Pos Modif Affil Subm Actv 	
+OFFER	IAV Pos SUPV Affil Actv Pstv PFREQ Intrel 	84% verb: To present, propose, give 
+OFFER	Pos Noun COM Comform Affil Pstv Actv 	6% noun: A presentation, proposal 
+OFFER	Pos Noun Object COM Affil Pstv Strng Psv Comnobj 	11% noun: "Offering", something presented, a donation 
+OSTRACIZE	IAV Neg SUPV Ovrst Hostile Affil Other Actv 	
+OUR	DET GEN Affil Our 	pronoun: Possessive form of 'we' 'belonging to us' 
+OURS	PRON Affil Our 	
+OUTCAST	Neg Noun Ovrst Affil Other 	
+OVERTURE	Noun Affil Virtue 	
+PAMPER	IAV Pos SUPV Actv Other Intrel Affil Arousal 	
+PARENT	Noun HU KIN Kin* Role Affil 	noun: One who has offspring 
+PART	Noun Comform Affil 	1% noun-adj: "Parting"--farewell, separation 
+PARTAKE	IAV SUPV Intrel Affil Actv 	
+PARTICIPANT	Noun HU Affil Subm Actv Role 	noun: One who participates or shares 
+PARTICIPATE	DAV SUPV Intrel Affil Actv PFREQ 	95% verb: To partake of, to share in some action 
+PARTICIPATE	Modif Actv Intrel Affil 	5% adj: "Participating"--sharing in some action 
+PARTICIPATION	Noun Actv Intrel Affil 	
+PARTNER	Pos Noun HU ECON Affil Econ* Pstv Strng Role 	noun: One of two or more associated as joint principals in carrying on  some action, etc. 
+PARTNERSHIP	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	
+PARTOOK	IAV SUPV Intrel Actv Affil 	
+PARTY	Noun HU COLL Exprs Affil 	32% noun-adj: A social gathering 
+PASSION	Noun EMOT Psv Strng Arousal Affil 	
+PASSIONATE	Pos Modif EMOT Affil Pstv Strng Arousal Psv 	
+PATRIOT	Pos Noun HU Role Polit Affil 	
+PATRIOTIC	IndAdj Pos Modif Affil Polit 	
+PAY	IAV Pos SUPV Affil Actv Pstv Intrel 	2% verb: Pay a visit or call 
+PEACE	Pos Noun ABS Abs* POLIT Virtue Affil Pstv Psv 	59% noun: The attainment or state of freedom from any strife, tranquility 
+PEACE	IAV Pos SUPV Intrel Affil Pstv Actv 	11% idiom-verb: "Make peace," to end strife 
+PEACEFUL	Pos Modif Virtue EVAL Pstv Psv Affil 	adjective: Possessing, enjoying, or marked by peace. 
+PERSUASIVE	IPadj Pos Modif Comform Affil Intrel 	
+PET	Noun ANI Affil 	
+PITY	Noun EMOT Psv Affil Arousal 	
+PITY	SV SUPV Intrel Affil Power Psv 	
+PLEASE	IAV Pos SUPV Intrel Affil Pstv 	23% verb: To satisfy, to make enjoyable for 
+PLEASED	IAV Pos SUPV Intrel ED Affil Pstv 	3% verb: To make enjoyable for, to satisfy (past tense) 
+PLEDGE	IAV Pos SUPV Actv Comform Affil Polit 	
+POLITE	Pos Modif Affil Pstv Weak Virtue 	
+POOL	IAV SUPV Rel Affil 	
+POPULARITY	Pos Noun Affil Intrel Virtue 	
+PRAISE	Pos Noun COM Comform Pstv Affil 	
+PRAISE	IAV Pos SUPV Affil Pstv Actv Comform 	
+PREMISE	Pos Noun Causal Affil 	
+PREPARATORY	IndAdj Pos Modif Affil Causal 	
+PRESENT	IAV SUPV Actv Intrel Affil 	20% verb: To bestow, proffer, show, introduce, manifest 
+PRESENT	Noun Affil Object Comnobj 	7% noun: A gift 
+PROMISE	IAV SUPV Affil Comform 	48% verb: To make such a declaration 
+PROTECT	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	verb: To defend or guard from attack, damage, loss, etc. 
+PROTECTIVE	IndAdj Pos Modif Strng Other Affil 	
+PROTECTOR	Pos Noun HU Role Affil Other Strng 	
+PROUD	Pos Modif EMOT Pleasur Pstv Strng Affil 	adj: Filled with pride 
+PROVIDE	IAV Pos SUPV Intrel Affil Power Pstv Strng PFREQ 	97% verb: To furnish, supply, afford 
+QUARTER	DAV SUPV Intrel Power Affil 	4% verb: To provide with housing 
+RAVE	IAV Pos SUPV Actv Comform Affil Strng 	
+REASSURANCE	Pos Noun COM Comform Affil Pstv Strng 	
+REASSURE	IAV Pos SUPV Pstv Strng Affil Power Comform 	
+REBELLIOUS	IPadj Neg Modif Hostile Polit Affil Ovrst 	
+RECEIVE	IAV SUPV Intrel Affil Psv Subm 	verb: To get, accept, admit, apprehend 
+RECEPTIVE	IPadj Pos Modif Affil Comform 	
+RECONCILE	IAV Pos SUPV Intrel Pstv Affil 	
+REGARD	Pos Noun Affil Subm Pstv Arousal 	9% noun: Respect, esteem, affection or attention 
+REINFORCEMENT	Pos Noun Affil 	
+RELATION	Noun Affil Natpro 	1% noun: Sex act 
+RELEASE	Modif Actv Intrel Affil 	32% noun-adj: A letting out, letting go, or freeing 
+RENOWN	Pos Noun Affil Eval Virtue 	
+RESCUE	Pos Noun Affil Power Pstv Actv Virtue 	
+RESCUE	IAV Pos SUPV Pstv Actv Affil Intrel 	
+RESIGNATION	Neg Noun Fail Affil 	
+RESPECT	Pos Noun Subm Pstv Psv Arousal Affil 	31% noun: Esteem, regard 
+RESPECT	IAV Pos SUPV Affil Subm Pstv Psv Comform 	2% idiom-verb: 'pay one's respects'--visit, call on formally 
+RESPOND	IAV SUPV Subm Psv Comform Affil 	
+RESPONSE	Noun ABS Abs* COM Comform Psv Affil 	noun: Answer, reaction 
+RESPONSIVE	Pos Modif Affil Pstv Arousal 	
+RESTORATION	Pos Noun Affil Fetch 	
+RESURRECT	IAV Pos SUPV Actv Affil Fetch 	
+RETURN	Pos Noun Affil Pstv Actv Virtue 	5% noun: Reciprocation, giving back 
+REVERE	IAV Pos SUPV Actv Affil Subm Ought 	
+REVERENCE	Pos Noun Affil Subm Ought 	
+REVERENT	IndAdj Pos Modif Affil Subm Ought 	
+REVERENTLY	Pos Modif Affil Subm Ought Actv 	
+REVITALIZE	IAV Pos SUPV Actv Affil Fetch 	
+REVOLT	IAV Neg SUPV Actv Hostile Polit Affil 	
+ROMANTIC	Pos Modif EMOT Affil Pstv Pleasur 	
+ROOM	DAV SUPV Intrel Affil 	1% verb: To reside with or at 
+ROOMMATE	Noun HU Affil Role 	noun: Person sharing a room 
+SANCTIFY	IAV Pos SUPV Actv Affil Other 	
+SATISFY	IAV Pos SUPV Intrel Pstv Strng Affil 	28% verb: To give enjoyment or contentment, to fulfill 
+SECEDE	IAV Neg SUPV Polit Travel Affil 	
+SECESSION	Neg Noun Polit Affil Travel 	
+SECOND	IAV SUPV Intrel Affil Strng 	2% verb: To assist or support 
+SHAKE	IAV SUPV Affil Comform 	14% verb-idiom: "Shake hands" - to greet in the western manner 
+SHARE	DAV Pos SUPV Intrel Affil Pstv 	67% verb: To have, use or experience in common 
+SHARE	Pos Noun Affil Pstv Virtue 	10% noun: "Sharing" - having or using in common 
+SHARE	Pos Modif Affil Pstv Virtue 	4% adj: "Shared" - had or used in common 
+SHELTER	IAV Pos SUPV Intrel Power Pstv Strng Affil 	
+SHIELD	IAV Pos SUPV Actv Other Power Affil 	
+SHOE	Modif Know Affil 	0% adj: "In ___ shoes"--in another's situation 
+SHUN	IAV Neg SUPV Actv Affil Ovrst Hostile Other 	
+SIDE	IAV SUPV Intrel Affil 	0% verb: To side with or against, agree or disagree 
+SINCERE	Pos Modif Virtue EVAL Pstv Affil 	adj: Honest,genuine 
+SINCERITY	Pos Noun Affil Pstv Virtue 	
+SISTER	Noun HU Female KIN Kin* Role Affil 	noun: Female sibling 
+SMILE	Pos Noun Pstv Psv Comform Affil 	46% noun: Upturning of corners of mouth usually indicating pleasure, favor  or amusement 
+SMILE	DAV Pos SUPV Affil Pstv Psv Comform 	46% verb: To form a smile 
+SMILE	Pos Modif Pstv Psv Comform Affil 	4% adj: "Smiling" 
+SMILE	Pos LY Pstv Psv Comform Affil 	4% adv: "Smilingly" 
+SOCIABLE	IPadj Pos Modif Affil Intrel Virtue 	
+SOCIAL	LY Affil Intrel 	5% adv: "Socially"--in the social sphere 
+SOLIDARITY	Noun Virtue POLIT Affil Strng 	
+SON	Noun HU KIN Kin* MALE Role Affil 	noun: Male offspring. 
+SOOTHE	IAV Pos SUPV Actv Other Affil 	
+SORROW	Neg Noun EMOT Pain Ngtv Affil Weak Psv 	noun: Sadness, grief 
+SPARE	DAV Pos SUPV Intrel Affil Power Pstv Strng 	48% verb: To save from ill fortune 
+SPEAK	IAV SUPV Intrel Affil Actv 	2% verb: 'speak for'--represent 
+SPOKE	IAV SUPV Intrel Affil Actv 	1% idiom: "Spoke for"--represented 
+STAND	IAV SUPV Affil Strng Actv Intrel 	7% verb: "Stand for," "stand up for"; represent, favor, defend 
+STOOD	IAV SUPV Intrel ED Affil Strng Actv 	4% verb: "Stood for," "stood up for"--favored, defended, represented 
+SUBSCRIBE	IAV Pos SUPV Actv Affil Coll 	
+SUBSCRIPTION	Pos Noun Affil Coll 	
+SUBSIDIZE	IAV Pos SUPV Actv Affil Econ Other 	
+SUBSIDY	Pos Noun Econ Affil 	
+SUBSTANTIATE	IAV Pos SUPV Actv Affil Causal 	
+SUIT	IAV Pos SUPV Pstv Arousal Affil 	17% verb: To please, conform to, satisfy, be agreeable to 
+SUPPLY	IAV SUPV Intrel Affil Power Strng Actv 	32% verb: To provide 
+SUPPORT	IAV Pos SUPV Intrel Power Affil Pstv Strng Actv 	44% verb: Sustain, provide for, maintain, encourage, back--"i support  the program" (48); to hold up (0) 
+SUPPORT	Pos Noun Affil Power Pstv Strng Virtue Actv 	44% noun: Encouragement, assistance, maintenance, backing--"he has our  full support," "emotional support," "financial support" (46); a brace  or foundation (2) 
+SUPPORT	Pos Modif Affil Power Pstv Strng Actv Virtue 	2% noun-adj: "Supporting"--auxiliary, aiding (2); holding up (0) 
+SUPPORT	Pos Modif Affil Power Pstv Psv Weak Virtue 	5% adj: "Supported"--sustained, backed, encouraged, aided (5) held up (0) 
+SUPPORTER	Noun HU POLIT Affil Subm Role 	
+SUPPORTIVE	IPadj Pos Modif Affil 	
+SYMPATHETIC	Pos Modif EMOT Affil Pstv Arousal 	
+SYMPATHIZE	IAV Pos SUPV Affil Pstv Arousal 	
+SYMPATHY	Pos Noun EMOT Affil Pstv Arousal 	
+SYNTHESIS	Pos Noun Rel Affil 	
+TAKE	IAV SUPV Intrel Strng Actv Power Affil 	5% verb-idiom: "Take care (of)"--cure or solve, attend to, protect or nurse 
+TAKE	IAV SUPV Intrel Affil 	1% verb: "Take to"--become fond of 
+TEAM	Noun HU COLL Affil 	
+TEND	IAV SUPV Intrel Power Strng Actv Affil 	6% verb: To care for 
+TENDER	Modif Qual Weak Affil 	
+TERM	Noun Affil Intrel 	4% noun: Relations or standing with another 
+THANK	DAV Pos SUPV Affil Pstv Comform 	49% verb: To express gratitude, give thanks to 
+THANK	Pos Noun COM Comform Affil Pstv 	6% noun: Acknowledgement of gratitude 
+THANK	Pos Intj Comform Affil Pstv 	37% idiom-interj: "Thank you," "thanks" 
+THROW	IAV SUPV Intrel Affil Actv 	1% verb: "Throw a party" - to organize or sponsor a party 
+TOAST	IAV SUPV Comform Affil 	
+TOLERANCE	Pos Noun Affil Virtue 	
+TOLERANT	Pos Modif Virtue EVAL Affil Pstv 	
+TOLERATE	IAV Pos SUPV Actv Affil 	
+TOLERATION	Pos Noun Affil Virtue 	
+TOUCH	Noun COM Comform Affil Actv 	15% noun: Contact or communication--"in touch" 
+TRAITOR	Neg Noun HU Role Fail Hostile Affil Ovrst 	
+TREASURE	IAV Pos SUPV Pstv Affil Intrel 	
+TRIBUTE	Pos Noun COM Comform Subm Affil 	
+TRUE	Pos Modif Subm Pstv Arousal Affil 	4% adj-idiom: "True to"--faithful to 
+TRUST	IAV Pos SUPV Intrel Affil Subm Pstv Psv 	46% verb: To place or have confidence in someone or something 
+TRUST	Pos Modif Subm Pstv Psv Arousal Affil 	1% adj: "Trusting"--having confidence in, trustful 
+TRUST	Pos Modif Pstv Strng Psv Virtue Affil 	0% adj: "Trusted"--reliable, believed in 
+TRUST	Pos Noun EMOT Affil Pstv Intrel 	19% noun: The confidence placed in someone or something 
+TRUST	Pos LY Subm Pstv Arousal Affil 	0% adv: "Trustingly"--with trust 
+TRUSTWORTHY	Pos Modif EVAL Virtue Pstv Affil Psv Strng 	
+UNDERSTAND	Pos Noun EMOT Pstv Affil Arousal 	35% noun-adj: "Understanding"--comprehension, agreement, empathy 
+UNIFY	IAV SUPV Intrel Affil Strng Actv 	
+UNISON	Noun Time* Strng Affil 	
+UNITE	IAV SUPV Intrel Affil Actv 	4% verb: To join, combine, or incorporate so as to form a single whole or unit 
+UPRISING	Neg Noun Affil Hostile Change 	
+UPROAR	Neg Noun Comform Affil Change 	
+US	PRON DEF DEF2 S Affil Plrlp Our 	pronoun: Objective form of 'we' 
+VENERATE	IAV Pos SUPV Actv Subm Other Affil 	
+VISIT	IAV SUPV Travl Affil 	77% verb: To go and stay with someone or at some place for a short time 
+VISIT	Noun Travl Affil 	19% noun: An instance of visiting 
+VISIT	Noun Ritual Affil 	5% noun-adj: "Visiting"--making a visit or visits 
+VISITOR	Noun HU Affil Role 	
+VOLUNTEER	Noun HU Affil PFREQ Role Subm 	96% noun-adj: A person who offers himself for a service or undertaking 
+VOLUNTEER	IAV SUPV Intrel Subm Affil 	4% verb: To offer oneself for a service or undertaking 
+WARLIKE	IPadj Neg Modif Hostile exert Polit Intrel Affil 	
+WAY	IAV SUPV Intrel Affil Actv Strng 	0% verb: "Go out of one's way"--make an unusual effort 
+WED	DAV SUPV Affil Intrel Kin* 	
+WEDDING	Noun Ritual Affil Kin* 	
+WEIGHT	Noun Strng Work Affil 	9% noun: "To pull one's weight" to do one's share 
+WELCOME	IAV Pos SUPV Affil Pstv Comform 	31% verb: To greet, receive or accept with pleasure 
+WELCOME	Pos Noun COM Comform Affil Pstv 	10% noun: A kindly greeting or reception 
+WELCOME	Pos Modif Comform Affil Pstv 	33% adj: "Welcome," "welcomed"--kindly received 
+WELCOME	Pos Modif Comform Affil Pstv 	2% noun-adj: "Welcoming"--greeting kindly 
+WILLING	Pos Modif EMOT Affil Pleasur Pstv Subm 	adj: "Willing"--disposed or consenting 
+WILLINGNESS	Pos Noun EMOT Pleasur Pstv Affil Subm 	
+WOO	IAV Pos SUPV Actv Other Affil Intrel Comform 	
+WORD	Noun COM Comform Subm Affil 	5% noun: Promise, assurance, affirmation 

@@ -1,0 +1,309 @@
+word	tags	comments
+ABYSS	Neg Noun Ngtv PLACE Land 	
+ACADEMY	Noun PLACE Social Acad 	
+AIR	Noun PLACE Sky 	67% noun-adj: Gaseous elements surrounding the earth, atmosphere; transported  by airplane (e.g. "air mail") (1) 
+AIRPORT	Noun PLACE Social 	
+AREA	Noun PLACE Region 	noun: Region, tract, extent, range, scope, field of study 
+ARENA	Noun PLACE Social 	
+AVENUE	Noun PLACE Route 	
+BANDSTAND	Noun PLACE Social Exprs 	
+BANK	Noun PLACE Land 	38% noun: Sloping elevation along a watercourse ('river bank'), slope  or aclivity, heap 
+BAR	Noun PLACE Social 	54% noun-adj: A counter or establishment where liquor is served 
+BARN	Noun PLACE Social Econ* 	
+BASE	Noun PLACE Social Strng 	22% noun: A foundation, place of operation (2), minimum level (2) 
+BAY	Noun PLACE Aquatic 	
+BEACH	Noun PLACE Land 	noun-adjective: An expanse of sand or pebbles along the shore of a sea,  ocean, or lake. 
+BIRTHPLACE	Noun PLACE Social 	
+BLIZZARD	Noun PLACE Sky 	
+BORDER	Noun PLACE POLIT Land Polit* 	
+BOULEVARD	Noun PLACE Route 	
+BOWER	Noun PLACE Social 	
+BREAKER	Noun PLACE Aquatic 	
+BREEZE	Noun PLACE Sky 	
+BRIDGE	Noun PLACE Route 	81% noun: A structure spanning a river, chasm; of a nose (0) 
+BUILD	Noun PLACE Social 	22% noun: "Building"--a structure that houses, an edifice 
+BUREAU	Noun PLACE Social POLIT ECON 	
+CABIN	Noun PLACE Social 	
+CAFE	Noun PLACE Social Econ* 	
+CAMP	Noun PLACE Social 	79% noun: A temporary shelter or lodging, a place to go on vacation 
+CAMPUS	Noun PLACE Social Acad 	
+CANYON	Noun PLACE Land 	
+CAPITOL	Noun PLACE Social POLIT Polit* 	
+CASTLE	Noun PLACE Social Milit 	
+CATHEDRAL	Noun PLACE Social Relig 	
+CAVE	Noun PLACE Land PFREQ 	95% noun: A hollow in the earth, esp. perpendicular to the face of a mountain 
+CENTER	Noun POS Strng PLACE Social 	78% noun: Middle or focal point; place where various generally public,  social services and activities are performed and provided-- "community  center," "center for the arts" (15) interest, social gathering place ('community  center') 
+CHANNEL	Noun PLACE Aquatic 	
+CHAPEL	Noun PLACE Social Relig 	
+CHURCH	Noun PLACE Social Relig 	noun-adj: The christian religion, its rituals, its members, a specific  denomination of it, any or all of these or pertaining to them-- frequently  used in "go to church" meaning attend its religious rites, generally once  a week; the actual building whic 
+CITY	Noun PLACE POLIT ECON Region 	noun-adj: An urban center, or pertaining to an urban center 
+CLEAR	Noun PLACE Land 	3% noun: "Clearing"--an open space 
+CLEAR	Noun PLACE Social Econ* ECON 	0% idiom-noun: "Clearing house"--place where mutual claims are settled 
+CLIFF	Noun PLACE Land 	noun: Precipice 
+CLIMATE	Noun PLACE Sky 	
+CLOUD	Noun PLACE Sky 	
+COAST	Noun PLACE Land 	
+COLLEGE	Noun PLACE Social Acad 	noun-adj: Institution of higher learning, especially liberal arts 
+COMMON	Noun PLACE Social 	1% noun: Shared space, usually land 
+CONTINENTAL	Modif PLACE Region 	
+COSMIC	Modif PLACE Region 	
+COTTAGE	Noun PLACE Social 	
+COUNTRY	Noun PLACE Region 	9% noun-adj: A rural area--rural (versus urban) 
+COUNTRY	Noun PLACE Social 	0% idiom-noun: "Country club" 
+COUNTY	Noun PLACE Region POLIT Polit* 	
+CREEK	Noun PLACE Aquatic 	
+CROSS	Noun PLACE Route 	6% noun: "Crossing"--place where one passes a barrier, or a passage as such 
+CROSSROAD	Noun PLACE Route 	
+DAIRY	Noun PLACE Social ECON 	
+DEPARTMENT	Noun PLACE Social ECON Econ* 	4% noun-idiom: Department store 
+DESERT	Noun PLACE Land 	66% noun: An expanse of land so arid as to be devoid of vegetation 
+DISTRICT	Noun PLACE Region POLIT 	noun-adj: A political and/or geographic subdivision or having to do with  such a unit 
+DITCH	Noun PLACE Land 	
+DOWNTOWN	Noun PLACE Region 	
+DRIVEWAY	Noun PLACE Route 	
+DUMP	Neg Noun PLACE Social Ngtv 	
+DWELLING	Noun PLACE Social 	
+EARTH	Noun PLACE Land 	70% noun: Soil, ground, the planet, the world, that which is below our feet 
+EAST	Noun Region PLACE 	noun-adv-adj: The compass direction, in, of, to or toward this direction,  the eastern part of the earth, especially asia, the eastern part of the u.s. 
+EMBASSY	Noun PLACE Social POLIT Polit* Power 	
+ENVIRONMENT	Noun ABS Abs* PLACE Region 	
+ENVIRONMENTAL	Modif PLACE Region 	
+ESCAPE	Noun PLACE Route 	2% noun-idiom: 'fire escape' 
+ESPLANADE	Noun PLACE Route 	
+ESTATE	Noun PLACE Social ECON 	
+EXCHEQUER	Noun ECON Econ* PLACE Social 	
+FACTORY	Noun PLACE Social ECON Econ* 	
+FALL	Noun PLACE Land Weak 	1% noun: Descent, drop, collapse (includes waterfalls) 
+FARM	Noun PLACE ECON Econ* Social 	78% noun-adj: Facility for raising crops or animals 
+FIELD	Noun PLACE Land PFREQ 	noun: A piece of land (53); a realm of knowledge, work, or observation,  a area where someone or something is active, background (52) 
+FILL	Noun PLACE Social Econ* 	0% noun-idiom: "Filling station"--gas station 
+FLOOD	Noun Strng PLACE Aquatic 	
+FOAM	Noun PLACE Aquatic 	
+FOG	Noun PLACE Sky 	
+FOREIGN	Modif PLACE ECON POLIT Region PFREQ 	adjective: Not native, concerning other countries and peoples, 'foreign  policy', 'foreign aid'. 
+FOREST	Noun PLACE Land ECON 	noun-adj: Woodland 
+FORT	Noun PLACE Social POLIT Milit Strng 	
+FRONTIER	Noun PLACE Land POLIT Polit* 	
+FUME	Noun PLACE Sky 	
+GALLERY	Noun PLACE Social Exprs 	
+GARAGE	Noun PLACE Social 	
+GARDEN	Noun PLACE Social 	noun-adj: Small plot of land where plants, especially flowers, are grown. 
+GHETTO	Neg Noun PLACE POLIT ECON Ngtv Region 	
+GLEN	Noun PLACE Land 	
+GLOBE	Noun PLACE Land 	
+GRAVE	Neg Noun Ngtv Relig PLACE Social 	70% noun-adj: Burial place 
+GROUND	Noun PLACE Land 	82% noun-adj: Surface of the earth and its immediate surroundings, the  territory or dimensions within which an action takes place, e.g. "camping  ground" (1) 
+GROVE	Noun PLACE Land 	
+GULF	Noun PLACE Aquatic 	
+GULLY	Noun PLACE Land 	
+HARBOR	Noun PLACE Aquatic ECON Econ* 	
+HAZE	Noun PLACE Sky 	
+HEADQUARTERS	Noun PLACE Social POLIT Power Strng 	
+HEAVEN	Pos Noun PLACE Social Relig Pstv 	noun: The abode of god and the righteous dead; a state or place of happiness;  includes interjections 
+HELL	Neg Noun PLACE Social Relig Ngtv 	
+HEMISPHERE	Noun POLIT PLACE Land 	noun: Half the surface of a sphere; usually referring to half of the earth 
+HIGH	Noun PLACE Social Acad 	32% idiom-noun: "High school"--a school following the ordinary grammar school 
+HIGHWAY	Noun PLACE Route 	
+HILL	Noun PLACE Land 	noun: A rise, mound, small mountain 
+HILLSIDE	Noun PLACE Land 	
+HILLY	Modif PLACE Land 	
+HOLE	Noun PLACE Land PFREQ 	97% noun: Cavity, opening, aperture 
+HOME	Pos Noun PLACE Social Pstv 	noun-adj-adv: Dwelling place - domestic - homeward 
+HORIZON	Noun PLACE Sky 	
+HOSPITAL	Noun PLACE Social 	noun-adj: A place where medical care is administered 
+HOTEL	Noun PLACE Social ECON Econ* 	noun-adj: Establishment for accommodation of travelers 
+HOUSE	Noun PLACE Social PFREQ 	92% noun-adj: A building or place of residence, pertaining to same 
+HOUSE	Noun PLACE Social Polit* Handels 	1% noun: "The white house" - seat of usa executive branch 
+HOUSE	Noun PLACE ECON Social 	5% noun-adj: "Housing" - accommodations collectively 
+HOUSEHOLD	Noun PLACE Social 	
+HURRICANE	Noun PLACE Sky 	
+HUT	Noun PLACE Social 	noun: A small dwelling of simple construction. 
+IMPERIAL	Modif POLIT Strng PLACE Region Polit* 	
+INCLINE	Noun PLACE Land 	
+INSTITUTE	Noun PLACE Social POLIT ECON Acad PFREQ 	91% noun-adj: An organization with a social, educational, etc., purpose 
+INSTITUTION	Noun PLACE Social POLIT ECON Strng 	noun: An established pattern of behavior, an organization 
+INTERNATIONAL	Modif ECON POLIT Polit* PFREQ PLACE Region 	97% adj: Between or among countries 
+INTERNATIONAL	LY ECON POLIT PLACE Region Polit* 	3% adv: "Internationally"--between or among countries 
+INTERPLANETARY	Modif PLACE Sky 	
+INTERSTATE	Modif PLACE Region Polit* 	
+ISLAND	Noun PLACE Land 	noun-adj: A tract of land completely surrounded by water and not large  enough to be called a continent 
+JAIL	Neg Noun PLACE Social POLIT Legal Ngtv PFREQ 	96% noun: Prison 
+JUNGLE	Noun PLACE Land 	noun: Tropical land overgrown with vegetation 
+KINGDOM	Noun PLACE Region POLIT Polit* 	noun: Region ruled by a king 
+LAKE	Noun PLACE Aquatic 	noun: A body of water surrounded by land 
+LAND	Noun PLACE Land POLIT PFREQ 	87% noun: Ground, earth, area, country 
+LAND	Noun PLACE Social Actv 	0% noun-adj: 'landing'--arrival or place of arrival 
+LANDMARK	Noun PLACE Land 	
+LANDSCAPE	Noun PLACE Land 	
+LANE	Noun PLACE Route 	
+LAWN	Noun PLACE Social 	
+LEDGE	Noun PLACE Land 	
+LIBRARY	Noun PLACE Social Acad 	noun: A place set apart to contain books and other literary material for  reading, study, or reference. 
+LOCAL	Modif PLACE Region POLIT 	adj: Pertaining to or characteristic of a small district 
+LOCALE	Noun PLACE Region 	
+LOCATION	Noun PLACE Region 	
+LODGE	Noun PLACE Social 	noun-adj: "Lodge," "lodging"--an abode; secret society (1) 
+LOT	Noun PLACE Land 	1% noun: A portion of land 
+MAINLAND	Noun PLACE Land 	
+MANSION	Noun PLACE Social Ovrst 	
+MARKET	Noun PLACE Social ECON Econ* 	43% noun-adj: A place where goods are bought and sold, trade, business,  demand for a commodity 
+MARSH	Noun PLACE Land 	
+METEOR	Noun PLACE Sky 	
+METEORITE	Noun PLACE Sky 	
+METROPOLIS	Noun PLACE Region POLIT Polit* 	
+METROPOLITAN	Modif PLACE ECON POLIT Region Polit* 	
+MILL	Noun PLACE Social ECON Econ* 	25% noun-adj: "Mill"--tool, building, or factory 
+MINE	Noun PLACE Social ECON Econ* 	32% noun-adj: A pit or excavation from which ores, precious stones, etc.  are extracted 
+MIST	Noun PLACE Sky 	
+MOON	Noun PLACE Sky 	
+MOTEL	Noun PLACE Social Econ* 	
+MOUND	Noun PLACE Land 	
+MOUNT	Noun PLACE Land 	
+MOUNTAIN	Noun PLACE Land 	noun: A large abrupt elevation of the earth's surface 
+MUNICIPAL	Modif PLACE ECON POLIT Region Polit* 	
+MUNICIPALITY	Noun PLACE Region POLIT Polit* 	
+MUSEUM	Noun PLACE Social Acad 	
+NEIGHBORHOOD	Noun PLACE POLIT Region 	noun-adj: A vicinity, locality, community; pertaining to same 
+NOWHERE	LY PLACE Noun Region Undrst 	
+NURSE	Noun PLACE Social 	16% idiom-noun: "Nursing home"...a residence equipped to care for invalids 
+OCEAN	Noun PLACE Aquatic 	
+OFFICE	Noun PLACE Social Econ* 	60% noun-adj: Room or building where business is transacted; a branch  of an organization (8) 
+OUTBACK	Noun PLACE Region 	
+OUTDOOR	Modif PLACE Region 	
+PALACE	Noun PLACE Social POLIT Polit* Power 	
+PARISH	Noun PLACE Region Relig 	
+PARK	Noun PLACE Region 	
+PARKWAY	Noun PLACE Route 	
+PASTORAL	Modif PLACE Region 	
+PASTURE	Noun PLACE Land Econ* 	
+PATCH	Noun Region PLACE 	
+PATH	Noun PLACE Route 	noun: A trodden footway, a route or course 
+PEAK	Noun PLACE Land 	
+PIT	Noun PLACE Land 	
+PLACE	Noun PLACE Region 	80% noun: Particular portion of space, position, locality, location in  a continuum, rank 
+PLAIN	Noun PLACE Land 	23% noun: Flat expanse of land 
+PLANET	Noun PLACE Sky 	
+PLANT	Noun PLACE Social ECON Econ* 	26% noun-adj: The buildings, equipment, etc., for a particular operation  or institution 
+PLANTATION	Noun PLACE Social ECON Econ* 	
+POOL	Noun PLACE Exprs Aquatic 	
+PORT	Noun PLACE ECON Econ* Land 	
+POST	Noun PLACE Social POLIT 	18% idiom-noun: "Post office"--a governmental department concerned with mail 
+POUND	Noun PLACE Social 	0% noun: Enclosure for animals 
+PRAIRIE	Noun PLACE Land 	
+PRECINCT	Noun PLACE Region POLIT Polit* 	
+PRISON	Neg Noun PLACE Social POLIT Legal Ngtv PFREQ 	90% noun-adjective: A place for punitive confinement 
+PRISON	Neg Noun PLACE Social POLIT Ngtv Legal 	10% idiom-noun-adj: "Prison camp"--a place for military confinement of  enemy armed forces 
+PROPERTY	Noun PLACE Land ECON Econ* 	noun-adj: Real estate, possessions 
+PROVINCE	Noun PLACE Region POLIT Polit* 	
+QUARTER	Noun PLACE Region 	36% noun: District, area, housing 
+RAILROAD	Noun PLACE Route ECON 	
+RAILWAY	Noun PLACE Route ECON 	
+RAIN	Noun Sky PLACE 	71% noun-adj: Water that falls in drops from the sky 
+RANCH	Noun PLACE Social ECON Econ* 	
+RANGE	Noun PLACE Land 	6% noun-adj: Open land 
+RAPID	Noun PLACE Aquatic 	3% noun: Section of a river where the current runs swiftly 
+REAL	Noun PLACE ECON Econ* Social 	0% idiom-noun-adj: "Real estate"--property in the form of buildings and land 
+REEF	Noun PLACE Land 	
+REGION	Noun PLACE Region ECON POLIT 	noun: Area, district, section 
+REGIONAL	Modif PLACE Region ECON POLIT 	
+RESIDENCE	Noun PLACE Social 	
+RESIDENTIAL	Modif PLACE Region 	
+RESTAURANT	Noun PLACE Social ECON Econ* 	
+RIDGE	Noun PLACE Land 	
+RISE	Noun PLACE Land 	2% noun: A small hill or ridge 
+RIVER	Noun PLACE Aquatic 	noun: A large natural stream of water 
+ROAD	Noun PLACE Route PFREQ 	85% noun-adj: A long narrow stretch with a smooth surface, over which one travels 
+ROOM	Noun PLACE Social ECON Econ* 	0% adj: "Rooming"--boarding 
+ROUTE	Noun PLACE Route 	
+RUIN	Neg Noun PLACE Social Ngtv 	15% noun: "Ruins"--remains 
+RURAL	Modif ECON POLIT PLACE Region 	
+SANCTUARY	Pos Noun PLACE POLIT Pstv Region 	
+SAND	Noun PLACE Land 	noun-adj.: Fine particles of rock, or pertaining to same 
+SCENE	Noun PLACE Land 	noun: Site, setting, situation 
+SCENERY	Noun PLACE Land 	
+SCHOOL	Noun PLACE Social Acad PFREQ 	87% noun-adj: Place of instruction 
+SCRUB	Noun PLACE Land 	
+SEA	Noun PLACE Aquatic 	noun-adj: Large body of salt water, or something similar 
+SEASHORE	Noun PLACE Land 	
+SECONDARY	Noun PLACE Social PFREQ 	87% noun-adj: "Secondary school"--high school level of education 
+SEMINARY	Noun PLACE Social Acad Relig 	
+SET	Noun PLACE Region 	3% noun: Scenery, surroundings, situation--includes "setting," "set up," and "set" 
+SETTLEMENT	Noun PLACE Social POLIT ECON Polit* 	
+SHED	Noun PLACE Social 	
+SHELTER	Pos Noun PLACE Pstv Social 	
+SHOP	Noun PLACE Social ECON Econ* 	54% noun-adj: A small store 
+SHORE	Noun PLACE Land 	
+SHOWER	Noun PLACE Sky 	
+SIDEWALK	Noun PLACE Route 	
+SITE	Noun PLACE Social 	
+SKIES	Noun PLACE Sky S 	
+SKY	Noun PLACE Sky 	noun: The upper atmosphere of the earth 
+SKYLINE	Noun PLACE Sky 	
+SLUM	Noun PLACE ECON Econ* Region 	
+SNOW	Noun PFREQ PLACE Sky 	85% noun-adj: Flakes of frozen water vapor characterized by their lightness  and whiteness, or having to do with such 
+SOLAR	Modif PLACE Region 	
+SPACE	Noun PLACE Sky 	8% noun-adj: "Outer space"--the universe beyond the earth's atmosphere 
+SPOT	Noun PLACE Region 	59% noun: A situation, place or locality; a stain, blot or speck (2) 
+SQUALL	Noun PLACE Sky 	
+STADIUM	Noun PLACE Social Exprs 	
+STAGE	Noun PLACE Social Exprs 	28% noun: The place where public entertainment, usually theatrical, takes  place and public speeches ar 
+STALL	Noun PLACE Social 	
+STAR	Noun PLACE Sky 	96% noun: A celestial body 
+STATION	Noun PLACE Social 	82% noun-adj: A place of installation, operation and service of gas for  cars (10), the military (4), industry (3), trains and buses (2), the police  (2), radio (2), and other public services (3) 
+STEPPES	Noun PLACE Region 	
+STONE	Noun PLACE Land Strng PFREQ 	83% noun: Rock 
+STORE	Noun PLACE Social ECON Econ* PFREQ 	87% noun-adj: Establishment where merchandise is sold or kept 
+STORM	Noun PLACE Sky Strng PFREQ 	93% noun-adj: A tempest 
+STREAM	Noun PLACE Aquatic 	52% noun: Small river 
+STREET	Noun PLACE Route 	noun-adj: Public thoroughfare. 
+STRONGHOLD	Noun PLACE Social Milit Strng 	
+STUDIO	Noun PLACE Social Exprs 	
+SUBURB	Noun PLACE Region POLIT 	
+SUBURBAN	Modif PLACE Region POLIT 	
+SUITE	Noun PLACE Social 	
+SUN	Noun PLACE Sky 	noun: The star that is the center of our solar system 
+SUNLIGHT	Noun PLACE Sky 	
+SUNSHINE	Noun PLACE Sky 	
+SURROUND	Noun PLACE Region 	6% adj: "Surrounding"--neighboring 
+SURROUND	Noun PLACE Region 	26% noun: "Surroundings"--atmosphere, neighborhood 
+SWAMP	Noun PLACE Aquatic 	
+TENT	Noun PLACE Social 	
+TERRITORIAL	Modif PLACE Region POLIT Strng 	
+TERRITORY	Noun PLACE Region POLIT 	noun: Political region 
+THEATER	Noun PLACE Social Exprs 	
+THEATRE	Noun PLACE Social Exprs 	
+THUNDER	Noun Strng PLACE Sky 	
+TIDE	Noun PLACE Aquatic 	
+TOWN	Noun PLACE Social POLIT 	noun-adj: A thickly populated area, usually smaller than a city but larger  than a village 
+TOWNSHIP	Noun PLACE Region ECON POLIT 	
+TRACK	Noun PLACE Route 	
+TRAIL	Noun PLACE Route 	
+TREASURY	Noun PLACE Social POLIT ECON Econ* 	
+TROPICAL	Modif PLACE Region 	
+TUNNEL	Noun PLACE Route 	
+UNIVERSAL	Modif Ovrst Strng PLACE Region 	
+UNIVERSE	Noun PLACE ABS Abs* Sky 	
+UNIVERSITY	Noun PLACE Social POLIT Acad 	noun-adj: An institution of learning of the highest level 
+URBAN	Modif ECON POLIT PLACE Social 	
+VALE	Noun PLACE Land 	
+VALLEY	Noun PLACE Land 	
+VICINITY	Noun PLACE Region 	
+VILLAGE	Noun PLACE Social POLIT ECON 	noun-adj: A small rural community 
+WAKE	Noun PLACE Route 	0% noun: "Wake"--trail 
+WASH	Noun PLACE Aquatic 	2% noun: A sweep of water 
+WATER	Noun PFREQ PLACE Aquatic 	96% noun: H2o, pertaining to same 
+WATERFRONT	Noun PLACE Social ECON 	
+WAVE	Noun PLACE Aquatic 	
+WAY	Noun PLACE Route 	16% noun: Direction, route, course, path 
+WEATHER	Noun PLACE Sky 	noun-adj: The state of the atmosphere with respect to wind, temperature  cloudiness, moisture, pressure, etc. 
+WHITE	Noun PLACE Social POLIT Polit* 	2% adj: "(the) white house"--u.s. executive seat 
+WILD	Noun PLACE Land 	0% noun: "Wilds"--wilderness 
+WILDERNESS	Noun PLACE Land 	
+WIND	Noun PLACE Sky PFREQ 	87% noun: A movement of air 
+WOOD	Noun PLACE Land 	45% noun: Forest 
+WOOD	Modif PLACE Land 	2% adj: "Wooded"--forested 
+WORKSHOP	Noun ECON Econ* PLACE Social 	
+WORLD	Noun PLACE POLIT Region 	noun-adj: The earth, and/or its affairs; any sphere, realm or domain (less  frequent) 
+WORLD-WIDE	Modif Strng PLACE Region 	
+YARD	Noun PLACE Social 	75% noun: An enclosed area outdoors, or the ground which adjoins some building. 
+ZONE	Noun Noun Region PLACE  	

@@ -1,0 +1,224 @@
+word	tags	comments
+ADMINISTRATION	Noun HU COLL ABS TIME POLIT Polit* Power Strng 	69% noun-adj: A body entrusted with executive or administrative powers,  the time span over which such power is exercised (2) 
+ALLIANCE	Pos Noun HU COLL POLIT Polit* Power Pstv Strng 	
+ALLIED	IAV Pos SUPV Intrel Affil Polit* Strng Pstv 	
+ALLY	Pos Noun HU POLIT Affil Polit* Pstv Strng Role 	
+ALLY	IAV SUPV Intrel Affil Polit* 	
+AMBASSADOR	Noun HU POLIT Polit* Power Role 	
+AMENDMENT	Noun POLIT COM Comform Legal Polit* 	
+ARMISTICE	Noun POLIT Ritual Affil Milit Polit* 	
+BALLOT	Noun POLIT COM Ritual Polit* Power 	
+BANISH	Neg Modif Polit* Ngtv Strng Actv Intrel Power 	
+BILL	Noun Object POLIT COM Polit* Comnobj 	33% noun: Draft of proposed, or enacted statute (rarely, playbill, notice,  advertisement (0)) 
+BODY	Noun HU COLL POLIT Polit* Power Strng 	8% noun: A group of people, often political--as "electoral body," "student body" 
+BORDER	Noun PLACE POLIT Land Polit* 	
+BRANCH	Noun HU COLL POLIT ECON Econ* Polit* 	21% noun: Political#economic subdivision 
+CABINET	Noun HU COLL POLIT Polit* 	
+CAMPAIGN	Noun POLIT Polit* Actv Power PFREQ Means 	95% noun: An effort toward a goal 
+CAMPAIGNER	Noun HU Polit* Actv Role 	
+CANDIDATE	Noun HU POLIT Polit* Role 	noun: Person considered for selection 
+CAPITAL	Noun POLIT Polit* ECON Econ* Strng PFREQ Virtue 	92% noun: Wealth, source of profit, moneyed interests; a center of government (11) 
+CAPITALISM	Noun ABS Abs* POLIT ECON Doctr Econ* Polit* 	
+CAPITOL	Noun PLACE Social POLIT Polit* 	
+CENSUS	Noun Ritual POLIT Polit* 	
+CHANCELLOR	Noun HU POLIT Polit* Power Strng Role 	noun: Title of west german chief of state, an executive title 
+CITIZEN	Noun HU POLIT Polit* Role 	noun: A member of a nation, state, city, or other political body 
+CIVIL	Pos Modif Doctr POLIT Polit* Pstv 	9% noun-adj: Involving or consisting of citizens, of the commonwealth  or state; civilized, polite, benevolent (0) 
+CIVIL	Modif POLIT Polit* PFREQ HU COLL 	85% idiom-noun: "Civil rights," "civil liberties" 
+CIVIL	Noun HU POLIT COLL Polit* 	1% idiom-noun: "Civil service" 
+CIVIL	Noun HU POLIT Polit* Role 	1% idiom-noun: "Civil servant" 
+COALITION	Noun HU COLL POLIT Affil Polit* Power Strng 	
+COLD	Neg Noun Doctr POLIT Hostile Polit* Ngtv Ngtv 	5% idiom-noun: 'cold war' 
+COLONIAL	Modif Doctr Polit* ECON POLIT 	
+COLONY	Neg Noun HU COLL POLIT ECON Polit* Ngtv Subm 	
+COMBAT	IAV Neg SUPV Intrel Hostile Polit* Ngtv Actv Strng 	
+COMMISSIONER	Noun HU POLIT Power Polit* Strng Role 	
+COMMON	Noun HU COLL Polit* 	1% noun: House of commons 
+COMMONWEALTH	Noun HU COLL POLIT ECON Polit* Power 	
+COMMUNISM	Noun ABS Abs* POLIT ECON Doctr Econ* Polit* 	
+COMMUNIST	Noun HU POLIT Econ* Polit* Role 	noun-adj: Anyone or anything characterized by communism 
+CONFEDERATE	Noun HU POLIT Affil Polit* Role 	
+CONFERENCE	Noun HU COLL POLIT ECON Polit* 	noun: A meeting for consultation or negotiation 
+CONGRESS	Noun HU COLL POLIT Polit* Power Strng PFREQ 	97% noun: The legislative branch of the u.s. government 
+CONGRESS	Noun HU COLL Polit* Strng 	3% noun: An organization, society, etc., an official gathering of same 
+CONGRESSIONAL	Modif POLIT Polit* Strng HU COLL 	
+CONGRESSMAN	Noun HU MALE POLIT Polit* Strng Role 	
+CONGRESSMEN	Noun HU S Polit* Power Strng Role 	
+CONSERVATISM	Noun POLIT ABS Abs* Polit* Doctr 	
+CONSERVATIVE	Modif ECON POLIT Doctr Polit* Psv 	81% adj: Distrustful of innovation, restrained 
+CONSERVATIVE	Noun HU POLIT ECON Polit* Psv Role 	19% noun: A group or individual committed to the status quo 
+CONSPIRACY	Neg Noun HU COLL POLIT Hostile Polit* Ngtv 	
+CONSTITUTION	Noun Object COM POLIT Polit* Strng Comnobj 	
+CONSTITUTIONAL	Modif Doctr POLIT Polit* Strng 	
+CONVENTION	Noun HU COLL POLIT Polit* PFREQ 	noun: A meeting or assembly of delegates or representatives for action  on particular matters 
+COUNCIL	Pos Noun HU COLL POLIT Power Pstv Polit* Strng 	noun-adj: A body of persons summoned or convened for deliberation, consultation  or advice 
+COUNTRY	Noun HU COLL POLIT ECON Polit* PFREQ 	90% noun: A nation or sovereign territory, a region, area (e.g. "indian country") 
+COUNTY	Noun PLACE Region POLIT Polit* 	
+COURT	Noun POLIT Legal HU COLL Polit* Strng 	65% noun-adj: A place where trials are held and the law is carried on--by  metonymy the process or authority of the law, or a given court or judge;  a sovereign entourage (3); a courtyard (0) 
+COURT	Noun HU COLL POLIT Legal Power Strng Polit* 	26% idiom-noun: "Supreme court" 
+COURTLY	Pos Modif Virtue Polit* Pstv 	
+CROWN	Noun Object Tool POLIT Polit* Power 	
+CROWN	DAV SUPV Complt Polit* Power 	
+DEAL	Noun ECON POLIT Ritual Econ* Polit* 	3% idiom-noun: "New deal"--political program 
+DEBATE	Noun COM Comform Polit* Actv 	62% noun-adj: A formal discussion of an issue 
+DEBATE	IAV SUPV Polit* Actv Comform 	38% verb: To carry on a debate 
+DELEGATE	Noun HU Polit* Role Power 	
+DELEGATION	Noun HU COLL POLIT Polit* Power 	
+DEMOCRACY	Noun ABS Abs* POLIT Polit* Virtue 	noun: The form of government, or a government of that form 
+DEMOCRAT	Noun HU POLIT Polit* Role 	noun: Member of a democratic party 
+DEMOCRATIC	Modif Virtue POLIT Polit* HU COLL 	50% adj: In accord with the western philosophy of political and/or social equality 
+DEMOCRATIC	Modif POLIT Polit* HU COLL 	50% adj: Pertaining to a specific political party--usually the american 
+DEMONSTRATION	Noun Ritual POLIT Polit* Strng Actv PFREQ 	90% noun: A display of political sentiment 
+DICTATOR	Noun HU POLIT Polit* Power Strng Role 	
+DICTATORSHIP	Noun Doctr POLIT Polit* Strng 	
+DIPLOMACY	Noun POLIT Polit* Power Ritual 	
+DIPLOMATIC	Modif Comform POLIT Polit* Power 	
+DISCHARGE	Neg Noun Ngtv Strng Actv Ritual Milit Polit* Power 	
+DRAFT	Noun POLIT Ritual Milit Polit* Power 	
+ELECT	DAV SUPV Intrel Polit* Actv Power 	verb: To choose, usually by vote 
+ELECT	Modif POLIT Polit* Intrel Power 	0% adj: "Elected"--chosen by vote 
+ELECTION	Noun Ritual POLIT Polit* Power Actv 	noun-adj: Selection by vote 
+ELITE	Noun HU COLL POLIT ECON Polit* Power 	
+EMANCIPATION	Noun Virtue POLIT Polit* Power Strng 	
+EMBASSY	Noun PLACE Social POLIT Polit* Power 	
+EMPEROR	Noun HU MALE POLIT Polit* Power Strng Role 	
+EQUALITY	Pos Noun ABS Abs* POLIT Virtue Pstv Polit* 	
+ESTABLISHMENT	Noun HU COLL POLIT ECON Econ* Polit* Ovrst 	
+EXCHANGE	Noun ECON POLIT COM Comform Econ* Polit* Actv 	94% noun-adj: Giving of like for like, dialogue, trade, commerce 
+FEDERAL	Modif POLIT Polit* HU COLL Affil 	adjective: Pertaining to the independent central government of a union of states. 
+FEDERATION	Noun HU COLL POLIT Affil Polit* Strng 	
+FLAG	Noun Object COM POLIT Polit* Comnobj 	
+FREEDOM	Pos Noun ABS Abs* POLIT Virtue Polit* Pstv Str 	noun-adj: Absence of restraint, whether external--civic--or internal--  psychological 
+FRONTIER	Noun PLACE Land POLIT Polit* 	
+GOVERN	Noun HU COLL Polit* Strng 	
+GOVERN	IAV SUPV Polit* Power Strng Intrel 	
+GOVERNMENT	Noun HU COLL POLIT Polit* Power Strng 	noun adjective: A specific administrative mechanism by which a body of  people is ruled, an abstract concept of the ruling power 
+GOVERNMENTAL	Modif Doctr POLIT Polit* Strng 	
+GOVERNOR	Noun HU POLIT Polit* Power Strng Role 	
+HOUSE	Noun HU COLL POLIT Polit* Power 	2% noun-adj: Legislative body (includes idiom "house of representatives") 
+HOUSE	Noun PLACE Social Polit* Handels 	1% noun: "The white house" - seat of usa executive branch 
+IDEOLOGICAL	Noun Doctr POLIT Polit* 	
+IDEOLOGY	Noun ABS Abs* POLIT Doctr Polit* 	
+IMPERIAL	Modif POLIT Strng PLACE Region Polit* 	
+IMPERIALIST	Modif Doctr Strng Polit* 	
+INDEPENDENCE	Pos Noun ABS Abs* POLIT Doctr Polit* Pstv Strn 	noun: Freedom, autonomy, self-reliance, liberty 
+INDEPENDENT	Pos Modif Doctr POLIT Polit* Pstv Strng 	37% adj: Autonomous (refers to economic or political units other than  individual people) 
+INDEPENDENT	Noun POLIT Polit* Role HU 	14% noun-adj: Free of party constraints, someone who votes thus 
+INTERNATIONAL	Modif ECON POLIT Polit* PFREQ PLACE Region 	97% adj: Between or among countries 
+INTERNATIONAL	LY ECON POLIT PLACE Region Polit* 	3% adv: "Internationally"--between or among countries 
+INTERSTATE	Modif PLACE Region Polit* 	
+IRON	Neg Modif Doctr POLIT Hostile Polit* Ngtv 	3% idiom: The 'iron curtain' 
+JUNTA	Noun HU COLL POLIT Legal Polit* Power 	
+JURISDICTION	Noun Doctr POLIT Legal Polit* Power Strng 	
+KING	Noun HU MALE POLIT Polit* Power Strng Role 	noun-adj: A male sovereign or monarch 
+KINGDOM	Noun PLACE Region POLIT Polit* 	noun: Region ruled by a king 
+LABOR	Noun HU COLL ECON POLIT Polit* 	25% noun-adj: Specifically used to denote political office, party or organization--  secretary of labor, labor unions, labor party, labor movement 
+LEAGUE	Noun HU COLL Affil Polit* Strng PFREQ 	86% noun: An association or alliance 
+LEFT	Noun HU COLL POLIT Polit* 	3% noun: Political left 
+LEGION	Noun HU COLL POLIT Polit* Milit PFREQ 	98% idiom-noun: "American legion" 
+LEGISLATION	Noun Doctr POLIT Legal Polit* Power Strng 	noun: A law or body of laws enacted 
+LEGISLATIVE	Modif Doctr POLIT Legal Polit* Strng Power 	
+LEGISLATOR	Noun HU POLIT Legal Power Strng Role Polit* 	
+LIBERAL	Pos Noun HU POLIT Modif Polit* Pstv Role 	77% noun-adj: Political-social viewpoint, innovative, progressive, democratic;  generous (1) 
+LIBERALISM	Pos Noun ABS Abs* POLIT Doctr Polit* Pstv 	
+LIBERATION	Noun Doctr POLIT Power Polit* Strng Actv 	
+LIBERTY	Pos Noun ABS Abs* Doctr Polit* Pstv Power 	
+LORD	Noun HU MALE POLIT Polit* Power Role 	noun: The supreme being or his secular counterpart, one who has dominion  over others, a master, chief, or ruler. 
+LOYAL	Pos Modif Virtue Polit* Subm Pstv 	
+LOYALTY	Pos Noun ABS Abs* POLIT Virtue Polit* Subm Pstv 	
+MAYOR	Noun HU POLIT Polit* Power Strng Role 	
+MEDICARE	Noun ECON POLIT Doctr Polit* 	noun: The federal program 
+METROPOLIS	Noun PLACE Region POLIT Polit* 	
+METROPOLITAN	Modif PLACE ECON POLIT Region Polit* 	
+MIDDLE-CLASS	Modif ECON POLIT Econ* Polit* HU COLL 	
+MIGHT	Noun Virtue POLIT Polit* Power Strng Ovrst 	2% noun: Force or power of any kind. 
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	65% idiom-noun: "Prime minister"--executive head of government 
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	16% noun: Person in charge of a department of state, a diplomatic officer 
+MINISTRY	Noun HU COLL POLIT Polit* Power Strng 	
+MINORITY	Noun HU COLL POLIT Polit* Subm Weak 	
+MINUTEMEN	Noun HU POLIT S Milit Polit* Role 	
+MOVEMENT	Noun HU COLL POLIT Polit* Strng PFREQ 	85% noun: Group of persons or an organization tending toward a common goal 
+MUNICIPAL	Modif PLACE ECON POLIT Region Polit* 	
+MUNICIPALITY	Noun PLACE Region POLIT Polit* 	
+NATION	Noun HU COLL POLIT ECON Polit* 	noun: A country or people of a country, political unit 
+NATIONAL	Modif POLIT Polit* HU COLL 	adjective: Of or pertaining to, or maintained by a nation as an organized  whole or independent political unit 
+NOMINATION	Noun POLIT Polit* Power Ritual 	
+PALACE	Noun PLACE Social POLIT Polit* Power 	
+PARLIAMENT	Noun HU COLL POLIT Polit* Power Strng 	
+PARTISAN	Noun HU POLIT Polit* Role 	
+PARTY	Noun HU COLL POLIT Polit* Strng 	58% noun-adj: Organized political group 
+PETITION	Noun COM Ritual POLIT Polit* Subm Weak 	
+PETITION	IAV SUPV Polit* Actv Comform Subm Weak Actv 	
+PLATFORM	Noun Doctr POLIT Polit* 	57% noun: A declaration of the principles for which a group of persons stands. 
+POLITICAL	Modif Doctr POLIT Polit* 	adj: Pertaining to or involving politics 
+POLITICIAN	Noun HU POLIT Polit* Power Strng Role 	noun: One versed or experienced in politics 
+POLITICS	Noun Doctr POLIT Polit* 	noun: The theory or practice of managing affairs of public policy, and  conducting political affairs, the general activity associated with gaining  and maintaining public office 
+POLL	Noun COM Ritual POLIT Polit* 	
+POWER	Noun HU COLL POLIT Power Strng Polit* 	23% noun: Nation, group or individual having power 
+POWERFUL	Modif Polit* Power Strng Virtue 	adj: Having or exerting great force 
+PRECINCT	Noun PLACE Region POLIT Polit* 	
+PRESIDENCY	Noun Doctr POLIT Polit* Power Strng 	
+PRESIDENT	Noun HU POLIT Polit* Power Strng Role 	noun: Highest officer of a country or other body. 
+PRESIDENTIAL	Modif POLIT Polit* Power Strng HU Role 	
+PRIMARY	Noun Ritual POLIT Polit* 	2% noun: An election to select a party candidate 
+PRINCE	Noun HU MALE POLIT Polit* Power Strng Role 	noun: The one of highest rank, a sovereign, a title of nobility. 
+PROPAGANDA	Neg Noun COM Comform POLIT Polit* Ngtv 	
+PROVINCE	Noun PLACE Region POLIT Polit* 	
+QUEEN	Noun HU Female POLIT Polit* Power Role 	
+RADICAL	Neg Modif ECON POLIT Polit* Ngtv Strng Actv Vice 	
+REACTIONARY	Neg Modif Doctr POLIT Polit* Ngtv Psv 	
+REDS	Noun HU COLL POLIT S Polit* 	
+REFORM	Noun ECON POLIT Polit* Actv Virtue 	
+REGIME	Noun HU COLL POLIT Polit* Power Strng 	
+REPRESENTATIVE	Noun HU POLIT Polit* Role 	73% noun: Delegate or agent 
+REPUBLIC	Noun HU COLL POLIT Polit* 	noun: A representative government 
+REPUBLICAN	Noun HU POLIT Polit* Role 	noun-adj: Pertaining to the american political party 
+REVOLUTION	Neg Noun POLIT Ritual Hostile Polit* Ngtv Strn 	noun: Overthrow and replacement of a system 
+REVOLUTIONARY	Modif Doctr ECON POLIT Polit* Hostile Strng 	
+ROAD	Modif Polit* Virtue 	0% noun: "Middle of the road"--moderate 
+ROYAL	Modif POLIT Polit* Power Strng HU COLL 	
+ROYALTY	Noun HU COLL POLIT Polit* Power Strng 	
+RULE	IAV SUPV Intrel Polit* Power Strng Actv 	13% verb: To govern, guide, determine 
+RULE	Noun Doctr POLIT Polit* Strng Actv 	8% noun: Government, reign, control 
+RULE	Modif Polit* Strng Actv Intrel Power 	12% noun-adj: "Ruling", judgement, determination, governing, in power 
+RULER	Noun HU POLIT Power Role Polit* 	
+RUN	IAV SUPV Try Polit* Actv 	2% verb: To stand for election 
+SECRETARY	Noun HU POLIT Polit* Role 	57% noun: An official or governmental position or its incumbent (should  be capitalized) 
+SECURITY	Noun POLIT Polit* Econ* Means 	49% idiom-noun: "Social security"--handled by "social" 
+SENATE	Noun HU COLL POLIT Polit* Power Strng 	
+SENATOR	Noun HU POLIT ECON Polit* Power Strng Role 	
+SETTLEMENT	Noun PLACE Social POLIT ECON Polit* 	
+SHIP	Noun HU COLL POLIT Polit* Power 	2% idiom-noun: "Ship of state" - government 
+SOCIAL	Modif POLIT Polit* HU COLL 	62% adj: Of or pertaining to human society or collective activity 
+SOCIALISM	Noun ABS Abs* POLIT ECON Doctr Polit* 	
+SOCIALIST	Noun HU POLIT ECON Polit* Role 	
+SOCIETY	Noun HU COLL POLIT Polit* 	noun: The socio-political unit, a system of persons and institutions,  society at large 
+SOVEREIGN	Modif Doctr POLIT Polit* Power Strng 	
+SOVEREIGNTY	Noun Doctr POLIT Polit* Power Strng 	
+SPOKESMAN	Noun HU Polit* Role Actv 	
+STATE	Noun HU COLL POLIT Polit* Power Strng 	39% noun: Body politic--area of government 
+STATESMAN	Noun HU MALE POLIT Polit* Power Strng Role 	
+STATESMEN	Noun HU MALE POLIT S Polit* Power Strng Role 	
+SUFFRAGE	Noun POLIT Polit* Power Virtue 	
+SURRENDER	Noun Ritual POLIT Polit* Subm Milit Weak Psv 	
+SURRENDER	DAV SUPV Intrel Polit* Subm Milit Weak Psv 	
+TABLE	IAV SUPV Polit* Work 	1% verb: To put away an issue for discussion in the future 
+TACTIC	Noun Means POLIT Polit* 	
+TORY	Noun LY POLIT Polit* Name 	
+TREATY	Pos Noun COM POLIT Polit* Pstv Comform 	noun: An agreement between governments 
+TRIBAL	Modif PFREQ HU COLL Polit* 	adj: Of or pertaining to a tribe 
+TRIBE	Noun HU COLL POLIT Polit* 	noun: A group of people united by common ancestry or by common custom 
+TYRANNY	Neg Noun POLIT Polit* Power Ngtv Strng Vice 	
+UNION	Noun HU COLL POLIT ECON Econ* Polit* 	18% noun-adj: A labor organization 
+UNION	Noun HU COLL POLIT Polit* Power Strng 	31% noun-adj: The state of being united, usually a political union 
+UTOPIA	Noun Doctr POLIT Polit* 	
+UTOPIAN	Modif Doctr Polit* ECON POLIT 	
+VICE	Noun HU POLIT ECON Polit* Power Role 	65% adj: Deputy--e.g. "vice president" 
+VICTORY	Noun Goal POLIT Polit* Power Strng 	noun: Triumph 
+VILLAGER	Noun HU Polit* Role 	
+VOTE	Noun COM Comform POLIT Polit* 	18% noun: A ballot, the political representation of an individual or an  elective body 
+VOTE	DAV SUPV Polit* Actv Comform 	69% verb: To cast a ballot 
+VOTE	Modif Comform POLIT Polit* Actv 	12% noun-adj: "Voting" 
+VOTER	Noun HU POLIT Polit* Role 	noun: One who votes 
+WELFARE	Noun HU COLL POLIT ECON Econ* Polit* 	44% noun-adj: Political-economic organizations of various kinds 
+WHITE	Noun PLACE Social POLIT Polit* 	2% adj: "(the) white house"--u.s. executive seat 

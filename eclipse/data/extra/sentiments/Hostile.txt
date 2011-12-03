@@ -1,0 +1,836 @@
+word	tags	comments
+ABHOR	SV Neg SUPV Hostile Psv Arousal 	
+ABOLISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+ABRASIVE	IPadj Neg Modif Vice Hostile Strng 	
+ABSCOND	IAV Neg SUPV Travel Subm Weak Hostile Actv 	
+ABSENTEE	Neg Noun Hostile Weak Fail Intrel Vice 	
+ABUSE	Neg Noun Vice Ngtv Hostile Actv 	
+ABUSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ACCOST	IAV Neg SUPV Exert Hostile Actv 	
+ACCURSED	IPadj Neg Modif Vice Hostile 	
+ACCUSATION	Neg Noun Comform Hostile Intrel 	
+ACCUSE	Neg Modif Legal Ngtv Comform Hostile 	
+ACCUSE	IAV Neg SUPV Hostile Ngtv Comform 	
+ACRIMONIOUS	IPadj Neg Modif Hostile Arousal 	
+ACRIMONY	Neg Noun Hostile Psv Arousal Vice 	
+ACT	IAV SUPV Intrel Hostile Actv 	2% verb: 'act up'--to misbehave, malfunction. 
+ADMONISH	IAV Neg SUPV Intrel Hostile Power Strng Actv 	
+ADVERSARY	Neg Noun Intrel HU Polit Role Hostile 	
+AFFLICT	IAV Neg SUPV Ngtv Strng Actv Intrel Hostile 	
+AGGRAVATE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+AGGRAVATION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGGRESSION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGGRESSIVE	Neg Modif EMOT Hostile Ngtv Strng Actv PFREQ V 	adjective: Characterized by aggression, tending to aggress, making the  first attack, energetic, vigorous. 
+AGGRESSIVENESS	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGGRESSOR	Neg Noun HU Hostile Exert Intrel 	
+AGGRIEVE	SV Neg SUPV Hostile Actv Comform 	
+AGITATOR	Neg Noun HU Hostile Exert Intrel 	
+ALIENATE	IAV Neg SUPV Affil Intrel Hostile Other 	
+ALLEGATION	Neg Noun COM Comform Hostile Legal Ngtv 	
+ALTERCATION	Neg Noun Hostile Exert Intrel 	
+AMBUSH	Neg Noun Ritual Hostile Milit Ngtv Strng Actv 	
+AMBUSH	IAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+ANARCHIST	Neg Noun HU Hostile Polit Doctr 	
+ANARCHY	Neg Noun Hostile Polit Ovrst 	
+ANGER	Neg Noun EMOT Hostile Ngtv Actv PFREQ Arousal 	86% noun: Wrath, ire. 
+ANGER	IAV Neg SUPV Hostile Ngtv Arousal 	14% verb: To make angry. 
+ANGRY	Neg Modif EMOT Hostile Ngtv Actv Arousal 	adjective: Feeling anger or resentment 
+ANGUISH	Neg Noun EMOT Hostile Ngtv Psv Pain 	
+ANIMOSITY	Neg Noun Hostile Intrel Vice 	
+ANNIHILATE	IAV Neg SUPV Hostile Finish Exert Actv 	
+ANNIHILATION	Neg Noun Vice Finish Hostile 	
+ANNOY	IAV Neg SUPV Actv Hostile Intrel Other 	
+ANNOYANCE	Neg Noun EMOT Hostile Ngtv Arousal 	
+ANTAGONISM	Neg Noun EMOT Hostile Ngtv Arousal Strng Actv 	
+ANTAGONIST	Neg Noun HU Hostile Intrel 	
+ANTAGONISTIC	Neg Modif EMOT Hostile Ngtv Strng Arousal Actv 	
+ANTAGONIZE	IAV Neg SUPV Ngtv Strng Actv Arousal Hostile 	
+ARGUE	IAV Neg SUPV Hostile Ngtv Actv Comform 	44% verb: To dispute, to contend in argument--'they argue a lot' (sense  of animosity) 
+ARGUMENT	Neg Noun COM Comform Hostile Ngtv Actv 	63% noun: A (heated) discussion involving different points of view 
+ARM	Noun Object POLIT Tool Hostile Milit Strng Power 	16% noun: "Arms"--weapons 
+ARMED	Modif Object Tool Milit Power Strng Hostile 	adj: Equipped with weapons 
+ARMED	IAV SUPV ED Intrel Milit Strng Actv Power Hostile 	0% verb: To equip with weapons (past tense) 
+ARREST	Neg Modif Hostile Legal Power Ngtv Strng Actv Exert 	15% noun-adj: Halting, seizure, usually by legal authority, seized, halted, stopped 
+ARREST	DAV Neg SUPV Stay Hostile Legal Ngtv Strng Actv 	81% verb: To halt, stop, seize by legal authority 
+ARROW	Noun Object Tool Hostile Milit 	noun: Straight, pointed weapon 
+ASSAIL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ASSAILANT	Neg Noun HU Hostile Exert Other 	
+ASSASSIN	Neg Noun HU Hostile Exert 	
+ASSASSINATE	IAV Neg SUPV Actv Hostile Exert Other 	
+ASSAULT	Neg Noun Hostile Ngtv Strng Actv Vice 	
+ASSAULT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ATTACK	Neg Noun POLIT Hostile Ngtv Strng Actv Vice 	55% noun: An onslaught, assault 
+ATTACK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	34% verb: To assault (physically or figuratively) 
+ATTACK	Neg Noun Vice Ngtv Hostile 	10% noun: A seizure by disease, especially "heart attack" 
+ATTACKER	Noun HU Hostile Role 	
+AUSTERE	IndAdj Neg Modif Eval Hostile Strng 	
+AVENGE	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AVERSION	Neg Noun Negate Psv Hostile Arousal 	
+AVERT	IAV Neg SUPV Intrel Hostile Weak Psv 	
+AVOID	IAV Neg SUPV Intrel Hostile Ngtv Weak Psv 	verb: To keep away from, keep clear of 
+AVOIDANCE	Neg Noun Hostile Ngtv Weak Psv Intrel 	
+BANDIT	Neg Noun HU Hostile Fetch 	
+BANISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+BAR	DAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	19% verb: To obstruct or exclude 
+BARBARIAN	Neg Noun HU Hostile Vice 	
+BARBAROUS	IndAdj Neg Modif Hostile Exert Vice 	
+BASTARD	Neg Noun HU Hostile Ngtv Role 	
+BATTLE	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	14% verb: To engage in a fight 
+BATTLEFIELD	Neg Noun Hostile Place Intrel Exert 	
+BEASTLY	IndAdj Neg Modif Hostile Vice 	
+BEAT	IAV Neg SUPV Complt Hostile Power Strng Actv Ngtv 	88% verb: To strike repeatedly, defeat or outperform (6) 
+BEAT	Neg Noun Hostile Strng Ngtv Vice 	5% noun-adj: "Beating"--a whipping or thrashing, striking, throbbing (0) 
+BEHEAD	Neg Noun Hostile Exert Other Finish 	
+BELIE	IAV Neg SUPV Intrel Hostile Actv 	
+BELITTLE	IAV Neg SUPV Hostile Ngtv Intrel 	
+BELLIGERENT	IndAdj Neg Modif Hostile Emot Arousal 	
+BELT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BEREAVE	SV Neg SUPV Hostile Comform 	
+BERSERK	IndAdj Neg Modif Emot Arousal Hostile 	
+BESIEGE	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BETRAY	IAV Neg SUPV Intrel Hostile Ngtv 	
+BETRAYAL	Neg Noun Hostile Comform Intrel 	
+BEWARE	IAV Neg SUPV Percv Ngtv Strng Hostile Undrst 	
+BIT	IAV Neg SUPV ED Hostile Ngtv Actv Intrel 	7% verb: Past tense of "bite" 
+BITCHY	IndAdj Neg Modif Arousal Hostile Intrel 	
+BITE	Neg Noun Ngtv Hostile Actv Natpro 	22% noun-adj: Act of cutting or gripping with or as with teeth, the resulting  wound or amount cut off 
+BITE	IAV Neg SUPV Ngtv Actv Hostile Intrel 	74% verb: To grip, injure or cut off with or as with teeth 
+BITE	Neg Modif Hostile Ngtv Arousal 	4% adj: "Biting"--incisive, sarcastic 
+BITTER	Neg Modif EMOT EVAL Pain Ngtv Psv Hostile 	
+BLAME	Neg Noun Vice Hostile Ngtv 	25% noun: Reproof, culpability 
+BLAME	IAV Neg SUPV Intrel Hostile Ngtv 	75% verb: To hold responsible for failure, to censure 
+BLIND	IAV Neg SUPV Intrel Hostile Ngtv 	10% verb: To deprive of sight 
+BLOCK	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	28% verb: To thwart or barricade 
+BLOODSHED	Neg Noun Hostile Pain Weak 	
+BLOODTHIRSTY	IPadj Neg Modif Hostile Strng Power 	
+BLOW	Neg Noun Hostile Ngtv Strng Actv Exert 	24% noun: A hit or stroke, forcible effort, calamity 
+BLOW	IAV SUPV Exert Hostile Strng Actv 	60% verb: To propel as with wind, to set air in motion; fellation 
+BLURT	IAV Neg SUPV Comform Hostile Ovrst Actv 	
+BOMB	Neg Noun Object POLIT Tool Hostile Milit Ngtv Strng 	
+BOMB	DAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+BOMBARD	IAV Neg SUPV Actv Hostile 	
+BOMBARDMENT	Neg Noun Hostile 	
+BOTHER	IAV Neg SUPV Intrel Hostile Ngtv Actv PFREQ 	91% verb: To give trouble to, annoy, worry--to bewilder, confuse--to be  troubled, etc. 
+BOUT	Neg Noun Ritual Hostile Ngtv Actv 	
+BOX	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	9% verb: To fight with fists, strike 
+BOYCOTT	Noun ECON COM Comform Hostile Actv 	
+BOYCOTT	IAV SUPV Hostile Actv Comform 	
+BRAND	IAV SUPV Hostile Comform 	
+BRANDISH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+BRAWL	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BREACH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BREAK	DAV Neg SUPV Ngtv Strng Actv Hostile Exert 	75% verb: To fracture, split, stop or cause to stop functioning, cause  a division or change, enter forcibly, escape, begin suddenly, interrupt, etc. 
+BREAK	IAV Neg SUPV Intrel Hostile Legal Ngtv Actv 	2% verb-idiom: "Break a law" 
+BRISTLE	IAV Neg SUPV Emot Arousal Hostile Psv 	
+BROKE	DAV SUPV ED Hostile Actv Strng Exert 	72% verb: Past tense of "break"--fractured, split, stopped functioning,  caused a division or change; entered forcibly (1); escaped (3); interrupted  (1), etc. 
+BROKE	IAV Neg SUPV ED Intrel Hostile Legal Ngtv Actv 	1% idiom-verb: "Broke (broken) a law" 
+BRUSQUE	IPadj Neg Modif Comform Hostile Undrst 	
+BRUTALITY	Neg Noun Vice Hostile Ngtv Strng Actv Ovrst 	
+BRUTE	Neg Noun HU Hostile Vice 	
+BRUTISH	IndAdj Neg Modif Hostile Vice 	
+BUG	IAV Neg SUPV Hostile Ngtv Comform 	
+BULLET	Neg Noun Object Tool Hostile Ngtv Strng 	
+BURGLAR	Neg Noun HU Fetch Hostile Vice 	
+BURGLARY	Neg Noun Fetch Hostile Vice 	
+BUTCHERY	Neg Noun Hostile Ngtv Strng Actv Vice 	
+CALLOUS	IPadj Neg Modif Hostile Emot 	
+CANNIBAL	Neg Noun HU Vice Hostile Exert 	
+CANNON	Neg Noun Object Tool Hostile Milit Ngtv Strng 	
+CAPTURE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+CAST	IAV SUPV Exert Hostile Actv 	64% verb: To throw, project; to aim (of eyes) (2) 
+CATACLYSM	Neg Noun Finish Hostile 	
+CAUGHT	IAV SUPV Intrel ED Hostile Strng Actv PFREQ 	96% verb: Past tense of "catch"--to have captured, ensnared, attracted  (0); contracted (0); to have absorbed, as to hear and understand (0) 
+CENSURE	IAV Neg SUPV Power Actv Other Hostile Comform 	
+CHALLENGE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	19% verb: To confront with a contest or problem 
+CHARGE	Neg Noun COM Comform Hostile Ngtv 	15% noun: Accusation, injunction 
+CHARGE	IAV Neg SUPV Hostile Strng Actv Ngtv Comform 	9% verb: To accuse, enjoin, attribute 
+CHARGE	Neg Noun Hostile Strng Actv Ngtv Exert 	2% noun: Attack, forward rush or thrust 
+CHARGE	IAV Neg SUPV Travl Hostile Strng Actv Ngtv 	7% verb: To attack, to rush or thrust forward 
+CHASE	Neg Noun Travl Hostile Ngtv Actv 	3% noun: Swift pursuit, hunt 
+CHASE	DAV Neg SUPV Travl Hostile Ngtv Actv PFREQ 	97% verb: To pursue, to hunt 
+CHASTISE	IAV Neg SUPV Actv Power Other Hostile Comform 	
+CHEAT	IAV SUPV Hostile Intrel 	
+CHIDE	IAV Neg SUPV Actv Hostile Comform Power Other 	
+CHIP	IAV SUPV Exert Hostile 	
+CHOKE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+CLASH	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+CLUB	Neg Noun Object Tool Hostile Milit Ngtv Strng 	8% noun: A heavy stick suitable for use as a weapon 
+CLUB	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	5% verb: To beat with, or as with, a club 
+COLD	Neg Noun Doctr POLIT Hostile Polit* Ngtv Ngtv 	5% idiom-noun: 'cold war' 
+COLD	Neg LY Comform Hostile Ngtv Ngtv 	1% adverb: "Coldly"--indifferently, in a cool manner 
+COLLIDE	IAV Neg SUPV Actv Exert Hostile 	
+COLLISION	Neg Noun Exert Intrel Hostile 	
+COMBAT	Neg Noun POLIT Ngtv Actv Strng Intrel Hostile 	
+COMBAT	IAV Neg SUPV Intrel Hostile Polit* Ngtv Actv Strng 	
+COMBATANT	IPadj Neg Modif Hostile Exert Intrel 	
+COMPEL	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+COMPETE	IAV Neg SUPV Try Hostile Ngtv Strng Actv 	
+COMPETITION	Neg Noun Hostile Actv Ngtv Means 	
+COMPETITIVE	Neg Modif Hostile Ngtv Actv Virtue 	
+COMPETITOR	Neg Noun HU Hostile Intrel 	
+COMPLAIN	IAV Neg SUPV Hostile Ngtv Actv Comform 	verb: To express dissatisfaction or pain 
+COMPLAINT	Neg Noun COM Comform Hostile Ngtv Actv 	
+COMPULSION	Neg Noun Power Ngtv Strng Actv Hostile Means 	
+CONCEAL	IAV Neg SUPV Intrel Hostile Ngtv 	
+CONCEIT	Neg Noun Vice Hostile Power 	
+CONDEMN	Neg Modif Ngtv Strng Intrel Hostile 	
+CONDEMN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+CONDEMNATION	Neg Noun Vice Hostile Eval 	
+CONDESCENDING	IPadj Neg Modif Power Hostile Vice 	
+CONDESCENSION	Neg Noun Vice Power Hostile Intrel 	
+CONFLICT	Neg Noun POLIT Hostile Ngtv Actv Comform 	80% noun: Disagreement or struggle 
+CONFLICT	IAV Neg SUPV Intrel Hostile Ngtv Actv 	0% verb: To disagree or struggle 
+CONFRONT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To challenge, face 
+CONFRONTATION	Neg Noun POLIT Hostile Ngtv Strng Vice Actv 	
+CONSPIRACY	Neg Noun HU COLL POLIT Hostile Polit* Ngtv 	
+CONSTRAIN	IAV Neg SUPV Intrel Hostile Power Ngtv Strng 	
+CONTAMINATE	IAV Neg SUPV Actv Change Hostile 	
+CONTAMINATION	Neg Noun Vice Change Hostile 	
+CONTEMPT	Neg Noun Hostile Intrel Emot Vice 	
+CONTEMPTIBLE	IndAdj Neg Modif Hostile Intrel Vice 	
+CONTEMPTUOUS	IndAdj Neg Modif Hostile Intrel Vice 	
+CONTEND	IAV Neg SUPV Hostile Ngtv Strng Actv Try 	
+CONTEST	IAV SUPV Hostile Power Strng Actv Comform 	
+CONTRADICT	IAV Neg SUPV Ngtv Comform Hostile 	
+CONVICT	IAV Neg SUPV Intrel Hostile Legal Actv Ngtv Strng 	
+CORRUPTION	Neg Noun Vice POLIT Hostile Ngtv 	
+COUP	Noun Milit Ritual Hostile 	
+CRANKY	IndAdj Neg Modif Feel Hostile 	
+CRASS	IndAdj Neg Modif Vice Hostile 	
+CRIMINAL	Neg Noun HU Modif Legal Ngtv Role Hostile 	
+CRIPPLE	IAV Neg SUPV Actv Pain Stay Hostile Exert 	
+CRITIC	Neg Noun HU Exprs Ngtv Role Hostile 	
+CRITICISM	Neg Noun COM Comform Hostile Ngtv 	noun: Analysis and/or evaluation, usually censuring 
+CRITICIZE	IAV Neg SUPV Hostile Ngtv Comform 	
+CROOKED	IndAdj Neg Modif Vice Hostile 	
+CROP	DAV SUPV Exert Hostile 	4% verb: To cut off the tops or ends of 
+CROSS	IAV Neg SUPV Intrel Hostile Ngtv Actv 	3% verb: To confuse, frustrate 
+CROSS	Neg Modif EMOT Ngtv Hostile Actv Arousal 	9% adj: Angry 
+CROSS	Neg Modif Ngtv Hostile Actv Arousal 	2% adv: "Crossly"--angrily 
+CRUEL	Neg Modif Vice EVAL Hostile Ngtv 	
+CRUELTY	Neg Noun Vice Hostile Ngtv 	
+CRUSH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+CRUSHING	IndAdj Neg Modif Power Strng Hostile Exert 	
+CURSE	Neg Noun COM Comform Hostile Ngtv 	
+CURSE	IAV Neg SUPV Hostile Ngtv Comform 	
+CURT	Neg Modif Comform Hostile Ngtv 	
+CUT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	88% verb-adj-noun: To penetrate or divide with or as with a sharp-edged  instrument; the resulting penetration or division (3); to isolate, snub,  or humiliate (1); the result of such action (0) 
+CYNICAL	Neg Modif Hostile Ngtv Vice 	
+DAGGER	Noun Object Tool Hostile 	
+DAMAGE	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+DAMN	Neg Intj Hostile Ngtv 	
+DAMNABLE	IndAdj Neg Modif Vice Hostile Eval 	
+DAMNED	IndAdj Neg Modif Vice Hostile Eval 	
+DEADLOCK	Neg Noun Persist Ngtv Weak Hostile 	
+DEADLY	Neg Modif Vice EVAL Ngtv Strng Hostile 	
+DEAL	Neg Intj Hostile Ngtv 	1% idiom-noun: 'big deal'--sarcastic admiration 
+DECEIT	Neg Noun Vice Eval Hostile 	
+DECEITFUL	IPadj Neg Modif Vice Eval Hostile 	
+DECEIVE	Neg Modif Vice Ngtv Actv Hostile 	
+DECEIVE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+DECEPTION	Neg Noun Hostile Ngtv Vice Actv 	
+DECEPTIVE	Neg Modif Percv Ngtv Hostile 	
+DEFEAT	IAV Neg SUPV Hostile Ngtv Strng Actv Complt 	55% verb: To overthrow or overcome 
+DEFENSIVE	Neg Modif Hostile Ngtv Weak Psv Intrel 	
+DEFIANCE	Neg Noun Vice Strng Hostile 	
+DEFIANT	IPadj Neg Modif Vice Strng Hostile 	
+DEFILE	IAV Neg SUPV Hostile Actv Exert 	
+DEFY	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+DEGRADE	IAV Neg SUPV Hostile Actv Comform 	
+DEMEAN	IAV Neg SUPV Actv Other Hostile Power 	
+DEMOLISH	IAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+DEMON	Neg Noun Vice Hostile 	
+DEMORALIZE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+DENIAL	Neg Noun COM Comform Ngtv Hostile 	
+DENOUNCE	IAV Neg SUPV Actv Hostile Power Comform 	
+DENY	IAV Neg SUPV Hostile Ngtv Comform 	verb: To maintain that something is not true, negate; refuse to grant, withhold 
+DEPLORE	IAV Neg SUPV Hostile Ngtv Psv Comform 	
+DEPOSE	IAV Neg SUPV Comform Power Hostile Actv 	
+DEPRIVE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+DERIDE	IAV Neg SUPV Comform Hostile Actv 	
+DERISION	Neg Noun Vice Hostile 	
+DEROGATORY	IndAdj Neg Modif Hostile Comform Power 	
+DESERT	DAV Neg SUPV Intrel Hostile Ngtv 	14% verb: To abandon, forsake 
+DESPISE	Neg Modif Vice Ngtv Strng Hostile 	
+DESPISE	SV Neg SUPV Pain Hostile Ngtv Strng 	
+DESTROY	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	verb: To put an end to or reduce to useless form 
+DESTRUCTION	Neg Noun Hostile Ngtv Actv Vice Power Fail 	noun: The act of destroying, fact or state of being destroyed 
+DESTRUCTIVE	Neg Modif Hostile Ngtv Strng Actv Vice 	
+DETERRENT	Neg Noun Hostile Ngtv Strng Means 	
+DETEST	SV Neg SUPV Actv Emot Hostile 	
+DEVASTATE	IAV Neg SUPV Ngtv Strng Actv Hostile Exert 	
+DEVASTATION	Neg Noun Vice Hostile 	
+DEVIL	Neg Noun HU Hostile Relig Ngtv Role 	noun-adj: Evil spirit 
+DEVILISH	IndAdj Neg Modif Hostile 	
+DEVIOUS	IndAdj Neg Modif Hostile Think 	
+DIABOLIC	IndAdj Neg Modif Think Hostile 	
+DIABOLICAL	IndAdj Neg Modif Think Hostile 	
+DISAGREE	IAV No SUPV Hostile Ngtv Comform 	verb: To differ 
+DISAGREEABLE	Neg Modif Hostile Negate Ngtv Pain 	
+DISAGREEMENT	Neg Noun COM Comform Hostile Negate Ngtv 	
+DISAPPROVE	IAV Neg SUPV Negate Hostile Comform Ngtv 	
+DISAVOW	IAV Neg SUPV Negate Ngtv Comform Hostile 	
+DISAVOWAL	Neg Noun COM Comform Negate Ngtv Hostile 	
+DISBELIEF	Neg Noun Doctr Negate Ngtv Undrst Hostile 	
+DISCORD	Neg Modif Ngtv Weak Vice Hostile 	
+DISCORDANT	IndAdj Neg Modif Eval Hostile Comform 	
+DISCOURAGE	IAV Neg SUPV Negate Ngtv Actv Pain Hostile 	
+DISCREDIT	IAV Neg SUPV Actv Comform Hostile 	
+DISCREPANT	IndAdj Neg Modif Eval Comform Hostile 	
+DISCRIMINATION	Noun ECON POLIT Hostile Race PFREQ Vice 	noun: Bias, favoritism in treatment, generally racially oriented 
+DISGUST	Neg Noun EMOT Pain Ngtv Weak Psv Hostile 	16% noun: Revulsion 
+DISGUST	IAV Neg SUPV Ngtv Hostile Pain 	6% verb: To be revolting or abhorrent to someone 
+DISGUST	Neg Modif EMOT Pain Ngtv Weak Psv Hostile 	59% adj: "Disgusted"--revolted 
+DISLIKE	DAV Neg SUPV Negate Ngtv Psv Hostile Arousal 	71% verb: To have an aversion toward 
+DISLIKE	Neg Modif EMOT Ngtv Hostile Psv Arousal Negate 	29% noun: An aversion 
+DISMISS	Neg Modif Ngtv Actv Finish Hostile 	
+DISMISS	IAV Neg SUPV Intrel Hostile Ngtv Actv Power 	
+DISOBEDIENCE	Neg Noun Vice Hostile 	
+DISOBEDIENT	IPadj Neg Modif Vice Hostile 	
+DISPLEASURE	Neg Noun EMOT Hostile Pain Negate Ngtv Weak Psv 	
+DISPOSE	Neg Modif Ngtv Strng Actv Arousal Hostile 	
+DISPUTABLE	Neg Modif Hostile Legal Ngtv Undrst Vice 	
+DISPUTE	Neg Noun Comform Hostile POLIT Ngtv COM Negate Actv 	
+DISPUTE	IAV Neg SUPV Comform Hostile POLIT Ngtv COM Negate Actv 	
+DISRUPT	IAV Neg SUPV Actv Hostile Other 	
+DISRUPTION	Neg Noun Hostile Vice 	
+DISSATISFIED	IndAdj Neg Modif Hostile Pain 	
+DISSENT	Neg Noun Vice Affil Hostile 	
+DISSENTION	Neg Noun Vice Affil Hostile 	
+DISTORT	IAV Neg SUPV Ngtv Hostile Comform 	
+DISTRUST	Noun Arousal Hostile 	
+DISTURB	IAV Neg SUPV Hostile Ngtv Actv Comform 	44% verb: To disquiet, to interrupt 
+DISTURBANCE	Neg Noun Hostile Ngtv Actv Vice 	
+DITCH	IAV SUPV Travl Hostile 	
+DIVORCE	Neg Noun Hostile Kin* Legal Ngtv Vice 	84% noun: A legal marital separation 
+DIVORCE	DAV Neg SUPV Intrel Hostile Kin* Legal Ngtv Actv 	14% verb: To separate, usually to dissolve a marriage 
+DIVORCE	Neg Modif Hostile Kin* Legal Ngtv Intrel 	3% adj: "Divorced"--legally separated from a spouse 
+DOUBLE	Neg Noun COM Comform Hostile Ngtv 	3% idiom-noun: 'double talk'--deceiving speech 
+DOUBLE	Neg Noun Hostile Ngtv Vice 	0% idiom-noun: 'double cross'--treachery 
+DRAG	DAV Neg SUPV Exert Hostile Actv Ngtv 	
+DRIVE	IAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	20% verb: To force, impel or push into some psychological or other state,  generally negative--"he is driving me crazy" 
+DUMP	IAV Neg SUPV Exert Hostile Ngtv Actv 	
+EGOTISTICAL	IndAdj Neg Modif Vice Power Hostile 	
+ENDANGER	IAV Neg SUPV Intrel Hostile Ngtv 	
+ENEMY	Neg Noun HU POLIT Hostile Ngtv Role 	noun adjective: Foe, antagonist 
+ENFORCE	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+ENGULF	IAV Neg SUPV Strng Actv Decr Hostile Ovrst Ngtv 	
+ENRAGE	IAV Neg SUPV Hostile Emot Other 	
+ENTANGLEMENT	Neg Noun Polit Hostile 	
+EPITHET	Neg Noun COM Comform Hostile Ngtv 	
+ESCAPE	IAV SUPV Travl Strng Actv Hostile PFREQ 	89% verb: To slip or get away, as from confinement or restraint, gain  or regain liberty--avoid capture, punishment or any threatened evil 
+ESCAPE	Noun Travl Strng Actv Hostile 	9% noun-adj: The act or an instance of escaping--the means of escape 
+EVEN	IAV Neg SUPV Intrel Hostile Ngtv 	2% idiom-verb: "Get even"--to have one's revenge, square accounts 
+EXCEPTION	IAV Neg SUPV Hostile Ngtv Comform 	9% idiom-verb: Make an objection- 'take exception' 
+EXCLUDE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXCLUSION	Neg Noun Hostile Ngtv Strng Actv Intrel Power 	
+EXCOMMUNICATION	Neg Noun Hostile Legal Affil 	
+EXECUTE	IAV Neg SUPV Finish Work Hostile 	
+EXECUTION	Noun Strng Actv Intrel Hostile 	
+EXILE	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXPEL	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXPLOIT	Modif Hostile Power Strng Intrel 	
+EXPLOIT	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+FAIL	IAV Neg SUPV Hostile Ngtv Weak Psv Fail 	2% verb: To disappoint or be inadequate for 
+FALLOUT	Neg Noun Natpro POLIT Hostile Ngtv 	
+FED	Neg Modif EMOT Pain Hostile Ngtv Psv 	28% idiom-adj-adv: "Fed up" - disgusted 
+FEROCIOUS	IndAdj Neg Modif Emot Hostile 	
+FEROCITY	Neg Noun Hostile 	
+FEUD	Neg Noun Hostile Intrel 	
+FIEND	Neg Noun HU Hostile 	
+FIERCE	IndAdj Neg Modif Hostile Emot 	
+FIGHT	Neg Noun Ritual Hostile Milit Ngtv Strng Actv 	24% noun: Conflict 
+FIGHT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To engage in conflict 
+FIGHT	Neg Modif Hostile Ngtv Strng Actv Vice 	8% noun-adj: "Fighting"--engaging in conflict 
+FIGHT	Handels Intrel Hostile 	2% idiom-verb: "To pick a fight"--to tease, bully, encourage a fight--handled  by "pick" 
+FIGHTER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+FINE	IAV Neg SUPV Exch Hostile Legal Econ* Ngtv Strng Actv 	0% verb: To levy a fee in punishment 
+FINGER	IAV SUPV Hostile Comform 	
+FIRE	DAV Neg SUPV Work Hostile Ngtv Strng Actv 	6% verb: To discharge a weapon, shoot, apply fire to 
+FIRE	DAV Neg SUPV Econ* Hostile Ngtv Strng Actv Exch 	8% verb: To terminate employment 
+FIRE	Neg Noun Hostile Ngtv Exert Actv 	5% noun-adj: Gunfire, shooting, attack 
+FIST	Neg Noun Bodypt Hostile Ngtv Strng 	
+FLED	IAV Neg SUPV Travl ED Hostile Actv Ngtv Weak 	verb: To have run or passed away quickly 
+FLOOR	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	2% verb: To provide with a floor; to knock to the floor (0) 
+FOE	Neg Noun HU Hostile 	
+FOOL	IAV Neg SUPV Intrel Hostile Ngtv 	37% verb: To deceive or joke with 
+FOOL	IAV SUPV Actv Intrel Hostile 	15% verb: 'fool around,' 'fool with'--to trifle, to have fun 
+FORCE	Neg Modif Power Hostile Ngtv Strng Actv Exert 	3% idiom-adv: "By force"--using physical force, generally against another's will 
+FORCE	Neg Modif Power Ngtv Psv Vice Hostile 	4% adj: "Forced"--compulsory, constrained 
+FOREBODING	IndAdj Neg Modif Hostile Percv 	
+FOUGHT	DAV Neg SUPV Intrel ED Hostile Ngtv Strng Actv 	verb: Past tense of "fight"--engaged in conflict 
+FRIGHTEN	IAV Neg SUPV Hostile Ngtv Actv Pain 	19% verb: To scare 
+FROWN	Neg Noun Ngtv Psv Comform Hostile 	
+FROWN	IAV Neg SUPV Hostile Ngtv Psv Comform 	
+FRUSTRATE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	20% verb: To thwart 
+FUN	SV Neg SUPV Hostile Ngtv Comform 	3% idiom-verb: "Make fun (of)"--to tease, parody 
+FURIOUS	Neg Modif EMOT Hostile Ngtv Ovrst Arousal 	
+FURY	Neg Noun EMOT Hostile Ngtv Pain Arousal Ovrst 	
+GERM	Neg Noun Object Hostile 	
+GET	IAV Neg SUPV Intrel Hostile Actv Ngtv Strng 	1% idiom-verb: "Get rid of"--get free from, destroy 
+GET	Handels Intrel Hostile 	2% idiom-verb: "Get even"--have one's revenge--handled by "even" 
+GODDAMN	Neg Intj Hostile Ngtv 	
+GRAB	DAV Neg SUPV Exert Hostile Ngtv Actv 	verb: To seize or clutch. 
+GRAPPLE	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+GRENADE	Noun Object Tool Hostile Milit 	
+GRUDGE	Neg Noun Hostile Ngtv Pain 	
+GRUMBLE	IAV Neg SUPV Hostile Ngtv Comform 	
+GUERRILLA	Neg Noun HU POLIT Hostile Milit Ngtv Strng Actv 	
+GUN	Neg Noun Object Tool Hostile Milit Strng Ngtv 	noun: A firearm 
+GUNMEN	Neg Noun HU MALE S Hostile Strng Ngtv Role 	
+HAMPER	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+HANG	IAV Neg SUPV Intrel Hostile Ngtv 	3% verb: To suspend by the throat (transitive) 
+HARASS	IAV Neg SUPV Actv Hostile Other Exert 	
+HARASSMENT	Neg Noun Other Hostile Intrel Exert 	
+HARM	Neg Noun Hostile Ngtv Strng Psv Vice 	33% noun: Injury, damage, hurt 
+HARM	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To injure, damage, or hurt 
+HARSH	Neg Modif Vice EVAL Hostile Ngtv Strng 	
+HASSLE	Neg Noun Hostile Work 	
+HATE	SV Neg SUPV Hostile Ngtv Psv Arousal 	80% verb: To dislike passionately, to detest 
+HATE	Neg Noun EMOT Hostile Ngtv Psv Arousal 	19% noun: Intense dislike, aversion, hostility 
+HATE	Neg Modif EVAL EMOT Hostile Ngtv Psv Arousal 	0% adj: 'hated'-loathed--'the hated dictator' 
+HATER	Neg Noun HU Ngtv Psv Hostile Role 	
+HATRED	Neg Noun EMOT Hostile Ngtv Psv Arousal 	
+HAUNT	IAV Neg SUPV Intrel Hostile Ngtv Power Actv 	
+HEARTLESS	IndAdj Neg Modif Emot Hostile 	
+HEDGE	IAV Neg SUPV Intrel Hostile Ngtv Weak 	
+HEINOUS	IndAdj Neg Modif Hostile 	
+HIDDEN	IAV SUPV Intrel ED Hostile 	38% verb: Past tense of "hide"--concealed 
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	57% verb: To conceal oneself 
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	28% verb: To conceal something other than oneself 
+HINDER	IAV Neg SUPV Intrel Ngtv Strng Hostile 	
+HINDRANCE	Neg Noun Ngtv Hostile Vice 	
+HIT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	verb: To strike or collide against, present and past tense 
+HOLD	IAV SUPV Stay Hostile Actv Strng 	0% idiom-verb: "Hold one's own"--handled by "own" 
+HORRIFY	IAV Neg SUPV Actv Hostile Other 	
+HORROR	Neg Noun EMOT Pain Ngtv Hostile 	
+HOSTILE	Neg Modif EMOT Hostile Ngtv Pain Arousal 	
+HOSTILITY	Neg Noun EMOT Hostile Ngtv Pain Arousal 	
+HUMILIATE	IAV Neg SUPV Actv Hostile Other 	
+HUNT	Neg Noun Ngtv Hostile Actv Exert 	1% noun: A chasing and killing of animals; a searching out (0) 
+HUNT	IAV Neg SUPV Ngtv Actv Hostile PFREQ Exert 	94% verb: To chase and kill animals; to search out (14) 
+HUNTER	Neg Noun HU Exprs Hostile Ngtv Actv Role 	noun: One who chases and kills animals 
+HURT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv PFREQ 	89% verb: To injure or harm, to cause or experience pain or distress 
+HUSTLE	IAV Neg SUPV Comform Hostile Econ 	
+HUSTLER	Neg Noun HU Role Hostile Comform Econ 	
+IMPAIR	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile Power 	
+IMPATIENCE	Neg Noun Negate Ngtv Psv Arousal Hostile 	
+IMPEDE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+IMPEDIMENT	Neg Noun Hostile Ngtv Vice 	
+IMPLICATE	IAV Neg SUPV Comform Hostile Causal Other Actv 	
+INDICTMENT	Neg Noun COM Comform POLIT Hostile Legal Ngtv 	
+INDIGNATION	Neg Noun Emot Pain Hostile 	
+INFECT	IAV Neg SUPV Actv Hostile Change 	
+INFECTION	Neg Noun Hostile Change 	
+INFILTRATION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+INFLAME	IAV Neg SUPV Actv Hostile Change 	
+INFRINGEMENT	Neg Noun Hostile Ngtv Strng Actv Legal Vice 	
+INFURIATE	IAV Neg SUPV Actv Other Hostile 	
+INHIBIT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INHIBITION	Neg Noun Hostile Ngtv Strng Psv Vice 	
+INHUMANE	IndAdj Neg Modif Hostile Vice Eval 	
+INJUNCTION	Neg Noun COM Comform Hostile Legal Ngtv Strng 	
+INJURIOUS	Neg Modif Vice Ngtv Weak Hostile 	
+INJURY	Neg Noun Vice Ngtv Weak Hostile 	
+INSOLENCE	Neg Noun Hostile Intrel 	
+INSOLENT	IndAdj Neg Modif Hostile Intrel 	
+INTERFERE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INTERFERENCE	Neg Noun Hostile Ngtv Strng Actv Vice 	
+INTERRUPT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+INTERRUPTION	Neg Noun COM Comform Hostile Ngtv 	
+INTRUSION	Neg Noun Hostile Intrel 	
+IRK	IAV Neg SUPV Psv Pain Hostile 	
+IRON	Neg Modif Doctr POLIT Hostile Polit* Ngtv 	3% idiom: The 'iron curtain' 
+IRON	Neg Noun Object Tool Hostile Strng Ngtv 	0% noun: "Irons"--chains, shackles 
+IRRITABLE	Neg Modif EMOT Pain Ngtv Psv Hostile 	
+IRRITATION	Neg Noun Hostile Pain Ngtv Psv 	
+JAGGED	Modif Qual Hostile 	
+JAIL	DAV Neg SUPV Intrel Hostile Legal Power Ngtv Strng Actv 	4% verb: To imprison 
+JEER	IAV Neg SUPV Actv Comform Hostile 	
+JEOPARDIZE	IAV Neg SUPV Intrel Hostile Ngtv 	
+JERK	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+KEEP	IAV SUPV Intrel Hostile Power Strng Actv 	4% verb: Bar, restrain, prevent, preserve against 
+KICK	DAV Neg SUPV Exert Hostile Strng Actv Ngtv 	75% verb: To strike with one's foot 
+KICK	Neg Noun Strng Actv Hostile Ngtv Exert 	3% noun: The act of, or the blow from kicking 
+KICK	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	6% verb-idiom: 'kick out'--eject, expel 
+KIDNAP	IAV Neg SUPV Legal Hostile Fetch Other Actv 	
+KILL	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv PFREQ 	98% verb: To deprive of life; figuratively 
+KILL	Neg Noun Hostile Ngtv Strng Actv Intrel 	2% noun: "Kill," "killing"--slaying, murder 
+KILLER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+KNIFE	Noun Object Tool Hostile PFREQ 	97% noun-adj: Single-bladed cutting instrument 
+KNIFE	DAV Neg SUPV Exert Hostile Ngtv Strng 	3% verb: To stab 
+KNOCK	DAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	36% verb: To strike, rap, collide, rattle, to criticize (1) 
+KNOCK	Neg Noun Hostile Ngtv Actv Strng Exert 	21% noun: A blow, rap, rattling, beating, or rapping; criticism (0) 
+LAID	IAV Neg SUPV Intrel Econ* Power Hostile Ngtv 	28% idiom-verb: "Laid off"--discharged employees 
+LAUGH	IAV Neg SUPV Hostile Ngtv Actv Comform 	10% verb-idiom: "Laugh at" - ridicule, deride 
+LAWLESS	IndAdj Neg Modif Legal Hostile 	
+LAY	IAV Neg SUPV Intrel Econ* Hostile Power Ngtv Strng Actv 	1% idiom-verb: "Lay off"--discharge employees 
+LEAD	Noun Comform Hostile 	0% idiom-noun: "A leading question"--a loaded question 
+LIAR	Neg Noun HU Hostile Ngtv Role 	
+LIE	DAV Neg SUPV Hostile Ngtv Comform 	20% verb: To tell falsehoods 
+LIE	Neg Noun COM Comform Hostile Ngtv 	9% noun: A falsehood 
+LIMIT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	19% verb: To restrict by or confine within limits 
+LIQUIDATE	IAV Neg SUPV Intrel Ngtv Strng Actv Econ* Hostile 	
+LIQUIDATION	Neg Noun Ngtv Strng Actv ECON Econ* Hostile Vice 	
+LITIGANT	Noun HU Hostile Legal Role 	
+LITIGATION	Noun ECON POLIT Doctr Hostile Legal 	
+LYING	DAV Neg SUPV Hostile Ngtv ING Actv Comform 	6% verb: To tell a falsehood 
+LYING	Neg Noun COM Comform Hostile Ngtv Actv 	6% noun: The act of telling a falsehood 
+MAD	Neg Modif EMOT Hostile Ngtv Psv PFREQ Arousal 	85% adj: Angry or annoyed 
+MAKE	IAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	12% verb: Coerce, force to, cause to--"make him go" 
+MALICE	Neg Noun Hostile Pain 	
+MALICIOUS	IPadj Neg Modif Hostile Pain Other 	
+MALIGNANT	IndAdj Neg Modif Hostile 	
+MANGLE	IAV Neg SUPV Actv Exert Hostile Other 	
+MANSLAUGHTER	Neg Noun Hostile Legal Ngtv Vice 	
+MAR	Neg SUPV Exert Hostile Ngtv Strng Actv 	
+MARKSMAN	Noun HU MALE Exprs Role Hostile 	
+MASSACRE	IAV Neg SUPV Finish Hostile Actv Exert 	
+MERCILESS	IPadj Neg Modif Power Strng Hostile 	
+MIND	IAV SUPV Arousal Hostile 	6% verb: Be bothered by--"will he mind if i take it?" 
+MINE	Neg Noun Object Tool Hostile Milit Ngtv Strng 	5% noun: An explosive charge 
+MISBEHAVE	IAV Neg SUPV Actv Hostile 	
+MISLEAD	IAV Neg SUPV Intrel Ngtv Hostile Actv 	
+MISSILE	Noun Object Vehicle Hostile Milit Strng 	noun-adj: A weapon or object projected so as to strike a distant object,  especially a self-propelled rocket-like weapon 
+MOB	Noun HU COLL Hostile 	
+MOLEST	IAV Neg SUPV Actv Other Hostile 	
+MONSTER	Neg Noun ANI Ngtv Strng Hostile 	noun: A grotesque or unusually large animate or inanimate object 
+MONSTROUS	Neg Modif Vice Ovrst Ngtv Strng Hostile 	
+MURDER	Neg Noun Hostile Ngtv Strng Actv Vice 	
+MURDER	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+MURDEROUS	IPadj Neg Modif Hostile 	
+MUTTER	DAV Neg SUPV Hostile Ngtv Weak Comform 	
+NAG	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+NASTY	IndAdj Neg Modif Hostile 	
+NAUGHTY	IndAdj Neg Modif Hostile 	
+NEEDLE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+NEGATE	IAV Neg SUPV Negate Ngtv Intrel Hostile 	
+NEGLECT	Neg Noun Means Ngtv Hostile 	
+NEGLECT	IAV Neg SUPV Fail Ngtv Hostile 	
+NIGGER	Noun HU POLIT Race Role Hostile 	noun-adj: Negro, vulgar term used by negrophobes 
+NIGHTMARE	Neg Noun Hostile Fail 	
+NO	No Intj Negate Hostile 	49% adv: Used as interjection expressing refusal, denial, etc., or with  comparatives meaning "not at all" 
+NO	Noun COM Comform Hostile 	0% noun: "A no" 
+OBJECT	IAV Neg SUPV Hostile Ngtv Actv Comform 	19% verb: To voice aversion 
+OBLITERATE	IAV Neg SUPV Finish Power Hostile 	
+OBNOXIOUS	Neg Modif Vice EVAL Ngtv Hostile 	
+OBSTINATE	IndAdj Neg Modif Hostile Feel Stay 	
+OBSTRUCT	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+OFFEND	IAV Neg SUPV Actv Eval Hostile Other 	
+OFFENDER	Neg Noun HU Causal Hostile 	
+OFFENSIVE	IndAdj Neg Modif Vice Hostile Ngtv Strng Actv Eval 	noun-adj: Characterized by attack, physically or on the sensibilities 
+OMINOUS	Neg Modif Vice Ngtv Strng Hostile 	
+OPPONENT	Neg Noun HU POLIT Hostile Ngtv Role 	noun: Adversary 
+OPPOSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	41% verb: To resist, combat, place opposite 
+OPPOSITION	Neg Noun Doctr POLIT Hostile Ngtv 	noun-adj: Anything that opposes 
+OPPRESS	IAV Neg SUPV Power Actv Hostile Other 	
+OPPRESSION	Neg Noun Power Hostile Subm Intrel 	
+OSTRACIZE	IAV Neg SUPV Ovrst Hostile Affil Other Actv 	
+OUST	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+OUTLAW	Neg Noun HU Legal Hostile 	
+OUTRAGE	Neg Noun Emot Pain Hostile 	
+PAN	IAV SUPV Hostile Comform 	
+PARASITE	Neg Noun Hostile Fetch Other 	
+PASS	IAV SUPV Intrel Hostile 	1% verb: "Pass up"--to refuse, forego 
+PENALTY	Noun Vice Hostile Legal 	
+PENETRATE	IAV SUPV Strng Actv Hostile Exert 	
+PENETRATION	Noun Space Strng Actv Hostile 	
+PERSECUTE	IAV Neg SUPV Actv Other Hostile 	
+PERSECUTION	Neg Noun Intrel Hostile 	
+PICK	IAV Neg SUPV Intrel Hostile Power Actv Strng Ngtv 	9% idiom-verb: "(to) pick on, a fight"--to tease, bully, encourage a fight 
+PINCH	DAV Neg SUPV Exert Hostile Ngtv Actv 	
+PISTOL	Noun Object Tool Hostile Milit 	
+PLAGUE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+PLIGHT	Neg Noun Hostile Emot Pain 	
+POINT	Neg Modif Hostile Ngtv Strng Know Ovrst 	1% adj: "Pointed"--incisive, penetrating, cutting 
+POISONOUS	IPadj Neg Modif Hostile 	
+POLLUTE	IAV Neg SUPV Actv Legal Hostile 	
+POSSE	Noun HU COLL Legal Power Hostile Strng 	
+POUND	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	27% verb: To strike heavily or repeatedly, pommel 
+PREJUDICE	Neg Noun EMOT Hostile Race Ngtv Arousal 	
+PRETEND	IAV Neg SUPV Actv Comform Hostile Ngtv 	verb: To hold out the appearance of being, doing, having, feeling, etc., feign. 
+PRETENSE	Neg Noun Comform Fail Hostile 	
+PROSECUTION	Neg Noun Hostile Legal Ngtv Actv Strng Comform 	
+PROTEST	Neg Noun Ritual POLIT Hostile Ngtv Actv 	
+PROTEST	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+PROVOCATION	Neg Noun Causal Hostile 	
+PROVOKE	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+PROWL	IAV Neg SUPV Move Hostile Actv 	
+PUNCH	IAV Neg SUPV Actv Other Hostile Exert 	
+PUNISH	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+PUSH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	6% idiom-verb: "Push around"--to bully 
+PUT	IAV SUPV Work Hostile Actv 	1% verb: 'put out'--to extinguish or expel 
+QUARREL	Neg Noun COM Comform Hostile Ngtv Actv 	
+QUARREL	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+QUARRELSOME	IPadj Neg Modif Hostile Intrel 	
+QUESTION	DAV SUPV Hostile Comform Undrst 	10% verb: To ask, interrogate, raise doubts 
+QUIBBLE	IAV Neg SUPV Actv Comform Hostile 	
+RAGE	Neg Noun EMOT Hostile Ngtv Strng Arousal 	
+RAID	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+RAISE	Neg Noun Ritual Hostile Actv Ngtv 	3% idiom-verb: "Raise hell," "raise hob,"--to cause trouble, make things difficult 
+RAVAGE	IAV Neg SUPV Actv Hostile Fetch 	
+REACTIVE	IPadj Neg Modif Actv Hostile 	
+REBEL	Neg Noun HU POLIT Hostile Ngtv Strng Actv Role 	
+REBEL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+REBELLION	Neg Noun POLIT Ritual Hostile Milit Ngtv Strng 	
+REBELLIOUS	IPadj Neg Modif Hostile Polit Affil Ovrst 	
+REBUFF	IAV Neg SUPV Actv Other Hostile Comform 	
+REBUKE	IAV Neg SUPV Actv Other Hostile Comform 	
+REBUT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+RECALCITRANT	IndAdj Neg Modif Hostile Vice 	
+REFUSAL	Neg Noun COM Comform Hostile Ngtv 	
+REFUSE	DAV Neg SUPV Hostile Ngtv PFREQ 	97% verb: To decline, to reject, to deny 
+REJECT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To refuse, cast off, rebuff 
+REJECTION	Neg Noun Hostile Ngtv Strng Vice Actv 	
+RENOUNCE	IAV Neg SUPV Actv Other Comform Hostile 	
+RENUNCIATION	Neg Noun Intrel Comform Hostile 	
+REPROACH	IAV Neg SUPV Other Actv Hostile Comform 	
+REPULSE	IAV Neg SUPV Intrel Ngtv Strng Actv Power Hostile 	
+RESENT	IAV Neg SUPV Intrel Hostile Ngtv Psv 	verb: To react with displeasure or indignation from a sense of injury,  especially towards someone 
+RESENTFUL	IndAdj Neg Modif Emot Pain Hostile 	
+RESENTMENT	Neg Modif EMOT Pain Ngtv Psv Hostile 	
+RESIST	IAV SUPV Intrel Hostile Strng Actv 	
+RESISTANCE	Noun Hostile Strng Actv Vice 	
+RESTRAIN	IAV SUPV Intrel Hostile Power Strng Actv 	
+RESTRICT	IAV Neg SUPV Intrel Hostile Power Strng Actv PFREQ Ngtv 	96% verb: To confine or limit 
+RETALIATE	IAV Neg SUPV Actv Hostile Intrel Exert 	
+RETARD	IAV Neg SUPV Actv Hostile Exert 	
+REVENGE	Neg Noun Intrel Hostile 	
+REVOLT	IAV Neg SUPV Actv Hostile Polit Affil 	
+REVOLUTION	Neg Noun POLIT Ritual Hostile Polit* Ngtv Strn 	noun: Overthrow and replacement of a system 
+REVOLUTIONARY	Modif Doctr ECON POLIT Polit* Hostile Strng 	
+RID	IAV Neg SUPV Actv Hostile Decr 	
+RIDE	IAV Neg SUPV Hostile Ngtv Actv Comform 	5% verb: To ridicule or harass 
+RIDICULE	Neg Noun COM Comform Hostile Ngtv Actv 	
+RIDICULE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+RIFLE	Noun Object Tool Hostile Milit 	
+RIP	DAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+RIVAL	Neg Noun HU Hostile Ngtv Strng Role 	
+RIVALRY	Neg Noun Intrel Hostile 	
+ROBBER	Neg Noun HU Fetch Hostile Legal 	
+ROBBERY	Neg Noun Fetch Hostile Legal 	
+ROGUE	Neg Noun HU Hostile Ngtv Role 	
+ROOT	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	0% idiom-verb: To "root out", to extirpate 
+RUFFIAN	Neg Noun HU Hostile 	
+RUINOUS	IndAdj Neg Modif Hostile Vice 	
+RUMPLE	IAV Neg SUPV Actv Hostile 	
+RUN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	2% verb: "Run down"--to defame or speak ill of (4), destroy or injure  (2), wear down (2) 
+RUPTURE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+RUTHLESS	IndAdj Neg Modif Hostile 	
+RUTHLESSNESS	Neg Noun Hostile 	
+SABOTAGE	IAV Neg SUPV Actv Hostile Other Exert 	
+SARCASM	Neg Noun Comform Hostile 	
+SARCASTIC	IPadj Neg Modif Comform Hostile 	
+SAVAGE	IndAdj Neg Modif Hostile 	
+SCANDALOUS	IndAdj Neg Modif Hostile 	
+SCARE	IAV Neg SUPV Ngtv Strng Intrel Hostile Actv 	83% verb: To frighten 
+SCARED	IAV Neg SUPV Intrel ED Hostile Ngtv Strng 	4% verb: To frighten (past tense) 
+SCOLD	DAV Neg SUPV Hostile Ngtv Actv PFREQ Comform 	95% verb: Admonish 
+SCOLD	Neg Noun COM Comform Hostile Ngtv Actv 	5% noun: "Scolding" - verbal rebuke 
+SCORCH	IAV Neg SUPV Hostile Exert Actv 	
+SCORN	Neg Noun Hostile Emot 	
+SCORNFUL	IPadj Neg Modif Hostile Emot 	
+SCOUNDREL	Neg Noun Hostile Vice HU 	
+SCOWL	IAV Neg SUPV Comform Hostile Actv 	
+SCREW	IAV Neg SUPV Intrel Hostile Actv Ngtv 	
+SCUFFLE	Neg Noun Intrel Hostile Exert 	
+SEETHE	SV Neg SUPV Comform Hostile Actv 	
+SEGREGATION	Neg Noun ECON POLIT Race Doctr Hostile Ngtv 	noun-adj: Separation of races 
+SEIZE	IAV Neg SUPV Hostile Ngtv Strng Actv Fetch 	verb: To take possession or control of 
+SERVE	IAV Neg SUPV Comform Hostile Ngtv 	1% idiom-verb: "Serve notice"--give warning 
+SERVICE	IAV Neg SUPV Intrel Hostile Subm Ngtv Weak 	2% idiom: "Lip service" - insincere expression of support 
+SEVER	IndAdj Neg Modif Hostile 	
+SHADOW	IAV Neg SUPV Intrel Hostile Actv Ngtv 	
+SHAFT	IAV SUPV Intrel Hostile 	
+SHATTER	DAV SUPV Exert Hostile Strng Actv 	
+SHELL	Neg Noun Object Tool Hostile Milit Strng Ngtv 	5% noun: Artillery warhead 
+SHELL	DAV Neg SUPV Intrel Hostile Milit Strng Ngtv Actv 	5% verb: To use (an) artillery warhead(s) 
+SHOCK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	29% verb: To jar with intense surprise, horror, disgust 
+SHOOT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	68% verb: To send forth or discharge a projectile, generally with a gun,  in order to hit or damage some object; to take pictures (0) 
+SHOOT	Neg Noun Hostile Ngtv Strng Actv Vice 	6% noun-adj: "Shooting"--the harming of a person by a projectile or weapon;  pertaining to a rapidly moving object (0) 
+SHOOT	IAV Neg SUPV Hostile Ngtv Comform 	4% idiom-verb: "Shoot...mouth off"--to talk indiscreetly 
+SHOT	DAV Neg SUPV ED Exert Hostile Ngtv Strng Actv 	81% verb: Past participle of "shoot"--to launch or discharge a projectile; 
+SHOT	Neg Noun Object Tool Hostile Ngtv Strng Actv 	7% noun: A projectile or the process of launching a projectile; anything  sudden and/or forceful (2) 
+SHOVE	DAV Neg SUPV Actv Hostile Exert 	
+SHRED	IAV Neg SUPV Actv Hostile Exert Decr 	
+SHREW	Neg Noun HU Hostile Female 	
+SHRUG	Neg Noun Comform Hostile Ngtv 	
+SHRUG	DAV Neg SUPV Comform Hostile Ngtv 	
+SHUDDER	Noun Psv Comform Hostile 	
+SHUDDER	DAV SUPV Psv Comform Hostile 	
+SHUN	IAV Neg SUPV Actv Affil Ovrst Hostile Other 	
+SHUT	IAV SUPV Hostile Comform 	23% idiom-verb: "Shut up"--keep quiet 
+SICK	Neg Modif Vice EMOT Ngtv Psv Hostile 	5% idiom-adj: "Sick of"--be disgusted with, tired of 
+SIEGE	Neg Noun Hostile Polit Intrel 	
+SINISTER	Neg Modif Vice EVAL Ngtv Hostile 	
+SKIRMISH	Neg Noun Hostile Intrel Exert 	
+SLAM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+SLANDER	IAV Neg SUPV Comform Hostile Other Actv 	
+SLANDERER	Neg Noun HU Hostile Ngtv Actv Role 	
+SLANDEROUS	IPadj Neg Modif Comform Hostile Other 	
+SLAP	DAV Neg SUPV Actv Exert Hostile 	
+SLASH	DAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+SLAUGHTER	IAV Neg SUPV Natpro Finish Hostile Exert Actv 	
+SLAYER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+SLEAZY	IndAdj Neg Modif Weak Hostile 	
+SLIGHT	IAV Neg SUPV Intrel Hostile Ngtv Actv 	8% verb: To malign or insult 
+SLIGHT	Neg Noun COM Comform Hostile Ngtv 	3% noun: An insult 
+SLY	Neg Modif Vice EVAL Hostile Ngtv 	
+SMACK	IAV Neg SUPV Actv Hostile Exert 	
+SMASH	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	85% verb: To strike violently, shatter, destroy 
+SMASH	Neg Noun Hostile Ngtv Strng Actv Exert 	10% noun: A violent blow, a crash 
+SMEAR	IAV Neg SUPV Comform Hostile Actv 	
+SNARL	DAV Neg SUPV Hostile Ngtv Comform 	
+SNATCH	DAV Neg SUPV Fetch Hostile Ngtv Strng Actv 	
+SPANK	DAV Neg SUPV Actv Exert Hostile 	
+SPEAR	Noun Object Tool Hostile Milit PFREQ 	88% noun: A lance 
+SPEAR	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	12% verb: To lance someone, or something 
+SPITE	Neg Noun EMOT Hostile Ngtv Arousal 	4% noun: Malicious anger 
+SPITEFUL	IPadj Neg Modif Hostile Emot 	
+SPLIT	DAV SUPV Strng Actv Exert Hostile 	68% verb: To divide or to cut apart 
+SPOIL	IAV Neg SUPV Ngtv Exert Hostile 	
+STAB	DAV Neg SUPV Actv Hostile Exert Try 	
+STALL	IAV SUPV Stay Weak Hostile 	
+STAMP	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+STARTLE	IAV Neg SUPV Intrel Hostile Ngtv Psv 	
+STEAL	DAV Neg SUPV Intrel Hostile Ngtv Legal Actv 	60% verb: To rob, thieve 
+STEAL	Neg Noun Vice ECON Ngtv Actv Hostile 	40% noun: "Stealing" - theft, thievery 
+STERN	IndAdj Neg Modif Hostile Strng 	
+STIFLE	IAV Neg SUPV Intrel Ngtv Strng Power Hostile Actv 	
+STING	IAV Neg SUPV Actv Pain Hostile Exert 	
+STOLE	DAV Neg SUPV Intrel ED Hostile Ngtv Actv Legal 	verb: Past tense of steal 
+STOLEN	IAV Neg SUPV Intrel ED Hostile Ngtv Legal 	
+STONE	DAV SUPV Exert Hostile Actv 	1% verb: To assail with rocks 
+STOP	DAV SUPV Intrel Hostile Power Actv Strng 	18% verb: To restrain, hinder, prevent 
+STORM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	7% verb: To rush, attack, rage 
+STORMY	IndAdj Neg Modif Hostile Vary 	
+STRANGLE	DAV Neg SUPV Hostile Exert Actv Other 	
+STRIFE	Neg Noun Vice Ngtv Weak Actv Hostile 	
+STRIKE	DAV Neg SUPV Exert Ngtv Actv Hostile Strng 	56% verb: To attack, injure, hit (generally in retaliation and with speed),  hit upon and remove, move sharply, make an (physical) impact 
+STRIKE	Noun Ritual ECON Econ* Hostile Actv Strng 	19% noun: A work stoppage to secure some demand 
+STRINGENT	IndAdj Neg Modif Strng Hostile 	
+STRIP	IAV SUPV Work Hostile Strng Actv 	
+STRUCK	DAV Neg SUPV Exert ED Ngtv Hostile Actv Strng 	82% verb: Hit, hit upon, made an impact, attacked 
+STRUGGLE	Neg Noun Hostile Ngtv Actv Intrel 	55% noun: A fight, contention, effort 
+STRUGGLE	IAV Neg SUPV Intrel Hostile Ngtv Actv 	36% verb: To contend, fight 
+STRUGGLE	Neg Noun Ngtv Actv Intrel Hostile 	9% noun-adj: "Struggling"--contending or fighting 
+STUBBORN	Neg Modif Vice EVAL Ngtv Strng Hostile 	
+STUBBORNLY	IndAdj Neg Modif Stay Hostile Strng 	
+STUBBORNNESS	Neg Noun Stay Strng Hostile 	
+STUN	IAV SUPV Strng Intrel Hostile 	
+SUBDUE	IAV SUPV Intrel Strng Actv Power Hostile 	
+SUBVERSION	Neg Noun Power Hostile Exert Intrel 	
+SUBVERT	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+SUNDER	IAV Neg SUPV Hostile Change Decr Actv 	
+SUPPRESS	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+SUPPRESSION	Neg Noun Ngtv Strng Actv Power Hostile Intrel 	
+SUSPECT	Neg Noun HU Legal Ngtv Role Hostile 	
+SUSPECT	IAV Neg SUPV Ngtv Solve Hostile 	
+SUSPICION	Neg Noun EMOT Hostile Ngtv Arousal Undrst 	
+SUSPICIOUS	Neg Modif EVAL Hostile Ngtv Arousal Undrst 	
+SWEAR	DAV Neg SUPV Hostile Ngtv Comform 	
+SWORD	Noun Object Tool Milit Strng Hostile 	noun: The weapon 
+SWORE	DAV Neg SUPV ED Hostile Ngtv Comform 	
+TABOO	IndAdj Neg Modif Hostile Percv 	
+TAINT	IAV Neg SUPV Actv Change Hostile 	
+TAMPER	IAV Neg SUPV Actv Change Hostile 	
+TANTRUM	Neg Noun Hostile Exert Comform 	
+TAUNT	Neg Noun COM Comform Hostile Ngtv Actv 	
+TAUNT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+TAX	IAV Neg SUPV Intrel Hostile Ngtv 	6% verb-adj: To burden or place a strain on, to demand taxes from (1) 
+TEAR	DAV Neg SUPV Exert Hostile Ngtv Actv 	59% verb: To rip, destroy, divide 
+TEASE	IAV Neg SUPV Actv Comform Hostile Other 	
+TEMPER	Neg Noun Hostile Ngtv Arousal 	
+TEMPEST	Neg Noun Natpro Hostile 	
+TENSE	IndAdj Neg Modif Emot Pain Hostile 	
+TERRORISM	Neg Noun Hostile Exert Other 	
+TERRORIZE	IAV Neg SUPV Actv Hostile Exert Other 	
+THEFT	Neg Noun Hostile Fetch Legal 	
+THIEF	Neg Noun HU Role Hostile Fetch Legal 	
+THORNY	IndAdj Neg Modif Hostile 	
+THRASH	IAV Neg SUPV Actv Hostile 	
+THREAT	Neg Noun COM Hostile Ngtv Strng Vice 	noun: A menace 
+THREATEN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	verb: To menace 
+THWART	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+TIME	LY Time* Hostile 	0% idiom: 'about time'--overdue 
+TIRE	IAV Neg SUPV Hostile Ngtv Weak Psv Pain 	13% verb: To become bored or disinterested--"tire of" 
+TIRED	Neg Modif Pain Hostile Ngtv Weak Psv 	27% adj: Exhausted in patience or interest, bored--"tired of doing this" 
+TIRED	SV Neg SUPV Hostile Pain Ngtv Weak Psv 	0% verb: To become bored or uninterested 
+TNT	Noun Object Tool Hostile Milit 	
+TORMENT	IAV Neg SUPV Actv Hostile Exert Other 	
+TOUGH	Modif EVAL Hostile Strng Qual 	
+TRAITOR	Neg Noun HU Role Fail Hostile Affil Ovrst 	
+TRAMPLE	IAV Neg SUPV Actv Move Hostile 	
+TRAP	DAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	43% verb: To capture or ensnare 
+TREACHEROUS	Neg Modif Vice Ngtv Hostile 	
+TREACHERY	Neg Noun Hostile 	
+TREASON	Neg Noun Polit Hostile 	
+TREASONOUS	IPadj Neg Modif Polit Hostile 	
+TRICK	Neg Noun Ngtv Actv Vice Hostile 	
+TRICK	IAV Neg SUPV Intrel Hostile Ngtv Actv 	
+TRIGGER	Noun Object Tool Hostile Milit 	
+TRY	IAV SUPV Intrel Legal Power Actv Hostile 	1% verb: To ascertain th rough judiciary means 
+TURBULENT	IndAdj Neg Modif Vary Hostile 	
+TURN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	1% verb: Become suddenly hostile--to "turn on," "turn upon" 
+TURN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	0% verb: "Turn down"--to reject 
+ULTIMATUM	Neg Noun Comform Hostile 	
+UNDERMINE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+UNDID	IAV Neg SUPV ED Work Hostile Negate Ngtv Actv 	
+UNDO	IAV Neg SUPV Work Hostile Negate Ngtv Actv 	
+UNDONE	IAV Neg SUPV ED Work Hostile Negate Ngtv Psv 	
+UNFAIR	Neg Modif Vice EVAL Negate Ngtv Hostile 	
+UNJUST	IndAdj Neg Modif Vice EVAL Legal Hostile Ngtv Negate 	
+UNJUSTIFIED	Neg Modif Vice Negate Ngtv Hostile 	
+UNLEASH	IAV SUPV Intrel Hostile Negate Strng Actv 	
+UNRULY	IndAdj Neg Modif Hostile 	
+UNSAFE	IndAdj Neg Modif Hostile 	
+UNTRUTH	IndAdj Neg Modif Hostile 	
+UNWILLING	Neg Modif Hostile Negate Ngtv Pain Power Hostile 	
+UNWILLING	Neg Modif Hostile Negate Ngtv Pain Power Hostile 	
+UNWILLINGNESS	Neg Noun Hostile Negate Ngtv Strng Pain Power 	
+UPRISING	Neg Noun Affil Hostile Change 	
+UPSET	Neg Noun Hostile Ngtv Weak Vary 	3% noun: Instance of being overturned, overthrown 
+UPSET	IAV Neg SUPV Hostile Ngtv Actv Strng Exert 	9% verb: To disrupt or overturn 
+USURP	IAV Neg SUPV Actv Hostile Polit Fetch Exert Intrel Power 	
+VENGEANCE	Neg Noun Goal Hostile Ngtv Strng Actv 	
+VENOM	Neg Noun Vice Hostile 	
+VENOMOUS	IndAdj Neg Modif Hostile Comform 	
+VICIOUS	Neg Modif Vice EVAL Hostile Ngtv 	
+VICTIM	Noun HU Hostile Subm Weak Psv Role 	
+VIE	IAV Neg SUPV Actv Intrel Hostile Try 	
+VILLAIN	Neg Noun HU Role Hostile 	
+VIOLATE	IAV Neg SUPV Intrel Hostile Ngtv Actv 	
+VIOLATION	Neg Noun Vice Legal Ngtv Actv Hostile 	
+VIOLENCE	Neg Noun POLIT Hostile Ngtv Strng Actv Vice 	noun: Fury, force, conflict 
+VIOLENT	Neg Modif Hostile Ngtv Strng Actv Vice 	
+VIPER	Neg Noun Animal Hostile 	
+WAGE	IAV SUPV Try Hostile Strng Actv 	
+WAIT	Neg Modif Hostile Actv Intrel Ngtv 	1% idiom-adj: "In wait"--in ambush 
+WALK	IAV SUPV Travl Hostile Actv 	2% idiom-verb: 'walk out'--to leave in protest 
+WAR	Neg Noun Hostile Exert Polit Means 	
+WARLIKE	IPadj Neg Modif Hostile exert Polit Intrel Affil 	
+WARRIOR	Noun HU Hostile Milit Strng Actv Role 	
+WEAPON	Noun Object Tool POLIT Hostile Milit 	noun-adj: An instrument or tactic used for attack or defense in combat 
+WEED	Neg Noun Object Natpro Hostile 	
+WENCH	Neg Noun HU Role Female Hostile 	
+WHACK	IAV Neg SUPV Actv Hostile Exert Strng Other 	
+WHEEL	IAV SUPV Exert Hostile 	
+WHINE	DAV Neg SUPV Hostile Subm Ngtv Weak Comform 	
+WHIP	Neg Noun Object Tool Hostile Strng Ngtv 	38% noun: Instrument with long strips of leather bound together 
+WHIP	Neg Noun Hostile Ngtv Strng Actv Vice 	0% noun-adj: A beating 
+WHIP	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	50% verb: To hit, beat, drive, vanquish 
+WICKED	IndAdj Neg Modif Hostile 	
+WICKEDNESS	Neg Noun Hostile 	
+WILY	IndAdj Neg Modif Hostile Think Solve 	
+WITCH	Noun HU Female Hostile Relig Role 	63% noun: A sorcerer or sorceress 
+WITCH	IAV SUPV Intrel Hostile Relig 	9% verb: To cast spells upon 
+WITCHCRAFT	Neg Noun Hostile Means 	
+WITHHELD	IAV Neg SUPV Intrel ED Hostile Strng Actv Ngtv 	
+WITHHOLD	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	
+WITHSTAND	IAV SUPV Intrel Strng Actv Power Hostile 	
+WORRY	IAV Neg SUPV Intrel Ngtv Actv Hostile 	10% verb: To cause to feel anxious 
+WOUND	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	46% verb: Physically or emotionally injure 
+WRATH	Neg Noun Hostile 	
+WRECK	IAV Neg SUPV Actv Hostile Exert Finish Other 	
+WRESTLE	IAV Neg SUPV Actv Hostile Exert Think 	
+WRONG	IAV Neg SUPV Intrel Hostile Ngtv 	1% verb: To injure, malign, treat unfairly 

@@ -1,0 +1,112 @@
+word	tags	comments
+ACADEMY	Noun PLACE Social Acad 	
+AIRPORT	Noun PLACE Social 	
+ARENA	Noun PLACE Social 	
+BANDSTAND	Noun PLACE Social Exprs 	
+BAR	Noun PLACE Social 	54% noun-adj: A counter or establishment where liquor is served 
+BARN	Noun PLACE Social Econ* 	
+BASE	Noun PLACE Social Strng 	22% noun: A foundation, place of operation (2), minimum level (2) 
+BIRTHPLACE	Noun PLACE Social 	
+BOWER	Noun PLACE Social 	
+BUILD	Noun PLACE Social 	22% noun: "Building"--a structure that houses, an edifice 
+BUREAU	Noun PLACE Social POLIT ECON 	
+CABIN	Noun PLACE Social 	
+CAFE	Noun PLACE Social Econ* 	
+CAMP	Noun PLACE Social 	79% noun: A temporary shelter or lodging, a place to go on vacation 
+CAMPUS	Noun PLACE Social Acad 	
+CAPITOL	Noun PLACE Social POLIT Polit* 	
+CASTLE	Noun PLACE Social Milit 	
+CATHEDRAL	Noun PLACE Social Relig 	
+CENTER	Noun POS Strng PLACE Social 	78% noun: Middle or focal point; place where various generally public,  social services and activities are performed and provided-- "community  center," "center for the arts" (15) interest, social gathering place ('community  center') 
+CHAPEL	Noun PLACE Social Relig 	
+CHURCH	Noun PLACE Social Relig 	noun-adj: The christian religion, its rituals, its members, a specific  denomination of it, any or all of these or pertaining to them-- frequently  used in "go to church" meaning attend its religious rites, generally once  a week; the actual building whic 
+CLEAR	Noun PLACE Social Econ* ECON 	0% idiom-noun: "Clearing house"--place where mutual claims are settled 
+COLLEGE	Noun PLACE Social Acad 	noun-adj: Institution of higher learning, especially liberal arts 
+COMMON	Noun PLACE Social 	1% noun: Shared space, usually land 
+COMMUNAL	IPadj Pos Modif Social Affil 	
+COMMUNE	Pos Noun Social Affil 	
+COTTAGE	Noun PLACE Social 	
+COUNTRY	Noun PLACE Social 	0% idiom-noun: "Country club" 
+DAIRY	Noun PLACE Social ECON 	
+DEPARTMENT	Noun PLACE Social ECON Econ* 	4% noun-idiom: Department store 
+DUMP	Neg Noun PLACE Social Ngtv 	
+DWELLING	Noun PLACE Social 	
+EMBASSY	Noun PLACE Social POLIT Polit* Power 	
+ESTATE	Noun PLACE Social ECON 	
+EXCHEQUER	Noun ECON Econ* PLACE Social 	
+FACTORY	Noun PLACE Social ECON Econ* 	
+FARM	Noun PLACE ECON Econ* Social 	78% noun-adj: Facility for raising crops or animals 
+FILL	Noun PLACE Social Econ* 	0% noun-idiom: "Filling station"--gas station 
+FORT	Noun PLACE Social POLIT Milit Strng 	
+GALLERY	Noun PLACE Social Exprs 	
+GARAGE	Noun PLACE Social 	
+GARDEN	Noun PLACE Social 	noun-adj: Small plot of land where plants, especially flowers, are grown. 
+GRAVE	Neg Noun Ngtv Relig PLACE Social 	70% noun-adj: Burial place 
+HEADQUARTERS	Noun PLACE Social POLIT Power Strng 	
+HEAVEN	Pos Noun PLACE Social Relig Pstv 	noun: The abode of god and the righteous dead; a state or place of happiness;  includes interjections 
+HELL	Neg Noun PLACE Social Relig Ngtv 	
+HIGH	Noun PLACE Social Acad 	32% idiom-noun: "High school"--a school following the ordinary grammar school 
+HOME	Pos Noun PLACE Social Pstv 	noun-adj-adv: Dwelling place - domestic - homeward 
+HOSPITAL	Noun PLACE Social 	noun-adj: A place where medical care is administered 
+HOTEL	Noun PLACE Social ECON Econ* 	noun-adj: Establishment for accommodation of travelers 
+HOUSE	Noun PLACE Social PFREQ 	92% noun-adj: A building or place of residence, pertaining to same 
+HOUSE	Noun PLACE Social Polit* Handels 	1% noun: "The white house" - seat of usa executive branch 
+HOUSE	Noun PLACE ECON Social 	5% noun-adj: "Housing" - accommodations collectively 
+HOUSEHOLD	Noun PLACE Social 	
+HUT	Noun PLACE Social 	noun: A small dwelling of simple construction. 
+INSTITUTE	Noun PLACE Social POLIT ECON Acad PFREQ 	91% noun-adj: An organization with a social, educational, etc., purpose 
+INSTITUTION	Noun PLACE Social POLIT ECON Strng 	noun: An established pattern of behavior, an organization 
+JAIL	Neg Noun PLACE Social POLIT Legal Ngtv PFREQ 	96% noun: Prison 
+LAND	Noun PLACE Social Actv 	0% noun-adj: 'landing'--arrival or place of arrival 
+LAWN	Noun PLACE Social 	
+LIBRARY	Noun PLACE Social Acad 	noun: A place set apart to contain books and other literary material for  reading, study, or reference. 
+LODGE	Noun PLACE Social 	noun-adj: "Lodge," "lodging"--an abode; secret society (1) 
+MANSION	Noun PLACE Social Ovrst 	
+MARKET	Noun PLACE Social ECON Econ* 	43% noun-adj: A place where goods are bought and sold, trade, business,  demand for a commodity 
+MILL	Noun PLACE Social ECON Econ* 	25% noun-adj: "Mill"--tool, building, or factory 
+MINE	Noun PLACE Social ECON Econ* 	32% noun-adj: A pit or excavation from which ores, precious stones, etc.  are extracted 
+MOTEL	Noun PLACE Social Econ* 	
+MUSEUM	Noun PLACE Social Acad 	
+NURSE	Noun PLACE Social 	16% idiom-noun: "Nursing home"...a residence equipped to care for invalids 
+OFFICE	Noun PLACE Social Econ* 	60% noun-adj: Room or building where business is transacted; a branch  of an organization (8) 
+PALACE	Noun PLACE Social POLIT Polit* Power 	
+PLANT	Noun PLACE Social ECON Econ* 	26% noun-adj: The buildings, equipment, etc., for a particular operation  or institution 
+PLANTATION	Noun PLACE Social ECON Econ* 	
+POST	Noun PLACE Social POLIT 	18% idiom-noun: "Post office"--a governmental department concerned with mail 
+POUND	Noun PLACE Social 	0% noun: Enclosure for animals 
+PRISON	Neg Noun PLACE Social POLIT Legal Ngtv PFREQ 	90% noun-adjective: A place for punitive confinement 
+PRISON	Neg Noun PLACE Social POLIT Ngtv Legal 	10% idiom-noun-adj: "Prison camp"--a place for military confinement of  enemy armed forces 
+RANCH	Noun PLACE Social ECON Econ* 	
+REAL	Noun PLACE ECON Econ* Social 	0% idiom-noun-adj: "Real estate"--property in the form of buildings and land 
+RESIDENCE	Noun PLACE Social 	
+RESTAURANT	Noun PLACE Social ECON Econ* 	
+ROOM	Noun PLACE Social ECON Econ* 	0% adj: "Rooming"--boarding 
+RUIN	Neg Noun PLACE Social Ngtv 	15% noun: "Ruins"--remains 
+SCHOOL	Noun PLACE Social Acad PFREQ 	87% noun-adj: Place of instruction 
+SECONDARY	Noun PLACE Social PFREQ 	87% noun-adj: "Secondary school"--high school level of education 
+SEMINARY	Noun PLACE Social Acad Relig 	
+SETTLEMENT	Noun PLACE Social POLIT ECON Polit* 	
+SHED	Noun PLACE Social 	
+SHELTER	Pos Noun PLACE Pstv Social 	
+SHOP	Noun PLACE Social ECON Econ* 	54% noun-adj: A small store 
+SITE	Noun PLACE Social 	
+STADIUM	Noun PLACE Social Exprs 	
+STAGE	Noun PLACE Social Exprs 	28% noun: The place where public entertainment, usually theatrical, takes  place and public speeches ar 
+STALL	Noun PLACE Social 	
+STATION	Noun PLACE Social 	82% noun-adj: A place of installation, operation and service of gas for  cars (10), the military (4), industry (3), trains and buses (2), the police  (2), radio (2), and other public services (3) 
+STORE	Noun PLACE Social ECON Econ* PFREQ 	87% noun-adj: Establishment where merchandise is sold or kept 
+STRONGHOLD	Noun PLACE Social Milit Strng 	
+STUDIO	Noun PLACE Social Exprs 	
+SUITE	Noun PLACE Social 	
+TENT	Noun PLACE Social 	
+THEATER	Noun PLACE Social Exprs 	
+THEATRE	Noun PLACE Social Exprs 	
+TOWN	Noun PLACE Social POLIT 	noun-adj: A thickly populated area, usually smaller than a city but larger  than a village 
+TREASURY	Noun PLACE Social POLIT ECON Econ* 	
+UNIVERSITY	Noun PLACE Social POLIT Acad 	noun-adj: An institution of learning of the highest level 
+URBAN	Modif ECON POLIT PLACE Social 	
+VILLAGE	Noun PLACE Social POLIT ECON 	noun-adj: A small rural community 
+WATERFRONT	Noun PLACE Social ECON 	
+WHITE	Noun PLACE Social POLIT Polit* 	2% adj: "(the) white house"--u.s. executive seat 
+WORKSHOP	Noun ECON Econ* PLACE Social 	
+YARD	Noun PLACE Social 	75% noun: An enclosed area outdoors, or the ground which adjoins some building. 

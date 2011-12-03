@@ -1,0 +1,79 @@
+word	tags	comments
+BACON	Noun Object Food 	
+BEAN	Noun Object Food 	
+BEEF	Noun Object Food 	
+BEER	Noun Object Food 	noun-adj: The beverage, pertaining to this beverage 
+BRANDY	Noun Object Food 	
+BREAD	Noun Object Food 	
+BREAKFAST	Noun Object Food 	
+BUTTER	Noun Object Food 	
+CAKE	Noun Object Food 	
+CANDY	Noun Object Food 	
+CEREAL	Noun Object Food 	
+COCKTAIL	Noun Object Food 	
+COCOA	Noun Object Food 	noun-adj: Processed cacao seeds 
+COFFEE	Noun Object Food 	noun-adj: Java 
+COOKIE	Noun Object Food 	
+COOKY	Noun Object Food 	
+CORN	Noun Object Food 	
+CREAM	Noun Object Food 	
+CROP	Noun Object Food ECON PFREQ 	96% noun: Agricultural product 
+DINNER	Noun Object Food 	noun: Meal 
+DRINK	Noun Object Food 	21% noun: Beverage 
+DRUG	Noun Object Food 	noun-verb: A chemical substance administered to a person or animal, the  act of administering it, or its effec 
+EAR	Noun Object Food 	7% noun: 'ear of corn' 
+EGG	Noun Object Food 	
+FEED	Noun Object Food 	9% noun: Nourishment, input 
+FIG	Noun Object Food 	
+FOOD	Noun Object Food 	noun: Aliment 
+FRUIT	Noun Object Food 	noun-adj.: Anything produced or accruing, effect, result or product--  usually with reference to vegetable gro 
+GIN	Noun Object Food 	
+GINGER	Noun Object Food 	
+GRAIN	Noun Object Food 	
+GRAPE	Noun Object Food 	
+HAMBURGER	Noun Object Food 	
+HARDTACK	Noun Object Food 	
+HARVEST	Noun Object Food ECON Econ* 	
+HAY	Noun Object Food 	
+HEROIN	Noun Object Food 	
+HOT	Noun Object Food 	5% idiom-noun: Hot dog 
+ICE	Noun Object Food 	33% idiom-noun-adj: "Ice cream" 
+ICE	Noun Object Food 	0% noun: "Icing" - frosting 
+JUICE	Noun Object Food 	
+LEMON	Noun Object Food 	
+LEMONADE	Noun Object Food 	
+LIQUOR	Noun Object Food 	
+LUNCH	Noun Object Food 	
+LUNCHEON	Noun Object Food 	
+MEAL	Noun Object Food 	noun: An occasion when food is taken, or the food itself 
+MEAT	Noun Object Food 	noun: The flesh of animals 
+MILK	Noun Object Food 	
+MUTTON	Noun Object Food 	
+NOURISH	IAV Pos SUPV Actv Affil Food Incr 	
+NOURISHMENT	Pos Noun Food 	
+NUT	Noun Object Food 	
+NUTRIENT	Pos Noun Food 	
+OAT	Noun Object Food 	
+ONION	Noun Object Food 	
+PEA	Noun Object Food 	
+PRODUCE	Noun Object Food ECON Econ* 	11% noun: Products (agricultural) 
+RICE	Noun Object Food 	noun adjective: A grain 
+ROLL	Noun Object Food 	0% noun: A pastry 
+SALAMI	Noun Object Food 	
+SALT	Noun Object Food 	
+SNACK	Noun Object Food Undrst 	
+SOFT	Noun Object Food 	3% idiom-noun: "Soft drink" - beverage 
+STAPLE	Pos Noun Food Basic 	
+STEAK	Noun Object Food 	
+SUGAR	Noun Object Food 	noun-adj: Sweet substance, pertaining to same 
+SUPPER	Noun Object Food 	
+SWEET	Noun Object Food 	4% noun: "Sweets" - candies 
+SYRUP	Noun Object Food 	
+TEA	Noun Object Food 	
+TOAST	Noun Object Food 	
+TOBACCO	Noun ECON Object Food Econ* 	
+VEGETABLE	Noun Object Food 	
+VITAMIN	Noun Object Food 	
+WALNUT	Noun Object Food 	
+WHISKY	Noun Object Food 	
+WINE	Noun Object Food 	noun: The fermented juice of various fruits or plants 

@@ -1,0 +1,84 @@
+word	tags	comments
+ALL	PRON INDEF LY Ovrst Other 	36% pron-adv: Each and every one or thing, the whole--entirely, completely 
+ANOTHER	PRON INDEF Impers 	15% pron: One more, or a different, person, thing, etc. 
+ANOTHER	PRON DEF DEF3 Other 	9% idiom: 'one another'--each other 
+ANY	PRON INDEF Ovrst Impers 	10% pronoun: Some unspecified person or persons, thing or things, quantity  or number 
+ANYBODY	PRON DEF DEF4 Ovrst Other 	pronoun: Any person 
+ANYONE	PRON DEF DEF4 Ovrst Other 	pronoun: Any person at all, anybody 
+ANYTHING	PRON INDEF Ovrst Impers 	pronoun: Thing of any kind 
+BODY	PRON DEF DEF4 Other 	6% noun: 'a body'--a person, one 
+BOTH	PRON Quan 	49% pron: The two 
+EACH	PRON INDEF Ovrst Impers 	19% pron: Each one 
+EACH	PRON DEF DEF3 Other 	37% idiom: 'each other'--each, the other (with verbs of interaction) 
+EITHER	PRON INDEF Impers 	6% pron: One or the other 
+ELSE	PRON DEF DEF4 PFREQ Impers 	94% adj-pron: Appositive--other than the person or thing mentioned 
+ENOUGH	PRON Quan 	24% pron: An adequate quantity 
+EVERYBODY	PRON DEF DEF4 Ovrst Other 	pronoun: Every person 
+EVERYONE	PRON DEF DEF4 Ovrst Other 	pronoun: Every person 
+EVERYTHING	PRON INDEF Ovrst Impers 	pronoun: All 
+FEW	PRON INDEF Undrst Weak Impers 	14% pron: Not many people or things, a small number 
+FEW	PRON INDEF Ovrst Modif Strng Impers 	2% idiom-adj-pron: 'quite a few'--a moderate number, numerous, many 
+FIRST	PRON Rel 	4% pron: The initial or foremost one 
+FORMER	PRON Time* 	8% noun: The first of two mentioned 
+HALF	PRON Quan 	40% noun: One of two equal parts 
+HE	PRON DEF DEF1 MALE Thrdp Other 	pronoun: The male being in question, or last mentioned, or anyone, that person 
+HER	PRON DEF DEF2 Female Other 	49% pron: Objective (def2) 
+HERS	PRON Thrdp Other Female 	
+HIM	PRON DEF DEF2 MALE Thrdp Other 	pronoun: Objective form of 'he' 
+HUNDRED	PRON Ovrst Quan 	8% noun: "Hundreds" 
+I	PRON DEF DEF1 Singp Self 	pronoun: The nominative singular pronoun, used by a speaker in referring to himself 
+I'M	PRON DEF DEF1 Singp SUPV VERB BE Self 	
+IT	PRON INDEF Thrdp Impers 	pron-explet: Used to represent a thing, group, idea, or action understood,  previously mentioned, or about to be mentioned 
+IT'S	PRON INDEF SUPV VERB BE Thrdp PFREQ Impers 	91% contraction: A contraction of 'it is' (with 'is' used as a copula  to connect the pronoun 'it' with a predicate adjective or nominative for  amplification) 
+IT'S	PRON INDEF SUPV VERB HAV Thrdp Impers 	6% contraction: A contraction of 'it has' (used with the past participle  to form the perfect tense) 
+IT'S	PRON INDEF SUPV VERB BE Thrdp Impers 	4% contraction: A contraction of 'it is' (used with the present participle  of another verb to form the progressive tense) 
+LATTER	PRON INDEF Impers 	67% pron: The last mentioned of a series 
+LET'S	PRON DEF DEF2 SUPV VERB MOD S Our 	
+MANY	PRON INDEF Strng Ovrst Impers 	20% pron: Many persons or things 
+ME	PRON DEF DEF2 Singp Self 	pronoun: Objective form of 'i' 
+MINE	PRON Singp Self 	60% pron: The absolute form of "my" 
+MORE	DET PRE PRE2 PRON LY Comp ER Quan Strng 	adv-adj-pron: A general intensifier--it takes its specific meaning - and  part of speech - from the word modified; and often the word modified is  implied rather than stated. 
+MOST	PRON Strng Quan Ovrst 	26% pron: The greatest quantity or amount, the majority. 
+MUCH	DET PRE PRE2 PRON LY Quan Strng 	pron-adj-adv: Being of great quantity, amount, measure or degree 
+MYSELF>	PRON DEF DEF3 PFREQ Self 	96% pron: First person singular pronoun--reflexive or intensive form 
+NEITHER	Negate DET PRE PRE1 CONJ CONJ2 PRON LY 	adj-pron-conj: Not either 
+NO	Negate PRON DEF DEF4 Other 	5% idiom-pron: "No one" 
+NOBODY	PRON DEF DEF4 LY Negate Other Undrst 	pron: No person, a person of no importance 
+NONE	PRON LY Negate Impers 	pronoun: Not one, not any. 
+NOTHING	PRON INDEF LY Negate Weak Undrst Impers 	noun-adv: Not anything--not a thing, not at all 
+ONE	PRON DEF DEF4 INDEF Other 	61% pron: A single person or thing 
+OTHER	PRON Impers 	7% pron: An "other," generally refers to things, not people 
+OTHER	PRON DEF DEF4 Handels Other 	21% pron: "Others"--refers almost always to people 
+OURS	PRON Affil Our 	
+SECOND	DET NUMB ORD POS PRON PFREQ Rel 	84% pron-adj-adv: Unit of series following the first 
+SEVERAL	PRON INDEF Undrst Impers 	11% pron: A few persons or things 
+SHE	PRON DEF DEF1 Female Thrdp Other 	pronoun: First person singular, feminine 
+SOME	PRON INDEF Undrst Impers 	23% pron: Certain unspecified instances, persons, things, etc. 
+SOMEBODY	PRON DEF DEF4 Undrst Other 	pronoun: Some person, someone 
+SOMEONE	PRON DEF DEF4 Other Undrst 	pronoun: Somebody 
+SOMETHING	PRON INDEF Undrst PFREQ Impers 	97% noun: Some unspecified thing or portion of a thing 
+SUCH	PRON  	5% pron: Such a person or thing 
+THAT	PRON INDEF Impers 	36% pron: "That is his mother," "points that are made" 
+THEE	PRON DEF DEF2 You 	
+THEIRS	PRON S Thrdp Other 	
+THEM	PRON DEF DEF2 S Thrdp Plrlp Other 	pronoun: Object form of 'they' 
+THERE	PRON  	60% pron: Existential operator--'there are 2 senses' 
+THESE	PRON INDEF S Plrlp Thrdp Impers 	13% pron: "These are nice" 
+THEY	PRON DEF DEF1 S Thrdp Plrlp Other 	pronoun: Plural of he, she, or it. 
+THIS	PRON INDEF Impers 	35% pron: "This is something else" 
+THOSE	PRON INDEF S Plrlp Thrdp Impers 	56% pron: "Those are nice" 
+THOU	PRON DEF DEF1 You 	pron: You - second person pronoun 
+THOUSAND	PRON S Ovrst Quan 	25% pronoun: "Thousands" 
+US	PRON DEF DEF2 S Affil Plrlp Our 	pronoun: Objective form of 'we' 
+WE	PRON DEF DEF1 S Plrlp Our 	pron: First person plural, nominative 
+WHAT	PRON INDEF INT PFREQ Rltvi 	91% pron: Interrogative and relative (interrogative about 20 ) 
+WHATEVER	PRON INDEF Ovrst Rltvi 	72% pron: Indefinite pronoun--anything, everything, what thing 
+WHERE	PRON Space 	0% pron: What place--"where do you come from"--interrogative 
+WHICH	PRON INDEF INT Rltvi 	pron-adj: Relatives--"the book which you read"; adjectives--"i don't know  which book she read." 
+WHO	PRON DEF DEF1 INT Rltvp 	pron: Personal pronoun (used primarily as relative pronoun; only about  4 per cent interrogatives) 
+WHO'S	PRON DEF DEF1 INT SUPV VERB BE Rltvp 	
+WHOEVER	PRON DEF DEF1 INT Ovrst Rltvp 	pron: Whatever person 
+WHOM	PRON DEF DEF2 INT Rltvp 	pron: Objective form of 'who' (all relative) 
+YOU	PRON DEF DEF1 Scndp You 	69% pron: The nominative or pred. nom. form of the second person prooun 
+YOU	PRON DEF DEF2 Scndp You 	13% pron: The objective or dative form of the second person pronoun 
+YOURS	PRON Scndp You 	

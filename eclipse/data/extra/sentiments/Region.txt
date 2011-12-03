@@ -1,0 +1,61 @@
+word	tags	comments
+AREA	Noun PLACE Region 	noun: Region, tract, extent, range, scope, field of study 
+CITY	Noun PLACE POLIT ECON Region 	noun-adj: An urban center, or pertaining to an urban center 
+CONTINENTAL	Modif PLACE Region 	
+COSMIC	Modif PLACE Region 	
+COUNTRY	Noun PLACE Region 	9% noun-adj: A rural area--rural (versus urban) 
+COUNTY	Noun PLACE Region POLIT Polit* 	
+DISTRICT	Noun PLACE Region POLIT 	noun-adj: A political and/or geographic subdivision or having to do with  such a unit 
+DOWNTOWN	Noun PLACE Region 	
+EAST	Noun Region PLACE 	noun-adv-adj: The compass direction, in, of, to or toward this direction,  the eastern part of the earth, especially asia, the eastern part of the u.s. 
+ENVIRONMENT	Noun ABS Abs* PLACE Region 	
+ENVIRONMENTAL	Modif PLACE Region 	
+FOREIGN	Modif PLACE ECON POLIT Region PFREQ 	adjective: Not native, concerning other countries and peoples, 'foreign  policy', 'foreign aid'. 
+GHETTO	Neg Noun PLACE POLIT ECON Ngtv Region 	
+IMPERIAL	Modif POLIT Strng PLACE Region Polit* 	
+INTERNATIONAL	Modif ECON POLIT Polit* PFREQ PLACE Region 	97% adj: Between or among countries 
+INTERNATIONAL	LY ECON POLIT PLACE Region Polit* 	3% adv: "Internationally"--between or among countries 
+INTERSTATE	Modif PLACE Region Polit* 	
+KINGDOM	Noun PLACE Region POLIT Polit* 	noun: Region ruled by a king 
+LOCAL	Modif PLACE Region POLIT 	adj: Pertaining to or characteristic of a small district 
+LOCALE	Noun PLACE Region 	
+LOCATION	Noun PLACE Region 	
+METROPOLIS	Noun PLACE Region POLIT Polit* 	
+METROPOLITAN	Modif PLACE ECON POLIT Region Polit* 	
+MUNICIPAL	Modif PLACE ECON POLIT Region Polit* 	
+MUNICIPALITY	Noun PLACE Region POLIT Polit* 	
+NEIGHBORHOOD	Noun PLACE POLIT Region 	noun-adj: A vicinity, locality, community; pertaining to same 
+NOWHERE	LY PLACE Noun Region Undrst 	
+OUTBACK	Noun PLACE Region 	
+OUTDOOR	Modif PLACE Region 	
+PARISH	Noun PLACE Region Relig 	
+PARK	Noun PLACE Region 	
+PASTORAL	Modif PLACE Region 	
+PATCH	Noun Region PLACE 	
+PLACE	Noun PLACE Region 	80% noun: Particular portion of space, position, locality, location in  a continuum, rank 
+PRECINCT	Noun PLACE Region POLIT Polit* 	
+PROVINCE	Noun PLACE Region POLIT Polit* 	
+QUARTER	Noun PLACE Region 	36% noun: District, area, housing 
+REGION	Noun PLACE Region ECON POLIT 	noun: Area, district, section 
+REGIONAL	Modif PLACE Region ECON POLIT 	
+RESIDENTIAL	Modif PLACE Region 	
+RURAL	Modif ECON POLIT PLACE Region 	
+SANCTUARY	Pos Noun PLACE POLIT Pstv Region 	
+SET	Noun PLACE Region 	3% noun: Scenery, surroundings, situation--includes "setting," "set up," and "set" 
+SLUM	Noun PLACE ECON Econ* Region 	
+SOLAR	Modif PLACE Region 	
+SPOT	Noun PLACE Region 	59% noun: A situation, place or locality; a stain, blot or speck (2) 
+STEPPES	Noun PLACE Region 	
+SUBURB	Noun PLACE Region POLIT 	
+SUBURBAN	Modif PLACE Region POLIT 	
+SURROUND	Noun PLACE Region 	6% adj: "Surrounding"--neighboring 
+SURROUND	Noun PLACE Region 	26% noun: "Surroundings"--atmosphere, neighborhood 
+TERRITORIAL	Modif PLACE Region POLIT Strng 	
+TERRITORY	Noun PLACE Region POLIT 	noun: Political region 
+TOWNSHIP	Noun PLACE Region ECON POLIT 	
+TROPICAL	Modif PLACE Region 	
+UNIVERSAL	Modif Ovrst Strng PLACE Region 	
+VICINITY	Noun PLACE Region 	
+WORLD	Noun PLACE POLIT Region 	noun-adj: The earth, and/or its affairs; any sphere, realm or domain (less  frequent) 
+WORLD-WIDE	Modif Strng PLACE Region 	
+ZONE	Noun Noun Region PLACE  	

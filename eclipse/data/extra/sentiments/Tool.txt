@@ -1,0 +1,321 @@
+word	tags	comments
+ACQUISITION	Noun Object ECON Tool Strng Actv 	
+AIR	Noun Object Tool 	3% idiom-noun: "Air conditioner" 
+ALUMINUM	Noun Object ECON Tool Econ* 	
+AMMUNITION	Noun Object Tool Milit 	
+ANCHOR	Noun Object Tool 	
+APPARATUS	Noun Object Tool 	
+ARM	Noun Object POLIT Tool Hostile Milit Strng Power 	16% noun: "Arms"--weapons 
+ARMED	Modif Object Tool Milit Power Strng Hostile 	adj: Equipped with weapons 
+ARROW	Noun Object Tool Hostile Milit 	noun: Straight, pointed weapon 
+ARTICLE	Noun Object Tool 	
+AUTOMATIC	Modif Object Tool 	
+AXE	Noun Object Tool Strng 	noun: Tool used to cleave and chop 
+AXLE	Noun Object Tool 	
+BAG	Noun Object Tool 	97% noun: Flexible container, sack 
+BALE	Noun Object Tool 	
+BALL	Noun Object Tool 	50% noun-adj: A spherical object, a kind of bullet (0) 
+BALLISTIC	Noun Object POLIT Tool Modif 	
+BALLOON	Noun Object Tool 	
+BAR	Noun Object Tool 	12% noun: An oblong piece of soap, chocolate, etc.; including sand bar,  prison bars, etc.(1); a strip or stripe (0 
+BAR	Noun Object Tool Exprs Actv 	0% noun: Athletic equipment 
+BARREL	Noun Object Tool 	
+BASKET	Noun Object Tool 	noun: A receptacle made of interwoven materials 
+BATH	Noun Object Tool 	
+BEAR	Noun Object Tool 	0% noun: "(ball) bearing"--mechanical part 
+BEAR	Noun Object Tool 	1% idiom-noun: "Teddy bear" 
+BED	Noun Object Tool 	80% noun: Furniture, place to sleep 
+BELONG	Noun Object Tool Econ* 	2% noun: "Belongings"--possessions 
+BELT	Noun Object Tool 	
+BIN	Noun Object Tool 	
+BLADE	Noun Object Tool 	
+BLANKET	Noun Object Tool 	noun: A layer or covering 
+BLIND	Noun Object Tool 	0% noun: Something which keeps out light or prevents sight 
+BLOWER	Noun Object Tool 	
+BOARD	Noun Object Tool 	11% noun: Slab of wood, panel (includes diving board, dash board, etc.) 
+BOMB	Neg Noun Object POLIT Tool Hostile Milit Ngtv Strng 	
+BORE	Noun Object Tool 	0% noun: A tool 
+BOTTLE	Noun Object Tool 	noun-adj: Container-pertaining to same 
+BOW	Noun Object Tool Milit PFREQ 	89% noun: Anything curved or bent, includes bow and arrow (13); forepart  of a ship (2); bowknot (1); inclination of the head or body (3) 
+BOWL	Noun Object Tool 	
+BOX	Noun Object Tool 	83% noun: Container 
+BRACE	Noun Object Tool Strng 	
+BRAKE	Noun Object Tool 	
+BRASS	Noun Object Tool 	
+BRUSH	Noun Object Tool 	
+BULLET	Neg Noun Object Tool Hostile Ngtv Strng 	
+BUNK	Noun Object Tool 	
+CAGE	Noun Object Tool 	
+CAMERA	Noun Object Tool Exprs 	
+CANDLE	Noun Object Tool 	noun: Light source 
+CANNON	Neg Noun Object Tool Hostile Milit Ngtv Strng 	
+CANVAS	Noun Object Tool 	
+CAP	Noun Object Tool 	
+CARD	Noun Object Tool 	noun-adj: Rectangular piece of stiff paper--used for games, greetings,  identification, etc. 
+CAST	Noun Object Tool Strng 	11% noun: Rigid structure; set of actors (0) 
+CEMENT	Noun Object Tool Strng 	
+CHAIN	Noun Object Tool Subm 	
+CHAIR	Noun Object Tool 	noun: A seat 
+CHARGE	Noun Object Tool Strng 	2% noun: A load, quantity of energy; anything or anyone committed to one's care (0) 
+CHECKER	Noun Object Tool 	
+CHEMICAL	Modif Object Tool 	
+CHOKE	Neg Noun Object Tool Ngtv Weak 	
+CIGARETTE	Noun Object Tool 	
+CLOCK	Noun Object Tool 	60% noun: Timepiece 
+CLOSET	Noun Object Tool 	
+CLOTH	Noun Object Tool 	
+CLOTHE	Noun PFREQ Object Tool 	92% noun: "Clothes," "clothing"--garments 
+CLUB	Neg Noun Object Tool Hostile Milit Ngtv Strng 	8% noun: A heavy stick suitable for use as a weapon 
+COAT	Noun Object Tool 	
+COCKPIT	Noun Object Tool 	
+COFFIN	Noun Object Tool 	
+COLLAR	Noun Object Tool 	
+COMFORTER	Noun Object Tool 	
+COMMODITY	Noun ECON Econ* Object Tool 	
+COMPASS	Noun Object Tool 	
+COMPONENT	Noun Object Tool 	
+COMPUTER	Noun Object Tool ECON 	
+CONDITION	Noun Object Tool 	1% idiom-noun: "Air conditioning," "air conditioner" 
+CORD	Noun Object Tool 	
+COSTUME	Noun Object Tool 	
+COTTON	Noun Object Tool ECON 	
+COVER	Noun Object Tool 	9% noun: "Cover," "covering"--that which conceals or protects 
+CROWN	Noun Object Tool POLIT Polit* Power 	
+CRUCIFIX	Noun Object Tool Relig 	
+CRUTCH	Noun Object Tool 	
+CUP	Noun Object Tool 	noun: Small open container 
+CURB	Noun Object Tool 	
+CURTAIN	Noun Object Tool 	
+CYLINDER	Noun Object Tool 	
+DAGGER	Noun Object Tool Hostile 	
+DESK	Noun Object Tool 	
+DEVICE	Noun Object Tool 	
+DICE	Noun Object Tool S 	
+DIPPER	Noun Object Tool 	
+DISC	Noun Object Tool 	
+DISH	Noun Object Tool 	
+DOLL	Noun Object Tool 	
+DOLLY	Noun Object Tool 	
+DRAIN	Noun Object Tool 	
+DRESS	Noun Object Tool 	39% noun: Clothing or covering, most often women's garments 
+DRESS	Modif Object Tool 	38% adj: "Dressed"--clothed 
+DRESSER	Noun Object Tool 	
+DRILL	Noun Object Tool 	
+DRUM	Noun Object Tool Exprs 	
+DRYER	Noun Object Tool 	
+DUCT	Noun Object Tool 	
+EFFECT	Noun Object Tool 	1% noun: 'effects'--possessions, belongings 
+ELECTRIC	Modif Object Tool 	
+ELECTRONIC	Modif Object Tool 	
+END	Noun Object Tool 	1% noun-idiom: 'odds and ends' 
+ENGINE	Noun Object Tool 	
+EQUIPMENT	Noun Object Tool 	noun: Gear for a specified purpose 
+FABRIC	Noun Object Tool 	
+FAN	Noun Object Tool 	5% noun: A cooling device, or anything shaped like a paper fan 
+FENCE	Noun Object Tool PFREQ 	97% noun-adj: A boundary-marking barrier 
+FERTILIZER	Noun Object Tool 	
+FIBER	Noun Object Tool 	
+FIBERGLAS	Noun Object Tool 	
+FILE	Noun Object Tool 	
+FILL	Noun Object Tool 	2% noun-adj: "Filling"--the act of making full, something used to fill  something else 
+FLASHLIGHT	Noun Object Tool 	
+FLOOR	Noun Object Tool 	0% noun: 'flooring'--material used in floors 
+FLY	Noun Object Tool 	2% noun: The flap of trousers 
+FORK	Noun Object Tool 	
+FORTUNE	Noun Object Tool ECON Econ* Strng 	35% noun: Wealth, accumulated riches 
+FRAME	Noun Object Tool Strng 	
+FREIGHT	Noun ECON Econ* Object Tool 	
+FUEL	Noun Object Tool 	
+FUND	Noun Object Tool ECON Econ* 	66% noun-adj: A sum of money, usually earmarked 
+FURNACE	Noun Object Tool 	
+FURNITURE	Noun Object Tool 	
+GASKET	Noun Object Tool 	
+GASOLINE	Noun Object Tool 	
+GAUGE	Noun Object Tool 	
+GEAR	Noun Object Tool 	
+GLASS	Noun Object Tool 	
+GLUE	Noun Object Tool 	
+GOODS	Noun Object Tool ECON Econ* 	noun: Property, possessions, products 
+GRANT	Noun Object Tool ECON Econ* 	29% noun: Something which has been promised, land, money 
+GREASE	Noun Object Tool 	
+GREATCOAT	Noun Object Tool 	
+GRENADE	Noun Object Tool Hostile Milit 	
+GUITAR	Noun Object Tool Exprs 	
+GUN	Neg Noun Object Tool Hostile Milit Strng Ngtv 	noun: A firearm 
+HAMMOCK	Noun Object Tool 	
+HANDLE	Noun Object Tool 	17% noun: That part of something which is meant for grasping 
+HAT	Noun Object Tool 	noun: A shaped covering for the head 
+HEADLIGHT	Noun Object Tool 	
+HEAR	Noun Object Tool 	1% idiom-noun: "Hearing aid" 
+HEATER	Noun Object Tool Actv 	
+HIDE	Noun Object Tool 	3% noun: A pelt 
+HINGE	Noun Object Tool 	
+HOLD	Noun ECON Object Tool 	0% noun: "Holdings"--possessions 
+HOLDER	Noun Object Tool Strng 	
+HORN	Noun Object Tool Exprs PFREQ 	88% noun: The animal bodypart of analogous structures; a wind instrument (1) 
+HULL	Noun Object Tool 	
+INSTRUMENT	Noun Object Tool 	noun: A device for making music (18); a tool or implement (3) 
+INSULATION	Noun Object Tool 	
+IRON	Noun Object Tool Strng 	73% adj-noun: The metal fe, made of this metal, or having to do with its  production--'the iron industry'; the instrument used for pressing clothes  (1); a branding iron (1) 
+IRON	Neg Noun Object Tool Hostile Strng Ngtv 	0% noun: "Irons"--chains, shackles 
+JACKET	Noun Object Tool 	
+JAR	Noun Object Tool 	
+JUG	Noun Object Tool 	
+KEEL	Noun Object Tool 	
+KEY	Noun Object Tool 	
+KEYBOARD	Noun Object Tool Exprs 	
+KNIFE	Noun Object Tool Hostile PFREQ 	97% noun-adj: Single-bladed cutting instrument 
+KNOCKER	Noun Object Tool 	
+LADDER	Noun Object Tool 	
+LEATHER	Noun Object Tool 	
+LINK	Noun Object Tool 	
+LIQUID	Noun Object Tool 	
+LIVERY	Noun Object Tool 	
+LOAD	Noun Object Tool 	71% noun: A burden 
+LOCK	Noun Object Tool Strng 	
+LUGGAGE	Noun Object Tool 	
+MACHINE	Noun Object Tool 	noun-adj: Mechanical apparatus; organized group controlling a party or  other organization (1) 
+MACHINERY	Noun Object Tool 	
+MAKE	Noun Object Tool 	0% noun: "Makings"--ingredients 
+MANTLE	Noun Object Tool 	
+MAST	Noun Object Tool 	
+MAT	Noun Object Tool 	
+MATERIAL	Noun Object Tool 	81% noun: The substance of which something is composed 
+MATERIAL	Modif Object Tool 	16% adj: Of the physical, corporal, real 
+MECHANISM	Noun Object Tool 	
+MEDICINE	Noun Object Tool 	76% noun: Substance used in treating disease 
+MERCHANDISE	Noun Object Tool ECON Econ* 	
+MINE	Neg Noun Object Tool Hostile Milit Ngtv Strng 	5% noun: An explosive charge 
+MIRROR	Noun Object Tool 	
+MIX	Noun Object Tool 	3% noun: Blend, combination, hodgepodge, pot pourri 
+MOLD	Noun Object Tool 	
+MORTAR	Noun Object Tool 	
+MOTOR	Noun Object Tool 	
+MUNITION	Noun Object Tool Milit 	
+NAIL	Noun Object Tool 	
+NEEDLE	Noun Object Tool 	
+OBJECT	Noun Object Tool 	59% noun: A visible or tangible thing 
+ORNAMENT	Noun Object Tool Exprs 	
+OUTFIT	Noun Object Tool ECON 	
+OUTPUT	Noun ECON Econ* Strng Actv Object Tool 	
+PACK	Noun Object Tool 	52% noun-adj: A bundle prepared to be carried or something used for carrying  it--package, packet, a bunch of objects or animals 
+PACK	Noun Actv Object Tool 	5% noun-adj: "Packing"--filling, cramming, storing 
+PAINT	Noun Object Tool 	22% noun-adj: A colored liquid coating substance 
+PAN	Noun Object Tool 	
+PAPER	Noun Object COM Tool 	noun-adj: Fibrous substance, in various forms 
+PASTE	Noun Object Tool 	
+PEARL	Noun Object Tool 	
+PEN	Noun Object COM Tool 	
+PENCIL	Noun Object COM Tool 	
+PHONE	Noun Object COM Tool 	
+PIANO	Noun Object Tool Exprs 	noun: A musical instrument 
+PICK	Noun Object Tool 	1% noun: Pointed tool 
+PIGMENT	Noun Object Tool 	
+PILL	Noun Object Tool 	
+PILLOW	Noun Object Tool 	
+PIN	Noun Object Tool 	
+PISTOL	Noun Object Tool Hostile Milit 	
+PISTON	Noun Object Tool Strng 	
+PLAQUE	Noun Object Tool 	
+PLASTIC	Noun Object Tool 	
+PLATE	Noun Object Tool 	
+PLOW	Noun Object Tool Econ* 	
+PLUG	Noun Object Tool 	
+PLYWOOD	Noun Object Tool 	
+POCKET	Noun Object Tool 	noun: A piece of fabric in a garment forming a pouch, a recess; a small,  isolated instance (3) 
+POLE	Noun Object Tool PFREQ 	94% noun: A long, slender shaft 
+POST	Noun Object Tool 	39% noun-adj: A piece of timber firmly fixed upright, a pillar; a station  for trading, soldiers, etc. (2) 
+POT	Noun Object Tool 	noun-adj: A container used for cooking or serving 
+POWDER	Noun Object Tool 	
+PRESS	Noun Object Tool Power 	10% noun: A mechanical device for crushing or printing 
+PRODUCT	Noun ECON Econ* Object Tool 	noun: Something produced 
+PULLEY	Noun Object Tool 	
+PUMP	Noun Object Tool 	
+RADAR	Noun Object Tool Milit 	
+RADIO	Noun Object COM Tool 	noun-adj: The wireless 
+RAG	Noun Object Tool 	
+RAIL	Noun Object Tool 	
+RAKE	Noun Object Tool 	
+RANGE	Noun Object Tool 	0% noun: Kitchen stove 
+RATTLE	Noun Object Tool 	
+RAZOR	Noun Object Tool 	
+REFRIGERATOR	Noun Object Tool 	
+RIBBON	Noun Object Tool 	
+RIFLE	Noun Object Tool Hostile Milit 	
+ROCKER	Noun Object Tool 	
+ROLL	Noun Object Tool 	2% idiom-noun: "Bed roll"--sleeping bag 
+ROLLER	Noun Object Tool 	
+ROPE	Noun Object Tool PFREQ 	98% noun: Heavy cord 
+SAFETY	Noun Object Tool 	10% idiom-noun: "Safety pin" 
+SAIL	Noun Object Tool 	
+SAW	Noun Object Tool 	1% noun-adj: A tool for cutting wood, metal, etc. 
+SCALE	Noun Tool 	
+SCREW	Noun Object Tool 	
+SEAT	Noun Object Tool 	38% noun: Chair, place where one sits; basis, position (4) 
+SERUM	Noun Object Tool 	
+SET	Noun Object Tool 	4% noun: Electronic gear--tv, radio sets 
+SHAFT	Noun Object Tool 	
+SHAKER	Noun Object Tool 	
+SHEET	Noun Object Tool 	
+SHELF	Noun Object Tool 	
+SHELL	Neg Noun Object Tool Hostile Milit Strng Ngtv 	5% noun: Artillery warhead 
+SHELVES	Noun Object Tool 	
+SHIRT	Noun Object Tool 	
+SHOE	Noun Object Tool 	noun-adj: Footwear 
+SHORT	Noun Object Tool 	1% noun: "Shorts" - short pants 
+SHOT	Neg Noun Object Tool Hostile Ngtv Strng Actv 	7% noun: A projectile or the process of launching a projectile; anything  sudden and/or forceful (2) 
+SIGHT	Noun Object Tool 	2% noun: Device for aiming 
+SILK	Noun Object Tool 	
+SINK	Noun Object Tool 	
+SKIRT	Noun Object Tool 	
+SLACKS	Noun Object Tool S 	
+SLIP	Noun Object Tool 	6% noun: Woman's garment 
+SLIP	Noun Object COM Tool 	6% noun: Piece of paper 
+SLIPPER	Noun Object Tool 	
+SPEAR	Noun Object Tool Hostile Milit PFREQ 	88% noun: A lance 
+SPOKE	Noun Object Tool 	1% noun: Brace extending between rim and hub of wheel 
+SPREADER	Noun Object Tool 	
+SPUR	Noun Object Tool 	
+STARTER	Noun Object Tool 	
+STEEL	Noun Object Tool ECON Strng 	
+STEREO	Noun Object Tool Exprs 	
+STOPPER	Noun Object Tool 	
+STOVE	Noun Object Tool 	
+STREAMER	Noun Object Exprs Tool 	
+STRING	Noun Object Tool 	
+STRIP	Noun Object Tool 	
+STUFF	Noun Object Tool 	0% noun: "Stuffing" - something used to stuff 
+SUIT	Noun Object Tool 	40% noun: A set of clothes, armor, etc. worn together, includes bathing suit 
+SUITCASE	Noun Object Tool 	
+SWITCH	Noun Object Tool 	
+SWORD	Noun Object Tool Milit Strng Hostile 	noun: The weapon 
+TABLE	Noun Object Tool PFREQ 	96% noun: An article of furniture 
+TAP	Noun Object Tool 	
+TEXTILE	Noun Object Tool ECON 	
+TIE	Noun Object Tool 	8% noun: A piece of clothing 
+TIMER	Noun Object Tool 	
+TIRE	Noun Object Tool 	63% noun: The wheel covering 
+TNT	Noun Object Tool Hostile Milit 	
+TRANSOM	Noun Object Tool 	
+TRAP	Neg Noun Object Tool Ngtv Strng 	57% noun: Device for capturing or ensnaring 
+TRAY	Noun Object Tool 	
+TRIGGER	Noun Object Tool Hostile Milit 	
+TRUMPET	Noun Object Tool Exprs 	
+TRUNK	Noun Object Tool 	
+VEIL	Noun Object Tool 	
+VIOLIN	Noun Object Tool Exprs 	noun: A stringed musical instrument 
+WALLPAPER	Noun Object Tool 	
+WARDROBE	Noun Object Tool 	
+WASH	Noun Object Tool 	4% noun-adj: Laundry, pertaining to same 
+WASHER	Noun Object Tool 	
+WATCH	Noun Object Tool 	3% noun: A timepiece 
+WAX	Noun Object Tool 	
+WEAPON	Noun Object Tool POLIT Hostile Milit 	noun-adj: An instrument or tactic used for attack or defense in combat 
+WEAR	Noun Object Tool 	2% noun: Clothing 
+WELL	Noun Object Tool 	1% noun: Hole drilled into earth 
+WHEEL	Noun Object Tool 	
+WHIP	Neg Noun Object Tool Hostile Strng Ngtv 	38% noun: Instrument with long strips of leather bound together 
+WINDOW	Noun Object Tool 	noun: Opening in the wall of a building or the side of a vehicle for purposes  of ventilation and/or lighting 
+WINDSHIELD	Noun Object Tool 	
+WIRE	Noun Object Tool 	
+ZINC	Noun ECON Object Tool Econ*  	

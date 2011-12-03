@@ -1,0 +1,320 @@
+word	tags	comments
+ABOUT	PREP LY Quan Undrst 	11% prep-adv: Almost, approximately 
+ACCIDENT	Neg Noun Ngtv Causal Undrst 	noun: An unfortunate happening, unintentionally caused and unexpected 
+ACCIDENTAL	Modif Causal Undrst 	
+ACCUSTOM	Modif Virtue Psv Undrst 	
+ADEQUATE	Pos Modif EVAL Virtue Pstv Undrst PFREQ 	adjective: Sufficient. 
+ALL	LY Quan Undrst 	4% idiom-adv: "At all"--(with negatives)--whatsoever 
+ALLEGE	IAV Neg SUPV Comform Weak Undrst 	
+ALOOF	IPadj Neg Modif Undrst Feeling Psv 	
+AMBIGUITY	Neg Noun Undrst Ngtv Percv 	
+AMBIGUOUS	Neg Modif Percv Undrst Ngtv 	
+ANOMALY	Neg Noun Rel Undrst 	
+ANTIPATHY	Neg Noun Vice Undrst Feeling 	
+ANYHOW	LY Undrst 	
+ANYWAY	LY Undrst 	adverb: In any case or manner 
+APART	PREP Undrst 	21% idiom-prep: "Apart from"--except for--'apart from the corn, the crops  were good.' 
+APATHETIC	IndAdj Neg Modif Weak Undrst Feeling Psv 	
+APATHY	Neg Noun Vice Weak Undrst Psv Feeling 	
+APPARENT	Modif Percv Undrst 	42% adj: Perceptible, evident 
+APPARENT	Modif Percv Undrst 	58% adv: "Apparently"--seemingly, evidently 
+APPEAR	IAV SUPV VERB LINK Psv Percv Undrst 	64% verb: To seem 
+APPROXIMATE	Modif Quan Undrst 	
+APPROXIMATELY	LY Quan Undrst 	
+ARBITRARY	Neg Modif Vice Ngtv Undrst 	
+ASIDE	PREP Undrst 	28% idiom-prep: 'aside from', besides, except for 
+AUTONOMOUS	IPadj Pos Modif Legal Power Undrst Strng 	
+AWHILE	LY Time* Undrst 	
+BAFFLE	IAV Neg SUPV Ngtv Undrst Solve 	
+BAFFLEMENT	Neg Noun Ngtv Undrst Know 	
+BARELY	LY Undrst Quan 	
+BEWARE	IAV Neg SUPV Percv Ngtv Strng Hostile Undrst 	
+BEWILDER	IAV Neg SUPV Ngtv Undrst Solve 	
+BEWILDERMENT	Neg Noun Ngtv Undrst Know 	
+BIT	Noun Quan Undrst Weak PFREQ 	93% noun-adv: A small quantity; a role or routine (2) (rarely, mouthpiece  of a bridle, tool (0)) 
+BLUR	IAV Neg SUPV Undrst Weak Comform Actv 	
+BRIEF	Modif Time* DIM Undrst 	
+BRUSQUE	IPadj Neg Modif Comform Hostile Undrst 	
+BUNGLE	IAV Neg SUPV Undrst Weak 	
+BUT	CONJ CONJ1 Undrst 	conj-prep: On the contrary, except 
+CALAMITY	Neg Noun Undrst Fail 	
+CALMNESS	Pos Noun Emot Pleasure Undrst 	
+CARE	Pos Noun Affil Pstv Actv Undrst Arousal 	26% noun: Attention, concern, thought, worry, assistance 
+CAREFUL	Pos Modif Virtue Pstv Undrst 	adj: Cautious 
+CASUAL	Pos Modif Virtue Psv Pstv Undrst 	
+CAUTION	Noun COM Comform Undrst 	
+CAUTION	IAV SUPV Undrst Comform 	
+CAUTIOUS	Modif Virtue Undrst 	
+CHANCE	Noun Causal Undrst 	21% noun: A possibility or probability of something happening, likelihood, risk 
+CHANCE	LY Causal Undrst Psv 	6% idiom-adverb: "By chance"--without plan or intent 
+CHANCE	Noun ABS Abs* Undrst Psv Causal 	2% noun-adj: The absence of any known causation for the outcome of events,  often spoken of as a real agency 
+CHANGEABLE	Modif Psv Undrst Vary 	
+COINCIDENCE	Noun Time* Psv Undrst 	
+COMPARATIVE	Modif Undrst Know 	
+COMPARATIVELY	Modif Undrst Know 	
+CONCEIVABLE	Modif Know Psv Undrst 	
+CONFOUND	IAV Neg SUPV Ngtv Ngtv Undrst Arousal 	
+CONFUSE	IAV Neg SUPV Ngtv Undrst Comform 	9% verb: To make unclear, to temporarily disturb the clear working of the mind 
+CONFUSE	IAV Neg SUPV Solve Weak Ngtv Undrst 	2% verb: To fail to distinguish 
+CONFUSE	Neg Modif Vice Ngtv Weak Psv Undrst 	82% adj: "Confused"--jumbled, disturbed, bewildered 
+CONFUSE	Neg Modif Vice Ngtv Undrst 	7% adj: "Confusing"--bewildering 
+CONFUSION	Neg Noun Vice Ngtv Undrst Weak 	
+CONTINGENT	Modif Causal Undrst 	
+CONTROVERSIAL	Neg Noun COM Comform Ngtv Undrst 	
+CURSORY	IndAdj Neg Modif Psv Undrst Vice 	
+CUSTOMARY	Modif Know Undrst 	
+DAZE	Neg Noun Undrst 	
+DESPITE	PREP Undrst 	
+DILEMMA	Neg Noun ABS Abs* Vice Ngtv Undrst 	
+DIM	Neg Modif Qual Ngtv Undrst 	
+DISBELIEF	Neg Noun Doctr Negate Ngtv Undrst Hostile 	
+DISCONCERTED	Neg Modif Pain Ngtv Weak Psv Undrst 	
+DISMAY	Noun EMOT Pain Undrst 	
+DISPUTABLE	Neg Modif Hostile Legal Ngtv Undrst Vice 	
+DOUBT	Neg Noun Means EMOT Undrst Ngtv Psv 	49% noun: Uncertainty, question 
+DOUBT	SV Neg SUPV Ngtv Psv Undrst Comform 	41% verb: To question, be uncertain about 
+DOUBTFUL	IndAdj Neg Modif Undrst Ngtv Weak Vice Percv 	
+DUBIOUS	Neg Modif Undrst Ngtv Vice 	
+EQUIVOCAL	Neg Modif Undrst Ngtv Weak Vice 	
+EVENT	LY Undrst 	2% idiom-adv: "In any event"--anyway, nevertheless 
+EVERYDAY	Modif Undrst Time* 	adj: Commonplace or normal 
+EVIDENTLY	Modif Percv Undrst Psv 	
+FAINT	Neg Modif Percv Ngtv Weak Psv Undrst 	
+FAIR	LY Undrst Virtue 	52% adv: 'fairly'--moderately, rather; justly (1) 
+FALTER	IAV Neg SUPV Ngtv Weak Undrst Decr 	
+FEEBLE	Neg Modif Vice Ngtv Weak Psv Undrst 	
+FEW	DET PRE PRE1 Modif Quan Undrst Weak PFREQ 	82% adj: Not many, a small number of 
+FEW	PRON INDEF Undrst Weak Impers 	14% pron: Not many people or things, a small number 
+FEW	DET PRE PRE1 Modif Quan Undrst Weak 	1% adj: "Fewer"--a smaller number of--comparative 
+FEW	DET PRE PRE1 Modif Quan Undrst Weak 	0% adj: "Fewest"--superlative 
+FORTUNATE	Pos Modif Virtue EVAL Pstv Psv Undrst 	adj: Lucky, well-fated 
+GAMBLE	Neg Noun Econ* Ngtv Actv Undrst Ritual 	
+GAMBLE	IAV Neg SUPV Try Econ* Ngtv Actv Undrst 	
+GINGERLY	LY Qual Subm Weak Undrst 	
+GRADUAL	LY Undrst Persist 	adjective: Slow and continual. 
+HAND	LY Undrst Comform Affil 	2% idiom-verb: "Shake hands"--to greet in the western manner--handled by "shake" 
+HANDFUL	Noun Quan Weak Undrst 	
+HARD	LY Weak Undrst 	11% adv: 'hardly'--barely 
+HAZINESS	Neg Noun Ngtv Weak Percv Undrst 	
+HEED	IAV SUPV Intrel Psv Subm Undrst 	
+HESITANT	Modif Weak Psv Undrst Vice 	
+HESITATE	IAV SUPV Stay Weak Psv Undrst 	
+HESITATION	Noun Weak Psv Undrst Vice 	
+IMPOSSIBILITY	Noun Negate Causal Undrst 	
+IMPOSSIBLE	Modif Causal Negate PFREQ Undrst 	94% adjective: Not able to be done, happen, etc. 
+IMPROBABILITY	Noun Negate Causal Undrst 	
+IMPROBABLE	Modif Negate Causal Undrst 	
+INCALCULABLE	Modif Negate Undrst Quan 	
+INCORRECT	Neg Modif Negate Ngtv Weak Vice Undrst 	
+INDECISION	Noun Negate Weak Psv Undrst Vice 	
+INDECISIVE	Modif Negate Weak Psv Undrst Vice 	
+INDECISIVENESS	Noun Negate Weak Psv Undrst Vice 	
+INDEFINITE	Neg Modif Negate Ngtv Psv Undrst Vice 	
+INDIRECT	Modif Means Negate Weak Undrst 	
+INDISTINCT	Modif Percv Undrst Negate 	
+INDISTINGUISHABLE	Modif Percv Negate Undrst 	
+INEXACT	Neg Modif Negate Vice Ngtv Undrst 	
+INFREQUENT	Modif FREQ Negate Undrst 	
+INSECURE	Neg Modif Negate Ngtv Weak Psv Vice Undrst 	
+INSECURITY	Neg Noun Negate Ngtv Weak Psv Vice Undrst 	
+INSIGNIFICANT	Neg Modif Negate Ngtv Weak EVAL Undrst Vice 	
+INTERIM	Modif Time* Undrst Weak 	
+IRONIC	Neg Modif Vice Ngtv Undrst 	
+IRONY	Neg Noun Vice Ngtv Undrst 	
+KIND	LY Undrst 	16% idiom-adv: "Kind of"--rather, sort of 
+KNOWN	Modif Know Undrst Psv 	3% adj: Recognized 
+LARGE	LY Undrst Know 	1% idiom-adv: 'by and large'--on the whole 
+LAUGH	IAV SUPV Actv Comform Undrst 	1% verb-idiom: "Laugh off" - dismiss as inconsequential 
+LEAST	Modif Comp EST DIM Quan Weak Undrst 	8% adj-adv: Slightest, to the smallest degree 
+LESS	LY Undrst 	3% adv-idiom: 'much less'--let alone, not even considering, of even less  possibility 
+LESS	LY Undrst Quan 	20% idiom-adv: "More or less"--to an extent, approximately 
+LESS	Noun Quan Weak Undrst 	3% adj: "Lesser"--smaller, less important 
+LIGHT	Modif Weak Undrst Qual 	4% adj: Not heavy (includes -er, -est) 
+LIGHT	LY Qual Undrst 	2% adv: 'lightly'--delicately, without effort, not heavily 
+LIMIT	Neg Modif Space Psv Weak Undrst Ngtv 	37% adj: "Limited"--confined within limits, circumscribed or narrow 
+LITTLE	Modif Quan DIM Weak Undrst 	adj-adv: Small in degree, may refer to size, duration, number, etc. 
+LUCK	Pos Noun ABS Abs* Virtue Pstv Strng Undrst 	noun: Fortune, fate, good fortune 
+LUCKILY	Pos Modif Virtue Pstv Undrst 	
+MATTER	Modif Undrst 	1% idiom: "For that matter"--as far as that is concerned 
+MAYBE	LY Undrst 	adverb: Perhaps. 
+MEAGER	IndAdj Neg Modif Undrst Quan Ngtv Weak 	
+MENTION	IAV SUPV Psv PFREQ Comform Undrst 	97% verb: To speak of casually, to refer to, include passingly. 
+MERE	Modif Quan Weak Undrst 	38% adjective: Only this and nothing else, nothing more than, such and no more 
+MERE	LY Weak Undrst Quan 	62% adverb: 'merely'--not otherwise than, simply, barely, only. 
+MINIMAL	Modif Quan Comp EST Weak Undrst 	
+MINIMIZE	IAV SUPV Actv Strng Decr Undrst 	
+MINIMUM	Modif Quan Comp EST Weak Undrst 	
+MINOR	Modif EVAL Quan Weak Undrst 	
+MISINFORM	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISINFORMED	IndAdj Neg Modif Comform Fail Undrst 	
+MISREPRESENT	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISTAKEN	IAV Neg SUPV Actv Percv Fail Undrst 	
+MISTRUST	IAV Neg SUPV Actv Percv Fail Undrst 	
+MISUNDERSTANDING	Neg Noun Comform Fail Undrst 	
+MODERATE	IAV Pos Modif Pstv Undrst Virtue 	
+MODERATION	Pos Noun Undrst 	
+MODESTY	Pos Noun Undrst Arousal Qual 	
+MOMENT	Noun ABS TIME Time* Undrst 	noun: An indefinitely short space of time, the present or any other particular  instant 
+MOMENTARY	LY Time* Weak Undrst 	
+MUDDY	IndAdj Neg Modif Percv Undrst 	
+MUMBLE	DAV Neg SUPV Comform Undrst 	
+MURKY	IndAdj Neg Modif Percv Undrst 	
+NEAR	LY Quan Undrst 	19% adv: "Nearly"--almost 
+NEBULOUS	IndAdj Neg Modif Undrst Percv 	
+NEGLIGIBLE	Modif Quan Weak Undrst 	
+NEVER	Negate LY Undrst FREQ 	adv: Not ever, not at all 
+NO	Negate DET PRE PRE2 Negate Quan Undrst 	42% adj: Not any 
+NOBODY	PRON DEF DEF4 LY Negate Other Undrst 	pron: No person, a person of no importance 
+NOMINAL	Modif Know Weak Psv Undrst 	
+NOTHING	PRON INDEF LY Negate Weak Undrst Impers 	noun-adv: Not anything--not a thing, not at all 
+NOWHERE	LY PLACE Noun Region Undrst 	
+NUMBER	DET PRE PRE1 Modif Quan Strng Undrst 	25% idiom-adj: "A number of", several, many 
+OBLIQUE	IndAdj Neg Modif Undrst Percv 	
+OBSCURE	Neg Modif Ngtv Percv Undrst 	
+OCCASION	LY Weak Undrst FREQ 	11% adv: "On occasion", "upon occasion", occasionally, from time to time 
+OCCASIONAL	Modif FREQ Undrst Weak 	adj: Infrequent, once in a while 
+ONLY	DET PRE PRE1 Quan Weak Undrst 	21% adj: Sole, single 
+ONLY	LY Quan Undrst 	74% adv: Solely, merely, exclusively 
+ONLY	CONJ CONJ2 Undrst 	1% conj: But, were it not that 
+OPINION	Noun COM Comform Undrst 	noun: Judgment, sentiment, feeling, etc. 
+OUTLINE	Noun COM Comform Undrst 	
+PARANOID	IndAdj Neg Modif Weak Emot Pain Undrst Percv 	
+PART	LY Quan Undrst 	5% idiom-adv: "In . . . part"--partly, to some extent, to . . . extent 
+PART	LY Undrst 	4% idiom-adv: "For the most part"--in general, by and large 
+PART	LY Undrst 	1% idiom-adv: "For (x's) part"--as far as x is concerned 
+PART	LY Quan Undrst 	6% adv: Partly 
+PARTIAL	Modif Quan Weak Undrst 	
+PARTICLE	Noun Object Natobj Undrst 	
+PERHAPS	LY Undrst Know 	adverb: Maybe, possibly 
+PERMANENT	Modif Strng Undrst Persist 	
+PERPLEX	IAV Neg SUPV Ngtv Weak Solve Undrst 	
+POINTLESS	IndAdj Neg Modif Weak Undrst 	
+PRECARIOUS	Neg Modif Ngtv Weak Psv Vice Undrst 	
+PRETTY	LY Undrst PFREQ Quan 	88% adv: Quite, very, fairly, to some degree 
+PUNY	Neg Modif Weak Ngtv Undrst Vice 	
+PUZZLE	Noun Know Undrst 	
+PUZZLE	IAV SUPV Solve Undrst 	
+PUZZLEMENT	Neg Noun Ngtv Weak Psv Arousal Undrst 	
+QUALIFICATION	Noun Means Undrst 	
+QUALIFY	IAV Pos SUPV Complt Pstv Strng Undrst 	28% verb: To meet some set of standards, ensure satisfaction of such standards 
+QUANDARY	Neg Noun Arousal Undrst Ngtv Weak Psv 	
+QUESTION	Noun COM Comform PFREQ Undrst 	89% noun: A request for information, problem, unresolved issue 
+QUESTION	DAV SUPV Hostile Comform Undrst 	10% verb: To ask, interrogate, raise doubts 
+QUESTIONABLE	Neg Modif Vice Ngtv Undrst 	
+RARE	LY Undrst FREQ 	35% adv: "Rarely"--seldom 
+RATHER	LY Quan Undrst 	38% adv: To an extent, in a measure; shades of meaning vary from 'somewhat'  to 'quite' 
+REGARDLESS	IndAdj Neg Modif Undrst 	
+RELATIVE	Modif Know Weak Psv Undrst 	16% adj: Comparative, considered in relation to something else 
+RELATIVE	LY Undrst Weak Psv Know 	27% adv: "Relatively"--comparatively 
+RESERVATION	Noun Means Undrst 	
+RESERVE	IAV SUPV Fetch Strng Actv Undrst 	35% verb: Save, withhold, restrain 
+RESERVE	Noun Means ECON Strng Undrst 	62% noun-adj: Surplus, secondary supply 
+ROUGH	LY Undrst Quan 	10% adv: "Roughly", approximately 
+ROUNDABOUT	IndAdj Neg Modif Undrst Vice 	
+RULE	LY Undrst Know 	6% idiom-adv: "As a rule", generally 
+SAVE	PREP Undrst 	5% prep: Except - "i have everything i want save good health" 
+SCANT	Modif Quan Weak Undrst 	
+SCARCE	Modif Quan Weak Undrst 	
+SCARCELY	LY Weak Quan Undrst 	
+SECONDARY	Modif Quan Undrst 	13% adj: Second in sequence or priority 
+SEEM	SV SUPV VERB LINK Percv Undrst 	verb: To appear or appear to be 
+SEEM	Modif Percv Undrst 	1% adv: "Seemingly"--apparently 
+SELECTIVE	Pos Modif Virtue Pstv Actv Undrst 	
+SEVERAL	DET PRE PRE1 Modif Quan Undrst PFREQ 	88% adj: More than two or three, but not many 
+SEVERAL	PRON INDEF Undrst Impers 	11% pron: A few persons or things 
+SHADY	IndAdj Neg Modif Undrst Vice 	
+SHORT	LY Quan Undrst 	13% idiom-adv: "In short" - in a few words 
+SIMPLE	LY Undrst Quan 	65% adv: "Simply" - only, just, merely 
+SINGLE	DET PRE PRE1 Undrst Quan 	96% adj: Numbering only one, solitary; unmarried (1) 
+SKETCHY	IndAdj Neg Modif Undrst Vice 	
+SLIGHT	Modif Space Weak Undrst 	14% adj: Small, insignificant in degree, size or extent 
+SLIGHT	Neg Modif Know Ngtv Weak Undrst 	19% adj: "Slightest" - least, tiniest, most insignificant 
+SLIGHT	Neg LY Ngtv Weak Undrst Quan 	57% adv: "Slightly" - a bit, somewhat 
+SLOW	Modif Time* Undrst 	46% adj: Not fast 
+SLOW	LY Time* Undrst 	34% adv: "Slowly" - adverb form of sense 1 
+SLOW	Modif Time* Undrst 	7% adj: "Slower"--comparative form of sense 1 
+SLOW	Modif Time* Undrst 	0% adj: "Slowest"--superlative form of sense 1 
+SMALL	Modif Quan DIM Weak Undrst 	86% adjective: Of little size, weight, importance. 
+SMALL	Modif Quan DIM Weak Undrst 	11% adj: "Smaller"--comparative 
+SMALL	Modif Quan DIM Weak Undrst 	3% adjective: "Smallest"--diminutive 
+SNACK	Noun Object Food Undrst 	
+SOME	DET PRE PRE2 Undrst Quan 	77% adj-adv: An unspecified one--singular nouns; an unspecified moderate  amount or degree--mass nouns; an unspecified number, certain-- plural  count nouns; to some extent or degree--"that's going some" 
+SOME	PRON INDEF Undrst Impers 	23% pron: Certain unspecified instances, persons, things, etc. 
+SOMEBODY	PRON DEF DEF4 Undrst Other 	pronoun: Some person, someone 
+SOMEHOW	LY Undrst PFREQ Means 	95% adverb: In some unspecified or unknown way 
+SOMEHOW	LY Undrst Means 	5% idiom-adv: 'somehow or other'- by whatever means possible or necessary 
+SOMEONE	PRON DEF DEF4 Other Undrst 	pronoun: Somebody 
+SOMETHING	PRON INDEF Undrst PFREQ Impers 	97% noun: Some unspecified thing or portion of a thing 
+SOMETHING	LY Undrst Quan 	2% adv: Somewhat--"be something (of, like, etc.)" 
+SOMETHING	Noun Means Undrst 	0% noun: "Something to do with"--some (little) relevance 
+SOMETIME	LY Time* Undrst 	7% adverb: At some indefinite or indeterminate point in time 
+SOMETIME	LY FREQ Undrst PFREQ 	91% adverb: "Sometimes"--on some occasions, at times 
+SOMEWHAT	LY Undrst Quan 	adverb: In some measure or degree 
+SOMEWHERE	LY Space Undrst 	adv: At (in, to) some place 
+SORT	LY Undrst Quan 	34% idiom-adv-adj: "Sort of"--approximately, not exactly or fully, to some extent 
+SORT	Neg Modif Vice Undrst Ngtv 	5% idiom-adj: "Of sorts"--of a mediocre or poor kind 
+SPEAK	Modif Comform Undrst 	1% verb (adj phrase): 'to speak of'--worthy of note 
+SPECULATE	IAV SUPV Solve Undrst 	
+SPECULATION	Noun Know Undrst 	
+SPECULATIVE	Modif Know Undrst 	
+SUGGEST	Modif Comform Undrst 	2% adj: "Suggested" 
+SUGGESTION	Noun COM Comform Undrst 	noun: An idea or proposal offered from one to another 
+SUPERFICIAL	Neg Modif Vice Ngtv Weak Undrst 	
+SUPPOSE	Modif Undrst Know 	4% adj: "Supposed" - putative, hypothetical 
+SUPPOSE	LY Undrst Know 	4% adv: "Supposedly" - putatively, hypothetically 
+SUSPICION	Neg Noun EMOT Hostile Ngtv Arousal Undrst 	
+SUSPICIOUS	Neg Modif EVAL Hostile Ngtv Arousal Undrst 	
+TEMPERANCE	Pos Noun Undrst 	
+TEMPERATE	IndAdj Pos Modif Eval Qual Undrst 	
+TEND	SV SUPV Persist Undrst Psv PFREQ 	92% verb: To be inclined, to habitually behave 
+TENDENCY	Noun ABS Abs* Undrst Psv Causal 	
+TIME	LY FREQ Undrst 	0% verb: Multiplication symbol--'three times as big' 
+TINY	Modif DIM Weak Quan Undrst 	
+TOUCH	Noun Quan Undrst 	4% noun: Small bit, smattering, increment of quantity, style, etc. 
+TRIFLE	Modif Weak Undrst Quan 	
+TRIVIAL	IndAdj Neg Modif Weak Undrst 	
+UNCERTAIN	Modif Negate Weak Undrst Know 	
+UNCERTAINTY	Noun Know Negate Weak Undrst 	
+UNCLEAR	Neg Modif Vice Negate Ngtv Undrst 	
+UNDECIDED	Modif Know Negate Weak Psv Undrst 	
+UNDEFINED	Modif Know Negate Undrst 	
+UNDEPENDABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNDEPENDABLE	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNDETERMINED	Modif Know Negate Undrst 	
+UNFAVORABLE	Neg Modif Ngtv Vice Negate Undrst 	
+UNFORTUNATE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	49% adj: Unlucky, inauspicious 
+UNFORTUNATE	Neg LY Vice Negate Ngtv Undrst 	49% adv: "Unfortunately"--inauspiciously 
+UNIMPORTANT	Neg Modif Vice EVAL Negate Ngtv Undrst 	
+UNLIKELIHOOD	Noun Negate Causal Undrst 	
+UNLIKELY	LY Negate Causal Undrst 	
+UNLUCKY	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNMOVED	IndAdj Neg Modif Undrst Feel 	
+UNNECESSARY	Neg Modif EVAL Negate Ngtv Vice Undrst 	
+UNPLEASANT	Neg Modif Vice EVAL Negate Ngtv Undrst 	
+UNPREDICTABLE	Modif Negate Vice Undrst 	
+UNRELIABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNRELIABLE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	
+UNSATISFACTORY	Neg Modif Vice Negate Ngtv Undrst 	
+UNSOUND	IndAdj Neg Modif Vice Negate Weak Undrst 	
+UNSOUNDNESS	Noun Vice Negate Weak Undrst 	
+UNSPECIFIED	Modif Comform Negate Undrst 	
+UNSURE	Modif Negate Weak Undrst Vice 	
+UNSURENESS	Noun Negate Weak Undrst Vice 	
+UNTRUE	Neg Modif Vice Negate Ngtv Undrst 	
+USUAL	LY Undrst Persist 	6% adv-idiom: 'as usual'--in the ordinary or expected manner 
+VACILLATE	IAV SUPV Weak Undrst Solve 	
+VAGUE	Neg Modif Know Undrst Ngtv Weak 	
+VAGUENESS	Neg Noun Know Ngtv Weak Undrst 	
+VEXATION	Neg Noun Undrst Think Fail 	
+VEXING	IndAdj Neg Modif Undrst Think Fail 	
+WAY	LY Intj Comform Undrst 	0% idiom-adv: 'by the way'--incidentally 
+WEAK	Modif EVAL Weak PFREQ Qual Undrst 	95% adj: Lacking strength 
+WEAK	Modif EVAL Weak Qual Undrst 	5% adj: "Weaker", comparative of sense 1 
+WEAKLY	Modif Weak Undrst Subm Qual 	
+WEAKNESS	Noun ABS Abs* Vice Weak Undrst 	
+WELL	Intj Undrst 	60% interjec: E.g. "well, that's nice"--essentially meaningless interjection 
+WHISPER	Noun COM Comform Undrst 	
+WHISPER	DAV SUPV Comform Undrst 	
+WONDROUS	IndAdj Pos Modif Undrst 	
+WORD	LY Comform Undrst 	14% adv-idiom: 'in other words' 
+WORTHLESS	Neg Modif Ngtv Vice Undrst 	

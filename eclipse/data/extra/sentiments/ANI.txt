@@ -1,0 +1,69 @@
+word	tags	comments
+ANIMAL	Noun ANI 	noun-adj.: Any member of the animal kingdom 
+ANT	Noun ANI 	
+BADGER	Noun ANI 	noun: A burrowing mammal 
+BAT	Noun ANI 	
+BEAR	Noun ANI 	57% noun-adj: A hibernating omnivore, anything resembling or pertaining  to this animal 
+BEAVER	Noun ANI 	noun-adj: A small aquatic mammal of north america, -relating to this mammal 
+BIRD	Noun ANI 	noun: Feathered vertebrate. 
+BUFFALO	Noun ANI 	noun: An animal related to the ox 
+BUG	Noun ANI 	
+BULL	Noun ANI MALE 	noun: Male bovine animal 
+BUZZARD	Noun ANI 	noun: Feathered necrophile 
+CAMEL	Noun ANI 	noun: Ship of the desert 
+CAT	Noun ANI 	noun: A kind of animal, a feline 
+CATTLE	Noun ANI S 	noun-adj: Domesticated bovine animals 
+CHICKEN	Noun ANI 	noun: A type of fowl. 
+COW	Noun ANI Female 	noun: An animal. 
+COYOTE	Noun ANI 	noun: A carnivorous, wolflike mammal 
+CREATURE	Noun ANI Psv 	
+DEER	Noun ANI 	noun: A wild game animal 
+DOG	Noun ANI 	noun-adj: Domesticated carnivore 
+EAGLE	Noun ANI 	noun: The american bird 
+ELEPHANT	Noun ANI 	
+FILLY	Noun ANI 	
+FISH	Noun ANI 	74% noun: An aquatic creature 
+FLY	Noun ANI 	29% noun-adj: A winged insect 
+FOX	Noun ANI PFREQ 	98% noun-adj: A sly member of the dog family 
+FROG	Noun ANI 	noun-adj: A small, leaping amphibian 
+GAME	Noun ANI 	23% noun: Wild animals which are hunted for sport or profit 
+GOAT	Noun ANI 	noun: A mammal related to the sheep 
+HARE	Noun ANI 	noun: Large rabbit 
+HEN	Noun ANI Female 	
+HERD	Noun ANI Strng 	61% noun-adj: Animal group 
+HORSE	Noun ANI 	noun: A large four footed animal 
+INSECT	Noun ANI 	
+LION	Noun ANI Strng MALE 	noun: The king of beasts 
+LIONESS	Noun ANI Female Strng 	
+LIVESTOCK	Noun ANI ECON Econ* 	
+MARE	Noun ANI Female 	
+MICE	Noun ANI S 	
+MONKEY	Noun ANI 	noun: The primate 
+MONSTER	Neg Noun ANI Ngtv Strng Hostile 	noun: A grotesque or unusually large animate or inanimate object 
+MOTH	Noun ANI 	
+MOUSE	Noun ANI 	
+MULE	Noun ANI 	
+NAG	Noun ANI 	
+OTTER	Noun ANI 	
+OXEN	Noun ANI S 	
+PEACOCK	Noun ANI 	
+PET	Noun ANI Affil 	
+PIG	Noun ANI 	noun: A swine. 
+PONY	Noun ANI 	
+POULTRY	Noun ANI 	
+PREY	Noun ANI Weak 	
+PUPPY	Noun ANI Nonadlt 	
+RABBIT	Noun ANI 	noun: A burrowing rodent of the hare family 
+RHINOCEROS	Noun ANI 	
+RODENT	Noun ANI 	
+SEAL	Noun COM ANI 	
+SETTER	Noun ANI 	
+SHEEP	Noun ANI S 	noun-adj: A woolly animal 
+SNAKE	Noun ANI 	noun: Legless, scaly reptile. 
+SQUIRREL	Noun ANI 	noun: Tree-dwelling, bushy-tailed rodent 
+STEER	Noun ANI 	
+TIGER	Noun ANI 	noun: The animal of india with black and orange stripes 
+TROUT	Noun ANI 	
+TURTLE	Noun ANI 	
+VULTURE	Noun ANI 	
+WOLF	Noun ANI 	

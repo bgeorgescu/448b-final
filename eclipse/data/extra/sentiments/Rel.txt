@@ -1,0 +1,137 @@
+word	tags	comments
+ACCOMPANY	DAV SUPV Rel 	41% verb-adj: To be or exist in company with something; "accompanying"--  concomitant (one adjectiv 
+ADHESION	Pos Noun Rel 	
+ADHESIVE	IndAdj Pos Modif Rel 	
+ADJUNCT	Pos Noun Incr Rel 	
+ANOMALOUS	IPadj Neg Modif Rel 	
+ANOMALY	Neg Noun Rel Undrst 	
+ARRANGEMENT	Noun ABS Abs* Actv Rel 	
+ASSIMILATE	IAV SUPV Rel Psv 	
+ASSOCIATE	Pos Modif Pstv Psv Rel 	7% adj: "Associated"--connected with 
+BASIC	Pos LY Ovrst Pstv Rel 	25% adverb: 'basically'--fundamentally 
+BEND	DAV SUPV Subm Weak Psv Rel 	
+CEMENT	IAV SUPV Rel Strng 	
+CHAIN	IAV SUPV Rel Subm 	
+CLOCK	IAV SUPV Rel 	0% verb: To measure speed 
+CLOSE	Modif Rel Affil 	59% adj: Near or nearby in kind or relationship--having proximity or similarity  in time, space, quality, or number; intimate, confidential, warm, dear (48) 
+CLOSE	Neg Modif Ngtv Psv Rel 	3% adj: "Closed"--shut, inaccessible, terminated 
+COHERENT	IndAdj Pos Modif Strng Ovrst Rel 	
+COHESION	Pos Noun Affil Rel Ovrst Strng 	
+COINCIDE	IAV SUPV Rel Psv 	
+COINCIDENT	Pos Noun Natpro Rel Actv 	
+COMBINE	IAV SUPV Rel Strng Actv 	
+COMMENSURATE	IPadj Pos Modif Rel Eval Qual 	
+COMPLEMENT	IAV Pos SUPV Rel Pstv 	
+COMPLEMENTARY	IndAdj Pos Modif Eval Qual Rel 	
+COMPOUND	Noun Rel Strng 	
+COMPRESS	IAV SUPV Rel Strng Actv 	
+COMPRISE	IAV SUPV Rel Psv 	
+CONCENTRATION	Noun Rel Strng 	63% noun: Strength or density about a common center 
+CONDENSE	IAV SUPV Rel 	
+CONDUCIVE	IndAdj Pos Modif Affil Rel 	
+CONJUNCTION	Pos Noun Rel 	
+CONSIST	IAV SUPV Rel Psv 	
+CONSTITUTE	IAV SUPV Psv Strng Rel 	
+CONTAIN	DAV SUPV Rel Strng Actv 	
+CONTINUITY	Pos Noun ABS Abs* Persist Strng Actv Rel 	
+CONTRAST	IAV SUPV Rel 	
+COORDINATION	Pos Noun Strng Rel Affil Virtue 	
+CORRESPOND	IAV SUPV Rel Comform 	
+COUPLE	DAV SUPV Rel 	1% verb: To join or link 
+CRAWL	IAV Neg SUPV Rel Ngtv Weak 	4% verb: To swarm with 
+CROWD	IAV SUPV Rel Actv Strng 	21% verb: To throng 
+CULMINATION	Pos Noun Rel Coll Compl 	
+CULTIVATION	Pos Noun Begin Rel Incr 	
+DIFFER	IAV Neg SUPV Rel Ngtv Actv 	
+DISSIMILAR	Modif Negate Rel 	
+DUE	Modif Rel 	2% adj-adv: Directly--"due west" 
+EIGHTH	DET NUMB ORD POS PFREQ Rel 	95% noun-adj: The ordinal number 
+ENGAGE	Modif Rel 	19% adj: "Engaged"--involved 
+EQUAL	DAV SUPV Rel Strng 	0% verb: To be or become equal 
+EXTENT	Noun Rel 	noun: Length, degree, or scope of something 
+FAMILIARIZE	IAV Pos SUPV Actv Other Rel Know Percv 	
+FELLOW	Pos Modif Affil Pstv Rel 	27% adj: Associated, in the same situation 
+FIFTEENTH	DET NUMB ORD Rel 	
+FIRST	DET NUMB ORD POS Modif Rel 	61% adj: Initial, foremost 
+FIRST	LY Rel 	25% adv: 'first,' 'firstly'--initially 
+FIRST	PRON Rel 	4% pron: The initial or foremost one 
+FIRST	LY Rel 	5% idiom-adv: 'at first'--initially 
+FIT	IAV SUPV Rel 	60% verb: To be suitable or adjusted to, to make suitable, adapt, adjust, equip 
+FIX	IAV SUPV Rel 	9% verb: To attach firmly, make rigid 
+HAND	CONJ CONJ2 Rel 	10% idiom-conj: "On the one hand," "on the other hand"--introduces comparison 
+HAND	LY Rel 	1% idiom-adv: "Hand (in) hand," "hand (in) glove"--closely connected 
+HANG	IAV SUPV Rel Weak Actv 	18% verb: 'hang on to'--cling to, retain 
+HANG	IAV SUPV Rel 	3% verb: To suspend or attach (transitive) 
+HAVE	SV SUPV VERB HAV Rel Actv 	36% verb: Possess, experience, engage in, cause to happen 
+HIERARCHY	Noun Rel 	
+HINGE	IAV SUPV Rel 	
+HUNG	IAV SUPV Rel ED Psv 	30% verb: To have been suspended or attached (intransitive) 
+IDENTICAL	Modif Rel 	
+INCLUDE	IAV SUPV Rel Strng 	verb: To contain or embrace 
+INCORPORATE	IAV SUPV Rel 	
+INSTEAD	PREP Rel 	73% idiom-prep.: "Instead of"--rather than, in lieu of 
+INTERDEPENDENCE	Noun Rel 	
+INVOLVE	Modif Rel 	52% verb-adj: 'involved'--engaged in, occupied or wrapped up with, emotionally  tied to, concerned 
+INVOLVE	IAV SUPV Rel 	25% verb: To include as an integral part, entail, be a matter of, "this  involves work" 
+ISOLATE	IAV Neg SUPV Rel Ngtv Strng Actv 	
+JOIN	IAV SUPV Rel Strng Actv 	3% verb: To connect, engage (objects) 
+JOINTLY	Pos LY Affil Pstv Strng Rel 	
+LAST	DET NUMB ORD POS Modif Ovrst Rel 	28% adj-adv: Final, finally 
+LIKE	PREP CONJ CONJ2 Rel 	51% adj-prep-conj: Having the same characteristics as, similar to, resembling,  analogous to, in or after the manner of, for example, just as, such as 
+MAGNETIC	IPadj Pos Modif Rel Natpro 	
+MERGER	Noun ECON Rel 	
+MINGLE	IAV SUPV Rel 	
+MINUS	PREP Rel 	
+MIX	DAV SUPV Rel Actv 	53% verb: To combine, mingle 
+MIX	Modif Rel Psv Weak 	3% idiom-adj: "Mixed up with"--involved with 
+MOUNT	IAV SUPV Rel Actv 	
+OBTAINABLE	IndAdj Pos Modif Fetch Causal Rel 	
+OFFSET	IAV Pos SUPV Psv Other Rel 	
+OPPOSE	Neg Modif Rel Ngtv Strng Actv 	13% adj: "Opposing", contending, opposite 
+OPPOSITE	PREP Rel Negate 	noun-adj: Anything symmetrically opposed, antithetical 
+ORGANIZE	IAV Pos SUPV Rel Power Pstv Strng Actv 	75% verb: To establish, to systematize 
+OWN	DAV SUPV Rel Econ* Strng 	6% verb: To possess 
+OWN	DET GEN Rel PFREQ 	88% adj: Belonging or pertaining to oneself or itself--'our own' 
+PACK	Modif Rel 	5% adj: "Packed"--crowded or crammed together, formed together closely  or into a pack 
+PART	DAV SUPV Rel Actv Strng 	1% verb: To separate or divide 
+PIN	DAV SUPV Rel 	
+POINT	DAV SUPV Rel Actv 	1% verb: To aim 
+POOL	IAV SUPV Rel Affil 	
+POSSESS	DAV SUPV Rel Power Strng 	
+POSSESSION	Noun Econ* ECON Rel 	
+PRECEDE	IAV SUPV Rel 	
+RELATE	IAV SUPV Rel PFREQ 	86% verb: To establish association, to have reference to 
+RELATED	IAV SUPV Rel 	39% verb: "Related to"--relevant to, having reference to 
+RELATIONSHIP	Noun ABS Abs* Rel 	noun: Connection, association or involvement. 
+RETENTION	Noun Rel Strng 	
+RUB	Noun Rel 	
+SAME	Modif Rel 	adjective: Identical 
+SECOND	DET NUMB ORD POS PRON PFREQ Rel 	84% pron-adj-adv: Unit of series following the first 
+SECOND	LY Rel 	9% adv: "Secondly," "second"--in the second place 
+SEPARATE	DAV SUPV Rel Actv 	41% verb: To divide, to part company 
+SEPARATE	Modif Rel 	44% adj: Disconnected, apart, individual 
+SEPARATION	Noun Rel 	
+SIDE	Noun POLIT Rel PFREQ 	94% noun: A limiting line or surface, the left or right side of a body  or solid object (173); one of the parties in a contest, game or politics  (51); an aspect or phase, especially when contrasted with another aspect  or phase--"there are two sides to e 
+SIMILAR	Modif Rel PFREQ 	87% adjective: Having likeness or resemblance 
+SORT	IAV SUPV Rel Actv 	1% verb: To arrange or separate according to kind, species, etc. 
+SYNTHESIS	Pos Noun Rel Affil 	
+TANGLE	Noun Rel 	
+TAP	IAV SUPV Rel 	
+TERM	PREP Rel 	43% idiom-prep: "In terms of"--with relation to 
+THICKEN	IAV SUPV Rel Strng Actv 	
+THIRD	DET NUMB ORD POS PFREQ Rel 	83% noun-adj: The ordinal number 
+THIRD	LY Quan Rel 	4% adv: "Third," "thirdly" - in the third place 
+TIE	DAV SUPV Rel Actv 	79% verb: To bind or connect with something 
+TIE	Noun Rel 	13% noun: A connection or association with some person or thing 
+TOGETHER	LY Rel Strng 	adverb: Into or in a condition of unity, compactness, or coherence, along with 
+TOUCH	DAV SUPV Rel Actv 	50% verb: To come into contact with 
+TOWARD	PREP Rel 	20% prep: About, with respect to 
+TRANSFER	Noun Actv Rel 	
+TURN	IAV SUPV Rel Actv 	35% verb: Intransitive--to move around, shift one's course or position  in some direction (toward, from, etc.); includes "turn to" meaning appeal to (4) 
+TURN	Noun Rel 	14% noun: Opportunity (or duty) to do something (28); a place where a  course or road, etc., bends, a rotation or revolution or changing of position (10) 
+UNDER	PREP Rel 	39% prep-adv: Beneath, below, less than 
+UNIFICATION	Noun POLIT Rel Strng 	
+UNITE	Modif Rel Strng 	6% adj: "United"--combined, linked, joined 
+UNLIKE	IndAdj PREP Negate Rel Vary 	
+VERSUS	PREP Rel 	
+WAY	CONJ CONJ2 Rel 	0% conj: 'in the way of'--as, as regards 

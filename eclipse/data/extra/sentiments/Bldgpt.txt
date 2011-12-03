@@ -1,0 +1,47 @@
+word	tags	comments
+APARTMENT	Noun Bldgpt Object 	noun: A room or set of rooms designed for use as a dwelling. 
+ARCH	Noun Bldgpt Object 	
+ATTIC	Noun Bldgpt Object 	
+BASEMENT	Noun Bldgpt Object 	
+BATHROOM	Noun Bldgpt Object 	68% noun-adj: Lavatory 
+BEDROOM	Noun Bldgpt Object 	noun: Room or place where people sleep 
+CEILING	Noun Object Bldgpt 	
+CELL	Noun Object Bldgpt 	
+CELLAR	Noun Bldgpt Object 	
+CHAMBER	Noun Bldgpt Object 	
+CLASSROOM	Noun Bldgpt Acad Object 	noun: Room for a class 
+CONSTRUCTION	Noun Bldgpt ECON Strng Actv Object 	noun-adj: Building, or having to do with same 
+DECK	Noun Bldgpt Object 	
+DOORWAY	Noun Object Bldgpt 	
+ELEVATOR	Noun Bldgpt Object 	
+ENTRANCE	Noun PFREQ Object Bldgpt 	81% noun-adj: An opening through which one enters something, a way in 
+ENTRY	Noun Bldgpt Object 	
+FLOOR	Noun Object Bldgpt 	84% noun: The lowest surface of a room 
+FLOOR	Noun Bldgpt Object 	11% noun: A story of a building 
+GALLEY	Noun Bldgpt Object 	
+GATE	Noun Bldgpt Object 	
+HALL	Noun Object Bldgpt 	noun: A corridor, or large room for public use 
+INTERIOR	Noun Object Bldgpt 	
+KITCHEN	Noun Object Bldgpt 	noun-adj: A room equipped for cooking 
+LAB	Noun Bldgpt Acad Econ* Object 	
+LABORATORY	Noun ECON Acad Econ* Object Bldgpt 	
+LAVATORY	Noun Object Bldgpt 	
+LOBBY	Noun POLIT ECON Object Bldgpt 	
+PARLOR	Noun Object Bldgpt 	
+PLATFORM	Noun Object Bldgpt 	43% noun: A raised, flat, horizontal surface. 
+PORCH	Noun Object Bldgpt 	
+ROOF	Noun PFREQ Object Bldgpt 	95% noun: Top covering 
+ROOM	Noun PFREQ Object Bldgpt 	92% noun-adj: A specific amount of space within a building which is separated  by walls 
+SCHOOLROOM	Noun Acad Object Bldgpt 	
+SHUTTER	Noun Bldgpt Object 	
+STAIR	Noun Bldgpt Object 	
+STAIRWAY	Noun Bldgpt Object 	
+STORY	Noun Bldgpt Object 	3% noun: One floor of a building 
+STRUCTURE	Noun Bldgpt PFREQ Object 	95% noun: A framework, organization or composition; also, a building 
+THRESHOLD	Noun Object Bldgpt 	
+TOILET	Noun Object Bldgpt 	
+TOWER	Noun Bldgpt Object 	
+UPSTAIRS	Noun Object Bldgpt 	
+VERANDA	Noun Object Bldgpt 	
+WALL	Noun PFREQ Object Bldgpt 	97% noun-adj: Solid, upright structure for shelter, boundary, or barrier 
+WARD	Noun POLIT PFREQ Object Bldgpt 	noun: A section of an institution 

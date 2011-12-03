@@ -1,0 +1,81 @@
+word	tags	comments
+ADMIRE	SV Pos SUPV Affil Subm Pstv Psv Pleasur 	
+APPEAL	Pos Modif Affil Psv Pleasur Pstv 	3% adj: "Appealing"--arousing a favorable response 
+APPRECIATION	Pos Noun Pleasur Pstv Psv Affil 	
+ASSURE	Pos Modif EMOT Power Ovrst Pstv Strng Pleasur 	17% adj: "Assured"--confident (2), guaranteed (1) 
+ATTRACTION	Pos Noun Affil Pstv Pleasur Strng 	
+CALM	Pos Noun EMOT Psv Pleasur Pstv 	50% noun-adj: Undisturbed, quiet, tranquil 
+CALM	IAV Pos SUPV Pstv Psv Pleasur 	38% verb: To quiet, become subdued 
+CALM	Pos Modif Pleasur Pstv Psv 	12% adv: "Calmly"--quietly 
+CHEERFUL	Pos Modif EMOT Pstv Pleasur 	
+CHEERY	Pos Modif EMOT Pleasur Pstv 	
+COMFORT	Pos Noun Pstv Strng Pleasur 	61% noun: Physical or emotional ease 
+COMFORTABLE	Pos Modif EVAL Pleasur Pstv Strng 	adj-adv: Producing ease, at ease; with ease (1) 
+CONFIDENCE	Pos Noun EMOT Subm Pstv Strng Ovrst PFREQ Pleasur 	97% noun: Trust, self-assurance, a secret 
+CONFIDENT	Pos Modif EMOT Power Pstv Strng Ovrst Pleasur 	
+CONTENT	Pos Modif EMOT Pstv Psv Pleasur 	58% adj: Satisfied 
+CONTENT	Pos Modif Pstv Pleasur Psv 	13% adv: "Contentedly"--in a satisfied manner 
+CONTENT	IAV Pos SUPV Pstv Psv Pleasur 	0% verb: To satisfy 
+DELIGHT	Pos Modif EMOT Pleasur Pstv 	
+DELIGHT	IAV Pos SUPV Pstv Pleasur 	
+DELIGHTFUL	Pos Modif EVAL Pstv Pleasur 	
+DETERMINE	Modif EMOT Strng Actv Power Pleasur 	43% adj: 'determined'--resolute, unwaveringly decided 
+DETERMINE	Modif Strng Actv Power Pleasur 	2% adv: 'determinedly'--with determination 
+DEVOTE	Pos Modif EMOT Subm Pstv Pleasur 	25% adj: "Devoted"--dedicated, faithful, committed 
+EAGER	Pos Modif EMOT Pstv Strng Pleasur 	adjective: Anxious, ardent in desire. 
+EARNEST	Pos Modif Pstv Strng Pleasur 	
+EASE	Pos Noun Pleasur Pstv 	70% noun: Freedom from strain 
+ENJOY	SV Pos SUPV Pstv Psv Pleasur 	verb: To take pleasure in; to have as one's priviledge, advantage, fortune,  or lot (5) 
+ENTHUSIASM	Pos Noun EMOT Affil Pstv Pleasur 	
+ENTHUSIASTIC	IndAdj Pos Modif EMOT Pleasur Pstv Affil Feel Strng 	
+EXCITE	IAV Pos SUPV Pstv Actv PFREQ Pleasur 	0% verb: To thrill or stimulate 
+EXCITE	Pos Modif Pleasur Pstv Actv 	adjective: "Exciting"--thrilling 
+EXCITED	Modif EMOT Pleasur Psv PFREQ 	96% adj: Thrilled, stimulated 
+EXCITED	IAV Pos SUPV ED Pstv Pleasur Psv 	4% verb: Past tense of "excite" 
+EXCITEMENT	Pos Noun EMOT Pstv Pleasur Psv 	
+FASCINATE	Noun Pleasur Ovrst 	
+FUN	Pos Noun Exprs Pleasur Pstv PFREQ 	97% noun-adj: Enjoyment, enjoyable 
+GAME	Pos Modif Pleasur Pstv Strng 	1% adjective: "Game"--spirited, courageous 
+GAY	Pos Modif EVAL EMOT Pleasur Pstv 	
+GLAD	Pos Modif EMOT Pleasur Pstv Psv PFREQ 	96% adjective: Pleased 
+GLAD	Pos LY Affil Pstv Psv Pleasur 	4% adv: "Gladly"--with pleasure 
+GLADDEN	IAV Pos SUPV Pstv Pleasur 	
+GRATEFUL	Pos Modif EMOT Affil Subm Pstv Pleasur Arousal 	
+HAPPINESS	Pos Noun EMOT Pstv Pleasur 	noun: The quality or state of being happy 
+HAPPY	Pos Modif EMOT Pstv Pleasur 	78% adjective: Joyous, pleased. 
+HAPPY	Pos Modif Pleasur Pstv 	13% adverb: "Happily"--in a joyous manner 
+HAPPY	Pos Modif EMOT Pstv Pleasur 	7% adjective: "Happier," comparative of sense 1 
+HAPPY	Pos Modif EMOT Pstv Pleasur 	2% adjective: "Happiest," superlative of sense 1 
+HOT	Modif Pleasur Arousal 	7% adj: Intense, excited, exciting 
+HOT	LY Pleasur Arousal 	2% adv: "Hotly", excitedly, intensely 
+HUMOR	IAV Pos Noun ABS Abs* Pleasur Pstv 	
+HUMOROUS	IndAdj Pos Modif Pleasur Pstv 	
+JOY	Pos Noun EMOT Pleasur Pstv 	noun: Bliss, happiness 
+LOVE	Pos Noun EMOT Affil Pleasur Pstv Psv 	30% noun: The affection 
+LOVE	Pos Modif Affil EMOT Pstv Psv Pleasur 	12% idiom-adj: 'in love'--enamored 
+LOVE	Pos Modif EMOT Affil Pleasur Pstv Psv 	4% adj: 'loving'--feeling or showing love 
+OPTIMISTIC	Pos Modif Pleasur Pstv Psv 	
+PLEASANT	Pos Modif EVAL Pleasur Pstv 	adj: Agreeable, enjoyable 
+PLEASE	IAV SUPV Power Strng Actv Pleasur 	3% verb: To will, like, desire..."to do what one pleases" 
+PLEASED	Pos Modif Pleasur Pstv 	92% adj: Satisfied, happy 
+PLEASED	IAV SUPV ED Strng Actv Pleasur 	5% verb: Willed, liked, desired . . . "he did what he pleased" 
+PLEASURE	Pos Noun EMOT Pleasur Pstv 	noun: Enjoyment, satisfaction, delight 
+PRIDE	Pos Noun EMOT Pstv Strng Pleasur 	
+PROUD	Pos Modif EMOT Pleasur Pstv Strng Affil 	adj: Filled with pride 
+RELIEF	Pos Noun Pstv Pleasur Psv 	
+RELIEVE	Pos Modif EMOT Pleasur Pstv Psv 	10% adj: "Relieved" - disburdened, feeling thus 
+RESOLVE	Pos Noun Pstv Strng Actv Pleasur 	
+REST	Noun Psv Pleasur 	12% noun-adj: Ease, inactivity, quiet 
+ROMANTIC	Pos Modif EMOT Affil Pstv Pleasur 	
+SATISFACTION	Pos Noun ABS Abs* EMOT Pleasur Pstv Psv 	noun: Pleasure, contentment 
+SATISFY	Pos Modif EMOT Pleasur Pstv Psv 	58% adj: Contented, fulfilled - "satisfied" 
+SECURE	Pos Modif EMOT Pleasur Pstv Ovrst 	21% adj: Safe, without anxiety 
+SPIRIT	Modif Pleasur 	0% adj: "Spirited"--lively 
+THRILL	IAV Pos Noun Pleasur Pstv Strng Arousal 	
+TINGLE	Pos Noun Pleasur Pstv Psv 	
+TINGLE	IAV SUPV Psv Pleasur 	
+TRIUMPHANT	Pos Modif EMOT Power Pstv Strng Pleasur 	
+VALUE	IAV Pos SUPV Pleasur Pstv 	13% verb: To regard highly, esteem; to appraise the worth of something (0) 
+WILLING	Pos Modif EMOT Affil Pleasur Pstv Subm 	adj: "Willing"--disposed or consenting 
+WILLINGNESS	Pos Noun EMOT Pleasur Pstv Affil Subm 	
+ZEAL	Noun Strng Actv Pleasur 	

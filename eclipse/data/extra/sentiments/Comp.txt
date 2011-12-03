@@ -1,0 +1,22 @@
+word	tags	comments
+ANOTHER	DET PRE PRE1 Comp ER Modif Quan 	75% adj: One more, a different 
+BEST	Pos LY EVAL Comp EST Virtue Pstv 	noun-adj-adv: Superlative of good, marking maximum positive evaluation, etc. 
+BETTER	Pos LY EVAL Comp ER Virtue Pstv PFREQ 	91% adjective adv: Comparative of 'good' or 'well' 
+FARTHER	LY Comp ER Space 	
+FURTHER	LY Comp ER Quan Strng 	57% adj-adv: Additional, more, more extended; additionally, in addition 
+FURTHER	LY Space Comp ER 	30% adverb: Farther, i.e., more distant 
+LEAST	Modif Comp EST DIM Quan Weak Undrst 	8% adj-adv: Slightest, to the smallest degree 
+LESS	LY Quan Comp ER Weak 	75% adv-adj: To a smaller extent, amount, or degree, not so large, great or much 
+LOWER	Neg Modif Comp ER POS Space Ngtv Weak 	60% adj-adv: Of less height, value, or extent, less refined (comparative of "low") 
+MAXIMUM	Modif Quan Comp EST Strng 	
+MINIMAL	Modif Quan Comp EST Weak Undrst 	
+MINIMUM	Modif Quan Comp EST Weak Undrst 	
+MORE	DET PRE PRE2 PRON LY Comp ER Quan Strng 	adv-adj-pron: A general intensifier--it takes its specific meaning - and  part of speech - from the word modified; and often the word modified is  implied rather than stated. 
+MOST	DET PRE PRE2 Comp EST Modif Quan Strng Ovrst 	63% adj-adv: Greatest in number, size, extent, nearly all, in the greatest degree. 
+OPTIMAL	Pos Modif Comp EST EVAL Virtue Pstv 	
+OTHER	DET PRE PRE1 Comp ER Modif Quan 	56% adj: Further, additional, different, alternate, remaining 
+SUPREME	Pos Modif Comp EST EVAL Virtue Pstv Strng Power Ovrst 	5% adj: Highest, utmost 
+ULTIMATE	Modif Comp EST EVAL Ovrst Strng Time* 	41% adj: Eventual, final, maximal 
+UPPERMOST	Pos Modif Pstv Strng Ovrst Comp EST Space 	
+WORSE	Neg Modif Comp ER EVAL Vice Ngtv 	adj: Comparative of "bad" and "ill" 
+WORST	Neg Modif Comp EST EVAL Vice Ngtv Ovrst 	

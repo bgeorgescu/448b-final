@@ -1,0 +1,207 @@
+word	tags	comments
+ACTOR	Noun HU MALE Exprs Actv Role 	
+AESTHETIC	Modif Doctr Exprs 	
+ANECDOTE	Noun COM Comform Exprs 	
+ARCHITECT	Noun HU Exprs Role 	
+ARCHITECTURE	Noun Doctr Exprs 	
+ART	Pos Noun Object COM Exprs Pstv Comnobj 	63% noun-adj: Painting, and more generally all the 'fine arts,' having  to do with beauty 
+ART	Pos Noun Doctr Exprs Pstv 	13% noun: The particular skill of--'the difficult art of rowing' 
+ARTIST	Noun HU Exprs Role 	noun: One who creates works of art, especially a painter 
+ARTISTIC	Modif Doctr Exprs 	
+ASSIGNMENT	Noun Actv Comform Exprs 	
+ATHLETIC	Pos Modif Exprs Pstv Strng Virtue 	
+AUTHOR	Noun HU Exprs Role 	
+BALL	Noun Ritual Exprs 	25% noun-adj: A game which is played with a ball 
+BALL	Noun Ritual Exprs 	4% noun: A formal social dance 
+BANDSTAND	Noun PLACE Social Exprs 	
+BAR	Noun Object Tool Exprs Actv 	0% noun: Athletic equipment 
+BARD	Noun HU Exprs Role 	
+BASEBALL	Noun Ritual Exprs 	noun-adj: Popular team sport or the ball used in same, having to do with that sport 
+BAT	DAV SUPV Exert Exprs 	
+BEAT	Noun Time* Exprs 	3% noun-adj: Rhythm, a blow, stroke or throb, as of the heart (1); hip  (1); exhausted (0) 
+BIOGRAPHY	Noun COM Comform Exprs 	
+BLUE	Noun COM Comform Exprs 	0% noun: "Blues"--type of music, depression 
+BOWL	IAV SUPV Exprs Exert 	
+BOX	Noun ECON Ritual Exprs Strng Actv 	4% noun-adj: "Boxing"--the sport 
+BOXER	Noun HU Exprs Strng Actv Role 	
+BRIDGE	Noun COM Ritual Exprs 	13% noun: A card game 
+CAMERA	Noun Object Tool Exprs 	
+CAMP	Noun Ritual Exprs 	3% noun-adj: "Camping"--descriptive of establishing temporary shelter,  the activity of going into the woods 
+CATCHER	Noun HU Exprs Role 	
+CHARACTER	Noun HU Exprs Role 	51% noun: A person, often as in a play or other piece of writing 
+COMEDY	Pos Noun Ritual Exprs Pstv 	
+COMPOSER	Noun HU Exprs Role 	
+CONCERT	Noun Ritual Exprs 	
+CONDUCTOR	Noun HU Exprs Role 	
+CONJURE	IAV Pos SUPV Actv Exprs Strng Begin 	
+CREATE	IAV Pos SUPV Exprs Strng Actv Begin Pstv 	verb: To cause to come into being, to happen, to bring about. 
+CREATIVE	Pos Modif Virtue EMOT Exprs Pstv Actv 	adj-adv: Innovative, artistic; "creatively"--in a creative manner 
+CREATOR	Noun HU Exprs Strng Actv Role 	
+CRITIC	Neg Noun HU Exprs Ngtv Role Hostile 	
+CUBISM	Noun Doctr Exprs 	
+DANCE	Pos Noun Ritual Exprs Pstv 	38% noun-adj: A social event at which people move rhythmically to music;  the rhythmic movement itself or a specific form of it (0) 
+DANCE	DAV Pos SUPV Exprs Pstv Actv Travl 	49% verb: To move rhythmically 
+DANCE	Pos Modif Exprs Pstv Actv Travl 	13% noun-adj: "Dancing"--moving rhythmically 
+DANCER	Noun HU Exprs Role 	
+DERBY	Noun Ritual Exprs 	
+DONATE	DAV Pos SUPV Actv Exch Exprs Econ Fetch 	
+DONATION	Pos Noun Econ Exprs Fetch Exch 	
+DRAMA	Noun Ritual Exprs 	
+DRAMATIC	Modif EVAL Exprs Ritual 	
+DRAW	DAV SUPV Exprs Comform 	16% verb: To sketch, depict, compose; to form or make (abstract)--"to  draw a conclusion or analogy 
+DRUM	Noun Object Tool Exprs 	
+ELOQUENT	IndAdj Pos Modif EVAL Exprs Pstv Virtue 	
+ENTERTAIN	Pos Modif EVAL Exprs Pstv Actv Intrel Affil 	
+ENTERTAINMENT	Pos Noun Ritual Exprs Pstv 	
+ESSAY	Noun COM Exprs Comform Acad 	
+EXPRESS	IAV SUPV Actv Comform Exprs 	verb: To render in communicable form ideas, opinions, or feelings-- to  manifest, show or reveal 
+EXPRESSION	Noun ABS Abs* COM Comform Actv Exprs 	67% noun: The act or process of expressing 
+EXPRESSION	Noun COM Comform Psv Exprs 	30% noun: A look, expressing personal reaction or feeling 
+EXPRESSIVE	Modif Exprs Psv Comform 	
+FAIR	Pos Noun Ritual Exprs Pstv 	0% noun: Carnival 
+FASHION	Noun Doctr Exprs 	
+FENCE	Noun Ritual Exprs Actv 	0% noun-adj: The art of self-defense with a foil 
+FICTION	Noun COM Comform Exprs 	
+FIELD	IAV SUPV Work Exprs 	1% verb: To handle or answer, to catch in baseball, to put on a field 
+FIGURE	Noun COM Comform Exprs 	1% idiom-noun: "Figure of speech" 
+FOOTBALL	Noun Ritual ECON Exprs 	
+FUN	Pos Noun Exprs Pleasur Pstv PFREQ 	97% noun-adj: Enjoyment, enjoyable 
+GALLERY	Noun PLACE Social Exprs 	
+GAME	Noun Ritual Exprs 	75% noun: An amusement or competitive activity played by various persons  according to a set of rules 
+GIANT	Noun HU COLL Exprs 	0% noun: (the baseball team) 
+GUITAR	Noun Object Tool Exprs 	
+GYMNAST	Noun HU Exprs Actv Role 	
+GYMNASTIC	Modif Doctr Exprs Actv 	
+HIDE	Noun Ritual Exprs 	0% noun-idiom: "Hide and seek" 
+HOP	Noun Exprs Actv Travl 	
+HORN	Noun Object Tool Exprs PFREQ 	88% noun: The animal bodypart of analogous structures; a wind instrument (1) 
+HUNTER	Neg Noun HU Exprs Hostile Ngtv Actv Role 	noun: One who chases and kills animals 
+IMAGE	Noun COM Exprs Comform 	42% noun: A visual or mental representation, a picture 
+IMAGERY	Noun COM Comform Exprs 	
+IMAGINABLE	Modif Know Exprs 	
+IMAGINARY	Modif Psv Know Exprs 	
+IMAGINATION	Pos Noun Pstv Psv Know Exprs 	
+IMAGINATIVE	Pos Modif Virtue EVAL Exprs Pstv 	
+IMAGINE	IAV SUPV Psv Solve Exprs 	verb: To form a mental image, to speculate, conjecture, suppose, or fantasize 
+INVENT	IAV SUPV Exprs Actv Work 	
+JAZZ	Noun COM Comform Exprs 	
+JOKE	Pos Noun Comform Exprs Pstv PFREQ 	85% noun-adj: A jest, funny story 
+JOKE	IAV Pos SUPV Exprs Pstv Comform 	10% verb: To jest, be funny 
+JOKER	Noun HU Exprs Role 	
+KEYBOARD	Noun Object Tool Exprs 	
+KID	IAV Pos SUPV Affil Pstv Comform Exprs 	3% verb: To jest 
+LAUGH	Pos Noun COM Comform Exprs Pstv Psv 	3% noun: Expression of mirth or amusement 
+LAUGH	DAV Pos SUPV Exprs Pstv Psv Comform 	40% verb: To express mirth or amusement by laughter 
+LAUGH	Pos Modif Exprs Pstv Psv Comform 	2% noun-adj: "Laughing" - laughter, expressive of amusement 
+LAUGH	Pos Noun COM Comform Exprs Pstv Psv 	45% noun: Same as sense 1, but inserted into text as editorial comment,  parenthesized. 
+LAUGHTER	Pos Noun COM Comform Exprs Pstv Psv 	noun: The act or sound of laughing, an expression of amusement. 
+LEGEND	Noun COM Comform Exprs 	
+LEISURE	Pos Noun Virtue Exprs Psv Pstv 	
+LITERARY	Modif Acad Exprs Comform 	
+LITERATURE	Noun COM Comform Acad Exprs 	
+LYRIC	Pos Noun COM Comform Exprs Pstv 	
+LYRICAL	Pos Modif Comform Exprs Pstv 	
+MAKER	Noun HU Role Exprs 	
+MARKSMAN	Noun HU MALE Exprs Role Hostile 	
+MATCH	Noun Ritual Exprs Strng 	
+MEDAL	Noun Object COM Exprs Comnobj 	
+MELODRAMATIC	Neg Modif Comform Exprs Ngtv 	
+MELODY	Pos Noun COM Comform Exprs Pstv 	
+MOVEMENT	Noun Time* Exprs 	1% noun: In music 
+MOVIE	Noun Object COM Exprs Comnobj 	
+MUSIC	Noun COM Comform Exprs 	noun: An art of sound in time, the actual sounds employed in this art 
+MUSICAL	Modif Comform Exprs 	
+MUSICIAN	Noun HU Exprs Role 	noun: Person who plays a musical instrument 
+NARRATIVE	Noun COM Comform Exprs 	
+NONVERBAL	Modif Comform Exprs 	
+NOVEL	Noun Object COM Exprs Comnobj 	
+NOVELIST	Noun HU Exprs Role 	
+OPERA	Noun COM Comform Exprs 	
+ORATOR	Noun HU Exprs Role 	
+ORCHESTRA	Noun HU COLL Exprs 	
+ORNAMENT	Noun Object Tool Exprs 	
+ORNAMENT	IAV SUPV Work Exprs 	
+PACE	IAV SUPV Exprs Comform 	0% noun: "Paces"--act or performance, as in "she put her pupils through  their paces"--to show or cause to show ability or skill 
+PAINT	Noun Exprs Work 	7% noun-adj: 'painting' . . . a hobby or profession 
+PAINT	Noun Object COM Exprs Comnobj 	27% noun: 'painting' . . . the end product of an artist's work 
+PAINTER	Noun HU Exprs Role 	
+PARTY	Noun HU COLL Exprs Affil 	32% noun-adj: A social gathering 
+PERFORM	DAV SUPV Exprs Actv Comform 	
+PERFORMANCE	Noun Ritual Exprs Actv 	
+PERFORMER	Noun HU Exprs Actv Role 	
+PIANO	Noun Object Tool Exprs 	noun: A musical instrument 
+PICTURE	Noun Object COM Exprs Comnobj 	noun: A visual representation--a painting, drawing, photograph, movie mental image 
+PLAY	DAV SUPV Exert Exprs Actv 	87% verb: To perform some activity for recreation--playing games, sports,  also, playing a musical instrument (27) 
+PLAY	Noun Ritual Exprs 	6% noun-adj: A dramatic work for the theatre; any activity, generally  creative or recreational--"the free play of the mind" (0) 
+PLAYER	Noun HU Exprs Role 	noun: Participant in an activity 
+POEM	Noun COM Exprs Comform 	
+POET	Noun HU Exprs Role 	
+POETIC	IndAdj Pos Modif Exprs Comform Pleasure 	
+POETRY	Noun COM Comform Exprs 	
+POOL	Noun PLACE Exprs Aquatic 	
+PORTRAIT	Noun Object COM Exprs Comnobj 	
+PROSE	Noun COM Comform Exprs 	
+QUARTET	Noun HU COLL Exprs 	
+RACER	Noun HU Exprs Role Actv 	
+RECORD	Noun Object COM Exprs Comnobj 	29% noun-adj: "Record," "recording"--a disk or tape imprinted with sound,  the act of such imprinting 
+ROCK	Noun COM Comform Exprs 	2% idiom: Genre of music--"rock (and) roll" 
+ROLL	Noun COM Comform Exprs Handels 	5% idiom-noun: "Rock (and) roll"--handled by rock 
+ROW	DAV SUPV Exert Exprs Actv 	
+RUNNER	Noun HU Exprs Role Actv 	
+SAGA	Noun COM Comform Exprs Ovrst 	
+SAIL	DAV SUPV Travl Exprs Actv 	
+SANG	DAV SUPV ED Exprs Actv Comform 	
+SATIRE	Noun COM Comform Exprs 	
+SCIENCE	Noun COM Comform Exprs 	7% noun-idiom: "Science fiction"--type of literature 
+SCULPTURE	Noun Object COM Exprs Comnobj 	
+SCULPTURE	IAV SUPV Exprs Work 	
+SHOOT	Noun Ritual Exprs 	15% verb: To set a ball or other object in motion as part of a game, usually  basketball or pool--"shoot the ball"; "shoot pool" 
+SHOW	Noun COM Comform Exprs 	8% noun: Exhibition, manifestation, demonstration 
+SING	DAV SUPV Exprs Actv Comform 	69% verb: To produce melodious sounds 
+SING	Noun COM Comform Exprs Actv 	29% noun-adj: "Singing" - melodious sounds, producing or pertaining to 
+SINGER	Noun HU Exprs Role Actv 	
+SKETCH	Noun Object COM Exprs Actv Comnobj 	
+SKI	Noun Object Vehicle Exprs 	
+SKI	DAV SUPV Travl Exprs Actv 	
+SONG	Noun COM Exprs Comform 	noun-adj: Melody (usually worded) 
+SPECTATOR	Noun HU Exprs Role Psv 	
+SPEECH	Noun COM Comform Exprs 	71% noun: That which is spoken, a speech 
+SPORT	Noun Ritual Exprs PFREQ 	94% noun-adj: Athletic pastime 
+SPORT	Modif Exprs Ritual 	3% adj: "Sporting"--given to gaming, relating to athletics 
+STADIUM	Noun PLACE Social Exprs 	
+STAGE	Noun PLACE Social Exprs 	28% noun: The place where public entertainment, usually theatrical, takes  place and public speeches ar 
+STAR	Noun HU Exprs Role Ovrst 	0% noun-adj: A leading role or person in such position, leading in quality 
+STEREO	Noun Object Tool Exprs 	
+STORY	Noun COM Comform Exprs PFREQ 	97% noun-adj: A tale 
+STREAMER	Noun Object Exprs Tool 	
+STUDIO	Noun PLACE Social Exprs 	
+SUNG	DAV SUPV ED Exprs Actv Comform 	
+SWAM	DAV SUPV Travl ED Exprs Actv 	
+SWIM	Noun Ritual Exprs Actv 	7% noun: A period of swimming 
+SWIMMER	Noun HU Exprs Role Actv 	
+SYMBOL	Noun ABS Abs* COM Comform Exprs 	
+SYMBOLISM	Noun COM Comform Exprs 	
+SYMPHONIC	Modif Comform Exprs 	
+SYMPHONY	Noun COM Comform Exprs 	
+TALE	Noun COM Comform Exprs 	
+TASTE	Pos Noun Exprs Pstv Virtue 	3% noun: Aesthetic sense, style 
+TENNIS	Noun Ritual Exprs Actv 	
+THEATER	Noun PLACE Social Exprs 	
+THEATRE	Noun PLACE Social Exprs 	
+TOUCH	Noun Ritual Exprs 	2% idiom-noun: "Touch football" 
+TOURIST	Noun HU ECON Econ* Exprs Role 	
+TRAVELER	Noun HU Exprs Role 	
+TRUMPET	Noun Object Tool Exprs 	
+TUNE	Noun COM Comform Exprs 	
+VACATION	Noun Ritual Exprs 	noun: A holiday from normal activity 
+VACATIONER	Noun HU Exprs Role 	
+VERBAL	Modif Comform Exprs 	
+VERSE	Noun Object COM Exprs Comnobj 	
+VIOLIN	Noun Object Tool Exprs 	noun: A stringed musical instrument 
+WALKER	Noun HU Exprs Role Actv 	
+WAVE	DAV SUPV Exprs Comform 	
+WHISTLE	Noun COM Comform Exprs 	
+WHISTLE	DAV SUPV Exprs Actv Comform 	
+WRITE	DAV SUPV Actv Comform Exprs 	82% verb: To form words, etc., on some material, or more generally to  express ideas, compose, produce 
+WRITER	Noun HU Exprs Role Actv 	
+WRITTEN	Modif Comform Exprs 	23% adj: Set down verbally 

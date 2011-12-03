@@ -1,0 +1,10 @@
+word	tags	comments
+THEE	PRON DEF DEF2 You 	
+THOU	PRON DEF DEF1 You 	pron: You - second person pronoun 
+THY	DET GEN You 	
+YOU	PRON DEF DEF1 Scndp You 	69% pron: The nominative or pred. nom. form of the second person prooun 
+YOU	PRON DEF DEF2 Scndp You 	13% pron: The objective or dative form of the second person pronoun 
+YOUR	DET GEN Scndp You 	det: Possessive case of you. 
+YOURS	PRON Scndp You 	
+YOURSELF	Scndp You 	
+YOURSELVES	S Scndp You 	

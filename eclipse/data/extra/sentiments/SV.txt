@@ -1,0 +1,103 @@
+word	tags	comments
+ABHOR	SV Neg SUPV Hostile Psv Arousal 	
+ACHE	SV Neg SUPV Pain Psv 	
+ADMIRE	SV Pos SUPV Affil Subm Pstv Psv Pleasur 	
+ADORE	SV Pos SUPV Actv Emot Pleasure 	
+AGGRIEVE	SV Neg SUPV Hostile Actv Comform 	
+AGONIZE	SV Neg SUPV Pain Psv 	
+AIL	SV Neg SUPV Pain Psv 	
+AIN'T	SV SUPV VERB BE NEG Negate 	
+AM	SV SUPV VERB BE 	72% verb: Used as a copula to connect a subject and its predicate adjective,  predicate nominative, etc. in order to describe, identify, or amplify  the subject . . . "i am late" . . . "late as i am" 
+AM	SV SUPV VERB BE 	21% verb-(aux): Used with the present participle of another verb to form  the progressive tense, or, rarely, marginal passives 
+ANTICIPATE	SV SUPV Psv Arousal 	
+APPRECIATE	SV Pos SUPV Subm Pstv Psv Arousal Affil 	verb: To be aware of, to be grateful 
+ARE	SV SUPV VERB BE 	70% verb: Used as copula connecting subject to predicate adjective or  nominative, or to connote existence (especially with 'there . . .') 
+ARE	SV SUPV VERB BE 	8% verb: Used as auxiliary to form simple progressive 
+ARE	SV SUPV VERB BE Passive 	22% verb: Used as auxiliary to form passive 
+ARE	SV SUPV VERB BE Passive 	1% verb: Used as auxiliary to form passive progressive 
+ART	SV SUPV VERB BE 	7% verb: Archaic for are 'thou art' 
+ASPIRE	SV Pos SUPV Actv Goal Try Ach 	
+ASTOUND	SV Pos SUPV Actv Ovrst Strng Power 	
+BE	SV SUPV VERB BE 	47% verb: Used as a copula connecting subject to predicate adjective or nominative 
+BE	SV SUPV VERB BE 	3% verb: Used as auxiliary to form progressive 
+BE	SV SUPV VERB BE Passive 	50% verb: Used as auxiliary to form passive 
+BEEN	SV SUPV VERB BE ED Psv 	47% verb: Past participle of be, used as copula 
+BEEN	SV SUPV VERB BE ED 	9% verb: Used as auxiliary to form progressives 
+BEEN	SV SUPV VERB BE ED Passive 	44% verb: Used as auxiliary to form passives 
+BEING	SV SUPV VERB BE Psv PFREQ 	88% verb: Present participle of 'be' 
+BELIEVE	SV SUPV Solve Psv 	68% verb: To be of the opinion that--to think or consider 
+BELIEVE	SV SUPV Solve Subm Psv 	20% idiom-verb: "Believe in"--to be strongly (religiously) persuaded of  the truth, value, or existence of 
+BEREAVE	SV Neg SUPV Hostile Comform 	
+BROOD	SV Neg SUPV Think Emot Pain 	
+CAN	SV SUPV VERB MOD Strng 	verb: To have the ability, power, means, qualification, permission, or right to 
+CAN'T	SV SUPV VERB MOD NEG Weak Negate 	verb: Contraction of "cannot" 
+CANNOT	SV Negate SUPV VERB MOD NEG Weak 	verb: A form of can not. 
+CARE	SV Pos SUPV Affil Pstv Actv Intrel 	41% verb: To be concerned with, to mind about, prefer, be solicitous of;  to provide for (much less frequen 
+COMPREHEND	SV Pos SUPV Actv Know Percv 	
+CONCUR	SV Pos SUPV Actv Comform Affil 	
+CONDONE	SV Pos SUPV Actv Other Power Affil 	
+COPE	SV SUPV Work Psv 	
+COULD	SV SUPV VERB MOD ED 	verb: Past form of 'can'; auxiliary used with present and future verbs  to express lesser degree of possibility 
+COVET	SV Neg SUPV Psv Need Feel Weak 	
+CRAVE	SV Neg SUPV Psv Need Feel Weak 	
+DESIRE	SV SUPV Need Psv 	32% verb: To long or yearn, earnestly wish 
+DESPAIR	SV Neg SUPV Ngtv Weak Psv Pain 	
+DESPISE	SV Neg SUPV Pain Hostile Ngtv Strng 	
+DETEST	SV Neg SUPV Actv Emot Hostile 	
+DO	SV SUPV VERB DO 	66% particle: Meaningless carrier particle as employed in negatives and  questions--'john doesn't think so,' 'does john think so'--and in ellipsis--'john  feels as max does 
+DO	SV SUPV VERB DO Ovrst 	4% particle: The same particle, but incorporating the emphasis morpheme--  'john does think so' 
+DON'T	SV SUPV DO VERB NEG LY Negate 	
+DOUBT	SV Neg SUPV Ngtv Psv Undrst Comform 	41% verb: To question, be uncertain about 
+DREAD	SV Neg SUPV Psv Emot Pain 	
+DYING	SV Neg SUPV ING Natpro Ngtv Weak Psv PFREQ 	87% verb: Ceasing to live or exist; eager (with "to") (1) 
+ENJOY	SV Pos SUPV Pstv Psv Pleasur 	verb: To take pleasure in; to have as one's priviledge, advantage, fortune,  or lot (5) 
+FEAR	SV Neg SUPV Ngtv Weak Psv Subm Pain 	33% verb: To be afraid of 
+FEEL	SV SUPV VERB LINK Psv Arousal 	46% verb: To have an impression, experience an idea or emotion, to touch 
+FEEL	SV SUPV Solve Psv 	42% verb: To believe (that), to hold as an opinion 
+FRET	SV Neg SUPV Think Actv Weak 	
+FUN	SV Neg SUPV Hostile Ngtv Comform 	3% idiom-verb: "Make fun (of)"--to tease, parody 
+GRIEVE	SV Neg SUPV Actv Emot Pain Comform 	
+HAD	SV SUPV VERB HAV ED 	
+HAS	SV SUPV VERB HAV 	
+HATE	SV Neg SUPV Hostile Ngtv Psv Arousal 	80% verb: To dislike passionately, to detest 
+HAVE	SV SUPV VERB HAV Rel Actv 	36% verb: Possess, experience, engage in, cause to happen 
+HAVE	SV SUPV VERB HAV MOD Need Power Weak Psv 	7% verb: To be compelled or under obligation to do something--"have to" 
+HAVE	SV SUPV VERB HAV 	55% verb: Auxiliary verb 
+IDOLIZE	SV Pos SUPV Actv Other Goal 	
+KNEW	SV SUPV ED Psv Solve 	verb: Past tense of 'know' 
+KNOW	SV SUPV Psv PFREQ Solve 	92% verb: To perceive, understand, be acquainted with, to have fixed in  the mind, to be cognizant or aware of 
+KNOWN	SV SUPV ED Solve 	82% verb: Past participle of 'know' sense 1 
+LAMENT	SV Neg SUPV Actv Think Emot Pain 	
+LANGUISH	SV Neg SUPV Psv Fail Weak Decr 	
+LIKE	SV Pos SUPV Affil Pstv Psv Arousal 	47% verb: To derive pleasure from, to find agreeable or congenial, to  feel attracted to someone or som 
+LIT	SV SUPV Exert ED Actv 	
+LIVE	SV SUPV Strng Natpro 	79% verb: Exist, be alive, reside 
+LONG	SV SUPV Need Weak Psv 	2% verb: To yearn 
+LOVE	SV Pos SUPV Intrel Affil Pstv Psv 	48% verb: To have affection or strong liking for, especially for one of  opposite sex 
+LYING	SV SUPV Stay ING Psv PFREQ 	88% verb: To maintain a prostrate position (of people), to be located (of things) 
+MIGHT	SV SUPV VERB MOD ED PFREQ 	98% verb: Auxiliary verb, past tense of 'may' 
+MUST	SV SUPV VERB MOD Ought 	verb: An element of the auxiliary denoting obligation, requirement, urgency 
+NEED	SV Neg SUPV Need Weak Psv Ngtv 	67% verb: To want, lack, require, have (to) 
+OUGHT	SV SUPV VERB MOD Ought 	verb (modal): Should 
+PITY	SV SUPV Intrel Affil Power Psv 	
+POUT	SV Neg SUPV Emot Pain Comform 	
+REGRET	SV Neg SUPV Ngtv Weak Psv Pain 	79% verb: To feel sorry about 
+RUE	SV Neg SUPV Ngtv Pain 	
+SAVOR	SV Pos SUPV Psv Need Pleasure 	
+SEEM	SV SUPV VERB LINK Percv Undrst 	verb: To appear or appear to be 
+SEETHE	SV Neg SUPV Comform Hostile Actv 	
+SHOULD	SV SUPV VERB MOD ED Ought 	verb: Modal connoting duty or propriety--'ought to', would 
+SMITTEN	SV Pos SUPV Psv Emot Pleasure Need Intrel 	
+SUNKEN	SV SUPV ED Fall Weak Psv 	
+SWOON	SV Pos SUPV Psv Arousal Fall 	
+TASTE	SV SUPV Percv 	22% verb: To produce an oral sensation (intransitive)--"it tasted sweet" 
+TEND	SV SUPV Persist Undrst Psv PFREQ 	92% verb: To be inclined, to habitually behave 
+THINK	SV SUPV Solve 	64% verb: To hold as an opinion, to suppose, believe, consider 
+THRIVE	SV Pos SUPV Actv Strng Natpro Incr 	
+TIRED	SV Neg SUPV Subm Pain Ngtv Weak Psv 	4% verb: To become weary or exhausted 
+TIRED	SV Neg SUPV Hostile Pain Ngtv Weak Psv 	0% verb: To become bored or uninterested 
+WALLOW	SV Neg SUPV Actv Stay Emot Pain 	
+WANT	SV SUPV Need Psv PFREQ 	verb: To wish, desire, hope for 
+WON'T	SV SUPV VERB MOD NEG Negate 	verb: Contraction for "will not" 
+WORRY	SV Neg SUPV Ngtv Weak Psv Pain 	49% verb: To feel anxious (includes gerunds--"stop worrying") 
+WOULD	SV SUPV VERB MOD ED 	verb: Present and past participle form of 'will' 

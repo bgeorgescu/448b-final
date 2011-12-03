@@ -1,0 +1,1047 @@
+word	tags	comments
+ABLE	Pos Modif EVAL Virtue Strng Pstv 	adjective: Having necessary power, skill, resources, etc. 
+ABUNDANCE	Pos Noun Quan ECON Pstv Strng Ovrst 	
+ABUNDANT	Pos Modif Quan Pstv Strng Ovrst 	
+ACCEPT	IAV Pos SUPV Intrel Subm Pstv Psv 	verb: To take, receive or accede to something 
+ACCEPTABLE	Pos Modif Virtue EVAL Pstv 	
+ACCEPTANCE	Pos Noun Affil Pstv Psv Intrel 	
+ACCOMMODATE	IAV Pos SUPV Vary Pstv Actv 	
+ACCOMPLISH	IAV Pos SUPV Pstv Strng Actv Power Complt 	verb: To bring to its goal or conclusion 
+ACCOMPLISHMENT	Pos Noun Goal Pstv Strng Actv Power 	
+ACCORD	IAV Pos SUPV Intrel Pstv 	3% verb: "Accord with" to be consistent with 
+ACCORD	IAV Pos SUPV Intrel Power Pstv 	8% verb: To grant, bestow 
+ACCORD	Pos LY Means Pstv 	3% adv: "Of one's own accord"--voluntarily 
+ACCORDANCE	Pos Noun Know Pstv 	
+ACCURACY	Pos Noun ABS Abs* Virtue Pstv Ovrst 	
+ACCURATE	Pos Modif Virtue Pstv Ovrst 	
+ACHIEVE	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To accomplish or carry through 
+ACHIEVEMENT	Pos Noun Goal Pstv Actv Power 	
+ACQUAINT	IAV Pos SUPV Pstv Solve 	
+ACQUAINTANCE	Pos Noun HU Affil Pstv Role 	
+ACTUAL	Pos Modif Virtue Ovrst Pstv 	27% adjective: Existing in act or fact, real. 
+ACTUAL	Pos LY Ovrst Pstv Virtue 	73% adverb: "Actually"--really 
+ACTUALITY	Pos Noun Pstv Virtue Doctr 	
+ADEPT	Pos Modif EVAL Virtue Pstv Strng 	
+ADEQUATE	Pos Modif EVAL Virtue Pstv Undrst PFREQ 	adjective: Sufficient. 
+ADJUST	Pos Modif Virtue Pstv Subm 	23% adj: "Adjusted"--adapted 
+ADJUSTMENT	Pos Noun Virtue Pstv Psv 	
+ADMIRE	SV Pos SUPV Affil Subm Pstv Psv Pleasur 	
+ADMIT	IAV Pos SUPV Subm Pstv Weak Psv Comform 	63% verb: To acknowledge, confess, agree 
+ADMIT	DAV Pos SUPV Intrel Power Pstv Psv 	33% verb: To grant entry, membership or access to something 
+ADMIT	Pos LY Ovrst Comform Subm Pstv Weak Psv 	3% adv: "Admittedly"--adverbial form of sense 1 
+ADULT	Pos Modif Virtue Pstv Strng 	30% adj: Mature, of or pertaining to adults 
+ADVANCE	IAV Pos SUPV Travl Pstv Strng Actv 	47% verb: To move or bring forward, improve, promote 
+ADVANCE	Pos Noun Pstv Strng Actv Means 	20% noun-adj: A moving forward, improvement, approach, in front, prior 
+ADVANCE	Pos Modif Virtue Pstv Psv 	20% adj: "Advanced"--forward, in front, progressive 
+ADVANCEMENT	Pos Noun Incr Pstv 	
+ADVANTAGE	Pos Noun ABS Abs* ECON Virtue Pstv Strng 	noun: Any state or opportunity favorable to success, benefit, gain, position  of superiority. 
+ADVANTAGEOUS	Pos Modif Virtue Pstv Strng 	
+AFFECTION	Pos Noun EMOT Affil Pstv Arousal 	
+AFFECTIONATE	Pos Modif EMOT Affil Pstv Arousal 	
+AFFIRM	IAV Pos SUPV Power Pstv Strng Comform 	
+AGREE	IAV Yes SUPV Affil Pstv 	96% verb: To be of one mind, harmonize in opinion or feeling, give consent, assent 
+AGREEABLE	Pos Modif Comform EVAL Pstv 	
+AGREEMENT	Pos Noun COM Comform Affil Pstv Strng 	noun: Unanimity of opinion, state of accord, mutual arrangement. 
+AID	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	16% verb: To give help 
+AID	Pos Noun Affil Pstv Virtue Actv 	81% noun: Help, a helper 
+ALIVE	Pos Modif Natpro Strng Actv Pstv 	adjective: Living, existing, full of life. 
+ALLIANCE	Pos Noun HU COLL POLIT Polit* Power Pstv Strng 	
+ALLIED	IAV Pos SUPV Intrel Affil Polit* Strng Pstv 	
+ALLOW	IAV Pos SUPV Intrel Power Pstv Psv PFREQ 	97% verb: Permit 
+ALLY	Pos Noun HU POLIT Affil Polit* Pstv Strng Role 	
+AMELIORATE	IAV Pos SUPV Intrel Pstv Actv Affil 	
+AMPLE	Pos Modif Quan Pstv Strng 	
+APPEAL	Pos Modif Affil Psv Pleasur Pstv 	3% adj: "Appealing"--arousing a favorable response 
+APPLAUSE	Pos Noun COM Comform Pstv 	
+APPOINT	Pos Modif Pstv Actv 	
+APPOINT	DAV Pos SUPV Intrel Power Pstv Actv 	
+APPRECIABLE	Pos Modif Percv Pstv Strng Ovrst 	
+APPRECIATE	SV Pos SUPV Subm Pstv Psv Arousal Affil 	verb: To be aware of, to be grateful 
+APPRECIATION	Pos Noun Pleasur Pstv Psv Affil 	
+APPROACH	IAV Pos SUPV Travl Pstv Actv 	66% verb: To come near or nearer to, or to set about a task 
+APPROACH	Pos Noun Pstv Psv Means Actv 	34% noun: The method used or steps taken in setting about a task, problem;  a coming toward 
+APPROPRIATE	Pos Modif Virtue Pstv Ovrst 	
+APPROVAL	Pos Noun COM Comform Affil Pstv 	
+APPROVE	Pos Modif Virtue Affil Pstv 	
+APPROVE	IAV Pos SUPV Affil Pstv Strng Comform 	
+APT	Pos Modif Virtue Strng Pstv Ovrst 	
+ARREST	Pos Modif EVAL Virtue Pstv Ovrst 	4% adj: 'arresting'--striking 
+ART	Pos Noun Object COM Exprs Pstv Comnobj 	63% noun-adj: Painting, and more generally all the 'fine arts,' having  to do with beauty 
+ART	Pos Noun Doctr Exprs Pstv 	13% noun: The particular skill of--'the difficult art of rowing' 
+ASSIST	Pos Noun Affil Pstv Strng Actv Virtue 	
+ASSIST	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+ASSISTANCE	Pos Noun Affil Pstv Strng Actv Virtue 	noun: Act of assisting, help, aid. 
+ASSISTANT	Pos Noun HU Subm Pstv Actv Role 	
+ASSOCIATE	Pos Noun HU ECON Econ* Pstv Actv Role 	33% noun-adj: A partner or peer 
+ASSOCIATE	IAV Pos SUPV Solve Pstv Actv 	59% verb: To make a connection between things, to mix with socially 
+ASSOCIATE	Pos Modif Pstv Psv Rel 	7% adj: "Associated"--connected with 
+ASSOCIATION	Pos Noun HU COLL Affil Pstv Strng Actv 	79% noun: An organization of people with a common purpose, having a formal  structure 
+ASSOCIATION	Pos Noun Know Pstv Strng 	21% noun: Any other connection, relation or combination 
+ASSURANCE	Pos Noun COM Comform Affil Pstv Strng Ovrst 	
+ASSURE	IAV Pos SUPV Complt Pstv Strng Ovrst 	50% verb: To guarantee, by virtue of some action, that something will come about 
+ASSURE	IAV Pos SUPV Power Pstv Strng Ovrst Comform 	33% verb: To pledge, to state with confidence, to make confident 
+ASSURE	Pos Modif EMOT Power Ovrst Pstv Strng Pleasur 	17% adj: "Assured"--confident (2), guaranteed (1) 
+ASSUREDLY	Pos LY Power Ovrst Pstv Strng 	
+ATHLETIC	Pos Modif Exprs Pstv Strng Virtue 	
+ATTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	
+ATTAINMENT	Pos Noun Pstv Strng Actv Complt 	
+ATTEND	IAV Pos SUPV Travl Subm Pstv PFREQ 	83% verb: To be present at. 
+ATTENTIVE	Pos Modif Percv Pstv Psv Subm 	
+ATTRACT	IAV Pos SUPV Intrel Affil Pstv Strng 	
+ATTRACTION	Pos Noun Affil Pstv Pleasur Strng 	
+ATTRACTIVE	Pos Modif EVAL Virtue Pstv 	
+AUGMENT	IAV Pos SUPV Incr Pstv Actv 	
+AUTHENTIC	Pos Modif Virtue Pstv Ovrst 	
+AUTHENTICITY	Pos Noun Virtue Pstv Ovrst 	
+AVAILABILITY	Pos Noun Virtue Pstv 	
+AWARD	Pos Modif Comform Power Pstv Strng 	
+AWARD	IAV Pos SUPV Power Pstv Strng Comform Actv 	
+AWARENESS	Pos Noun ABS Abs* Percv Pstv Strng Psv 	
+BACK	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	1% verb: To support 
+BACK	Pos Noun Power Pstv Strng Intrel Affil Actv 	0% noun: "Backing"--support 
+BACKER	Pos Noun HU Econ* Pstv Strng Role 	
+BALL	Pos Noun Virtue Pstv 	4% noun: A good time--'have a ball' 
+BALL	Pos Modif Virtue Pstv Strng 	0% idiom-adj: "On the ball"--alert, efficient 
+BASIC	Pos Modif Virtue Ovrst Pstv 	74% adjective: Of, or pertaining to, or forming a base, fundamental 
+BASIC	Pos LY Ovrst Pstv Rel 	25% adverb: 'basically'--fundamentally 
+BEAUTIFUL	Pos Modif EVAL Virtue Pstv 	adj: Having beauty--delighting the eye, ear and/or mind 
+BEAUTY	Pos Noun ABS Abs* Virtue Pstv 	noun: The quality that gives pleasure to the senses, or pleasurably exalts  the mind or spirit 
+BEHALF	Pos Noun Affil Pstv Virtue 	
+BELOVED	Pos Modif Affil Pstv Arousal 	
+BENEFICIAL	Pos Modif Virtue Pstv EVAL 	
+BENEFIT	Pos Noun ECON COM Comform Econ* Pstv 	50% noun: Incremental monetary payments 
+BENEFIT	IAV Pos SUPV Intrel Affil Power Pstv Strng 	21% verb: Gain, do good for, to 
+BENEFIT	Pos Noun Goal Pstv Strng 	29% noun: Gain, good deed 
+BENIGN	Pos Modif Pstv Psv Virtue Power Affil 	
+BEST	Pos LY EVAL Comp EST Virtue Pstv 	noun-adj-adv: Superlative of good, marking maximum positive evaluation, etc. 
+BESTOW	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+BETTER	Pos LY EVAL Comp ER Virtue Pstv PFREQ 	91% adjective adv: Comparative of 'good' or 'well' 
+BETTER	IAV Pos SUPV Try Pstv Actv 	2% verb: To improve 
+BLESS	IAV Pos SUPV Intrel Affil Relig Pstv Psv 	32% verb: To consecrate, favor or endow, make happy or prosperous 
+BLESS	Pos Noun Comform Relig Pstv 	64% noun: "Blessing"--a benediction, good fortune 
+BLESS	Pos Modif Virtue Relig Pstv 	5% adj: "Blessed"--consecrated, blissful 
+BOARD	Pos Modif Virtue Pstv 	2% idiom-adj: 'above board'--honest, open 
+BONUS	Pos Noun ECON Pstv Econ* Comform 	
+BOOST	Pos Modif Incr Pstv Strng Actv 	
+BOOST	IAV Pos SUPV Pstv Strng Actv Incr 	
+BRAVE	Pos Modif EVAL Virtue Pstv Strng Power 	
+BRIGHT	Pos Modif EVAL Qual Pstv 	adj-adv: Full of light, literally or figuratively (includes comparative  (1), superlative (2) and adverb (1) for 
+BRIGHTNESS	Pos Noun Qual Pstv 	
+BRILLIANCE	Pos Noun Qual Pstv 	
+BRILLIANT	Pos Modif EVAL Qual Pstv Ovrst 	
+BROTHERHOOD	Pos Noun Virtue Affil Pstv Strng 	
+BUY	Pos Noun ECON Virtue Econ* Pstv 	0% noun: A bargain 
+CALL	DAV Pos SUPV Intrel Affil Pstv 	1% verb: To visit 
+CALM	Pos Noun EMOT Psv Pleasur Pstv 	50% noun-adj: Undisturbed, quiet, tranquil 
+CALM	IAV Pos SUPV Pstv Psv Pleasur 	38% verb: To quiet, become subdued 
+CALM	Pos Modif Pleasur Pstv Psv 	12% adv: "Calmly"--quietly 
+CAPABILITY	Pos Noun Means Power Strng Pstv 	noun: Power or potential 
+CAPABLE	Pos Modif Virtue Power Pstv Strng 	adj: Having power or ability 
+CARE	Pos Noun Affil Pstv Actv Undrst Arousal 	26% noun: Attention, concern, thought, worry, assistance 
+CARE	SV Pos SUPV Affil Pstv Actv Intrel 	41% verb: To be concerned with, to mind about, prefer, be solicitous of;  to provide for (much less frequen 
+CAREFUL	Pos Modif Virtue Pstv Undrst 	adj: Cautious 
+CARESS	Pos Noun Comform Affil Pstv 	
+CARESS	IAV Pos SUPV Intrel Affil Pstv 	
+CASUAL	Pos Modif Virtue Psv Pstv Undrst 	
+CELEBRATION	Pos Noun Ritual Affil Pstv Actv 	
+CHAMPION	Pos Noun HU Pstv Strng Actv Power Role 	
+CHARITY	Pos Noun Virtue ECON Econ* Pstv 	
+CHARM	Pos Noun Affil Virtue Pstv 	
+CHARM	IAV Pos SUPV Intrel Affil Pstv 	
+CHEERFUL	Pos Modif EMOT Pstv Pleasur 	
+CHEERY	Pos Modif EMOT Pleasur Pstv 	
+CHERISH	Pos Modif Virtue Pstv Psv 	
+CHERISH	IAV Pos SUPV Pstv Psv Intrel Affil 	
+CHOSEN	Pos Modif Virtue Psv Pstv 	13% adj: Preferred, favored 
+CIVIL	Pos Modif Doctr POLIT Polit* Pstv 	9% noun-adj: Involving or consisting of citizens, of the commonwealth  or state; civilized, polite, benevolent (0) 
+CIVILIZATION	Pos Noun ABS Abs* Doctr Pstv 	
+CIVILIZE	Pos Modif Doctr Pstv 	
+CIVILIZE	IAV Pos SUPV Work Pstv Power 	
+CLARIFY	IAV Pos SUPV Pstv Actv Comform 	
+CLARITY	Pos Modif Ovrst Pstv Qual 	
+CLASSIC	Pos Noun COM Acad Pstv Comform 	
+CLEAN	Pos Modif Virtue Pstv 	52% adj: Dirt-free, tidy, unpolluted 
+CLEAN	IAV Pos SUPV Work Pstv Actv 	33% verb: To cleanse, wash, clear away 
+CLEAR	Pos Modif Pstv Ovrst Qual 	52% adj: Distinct, limpid, certain, lucid, free of obstructions, orderly  (mostly abstract) 
+CLEAR	Pos LY Ovrst Know Pstv 	23% adv: "Clearly"--plainly, understandably 
+CLEAR	Pos Modif Qual Pstv 	2% adj: "Clearer"--comparative of sense 1 
+CLEAR	Pos Modif Qual Pstv 	0% adj: "Clearest"--superlative of sense 1 
+CLEAR	IAV Pos SUPV Exert Pstv 	13% verb: To make or become free of obstructions, blemishes or obscurity;  to pass by, over, through or away from (0) 
+CLEVER	Pos Modif Virtue EVAL Pstv Strng 	
+CO-OPERATION	Pos Noun Affil Pstv Virtue 	
+COEXISTENCE	Pos Noun Doctr POLIT Pstv Psv 	
+COLLABORATION	Pos Noun COM POLIT Affil Pstv Strng Actv Virtue 	
+COLLEAGUE	Pos Noun HU Affil Pstv Role 	
+COMEDY	Pos Noun Ritual Exprs Pstv 	
+COMFORT	Pos Noun Pstv Strng Pleasur 	61% noun: Physical or emotional ease 
+COMFORT	IAV Pos SUPV Intrel Affil Pstv Strng 	29% verb: To solace 
+COMFORT	Pos Modif Pstv Strng Affil Arousal 	10% adj: "Comforting"--consoling, heartening 
+COMFORTABLE	Pos Modif EVAL Pleasur Pstv Strng 	adj-adv: Producing ease, at ease; with ease (1) 
+COMMITMENT	Pos Noun Virtue Affil Pstv Actv 	
+COMMON	Pos Modif Virtue Affil Pstv 	40% adj: Shared, mutual 
+COMMON	Pos Noun Virtue Pstv 	11% noun-idiom: "Common sense"--sound judgment without special knowledge 
+COMMUNICATE	IAV Pos SUPV Pstv PFREQ Comform 	96% verb: To make known, to impart to someone else 
+COMMUNICATE	Pos Noun COM Comform Pstv 	4% noun: "Communicating"--act of imparting information 
+COMMUNICATIVE	Pos Modif Comform Pstv 	
+COMMUNION	Pos Noun Ritual Affil Relig Pstv 	
+COMMUNITY	Pos Noun HU COLL POLIT ECON Affil Pstv Strng 	noun-adjective: Town, collectivity formed by proximity or common interest. 
+COMPANION	Pos Noun HU Affil Pstv Role 	
+COMPANY	Pos Noun HU COLL Affil Pstv 	22% noun: Society, companionship 
+COMPASSION	Pos Noun Virtue EMOT Affil Pstv 	
+COMPASSIONATE	Pos Modif Virtue EMOT Affil Pstv 	
+COMPATIBLE	Pos Modif Virtue Pstv Affil 	
+COMPENSATE	IAV Pos SUPV Work Econ* Strng Actv Pstv 	
+COMPENSATION	Pos Noun ECON Pstv Virtue Actv 	
+COMPETENCE	Pos Noun Virtue Pstv Strng Know Eval 	
+COMPETENT	Pos Modif Virtue EVAL Pstv Strng 	
+COMPLEMENT	Pos Noun Quan Pstv 	
+COMPLEMENT	IAV Pos SUPV Rel Pstv 	
+COMPLETE	Pos Modif Quan Strng Ovrst Pstv 	30% adjective: Whole, entire, lacking nothing 
+COMPLETE	IAV Pos SUPV Strng Pstv Finish 	23% verb: To finish, to bring to a conclusion or consummation, to fulfill  or make whole or entire 
+COMPLETENESS	Pos Noun ABS Abs* Virtue Pstv Ovrst 	
+COMPLETION	Pos Noun Finish Pstv 	
+COMPREHENSION	Pos Noun Know Pstv 	
+COMPROMISE	Pos Modif POLIT Subm Pstv Psv Intrel 	
+COMPROMISE	IAV Pos SUPV Intrel Subm Pstv Psv 	
+CONCESSION	Pos Noun Pstv Weak Psv Intrel Subm 	
+CONFIDE	IAV Pos SUPV Affil Pstv Psv Comform Ovrst 	
+CONFIDENCE	Pos Noun EMOT Subm Pstv Strng Ovrst PFREQ Pleasur 	97% noun: Trust, self-assurance, a secret 
+CONFIDENT	Pos Modif EMOT Power Pstv Strng Ovrst Pleasur 	
+CONGRATULATION	Pos Noun COM Comform Affil Pstv 	
+CONNECT	IAV Pos SUPV Space Pstv Actv 	
+CONSCIENCE	Pos Noun ABS Abs* Virtue Pstv 	
+CONSCIENTIOUS	Pos Modif Virtue Pstv 	
+CONSENT	Pos Noun COM Comform Subm Pstv Strng Psv 	
+CONSENT	DAV Pos SUPV Subm Pstv Strng Psv Comform 	
+CONSIDER	IAV Pos SUPV Pstv PFREQ Solve 	verb: To think about or bear in mind--to regard or deem to be; to regard  with respect, thoughtfulness, etc. (2) 
+CONSIDER	Pos Modif Means Pstv 	1% adj: "Considered"--thoughtful--e.g. "a considered decision" 
+CONSIDERATION	Pos Noun Know Pstv 	69% noun: Thought, deliberation; thoughtfulness, respect (4) 
+CONSISTENCY	Pos Noun Virtue Pstv Strng 	
+CONSISTENT	Pos Modif Virtue Strng Pstv 	adj-adv: Compatible, invariant, even; "consistently"--steadily, constantly, evenly 
+CONSOLIDATE	IAV Pos SUPV Pstv Strng Persist 	
+CONSTRUCTIVE	Pos Modif Virtue EVAL Pstv Strng 	
+CONSULT	IAV Pos SUPV Pstv Comform 	
+CONSULTATION	Pos Noun COM Comform Pstv 	
+CONTACT	Pos Noun Affil Pstv Actv COM Comform PFREQ 	93% noun: A meeting, acquaintance, or communication with or exposure to  another person or other people generally over some period of time in some  generally social regard--the meeting with such a person, the person himself,  or the relationship so develo 
+CONTACT	DAV Pos SUPV Pstv Actv Comform 	1% verb: To communicate with, meet 
+CONTENT	Pos Modif EMOT Pstv Psv Pleasur 	58% adj: Satisfied 
+CONTENT	Pos Modif Pstv Pleasur Psv 	13% adv: "Contentedly"--in a satisfied manner 
+CONTENT	IAV Pos SUPV Pstv Psv Pleasur 	0% verb: To satisfy 
+CONTRIBUTE	IAV Pos SUPV Work Affil Actv Econ* PFREQ Pstv Strng 	97% verb: To give or add 
+CONTRIBUTE	Pos Modif Pstv Strng Actv Intrel Affil 	0% adj: "Contributing"--giving or adding 
+CONTRIBUTION	Pos Noun ECON POLIT Affil Pstv Strng Actv Virt 	noun: Something given or added 
+CONVICTION	Pos Noun Virtue Pstv Strng 	
+CONVINCE	IAV Pos SUPV Power Pstv Strng Actv Comform 	83% verb: To persuade by argument or proof, cause to believe 
+CONVINCE	Pos Modif Comform Power Pstv Strng Actv 	17% noun-adj: "Convincing"--persuasive; the act of persuading (1) 
+COOPERATE	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+COOPERATION	Pos Noun ABS Abs* Affil Pstv Strng Actv Virtue 	noun: Working together 
+COOPERATIVE	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	68% noun-adj: An organization for the benefit of producers or consumers 
+COOPERATIVE	Pos Modif Affil Pstv Actv Virtue 	27% adj: Willing to act with others, or doing so 
+COOPERATIVE	Pos LY Affil Pstv Strng Virtue Actv 	5% adv: "Cooperatively"--with cooperation 
+COORDINATE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+CORRECT	Pos Modif Virtue Pstv Ovrst 	21% adj: Accurate, proper 
+CORRECT	IAV Pos SUPV Work Pstv Strng 	54% verb: To make right, improve; to point out error (0) 
+CORRECT	Pos Modif Virtue Pstv Ovrst 	25% adv: "Correctly"--properly, accurately 
+COUNCIL	Pos Noun HU COLL POLIT Power Pstv Polit* Strng 	noun-adj: A body of persons summoned or convened for deliberation, consultation  or advice 
+COUNSEL	Pos Noun HU Legal Pstv Role 	
+COUNSEL	IAV Pos SUPV Affil Power Pstv Comform 	
+COURAGE	Pos Noun ABS Abs* EMOT Pstv Strng Virtue 	noun: A difficulty with strength and without fear. 
+COURTEOUS	Pos Modif Comform Affil Pstv Virtue 	
+COURTESY	Pos Noun Ritual Affil Pstv Virtue 	
+COURTLY	Pos Modif Virtue Polit* Pstv 	
+CREATE	IAV Pos SUPV Exprs Strng Actv Begin Pstv 	verb: To cause to come into being, to happen, to bring about. 
+CREATIVE	Pos Modif Virtue EMOT Exprs Pstv Actv 	adj-adv: Innovative, artistic; "creatively"--in a creative manner 
+CREATIVITY	Pos Noun ABS Abs* Pstv Actv Virtue 	
+CREDIT	Pos Noun COM Virtue Acad Pstv 	23% noun: Recognition, honor (includes academic credit) 
+CREDIT	IAV Pos SUPV Pstv Comform 	3% verb: To give recognition, to ascribe 
+CULTIVATE	Pos Modif Virtue Pstv Actv 	
+CULTIVATE	IAV Pos SUPV Work Pstv Actv 	
+CULTURE	Pos Modif Virtue Pstv 	7% adj: "Cultured"--of refined tastes and sensibilities 
+CURE	Pos Noun Means Pstv 	11% noun: A method or course of remedial treatment 
+CURE	IAV Pos SUPV Complt Power Affil Pstv PFREQ 	89% verb: To restore to health 
+DANCE	Pos Noun Ritual Exprs Pstv 	38% noun-adj: A social event at which people move rhythmically to music;  the rhythmic movement itself or a specific form of it (0) 
+DANCE	DAV Pos SUPV Exprs Pstv Actv Travl 	49% verb: To move rhythmically 
+DANCE	Pos Modif Exprs Pstv Actv Travl 	13% noun-adj: "Dancing"--moving rhythmically 
+DARE	IAV Pos SUPV Try Pstv 	
+DARING	IndAdj Pos Modif Virtue Pstv Strng Eval Qual 	
+DARLING	IndAdj Pos Noun HU Pstv Role Affil Eval Virtue 	
+DAWN	DAV Pos SUPV Begin Pstv 	18% verb: To begin to grow light, to begin to develop 
+DEAL	Pos Noun Quan Pstv 	53% idiom-noun: 'a great deal,' 'a good deal,' etc.--an indefinite but  large quantity 
+DEAR	Pos Modif Virtue Pstv PFREQ Affil 	98% noun-adj: A conventional form of address used either in speech or  writing indicating belovedness, intimacy or attachment--"my dear isabel"  (includes 11 cases of "dearest" similarly used); beloved or precious (9);  expensive (1); an interjection indi 
+DEAR	Pos Modif Virtue Pstv Affil 	2% adv: "Dearly" 
+DECENCY	Pos Noun Virtue Pstv 	
+DECENT	Pos Modif Virtue EVAL Pstv 	
+DEDICATE	Pos Modif Need Pstv Strng 	
+DEDICATE	IAV Pos SUPV Pstv Virtue Strng 	
+DEDICATION	Pos Noun ABS Abs* Virtue Pstv Strng 	
+DEFEND	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	verb: To ward off or repulse attacks, to uphold 
+DEFENDER	Pos Noun HU Pstv Strng Actv Role Affil 	
+DEFENSE	Pos Noun POLIT Strng Actv Affil Intrel Pstv 	noun-adj: Resistance or protection against attack, whether physical, verbal  or otherwise 
+DELICATE	Pos Modif Qual EVAL Pstv Weak 	
+DELIGHT	Pos Modif EMOT Pleasur Pstv 	
+DELIGHT	IAV Pos SUPV Pstv Pleasur 	
+DELIGHTFUL	Pos Modif EVAL Pstv Pleasur 	
+DEPENDABILITY	Pos Modif Virtue Ovrst Pstv Strng 	
+DEPENDABLE	Pos Modif Virtue Pstv Strng Ovrst 	
+DESERVE	IAV Pos SUPV Intrel Affil Pstv 	
+DESIRABLE	Pos Modif Virtue EVAL Pstv 	
+DEVOTE	IAV Pos SUPV Try Pstv Actv 	75% verb: To give up to or concentrate on a particular pursuit, occupation,  purpose, cause, to set apart or dedicate 
+DEVOTE	Pos Modif EMOT Subm Pstv Pleasur 	25% adj: "Devoted"--dedicated, faithful, committed 
+DEVOTION	Pos Noun EMOT Relig Subm Pstv Psv Arousal Affil 	
+DIG	DAV Pos SUPV Exert Pstv PFREQ 	93% verb: To excavate, to bore into; slang--to understand or appreciate (2) 
+DIGNITY	Pos Noun ABS Abs* Virtue Pstv Strng 	
+DILIGENT	Pos Modif Pstv Strng Actv Virtue 	
+DISCREET	Pos Modif Virtue Pstv 	
+DISCRETION	Pos Noun Virtue Pstv 	
+DISCUSS	IAV Pos SUPV Pstv Comform 	verb: To talk over, negotiate, inquire into, explore verbally 
+DISTINCT	Pos Modif Percv Ovrst Pstv 	
+DISTINCTION	Pos Noun Know Pstv 	
+DISTINCTIVE	Pos Modif Percv EVAL Pstv 	
+DISTINGUISH	Pos Modif Virtue Pstv Power 	
+DISTINGUISH	IAV Pos SUPV Solve Pstv 	
+DIVINE	Pos Modif Virtue EVAL Relig Pstv Strng 	
+DIVINE	IAV Pos SUPV Solve Pstv Strng 	
+DIVINITY	Pos Noun Virtue Relig Pstv Strng 	
+DOUBTLESS	Pos LY Ovrst Pstv Strng Virtue 	
+DURABLE	Pos Modif Means Pstv Strng 	
+DYNAMIC	Pos Modif Virtue Strng Actv Pstv 	
+EAGER	Pos Modif EMOT Pstv Strng Pleasur 	adjective: Anxious, ardent in desire. 
+EARNEST	Pos Modif Pstv Strng Pleasur 	
+EASE	Pos Noun Pleasur Pstv 	70% noun: Freedom from strain 
+EASE	IAV Pos SUPV Decr Pstv 	20% verb: To make less strained 
+EASY	Pos Modif Virtue EVAL Pstv 	46% adjective: Not difficult, requiring no great labor or effort--free  from or not arousing pain, discomfort, worry or care. 
+EASY	Pos Modif Means Pstv 	31% adverb: Easily--in an easy manner, with ease, without trouble. 
+EASY	Pos Modif Virtue EVAL Pstv 	15% adjective: Easier--comparative of 'easy' sense 1. 
+EASY	Pos Modif Virtue EVAL Pstv 	3% adjective: Easiest--superlative of 'easy' sense 1. 
+EDUCATED	Pos Modif Virtue Acad Pstv PFREQ 	adj: Instructed, cultured 
+EDUCATION	Pos Noun Doctr Acad Pstv 	noun: The act or process of imparting or acquiring knowledge--a degree,  level or kind of schooli 
+EDUCATIONAL	Pos Modif Doctr Acad Pstv 	adjective: Pertaining to education, formal schooling- instructive 
+EFFECTIVE	Pos Modif Virtue EVAL Pstv Strng Actv 	adj: Accomplishing an end 
+EFFECTIVENESS	Pos Noun Virtue Pstv Strng Actv 	
+EFFICACY	Pos Noun ABS Abs* Virtue Pstv Strng Actv 	
+EFFICIENCY	Pos Noun ABS Abs* Virtue Pstv Strng 	
+EFFICIENT	Pos Modif Virtue EVAL Pstv Strng 	
+ELEGANT	Pos Modif Virtue EVAL Pstv 	
+ELOQUENT	IndAdj Pos Modif EVAL Exprs Pstv Virtue 	
+EMBRACE	Pos Noun Affil Pstv Actv Comform 	
+EMBRACE	IAV Pos SUPV Intrel Affil Pstv Actv 	
+EMINENT	Pos Modif Virtue EVAL Power Pstv Strng 	
+ENABLE	IAV Pos SUPV Complt Pstv Strng 	
+ENCHANT	Pos Modif Virtue Pstv 	
+ENCHANT	IAV Pos SUPV Intrel Affil Pstv 	
+ENCOURAGE	IAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	98% verb: To inspire with confidence, hearten, urge 
+ENCOURAGE	Pos Modif Virtue Pstv 	3% adjective: "Encouraging"--heartening 
+ENCOURAGEMENT	Pos Noun Affil Pstv Actv Virtue 	
+ENDORSE	IAV Pos SUPV Affil Pstv Strng Comform Power 	
+ENERGETIC	Pos Modif EVAL Pstv Strng Actv Exert 	
+ENGAGE	Pos Modif EVAL Need Pstv 	0% adj: "Engaging"--interesting, challenging 
+ENHANCE	IAV Pos SUPV Pstv Strng Complt 	
+ENJOY	SV Pos SUPV Pstv Psv Pleasur 	verb: To take pleasure in; to have as one's priviledge, advantage, fortune,  or lot (5) 
+ENJOYABLE	Pos Modif Virtue EVAL Pstv 	
+ENJOYMENT	Pos Noun Virtue EMOT Pstv Psv 	
+ENLIGHTEN	Pos Modif Virtue EVAL Pstv 	
+ENLIGHTEN	IAV Pos SUPV Pstv Solve 	
+ENSURE	IAV Pos SUPV Intrel Power Pstv Ovrst Strng 	
+ENTERTAIN	Pos Modif EVAL Exprs Pstv Actv Intrel Affil 	
+ENTERTAIN	IAV Pos SUPV Pstv Actv Comform 	
+ENTERTAINMENT	Pos Noun Ritual Exprs Pstv 	
+ENTHUSIASM	Pos Noun EMOT Affil Pstv Pleasur 	
+ENTHUSIASTIC	IndAdj Pos Modif EMOT Pleasur Pstv Affil Feel Strng 	
+EQUALITY	Pos Noun ABS Abs* POLIT Virtue Pstv Polit* 	
+EQUITABLE	Pos Modif Virtue Pstv 	
+EQUITY	Pos Noun COM Comform ECON Econ* Legal Pstv 	
+ESSENTIAL	Pos Noun Virtue Ovrst Pstv Strng 	13% noun: That which is indispensable, "the essentials" 
+ESSENTIAL	Pos Modif Virtue EVAL Ovrst Pstv Strng 	70% adj: Basic, indispensable 
+ESTABLISH	IAV Pos SUPV Complt Power Strng Actv Ovrst PFREQ Pstv 	94% verb: To set up, institute, prove or demonstrate 
+ESTABLISH	Pos Modif Virtue Strng Ovrst Pstv 	6% adj: "Established"--proven, recognized, stable, firm 
+ETHICAL	Pos Modif Virtue EVAL Pstv 	
+ETHICS	Pos Noun Doctr Pstv 	
+EVEN	Pos LY Qual Pstv 	0% adv: "Evenly"--smoothly, uniformly 
+EVEN	Pos Modif Qual Pstv 	0% adj: Regular, smooth, balanced . . . "an even surface" 
+EXACT	Pos Modif Virtue Ovrst Pstv 	19% adj: Precise, perfect 
+EXACT	Pos LY Ovrst Pstv Virtue 	80% adv: "Exactly"--precisely, perfectly 
+EXCELLENCE	Pos Noun Virtue Pstv 	
+EXCELLENT	Pos Modif Virtue EVAL Pstv 	
+EXCITE	IAV Pos SUPV Pstv Actv PFREQ Pleasur 	0% verb: To thrill or stimulate 
+EXCITE	Pos Modif Pleasur Pstv Actv 	adjective: "Exciting"--thrilling 
+EXCITED	IAV Pos SUPV ED Pstv Pleasur Psv 	4% verb: Past tense of "excite" 
+EXCITEMENT	Pos Noun EMOT Pstv Pleasur Psv 	
+EXPERIENCE	Pos Noun Means Pstv Strng 	82% noun: What one has encountered or undergone and the knowledge gained thereby 
+EXPERIENCE	Pos Modif Virtue Pstv Strng Psv 	4% adj: "Experienced"--having practical knowledge of things, having gone  through things 
+EXPERT	Pos Noun HU Power Pstv Strng Role 	77% noun: "One who knows a great deal about something, and nothing about  a great deal." 
+EXPERT	Pos Modif Virtue EVAL Pstv Strng 	23% adj: Of expert quality 
+EXTRAORDINARY	IndAdj Pos Modif Ovrst EVAL Virtue Pstv Qual 	
+EYE	Pos LY Comform Pstv 	1% idiom: "Eye to eye"--in agreement 
+FACILITATE	IAV Pos SUPV Work Pstv Strng Affil 	
+FAIR	Pos Modif Virtue EVAL Legal Pstv 	33% adj: Just, unbiased (includes comparative (1) + superlative (0)) 
+FAIR	Pos Modif Qual Pstv 	3% adj: Beautiful, light, unblemished (includes comparative (0) + superlative (0)) 
+FAIR	Pos Noun Ritual Exprs Pstv 	0% noun: Carnival 
+FAITH	Pos Noun ABS Abs* Doctr Relig Pstv EMOT Psv PFREQ 	90% noun: Belief or trust, or the content thereof--a creed 
+FAITH	Pos Noun Virtue Affil Subm Pstv Psv 	10% idiom-noun: "Good faith"--honesty, trustworthiness 
+FAITHFUL	Pos Modif Virtue Relig Pstv Psv 	
+FAMILIAR	Pos Modif Percv Pstv 	
+FAMOUS	Pos Modif EVAL Power Virtue Pstv 	adj: Renowned 
+FANCY	Pos Modif Virtue EVAL Pstv Ovrst 	
+FANTASTIC	Pos Modif Ovrst EVAL Virtue Pstv 	
+FAVOR	Pos Noun Affil Pstv Virtue 	15% noun: A kind act 
+FAVOR	IAV Pos SUPV Pstv Arousal 	26% verb: To prefer 
+FAVOR	Pos Noun Pstv Means 	35% idiom: "In favor of," in support of 
+FAVOR	Pos Noun Virtue Pstv Affil 	15% noun: The state of being approved, an advantageous state 
+FAVOR	Pos Modif Virtue EVAL Affil Pstv Psv 	7% adjective: "Favored"--treated with preference, approved 
+FAVORABLE	Pos Modif Virtue EVAL Pstv Affil 	
+FAVORITE	Pos Modif Virtue EVAL Pstv Affil 	
+FEAST	Pos Noun Ritual Pstv Actv 	83% noun-adj: A celebration, usually with food 
+FEAST	IAV Pos SUPV Pstv Actv Intrel Affil 	17% verb: To celebrate, usually by gorging oneself 
+FELLOW	Pos Modif Affil Pstv Rel 	27% adj: Associated, in the same situation 
+FELLOWSHIP	Pos Noun ECON Virtue Affil Pstv Strng 	
+FESTIVAL	Pos Noun Ritual Affil Actv Pstv 	
+FIDELITY	Pos Noun Doctr Subm Pstv Affil 	
+FILL	Pos Noun Goal Pstv 	2% noun: Condition of satisfaction as 'to have one's fill' 
+FINE	Pos Modif Qual EVAL Pstv 	56% adj: Of high quality, excellent; light, slender, delicate (7) 
+FINE	Pos LY Qual Pstv 	1% adv: "Finely"--in a fine manner 
+FINE	Pos Modif Virtue Pstv 	28% adj-adv: All right, o.k., well, good 
+FINE	Pos Modif EVAL Virtue Pstv 	3% adj: 'finer'--comparative of (1) 
+FINE	Pos Modif EVAL Virtue Pstv 	12% adj: 'finest'--superlative of (1) 
+FIRMNESS	Pos Noun Pstv Strng Qual 	
+FIT	Pos Modif Virtue Pstv 	26% noun-adj: Suitable, well adapted (includes "fitting," "fitted") 
+FIT	Pos Modif Virtue Pstv 	6% adj: Superlative--'fittest'--best adapted 
+FLEXIBLE	Pos Modif Qual Pstv 	
+FLOURISH	Pos Modif Pstv Strng Power Incr 	
+FOND	Pos Modif Affil Pstv Arousal 	5% adj: Enamored of 
+FOND	Pos Modif Virtue Pstv Affil PFREQ 	90% adj: Affectionate, cherished 
+FOND	Pos LY Affil Pstv Arousal 	5% adv: 'fondly'--with affection 
+FOND	Pos Modif Affil Pstv Arousal 	0% adj: 'fonder'--more enamored of 
+FOND	Pos Modif Virtue Pstv Affil 	0% adj: 'fonder'--more affectionate, cherished 
+FOND	Pos Modif Affil Pstv Arousal 	0% adj: 'fondest'--most enamored of 
+FOND	Pos Modif Virtue Pstv Affil 	0% adj: 'fondest'--most affectionate, cherished 
+FOREMOST	Pos Modif Virtue Pstv Strng Ovrst 	
+FORGAVE	IAV Pos SUPV ED Intrel Affil Pstv 	
+FORGIVE	IAV Pos SUPV Intrel Affil Pstv 	
+FORGIVEN	Pos Modif Affil Pstv Psv 	
+FORTUNATE	Pos Modif Virtue EVAL Pstv Psv Undrst 	adj: Lucky, well-fated 
+FORWARD	Pos LY Time* Pstv 	62% adv: Toward or at a place, point, or time in advance, ahead, onward 
+FRANK	Pos Modif Virtue EVAL Pstv 	
+FREE	Pos Modif Virtue Pstv Strng 	81% adjective: Exempt from external authority, interference, restriction,  etc., unimpeded, unoccupied; provided without a charge or payment (4) 
+FREE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	5% verb: To make free, set at liberty, release from bondage, restraint 
+FREE	Pos Modif Means Pstv Strng 	10% adverb: "Freely"--in a free manner, openly 
+FREE	Pos Modif Virtue Pstv Strng 	4% adjective: "Freer"--(comparative of sense 1) 
+FREE	Pos Modif Virtue Pstv Strng 	0% adj: "Freest"--superlative of sense 1 
+FREEDOM	Pos Noun ABS Abs* POLIT Virtue Polit* Pstv Str 	noun-adj: Absence of restraint, whether external--civic--or internal--  psychological 
+FRESH	Pos Modif Time* EVAL Pstv 	
+FRIEND	Pos Noun HU Affil Pstv Role 	noun: Person attached to another by feelings of affection or personal regard 
+FRIENDLY	Pos Modif EVAL EMOT Virtue Affil Pstv 	adjective: Kind, helpful, amicable 
+FRIENDSHIP	Pos Noun ABS Abs* Virtue Affil Pstv 	noun: A friendly relation 
+FRUITFUL	Pos Modif Virtue EVAL Pstv Strng 	
+FULFILL	IAV Pos SUPV Pstv Strng Complt 	
+FULFILLMENT	Pos Noun Goal Pstv Strng 	
+FUN	Pos Noun Exprs Pleasur Pstv PFREQ 	97% noun-adj: Enjoyment, enjoyable 
+FUNNY	Pos Modif Virtue EVAL Pstv PFREQ 	92% adj: Laughable, amusing, queer 
+FUNNY	Pos Modif Virtue EVAL Pstv 	4% adj: Comparative--'funnier' 
+FUNNY	Pos Modif Virtue EVAL Pstv 	4% adj: Superlative--'funniest' 
+GAIN	IAV Pos SUPV Complt Pstv Strng Actv 	83% verb: To get, obtain, win 
+GAIN	Pos Noun Goal ECON Econ* Pstv Strng 	17% noun: Profit, advantage, progress 
+GAME	Pos Modif Pleasur Pstv Strng 	1% adjective: "Game"--spirited, courageous 
+GAY	Pos Modif EVAL EMOT Pleasur Pstv 	
+GENEROUS	Pos Modif Virtue EVAL Pstv 	
+GENIAL	Pos Modif EVAL Affil Pstv Arousal 	
+GENIUS	Pos Noun HU Pstv Strng Role 	
+GENTLE	Pos Modif EVAL Affil Pstv Weak Psv Virtue 	
+GENUINE	Pos Modif Virtue EVAL Pstv Ovrst 	
+GIFT	Pos Noun Object COM ECON Affil Pstv Comnobj 	
+GIFTED	Pos Modif Virtue EVAL Pstv Strng 	
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	90% verb: To donate, provide (with), present, hand over, emit or issue,  cause to have; prone, wont--"he is given to drink" (2) 
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv 	1% noun-adj: "Given"--specific, assumed, granted 
+GLAD	Pos Modif EMOT Pleasur Pstv Psv PFREQ 	96% adjective: Pleased 
+GLAD	Pos LY Affil Pstv Psv Pleasur 	4% adv: "Gladly"--with pleasure 
+GLADDEN	IAV Pos SUPV Pstv Pleasur 	
+GLEAM	Pos Noun Qual Pstv 	
+GLEAM	IAV Pos SUPV Pstv Natpro 	
+GLISTEN	Pos Modif Qual Pstv 	
+GLISTEN	IAV Pos SUPV Percv Pstv 	
+GLITTER	Pos Modif Qual Pstv 	
+GLITTER	IAV Pos SUPV Percv Pstv 	
+GLORIOUS	Pos Modif Virtue EVAL Pstv Ovrst 	
+GLORY	Pos Noun ABS Abs* Virtue Pstv 	
+GLOW	IAV Pos SUPV Percv Pstv 	
+GLOW	IAV Pos SUPV Pstv Natpro 	
+GOLD	Pos Noun ECON Pstv Object Natobj Econ* 	
+GOLDEN	Pos Modif COLOR Pstv 	
+GOOD	Pos Modif Virtue EVAL Pstv PFREQ 	89% noun-adj-adv-intj: Marks positive evaluation on a dimension specified  by context, or, occasionally, general intensification--as "a good many,"  "a good beating" 
+GOODBYE	Pos Intj Pstv Affil 	
+GOODNESS	Pos Noun Virtue Pstv 	
+GRACE	Pos Noun Virtue Relig Pstv 	
+GRACEFUL	Pos Modif Virtue EVAL Pstv 	
+GRACIOUS	Pos Modif EVAL Affil Pstv Virtue Power 	
+GRAND	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+GRATEFUL	Pos Modif EMOT Affil Subm Pstv Pleasur Arousal 	
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	63% adj: Of more than ordinary size, extent, number, degree, importance, eminence 
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	9% adj: 'greater' 
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	7% adj: 'greatest' 
+GREATNESS	Pos Noun Virtue Power Pstv Strng 	
+GREET	Pos Noun COM Comform Affil Pstv 	
+GREET	IAV Pos SUPV Affil Pstv Comform 	
+GUARANTEE	Pos Noun COM Comform Power Pstv Strng Legal 	
+GUARANTEE	IAV Pos SUPV Power Pstv Strng Legal Comform 	
+GUIDE	IAV Pos SUPV Intrel Power Strng Actv Pstv 	50% verb: To direct 
+GUIDE	Pos Noun HU Econ* Strng Actv Pstv Role 	32% noun: Someone or something that directs 
+GUIDE	Pos Modif Pstv Strng Actv Intrel 	5% adj: 'guiding'--giving direction 
+HAND	Pos Modif Pstv Means 	0% idiom-adj: "In hand"--under control 
+HANDSOME	Pos Modif Virtue EVAL Pstv 	
+HANDY	Pos Modif Virtue Pstv 	
+HAPPINESS	Pos Noun EMOT Pstv Pleasur 	noun: The quality or state of being happy 
+HAPPY	Pos Modif EMOT Pstv Pleasur 	78% adjective: Joyous, pleased. 
+HAPPY	Pos Modif Pleasur Pstv 	13% adverb: "Happily"--in a joyous manner 
+HAPPY	Pos Modif EMOT Pstv Pleasur 	7% adjective: "Happier," comparative of sense 1 
+HAPPY	Pos Modif EMOT Pstv Pleasur 	2% adjective: "Happiest," superlative of sense 1 
+HARDY	IndAdj Pos Modif Virtue Pstv Strng Qual 	
+HARMLESS	Pos Modif Pstv Weak Psv Subm Virtue 	
+HARMONY	Pos Noun ABS Abs* Virtue Pstv 	
+HEAL	IAV Pos SUPV Power Pstv Strng Natpro Change 	
+HEALTH	Pos Noun Pstv Strng Virtue 	noun-adj: Condition of body or mind, soundness 
+HEALTHY	Pos Modif Pstv Strng Virtue 	96% adj: Sound, well, not sick 
+HEALTHY	Pos Modif Pstv Strng Virtue 	4% adj: Comparative - "healthier" 
+HEALTHY	Pos Modif Pstv Strng Virtue 	0% adv: "Healthily" - adverb form of sense 1 
+HEART	Pos Modif Affil Pstv Arousal 	1% idiom-adj: "Heart to heart" - intimate 
+HEAVEN	Pos Noun PLACE Social Relig Pstv 	noun: The abode of god and the righteous dead; a state or place of happiness;  includes interjections 
+HEAVENLY	Pos LY EVAL Virtue Relig Pstv 	
+HELP	Pos Noun Affil Pstv Actv Virtue 	22% noun: Aid, assistance, assistants 
+HELP	IAV Pos SUPV Intrel Affil Pstv Actv 	75% verb: To aid, assist 
+HELP	Pos Modif Affil Pstv Actv Virtue 	0% adj-noun: 'helping' 
+HELPFUL	Pos Modif EVAL Affil Pstv Actv Virtue 	
+HERO	Pos Noun HU MALE Power Pstv Strng Role Ovrst 	
+HEROIC	IndAdj Pos Modif Virtue Power Pstv Strng Ovrst 	
+HEROINE	Pos Noun HU Female Pstv Role Ovrst 	
+HIT	IAV Pos SUPV Affil Pstv Intrel Affil 	0% idiom-verb: "Hit it off"--get along well 
+HOLY	Pos Modif Virtue EVAL Relig Pstv 	adj: Sacred, sinless, of god 
+HOME	Pos Noun PLACE Social Pstv 	noun-adj-adv: Dwelling place - domestic - homeward 
+HONEST	Pos Modif Virtue EVAL Pstv 	79% adj: Truthful, genuine, honorable 
+HONEST	Pos LY Virtue Pstv 	13% adv: "Honestly" - in an honest manner 
+HONEST	Pos LY Virtue Pstv 	8% adv: "Honestly" - truly, really - an intensive 
+HONEYMOON	Pos Noun Ritual Affil Kin* Pstv 	
+HONOR	IAV Pos SUPV Intrel Subm Pstv Psv 	35% verb: To esteem, exalt, respect 
+HONOR	Pos Noun ABS Abs* Doctr Pstv 	58% noun-adj: High regard, tokens thereof, integrity, respect 
+HONOR	Pos Modif Virtue Pstv Psv 	8% adj: "Honored", highly regarded, respected 
+HONORABLE	Pos Modif Virtue Pstv 	
+HOPE	IAV Pos SUPV Need Pstv Psv 	74% verb: To look forward with desire and trust to something happening,  to feel that something desired may happe 
+HOPE	Pos Noun Need Pstv Psv 	26% noun: The feeling that what is desired is also possible, that all  will turn out for the best, a desire or wish 
+HOPEFUL	Pos Modif Pstv EMOT Psv Need 	
+HOSPITABLE	Pos Modif Virtue EVAL Affil Pstv 	
+HUMAN	Pos Noun Pstv Role HU 	noun-adjective: Of or pertaining to homo sapiens (half the uses are with  the word "being" to designate the creature itself); the creature itself (2) 
+HUMANITY	Pos Noun HU COLL ABS Pstv 	
+HUMBLE	Pos Modif Virtue Subm Pstv Weak Psv 	
+HUMOR	IAV Pos Noun ABS Abs* Pleasur Pstv 	
+HUMOROUS	IndAdj Pos Modif Pleasur Pstv 	
+IDEAL	Pos Noun ABS Abs* Doctr Pstv Ovrst 	54% noun: A concept of perfection, a principle 
+IDEAL	Pos Modif Virtue Pstv Ovrst 	29% adj: Perfect, conforming to an ideal 
+IDEAL	Pos LY Virtue Pstv Ovrst 	17% adv: "Ideally"--perfectly, in conformity with an ideal 
+IMAGINATION	Pos Noun Pstv Psv Know Exprs 	
+IMAGINATIVE	Pos Modif Virtue EVAL Exprs Pstv 	
+IMPORTANCE	Pos Noun Know Pstv Ovrst 	noun: Significance, consequence, value 
+IMPORTANT	Pos Modif Virtue EVAL Pstv Ovrst 	adjective: Significant, worthy of attention 
+IMPRESS	IAV Pos SUPV Pstv Strng Actv PFREQ Percv 	97% verb: To have a strong, usually pleasing, effect on the mind or emotions 
+IMPRESSIVE	Pos Modif Ovrst EVAL Virtue Pstv Strng 	
+IMPROVE	IAV Pos SUPV Work Pstv Strng Actv 	76% verb: To make better in quality or condition 
+IMPROVE	IAV Pos SUPV Pstv Strng Actv Incr 	17% verb: To become better in quality or condition 
+IMPROVE	Pos Modif Virtue Pstv Psv 	7% adj: "Improved", bettered 
+IMPROVEMENT	Pos Noun Virtue Pstv Strng Actv 	
+INDEPENDENCE	Pos Noun ABS Abs* POLIT Doctr Polit* Pstv Strn 	noun: Freedom, autonomy, self-reliance, liberty 
+INDEPENDENT	Pos Modif Doctr POLIT Polit* Pstv Strng 	37% adj: Autonomous (refers to economic or political units other than  individual people) 
+INDEPENDENT	Pos Modif Virtue Pstv Strng Power 	49% adj: Self-reliant, autonomous, having independence (refers to a person) 
+INDISPENSABLE	Pos Modif Pstv Strng Ovrst Means 	
+INFALLIBLE	Pos Modif Negate Ovrst Pstv Strng Virtue 	
+INFORM	IAV Pos SUPV Pstv Comform Actv 	64% verb: To notify, to give information to 
+INFORM	Pos Modif Means EVAL Pstv Psv 	36% adj: "Informed"--having information, knowledge, or education 
+INNOCENCE	Pos Noun ABS Abs* Virtue Pstv 	
+INNOCENT	Pos Modif Virtue EVAL Legal Pstv 	
+INSIGHT	Pos Noun ABS Abs* Know Pstv Psv 	
+INSPIRE	Pos Modif Virtue EVAL Pstv Strng Actv 	
+INSPIRE	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	
+INTEGRITY	Pos Noun Virtue Pstv Strng 	
+INTELLECT	Pos Noun Virtue Acad Pstv Strng 	
+INTELLECTUAL	Pos Modif Virtue Acad Pstv Strng 	60% adj: Of or pertaining to the intellect 
+INTELLECTUAL	Pos Noun HU Acad Pstv Role Strng 	24% noun: Person with intellectual interests or tastes 
+INTELLECTUAL	Pos LY Virtue Acad Pstv Strng 	10% adv: "Intellectually"--cerebrally 
+INTELLIGENCE	Pos Noun ABS Abs* Virtue Acad Pstv Strng 	noun-adj: Ability to learn or understand 
+INTELLIGENT	Pos Modif Virtue EVAL Pstv Strng 	adj: Having knowledge, understanding, or awareness 
+INTELLIGIBLE	Pos Modif Comform Pstv 	
+INTEREST	Pos Noun Need EMOT Pstv Psv 	63% noun: Curiosity, concern, involvement, stake 
+INTEREST	IAV Pos SUPV Pstv Need 	5% verb: To arouse interest 
+INTEREST	Pos Modif Modif Need EVAL Pstv 	28% adj: 'interesting'--productive of a feeling of interest 
+INTERESTED	IAV Pos SUPV Pstv Need 	2% verb: To arouse interest 
+INTERESTED	Pos Modif Need Pstv Psv PFREQ 	98% adj: "Interested"--characterized by a feeling of interest 
+INTIMATE	Pos Modif Affil Pstv Psv Arousal 	
+INVENTOR	Pos Noun HU Role Pstv Actv 	
+INVITATION	Pos Noun COM Comform Affil Actv Pstv 	
+INVITE	DAV Pos SUPV Intrel Affil Pstv Actv 	verb: To ask to a dinner, party, or for a visit or other social event;  more generally, to ask, request, call for (9) 
+INVITE	Pos Modif Virtue EVAL Pstv Strng 	0% adj: 'inviting'--alluring, tempting 
+JOIN	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	33% verb: To unite with, agree with, come together--"let us join together,"  "i join you in praising him"; to get or come together in an informal way--'i'll  join you later' 
+JOINTLY	Pos LY Affil Pstv Strng Rel 	
+JOKE	Pos Noun Comform Exprs Pstv PFREQ 	85% noun-adj: A jest, funny story 
+JOKE	IAV Pos SUPV Exprs Pstv Comform 	10% verb: To jest, be funny 
+JOKE	Pos Modif Comform Pstv 	5% adv: "Jokingly", humorously 
+JOY	Pos Noun EMOT Pleasur Pstv 	noun: Bliss, happiness 
+JUST	Pos Modif Virtue Legal Pstv 	1% adj: Fair, equitable, rightful 
+JUST	Pos LY Virtue Legal Pstv 	0% adv: "Justly"--fairly, equitably, rightfully 
+JUSTICE	Pos Noun ABS Abs* POLIT Doctr Legal Power Pstv 	
+JUSTIFIABLY	Pos LY Virtue Pstv Ovrst 	
+JUSTIFICATION	Pos Noun Virtue Pstv Ovrst 	
+JUSTIFY	IAV Pos SUPV Pstv Comform Ovrst 	
+KEEN	Pos Modif Virtue Pstv Strng 	
+KID	IAV Pos SUPV Affil Pstv Comform Exprs 	3% verb: To jest 
+KIND	Pos Modif Virtue EVAL Affil Pstv 	16% adj: Benevolent, charitable--"kind," "kindly" 
+KIND	Pos LY Virtue Affil Pstv 	0% adv: "Kindly"--benevolently, charitably 
+KINDNESS	Pos Noun Virtue Pstv Affil 	
+KISS	Pos Noun Comform Affil Pstv Actv 	
+KISS	DAV Pos SUPV Affil Pstv Actv Intrel 	
+KNOW	Pos Modif Know Psv Pstv 	1% noun-adj: "Knowing"--having knowledge or information, shrewd, deliberate 
+KNOW	Pos LY Know Actv Pstv 	0% adv: "Knowingly"--in a shrewd, informed or deliberate manner 
+KNOWLEDGE	Pos Noun ABS Abs* Acad Pstv Strng Know 	noun-adj: Familiarity with or understanding of facts, principles, etc.--  what is known 
+LAUGH	Pos Noun COM Comform Exprs Pstv Psv 	3% noun: Expression of mirth or amusement 
+LAUGH	DAV Pos SUPV Exprs Pstv Psv Comform 	40% verb: To express mirth or amusement by laughter 
+LAUGH	Pos Modif Exprs Pstv Psv Comform 	2% noun-adj: "Laughing" - laughter, expressive of amusement 
+LAUGH	Pos Noun COM Comform Exprs Pstv Psv 	45% noun: Same as sense 1, but inserted into text as editorial comment,  parenthesized. 
+LAUGHTER	Pos Noun COM Comform Exprs Pstv Psv 	noun: The act or sound of laughing, an expression of amusement. 
+LAW	Pos Noun Doctr POLIT Legal Pstv 	noun adjective: The set of rules set up in a society and enforced by its  government; any set of rules governing a given system, such as those of  science (1); related compounds, treated by g.i. as separate words, are  listed below but not handled. 
+LEAD	Pos Modif Virtue EVAL Strng Pstv Ovrst 	6% adj: Front, foremost, outstanding 
+LEARN	Pos Noun ABS Abs* Virtue Acad Pstv 	9% noun: 'learning,' knowledge acquired, or the process of acquiring knowledge 
+LEARN	Pos Modif Virtue Acad Pstv 	0% adj: "Learned," knowledgeable, erudite 
+LEARNER	Pos Noun HU Acad Subm Role Pstv 	
+LEGAL	Pos Modif ECON POLIT Doctr Legal Pstv 	
+LEGITIMATE	Pos Modif Virtue Legal Pstv 	
+LEISURE	Pos Noun Virtue Exprs Psv Pstv 	
+LIBERAL	Pos Noun HU POLIT Modif Polit* Pstv Role 	77% noun-adj: Political-social viewpoint, innovative, progressive, democratic;  generous (1) 
+LIBERAL	Pos LY Virtue Pstv Affil 	0% adv: "Liberally" - freely, generously 
+LIBERALISM	Pos Noun ABS Abs* POLIT Doctr Polit* Pstv 	
+LIBERTY	Pos Noun ABS Abs* Doctr Polit* Pstv Power 	
+LIGHT	Pos Noun Natpro Pstv 	69% noun-adj: Illumination, opposite of darkness; various metaphorical  extensions--"i am the light" (8); compounds--"light bulb" (1) 
+LIGHT	Pos Modif Qual Pstv 	5% adj: Not dark, bright, pale (includes -er, -est) 
+LIKE	SV Pos SUPV Affil Pstv Psv Arousal 	47% verb: To derive pleasure from, to find agreeable or congenial, to  feel attracted to someone or som 
+LIKE	Pos Noun EMOT Affil Pstv Psv Arousal 	2% noun: "Liking"--the attraction to, pleasure in, or enjoyment of something  or someone, fancy or inclination 
+LIVE	IAV Pos SUPV Complt Strng Pstv 	1% idiom-verb: 'live up to'--satisfy expectations 
+LIVELY	Pos Modif Pstv Strng Actv Qual 	adj: Animated 
+LOGIC	Pos Noun Know Pstv 	
+LOGICAL	Pos Modif Know Pstv 	
+LOVE	SV Pos SUPV Intrel Affil Pstv Psv 	48% verb: To have affection or strong liking for, especially for one of  opposite sex 
+LOVE	Pos Noun EMOT Affil Pleasur Pstv Psv 	30% noun: The affection 
+LOVE	Pos Modif Affil EMOT Pstv Psv Pleasur 	12% idiom-adj: 'in love'--enamored 
+LOVE	Pos Modif EMOT Affil Pleasur Pstv Psv 	4% adj: 'loving'--feeling or showing love 
+LOVELY	Pos Modif Virtue EVAL Pstv 	adj: Pleasant, attractive 
+LOVER	Pos Noun HU Affil Pstv Role 	41% noun: A person in love, or involved in a sexual relationship, usually the man 
+LOVER	Pos Noun HU Role Affil Pstv 	59% noun: A person with a strong liking for something--"a music lover,"  "a lover of nature" 
+LOYAL	Pos Modif Virtue Polit* Subm Pstv 	
+LOYALTY	Pos Noun ABS Abs* POLIT Virtue Polit* Subm Pstv 	
+LUCK	Pos Noun ABS Abs* Virtue Pstv Strng Undrst 	noun: Fortune, fate, good fortune 
+LUCKILY	Pos Modif Virtue Pstv Undrst 	
+LUCKY	Pos Modif Virtue Pstv Psv 	
+LUXURY	Pos Noun Virtue ECON Econ* Pstv 	
+LYRIC	Pos Noun COM Comform Exprs Pstv 	
+LYRICAL	Pos Modif Comform Exprs Pstv 	
+MAGNIFICENT	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+MAIN	Pos Modif Ovrst EVAL Know Strng Pstv 	74% adj: Principal, chief 
+MAJOR	Pos Modif Ovrst EVAL Strng Pstv Know 	56% adj: Principal, chief--"the major aim of this project" 
+MAKE	IAV Pos SUPV Intrel Affil Pstv Actv 	0% verb: "Make up (for)"--compensate, make reparation 
+MAKE	IAV Pos SUPV Intrel Affil Pstv 	3% idiom-verb: "Make friends," "make a friend" 
+MANLY	IndAdj Pos Modif Virtue MALE Pstv Strng 	
+MARITAL	Pos Modif Kin* Ritual Pstv 	
+MARRIAGE	Pos Noun Ritual Affil Kin* Pstv 	noun-adj: Act of marrying or state of being married 
+MARRY	DAV Pos SUPV Affil Kin* Pstv Intrel 	83% verb: To take a husband or wife 
+MARRY	Pos Modif Affil Kin* Pstv Intrel 	17% adj: "Married"--wedded 
+MATE	Pos Noun HU Affil Pstv Role 	
+MATE	DAV Pos SUPV Intrel Affil Pstv 	
+MATTER	IAV Pos SUPV Strng Pstv Solve Ovrst 	12% verb: To be significant 
+MATURE	Pos Modif Virtue Strng Pstv 	54% adj: Developed, adult 
+MATURE	IAV Pos SUPV Incr Strng Pstv 	31% verb: To develop, become mature, come to fruition 
+MATURE	Pos Modif Incr Strng Pstv 	12% noun-adj: "Maturing"--developing, maturation 
+MATURITY	Pos Noun ABS Abs* Time* Pstv Strng 	
+MEANINGFUL	Pos Modif Virtue EVAL Pstv 	
+MEET	Pos Noun COM Comform Affil Pstv 	1% idiom: A "meeting of the minds"--agreement 
+MELODY	Pos Noun COM Comform Exprs Pstv 	
+MEND	IAV Pos SUPV Work Actv Pstv 	
+MERCY	Pos Noun ABS Abs* Virtue Pstv 	
+MERIT	Pos Noun Virtue Pstv 	
+MERIT	IAV Pos SUPV Pstv Strng Intrel Affil 	
+MIGHTY	Pos Modif EVAL Power Strng Pstv Ovrst Virtue 	
+MIND	Pos Noun Virtue Pstv 	1% idiom-noun: "Right mind"--sanity 
+MINISTER	IAV Pos SUPV Intrel Affil Actv Pstv 	3% verb: To care for, aid, service 
+MODERATE	IAV Pos Modif Pstv Undrst Virtue 	
+MODEST	Pos Modif Virtue EVAL Subm Pstv Weak 	
+MORAL	Pos Modif Virtue Pstv 	adj-noun: Pertaining to character, conduct, intentions, etc. viewed ethically--principles,  concern for principle 
+MORALITY	Pos Noun ABS Abs* Doctr Pstv 	
+MOTIVATED	Pos Modif EMOT Need Pstv Actv 	
+MOTIVATION	Pos Noun Need Pstv Actv 	
+MOTIVE	Pos Noun Need Pstv Actv 	
+MUTUAL	Pos Modif Affil Pstv HU COLL 	91% adjective: Common, joint, reciprocal, reciprocated. 
+MUTUAL	Pos LY Affil Pstv HU COLL 	9% adverb: "Mutually"--jointly, reciprocally 
+NATURAL	Pos Modif Natpro Pstv Ovrst 	37% adj: Not artificial, coming from or having to do with nature 
+NATURAL	Pos LY Pstv Causal Ovrst 	63% adv: "Naturally", not artificially, understandably 
+NEAT	Pos Modif Virtue EVAL Pstv 	
+NICE	Pos Modif Virtue EVAL Pstv 	86% adj: Pleasant, pleasing, agreeable 
+NICE	Pos Modif Virtue EVAL Pstv 	5% adj: "Nicer"--comparative of sense 1 
+NICE	Pos Modif Virtue EVAL Pstv 	0% adj: "Nicest"--superlative of sense 1 
+NICE	Pos LY Pstv Virtue 	10% adv: "Nicely"--pleasantly, agreeably 
+NOBLE	Pos Modif Virtue EVAL Pstv Strng 	
+NON-VIOLENCE	Pos Noun Virtue Affil Pstv 	
+NON-VIOLENT	Pos Modif Virtue Affil Pstv 	
+NORMAL	Pos Modif Virtue EVAL Pstv Ovrst 	adjective: Usual, regular, customary, average, conforming to a norm 
+NOTABLE	IndAdj Pos Modif Percv Pstv Strng Ovrst 	
+NURSE	IAV Pos SUPV Intrel Affil Pstv Actv 	5% verb: To care for, foster, cherish, nurture 
+OBEY	IAV Pos SUPV Intrel Power Subm Pstv Weak Psv 	verb: To comply 
+OBJECTIVE	Pos Modif Virtue EVAL Pstv 	17% adj: Unbiased 
+OBJECTIVE	Pos LY Virtue Pstv 	0% adv: "Objectively"--in an unbiased manner 
+OBLIGE	IAV Pos SUPV Intrel Subm Pstv Weak 	
+OBTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To acquire, to procure 
+OFFER	IAV Pos SUPV Affil Actv Pstv PFREQ Intrel 	84% verb: To present, propose, give 
+OFFER	Pos Noun COM Comform Affil Pstv Actv 	6% noun: A presentation, proposal 
+OFFER	Pos Noun Object COM Affil Pstv Strng Psv Comnobj 	11% noun: "Offering", something presented, a donation 
+OPEN	Pos Modif Qual Pstv 	36% adj-adv-noun: Not closed - exposed, accessible, frank, public, in the open 
+OPEN	Pos LY Pstv Virtue 	3% adv: "Openly"--publicly, in the open 
+OPPORTUNITY	Pos Noun ABS Abs* Pstv Virtue 	noun: A good position, chance or prospect 
+OPTIMAL	Pos Modif Comp EST EVAL Virtue Pstv 	
+OPTIMISTIC	Pos Modif Pleasur Pstv Psv 	
+ORDER	Pos Noun Means Pstv Strng 	18% noun: Condition or sequence in general, proper condition or sequence,  an arrangement or system of arrangement, an organization 
+ORDER	Pos Modif Means Pstv Strng 	4% adj-noun: "Orderly"--methodical, systematic; a soldier or hospital attendant (1) 
+ORDER	Pos Modif Means Pstv Strng 	2% adj: "Ordered"--methodically or suitably arranged 
+ORGANIZE	IAV Pos SUPV Rel Power Pstv Strng Actv 	75% verb: To establish, to systematize 
+ORGANIZE	Pos Modif Virtue Pstv Strng 	25% adj: "Organized", systematic, orderly 
+OUTSTANDING	Pos Modif Virtue EVAL Pstv Strng 	
+PARDON	Pos Noun COM Comform Power Pstv Actv Strng 	
+PARDON	DAV Pos SUPV Power Pstv Actv Strng Comform 	
+PARTICULAR	Pos DET Ovrst Modif Quan Pstv 	33% adj-noun: Specific, unique, special; a specific aspect or detail 
+PARTNER	Pos Noun HU ECON Affil Econ* Pstv Strng Role 	noun: One of two or more associated as joint principals in carrying on  some action, etc. 
+PARTNERSHIP	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	
+PASS	DAV Pos SUPV Complt Pstv Strng 	11% verb-adj: To undergo successfully ("pass an exam") 
+PASSIONATE	Pos Modif EMOT Affil Pstv Strng Arousal Psv 	
+PATIENCE	Pos Noun ABS Abs* Virtue Pstv Strng 	
+PATIENT	Pos Modif Virtue EVAL Pstv Strng 	26% adj: Unhurried, considerate, understanding 
+PATIENT	Pos LY Virtue Pstv Strng 	0% adv: "Patiently"--in an understanding or unhurried manner 
+PATRON	Pos Noun HU ECON Econ* Power Pstv Strng Role 	
+PATRONAGE	Pos Noun Doctr ECON Econ* Power Pstv Strng 	
+PAY	IAV Pos SUPV Affil Actv Pstv Intrel 	2% verb: Pay a visit or call 
+PEACE	Pos Noun ABS Abs* POLIT Virtue Affil Pstv Psv 	59% noun: The attainment or state of freedom from any strife, tranquility 
+PEACE	IAV Pos SUPV Intrel Affil Pstv Actv 	11% idiom-verb: "Make peace," to end strife 
+PEACEFUL	Pos Modif Virtue EVAL Pstv Psv Affil 	adjective: Possessing, enjoying, or marked by peace. 
+PERFECT	Pos LY Ovrst Virtue Pstv Strng 	56% adv: 'perfectly'--in a perfect manner, totally 
+PERFECT	Pos Modif Virtue EVAL Pstv Strng Ovrst 	42% adj: Complete, sound, flawless, ideal 
+PERFECT	IAV Pos SUPV Complt Pstv Strng Actv 	3% verb: To make perfect, complete 
+PERFUME	Pos Noun Qual Pstv 	
+PERMISSION	Pos Noun COM Comform Power Pstv Strng Psv 	
+PERMIT	IAV Pos SUPV Intrel Power Pstv Strng Psv PFREQ 	94% verb: To allow, to make possible 
+PERSEVERANCE	Pos Noun Pstv Strng Virtue Actv 	
+PERSEVERE	IAV Pos SUPV Persist Actv Strng Pstv 	
+PERTINENT	Pos Modif Virtue EVAL Pstv 	
+PIOUS	Pos Modif Virtue Relig Pstv 	
+PLAIN	Pos Modif Percv EVAL Pstv Ovrst 	58% adj: Obvious, clear, uncomplicated, simple 
+PLAIN	Pos Modif Percv Pstv Ovrst 	16% adv: "Plainly"--clearly, simply 
+PLAIN	Pos Modif Percv Pstv 	3% adj: "Plainer"--comparative of sense 1 
+PLAIN	Pos Modif Percv Pstv 	0% adj: "Plainest"--superlative of sense 1 
+PLEASANT	Pos Modif EVAL Pleasur Pstv 	adj: Agreeable, enjoyable 
+PLEASANT	Pos Modif Virtue Pstv 	0% adv: "Pleasantly"--agreeably 
+PLEASE	IAV Pos SUPV Intrel Affil Pstv 	23% verb: To satisfy, to make enjoyable for 
+PLEASE	Pos Modif Virtue EVAL Pstv 	5% adj: "Pleasing"--satisfying, pleasurable 
+PLEASED	Pos Modif Pleasur Pstv 	92% adj: Satisfied, happy 
+PLEASED	IAV Pos SUPV Intrel ED Affil Pstv 	3% verb: To make enjoyable for, to satisfy (past tense) 
+PLEASURE	Pos Noun EMOT Pleasur Pstv 	noun: Enjoyment, satisfaction, delight 
+PLENTIFUL	Pos Modif Quan Ovrst Pstv Strng 	
+PLENTY	Pos Noun Quan Ovrst Pstv Strng 	noun-adj: A full or abundant supply, more than sufficient, ample. 
+POISE	Pos Modif Pstv Strng Qual 	
+POLITE	Pos Modif Affil Pstv Weak Virtue 	
+POPULAR	Pos Modif Virtue Pstv Strng 	
+POSITIVE	Pos Modif Pstv Virtue Ovrst 	
+PRACTICABLE	Pos Modif Virtue Pstv 	
+PRACTICAL	Pos Modif Virtue Pstv 	79% adj-adv: Of, pertaining to, or manifested in practice or action, useful 
+PRAISE	Pos Noun COM Comform Pstv Affil 	
+PRAISE	IAV Pos SUPV Affil Pstv Actv Comform 	
+PRECIOUS	Pos Modif Virtue EVAL Econ* Pstv Strng 	
+PRECISE	Pos Modif Virtue Pstv Ovrst 	
+PRECISION	Pos Noun ABS Abs* Virtue Pstv Ovrst 	
+PRESTIGE	Pos Noun Virtue Power Pstv Strng 	
+PRETTY	Pos Modif Virtue EVAL Pstv 	11% adj: Pleasing to the eye 
+PRETTY	Pos LY Virtue Pstv 	0% adv: "Prettily"--pleasingly 
+PRETTY	Pos Modif Virtue EVAL Pstv 	1% adj: "Prettier"--comparative of sense 1 
+PRETTY	Pos Modif Virtue EVAL Pstv 	1% adj: "Prettiest--superlative of sense 1 
+PRIDE	Pos Noun EMOT Pstv Strng Pleasur 	
+PRINCIPAL	Pos Modif EVAL Pstv Strng Ovrst PFREQ Know 	32% adj: Chief or most important 
+PRINCIPLE	Pos Noun Doctr Legal Pstv 	92% noun: Law of moral conduct or physical occurrence 
+PRINCIPLE	Pos Modif Virtue Pstv 	5% noun: 'man of principle,' etc.--moral person 
+PRINCIPLE	Pos Modif Virtue Pstv 	0% adj: Principled--having principles 
+PRIZE	Pos Noun Goal Pstv Strng 	
+PRODUCTIVE	Pos Modif Virtue Econ* Pstv Strng 	
+PRODUCTIVITY	Pos Noun Virtue ECON Econ* Pstv 	
+PROFIT	Pos Noun Goal ECON Econ* Pstv Strng 	
+PROFIT	IAV Pos SUPV Exch Pstv Strng Econ* 	
+PROFITABLE	Pos Modif Virtue Econ* Pstv Strng 	
+PROFOUND	Pos Modif Virtue EVAL Pstv Strng 	
+PROGRESS	Pos Noun ABS Abs* Virtue Pstv Strng Actv 	70% noun: Advancement of situation towards a goal 
+PROGRESS	IAV Pos SUPV Pstv Strng Actv Try 	27% verb: To move towards a goal or generally forward 
+PROGRESSIVE	Pos Modif Pstv Virtue 	
+PROMINENT	Pos Modif Virtue Pstv Strng Power 	
+PROMISE	Pos Modif Virtue Pstv Psv 	6% noun: Indication of possible future excellence or achievement 
+PROMISE	Pos Modif Virtue Pstv Psv 	8% adj: "Promising"--giving indication of possible future excellence or achievement 
+PROMPT	Pos Modif Virtue Pstv Strng Ovrst 	
+PROMPT	IAV Pos SUPV Intrel Power Pstv Strng 	
+PROMPTLY	Pos Modif Virtue Pstv Ovrst 	
+PROPER	Pos Modif Virtue EVAL Pstv 	adjective: Correct, legitimate, acceptable 
+PROPITIOUS	Pos Modif Virtue Pstv 	
+PROSPERITY	Pos Noun Virtue ECON Pstv 	
+PROTECT	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	verb: To defend or guard from attack, damage, loss, etc. 
+PROTECTION	Pos Noun Power Pstv Strng Virtue 	noun: Safeguard 
+PROUD	Pos Modif EMOT Pleasur Pstv Strng Affil 	adj: Filled with pride 
+PROVIDE	IAV Pos SUPV Intrel Affil Power Pstv Strng PFREQ 	97% verb: To furnish, supply, afford 
+PROVIDENCE	Pos Noun POLIT Power Relig Pstv Strng Virtue 	
+PURE	Pos Modif Virtue EVAL Pstv Ovrst 	
+QUAINT	Pos Modif Virtue Weak Pstv 	
+QUALIFY	IAV Pos SUPV Complt Pstv Strng Undrst 	28% verb: To meet some set of standards, ensure satisfaction of such standards 
+QUALIFY	Pos Modif Virtue Pstv 	56% adj: "Qualified" - competent, certifiable 
+QUALITY	Pos Modif Virtue EVAL Pstv 	26% noun-adj: Excellence, merit, value; excellent, meritorious, of high standard 
+RATIONAL	Pos Modif Virtue EVAL Pstv Acad 	
+REAL	Pos Modif Virtue Pstv Ovrst 	79% adv: Actually or in fact--genuinely, truly (as an intensifier usually  with adjectives--'that was really nice') 
+REALISTIC	Pos Modif Doctr EVAL Pstv 	
+REASONABLE	Pos Modif Virtue EVAL Pstv 	adj: Sensible, moderate, rational 
+REASSURANCE	Pos Noun COM Comform Affil Pstv Strng 	
+REASSURE	IAV Pos SUPV Pstv Strng Affil Power Comform 	
+RECONCILE	IAV Pos SUPV Intrel Pstv Affil 	
+REGARD	Pos Noun Affil Subm Pstv Arousal 	9% noun: Respect, esteem, affection or attention 
+RELEVANCE	Pos Noun Know Pstv 	
+RELEVANT	Pos Modif Know EVAL Pstv 	
+RELIABILITY	Pos Noun Ovrst Virtue Pstv Strng 	
+RELIABLE	IndAdj Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+RELIEF	Pos Noun Pstv Pleasur Psv 	
+RELIEVE	Pos Modif EMOT Pleasur Pstv Psv 	10% adj: "Relieved" - disburdened, feeling thus 
+RELIGIOUS	Pos Modif Doctr EMOT Relig Pstv 	32% adj: Devout, faithful 
+REMARKABLE	Pos Modif Ovrst EVAL Virtue Pstv Strng 	
+REMARKABLY	Pos LY Ovrst EVAL Virtue Pstv Strng 	
+REMEDY	Pos Noun Means Pstv 	
+REPAIR	Pos Noun Pstv Strng Actv Means 	
+REPAIR	IAV Pos SUPV Work Pstv Strng Actv 	
+REPUTABLE	Pos Modif Virtue Pstv 	
+RESCUE	Pos Noun Affil Power Pstv Actv Virtue 	
+RESCUE	IAV Pos SUPV Pstv Actv Affil Intrel 	
+RESOLVE	Pos Noun Pstv Strng Actv Pleasur 	
+RESOLVE	IAV Pos SUPV Solve Pstv Strng Actv 	
+RESPECT	IAV Pos SUPV Intrel Subm Pstv Psv 	48% verb-adj: To hold in esteem--esteemed 
+RESPECT	Pos Noun Subm Pstv Psv Arousal Affil 	31% noun: Esteem, regard 
+RESPECT	IAV Pos SUPV Affil Subm Pstv Psv Comform 	2% idiom-verb: 'pay one's respects'--visit, call on formally 
+RESPECTABLE	Pos Modif Virtue EVAL Pstv 	
+RESPONSIBILITY	Pos Noun ABS Abs* Virtue Power Pstv 	noun: Obligation or duty, control or management of something, liability  in case of failure 
+RESPONSIBLE	Pos Modif Virtue Pstv Power 	69% adj: Reliable, having responsibility 
+RESPONSIVE	Pos Modif Affil Pstv Arousal 	
+RESTORE	IAV Pos SUPV Work Pstv Strng Actv 	
+RETURN	Pos Noun Affil Pstv Actv Virtue 	5% noun: Reciprocation, giving back 
+RETURN	IAV Pos SUPV Pstv Actv Fetch 	5% verb: To give back, cause to revert to original position, reciprocate 
+REVIVE	IAV Pos SUPV Begin Pstv Strng Actv 	
+REWARD	Pos Noun Goal ECON Econ* Pstv Strng 	33% noun: Compensation, profit, return 
+REWARD	IAV Pos SUPV Exch Pstv Actv Strng 	19% verb: To compensate, to give positive reinforcement 
+REWARD	Pos Modif Virtue EVAL Pstv Strng 	48% adj: "Rewarding", yielding satisfaction or profit 
+RICH	Pos Modif Virtue ECON Econ* Pstv Strng 	61% noun-adj: Wealthy, affluent; those who are wealthy or affluent (5) 
+RICH	Pos Modif Qual Pstv Strng 	13% adj: Full, abounding in 
+RICH	Pos Modif Virtue Econ* Pstv Strng 	10% adj: "Richer," comparative 
+RICH	Pos Modif Virtue Econ* Pstv Strng 	1% adj: "Richest," superlative 
+RICH	Pos LY Qual Pstv ECON Strng 	3% adv: "Richly" 
+RICH	Pos Noun Object ECON Econ* Power Pstv Strng Comnobj 	11% noun: Monetary wealth, "riches" 
+RIGHT	Pos Noun ABS Abs* Means Legal Power Pstv Strng 	14% noun: Legal or moral prerogative 
+RIGHT	Yes Modif Virtue EVAL Pstv Ovrst 	27% adj-adv: Proper, correct--properly, correctly (sometimes used as interjection) 
+RIGHT	Yes Intj Noun Virtue Pstv 	22% idiom: "All right"--okay 
+RIGHT	IAV Pos SUPV Work Pstv Strng 	0% verb: To set something right 
+RIPE	Pos Modif Qual Pstv 	
+ROMANTIC	Pos Modif EMOT Affil Pstv Pleasur 	
+ROUND	Pos Modif Virtue Pstv 	6% adj: "Well rounded"--full, complete, developed, balanced 
+SACRED	Pos Modif Virtue Relig Pstv 	
+SAFE	Pos Modif Virtue Pstv 	60% adj: Secure 
+SAFE	Pos Modif Virtue Pstv 	13% adj: "Safer" - comparative of sense 1 
+SAFE	Pos Modif Virtue Pstv 	3% adj: "Safest" - superlative of sense 1 
+SAFE	Pos Modif Virtue Pstv 	23% adv: "Safely" - adverb form of sense 1 
+SAFETY	Pos Noun Virtue Pstv PFREQ 	90% noun-adj: Security 
+SAINT	Pos Noun HU Relig Pstv Role 	
+SALUTARY	Pos Modif Virtue EVAL Pstv 	
+SALVATION	Pos Noun Virtue Relig Pstv 	
+SANCTUARY	Pos Noun PLACE POLIT Pstv Region 	
+SANE	Pos Modif Virtue Pstv 	
+SATISFACTION	Pos Noun ABS Abs* EMOT Pleasur Pstv Psv 	noun: Pleasure, contentment 
+SATISFACTORY	Pos Modif Virtue EVAL Pstv 	
+SATISFY	IAV Pos SUPV Intrel Pstv Strng Affil 	28% verb: To give enjoyment or contentment, to fulfill 
+SATISFY	Pos Modif EMOT Pleasur Pstv Psv 	58% adj: Contented, fulfilled - "satisfied" 
+SATISFY	Pos Modif Virtue EVAL Pstv Strng 	12% adj: Giving contentment - "satisfying" 
+SAVE	IAV Pos SUPV Fetch Pstv Strng Actv 	79% verb-adj: To rescue, preserve, reserve, salvage, hold in safekeeping 
+SECURE	Pos Modif EMOT Pleasur Pstv Ovrst 	21% adj: Safe, without anxiety 
+SECURE	Pos LY Qual Ovrst Pstv Strng 	0% adv: "Securely"--safely, firmly 
+SECURITY	Pos Handels Virtue Ovrst Pstv 	37% noun-adj: Freedom from definite threats or general anxieties 
+SECURITY	Pos Noun Econ* Pstv Object Comnobj 	5% noun: Bonds etc., issues of capital surety, or generalized body of issues 
+SELECTIVE	Pos Modif Virtue Pstv Actv Undrst 	
+SELF-CONTAINED	Pos Modif Virtue Power Pstv Strng 	
+SELF-RESPECT	Pos Noun Virtue Pstv 	
+SENSATIONAL	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+SENSE	Pos Noun Pstv Virtue 	8% noun: Practical knowledge, wisdom, judgment 
+SENSE	Pos Noun ABS Abs* Know Pstv 	5% idiom-noun: "Make, made sense"--to be reasonable or comprehensible 
+SENSIBLE	Pos Modif Virtue EVAL Pstv 	
+SENSITIVE	Pos Modif EMOT Pstv Arousal 	
+SENSITIVITY	Pos Noun ABS Abs* EMOT Pstv Arousal 	
+SERENE	Pos Modif EMOT Pstv Strng Psv Arousal 	
+SERIOUS	Pos Modif EVAL Pstv Arousal 	adj: Grave, important, sober, showing earnestness or deep thought 
+SERIOUSNESS	Pos Noun Pstv Arousal 	
+SETTLE	Pos Modif Stay Pstv Strng Psv 	18% adj: "Settled"--stable, calm 
+SHARE	DAV Pos SUPV Intrel Affil Pstv 	67% verb: To have, use or experience in common 
+SHARE	Pos Noun Affil Pstv Virtue 	10% noun: "Sharing" - having or using in common 
+SHARE	Pos Modif Affil Pstv Virtue 	4% adj: "Shared" - had or used in common 
+SHELTER	Pos Noun PLACE Pstv Social 	
+SHELTER	IAV Pos SUPV Intrel Power Pstv Strng Affil 	
+SHREWD	Pos Modif Pstv Strng Virtue 	
+SIGNIFICANCE	Pos Noun ABS Abs* Virtue Pstv Strng Ovrst 	
+SIGNIFICANT	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+SIMPLICITY	Pos Noun Virtue Pstv Ovrst 	
+SIMPLIFY	Pos Modif Virtue Pstv Actv 	
+SIMPLIFY	IAV Pos SUPV Solve Pstv Actv 	
+SINCERE	Pos Modif Virtue EVAL Pstv Affil 	adj: Honest,genuine 
+SINCERITY	Pos Noun Affil Pstv Virtue 	
+SKILL	Pos Noun Virtue ECON Pstv 	71% noun-adj: Ability (usually acquired) 
+SKILL	Pos Modif Virtue EVAL Pstv 	29% adj: "Skilled"--capable, well-trained 
+SKILLFUL	Pos Modif Virtue EVAL Pstv 	
+SMART	Pos Modif Virtue EVAL Pstv Strng 	82% adj: Bright, clever, brash, stylish 
+SMART	Pos Modif Virtue EVAL Pstv Strng 	18% adj: "Smarter" comparative form of sense one 
+SMART	Pos Modif Virtue EVAL Pstv Strng 	0% adj: "Smartest"--superlative form of sense one 
+SMILE	Pos Noun Pstv Psv Comform Affil 	46% noun: Upturning of corners of mouth usually indicating pleasure, favor  or amusement 
+SMILE	DAV Pos SUPV Affil Pstv Psv Comform 	46% verb: To form a smile 
+SMILE	Pos Modif Pstv Psv Comform Affil 	4% adj: "Smiling" 
+SMILE	Pos LY Pstv Psv Comform Affil 	4% adv: "Smilingly" 
+SOLUTION	Pos Noun ABS Abs* Goal Pstv 	noun: Answer, means of solving a problem 
+SOPHISTICATED	Pos Modif Virtue EVAL Pstv 	
+SOUGHT	IAV Pos SUPV Try ED Pstv 	
+SOUND	Pos Modif Virtue EVAL Pstv Strng Ovrst 	16% adj: Solid, firm, reliable, in good condition 
+SOUND	Pos Modif Virtue EVAL Pstv Strng Ovrst 	1% adj: "Sounder"--comparative of sense 4 
+SOUNDNESS	Pos Noun Virtue Pstv Strng Strng 	
+SPARE	DAV Pos SUPV Intrel Affil Power Pstv Strng 	48% verb: To save from ill fortune 
+SPECIAL	Pos Modif Virtue EVAL Pstv 	adj: Extraordinary, particular 
+SPECTACULAR	Pos Modif Ovrst EVAL Virtue Pstv Strng 	
+SPLENDID	Pos Modif Virtue EVAL Pstv Ovrst 	
+STABILITY	Pos Noun Virtue Pstv Strng Ovrst 	
+STABILIZE	IAV Pos SUPV Power Stay Pstv Strng Actv Ovrst 	
+STABLE	Pos Modif Qual Pstv Strng 	
+STAND	IAV Pos SUPV Percv Strng Pstv 	1% idiom-verb: "Stand out"--to be conspicuous or prominent 
+STATELY	Pos LY Virtue Power Pstv 	
+STAUNCH	IndAdj Pos Modif Persist Strng Pstv 	
+STAUNCHNESS	Pos Noun Persist Strng Pstv 	
+STEADFAST	Pos Modif Persist Pstv Strng Ovrst 	
+STEADFASTNESS	Pos Noun Persist Pstv Strng Ovrst 	
+STEADINESS	Pos Noun Pstv Strng Persist 	
+STEADY	Pos Modif Qual Pstv Strng 	
+STOOD	IAV Pos SUPV Percv ED Strng Pstv 	0% verb: "Stood out"--was conspicuous 
+STRAIGHT	Pos Modif Virtue Pstv 	6% adj: Pure, unadulterated, undiluted, frank 
+STURDY	Pos Modif Qual Power Pstv Strng 	
+SUBTLE	Pos Modif EVAL Pstv Weak Virtue 	
+SUCCEED	IAV Pos SUPV Complt Pstv PFREQ 	94% verb: To turn out according to desire, to achieve success 
+SUCCESS	Pos Noun ABS Abs* ECON Pstv Complt 	noun: Favorable outcome, someone or something that succeeds 
+SUCCESSFUL	Pos Modif EVAL ECON Pstv Complt 	adj: Achieving or having achieved success, favorable in outcome 
+SUFFICE	IAV Pos SUPV Pstv Strng Finish 	
+SUFFICIENT	Pos Modif Virtue Strng Pstv 	adj: Enough, adequate 
+SUIT	IAV Pos SUPV Pstv Arousal Affil 	17% verb: To please, conform to, satisfy, be agreeable to 
+SUIT	Pos Modif Virtue EVAL Pstv 	23% adj: "Suited"--qualified, satisfactory 
+SUITABLE	Pos Modif Virtue EVAL Pstv 	
+SUPER	Pos Modif Virtue Pstv 	
+SUPERIOR	Pos Modif Virtue EVAL Pstv Strng Power 	
+SUPERIORITY	Pos Noun Virtue Pstv Strng Power 	
+SUPERLATIVE	Pos Modif Virtue EVAL Pstv Ovrst 	
+SUPPORT	IAV Pos SUPV Intrel Power Affil Pstv Strng Actv 	44% verb: Sustain, provide for, maintain, encourage, back--"i support  the program" (48); to hold up (0) 
+SUPPORT	Pos Noun Affil Power Pstv Strng Virtue Actv 	44% noun: Encouragement, assistance, maintenance, backing--"he has our  full support," "emotional support," "financial support" (46); a brace  or foundation (2) 
+SUPPORT	Pos Modif Affil Power Pstv Strng Actv Virtue 	2% noun-adj: "Supporting"--auxiliary, aiding (2); holding up (0) 
+SUPPORT	Pos Modif Affil Power Pstv Psv Weak Virtue 	5% adj: "Supported"--sustained, backed, encouraged, aided (5) held up (0) 
+SUPREME	Pos Modif Comp EST EVAL Virtue Pstv Strng Power Ovrst 	5% adj: Highest, utmost 
+SUPREME	Pos LY Virtue Pstv Strng Power Ovrst 	5% adv: "Supremely" - ultimately 
+SURVIVAL	Pos Noun ABS Abs* Goal Pstv Strng 	
+SURVIVE	IAV Pos SUPV Pstv Strng Complt 	
+SWEET	Pos Modif Virtue EVAL Pstv 	68% adj-noun: Sugary, pleasant, agreeable; that which is so (0) 
+SWEET	Pos Modif Virtue EVAL Pstv 	0% adj: "Sweeter" - comparative 
+SWEET	Pos Modif Virtue EVAL Pstv 	12% adj: "Sweetest" - superlative 
+SWEET	Pos LY Virtue Pstv 	0% adv: "Sweetly"--agreeably 
+SYMPATHETIC	Pos Modif EMOT Affil Pstv Arousal 	
+SYMPATHIZE	IAV Pos SUPV Affil Pstv Arousal 	
+SYMPATHY	Pos Noun EMOT Affil Pstv Arousal 	
+TALENT	Pos Noun ABS Abs* Virtue Pstv Strng 	
+TASTE	Pos Noun Exprs Pstv Virtue 	3% noun: Aesthetic sense, style 
+THANK	DAV Pos SUPV Affil Pstv Comform 	49% verb: To express gratitude, give thanks to 
+THANK	Pos Noun COM Comform Affil Pstv 	6% noun: Acknowledgement of gratitude 
+THANK	Pos Intj Comform Affil Pstv 	37% idiom-interj: "Thank you," "thanks" 
+THOUGHTFUL	Pos Modif Pstv Virtue 	
+THRILL	IAV Pos Noun Pleasur Pstv Strng Arousal 	
+TINGLE	Pos Noun Pleasur Pstv Psv 	
+TOLERANT	Pos Modif Virtue EVAL Affil Pstv 	
+TRADITION	Pos Noun ABS Abs* Doctr Pstv Strng 	
+TRADITIONAL	Pos Modif Doctr Pstv Strng 	
+TRAIN	Pos Modif Virtue Pstv 	10% adj: "Trained"--skilled, practiced 
+TRANQUIL	Pos Modif Qual Pstv Psv 	
+TRAVEL	Pos Modif Pstv Travl 	0% adj: "Traveled"--experienced in travel; frequented in travel 
+TREASURE	Pos Noun Econ* ECON Pstv Virtue 	
+TREASURE	IAV Pos SUPV Pstv Affil Intrel 	
+TREAT	Pos Noun Virtue Pstv 	5% noun: Anything that affords pleasure 
+TREATY	Pos Noun COM POLIT Polit* Pstv Comform 	noun: An agreement between governments 
+TREMENDOUS	Pos Modif EVAL DIM Virtue Pstv Strng Ovrst 	78% adj: Great, enormous 
+TREMENDOUS	Pos LY Ovrst Pstv Strng Virtue 	23% adv: "Tremendously--greatly, enormously 
+TRIUMPH	Pos Noun Goal Pstv Strng Power 	
+TRIUMPH	IAV Pos SUPV Complt Pstv Strng Power 	
+TRIUMPHANT	Pos Modif EMOT Power Pstv Strng Pleasur 	
+TRUE	Pos Modif Virtue EVAL Pstv Ovrst 	83% adj: Genuine, valid, conforming to reality or fact, actual 
+TRUE	Pos LY Virtue Ovrst Pstv 	12% adverb: "Truly"--genuinely, correctly 
+TRUE	Pos Modif Subm Pstv Arousal Affil 	4% adj-idiom: "True to"--faithful to 
+TRUE	Pos Modif Virtue EVAL Pstv Ovrst 	0% adj: "Truer"--comparative of sense 1 
+TRUE	Pos Modif Virtue EVAL Pstv Ovrst 	1% adj: "Truest"--superlative of sense 1 
+TRUST	IAV Pos SUPV Intrel Affil Subm Pstv Psv 	46% verb: To place or have confidence in someone or something 
+TRUST	Pos Modif Subm Pstv Psv Arousal Affil 	1% adj: "Trusting"--having confidence in, trustful 
+TRUST	Pos Modif Pstv Strng Psv Virtue Affil 	0% adj: "Trusted"--reliable, believed in 
+TRUST	Pos Noun EMOT Affil Pstv Intrel 	19% noun: The confidence placed in someone or something 
+TRUST	Pos Noun Means Pstv 	1% noun: Safekeeping 
+TRUST	Pos LY Subm Pstv Arousal Affil 	0% adv: "Trustingly"--with trust 
+TRUSTWORTHY	Pos Modif EVAL Virtue Pstv Affil Psv Strng 	
+TRUTH	Pos Noun ABS Abs* Virtue Pstv Ovrst 	noun-adj: Verity 
+TRUTHFUL	Pos Modif Virtue Ovrst Pstv 	
+UNCOMMON	Pos Modif FREQ Negate Pstv Ovrst 	
+UNDERSTAND	IAV Pos SUPV ED Pstv Solve 	65% verb: To comprehend 
+UNDERSTAND	Pos Noun EMOT Pstv Affil Arousal 	35% noun-adj: "Understanding"--comprehension, agreement, empathy 
+UNDERSTOOD	IAV Pos SUPV ED Pstv Solve 	verb: Past tense of 'understand' 
+UNDOUBTED	Pos Modif Virtue Negate Pstv Ovrst Strng 	
+UNDOUBTEDLY	Pos LY Negate Ovrst Strng Virtue Pstv 	
+UNIQUE	Pos Modif Quan Ovrst EVAL Pstv 	
+UNITY	Pos Noun ABS Abs* POLIT Virtue Pstv Strng 	noun: Oneness, solidarity 
+UPPERMOST	Pos Modif Pstv Strng Ovrst Comp EST Space 	
+UPRIGHT	Pos Modif Space POS Pstv Strng 	
+USABLE	IndAdj Pos Modif Virtue Pstv 	
+USEFUL	Pos Modif Virtue EVAL Pstv 	
+VALID	Pos Modif Virtue EVAL Pstv Ovrst 	
+VALIDITY	Pos Noun Pstv Ovrst Virtue 	
+VALUABLE	Pos Modif Virtue EVAL Econ* Pstv 	
+VALUE	IAV Pos SUPV Pleasur Pstv 	13% verb: To regard highly, esteem; to appraise the worth of something (0) 
+VALUE	Pos Modif Virtue EVAL Pstv 	2% adj: "Valued"--treasured 
+VERIFICATION	Pos Noun Pstv Ovrst Know 	
+VERIFY	IAV Pos SUPV Solve Pstv Actv Ovrst 	
+VIABLE	Pos Modif Virtue Pstv 	
+VIRTUE	Pos Noun ABS Abs* Virtue Pstv 	
+VIRTUOUS	Pos Modif Virtue EVAL Pstv 	
+VITALITY	Pos Noun Pstv Virtue Strng Natpro 	
+VIVID	Pos Modif Qual Pstv Strng 	
+WARM	Pos Modif Qual Pstv 	68% adj: Having or releasing a moderate degree of heat; characterized  by showing lively, friendly feeli 
+WARM	DAV Pos SUPV Pstv Natpro 	19% verb: To make or become physically warm, heat; to inspire with friendly  feelings or incite enthusiasm (2) 
+WARM	Pos LY Pstv Qual 	0% adv: "Warmly" 
+WARM	Pos Modif Qual Pstv 	11% adj: "Warmer"--comparative of sense 1 
+WARM	Pos Modif Qual Pstv 	0% adj: "Warmest"--superlative of sense 1 
+WARMTH	Pos Noun Qual EMOT Pstv 	
+WELCOME	IAV Pos SUPV Affil Pstv Comform 	31% verb: To greet, receive or accept with pleasure 
+WELCOME	Pos Noun COM Comform Affil Pstv 	10% noun: A kindly greeting or reception 
+WELCOME	Pos Modif Comform Affil Pstv 	33% adj: "Welcome," "welcomed"--kindly received 
+WELCOME	Pos Modif Comform Affil Pstv 	2% noun-adj: "Welcoming"--greeting kindly 
+WELFARE	Pos Noun Doctr Pstv 	52% noun: Well-being 
+WELL	Pos LY Virtue Pstv 	20% adj-adv: Good, thorough, clearly, reasonably 
+WELL	Pos Modif Pstv Virtue 	6% adj: Healthy 
+WILLING	Pos Modif EMOT Affil Pleasur Pstv Subm 	adj: "Willing"--disposed or consenting 
+WILLINGNESS	Pos Noun EMOT Pleasur Pstv Affil Subm 	
+WISDOM	Pos Noun ABS Abs* Virtue Pstv Acad 	
+WISE	Pos Modif Virtue EVAL Pstv Acad 	50% adj: Knowing, clever 
+WISE	Pos Modif Virtue EVAL Pstv Acad 	20% adj: Comparative of sense 1 - "wiser" 
+WISE	Pos Modif Virtue EVAL Pstv Acad 	10% adj: "Wisest" - superlative of sense 1 
+WISE	Pos LY Virtue Pstv Acad 	10% adv: "Wisely" - adverbial form of sense 1 
+WISE	IAV Pos SUPV Solve Pstv 	5% verb-idiom: "Wise up" - become aware of the true situation 
+WONDER	Pos Noun EMOT Pstv Arousal Ovrst 	5% noun: A cause for marvel or surprise, or the feelings thereby produced 
+WONDERFUL	IndAdj Pos Modif Virtue EVAL Pstv Ovrst PFREQ 	adj: Full of wonder, marvelous 
+WORKABLE	Pos Modif Virtue Pstv 	
+WORLD-FAMOUS	Pos Modif Virtue Power Pstv Strng 	
+WORTH	Pos PREP Virtue Pstv 	61% prep: Deserving of, of value or importance sufficient to justify what follows 
+WORTH	Pos Noun Virtue Pstv 	11% noun: Merit, excellence 
+WORTH	Pos Noun Virtue ECON Econ* Pstv 	14% noun: Economic value 
+WORTH	Pos Modif Virtue Ovrst Pstv 	14% idiom-adj: "Worth while" (normally one word) 
+WORTHY	Pos Modif Virtue EVAL Pstv 	

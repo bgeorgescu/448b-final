@@ -1,0 +1,189 @@
+word	tags	comments
+ACCUSE	Neg Modif Legal Ngtv Comform Hostile 	
+ACQUIT	DAV Pos SUPV Legal Solve 	
+ACQUITTAL	Pos Noun Legal Solve 	
+ADVOCATE	Noun HU POLIT Legal Strng Actv Role 	
+AGENT	Noun HU Legal Role 	
+ALLEGATION	Neg Noun COM Comform Hostile Legal Ngtv 	
+AMENDMENT	Noun POLIT COM Comform Legal Polit* 	
+AMNESTY	Pos Noun Legal Doctr Power 	
+ANTITRUST	IndAdj Neg Modif Polit Affil Legal 	
+APPEAL	IAV SUPV Legal Subm Psv Affil Intrel 	59% verb: To request a decision, help, sympathy, etc. (10), to arouse  a favorable response (9) 
+APPLY	DAV SUPV Legal Subm Comform Actv 	12% verb: To make application or request--'to apply for a job' 
+ARREST	Neg Modif Hostile Legal Power Ngtv Strng Actv Exert 	15% noun-adj: Halting, seizure, usually by legal authority, seized, halted, stopped 
+ARREST	DAV Neg SUPV Stay Hostile Legal Ngtv Strng Actv 	81% verb: To halt, stop, seize by legal authority 
+ATTORNEY	Noun HU POLIT ECON Legal Power Role 	
+AUDITOR	Noun HU ECON Econ* Power Legal Role 	
+AUTHORITATIVE	IPadj Pos Modif Legal Ovrst Strng Virtue Power Doctr 	
+AUTHORITY	Pos Noun Legal Power Strng 	
+AUTHORIZE	Modif Power Strng Legal Comform 	
+AUTHORIZE	IAV SUPV Power Strng Actv Comform Legal 	
+AUTONOMOUS	IPadj Pos Modif Legal Power Undrst Strng 	
+AX	IAV Neg SUPV Power Legal Work Actv 	
+BAR	Noun HU COLL Legal 	4% noun: The legal profession 
+BLAMELESS	IndAdj Pos Modif Eval Legal Virtue 	
+BLUE	Noun COM Comform Legal 	0% noun-idiom: "Blue laws"--puritanical laws 
+BREAK	IAV Neg SUPV Intrel Hostile Legal Ngtv Actv 	2% verb-idiom: "Break a law" 
+BROKE	IAV Neg SUPV ED Intrel Hostile Legal Ngtv Actv 	1% idiom-verb: "Broke (broken) a law" 
+CAPITAL	Neg Modif Vice Legal Ngtv 	3% adj: Punishable by death 
+CASE	IAV SUPV Percv Legal 	0% verb: To examine or survey in planning a crime 
+CERTIFICATE	Noun Object Legal Power Comnobj 	
+CERTIFICATION	Noun Comform Power Legal Ovrst 	
+CERTIFY	IAV SUPV Power Legal Ovrst Comform 	
+CONSTABLE	Noun HU Legal Power Strng Role 	
+CONTRACT	Noun COM ECON Econ* Legal Strng PFREQ Comform 	95% noun-adj: "Contract," "contracting"--a legally binding agreement;  the making of same (1) 
+CONTRACT	IAV SUPV Work Legal 	5% verb: To engage in a legally binding agreement 
+CONVICT	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+CONVICT	IAV Neg SUPV Intrel Hostile Legal Actv Ngtv Strng 	
+COP	Noun HU POLIT Legal Power Strng Role 	
+COUNSEL	Pos Noun HU Legal Pstv Role 	
+COURT	Noun POLIT Legal HU COLL Polit* Strng 	65% noun-adj: A place where trials are held and the law is carried on--by  metonymy the process or authority of the law, or a given court or judge;  a sovereign entourage (3); a courtyard (0) 
+COURT	Noun HU COLL POLIT Legal Power Strng Polit* 	26% idiom-noun: "Supreme court" 
+CRIME	Neg Noun Vice POLIT Legal Ngtv 	
+CRIMINAL	Neg Noun HU Modif Legal Ngtv Role Hostile 	
+DEPOSITION	Noun COM Comform Legal Actv 	
+DETECTIVE	Noun HU Legal Actv Role 	
+DISCHARGE	IAV Neg SUPV Intrel Legal Ngtv Strng Actv Power 	
+DISPUTABLE	Neg Modif Hostile Legal Ngtv Undrst Vice 	
+DIVORCE	Neg Noun Hostile Kin* Legal Ngtv Vice 	84% noun: A legal marital separation 
+DIVORCE	DAV Neg SUPV Intrel Hostile Kin* Legal Ngtv Actv 	14% verb: To separate, usually to dissolve a marriage 
+DIVORCE	Neg Modif Hostile Kin* Legal Ngtv Intrel 	3% adj: "Divorced"--legally separated from a spouse 
+ENTITLE	IAV SUPV Intrel Legal Power Strng 	
+EQUITY	Pos Noun COM Comform ECON Econ* Legal Pstv 	
+EVICT	IAV Neg SUPV Power Legal Exert 	
+EVIDENCE	Noun Means Legal Strng 	83% noun: Something which tends to prove or suggest a fact 
+EVIDENCE	IAV SUPV Legal Actv Strng Comform 	17% verb: To show, make evident 
+EXCOMMUNICATION	Neg Noun Hostile Legal Affil 	
+EYE	Noun HU Legal Handels Role 	1% idiom-noun: "Private eye" (handled by private) 
+FAIR	Pos Modif Virtue EVAL Legal Pstv 	33% adj: Just, unbiased (includes comparative (1) + superlative (0)) 
+FINE	Neg Noun COM Comform ECON Econ* Legal Ngtv 	0% noun: A violator's fee 
+FINE	IAV Neg SUPV Exch Hostile Legal Econ* Ngtv Strng Actv 	0% verb: To levy a fee in punishment 
+FUGITIVE	Neg Noun HU Travel Legal 	
+GUARANTEE	Pos Noun COM Comform Power Pstv Strng Legal 	
+GUARANTEE	IAV Pos SUPV Power Pstv Strng Legal Comform 	
+GUILTY	IndAdj Neg Modif Vice EVAL Legal Ngtv Psv Causal Weak 	adj: Culpable 
+HEAR	Noun Ritual Legal 	3% noun-adj: "Hearing"--formal examination, often public 
+ILLEGAL	IndAdj Neg Modif Legal Vice Eval 	
+ILLEGALITY	Neg Noun Vice Eval Legal 	
+IMPRISON	IAV Neg SUPV Actv Other Power Legal 	
+IMPRISONMENT	Neg Noun Weak Subm Legal 	
+IMPUNITY	Pos Noun Power Legal 	
+INC.	Modif ECON Econ* Legal HU COLL 	
+INDICTMENT	Neg Noun COM Comform POLIT Hostile Legal Ngtv 	
+INFRACTION	Neg Noun Legal 	
+INFRINGEMENT	Neg Noun Hostile Ngtv Strng Actv Legal Vice 	
+INJUNCTION	Neg Noun COM Comform Hostile Legal Ngtv Strng 	
+INNOCENT	Pos Modif Virtue EVAL Legal Pstv 	
+ISSUE	Noun Know POLIT Legal Actv COM PFREQ 	91% noun: A point in question or a matter that is in dispute 
+JAIL	Neg Noun PLACE Social POLIT Legal Ngtv PFREQ 	96% noun: Prison 
+JAIL	DAV Neg SUPV Intrel Hostile Legal Power Ngtv Strng Actv 	4% verb: To imprison 
+JUDGE	IAV SUPV Legal Actv Solve Power Strng 	49% verb: To form an opinion, estimate, generally moral or evaluative,  usually about human matters; to pass sentence in a court of law (2) 
+JUDGE	Noun HU POLIT Legal Power Strng Actv Role 	41% noun: An appointed legal arbitrator 
+JUDGMENT	Noun COM Comform Legal 	79% noun: A decision, opinion, evaluation, verdict 
+JUDICIAL	Modif Doctr POLIT Legal Strng 	
+JUNTA	Noun HU COLL POLIT Legal Polit* Power 	
+JURISDICTION	Noun Doctr POLIT Legal Polit* Power Strng 	
+JUROR	Noun HU Legal Power Strng Role 	
+JURY	Noun HU COLL POLIT Legal Power Strng 	
+JUST	Pos Modif Virtue Legal Pstv 	1% adj: Fair, equitable, rightful 
+JUST	Pos LY Virtue Legal Pstv 	0% adv: "Justly"--fairly, equitably, rightfully 
+JUSTICE	Pos Noun ABS Abs* POLIT Doctr Legal Power Pstv 	
+KIDNAP	IAV Neg SUPV Legal Hostile Fetch Other Actv 	
+LAW	Pos Noun Doctr POLIT Legal Pstv 	noun adjective: The set of rules set up in a society and enforced by its  government; any set of rules governing a given system, such as those of  science (1); related compounds, treated by g.i. as separate words, are  listed below but not handled. 
+LAWFUL	IndAdj Pos Modif Legal Virtue 	
+LAWLESS	IndAdj Neg Modif Legal Hostile 	
+LAWYER	Noun HU Legal Role 	noun: A person whose profession is to conduct lawsuits for clients in  a court of law or advise them in other legal matters. 
+LEGAL	Pos Modif ECON POLIT Doctr Legal Pstv 	
+LEGISLATION	Noun Doctr POLIT Legal Polit* Power Strng 	noun: A law or body of laws enacted 
+LEGISLATIVE	Modif Doctr POLIT Legal Polit* Strng Power 	
+LEGISLATOR	Noun HU POLIT Legal Power Strng Role Polit* 	
+LEGITIMACY	Pos Noun Legal Virtue 	
+LEGITIMATE	Pos Modif Virtue Legal Pstv 	
+LICENSE	Noun Object COM Legal Comnobj 	
+LITIGANT	Noun HU Hostile Legal Role 	
+LITIGATION	Noun ECON POLIT Doctr Hostile Legal 	
+MANSLAUGHTER	Neg Noun Hostile Legal Ngtv Vice 	
+MARSHALL	Noun HU POLIT Legal Power Role 	
+NEGLIGENCE	Neg Noun Causal Eval Legal Vice 	
+NEGLIGENT	IndAdj Neg Modif Causal Legal Eval Vice 	
+OATH	Noun COM Comform Legal 	
+OFFICIAL	Noun HU POLIT Power Legal Strng Role 	69% noun: A person granted some authority 
+OFFICIAL	LY Doctr Legal Strng 	3% adv: "Officially"--formally, authoritatively 
+OFFICIAL	Modif Doctr Legal Strng 	28% adj: Authoritative, formal, adopted by the government in power 
+OFFICIATE	IAV SUPV Intrel Power Legal Strng 	
+ORDINANCE	Noun COM Comform Legal Power Strng 	
+OUTLAW	Neg Noun HU Legal Hostile 	
+OVERTURN	IAV Neg SUPV Actv Think Legal Change 	
+OWNER	Noun HU ECON Legal Strng Role 	noun: One who owns, a proprietor 
+PASS	IAV SUPV Work Legal Strng Actv 	4% verb: To ratify or be ratified--"to pass a law" 
+PATENT	Noun Object COM ECON Legal Comnobj Ovrst 	
+PENALTY	Noun Vice Hostile Legal 	
+PERMIT	Noun Object COM Legal Comnobj Power 	6% noun: A written license 
+PLAINTIFF	Neg Noun Legal Comform 	
+POLICE	Noun HU COLL POLIT Legal Power Strng 	noun-adjective: Of or pertaining to officers of the law. 
+POLICEMAN	Noun HU MALE POLIT Legal Power Strng Role 	
+POLICEMEN	Noun HU MALE POLIT S Legal Power Strng Role 	
+POLLUTE	IAV Neg SUPV Actv Legal Hostile 	
+POSSE	Noun HU COLL Legal Power Hostile Strng 	
+PRECEDENT	Pos Noun Legal Causal 	
+PRINCIPLE	Pos Noun Doctr Legal Pstv 	92% noun: Law of moral conduct or physical occurrence 
+PRISON	Neg Noun PLACE Social POLIT Legal Ngtv PFREQ 	90% noun-adjective: A place for punitive confinement 
+PRISON	Neg Noun PLACE Social POLIT Ngtv Legal 	10% idiom-noun-adj: "Prison camp"--a place for military confinement of  enemy armed forces 
+PRISONER	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+PRIVATE	Noun HU Legal Role 	3% idiom-noun: "Private eye," "private detective" 
+PROBATION	Noun Doctr Legal 	
+PROCEED	Noun Ritual Legal 	10% noun: "Proceedings"--a transaction, the course of procedure 
+PROHIBIT	IAV Neg SUPV Power Ngtv Strng Actv Intrel Legal 	
+PROHIBITION	Neg Noun Doctr POLIT Power Ngtv Strng Actv Legal 	
+PROPRIETOR	Noun HU ECON Econ* Power Legal Strng Role 	
+PROSECUTE	IAV Pos SUPV Actv Other Legal Exert 	
+PROSECUTION	Neg Noun Hostile Legal Ngtv Actv Strng Comform 	
+REGISTRANT	Noun HU Legal Psv Role 	
+REGISTRATION	Noun COM Comform Legal 	
+REINSTATE	IAV Pos SUPV Actv Other Polit Legal Power 	
+REPEAL	IAV Neg SUPV Legal Comform Change 	
+RESTRICTION	Neg Noun Stay Legal 	
+RIGHT	Pos Noun ABS Abs* Means Legal Power Pstv Strng 	14% noun: Legal or moral prerogative 
+RIGHTFUL	IndAdj Pos Modif Ought Legal 	
+ROBBER	Neg Noun HU Fetch Hostile Legal 	
+ROBBERY	Neg Noun Fetch Hostile Legal 	
+RULE	Noun COM Comform Power Strng Legal 	58% noun: Regulation, standard, guideline 
+SALUTE	IAV Pos SUPV Actv Other Comform Legal Subm 	
+SANCTION	Noun ECON POLIT COM Comform Legal Power Strng 	
+SANCTION	IAV SUPV Intrel Legal Power Strng Psv 	
+SENTENCE	DAV Neg SUPV Legal Power Ngtv Strng Actv Comform 	
+SEQUESTER	IAV Neg SUPV Stay Power Legal 	
+SHERIFF	Noun HU POLIT Legal Power Strng Role 	
+SOLICITOR	Noun HU ECON Legal Role 	
+STATUTE	Noun COM Comform POLIT Legal Power 	
+STATUTORY	Modif Doctr POLIT Legal Power 	
+STEAL	DAV Neg SUPV Intrel Hostile Ngtv Legal Actv 	60% verb: To rob, thieve 
+STIPULATE	IAV SUPV Legal Comform Power 	
+STIPULATION	Noun COM Comform Legal Power 	
+STOLE	DAV Neg SUPV Intrel ED Hostile Ngtv Actv Legal 	verb: Past tense of steal 
+STOLEN	Neg Modif Ngtv Legal Vice 	
+STOLEN	IAV Neg SUPV Intrel ED Hostile Ngtv Legal 	
+SUIT	Noun COM Comform Legal ECON POLIT 	20% noun: Process of litigation 
+SUMMON	Noun Object COM Legal Power Strng Actv Comnobj 	
+SUMMON	IAV SUPV Legal Power Strng Actv Comform 	
+SUPREME	Noun HU COLL Legal Handels Strng PFREQ 	90% idiom-noun: "Supreme court" - handled by "court" 
+SUSPECT	Neg Noun HU Legal Ngtv Role Hostile 	
+SWORN	IndAdj Pos Modif Legal Ought 	
+TESTAMENT	Noun Object COM Legal Relig Comnobj 	
+TESTIFY	IAV SUPV Legal Comform 	
+TESTIMONY	Noun Object COM Legal Comnobj 	
+THEFT	Neg Noun Hostile Fetch Legal 	
+THIEF	Neg Noun HU Role Hostile Fetch Legal 	
+TITLE	Noun COM Comform Legal 	
+TREATISE	Pos Noun Object Legal Polit Doctr 	
+TRIAL	Noun Ritual POLIT Legal 	
+TRUANT	IndAdj Neg Modif Fail Legal 	
+TRY	IAV SUPV Intrel Legal Power Actv Hostile 	1% verb: To ascertain th rough judiciary means 
+UNJUST	IndAdj Neg Modif Vice EVAL Legal Hostile Ngtv Negate 	
+UNLAWFUL	IndAdj Neg Modif Legal Fail 	
+VERDICT	Noun COM Comform Legal 	
+VICE	Neg Noun Vice Legal Ngtv 	25% noun: Evil, wickedness, prurient pursuits 
+VIOLATION	Neg Noun Vice Legal Ngtv Actv Hostile 	
+WARRANT	Noun Object COM Legal Comnobj 	
+WILL	Noun Legal Object Comnobj 	0% noun: Legal document 
+WITNESS	Noun HU Legal Role 	

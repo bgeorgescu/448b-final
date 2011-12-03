@@ -1,0 +1,71 @@
+word	tags	comments
+ADDRESS	IAV SUPV Try Actv 	11% verb: To apply oneself to 
+AIM	IAV SUPV Try Actv 	24% verb: To direct at or to, to try for, to direct one's efforts towards;  rarely in sense of weapons (3) 
+APPLY	IAV SUPV Try Actv 	3% verb: Reflexive--to give special attention or effort 'to apply oneself' 
+ASPIRE	SV Pos SUPV Actv Goal Try Ach 	
+ATTEMPT	IAV SUPV Try Actv 	38% verb: To try, make an effort 
+AVAIL	IAV SUPV Try Strng Psv 	
+BEAR	IAV SUPV Try Power Actv Strng 	0% idiom-verb: "Bear down"--to exert pressure on or effort toward accomplishing,  to approach 
+BET	IAV SUPV Try Econ* Actv 	71% verb: To wager or risk 
+BETTER	IAV Pos SUPV Try Pstv Actv 	2% verb: To improve 
+BRING	IAV SUPV Try Actv 	0% verb: Bring oneself--to force oneself to do something 
+BUSINESS	IAV SUPV Try 	2% verb-idiom: 'mean business,' 'get down to business'--to be serious,  intend serious effort 
+CAMPAIGN	IAV SUPV Try Actv 	5% verb: To strive for a goal 
+CARRY	IAV SUPV Try Actv 	10% idiom-verb: 'carry on'--to manage or continue to manage; to behave  extravagantly (2) 
+COMPETE	IAV Neg SUPV Try Hostile Ngtv Strng Actv 	
+CONSERVE	IAV Pos SUPV Actv Fetch Try 	
+CONTEND	IAV Neg SUPV Hostile Ngtv Strng Actv Try 	
+DARE	IAV Pos SUPV Try Pstv 	
+DEVOTE	IAV Pos SUPV Try Pstv Actv 	75% verb: To give up to or concentrate on a particular pursuit, occupation,  purpose, cause, to set apart or dedicate 
+ENDEAVOR	IAV SUPV Try Actv 	
+ENGAGE	IAV SUPV Try Actv 	29% verb: To take part in 
+EXPERIMENT	IAV SUPV Try Acad Actv 	
+FIX	IAV SUPV Try Actv 	14% idiom-verb: "Fixing to"--planning or preparing to do something 
+FOLLOW	IAV SUPV Try Actv 	2% idiom-verb: "Follow through (up)"--to proceed in an endeavor and pursue  it to a solution or conclusion 
+GAMBLE	IAV Neg SUPV Try Econ* Ngtv Actv Undrst 	
+GET	IAV SUPV Try Actv 	0% idiom-verb: "Get around to"--eventually consider or act on 
+GO	IAV SUPV VERB GO Try 	0% idiom-verb: "Make, have a go" (of, at it)--try 
+HAZARD	IAV Neg SUPV Try Ngtv Actv 	
+HUNG	IAV SUPV Try Weak Actv 	4% idiom-verb: 'hung on to'--clung to 
+INDULGE	IAV Neg SUPV Try Ngtv Actv 	
+INDUSTRIOUS	IndAdj Pos Modif Work Try Strng 	
+INGENUITY	Pos Noun Think Try Know 	
+KEEP	IAV SUPV Try Actv 	9% verb-idiom: "Keep up (with)," "keep it up"--maintain an order, level, pace 
+LOOK	IAV SUPV Try Actv 	11% verb-idiom: "Look for"--to seek or search for, be on watch or expecting 
+MANEUVER	IAV Noun Actv Strng Means Try Move 	
+MUDDLE	IAV Neg SUPV Try Actv 	
+OVERWORKED	IndAdj Neg Modif Work Try Weak 	
+OWN	IAV SUPV Try Strng Actv 	0% idiom-verb: 'hold one's own'--to keep up 
+PAINSTAKING	IndAdj Pos Modif Work Try Strng 	
+PLAY	IAV SUPV Work Try Actv 	1% idiom-verb: "Play (it) by ear"--improvise 
+POLISH	IAV Pos SUPV Actv Work Try 	
+PRACTICE	IAV SUPV Try Actv 	61% verb: To repeatedly or customarily perform an act or custom, often  for the sake of improvement 
+PROGRESS	IAV Pos SUPV Pstv Strng Actv Try 	27% verb: To move towards a goal or generally forward 
+REDEEM	IAV Pos SUPV Actv Strng Try 	
+RISK	IAV SUPV Try Actv 	
+RIVAL	IAV Neg SUPV Try Ngtv Strng 	
+RUN	IAV SUPV Try Polit* Actv 	2% verb: To stand for election 
+RUN	IAV SUPV Try Actv 	0% idiom: 'run risks'--take chances 
+SEARCH	IAV SUPV Try Actv 	76% verb: To look for 
+SEEK	IAV SUPV Try Actv 	verb: To go in search of, to attempt to obtain an object or a desired  goal; to attempt or try (8) 
+SHAPE	IAV SUPV Try 	0% idiom-verb: "Shape up"--meet with certain standards 
+SHIFT	IAV SUPV Try Strng Actv 	3% verb: "To shift for oneself"--to get along by oneself 
+SHOOT	IAV SUPV Try Actv 	4% idiom-verb: "Shoot for"--have a goal 
+SOUGHT	IAV Pos SUPV Try ED Pstv 	
+STAB	DAV Neg SUPV Actv Hostile Exert Try 	
+STICK	IAV SUPV Try Strng Actv 	1% verb: "Stick it out"--remain despite opposing pressure 
+STRIVE	IAV SUPV Try Actv 	
+STRIVEN	IAV SUPV ED Try Actv 	
+STROVE	IAV SUPV Try Actv 	
+TAKE	IAV SUPV Try Actv 	2% verb: "Take on"--assume 
+TRUDGE	IAV Neg SUPV Actv Move Try 	
+TRY	IAV SUPV Try Actv PFREQ 	98% verb: To attempt (infrequently 
+TRY	IAV SUPV Try Actv 	0% verb: "To try one's hand"--test one's skills 
+UNDERTAKE	IAV SUPV Try Strng Actv 	
+UNDERTAKEN	IAV SUPV Try ED Strng Actv 	
+VENTURE	IAV SUPV Try Actv 	
+VIE	IAV Neg SUPV Actv Intrel Hostile Try 	
+WAGE	IAV SUPV Try Hostile Strng Actv 	
+WEARINESS	Neg Noun Try Weak 	
+WEARISOME	IndAdj Neg Modif Try Weak 	
+WORKMANSHIP	Pos Noun Try Work Eval Qual 	

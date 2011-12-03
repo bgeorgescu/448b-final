@@ -1,0 +1,9 @@
+word	tags	comments
+I	PRON DEF DEF1 Singp Self 	pronoun: The nominative singular pronoun, used by a speaker in referring to himself 
+I'M	PRON DEF DEF1 Singp SUPV VERB BE Self 	
+ME	PRON DEF DEF2 Singp Self 	pronoun: Objective form of 'i' 
+MINE	PRON Singp Self 	60% pron: The absolute form of "my" 
+MY	DET GEN Singp Self 	adjective: Possessive form of 'i' 
+MYSELF	Singp Self 	
+MYSELF>	PRON DEF DEF3 PFREQ Self 	96% pron: First person singular pronoun--reflexive or intensive form 
+ONESELF	Thrdp Self 	

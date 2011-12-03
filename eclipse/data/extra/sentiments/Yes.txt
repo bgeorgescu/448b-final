@@ -1,0 +1,21 @@
+word	tags	comments
+ABSOLUTE	Yes LY Ovrst Strng 	73% adv: "Absolutely"--without qualification, certainly, totally 
+AGREE	IAV Yes SUPV Affil Pstv 	96% verb: To be of one mind, harmonize in opinion or feeling, give consent, assent 
+ALRIGHT	Yes Intrj  	
+AMEN	Yes Intrj  	
+COURSE	Yes Intj Ovrst 	44% interjec: "Of course"--naturally, as would be expected 
+DEFINITELY	Yes Intj  	
+HURRAH	Yes Intrj  	
+LEAST	Yes Intj Ovrst 	2% idiom-interject: 'to say the least' 
+MEAN	Yes LY Ovrst Know 	0% idiom-adv: "By all means"--certainly 
+OKAY	Yes Intj  	adjective: All right 
+RIGHT	Yes Modif Virtue EVAL Pstv Ovrst 	27% adj-adv: Proper, correct--properly, correctly (sometimes used as interjection) 
+RIGHT	Yes Intj Noun Virtue Pstv 	22% idiom: "All right"--okay 
+SURE	Yes Intj Ovrst 	26% adv: "Surely," "sure"--certainly, of course 
+SURE	Yes Intj Ovrst 	2% idiom-adv: "To be sure"--certainly 
+SURE	Yes LY Ovrst 	3% idiom-adv: "For sure"--as a certainty 
+VERY	Yes Intj  	1% idiom-interj: 'very well'--o.k., all right 
+YA	Yes Intj  	
+YEA	Yes Intj  	
+YEAH	Yes Intj  	
+YES	Yes Intj  	adv-noun: A word used to express affirmation contradiction of a previously  negative statement. 

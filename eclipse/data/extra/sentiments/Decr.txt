@@ -1,0 +1,84 @@
+word	tags	comments
+ABATE	IAV Neg SUPV Decr Psv 	
+ABSORB	IAV#DAV SUPV Decr 	
+ALLEVIATE	IAV Pos SUPV Actv Affil Exert Decr 	
+AMPUTATE	IAV Neg SUPV Decr Actv 	
+ATROPHY	IAV Neg SUPV Decr Ngtv Weak Psv 	
+CHEAPEN	IAV Neg SUPV Actv Decr Weak 	
+COLLAPSE	Neg Modif Decr Ngtv Weak Psv 	
+CONTRACT	IAV SUPV Psv Decr 	0% verb: To draw inward, to shrink; to get or acquire, as a disease (0) 
+CORRODE	IAV Neg SUPV Psv Decr Change 	
+CORROSION	Neg Noun Decr Change 	
+CORROSIVE	IPadj Neg Modif Change Decr 	
+COUNTERACT	IAV Neg SUPV Ngtv Strng Actv Negate Decr 	
+COUNTERACTION	Neg Noun Ngtv Strng Actv Negate Decr 	
+CUT	IAV Neg SUPV Decr Ngtv Strng Actv 	8% verb-noun: To abridge, shorten, reduce, terminate; reduction, termination (1) 
+DECAY	Neg Noun Ngtv Weak Psv Decr 	
+DECAY	DAV Neg SUPV Decr Ngtv Weak Psv 	
+DECLINE	Neg Noun Ngtv Weak Psv Decr 	
+DECLINE	IAV Neg SUPV Decr Ngtv Weak Psv 	
+DECOMPOSE	IAV Neg SUPV Psv Natpro Decr 	
+DECREASE	Neg Noun Ngtv Weak Decr Psv 	
+DECREASE	DAV Neg SUPV Decr Ngtv Weak Psv 	
+DEPLETE	IAV Neg SUPV Decr 	
+DEPRECIATE	IAV Neg SUPV Decr Ngtv Weak Psv 	
+DEPRECIATION	Neg Noun ECON Ngtv Psv Decr Econ* 	
+DETRACT	IAV Neg SUPV Actv Decr 	
+DIM	IAV Neg SUPV Decr Ngtv 	
+DIMINISH	DAV SUPV Decr Weak Psv 	
+DISCOUNT	IAV SUPV Decr Negate Psv 	
+DISCOURAGEMENT	Neg Noun Vice Decr Weak Subm 	
+DISPEL	IAV Neg SUPV Actv Comform Power Decr 	
+DISPENSE	IAV Neg SUPV Actv Decr Power 	
+DRAIN	DAV SUPV Decr 	
+DWINDLE	IAV Neg SUPV Decr 	
+EASE	IAV Pos SUPV Decr Pstv 	20% verb: To make less strained 
+EMPTY	DAV Neg SUPV Decr Ngtv Actv 	4% verb: To void 
+ENGULF	IAV Neg SUPV Strng Actv Decr Hostile Ovrst Ngtv 	
+ERADICATE	IAV Neg SUPV Actv Finish Decr Power 	
+ERASE	DAV Neg SUPV Finish Decr Actv 	
+ERODE	DAV Neg SUPV Psv Decr 	
+EROSION	Neg Noun Decr 	
+EXASPERATE	IAV Neg SUPV Decr 	
+EXHAUST	IAV Neg SUPV Decr 	
+EXTERMINATE	IAV Neg SUPV Actv Finish Decr Power 	
+EXTERMINATION	Neg Noun Finish Decr Power 	
+FADE	IAV SUPV Decr Psv 	
+FALL	IAV Neg SUPV Decr Ngtv Weak Psv 	5% verb-idiom: 'fall apart'--disintegrate 
+FALTER	IAV Neg SUPV Ngtv Weak Undrst Decr 	
+INSUFFICIENCY	Neg Noun Fail Decr Weak 	
+LANGUISH	SV Neg SUPV Psv Fail Weak Decr 	
+LEAKAGE	Neg Noun Decr 	
+LIGHTEN	IAV SUPV Decr 	
+LOWER	Noun Decr 	4% noun: "Lowering"--reduction 
+MELT	DAV SUPV Decr Weak 	
+MINIMIZE	IAV SUPV Actv Strng Decr Undrst 	
+PASS	Handels Decr 	1% adj: "Passing"--transient, moving by 
+PURIFY	IAV Pos SUPV Actv Work Decr Virtue 	
+RATION	IAV Neg SUPV Decr Actv 	
+RECEDE	IAV Neg SUPV Psv Decr 	
+RECESSION	Neg Noun Decr Econ 	
+REDUCE	IAV SUPV Decr Strng 	verb: To diminish, degrade, subdue 
+REDUCTION	Noun Decr Weak 	
+REFINE	IAV Pos SUPV Actv Decr Virtue 	
+RETARDATION	Noun Decr 	
+REVERSE	Noun Decr Vary 	
+RID	IAV Neg SUPV Actv Hostile Decr 	
+ROT	DAV Neg SUPV Psv Natpro Decr 	
+SCARCITY	Neg Noun Decr Need 	
+SHRANK	DAV SUPV ED Decr Weak Psv 	
+SHRED	IAV Neg SUPV Actv Hostile Exert Decr 	
+SHRINK	DAV SUPV Decr Weak Psv 	
+SHRIVEL	IAV Neg SUPV Decr 	
+SHRUNK	DAV SUPV Decr Weak Psv 	
+SLOW	DAV SUPV Decr 	3% verb: To decrease in speed or rate 
+SUBSIDE	IAV Neg SUPV Actv Decr Compl 	
+SUBTRACT	IAV Neg SUPV Actv Decr 	
+SUNDER	IAV Neg SUPV Hostile Change Decr Actv 	
+TATTER	IAV Neg SUPV Actv Decr 	
+VANISH	IAV Neg SUPV Actv Percv Decr 	
+WANE	IAV Neg SUPV Psv Decr 	
+WEAKEN	IAV Neg SUPV Fail Weak Subm Decr 	
+WILT	IAV Neg SUPV Psv Natpro Compl Decr 	
+WITHER	IAV SUPV Decr Weak Psv 	
+WORSEN	IAV Neg SUPV Psv Decr Weak Subm 	

@@ -1,0 +1,220 @@
+word	tags	comments
+ABIDE	IAV Pos SUPV Actv Affil  Doctr 	
+ACADEMIC	Modif Doctr Acad 	adjective: Of or pertaining to a college or other educational institution 
+ACTUALITY	Pos Noun Pstv Virtue Doctr 	
+ADMINISTRATION	Noun ECON Power Strng Actv Doctr 	31% noun: Direction or management of institutional activity 
+ADMINISTRATIVE	Modif POLIT ECON Doctr Power Strng Actv 	
+AESTHETIC	Modif Doctr Exprs 	
+AGRICULTURAL	Modif ECON Doctr Econ* 	adjective: Having to do with agriculture. 
+AGRICULTURE	Noun POLIT ECON Doctr Econ* 	
+AMNESTY	Pos Noun Legal Doctr Power 	
+ANARCHIST	Neg Noun HU Hostile Polit Doctr 	
+ANTI-TRUST	Modif POLIT ECON Doctr Econ* 	
+ARCHITECTURE	Noun Doctr Exprs 	
+ART	Noun Doctr Acad 	17% noun: Technical--having to do with higher education 'liberal arts  education,' 'bachelor of arts' 
+ART	Pos Noun Doctr Exprs Pstv 	13% noun: The particular skill of--'the difficult art of rowing' 
+ARTISTIC	Modif Doctr Exprs 	
+ASCRIBE	IAV Pos SUPV Actv Affil Doctr 	
+ASTRONOMY	Noun Doctr Acad 	
+AUTHORITATIVE	IPadj Pos Modif Legal Ovrst Strng Virtue Power Doctr 	
+AUTOCRAT	Neg Noun HU Polit Doctr Power Strng 	
+AUTOCRATIC	IPadj Neg Modif Polit Doctr Power Strng 	
+BAPTISM	Pos Noun Affil Doctr 	
+BAPTIZE	DAV Pos SUPV Actv Affil Doctr 	
+BELIEF	Noun ABS Abs* Doctr Psv 	noun: The idea that something is true or real, faith, confidence 
+BIOLOGICAL	Modif Doctr Acad 	
+BUSINESS	Noun ECON Doctr Econ* 	82% noun-adj: Economic or political activities, either one's own trade  or occupation, the business community at large, or specific transactions 
+BUSINESS	Noun Doctr 	13% noun: An affair, matter, or situation (with which one is properly concerned) 
+CALL	Noun Doctr 	1% noun: "Calling"--vocation 
+CAPITALISM	Noun ABS Abs* POLIT ECON Doctr Econ* Polit* 	
+CEREMONIAL	IndAdj Pos Modif Doctr 	
+CHEMISTRY	Noun Doctr Acad 	
+CHIVALROUS	IPadj Pos Modif Virtue Doctr 	
+CHIVALRY	Pos Noun Doctr Virtue 	
+CHRISTIANITY	Noun ABS Abs* Doctr Relig 	
+CIVIL	Pos Modif Doctr POLIT Polit* Pstv 	9% noun-adj: Involving or consisting of citizens, of the commonwealth  or state; civilized, polite, benevolent (0) 
+CIVILIZATION	Pos Noun ABS Abs* Doctr Pstv 	
+CIVILIZE	Pos Modif Doctr Pstv 	
+CLASSICAL	Modif Doctr 	
+CLINICAL	Modif Doctr Acad 	
+COEXISTENCE	Pos Noun Doctr POLIT Pstv Psv 	
+COLD	Neg Noun Doctr POLIT Hostile Polit* Ngtv Ngtv 	5% idiom-noun: 'cold war' 
+COLONIAL	Modif Doctr Polit* ECON POLIT 	
+COMMERCE	Noun Doctr ECON Econ* Actv 	
+COMMERCIAL	Modif Doctr ECON Econ* Actv 	
+COMMUNISM	Noun ABS Abs* POLIT ECON Doctr Econ* Polit* 	
+CONSERVATION	Noun Doctr 	
+CONSERVATISM	Noun POLIT ABS Abs* Polit* Doctr 	
+CONSERVATIVE	Modif ECON POLIT Doctr Polit* Psv 	81% adj: Distrustful of innovation, restrained 
+CONSTITUTIONAL	Modif Doctr POLIT Polit* Strng 	
+COVENANT	Pos Noun Comform Affil Doctr 	
+CRAFT	Noun Doctr ECON Econ* 	
+CREDO	Noun Doctr 	
+CUBISM	Noun Doctr Exprs 	
+CULTURAL	Modif Doctr 	
+CULTURE	Noun ABS Abs* Doctr PFREQ 	93% noun: Civilization, cultivation 
+DESEGREGATION	Noun Doctr POLIT Race 	
+DEVOUT	IndAdj Pos Modif Strng Affil Doctr Other 	
+DICTATORSHIP	Noun Doctr POLIT Polit* Strng 	
+DISBELIEF	Neg Noun Doctr Negate Ngtv Undrst Hostile 	
+DOCTRINE	Noun ABS Abs* POLIT Doctr 	
+DOMESTIC	Modif ECON POLIT Doctr 	
+DUE	Noun Doctr Subm 	8% noun-adj: That which is due, owed, or naturally belongs to someone,  rightful or fitting, e.g. "due respect" 
+ECONOMIC	Modif ECON POLIT Doctr Econ* 	adjective: Pertaining to the allocation of resources 
+ECONOMICS	Noun Doctr Acad Econ* 	
+ECONOMY	Noun ECON POLIT Doctr Econ* 	
+ECUMENICAL	Modif Doctr Relig POLIT 	
+EDUCATION	Pos Noun Doctr Acad Pstv 	noun: The act or process of imparting or acquiring knowledge--a degree,  level or kind of schooli 
+EDUCATIONAL	Pos Modif Doctr Acad Pstv 	adjective: Pertaining to education, formal schooling- instructive 
+ELECTRONICS	Noun Doctr Acad 	
+EMPLOYMENT	Noun ECON POLIT Doctr Econ* 	noun: State of being employed 
+ETHICS	Pos Noun Doctr Pstv 	
+ETIQUETTE	Pos Noun Doctr Ought 	
+EVANGELISM	Noun Doctr Relig 	
+FAITH	Pos Noun ABS Abs* Doctr Relig Pstv EMOT Psv PFREQ 	90% noun: Belief or trust, or the content thereof--a creed 
+FASCIST	IndAdj Neg Modif Polit Affil Doctr 	
+FASHION	Noun Doctr Exprs 	
+FATE	Noun ABS Abs* Doctr Relig Strng 	
+FEUDAL	IndAdj Neg Modif Polit Doctr 	
+FIDELITY	Pos Noun Doctr Subm Pstv Affil 	
+FILIAL	IPadj Pos Modif Doctr Affil Intrel 	
+FINANCE	Noun Doctr ECON Econ* Strng 	
+FINANCIAL	Modif Doctr ECON Econ* 	adjective: Pertaining to monetary matters or situations 
+FISCAL	Modif ECON POLIT Doctr Econ* 	
+FOUNDATION	Noun Doctr ECON Strng Econ* 	
+GEOMETRY	Noun ABS Abs* Doctr Acad 	
+GOVERNMENTAL	Modif Doctr POLIT Polit* Strng 	
+GRADUATE	Noun Doctr Acad 	37% adj: Of or pertaining to, or involved in academic study beyond the  first or bachelor's degree 
+GYMNASTIC	Modif Doctr Exprs Actv 	
+HERITAGE	Noun Doctr POLIT Ovrst 	
+HISTORIC	Modif Doctr Acad 	
+HISTORICAL	Modif Doctr Acad 	
+HISTORY	Noun ABS Abs* Doctr Acad 	noun: The aggregate of past events--the branch of knowledge dealing with  past events. 
+HONOR	Pos Noun ABS Abs* Doctr Pstv 	58% noun-adj: High regard, tokens thereof, integrity, respect 
+IDEAL	Pos Noun ABS Abs* Doctr Pstv Ovrst 	54% noun: A concept of perfection, a principle 
+IDEALISM	Pos Noun Doctr Think 	
+IDEOLOGICAL	Noun Doctr POLIT Polit* 	
+IDEOLOGY	Noun ABS Abs* POLIT Doctr Polit* 	
+IMMORAL	IndAdj Neg Modif Vice Eval Doctr 	
+IMMORALITY	Neg Noun Vice Eval Doctr 	
+IMPERIALIST	Modif Doctr Strng Polit* 	
+INDEPENDENCE	Pos Noun ABS Abs* POLIT Doctr Polit* Pstv Strn 	noun: Freedom, autonomy, self-reliance, liberty 
+INDEPENDENT	Pos Modif Doctr POLIT Polit* Pstv Strng 	37% adj: Autonomous (refers to economic or political units other than  individual people) 
+INDUSTRIAL	Modif Doctr ECON Econ* Strng 	
+INDUSTRY	Noun Doctr ECON Econ* Strng 	noun-adj: Any branch of trade, business, or manufacture 
+INSTITUTIONAL	Modif Doctr Strng 	
+IRON	Neg Modif Doctr POLIT Hostile Polit* Ngtv 	3% idiom: The 'iron curtain' 
+JUDICIAL	Modif Doctr POLIT Legal Strng 	
+JURISDICTION	Noun Doctr POLIT Legal Polit* Power Strng 	
+JUSTICE	Pos Noun ABS Abs* POLIT Doctr Legal Power Pstv 	
+LAW	Pos Noun Doctr POLIT Legal Pstv 	noun adjective: The set of rules set up in a society and enforced by its  government; any set of rules governing a given system, such as those of  science (1); related compounds, treated by g.i. as separate words, are  listed below but not handled. 
+LEADERSHIP	Noun ABS Abs* POLIT Doctr Power Strng 	noun: Control, direction, or the quality or role of giving direction or  exercising control. 
+LEGAL	Pos Modif ECON POLIT Doctr Legal Pstv 	
+LEGISLATION	Noun Doctr POLIT Legal Polit* Power Strng 	noun: A law or body of laws enacted 
+LEGISLATIVE	Modif Doctr POLIT Legal Polit* Strng Power 	
+LETTER	Noun Doctr Acad 	3% noun: "Letters"--literature 
+LIBERAL	Modif Doctr Acad 	23% adj: "Liberal education," "liberal arts" 
+LIBERALISM	Pos Noun ABS Abs* POLIT Doctr Polit* Pstv 	
+LIBERATION	Noun Doctr POLIT Power Polit* Strng Actv 	
+LIBERTY	Pos Noun ABS Abs* Doctr Polit* Pstv Power 	
+LITERALNESS	Noun Doctr Acad 	
+LITIGATION	Noun ECON POLIT Doctr Hostile Legal 	
+MAJOR	Noun Doctr Acad 	28% noun: Principal field of study, or a person in it--'a math major';  military rank (3) 
+MATH	Noun Doctr Acad 	
+MATHEMATICAL	Modif Doctr Acad 	
+MATHEMATICS	Noun Doctr Acad 	
+MEDICAL	Modif Doctr 	adjective: Pertaining to medicine 
+MEDICARE	Noun ECON POLIT Doctr Polit* 	noun: The federal program 
+MEDICINE	Noun Doctr 	22% noun: Medicine as a field 
+METAPHYSICAL	Modif Doctr Relig 	
+METAPHYSICS	Noun Doctr Relig 	
+MILITARY	Modif Doctr POLIT Milit Strng 	noun-adj: Of, for, or pertaining to the army, armed forces, affairs of  war, or to the soldiers themselves 
+MORALITY	Pos Noun ABS Abs* Doctr Pstv 	
+NATIONALISM	Noun ABS Abs* POLIT Doctr 	
+NAVAL	Modif Doctr POLIT Milit Strng 	
+NURSE	Noun Doctr ECON 	16% noun: "Nursing"--the profession of a nurse 
+NUTRITION	Noun Doctr Acad 	
+OCCUPATION	Noun Doctr ECON Econ* 	
+OCCUPATIONAL	Modif Doctr ECON Econ* 	
+OFFICE	Noun Doctr POLIT 	34% noun: Position of duty, trust or authority 
+OFFICIAL	LY Doctr Legal Strng 	3% adv: "Officially"--formally, authoritatively 
+OFFICIAL	Modif Doctr Legal Strng 	28% adj: Authoritative, formal, adopted by the government in power 
+OPPOSE	Neg Modif Doctr Ngtv Strng 	47% adj: "Opposed", against, contrary 
+OPPOSITION	Neg Noun Doctr POLIT Hostile Ngtv 	noun-adj: Anything that opposes 
+OPTIMISM	Pos Noun Feel Doctr Arousal 	
+ORTHODOX	Modif Doctr Relig 	
+OWNERSHIP	Noun Doctr ECON Econ* Strng 	
+PATRONAGE	Pos Noun Doctr ECON Econ* Power Pstv Strng 	
+PERFECTIONISM	Pos Noun Doctr Work Ovrst Ach 	
+PHILOSOPHIC	Modif Doctr Acad 	
+PHILOSOPHICAL	Modif Doctr Acad 	
+PHILOSOPHY	Noun ABS Abs* Doctr Acad 	noun-adj: The specific academic disipline and/or its content--more generally  and loosely, any more or less systematic set of beliefs, a point of view 
+PHYSICS	Noun Doctr Acad 	
+PLATFORM	Noun Doctr POLIT Polit* 	57% noun: A declaration of the principles for which a group of persons stands. 
+PLATONISM	Noun Doctr Acad 	
+POLICY	Noun Doctr ECON POLIT Strng 	noun-adj: Course of action 
+POLITICAL	Modif Doctr POLIT Polit* 	adj: Pertaining to or involving politics 
+POLITICS	Noun Doctr POLIT Polit* 	noun: The theory or practice of managing affairs of public policy, and  conducting political affairs, the general activity associated with gaining  and maintaining public office 
+POSITIVENESS	Pos Noun Feel Doctr Arousal 	
+POSITIVITY	Pos Noun Feel Doctr Arousal 	
+PRECEPT	Pos Noun Doctr 	
+PRESIDENCY	Noun Doctr POLIT Polit* Power Strng 	
+PRINCIPLE	Pos Noun Doctr Legal Pstv 	92% noun: Law of moral conduct or physical occurrence 
+PROBATION	Noun Doctr Legal 	
+PROHIBITION	Neg Noun Doctr POLIT Power Ngtv Strng Actv Legal 	
+PSYCHOLOGICAL	Modif Doctr Acad 	
+REACTIONARY	Neg Modif Doctr POLIT Polit* Ngtv Psv 	
+REALISM	Noun ABS Abs* Doctr 	
+REALISTIC	Pos Modif Doctr EVAL Pstv 	
+REALITY	Noun ABS Abs* Doctr 	noun: Actuality, the true state of affairs, the way things are 
+REGULATION	Noun ECON POLIT Doctr Strng 	
+RELIGION	Noun ABS Abs* Doctr Relig 	noun: Belief in one or more superhuman power(s), usually to be obeyed  and worshiped as ruler(s) of the universe 
+RELIGIOUS	Pos Modif Doctr EMOT Relig Pstv 	32% adj: Devout, faithful 
+RELIGIOUS	Modif Doctr Relig 	68% adj: Of, concerning, or based on the nature of religion 
+REPUTATION	Noun ABS Abs* Doctr 	
+REVOLUTIONARY	Modif Doctr ECON POLIT Polit* Hostile Strng 	
+RULE	Noun Doctr POLIT Polit* Strng Actv 	8% noun: Government, reign, control 
+SANITATION	Noun Doctr 	
+SCHOLARSHIP	Noun Doctr ECON Acad 	
+SCHOLASTIC	Modif Doctr Acad 	
+SCIENCE	Noun ABS Abs* POLIT ECON Doctr Acad PFREQ 	93% noun: Systematic pursuit of knowledge 
+SCIENTIFIC	Modif Doctr Acad 	
+SEGREGATION	Neg Noun ECON POLIT Race Doctr Hostile Ngtv 	noun-adj: Separation of races 
+SEMANTIC	Modif Doctr Acad 	
+SINFUL	IndAdj Neg Modif Doctr Fail 	
+SLAVERY	Noun Doctr ECON POLIT Econ* Subm 	
+SOCIAL	Noun ECON POLIT Doctr Econ* 	26% idiom-noun: "Social security"--government insurance system 
+SOCIALISM	Noun ABS Abs* POLIT ECON Doctr Polit* 	
+SOCIOLOGICAL	Modif Doctr Acad 	
+SOCIOLOGY	Noun Doctr Acad 	
+SOVEREIGN	Modif Doctr POLIT Polit* Power Strng 	
+SOVEREIGNTY	Noun Doctr POLIT Polit* Power Strng 	
+SPECIALIZATION	Noun Doctr 	
+SPIRIT	Noun Doctr Relig 	70% noun-adj: Mood, disposition, attitude, guiding values (29); incorporeal  being (45) 
+STATISTICAL	Modif Doctr Acad 	
+STATISTICS	Noun Doctr Acad 	
+STATUTORY	Modif Doctr POLIT Legal Power 	
+STOICISM	Noun Doctr Relig Strng 	
+TEACH	Noun Doctr Acad 	37% noun: "Teaching"--the profession, the activity of instruction 
+TEACH	Noun Doctr Acad 	2% noun: "Teaching"--doctrine, the specific content of what is taught,  especially in religious contexts 
+TECHNICAL	Modif Doctr ECON Econ* 	adj: Complex and specialized 
+TECHNOLOGICAL	Modif Doctr ECON Econ* 	
+TECHNOLOGY	Noun Doctr ECON Econ* 	
+THEOLOGICAL	Modif Doctr Relig 	
+THEOLOGY	Noun Doctr Relig 	
+THEORETICAL	Modif Doctr Acad 	
+THEORY	Noun ABS Abs* Doctr Acad 	
+TRADE	Noun Doctr ECON Econ* PFREQ 	82% noun-adj: The buying and selling of goods, commerce, exchange; or  particular classes of occupational skills--'the building trades,' etc. (6) 
+TRADITION	Pos Noun ABS Abs* Doctr Pstv Strng 	
+TRADITIONAL	Pos Modif Doctr Pstv Strng 	
+TRAIN	Noun Doctr Acad 	49% noun-adj: 'training'--instruction and/or discipline 
+TREATISE	Pos Noun Object Legal Polit Doctr 	
+TYPOGRAPHY	Noun Doctr Acad 	
+UNCIVIL	IndAdj Neg Modif Doctr Fail 	
+URBANIZATION	Noun Doctr ECON POLIT Econ* 	
+UTILITARIAN	IndAdj Pos Modif Doctr 	
+UTOPIA	Noun Doctr POLIT Polit* 	
+UTOPIAN	Modif Doctr Polit* ECON POLIT 	
+VOCATIONAL	Modif Doctr ECON Econ* 	
+WELFARE	Pos Noun Doctr Pstv 	52% noun: Well-being 
+ZEN	Noun ABS Abs* Doctr Relig 	

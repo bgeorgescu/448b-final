@@ -1,0 +1,541 @@
+word	tags	comments
+ABOUT	DAV SUPV VERB MOD 	2% verb-modal: "About to"--just going to 
+ABSENT	DAV SUPV Travl Psv 	
+ACCELERATE	DAV SUPV Incr Actv Strng 	
+ACCOMPANY	DAV SUPV Rel 	41% verb-adj: To be or exist in company with something; "accompanying"--  concomitant (one adjectiv 
+ACCRUE	DAV Pos SUPV Actv Incr Econ 	
+ACCUMULATE	DAV SUPV Incr Actv 	
+ACQUIRE	DAV SUPV Complt Strng Actv 	
+ACQUIT	DAV Pos SUPV Legal Solve 	
+ACT	DAV SUPV Exert Strng Actv 	52% verb: To do something, to operate, perform a function; to feign (2),  to perform in the theatre (0) 
+ADD	DAV SUPV Solve PFREQ 	87% verb: To combine with so as to increase number, size, importance, completeness 
+ADMIT	DAV Pos SUPV Intrel Power Pstv Psv 	33% verb: To grant entry, membership or access to something 
+AFFIX	DAV Pos SUPV Actv Exert Affil 	
+AGE	DAV SUPV Natpro 	0% verb: To grow old 
+AMPLIFY	DAV Pos SUPV Actv Incr Strng 	
+ANNOUNCE	DAV SUPV Comform 	
+ANOINT	DAV Pos SUPV Actv Affil Other Exert 	
+APPEAR	DAV SUPV Percv Psv 	36% verb: To physically emerge, come into sight 
+APPEND	DAV Pos SUPV Actv Incr Change 	
+APPLAUD	DAV Pos SUPV Actv Comform Eval 	
+APPLY	DAV SUPV Legal Subm Comform Actv 	12% verb: To make application or request--'to apply for a job' 
+APPOINT	DAV Pos SUPV Intrel Power Pstv Actv 	
+APPREHEND	DAV Pos SUPV Actv Fetch Other 	
+ARCH	DAV SUPV Space 	
+ARREST	DAV Neg SUPV Stay Hostile Legal Ngtv Strng Actv 	81% verb: To halt, stop, seize by legal authority 
+ARRIVE	DAV SUPV Travl Actv 	verb: To reach one's destination, to reach a conclusion, goal, etc. (5);  to come to pass ("the time has arrived") (3) 
+ASCEND	DAV SUPV Rise Strng Actv 	
+ASK	DAV SUPV Actv Comform 	65% verb: To inquire about 
+ASK	DAV SUPV Subm Comform Actv 	31% verb: To request, invite 
+ASSEMBLE	DAV SUPV Travl Actv 	
+ASSIGN	DAV SUPV Power Actv Comform 	
+ATE	DAV SUPV ED Actv Natpro 	verb: Past tense of eat, consumed. 
+ATTACH	DAV SUPV Actv Work 	
+AWAKE	DAV SUPV Exert Natpro 	
+BABBLE	DAV Neg SUPV Comform Actv 	
+BAKE	DAV SUPV Work 	
+BALANCE	DAV SUPV Work Strng 	
+BANK	DAV SUPV Travl 	0% verb: To turn, as an airplane 
+BAPTIZE	DAV Pos SUPV Actv Affil Doctr 	
+BAR	DAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	19% verb: To obstruct or exclude 
+BARK	DAV SUPV Comform 	
+BAT	DAV SUPV Exert Exprs 	
+BATHE	DAV SUPV Natpro 	
+BATHROOM	DAV SUPV Natpro 	32% verb: "To go to the bathroom" 
+BATTLE	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	14% verb: To engage in a fight 
+BEAR	DAV SUPV Natpro 	7% verb: To give birth, produce by natural process 
+BEND	DAV SUPV Subm Weak Psv Rel 	
+BEQUEATH	DAV Pos SUPV Actv Econ Other Exch 	
+BIRTH	DAV SUPV Natpro 	33% verb-idiom: "Give birth"--to bear, or to create, bring about 
+BLEED	DAV SUPV Weak Psv Natpro 	
+BLINK	DAV SUPV Psv Natpro 	
+BLOCK	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	28% verb: To thwart or barricade 
+BOIL	DAV SUPV Vary Actv 	
+BOMB	DAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+BORE	DAV SUPV ED Natpro 	9% verb: Gave birth, produced by natural process 
+BOUGHT	DAV SUPV ED Work Actv Econ* 	verb: Past tense of "buy" - purchased 
+BOUNCE	DAV SUPV Exert Actv 	
+BOW	DAV SUPV Subm Weak Comform 	6% verb: To bend forward, usually in formal acknowledgement, submission or greeting 
+BOX	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	9% verb: To fight with fists, strike 
+BREAK	DAV Neg SUPV Ngtv Strng Actv Hostile Exert 	75% verb: To fracture, split, stop or cause to stop functioning, cause  a division or change, enter forcibly, escape, begin suddenly, interrupt, etc. 
+BREATH	DAV SUPV Natpro 	
+BREED	DAV SUPV Begin Actv 	
+BRING	DAV SUPV Fetch Actv 	69% verb: To transport, conduct, carry; to cause to come into being or  into a particular condition (much less frequent) 
+BROKE	DAV SUPV ED Hostile Actv Strng Exert 	72% verb: Past tense of "break"--fractured, split, stopped functioning,  caused a division or change; entered forcibly (1); escaped (3); interrupted  (1), etc. 
+BUILD	DAV SUPV Work Actv 	53% verb: To construct, frame, or raise a structure by fitting together  separate parts 
+BURN	DAV Neg SUPV Natpro Ngtv Actv PFREQ 	89% verb: To consume or injure with fire 
+BURY	DAV Neg SUPV Fall Ngtv Actv 	verb: To inter, immerse, conceal 
+BUY	DAV SUPV Exch Econ* Actv 	verb: To purchase 
+CALCULATE	DAV SUPV Solve Actv 	
+CALL	DAV SUPV Comform 	55% verb: To beckon, summon, command, demand, vocally communicate with,  either in person or by telephone, request; predict (e.g. "call the shots") (0) 
+CALL	DAV SUPV Solve 	37% verb: To name, give a name to 
+CALL	DAV Pos SUPV Intrel Affil Pstv 	1% verb: To visit 
+CAMP	DAV SUPV Stay Actv 	17% verb: To establish temporary lodging or shelter, to go into the woods 
+CANCEL	DAV Neg SUPV Finish 	
+CARRY	DAV SUPV Fetch Strng Actv 	75% verb: To transport, transmit, convey, bear; influence, get a majority  or plurality (much less frequent) 
+CEASE	DAV SUPV Finish Weak Psv 	
+CHARGE	DAV SUPV Exch Econ* Actv 	13% verb: To ask payment, to buy with deferred payment 
+CHASE	DAV Neg SUPV Travl Hostile Ngtv Actv PFREQ 	97% verb: To pursue, to hunt 
+CHATTER	DAV SUPV Comform 	
+CHOKE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+CHUCKLE	DAV SUPV Psv Comform 	
+CIRCLE	DAV SUPV Travl Actv Strng 	14% verb: To encircle, to move in a circle 
+CITE	DAV SUPV Comform 	
+CLEANSE	DAV Pos SUPV Actv Work 	
+CLOSE	DAV Neg SUPV Finish Actv Ngtv 	17% verb: To stop or obstruct, make imperceptible, inaccessible--to shut,  to come or bring t 
+CLOTHE	DAV SUPV Work 	5% verb: To provide with clothing--to dress 
+CLUB	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	5% verb: To beat with, or as with, a club 
+COAT	DAV SUPV Work 	
+CONSENT	DAV Pos SUPV Subm Pstv Strng Psv Comform 	
+CONSTRUCT	DAV SUPV Work Strng Actv 	
+CONSUME	DAV SUPV Finish Econ* Actv 	
+CONTACT	DAV Pos SUPV Pstv Actv Comform 	1% verb: To communicate with, meet 
+CONTAIN	DAV SUPV Rel Strng Actv 	
+COOK	DAV SUPV Work 	74% verb: To prepare food or subject anything to the action of heat 
+COPY	DAV SUPV Actv Comform 	
+COST	DAV Neg SUPV Exch Ngtv Econ* 	33% verb: To require or result in an expenditure 
+COUNT	DAV SUPV Solve 	
+COUPLE	DAV SUPV Rel 	1% verb: To join or link 
+CRACK	DAV SUPV Work Weak Actv 	
+CRAWL	DAV SUPV Travl Weak Actv PFREQ 	92% verb: To move laboriously, close to the ground 
+CREEP	DAV SUPV Travl Weak Actv 	
+CREPT	DAV SUPV Travl ED Weak Actv 	
+CROP	DAV SUPV Exert Hostile 	4% verb: To cut off the tops or ends of 
+CROSS	DAV SUPV Relig Comform 	3% verb: To make the sign of the cross 
+CROUCH	DAV SUPV Stay Subm 	
+CROWN	DAV SUPV Complt Polit* Power 	
+CRY	DAV SUPV Psv PFREQ Comform 	95% verb: To utter inarticulate or loud sounds, especially of lamentation,  grief, suffering or fright--usually with tears 
+CURL	DAV SUPV Work 	
+CURTSEY	DAV Pos SUPV Actv Move Intrel 	
+CUT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	88% verb-adj-noun: To penetrate or divide with or as with a sharp-edged  instrument; the resulting penetration or division (3); to isolate, snub,  or humiliate (1); the result of such action (0) 
+DANCE	DAV Pos SUPV Exprs Pstv Actv Travl 	49% verb: To move rhythmically 
+DAWN	DAV Pos SUPV Begin Pstv 	18% verb: To begin to grow light, to begin to develop 
+DECAY	DAV Neg SUPV Decr Ngtv Weak Psv 	
+DECREASE	DAV Neg SUPV Decr Ngtv Weak Psv 	
+DENT	DAV Neg SUPV Actv Exert 	
+DEPART	DAV SUPV Travl Actv 	
+DESCEND	DAV SUPV Fall Weak 	verb: To come down 
+DESERT	DAV Neg SUPV Intrel Hostile Ngtv 	14% verb: To abandon, forsake 
+DIE	DAV SUPV Natpro 	verb: To cease to live, exist or function 
+DIG	DAV Pos SUPV Exert Pstv PFREQ 	93% verb: To excavate, to bore into; slang--to understand or appreciate (2) 
+DIMINISH	DAV SUPV Decr Weak Psv 	
+DIP	DAV SUPV Fall Actv 	
+DISAPPEAR	DAV SUPV Percv Psv 	verb: To pass out of sight 
+DISLIKE	DAV Neg SUPV Negate Ngtv Psv Hostile Arousal 	71% verb: To have an aversion toward 
+DISPERSE	DAV SUPV Travl Actv 	
+DISPLAY	DAV SUPV Comform 	
+DIVE	DAV SUPV Fall Actv 	
+DIVIDE	DAV Neg SUPV Solve Ngtv Strng Actv PFREQ 	83% verb: Separate, classify, parcel out 
+DIVORCE	DAV Neg SUPV Intrel Hostile Kin* Legal Ngtv Actv 	14% verb: To separate, usually to dissolve a marriage 
+DO	DAV SUPV VERB DO Work Strng Actv 	29% verb: To perform, execute, accomplish, deal with as required 
+DONATE	DAV Pos SUPV Actv Exch Exprs Econ Fetch 	
+DONE	DAV SUPV VERB DO ED Work Strng 	verb-adj: Completed, finished, performed, executed, dealt with, tried,  accomplished, committed, arranged, fixed. 
+DOUBLE	DAV SUPV Incr Strng Actv 	10% verb: To render or become twofold in form, size, amount or number;  serve a dual function (0) 
+DRAG	DAV Neg SUPV Exert Hostile Actv Ngtv 	
+DRAIN	DAV SUPV Decr 	
+DRANK	DAV SUPV ED Actv Natpro 	verb: Past tense of "drink"--imbibed 
+DRAW	DAV SUPV Fetch Actv 	70% verb: To pull, move, pull back, extract, attract 
+DRAW	DAV SUPV Exprs Comform 	16% verb: To sketch, depict, compose; to form or make (abstract)--"to  draw a conclusion or analogy 
+DREAM	DAV SUPV Psv Natpro 	56% verb: To create fantasies, to create or recreate by conscious or subconscious  imagination 
+DREAMT	DAV SUPV ED Psv Natpro 	verb: Past tense of dream. 
+DRESS	DAV SUPV Work Actv 	18% verb: To put on clothing, give a finish to 
+DREW	DAV SUPV ED 	
+DRINK	DAV SUPV Actv Natpro 	68% verb: To imbibe 
+DRIP	DAV SUPV Natpro 	
+DRIVE	DAV SUPV Work Power Actv 	55% verb: To direct or steer, usually a car; to mean--"what is he driving at?" (0) 
+DRIZZLE	DAV SUPV Natpro 	
+DROOP	DAV Neg SUPV Psv Weak Fail 	
+DROP	DAV Neg SUPV Fall Ngtv Weak Psv 	32% verb: To fall--intransitive 
+DROP	DAV Neg SUPV Fail Ngtv Weak Actv 	56% verb: To let fall, give up--transitive 
+DROVE	DAV SUPV Work ED Power Actv PFREQ 	88% verb: Past tense of "drive" (sense 1) 
+DROWN	DAV Neg SUPV Ngtv Weak Psv Natpro 	verb: To die by suffocation in water, generally by accident 
+DRUNK	DAV SUPV ED Natpro 	7% verb: Imbibed (past tense of "drink") 
+DRY	DAV SUPV Natpro 	35% verb: To make free from moisture 
+DWELL	DAV SUPV Stay Psv 	
+EAT	DAV SUPV Actv PFREQ Natpro 	98% verb: To devour 
+ECHO	DAV SUPV Percv 	
+ELECT	DAV SUPV Intrel Polit* Actv Power 	verb: To choose, usually by vote 
+ELEVATE	DAV SUPV Rise Strng Actv 	
+EMPTY	DAV Neg SUPV Decr Ngtv Actv 	4% verb: To void 
+END	DAV SUPV Finish Actv 	29% verb: To finish, terminate 
+END	DAV SUPV Handels Finish 	2% noun-adj: 'ending'--conclusion, concluding 
+ENDOW	DAV Pos SUPV Actv Econ Other Exch 	
+ENROLL	DAV SUPV Intrel Subm Actv 	
+ENTER	DAV SUPV Travl Actv 	verb: To make entry, literally -'enter the house'- or figuratively -'enter  college'; to begin, become involved in- 'enter into a contract', 'enter  upon a new phase' 
+EQUAL	DAV SUPV Rel Strng 	0% verb: To be or become equal 
+ERASE	DAV Neg SUPV Finish Decr Actv 	
+ERODE	DAV Neg SUPV Psv Decr 	
+FALL	DAV SUPV Fall Weak Psv 	74% verb: General verb sense--drop, descend, collapse, sink, decline 
+FAST	DAV SUPV Strng Actv Natpro 	4% verb: To abstain from eating 
+FED	DAV SUPV ED Natpro 	72% verb-adj: Provided something necessary for growth 
+FEED	DAV SUPV Intrel Affil Power Strng 	78% verb: To supply a necessary input, usually nutritional 
+FEED	DAV SUPV Natpro 	4% verb: To eat, derive sustenance from 
+FELL	DAV SUPV Fall PFREQ 	89% verb: Past tense of "to fall"--drop, descend, collapse, sink 
+FIGHT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To engage in conflict 
+FILL	DAV SUPV Work Strng 	78% verb: To make or be full of, to pervade 
+FINISH	DAV SUPV Finish Actv PFREQ 	verb: To complete, end, draw to a close, put the final touches on 
+FIRE	DAV Neg SUPV Work Hostile Ngtv Strng Actv 	6% verb: To discharge a weapon, shoot, apply fire to 
+FIRE	DAV Neg SUPV Econ* Hostile Ngtv Strng Actv Exch 	8% verb: To terminate employment 
+FISH	DAV SUPV Work 	22% verb: To try to catch fish 
+FLOAT	DAV SUPV Rise Psv 	
+FOLLOW	DAV SUPV Travl 	22% verb: To come after in sequence or time, succeed 
+FOUGHT	DAV Neg SUPV Intrel ED Hostile Ngtv Strng Actv 	verb: Past tense of "fight"--engaged in conflict 
+GASP	DAV SUPV Natpro 	
+GATHER	DAV SUPV Fetch Actv PFREQ 	89% verb: To collect into a group. 
+GENERATE	DAV Pos SUPV Actv Begin Affil Work Incr 	
+GET	DAV SUPV Fetch Actv 	29% verb: To have or gain possession or control of something--to obtain,  fetch, receive, acquire--includes use in past tense meaning "have"--"she's  got brown hair"; understand (1); overpower, injure, kill (0) 
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	90% verb: To donate, provide (with), present, hand over, emit or issue,  cause to have; prone, wont--"he is given to drink" (2) 
+GIVE	DAV SUPV Fail Weak 	6% idiom-verb: "Give up," "give in," "give way," "give ground"--yield 
+GIVE	DAV SUPV Weak Psv Fail 	2% verb: "Give up"--abandon hope, cease effort 
+GIVE	DAV Pos SUPV Intrel Affil Pstv Actv 	1% noun-adj: "Given"--specific, assumed, granted 
+GIVE	DAV SUPV Handels Intrel Affil 	0% noun: "Giving"--providing 
+GLANCE	DAV SUPV Percv Psv 	
+GLIMPSE	DAV SUPV Percv Psv 	
+GO	DAV SUPV VERB GO Actv PFREQ Vary 	88% verb: Indicates motion, action, change of state 
+GO	DAV SUPV VERB GO Persist Actv Strng 	6% verb: "Go on"--continue, proceed, take place 
+GONE	DAV SUPV VERB GO ED Actv Vary 	77% verb: Indicates past motion, action, change of state 
+GONE	DAV SUPV Persist ED Actv Strng 	10% verb: 'gone on'--continued, proceeded, taken place 
+GRAB	DAV Neg SUPV Exert Hostile Ngtv Actv 	verb: To seize or clutch. 
+GRIN	DAV SUPV Comform Affil 	
+GRIND	DAV SUPV Work Strng Actv 	
+GROUND	DAV SUPV Work ED Strng Actv 	3% verb: Past tense and participle of 'grind' 
+GROUP	DAV SUPV Work Actv 	0% verb: To form groups 
+GROW	DAV SUPV Incr Strng Psv Actv 	34% verb: To increase in size, intensity, etc.--especially of living things 
+GROW	DAV SUPV VERB VB Incr Strng 	22% verb: To come or become--'grow to realize,' 'grow dark' 
+GROWN	DAV SUPV ED Strng Psv Incr 	8% verb: To have increased in size, intensity, etc. 
+HANG	DAV SUPV Stay Psv 	59% verb: To be suspended or to remain (intransitive) 
+HAPPEN	DAV SUPV Vary Psv PFREQ 	92% verb: To take place or occur 
+HARNESS	DAV Pos SUPV Actv Fetch Work 	
+HIT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	verb: To strike or collide against, present and past tense 
+HOLD	DAV SUPV Work Actv 	67% verb: Verb denoting possession, control, or maintenance in a given  position or state, thus contain , retain; to conduct, carry on, engage  in--"hold a meeting" (11); to fill a position--"hold office" (6); detain--  "hold up" (2) 
+HOP	DAV SUPV Travl Actv 	
+HOUSE	DAV SUPV Intrel Affil 	0% verb: To shelter, lodge, accommodate 
+HUDDLE	DAV SUPV Stay Psv Weak 	
+HUG	DAV Pos SUPV Actv Intrel Other 	
+HUNG	DAV SUPV Stay ED Psv 	43% verb: To have suspended or attached (transitive) 
+INCREASE	DAV SUPV Incr Strng Actv 	39% verb: To make greater in any respect, augment 
+INHERIT	DAV Pos SUPV Psv Exch Econ 	
+INTERCOURSE	DAV Pos SUPV Actv Intrel Natpro 	
+INTRODUCE	DAV SUPV Actv Comform 	
+INVITE	DAV Pos SUPV Intrel Affil Pstv Actv 	verb: To ask to a dinner, party, or for a visit or other social event;  more generally, to ask, request, call for (9) 
+IRON	DAV SUPV Work Actv 	23% verb: To press one's clothes 
+JAIL	DAV Neg SUPV Intrel Hostile Legal Power Ngtv Strng Actv 	4% verb: To imprison 
+JOIN	DAV SUPV Intrel Affil Actv 	59% verb: To become a member of a group or organization 
+JUMP	DAV SUPV Rise Actv PFREQ 	95% verb: To leap; to rise or increase suddenly (1) 
+KICK	DAV Neg SUPV Exert Hostile Strng Actv Ngtv 	75% verb: To strike with one's foot 
+KILL	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv PFREQ 	98% verb: To deprive of life; figuratively 
+KISS	DAV Pos SUPV Affil Pstv Actv Intrel 	
+KNEEL	DAV SUPV Stay Subm Weak Psv 	
+KNELT	DAV SUPV Stay ED Subm Weak Psv 	
+KNIFE	DAV Neg SUPV Exert Hostile Ngtv Strng 	3% verb: To stab 
+KNOCK	DAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	36% verb: To strike, rap, collide, rattle, to criticize (1) 
+LAID	DAV SUPV Stay ED 	72% verb: Past tense of "lay"--put, placed, set down; misuse for the past  tense of "lie"--reclined (6); had sexual intercourse with (1); produced  eggs (0); knocked down, incapacitated--"laid out," "laid up," etc. (0) 
+LAND	DAV SUPV Travl Actv 	13% verb: To arrive, debark, deliver 
+LAUGH	DAV Pos SUPV Exprs Pstv Psv Comform 	40% verb: To express mirth or amusement by laughter 
+LAY	DAV SUPV Stay Psv PFREQ 	85% verb: Past tense of "lie"--reclined, was or remained at a horizontal  position; was or remained in a specified place or condition (4); had intercourse  with (0) 
+LAY	DAV SUPV Psv Fetch Actv 	10% verb: To place or put; to have intercourse with (4); to produce eggs  (0); to knock or press down (0) 
+LEAN	DAV SUPV Stay Weak 	57% verb: To incline or bend from a vertical position, often resting on  something for support (mostly physical) 
+LEAP	DAV SUPV Actv Rise 	
+LEAVE	DAV SUPV Travl Actv PFREQ 	89% verb: Depart, quit, abandon, bequeath, cause to remain 
+LECTURE	DAV SUPV Acad Comform Actv 	
+LEFT	DAV SUPV Travl ED Actv 	75% verb: Departed, quit, abandoned, bequeathed, caused to remain 
+LEND	DAV SUPV Exch Affil Econ* Actv 	
+LENT	DAV SUPV ED Exch Affil Econ* Actv 	
+LETTER	DAV SUPV Work Actv 	1% verb: To mark with letters 
+LEVEL	DAV SUPV Work Strng Actv 	1% verb: To make flat or horizontal, to aim 
+LICK	DAV SUPV Actv Natpro 	
+LIE	DAV SUPV Stay Psv 	64% verb: To recline, remain at a horizontal, be located 
+LIE	DAV Neg SUPV Hostile Ngtv Comform 	20% verb: To tell falsehoods 
+LIFT	DAV SUPV Fetch Strng Actv 	
+LIGHT	DAV SUPV Exert Actv 	10% verb: To ignite, turn on 
+LIST	DAV SUPV Comform 	
+LISTEN	DAV SUPV Psv Comform 	verb: Attend closely for the purpose of hearing 
+LOAN	DAV SUPV Exch Econ* Actv 	10% verb: The act of lending, a grant of the temporary use of something 
+LOCK	DAV SUPV Stay Actv 	
+LOOK	DAV SUPV Percv 	38% verb: To gaze, glance, set eyes upon in order to see, to give someone  or something a glance, to use the sight in seeking, examining, watching 
+LOSE	DAV Neg SUPV Fetch Ngtv Weak Psv 	77% verb: To come to be without 
+LOSE	DAV Neg SUPV Fail Ngtv Weak 	20% verb: To be defeated, to fail 
+LOST	DAV Neg SUPV ED Ngtv Weak Psv Fetch 	59% verb-adj: Past tense of "lose"--came to be without, no longer owned  by-- "we lost our jobs," "we are lost" 
+LOST	DAV Neg SUPV ED Ngtv Weak Fail Psv 	6% verb: Past tense of "lose"--failed, was defeated 
+LOWER	DAV SUPV Fall Strng Actv 	36% verb: To reduce, let down 
+LYING	DAV Neg SUPV Hostile Ngtv ING Actv Comform 	6% verb: To tell a falsehood 
+MAIL	DAV SUPV Comform 	
+MARK	DAV SUPV Actv Comform 	34% verb: To label, indicate, make a sign, to characterize 
+MARRY	DAV Pos SUPV Affil Kin* Pstv Intrel 	83% verb: To take a husband or wife 
+MASS	DAV SUPV Strng Space 	3% verb: To form or collect into a mass 
+MATE	DAV Pos SUPV Intrel Affil Pstv 	
+MATRICULATE	DAV SUPV Acad Actv Complt 	
+MEET	DAV SUPV Intrel Affil Actv 	43% verb: Having to do with persons--to encounter, to be in the physical  presence of, to group with (of people) 
+MELT	DAV SUPV Decr Weak 	
+MIX	DAV SUPV Rel Actv 	53% verb: To combine, mingle 
+MOAN	DAV Neg SUPV Actv Comform Pain 	
+MOUTH	DAV SUPV Comform 	0% verb: To move the lips or speak, usually excessively or loudly 
+MOVE	DAV SUPV Travl Strng Actv PFREQ 	82% verb: To change or cause to change place or position, to set in motion 
+MULTIPLY	DAV SUPV Solve Strng Actv 	
+MUMBLE	DAV Neg SUPV Comform Undrst 	
+MURDER	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+MURMUR	DAV SUPV Subm Weak Comform 	
+MUTTER	DAV Neg SUPV Hostile Ngtv Weak Comform 	
+NAIL	DAV SUPV Work Actv 	
+NAME	DAV SUPV Comform 	12% verb: To identify, call, designate 
+NOD	DAV SUPV Comform 	
+NOMINATE	DAV Pos SUPV Actv Comform Affil Polit Other 	
+NUMBER	DAV SUPV Solve 	1% verb: To assign numbers to, to count, to comprise 
+OPEN	DAV SUPV Work 	5% verb: To become open 
+OPEN	DAV SUPV Work Actv 	39% verb: To render open 
+OPERATE	DAV SUPV Work Actv 	24% verb: To perform surgery 
+OUTLIVE	DAV Pos SUPV Psv Strng Natpro Other 	
+OWN	DAV SUPV Rel Econ* Strng 	6% verb: To possess 
+PACE	DAV SUPV Travl Actv 	17% verb: To move with slow or measured steps 
+PAINT	DAV SUPV Work Actv 	39% verb: To apply this substance, or represent with a paintbrush 
+PARACHUTE	DAV SUPV Fall 	6% verb: To jump at a high altitude, using the apparatus above. 
+PARADE	DAV SUPV Travl Actv Milit 	
+PARDON	DAV Pos SUPV Power Pstv Actv Strng Comform 	
+PARK	DAV SUPV Stay Psv 	
+PART	DAV SUPV Rel Actv Strng 	1% verb: To separate or divide 
+PARTICIPATE	DAV SUPV Intrel Affil Actv PFREQ 	95% verb: To partake of, to share in some action 
+PASS	DAV SUPV Travl Actv 	60% verb: Indicates a general sense of motion in relationship to the speaker,  thus, in particular, circulate, leave behind, exceed 
+PASS	DAV Pos SUPV Complt Pstv Strng 	11% verb-adj: To undergo successfully ("pass an exam") 
+PAUSE	DAV SUPV Stay Weak 	
+PAY	DAV SUPV Exch Econ* Actv PFREQ 	80% verb: To give or yield as recompense or return 
+PEEL	DAV SUPV Work Actv 	
+PEOPLE	DAV SUPV Incr 	0% verb: To populate 
+PERFORM	DAV SUPV Exprs Actv Comform 	
+PHONE	DAV SUPV Comform 	
+PHOTOGRAPH	DAV SUPV Comform 	
+PICK	DAV SUPV Work Actv 	32% verb: To choose or select; to dig, scratch, or probe at (6); to pluck  (fruit) (6) 
+PIECE	DAV SUPV Actv Incr 	1% verb: To add pieces, put together, enlarge, extend 
+PIN	DAV SUPV Rel 	
+PINCH	DAV Neg SUPV Exert Hostile Ngtv Actv 	
+PITCH	DAV SUPV Exert Actv 	
+PLACE	DAV SUPV Fetch Actv 	11% verb: To put something in position, to arrange, to dispose 
+PLANE	DAV SUPV Work Actv 	0% verb: To level 
+PLANT	DAV SUPV Work Actv 	42% verb: To put or set in the ground for growth, also to establish (0)  or implant (0) 
+PLAY	DAV SUPV Exert Exprs Actv 	87% verb: To perform some activity for recreation--playing games, sports,  also, playing a musical instrument (27) 
+PLEAD	DAV SUPV Subm Weak Psv Comform 	
+PLUG	DAV SUPV Work Actv 	
+PLUNGE	DAV SUPV Fall Psv 	
+POINT	DAV SUPV Rel Actv 	1% verb: To aim 
+POPULATE	DAV SUPV Natpro 	
+POSSESS	DAV SUPV Rel Power Strng 	
+POST	DAV SUPV Actv Comform 	7% verb: To affix to a post, wall, etc. for public notices; publicly (0);  to mail (0) 
+POUND	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	27% verb: To strike heavily or repeatedly, pommel 
+POUR	DAV SUPV Work Actv 	verb: To cause to flow or flood, to give or come forth freely or abundantly 
+PRAY	DAV SUPV Relig Subm Comform 	verb: To offer devout petition 
+PRESS	DAV SUPV Exert Strng Actv 	43% verb: To exert pressure physically or verbally 
+PRINT	DAV SUPV Actv Comform 	
+PUSH	DAV Neg SUPV Exert Ngtv Strng Actv PFREQ 	89% verb-adj: To exert force or pressure on something (or someone) in  order to move it (them) 
+PUT	DAV SUPV Actv PFREQ Fetch 	98% verb: To place, present, or thrust something 
+QUARTER	DAV SUPV Intrel Power Affil 	4% verb: To provide with housing 
+QUESTION	DAV SUPV Hostile Comform Undrst 	10% verb: To ask, interrogate, raise doubts 
+QUIET	DAV SUPV Intrel Power Strng Actv 	7% verb: To silence 
+QUOTE	DAV SUPV Comform 	
+RAIN	DAV SUPV Fall 	29% verb: To fall (as drops of water from the sky) 
+RAISE	DAV SUPV Rise Strng Actv 	57% verb: To elevate, to make rise, to increase in number or volume; in  relation to money 
+RAKE	DAV SUPV Work Actv 	
+RANG	DAV SUPV ED Comform 	
+REACH	DAV SUPV Fetch Actv 	11% verb: To extend the hand, to extend 
+READ	DAV SUPV Comform 	78% verb: To apprehend the meaning of something written, to pronounce  a text out loud (infrequent) 
+REFUSE	DAV Neg SUPV Hostile Ngtv PFREQ 	97% verb: To decline, to reject, to deny 
+REJECT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To refuse, cast off, rebuff 
+RELINQUISH	DAV SUPV Intrel Weak Psv Subm 	
+REMAIN	DAV SUPV VERB LINK Stay Psv PFREQ 	94% verb: To stay, to continue in the same condition, to be left or left over 
+REMEMBER	DAV SUPV Psv Solve 	verb: Bear in mind or call to mind 
+REMOVE	DAV SUPV Fetch Strng Actv 	verb: Take away or off, dismiss, eliminate 
+RENT	DAV SUPV Exch Econ* 	43% verb: To hire 
+REPEAT	DAV SUPV Actv Comform 	55% verb: To do again, especially to say again 
+RIDE	DAV SUPV Travl Actv 	70% verb: To travel on or in some form of conveyance 
+RING	DAV SUPV Comform 	15% verb: To telephone (2); to produce a resonant sound (1); to summon (1) 
+RIP	DAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+RISE	DAV SUPV Rise Strng Actv 	56% verb: To move upward or ahead, increase in degree or capacity, expand 
+ROAR	DAV SUPV Strng Actv Comform 	
+ROCK	DAV SUPV Exert Actv 	1% verb: To move back and forth 
+RODE	DAV SUPV Travl ED 	verb: Past tense of ride; traveled on or in some form of conveyance 
+ROLL	DAV SUPV Work Actv PFREQ 	84% verb: To turn over, revolve, wind, undulate--move by revolving; collect--"roll  into one" (1); start moving--"a program starts to roll" (1); to produce  a roaring sound (0) 
+ROOF	DAV SUPV Work Actv 	5% verb: To cover or shelter 
+ROOM	DAV SUPV Intrel Affil 	1% verb: To reside with or at 
+ROOT	DAV SUPV Comform Actv 	4% verb: To cheer 
+ROPE	DAV SUPV Intrel Power Actv 	2% verb: To lasso, to tie 
+ROSE	DAV SUPV Rise ED Strng Actv 	75% verb: Moved upward or ahead, increased in degree or capacity, expanded 
+ROT	DAV Neg SUPV Psv Natpro Decr 	
+ROW	DAV SUPV Exert Exprs Actv 	
+RUB	DAV SUPV Work Actv 	
+RUN	DAV SUPV Travl Actv 	61% verb: General sense of motion, defined differently for different classes  of moving things--to move quickly, proceed, extend, pass, flow, etc. 
+RUPTURE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+SAID	DAV SUPV Say ED PFREQ 	verb: Past tense of "say"--to utter or pronounce, express in words, state, claim 
+SAIL	DAV SUPV Travl Exprs Actv 	
+SANG	DAV SUPV ED Exprs Actv Comform 	
+SANK	DAV Neg SUPV Fall ED Ngtv Weak 	
+SAW	DAV SUPV Percv ED Psv PFREQ 	98% verb: Past tense of see, witnessed by sight, or inferred 
+SAW	DAV SUPV Work Actv 	1% verb: To cut wood, etc. with a saw 
+SAY	DAV SUPV Say Actv PFREQ 	91% verb: To utter or pronounce, express in words, state, claim 
+SCOLD	DAV Neg SUPV Hostile Ngtv Actv PFREQ Comform 	95% verb: Admonish 
+SCRATCH	DAV SUPV Actv Work Weak 	
+SCREAM	DAV Neg SUPV Ngtv PFREQ Comform 	97% verb: To utter a sharp, piercing cry, to utter words in such a way 
+SCREECH	DAV Neg SUPV Comform Ngtv 	
+SCRUB	DAV SUPV Work Actv 	
+SEAL	DAV SUPV Work Actv 	
+SEAT	DAV SUPV Actv Stay 	2% verb: To place, to position 
+SEE	DAV SUPV Percv Psv 	verb: To look at, witness, perceive, understand, imagine, visit 
+SEEN	DAV SUPV Percv ED Psv 	
+SELL	DAV SUPV Exch Econ* Actv PFREQ 	95% verb: To offer for sale, dispose of for a price, deal in; persuade (infrequent) 
+SEND	DAV SUPV Fetch Actv 	verb: To cause (permit or enable) to go, or to be taken 
+SENT	DAV SUPV Fetch ED Actv 	verb: Caused, permitted or enabled to go or be taken 
+SENTENCE	DAV Neg SUPV Legal Power Ngtv Strng Actv Comform 	
+SEPARATE	DAV SUPV Rel Actv 	41% verb: To divide, to part company 
+SHADE	DAV SUPV Vary 	
+SHAKE	DAV Neg SUPV Exert Ngtv Actv PFREQ 	86% verb: To rapidly move back and forth; abstract--to loosen, weaken,  disrupt, upset (2) 
+SHAPE	DAV SUPV Work Strng Actv 	21% verb: To form, mold, determine 
+SHARE	DAV Pos SUPV Intrel Affil Pstv 	67% verb: To have, use or experience in common 
+SHARPEN	DAV SUPV Work Actv 	
+SHATTER	DAV SUPV Exert Hostile Strng Actv 	
+SHELL	DAV Neg SUPV Intrel Hostile Milit Strng Ngtv Actv 	5% verb: To use (an) artillery warhead(s) 
+SHIFT	DAV SUPV Vary Actv 	55% verb: To change directions, to transfer, to switch 
+SHINE	DAV SUPV Natpro 	62% verb: To give off light 
+SHIP	DAV SUPV Travl Actv 	7% verb: To transport by naval vessel 
+SHOOT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	68% verb: To send forth or discharge a projectile, generally with a gun,  in order to hit or damage some object; to take pictures (0) 
+SHOP	DAV SUPV Exch Econ* Actv 	17% verb: To look for articles in stores with intent to buy 
+SHORTEN	DAV SUPV Work Actv 	
+SHOT	DAV Neg SUPV ED Exert Hostile Ngtv Strng Actv 	81% verb: Past participle of "shoot"--to launch or discharge a projectile; 
+SHOUT	DAV SUPV Actv PFREQ Comform 	96% verb: To cry out or yell loudly 
+SHOVE	DAV Neg SUPV Actv Hostile Exert 	
+SHRANK	DAV SUPV ED Decr Weak Psv 	
+SHRIEK	DAV Neg SUPV Comform Strng Pain 	
+SHRINK	DAV SUPV Decr Weak Psv 	
+SHRUG	DAV Neg SUPV Comform Hostile Ngtv 	
+SHRUNK	DAV SUPV Decr Weak Psv 	
+SHUDDER	DAV SUPV Psv Comform Hostile 	
+SHUT	DAV SUPV Work Actv Strng 	35% verb: To close, keep enclosed 
+SIDE	DAV SUPV Work 	0% verb: To furnish with sides 
+SIGH	DAV SUPV Actv Psv Comform 	
+SING	DAV SUPV Exprs Actv Comform 	69% verb: To produce melodious sounds 
+SINK	DAV SUPV Fall Weak Psv 	
+SIT	DAV SUPV Stay PFREQ 	98% verb: To be or become seated (sense of becoming seated less frequent;  to be located or situated (1) 
+SKI	DAV SUPV Travl Exprs Actv 	
+SKIN	DAV SUPV Work Actv 	12% verb: To remove skin from, to injure by abrasion 
+SLAP	DAV Neg SUPV Actv Exert Hostile 	
+SLASH	DAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+SLEEP	DAV SUPV Psv Natpro 	81% verb: To slumber, nap, doze, includes "go to sleep" 
+SLEPT	DAV SUPV ED Weak Psv Natpro 	verb: Past participle of sleep 
+SLID	DAV SUPV Fall ED 	
+SLIDE	DAV SUPV Fall Psv 	
+SLIP	DAV SUPV Psv PFREQ Fall Psv 	88% verb: To slide, to move without control or friction, to move stealthily 
+SLOW	DAV SUPV Decr 	3% verb: To decrease in speed or rate 
+SLUMP	DAV Neg SUPV Fall Ngtv Psv 	
+SMASH	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	85% verb: To strike violently, shatter, destroy 
+SMELL	DAV SUPV Percv Psv 	
+SMILE	DAV Pos SUPV Affil Pstv Psv Comform 	46% verb: To form a smile 
+SMOKE	DAV SUPV Natpro 	32% verb: To consume tobacco, to exude smoke 
+SNAP	DAV SUPV Actv Exert 	
+SNARL	DAV Neg SUPV Hostile Ngtv Comform 	
+SNATCH	DAV Neg SUPV Fetch Hostile Ngtv Strng Actv 	
+SNORE	DAV Neg SUPV Actv 	
+SNOW	DAV SUPV Natpro 	10% verb: The falling of such flakes 
+SOB	DAV Neg SUPV Actv Emot Pain 	
+SOLD	DAV SUPV Exch ED Actv Econ* 	82% verb: Past tense of "sell" - effected a sale, exchanged for money 
+SOUND	DAV SUPV Natpro 	2% verb: To emit a noise 
+SPANK	DAV Neg SUPV Actv Exert Hostile 	
+SPARE	DAV Pos SUPV Intrel Affil Power Pstv Strng 	48% verb: To save from ill fortune 
+SPEAK	DAV SUPV Actv PFREQ Comform 	90% verb: To communicate or express oneself through vocal means 
+SPEAR	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	12% verb: To lance someone, or something 
+SPELL	DAV SUPV Comform 	
+SPEND	DAV SUPV Exch Econ* PFREQ 	94% verb: To consume, especially time or money 
+SPIN	DAV SUPV Travl 	
+SPIT	DAV SUPV Natpro 	
+SPLIT	DAV SUPV Strng Actv Exert Hostile 	68% verb: To divide or to cut apart 
+SPOKE	DAV SUPV ED Actv PFREQ Comform 	96% verb: Communicated or expressed through vocal means, past tense of "speak" 
+SPRAY	DAV SUPV Fall 	
+SPUN	DAV SUPV Work ED 	
+SQUAT	DAV SUPV Stay Psv 	
+SQUEEZE	DAV SUPV Exert Actv Strng 	
+STAB	DAV Neg SUPV Actv Hostile Exert Try 	
+STAIN	DAV Neg SUPV Psv 	
+STAMMER	DAV Neg SUPV Actv Comform 	
+STAMP	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+STAND	DAV SUPV Stay Strng 	71% verb: To be in or move into an upright position (182); abstract--  remain fixed, be in a specified condition or rank--"i stand convinced  of the fact," "we stand in need of money" (19) 
+STARE	DAV SUPV Percv 	
+START	DAV SUPV Begin Actv PFREQ 	93% verb: To begin or commence 
+STATE	DAV SUPV Actv Comform 	6% verb-adj: To declare 
+STAY	DAV SUPV Stay LINK PFREQ 	97% verb: To remain in a place, situation or condition or to dwell at  a particular place 
+STEAL	DAV Neg SUPV Intrel Hostile Ngtv Legal Actv 	60% verb: To rob, thieve 
+STEAM	DAV SUPV Natpro 	
+STEER	DAV SUPV Travl Power Actv 	
+STEP	DAV SUPV Travl Actv 	29% verb: To walk, set the foot down, hurry (e.g. "step on it," "step it up") 
+STICK	DAV SUPV Exert Strng Actv 	27% verb: Thrust into, pierce, put, extend 
+STICK	DAV SUPV Strng Actv Intrel 	18% verb: Adhere, remain, remain loyal 
+STIR	DAV SUPV Exert 	
+STOLE	DAV Neg SUPV Intrel ED Hostile Ngtv Actv Legal 	verb: Past tense of steal 
+STONE	DAV SUPV Exert Hostile Actv 	1% verb: To assail with rocks 
+STOOD	DAV SUPV Stay ED Strng PFREQ 	92% verb: Was in or moved into an upright position (72); existed, remained  fixed (6) 
+STOP	DAV SUPV Stay 	78% verb: To come to a stand, halt, pause, cease from 
+STOP	DAV SUPV Intrel Hostile Power Actv Strng 	18% verb: To restrain, hinder, prevent 
+STRANGLE	DAV Neg SUPV Hostile Exert Actv Other 	
+STRETCH	DAV SUPV Rise Actv 	
+STRIKE	DAV Neg SUPV Exert Ngtv Actv Hostile Strng 	56% verb: To attack, injure, hit (generally in retaliation and with speed),  hit upon and remove, move sharply, make an (physical) impact 
+STRUCK	DAV Neg SUPV Exert ED Ngtv Hostile Actv Strng 	82% verb: Hit, hit upon, made an impact, attacked 
+SUNG	DAV SUPV ED Exprs Actv Comform 	
+SUNK	DAV SUPV Fall Weak Psv 	
+SURRENDER	DAV SUPV Intrel Polit* Subm Milit Weak Psv 	
+SURROUND	DAV SUPV Stay Strng Actv 	66% verb: To enclose or encompass 
+SWALLOW	DAV SUPV Natpro 	
+SWAM	DAV SUPV Travl ED Exprs Actv 	
+SWEAR	DAV Neg SUPV Hostile Ngtv Comform 	
+SWEAT	DAV SUPV Psv Natpro 	
+SWEEP	DAV SUPV Actv Travl 	
+SWEPT	DAV SUPV ED Actv Travl 	
+SWIM	DAV SUPV Travl Actv 	57% verb: To move in water by strokes 
+SWING	DAV SUPV Travl Actv 	64% verb: To make or cause angular motion, to bring around 
+SWORE	DAV Neg SUPV ED Hostile Ngtv Comform 	
+SWUNG	DAV SUPV Travl ED Actv 	
+TAKE	DAV SUPV Actv Fetch 	46% verb: Used to denote acquisition, adoption or assumption, thus seize,  obtain, employ, assume, choose, get, receive, execute; assume to be, understand  or interpret in a certain way (10) 
+TALK	DAV SUPV Actv Comform 	83% verb: To communicate, discuss, speak; includes pseudo-adjectival forms  like "they stood 
+TEAR	DAV Neg SUPV Exert Hostile Ngtv Actv 	59% verb: To rip, destroy, divide 
+TELL	DAV SUPV Say Actv PFREQ 	95% verb: To relate a story or any pertinent fact, to speak, instruct,  impart information 
+THANK	DAV Pos SUPV Affil Pstv Comform 	49% verb: To express gratitude, give thanks to 
+THROW	DAV SUPV Exert Strng Actv PFREQ 	85% verb: To hurl, to toss 
+TIE	DAV SUPV Rel Actv 	79% verb: To bind or connect with something 
+TIE	DAV SUPV Complt 	0% verb: To make even (i.e. the score) 
+TIME	DAV SUPV Solve 	0% verb: To ascertain the duration of something 
+TOLD	DAV SUPV Say ED Actv 	verb: Past tense of "tell"--to relate a story or any pertinent fact, to speak 
+TOTAL	DAV SUPV Solve Actv 	3% verb: To add, to add up to 
+TOUCH	DAV SUPV Rel Actv 	50% verb: To come into contact with 
+TRAP	DAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	43% verb: To capture or ensnare 
+TRAVEL	DAV SUPV Travl Actv 	80% verb: To journey from place to place 
+TRIP	DAV SUPV Fall 	8% verb: To stumble 
+TURN	DAV SUPV Work Actv 	19% verb: Transitive--to rotate, cause to move around or change direction,  position, setting 
+TWIST	DAV SUPV Work Actv 	
+TYPE	DAV SUPV Actv Comform 	2% verb: To print or typewrite 
+USE	DAV SUPV Work Actv 	48% verb: To employ 
+UTTER	DAV SUPV Psv Comform Ovrst 	
+VACUUM	DAV SUPV Work 	
+VETO	DAV Neg SUPV Actv Comform Finish Power 	
+VOTE	DAV SUPV Polit* Actv Comform 	69% verb: To cast a ballot 
+WAIT	DAV SUPV Stay Psv PFREQ 	91% verb: To stay or rest in expectation or inaction, to be available  or in readiness, to be neglected or to postpone temporarily 
+WAKE	DAV SUPV PFREQ Natpro 	80% verb: Become awake 
+WAKE	DAV SUPV Intrel Actv 	19% verb: Rouse from sleep 
+WALK	DAV SUPV Travl Actv PFREQ 	89% verb: To go or travel on foot at a moderate speed, proceed by steps 
+WARM	DAV Pos SUPV Pstv Natpro 	19% verb: To make or become physically warm, heat; to inspire with friendly  feelings or incite enthusiasm (2) 
+WASH	DAV SUPV Work Actv PFREQ 	85% verb: To clean 
+WATCH	DAV SUPV Percv Actv PFREQ 	85% verb: To look at closely or attentively 
+WAVE	DAV SUPV Exprs Comform 	
+WEAR	DAV SUPV Work Actv PFREQ 	93% verb: To have on 
+WED	DAV SUPV Affil Intrel Kin* 	
+WEPT	DAV SUPV ED 	
+WHIMPER	DAV Neg SUPV Actv Comform Emot Pain 	
+WHINE	DAV Neg SUPV Hostile Subm Ngtv Weak Comform 	
+WHIP	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	50% verb: To hit, beat, drive, vanquish 
+WHISPER	DAV SUPV Comform Undrst 	
+WHISTLE	DAV SUPV Exprs Actv Comform 	
+WIDEN	DAV SUPV Incr Strng Actv 	
+WIND	DAV SUPV Work Actv 	10% verb: To turn or twist 
+WIPE	DAV SUPV Work Actv 	
+WORD	DAV SUPV Acad Comform 	1% verb: To phrase 
+WORK	DAV SUPV Work Actv 	40% verb: To do work, to be employed; to be in operation, to function  (much less frequent) 
+WORN	DAV SUPV Work ED 	10% verb: Past tense of "wear"--had on 
+WOUND	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	46% verb: Physically or emotionally injure 
+WOUND	DAV SUPV Work Actv 	7% verb: Past of wind 
+WRAP	DAV SUPV Work Actv 	
+WRITE	DAV SUPV Actv Comform Exprs 	82% verb: To form words, etc., on some material, or more generally to  express ideas, compose, produce 
+WRITTEN	DAV SUPV ED Comform 	77% verb: Past participle of write (includes post-nominal forms) 
+WROTE	DAV SUPV ED Comform 	verb: Past tense of "write"--to form words, etc. on some material, or  more generally to express ideas, compose, produce 
+YELL	DAV SUPV Actv Comform 	

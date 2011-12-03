@@ -1,0 +1,175 @@
+word	tags	comments
+ADMINISTRATION	Noun HU COLL ABS TIME POLIT Polit* Power Strng 	69% noun-adj: A body entrusted with executive or administrative powers,  the time span over which such power is exercised (2) 
+AGENCY	Noun HU COLL POLIT ECON Econ* Power 	noun: A commercial or other bureau furnishing some form of service for  the public, the office of an agent. 
+AIR	Noun HU COLL POLIT Milit 	12% adj: "Air force," "air defense"--referring to airborne military divisions,  and operations 
+ALLIANCE	Pos Noun HU COLL POLIT Polit* Power Pstv Strng 	
+ARMY	Noun HU COLL POLIT Milit Strng Power Hosti 	noun: The military forces of a nation 
+ASSEMBLY	Noun HU COLL 	
+ASSOCIATION	Pos Noun HU COLL Affil Pstv Strng Actv 	79% noun: An organization of people with a common purpose, having a formal  structure 
+AUDIENCE	Noun HU COLL 	
+BAND	Noun HU COLL PFREQ 	97% noun: A company of persons, a group of animals (1), a group of musicians  (4), a strip, stripe or binding (4) 
+BANK	Noun HU COLL ECON Econ* 	62% noun: Financial institution . . . the business of finance ('banking') 
+BAR	Noun HU COLL Legal 	4% noun: The legal profession 
+BLOC	Noun HU POLIT COLL Strng 	
+BLUE	Noun HU COLL ECON Econ* 	11% noun-idiom: "Blue cross"--insurance company 
+BOARD	Noun HU COLL POLIT ECON Acad Power 	48% noun: An administrative body, examination ("college boards") 
+BODY	Noun HU COLL POLIT Polit* Power Strng 	8% noun: A group of people, often political--as "electoral body," "student body" 
+BRANCH	Noun HU COLL POLIT ECON Econ* Polit* 	21% noun: Political#economic subdivision 
+CABINET	Noun HU COLL POLIT Polit* 	
+CANNERY	Noun HU COLL ECON Econ* 	
+CATHOLIC	Noun Relig HU COLL 	
+CAVALRY	Noun HU COLL POLIT Milit Strng 	
+CIVIC	Modif POLIT HU COLL 	
+CIVIL	Modif POLIT Polit* PFREQ HU COLL 	85% idiom-noun: "Civil rights," "civil liberties" 
+CIVIL	Noun HU POLIT COLL Polit* 	1% idiom-noun: "Civil service" 
+CLASS	Noun ABS Abs* COLL HU 	noun-adj: The instruction of a given set of students, usually by a teacher,  any or all the things associated with it--the instruction itself, the  group of students, or the period or place in which they meet 
+CLUB	Noun HU COLL Affil Strng PFREQ 	86% noun: A group of persons organized for social or other activities 
+COALITION	Noun HU COLL POLIT Affil Polit* Power Strng 	
+COLLECTIVE	Noun HU COLL ECON Econ* Strng 	
+COLONY	Neg Noun HU COLL POLIT ECON Polit* Ngtv Subm 	
+COLOR	Modif POLIT Race HU COLL 	37% noun-adj: "Color"--racial complexion; "colored"--having a racial complexion  other than white 
+COMMITTEE	Noun HU COLL POLIT Power Strng 	noun adjective: Group of persons elected or appointed to carry out a specific  task or function 
+COMMON	Noun HU COLL POLIT ECON Econ* 	18% noun-idiom: "Common market"--the eec 
+COMMON	Noun HU COLL Polit* 	1% noun: House of commons 
+COMMONWEALTH	Noun HU COLL POLIT ECON Polit* Power 	
+COMMUNITY	Pos Noun HU COLL POLIT ECON Affil Pstv Strng 	noun-adjective: Town, collectivity formed by proximity or common interest. 
+COMPANY	Noun HU COLL ECON Econ* Strng 	78% noun-adj: A body of men joined in a common purpose, usually economic 
+COMPANY	Pos Noun HU COLL Affil Pstv 	22% noun: Society, companionship 
+CONCERN	Noun HU COLL ECON Econ* 	1% noun: Business concern--commercial enterprise 
+CONFERENCE	Noun HU COLL POLIT ECON Polit* 	noun: A meeting for consultation or negotiation 
+CONGREGATION	Noun HU COLL Relig Strng 	
+CONGREGATIONAL	Modif Relig HU COLL 	
+CONGRESS	Noun HU COLL POLIT Polit* Power Strng PFREQ 	97% noun: The legislative branch of the u.s. government 
+CONGRESS	Noun HU COLL Polit* Strng 	3% noun: An organization, society, etc., an official gathering of same 
+CONGRESSIONAL	Modif POLIT Polit* Strng HU COLL 	
+CONSPIRACY	Neg Noun HU COLL POLIT Hostile Polit* Ngtv 	
+CONVENTION	Noun HU COLL POLIT Polit* PFREQ 	noun: A meeting or assembly of delegates or representatives for action  on particular matters 
+COOPERATIVE	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	68% noun-adj: An organization for the benefit of producers or consumers 
+CORP	Noun HU COLL ECON Econ* 	
+CORPORATE	Modif ECON POLIT Strng HU COLL 	
+CORPORATION	Noun HU COLL ECON Econ* Strng 	
+CORPS	Noun HU COLL POLIT ECON Milit 	7% noun: A unit or group, usually of the military 
+COUNCIL	Pos Noun HU COLL POLIT Power Pstv Polit* Strng 	noun-adj: A body of persons summoned or convened for deliberation, consultation  or advice 
+COUNTRY	Noun HU COLL POLIT ECON Polit* PFREQ 	90% noun: A nation or sovereign territory, a region, area (e.g. "indian country") 
+COUPLE	Noun HU COLL Affil 	41% noun: Two persons of opposite sex considered together 
+COURT	Noun POLIT Legal HU COLL Polit* Strng 	65% noun-adj: A place where trials are held and the law is carried on--by  metonymy the process or authority of the law, or a given court or judge;  a sovereign entourage (3); a courtyard (0) 
+COURT	Noun HU COLL POLIT Legal Power Strng Polit* 	26% idiom-noun: "Supreme court" 
+CREW	Noun HU COLL 	
+CROSS	Noun HU COLL Affil 	3% idiom-noun: "Red cross" 
+CROSS	Noun HU COLL 	6% idiom-noun: "Blue cross"--handled by "blue" 
+CROWD	Noun HU COLL Strng 	62% noun: A throng 
+CULT	Noun HU COLL Relig 	
+DELEGATION	Noun HU COLL POLIT Polit* Power 	
+DEMOCRATIC	Modif Virtue POLIT Polit* HU COLL 	50% adj: In accord with the western philosophy of political and/or social equality 
+DEMOCRATIC	Modif POLIT Polit* HU COLL 	50% adj: Pertaining to a specific political party--usually the american 
+DENOMINATIONAL	Modif Relig HU COLL 	
+DEPARTMENT	Noun HU COLL POLIT PFREQ 	96% noun: A division of a complex whole, as of a government, business, or faculty 
+DIVISION	Neg Noun HU COLL POLIT Ngtv Weak 	
+DROVE	Noun HU COLL 	13% noun: A flock, herd, crowd 
+ELECTORAL	Modif POLIT HU COLL Power 	
+ELITE	Noun HU COLL POLIT ECON Polit* Power 	
+ENTERPRISE	Noun HU COLL ECON Econ* Actv Strng 	
+ESTABLISHMENT	Noun HU COLL POLIT ECON Econ* Polit* Ovrst 	
+FACULTY	Noun HU COLL Acad PFREQ 	91% noun-adj: All the teachers of a school 
+FAMILY	Noun HU KIN COLL Kin* 	noun adjective: A specifically related group, usually referring to the  immediate kinship group of father, mother, and children, sometimes a biological  term. 
+FEDERAL	Modif POLIT Polit* HU COLL Affil 	adjective: Pertaining to the independent central government of a union of states. 
+FEDERATION	Noun HU COLL POLIT Affil Polit* Strng 	
+FIRM	Noun HU COLL ECON Econ* 	15% noun: A partnership or unincorporated association for carrying out business 
+FLEET	Noun HU COLL POLIT Milit Strng 	
+FOLK	Noun HU COLL Kin* 	67% noun: People in general or people as a representation of a culture  esp. the composite of social mores, customs 
+FOLK	Modif HU COLL 	19% adjective: Originating among the common people 
+FOLLOW	Noun HU COLL Psv 	0% noun: "Following"--a group of followers 
+FORCE	Noun HU COLL POLIT Milit Strng 	24% noun: A body of men, usually military, "the armed forces" 
+FORM	Noun HU COLL Acad 	6% noun: Grade in british secondary school 
+GANG	Noun HU COLL Strng 	
+GATHER	Noun HU COLL 	11% noun-adj: A group or collection of things or individuals--'gathering' 
+GENERATION	Noun HU COLL TIME 	noun: A set of people of the same general age group or the period of time  identified with a generation of men 
+GIANT	Noun HU COLL Exprs 	0% noun: (the baseball team) 
+GOVERN	Noun HU COLL Polit* Strng 	
+GOVERNMENT	Noun HU COLL POLIT Polit* Power Strng 	noun adjective: A specific administrative mechanism by which a body of  people is ruled, an abstract concept of the ruling power 
+GROUP	Noun HU COLL 	noun-adj: A collection (usually small) of individuals (almost never of  things) related in some way 
+GUILD	Noun HU COLL ECON Affil Econ* Strng 	
+HEAD	Noun HU COLL Acad 	0% noun-idiom: 'head start' 
+HOUSE	Noun HU COLL POLIT Polit* Power 	2% noun-adj: Legislative body (includes idiom "house of representatives") 
+HUDDLE	Noun HU COLL 	
+HUMANITY	Pos Noun HU COLL ABS Pstv 	
+INC.	Modif ECON Econ* Legal HU COLL 	
+INCORPORATE	Modif Econ* HU COLL 	
+INFANTRY	Noun HU COLL POLIT Milit Strng 	
+JUNTA	Noun HU COLL POLIT Legal Polit* Power 	
+JURY	Noun HU COLL POLIT Legal Power Strng 	
+KINDRED	Noun HU Kin* COLL 	
+LABOR	Noun HU COLL ECON Econ* Strng Actv 	69% noun: Hard work, effort, wage workers 
+LABOR	Noun HU COLL ECON POLIT Polit* 	25% noun-adj: Specifically used to denote political office, party or organization--  secretary of labor, labor unions, labor party, labor movement 
+LAY	Noun HU COLL 	1% noun-adj: Non-professional; not clergy (0) 
+LEAGUE	Noun HU COLL Affil Polit* Strng PFREQ 	86% noun: An association or alliance 
+LEFT	Noun HU COLL POLIT Polit* 	3% noun: Political left 
+LEGION	Noun HU COLL POLIT Polit* Milit PFREQ 	98% idiom-noun: "American legion" 
+LEGION	Noun HU COLL Strng 	3% noun-adj: A multitude; an army division (0); numerous (0) 
+MAJORITY	Noun HU COLL POLIT Power Strng Ovrst 	noun: The number greater than half or the excess of this greater number--state  of being major or greater, superiority. 
+MANAGEMENT	Noun HU COLL ECON Econ* Power Strng Actv 	
+MANKIND	Noun HU COLL 	
+MASS	Noun HU COLL POLIT Strng 	21% noun: "The masses"--the lower class, population at large 
+MEMBERSHIP	Noun HU COLL Affil 	noun: The relation holding between an element and a set to which it belongs,  the credentials for belonging, or the members collectively. 
+MIDDLE-CLASS	Modif ECON POLIT Econ* Polit* HU COLL 	
+MILITIA	Noun HU COLL POLIT Milit Strng 	
+MINISTRY	Noun HU COLL POLIT Polit* Power Strng 	
+MINORITY	Noun HU COLL POLIT Polit* Subm Weak 	
+MOB	Noun HU COLL Hostile 	
+MODERN	Noun HU COLL 	0% noun: Modern people 
+MONOPOLY	Noun HU COLL ECON Econ* Strng Power 	
+MOVEMENT	Noun HU COLL POLIT Polit* Strng PFREQ 	85% noun: Group of persons or an organization tending toward a common goal 
+MUTUAL	Pos Modif Affil Pstv HU COLL 	91% adjective: Common, joint, reciprocal, reciprocated. 
+MUTUAL	Pos LY Affil Pstv HU COLL 	9% adverb: "Mutually"--jointly, reciprocally 
+NATION	Noun HU COLL POLIT ECON Polit* 	noun: A country or people of a country, political unit 
+NATIONAL	Modif POLIT Polit* HU COLL 	adjective: Of or pertaining to, or maintained by a nation as an organized  whole or independent political unit 
+NAVY	Noun HU COLL POLIT Milit Strng 	
+ORCHESTRA	Noun HU COLL Exprs 	
+ORGANIZATION	Noun HU COLL ABS Abs* Strng 	noun: A body of people organized for a purpose--"the veteran's organization";  the quality of having order, being organized, organizing (23) 
+PARLIAMENT	Noun HU COLL POLIT Polit* Power Strng 	
+PARTNERSHIP	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	
+PARTY	Noun HU COLL POLIT Polit* Strng 	58% noun-adj: Organized political group 
+PARTY	Noun HU COLL Exprs Affil 	32% noun-adj: A social gathering 
+PATROL	Noun HU COLL POLIT Milit Strng Power 	
+PEOPLE	Noun HU COLL 	noun: Human beings, whether individually--as persons--or collectively  --as a community, group, type, race, tribe, or nation (less frequent) 
+PERSONNEL	Noun HU COLL ECON S Econ* 	
+POLICE	Noun HU COLL POLIT Legal Power Strng 	noun-adjective: Of or pertaining to officers of the law. 
+POOR	Neg Noun HU COLL POLIT ECON Weak Psv Ngtv 	8% noun: Those wanting in material goods 
+POPULATION	Noun HU COLL POLIT 	noun: The body of inhabitants of a given locality 
+POSSE	Noun HU COLL Legal Power Hostile Strng 	
+POWER	Noun HU COLL POLIT Power Strng Polit* 	23% noun: Nation, group or individual having power 
+PRESS	Noun HU COLL ECON COM Econ* 	30% noun-adj: The body of newsmen, news media 
+PRIVATE	Modif PFREQ HU COLL 	95% adj: Relating to a particular person or group of people, not public 
+PROFESSION	Noun HU COLL ECON Econ* 	noun: Technically specialized vocation 
+PTA	Noun HU COLL Acad 	
+PUBLIC	Noun HU COLL POLIT PFREQ 	83% adj: Not private, of the people 
+PUBLIC	Modif HU COLL 	9% noun: The people collectively 
+QUARTET	Noun HU COLL Exprs 	
+RACE	Noun HU COLL POLIT Race 	71% noun-adj: A major group of persons united by descent--pertaining to  groupings of this sort 
+RACIAL	Modif POLIT Race PFREQ HU COLL 	adjective: Concerning relations between races, e.g., 'racial discrimina-  tion', or characteristic of a race of people. 
+REDS	Noun HU COLL POLIT S Polit* 	
+REGIME	Noun HU COLL POLIT Polit* Power Strng 	
+REGIMENT	Noun HU COLL POLIT Milit Strng 	
+REPUBLIC	Noun HU COLL POLIT Polit* 	noun: A representative government 
+ROYAL	Modif POLIT Polit* Power Strng HU COLL 	
+ROYALTY	Noun HU COLL POLIT Polit* Power Strng 	
+SECURITY	Noun Means ECON Econ* HU COLL 	5% idiom-noun: "Security council"--organ of the united nations 
+SENATE	Noun HU COLL POLIT Polit* Power Strng 	
+SHIP	Noun HU COLL POLIT Polit* Power 	2% idiom-noun: "Ship of state" - government 
+SOCIAL	Modif POLIT Polit* HU COLL 	62% adj: Of or pertaining to human society or collective activity 
+SOCIETY	Noun HU COLL POLIT Polit* 	noun: The socio-political unit, a system of persons and institutions,  society at large 
+SQUAD	Noun HU COLL Power 	
+STAFF	Noun HU COLL 	
+STATE	Noun HU COLL POLIT Polit* Power Strng 	39% noun: Body politic--area of government 
+SUPREME	Noun HU COLL Legal Handels Strng PFREQ 	90% idiom-noun: "Supreme court" - handled by "court" 
+SYNDICATE	Noun HU COLL ECON Econ* 	
+TEAM	Noun HU COLL Affil 	
+TRIBAL	Modif PFREQ HU COLL Polit* 	adj: Of or pertaining to a tribe 
+TRIBE	Noun HU COLL POLIT Polit* 	noun: A group of people united by common ancestry or by common custom 
+TROOP	Noun HU COLL POLIT Milit Strng 	
+TRUST	Noun HU COLL Econ* Power Strng 	0% noun: A monopolistic organization, usually economic 
+UNANIMOUS	Modif Strng HU COLL Ovrst 	
+UNFORTUNATE	Neg Noun HU COLL Negate Ngtv Weak Subm 	3% noun: "Unfortunates" - unlucky people 
+UNION	Noun HU COLL POLIT ECON Econ* Polit* 	18% noun-adj: A labor organization 
+UNION	Noun HU COLL POLIT Polit* Power Strng 	31% noun-adj: The state of being united, usually a political union 
+WELFARE	Noun HU COLL POLIT ECON Econ* Polit* 	44% noun-adj: Political-economic organizations of various kinds 

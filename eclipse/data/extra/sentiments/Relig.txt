@@ -1,0 +1,104 @@
+word	tags	comments
+ANGEL	Pos Noun HU Role Virtue Affil Relig 	
+ANGELIC	IndAdj Pos Modif Virtue Affil Relig 	
+BELIEVER	Noun HU Relig Psv Role Subm 	
+BIBLE	Noun Object COM Relig Comnobj 	
+BIBLICAL	Modif Relig Object Comnobj 	
+BISHOP	Noun HU Power Relig Role 	
+BLESS	IAV Pos SUPV Intrel Affil Relig Pstv Psv 	32% verb: To consecrate, favor or endow, make happy or prosperous 
+BLESS	Pos Noun Comform Relig Pstv 	64% noun: "Blessing"--a benediction, good fortune 
+BLESS	Pos Modif Virtue Relig Pstv 	5% adj: "Blessed"--consecrated, blissful 
+CATHEDRAL	Noun PLACE Social Relig 	
+CATHOLIC	Noun Relig HU COLL 	
+CHAPEL	Noun PLACE Social Relig 	
+CHRIST	Noun HU MALE Relig Role 	
+CHRISTIAN	Modif Relig 	
+CHRISTIANITY	Noun ABS Abs* Doctr Relig 	
+CHRISTMAS	Noun ABS TIME Time* Relig 	
+CHURCH	Noun PLACE Social Relig 	noun-adj: The christian religion, its rituals, its members, a specific  denomination of it, any or all of these or pertaining to them-- frequently  used in "go to church" meaning attend its religious rites, generally once  a week; the actual building whic 
+CLERGYMAN	Noun HU MALE Relig Role 	
+COMMUNION	Pos Noun Ritual Affil Relig Pstv 	
+CONGREGATION	Noun HU COLL Relig Strng 	
+CONGREGATIONAL	Modif Relig HU COLL 	
+CONVERT	Noun HU Relig Actv Role 	
+CROSS	Noun Space Relig 	11% noun: A shape composed of at least 2 pieces at right angles 
+CROSS	DAV SUPV Relig Comform 	3% verb: To make the sign of the cross 
+CRUCIFIX	Noun Object Tool Relig 	
+CULT	Noun HU COLL Relig 	
+DENOMINATIONAL	Modif Relig HU COLL 	
+DEVIL	Neg Noun HU Hostile Relig Ngtv Role 	noun-adj: Evil spirit 
+DEVOTION	Pos Noun EMOT Relig Subm Pstv Psv Arousal Affil 	
+DIVINE	Pos Modif Virtue EVAL Relig Pstv Strng 	
+DIVINITY	Pos Noun Virtue Relig Pstv Strng 	
+EASTER	Noun ABS TIME Time* Relig 	
+ECUMENICAL	Modif Doctr Relig POLIT 	
+ETERNAL	Modif Relig Strng Ovrst Persist 	
+EVANGELISM	Noun Doctr Relig 	
+FAITH	Pos Noun ABS Abs* Doctr Relig Pstv EMOT Psv PFREQ 	90% noun: Belief or trust, or the content thereof--a creed 
+FAITHFUL	Pos Modif Virtue Relig Pstv Psv 	
+FATE	Noun ABS Abs* Doctr Relig Strng 	
+GHOST	Noun HU Relig Role 	
+GOD	Noun HU Power Relig Strng Role 	noun: Deity; includes exclamations employing the word "god" with varying  degrees of irreverence 
+GODDESS	Noun HU Female Power Relig Strng Role 	
+GOSPEL	Noun Object COM Relig Comnobj 	
+GRACE	Pos Noun Virtue Relig Pstv 	
+GRAVE	Neg Noun Ngtv Relig PLACE Social 	70% noun-adj: Burial place 
+HEAVEN	Pos Noun PLACE Social Relig Pstv 	noun: The abode of god and the righteous dead; a state or place of happiness;  includes interjections 
+HEAVENLY	Pos LY EVAL Virtue Relig Pstv 	
+HELL	Neg Noun PLACE Social Relig Ngtv 	
+HOLY	Pos Modif Virtue EVAL Relig Pstv 	adj: Sacred, sinless, of god 
+HYMN	Noun COM Comform Relig 	
+MAGIC	Noun Ritual Relig 	
+MAGICAL	IndAdj Pos Modif Eval Qual Relig 	
+METAPHYSICAL	Modif Doctr Relig 	
+METAPHYSICS	Noun Doctr Relig 	
+MINISTER	Noun HU Relig Role 	16% noun: Person authorized to conduct religious worship 
+MIRACLE	Pos Noun Relig Virtue 	
+MIRACULOUS	IndAdj Pos Modif Relig Virtue 	
+MISSIONARY	Noun HU Relig Role Actv 	
+MYTH	Noun COM Comform Relig 	
+OASIS	Pos Noun Place Relig 	
+ORTHODOX	Modif Doctr Relig 	
+PARADISE	Pos Noun Place Relig 	
+PARISH	Noun PLACE Region Relig 	
+PASTOR	Noun HU Relig Role 	
+PIETY	Pos Noun Relig Ought 	
+PILGRIMAGE	Noun Ritual Relig 	
+PIOUS	Pos Modif Virtue Relig Pstv 	
+POPE	Noun HU MALE POLIT ECON Power Relig Role 	
+PRAY	DAV SUPV Relig Subm Comform 	verb: To offer devout petition 
+PRAYER	Noun COM Comform Relig Subm 	noun: The act, practice, or instance of praying, entreaty, earnest request 
+PREACH	Noun COM Comform Relig Actv 	
+PREACHER	Noun HU Power Relig Role 	
+PRIEST	Noun HU Power Relig Role 	noun: One authorized or ordained to perform religious rites 
+PROVIDENCE	Pos Noun POLIT Power Relig Pstv Strng Virtue 	
+RECTOR	Noun HU Power Relig Role 	
+RELIGION	Noun ABS Abs* Doctr Relig 	noun: Belief in one or more superhuman power(s), usually to be obeyed  and worshiped as ruler(s) of the universe 
+RELIGIOUS	Pos Modif Doctr EMOT Relig Pstv 	32% adj: Devout, faithful 
+RELIGIOUS	Modif Doctr Relig 	68% adj: Of, concerning, or based on the nature of religion 
+REVEREND	Noun HU Relig Role 	
+SACRED	Pos Modif Virtue Relig Pstv 	
+SAINT	Pos Noun HU Relig Pstv Role 	
+SALVATION	Pos Noun Virtue Relig Pstv 	
+SEEKER	Noun HU Relig Role Actv 	
+SEMINARY	Noun PLACE Social Acad Relig 	
+SERMON	Noun COM Comform Relig 	
+SERVICE	Noun Ritual Relig 	2% noun: Ceremony 
+SIN	Neg Noun Relig Ngtv Vice 	
+SIN	IAV Neg SUPV Relig Ngtv Vice 	
+SOLEMN	Modif EMOT Relig Virtue 	
+SOUL	Noun HU ABS Abs* Relig Role 	noun: The living spirit of a person or group - especially in a religious  sense; a person (2) 
+SPIRIT	Noun Doctr Relig 	70% noun-adj: Mood, disposition, attitude, guiding values (29); incorporeal  being (45) 
+SPIRITUAL	Modif Virtue Relig 	
+STOICISM	Noun Doctr Relig Strng 	
+SUPERNATURAL	Modif Relig Virtue 	
+TESTAMENT	Noun Object COM Legal Relig Comnobj 	
+THEOLOGICAL	Modif Doctr Relig 	
+THEOLOGY	Noun Doctr Relig 	
+WHIMSICAL	IndAdj Pos Modif Pleasure Relig 	
+WITCH	Noun HU Female Hostile Relig Role 	63% noun: A sorcerer or sorceress 
+WITCH	Noun HU Relig Role 	26% idiom-noun: "Witch doctor" - shaman 
+WITCH	IAV SUPV Intrel Hostile Relig 	9% verb: To cast spells upon 
+WORSHIP	Noun Ritual Relig Subm 	
+WORSHIP	IAV SUPV Relig Subm Comform 	
+ZEN	Noun ABS Abs* Doctr Relig 	

@@ -1,0 +1,65 @@
+word	tags	comments
+ACCOMPLISH	IAV Pos SUPV Pstv Strng Actv Power Complt 	verb: To bring to its goal or conclusion 
+ACHIEVE	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To accomplish or carry through 
+ACQUIRE	DAV SUPV Complt Strng Actv 	
+AFFORD	IAV SUPV Complt Econ* Strng 	74% verb: To bear or meet the expense of 
+ASSURE	IAV Pos SUPV Complt Pstv Strng Ovrst 	50% verb: To guarantee, by virtue of some action, that something will come about 
+ATTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	
+ATTAINMENT	Pos Noun Pstv Strng Actv Complt 	
+BEAT	IAV Neg SUPV Complt Hostile Power Strng Actv Ngtv 	88% verb: To strike repeatedly, defeat or outperform (6) 
+BRING	IAV SUPV Complt Actv 	3% idiom-verb: "Bring about"--to cause or accomplish some end 
+CARRY	IAV SUPV Complt Strng Actv 	12% idiom-verb: 'carry out', 'carry through'--to execute or accomplish 
+CATCH	IAV SUPV Complt Strng Actv 	6% idiom-verb: To "catch up"--to come from behind and attain equal status  with someone or something 
+CAUGHT	IAV SUPV Complt ED Strng Actv 	4% idiom-verb: "Caught up"--to have come from behind to attain equal status  with someone or something 
+COME	IAV SUPV Complt 	1% idiom-verb: "Come up with"--produce 
+CREAM	IAV SUPV Complt Strng Actv 	
+CROWN	DAV SUPV Complt Polit* Power 	
+CURE	IAV Pos SUPV Complt Power Affil Pstv PFREQ 	89% verb: To restore to health 
+DEFEAT	IAV Neg SUPV Hostile Ngtv Strng Actv Complt 	55% verb: To overthrow or overcome 
+ENABLE	IAV Pos SUPV Complt Pstv Strng 	
+ENACT	IAV SUPV Complt Strng Actv 	
+ENHANCE	IAV Pos SUPV Pstv Strng Complt 	
+ESTABLISH	IAV Pos SUPV Complt Power Strng Actv Ovrst PFREQ Pstv 	94% verb: To set up, institute, prove or demonstrate 
+EXPERIENCE	IAV SUPV Complt Psv 	14% verb: To encounter or undergo 
+FILL	IAV SUPV Complt Actv 	4% idiom-verb: 'fill out'--to complete a form 
+FIX	IAV SUPV Complt 	2% verb: To establish, set, e.g. "they fixed the day" 
+FOUND	IAV SUPV Complt ED PFREQ 	96% verb: Located, discovered, learned, adjudged, encountered, past tense of "find" 
+FULFILL	IAV Pos SUPV Pstv Strng Complt 	
+GAIN	IAV Pos SUPV Complt Pstv Strng Actv 	83% verb: To get, obtain, win 
+GET	IAV SUPV Complt 	1% idiom-verb: "Get over"--recover from 
+GRADUATE	IAV SUPV Acad Complt 	32% verb: To graduate from 
+GROSS	IAV SUPV Complt Econ* 	
+HARVEST	IAV SUPV Complt Econ* Actv 	
+IMPLEMENT	IAV SUPV Strng Actv Complt 	
+KEEP	IAV SUPV Complt Strng 	2% verb: Observe, fulfill--keep a promise or engagement 
+LIVE	IAV Pos SUPV Complt Strng Pstv 	1% idiom-verb: 'live up to'--satisfy expectations 
+MAKE	IAV SUPV Complt Strng Actv 	1% idiom-verb: "Make it"--succeed 
+MANAGE	IAV SUPV Complt Strng Actv 	69% verb-idiom: "Manage to"--to succeed in accomplishing, contrive 
+MASTER	IAV SUPV Power Strng Actv Complt 	21% verb: To gain control of someone or something 
+MATRICULATE	DAV SUPV Acad Actv Complt 	
+MEASURE	IAV SUPV Complt Strng 	6% verb: "Measure up to"--to meet (a standard) 
+OBTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To acquire, to procure 
+OUTPUT	IAV SUPV Complt Econ* Strng Actv 	
+PASS	DAV Pos SUPV Complt Pstv Strng 	11% verb-adj: To undergo successfully ("pass an exam") 
+PASS	IAV SUPV Psv Complt 	3% verb: "Pass through"--to undergo, experience 
+PERFECT	IAV Pos SUPV Complt Pstv Strng Actv 	3% verb: To make perfect, complete 
+PROVE	IAV SUPV VERB LINK Complt Strng Psv 	33% verb: Turn out (to be)--"prove difficult," "prove to be" 
+PUT	IAV SUPV Complt Actv Strng 	0% verb: 'put through'--to have accepted; judged and passed 
+QUALIFY	IAV Pos SUPV Complt Pstv Strng Undrst 	28% verb: To meet some set of standards, ensure satisfaction of such standards 
+REACH	IAV SUPV Complt Actv Strng 	80% verb: To attain, arrive at, come to, get to, extend to 
+REALIZE	IAV SUPV Complt Strng Actv 	11% verb: To make real, see come true or happen--"he realized his dreams" 
+RECOVER	IAV SUPV Strng Complt 	
+RECOVERY	Noun ECON Strng Complt 	
+REGAIN	IAV SUPV Strng Actv Complt 	
+ROUND	IAV SUPV Complt Actv 	3% idiom-verb: "Round out", to complete 
+SETTLE	IAV SUPV Psv Complt 	4% idiom-verb: "Settle for"--be satisfied with 
+SUCCEED	IAV Pos SUPV Complt Pstv PFREQ 	94% verb: To turn out according to desire, to achieve success 
+SUCCESS	Pos Noun ABS Abs* ECON Pstv Complt 	noun: Favorable outcome, someone or something that succeeds 
+SUCCESSFUL	Pos Modif EVAL ECON Pstv Complt 	adj: Achieving or having achieved success, favorable in outcome 
+SURVIVE	IAV Pos SUPV Pstv Strng Complt 	
+SUSTAIN	IAV SUPV Strng Actv Complt 	
+TIE	DAV SUPV Complt 	0% verb: To make even (i.e. the score) 
+TOP	IAV SUPV Complt 	3% verb: To cap or surpass 
+TRIUMPH	IAV Pos SUPV Complt Pstv Strng Power 	
+WIN	IAV SUPV Complt Strng PFREQ Actv 	93% verb: To gain, to gain a victory 
+WON	IAV SUPV Complt ED Strng Actv 	verb: Past tense and past participle of "win"--gained a victory 

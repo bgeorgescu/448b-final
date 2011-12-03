@@ -1,0 +1,21 @@
+word	tags	comments
+BAY	Noun PLACE Aquatic 	
+BREAKER	Noun PLACE Aquatic 	
+CHANNEL	Noun PLACE Aquatic 	
+CREEK	Noun PLACE Aquatic 	
+FLOOD	Noun Strng PLACE Aquatic 	
+FOAM	Noun PLACE Aquatic 	
+GULF	Noun PLACE Aquatic 	
+HARBOR	Noun PLACE Aquatic ECON Econ* 	
+LAKE	Noun PLACE Aquatic 	noun: A body of water surrounded by land 
+OCEAN	Noun PLACE Aquatic 	
+POOL	Noun PLACE Exprs Aquatic 	
+RAPID	Noun PLACE Aquatic 	3% noun: Section of a river where the current runs swiftly 
+RIVER	Noun PLACE Aquatic 	noun: A large natural stream of water 
+SEA	Noun PLACE Aquatic 	noun-adj: Large body of salt water, or something similar 
+STREAM	Noun PLACE Aquatic 	52% noun: Small river 
+SWAMP	Noun PLACE Aquatic 	
+TIDE	Noun PLACE Aquatic 	
+WASH	Noun PLACE Aquatic 	2% noun: A sweep of water 
+WATER	Noun PFREQ PLACE Aquatic 	96% noun: H2o, pertaining to same 
+WAVE	Noun PLACE Aquatic 	

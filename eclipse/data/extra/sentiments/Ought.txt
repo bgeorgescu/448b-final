@@ -1,0 +1,27 @@
+word	tags	comments
+DEFERENCE	Pos Noun Other Ought 	
+DESERVEDLY	Pos Modif Strng Ought 	
+ETIQUETTE	Pos Noun Doctr Ought 	
+FORMALITY	Pos Noun Ought 	
+GET	IAV SUPV Handels Ought 	0% idiom-modal: "(have) got to"--must 
+IMPERATIVE	IndAdj Pos Modif Ought Eval 	
+MORALISTIC	IndAdj Pos Modif Ought Qual 	
+MUST	SV SUPV VERB MOD Ought 	verb: An element of the auxiliary denoting obligation, requirement, urgency 
+OUGHT	SV SUPV VERB MOD Ought 	verb (modal): Should 
+PIETY	Pos Noun Relig Ought 	
+POLITENESS	Pos Noun Ought Virtue 	
+PROPRIETY	Pos Noun Ritual Ought 	
+PRUDENCE	Pos Noun Think Ought Virtue 	
+PRUDENT	IndAdj Pos Modif Think Ought Virtue 	
+RESPECTFUL	IndAdj Pos Modif Ought Virtue Subm 	
+REVERE	IAV Pos SUPV Actv Affil Subm Ought 	
+REVERENCE	Pos Noun Affil Subm Ought 	
+REVERENT	IndAdj Pos Modif Affil Subm Ought 	
+REVERENTLY	Pos Modif Affil Subm Ought Actv 	
+RIGHTEOUS	IndAdj Pos Modif Ought Power 	
+RIGHTEOUSNESS	Pos Noun Ought Power 	
+RIGHTFUL	IndAdj Pos Modif Ought Legal 	
+SCRUPLES	Pos Noun Ought 	
+SCRUPULOUS	IndAdj Pos Modif Ought Virtue 	
+SHOULD	SV SUPV VERB MOD ED Ought 	verb: Modal connoting duty or propriety--'ought to', would 
+SWORN	IndAdj Pos Modif Legal Ought 	

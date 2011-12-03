@@ -1,0 +1,26 @@
+word	tags	comments
+BABY	Noun HU KIN Nonadlt Weak PFREQ Role 	95% noun-adj: An infant 
+BOY	Noun HU MALE Nonadlt Role 	noun: A male child 
+CHILD	Noun HU Nonadlt Role 	noun: Young ungrown human being, boy or girl 
+CHILDISH	IndAdj Neg Modif Nonadlt Vice 	
+CHILDREN	Noun HU S Nonadlt Role 	noun: Boys and or girls, animal young (rare) 
+GIRL	Noun HU Female Nonadlt Role 	noun: Female child or young person 
+GRANDCHILD	Noun HU KIN Kin* Nonadlt Role 	noun: Son or daughter of someone's son or daughter. 
+GRANDCHILDREN	Noun HU KIN S Kin* Nonadlt Role 	noun: Plural of grandchild--sons or daughters of someone's son(s) or daughter(s) 
+IMMATURE	IndAdj Neg Modif Nonadlt Weak 	
+INFANT	Noun HU Nonadlt Weak Role 	
+KID	Noun HU Nonadlt PFREQ Role 	97% noun: A child 
+NEWBORN	Modif Time* Nonadlt Weak 	
+PLAYFUL	IndAdj Pos Modif Nonadlt 	
+PLAYMATE	Pos Noun HU Role Nonadlt 	
+PUPPY	Noun ANI Nonadlt 	
+RUNAWAY	Neg Noun HU Nonadlt Travel Weak 	
+TEENAGE	Modif Nonadlt HU Role 	
+TEENAGER	Noun HU Nonadlt Role 	
+YOUNG	Modif Time* Nonadlt 	71% adj-noun: Being in an early stage generally of life, growth, existence  etc.--or pertaining to those who have you 
+YOUNG	Modif Time* Nonadlt 	22% adj-noun: "Younger" 
+YOUNG	Modif Time* Nonadlt 	7% adj-noun: "Youngest" 
+YOUNGSTER	Noun HU Nonadlt Role 	noun: A young person (or animal) 
+YOUTH	Noun HU Nonadlt Role 	76% noun-adj: A young person or young persons collectively, or pertaining to same 
+YOUTH	Noun ABS TIME Time* Nonadlt 	24% noun: The time of being young, early life 
+YOUTHFUL	Modif Time* Nonadlt 	

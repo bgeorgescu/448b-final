@@ -1,0 +1,61 @@
+word	tags	comments
+BENEFICIARY	Pos Noun HU Role Econ Exch 	
+BEQUEATH	DAV Pos SUPV Actv Econ Other Exch 	
+BETROTH	IAV Pos SUPV Actv Econ Other Exch 	
+BETROTHAL	Pos Noun Econ Exch 	
+BORROW	Modif Econ* Exch 	
+BORROW	IAV SUPV Exch Econ* Weak 	
+BUY	DAV SUPV Exch Econ* Actv 	verb: To purchase 
+CASH	IAV SUPV Exch Econ* 	
+CHARGE	DAV SUPV Exch Econ* Actv 	13% verb: To ask payment, to buy with deferred payment 
+CHARITABLE	IPadj Pos Modif Econ Exch Virtue 	
+CONSUMPTION	Noun ECON Econ* Actv Exch 	
+COST	DAV Neg SUPV Exch Ngtv Econ* 	33% verb: To require or result in an expenditure 
+CREDIT	IAV SUPV Exch Econ* 	9% verb: To place in an account 
+DONATE	DAV Pos SUPV Actv Exch Exprs Econ Fetch 	
+DONATION	Pos Noun Econ Exprs Fetch Exch 	
+DUE	Modif Exch 	18% adjective: Owing or owed--e.g. the bill was due 
+EARN	IAV SUPV Work Exch Econ* Strng Actv 	72% verb: To gain by dint of work 
+EARN	Noun ECON Econ* Strng Exch Actv 	28% noun-adj: "Earning(s)" income, or having to do with same 
+EARN	Noun ECON Econ* Exch Strng Actv 	0% adj: "Earned" 
+ECONOMIZE	IAV Pos SUPV Actv Econ Exch 	
+ENDOW	DAV Pos SUPV Actv Econ Other Exch 	
+EXCHANGE	IAV SUPV Exch Actv Econ* 	6% verb: To give like for like, to trade 
+EXPEND	IAV SUPV Exch Econ* Actv 	
+FINANCE	IAV SUPV Exch Econ* Strng 	
+FINE	IAV Neg SUPV Exch Hostile Legal Econ* Ngtv Strng Actv 	0% verb: To levy a fee in punishment 
+FIRE	DAV Neg SUPV Econ* Hostile Ngtv Strng Actv Exch 	8% verb: To terminate employment 
+HIRE	IAV SUPV Exch Econ* Power Actv Strng 	
+IMPORT	IAV SUPV Exch Actv Econ* 	
+INHERIT	DAV Pos SUPV Psv Exch Econ 	
+INSURE	IAV SUPV Exch Econ* 	
+INVEST	IAV SUPV Exch Econ* Actv 	
+LEND	DAV SUPV Exch Affil Econ* Actv 	
+LENT	DAV SUPV ED Exch Affil Econ* Actv 	
+LOAN	DAV SUPV Exch Econ* Actv 	10% verb: The act of lending, a grant of the temporary use of something 
+LUCRATIVE	IndAdj Pos Modif Econ Incr Exch 	
+MEET	IAV SUPV Actv Exch 	1% idiom-verb: "Make ends meet"--live within one's means 
+MORTGAGE	IAV SUPV Exch Econ* 	
+NEGOTIATE	IAV Pos SUPV Actv Comform Intrel Exch Solve 	
+OWE	IAV Neg SUPV Exch Econ* Ngtv Weak 	
+PAY	DAV SUPV Exch Econ* Actv PFREQ 	80% verb: To give or yield as recompense or return 
+PAY	Modif Econ* Exch 	3% adj: "Paid"--receiving pay, hired, as "a paid hand" 
+PROFIT	IAV Pos SUPV Exch Pstv Strng Econ* 	
+PURCHASE	IAV SUPV Exch Actv Econ* 	
+RECOMPENSE	Pos Noun Econ Exch Other Subm 	
+REDEMPTION	Pos Noun Subm Exch Intrel Solve 	
+REFUND	IAV SUPV Exch Econ* Actv 	
+RENT	DAV SUPV Exch Econ* 	43% verb: To hire 
+REPAID	IAV SUPV Exch ED Econ* Actv 	
+REPARATION	Pos Noun Subm Exch Intrel Solve 	
+REPAY	IAV SUPV Exch Econ* Actv 	
+RETAIL	IAV SUPV Exch Econ* 	
+REWARD	IAV Pos SUPV Exch Pstv Actv Strng 	19% verb: To compensate, to give positive reinforcement 
+SELL	DAV SUPV Exch Econ* Actv PFREQ 	95% verb: To offer for sale, dispose of for a price, deal in; persuade (infrequent) 
+SELL	Noun Econ* Actv Exch 	5% noun-adj: "Selling"--the act of offering for sale, persuading a customer, etc. 
+SHOP	DAV SUPV Exch Econ* Actv 	17% verb: To look for articles in stores with intent to buy 
+SOLD	DAV SUPV Exch ED Actv Econ* 	82% verb: Past tense of "sell" - effected a sale, exchanged for money 
+SPEND	DAV SUPV Exch Econ* PFREQ 	94% verb: To consume, especially time or money 
+SPEND	Noun Econ* Actv Exch 	4% noun-adj: "Spending"--disbursing money 
+SQUANDER	IAV Neg SUPV Econ Actv Exch 	
+TRADE	IAV SUPV Exch Econ* Actv 	14% verb: To buy, sell, exchange 

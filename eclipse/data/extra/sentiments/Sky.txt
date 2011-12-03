@@ -1,0 +1,35 @@
+word	tags	comments
+AIR	Noun PLACE Sky 	67% noun-adj: Gaseous elements surrounding the earth, atmosphere; transported  by airplane (e.g. "air mail") (1) 
+ATMOSPHERE	Noun Sky 	noun: Pervading or surrounding quality or tone 
+BLIZZARD	Noun PLACE Sky 	
+BREEZE	Noun PLACE Sky 	
+CLIMATE	Noun PLACE Sky 	
+CLOUD	Noun PLACE Sky 	
+FOG	Noun PLACE Sky 	
+FUME	Noun PLACE Sky 	
+HAZE	Noun PLACE Sky 	
+HORIZON	Noun PLACE Sky 	
+HURRICANE	Noun PLACE Sky 	
+INTERPLANETARY	Modif PLACE Sky 	
+METEOR	Noun PLACE Sky 	
+METEORITE	Noun PLACE Sky 	
+MIST	Noun PLACE Sky 	
+MOON	Noun PLACE Sky 	
+PLANET	Noun PLACE Sky 	
+RAIN	Noun Sky PLACE 	71% noun-adj: Water that falls in drops from the sky 
+SHOWER	Noun PLACE Sky 	
+SKIES	Noun PLACE Sky S 	
+SKY	Noun PLACE Sky 	noun: The upper atmosphere of the earth 
+SKYLINE	Noun PLACE Sky 	
+SNOW	Noun PFREQ PLACE Sky 	85% noun-adj: Flakes of frozen water vapor characterized by their lightness  and whiteness, or having to do with such 
+SPACE	Noun PLACE Sky 	8% noun-adj: "Outer space"--the universe beyond the earth's atmosphere 
+SQUALL	Noun PLACE Sky 	
+STAR	Noun PLACE Sky 	96% noun: A celestial body 
+STORM	Noun PLACE Sky Strng PFREQ 	93% noun-adj: A tempest 
+SUN	Noun PLACE Sky 	noun: The star that is the center of our solar system 
+SUNLIGHT	Noun PLACE Sky 	
+SUNSHINE	Noun PLACE Sky 	
+THUNDER	Noun Strng PLACE Sky 	
+UNIVERSE	Noun PLACE ABS Abs* Sky 	
+WEATHER	Noun PLACE Sky 	noun-adj: The state of the atmosphere with respect to wind, temperature  cloudiness, moisture, pressure, etc. 
+WIND	Noun PLACE Sky PFREQ 	87% noun: A movement of air 

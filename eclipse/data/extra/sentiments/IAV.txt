@@ -1,0 +1,1950 @@
+word	tags	comments
+ABANDON	IAV Neg SUPV Fail Ngtv Weak 	
+ABATE	IAV Neg SUPV Decr Psv 	
+ABDICATE	IAV Neg SUPV Finish Weak Psv Subm 	
+ABIDE	IAV Pos SUPV Actv Affil  Doctr 	
+ABOLISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+ABOUND	IAV Pos SUPV Incr Psv 	
+ABSCOND	IAV Neg SUPV Travel Subm Weak Hostile Actv 	
+ABSOLVE	IAV Pos SUPV Actv Comform Intrel 	
+ABUSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ACCEDE	IAV Pos SUPV Actv Comform Affil 	
+ACCENTUATE	IAV Pos SUPV Actv Ovrst 	
+ACCEPT	IAV Pos SUPV Intrel Subm Pstv Psv 	verb: To take, receive or accede to something 
+ACCOMMODATE	IAV Pos SUPV Vary Pstv Actv 	
+ACCOMPANY	IAV SUPV Travl Affil Actv 	59% verb-adj: To go along in company with, to escort; "accompanying"--  attendant (no adjective occurrences this sample) 
+ACCOMPLISH	IAV Pos SUPV Pstv Strng Actv Power Complt 	verb: To bring to its goal or conclusion 
+ACCORD	IAV Pos SUPV Intrel Pstv 	3% verb: "Accord with" to be consistent with 
+ACCORD	IAV Pos SUPV Intrel Power Pstv 	8% verb: To grant, bestow 
+ACCOST	IAV Neg SUPV Exert Hostile Actv 	
+ACCOUNT	IAV SUPV Solve Actv 	11% verb: To explain, dispose of (usually with "for") 
+ACCUSE	IAV Neg SUPV Hostile Ngtv Comform 	
+ACCUSTOM	IAV SUPV Psv Persist 	
+ACHIEVE	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To accomplish or carry through 
+ACKNOWLEDGE	IAV SUPV Intrel 	
+ACQUAINT	IAV Pos SUPV Pstv Solve 	
+ACROSS	IAV SUPV Solve 	8% idiom-verb: "Come across"--discover, encounter 
+ACT	IAV SUPV Work Strng Actv 	8% idiom-verb: 'act as'--to replace in function. 
+ACT	IAV SUPV Intrel Hostile Actv 	2% verb: 'act up'--to misbehave, malfunction. 
+ADAPT	IAV SUPV Work Strng Actv 	
+ADDRESS	IAV SUPV Actv Comform 	41% verb: To direct spoken or written communication to 
+ADDRESS	IAV SUPV Try Actv 	11% verb: To apply oneself to 
+ADHERE	IAV SUPV Stay Psv 	
+ADJUST	IAV SUPV Work Strng 	77% verb: To adapt 
+ADMINISTER	IAV SUPV Intrel Power Strng Actv 	
+ADMIT	IAV Pos SUPV Subm Pstv Weak Psv Comform 	63% verb: To acknowledge, confess, agree 
+ADMONISH	IAV Neg SUPV Intrel Hostile Power Strng Actv 	
+ADOPT	IAV SUPV Work Affil Actv PFREQ 	96% verb: To choose or accept, take as one's own child (2) 
+ADORN	IAV Pos SUPV Actv Eval Strng 	
+ADULTERATE	IAV Neg SUPV Change Exert 	
+ADVANCE	IAV Pos SUPV Travl Pstv Strng Actv 	47% verb: To move or bring forward, improve, promote 
+ADVISE	IAV SUPV Affil Intrel 	
+ADVOCATE	IAV SUPV Power Strng Actv Comform 	
+AFFECT	IAV SUPV Actv Vary 	verb: To produce a change in 
+AFFILIATE	IAV Pos SUPV Actv Affil 	
+AFFIRM	IAV Pos SUPV Power Pstv Strng Comform 	
+AFFLICT	IAV Neg SUPV Ngtv Strng Actv Intrel Hostile 	
+AFFORD	IAV SUPV Complt Econ* Strng 	74% verb: To bear or meet the expense of 
+AFFORD	IAV SUPV Work Power Strng 	26% verb: To furnish, confer upon or be capable of providing 
+AGGRAVATE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+AGITATE	IAV Neg SUPV Exert Ngtv Strng Actv 	
+AGREE	IAV Yes SUPV Affil Pstv 	96% verb: To be of one mind, harmonize in opinion or feeling, give consent, assent 
+AID	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	16% verb: To give help 
+AIM	IAV SUPV Try Actv 	24% verb: To direct at or to, to try for, to direct one's efforts towards;  rarely in sense of weapons (3) 
+AIR	IAV SUPV Strng Comform 	1% verb: To expose to air (0), to make known, publicize (1) 
+ALARM	IAV Neg SUPV Ngtv Actv Comform 	
+ALIENATE	IAV Neg SUPV Affil Intrel Hostile Other 	
+ALLEGE	IAV Neg SUPV Comform Weak Undrst 	
+ALLEVIATE	IAV Pos SUPV Actv Affil Exert Decr 	
+ALLIED	IAV Pos SUPV Intrel Affil Polit* Strng Pstv 	
+ALLOT	IAV SUPV Intrel Power 	
+ALLOW	IAV Pos SUPV Intrel Power Pstv Psv PFREQ 	97% verb: Permit 
+ALLOW	IAV SUPV Solve 	3% idiom-verb: "Allow for"--make provision for 
+ALLY	IAV SUPV Intrel Affil Polit* 	
+ALONG	IAV SUPV Intrel Affil 	14% idiom-verb: 'get along'--co-exist or exist in harmony and comfort. 
+ALONG	IAV SUPV Affil Comform 	6% idiom-verb: "Go along (with)"--agree 
+ALTER	IAV SUPV Vary Strng Actv 	
+ALTERNATE	IAV SUPV Vary Actv 	
+AMAZE	IAV SUPV Ovrst Arousal 	
+AMBUSH	IAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+AMELIORATE	IAV Pos SUPV Intrel Pstv Actv Affil 	
+AMEND	IAV SUPV Vary Actv 	
+AMOUNT	IAV SUPV PFREQ 	8% verb: Add up (to)--"he won't amount to much" 
+AMPUTATE	IAV Neg SUPV Decr Actv 	
+AMUSE	IAV Pos SUPV Actv Emot Pleasure 	
+ANALYZE	IAV SUPV Solve Actv 	
+ANCHOR	IAV SUPV Stay Strng 	
+ANGER	IAV Neg SUPV Hostile Ngtv Arousal 	14% verb: To make angry. 
+ANNIHILATE	IAV Neg SUPV Hostile Finish Exert Actv 	
+ANNOY	IAV Neg SUPV Actv Hostile Intrel Other 	
+ANSWER	IAV SUPV Actv Comform 	57% verb: To respond to a question, challenge, or statement 
+ANTAGONIZE	IAV Neg SUPV Ngtv Strng Actv Arousal Hostile 	
+APOLOGIZE	IAV SUPV Subm Other Weak Intrel 	
+APPALL	IAV Neg SUPV Ngtv Comform 	
+APPEAL	IAV SUPV Legal Subm Psv Affil Intrel 	59% verb: To request a decision, help, sympathy, etc. (10), to arouse  a favorable response (9) 
+APPEAR	IAV SUPV VERB LINK Psv Percv Undrst 	64% verb: To seem 
+APPEASE	IAV Pos SUPV Actv Subm Other 	
+APPLY	IAV SUPV Solve Actv 	79% verb: To have relevance to, put to use on, use or consider in regard  to, to bring to bear (only 2 physical--i.e. "she applied the paint") 
+APPLY	IAV SUPV Try Actv 	3% verb: Reflexive--to give special attention or effort 'to apply oneself' 
+APPROACH	IAV Pos SUPV Travl Pstv Actv 	66% verb: To come near or nearer to, or to set about a task 
+APPROPRIATE	IAV SUPV Intrel Power Strng 	
+APPROVE	IAV Pos SUPV Affil Pstv Strng Comform 	
+ARBITRATE	IAV Pos SUPV Actv Solve Affil Intrel Comform 	
+ARGUE	IAV Neg SUPV Hostile Ngtv Actv Comform 	44% verb: To dispute, to contend in argument--'they argue a lot' (sense  of animosity) 
+ARGUE	IAV SUPV Solve Actv 	56% verb: To present reasons for, to maintain in reasoning--'to argue  that,' or 'to argue for'--(sense of reasoning) 
+ARISE	IAV SUPV Rise Strng Actv 	
+ARM	IAV SUPV Intrel Milit Strng Actv Power 	1% verb: To equip with weapons 
+ARMED	IAV SUPV ED Intrel Milit Strng Actv Power Hostile 	0% verb: To equip with weapons (past tense) 
+AROSE	IAV SUPV ED Rise Strng Actv 	
+ARRANGE	IAV SUPV Power Actv Comform 	59% verb: To come to an agreement concerning, to prepare or plan--'we  arranged to meet them.' 
+ARRANGE	IAV SUPV Work 	41% verb: To place in proper, desired, or convenient order--'the rooms  were arranged in one straight hallway.' 
+ASCERTAIN	IAV SUPV Solve Actv Ovrst 	
+ASCRIBE	IAV Pos SUPV Actv Affil Doctr 	
+ASSAIL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ASSASSINATE	IAV Neg SUPV Actv Hostile Exert Other 	
+ASSAULT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ASSERT	IAV SUPV Power Strng Actv Comform 	
+ASSIMILATE	IAV SUPV Rel Psv 	
+ASSIST	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+ASSOCIATE	IAV Pos SUPV Solve Pstv Actv 	59% verb: To make a connection between things, to mix with socially 
+ASSUME	IAV SUPV Intrel Power 	44% verb: To undertake, take over the duties of, or adopt 
+ASSUME	IAV SUPV Psv Solve 	56% verb: To take for granted, suppose, postulate 
+ASSURE	IAV Pos SUPV Complt Pstv Strng Ovrst 	50% verb: To guarantee, by virtue of some action, that something will come about 
+ASSURE	IAV Pos SUPV Power Pstv Strng Ovrst Comform 	33% verb: To pledge, to state with confidence, to make confident 
+ASTONISH	IAV SUPV Ovrst Arousal 	
+ATROPHY	IAV Neg SUPV Decr Ngtv Weak Psv 	
+ATTACK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	34% verb: To assault (physically or figuratively) 
+ATTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	
+ATTEMPT	IAV SUPV Try Actv 	38% verb: To try, make an effort 
+ATTEND	IAV Pos SUPV Travl Subm Pstv PFREQ 	83% verb: To be present at. 
+ATTEND	IAV SUPV Work Actv 	5% verb: To give heed to (0), to take care of (3), accompany as a concomitant  or result (0) 
+ATTEST	IAV SUPV Subm Psv Comform 	
+ATTRACT	IAV Pos SUPV Intrel Affil Pstv Strng 	
+ATTRIBUTE	IAV SUPV Solve 	
+AUGMENT	IAV Pos SUPV Incr Pstv Actv 	
+AUTHORIZE	IAV SUPV Power Strng Actv Comform Legal 	
+AVAIL	IAV SUPV Try Strng Psv 	
+AVERAGE	IAV SUPV Solve 	3% verb: To reduce to or result in a mean 
+AVERT	IAV Neg SUPV Intrel Hostile Weak Psv 	
+AVOID	IAV Neg SUPV Intrel Hostile Ngtv Weak Psv 	verb: To keep away from, keep clear of 
+AWAIT	IAV SUPV Stay Psv 	
+AWARD	IAV Pos SUPV Power Pstv Strng Comform Actv 	
+AWAY	IAV SUPV Travl 	9% idiom-verb: 'get away'--avoid, escape 
+AX	IAV Neg SUPV Power Legal Work Actv 	
+BACK	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	1% verb: To support 
+BACK	IAV SUPV Fail Strng Actv 	1% verb: To move or cause to move backwards, to abandon a position or argument 
+BAFFLE	IAV Neg SUPV Ngtv Undrst Solve 	
+BAG	IAV SUPV Fall PFREQ 	3% verb-adj: To sag (1), sagging (0); load, put in a sack (0) 
+BAIL	IAV Neg SUPV Fail Weak Actv 	
+BAIT	IAV Neg SUPV Actv Other Comform 	
+BALK	IAV Neg SUPV Psv Weak Fail 	
+BAND	IAV SUPV Intrel Affil Strng 	3% verb: To group together 
+BANISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+BANK	IAV SUPV Work 	0% verb: To pile up 
+BANTER	IAV SUPV Weak Comform 	
+BARGAIN	IAV Pos SUPV Actv Comform Intrel Econ 	
+BASE	IAV SUPV Solve Strng 	78% verb: To establish, ground, provide with a foundation or rationale,  to have as foundation - "based on". 
+BEAM	IAV SUPV Comform 	
+BEAR	IAV SUPV Work Power Strng 	21% verb: To carry, show, wear, conduct oneself, render, afford, support,  sustain, endure 
+BEAR	IAV SUPV Solve 	4% verb: "Bear on," "(bring) to bear"--to have relevance or relation to 
+BEAR	IAV SUPV Try Power Actv Strng 	0% idiom-verb: "Bear down"--to exert pressure on or effort toward accomplishing,  to approach 
+BEAT	IAV Neg SUPV Complt Hostile Power Strng Actv Ngtv 	88% verb: To strike repeatedly, defeat or outperform (6) 
+BEAUTIFY	IAV Pos SUPV Actv Strng Eval 	
+BECAME	IAV SUPV VERB VB ED Psv Incr 	verb: Came, changed or grew to be. 
+BECKON	IAV SUPV Affil Actv Comform 	
+BECOME	IAV SUPV VERB VB Psv Incr 	verb: To come or grow to be 
+BED	IAV SUPV Stay 	18% verb: To go or put "to bed"--to retire, go to sleep, get someone ready  for sleep (3) 
+BEFIT	IAV Pos SUPV Psv Eval 	
+BEFRIEND	IAV Pos SUPV Actv Affil Intrel 	
+BEG	IAV Neg SUPV Intrel Subm Ngtv Weak Actv 	
+BEGAN	IAV SUPV ED Begin Actv 	verb: Started, commenced, took the first step. 
+BEGIN	IAV SUPV Begin Actv 	73% verb: To start, commence, embark upon, initiate 
+BEGUN	IAV SUPV ED Begin Actv 	verb: Past participle of begin--commenced, started 
+BEHAVE	IAV SUPV Actv Intrel 	
+BELIE	IAV Neg SUPV Intrel Hostile Actv 	
+BELIEVE	IAV SUPV Psv Intrel 	12% verb: To have specific confidence that someone is making a true statement  or that a statement is true 
+BELITTLE	IAV Neg SUPV Hostile Ngtv Intrel 	
+BELONG	IAV SUPV Intrel Subm Weak Psv PFREQ 	98% verb: To be in relation to something as owned or as a member or inhabitant 
+BELT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BENEFIT	IAV Pos SUPV Intrel Affil Power Pstv Strng 	21% verb: Gain, do good for, to 
+BESEECH	IAV Neg SUPV Intrel Subm Weak Actv 	
+BESIEGE	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BESTOW	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+BET	IAV SUPV Try Econ* Actv 	71% verb: To wager or risk 
+BETRAY	IAV Neg SUPV Intrel Hostile Ngtv 	
+BETROTH	IAV Pos SUPV Actv Econ Other Exch 	
+BETTER	IAV Pos SUPV Try Pstv Actv 	2% verb: To improve 
+BETTER	IAV SUPV VERB MOD 	6% modal: Ought to--'you had better. . . .' 
+BEWARE	IAV Neg SUPV Percv Ngtv Strng Hostile Undrst 	
+BEWILDER	IAV Neg SUPV Ngtv Undrst Solve 	
+BID	IAV SUPV Econ* Actv Comform 	
+BIT	IAV Neg SUPV ED Hostile Ngtv Actv Intrel 	7% verb: Past tense of "bite" 
+BITE	IAV Neg SUPV Ngtv Actv Hostile Intrel 	74% verb: To grip, injure or cut off with or as with teeth 
+BLACK	IAV SUPV Natpro 	0% verb-idiom: "Black out"--to lose consciousness 
+BLACKMAIL	IAV Neg SUPV Actv Power Intrel Other Econ 	
+BLAME	IAV Neg SUPV Intrel Hostile Ngtv 	75% verb: To hold responsible for failure, to censure 
+BLAST	IAV Neg SUPV Rise Ngtv Strng Actv 	
+BLESS	IAV Pos SUPV Intrel Affil Relig Pstv Psv 	32% verb: To consecrate, favor or endow, make happy or prosperous 
+BLIND	IAV Neg SUPV Intrel Hostile Ngtv 	10% verb: To deprive of sight 
+BLOOM	IAV Pos SUPV Actv Begin Incr 	
+BLOSSOM	IAV Pos SUPV Actv Begin Incr 	
+BLOW	IAV SUPV Exert Hostile Strng Actv 	60% verb: To propel as with wind, to set air in motion; fellation 
+BLOW	IAV Neg SUPV Ngtv Strng Actv Exert 	17% verb: "Blow up," "blow out"--to explode physically or emotionally 
+BLUR	IAV Neg SUPV Undrst Weak Comform Actv 	
+BLURT	IAV Neg SUPV Comform Hostile Ovrst Actv 	
+BOARD	IAV SUPV Travl 	13% verb-adj: Into or on a ship or other carrier 
+BOAST	IAV Neg SUPV Comform Power Vice Actv 	
+BOLSTER	IAV Pos SUPV Actv Affil Strng Incr 	
+BOLT	IAV Neg SUPV Move Actv Fail Intrel 	
+BOMBARD	IAV Neg SUPV Actv Hostile 	
+BOOST	IAV Pos SUPV Pstv Strng Actv Incr 	
+BOOT	IAV Neg SUPV Actv Affil Power Other 	
+BORDER	IAV SUPV Space 	
+BORE	IAV SUPV ED Work Strng Actv 	28% verb: Carried, endured; manifested (3); drilled a hole (0); caused  loss of interest (2); exerted pressure or effort (1); approached (0) 
+BORROW	IAV SUPV Exch Econ* Weak 	
+BOTHER	IAV Neg SUPV Intrel Hostile Ngtv Actv PFREQ 	91% verb: To give trouble to, annoy, worry--to bewilder, confuse--to be  troubled, etc. 
+BOTHER	IAV SUPV Work Actv 	8% verb: To take the trouble, trouble or inconvenience oneself 
+BOUND	IAV SUPV ED Exert Strng 	10% verb: Past tense of "bind" 
+BOWL	IAV SUPV Exprs Exert 	
+BOX	IAV SUPV Exert Actv 	4% verb: To put in a box, constrain 
+BOYCOTT	IAV SUPV Hostile Actv Comform 	
+BRACE	IAV SUPV Work Strng 	
+BRAG	IAV Neg SUPV Actv Comform Power 	
+BRANCH	IAV SUPV Incr Actv 	0% verb: To put forth or spread in branches, expand, extend 
+BRAND	IAV SUPV Hostile Comform 	
+BRANDISH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+BRAWL	IAV Neg SUPV Actv Hostile Exert Intrel 	
+BREACH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BREAK	IAV SUPV Comform 	5% verb-idiom: "Break the news" 
+BREAK	IAV Neg SUPV Intrel Hostile Legal Ngtv Actv 	2% verb-idiom: "Break a law" 
+BREAK	IAV Neg SUPV Fail Ngtv Weak Psv 	8% verb: "Break down"--to collapse, go out of working order 
+BREAKDOWN	IAV Neg SUPV Psv Weak Fail 	
+BRIBE	IAV Neg SUPV Econ Vice 	
+BRIDGE	IAV SUPV Strng Space 	6% verb: To span or connect any two separated things or points 
+BRING	IAV SUPV Intrel Affil Power Actv 	13% verb: Bring up--to rear, educate, care for during childhood 
+BRING	IAV SUPV Actv Comform 	6% verb: Bring up--to introduce for consideration, mention 
+BRING	IAV SUPV Power Actv Comform 	7% idiom-verb: "Bring out"--to expose, reveal, to transfer out (16) 
+BRING	IAV SUPV Complt Actv 	3% idiom-verb: "Bring about"--to cause or accomplish some end 
+BRING	IAV SUPV Solve Actv 	1% idiom-verb: (to) "bring to mind"--to become conscious of 
+BRING	IAV SUPV Try Actv 	0% verb: Bring oneself--to force oneself to do something 
+BRISTLE	IAV Neg SUPV Emot Arousal Hostile Psv 	
+BROADCAST	IAV SUPV Comform 	
+BROADEN	IAV SUPV Incr Strng 	
+BROKE	IAV SUPV ED Begin 	10% verb: Began spontaneously--or suddenly 'fire broke out,' 'dawn broke' 
+BROKE	IAV SUPV Comform 	0% idiom-verb: "Broke (broken) the news" 
+BROKE	IAV Neg SUPV ED Intrel Hostile Legal Ngtv Actv 	1% idiom-verb: "Broke (broken) a law" 
+BROKE	IAV Neg SUPV ED Fail Ngtv Weak Psv 	3% verb: "Broke (broken) down"--collapsed, went out of working order 
+BRUSH	IAV SUPV Work 	
+BUBBLE	IAV SUPV Natpro 	
+BUCKLE	IAV Neg SUPV Weak Subm Fail Psv 	
+BUG	IAV Neg SUPV Hostile Ngtv Comform 	
+BUILD	IAV SUPV Incr Strng Actv 	14% idiom-verb: "Build up"--to strengthen, or increase, either quantitatively  or qualitatively 
+BUNGLE	IAV Neg SUPV Undrst Weak 	
+BURDEN	IAV Neg SUPV Work Ngtv Weak 	
+BURST	IAV SUPV Fall Strng Actv 	
+BUSINESS	IAV SUPV Try 	2% verb-idiom: 'mean business,' 'get down to business'--to be serious,  intend serious effort 
+CALM	IAV Pos SUPV Pstv Psv Pleasur 	38% verb: To quiet, become subdued 
+CAMPAIGN	IAV SUPV Try Actv 	5% verb: To strive for a goal 
+CANVAS	IAV SUPV Work Actv 	
+CAPITALIZE	IAV Pos SUPV Actv Strng Power Econ Incr Ach 	
+CAPITULATE	IAV Neg SUPV Psv Subm Weak Fail 	
+CAPSIZE	IAV Neg SUPV Fail 	
+CAPTURE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+CAREEN	IAV Neg SUPV Psv Weak Travel 	
+CARESS	IAV Pos SUPV Intrel Affil Pstv 	
+CARRY	IAV SUPV Complt Strng Actv 	12% idiom-verb: 'carry out', 'carry through'--to execute or accomplish 
+CARRY	IAV SUPV Try Actv 	10% idiom-verb: 'carry on'--to manage or continue to manage; to behave  extravagantly (2) 
+CARRY	IAV SUPV Work Actv 	2% verb: To keep or maintain (insurance) 
+CASE	IAV SUPV Percv Legal 	0% verb: To examine or survey in planning a crime 
+CASH	IAV SUPV Exch Econ* 	
+CAST	IAV SUPV Exert Hostile Actv 	64% verb: To throw, project; to aim (of eyes) (2) 
+CAST	IAV SUPV Intrel Power Strng 	7% verb: To place in a role 
+CATCH	IAV SUPV Fetch Strng Actv PFREQ 	88% verb: To capture, ensnare, get hold of; attract (1); contract (disease)  (1); to absorb as to hear and understand (0) 
+CATCH	IAV SUPV Complt Strng Actv 	6% idiom-verb: To "catch up"--to come from behind and attain equal status  with someone or something 
+CAUGHT	IAV SUPV Intrel ED Hostile Strng Actv PFREQ 	96% verb: Past tense of "catch"--to have captured, ensnared, attracted  (0); contracted (0); to have absorbed, as to hear and understand (0) 
+CAUGHT	IAV SUPV Complt ED Strng Actv 	4% idiom-verb: "Caught up"--to have come from behind to attain equal status  with someone or something 
+CAUSE	IAV SUPV Causal Strng Actv 	44% verb: To produce as an effect 
+CAUTION	IAV SUPV Undrst Comform 	
+CAVE	IAV Neg SUPV Fall Weak Psv Ngtv 	5% idiom-verb: "Cave in"--collapse 
+CELEBRATE	IAV Pos SUPV Actv Pleasure 	
+CEMENT	IAV SUPV Rel Strng 	
+CENSOR	IAV Neg SUPV Actv Power Ovrst Comform 	
+CENSURE	IAV Neg SUPV Power Actv Other Hostile Comform 	
+CENTER	IAV SUPV Space Strng 	22% verb: To focus on or at ('attention centers around him') 
+CERTIFY	IAV SUPV Power Legal Ovrst Comform 	
+CHAIN	IAV SUPV Rel Subm 	
+CHALLENGE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	19% verb: To confront with a contest or problem 
+CHANCE	IAV SUPV Vary Psv 	4% verb: To happen or occur without plan or intent 
+CHANGE	IAV SUPV Vary Actv 	59% verb: To alter, modify, convert, transform 
+CHANNEL	IAV SUPV Work Power 	
+CHARACTERIZE	IAV SUPV Solve 	
+CHARGE	IAV Neg SUPV Hostile Strng Actv Ngtv Comform 	9% verb: To accuse, enjoin, attribute 
+CHARGE	IAV Neg SUPV Travl Hostile Strng Actv Ngtv 	7% verb: To attack, to rush or thrust forward 
+CHARM	IAV Pos SUPV Intrel Affil Pstv 	
+CHART	IAV SUPV Solve Actv 	
+CHARTER	IAV SUPV Work Econ* 	
+CHASTISE	IAV Neg SUPV Actv Power Other Hostile Comform 	
+CHEAPEN	IAV Neg SUPV Actv Decr Weak 	
+CHEAT	IAV SUPV Hostile Intrel 	
+CHECK	IAV SUPV Solve Actv 	45% verb: To investigate, verify, restrain 
+CHEER	IAV Pos SUPV Actv Comform Affil 	
+CHERISH	IAV Pos SUPV Pstv Psv Intrel Affil 	
+CHIDE	IAV Neg SUPV Actv Hostile Comform Power Other 	
+CHILL	IAV SUPV Natpro 	
+CHIP	IAV SUPV Exert Hostile 	
+CHOOSE	IAV SUPV Psv Solve 	verb: To make a choice 
+CHOSE	IAV SUPV ED Psv Solve 	
+CHOSEN	IAV SUPV ED Psv PFREQ Solve 	88% verb: Past tense of 'choose'--selected 
+CIVILIZE	IAV Pos SUPV Work Pstv Power 	
+CLAIM	IAV SUPV Comform 	
+CLARIFY	IAV Pos SUPV Pstv Actv Comform 	
+CLASH	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+CLASSIFY	IAV SUPV Solve Actv 	
+CLEAN	IAV Pos SUPV Work Pstv Actv 	33% verb: To cleanse, wash, clear away 
+CLEAR	IAV Pos SUPV Exert Pstv 	13% verb: To make or become free of obstructions, blemishes or obscurity;  to pass by, over, through or away from (0) 
+CLEAR	IAV SUPV Power Comform 	3% verb: To absolve from blame 
+CLEAR	IAV SUPV Solve 	3% idiom-verb: "Clear up"--make orderly or understandable 
+CLICK	IAV SUPV Natpro 	
+CLIMB	IAV SUPV Rise Strng Actv 	verb: To move upward, to ascend. 
+CLING	IAV SUPV Stay Weak Actv 	
+CLOCK	IAV SUPV Rel 	0% verb: To measure speed 
+CLOG	IAV Neg SUPV Psv Fail 	
+CLUNG	IAV SUPV Stay ED Weak Actv 	
+CLUSTER	IAV SUPV Space Strng 	
+COACH	IAV SUPV Intrel Acad Actv Affil 	
+COAST	IAV SUPV Travl Psv 	
+COAX	IAV Pos SUPV Actv Intrel Comform Other 	
+CODDLE	IAV Pos SUPV Actv Intrel Other Affil 	
+CODE	IAV SUPV Solve 	
+COERCE	IAV Neg SUPV Actv Power Comform Intrel 	
+COINCIDE	IAV SUPV Rel Psv 	
+COLLABORATE	IAV Pos SUPV Actv Intrel Affil Comform Ach 	
+COLLAPSE	IAV Neg SUPV Fall Ngtv Weak Psv 	
+COLLAR	IAV SUPV Intrel Power Strng Actv 	
+COLLECT	IAV SUPV Incr Actv Strng PFREQ 	87% verb: To accumulate, acquire 
+COLLIDE	IAV Neg SUPV Actv Exert Hostile 	
+COLLUSION	IAV Neg SUPV Actv Affil Intrel 	
+COLOR	IAV SUPV Work 	1% verb: To give character or distinguishing quality to, to impart hue,  shade, or tint to something 
+COMBAT	IAV Neg SUPV Intrel Hostile Polit* Ngtv Actv Strng 	
+COMBINE	IAV SUPV Rel Strng Actv 	
+COME	IAV SUPV Travl Actv PFREQ 	90% verb: To move from place to place in time and/or space, generally  toward the speaker; abstract--to reach, arrive at--"he came to decide  otherwise" (20); derive from or be caused by (4) 
+COME	IAV SUPV Work Actv Travl 	0% idiom-verb: "Coming along"--proceeding, progressing 
+COME	IAV SUPV Rise 	4% idiom-verb: "Come up"--about to occur, rise or arise 
+COME	IAV SUPV Vary 	1% idiom-verb: "Come to pass"--happen 
+COME	IAV SUPV Complt 	1% idiom-verb: "Come up with"--produce 
+COME	IAV SUPV Exert 	0% idiom-verb: "Come about"--occur; change direction (nautical) 
+COME	IAV SUPV Vary 	0% idiom-verb: "Come off"--become detached, happen, occur 
+COMFORT	IAV Pos SUPV Intrel Affil Pstv Strng 	29% verb: To solace 
+COMMAND	IAV SUPV Power Strng Actv Comform 	
+COMMEMORATE	IAV Pos SUPV Actv Ritual 	
+COMMENCE	IAV SUPV Begin Actv 	
+COMMEND	IAV Pos SUPV Actv Comform Affil 	
+COMMENT	IAV SUPV Comform 	16% verb: To make a remark 
+COMMIT	IAV Neg SUPV Work Actv Ngtv 	71% verb: To do or perpetrate 
+COMMIT	IAV SUPV Subm Actv Comform 	15% verb: To bind, to consign 
+COMMUNICATE	IAV Pos SUPV Pstv PFREQ Comform 	96% verb: To make known, to impart to someone else 
+COMPARE	IAV SUPV Actv Solve 	
+COMPEL	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+COMPENSATE	IAV Pos SUPV Work Econ* Strng Actv Pstv 	
+COMPETE	IAV Neg SUPV Try Hostile Ngtv Strng Actv 	
+COMPILE	IAV SUPV Work Actv 	
+COMPLAIN	IAV Neg SUPV Hostile Ngtv Actv Comform 	verb: To express dissatisfaction or pain 
+COMPLEMENT	IAV Pos SUPV Rel Pstv 	
+COMPLETE	IAV Pos SUPV Strng Pstv Finish 	23% verb: To finish, to bring to a conclusion or consummation, to fulfill  or make whole or entire 
+COMPLICATE	IAV Neg SUPV Solve Ngtv 	
+COMPLIMENT	IAV Pos SUPV Actv Comform Affil 	
+COMPLY	IAV SUPV Intrel Subm Psv 	
+COMPOUND	IAV SUPV Work Strng 	
+COMPRESS	IAV SUPV Rel Strng Actv 	
+COMPRISE	IAV SUPV Rel Psv 	
+COMPROMISE	IAV Pos SUPV Intrel Subm Pstv Psv 	
+COMPUTE	IAV SUPV Solve Actv 	
+CONCEAL	IAV Neg SUPV Intrel Hostile Ngtv 	
+CONCEDE	IAV SUPV Subm Weak Psv Comform 	
+CONCEIVE	IAV SUPV Solve Psv 	
+CONCENTRATE	IAV SUPV Solve Strng Actv 	
+CONCERN	IAV Neg SUPV Need Ngtv Psv 	58% verb-adj: To be of interest or importance to--to trouble, worry, or  disquiet, to be interested in, relevant to, or worried about 
+CONCLUDE	IAV SUPV Finish Actv 	
+CONDEMN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+CONDENSE	IAV SUPV Rel 	
+CONDITION	IAV SUPV Work Actv 	3% verb: To subject to certain circumstances, thereby rendering in a (specific)  condition (cf. b.f. skinner) 
+CONDUCT	IAV SUPV Work Actv 	32% verb: To perform, carry out, manage 
+CONDUCT	IAV SUPV Intrel 	7% verb: To behave 
+CONFER	IAV Pos SUPV Actv Comform Think 	
+CONFESS	IAV Neg SUPV Subm Ngtv Weak Psv Comform 	
+CONFIDE	IAV Pos SUPV Affil Pstv Psv Comform Ovrst 	
+CONFINE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+CONFIRM	IAV SUPV Solve Strng Ovrst 	
+CONFISCATE	IAV Neg SUPV Actv Fetch Power 	
+CONFLICT	IAV Neg SUPV Intrel Hostile Ngtv Actv 	0% verb: To disagree or struggle 
+CONFORM	IAV SUPV Intrel Subm Weak Psv 	
+CONFOUND	IAV Neg SUPV Ngtv Ngtv Undrst Arousal 	
+CONFRONT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To challenge, face 
+CONFUSE	IAV Neg SUPV Ngtv Undrst Comform 	9% verb: To make unclear, to temporarily disturb the clear working of the mind 
+CONFUSE	IAV Neg SUPV Solve Weak Ngtv Undrst 	2% verb: To fail to distinguish 
+CONGRATULATE	IAV Pos SUPV Actv Comform Other  Affil 	
+CONGREGATE	IAV Pos SUPV Actv Affil Coll 	
+CONJURE	IAV Pos SUPV Actv Exprs Strng Begin 	
+CONNECT	IAV Pos SUPV Space Pstv Actv 	
+CONQUER	IAV Pos SUPV Actv Strng Power Travel Intrel Ach 	
+CONSERVE	IAV Pos SUPV Actv Fetch Try 	
+CONSIDER	IAV Pos SUPV Pstv PFREQ Solve 	verb: To think about or bear in mind--to regard or deem to be; to regard  with respect, thoughtfulness, etc. (2) 
+CONSIGN	IAV Pos SUPV Actv Fetch 	
+CONSIST	IAV SUPV Rel Psv 	
+CONSOLE	IAV Pos SUPV Actv Affil Other 	
+CONSOLIDATE	IAV Pos SUPV Pstv Strng Persist 	
+CONSPIRE	IAV Neg SUPV Actv Affil Intrel Conform 	
+CONSTITUTE	IAV SUPV Psv Strng Rel 	
+CONSTRAIN	IAV Neg SUPV Intrel Hostile Power Ngtv Strng 	
+CONSTRUE	IAV SUPV Solve 	
+CONSULT	IAV Pos SUPV Pstv Comform 	
+CONSUMMATE	IAV Pos SUPV Actv Compl Comform 	
+CONTAMINATE	IAV Neg SUPV Actv Change Hostile 	
+CONTEMPLATE	IAV SUPV Psv Solve 	
+CONTEND	IAV Neg SUPV Hostile Ngtv Strng Actv Try 	
+CONTENT	IAV Pos SUPV Pstv Psv Pleasur 	0% verb: To satisfy 
+CONTEST	IAV SUPV Hostile Power Strng Actv Comform 	
+CONTINUE	IAV SUPV Persist Strng Actv PFREQ 	95% verb: To go on, keep on, extend 
+CONTRACT	IAV SUPV Work Legal 	5% verb: To engage in a legally binding agreement 
+CONTRACT	IAV SUPV Psv Decr 	0% verb: To draw inward, to shrink; to get or acquire, as a disease (0) 
+CONTRADICT	IAV Neg SUPV Ngtv Comform Hostile 	
+CONTRAST	IAV SUPV Rel 	
+CONTRIBUTE	IAV Pos SUPV Work Affil Actv Econ* PFREQ Pstv Strng 	97% verb: To give or add 
+CONTROL	IAV SUPV Intrel Power Strng Actv 	26% verb: To restrain, direct, regulate 
+CONVENE	IAV Pos SUPV Actv Begin Travel Affil Coll 	
+CONVERSE	IAV SUPV Comform 	
+CONVERT	IAV SUPV Work Strng Actv 	
+CONVEY	IAV SUPV Fetch Actv 	
+CONVICT	IAV Neg SUPV Intrel Hostile Legal Actv Ngtv Strng 	
+CONVINCE	IAV Pos SUPV Power Pstv Strng Actv Comform 	83% verb: To persuade by argument or proof, cause to believe 
+CONVINCED	IAV SUPV ED Power Psv Comform 	15% verb: Caused to believe 
+CONVULSE	IAV SUPV Natpro 	
+COOL	IAV Neg SUPV Natpro Modif Ngtv Psv 	
+COOPERATE	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+COORDINATE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+CORRECT	IAV Pos SUPV Work Pstv Strng 	54% verb: To make right, improve; to point out error (0) 
+CORRELATE	IAV SUPV Solve 	
+CORRESPOND	IAV SUPV Rel Comform 	
+CORRODE	IAV Neg SUPV Psv Decr Change 	
+COUNSEL	IAV Pos SUPV Affil Power Pstv Comform 	
+COUNTERACT	IAV Neg SUPV Ngtv Strng Actv Negate Decr 	
+COURT	IAV SUPV Intrel Affil Actv 	9% verb: To woo or try to get, seek 
+COVER	IAV SUPV Intrel Power Actv 	87% verb: To conceal, protect; to coat, be smeared or buried (25); to  encompass, deal with, range over (11); meet an expense (6) 
+CRAM	IAV Neg SUPV Actv Think 	
+CRAMP	IAV Neg SUPV Actv Pain 	
+CRASH	IAV SUPV Fall 	
+CRAWL	IAV Neg SUPV Rel Ngtv Weak 	4% verb: To swarm with 
+CREAM	IAV SUPV Complt Strng Actv 	
+CREATE	IAV Pos SUPV Exprs Strng Actv Begin Pstv 	verb: To cause to come into being, to happen, to bring about. 
+CREDIT	IAV SUPV Exch Econ* 	9% verb: To place in an account 
+CREDIT	IAV Pos SUPV Pstv Comform 	3% verb: To give recognition, to ascribe 
+CRINGE	IAV Neg SUPV Psv Feel Pain 	
+CRIPPLE	IAV Neg SUPV Actv Pain Stay Hostile Exert 	
+CRITICIZE	IAV Neg SUPV Hostile Ngtv Comform 	
+CROAK	IAV Neg SUPV Psv Natpro Finish 	
+CROSS	IAV SUPV Travl 	34% verb: To go across; to intersect, overlap (5) 
+CROSS	IAV Neg SUPV Intrel Hostile Ngtv Actv 	3% verb: To confuse, frustrate 
+CROWD	IAV SUPV Rel Actv Strng 	21% verb: To throng 
+CRUMBLE	IAV Neg SUPV Psv Finish Weak Subm 	
+CRUMPLE	IAV Neg SUPV Psv Finish Weak Subm 	
+CRUSH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+CUDDLE	IAV Pos SUPV Actv Other Pleasure 	
+CULMINATE	IAV Pos SUPV Actv Compl Coll 	
+CULTIVATE	IAV Pos SUPV Work Pstv Actv 	
+CURB	IAV SUPV Intrel Power Strng Actv 	
+CURE	IAV Pos SUPV Complt Power Affil Pstv PFREQ 	89% verb: To restore to health 
+CURSE	IAV Neg SUPV Hostile Ngtv Comform 	
+CURTAIL	IAV Neg SUPV Actv Stay 	
+CUT	IAV Neg SUPV Decr Ngtv Strng Actv 	8% verb-noun: To abridge, shorten, reduce, terminate; reduction, termination (1) 
+DAMAGE	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+DARE	IAV Pos SUPV Try Pstv 	
+DARKEN	IAV Neg SUPV Ngtv Natpro 	
+DASH	IAV SUPV Travl Actv Ovrst 	
+DATE	IAV SUPV Time* 	2% verb: To indicate a point in time 
+DATE	IAV SUPV Intrel Affil 	43% verb: To go out socially with someone 
+DAWDLE	IAV Neg SUPV Actv Move 	
+DAWN	IAV SUPV Solve 	3% idiom-verb: 'dawn on'--to occur to 
+DAZZLE	IAV Pos SUPV Actv Percv Other Strng 	
+DEAL	IAV SUPV Work Actv 	34% verb: To take action with respect to something or someone, to handle 
+DEBATE	IAV SUPV Polit* Actv Comform 	38% verb: To carry on a debate 
+DECEASE	IAV Neg SUPV Actv Finish 	
+DECEIVE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+DECIDE	IAV SUPV Solve Strng Actv PFREQ 	98% verb: To settle something in dispute or in doubt, conclusion 
+DECIPHER	IAV Pos SUPV Actv Comform Solve 	
+DECLARE	IAV SUPV Strng Comform 	verb: Proclaim or manifest 
+DECLINE	IAV Neg SUPV Decr Ngtv Weak Psv 	
+DECOMPOSE	IAV Neg SUPV Psv Natpro Decr 	
+DECORATE	IAV Pos SUPV Actv Incr Eval Pleasure 	
+DEDICATE	IAV Pos SUPV Pstv Virtue Strng 	
+DEDUCE	IAV Pos SUPV Actv Think Solve 	
+DEDUCT	IAV SUPV Solve Actv 	
+DEEM	IAV SUPV Psv Solve 	
+DEEPEN	IAV SUPV Incr Actv Strng 	
+DEFAME	IAV Neg SUPV Actv Comform 	
+DEFAULT	IAV Neg SUPV Actv Fail Econ 	
+DEFEAT	IAV Neg SUPV Hostile Ngtv Strng Actv Complt 	55% verb: To overthrow or overcome 
+DEFEND	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	verb: To ward off or repulse attacks, to uphold 
+DEFER	IAV SUPV Intrel Subm Psv 	
+DEFILE	IAV Neg SUPV Hostile Actv Exert 	
+DEFINE	IAV SUPV Solve 	
+DEFY	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+DEGRADE	IAV Neg SUPV Hostile Actv Comform 	
+DELAY	IAV Neg SUPV Persist Ngtv Weak Psv 	
+DELIBERATE	IAV SUPV Strng Actv Comform 	
+DELIGHT	IAV Pos SUPV Pstv Pleasur 	
+DELIVER	IAV SUPV Fetch Strng Actv 	
+DEMAND	IAV SUPV Power Strng Actv Comform 	52% verb: To ask for or about boldly or urgently, to need, require 
+DEMEAN	IAV Neg SUPV Actv Other Hostile Power 	
+DEMOLISH	IAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+DEMONSTRATE	IAV SUPV Strng Actv Comform 	
+DEMORALIZE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+DENOTE	IAV SUPV Solve 	
+DENOUNCE	IAV Neg SUPV Actv Hostile Power Comform 	
+DENY	IAV Neg SUPV Hostile Ngtv Comform 	verb: To maintain that something is not true, negate; refuse to grant, withhold 
+DEPEND	IAV SUPV Causal Weak Psv 	73% verb: Be contingent 
+DEPEND	IAV SUPV Intrel Subm Weak Psv 	27% verb: Rely (upon) 
+DEPICT	IAV SUPV Comform 	
+DEPLETE	IAV Neg SUPV Decr 	
+DEPLORE	IAV Neg SUPV Hostile Ngtv Psv Comform 	
+DEPLOY	IAV SUPV Intrel Power Strng Actv 	
+DEPOSE	IAV Neg SUPV Comform Power Hostile Actv 	
+DEPRECIATE	IAV Neg SUPV Decr Ngtv Weak Psv 	
+DEPRESS	IAV Neg SUPV Ngtv Pain EMOT 	13% verb: To discourage, sadden; to lower, reduce, press down on (2) 
+DEPRIVE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+DERIDE	IAV Neg SUPV Comform Hostile Actv 	
+DERIVE	IAV SUPV Solve Actv 	
+DESCRY	IAV Pos SUPV Actv Percv 	
+DESERVE	IAV Pos SUPV Intrel Affil Pstv 	
+DESIGN	IAV SUPV Work Actv 	52% verb: To prepare plans for, plan, outline; to contrive (0) 
+DESIGNATE	IAV SUPV Intrel Power Actv Strng 	
+DESTROY	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	verb: To put an end to or reduce to useless form 
+DETAIN	IAV Neg SUPV Actv Stay Power 	
+DETECT	IAV SUPV Percv Actv 	
+DETER	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+DETERMINE	IAV SUPV Solve Strng Actv Ovrst 	56% verb: To ascertain, decide or settle, authoritatively or resolutely 
+DETRACT	IAV Neg SUPV Actv Decr 	
+DEVASTATE	IAV Neg SUPV Ngtv Strng Actv Hostile Exert 	
+DEVELOP	IAV SUPV Incr Strng Actv PFREQ 	verb: To evolve, strengthen, or elaborate. 
+DEVIATE	IAV Neg SUPV Actv Change 	
+DEVISE	IAV SUPV Work 	
+DEVOTE	IAV Pos SUPV Try Pstv Actv 	75% verb: To give up to or concentrate on a particular pursuit, occupation,  purpose, cause, to set apart or dedicate 
+DICTATE	IAV Neg SUPV Actv Power Affil Polit 	
+DID	IAV SUPV VERB DO ED 	
+DIET	IAV SUPV Natpro 	
+DIFFER	IAV Neg SUPV Rel Ngtv Actv 	
+DIG	IAV SUPV Actv Solve 	7% verb-idiom: To find or expose--"dig up" 
+DIGNIFY	IAV Pos SUPV Actv Comform Other 	
+DIM	IAV Neg SUPV Decr Ngtv 	
+DIRECT	IAV SUPV Intrel Power Strng Actv 	44% verb: To manage, control, instruct, guide, aim 
+DISABLE	IAV Neg SUPV Actv Fail 	
+DISAGREE	IAV No SUPV Hostile Ngtv Comform 	verb: To differ 
+DISAPPOINT	IAV Neg SUPV Fail Ngtv 	12% verb: To displease 
+DISAPPROVE	IAV Neg SUPV Negate Hostile Comform Ngtv 	
+DISARM	IAV Neg SUPV Actv Fail 	
+DISAVOW	IAV Neg SUPV Negate Ngtv Comform Hostile 	
+DISCARD	IAV SUPV Finish Actv 	
+DISCERN	IAV Pos SUPV Actv Percv Solve Eval 	
+DISCHARGE	IAV Neg SUPV Intrel Legal Ngtv Strng Actv Power 	
+DISCIPLINE	IAV SUPV Intrel Power Strng Actv 	25% verb-adj: To train, drill--especially in a punitive sense 
+DISCLAIM	IAV Neg SUPV Ngtv Comform 	
+DISCLOSE	IAV SUPV Comform 	
+DISCONTINUE	IAV SUPV Finish Negate 	
+DISCOUNT	IAV SUPV Decr Negate Psv 	
+DISCOURAGE	IAV Neg SUPV Negate Ngtv Actv Pain Hostile 	
+DISCOVER	IAV SUPV Percv 	verb: To find or find out 
+DISCREDIT	IAV Neg SUPV Actv Comform Hostile 	
+DISCRIMINATE	IAV Neg SUPV Actv Eval 	
+DISCUSS	IAV Pos SUPV Pstv Comform 	verb: To talk over, negotiate, inquire into, explore verbally 
+DISGUST	IAV Neg SUPV Ngtv Hostile Pain 	6% verb: To be revolting or abhorrent to someone 
+DISH	IAV SUPV Exert 	
+DISHONOR	IAV Neg SUPV Actv Weak Subm Pain 	
+DISMISS	IAV Neg SUPV Intrel Hostile Ngtv Actv Power 	
+DISPEL	IAV Neg SUPV Actv Comform Power Decr 	
+DISPENSE	IAV Neg SUPV Actv Decr Power 	
+DISPLACE	IAV Neg SUPV Actv Power Move 	
+DISPLEASE	IAV Neg SUPV Psv Weak 	
+DISPOSE	IAV Neg SUPV Finish Ngtv Strng Actv 	
+DISPROVE	IAV Neg SUPV Solve Negate Ngtv Actv 	
+DISPUTE	IAV Neg SUPV Comform Hostile POLIT Ngtv COM Negate Actv 	
+DISREGARD	IAV Neg SUPV Actv Percv 	
+DISRUPT	IAV Neg SUPV Actv Hostile Other 	
+DISSATISFY	IAV Neg SUPV Weak Fail 	
+DISSOLVE	IAV SUPV Finish Strng Actv 	
+DISTINGUISH	IAV Pos SUPV Solve Pstv 	
+DISTORT	IAV Neg SUPV Ngtv Hostile Comform 	
+DISTRACT	IAV Neg SUPV Actv Other 	
+DISTRESS	IAV Neg SUPV Ngtv Weak Psv Pain 	
+DISTRIBUTE	IAV SUPV Fetch Actv 	
+DISTURB	IAV Neg SUPV Hostile Ngtv Actv Comform 	44% verb: To disquiet, to interrupt 
+DITCH	IAV SUPV Travl Hostile 	
+DIVERT	IAV Neg SUPV Actv Vary Move 	
+DIVINE	IAV Pos SUPV Solve Pstv Strng 	
+DO	IAV SUPV VERB DO Solve 	0% verb-idiom: "Have to do (with)"--have relevance to 
+DOCTOR	IAV SUPV Intrel Affil 	0% verb: To act as a doctor, to fix 
+DOMINATE	IAV Neg SUPV Intrel Power Ngtv Strng Actv PFREQ 	92% verb: To control 
+DOOM	IAV Neg SUPV Finish Ngtv Weak Psv 	
+DOTE	IAV Pos SUPV Actv Other Pleasure 	
+DOUBLE	IAV SUPV Fall 	3% idiom-verb: "Double over"--to bend over in the middle 
+DRAFT	IAV SUPV Work 	
+DRAW	IAV SUPV Intrel Power Strng 	6% verb-idiom: "Draw the line," stop, take a negative stand 
+DRAW	IAV SUPV Work 	2% verb-idiom: "Draw up" - to form or draft 
+DRIFT	IAV SUPV Travl Psv 	
+DRILL	IAV SUPV Work Actv 	
+DRIVE	IAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	20% verb: To force, impel or push into some psychological or other state,  generally negative--"he is driving me crazy" 
+DRIVEN	IAV SUPV ED 	
+DUMP	IAV Neg SUPV Exert Hostile Ngtv Actv 	
+DWINDLE	IAV Neg SUPV Decr 	
+EAR	IAV SUPV Solve Handels 	2% idiom: "Play (it) by ear"--handled by "play" 
+EARN	IAV SUPV Work Exch Econ* Strng Actv 	72% verb: To gain by dint of work 
+EASE	IAV Pos SUPV Decr Pstv 	20% verb: To make less strained 
+ECONOMIZE	IAV Pos SUPV Actv Econ Exch 	
+EDGE	IAV SUPV Travl 	0% verb: To advance by small steps, to win by a small margin 
+EDUCATE	IAV SUPV Acad Power Actv Strng Comform 	verb: To instruct. 
+EDUCATED	IAV SUPV ED Acad Power Comform 	0% verb: Taught, instructed 
+EFFECT	IAV SUPV Power Causal Strng Actv 	6% verb: To produce some result, to cause or make something happen 
+ELABORATE	IAV Pos SUPV Actv Comform Incr 	
+ELAPSE	IAV SUPV Persist Psv 	
+ELIMINATE	IAV Neg SUPV Ngtv Strng Actv Finish 	
+EMBARRASS	IAV Neg SUPV Other Actv 	
+EMBELLISH	IAV Pos SUPV Actv Comform Incr 	
+EMBRACE	IAV Pos SUPV Intrel Affil Pstv Actv 	
+EMERGE	IAV SUPV Begin Actv 	
+EMPHASIZE	IAV SUPV Ovrst Strng Comform 	
+EMPLOY	IAV SUPV Intrel Econ* Power Strng 	
+EMPOWER	IAV Pos SUPV Actv Strng Power Incr 	
+ENABLE	IAV Pos SUPV Complt Pstv Strng 	
+ENACT	IAV SUPV Complt Strng Actv 	
+ENCHANT	IAV Pos SUPV Intrel Affil Pstv 	
+ENCLOSE	IAV SUPV Space Strng Actv 	
+ENCOMPASS	IAV SUPV Strng Space 	
+ENCOUNTER	IAV SUPV Intrel Affil 	
+ENCOURAGE	IAV Pos SUPV Intrel Affil Pstv Actv PFREQ 	98% verb: To inspire with confidence, hearten, urge 
+ENCROACH	IAV Neg SUPV Move Power 	
+ENDANGER	IAV Neg SUPV Intrel Hostile Ngtv 	
+ENDEAR	IAV Pos SUPV Actv Other Pleasure Affil 	
+ENDEAVOR	IAV SUPV Try Actv 	
+ENDORSE	IAV Pos SUPV Affil Pstv Strng Comform Power 	
+ENDURE	IAV SUPV Persist Strng Psv 	
+ENERGIZE	IAV Pos SUPV Actv Other Strng 	
+ENFORCE	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+ENGAGE	IAV SUPV Try Actv 	29% verb: To take part in 
+ENGAGE	IAV SUPV Intrel Affil 	14% verb: To involve, employ or betroth 
+ENGULF	IAV Neg SUPV Strng Actv Decr Hostile Ovrst Ngtv 	
+ENHANCE	IAV Pos SUPV Pstv Strng Complt 	
+ENLIGHTEN	IAV Pos SUPV Pstv Solve 	
+ENRAGE	IAV Neg SUPV Hostile Emot Other 	
+ENRICH	IAV Pos SUPV Actv Incr Strng 	
+ENSLAVE	IAV Neg SUPV Other Power Polit 	
+ENSURE	IAV Pos SUPV Intrel Power Pstv Ovrst Strng 	
+ENTANGLE	IAV Neg SUPV Other Power Polit 	
+ENTERTAIN	IAV Pos SUPV Pstv Actv Comform 	
+ENTITLE	IAV SUPV Intrel Legal Power Strng 	
+ENTREAT	IAV Neg SUPV Subm Weak Intrel 	
+ENTRUST	IAV Pos SUPV Actv Other Fetch Feel 	
+ENVISION	IAV Pos SUPV Actv Percv 	
+EQUIP	IAV SUPV Work Strng Actv 	
+ERADICATE	IAV Neg SUPV Actv Finish Decr Power 	
+ERECT	IAV SUPV Work Strng Actv 	
+ERR	IAV Neg SUPV Actv Fail Weak 	
+ESCAPE	IAV SUPV Travl Strng Actv Hostile PFREQ 	89% verb: To slip or get away, as from confinement or restraint, gain  or regain liberty--avoid capture, punishment or any threatened evil 
+ESTABLISH	IAV Pos SUPV Complt Power Strng Actv Ovrst PFREQ Pstv 	94% verb: To set up, institute, prove or demonstrate 
+ESTIMATE	IAV SUPV Solve 	
+EVADE	IAV Neg SUPV Actv Move 	
+EVALUATE	IAV SUPV Actv Solve 	
+EVEN	IAV Neg SUPV Intrel Hostile Ngtv 	2% idiom-verb: "Get even"--to have one's revenge, square accounts 
+EVICT	IAV Neg SUPV Power Legal Exert 	
+EVIDENCE	IAV SUPV Legal Actv Strng Comform 	17% verb: To show, make evident 
+EVOLVE	IAV SUPV Vary Psv 	
+EXACT	IAV SUPV Intrel Power Strng Actv 	2% verb: To force from, obtain 
+EXAGGERATE	IAV SUPV Comform Ovrst 	
+EXALT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXAMINE	IAV SUPV Intrel Acad Power Actv 	verb: To scrutinize or test 
+EXASPERATE	IAV Neg SUPV Decr 	
+EXCEED	IAV SUPV Incr Ovrst Strng Actv 	
+EXCEL	IAV Pos SUPV Actv Strng Incr 	
+EXCEPTION	IAV Neg SUPV Hostile Ngtv Comform 	9% idiom-verb: Make an objection- 'take exception' 
+EXCHANGE	IAV SUPV Exch Actv Econ* 	6% verb: To give like for like, to trade 
+EXCITE	IAV Pos SUPV Pstv Actv PFREQ Pleasur 	0% verb: To thrill or stimulate 
+EXCITED	IAV Pos SUPV ED Pstv Pleasur Psv 	4% verb: Past tense of "excite" 
+EXCLUDE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXCUSE	IAV SUPV Power Strng Comform 	
+EXECUTE	IAV Neg SUPV Finish Work Hostile 	
+EXERCISE	IAV SUPV Work Strng Actv 	
+EXERT	IAV SUPV Exert Strng Actv 	
+EXHAUST	IAV Neg SUPV Decr 	
+EXHIBIT	IAV SUPV Actv Comform 	
+EXILE	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXIST	IAV SUPV Natpro 	77% verb: To live, to be 
+EXIT	IAV Neg SUPV Travel 	
+EXPAND	IAV SUPV Incr Strng Actv 	
+EXPECT	IAV SUPV Psv PFREQ Solve 	98% verb: To regard as likely to happen 
+EXPEL	IAV Neg SUPV Hostile Exert Affil Travel Actv 	
+EXPEND	IAV SUPV Exch Econ* Actv 	
+EXPERIENCE	IAV SUPV Complt Psv 	14% verb: To encounter or undergo 
+EXPERIMENT	IAV SUPV Try Acad Actv 	
+EXPIRE	IAV SUPV Finish Weak Psv 	
+EXPLAIN	IAV SUPV Actv Comform 	verb: To make plain or clear, render intelligible, make clear the cause  or reason of. 
+EXPLODE	IAV Neg SUPV Psv Exert Finish 	
+EXPLOIT	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXPLORE	IAV SUPV Solve Actv 	
+EXPOSE	IAV Neg SUPV Percv Actv Comform 	
+EXPRESS	IAV SUPV Actv Comform Exprs 	verb: To render in communicable form ideas, opinions, or feelings-- to  manifest, show or reveal 
+EXTEND	IAV SUPV Actv Strng PFREQ Incr 	87% verb: To expand, stretch or lengthen in space, time or degree 
+EXTEND	IAV SUPV Affil Actv Comform 	13% verb: To hold out to, offer 
+EXTERMINATE	IAV Neg SUPV Actv Finish Decr Power 	
+EXTINGUISH	IAV Neg SUPV Finish Ngtv Strng Actv 	
+EXTOL	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXTRAPOLATE	IAV SUPV Solve Actv 	
+EXULT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EYE	IAV SUPV Percv Psv 	1% verb: To look at 
+EYE	IAV SUPV Percv Actv 	3% verb: "Keep an eye (on)," fix eye(s) (on)--keep track of, observe, follow 
+EYE	IAV SUPV Percv Psv 	1% idiom-verb: "Set eyes on"--to see, often for the first time 
+FABRICATE	IAV Neg SUPV Actv Comform 	
+FACE	IAV SUPV Percv Actv Strng 	30% verb: Confront, direct attention to 
+FACE	IAV SUPV Comform 	0% idiom: "Save face" 
+FACILITATE	IAV Pos SUPV Work Pstv Strng Affil 	
+FADE	IAV SUPV Decr Psv 	
+FAIL	IAV Neg SUPV Fail Ngtv Weak Psv 	56% verb: To be unsuccessful or lose strength 
+FAIL	IAV Neg SUPV Fail Ngtv Weak Psv 	39% verb: To neglect, omit, or fall short of - "fail to" 
+FAIL	IAV Neg SUPV Hostile Ngtv Weak Psv Fail 	2% verb: To disappoint or be inadequate for 
+FALL	IAV SUPV Intrel Affil Psv 	6% verb-idiom: "Fall in love,"--become enamored 
+FALL	IAV SUPV Psv Natpro 	4% verb-idiom: 'fall asleep' 
+FALL	IAV Neg SUPV Decr Ngtv Weak Psv 	5% verb-idiom: 'fall apart'--disintegrate 
+FALL	IAV SUPV Intrel Affil Psv 	1% verb: "Fall for"--become enamored 
+FALTER	IAV Neg SUPV Ngtv Weak Undrst Decr 	
+FAMILIARIZE	IAV Pos SUPV Actv Other Rel Know Percv 	
+FAN	IAV SUPV Exert Actv 	19% verb: To stir up, cause air to blow on 
+FARE	IAV SUPV Travl 	
+FARM	IAV SUPV Work Econ* 	12% verb: To operate such a facility 
+FASCINATE	IAV SUPV Arousal Ovrst 	
+FASTEN	IAV SUPV Work 	
+FATHOM	IAV SUPV Solve Strng Actv 	
+FAVOR	IAV Pos SUPV Pstv Arousal 	26% verb: To prefer 
+FEAST	IAV Pos SUPV Pstv Actv Intrel Affil 	17% verb: To celebrate, usually by gorging oneself 
+FEATHER	IAV SUPV Work 	16% verb: To provide or cover with feathers 
+FEATURE	IAV SUPV Ovrst Comform 	
+FEIGN	IAV Neg SUPV Actv Comform 	
+FEINT	IAV Neg SUPV Actv Comform 	
+FELL	IAV SUPV Intrel Affil 	8% verb-idiom: "Fell in love,"--became enamored 
+FELL	IAV SUPV Natpro 	2% verb-idiom: "Fell asleep" 
+FELL	IAV SUPV Finish 	0% verb-idiom: "Fell apart"--disintegrated 
+FELL	IAV SUPV Work 	0% verb: To cut down 
+FELL	IAV SUPV Intrel Affil 	0% verb: "Fell for"--became enamored 
+FENCE	IAV SUPV Strng Actv Space 	3% verb: To enclose 
+FETCH	IAV SUPV Fetch Actv 	verb: Bring, bring back, summon 
+FIDGET	IAV Neg SUPV Actv Weak Move 	
+FIELD	IAV SUPV Work Exprs 	1% verb: To handle or answer, to catch in baseball, to put on a field 
+FIGURE	IAV SUPV Actv Solve 	17% verb: To believe, conclude, or assume 
+FIGURE	IAV SUPV Solve Actv 	31% verb: To solve, calculate, or reason out 
+FILE	IAV SUPV Work 	
+FILL	IAV SUPV Work Strng Actv 	14% idiom-verb: 'fill in'--to satisfy (a requirement or need), to supply  with satisfactorily 
+FILL	IAV SUPV Complt Actv 	4% idiom-verb: 'fill out'--to complete a form 
+FILM	IAV SUPV Work Actv 	0% verb: To make a film of, to photograph in film 
+FINANCE	IAV SUPV Exch Econ* Strng 	
+FIND	IAV SUPV Solve Actv 	verb: Locate, discover, learn, adjudge, encounter 
+FINE	IAV Neg SUPV Exch Hostile Legal Econ* Ngtv Strng Actv 	0% verb: To levy a fee in punishment 
+FINGER	IAV SUPV Hostile Comform 	
+FIRE	IAV SUPV Work 	4% idiom-verb: 'set fire'--light, cause to burn 
+FIT	IAV SUPV Rel 	60% verb: To be suitable or adjusted to, to make suitable, adapt, adjust, equip 
+FIT	IAV SUPV Work 	3% noun: 'fitting'--equipment of some sort, or its installation, adjustment 
+FIX	IAV SUPV Work Strng Actv 	65% verb: To repair, mend, prepare, arrange; influence a result or action  to one's advantage (0); get even with (0) 
+FIX	IAV SUPV Try Actv 	14% idiom-verb: "Fixing to"--planning or preparing to do something 
+FIX	IAV SUPV Rel 	9% verb: To attach firmly, make rigid 
+FIX	IAV SUPV Complt 	2% verb: To establish, set, e.g. "they fixed the day" 
+FLASH	IAV SUPV Vary Actv 	
+FLATTER	IAV Pos SUPV Intrel Affil Subm Psv Weak Comform 	
+FLAUNT	IAV Pos SUPV Actv Ovrst 	
+FLAVOR	IAV SUPV Percv Psv 	
+FLED	IAV Neg SUPV Travl ED Hostile Actv Ngtv Weak 	verb: To have run or passed away quickly 
+FLEE	IAV Neg SUPV Actv Travel Weak 	
+FLEW	IAV SUPV Rise ED Strng Actv 	verb: Moved swiftly, usually through the air (past tense of fly) 
+FLIRT	IAV Pos SUPV Actv Other Emot Pleasure 	
+FLOOD	IAV SUPV Rise Strng 	
+FLOOR	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	2% verb: To provide with a floor; to knock to the floor (0) 
+FLOUNDER	IAV Neg SUPV Fail Weak Psv 	
+FLOW	IAV SUPV Travl Actv 	47% verb: To move as a liquid 
+FLOWER	IAV SUPV Natpro 	0% verb: To bloom 
+FLOWN	IAV SUPV Travl Actv ED 	
+FLUNG	IAV SUPV Exert ED Actv 	
+FLY	IAV SUPV Rise Strng Actv 	62% verb: To move swiftly, usually through the air 
+FOAM	IAV SUPV Vary 	
+FOCUS	IAV SUPV Percv 	
+FOLD	IAV SUPV Work 	
+FOLLOW	IAV SUPV Intrel Subm Weak Psv 	42% verb: To give allegiance to, obey, act in accordance with, "i wish  he would follow my advice," infrequently, understand--"i didn't follow  your argument" 
+FOLLOW	IAV SUPV Try Actv 	2% idiom-verb: "Follow through (up)"--to proceed in an endeavor and pursue  it to a solution or conclusion 
+FOLLOW	IAV SUPV Solve 	1% verb: To result as a logical or necessary consequence--e.g. "it follows  that . . . " 
+FOLLOW	IAV SUPV Travl Actv 	21% verb: To move behind in the same direction--"i followed him to the  station"; to pursue, trail, track (infrequent) 
+FOOL	IAV Neg SUPV Intrel Hostile Ngtv 	37% verb: To deceive or joke with 
+FOOL	IAV SUPV Actv Intrel Hostile 	15% verb: 'fool around,' 'fool with'--to trifle, to have fun 
+FORCE	IAV Neg SUPV Intrel Power Strng Actv Ngtv 	39% verb: To compel, impose, overcome the resistance of 
+FORECAST	IAV SUPV Solve 	
+FORESEE	IAV SUPV Percv Psv 	
+FORFEIT	IAV Neg SUPV Fail Ngtv Weak Psv 	
+FORGAVE	IAV Pos SUPV ED Intrel Affil Pstv 	
+FORGET	IAV SUPV Weak Psv Solve 	verb: To fail to remember, lose memory of 
+FORGIVE	IAV Pos SUPV Intrel Affil Pstv 	
+FORGOT	IAV SUPV ED Weak Psv Solve 	
+FORGOTTEN	IAV SUPV ED Weak Psv Solve 	
+FORM	IAV SUPV Actv Solve 	31% verb: To constitute or bring into existence 
+FORMULATE	IAV SUPV Solve Actv 	
+FORSAKE	IAV Neg SUPV Psv Weak Subm 	
+FORTIFY	IAV Pos SUPV Actv Strng Power Incr 	
+FORWARD	IAV SUPV Need Handels 	35% idiom-verb: 'look forward (to)'--to anticipate with pleasure--(handled  by 'look') 
+FORWARD	IAV SUPV Travl 	3% verb: Send forward 
+FOSSILIZE	IAV SUPV Finish Psv 	
+FOSTER	IAV Pos SUPV Actv Begin Affil 	
+FOUND	IAV SUPV Complt ED PFREQ 	96% verb: Located, discovered, learned, adjudged, encountered, past tense of "find" 
+FOUND	IAV SUPV Begin Power Strng Actv 	3% verb: To establish, set up--'found a college' 
+FOUNDER	IAV Neg SUPV Fail Ngtv Weak Psv 	
+FRACTURE	IAV Neg SUPV Weak Psv Vice 	
+FRAME	IAV SUPV Work Strng Actv 	
+FREE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	5% verb: To make free, set at liberty, release from bondage, restraint 
+FREQUENT	IAV SUPV Travl 	0% verb: To go to habitually 
+FRIGHTEN	IAV Neg SUPV Hostile Ngtv Actv Pain 	19% verb: To scare 
+FROLIC	IAV Pos SUPV Actv Move 	
+FROWN	IAV Neg SUPV Hostile Ngtv Psv Comform 	
+FRUSTRATE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	20% verb: To thwart 
+FRY	IAV SUPV Work 	
+FUCK	IAV SUPV Intj Strng Actv Natpro 	
+FULFILL	IAV Pos SUPV Pstv Strng Complt 	
+FUMBLE	IAV Neg SUPV Actv Weak Fail 	
+FUME	IAV SUPV Natpro 	
+FUNCTION	IAV SUPV Work Strng Actv 	48% verb: To perform, act, serve, operate 
+FURNISH	IAV SUPV Work Actv 	
+FURTHER	IAV SUPV Incr Strng 	12% verb: To extend, increase, promote 
+FUSS	IAV Neg SUPV Actv Weak Comform 	
+GAIN	IAV Pos SUPV Complt Pstv Strng Actv 	83% verb: To get, obtain, win 
+GAMBLE	IAV Neg SUPV Try Econ* Ngtv Actv Undrst 	
+GARNISH	IAV Pos SUPV Actv Incr 	
+GAS	IAV SUPV Work 	
+GAUGE	IAV SUPV Actv Solve 	
+GAZE	IAV SUPV Percv Psv 	
+GENERALIZE	IAV SUPV Solve Actv 	
+GESTURE	IAV SUPV Actv Comform 	
+GET	IAV SUPV VERB VB 	58% verb: Become, move, cause to occur or be, have happen--"he'll get  better," "we finally got home," "get it done," "you'll get to do it" 
+GET	IAV SUPV Handels Ought 	0% idiom-modal: "(have) got to"--must 
+GET	IAV SUPV Complt 	1% idiom-verb: "Get over"--recover from 
+GET	IAV Neg SUPV Intrel Hostile Actv Ngtv Strng 	1% idiom-verb: "Get rid of"--get free from, destroy 
+GET	IAV SUPV Try Actv 	0% idiom-verb: "Get around to"--eventually consider or act on 
+GLADDEN	IAV Pos SUPV Pstv Pleasur 	
+GLEAM	IAV Pos SUPV Pstv Natpro 	
+GLEAN	IAV Pos SUPV Actv Think Fetch 	
+GLIMMER	IAV Pos SUPV Psv Strng 	
+GLISTEN	IAV Pos SUPV Percv Pstv 	
+GLITTER	IAV Pos SUPV Percv Pstv 	
+GLOAT	IAV Neg SUPV Actv Comform Strng 	
+GLORIFY	IAV Pos SUPV Actv Other Strng Affil Power 	
+GLOW	IAV Pos SUPV Percv Pstv 	
+GLOW	IAV Pos SUPV Pstv Natpro 	
+GO	IAV SUPV VERB MOD GO Vary 	5% verb: "Going to"--auxiliary indicating future tense 
+GO	IAV SUPV VERB GO Try 	0% idiom-verb: "Make, have a go" (of, at it)--try 
+GO	IAV SUPV VERB GO Strng Actv Travl 	0% idiom-adj: "On the go" 
+GO	IAV SUPV VERB GO Actv Intrel Affil Subm 	1% idiom-verb: 'go along with'--accord, acquiesce--handled by 'along' 
+GONNA	IAV SUPV VERB MOD GO Vary 	
+GOSSIP	IAV SUPV Affil Comform 	
+GOVERN	IAV SUPV Polit* Power Strng Intrel 	
+GRADE	IAV SUPV Work 	6% verb: To arrange or classify by stages, to rate or rank 
+GRADUATE	IAV SUPV Acad Complt 	32% verb: To graduate from 
+GRANT	IAV SUPV Intrel Affil Power Strng 	42% verb: To confer or give in promise, to allow, acknowledge 
+GRAPPLE	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+GRASP	IAV SUPV Fetch Strng Actv 	
+GRATIFY	IAV Pos SUPV Actv Pleasure Other 	
+GREASE	IAV SUPV Work 	
+GREET	IAV Pos SUPV Affil Pstv Comform 	
+GRIP	IAV SUPV Fetch Strng Actv Power 	
+GROOM	IAV Pos SUPV Actv Work 	
+GROSS	IAV SUPV Complt Econ* 	
+GROW	IAV SUPV Strng Incr 	29% idiom-verb: 'grow up'--to mature, attain maturity 
+GROW	IAV SUPV Work Power Strng Actv 	3% verb: To raise (transitive) 
+GROWL	IAV Neg SUPV Comform Actv 	
+GRUMBLE	IAV Neg SUPV Hostile Ngtv Comform 	
+GUARANTEE	IAV Pos SUPV Power Pstv Strng Legal Comform 	
+GUARD	IAV SUPV Intrel Affil Milit Power Strng Actv 	55% verb: To protect or watch out for 
+GUESS	IAV SUPV Solve PFREQ 	verb: To form an opinion from uncertain evidence, to estimate or conjecture,  or to think or suppose (as interjection) 
+GUIDE	IAV Pos SUPV Intrel Power Strng Actv Pstv 	50% verb: To direct 
+HAIR	IAV SUPV Comform 	2% noun: 'let one's hair down'-habitual demeanor 
+HALT	IAV SUPV Stay Strng Actv 	
+HAMPER	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+HAND	IAV SUPV Fetch Actv 	6% verb: Deliver, give, pass 
+HAND	IAV SUPV Power Comform 	0% idiom-verb: "Hand down"--to deliver a judgment 
+HANDLE	IAV SUPV Intrel Power Actv Strng 	83% verb: To manage, guide, have under one's jurisdiction or control 
+HANG	IAV SUPV Rel Weak Actv 	18% verb: 'hang on to'--cling to, retain 
+HANG	IAV Neg SUPV Intrel Hostile Ngtv 	3% verb: To suspend by the throat (transitive) 
+HANG	IAV SUPV Rel 	3% verb: To suspend or attach (transitive) 
+HANG	IAV Neg SUPV Stay Ngtv Psv 	6% idiom-verb: 'hang around'--linger 
+HAPPEN	IAV SUPV Vary 	7% verb: 'happen (to)'--chance (to) 
+HARASS	IAV Neg SUPV Actv Hostile Other Exert 	
+HARBOR	IAV SUPV Stay Strng 	
+HARM	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To injure, damage, or hurt 
+HARMONIZE	IAV Pos SUPV Actv Comform Intrel Affil 	
+HARVEST	IAV SUPV Complt Econ* Actv 	
+HASTEN	IAV SUPV Travl Actv 	
+HAUNT	IAV Neg SUPV Intrel Hostile Ngtv Power Actv 	
+HAZARD	IAV Neg SUPV Try Ngtv Actv 	
+HEAD	IAV SUPV Intrel Power Strng Actv 	1% verb: To direct or lead 
+HEAD	IAV SUPV Travl Actv 	2% verb: To set out for or be going toward--'be headed for home' 
+HEAL	IAV Pos SUPV Power Pstv Strng Natpro Change 	
+HEAP	IAV SUPV Incr Actv 	
+HEAR	IAV SUPV Percv Psv 	64% verb: To perceive sound, to listen; to pay attention (infrequent) 
+HEAR	IAV SUPV Psv Comform 	29% verb: To be informed, to receive information, to learn 
+HEAT	IAV SUPV Work Strng Actv 	23% verb: To make hot 
+HEDGE	IAV Neg SUPV Intrel Hostile Ngtv Weak 	
+HEED	IAV SUPV Intrel Psv Subm Undrst 	
+HEIGHTEN	IAV SUPV Incr Strng 	
+HELP	IAV Pos SUPV Intrel Affil Pstv Actv 	75% verb: To aid, assist 
+HELP	IAV Neg SUPV Need Subm Passive Ngtv Weak Psv 	3% verb: To avoid or refrain from--"i can't help but . . . ," "not if  i can help it" 
+HERD	IAV SUPV Intrel Power Strng Actv 	35% verb: To form and maintain such groups 
+HESITATE	IAV SUPV Stay Weak Psv Undrst 	
+HIDDEN	IAV SUPV Intrel ED Hostile 	38% verb: Past tense of "hide"--concealed 
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	57% verb: To conceal oneself 
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	28% verb: To conceal something other than oneself 
+HIGHLIGHT	IAV Pos SUPV Actv Ovrst 	
+HINDER	IAV Neg SUPV Intrel Ngtv Strng Hostile 	
+HINGE	IAV SUPV Rel 	
+HIRE	IAV SUPV Exch Econ* Power Actv Strng 	
+HIT	IAV SUPV Solve Actv 	1% verb: To discover, light upon 
+HIT	IAV Pos SUPV Affil Pstv Intrel Affil 	0% idiom-verb: "Hit it off"--get along well 
+HOARD	IAV Neg SUPV Fetch Incr 	
+HOBBLE	IAV Neg SUPV Weak Move Actv 	
+HOLD	IAV SUPV Psv Solve 	12% verb: Believe, feel, profess, say--"we hold these truths to be . . ." 
+HOLD	IAV SUPV Stay Hostile Actv Strng 	0% idiom-verb: "Hold one's own"--handled by "own" 
+HONOR	IAV Pos SUPV Intrel Subm Pstv Psv 	35% verb: To esteem, exalt, respect 
+HOPE	IAV Pos SUPV Need Pstv Psv 	74% verb: To look forward with desire and trust to something happening,  to feel that something desired may happe 
+HORRIFY	IAV Neg SUPV Actv Hostile Other 	
+HUMILIATE	IAV Neg SUPV Actv Hostile Other 	
+HUMOR	IAV Pos Noun ABS Abs* Pleasur Pstv 	
+HUNG	IAV SUPV Rel ED Psv 	30% verb: To have been suspended or attached (intransitive) 
+HUNG	IAV SUPV Try Weak Actv 	4% idiom-verb: 'hung on to'--clung to 
+HUNT	IAV Neg SUPV Ngtv Actv Hostile PFREQ Exert 	94% verb: To chase and kill animals; to search out (14) 
+HURRY	IAV SUPV Exert Actv 	48% verb: To rush or cause to rush 
+HURT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv PFREQ 	89% verb: To injure or harm, to cause or experience pain or distress 
+HURTLE	IAV SUPV Exert Actv 	
+HUSTLE	IAV Neg SUPV Comform Hostile Econ 	
+HUSTLE	IAV Pos SUPV Actv Travel Ovrst 	
+IDENTIFY	IAV SUPV Percv Psv 	
+IDLE	IAV SUPV Stay Psv 	
+IGNORE	IAV SUPV Solve Actv 	
+ILLUMINATE	IAV Pos SUPV Actv Ovrst Comform 	
+ILLUSTRATE	IAV SUPV Actv Comform 	
+IMAGINE	IAV SUPV Psv Solve Exprs 	verb: To form a mental image, to speculate, conjecture, suppose, or fantasize 
+IMPAIR	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile Power 	
+IMPEDE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+IMPEL	IAV SUPV Exert Power Strng Actv 	
+IMPLEMENT	IAV SUPV Strng Actv Complt 	
+IMPLICATE	IAV Neg SUPV Comform Hostile Causal Other Actv 	
+IMPLORE	IAV Neg SUPV Need Weak Subm Actv 	
+IMPLY	IAV SUPV Psv Comform 	
+IMPORT	IAV SUPV Exch Actv Econ* 	
+IMPOSE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+IMPRESS	IAV Pos SUPV Pstv Strng Actv PFREQ Percv 	97% verb: To have a strong, usually pleasing, effect on the mind or emotions 
+IMPRISON	IAV Neg SUPV Actv Other Power Legal 	
+IMPROVE	IAV Pos SUPV Work Pstv Strng Actv 	76% verb: To make better in quality or condition 
+IMPROVE	IAV Pos SUPV Pstv Strng Actv Incr 	17% verb: To become better in quality or condition 
+INAUGURATE	IAV Pos SUPV Actv Begin Affil Ritual 	
+INCLINE	IAV SUPV Need Psv 	
+INCLUDE	IAV SUPV Rel Strng 	verb: To contain or embrace 
+INCORPORATE	IAV SUPV Rel 	
+INCUR	IAV SUPV Begin Actv 	
+INDICATE	IAV SUPV Comform 	verb: To point out, signify, or intimate 
+INDUCE	IAV SUPV Strng Actv Begin Power 	
+INDULGE	IAV Neg SUPV Try Ngtv Actv 	
+INDUSTRIALIZE	IAV SUPV Work Econ* Strng 	
+INFECT	IAV Neg SUPV Actv Hostile Change 	
+INFER	IAV Pos SUPV Actv Think Know 	
+INFEST	IAV Neg SUPV Actv Coll Travel 	
+INFLAME	IAV Neg SUPV Actv Hostile Change 	
+INFLICT	IAV Neg SUPV Actv Other Exert 	
+INFLUENCE	IAV SUPV Intrel Power Strng Actv 	48% verb: To exercise such power 
+INFORM	IAV Pos SUPV Pstv Comform Actv 	64% verb: To notify, to give information to 
+INFURIATE	IAV Neg SUPV Actv Other Hostile 	
+INHABIT	IAV SUPV Stay 	
+INHIBIT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INITIATE	IAV SUPV Begin Strng Actv Power 	
+INJURE	IAV Neg SUPV Psv Pain Fail 	
+INNOVATE	IAV Pos SUPV Actv Begin 	
+INQUIRE	IAV SUPV Actv Comform 	
+INSERT	IAV SUPV Space Actv 	
+INSINUATE	IAV Neg SUPV Actv Comform 	
+INSIST	IAV SUPV Power Strng Actv Comform 	verb: To be emphatic or persistent in asserting or demanding 
+INSPECT	IAV SUPV Percv Actv Power 	
+INSPIRE	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	
+INSTALL	IAV SUPV Work Actv 	
+INSTITUTE	IAV SUPV Begin Actv 	9% verb: To establish or initiate 
+INSTRUCT	IAV SUPV Acad Power Actv Strng Comform 	
+INSULT	IAV Neg SUPV Actv Comform Other 	
+INSURE	IAV SUPV Exch Econ* 	
+INTEND	IAV SUPV Need Actv PFREQ 	95% verb: To have as plan or purpose 
+INTENSIFY	IAV SUPV Strng Incr Actv 	
+INTERCEDE	IAV Pos SUPV Actv Exert Intrel 	
+INTEREST	IAV Pos SUPV Pstv Need 	5% verb: To arouse interest 
+INTERESTED	IAV Pos SUPV Pstv Need 	2% verb: To arouse interest 
+INTERFERE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INTERPOSE	IAV Pos SUPV Actv Exert Intrel 	
+INTERPRET	IAV SUPV Solve Actv 	
+INTERRUPT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+INTERTWINE	IAV SUPV Space Affil 	
+INTERVENE	IAV Actv Exert Intrel 	
+INTERVIEW	IAV SUPV Actv Comform 	
+INTIMIDATE	IAV Neg SUPV Actv Strng Power Other 	
+INTOXICATE	IAV Neg SUPV Natpro Think Fail Actv 	
+INTRIGUE	IAV Pos SUPV Psv Other Think 	
+INTRUDE	IAV Neg SUPV Actv Move Intrel 	
+INUNDATE	IAV Neg SUPV Actv Incr Strng 	
+INVADE	IAV Neg SUPV Travel Affil Polit 	
+INVENT	IAV SUPV Exprs Actv Work 	
+INVEST	IAV SUPV Exch Econ* Actv 	
+INVESTIGATE	IAV SUPV Solve Actv 	
+INVOLVE	IAV SUPV Intrel Power Strng 	6% verb: To engage or cause to become involved 
+INVOLVE	IAV SUPV Rel 	25% verb: To include as an integral part, entail, be a matter of, "this  involves work" 
+IRK	IAV Neg SUPV Psv Pain Hostile 	
+ISOLATE	IAV Neg SUPV Rel Ngtv Strng Actv 	
+ISSUE	IAV SUPV Exert Strng Actv 	4% verb: To go, pass, or flow out, come forth, discharge, emit 
+JAR	IAV Neg SUPV Exert Ngtv Actv Strng 	
+JEER	IAV Neg SUPV Actv Comform Hostile 	
+JEOPARDIZE	IAV Neg SUPV Intrel Hostile Ngtv 	
+JERK	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+JEST	IAV Pos SUPV Actv Comform Pleasure 	
+JOIN	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	33% verb: To unite with, agree with, come together--"let us join together,"  "i join you in praising him"; to get or come together in an informal way--'i'll  join you later' 
+JOIN	IAV SUPV Rel Strng Actv 	3% verb: To connect, engage (objects) 
+JOKE	IAV Pos SUPV Exprs Pstv Comform 	10% verb: To jest, be funny 
+JOURNEY	IAV SUPV Travl Actv 	4% verb: To travel 
+JUDGE	IAV SUPV Legal Actv Solve Power Strng 	49% verb: To form an opinion, estimate, generally moral or evaluative,  usually about human matters; to pass sentence in a court of law (2) 
+JUSTIFY	IAV Pos SUPV Pstv Comform Ovrst 	
+KEEP	IAV SUPV Persist Actv 	79% verb: Cause to remain, continue, persist in some state or activity--  "keep alert," "keep your eyes open"; hold, possess, retain, maintain,  manage, "keep the peace," "don't give them away, keep them" (71) 
+KEEP	IAV SUPV Intrel Hostile Power Strng Actv 	4% verb: Bar, restrain, prevent, preserve against 
+KEEP	IAV SUPV Try Actv 	9% verb-idiom: "Keep up (with)," "keep it up"--maintain an order, level, pace 
+KEEP	IAV SUPV Complt Strng 	2% verb: Observe, fulfill--keep a promise or engagement 
+KEEP	IAV SUPV Percv Handels Actv Strng 	0% noun: Custody, care 
+KICK	IAV SUPV Begin Strng Actv 	13% idiom-verb: 'kick off'--eject, expel, commence 
+KICK	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	6% verb-idiom: 'kick out'--eject, expel 
+KID	IAV Pos SUPV Affil Pstv Comform Exprs 	3% verb: To jest 
+KIDNAP	IAV Neg SUPV Legal Hostile Fetch Other Actv 	
+KNOCK	IAV Neg SUPV Fall Ngtv Strng Actv 	39% verb: To knock down, over or out--to topple, dislodge, defeat, make unconscious 
+KNOCK	IAV SUPV Finish 	4% idiom-verb: "(to) knock off"--to quit 
+LABEL	IAV SUPV Comform 	
+LABOR	IAV SUPV Work Econ* Strng Actv 	2% verb: To do hard work 
+LACK	IAV Neg SUPV Need Ngtv Weak Psv 	11% verb: To need, be deficient in 
+LAG	IAV Neg SUPV Fail Weak Psv 	
+LAID	IAV Neg SUPV Intrel Econ* Power Hostile Ngtv 	28% idiom-verb: "Laid off"--discharged employees 
+LAST	IAV SUPV Persist Strng 	6% verb: Endure, remain 
+LAUGH	IAV Neg SUPV Hostile Ngtv Actv Comform 	10% verb-idiom: "Laugh at" - ridicule, deride 
+LAUGH	IAV SUPV Actv Comform Undrst 	1% verb-idiom: "Laugh off" - dismiss as inconsequential 
+LAUNCH	IAV SUPV Begin Strng Actv 	
+LAY	IAV Neg SUPV Intrel Econ* Hostile Power Ngtv Strng Actv 	1% idiom-verb: "Lay off"--discharge employees 
+LEAD	IAV SUPV Intrel Power Strng Actv 	42% verb: To supply direction, orientation, guidance, to be in the vanguard 
+LEAD	IAV SUPV Causal Actv 	33% verb: To produce some effect, to result in, induce--"oppression leads  to violence"; to go towards (concrete)--"all roads lead to rome" (6) 
+LEAD	IAV SUPV Persist Actv 	13% verb: To manage or carry on--"i lead my life as best i can" 
+LEAGUE	IAV SUPV Intrel Affil Strng 	5% idiom: "In league with", allied with 
+LEAK	IAV Neg SUPV Psv Fail Comform 	
+LEAN	IAV SUPV Intrel Subm Weak 	9% idiom-verb: "Lean on"--depend or rely on 
+LEARN	IAV SUPV Solve Acad PFREQ Actv 	90% verb: To acquire knowledge of or skill in by study, instruction, or experience 
+LET	IAV SUPV VERB MOD Intrel Power Strng 	63% verb: To allow, release, relax control, lease 
+LET	IAV SUPV Intj Power Intrel 	33% verb: Used as an auxiliary in the hortatory 
+LET	IAV Neg SUPV Fail Ngtv 	1% idiom-verb: "Let down"--to disappoint or be disappointed 
+LIBERATE	IAV Pos SUPV Actv Other Power Affil 	
+LIGHT	IAV SUPV Comform 	1% idiom: "Make light" of 
+LIGHTEN	IAV SUPV Decr 	
+LIMIT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	19% verb: To restrict by or confine within limits 
+LINE	IAV SUPV Work 	9% verb: All verb senses 
+LINK	IAV SUPV Actv Space 	
+LIQUIDATE	IAV Neg SUPV Intrel Ngtv Strng Actv Econ* Hostile 	
+LIVE	IAV Pos SUPV Complt Strng Pstv 	1% idiom-verb: 'live up to'--satisfy expectations 
+LOAD	IAV SUPV Work Strng Actv 	12% verb: To put on, fill, burden; bias (0) 
+LOCATE	IAV SUPV Stay Actv 	
+LOOK	IAV SUPV VERB LINK Percv 	41% verb: To appear, to seem to one's eye or mind 
+LOOK	IAV SUPV Solve 	1% verb-idiom: "Look back"--to review the past, return in thought, recollect  reminisce 
+LOOK	IAV SUPV Try Actv 	11% verb-idiom: "Look for"--to seek or search for, be on watch or expecting 
+LOOK	IAV SUPV Percv Actv 	2% verb-idiom: "Look out for"--to be on guard against, to be concerned about 
+LOOK	IAV SUPV Intrel Subm Weak 	1% verb-idiom: "Look up to"--to respect or esteem 
+LOOK	IAV SUPV Solve 	1% verb-idiom: "Look upon"--to regard or consider 
+LOOK	IAV SUPV Solve Actv 	1% verb-idiom: "Look forward (to)"--to anticipate in the future, expect 
+LOOK	IAV SUPV Intrel Power Strng Actv 	1% verb-idiom: "Look after"--to minister to, care for, concern oneself with 
+LOOM	IAV Neg SUPV Psv Percv 	
+LOVE	IAV SUPV Intrel Affil Strng Actv 	1% idiom-verb: 'make love' 
+LURE	IAV Neg SUPV Actv Other Fetch 	
+LURK	IAV Neg SUPV Actv Travel 	
+MADE	IAV SUPV ED 	
+MAGNIFY	IAV SUPV Incr Strng Ovrst 	
+MAINTAIN	IAV SUPV Persist Strng Actv PFREQ 	86% verb: To preserve, continue, retain, keep in good condition 
+MAINTAIN	IAV SUPV Power Strng Actv Comform 	14% verb: To assert, contend 
+MAJOR	IAV SUPV Work Acad 	16% verb: To take a certain area as one's major 
+MAKE	IAV SUPV Work Strng Actv 	77% verb: Create, produce, execute, construct; cause to be--"make him  happy," "make sure" (112); earn, acquire, attain--"make money" (72); become,  comprise--"he will make a good physician" (27) 
+MAKE	IAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	12% verb: Coerce, force to, cause to--"make him go" 
+MAKE	IAV SUPV Complt Strng Actv 	1% idiom-verb: "Make it"--succeed 
+MAKE	IAV SUPV Percv Actv 	1% verb: "Make out"--decipher (6); survive--"he'll make out" (2); complete--"make  out a list (1) 
+MAKE	IAV SUPV Solve Actv 	1% idiom-verb: "Make up (one's) mind"--decide 
+MAKE	IAV Pos SUPV Intrel Affil Pstv Actv 	0% verb: "Make up (for)"--compensate, make reparation 
+MAKE	IAV Pos SUPV Intrel Affil Pstv 	3% idiom-verb: "Make friends," "make a friend" 
+MAN	IAV SUPV Work 	0% verb: To furnish with men 
+MANAGE	IAV SUPV Intrel Power Strng Actv 	26% verb: To handle, control, get along. 
+MANAGE	IAV SUPV Complt Strng Actv 	69% verb-idiom: "Manage to"--to succeed in accomplishing, contrive 
+MANEUVER	IAV Noun Actv Strng Means Try Move 	
+MANGLE	IAV Neg SUPV Actv Exert Hostile Other 	
+MANIPULATE	IAV Neg SUPV Intrel Ngtv Strng Actv Power 	
+MANUFACTURE	IAV SUPV Work Econ* Actv Strng 	
+MARK	IAV SUPV Stay 	3% idiom-verb: "Mark time," to wait 
+MARVEL	IAV Pos SUPV Actv Think Ovrst 	
+MASSACRE	IAV Neg SUPV Finish Hostile Actv Exert 	
+MASTER	IAV SUPV Power Strng Actv Complt 	21% verb: To gain control of someone or something 
+MATCH	IAV SUPV Strng Actv Solve 	
+MATTER	IAV Pos SUPV Strng Pstv Solve Ovrst 	12% verb: To be significant 
+MATURE	IAV Pos SUPV Incr Strng Pstv 	31% verb: To develop, become mature, come to fruition 
+MAXIMIZE	IAV Pos SUPV Actv Incr 	
+MEAN	IAV SUPV Actv Comform 	71% verb: To intend, indicate, signify, imply--occurs 170 times in the  phrase "i mean," used conversationally to connote precision or emphasis 
+MEANT	IAV SUPV ED Actv Comform 	verb: Past tense of mean--to have signified, indicated, implied, intended 
+MEASURE	IAV SUPV Solve Actv 	16% verb: To quantify, guage, to be of a specified dimension 
+MEASURE	IAV SUPV Complt Strng 	6% verb: "Measure up to"--to meet (a standard) 
+MEDDLE	IAV Neg SUPV Actv Intrel Comform 	
+MEDIATE	IAV Pos SUPV Actv Comform Intrel Solve 	
+MEET	IAV SUPV Solve Actv 	17% verb: Pertaining to the abstract, to be confronted with, to solve,  to pay, to fulfill (of things)--"he tried to meet the challenge," "money  to meet the needs" 
+MEET	IAV SUPV Actv Exch 	1% idiom-verb: "Make ends meet"--live within one's means 
+MEND	IAV Pos SUPV Work Actv Pstv 	
+MENTION	IAV SUPV Psv PFREQ Comform Undrst 	97% verb: To speak of casually, to refer to, include passingly. 
+MERIT	IAV Pos SUPV Pstv Strng Intrel Affil 	
+MESH	IAV Pos SUPV Actv Intrel 	
+MESS	IAV Neg SUPV Fail Ngtv 	10% verb: Make a mess of 
+MESS	IAV SUPV Work 	10% verb: "Mess with," "mess around with" - putter around, fool with 
+MILL	IAV SUPV Stay Psv 	0% verb: "Mill around," "mill about" - move aimlessly 
+MIND	IAV SUPV Intrel Subm Weak 	2% verb: Pay attention to; obey--"mind your master;" tend--"mind the children" 
+MIND	IAV SUPV Arousal Hostile 	6% verb: Be bothered by--"will he mind if i take it?" 
+MIND	IAV SUPV Intj Intrel Affil 	3% idiom: "Never mind"--don't bother, don't worry, pay no attention 
+MIND	IAV Neg SUPV Fail Ngtv Weak Psv 	0% idiom-verb: "Lose (one's) mind"--lose one's sanity 
+MINGLE	IAV SUPV Rel 	
+MINIMIZE	IAV SUPV Actv Strng Decr Undrst 	
+MINISTER	IAV Pos SUPV Intrel Affil Actv Pstv 	3% verb: To care for, aid, service 
+MISBEHAVE	IAV Neg SUPV Actv Hostile 	
+MISHANDLE	IAV Neg SUPV Actv Fail 	
+MISINFORM	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISLEAD	IAV Neg SUPV Intrel Ngtv Hostile Actv 	
+MISREPRESENT	IAV Neg SUPV Actv Comform Fail Undrst 	
+MISS	IAV Neg SUPV Fail Ngtv Weak 	80% verb: To fail to do or take advantage of, to escape, to notice or  regret the absence of 
+MISTAKE	IAV Neg SUPV Ngtv Psv Solve 	3% verb: To 'mistake' one thing for another --to confuse 
+MISTAKEN	IAV Neg SUPV Actv Percv Fail Undrst 	
+MISTRUST	IAV Neg SUPV Actv Percv Fail Undrst 	
+MISUNDERSTAND	IAV Neg SUPV Ngtv Psv Solve 	
+MISUNDERSTOOD	IAV Neg SUPV Ngtv Psv Solve 	
+MITIGATE	IAV SUPV Vary 	
+MOBILIZE	IAV Pos SUPV Actv Travel 	
+MOCK	IAV Neg SUPV Actv Comform Other Power 	
+MODERATE	IAV Pos Modif Pstv Undrst Virtue 	
+MODIFY	IAV SUPV Strng Actv Vary 	
+MOLD	IAV SUPV Work Strng Actv 	
+MOLEST	IAV Neg SUPV Actv Other Hostile 	
+MONITOR	IAV SUPV Intrel Power Strng 	
+MORTGAGE	IAV SUPV Exch Econ* 	
+MORTIFY	IAV Neg SUPV Psv Emot Pain 	
+MOTIVATE	IAV Pos SUPV Actv Other Causal Arousal 	
+MOUNT	IAV SUPV Rel Actv 	
+MOURN	IAV Neg SUPV Affil Ngtv Psv Weak Pain 	
+MOVE	IAV SUPV Intrel Power Strng Actv 	2% verb: To rouse by appeal to the mind or emotions, to influence 
+MUDDLE	IAV Neg SUPV Try Actv 	
+MUFFLE	IAV SUPV Exert Power Strng Actv 	
+MUSTER	IAV SUPV Exert Strng Actv 	
+NAG	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+NEAR	IAV SUPV Travl Actv 	2% verb: To approach 
+NECESSITATE	IAV SUPV Causal Strng Ovrst 	
+NEEDLE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+NEGATE	IAV Neg SUPV Negate Ngtv Intrel Hostile 	
+NEGLECT	IAV Neg SUPV Fail Ngtv Hostile 	
+NEGOTIATE	IAV Pos SUPV Actv Comform Intrel Exch Solve 	
+NEUTRALIZE	IAV Neg SUPV Actv Other Power Strng 	
+NIX	IAV Neg SUPV Finish Power 	
+NOTE	IAV SUPV Percv Psv 	44% verb: To notice, recognize 
+NOTICE	IAV SUPV Percv Psv PFREQ 	86% verb: To perceive, to recognize, to note 
+NOURISH	IAV Pos SUPV Actv Affil Food Incr 	
+NULLIFY	IAV Neg SUPV Negate Finish 	
+NURSE	IAV Pos SUPV Intrel Affil Pstv Actv 	5% verb: To care for, foster, cherish, nurture 
+NURTURE	IAV Pos SUPV Actv Affil Other 	
+OBEY	IAV Pos SUPV Intrel Power Subm Pstv Weak Psv 	verb: To comply 
+OBJECT	IAV Neg SUPV Hostile Ngtv Actv Comform 	19% verb: To voice aversion 
+OBLIGE	IAV Pos SUPV Intrel Subm Pstv Weak 	
+OBLITERATE	IAV Neg SUPV Finish Power Hostile 	
+OBSERVE	IAV SUPV Percv Psv 	verb: To perceive or regard with attention, to remark, to notice 
+OBSTRUCT	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+OBTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To acquire, to procure 
+OCCASION	IAV SUPV Causal Strng Actv 	7% verb: To give cause for, to bring about 
+OCCUPY	IAV SUPV Stay Strng 	
+OCCUR	IAV SUPV Vary Psv PFREQ 	86% verb: To happen, take place 
+OCCUR	IAV SUPV Solve Psv 	14% verb: 'occur to'--dawn on 
+OFFEND	IAV Neg SUPV Actv Eval Hostile Other 	
+OFFER	IAV Pos SUPV Affil Actv Pstv PFREQ Intrel 	84% verb: To present, propose, give 
+OFFICIATE	IAV SUPV Intrel Power Legal Strng 	
+OFFSET	IAV Pos SUPV Psv Other Rel 	
+OMIT	IAV Neg SUPV Fail Ngtv Weak Psv 	
+OPEN	IAV SUPV Begin Actv 	3% verb: To begin, commence, inaugurate 
+OPERATE	IAV SUPV Work Actv Strng PFREQ 	65% verb: To work, perform, function, manage 
+OPPOSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	41% verb: To resist, combat, place opposite 
+OPPRESS	IAV Neg SUPV Power Actv Hostile Other 	
+ORDER	IAV SUPV Power Strng Actv Comform 	7% verb: To command, direct, request; to arrange methodically or properly (2) 
+ORDER	IAV Neg SUPV Fail Weak Psv Ngtv 	1% idiom-adj: "Out of order"--not functioning, disabled 
+ORGANIZE	IAV Pos SUPV Rel Power Pstv Strng Actv 	75% verb: To establish, to systematize 
+ORIENT	IAV SUPV Stay 	
+ORIGINATE	IAV SUPV Begin Actv Strng 	
+ORNAMENT	IAV SUPV Work Exprs 	
+OSTRACIZE	IAV Neg SUPV Ovrst Hostile Affil Other Actv 	
+OUST	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+OUTFIT	IAV SUPV Intrel Power Strng Actv 	
+OUTLINE	IAV SUPV Actv Comform 	
+OUTPUT	IAV SUPV Complt Econ* Strng Actv 	
+OUTREACH	IAV SUPV Rise Strng Actv 	
+OUTRUN	IAV Pos SUPV Actv Travel Strng Other 	
+OUTWIT	IAV Pos SUPV Actv Think Solve Other 	
+OVERCAME	IAV SUPV Intrel Power Strng Actv 	
+OVERCOME	IAV Pos SUPV Intrel Power Strng Actv 	
+OVERFLOW	IAV Neg SUPV Psv Incr 	
+OVERHAUL	IAV SUPV Work Strng Actv 	
+OVERLOOK	IAV Neg SUPV Percv Psv Ngtv 	
+OVERPOWER	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERRUN	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERTHROW	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERTURN	IAV Neg SUPV Actv Think Legal Change 	
+OVERWHELM	IAV SUPV Power Strng Arousal Intrel Ovrst 	
+OWE	IAV Neg SUPV Exch Econ* Ngtv Weak 	
+OWN	IAV SUPV Try Strng Actv 	0% idiom-verb: 'hold one's own'--to keep up 
+PACE	IAV SUPV Exprs Comform 	0% noun: "Paces"--act or performance, as in "she put her pupils through  their paces"--to show or cause to show ability or skill 
+PACK	IAV SUPV Actv Work 	38% verb: To bundle together, put up for preservation or transportation, crowd 
+PAGE	IAV SUPV Comform 	
+PAMPER	IAV Pos SUPV Actv Other Intrel Affil Arousal 	
+PAN	IAV SUPV Hostile Comform 	
+PARTAKE	IAV SUPV Intrel Affil Actv 	
+PARTITION	IAV Neg SUPV Change 	
+PARTOOK	IAV SUPV Intrel Actv Affil 	
+PASS	IAV SUPV Psv Persist 	9% verb: Of time--to spend or elapse 
+PASS	IAV SUPV Work Legal Strng Actv 	4% verb: To ratify or be ratified--"to pass a law" 
+PASS	IAV SUPV Psv Complt 	3% verb: "Pass through"--to undergo, experience 
+PASS	IAV Neg SUPV Ngtv Weak Psv Natpro 	3% verb: "Pass away"--to die 
+PASS	IAV SUPV Intrel Hostile 	1% verb: "Pass up"--to refuse, forego 
+PASS	IAV Neg SUPV Intrel Ngtv Actv 	1% verb: "Pass off"--to take place, be accepted or cause to be accepted as genuine 
+PASS	IAV SUPV Weak Psv Natpro 	0% verb: "Pass out"--to become unconscious 
+PASTE	IAV SUPV Work 	
+PATCH	IAV SUPV Work Actv 	
+PATROL	IAV SUPV Travl Milit Power Strng 	
+PATRONIZE	IAV Neg SUPV Power Actv Other 	
+PAY	IAV SUPV Percv Actv 	8% verb-idiom: "Pay attention" 
+PAY	IAV Pos SUPV Affil Actv Pstv Intrel 	2% verb: Pay a visit or call 
+PAY	IAV SUPV Intrel Subm Actv Weak 	2% verb: To offer or give (tribute, honors, etc.) 
+PEACE	IAV Pos SUPV Intrel Affil Pstv Actv 	11% idiom-verb: "Make peace," to end strife 
+PEAK	IAV SUPV Rise Strng 	
+PEND	IAV SUPV Vary Psv 	
+PENETRATE	IAV SUPV Strng Actv Hostile Exert 	
+PERCEIVE	IAV SUPV Percv Psv 	
+PERFECT	IAV Pos SUPV Complt Pstv Strng Actv 	3% verb: To make perfect, complete 
+PERISH	IAV Neg SUPV Natpro Finish 	
+PERMIT	IAV Pos SUPV Intrel Power Pstv Strng Psv PFREQ 	94% verb: To allow, to make possible 
+PERPETUATE	IAV SUPV Persist Strng Actv Ovrst 	
+PERPLEX	IAV Neg SUPV Ngtv Weak Solve Undrst 	
+PERSECUTE	IAV Neg SUPV Actv Other Hostile 	
+PERSEVERE	IAV Pos SUPV Persist Actv Strng Pstv 	
+PERSIST	IAV SUPV Persist Strng Actv 	
+PERSUADE	IAV SUPV Power Strng Actv Comform 	
+PERTURB	IAV Neg SUPV Ngtv Pain 	
+PETITION	IAV SUPV Polit* Actv Comform Subm Weak Actv 	
+PICK	IAV SUPV Fetch Actv 	59% verb: "To pick up"--take up, gather or acquire; to give a ride to--  "i went and picked him up at the station" (11); to become more frequent  or rapid (0); to tidy (0); to become acquainted with casually (0) 
+PICK	IAV Neg SUPV Intrel Hostile Power Actv Strng Ngtv 	9% idiom-verb: "(to) pick on, a fight"--to tease, bully, encourage a fight 
+PIECE	IAV Neg SUPV Ngtv Weak Psv Fail 	1% verb: "Go to pieces"--suffer a breakdown 
+PILE	IAV SUPV Incr 	69% verb: To accumulate 
+PILE	IAV SUPV Travl Actv 	3% verb: "Pile (down) (out)"--to swarm 
+PIT	IAV SUPV Actv Work 	
+PLAGUE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+PLAN	IAV SUPV Solve Strng Actv 	35% verb: To construct such a program 
+PLAY	IAV SUPV Work Actv 	6% verb: "To play a part or role"--to serve a function--"he played an  important role in the meeting." specific 
+PLAY	IAV SUPV Work Try Actv 	1% idiom-verb: "Play (it) by ear"--improvise 
+PLEASE	IAV Pos SUPV Intrel Affil Pstv 	23% verb: To satisfy, to make enjoyable for 
+PLEASE	IAV SUPV Power Strng Actv Pleasur 	3% verb: To will, like, desire..."to do what one pleases" 
+PLEASED	IAV Pos SUPV Intrel ED Affil Pstv 	3% verb: To make enjoyable for, to satisfy (past tense) 
+PLEASED	IAV SUPV ED Strng Actv Pleasur 	5% verb: Willed, liked, desired . . . "he did what he pleased" 
+PLEDGE	IAV Pos SUPV Actv Comform Affil Polit 	
+PLOD	IAV Neg SUPV Travel Weak Actv 	
+PLOT	IAV Neg SUPV Ngtv Actv Strng Solve 	
+PLOW	IAV SUPV Work Actv Econ* 	
+POINT	IAV SUPV Actv Percv 	23% verb: To observe, note, indicate, call attention to, emphasize 
+POISE	IAV SUPV Stay Psv 	
+POLISH	IAV Pos SUPV Actv Work Try 	
+POLLUTE	IAV Neg SUPV Actv Legal Hostile 	
+PONDER	IAV SUPV Psv Solve 	
+POOL	IAV SUPV Rel Affil 	
+POSE	IAV SUPV Stay Psv 	
+POSTPONE	IAV SUPV Vary Actv 	
+PRACTICE	IAV SUPV Try Actv 	61% verb: To repeatedly or customarily perform an act or custom, often  for the sake of improvement 
+PRAISE	IAV Pos SUPV Affil Pstv Actv Comform 	
+PRANCE	IAV Pos SUPV Actv Travel 	
+PRECEDE	IAV SUPV Rel 	
+PRECIPITATE	IAV Neg SUPV Causal 	
+PREDICT	IAV SUPV Psv Solve 	
+PREDOMINATE	IAV SUPV Strng Ovrst Intrel Power 	
+PREFER	IAV SUPV Psv Need 	verb: Like better, have preference for 
+PREOCCUPY	IAV SUPV Arousal 	
+PREPARE	IAV SUPV Begin Strng Actv 	73% verb: To put things or oneself in readiness, to compose beforehand 
+PRESENT	IAV SUPV Actv Intrel Affil 	20% verb: To bestow, proffer, show, introduce, manifest 
+PRESERVE	IAV SUPV Work Strng Actv 	
+PRESIDE	IAV SUPV Intrel Power Strng Actv 	
+PRESSURE	IAV SUPV Exert Power Strng Actv 	14% verb: To attempt to influence or force 
+PRESUME	IAV SUPV Psv Solve 	
+PRETEND	IAV Neg SUPV Actv Comform Hostile Ngtv 	verb: To hold out the appearance of being, doing, having, feeling, etc., feign. 
+PREVAIL	IAV SUPV Persist Strng Actv 	
+PREVENT	IAV SUPV Intrel Power Strng Actv 	verb: Hinder, keep from occurring 
+PREVENTION	IAV SUPV Intrel Power Strng 	
+PROCEED	IAV SUPV Travl Actv PFREQ 	86% verb: To move, pass, or go forward or onward, to advance, to begin or carry on 
+PROCESS	IAV SUPV Work Actv 	3% verb: To prepare by some particular series of actions 
+PROCLAIM	IAV SUPV Power Strng Comform 	
+PROCRASTINATE	IAV Neg SUPV Weak Stay Work Actv 	
+PROCURE	IAV SUPV Fetch Strng Actv 	
+PROD	IAV Neg SUPV Strng Comform 	
+PRODUCE	IAV SUPV Work Strng Actv PFREQ 	89% verb: To bring into existence or sight, create, make 
+PROFESS	IAV Pos SUPV Actv Comform 	
+PROFFER	IAV Pos SUPV Actv Comform 	
+PROFIT	IAV Pos SUPV Exch Pstv Strng Econ* 	
+PROGRAM	IAV SUPV Work Actv 	0% verb: To prepare a program for (computer or otherwise) 
+PROGRESS	IAV Pos SUPV Pstv Strng Actv Try 	27% verb: To move towards a goal or generally forward 
+PROHIBIT	IAV Neg SUPV Power Ngtv Strng Actv Intrel Legal 	
+PROJECT	IAV SUPV Solve Actv Strng 	4% verb: To forecast, look forward, extrapolate, externalize onto, place  onto (abstract) 
+PROLONG	IAV SUPV Persist Actv Strng 	
+PROMISE	IAV SUPV Affil Comform 	48% verb: To make such a declaration 
+PROMOTE	IAV SUPV Intrel Econ* Power Strng Actv 	
+PROMPT	IAV Pos SUPV Intrel Power Pstv Strng 	
+PROPOSE	IAV SUPV Actv Comform 	verb: To offer or suggest for consideration 
+PROSECUTE	IAV Pos SUPV Actv Other Legal Exert 	
+PROSPER	IAV Pos SUPV Psv Econ Incr 	
+PROTECT	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	verb: To defend or guard from attack, damage, loss, etc. 
+PROTEST	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+PROVE	IAV SUPV Solve Strng Actv 	65% verb: To establish beyond all reasonable doubt 
+PROVE	IAV SUPV VERB LINK Complt Strng Psv 	33% verb: Turn out (to be)--"prove difficult," "prove to be" 
+PROVIDE	IAV Pos SUPV Intrel Affil Power Pstv Strng PFREQ 	97% verb: To furnish, supply, afford 
+PROVOKE	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+PROWL	IAV Neg SUPV Move Hostile Actv 	
+PRY	IAV Neg SUPV Intrel Comform Exert 	
+PUBLISH	IAV SUPV Econ* Actv Comform 	
+PULL	IAV SUPV Strng Actv Exert 	verb: To tug at, draw, drag, move 
+PUMP	IAV SUPV Work Actv 	
+PUNCH	IAV Neg SUPV Actv Other Hostile Exert 	
+PUNISH	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+PURCHASE	IAV SUPV Exch Actv Econ* 	
+PURIFY	IAV Pos SUPV Actv Work Decr Virtue 	
+PURR	IAV Pos SUPV Actv Comform Pleasure 	
+PURSUE	IAV SUPV Travl Strng Actv 	verb: To chase, follow, follow up 
+PUSH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	6% idiom-verb: "Push around"--to bully 
+PUT	IAV SUPV Work Hostile Actv 	1% verb: 'put out'--to extinguish or expel 
+PUT	IAV SUPV Travl Actv 	0% verb: 'put out'--to depart 
+PUT	IAV SUPV Psv Intrel Subm 	0% verb: 'put up with'--to bear or suffer, to tolerate 
+PUT	IAV SUPV Actv Solve 	0% verb: 'put off'--postpone, delay; divert 
+PUT	IAV SUPV Complt Actv Strng 	0% verb: 'put through'--to have accepted; judged and passed 
+PUZZLE	IAV SUPV Solve Undrst 	
+QUALIFY	IAV Pos SUPV Complt Pstv Strng Undrst 	28% verb: To meet some set of standards, ensure satisfaction of such standards 
+QUALIFY	IAV SUPV Strng Comform 	16% verb: To impose conditions on the validity of a statement 
+QUARREL	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+QUENCH	IAV Pos SUPV Psv Need 	
+QUIBBLE	IAV Neg SUPV Actv Comform Hostile 	
+QUICKEN	IAV Pos SUPV Actv Move Incr 	
+QUIT	IAV Neg SUPV Finish Ngtv Weak Psv Subm 	verb: To stop, cease, give up; to leave (2) 
+RACE	IAV SUPV Travl Actv 	11% verb: To run or move rapidly, usually competitively 
+RADIATE	IAV Pos SUPV Psv Fetch Incr 	
+RAID	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+RAISE	IAV supv Work Strng Actv 	14% verb: To grow, to bring to maturity 
+RAISE	IAV SUPV Actv Comform 	19% verb: To introduce, bring forward--"raise the question" 
+RALLY	IAV Pos Noun HU Coll Comform Polit Actv 	
+RAMBLE	IAV Neg SUPV Actv Comform 	
+RANGE	IAV SUPV Solve 	13% verb: To extend, rank 
+RAPT	IAV Pos SUPV Psv Think Stay 	
+RATE	IAV SUPV Actv Solve 	
+RATION	IAV Neg SUPV Decr Actv 	
+RATTLE	IAV Neg SUPV Exert Ngtv Strng 	
+RAVAGE	IAV Neg SUPV Actv Hostile Fetch 	
+RAVE	IAV Pos SUPV Actv Comform Affil Strng 	
+REACH	IAV SUPV Complt Actv Strng 	80% verb: To attain, arrive at, come to, get to, extend to 
+REACH	IAV SUPV Actv Comform 	6% verb: To establish communication with 
+REACT	IAV SUPV Intrel Psv Subm 	
+READ	IAV SUPV Percv 	1% idiom-verb: "Sight read"--not handled 
+REAFFIRM	IAV SUPV Strng Power Comform 	
+REALIZE	IAV SUPV Psv PFREQ Solve 	88% verb: To apprehend, come to see or know 
+REALIZE	IAV SUPV Complt Strng Actv 	11% verb: To make real, see come true or happen--"he realized his dreams" 
+REAP	IAV Pos SUPV Actv Fetch 	
+REAR	IAV SUPV Work Actv 	
+REASON	IAV SUPV Solve Actv Strng 	3% verb: To think or argue in a logical manner 
+REASSURE	IAV Pos SUPV Pstv Strng Affil Power Comform 	
+REBEL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+REBUFF	IAV Neg SUPV Actv Other Hostile Comform 	
+REBUILD	IAV SUPV Work Strng Actv 	
+REBUKE	IAV Neg SUPV Actv Other Hostile Comform 	
+REBUT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+RECALL	IAV SUPV Psv Solve 	
+RECEDE	IAV Neg SUPV Psv Decr 	
+RECEIVE	IAV SUPV Intrel Affil Psv Subm 	verb: To get, accept, admit, apprehend 
+RECLAIM	IAV Pos SUPV Actv Fetch Power Comform Exert 	
+RECLINE	IAV Pos SUPV Actv Move Pleasure 	
+RECOGNIZE	IAV SUPV Percv Psv 	verb: To perceive, identify, acknowledge 
+RECOIL	IAV Neg SUPV Subm Weak Actv 	
+RECOMMEND	IAV SUPV Strng Comform 	
+RECONCILE	IAV Pos SUPV Intrel Pstv Affil 	
+RECONSTRUCT	IAV SUPV Work Strng Actv 	
+RECORD	IAV SUPV Comform 	9% verb: To set down in writing, to imprint sound on a disk or tape 
+RECOVER	IAV SUPV Strng Complt 	
+RECRUIT	IAV SUPV Intrel Power Milit Strng Actv 	
+REDEEM	IAV Pos SUPV Actv Strng Try 	
+REDUCE	IAV SUPV Decr Strng 	verb: To diminish, degrade, subdue 
+REESTABLISH	IAV Pos SUPV Actv Begin Strng 	
+REFER	IAV SUPV Psv Comform 	verb: To direct attention or a person to someone or something; to mention  or allude to 
+REFINE	IAV Pos SUPV Actv Decr Virtue 	
+REFLECT	IAV SUPV Solve Psv 	
+REFORM	IAV SUPV Actv Vary 	
+REFRAIN	IAV Neg SUPV Actv Stay 	
+REFUND	IAV SUPV Exch Econ* Actv 	
+REGAIN	IAV SUPV Strng Actv Complt 	
+REGARD	IAV SUPV Psv Solve 	41% verb: To conceive of, look upon in a particular way 
+REGISTER	IAV SUPV Psv Solve 	
+REGRESS	IAV Neg SUPV Fail Ngtv Weak Psv 	
+REGULATE	IAV SUPV Intrel Strng Actv Power 	
+REINFORCE	IAV SUPV Intrel Strng Actv Power 	
+REINSTATE	IAV Pos SUPV Actv Other Polit Legal Power 	
+REITERATE	IAV SUPV Strng Actv Comform 	
+REJOICE	IAV Pos SUPV Actv Pleasure 	
+RELAPSE	IAV Neg SUPV Psv Weak Subm 	
+RELATE	IAV SUPV Rel PFREQ 	86% verb: To establish association, to have reference to 
+RELATE	IAV SUPV Comform 	14% verb: To tell, recount 
+RELATED	IAV SUPV Rel 	39% verb: "Related to"--relevant to, having reference to 
+RELATED	IAV SUPV ED Comform 	4% verb: Told, recounted 
+RELAX	IAV SUPV Weak Psv Natpro 	
+RELEASE	IAV SUPV Fetch Actv 	68% verb: To let out, let go, free 
+RELIANCE	IAV SUPV Intrel Weak Subm 	
+RELIEVE	IAV SUPV Intrel Power Strng 	75% verb: To alleviate, disburden, ease 
+RELIEVE	IAV SUPV Natpro 	15% verb: "Relieve oneself" - to go to the bathroom 
+RELISH	IAV Pos SUPV Psv Emot Pleasure Need 	
+RELY	IAV SUPV Intrel Subm Weak Psv Ovrst 	
+REMARK	IAV SUPV Comform 	25% verb: To comment, point out 
+REMIND	IAV SUPV Comform 	verb: To cause to remember 
+REMODEL	IAV Pos SUPV Actv Change 	
+RENDER	IAV SUPV Work Strng 	
+RENEW	IAV SUPV Work Strng 	
+RENOUNCE	IAV Neg SUPV Actv Other Comform Hostile 	
+RENOVATE	IAV Pos SUPV Actv Change 	
+REPAID	IAV SUPV Exch ED Econ* Actv 	
+REPAIR	IAV Pos SUPV Work Pstv Strng Actv 	
+REPAY	IAV SUPV Exch Econ* Actv 	
+REPEAL	IAV Neg SUPV Legal Comform Change 	
+REPENT	IAV Pos SUPV Actv Subm Solve 	
+REPLACE	IAV SUPV Work Actv 	
+REPLENISH	IAV SUPV Work Strng Actv 	
+REPLY	IAV SUPV Psv Comform 	79% verb: To respond 
+REPORT	IAV SUPV Actv Comform 	44% verb: To relate some fact or situation, usually to an authority or  the general public 
+REPOSE	IAV Pos SUPV Psv Pleasure Stay 	
+REPRESENT	IAV SUPV Comform Actv 	verb: To describe, to stand or act for 
+REPRESS	IAV Neg SUPV Power Actv Feel 	
+REPROACH	IAV Neg SUPV Other Actv Hostile Comform 	
+REPUDIATE	IAV Neg SUPV Actv Comform Strng 	
+REPULSE	IAV Neg SUPV Intrel Ngtv Strng Actv Power Hostile 	
+REQUEST	IAV SUPV Psv Weak Comform Subm 	40% verb: To ask for, to petition 
+REQUIRE	IAV SUPV Intrel Power Actv Strng PFREQ 	98% verb: To need, demand, compel 
+RESCUE	IAV Pos SUPV Pstv Actv Affil Intrel 	
+RESENT	IAV Neg SUPV Intrel Hostile Ngtv Psv 	verb: To react with displeasure or indignation from a sense of injury,  especially towards someone 
+RESERVE	IAV SUPV Fetch Strng Actv Undrst 	35% verb: Save, withhold, restrain 
+RESIGN	IAV SUPV Intrel Subm Weak Psv 	
+RESIST	IAV SUPV Intrel Hostile Strng Actv 	
+RESOLVE	IAV Pos SUPV Solve Pstv Strng Actv 	
+RESOUND	IAV Pos SUPV Actv Comform Travel Strng 	
+RESPECT	IAV Pos SUPV Intrel Subm Pstv Psv 	48% verb-adj: To hold in esteem--esteemed 
+RESPECT	IAV Pos SUPV Affil Subm Pstv Psv Comform 	2% idiom-verb: 'pay one's respects'--visit, call on formally 
+RESPOND	IAV SUPV Subm Psv Comform Affil 	
+REST	IAV SUPV Stay Psv 	25% verb: To relax, be at ease or inactive, to be set 
+REST	IAV SUPV Stay 	8% verb: To reside or be found (with, upon) "the decision rests with him" 
+RESTORE	IAV Pos SUPV Work Pstv Strng Actv 	
+RESTRAIN	IAV SUPV Intrel Hostile Power Strng Actv 	
+RESTRICT	IAV Neg SUPV Intrel Hostile Power Strng Actv PFREQ Ngtv 	96% verb: To confine or limit 
+RESULT	IAV SUPV Finish 	26% verb: To yield an outcome 
+RESUME	IAV SUPV Vary Actv 	
+RESURRECT	IAV Pos SUPV Actv Affil Fetch 	
+RETAIL	IAV SUPV Exch Econ* 	
+RETAIN	IAV SUPV Fetch Strng 	
+RETALIATE	IAV Neg SUPV Actv Hostile Intrel Exert 	
+RETARD	IAV Neg SUPV Actv Hostile Exert 	
+RETIRE	IAV Neg SUPV Actv Compl Work 	
+RETREAT	IAV Neg SUPV Travl Milit Ngtv Weak Actv 	
+RETURN	IAV SUPV Travl Actv 	79% verb: To go or come back, revert, recur 
+RETURN	IAV Pos SUPV Pstv Actv Fetch 	5% verb: To give back, cause to revert to original position, reciprocate 
+REUNITE	IAV Pos SUPV Actv Travel 	
+REVEAL	IAV SUPV PFREQ Comform 	85% verb: To make known, disclose 
+REVEL	IAV Pos SUPV Actv Pleasure 	
+REVERE	IAV Pos SUPV Actv Affil Subm Ought 	
+REVERSE	IAV SUPV Vary Actv 	
+REVERT	IAV Neg SUPV Actv Weak 	
+REVIEW	IAV SUPV Solve 	
+REVISE	IAV SUPV Work Actv 	
+REVITALIZE	IAV Pos SUPV Actv Affil Fetch 	
+REVIVE	IAV Pos SUPV Begin Pstv Strng Actv 	
+REVOKE	IAV Neg SUPV Actv Change Fetch 	
+REVOLT	IAV Neg SUPV Actv Hostile Polit Affil 	
+REWARD	IAV Pos SUPV Exch Pstv Actv Strng 	19% verb: To compensate, to give positive reinforcement 
+RID	IAV Neg SUPV Actv Hostile Decr 	
+RIDE	IAV Neg SUPV Hostile Ngtv Actv Comform 	5% verb: To ridicule or harass 
+RIDICULE	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+RIGHT	IAV Pos SUPV Work Pstv Strng 	0% verb: To set something right 
+RIPEN	IAV Pos SUPV Psv Natpro 	
+RISE	IAV SUPV Natpro Strng 	16% verb: To return to life 
+RISE	IAV SUPV Causal Strng Actv 	2% verb-idiom: "Give rise (to)"--originate, cause 
+RISK	IAV SUPV Try Actv 	
+RIVAL	IAV Neg SUPV Try Ngtv Strng 	
+ROMANTICIZE	IAV Pos SUPV Actv Other Pleasure Think 	
+ROOT	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	0% idiom-verb: To "root out", to extirpate 
+ROSE	IAV SUPV ED Natpro Strng 	6% verb: Returned to life 
+ROUGH	IAV SUPV Work 	0% verb: "Rough it"--to live without customary comforts 
+ROUND	IAV SUPV Fetch Actv 	3% idiom-verb: "Round up", to herd, collect 
+ROUND	IAV SUPV Actv Vary 	0% idiom-verb: "Round off", to make round, remove excess 
+ROUND	IAV SUPV Complt Actv 	3% idiom-verb: "Round out", to complete 
+ROUND	IAV SUPV Travl Actv 	0% verb: To make a circuit of, to turn 
+ROUSE	IAV Pos SUPV Actv Exert Intrel Causal 	
+RUIN	IAV Neg SUPV Fail Ngtv Strng Actv 	65% verb: To destroy or spoil 
+RULE	IAV SUPV Intrel Polit* Power Strng Actv 	13% verb: To govern, guide, determine 
+RULE	IAV SUPV Solve Actv 	2% idiom-verb: "Rule out", to exclude by decision 
+RUMPLE	IAV Neg SUPV Actv Hostile 	
+RUN	IAV SUPV Intrel Power Actv Strng 	9% verb: To manage, direct, control, guide, drive 
+RUN	IAV SUPV Travl Actv 	3% verb: 'run after'--to pursue 
+RUN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	2% verb: "Run down"--to defame or speak ill of (4), destroy or injure  (2), wear down (2) 
+RUN	IAV Neg SUPV Finish Weak Ngtv Psv 	1% verb: 'run out'--to become depleted 
+RUN	IAV SUPV Travl Actv Weak 	16% verb: 'run away,' 'run off'--to flee, escape 
+RUN	IAV SUPV Try Polit* Actv 	2% verb: To stand for election 
+RUN	IAV SUPV Incr Econ* Actv 	0% verb: 'run up (debts)'--accumulate 
+RUN	IAV SUPV Try Actv 	0% idiom: 'run risks'--take chances 
+RUN	IAV SUPV Fail Actv 	1% idiom: 'run riot'--get out of control 
+RUN	IAV SUPV Psv Intrel 	0% verb: "Run into"--encounter 
+RUSH	IAV SUPV Travl Actv PFREQ 	94% verb: To hurry--infrequently-- to attack suddenly, ambush 
+SABOTAGE	IAV Neg SUPV Actv Hostile Other Exert 	
+SACRIFICE	IAV SUPV Intrel Subm 	
+SAFEGUARD	IAV Pos SUPV Actv Other Power 	
+SAG	IAV Neg SUPV Psv Weak Subm 	
+SALUTE	IAV Pos SUPV Actv Other Comform Legal Subm 	
+SAMPLE	IAV SUPV Solve 	
+SANCTIFY	IAV Pos SUPV Actv Affil Other 	
+SANCTION	IAV SUPV Intrel Legal Power Strng Psv 	
+SATISFY	IAV Pos SUPV Intrel Pstv Strng Affil 	28% verb: To give enjoyment or contentment, to fulfill 
+SAVE	IAV Pos SUPV Fetch Pstv Strng Actv 	79% verb-adj: To rescue, preserve, reserve, salvage, hold in safekeeping 
+SAY	IAV SUPV Solve 	0% verb: "That is to say"--in other words 
+SCALD	IAV Neg SUPV Psv Pain 	
+SCALE	IAV SUPV Actv Rise 	
+SCAMPER	IAV Pos SUPV Actv Travel 	
+SCARE	IAV Neg SUPV Ngtv Strng Intrel Hostile Actv 	83% verb: To frighten 
+SCARE	IAV SUPV Fetch Actv 	0% idiom-verb: "Scare up"--find with effort, gather 
+SCARED	IAV Neg SUPV Intrel ED Hostile Ngtv Strng 	4% verb: To frighten (past tense) 
+SCATTER	IAV SUPV Exert Actv Strng 	
+SCHEDULE	IAV SUPV Actv Solve 	
+SCHEME	IAV Neg SUPV Ngtv Solve 	
+SCHOOL	IAV SUPV Acad Actv Comform Power 	0% verb: To teach 
+SCOFF	IAV Neg SUPV Comform Power 	
+SCORCH	IAV Neg SUPV Hostile Exert Actv 	
+SCORE	IAV SUPV Solve 	
+SCOWL	IAV Neg SUPV Comform Hostile Actv 	
+SCRAMBLE	IAV SUPV Travl Actv Weak 	
+SCRAPE	IAV Neg SUPV Actv Pain 	
+SCRAWL	IAV SUPV Comform Weak 	
+SCREW	IAV Neg SUPV Intrel Hostile Actv Ngtv 	
+SCRUTINIZE	IAV Neg SUPV Percv Think Actv 	
+SCULPTURE	IAV SUPV Exprs Work 	
+SEARCH	IAV SUPV Try Actv 	76% verb: To look for 
+SECEDE	IAV Neg SUPV Polit Travel Affil 	
+SECOND	IAV SUPV Intrel Affil Strng 	2% verb: To assist or support 
+SECURE	IAV SUPV Stay Strng Actv Ovrst 	79% verb: To obtain, insure, make fast 
+SEEK	IAV SUPV Try Actv 	verb: To go in search of, to attempt to obtain an object or a desired  goal; to attempt or try (8) 
+SEIZE	IAV Neg SUPV Hostile Ngtv Strng Actv Fetch 	verb: To take possession or control of 
+SELECT	IAV SUPV Actv Solve Power 	
+SENSE	IAV SUPV Percv Psv 	10% verb: To note, perceive, feel, intuit 
+SEQUESTER	IAV Neg SUPV Stay Power Legal 	
+SERVE	IAV SUPV Intrel Econ* Subm Actv Weak 	82% verb: To work for, be of assistance, or do one's duty; to answer the  purpose of, function as (17) 
+SERVE	IAV SUPV Work Actv Subm 	13% verb: To furnish and distribute food 
+SERVE	IAV SUPV Vice 	1% idiom-verb: "Serve (one) right"--punish justly 
+SERVE	IAV Neg SUPV Comform Hostile Ngtv 	1% idiom-verb: "Serve notice"--give warning 
+SERVICE	IAV Neg SUPV Intrel Hostile Subm Ngtv Weak 	2% idiom: "Lip service" - insincere expression of support 
+SERVICE	IAV SUPV Work 	0% verb: To repair, make fit for use, perform services for 
+SET	IAV SUPV Stay Actv 	45% verb: Put, place, cause a change in condition, determine, fix, put forward 
+SET	IAV SUPV Begin Actv 	17% idiom-verb: "Set up"--create, establish, erect 
+SET	IAV SUPV Work Actv 	1% verb: "Set a table" 
+SET	IAV SUPV Begin Actv 	6% verb: "Set out"--to begin, start 
+SET	IAV SUPV Fall 	1% verb: To go down ("the sun set") 
+SETTLE	IAV SUPV Stay Actv Strng 	47% verb: To establish a household, to assume a certain form, to make  or become stable (3) 
+SETTLE	IAV SUPV Intrel Power Actv Strng 	31% verb: To resolve a dispute or problem, to calm. 
+SETTLE	IAV SUPV Psv Complt 	4% idiom-verb: "Settle for"--be satisfied with 
+SHADOW	IAV Neg SUPV Intrel Hostile Actv Ngtv 	
+SHAFT	IAV SUPV Intrel Hostile 	
+SHAKE	IAV SUPV Affil Comform 	14% verb-idiom: "Shake hands" - to greet in the western manner 
+SHALL	IAV SUPV VERB MOD 	verb: Modal--denoting future time, irregularly with connotation of intent 
+SHAPE	IAV SUPV Try 	0% idiom-verb: "Shape up"--meet with certain standards 
+SHED	IAV SUPV Work 	
+SHELTER	IAV Pos SUPV Intrel Power Pstv Strng Affil 	
+SHIELD	IAV Pos SUPV Actv Other Power Affil 	
+SHIFT	IAV SUPV Try Strng Actv 	3% verb: "To shift for oneself"--to get along by oneself 
+SHIRK	IAV Neg SUPV Fail Weak Actv 	
+SHIVER	IAV Neg SUPV Psv Pain 	
+SHOCK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	29% verb: To jar with intense surprise, horror, disgust 
+SHOOT	IAV SUPV Try Actv 	4% idiom-verb: "Shoot for"--have a goal 
+SHOOT	IAV SUPV Comform 	2% idiom-verb: "Shoot the bull"--talk 
+SHOOT	IAV Neg SUPV Hostile Ngtv Comform 	4% idiom-verb: "Shoot...mouth off"--to talk indiscreetly 
+SHOOT	IAV SUPV Incr Strng Actv 	0% idiom-verb: "Shoot up"--to grow or rise rapidly 
+SHOULDER	IAV SUPV Exert Strng Actv 	15% verb: To take upon, to support or carry, to apply the shoulder 
+SHOW	IAV SUPV Strng PFREQ Comform Actv 	89% verb: To demonstrate, make evident, manifest, exhibit, often with  implication of guidance 
+SHOW	IAV SUPV Power Strng Actv Comform 	1% verb: "Show (in, around, out)"--to usher (in, around, out) 
+SHOW	IAV Neg SUPV Actv Ngtv Comform 	0% idiom-verb: "Show off"--to display ostentatiously 
+SHOW	IAV SUPV Travl 	1% idiom-verb: "Show up"--to make an appearance 
+SHOWER	IAV SUPV Natpro 	
+SHRED	IAV Neg SUPV Actv Hostile Exert Decr 	
+SHRIVEL	IAV Neg SUPV Decr 	
+SHUN	IAV Neg SUPV Actv Affil Ovrst Hostile Other 	
+SHUT	IAV SUPV Hostile Comform 	23% idiom-verb: "Shut up"--keep quiet 
+SHUT	IAV SUPV Finish Actv Strng 	12% verb: "Shut off," "shut out"--to close off, to stop, exclude 
+SHUT	IAV SUPV Stay Power Actv Strng 	15% verb: "Shut up"--confine 
+SIDE	IAV SUPV Intrel Affil 	0% verb: To side with or against, agree or disagree 
+SIGHT	IAV SUPV Percv Psv 	2% verb: To catch sight of, to spot 
+SIGHT	IAV SUPV Comform 	2% verb-idiom: "Sight read"--not handled 
+SIGN	IAV SUPV Actv Comform Actv 	19% verb: To affix a signature, thereby to endorse or certify 
+SIGNAL	IAV SUPV Actv Comform 	
+SIGNIFY	IAV Pos SUPV Psv Comform Intrel Causal 	
+SIMPLIFY	IAV Pos SUPV Solve Pstv Actv 	
+SIMULATE	IAV SUPV Solve Actv 	
+SIN	IAV Neg SUPV Relig Ngtv Vice 	
+SINGLE	IAV SUPV Solve 	4% verb-idiom: "Single out"--to point out an individual item or group 
+SITUATE	IAV SUPV Stay Actv 	
+SIZE	IAV SUPV Actv Solve 	10% verb: To gauge or measure 
+SKULK	IAV Neg SUPV Move 	
+SLACK	IAV Modif Qual 	
+SLAM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+SLANDER	IAV Neg SUPV Comform Hostile Other Actv 	
+SLAUGHTER	IAV Neg SUPV Natpro Finish Hostile Exert Actv 	
+SLAVE	IAV SUPV Work Actv 	10% verb: To work hard, as does a slave 
+SLICE	IAV SUPV Work Actv 	
+SLIGHT	IAV Neg SUPV Intrel Hostile Ngtv Actv 	8% verb: To malign or insult 
+SMACK	IAV Neg SUPV Actv Hostile Exert 	
+SMART	IAV SUPV Pain 	0% verb: To sting 
+SMEAR	IAV Neg SUPV Comform Hostile Actv 	
+SMOOTH	IAV SUPV Work Actv 	17% verb: To eliminate roughness or difficulty 
+SMOTHER	IAV Neg SUPV Actv Power Intrel Compl 	
+SMUGGLE	IAV Neg SUPV Actv Fetch 	
+SNEAK	IAV Neg SUPV Actv Move 	
+SNEER	IAV Neg SUPV Actv Comform 	
+SNOW	IAV SUPV Fail Psv 	5% verb: 'snowed under'--to be buried as with snow, overcome 
+SOAR	IAV SUPV Rise Strng 	
+SOLD	IAV SUPV ED Psv Solve 	5% verb: Convinced - "that sold me on it" 
+SOLVE	IAV SUPV Solve Actv 	verb: To find the remedy for or explanation of a problem 
+SOOTHE	IAV Pos SUPV Actv Other Affil 	
+SORT	IAV SUPV Rel Actv 	1% verb: To arrange or separate according to kind, species, etc. 
+SOUGHT	IAV Pos SUPV Try ED Pstv 	
+SOUND	IAV SUPV VERB LINK Comform 	38% verb: To convey as an impression or appearance; to measure or plumb (1) 
+SPAN	IAV SUPV Space 	
+SPARE	IAV SUPV Work 	26% verb: To lend, to sacrifice, to do or go without 
+SPARKLE	IAV Pos SUPV Psv Change Percv 	
+SPEAK	IAV SUPV Power Actv Comform 	5% verb: 'speak out'--speak audibly or clearly, without hesitation, freely 
+SPEAK	IAV SUPV Intrel Affil Actv 	2% verb: 'speak for'--represent 
+SPECIFY	IAV SUPV Actv Comform 	
+SPECULATE	IAV SUPV Solve Undrst 	
+SPEED	IAV SUPV Travl Strng Actv 	
+SPILL	IAV Neg SUPV Actv Fail 	
+SPOIL	IAV Neg SUPV Ngtv Exert Hostile 	
+SPOKE	IAV SUPV Intrel Affil Actv 	1% idiom: "Spoke for"--represented 
+SPOKE	IAV SUPV Power Actv Comform 	1% verb: "Spoke out"--expressed an emphatic opinion, spoke loudly, freely, clearly 
+SPONSOR	IAV SUPV Intrel Power Strng Actv 	
+SPOT	IAV SUPV Percv 	4% verb: To discover by sight 
+SPRAIN	IAV Neg SUPV Psv Pain 	
+SPRANG	IAV SUPV Travl ED Actv 	
+SPRAWL	IAV SUPV Stay Psv 	
+SPREAD	IAV SUPV Incr PFREQ 	86% verb: To stretch out, extend, display, scatter 
+SPRING	IAV SUPV Travl Actv 	10% verb: To leap (2); to appear or emerge suddenly (0); to snap shut  (0); to bend or split (0) 
+SPRINKLE	IAV SUPV Fall 	
+SPRUNG	IAV SUPV Travl ED Actv 	
+SPUR	IAV SUPV Intrel Power 	
+SPUTTER	IAV Neg SUPV Actv Comform 	
+SQUANDER	IAV Neg SUPV Econ Actv Exch 	
+STABILIZE	IAV Pos SUPV Power Stay Pstv Strng Actv Ovrst 	
+STAGE	IAV SUPV Work Actv 	4% verb: To organize and carry out some activity 
+STAGGER	IAV SUPV Fall Weak Psv 	
+STALL	IAV SUPV Stay Weak Hostile 	
+STAND	IAV SUPV Affil Strng Actv Intrel 	7% verb: "Stand for," "stand up for"; represent, favor, defend 
+STAND	IAV SUPV Strng Psv Intrel Subm 	6% verb: Tolerate, bear, withstand 
+STAND	IAV Pos SUPV Percv Strng Pstv 	1% idiom-verb: "Stand out"--to be conspicuous or prominent 
+STANDARDIZE	IAV Pos SUPV Actv Ovrst Other 	
+STAR	IAV SUPV Work Ovrst 	4% verb: To play a leading role 
+START	IAV SUPV Travl Psv 	0% verb: To jerk or flinch suddenly 
+STARTLE	IAV Neg SUPV Intrel Hostile Ngtv Psv 	
+STARVE	IAV Neg SUPV Psv Need Weak Natpro 	
+STATION	IAV SUPV Stay Actv 	18% verb: To place or post in position 
+STEM	IAV SUPV Causal Psv 	
+STEP	IAV SUPV Intrel Power Actv Strng 	8% verb: "To step in"--to intervene 
+STICK	IAV SUPV Try Strng Actv 	1% verb: "Stick it out"--remain despite opposing pressure 
+STIFLE	IAV Neg SUPV Intrel Ngtv Strng Power Hostile Actv 	
+STILL	IAV SUPV Intrel Power Strng Actv 	0% verb: To make quiet 
+STIMULATE	IAV Pos SUPV Actv Other Power Causal 	
+STING	IAV Neg SUPV Actv Pain Hostile Exert 	
+STINK	IAV Neg SUPV Percv Pain 	
+STIPULATE	IAV SUPV Legal Comform Power 	
+STOLEN	IAV Neg SUPV Intrel ED Hostile Ngtv Legal 	
+STOMACH	IAV SUPV Strng Intrel Subm 	3% verb: To endure 
+STOOD	IAV SUPV Intrel ED Affil Strng Actv 	4% verb: "Stood for," "stood up for"--favored, defended, represented 
+STOOD	IAV SUPV ED Strng Psv Intrel Subm 	2% verb: Tolerated, withstood 
+STOOD	IAV Pos SUPV Percv ED Strng Pstv 	0% verb: "Stood out"--was conspicuous 
+STOP	IAV SUPV Work Strng 	1% idiom-verb: "Stop up"--to block up, plug 
+STORE	IAV SUPV Work 	4% verb: To supply or stock with something for future use 
+STORM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	7% verb: To rush, attack, rage 
+STRAGGLE	IAV Neg SUPV Move Weak Actv 	
+STRAIN	IAV Neg SUPV Exert Ngtv Actv 	
+STRAY	IAV Neg SUPV Move 	
+STREAM	IAV SUPV Travl 	13% verb: To flow as a stream 
+STRENGTHEN	IAV SUPV Incr Strng Actv Power PFREQ 	91% verb: To make strong 
+STRESS	IAV Neg SUPV Ngtv Actv Solve 	
+STRIDE	IAV SUPV Travl 	
+STRIKE	IAV SUPV Solve 	9% verb: To impress as, to occur to - "it strikes one funny;" "when did  that strike you?" 
+STRIP	IAV SUPV Work Hostile Strng Actv 	
+STRIVE	IAV SUPV Try Actv 	
+STRIVEN	IAV SUPV ED Try Actv 	
+STROKE	IAV SUPV Exert Actv 	
+STROVE	IAV SUPV Try Actv 	
+STRUCK	IAV SUPV ED Solve 	12% verb: Impressed as, with, or by, occurred to 
+STRUCTURE	IAV SUPV Actv Solve 	3% verb: To organize 
+STRUGGLE	IAV Neg SUPV Intrel Hostile Ngtv Actv 	36% verb: To contend, fight 
+STRUT	IAV Pos SUPV Actv Travel Power 	
+STUDY	IAV SUPV Solve Acad Actv 	73% verb: To apply oneself to the acquisition of knowledge 
+STUFF	IAV SUPV Strng Actv Space 	7% verb: To fill, pack tight, cram 
+STUMBLE	IAV SUPV Weak Psv Fall 	
+STUN	IAV SUPV Strng Intrel Hostile 	
+SUBDUE	IAV SUPV Intrel Strng Actv Power Hostile 	
+SUBJUGATE	IAV Neg SUPV Weak Subm Intrel Psv 	
+SUBMERGE	IAV SUPV Fall 	
+SUBMIT	IAV SUPV Intrel Subm Weak Psv 	
+SUBSCRIBE	IAV Pos SUPV Actv Affil Coll 	
+SUBSIDE	IAV Neg SUPV Actv Decr Compl 	
+SUBSIDIZE	IAV Pos SUPV Actv Affil Econ Other 	
+SUBSIST	IAV Pos SUPV Actv Natpro 	
+SUBSTANTIATE	IAV Pos SUPV Actv Affil Causal 	
+SUBSTITUTE	IAV SUPV Vary 	
+SUBTRACT	IAV Neg SUPV Actv Decr 	
+SUBVERT	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+SUCCEED	IAV Pos SUPV Complt Pstv PFREQ 	94% verb: To turn out according to desire, to achieve success 
+SUCCEED	IAV SUPV Travl 	0% verb: To follow, as in a sequence 
+SUCCUMB	IAV Neg SUPV Psv Weak Subm 	
+SUFFER	IAV Neg SUPV Subm Ngtv Weak Psv Pain 	69% verb: To experience or tolerate physical or psychological pain or  other unpleasantness 
+SUFFER	IAV SUPV Intrel Subm Weak Psv 	0% verb: To allow, permit, or let some action take place 
+SUFFICE	IAV Pos SUPV Pstv Strng Finish 	
+SUFFOCATE	IAV Neg SUPV Psv Weak Need 	
+SUGGEST	IAV SUPV Psv PFREQ Comform 	98% verb: To mention for consideration or possible action; to stimulate  certain thoughts, conclusions or emotions 
+SUIT	IAV Pos SUPV Pstv Arousal Affil 	17% verb: To please, conform to, satisfy, be agreeable to 
+SUM	IAV SUPV Actv Solve 	
+SUMMARIZE	IAV SUPV Actv Comform 	
+SUMMON	IAV SUPV Legal Power Strng Actv Comform 	
+SUNDER	IAV Neg SUPV Hostile Change Decr Actv 	
+SUPPLEMENT	IAV SUPV Incr Strng 	
+SUPPLY	IAV SUPV Intrel Affil Power Strng Actv 	32% verb: To provide 
+SUPPORT	IAV Pos SUPV Intrel Power Affil Pstv Strng Actv 	44% verb: Sustain, provide for, maintain, encourage, back--"i support  the program" (48); to hold up (0) 
+SUPPOSE	IAV SUPV Solve 	55% verb: To assume, expect, consider, think (that) 
+SUPPOSE	IAV SUPV Intrel Psv Power Subm 	36% adj: "Supposed (to)"--expected, under obligation 
+SUPPRESS	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+SURFACE	IAV SUPV Rise 	0% verb: To come to the top, to put a top on 
+SURMISE	IAV Pos SUPV Actv Think Solve 	
+SURMOUNT	IAV Pos SUPV Actv Travel Power Other 	
+SURPASS	IAV Pos SUPV Actv Travel Power Other 	
+SURPRISE	IAV SUPV Intrel Actv 	45% verb: To catch unprepared, to provoke a feeling of surprise or wonder 
+SURVEY	IAV SUPV Percv Actv 	
+SURVIVE	IAV Pos SUPV Pstv Strng Complt 	
+SUSPECT	IAV Neg SUPV Ngtv Solve Hostile 	
+SUSPEND	IAV Neg SUPV Actv Stay Compl 	
+SUSTAIN	IAV SUPV Strng Actv Complt 	
+SWEETEN	IAV Pos SUPV Actv Incr 	
+SWITCH	IAV SUPV Vary Actv 	
+SYMBOLIZE	IAV Pos SUPV Psv Intrel Comform 	
+SYMPATHIZE	IAV Pos SUPV Affil Pstv Arousal 	
+TABLE	IAV SUPV Polit* Work 	1% verb: To put away an issue for discussion in the future 
+TAIL	IAV SUPV Travl Actv 	2% verb: To follow 
+TAILOR	IAV SUPV Work 	
+TAINT	IAV Neg SUPV Actv Change Hostile 	
+TAKE	IAV SUPV Fetch Actv 	26% verb: To move, move from, accompany, lead, transport 
+TAKE	IAV SUPV Need Strng 	6% verb: Require, demand, need, "it takes great courage" 
+TAKE	IAV SUPV Vary 	3% verb-idiom: "Take place"--happen 
+TAKE	IAV SUPV Intrel Power Strng Actv 	3% verb-idiom: "Take advantage (of)"--make use (of), occasionally with  connotation of unfairness 
+TAKE	IAV SUPV Intrel Strng Actv Power Affil 	5% verb-idiom: "Take care (of)"--cure or solve, attend to, protect or nurse 
+TAKE	IAV SUPV Intrel Power Strng Actv 	2% verb-idiom: "Take over"--assume control 
+TAKE	IAV SUPV Intrel Affil 	1% verb: "Take to"--become fond of 
+TAKE	IAV SUPV Begin Actv 	0% verb: "Take up"--consume 
+TAKE	IAV SUPV Try Actv 	2% verb: "Take on"--assume 
+TAMPER	IAV Neg SUPV Actv Change Hostile 	
+TAP	IAV SUPV Rel 	
+TASTE	IAV SUPV Psv Percv 	50% verb: To savor or experience (transitive)--"i tasted the melon" 
+TATTER	IAV Neg SUPV Actv Decr 	
+TAUGHT	IAV SUPV ED Acad Power Actv Comform 	verb: Past tense of teach 
+TAUNT	IAV Neg SUPV Hostile Ngtv Actv Comform 	
+TAX	IAV Neg SUPV Intrel Hostile Ngtv 	6% verb-adj: To burden or place a strain on, to demand taxes from (1) 
+TEACH	IAV SUPV Acad Power Actv Comform 	61% verb: Impart knowledge or skill, give instruction, train; includes  gerundive forms like "he will start teaching soon." 
+TEAR	IAV Neg SUPV Travl Ngtv Psv 	10% verb: To race around without apparent control 
+TEASE	IAV Neg SUPV Actv Comform Hostile Other 	
+TELEGRAPH	IAV SUPV Comform 	
+TELL	IAV SUPV Percv 	4% verb: To discern or distinguish 
+TEMPER	IAV Neg SUPV Work Ngtv 	
+TEMPT	IAV Pos SUPV Actv Other Need 	
+TEND	IAV SUPV Intrel Power Strng Actv Affil 	6% verb: To care for 
+TERM	IAV SUPV Comform 	0% verb: To denote, designate, call 
+TERMINATE	IAV SUPV Finish Strng Actv 	
+TERRIFY	IAV Neg SUPV Actv Emot Pain Other 	
+TERRORIZE	IAV Neg SUPV Actv Hostile Exert Other 	
+TEST	IAV SUPV Actv Intrel Power Acad 	28% verb: To examine, to determine competence 
+TESTIFY	IAV SUPV Legal Comform 	
+THICKEN	IAV SUPV Rel Strng Actv 	
+THINK	IAV SUPV Solve 	28% verb: To conceive, imagine, cogitate, contemplate, talk to oneself 
+THRASH	IAV Neg SUPV Actv Hostile 	
+THREATEN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	verb: To menace 
+THRILL	IAV Pos Noun Pleasur Pstv Strng Arousal 	
+THROW	IAV Neg SUPV Fail Ngtv Actv 	1% verb-idiom: "Throw the game" - to arrange to lose 
+THROW	IAV Neg SUPV Ngtv Natpro 	1% verb: "Throw up" - to vomit 
+THROW	IAV SUPV Finish Actv 	7% verb: "Throw away" - to discard 
+THROW	IAV SUPV Strng Actv Finish 	5% verb: "Throw out"--to expel 
+THROW	IAV SUPV Intrel Affil Actv 	1% verb: "Throw a party" - to organize or sponsor a party 
+THRUST	IAV SUPV Exert Strng Actv 	
+THWART	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+TILL	IAV SUPV Work Actv Strng 	0% verb: To cultivate 
+TIME	IAV SUPV Travl 	1% idiom-adv: 'from time to time'--occasionally 
+TIME	IAV SUPV Solve 	0% idiom-adv: "Time and (time) again"--repeatedly 
+TINGLE	IAV SUPV Psv Pleasur 	
+TIRE	IAV Neg SUPV Subm Ngtv Pain 	0% verb: To fatigue 
+TIRE	IAV Neg SUPV Hostile Ngtv Weak Psv Pain 	13% verb: To become bored or disinterested--"tire of" 
+TOAST	IAV SUPV Comform Affil 	
+TOIL	IAV Neg SUPV Actv Work 	
+TOLERATE	IAV Pos SUPV Actv Affil 	
+TOP	IAV SUPV Complt 	3% verb: To cap or surpass 
+TOPPLE	IAV Neg SUPV Fall 	
+TORMENT	IAV Neg SUPV Actv Hostile Exert Other 	
+TOUCH	IAV SUPV Actv Comform 	6% verb: "Touch on," "touch upon"--mention briefly or casually 
+TOUCH	IAV SUPV Work 	0% idiom-verb: "Touch up" 
+TOUR	IAV SUPV Travl 	
+TRACE	IAV SUPV Solve 	
+TRACK	IAV SUPV Solve 	
+TRADE	IAV SUPV Exch Econ* Actv 	14% verb: To buy, sell, exchange 
+TRAIL	IAV SUPV Travl Actv 	
+TRAIN	IAV SUPV Intrel Power Actv 	11% verb: To subject to instruction and/or discipline 
+TRAMPLE	IAV Neg SUPV Actv Move Hostile 	
+TRANSFER	IAV SUPV Travl Actv 	
+TRANSFORM	IAV SUPV Vary Strng Actv 	
+TRANSGRESS	IAV Neg SUPV Actv Comform Change 	
+TRANSLATE	IAV SUPV Actv Comform 	
+TRANSPORT	IAV SUPV Travl Actv 	
+TRAVERSE	IAV SUPV Travl Actv 	
+TREASURE	IAV Pos SUPV Pstv Affil Intrel 	
+TREAT	IAV SUPV Work Actv PFREQ 	95% verb: To deal with in a specified manner, minister to, handle 
+TREMBLE	IAV SUPV Weak Psv Subm Comform 	
+TRESPASS	IAV Neg SUPV Actv Move 	
+TRICK	IAV Neg SUPV Intrel Hostile Ngtv Actv 	
+TRIUMPH	IAV Pos SUPV Complt Pstv Strng Power 	
+TROT	IAV SUPV Travl Actv 	
+TROUBLE	IAV Neg SUPV Ngtv Pain 	5% verb: To disturb or worry 
+TRUDGE	IAV Neg SUPV Actv Move Try 	
+TRUST	IAV Pos SUPV Intrel Affil Subm Pstv Psv 	46% verb: To place or have confidence in someone or something 
+TRY	IAV SUPV Try Actv PFREQ 	98% verb: To attempt (infrequently 
+TRY	IAV SUPV Intrel Legal Power Actv Hostile 	1% verb: To ascertain th rough judiciary means 
+TRY	IAV Neg SUPV Psv Arousal Ngtv 	0% verb: Put under duress--"that tried my patience" 
+TRY	IAV SUPV Try Actv 	0% verb: "To try one's hand"--test one's skills 
+TUMBLE	IAV SUPV Fall Psv 	
+TURN	IAV SUPV Rel Actv 	35% verb: Intransitive--to move around, shift one's course or position  in some direction (toward, from, etc.); includes "turn to" meaning appeal to (4) 
+TURN	IAV SUPV VERB VB Vary 	15% verb: To become, change--"turn cowardly and craven" 
+TURN	IAV SUPV Finish Actv 	12% verb: "Turn out"--to produce as a result, to issue or result 
+TURN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	1% verb: Become suddenly hostile--to "turn on," "turn upon" 
+TURN	IAV SUPV Intrel Subm Psv 	2% verb: "Turn in"--deliver up, submit, tender 
+TURN	IAV Neg SUPV Intrel Hostile Actv Ngtv 	0% verb: "Turn down"--to reject 
+TWITCH	IAV Neg SUPV Psv Move Natpro 	
+TYPE	IAV SUPV Actv Solve 	0% verb: To classify 
+UNDERGO	IAV SUPV Psv Intrel Subm 	
+UNDERGONE	IAV SUPV Psv Intrel Subm 	
+UNDERMINE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+UNDERSTAND	IAV Pos SUPV ED Pstv Solve 	65% verb: To comprehend 
+UNDERSTOOD	IAV Pos SUPV ED Pstv Solve 	verb: Past tense of 'understand' 
+UNDERTAKE	IAV SUPV Try Strng Actv 	
+UNDERTAKEN	IAV SUPV Try ED Strng Actv 	
+UNDERTOOK	IAV SUPV Begin Strng Actv 	
+UNDERWENT	IAV SUPV Subm Psv Intrel 	
+UNDID	IAV Neg SUPV ED Work Hostile Negate Ngtv Actv 	
+UNDO	IAV Neg SUPV Work Hostile Negate Ngtv Actv 	
+UNDONE	IAV Neg SUPV ED Work Hostile Negate Ngtv Psv 	
+UNFINISHED	IAV SUPV Finish Negate Weak 	
+UNIFY	IAV SUPV Intrel Affil Strng Actv 	
+UNITE	IAV SUPV Intrel Affil Actv 	4% verb: To join, combine, or incorporate so as to form a single whole or unit 
+UNLEASH	IAV SUPV Intrel Hostile Negate Strng Actv 	
+UNNERVE	IAV Neg SUPV Psv Emot Pain Other 	
+UPGRADE	IAV Pos SUPV Actv Change 	
+UPLIFT	IAV Pos SUPV Actv Pleasure Change 	
+UPROOT	IAV Neg SUPV Actv Travel Intrel 	
+UPSET	IAV Neg SUPV Ngtv Actv Strng Pain 	14% verb: To disturb emotionally (of persons) 
+UPSET	IAV Neg SUPV Hostile Ngtv Actv Strng Exert 	9% verb: To disrupt or overturn 
+URGE	IAV SUPV Intrel Power Strng Actv 	
+USE	IAV SUPV VERB MOD 	27% verb: Indicates prior behavior no longer performed, e.g. 'he used to do that' 
+USE	IAV SUPV Finish Actv 	1% idiom-verb: "Use up"--to exhaust 
+USURP	IAV Neg SUPV Actv Hostile Polit Fetch Exert Intrel Power 	
+UTILIZE	IAV Pos SUPV Actv Work Other 	
+VACATION	IAV SUPV Travl 	0% verb: To take a holiday 
+VACILLATE	IAV SUPV Weak Undrst Solve 	
+VALUE	IAV Pos SUPV Pleasur Pstv 	13% verb: To regard highly, esteem; to appraise the worth of something (0) 
+VANISH	IAV Neg SUPV Actv Percv Decr 	
+VANQUISH	IAV Pos SUPV Actv Power Exert Other 	
+VARY	IAV SUPV Vary 	
+VENERATE	IAV Pos SUPV Actv Subm Other Affil 	
+VENTURE	IAV SUPV Try Actv 	
+VERIFY	IAV Pos SUPV Solve Pstv Actv Ovrst 	
+VEX	IAV Neg SUPV Think Fail Stay 	
+VIE	IAV Neg SUPV Actv Intrel Hostile Try 	
+VIEW	IAV SUPV Percv 	6% verb: To regard, observe, see 
+VIOLATE	IAV Neg SUPV Intrel Hostile Ngtv Actv 	
+VISIT	IAV SUPV Travl Affil 	77% verb: To go and stay with someone or at some place for a short time 
+VOICE	IAV SUPV Actv Comform 	7% verb: To give utterance or expression, to declare, proclaim 
+VOLUNTEER	IAV SUPV Intrel Subm Affil 	4% verb: To offer oneself for a service or undertaking 
+VOUCHSAFE	IAV Pos SUPV Actv Comform Fetch Other 	
+WAGE	IAV SUPV Try Hostile Strng Actv 	
+WAIL	IAV Neg SUPV Actv Comform Pain 	
+WAIT	IAV SUPV Intrel Subm 	4% verb: "Wait on"--to serve 
+WALK	IAV SUPV Travl Hostile Actv 	2% idiom-verb: 'walk out'--to leave in protest 
+WANDER	IAV SUPV Travl Psv 	verb: To move or go aimlessly about, roam, ramble 
+WANE	IAV Neg SUPV Psv Decr 	
+WARN	IAV SUPV Actv PFREQ Comform 	85% verb: To notify of impending danger or misfortune 
+WARP	IAV Neg SUPV Actv Change 	
+WARRANT	IAV SUPV Solve 	
+WASH	IAV SUPV Travl Actv 	6% verb: To transport or move, as by water 
+WASTE	IAV Neg SUPV Work Ngtv Weak Econ* 	66% verb: To use inefficiently or unproductively 
+WATCH	IAV SUPV Actv Solve 	5% verb: To be careful or cautious--"watch yourself" 
+WATCH	IAV SUPV Comform 	4% idiom: "Watch out"--be careful of, guard against 
+WATCH	IAV SUPV Percv 	1% idiom: "Keep watch" 
+WATCH	IAV SUPV Arousal 	1% verb-idiom: "Watch one's step"--be careful 
+WATER	IAV SUPV Work 	4% verb: To give, shed, or spray with water 
+WAVER	IAV SUPV Vary Weak 	
+WAX	IAV SUPV Work 	
+WAY	IAV SUPV Intrel Power 	0% verb: 'have one's way'--prevail 
+WAY	IAV SUPV Intrel Affil Actv Strng 	0% verb: "Go out of one's way"--make an unusual effort 
+WEAKEN	IAV Neg SUPV Fail Weak Subm Decr 	
+WEAR	IAV Neg SUPV Finish Ngtv 	2% verb: To deteriorate, cause to deteriorate 
+WEEP	IAV Neg SUPV Actv Emot Pain Comform 	
+WEIGH	IAV SUPV Solve 	
+WEIGHT	IAV SUPV Incr Strng 	9% verb: To add weight or importance 
+WELCOME	IAV Pos SUPV Affil Pstv Comform 	31% verb: To greet, receive or accept with pleasure 
+WELL	IAV SUPV Rise Strng 	0% verb: To overflow, gush 
+WENT	IAV SUPV VERB GO ED 	
+WHACK	IAV Neg SUPV Actv Hostile Exert Strng Other 	
+WHEEL	IAV SUPV Exert Hostile 	
+WHIP	IAV SUPV Exert Strng Actv 	4% idiom-verb: "Whip up" - stir up 
+WHIRL	IAV SUPV Exert Strng 	
+WILL	IAV SUPV VERB MOD PFREQ 	98% verb: Modal indicating future 
+WILT	IAV Neg SUPV Psv Natpro Compl Decr 	
+WIN	IAV SUPV Complt Strng PFREQ Actv 	93% verb: To gain, to gain a victory 
+WINCE	IAV Neg SUPV Psv Pain 	
+WIND	IAV SUPV Finish Psv Actv 	4% verb: "Wind up"--to end up, terminate, arrive at a certain condition 
+WIRE	IAV SUPV Work Actv 	
+WISE	IAV Pos SUPV Solve Pstv 	5% verb-idiom: "Wise up" - become aware of the true situation 
+WISH	IAV SUPV Need Weak PFREQ 	91% verb: To desire or hope for something 
+WITCH	IAV SUPV Intrel Hostile Relig 	9% verb: To cast spells upon 
+WITHDRAW	IAV SUPV Travl Subm Weak Subm 	
+WITHDREW	IAV SUPV Travl ED Subm Weak 	
+WITHER	IAV SUPV Decr Weak Psv 	
+WITHHELD	IAV Neg SUPV Intrel ED Hostile Strng Actv Ngtv 	
+WITHHOLD	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	
+WITHSTAND	IAV SUPV Intrel Strng Actv Power Hostile 	
+WITNESS	IAV SUPV Percv 	
+WON	IAV SUPV Complt ED Strng Actv 	verb: Past tense and past participle of "win"--gained a victory 
+WONDER	IAV SUPV PFREQ Solve 	95% verb: To speculate, to be curious about 
+WOO	IAV Pos SUPV Actv Other Affil Intrel Comform 	
+WORK	IAV SUPV Solve Actv 	3% verb-idiom: "Work out"--develop, find a solution (transitive and intransitive) 
+WORN	IAV Neg SUPV Finish ED Ngtv 	60% verb: Past tense of "wear"--deteriorated, caused to deteriorate 
+WORRY	IAV Neg SUPV Intrel Ngtv Actv Hostile 	10% verb: To cause to feel anxious 
+WORSEN	IAV Neg SUPV Psv Decr Weak Subm 	
+WORSHIP	IAV SUPV Relig Subm Comform 	
+WOUND	IAV SUPV Finish ED Psv 	4% idiom-verb: 'wound up'--ended up 
+WRECK	IAV Neg SUPV Actv Hostile Exert Finish Other 	
+WRESTLE	IAV Neg SUPV Actv Hostile Exert Think 	
+WRETCH	IAV Neg SUPV Actv Pain Natpro 	
+WRITHE	IAV Neg SUPV Actv Pain 	
+WRONG	IAV Neg SUPV Intrel Hostile Ngtv 	1% verb: To injure, malign, treat unfairly 
+YAWN	IAV Neg SUPV Psv Comform Natpro 	
+YEARN	IAV Neg SUPV Actv Need Feel 	
+YELP	IAV Neg SUPV Actv Comform Pain 	

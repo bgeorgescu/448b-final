@@ -1,0 +1,167 @@
+word	tags	comments
+ABHOR	SV Neg SUPV Hostile Psv Arousal 	
+ACRIMONIOUS	IPadj Neg Modif Hostile Arousal 	
+ACRIMONY	Neg Noun Hostile Psv Arousal Vice 	
+ADAMANT	IndAdj Pos Modif Know Strng Arousal 	
+AFFECTION	Pos Noun EMOT Affil Pstv Arousal 	
+AFFECTIONATE	Pos Modif EMOT Affil Pstv Arousal 	
+ALERT	Modif Strng Actv Arousal 	
+AMAZE	Modif Ovrst Arousal 	
+AMAZE	IAV SUPV Ovrst Arousal 	
+ANGER	Neg Noun EMOT Hostile Ngtv Actv PFREQ Arousal 	86% noun: Wrath, ire. 
+ANGER	IAV Neg SUPV Hostile Ngtv Arousal 	14% verb: To make angry. 
+ANGRY	Neg Modif EMOT Hostile Ngtv Actv Arousal 	adjective: Feeling anger or resentment 
+ANNOYANCE	Neg Noun EMOT Hostile Ngtv Arousal 	
+ANTAGONISM	Neg Noun EMOT Hostile Ngtv Arousal Strng Actv 	
+ANTAGONISTIC	Neg Modif EMOT Hostile Ngtv Strng Arousal Actv 	
+ANTAGONIZE	IAV Neg SUPV Ngtv Strng Actv Arousal Hostile 	
+ANTICIPATE	SV SUPV Psv Arousal 	
+ANTICIPATION	Noun Psv Arousal 	
+ANXIOUS	Modif EMOT Arousal 	67% adjective: Eager 
+APPETITE	Noun Arousal 	
+APPRECIATE	SV Pos SUPV Subm Pstv Psv Arousal Affil 	verb: To be aware of, to be grateful 
+ASSERTION	Pos Noun Know Strng Comform Arousal 	
+ASTONISH	Modif Ovrst Arousal 	
+ASTONISH	IAV SUPV Ovrst Arousal 	
+ATTITUDE	Noun EMOT Arousal 	noun: Manner, disposition, feeling, position, etc. with regard to a person,  thing or idea 
+AVERSION	Neg Noun Negate Psv Hostile Arousal 	
+AWE	Noun EMOT Subm Arousal 	
+BASHFUL	IPadj Neg Modif Emot Weak Psv Arousal 	
+BELLIGERENT	IndAdj Neg Modif Hostile Emot Arousal 	
+BELOVED	Pos Modif Affil Pstv Arousal 	
+BERSERK	IndAdj Neg Modif Emot Arousal Hostile 	
+BESET	IndAdj Neg Modif Pain Emot Arousal 	
+BITCHY	IndAdj Neg Modif Arousal Hostile Intrel 	
+BITE	Neg Modif Hostile Ngtv Arousal 	4% adj: "Biting"--incisive, sarcastic 
+BRISTLE	IAV Neg SUPV Emot Arousal Hostile Psv 	
+CARE	Pos Noun Affil Pstv Actv Undrst Arousal 	26% noun: Attention, concern, thought, worry, assistance 
+CHALLENGE	Modif Arousal 	9% adj: "Challenging"--stimulating, provocative 
+COMFORT	Pos Modif Pstv Strng Affil Arousal 	10% adj: "Comforting"--consoling, heartening 
+CONFOUND	IAV Neg SUPV Ngtv Ngtv Undrst Arousal 	
+CROSS	Neg Modif EMOT Ngtv Hostile Actv Arousal 	9% adj: Angry 
+CROSS	Neg Modif Ngtv Hostile Actv Arousal 	2% adv: "Crossly"--angrily 
+DETERMINATION	Noun Strng Ovrst Actv Arousal Power 	
+DEVOTION	Pos Noun EMOT Relig Subm Pstv Psv Arousal Affil 	
+DISLIKE	DAV Neg SUPV Negate Ngtv Psv Hostile Arousal 	71% verb: To have an aversion toward 
+DISLIKE	Neg Modif EMOT Ngtv Hostile Psv Arousal Negate 	29% noun: An aversion 
+DISPOSE	Neg Modif Ngtv Strng Actv Arousal Hostile 	
+DISPOSITION	Noun Psv Arousal 	
+DISTRUST	Noun Arousal Hostile 	
+EMOTION	Noun EMOT Psv Arousal 	noun: Affect 
+EMOTIONAL	Modif EMOT Psv Arousal 	80% adj: Having to do with, or conditioned by, the emotions 
+EMOTIONAL	Modif Psv Arousal 	20% adv: "Emotionally"--in an emotional manner 
+EXPECTATION	Noun Psv Arousal 	
+FASCINATE	IAV SUPV Arousal Ovrst 	
+FAVOR	IAV Pos SUPV Pstv Arousal 	26% verb: To prefer 
+FEEL	SV SUPV VERB LINK Psv Arousal 	46% verb: To have an impression, experience an idea or emotion, to touch 
+FEEL	Noun EMOT Psv Arousal 	11% noun: "Feeling"--an emotion or opinion 
+FOND	Pos Modif Affil Pstv Arousal 	5% adj: Enamored of 
+FOND	Pos LY Affil Pstv Arousal 	5% adv: 'fondly'--with affection 
+FOND	Pos Modif Affil Pstv Arousal 	0% adj: 'fonder'--more enamored of 
+FOND	Pos Modif Affil Pstv Arousal 	0% adj: 'fondest'--most enamored of 
+FURIOUS	Neg Modif EMOT Hostile Ngtv Ovrst Arousal 	
+FURY	Neg Noun EMOT Hostile Ngtv Pain Arousal Ovrst 	
+GENIAL	Pos Modif EVAL Affil Pstv Arousal 	
+GRATEFUL	Pos Modif EMOT Affil Subm Pstv Pleasur Arousal 	
+HATE	SV Neg SUPV Hostile Ngtv Psv Arousal 	80% verb: To dislike passionately, to detest 
+HATE	Neg Noun EMOT Hostile Ngtv Psv Arousal 	19% noun: Intense dislike, aversion, hostility 
+HATE	Neg Modif EVAL EMOT Hostile Ngtv Psv Arousal 	0% adj: 'hated'-loathed--'the hated dictator' 
+HATRED	Neg Noun EMOT Hostile Ngtv Psv Arousal 	
+HEART	LY Arousal 	2% idiom-adv: "To heart" - seriously 
+HEART	Pos Modif Affil Pstv Arousal 	1% idiom-adj: "Heart to heart" - intimate 
+HEAT	Modif Psv Arousal Affil 	3% idiom-adj: "In heat", in a state of sexual readiness 
+HOMAGE	Pos Noun Subm Psv Arousal 	
+HOSTILE	Neg Modif EMOT Hostile Ngtv Pain Arousal 	
+HOSTILITY	Neg Noun EMOT Hostile Ngtv Pain Arousal 	
+HOT	Modif Pleasur Arousal 	7% adj: Intense, excited, exciting 
+HOT	LY Pleasur Arousal 	2% adv: "Hotly", excitedly, intensely 
+IMPARTIAL	IndAdj Pos Modif Arousal Know 	
+IMPARTIALITY	Pos Noun Arousal Know 	
+IMPATIENCE	Neg Noun Negate Ngtv Psv Arousal Hostile 	
+IMPULSE	Noun Psv Arousal 	
+INDIFFERENCE	Neg Noun EMOT Ngtv Psv Arousal 	
+INDULGENCE	Pos Noun Arousal Pleasure Ovrst 	
+INSISTENT	IndAdj Pos Modif Arousal Know Strng Comform 	
+INSPIRATION	Pos Noun Other Ach Goal Arousal 	
+INSPIRATIONAL	IndAdj Pos Modif Other Ach Goal Arousal 	
+INTIMATE	Pos Modif Affil Pstv Psv Arousal 	
+INVOLVEMENT	Noun Affil Arousal 	
+LIKE	SV Pos SUPV Affil Pstv Psv Arousal 	47% verb: To derive pleasure from, to find agreeable or congenial, to  feel attracted to someone or som 
+LIKE	Pos Noun EMOT Affil Pstv Psv Arousal 	2% noun: "Liking"--the attraction to, pleasure in, or enjoyment of something  or someone, fancy or inclination 
+MAD	Neg Modif EMOT Hostile Ngtv Psv PFREQ Arousal 	85% adj: Angry or annoyed 
+MAD	LY Ovrst Psv Arousal 	3% adv: "Madly," used mostly figuratively, for emphasis--"he is madly in love" 
+MEDITATION	Pos Noun Think Arousal 	
+MELLOW	IndAdj Pos Modif Arousal 	
+MIND	IAV SUPV Arousal Hostile 	6% verb: Be bothered by--"will he mind if i take it?" 
+MODESTY	Pos Noun Undrst Arousal Qual 	
+MOOD	Noun EMOT Psv Arousal 	
+MORALE	Pos Noun Arousal Think 	
+MOTIVATE	IAV Pos SUPV Actv Other Causal Arousal 	
+MOVE	Modif Strng Arousal 	0% adj: "Moving"--arousing the emotions 
+NOTORIETY	Pos Noun Ovrst Affil Arousal 	
+OPTIMISM	Pos Noun Feel Doctr Arousal 	
+OVERWHELM	IAV SUPV Power Strng Arousal Intrel Ovrst 	
+PAMPER	IAV Pos SUPV Actv Other Intrel Affil Arousal 	
+PASSION	Noun EMOT Psv Strng Arousal Affil 	
+PASSIONATE	Pos Modif EMOT Affil Pstv Strng Arousal Psv 	
+PASSIVE	Modif Subm Psv Weak Arousal 	
+PEACEABLE	IndAdj Pos Modif Arousal Virtue 	
+PITY	Noun EMOT Psv Affil Arousal 	
+PLACID	Modif Psv Arousal 	
+POSITIVENESS	Pos Noun Feel Doctr Arousal 	
+POSITIVITY	Pos Noun Feel Doctr Arousal 	
+PREFERENCE	Pos Noun Feel Arousal 	
+PREJUDICE	Neg Noun EMOT Hostile Race Ngtv Arousal 	
+PREOCCUPATION	Noun Arousal 	
+PREOCCUPY	IAV SUPV Arousal 	
+PUZZLEMENT	Neg Noun Ngtv Weak Psv Arousal Undrst 	
+QUANDARY	Neg Noun Arousal Undrst Ngtv Weak Psv 	
+QUESTION	LY Arousal 	0% adv: "Questioningly"--inquisitively 
+RAGE	Neg Noun EMOT Hostile Ngtv Strng Arousal 	
+READINESS	Noun Strng Arousal 	
+READY	LY Arousal 	5% adv: "Readily" 
+REGARD	Pos Noun Affil Subm Pstv Arousal 	9% noun: Respect, esteem, affection or attention 
+RELUCTANT	IndAdj Neg Modif Ngtv Weak Psv Arousal 	
+RESPECT	Pos Noun Subm Pstv Psv Arousal Affil 	31% noun: Esteem, regard 
+RESPONSIVE	Pos Modif Affil Pstv Arousal 	
+RESTLESS	IndAdj Neg Modif Ngtv Arousal Emot 	
+RESTRAINT	Noun Power Strng Arousal 	
+SENSE	Noun Psv Arousal 	38% noun: Feeling, awareness, grasp--"sense of purpose" 
+SENSITIVE	Pos Modif EMOT Pstv Arousal 	
+SENSITIVITY	Pos Noun ABS Abs* EMOT Pstv Arousal 	
+SENTIMENT	Noun EMOT Weak Psv Arousal 	
+SENTIMENTAL	Modif EMOT Weak Psv Arousal 	
+SERENE	Pos Modif EMOT Pstv Strng Psv Arousal 	
+SERIOUS	Pos Modif EVAL Pstv Arousal 	adj: Grave, important, sober, showing earnestness or deep thought 
+SERIOUSNESS	Pos Noun Pstv Arousal 	
+SHY	Modif EMOT Weak Psv Arousal 	
+SPEND	Modif Weak Psv Arousal 	1% adj: "Spent"--used up 
+SPITE	Neg Noun EMOT Hostile Ngtv Arousal 	4% noun: Malicious anger 
+SUIT	IAV Pos SUPV Pstv Arousal Affil 	17% verb: To please, conform to, satisfy, be agreeable to 
+SURPRISE	Noun EMOT Psv Arousal 	6% adj: "Surprised"--affected with a feeling of surprise or wonder 
+SURPRISE	Modif Actv Arousal Ovrst 	14% adj: "Surprising"--provoking a feeling of surprise or wonder 
+SURPRISE	LY Actv Arousal Ovrst 	2% adv: "Surprisingly"--startlingly 
+SUSPENSE	Noun Arousal 	
+SUSPICION	Neg Noun EMOT Hostile Ngtv Arousal Undrst 	
+SUSPICIOUS	Neg Modif EVAL Hostile Ngtv Arousal Undrst 	
+SWOON	SV Pos SUPV Psv Arousal Fall 	
+SYMPATHETIC	Pos Modif EMOT Affil Pstv Arousal 	
+SYMPATHIZE	IAV Pos SUPV Affil Pstv Arousal 	
+SYMPATHY	Pos Noun EMOT Affil Pstv Arousal 	
+TEMPER	Neg Noun Hostile Ngtv Arousal 	
+THRILL	IAV Pos Noun Pleasur Pstv Strng Arousal 	
+TOUCH	Modif EMOT Psv Arousal 	2% adj: "Touched"--emotionally moved 
+TOUCH	Modif Actv Arousal Psv 	0% adj: "Touching"--emotionally moving 
+TRUE	Pos Modif Subm Pstv Arousal Affil 	4% adj-idiom: "True to"--faithful to 
+TRUST	Pos Modif Subm Pstv Psv Arousal Affil 	1% adj: "Trusting"--having confidence in, trustful 
+TRUST	Pos LY Subm Pstv Arousal Affil 	0% adv: "Trustingly"--with trust 
+TRY	IAV Neg SUPV Psv Arousal Ngtv 	0% verb: Put under duress--"that tried my patience" 
+TRY	Neg Modif Arousal Ngtv 	0% adj: "Trying"--stressful 
+UNDERSTAND	Pos Noun EMOT Pstv Affil Arousal 	35% noun-adj: "Understanding"--comprehension, agreement, empathy 
+UNEXPECTED	Modif Negate Arousal 	
+UPBEAT	IndAdj Pos Modif Arousal Pleasure Feel 	
+WATCH	IAV SUPV Arousal 	1% verb-idiom: "Watch one's step"--be careful 
+WIDE	Noun Arousal 	3% idiom-adj: "Wide awake"--alert 
+WILL	Noun Arousal 	2% noun: The faculty or power of selecting one's actions--desire, wish, purpose 
+WONDER	Pos Noun EMOT Pstv Arousal Ovrst 	5% noun: A cause for marvel or surprise, or the feelings thereby produced 
+ZEST	Pos Noun Arousal Strng 	

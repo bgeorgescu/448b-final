@@ -1,0 +1,218 @@
+word	tags	comments
+AGE	DAV SUPV Natpro 	0% verb: To grow old 
+ALIVE	Pos Modif Natpro Strng Actv Pstv 	adjective: Living, existing, full of life. 
+ASLEEP	LY Weak Psv Natpro 	adj-adv: In or into a state of sleep 
+ATE	DAV SUPV ED Actv Natpro 	verb: Past tense of eat, consumed. 
+AWAKE	DAV SUPV Exert Natpro 	
+BATHE	DAV SUPV Natpro 	
+BATHROOM	DAV SUPV Natpro 	32% verb: "To go to the bathroom" 
+BEAM	Noun Natpro 	
+BEAR	DAV SUPV Natpro 	7% verb: To give birth, produce by natural process 
+BIRTH	Noun Natpro 	67% noun: Event of being born, any event of origin or creation 
+BIRTH	DAV SUPV Natpro 	33% verb-idiom: "Give birth"--to bear, or to create, bring about 
+BITE	Neg Noun Ngtv Hostile Actv Natpro 	22% noun-adj: Act of cutting or gripping with or as with teeth, the resulting  wound or amount cut off 
+BLACK	IAV SUPV Natpro 	0% verb-idiom: "Black out"--to lose consciousness 
+BLAST	Neg Noun Natpro Ngtv Strng Actv 	
+BLEED	Modif Weak Psv Natpro 	
+BLEED	DAV SUPV Weak Psv Natpro 	
+BLINK	Noun Psv Natpro 	
+BLINK	DAV SUPV Psv Natpro 	
+BLOODY	Neg Modif Ngtv Natpro 	
+BOIL	Noun Natpro Actv 	
+BORE	DAV SUPV ED Natpro 	9% verb: Gave birth, produced by natural process 
+BORN	Modif Psv Natpro 	adjective: Brought forth by birth 
+BREATH	Noun Natpro 	
+BREATH	DAV SUPV Natpro 	
+BREED	Noun Natpro 	
+BUBBLE	Noun Natpro 	
+BUBBLE	IAV SUPV Natpro 	
+BURN	DAV Neg SUPV Natpro Ngtv Actv PFREQ 	89% verb: To consume or injure with fire 
+BURN	Neg Noun Natpro Ngtv Actv 	6% noun-adj: "Burning"--on fire (3); intense (1); the state, process,  sensation or effect of being on fire or subjected to intense heat (0) 
+CASUALTY	Neg Noun HU Natpro Finish 	
+CHILL	IAV SUPV Natpro 	
+CLICK	IAV SUPV Natpro 	
+COINCIDENT	Pos Noun Natpro Rel Actv 	
+COMBUSTION	Noun Natpro Strng Actv 	
+COMESTIBLE	IndAdj Pos Modif Natpro Pleasure 	
+COMPRESSION	Noun Natpro Strng Actv 	
+CONCENTRATE	Noun Natpro Strng Actv 	
+CONDENSATION	Noun Natpro Psv 	
+CONDITION	Noun ABS Abs* Natpro Psv PFREQ 	95% noun: A general or specific state of existence, often set as a prerequisite  for some future action 
+CONVULSE	IAV SUPV Natpro 	
+COOL	IAV Neg SUPV Natpro Modif Ngtv Psv 	
+CROAK	IAV Neg SUPV Psv Natpro Finish 	
+CYCLE	Noun ABS Abs* Natpro 	
+DARKEN	IAV Neg SUPV Ngtv Natpro 	
+DEAD	Neg Modif Natpro Ngtv Weak Psv 	adj: Not living; very rarely, absolute--"dead center," the heart of --"the  dead of winter" (0) 
+DEATH	Neg Noun ABS Abs* Ngtv Weak Psv Natpro 	noun-adj: End of life, and thereafter 
+DECOMPOSE	IAV Neg SUPV Psv Natpro Decr 	
+DIE	DAV SUPV Natpro 	verb: To cease to live, exist or function 
+DIET	IAV SUPV Natpro 	
+DISSOLVE	Modif Natpro Strng Actv 	
+DRANK	DAV SUPV ED Actv Natpro 	verb: Past tense of "drink"--imbibed 
+DREAM	Noun Psv Natpro 	43% noun: A fantasy or series of images usually formed during sleep 
+DREAM	DAV SUPV Psv Natpro 	56% verb: To create fantasies, to create or recreate by conscious or subconscious  imagination 
+DREAMT	DAV SUPV ED Psv Natpro 	verb: Past tense of dream. 
+DRINK	DAV SUPV Actv Natpro 	68% verb: To imbibe 
+DRINK	Noun Actv Natpro 	10% noun-adj: "Drinking"--imbibing 
+DRIP	Noun Natpro 	
+DRIP	DAV SUPV Natpro 	
+DRIVE	Noun Power Actv Strng Natpro 	6% noun-adj: Energy, need, motive ("sex drive") 
+DRIZZLE	Noun Natpro 	
+DRIZZLE	DAV SUPV Natpro 	
+DROWN	Neg Noun Natpro Ngtv Weak Psv 	0% noun-adj: A suffocation by water--killed by such an act--"the drowned child" 
+DROWN	DAV Neg SUPV Ngtv Weak Psv Natpro 	verb: To die by suffocation in water, generally by accident 
+DROWSINESS	Neg Noun Psv Natpro 	
+DROWSY	IndAdj Neg Modif Psv Natpro 	
+DRUNK	DAV SUPV ED Natpro 	7% verb: Imbibed (past tense of "drink") 
+DRY	DAV SUPV Natpro 	35% verb: To make free from moisture 
+DYING	SV Neg SUPV ING Natpro Ngtv Weak Psv PFREQ 	87% verb: Ceasing to live or exist; eager (with "to") (1) 
+DYING	IndAdj Neg Modif Natpro Ngtv Weak Psv 	13% noun-adj: The process of ceasing to live, in this process 
+EAT	DAV SUPV Actv PFREQ Natpro 	98% verb: To devour 
+EAT	Noun Actv Natpro 	2% noun-adj: "Eating"--the consumption of food or having to do with same 
+EDIBLE	IndAdj Pos Modif Natpro Eval Qual 	
+ELECTRICAL	Modif Natpro 	
+ELECTRICITY	Noun Natpro 	
+ENERGY	Noun Natpro Strng 	noun: Capacity for work, activity, etc. 
+ENTROPY	Noun Natpro 	
+EPIDEMIC	Neg Noun Natpro Qual 	
+EXIST	IAV SUPV Natpro 	77% verb: To live, to be 
+EXIST	Modif Natpro 	23% adj: "Existing"--extant 
+EXISTENCE	Noun ABS Abs* Natpro 	noun: The state or quality of being, life 
+EXPLOSION	Neg Noun Natpro Ngtv Actv Strng 	
+EXPLOSIVE	Neg Modif Natpro Ngtv Actv Strng 	
+FALL	IAV SUPV Psv Natpro 	4% verb-idiom: 'fall asleep' 
+FALLOUT	Neg Noun Natpro POLIT Hostile Ngtv 	
+FAMISHED	IndAdj Neg Modif Natpro Need 	
+FAST	DAV SUPV Strng Actv Natpro 	4% verb: To abstain from eating 
+FATAL	IndAdj Neg Modif Finish Natpro 	
+FED	DAV SUPV ED Natpro 	72% verb-adj: Provided something necessary for growth 
+FEED	DAV SUPV Natpro 	4% verb: To eat, derive sustenance from 
+FEED	Modif Natpro 	9% noun-adj: "Feeding" - of or pertaining to supplying nourishment 
+FELL	IAV SUPV Natpro 	2% verb-idiom: "Fell asleep" 
+FIRE	Noun Natpro 	67% noun-adj: A burning mass of material, or pertaining to fires 
+FIRE	Modif Natpro 	4% idiom-adj-adv: 'on fire'--ablaze 
+FISSION	Noun Natpro 	
+FITNESS	Pos Noun Natpro Strng 	
+FLAME	Noun Natpro 	
+FLASH	Noun Natpro Actv 	
+FLOWER	IAV SUPV Natpro 	0% verb: To bloom 
+FLOWER	Modif Natpro 	0% noun-adj: "Flowering"--blooming 
+FLUID	Noun Natpro 	
+FORCE	Noun Natpro Power Strng 	29% noun: Strength, power, energy, a specific power or drive 
+FRICTION	Noun Natpro 	
+FRIGID	IndAdj Neg Modif Natpro 	
+FUCK	IAV SUPV Intj Strng Actv Natpro 	
+FUME	IAV SUPV Natpro 	
+GAS	Noun Natpro 	
+GASH	Neg Noun Pain Natpro 	
+GASP	DAV SUPV Natpro 	
+GENETIC	Modif Kin* Natpro 	
+GLEAM	IAV Pos SUPV Pstv Natpro 	
+GLOW	IAV Pos SUPV Pstv Natpro 	
+GRAVITATIONAL	Modif Natpro Strng 	
+GRAVITY	Noun Natpro Strng 	
+HEAL	IAV Pos SUPV Power Pstv Strng Natpro Change 	
+HUMIDITY	Noun Natpro 	
+HUNGER	Neg Noun Ngtv Natpro 	
+HUNGRY	Neg Modif Ngtv Natpro 	adj: Desirous of food 
+HYDROGEN	Noun Natpro 	
+IGNITION	Noun Natpro 	
+IMPACT	Noun Natpro Power Strng 	
+INSTINCT	Noun Psv Natpro 	
+INSTINCTIVE	IndAdj Pos Modif Natpro Know 	
+INTERCOURSE	DAV Pos SUPV Actv Intrel Natpro 	
+INTOXICATE	IAV Neg SUPV Natpro Think Fail Actv 	
+LATE	Modif Natpro Psv 	3% adj: Recently deceased 
+LEAF	Noun Natpro Object Natobj 	
+LICK	DAV SUPV Actv Natpro 	
+LIFE	Noun Natpro 	noun-adj: General or particular conditions of existence, a lifetime, living 
+LIFELESS	IndAdj Neg Modif Natpro Weak 	
+LIGHT	Pos Noun Natpro Pstv 	69% noun-adj: Illumination, opposite of darkness; various metaphorical  extensions--"i am the light" (8); compounds--"light bulb" (1) 
+LIGHT	Modif Natpro 	1% adj: 'lighted'--afire 
+LIGHTNING	Noun Natpro Strng 	noun: A flash of light, or a sudden illumination of the heavens, caused  by the discharge of atmospheric electricity. 
+LIVE	SV SUPV Strng Natpro 	79% verb: Exist, be alive, reside 
+LIVE	Modif Strng Natpro 	2% adj: 'live'--'living'--alive 
+LIVE	Noun Natpro 	6% noun: Plural of 'life' 
+MAGNETIC	IPadj Pos Modif Rel Natpro 	
+MALADY	Neg Noun Natpro Weak 	
+MIND	Noun Natpro 	55% noun: The organization of mental processes, particularly intellectual processes 
+MOISTURE	Noun Natpro 	
+NATURAL	Pos Modif Natpro Pstv Ovrst 	37% adj: Not artificial, coming from or having to do with nature 
+NATURE	Noun Natpro 	26% noun: The natural world 
+NUCLEAR	Modif ECON POLIT Natpro Strng 	adjective: Pertaining to nuclear weapons or energy 
+ORGANIC	Modif Natpro 	
+OUTLIVE	DAV Pos SUPV Psv Strng Natpro Other 	
+PASS	IAV Neg SUPV Ngtv Weak Psv Natpro 	3% verb: "Pass away"--to die 
+PASS	IAV SUPV Weak Psv Natpro 	0% verb: "Pass out"--to become unconscious 
+PASS	Neg Noun Natpro Ngtv Weak Psv 	1% noun: "Passing"--disappearance, death 
+PERISH	IAV Neg SUPV Natpro Finish 	
+PLANT	Noun Natpro Object Natobj 	21% noun: Member of the vegetable group of living organisms 
+PLANT	Noun Natpro Actv 	8% noun-adj: "Planting"--setting in the ground, establishing, implanting 
+POPULATE	DAV SUPV Natpro 	
+PREGNANCY	Noun Natpro 	
+PREGNANT	Modif Natpro 	adjective: Being with young, also teeming with or full of. 
+PRESSURE	Noun Natpro Power Strng PFREQ 	86% noun-adj: The exertion of psychological, social, or political forces  upon an individual or group, "he could not stand the pressure so he quit";  the physical exertion of force of one object, fluid, etc., resting on another (0) 
+PULSE	Noun Natpro 	
+RADIATION	Noun Natpro 	
+RADIOACTIVE	Modif Natpro 	
+REFLEX	Noun Psv Natpro 	
+RELATION	Noun Affil Natpro 	1% noun: Sex act 
+RELAX	IAV SUPV Weak Psv Natpro 	
+RELIEVE	IAV SUPV Natpro 	15% verb: "Relieve oneself" - to go to the bathroom 
+RIPEN	IAV Pos SUPV Psv Natpro 	
+RISE	IAV SUPV Natpro Strng 	16% verb: To return to life 
+ROSE	IAV SUPV ED Natpro Strng 	6% verb: Returned to life 
+ROT	DAV Neg SUPV Psv Natpro Decr 	
+ROTTEN	IndAdj Neg Modif Natpro Vice 	
+SEX	Noun Natpro 	noun-adj: The fact of male and female differences or behavior arising  from this fact 
+SEXUAL	Modif PFREQ Natpro 	adj: Pertaining to sex 
+SHADE	Noun Natpro 	
+SHADOW	Noun Natpro 	
+SHINE	DAV SUPV Natpro 	62% verb: To give off light 
+SHOWER	IAV SUPV Natpro 	
+SLAUGHTER	IAV Neg SUPV Natpro Finish Hostile Exert Actv 	
+SLEEP	DAV SUPV Psv Natpro 	81% verb: To slumber, nap, doze, includes "go to sleep" 
+SLEEP	Noun Psv Natpro 	12% noun: The state or period of natural suspension of consciousness 
+SLEEP	Modif Psv Natpro 	5% adj-noun: 'sleeping'--a state of slumber, in or related to slumber 
+SLEEPLESS	IndAdj Neg Modif Natpro Negate 	
+SLEPT	DAV SUPV ED Weak Psv Natpro 	verb: Past participle of sleep 
+SMOKE	Noun Natpro 	58% noun-adj: Colloidal combustion by-product, pertaining to same 
+SMOKE	DAV SUPV Natpro 	32% verb: To consume tobacco, to exude smoke 
+SMOKE	Noun Natpro 	10% noun: "A smoke," "smoking" - tobacco consumed, or the consumption 
+SNOW	DAV SUPV Natpro 	10% verb: The falling of such flakes 
+SOUND	DAV SUPV Natpro 	2% verb: To emit a noise 
+SOUND	Noun Psv Natpro 	2% idiom-adv: "Sound asleep" 
+SPARK	Noun Natpro 	
+SPIT	Noun Natpro 	
+SPIT	DAV SUPV Natpro 	
+SPRAY	Noun Natpro 	
+SPRING	Noun Natpro 	15% noun-adj: A source, usually of water 
+STARVATION	Neg Noun Need Weak Natpro 	
+STARVE	IAV Neg SUPV Psv Need Weak Natpro 	
+STEAM	Noun Natpro 	
+STEAM	DAV SUPV Natpro 	
+SUBSIST	IAV Pos SUPV Actv Natpro 	
+SUBSISTENCE	Pos Noun Natpro 	
+SWALLOW	DAV SUPV Natpro 	
+SWEAT	Noun Natpro 	
+SWEAT	DAV SUPV Psv Natpro 	
+TEMPEST	Neg Noun Natpro Hostile 	
+THIRST	Neg Noun Natpro Need 	
+THIRSTY	IndAdj Neg Modif Natpro Need 	
+THRIVE	SV Pos SUPV Actv Strng Natpro Incr 	
+THROW	IAV Neg SUPV Ngtv Natpro 	1% verb: "Throw up" - to vomit 
+TWITCH	IAV Neg SUPV Psv Move Natpro 	
+UNHEALTHY	IndAdj Neg Modif Natpro Weak 	
+UNNATURAL	IndAdj Neg Modif Natpro 	
+VITALITY	Pos Noun Pstv Virtue Strng Natpro 	
+VOMIT	Neg Noun Natpro 	
+WAKE	DAV SUPV PFREQ Natpro 	80% verb: Become awake 
+WAKE	Noun Natpro 	1% noun-adj: "Waking"--being or becoming awake 
+WARM	DAV Pos SUPV Pstv Natpro 	19% verb: To make or become physically warm, heat; to inspire with friendly  feelings or incite enthusiasm (2) 
+WAY	Modif Natpro 	0% idiom-adj: 'in the family way'--pregnant 
+WEED	Neg Noun Object Natpro Hostile 	
+WILT	IAV Neg SUPV Psv Natpro Compl Decr 	
+WOOD	Noun Object Natpro 	54% noun: Lumber, fuel, the material 
+WRETCH	IAV Neg SUPV Actv Pain Natpro 	
+YAWN	IAV Neg SUPV Psv Comform Natpro 	

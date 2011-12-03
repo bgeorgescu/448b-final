@@ -1,0 +1,37 @@
+word	tags	comments
+BILLION	DET NUMB CARD ECON Quan Ovrst 	
+DOZEN	DET NUMB CARD Quan 	
+EIGHT	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+EIGHTEEN	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+EIGHTY	DET NUMB CARD Quan 	
+ELEVEN	DET NUMB CARD Quan 	
+FIFTEEN	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+FIFTY	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+FIVE	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+FORTY	DET NUMB CARD Quan 	
+FOUR	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+FOURTEEN	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+HALF	DET PRE PRE2 CARD NUMB Quan 	36% adj: Of two equal parts of something (includes "half an acre," etc.) 
+HUNDRED	DET NUMB CARD PFREQ Quan Ovrst 	92% noun-adj: The cardinal number 
+MILLION	DET NUMB CARD Ovrst Quan 	noun: The cardinal number 
+NINE	DET NUMB CARD Quan 	noun-adj: The number 
+NINETEEN	DET NUMB CARD Quan 	noun-adj: The number 
+NINETY	DET NUMB CARD Quan 	
+ONE	DET NUMB CARD PRE PRE1 Modif Quan 	32% adj: Single; of a single nature; a certain, first, only 
+QUARTER	DET NUMB CARD Quan 	56% noun: The fraction - one fourth 
+SEVEN	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+SEVENTEEN	DET NUMB CARD Quan 	
+SEVENTY	DET NUMB CARD Quan 	
+SIX	DET NUMB CARD Quan 	noun: Cardinal number 
+SIXTEEN	DET NUMB CARD Quan 	
+SIXTY	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+TEN	DET NUMB CARD Quan 	noun-adj: Numeral. 
+THIRTEEN	DET NUMB CARD Quan 	noun adjective: The cardinal number 
+THIRTY	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+THOUSAND	DET NUMB CARD Quan Ovrst 	75% noun-adj: The cardinal number 
+THREE	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+TRILLION	DET NUMB CARD ECON Ovrst Quan 	
+TWELVE	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+TWENTY	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+TWO	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+ZERO	DET NUMB CARD Quan 	

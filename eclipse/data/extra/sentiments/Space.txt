@@ -1,0 +1,304 @@
+word	tags	comments
+ABOARD	PREP LY Space 	
+ABOUT	PREP LY Space 	6% prep-adv: Around --'walk about', 
+ABOVE	Modif Space 	21% noun-adj-adv: Previously stated 
+ABROAD	LY Space 	
+ABSENT	Modif Psv Space 	
+ACRE	Noun Space 	
+ACROSS	PREP Space 	63% prep: From one point to another, on, over, athwart 
+ACROSS	PREP Space 	2% idiom-prep: "Across from"--opposite 
+ADJACENT	Modif POS Space 	
+ALONE	LY Space Weak 	76% adj-adv: Apart from others, solitary, undisturbed 
+AMID	PREP Space 	
+AMIDST	PREP Space 	
+AMONG	PREP Space 	prep: In or in the midst of, without going beyond 
+ANGLE	Noun Space 	
+ANYWHERE	LY Space Ovrst 	adverb: Any unspecified place 
+APART	LY Space Weak 	54% adv-adj: Spatial, away from-'he went apart from the rest', divided,  separated--'his feet were apart,' 'they find themselves further apart  every day.' (3 abstract) 
+ARCH	DAV SUPV Space 	
+AROUND	PREP LY Space 	adverb-prep: With no definite direction, in a circle, surrounding or enclosing,  in the vicinity, along the circumference. 
+ASIDE	LY Space 	72% adverb: To one side, apart, in reserve 
+ATOP	PREP Space 	
+AWAY	LY Space PFREQ 	88% adverb: Off, at or to a distance from here and now. 
+AXIS	Noun Space 	
+BACKGROUND	Noun Space 	
+BACKWARD	Neg LY ECON Ngtv Weak Space 	
+BEAR	Noun Space 	1% noun: "Bearings"--direction or relative position 
+BEHIND	PREP LY Space 	prep-adv: In back of, responsible for, not up-to-date, inferior to 
+BELOW	PREP LY Space 	prep-adv: Lower than, in or toward a lower place. 
+BEND	Noun Space 	
+BENEATH	PREP Space 	
+BESIDE	PREP Space 	36% preposition: Next to 
+BETWEEN	PREP Space 	preposition: Denoting some relationship involving at least 2 parties,  objects, times, degrees, quantities, et 
+BEYOND	PREP LY Space 	prep-adv.: Farther than, farther, exceeding, outside the possibility of 
+BLOCK	Neg Noun Space Ngtv Psv Strng 	72% noun-adj: A barrier, solid mass, area, unit; street block (1) 
+BORDER	IAV SUPV Space 	
+BOTTOM	Noun POS Space 	noun: Lower part, basic part 
+BOUND	Noun Space 	10% noun: Limit, boundary 
+BOUNDARY	Noun POLIT Space 	noun-adj: Limit, edge, border 
+BRANCH	Noun Space 	73% noun: Ramification, offshoot 
+BRIDGE	IAV SUPV Strng Space 	6% verb: To span or connect any two separated things or points 
+BROAD	Modif DIM Space Strng 	adj: Wide, extensive (includes comparative, superlative and adverb forms) 
+BROADNESS	Noun Strng Space 	
+CENTER	IAV SUPV Space Strng 	22% verb: To focus on or at ('attention centers around him') 
+CENTIMETER	Noun ABS DIST Space 	
+CENTRAL	Modif Space POS Strng 	
+CIRCLE	Noun Space 	80% noun: Round object or shape, cycle; coterie, group of people (6) 
+CIRCULAR	Modif Space 	
+CLOSE	Modif Space 	9% adj: "Closer"--(comparative of sense 1) 
+CLOSE	Modif Space 	3% adj: "Closest"--(superlative of sense 1) 
+CLOSE	LY Space 	4% adv: "Closely"--in a close manner 
+CLOSENESS	Pos Noun Intrel  Space 	
+CLUSTER	IAV SUPV Space Strng 	
+COLUMN	Noun Space 	
+COMPARTMENT	Noun Space 	
+COMPRESS	Modif Space Strng Actv 	
+CONFIGURATION	Noun Space 	
+CONFINE	Neg Modif Space Ngtv Strng Actv 	
+CONNECT	IAV Pos SUPV Space Pstv Actv 	
+CONNECTION	Noun ABS Abs* Space Actv 	noun: Junction, affiliation, relation, union, reference 
+CONTINUUM	Noun ABS Abs* Space 	
+CORE	Noun Space Strng 	
+CORNER	Noun Space 	noun: A meeting place of two converging lines or planes 
+CREST	Noun Space 	
+CROSS	Noun Space Relig 	11% noun: A shape composed of at least 2 pieces at right angles 
+CROSS	Modif Space 	6% adj: "Crossed"--overlapped at an angle or intersecting 
+CROWD	Modif Space 	17% adj: "Crowded"--filled to excess, too close together 
+DEEP	Modif Space DIM Strng 	64% adjective: Profound, intense, not superficial or light--"to my deep  delight, i see that he is a deep person"; extending to a considerable  extent physically downward or inward (21); extending considerably along  some other physical scale--"deep freez 
+DEEP	Modif Space Strng 	11% adj-adv: "Deeper" 
+DEEP	Modif Space Strng 	3% adjective: "Deepest" 
+DEPTH	Noun ABS DIST Space Strng 	
+DESERT	Neg Modif Space Ngtv Weak Psv 	3% adj: "Deserted"--abandoned 
+DIAMETER	Noun Space 	
+DIMENSION	Noun Space 	
+DIRECT	Modif Space Strng Actv 	23% adj: Unmediated, not oblique 
+DIRECTION	Noun ABS Abs* Space 	71% noun: The line along which anything lies, faces, moves, etc.--a line  of thought, progression, action or a tendency or inclination 
+DISPLACEMENT	Noun Space Strng Actv 	
+DISTANCE	Noun ABS DIST Space 	noun: Space separating two things or points 
+DISTANT	Modif Space 	
+DISTRIBUTION	Noun ABS Abs* ECON Space Actv 	
+DIVIDE	Neg Modif Space Ngtv Weak Psv 	14% adj: "Divided"--separated 
+DOMAIN	Noun Space 	
+DOOR	Modif Space PFREQ 	93% noun adjective: A movable barrier for closing off an entrance, or  the entrance itself. 
+DOOR	Noun Space 	4% idiom-adj-adv: 'next door'--neighboring or adjacent 
+DOWN	PREP LY Space 	prep-adv: In or to a lower position or lower level of activity--along 
+EARTH	LY Ovrst Space 	28% idiom-adj: "On earth"--in this life, existing--"no enemy on earth  dare attack us," "i have little time on earth"; used for emphasis or surprise--"what  on earth are you doing?" (1) 
+EASTERN	Modif Space 	
+EDGE	Noun Space PFREQ 	92% noun: Border or margin, often sharp, as a knife edge; metaphorically,  sharpness, acuteness (0) 
+ELEVATE	Modif Space Strng Actv 	
+ELONGATED	Modif Space DIM 	
+ELSEWHERE	LY Space 	
+ENCLOSE	Modif Space Strng Actv 	
+ENCLOSE	IAV SUPV Space Strng Actv 	
+ENCOMPASS	IAV SUPV Strng Space 	
+ENDLESS	Modif Space DIM Strng 	
+EVERYWHERE	LY Space Ovrst 	adv: In all places 
+EXPANSE	Noun Space Strng 	
+EXTENSION	Noun Space Strng 	
+EXTENSIVE	Modif Space DIM Ovrst Strng 	
+EXTERNAL	Modif Space 	
+EXTREME	Noun Space Ovrst 	8% noun: Furthest point, terminus 
+FACE	PREP Space 	5% idiom-prep: "In the face of"--confronted with 
+FAR	LY Space 	60% adv-adj: Being at or to a great distance, a long way off; at or to  a remote or advanced point or time (7) 
+FARTHER	LY Comp ER Space 	
+FAT	Neg Modif EVAL DIM Space Ngtv PFREQ 	97% adjective-noun: Excess of adipose tissue, sometimes figuratively used  to indicate various derogatory attributes of excess or luxury 
+FAT	Neg Modif EVAL DIM Space Ngtv 	2% adj: "Fatter"--comparative 
+FAT	Neg Modif EVAL DIM Space Ngtv 	2% adj: "Fattest"--superlative 
+FATHOM	Noun ABS DIST Strng Space 	
+FEET	Noun ABS DIST S Space 	26% noun: Measurement of distance, 12 inches (plural) 
+FENCE	IAV SUPV Strng Actv Space 	3% verb: To enclose 
+FLAT	Modif Space 	
+FLATNESS	Noun Space 	
+FOCAL	Modif Space Strng Ovrst 	
+FOOT	Noun ABS DIST Space 	7% noun: Measure of distance--12 inches 
+FOOT	Noun Space 	18% noun: The base of something--that part analogous to the human foot 
+FORTH	LY Space 	61% adv: Forward in place, time, degree 
+FRINGE	Noun Space 	
+FRONT	Noun Space 	24% noun: The forward portion of something; specifically, the lines of battle (2) 
+FRONT	Modif Space POS 	26% adj: Forward, at the front 
+FRONT	PREP Space 	46% prep-adv: "In front (of)"--before, ahead (of) 
+FURTHER	LY Space Comp ER 	30% adverb: Farther, i.e., more distant 
+GEOGRAPHIC	Modif Space 	
+GEOGRAPHICAL	Modif Space 	
+HALFWAY	LY Space Weak 	
+HAND	LY Space 	2% idiom-adv: "On hand"--at one's disposal, handy, present 
+HAND	LY Space 	4% idiom-adv: "At hand"--present, nearby 
+HANG	Modif Space Psv 	6% noun-adj: 'hanging'--suspended, suspension 
+HEIGHT	Noun Space 	
+HERE	LY Space 	adv: To or in this place, spot, or locality--at this point or juncture--this place. 
+HIGH	Modif Space POS Strng DIM Ovrst 	39% adj: Lofty, tall, elevated, intensified, greater than usual, considerably  upward in some given scale of measurement, qualitative or quantitative,  generally subsequently specified 
+HIGH	Modif Space POS Strng DIM 	14% adjective: "Higher"--(comparative of sense 1) 
+HIGH	Modif Space POS Strng DIM 	5% adjective: "Highest"--(superlative of sense 1) 
+HIND	Modif Space 	
+HOMEWARD	LY Space 	adverb: Toward home 
+HORIZONTAL	Modif Space POS 	
+IMMENSE	Modif Space Strng Ovrst 	
+IN	PREP LY Space 	prep-adv: Indicates inclusion, situation, presence, action etc. within  limits--inside, within 
+INCH	Noun ABS DIST Space 	
+INNER	Modif Space POS Strng 	
+INSERT	IAV SUPV Space Actv 	
+INSIDE	PREP Space 	43% prep: In, within 
+INSIDE	LY Space 	41% adv: Within 
+INSIDE	Modif Space 	7% adj: Internal 
+INSIDE	Noun Space 	9% noun: The part within, interior 
+INTERMEDIATE	Modif Space POS 	
+INTERNAL	Modif Space Strng 	
+INTERTWINE	IAV SUPV Space Affil 	
+INTO	PREP Space 	prep: Indicates motion or direction toward the inner part of a place or  thing, entrance or inclusion within limits 
+ISOLATE	Neg Modif Space Ngtv 	
+JUMP	Noun Space Actv 	5% noun-adj: A sudden increase, a large gap or increment; a leap, the  act of leaping (2) 
+KILOMETER	Noun ABS DIST Space 	
+LAYER	Noun Space 	
+LEAGUE	Noun ABS DIST Space 	10% noun: Distance measure 
+LEFT	Noun Space 	7% noun-adj: Physical direction, vs. "right" 
+LENGTH	Noun ABS DIST Space 	33% noun: The extent or duration of something from end to end, beginning  to end, top to bottom, etc. 
+LENGTHY	Modif Space Ovrst 	
+LEVEL	Noun Space PFREQ 	98% noun: Degree of quality, quantity, intensity, abstract plane--"speak  to him on his own level"; a flat, horizontal piece of land, etc. (0); horizontalit 
+LIMIT	Noun ABS Abs* Space 	42% noun: The final or furthest bound or point as to extent, amount, procedure 
+LIMIT	Neg Modif Space Psv Weak Undrst Ngtv 	37% adj: "Limited"--confined within limits, circumscribed or narrow 
+LIMITLESS	Modif Space Strng Ovrst 	
+LINE	Noun Space PFREQ 	87% noun-adj: A mark long in proportion to its breadth, or resembling  same; all noun or adjective senses 
+LINK	IAV SUPV Actv Space 	
+LOAD	Modif Space Psv 	0% adj: "Loaded"--filled, burdened 
+LONG	Modif Space DIM Strng 	78% adj-adv: Having considerable extent in space or time, of a particular  extent--"twelve feet long" 
+LONG	Modif Space DIM 	2% adj: 'longer'--comparative of sense 1 
+LONG	Modif Space DIM 	0% adj: 'longest'--superlative of sense 1 
+LOOP	Noun Space 	
+LOW	Neg Modif POS DIM Space Ngtv Weak 	84% adv-adj: Of little height, value or extent, not refined, below average 
+LOW	Neg Modif POS DIM Space Ngtv Weak 	14% adv-adj: 'lowest'--superlative of sense 1. 
+LOWER	Neg Modif Comp ER POS Space Ngtv Weak 	60% adj-adv: Of less height, value, or extent, less refined (comparative of "low") 
+MARGINAL	Neg Modif Space Ngtv 	
+MASS	DAV SUPV Strng Space 	3% verb: To form or collect into a mass 
+MASSIVE	Modif Space DIM Strng 	
+METER	Noun ABS DIST Modif Space 	
+MIDDLE	Modif Space POS 	noun-adj: Between the extremes, center, central 
+MIDST	Noun Space 	
+MILE	Noun ABS DIST Space 	noun: A measure of distance. 
+MOUTH	Noun Space 	4% noun: An opening affording entrance or exit 
+MYSELF>	LY Space Weak 	4% idiom-adj-adv: "By myself"--alone or without help 
+NARROW	Modif Space DIM Weak 	
+NEAR	PREP Space 	59% prep: Close to 
+NEAR	Modif Space POS Strng 	6% adj: Close, imminent 
+NEAR	LY Space 	4% adv: Nearby, close 
+NEAR	Modif Space POS 	9% adv-adj: "Nearer"--comparative--closer 
+NEAR	Modif Space POS 	1% adv-adj: "Nearest"--superlative--closest 
+NEARBY	PREP LY Space 	adv-adj.: Neighboring, adjacent, close. 
+NEIGHBOR	Modif Space 	7% adjective: "Neighboring"--living or situated near, adjacent 
+NEXT	PREP Space 	16% prep: "Next to"--beside (spatial); important, next to the teachers")  (1), or almost ("next to useless") (1) 
+NORTH	Noun Space PFREQ 	92% noun-adv-adj: Compass direction, in, of, to, toward or facing this  direction; used in titles of various nations and geographic regions, as  "north vietnam," "north dakota" (7) 
+NORTHEAST	Noun Space 	
+NORTHERLY	LY Space 	
+NORTHERN	Modif Space 	
+NORTHWEST	Noun Space 	
+NUCLEI	Noun Space Strng 	
+NUCLEUS	Noun Space Strng 	
+OFF	PREP LY Space 	adv-prep: No longer supported or attached, removed from, refraining from,  deviating from, not up to usual standard, away 
+ON	PREP Space 	prep-adv: Indicates position above, contact place, condition, occasion, subject 
+ONTO	PREP Space 	
+OPEN	Noun Space 	5% noun: "Opening"--a space, gap, hiatus, hole; vacant position (1) 
+OUT	PREP LY Space 	prep-adv: Outside of, away from, empty--into existence, activity, or public notice 
+OUTER	Modif Space POS 	
+OUTSIDE	PREP Space PFREQ 	84% adv-adj-prep: Acting, being, or performing beyond an enclosure, especially  something familiar, either concrete--a house--or abstract--a group, etc. 
+OUTSIDE	Noun Space 	9% noun: The outer side, something external, the space beyond a boundary 
+OVAL	Noun Space 	
+OVER	PREP LY Space 	61% prep-adv: Above, on, across, upon, with motion verb indicates a change  in place or position--"he went over the fields," "it fell over" 
+OVER	LY Space Ovrst 	9% idiom-adv: "All over"--in all places, covering--"he was red all over,"  "there was war all over europe" 
+PACE	Noun ABS DIST Space 	30% noun: The length of step in walking, manner of stepping 
+PARALLEL	Modif Space POS 	
+PAST	PREP Space 	6% prep: Beyond, after 
+PENETRATION	Noun Space Strng Actv Hostile 	
+PLACEMENT	Noun Space 	
+PLANE	Noun Space 	9% noun: A level 
+PLANT	Modif Space Strng 	0% adj: "Planted"--set in the ground, established, implanted 
+POLE	Noun ABS Abs* Space 	3% noun: The end of an axis, an extreme 
+POSITION	Noun Space 	13% noun: Location, posture 
+POSTURE	Noun Space 	
+PRESENT	Modif Space 	12% adj: At the designated place, not absent, spatially near--"he was present" 
+PUBLIC	LY Space 	9% adv: "Publicly"--in public 
+RADIUS	Noun Space 	
+RAISE	Modif Space 	1% adj: "Raised"--elevated 
+REACH	Noun ABS DIST Space 	1% noun: The extent of reach, arm's length, an extent or expanse 
+REAR	Modif Space POS 	
+REMOTE	Modif Space Weak 	
+RESTRICT	Neg Modif Space Power Ngtv Weak Psv 	4% adj: "Restricted", confined, limited 
+RIGHT	Modif Space 	5% noun-adj: The physical direction 
+RING	Noun Space PFREQ 	81% noun: Anything circular, thus-  enclosure for exhibitions (9); a circular  arrangement or formation  (2); a group cooperating for illicit purposes  (2); also tone, resonance (0) 
+ROAD	LY Space 	8% adv: "On the road"--traveling 
+ROOM	Noun Space 	6% noun: Unspecified space or extent of space occupied by, or for, some thing 
+ROOT	Modif Space Strng Psv 	13% adj: "Rooted", based, embedded 
+ROUND	PREP Space 	48% prep: Encircling, in a circuit or course through or around, by-passing 
+ROUND	LY Space 	26% adv: Around, in a circle or circuit; surrounding, on all sides, here  and there; approximately--"round about" 
+ROW	Noun Space 	
+SCOPE	Noun Space 	
+SEAT	Noun Space 	4% noun-adj: "Seating"--mode or arrangement for sitting 
+SECTION	Noun Space 	noun: Organizational or spatial part 
+SECTOR	Noun Space ECON POLIT 	
+SEGMENT	Noun Space 	
+SHALLOW	Neg Noun Space Ngtv Weak 	
+SHAPE	Noun Space 	69% noun-adj: Recognizable physical form; condition, state (9) 
+SIDE	LY Space 	2% idiom-adv: "Side by side"--alongside of 
+SLICE	Noun Space 	
+SLIGHT	Modif Space Weak Undrst 	14% adj: Small, insignificant in degree, size or extent 
+SLOT	Noun Space 	
+SOMEWHERE	LY Space Undrst 	adv: At (in, to) some place 
+SOUTH	Noun Space 	67% noun-adv-adj: The compass direction, (anything) in, of, to, toward,  or facing this direction; often used as part of the title of a country  or geographical region, or of someone inhabiting or something pertaining  to the country or region, as "south 
+SOUTHEAST	Noun Space 	
+SOUTHERN	Modif Space 	adj: Of or about the south, especially the southeast of the united states 
+SOUTHWEST	Noun Space 	
+SPACE	Noun Space PFREQ 	92% noun-adj: Unlimited or indefinite three-dimensional expanse; a specific  empty or available area or volume (6) 
+SPAN	Noun Space 	
+SPAN	IAV SUPV Space 	
+SPREAD	Noun Space 	14% noun-adj: Expansion, diffusion 
+SQUARE	Noun Space 	
+SQUAT	Modif Space 	
+SQUEEZE	Noun Space 	
+STRAIGHT	Modif Space 	44% adj-adv: Not crooked, without deviation, in a line, in order 
+STRAIGHT	LY Space Ovrst 	38% adv: Directly 
+STRATUM	Noun Space 	
+STRETCH	Noun ABS DIST Space 	
+STUFF	IAV SUPV Strng Actv Space 	7% verb: To fill, pack tight, cram 
+SURROUND	Modif Space Weak Psv 	3% adj: "Surrounded"--enclosed, encompassed 
+TALL	Modif Space DIM Strng 	
+THENCE	LY Space 	
+THERE	LY Space 	38% adv: Locative--in that place--'he was there' 
+THEREFROM	LY Space 	
+THEREIN	LY Space 	
+THERETO	LY Space 	
+THICK	Modif Space DIM Strng 	
+THICKNESS	Noun Space 	
+THIN	Modif Space DIM Weak 	
+THROUGH	PREP Space 	65% prep-adv: From one position to another, in space or time--'a walk  through the woods,' 'we waited through the night' 
+THROUGHOUT	PREP Space 	prep-adv: Everywhere, from beginning to end 
+TOP	Noun Space PFREQ 	97% noun-adj: The highest point or part of anything, one who occupies  the highest position, highest in degree, situated at the highest point,  greatest, the upperside 
+TOWARD	PREP Space 	77% prep: To, in the direction of (including time) 
+TOWERING	Modif Space DIM Ovrst 	
+UNTO	PREP Space 	
+UP	PREP LY Space 	prep-adv: Toward a higher, more prominent or final position, into or in  existence or operation (much less frequent) 
+UPON	PREP Space 	prep: Used as equivalent for 'on' 
+UPPER	Modif Space POS 	
+UPPERMOST	Pos Modif Pstv Strng Ovrst Comp EST Space 	
+UPRIGHT	Pos Modif Space POS Pstv Strng 	
+UPWARD	Pos LY Dimn Space 	
+VACUUM	Noun Space 	
+VECTOR	Noun Space 	
+VERTICAL	Modif Space POS 	
+VIA	PREP Space 	
+WAY	Noun Space 	4% noun: Distance--'a long way,' 'all the way' 
+WAY	LY Space 	1% adv: Far--'way down the river' 
+WEST	Noun Space 	noun-adv-adj: The compass direction, in, of, to, toward or facing this  direction, the western part of the earth, especially west europe and north  america, the western part of the u.s.; used as part of the title of various  countries or geographic region 
+WESTERN	Modif Space 	adj: In, of, from or toward the west 
+WESTWARD	LY Space 	
+WHERE	LY INT Space 	13% adv: In, at, to, or from what place or position 
+WHERE	CONJ CONJ2 PFREQ Space 	86% conj: In, at, to, or from what place or position, or the place or  position in, at, to, or from which . . . 
+WHERE	PRON Space 	0% pron: What place--"where do you come from"--interrogative 
+WHEREIN	LY Space 	
+WHEREVER	CONJ CONJ2 LY Ovrst Space 	conj: In, at, to whatever place or condition 
+WIDE	Modif Space DIM Strng 	62% adj: Broad, far-reaching, inclusive 
+WIDE	LY Space Strng 	14% adv: "Widely"--broadly 
+WIDE	Modif Space DIM Strng 	16% adj: "Wider"--comparative of sense 1 
+WIDE	Modif Space DIM Strng 	0% adj: "Widest"--superlative of sense 1 
+WIDESPREAD	Modif Space Ovrst Strng 	
+WIDTH	Noun ABS DIST Space 	
+WIND	Noun Actv Space 	0% adj: "Winding"--twisting 
+YARD	Noun ABS DIST Space 	25% noun: A unit of linear measure, equal to three feet. 
+YONDER	Modif Space 	

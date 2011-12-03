@@ -1,0 +1,57 @@
+word	tags	comments
+ADVENT	Pos Noun Begin 	
+ARISEN	IndAdj Pos Modif Begin Incr 	
+BEGAN	IAV SUPV ED Begin Actv 	verb: Started, commenced, took the first step. 
+BEGIN	IAV SUPV Begin Actv 	73% verb: To start, commence, embark upon, initiate 
+BEGIN	Noun Begin 	27% noun-adj: "Beginning"--start, origin, commencement ('in the beginning'),  new, unexperienced ('a beginning teacher') (1) 
+BEGUN	IAV SUPV ED Begin Actv 	verb: Past participle of begin--commenced, started 
+BLOOM	IAV Pos SUPV Actv Begin Incr 	
+BLOSSOM	IAV Pos SUPV Actv Begin Incr 	
+BREED	DAV SUPV Begin Actv 	
+BROKE	IAV SUPV ED Begin 	10% verb: Began spontaneously--or suddenly 'fire broke out,' 'dawn broke' 
+COMMENCE	IAV SUPV Begin Actv 	
+COMMENCEMENT	Pos Noun Begin 	
+CONJURE	IAV Pos SUPV Actv Exprs Strng Begin 	
+CONVENE	IAV Pos SUPV Actv Begin Travel Affil Coll 	
+CREATE	IAV Pos SUPV Exprs Strng Actv Begin Pstv 	verb: To cause to come into being, to happen, to bring about. 
+CREATION	Noun Strng Actv Begin 	
+CULTIVATION	Pos Noun Begin Rel Incr 	
+DAWN	DAV Pos SUPV Begin Pstv 	18% verb: To begin to grow light, to begin to develop 
+EMERGE	Modif Actv Begin 	
+EMERGE	IAV SUPV Begin Actv 	
+ENTREPRENEURIAL	IndAdj Pos Modif Econ Begin 	
+FIRST	LY Handels Begin 	2% idiom-adv: 'first of all'--at the outset, to begin 
+FIRST	LY Begin 	2% idiom-adv: 'in the first place'--to begin; handled by 'place' 
+FOSTER	IAV Pos SUPV Actv Begin Affil 	
+FOUND	IAV SUPV Begin Power Strng Actv 	3% verb: To establish, set up--'found a college' 
+GENERATE	DAV Pos SUPV Actv Begin Affil Work Incr 	
+GIVE	Noun Actv Begin 	1% idiom-verb: "Give birth"--bear offspring--handled by "birth" 
+INAUGURATE	IAV Pos SUPV Actv Begin Affil Ritual 	
+INCUR	IAV SUPV Begin Actv 	
+INDUCE	IAV SUPV Strng Actv Begin Power 	
+INITIATE	IAV SUPV Begin Strng Actv Power 	
+INITIATIVE	Noun Strng Actv Begin 	
+INNOVATE	IAV Pos SUPV Actv Begin 	
+INNOVATIVE	Pos Noun Begin Virtue 	
+INSTITUTE	IAV SUPV Begin Actv 	9% verb: To establish or initiate 
+KICK	IAV SUPV Begin Strng Actv 	13% idiom-verb: 'kick off'--eject, expel, commence 
+LAUNCH	IAV SUPV Begin Strng Actv 	
+ONSET	Pos Noun Begin 	
+OPEN	IAV SUPV Begin Actv 	3% verb: To begin, commence, inaugurate 
+ORIGIN	Noun Begin 	
+ORIGINATE	IAV SUPV Begin Actv Strng 	
+OUTSET	Pos Noun Begin 	
+PREMIER	Pos Noun Begin 	
+PREPARE	IAV SUPV Begin Strng Actv 	73% verb: To put things or oneself in readiness, to compose beforehand 
+PROLIFIC	IndAdj Pos Modif Begin Incr 	
+REESTABLISH	IAV Pos SUPV Actv Begin Strng 	
+RENAISSANCE	Pos Noun Begin Change Incr 	
+RENEWAL	Pos Noun Begin Freq 	
+RESUMPTION	Noun Strng Actv DET Begin 	
+REVIVE	IAV Pos SUPV Begin Pstv Strng Actv 	
+SET	IAV SUPV Begin Actv 	17% idiom-verb: "Set up"--create, establish, erect 
+SET	IAV SUPV Begin Actv 	6% verb: "Set out"--to begin, start 
+START	DAV SUPV Begin Actv PFREQ 	93% verb: To begin or commence 
+START	Noun Begin 	5% noun-adj: A beginning 
+TAKE	IAV SUPV Begin Actv 	0% verb: "Take up"--consume 
+UNDERTOOK	IAV SUPV Begin Strng Actv 	

@@ -1,0 +1,7 @@
+word	tags	comments
+LET'S	PRON DEF DEF2 SUPV VERB MOD S Our 	
+OUR	DET GEN Affil Our 	pronoun: Possessive form of 'we' 'belonging to us' 
+OURS	PRON Affil Our 	
+OURSELVES	S Plrlp Our 	
+US	PRON DEF DEF2 S Affil Plrlp Our 	pronoun: Objective form of 'we' 
+WE	PRON DEF DEF1 S Plrlp Our 	pron: First person plural, nominative 

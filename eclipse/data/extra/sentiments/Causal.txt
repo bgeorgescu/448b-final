@@ -1,0 +1,113 @@
+word	tags	comments
+ACCIDENT	Neg Noun Ngtv Causal Undrst 	noun: An unfortunate happening, unintentionally caused and unexpected 
+ACCIDENTAL	Modif Causal Undrst 	
+ACCOUNT	PREP Causal 	29% prep: "On account of"--because of 
+ACCOUNTABLE	IndAdj Pos Modif Causal 	
+AS	CONJ CONJ2 Causal 	75% conj-prep: Like, since, because, while, in the capacity, manner or  degree of--second term of correlated structures introduced by 'so,' 'such,'  'same,' etc. 
+BECAUSE	CONJ CONJ2 Causal PFREQ 	90% conj: For the reason that 
+BECAUSE	PREP Causal 	10% idiom-prep: "Because of"--on account of, by reason of 
+BOUND	Modif Causal 	35% idiom-adj: Certain, destined--"bound to" 
+CAUSAL	Modif Causal Strng Actv 	
+CAUSE	IAV SUPV Causal Strng Actv 	44% verb: To produce as an effect 
+CAUSE	Noun ABS Abs* Strng Actv Causal 	15% noun: The source or sufficient condition of some effect 
+CAUSE	CONJ CONJ2 Causal 	21% conj: Slang for "because" 
+CHANCE	Noun Causal Undrst 	21% noun: A possibility or probability of something happening, likelihood, risk 
+CHANCE	LY Causal Undrst Psv 	6% idiom-adverb: "By chance"--without plan or intent 
+CHANCE	Noun ABS Abs* Undrst Psv Causal 	2% noun-adj: The absence of any known causation for the outcome of events,  often spoken of as a real agency 
+CONSEQUENCE	Noun Causal Psv Ovrst 	
+CONSEQUENT	Modif Know Causal Psv Ovrst 	
+CONTINGENCY	Noun Causal 	
+CONTINGENT	Modif Causal Undrst 	
+CULPABLE	IndAdj Neg Modif Causal 	
+CULPRIT	Neg Noun Vice Causal HU 	
+DELIBERATE	Modif Causal Strng Actv 	
+DEPEND	IAV SUPV Causal Weak Psv 	73% verb: Be contingent 
+DETERMINISTIC	Modif Causal 	
+DETRIMENTAL	IndAdj Neg Modif Ngtv Strng Causal Vice 	
+DUE	Modif Causal 	63% adjective: Attributable, as to a cause--e.g. death was due to fire 
+EFFECT	Noun ABS Abs* Causal Psv 	66% noun: Result, consequence, or (by implication) efficacy 
+EFFECT	IAV SUPV Power Causal Strng Actv 	6% verb: To produce some result, to cause or make something happen 
+EFFECT	Noun Causal Actv 	9% noun: Meaning, intended impression--'to this effect,' 'to the effect that' 
+FEASIBLE	IndAdj Pos Modif Strng Causal Ovrst 	
+FERTILE	IndAdj Pos Modif Causal 	
+GIVE	Noun Causal Actv 	0% verb-idiom: "Give rise (to)"--originate, cause--handled by "rise" 
+GUILTY	IndAdj Neg Modif Vice EVAL Legal Ngtv Psv Causal Weak 	adj: Culpable 
+HENCE	LY Know Causal 	adv: Thus, therefore 
+HEREBY	LY Causal 	
+IMPETUS	Pos Noun Strng Causal 	
+IMPLAUSIBILITY	Noun Negate Causal 	
+IMPLAUSIBLE	Modif Negate Causal 	
+IMPLICATE	IAV Neg SUPV Comform Hostile Causal Other Actv 	
+IMPOSSIBILITY	Noun Negate Causal Undrst 	
+IMPOSSIBLE	Modif Causal Negate PFREQ Undrst 	94% adjective: Not able to be done, happen, etc. 
+IMPOSSIBLE	Noun Negate Subm Causal 	6% noun: That which cannot be done 
+IMPROBABILITY	Noun Negate Causal Undrst 	
+IMPROBABLE	Modif Negate Causal Undrst 	
+INDICATIVE	IndAdj Pos Modif Comform Causal 	
+INEXPLICABLE	Neg Modif Causal Negate Ngtv 	
+INTEND	Modif Psv Causal 	0% adj: "Intended"--meant;planned 
+LEAD	IAV SUPV Causal Actv 	33% verb: To produce some effect, to result in, induce--"oppression leads  to violence"; to go towards (concrete)--"all roads lead to rome" (6) 
+LIABILITY	Neg Noun Causal Weak 	
+LIABLE	IndAdj Neg Modif Causal 	
+LIKELIHOOD	LY Causal Ovrst 	
+LIKELINESS	LY Causal Ovrst 	
+LIKELY	LY Causal Ovrst 	63% adverb: Probably 
+LIKELY	Modif Causal 	37% adjective: Probably destined, apt 
+MANAGEABLE	IndAdj Pos Modif Strng Causal Ovrst 	
+MOTIVATE	IAV Pos SUPV Actv Other Causal Arousal 	
+NATURAL	Pos LY Pstv Causal Ovrst 	63% adv: "Naturally", not artificially, understandably 
+NECESSARILY	Pos Modif Causal 	
+NECESSITATE	IAV SUPV Causal Strng Ovrst 	
+NEGLIGENCE	Neg Noun Causal Eval Legal Vice 	
+NEGLIGENT	IndAdj Neg Modif Causal Legal Eval Vice 	
+OBTAINABLE	IndAdj Pos Modif Fetch Causal Rel 	
+OCCASION	IAV SUPV Causal Strng Actv 	7% verb: To give cause for, to bring about 
+ODDS	Noun Causal 	
+OFFENDER	Neg Noun HU Causal Hostile 	
+ORDER	CONJ CONJ2 Causal 	48% conj: In order to, that or for 
+OVER	PREP Causal 	8% prep: In reference to, concerning--"he cried over her leaving" 
+PLAUSIBILITY	Pos Noun Causal Eval 	
+POSSIBILITY	Noun ABS Abs* Causal Ovrst 	noun: That which is within the powers of performance, attainment, conception, etc. 
+POSSIBLE	Modif Strng Causal Ovrst 	adjective: That which may or can be, exist, happen, be done, etc. 
+PRECEDENT	Pos Noun Legal Causal 	
+PRECIPITATE	IAV Neg SUPV Causal 	
+PREDICTABLE	Modif Causal Ovrst 	
+PREDICTION	Noun Causal 	
+PREJUDICIAL	IndAdj Neg Modif Causal Feel 	
+PREMISE	Pos Noun Causal Affil 	
+PREPARATORY	IndAdj Pos Modif Affil Causal 	
+PREVENTIVE	Noun Power Strng Causal 	
+PROBABILITY	Noun ABS Abs* Causal Ovrst 	
+PROBABLE	Modif Causal Ovrst 	adjective: With statistical or estimated likelihood, likely 
+PROVOCATION	Neg Noun Causal Hostile 	
+PURPOSE	Noun Causal Strng PFREQ 	noun: Reason for acting or being. 
+PURPOSE	LY Strng Causal Actv Ovrst 	1% adv: "On purpose," "purposely"--with intent 
+REASON	Noun COM Causal Strng PFREQ 	95% noun: The basis or cause of an act or event or a statement given in  justification 
+REASON	Noun ABS Abs* Causal Actv Strng 	2% noun: "Reason," "reasoning"--the uses of mental powers, common sense and logic 
+RESPONSIBLE	Modif Causal 	31% adj: Causatory (of), accountable (for or to)--"we are all responsible  for these conditons" 
+RESULT	Modif Causal 	0% adj: "Resulting"--occasioned as a result 
+RISE	IAV SUPV Causal Strng Actv 	2% verb-idiom: "Give rise (to)"--originate, cause 
+ROOT	Noun Causal Strng 	83% noun-adj: Supporting, embedded or essential part, source, origin 
+ROUSE	IAV Pos SUPV Actv Exert Intrel Causal 	
+SIGNIFY	IAV Pos SUPV Psv Comform Intrel Causal 	
+SINCE	CONJ CONJ2 Causal Ovrst 	45% conj: Indicates causality--because 
+SO	CONJ CONJ2 Causal 	34% conj: Sequential, intentional or causal link--includes "so that", "so as to" 
+STEM	IAV SUPV Causal Psv 	
+STIMULATE	IAV Pos SUPV Actv Other Power Causal 	
+STIMULATION	Pos Noun Actv Causal Percv 	
+SUBSTANTIATE	IAV Pos SUPV Actv Affil Causal 	
+TENDENCY	Noun ABS Abs* Undrst Psv Causal 	
+THANK	Noun Causal 	8% idiom-noun: "Thanks to"--owing to 
+THEREBY	LY Causal Ovrst 	
+THEREFORE	LY Causal Ovrst 	adverb: So, thus, for this reason, consequently 
+THROUGH	PREP LY Causal 	28% prep: Indicating instrumentality, including agency--'through great  effort we succeeded,' 'he sent a message through max' 
+THUS	LY Causal Ovrst 	adverb: So, accordingly, in this manner, to this extent or degree, consequently,  therefore 
+TREND	Noun ABS Abs* Causal 	
+UNLIKELIHOOD	Noun Negate Causal Undrst 	
+UNLIKELY	LY Negate Causal Undrst 	
+VIABILITY	Pos Noun Causal Eval Qual 	
+VIEW	PREP Causal 	1% idiom: 'with a view to'--with the aim of 
+WHEREBY	LY Causal 	
+WHY	LY INT Causal 	43% adv: Interrogative--for what reason--'why did he go' 
+WHY	CONJ CONJ2 Causal 	51% conj: The reason for which, for which--'that is why he went,' 'that  is the reason why' 
+WHY	Noun Causal 	1% noun: A reason--'whys and wherefores' 

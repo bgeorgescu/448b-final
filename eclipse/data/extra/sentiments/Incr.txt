@@ -1,0 +1,112 @@
+word	tags	comments
+ABOUND	IAV Pos SUPV Incr Psv 	
+ABSORBENT	IndAdj Pos Modif Incr 	
+ABSORPTION	Pos Noun Incr Affil 	
+ACCELERATE	DAV SUPV Incr Actv Strng 	
+ACCELERATION	Noun Strng Actv Incr 	
+ACCESSION	Pos Noun Incr Strng 	
+ACCRUE	DAV Pos SUPV Actv Incr Econ 	
+ACCUMULATE	DAV SUPV Incr Actv 	
+ADJUNCT	Pos Noun Incr Rel 	
+ADVANCEMENT	Pos Noun Incr Pstv 	
+AMPLIFY	DAV Pos SUPV Actv Incr Strng 	
+AMPLY	Pos Modif Strng Incr 	
+APPEND	DAV Pos SUPV Actv Incr Change 	
+ARISEN	IndAdj Pos Modif Begin Incr 	
+AUGMENT	IAV Pos SUPV Incr Pstv Actv 	
+AUGMENTATION	Pos Noun Incr 	
+BECAME	IAV SUPV VERB VB ED Psv Incr 	verb: Came, changed or grew to be. 
+BECOME	IAV SUPV VERB VB Psv Incr 	verb: To come or grow to be 
+BLOOM	IAV Pos SUPV Actv Begin Incr 	
+BLOSSOM	IAV Pos SUPV Actv Begin Incr 	
+BOLSTER	IAV Pos SUPV Actv Affil Strng Incr 	
+BOOM	Pos Noun Econ Incr Strng 	
+BOOST	Pos Modif Incr Pstv Strng Actv 	
+BOOST	IAV Pos SUPV Pstv Strng Actv Incr 	
+BOUNDLESS	IndAdj Pos Modif Strng Quan Incr 	
+BOUNTIFUL	IndAdj Pos Modif Incr Strng Quan 	
+BRANCH	IAV SUPV Incr Actv 	0% verb: To put forth or spread in branches, expand, extend 
+BROADEN	IAV SUPV Incr Strng 	
+BUILD	IAV SUPV Incr Strng Actv 	14% idiom-verb: "Build up"--to strengthen, or increase, either quantitatively  or qualitatively 
+CAPITALIZE	IAV Pos SUPV Actv Strng Power Econ Incr Ach 	
+COLLECT	IAV SUPV Incr Actv Strng PFREQ 	87% verb: To accumulate, acquire 
+COLLECT	Noun Actv Incr 	10% noun-adj: "Collecting"--act or activity of accumulating, pertaining to same 
+COMEBACK	Pos Noun Actv Strng Incr 	
+CULTIVATION	Pos Noun Begin Rel Incr 	
+DECORATE	IAV Pos SUPV Actv Incr Eval Pleasure 	
+DEEPEN	IAV SUPV Incr Actv Strng 	
+DEVELOP	IAV SUPV Incr Strng Actv PFREQ 	verb: To evolve, strengthen, or elaborate. 
+DEVELOPMENT	Noun Strng Actv Incr 	noun-adj: The act of developing or a developed state or form 
+DOUBLE	DAV SUPV Incr Strng Actv 	10% verb: To render or become twofold in form, size, amount or number;  serve a dual function (0) 
+ELABORATE	IAV Pos SUPV Actv Comform Incr 	
+ELABORATION	Pos Noun Comform Incr 	
+EMBELLISH	IAV Pos SUPV Actv Comform Incr 	
+EMPOWER	IAV Pos SUPV Actv Strng Power Incr 	
+EMPOWERMENT	Pos Noun Strng Power Incr 	
+ENHANCEMENT	Pos Noun Incr Ovrst 	
+ENRICH	IAV Pos SUPV Actv Incr Strng 	
+ENRICHMENT	Pos Noun Incr Strng 	
+EXCEED	IAV SUPV Incr Ovrst Strng Actv 	
+EXCEL	IAV Pos SUPV Actv Strng Incr 	
+EXPAND	Modif Incr Strng Actv 	
+EXPAND	IAV SUPV Incr Strng Actv 	
+EXPANSION	Noun ECON POLIT Strng Actv Incr 	
+EXTEND	IAV SUPV Actv Strng PFREQ Incr 	87% verb: To expand, stretch or lengthen in space, time or degree 
+FLOURISH	Pos Modif Pstv Strng Power Incr 	
+FORTIFY	IAV Pos SUPV Actv Strng Power Incr 	
+FURTHER	IAV SUPV Incr Strng 	12% verb: To extend, increase, promote 
+GARNISH	IAV Pos SUPV Actv Incr 	
+GENERATE	DAV Pos SUPV Actv Begin Affil Work Incr 	
+GROW	DAV SUPV Incr Strng Psv Actv 	34% verb: To increase in size, intensity, etc.--especially of living things 
+GROW	IAV SUPV Strng Incr 	29% idiom-verb: 'grow up'--to mature, attain maturity 
+GROW	DAV SUPV VERB VB Incr Strng 	22% verb: To come or become--'grow to realize,' 'grow dark' 
+GROW	Modif Strng Incr Actv 	11% adj-noun: 'growing'--enlarging, increasing--growth 
+GROWN	DAV SUPV ED Strng Psv Incr 	8% verb: To have increased in size, intensity, etc. 
+GROWN	Handels Incr 	0% verb: Raised (transitive) 
+GROWN	Handels Incr 	0% noun-adj: 'growing' (na) 
+GROWTH	Noun Strng Incr Psv 	noun: An increase in size or extent 
+HEAP	IAV SUPV Incr Actv 	
+HEIGHTEN	IAV SUPV Incr Strng 	
+HOARD	IAV Neg SUPV Fetch Incr 	
+IMPROVE	IAV Pos SUPV Pstv Strng Actv Incr 	17% verb: To become better in quality or condition 
+INCREASE	DAV SUPV Incr Strng Actv 	39% verb: To make greater in any respect, augment 
+INCREASE	Noun Strng Incr 	20% noun: Growth or augmentation in numbers, etc. 
+INCREASE	Modif Strng Incr 	11% adj: "Increased"--larger or greater 
+INCREASE	Modif Strng Incr 	16% adj: "Increasing"--becoming larger or greater 
+INFLATION	Neg Noun Econ Incr 	
+INTENSIFY	IAV SUPV Strng Incr Actv 	
+INUNDATE	IAV Neg SUPV Actv Incr Strng 	
+INUNDATED	IndAdj Neg Modif Incr Work 	
+LUCRATIVE	IndAdj Pos Modif Econ Incr Exch 	
+MAGNIFY	IAV SUPV Incr Strng Ovrst 	
+MATURE	IAV Pos SUPV Incr Strng Pstv 	31% verb: To develop, become mature, come to fruition 
+MATURE	Pos Modif Incr Strng Pstv 	12% noun-adj: "Maturing"--developing, maturation 
+MAXIMIZE	IAV Pos SUPV Actv Incr 	
+MOMENTUM	Noun Strng Incr 	
+NOURISH	IAV Pos SUPV Actv Affil Food Incr 	
+OVERFLOW	IAV Neg SUPV Psv Incr 	
+OVERWHELMING	IndAdj Neg Modif Incr Power 	
+PEOPLE	DAV SUPV Incr 	0% verb: To populate 
+PIECE	DAV SUPV Actv Incr 	1% verb: To add pieces, put together, enlarge, extend 
+PILE	IAV SUPV Incr 	69% verb: To accumulate 
+PROLIFIC	IndAdj Pos Modif Begin Incr 	
+PROMOTION	Noun ECON Econ* Incr Strng 	
+PROSPER	IAV Pos SUPV Psv Econ Incr 	
+PROSPEROUS	IndAdj Pos Modif Econ Incr 	
+QUICKEN	IAV Pos SUPV Actv Move Incr 	
+RADIATE	IAV Pos SUPV Psv Fetch Incr 	
+RAISE	Noun Incr ECON Econ* 	3% noun: An increase, a salary increase 
+RENAISSANCE	Pos Noun Begin Change Incr 	
+RISE	Noun Strng Actv Incr 	16% noun: An increase in degree, intensity, size, height--growth 
+RISE	Modif Strng Actv Incr 	9% adj: "Rising"--increasing in degree, intensity, size, height 
+RUN	IAV SUPV Incr Econ* Actv 	0% verb: 'run up (debts)'--accumulate 
+SHOOT	IAV SUPV Incr Strng Actv 	0% idiom-verb: "Shoot up"--to grow or rise rapidly 
+SPREAD	IAV SUPV Incr PFREQ 	86% verb: To stretch out, extend, display, scatter 
+STRENGTHEN	IAV SUPV Incr Strng Actv Power PFREQ 	91% verb: To make strong 
+STRENGTHEN	Noun Strng Incr Power Actv 	9% noun: "Strengthening" - gain or improvement in strength 
+SUPPLEMENT	IAV SUPV Incr Strng 	
+SURGE	Pos Noun Incr 	
+SWEETEN	IAV Pos SUPV Actv Incr 	
+THRIVE	SV Pos SUPV Actv Strng Natpro Incr 	
+WEIGHT	IAV SUPV Incr Strng 	9% verb: To add weight or importance 
+WIDEN	DAV SUPV Incr Strng Actv 	

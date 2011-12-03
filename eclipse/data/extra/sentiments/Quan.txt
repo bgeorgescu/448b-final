@@ -1,0 +1,315 @@
+word	tags	comments
+ABOUT	PREP LY Quan Undrst 	11% prep-adv: Almost, approximately 
+ABOVE	PREP LY Quan 	59% prep-adv: Higher than, superior to 
+ABUNDANCE	Pos Noun Quan ECON Pstv Strng Ovrst 	
+ABUNDANT	Pos Modif Quan Pstv Strng Ovrst 	
+ACCUMULATION	Noun Quan Actv 	
+ADD	Modif Quan Strng 	13% adj: "Added," extra, further,increased--"the added expense" 
+ADDITION	LY Quan Strng 	82% idiom-adv: 'in addition,' besides, additionally 
+ADDITIONAL	Modif Quan Strng 	
+AGGREGATE	Pos Noun Quan 	
+AGGREGATION	Pos Noun Quan 	
+ALL	DET PRE PRE2 Modif Quan Ovrst 	40% adj: Every, any, the whole 
+ALL	LY Quan Undrst 	4% idiom-adv: "At all"--(with negatives)--whatsoever 
+ALLOCATION	Noun POLIT ECON COM Quan 	
+ALLOTMENT	Noun ECON Quan 	
+ALLOWANCE	Pos Noun Econ Quan 	
+ALMOST	LY Quan Ovrst 	adverb: Very nearly, all but. 
+ALONE	LY Ovrst Quan 	18% adj-adv: To the exclusion of all others, only 
+ALSO	Modif LY Quan 	adverb: Moreover, in addition. 
+AMOUNT	Noun Quan 	92% noun: Quantity. 
+AMPLE	Pos Modif Quan Pstv Strng 	
+ANOTHER	DET PRE PRE1 Comp ER Modif Quan 	75% adj: One more, a different 
+ANY	DET PRE PRE2 Modif Quan Ovrst PFREQ 	87% adj-adv: One or more without specification or identification; every--cf.  "any schoolboy knows that"; at all--cf. "she cannot stand any criticism";  in whatever degree, to some extent 
+APPROXIMATE	Modif Quan Undrst 	
+APPROXIMATELY	LY Quan Undrst 	
+AS	LY Quan 	11% adv: To such a degree or extent, so 
+ASTRONOMICAL	Modif Ovrst Quan 	
+AVERAGE	Modif EVAL Quan Weak 	65% adj: Constituting a numerical average, typical, ordinary 
+AVERAGE	Noun Quan 	30% noun: An arithmetic mean, an approximation to this 
+AWFUL	Modif Ovrst Quan 	17% idiom: 'an awful lot', a great deal. 
+AWFUL	LY Ovrst Quan 	21% adverb: "Awfully"--extremely 
+BANKRUPT	IndAdj Neg Modif Vice Econ Fail Quan 	
+BANKRUPTCY	Neg Noun Vice Econ Fail Quan 	
+BARELY	LY Undrst Quan 	
+BARREN	IndAdj Neg Modif Psv Weak Quan 	
+BESIDE	Handels Quan 	58% prep-conj-adv: In addition (to)--"besides" 
+BIG	Modif DIM Quan Strng 	adj: Large, important (includes comparative and superlative) 
+BILLION	DET NUMB CARD ECON Quan Ovrst 	
+BIT	Noun Quan Undrst Weak PFREQ 	93% noun-adv: A small quantity; a role or routine (2) (rarely, mouthpiece  of a bridle, tool (0)) 
+BODY	Noun Quan 	1% noun: A mass, or the main mass or portion of something, substance 
+BOTH	PRON Quan 	49% pron: The two 
+BOTH	DET PRE PRE1 Quan 	24% adj: The two 
+BOUNDLESS	IndAdj Pos Modif Strng Quan Incr 	
+BOUNTIFUL	IndAdj Pos Modif Incr Strng Quan 	
+BULK	Noun Quan Ovrst Strng 	
+BUNCH	Noun Quan 	
+BUNDLE	Noun Quan 	
+BURST	Noun Quan Strng Actv 	
+CHIEF	Modif Quan Strng Ovrst 	6% adj: Most important, primary 
+CHIEF	LY Quan Strng Ovrst 	2% adv: "Chiefly"--principally 
+CLEAR	LY Ovrst Quan 	3% adv: Completely, all the way, away from 
+CLUSTER	Noun Quan Strng 	
+COLLECTION	Noun Quan 	
+COMBINATION	Noun ABS Abs* Quan Actv 	
+COMBINE	Modif Quan Strng Actv 	
+COMPLEMENT	Pos Noun Quan Pstv 	
+COMPLETE	Pos Modif Quan Strng Ovrst Pstv 	30% adjective: Whole, entire, lacking nothing 
+COMPLETE	LY Quan Ovrst Strng 	46% adverb: Wholly, entirely--"completely" 
+CONSIDERABLE	Modif Quan DIM Strng Ovrst 	77% adj: Substantial 
+CONSIDERABLE	LY Quan DIM Strng Ovrst 	23% adv: "Considerably"--substantially 
+COST	Neg Noun COM ECON Quan Econ* Ngtv 	67% noun-adj: Expense, outlay, sacrifice, loss, penalty 
+COUNT	Noun Quan 	
+COUNTLESS	DET PRE PRE1 Modif Quan Ovrst Strng 	
+COUPLE	DET PRE PRE1 Modif Quan 	57% adj: A couple of--two or three, a few 
+CUMULATIVE	Modif Quan Strng 	
+DEAL	Pos Noun Quan Pstv 	53% idiom-noun: 'a great deal,' 'a good deal,' etc.--an indefinite but  large quantity 
+DECIMAL	Modif Quan 	
+DEGREE	Noun Quan 	9% noun: A point in a specific scale of measurement, as of temperature 
+DISCOUNT	Noun Quan ECON Econ* Psv 	
+DISPROPORTIONATE	IndAdj Neg Modif Quan Eval 	
+DOUBLE	Modif Quan Strng 	47% adj: Twice, twofold in form, size, amount or number 
+DOUBLE	LY Quan Strng 	3% adv: "Doubly"--twice 
+DOZEN	DET NUMB CARD Quan 	
+DROUGHT	Neg Noun Quan Fail 	
+DUAL	Modif Quan 	
+EACH	DET PRE PRE1 Modif Quan Ovrst 	43% adj: Every single 
+EIGHT	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+EIGHTEEN	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+EIGHTEENTH	DET NUMB ORD Quan 	
+EIGHTH	Modif Quan 	5% idiom-noun-adj: The fraction--(one, an) eighth 
+EIGHTY	DET NUMB CARD Quan 	
+EITHER	DET PRE PRE1 Modif Quan 	14% adj: One or the other of two 
+ELEVEN	DET NUMB CARD Quan 	
+EMPTY	Neg Modif Ngtv Weak PFREQ Quan 	96% adj: Devoid of content 
+ENORMOUS	Modif Quan DIM Strng Ovrst 	
+ENOUGH	LY Quan 	45% adv: Sufficiently 
+ENOUGH	DET PRE PRE2 Modif Quan 	28% adj: Sufficient, an adequate quantity 
+ENOUGH	PRON Quan 	24% pron: An adequate quantity 
+ENTIRE	Modif Quan Ovrst Strng 	adjective: Complete, whole. 
+EQUAL	Modif Quan 	64% adj: Equivalent, precisely comparable 
+EQUAL	LY Quan 	29% adv: "Equally"--equivalently 
+EVER	LY Ovrst Strng Quan 	4% idiom-adverb: "Ever so"--to a great extent or degree, exceedingly 
+EVERY	DET PRE PRE1 Modif Quan Ovrst Strng 	adj: Each and all, all possible 
+EXCESS	Neg Noun Ovrst Ngtv Quan 	
+EXTEND	Modif Quan Psv 	0% adj: "Extended" - prolonged or lengthened 
+EXTINCT	IndAdj Neg Modif Qual Quan Finish 	
+EXTRA	Modif Quan Ovrst 	adj: Additional, surplus 
+EXTREME	Modif Quan POS Strng Ovrst 	20% adjective: Very far from the average (along some dimension conveyed  by accompanying noun) 
+EXTREME	LY Ovrst Strng Quan 	72% adverb: "Extremely"--exceedingly, extraordinarily 
+FAIR	Modif Quan 	8% adj: Moderate in degree or quality (includes comparative (0) + superlative (0)) 
+FAR	LY Quan 	16% adv: "As far as"--to the degree or extent that, as regards 
+FAR	LY Ovrst Quan 	9% adverb: Much, to a greater extent (used for emphasis with comparatives  and "too") 
+FEW	DET PRE PRE1 Modif Quan Undrst Weak PFREQ 	82% adj: Not many, a small number of 
+FEW	DET PRE PRE1 Modif Quan Undrst Weak 	1% adj: "Fewer"--a smaller number of--comparative 
+FEW	DET PRE PRE1 Modif Quan Undrst Weak 	0% adj: "Fewest"--superlative 
+FIFTEEN	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+FIFTY	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+FIVE	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+FORTY	DET NUMB CARD Quan 	
+FOUR	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+FOURTEEN	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+FRACTION	Noun Quan 	
+FULL	Modif Quan Strng Ovrst 	80% adjective: Complete or filled to capacity 
+FULL	Modif Strng Quan Ovrst 	2% adjective: "Fuller"--comparative 
+FULL	Modif Strng Ovrst Quan 	2% adjective: "Fullest"--superlative 
+FULL	LY Quan Ovrst Strng 	14% adverb: "Fully" 
+FULLNESS	Pos Noun Compl Quan 	
+FUND	Noun Quan 	0% noun-adj: A supply or store of 
+FURTHER	LY Comp ER Quan Strng 	57% adj-adv: Additional, more, more extended; additionally, in addition 
+GALLON	Noun Quan 	
+GIANT	Modif Ovrst DIM Quan Strng 	15% adjective: Extra large 
+GIGANTIC	Modif Quan Ovrst Strng 	
+GRATUITOUS	IndAdj Neg Modif Ovrst Quan 	
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	63% adj: Of more than ordinary size, extent, number, degree, importance, eminence 
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	9% adj: 'greater' 
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	7% adj: 'greatest' 
+GREAT	LY Ovrst Quan 	6% adv: 'greatly' 
+GROSS	Modif Quan Econ* EVAL Ovrst 	
+HALF	DET PRE PRE2 CARD NUMB Quan 	36% adj: Of two equal parts of something (includes "half an acre," etc.) 
+HALF	PRON Quan 	40% noun: One of two equal parts 
+HALF	LY Quan 	20% adv: Partly, incompletely 
+HALF	LY Quan 	4% idiom-adv: "In half", into halves, into half as much 
+HALF	LY Quan 	0% idiom-adj: "Half and half"--half one thing and half another 
+HANDFUL	Noun Quan Weak Undrst 	
+HIGH	LY Ovrst Strng Quan 	10% adverb: "Highly"--in or to a high degree 
+HUGE	Modif Quan DIM Strng Ovrst 	adj: Very large in size, extent, or degree 
+HUNDRED	DET NUMB CARD PFREQ Quan Ovrst 	92% noun-adj: The cardinal number 
+HUNDRED	PRON Ovrst Quan 	8% noun: "Hundreds" 
+INCALCULABLE	Modif Negate Undrst Quan 	
+INCOMPLETE	Modif Negate Weak Quan 	
+INCREASE	LY Quan Strng 	13% adv: "Increasingly"--more and more 
+INDIVIDUAL	DET PRE PRE1 Modif Quan 	27% adj: Single, particular, or pertaining to an individual or individuals 
+INDIVIDUAL	LY Quan 	3% adv: "Individually"--singly 
+INFINITE	Modif Quan Ovrst Strng 	
+INNUMERABLE	Modif Quan Ovrst Negate Strng 	
+JUST	LY Ovrst Quan 	69% adv: Only, merely, simply, usually with sense of emphasis--"we just  can't do it" 
+LARGE	Modif Quan DIM Strng Ovrst 	79% adj: Big, considerable, great 
+LARGE	Modif Quan DIM Strng Ovrst 	7% adj: 'larger'--bigger 
+LARGE	Modif Quan DIM Strng Ovrst 	7% adj: 'largest'--biggest 
+LARGE	LY Ovrst Quan 	6% adv: 'largely'--principally, chiefly, mostly 
+LEAST	LY Quan PFREQ Ovrst 	87% idiom-adv: 'at least'--at any rate, at lowest estimate 
+LEAST	Modif Comp EST DIM Quan Weak Undrst 	8% adj-adv: Slightest, to the smallest degree 
+LEFT	Modif Quan 	13% adj: Remaining - "there is only one left" 
+LEFT	Modif Quan 	0% idiom-adj: "Left over"--excess 
+LENGTH	LY Strng Quan Ovrst 	17% idiom-adv: "At length"--at or to the full extent, completely 
+LESS	LY Quan Comp ER Weak 	75% adv-adj: To a smaller extent, amount, or degree, not so large, great or much 
+LESS	LY Undrst Quan 	20% idiom-adv: "More or less"--to an extent, approximately 
+LESS	Noun Quan Weak Undrst 	3% adj: "Lesser"--smaller, less important 
+LITTLE	Modif Quan DIM Weak Undrst 	adj-adv: Small in degree, may refer to size, duration, number, etc. 
+LOAD	Modif Quan Ovrst Strng 	3% adj: 'loads of' a great quantity, much 
+LONE	Modif Quan Weak 	3% adj: Single, solitary 
+LOT	Noun Quan Strng PFREQ 	91% adv-adj-noun: A great deal (colloq.), much, many 
+LOT	Noun Quan 	1% noun: A set of objects or people or individual members of the set often  traded or used to decide some question 
+MAGNITUDE	Noun ABS Abs* Quan Strng Ovrst 	
+MANY	DET PRE PRE1 Modif Quan Strng Ovrst 	79% adj: A considerable number 
+MASS	Noun Quan Ovrst Strng 	64% noun-adj: Large quantity or size, majority, widespread 
+MATERIAL	LY Quan Strng 	1% adv: "Materially"--substantially 
+MAXIMIZATION	Noun Quan Strng Ovrst 	
+MAXIMUM	Modif Quan Comp EST Strng 	
+MEAGER	IndAdj Neg Modif Undrst Quan Ngtv Weak 	
+MEAN	Noun Quan POS 	0% noun-adj: Average 
+MEASURABLE	IndAdj Pos Modif Quan Dimn 	
+MEASURE	Noun Quan 	9% noun: Unit, degree, index of quantity or degree 
+MEASURE	Modif Quan Actv 	3% adj: "Measuring"--pertaining to measurement--"measuring cup"; "measured"--having  undergone measurement (0) 
+MEASUREMENT	Noun Quan Actv 	
+MEDIUM	Modif Quan DIM 	
+MERE	Modif Quan Weak Undrst 	38% adjective: Only this and nothing else, nothing more than, such and no more 
+MERE	LY Weak Undrst Quan 	62% adverb: 'merely'--not otherwise than, simply, barely, only. 
+MILLION	DET NUMB CARD Ovrst Quan 	noun: The cardinal number 
+MINIMAL	Modif Quan Comp EST Weak Undrst 	
+MINIMUM	Modif Quan Comp EST Weak Undrst 	
+MINOR	Modif EVAL Quan Weak Undrst 	
+MORE	DET PRE PRE2 PRON LY Comp ER Quan Strng 	adv-adj-pron: A general intensifier--it takes its specific meaning - and  part of speech - from the word modified; and often the word modified is  implied rather than stated. 
+MOST	DET PRE PRE2 Comp EST Modif Quan Strng Ovrst 	63% adj-adv: Greatest in number, size, extent, nearly all, in the greatest degree. 
+MOST	PRON Strng Quan Ovrst 	26% pron: The greatest quantity or amount, the majority. 
+MOST	LY Quan Strng Ovrst 	8% adv: 'mostly'--chiefly. 
+MUCH	DET PRE PRE2 PRON LY Quan Strng 	pron-adj-adv: Being of great quantity, amount, measure or degree 
+MULTIPLE	DET PRE PRE1 Modif Quan Strng 	
+MULTIPLICATION	Noun Quan Strng 	
+MULTITUDE	Pos Noun Quan Coll 	
+MYRIAD	Pos Noun Quan Coll 	
+NEAR	LY Quan Undrst 	19% adv: "Nearly"--almost 
+NEGLIGIBLE	Modif Quan Weak Undrst 	
+NINE	DET NUMB CARD Quan 	noun-adj: The number 
+NINETEEN	DET NUMB CARD Quan 	noun-adj: The number 
+NINETY	DET NUMB CARD Quan 	
+NO	Negate DET PRE PRE2 Negate Quan Undrst 	42% adj: Not any 
+NO	Modif Quan 	0% adj: "No"--abbreviation for number 
+NUMBER	DET PRE PRE1 Modif Quan Strng Undrst 	25% idiom-adj: "A number of", several, many 
+NUMBER	Noun Quan 	19% noun: "Number (numeral)," pronoun referring to specific item designated  by numeral, e.g. "number three . . ." 
+NUMBER	Noun Quan 	54% noun: Amount of units, quantity 
+NUMERICAL	Modif Quan 	
+NUMEROUS	DET PRE PRE1 Modif Quan Strng Ovrst 	
+ONE	DET NUMB CARD PRE PRE1 Modif Quan 	32% adj: Single; of a single nature; a certain, first, only 
+ONLY	DET PRE PRE1 Quan Weak Undrst 	21% adj: Sole, single 
+ONLY	LY Quan Undrst 	74% adv: Solely, merely, exclusively 
+OTHER	DET PRE PRE1 Comp ER Modif Quan 	56% adj: Further, additional, different, alternate, remaining 
+OTHER	PREP Quan 	2% idiom-prep: "Other than"--besides 
+OVER	LY Quan 	5% prep: More than--"over ten men" 
+OVERLY	LY Ovrst Quan 	
+PAIR	Noun Quan 	
+PART	LY Quan Undrst 	5% idiom-adv: "In . . . part"--partly, to some extent, to . . . extent 
+PART	LY Quan Undrst 	6% adv: Partly 
+PARTIAL	Modif Quan Weak Undrst 	
+PARTICULAR	Pos DET Ovrst Modif Quan Pstv 	33% adj-noun: Specific, unique, special; a specific aspect or detail 
+PEERLESS	IPadj Pos Modif Ovrst Quan 	
+PERCENT	Noun Quan 	
+PERCENTAGE	Noun Quan 	
+PIECE	LY Quan 	0% idiom-adv: "All of a piece"--the same 
+PLENTIFUL	Pos Modif Quan Ovrst Pstv Strng 	
+PLENTY	Pos Noun Quan Ovrst Pstv Strng 	noun-adj: A full or abundant supply, more than sufficient, ample. 
+PLUS	PREP Quan Ovrst 	
+PORTION	Noun Quan 	
+POTENCY	Pos Noun Qual Quan Strng Power 	
+POUND	Noun Quan ECON 	73% noun: A unit of weight; the monetary unit of several countries (11) 
+PRACTICAL	LY Ovrst Quan 	21% adverb: 'practically'--almost, just about. 
+PRETTY	LY Undrst PFREQ Quan 	88% adv: Quite, very, fairly, to some degree 
+PREVALENT	Modif Quan Strng 	
+PRIMARILY	IndAdj Pos Modif Quan Ovrst 	
+PROPORTION	Noun Quan 	
+PROPORTIONAL	Modif Quan 	
+PROPORTIONATE	Modif Quan 	
+PROPRIETARY	IndAdj Pos Modif Quan Ovrst 	
+QUANTITATIVE	LY Quan 	
+QUANTITY	Noun Quan 	
+QUARTER	DET NUMB CARD Quan 	56% noun: The fraction - one fourth 
+QUITE	LY Ovrst EVAL Quan 	adv: Considerably, to a considerable extent, entirely. 
+RATHER	LY Quan Undrst 	38% adv: To an extent, in a measure; shades of meaning vary from 'somewhat'  to 'quite' 
+RATIO	Noun Quan 	
+REMAIN	Modif Quan Psv 	6% adj: "Remaining"--residual, left over 
+REMAINDER	Noun Quan 	
+REST	Noun Quan 	51% noun: That which remains or is left, the remainder, "the rest" 
+RIGHT	LY Quan Strng Ovrst 	21% adv: Directly, straight, immediately, precisely, just 
+ROUGH	LY Undrst Quan 	10% adv: "Roughly", approximately 
+SCANT	Modif Quan Weak Undrst 	
+SCARCE	Modif Quan Weak Undrst 	
+SCARCELY	LY Weak Quan Undrst 	
+SECONDARY	Modif Quan Undrst 	13% adj: Second in sequence or priority 
+SEVEN	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+SEVENTEEN	DET NUMB CARD Quan 	
+SEVENTY	DET NUMB CARD Quan 	
+SEVERAL	DET PRE PRE1 Modif Quan Undrst PFREQ 	88% adj: More than two or three, but not many 
+SHORT	Modif DIM Quan 	69% adj-adv: Not long - in length, duration, or extent 
+SHORT	LY Quan Undrst 	13% idiom-adv: "In short" - in a few words 
+SHORT	Modif Quan 	3% adj: "Shorter" - comparative of sense 1 
+SHORTAGE	Neg Noun ECON Ngtv Weak Quan 	
+SIGHT	Noun Quan 	7% noun: An appreciable amount - "a damn sight harder" 
+SIMPLE	LY Undrst Quan 	65% adv: "Simply" - only, just, merely 
+SINGLE	DET PRE PRE1 Undrst Quan 	96% adj: Numbering only one, solitary; unmarried (1) 
+SINGLY	LY Quan 	
+SIX	DET NUMB CARD Quan 	noun: Cardinal number 
+SIXTEEN	DET NUMB CARD Quan 	
+SIXTY	DET NUMB CARD Quan 	noun-adj: Cardinal number 
+SIZABLE	Modif Quan DIM Strng Ovrst 	
+SIZE	Noun Quan 	90% noun-adj: Dimensions, magnitude, extent 
+SLIGHT	Neg LY Ngtv Weak Undrst Quan 	57% adv: "Slightly" - a bit, somewhat 
+SMALL	Modif Quan DIM Weak Undrst 	86% adjective: Of little size, weight, importance. 
+SMALL	Modif Quan DIM Weak Undrst 	11% adj: "Smaller"--comparative 
+SMALL	Modif Quan DIM Weak Undrst 	3% adjective: "Smallest"--diminutive 
+SO	LY Ovrst Quan 	62% adv: To such extent, in such manner or degree, as indicated 
+SOLE	DET PRE PRE1 Modif Quan Ovrst 	
+SOME	DET PRE PRE2 Undrst Quan 	77% adj-adv: An unspecified one--singular nouns; an unspecified moderate  amount or degree--mass nouns; an unspecified number, certain-- plural  count nouns; to some extent or degree--"that's going some" 
+SOMETHING	LY Undrst Quan 	2% adv: Somewhat--"be something (of, like, etc.)" 
+SOMEWHAT	LY Undrst Quan 	adverb: In some measure or degree 
+SORT	LY Undrst Quan 	34% idiom-adv-adj: "Sort of"--approximately, not exactly or fully, to some extent 
+SUBSTANTIAL	Modif Quan EVAL Strng Ovrst 	
+SUCH	DET PRE PRE2 Modif Quan 	1% idiom-adj: "Such and such"--definite or particular but not specified 
+TEN	DET NUMB CARD Quan 	noun-adj: Numeral. 
+THIRD	Noun Quan 	11% noun: The fraction 
+THIRD	LY Quan Rel 	4% adv: "Third," "thirdly" - in the third place 
+THIRTEEN	DET NUMB CARD Quan 	noun adjective: The cardinal number 
+THIRTY	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+THOUSAND	DET NUMB CARD Quan Ovrst 	75% noun-adj: The cardinal number 
+THOUSAND	PRON S Ovrst Quan 	25% pronoun: "Thousands" 
+THREE	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+TINY	Modif DIM Weak Quan Undrst 	
+TOLD	LY Quan 	0% idiom-adv: "All told"--in all 
+TON	Noun Quan 	
+TOO	LY Quan Ovrst 	31% adv: In addition, also, furthermore 
+TOTAL	Noun Quan 	22% noun: Grand sum 
+TOTAL	Modif Ovrst Strng Quan 	39% adj: Complete, intense 
+TOTAL	LY Ovrst Quan 	36% adv: "Totally"--completely, intensely 
+TOUCH	Noun Quan Undrst 	4% noun: Small bit, smattering, increment of quantity, style, etc. 
+TRIFLE	Modif Weak Undrst Quan 	
+TRILLION	DET NUMB CARD ECON Ovrst Quan 	
+TWELVE	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+TWENTY	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+TWICE	LY Quan 	24% adv: Two times, double, doubly 
+TWO	DET NUMB CARD Quan 	noun-adj: The cardinal number 
+UNEQUAL	Neg Modif Quan Negate Ngtv 	
+UNIQUE	Pos Modif Quan Ovrst EVAL Pstv 	
+UNLIMITED	IndAdj Pos Modif Quan Ovrst Negate Strng Freq 	
+UTMOST	Modif Ovrst Quan 	
+UTTERLY	LY Ovrst Quan 	
+VARIOUS	DET PRE PRE1 Modif Quan 	adjective: Differing, numerous 
+VAST	Modif Quan Ovrst DIM Strng PFREQ 	adj: Very large, enormous 
+VIRTUAL	Modif Ovrst Quan 	
+WEALTH	DET PRE PRE1 Modif Quan Strng Ovrst 	4% idiom-adj: "A wealth of"--many, multitudinous, much 
+WELL	PREP Quan 	4% prep-adv: "As well (as)"--in addition (to) 
+WHOLE	Modif Quan Ovrst Strng 	74% adj: Entire, total 
+WHOLE	LY Quan Strng Ovrst 	11% adv: "As a whole"--in entirety 
+WHOLE	Noun Quan Ovrst Strng 	3% idiom-noun: "A whole lot"--many, plenty 
+WHOLE	LY Ovrst Quan Strng 	4% adv: "Wholly"--totally 
+WHOLE	Noun Quan Ovrst Strng 	5% noun: The totality 
+ZERO	DET NUMB CARD Quan 	

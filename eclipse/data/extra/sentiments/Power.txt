@@ -1,0 +1,691 @@
+word	tags	comments
+ABOLISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+ACCOMPLISH	IAV Pos SUPV Pstv Strng Actv Power Complt 	verb: To bring to its goal or conclusion 
+ACCOMPLISHMENT	Pos Noun Goal Pstv Strng Actv Power 	
+ACCORD	IAV Pos SUPV Intrel Power Pstv 	8% verb: To grant, bestow 
+ACHIEVEMENT	Pos Noun Goal Pstv Actv Power 	
+ADJUDICATION	Noun COM Comform Power 	
+ADMINISTER	IAV SUPV Intrel Power Strng Actv 	
+ADMINISTRATION	Noun HU COLL ABS TIME POLIT Polit* Power Strng 	69% noun-adj: A body entrusted with executive or administrative powers,  the time span over which such power is exercised (2) 
+ADMINISTRATION	Noun ECON Power Strng Actv Doctr 	31% noun: Direction or management of institutional activity 
+ADMINISTRATIVE	Modif POLIT ECON Doctr Power Strng Actv 	
+ADMINISTRATOR	Noun HU POLIT ECON Power Strng Role 	
+ADMIT	DAV Pos SUPV Intrel Power Pstv Psv 	33% verb: To grant entry, membership or access to something 
+ADMONISH	IAV Neg SUPV Intrel Hostile Power Strng Actv 	
+ADVISER	Noun HU Power Role 	
+ADVISOR	Noun HU Power Role 	
+ADVOCATE	IAV SUPV Power Strng Actv Comform 	
+AFFIRM	IAV Pos SUPV Power Pstv Strng Comform 	
+AFFORD	IAV SUPV Work Power Strng 	26% verb: To furnish, confer upon or be capable of providing 
+AGENCY	Noun HU COLL POLIT ECON Econ* Power 	noun: A commercial or other bureau furnishing some form of service for  the public, the office of an agent. 
+ALLIANCE	Pos Noun HU COLL POLIT Polit* Power Pstv Strng 	
+ALLOT	IAV SUPV Intrel Power 	
+ALLOW	IAV Pos SUPV Intrel Power Pstv Psv PFREQ 	97% verb: Permit 
+ALMIGHTY	IndAdj Pos Modif Strng Virtue Power 	
+AMAZEMENT	Pos Noun Strng Power 	
+AMAZING	IndAdj Pos Modif Ovrst Power Strng 	
+AMBASSADOR	Noun HU POLIT Polit* Power Role 	
+AMBITION	Noun POLIT ECON Virtue Power Strng 	noun: Desire for success or distinction 
+AMBITIOUS	Modif Virtue Power Strng Actv 	
+AMNESTY	Pos Noun Legal Doctr Power 	
+APPOINT	DAV Pos SUPV Intrel Power Pstv Actv 	
+APPRAISAL	Noun Means Power 	
+APPROPRIATE	IAV SUPV Intrel Power Strng 	
+APPROPRIATION	Noun ECON COM Comform Power 	
+ARDENT	IndAdj Pos Modif Strng Power Affil 	
+ARISTOCRACY	Pos Noun HU Role Econ Power 	
+ARISTOCRAT	Pos Noun HU Role Econ Power 	
+ARISTOCRATIC	IndAdj Pos Modif Econ Power 	
+ARM	Noun Object POLIT Tool Hostile Milit Strng Power 	16% noun: "Arms"--weapons 
+ARM	IAV SUPV Intrel Milit Strng Actv Power 	1% verb: To equip with weapons 
+ARMED	Modif Object Tool Milit Power Strng Hostile 	adj: Equipped with weapons 
+ARMED	IAV SUPV ED Intrel Milit Strng Actv Power Hostile 	0% verb: To equip with weapons (past tense) 
+ARMY	Noun HU COLL POLIT Milit Strng Power Hosti 	noun: The military forces of a nation 
+ARRANGE	IAV SUPV Power Actv Comform 	59% verb: To come to an agreement concerning, to prepare or plan--'we  arranged to meet them.' 
+ARREST	Neg Modif Hostile Legal Power Ngtv Strng Actv Exert 	15% noun-adj: Halting, seizure, usually by legal authority, seized, halted, stopped 
+ARROGANCE	Neg Noun Vice Power 	
+ASSERT	IAV SUPV Power Strng Actv Comform 	
+ASSESSOR	Noun HU ECON Power Role 	
+ASSIGN	DAV SUPV Power Actv Comform 	
+ASSUME	IAV SUPV Intrel Power 	44% verb: To undertake, take over the duties of, or adopt 
+ASSURE	IAV Pos SUPV Power Pstv Strng Ovrst Comform 	33% verb: To pledge, to state with confidence, to make confident 
+ASSURE	Pos Modif EMOT Power Ovrst Pstv Strng Pleasur 	17% adj: "Assured"--confident (2), guaranteed (1) 
+ASSUREDLY	Pos LY Power Ovrst Pstv Strng 	
+ASTOUND	SV Pos SUPV Actv Ovrst Strng Power 	
+ATTORNEY	Noun HU POLIT ECON Legal Power Role 	
+AUDITOR	Noun HU ECON Econ* Power Legal Role 	
+AUTHORITARIAN	Noun HU Power Strng POLIT Role 	
+AUTHORITATIVE	IPadj Pos Modif Legal Ovrst Strng Virtue Power Doctr 	
+AUTHORITY	Pos Noun Legal Power Strng 	
+AUTHORIZE	Modif Power Strng Legal Comform 	
+AUTHORIZE	IAV SUPV Power Strng Actv Comform Legal 	
+AUTOCRAT	Neg Noun HU Polit Doctr Power Strng 	
+AUTOCRATIC	IPadj Neg Modif Polit Doctr Power Strng 	
+AUTONOMOUS	IPadj Pos Modif Legal Power Undrst Strng 	
+AWARD	Pos Modif Comform Power Pstv Strng 	
+AWARD	IAV Pos SUPV Power Pstv Strng Comform Actv 	
+AX	IAV Neg SUPV Power Legal Work Actv 	
+BACK	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	1% verb: To support 
+BACK	Pos Noun Power Pstv Strng Intrel Affil Actv 	0% noun: "Backing"--support 
+BACKBONE	Pos Noun Strng Power 	
+BALLOT	Noun POLIT COM Ritual Polit* Power 	
+BANISH	Neg Modif Polit* Ngtv Strng Actv Intrel Power 	
+BANISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+BANISHMENT	Neg Noun Power Intrel Affil Polit 	
+BAR	DAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	19% verb: To obstruct or exclude 
+BEAR	IAV SUPV Work Power Strng 	21% verb: To carry, show, wear, conduct oneself, render, afford, support,  sustain, endure 
+BEAR	IAV SUPV Try Power Actv Strng 	0% idiom-verb: "Bear down"--to exert pressure on or effort toward accomplishing,  to approach 
+BEAT	IAV Neg SUPV Complt Hostile Power Strng Actv Ngtv 	88% verb: To strike repeatedly, defeat or outperform (6) 
+BENEFIT	IAV Pos SUPV Intrel Affil Power Pstv Strng 	21% verb: Gain, do good for, to 
+BENIGN	Pos Modif Pstv Psv Virtue Power Affil 	
+BESTOW	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+BICEP	Noun Bodypt Power 	
+BISHOP	Noun HU Power Relig Role 	
+BLACKMAIL	IAV Neg SUPV Actv Power Intrel Other Econ 	
+BLOODTHIRSTY	IPadj Neg Modif Hostile Strng Power 	
+BOARD	Noun HU COLL POLIT ECON Acad Power 	48% noun: An administrative body, examination ("college boards") 
+BOAST	IAV Neg SUPV Comform Power Vice Actv 	
+BOASTFUL	IndAdj Neg Modif Comform Power Vice 	
+BODY	Noun HU COLL POLIT Polit* Power Strng 	8% noun: A group of people, often political--as "electoral body," "student body" 
+BOLDNESS	Pos Noun Strng Power Virtue 	
+BOOT	IAV Neg SUPV Actv Affil Power Other 	
+BOSS	Noun HU ECON Econ* Power Strng Actv Role 	noun: Person in charge of something 
+BRAG	IAV Neg SUPV Actv Comform Power 	
+BRAVADO	Neg Noun Power Strng 	
+BRAVE	Pos Modif EVAL Virtue Pstv Strng Power 	
+BRAVERY	Pos Noun Strng Power Virtue 	
+BRAZEN	IndAdj Neg Modif Power Strng 	
+BRING	IAV SUPV Intrel Affil Power Actv 	13% verb: Bring up--to rear, educate, care for during childhood 
+BRING	IAV SUPV Power Actv Comform 	7% idiom-verb: "Bring out"--to expose, reveal, to transfer out (16) 
+CAMPAIGN	Noun POLIT Polit* Actv Power PFREQ Means 	95% noun: An effort toward a goal 
+CAPABILITY	Pos Noun Means Power Strng Pstv 	noun: Power or potential 
+CAPABLE	Pos Modif Virtue Power Pstv Strng 	adj: Having power or ability 
+CAPACITY	Noun Means Power Strng 	72% noun: Ability to do or hold 
+CAPITALIZE	IAV Pos SUPV Actv Strng Power Econ Incr Ach 	
+CAPTAIN	Noun HU Power Strng Role 	
+CAPTURE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+CAST	IAV SUPV Intrel Power Strng 	7% verb: To place in a role 
+CELEBRITY	Pos Noun HU Role Ovrst Power 	
+CENSOR	IAV Neg SUPV Actv Power Ovrst Comform 	
+CENSORSHIP	Neg Noun Power Ovrst Comform 	
+CENSURE	IAV Neg SUPV Power Actv Other Hostile Comform 	
+CERTIFICATE	Noun Object Legal Power Comnobj 	
+CERTIFICATION	Noun Comform Power Legal Ovrst 	
+CERTIFY	IAV SUPV Power Legal Ovrst Comform 	
+CHAIRMAN	Noun HU POLIT ECON Power Strng Role 	noun: Presiding officer 
+CHAIRMEN	Noun HU POLIT ECON S Power Strng Role 	
+CHAMP	Pos Noun HU Role Power Strng Ach 	
+CHAMPION	Pos Noun HU Pstv Strng Actv Power Role 	
+CHAMPIONSHIP	Pos Noun Power Strng Ach 	
+CHANCELLOR	Noun HU POLIT Polit* Power Strng Role 	noun: Title of west german chief of state, an executive title 
+CHANNEL	IAV SUPV Work Power 	
+CHARGE	Noun Means Power Strng 	35% noun: Authority, responsibility, custody 
+CHASTISE	IAV Neg SUPV Actv Power Other Hostile Comform 	
+CHIDE	IAV Neg SUPV Actv Hostile Comform Power Other 	
+CHIEF	Noun HU Power Strng PFREQ Role 	92% noun: Person highest in authority 
+CIVILIZE	IAV Pos SUPV Work Pstv Power 	
+CLASH	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+CLEAR	IAV SUPV Power Comform 	3% verb: To absolve from blame 
+CLOUT	Pos Noun Power Strng 	
+COALITION	Noun HU COLL POLIT Affil Polit* Power Strng 	
+COCKINESS	Neg Noun Emot Power Strng Vice 	
+COCKY	IndAdj Neg Modif Emot Power Strng 	
+COERCE	IAV Neg SUPV Actv Power Comform Intrel 	
+COERCION	Neg Noun Power Comform Intrel Vice 	
+COERCIVE	IPadj Neg Modif Power Comform Intrel 	
+COGENT	IndAdj Pos Modif Power Comform Strng Ovrst 	
+COLLAR	IAV SUPV Intrel Power Strng Actv 	
+COLONEL	Noun HU POLIT Milit Power Strng Role 	
+COMMAND	Noun COM Comform Power Strng Actv 	
+COMMAND	IAV SUPV Power Strng Actv Comform 	
+COMMANDER	Noun HU POLIT Milit Power Strng Actv Role 	
+COMMISSIONER	Noun HU POLIT Power Polit* Strng Role 	
+COMMITTEE	Noun HU COLL POLIT Power Strng 	noun adjective: Group of persons elected or appointed to carry out a specific  task or function 
+COMMONWEALTH	Noun HU COLL POLIT ECON Polit* Power 	
+COMPEL	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+COMPULSION	Neg Noun Power Ngtv Strng Actv Hostile Means 	
+CONCEIT	Neg Noun Vice Hostile Power 	
+CONDESCENDING	IPadj Neg Modif Power Hostile Vice 	
+CONDESCENSION	Neg Noun Vice Power Hostile Intrel 	
+CONDONE	SV Pos SUPV Actv Other Power Affil 	
+CONFIDENT	Pos Modif EMOT Power Pstv Strng Ovrst Pleasur 	
+CONFINE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+CONFISCATE	IAV Neg SUPV Actv Fetch Power 	
+CONFISCATION	Neg Noun Vice Fetch Power 	
+CONGRESS	Noun HU COLL POLIT Polit* Power Strng PFREQ 	97% noun: The legislative branch of the u.s. government 
+CONGRESSMEN	Noun HU S Polit* Power Strng Role 	
+CONQUER	IAV Pos SUPV Actv Strng Power Travel Intrel Ach 	
+CONQUEROR	Pos Noun HU Role Power Strng Travel Intrel 	
+CONSTABLE	Noun HU Legal Power Strng Role 	
+CONSTRAIN	IAV Neg SUPV Intrel Hostile Power Ngtv Strng 	
+CONSTRAINT	Neg Noun COM Comform Power Ngtv Strng 	
+CONTEST	IAV SUPV Hostile Power Strng Actv Comform 	
+CONTROL	Noun Power Strng Actv Exert 	61% noun: The agency, act or power of control 
+CONTROL	IAV SUPV Intrel Power Strng Actv 	26% verb: To restrain, direct, regulate 
+CONTROL	Modif Power Weak Psv Virtue 	7% adj: "Controlled"--regulated, restrained 
+CONTROL	Modif Power Strng Actv Virtue 	2% adj: "Controlling"--regulating, restraining 
+CONTROLLER	Noun HU Econ* Power Strng Role 	
+CONVINCE	IAV Pos SUPV Power Pstv Strng Actv Comform 	83% verb: To persuade by argument or proof, cause to believe 
+CONVINCE	Pos Modif Comform Power Pstv Strng Actv 	17% noun-adj: "Convincing"--persuasive; the act of persuading (1) 
+CONVINCED	Modif Comform Power Psv PFREQ 	85% adj: Persuaded 
+CONVINCED	IAV SUPV ED Power Psv Comform 	15% verb: Caused to believe 
+COORDINATE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+COP	Noun HU POLIT Legal Power Strng Role 	
+CORPORAL	Noun HU Milit Power Strng Role 	
+COUNCIL	Pos Noun HU COLL POLIT Power Pstv Polit* Strng 	noun-adj: A body of persons summoned or convened for deliberation, consultation  or advice 
+COUNSEL	IAV Pos SUPV Affil Power Pstv Comform 	
+COURT	Noun HU COLL POLIT Legal Power Strng Polit* 	26% idiom-noun: "Supreme court" 
+COVER	IAV SUPV Intrel Power Actv 	87% verb: To conceal, protect; to coat, be smeared or buried (25); to  encompass, deal with, range over (11); meet an expense (6) 
+CROWN	Noun Object Tool POLIT Polit* Power 	
+CROWN	DAV SUPV Complt Polit* Power 	
+CRUSHING	IndAdj Neg Modif Power Strng Hostile Exert 	
+CURB	IAV SUPV Intrel Power Strng Actv 	
+CURE	IAV Pos SUPV Complt Power Affil Pstv PFREQ 	89% verb: To restore to health 
+DAUNTLESS	IndAdj Pos Modif Strng Power Freq 	
+DEAN	Noun HU Acad Power Strng Role 	
+DECISIVE	Modif Virtue Strng Actv Ovrst Power 	
+DELEGATE	Noun HU Polit* Role Power 	
+DELEGATION	Noun HU COLL POLIT Polit* Power 	
+DELUGE	Neg Noun Ovrst Strng Power 	
+DEMAND	Noun COM Comform Power Strng 	37% noun: Strong or authoritative request or inquiry, something asked  of one, need, requirement--"he put forth several demands," "the job makes  great demands on our time" 
+DEMAND	IAV SUPV Power Strng Actv Comform 	52% verb: To ask for or about boldly or urgently, to need, require 
+DEMEAN	IAV Neg SUPV Actv Other Hostile Power 	
+DENOUNCE	IAV Neg SUPV Actv Hostile Power Comform 	
+DEPLOY	IAV SUPV Intrel Power Strng Actv 	
+DEPOSE	IAV Neg SUPV Comform Power Hostile Actv 	
+DEPRIVE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+DEROGATORY	IndAdj Neg Modif Hostile Comform Power 	
+DESIGNATE	IAV SUPV Intrel Power Actv Strng 	
+DESOLATION	Neg Noun Vice Power Emot 	
+DESTRUCTION	Neg Noun Hostile Ngtv Actv Vice Power Fail 	noun: The act of destroying, fact or state of being destroyed 
+DETAIN	IAV Neg SUPV Actv Stay Power 	
+DETER	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+DETERMINATION	Noun Strng Ovrst Actv Arousal Power 	
+DETERMINE	Modif EMOT Strng Actv Power Pleasur 	43% adj: 'determined'--resolute, unwaveringly decided 
+DETERMINE	Modif Strng Actv Power Pleasur 	2% adv: 'determinedly'--with determination 
+DICTATE	IAV Neg SUPV Actv Power Affil Polit 	
+DICTATOR	Noun HU POLIT Polit* Power Strng Role 	
+DICTATORIAL	IPadj Neg Modif Actv Power Affil Polit 	
+DIGNIFIED	IndAdj Pos Modif Strng Power 	
+DIPLOMACY	Noun POLIT Polit* Power Ritual 	
+DIPLOMATIC	Modif Comform POLIT Polit* Power 	
+DIRECT	IAV SUPV Intrel Power Strng Actv 	44% verb: To manage, control, instruct, guide, aim 
+DIRECTION	Noun Power Comform 	29% noun: Instruction or guidance to some end, or that end or purpose 
+DIRECTOR	Noun HU ECON Power Strng Role 	
+DISCHARGE	Neg Noun Ngtv Strng Actv Ritual Milit Polit* Power 	
+DISCHARGE	IAV Neg SUPV Intrel Legal Ngtv Strng Actv Power 	
+DISCIPLINE	IAV SUPV Intrel Power Strng Actv 	25% verb-adj: To train, drill--especially in a punitive sense 
+DISDAIN	Neg Noun Vice Power Eval 	
+DISMISS	IAV Neg SUPV Intrel Hostile Ngtv Actv Power 	
+DISPEL	IAV Neg SUPV Actv Comform Power Decr 	
+DISPENSE	IAV Neg SUPV Actv Decr Power 	
+DISPLACE	IAV Neg SUPV Actv Power Move 	
+DISTINGUISH	Pos Modif Virtue Pstv Power 	
+DISTINGUISHED	IndAdj Pos Modif Strng Power 	
+DOMINANCE	Pos Noun Power Other 	
+DOMINANT	Modif POLIT Power Strng Ovrst Vice 	
+DOMINATE	IAV Neg SUPV Intrel Power Ngtv Strng Actv PFREQ 	92% verb: To control 
+DOMINATE	Neg Modif Power Ngtv Strng Actv Intrel 	4% adj: "Dominating"--imperious 
+DOMINATE	Neg Modif Power Ngtv Strng Actv Intrel 	4% adv: "Dominatingly"--imperiously 
+DOMINATION	Neg Noun ECON POLIT Power Ngtv Strng Actv Vice 	
+DRAFT	Noun POLIT Ritual Milit Polit* Power 	
+DRAW	IAV SUPV Intrel Power Strng 	6% verb-idiom: "Draw the line," stop, take a negative stand 
+DRIVE	DAV SUPV Work Power Actv 	55% verb: To direct or steer, usually a car; to mean--"what is he driving at?" (0) 
+DRIVE	Noun Power Actv Strng Natpro 	6% noun-adj: Energy, need, motive ("sex drive") 
+DRIVE	Noun Power Actv Travl 	7% noun-adj: "Driving"--the act of driving; forceful (0) 
+DROVE	DAV SUPV Work ED Power Actv PFREQ 	88% verb: Past tense of "drive" (sense 1) 
+EDITOR	Noun HU Econ* Power Strng Role 	
+EDUCATE	IAV SUPV Acad Power Actv Strng Comform 	verb: To instruct. 
+EDUCATED	IAV SUPV ED Acad Power Comform 	0% verb: Taught, instructed 
+EFFECT	IAV SUPV Power Causal Strng Actv 	6% verb: To produce some result, to cause or make something happen 
+EGOTISTICAL	IndAdj Neg Modif Vice Power Hostile 	
+ELDER	Noun HU POLIT Power Strng Role 	33% noun: One of the older and more influential men of a tribe or community;  an adult (9) 
+ELECT	DAV SUPV Intrel Polit* Actv Power 	verb: To choose, usually by vote 
+ELECT	Modif POLIT Polit* Intrel Power 	0% adj: "Elected"--chosen by vote 
+ELECTION	Noun Ritual POLIT Polit* Power Actv 	noun-adj: Selection by vote 
+ELECTORAL	Modif POLIT HU COLL Power 	
+ELITE	Noun HU COLL POLIT ECON Polit* Power 	
+EMANCIPATION	Noun Virtue POLIT Polit* Power Strng 	
+EMBASSY	Noun PLACE Social POLIT Polit* Power 	
+EMINENCE	Pos Noun Strng Power Ovrst 	
+EMINENT	Pos Modif Virtue EVAL Power Pstv Strng 	
+EMPEROR	Noun HU MALE POLIT Polit* Power Strng Role 	
+EMPLOY	IAV SUPV Intrel Econ* Power Strng 	
+EMPLOYER	Noun HU ECON Power Econ* Strng Role 	noun: One who employs labor 
+EMPOWER	IAV Pos SUPV Actv Strng Power Incr 	
+EMPOWERMENT	Pos Noun Strng Power Incr 	
+ENCROACH	IAV Neg SUPV Move Power 	
+ENCROACHMENT	Neg Noun Move Power 	
+ENDORSE	IAV Pos SUPV Affil Pstv Strng Comform Power 	
+ENFORCE	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+ENSLAVE	IAV Neg SUPV Other Power Polit 	
+ENSURE	IAV Pos SUPV Intrel Power Pstv Ovrst Strng 	
+ENTANGLE	IAV Neg SUPV Other Power Polit 	
+ENTITLE	IAV SUPV Intrel Legal Power Strng 	
+ERADICATE	IAV Neg SUPV Actv Finish Decr Power 	
+ESOTERIC	IndAdj Neg Modif Affil Think Power 	
+ESTABLISH	IAV Pos SUPV Complt Power Strng Actv Ovrst PFREQ Pstv 	94% verb: To set up, institute, prove or demonstrate 
+EVICT	IAV Neg SUPV Power Legal Exert 	
+EXACT	IAV SUPV Intrel Power Strng Actv 	2% verb: To force from, obtain 
+EXAMINE	IAV SUPV Intrel Acad Power Actv 	verb: To scrutinize or test 
+EXAMINER	Noun HU Acad Power Role 	
+EXCLUDE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXCLUSION	Neg Noun Hostile Ngtv Strng Actv Intrel Power 	
+EXCUSE	IAV SUPV Power Strng Comform 	
+EXECUTIVE	Noun HU POLIT ECON Econ* Power Strng Role 	
+EXPERT	Pos Noun HU Power Pstv Strng Role 	77% noun: "One who knows a great deal about something, and nothing about  a great deal." 
+EXPLOIT	Modif Hostile Power Strng Intrel 	
+EXPLOIT	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXTERMINATE	IAV Neg SUPV Actv Finish Decr Power 	
+EXTERMINATION	Neg Noun Finish Decr Power 	
+FAMOUS	Pos Modif EVAL Power Virtue Pstv 	adj: Renowned 
+FEED	DAV SUPV Intrel Affil Power Strng 	78% verb: To supply a necessary input, usually nutritional 
+FLOOR	Noun Ritual Power Strng 	3% noun: 'have the floor'--the right to speak 
+FLOURISH	Pos Modif Pstv Strng Power Incr 	
+FORBID	Neg Modif Comform Power Ngtv Strng 	
+FORBIDDEN	Neg Modif Comform Power Ngtv 	
+FORCE	Noun Natpro Power Strng 	29% noun: Strength, power, energy, a specific power or drive 
+FORCE	IAV Neg SUPV Intrel Power Strng Actv Ngtv 	39% verb: To compel, impose, overcome the resistance of 
+FORCE	Neg Modif Power Hostile Ngtv Strng Actv Exert 	3% idiom-adv: "By force"--using physical force, generally against another's will 
+FORCE	Neg Modif Power Ngtv Psv Vice Hostile 	4% adj: "Forced"--compulsory, constrained 
+FORMIDABLE	Neg Modif Vice Strng Ngtv Power 	
+FORTIFY	IAV Pos SUPV Actv Strng Power Incr 	
+FOUND	IAV SUPV Begin Power Strng Actv 	3% verb: To establish, set up--'found a college' 
+FOUNDER	Noun HU Power Strng Role 	
+FREE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	5% verb: To make free, set at liberty, release from bondage, restraint 
+GALL	Neg Noun Emot Strng Power 	
+GENERAL	Noun HU POLIT Milit Power Strng Role 	10% noun: A very high military rank--having extended command or superior  rank (e.g. general chairman) 
+GIVER	Noun HU Power Role Affil 	
+GLORIFY	IAV Pos SUPV Actv Other Strng Affil Power 	
+GOD	Noun HU Power Relig Strng Role 	noun: Deity; includes exclamations employing the word "god" with varying  degrees of irreverence 
+GODDESS	Noun HU Female Power Relig Strng Role 	
+GODLIKE	IndAdj Pos Modif Qual Power Strng 	
+GODLINESS	Pos Noun Power Strng Virtue 	
+GOVERN	IAV SUPV Polit* Power Strng Intrel 	
+GOVERNMENT	Noun HU COLL POLIT Polit* Power Strng 	noun adjective: A specific administrative mechanism by which a body of  people is ruled, an abstract concept of the ruling power 
+GOVERNOR	Noun HU POLIT Polit* Power Strng Role 	
+GRACIOUS	Pos Modif EVAL Affil Pstv Virtue Power 	
+GRANT	IAV SUPV Intrel Affil Power Strng 	42% verb: To confer or give in promise, to allow, acknowledge 
+GRASP	Noun DET Power Strng Actv Fetch 	
+GREATNESS	Pos Noun Virtue Power Pstv Strng 	
+GRIP	Noun Strng Actv Power Fetch 	
+GRIP	IAV SUPV Fetch Strng Actv Power 	
+GROW	IAV SUPV Work Power Strng Actv 	3% verb: To raise (transitive) 
+GUARANTEE	Pos Noun COM Comform Power Pstv Strng Legal 	
+GUARANTEE	IAV Pos SUPV Power Pstv Strng Legal Comform 	
+GUARD	IAV SUPV Intrel Affil Milit Power Strng Actv 	55% verb: To protect or watch out for 
+GUIDANCE	Noun Power Strng Actv Virtue 	
+GUIDE	IAV Pos SUPV Intrel Power Strng Actv Pstv 	50% verb: To direct 
+GUSTO	Pos Noun Strng Power 	
+HAMPER	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+HAND	IAV SUPV Power Comform 	0% idiom-verb: "Hand down"--to deliver a judgment 
+HANDLE	IAV SUPV Intrel Power Actv Strng 	83% verb: To manage, guide, have under one's jurisdiction or control 
+HANDLE	Noun Power Actv Strng Work 	0% noun: 'handling'--management, dealing with 
+HAUGHTY	IndAdj Neg Modif Emot Strng Power 	
+HAUNT	IAV Neg SUPV Intrel Hostile Ngtv Power Actv 	
+HAVE	SV SUPV VERB HAV MOD Need Power Weak Psv 	7% verb: To be compelled or under obligation to do something--"have to" 
+HEAD	Noun HU Power Strng Role 	12% noun-adj: The highest in authority, to be this 
+HEAD	IAV SUPV Intrel Power Strng Actv 	1% verb: To direct or lead 
+HEADQUARTERS	Noun PLACE Social POLIT Power Strng 	
+HEAL	IAV Pos SUPV Power Pstv Strng Natpro Change 	
+HERD	IAV SUPV Intrel Power Strng Actv 	35% verb: To form and maintain such groups 
+HERO	Pos Noun HU MALE Power Pstv Strng Role Ovrst 	
+HEROIC	IndAdj Pos Modif Virtue Power Pstv Strng Ovrst 	
+HEROISM	Pos Noun Virtue Strng Power 	
+HIRE	IAV SUPV Exch Econ* Power Actv Strng 	
+HOLD	Noun Power Strng Fetch 	13% noun: Grip, control (very rarely- room, chamber) 
+HOUSE	Noun HU COLL POLIT Polit* Power 	2% noun-adj: Legislative body (includes idiom "house of representatives") 
+IMMORTAL	IndAdj Pos Modif Power Stay Ovrst 	
+IMPACT	Noun Natpro Power Strng 	
+IMPAIR	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile Power 	
+IMPEL	IAV SUPV Exert Power Strng Actv 	
+IMPLEMENTATION	Noun Means Power Strng Actv 	
+IMPOSE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+IMPRISON	IAV Neg SUPV Actv Other Power Legal 	
+IMPUNITY	Pos Noun Power Legal 	
+INDEPENDENT	Pos Modif Virtue Pstv Strng Power 	49% adj: Self-reliant, autonomous, having independence (refers to a person) 
+INDISPENSABILITY	Pos Noun Strng Power Virtue 	
+INDOMITABLE	IndAdj Pos Modif Power Strng 	
+INDUCE	IAV SUPV Strng Actv Begin Power 	
+INFLUENCE	Noun POLIT Power Strng Virtue 	50% noun: Power to produce effects 
+INFLUENCE	IAV SUPV Intrel Power Strng Actv 	48% verb: To exercise such power 
+INFLUENTIAL	Modif POLIT Power Strng Virtue 	
+INITIATE	IAV SUPV Begin Strng Actv Power 	
+INSIST	IAV SUPV Power Strng Actv Comform 	verb: To be emphatic or persistent in asserting or demanding 
+INSISTENCE	Noun COM Comform Power Strng Actv 	
+INSPECT	IAV SUPV Percv Actv Power 	
+INSPECTION	Noun Percv Actv Power 	
+INSTRUCT	IAV SUPV Acad Power Actv Strng Comform 	
+INSTRUCTION	Noun COM Comform Acad Actv Power Strng 	
+INSTRUCTOR	Noun HU Acad Power Strng Role 	noun: One who teaches 
+INTIMIDATE	IAV Neg SUPV Actv Strng Power Other 	
+INVINCIBLE	IndAdj Pos Modif Strng Power Virtue Negate 	
+INVOLVE	IAV SUPV Intrel Power Strng 	6% verb: To engage or cause to become involved 
+INVULNERABLE	IndAdj Pos Modif Strng Power Virtue Negate 	
+JAIL	DAV Neg SUPV Intrel Hostile Legal Power Ngtv Strng Actv 	4% verb: To imprison 
+JUDGE	IAV SUPV Legal Actv Solve Power Strng 	49% verb: To form an opinion, estimate, generally moral or evaluative,  usually about human matters; to pass sentence in a court of law (2) 
+JUDGE	Noun HU POLIT Legal Power Strng Actv Role 	41% noun: An appointed legal arbitrator 
+JUDGE	Noun HU Power Strng Actv Role 	10% noun: A person who evaluates or has the ability to evaluate--"he is  a judge of character" 
+JUDGMENT	Noun Means Power Strng 	21% noun: The faculty or capacity of decision 
+JUNTA	Noun HU COLL POLIT Legal Polit* Power 	
+JURISDICTION	Noun Doctr POLIT Legal Polit* Power Strng 	
+JUROR	Noun HU Legal Power Strng Role 	
+JURY	Noun HU COLL POLIT Legal Power Strng 	
+JUSTICE	Pos Noun ABS Abs* POLIT Doctr Legal Power Pstv 	
+KEEP	IAV SUPV Intrel Hostile Power Strng Actv 	4% verb: Bar, restrain, prevent, preserve against 
+KEEPER	Noun HU Power Strng Role 	
+KING	Noun HU MALE POLIT Polit* Power Strng Role 	noun-adj: A male sovereign or monarch 
+LAID	IAV Neg SUPV Intrel Econ* Power Hostile Ngtv 	28% idiom-verb: "Laid off"--discharged employees 
+LANDLORD	Noun HU ECON Econ* Power Strng Role 	
+LAY	IAV Neg SUPV Intrel Econ* Hostile Power Ngtv Strng Actv 	1% idiom-verb: "Lay off"--discharge employees 
+LEAD	IAV SUPV Intrel Power Strng Actv 	42% verb: To supply direction, orientation, guidance, to be in the vanguard 
+LEADER	Noun HU POLIT Power Strng Actv Role 	noun: One who guides or leads others 
+LEADERSHIP	Noun ABS Abs* POLIT Doctr Power Strng 	noun: Control, direction, or the quality or role of giving direction or  exercising control. 
+LEAVE	Noun COM Comform Power 	1% noun: Permission to do something, or the time in which such permission  is in force 
+LEGISLATION	Noun Doctr POLIT Legal Polit* Power Strng 	noun: A law or body of laws enacted 
+LEGISLATIVE	Modif Doctr POLIT Legal Polit* Strng Power 	
+LEGISLATOR	Noun HU POLIT Legal Power Strng Role Polit* 	
+LET	IAV SUPV VERB MOD Intrel Power Strng 	63% verb: To allow, release, relax control, lease 
+LET	IAV SUPV Intj Power Intrel 	33% verb: Used as an auxiliary in the hortatory 
+LIBERATE	IAV Pos SUPV Actv Other Power Affil 	
+LIBERATION	Noun Doctr POLIT Power Polit* Strng Actv 	
+LIBERTY	Pos Noun ABS Abs* Doctr Polit* Pstv Power 	
+LIEUTENANT	Noun HU POLIT Milit Power Strng Role 	
+LIMIT	Neg Modif Power Actv Vice Ngtv 	2% adj: "Limiting"--restricting 
+LOOK	IAV SUPV Intrel Power Strng Actv 	1% verb-idiom: "Look after"--to minister to, care for, concern oneself with 
+LORD	Noun HU MALE POLIT Polit* Power Role 	noun: The supreme being or his secular counterpart, one who has dominion  over others, a master, chief, or ruler. 
+MAINTAIN	IAV SUPV Power Strng Actv Comform 	14% verb: To assert, contend 
+MAJORITY	Noun HU COLL POLIT Power Strng Ovrst 	noun: The number greater than half or the excess of this greater number--state  of being major or greater, superiority. 
+MAKE	IAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	12% verb: Coerce, force to, cause to--"make him go" 
+MANAGE	IAV SUPV Intrel Power Strng Actv 	26% verb: To handle, control, get along. 
+MANAGE	Modif Power Strng Actv Intrel 	6% adjective: "Managing"--directing, in charge 
+MANAGEMENT	Noun HU COLL ECON Econ* Power Strng Actv 	
+MANAGER	Noun HU ECON Econ* Power Strng Role 	
+MANAGERIAL	Modif ECON Econ* Power Strng HU Role 	
+MANIPULATE	IAV Neg SUPV Intrel Ngtv Strng Actv Power 	
+MARSHALL	Noun HU POLIT Legal Power Role 	
+MASTER	Noun HU Power Strng Role 	79% noun-adj: Person or thing which exercises control or is of the greatest  importance 
+MASTER	IAV SUPV Power Strng Actv Complt 	21% verb: To gain control of someone or something 
+MASTERFUL	IndAdj Pos Modif Power Strng Know 	
+MAY	SUPV VERB MOD PFREQ Intrel Power 	97% verb: Used to express possibility, opportunity, permission, or wish 
+MAYOR	Noun HU POLIT Polit* Power Strng Role 	
+MENTOR	Pos Noun HU Role Power Know 	
+MERCILESS	IPadj Neg Modif Power Strng Hostile 	
+MIGHT	Noun Virtue POLIT Polit* Power Strng Ovrst 	2% noun: Force or power of any kind. 
+MIGHTY	Pos Modif EVAL Power Strng Pstv Ovrst Virtue 	
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	65% idiom-noun: "Prime minister"--executive head of government 
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	16% noun: Person in charge of a department of state, a diplomatic officer 
+MINISTRY	Noun HU COLL POLIT Polit* Power Strng 	
+MOCK	IAV Neg SUPV Actv Comform Other Power 	
+MOCKERY	Neg Noun Comform Other Power 	
+MONITOR	IAV SUPV Intrel Power Strng 	
+MONOPOLY	Noun HU COLL ECON Econ* Strng Power 	
+MOVE	IAV SUPV Intrel Power Strng Actv 	2% verb: To rouse by appeal to the mind or emotions, to influence 
+MUFFLE	IAV SUPV Exert Power Strng Actv 	
+NEUTRALIZE	IAV Neg SUPV Actv Other Power Strng 	
+NIX	IAV Neg SUPV Finish Power 	
+NOBILITY	Pos Noun HU Role Coll Power Econ 	
+NOBLEMAN	Pos Noun HU Role Power Econ 	
+NOMINATION	Noun POLIT Polit* Power Ritual 	
+OBEY	IAV Pos SUPV Intrel Power Subm Pstv Weak Psv 	verb: To comply 
+OBLITERATE	IAV Neg SUPV Finish Power Hostile 	
+OFFICER	Noun HU POLIT Power Strng Role 	noun: One who holds a position of rank or authority in an organi- zation,  especially a policeman. 
+OFFICIAL	Noun HU POLIT Power Legal Strng Role 	69% noun: A person granted some authority 
+OFFICIATE	IAV SUPV Intrel Power Legal Strng 	
+OPPRESS	IAV Neg SUPV Power Actv Hostile Other 	
+OPPRESSION	Neg Noun Power Hostile Subm Intrel 	
+OPPRESSIVE	IndAdj Neg Modif Emot Pain Power Subm 	
+ORDER	Noun COM Power Strng Comform Actv 	17% noun: Command, directive, request 
+ORDER	IAV SUPV Power Strng Actv Comform 	7% verb: To command, direct, request; to arrange methodically or properly (2) 
+ORDINANCE	Noun COM Comform Legal Power Strng 	
+ORGANIZE	IAV Pos SUPV Rel Power Pstv Strng Actv 	75% verb: To establish, to systematize 
+OUST	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+OUTFIT	IAV SUPV Intrel Power Strng Actv 	
+OVERBEARING	IndAdj Neg Modif Intrel Power 	
+OVERCAME	IAV SUPV Intrel Power Strng Actv 	
+OVERCOME	IAV Pos SUPV Intrel Power Strng Actv 	
+OVERPOWER	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERRUN	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERSEER	Noun HU Econ* Power Strng Role 	
+OVERTHROW	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERWHELM	IAV SUPV Power Strng Arousal Intrel Ovrst 	
+OVERWHELMING	IndAdj Neg Modif Incr Power 	
+PALACE	Noun PLACE Social POLIT Polit* Power 	
+PARAMOUNT	IndAdj Pos Modif Ovrst Power Virtue 	
+PARDON	Pos Noun COM Comform Power Pstv Actv Strng 	
+PARDON	DAV Pos SUPV Power Pstv Actv Strng Comform 	
+PARLIAMENT	Noun HU COLL POLIT Polit* Power Strng 	
+PASS	Noun Object COM Comnobj Power 	1% noun: A certificate or other token giving permission or authorization;  a route of access (0) 
+PATROL	Noun HU COLL POLIT Milit Strng Power 	
+PATROL	IAV SUPV Travl Milit Power Strng 	
+PATRON	Pos Noun HU ECON Econ* Power Pstv Strng Role 	
+PATRONAGE	Pos Noun Doctr ECON Econ* Power Pstv Strng 	
+PATRONIZE	IAV Neg SUPV Power Actv Other 	
+PERMISSION	Pos Noun COM Comform Power Pstv Strng Psv 	
+PERMIT	IAV Pos SUPV Intrel Power Pstv Strng Psv PFREQ 	94% verb: To allow, to make possible 
+PERMIT	Noun Object COM Legal Comnobj Power 	6% noun: A written license 
+PERSUADE	IAV SUPV Power Strng Actv Comform 	
+PICK	IAV Neg SUPV Intrel Hostile Power Actv Strng Ngtv 	9% idiom-verb: "(to) pick on, a fight"--to tease, bully, encourage a fight 
+PITILESS	IPadj Neg Modif Strng Power 	
+PITY	SV SUPV Intrel Affil Power Psv 	
+PLEASE	IAV SUPV Power Strng Actv Pleasur 	3% verb: To will, like, desire..."to do what one pleases" 
+POLICE	Noun HU COLL POLIT Legal Power Strng 	noun-adjective: Of or pertaining to officers of the law. 
+POLICEMAN	Noun HU MALE POLIT Legal Power Strng Role 	
+POLICEMEN	Noun HU MALE POLIT S Legal Power Strng Role 	
+POLITICIAN	Noun HU POLIT Polit* Power Strng Role 	noun: One versed or experienced in politics 
+POMPOUS	IndAdj Neg Modif Power 	
+POPE	Noun HU MALE POLIT ECON Power Relig Role 	
+POSSE	Noun HU COLL Legal Power Hostile Strng 	
+POSSESS	DAV SUPV Rel Power Strng 	
+POTENCY	Pos Noun Qual Quan Strng Power 	
+POWER	Noun Power Strng Virtue 	71% noun-adj: Control, influence, strength, ability, faculty; physical energy (14) 
+POWER	Noun HU COLL POLIT Power Strng Polit* 	23% noun: Nation, group or individual having power 
+POWERFUL	Modif Polit* Power Strng Virtue 	adj: Having or exerting great force 
+PREACHER	Noun HU Power Relig Role 	
+PREDOMINATE	IAV SUPV Strng Ovrst Intrel Power 	
+PREEMINENT	IndAdj Pos Modif Strng Power Eval 	
+PRESIDE	IAV SUPV Intrel Power Strng Actv 	
+PRESIDENCY	Noun Doctr POLIT Polit* Power Strng 	
+PRESIDENT	Noun HU POLIT Polit* Power Strng Role 	noun: Highest officer of a country or other body. 
+PRESIDENTIAL	Modif POLIT Polit* Power Strng HU Role 	
+PRESS	Noun Object Tool Power 	10% noun: A mechanical device for crushing or printing 
+PRESSURE	Noun Natpro Power Strng PFREQ 	86% noun-adj: The exertion of psychological, social, or political forces  upon an individual or group, "he could not stand the pressure so he quit";  the physical exertion of force of one object, fluid, etc., resting on another (0) 
+PRESSURE	IAV SUPV Exert Power Strng Actv 	14% verb: To attempt to influence or force 
+PRESTIGE	Pos Noun Virtue Power Pstv Strng 	
+PREVENT	IAV SUPV Intrel Power Strng Actv 	verb: Hinder, keep from occurring 
+PREVENTION	IAV SUPV Intrel Power Strng 	
+PREVENTIVE	Noun Power Strng Causal 	
+PRIEST	Noun HU Power Relig Role 	noun: One authorized or ordained to perform religious rites 
+PRINCE	Noun HU MALE POLIT Polit* Power Strng Role 	noun: The one of highest rank, a sovereign, a title of nobility. 
+PRINCIPAL	Noun HU Power Strng Role 	44% noun: A leader, chief, or head 
+PRIVILEGE	Noun Virtue Power Strng 	
+PROCLAIM	IAV SUPV Power Strng Comform 	
+PROCLAMATION	Noun COM Comform POLIT Power Strng 	
+PROCTOR	Noun HU Acad Power Strng Role 	
+PROFESSOR	Noun HU Acad Power Role 	noun: A college-level teacher 
+PROHIBIT	IAV Neg SUPV Power Ngtv Strng Actv Intrel Legal 	
+PROHIBITION	Neg Noun Doctr POLIT Power Ngtv Strng Actv Legal 	
+PROHIBITIVE	Neg Modif Power Ngtv Strng Ovrst Vice 	
+PROMINENT	Pos Modif Virtue Pstv Strng Power 	
+PROMOTE	IAV SUPV Intrel Econ* Power Strng Actv 	
+PROMPT	IAV Pos SUPV Intrel Power Pstv Strng 	
+PROPONENT	Noun HU Power Strng Role 	
+PROPRIETOR	Noun HU ECON Econ* Power Legal Strng Role 	
+PROTECT	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	verb: To defend or guard from attack, damage, loss, etc. 
+PROTECTION	Pos Noun Power Pstv Strng Virtue 	noun: Safeguard 
+PROVIDE	IAV Pos SUPV Intrel Affil Power Pstv Strng PFREQ 	97% verb: To furnish, supply, afford 
+PROVIDENCE	Pos Noun POLIT Power Relig Pstv Strng Virtue 	
+PUNISH	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+QUARTER	DAV SUPV Intrel Power Affil 	4% verb: To provide with housing 
+QUEEN	Noun HU Female POLIT Polit* Power Role 	
+QUIET	DAV SUPV Intrel Power Strng Actv 	7% verb: To silence 
+REAFFIRM	IAV SUPV Strng Power Comform 	
+REASSURE	IAV Pos SUPV Pstv Strng Affil Power Comform 	
+RECLAIM	IAV Pos SUPV Actv Fetch Power Comform Exert 	
+RECRUIT	IAV SUPV Intrel Power Milit Strng Actv 	
+RECRUITMENT	Noun Means Strng Actv Power 	
+RECTOR	Noun HU Power Relig Role 	
+REGAL	IndAdj Pos Modif Power Virtue 	
+REGIME	Noun HU COLL POLIT Polit* Power Strng 	
+REGULATE	IAV SUPV Intrel Strng Actv Power 	
+REINFORCE	IAV SUPV Intrel Strng Actv Power 	
+REINSTATE	IAV Pos SUPV Actv Other Polit Legal Power 	
+RELENTLESS	Modif Power Strng Vice 	
+RELIEVE	IAV SUPV Intrel Power Strng 	75% verb: To alleviate, disburden, ease 
+REPRESS	IAV Neg SUPV Power Actv Feel 	
+REPULSE	IAV Neg SUPV Intrel Ngtv Strng Actv Power Hostile 	
+REQUIRE	IAV SUPV Intrel Power Actv Strng PFREQ 	98% verb: To need, demand, compel 
+REQUIRE	Modif Means Power 	2% adj: "Required", obligatory, needed 
+REQUIREMENT	Noun Power Strng Means 	
+RESCUE	Pos Noun Affil Power Pstv Actv Virtue 	
+RESPLENDENT	IndAdj Pos Modif Power Virtue Dimn 	
+RESPONSIBILITY	Pos Noun ABS Abs* Virtue Power Pstv 	noun: Obligation or duty, control or management of something, liability  in case of failure 
+RESPONSIBLE	Pos Modif Virtue Pstv Power 	69% adj: Reliable, having responsibility 
+RESTRAIN	IAV SUPV Intrel Hostile Power Strng Actv 	
+RESTRAINT	Noun Power Strng Arousal 	
+RESTRICT	IAV Neg SUPV Intrel Hostile Power Strng Actv PFREQ Ngtv 	96% verb: To confine or limit 
+RESTRICT	Neg Modif Space Power Ngtv Weak Psv 	4% adj: "Restricted", confined, limited 
+RICH	Pos Noun Object ECON Econ* Power Pstv Strng Comnobj 	11% noun: Monetary wealth, "riches" 
+RICHES	Pos Noun Econ Power Object 	
+RICHNESS	Pos Noun Econ Power 	
+RIGHT	Pos Noun ABS Abs* Means Legal Power Pstv Strng 	14% noun: Legal or moral prerogative 
+RIGHTEOUS	IndAdj Pos Modif Ought Power 	
+RIGHTEOUSNESS	Pos Noun Ought Power 	
+ROPE	DAV SUPV Intrel Power Actv 	2% verb: To lasso, to tie 
+ROYAL	Modif POLIT Polit* Power Strng HU COLL 	
+ROYALTY	Noun HU COLL POLIT Polit* Power Strng 	
+RUGGED	Modif Qual Power Strng Psv 	
+RULE	Noun COM Comform Power Strng Legal 	58% noun: Regulation, standard, guideline 
+RULE	IAV SUPV Intrel Polit* Power Strng Actv 	13% verb: To govern, guide, determine 
+RULE	Modif Polit* Strng Actv Intrel Power 	12% noun-adj: "Ruling", judgement, determination, governing, in power 
+RULER	Noun HU POLIT Power Role Polit* 	
+RUN	IAV SUPV Intrel Power Actv Strng 	9% verb: To manage, direct, control, guide, drive 
+SAFEGUARD	IAV Pos SUPV Actv Other Power 	
+SANCTION	Noun ECON POLIT COM Comform Legal Power Strng 	
+SANCTION	IAV SUPV Intrel Legal Power Strng Psv 	
+SAY	Noun Means Power Strng 	6% noun: The right or opportunity to speak, decide, exercise, influence 
+SCHOOL	IAV SUPV Acad Actv Comform Power 	0% verb: To teach 
+SCOFF	IAV Neg SUPV Comform Power 	
+SELECT	IAV SUPV Actv Solve Power 	
+SELF-CONTAINED	Pos Modif Virtue Power Pstv Strng 	
+SENATE	Noun HU COLL POLIT Polit* Power Strng 	
+SENATOR	Noun HU POLIT ECON Polit* Power Strng Role 	
+SENTENCE	DAV Neg SUPV Legal Power Ngtv Strng Actv Comform 	
+SEQUESTER	IAV Neg SUPV Stay Power Legal 	
+SERGEANT	Noun HU Power Milit Role 	
+SETTLE	IAV SUPV Intrel Power Actv Strng 	31% verb: To resolve a dispute or problem, to calm. 
+SHAMELESS	IPadj Neg Modif Emot Power Vice 	
+SHELTER	IAV Pos SUPV Intrel Power Pstv Strng Affil 	
+SHERIFF	Noun HU POLIT Legal Power Strng Role 	
+SHIELD	IAV Pos SUPV Actv Other Power Affil 	
+SHIP	Noun HU COLL POLIT Polit* Power 	2% idiom-noun: "Ship of state" - government 
+SHOW	IAV SUPV Power Strng Actv Comform 	1% verb: "Show (in, around, out)"--to usher (in, around, out) 
+SHUT	IAV SUPV Stay Power Actv Strng 	15% verb: "Shut up"--confine 
+SIR	Noun HU MALE Role Power 	noun-adj: Title of respect applied to men 
+SMOTHER	IAV Neg SUPV Actv Power Intrel Compl 	
+SOVEREIGN	Modif Doctr POLIT Polit* Power Strng 	
+SOVEREIGNTY	Noun Doctr POLIT Polit* Power Strng 	
+SPARE	DAV Pos SUPV Intrel Affil Power Pstv Strng 	48% verb: To save from ill fortune 
+SPEAK	IAV SUPV Power Actv Comform 	5% verb: 'speak out'--speak audibly or clearly, without hesitation, freely 
+SPOKE	IAV SUPV Power Actv Comform 	1% verb: "Spoke out"--expressed an emphatic opinion, spoke loudly, freely, clearly 
+SPONSOR	IAV SUPV Intrel Power Strng Actv 	
+SPUR	IAV SUPV Intrel Power 	
+SQUAD	Noun HU COLL Power 	
+STABILIZE	IAV Pos SUPV Power Stay Pstv Strng Actv Ovrst 	
+STANDARD	Noun ABS Abs* Power PFREQ Virtue 	96% noun: An approved basis of comparison 
+STATE	Noun HU COLL POLIT Polit* Power Strng 	39% noun: Body politic--area of government 
+STATELY	Pos LY Virtue Power Pstv 	
+STATESMAN	Noun HU MALE POLIT Polit* Power Strng Role 	
+STATESMEN	Noun HU MALE POLIT S Polit* Power Strng Role 	
+STATUESQUE	IndAdj Pos Modif Strng Power 	
+STATUS	Noun ECON POLIT Means Power 	81% noun-adj: Condition or rank (socially, legally, financially) ("status"  often implies "high status" (6)) 
+STATUTE	Noun COM Comform POLIT Legal Power 	
+STATUTORY	Modif Doctr POLIT Legal Power 	
+STEER	DAV SUPV Travl Power Actv 	
+STEP	IAV SUPV Intrel Power Actv Strng 	8% verb: "To step in"--to intervene 
+STIFLE	IAV Neg SUPV Intrel Ngtv Strng Power Hostile Actv 	
+STILL	IAV SUPV Intrel Power Strng Actv 	0% verb: To make quiet 
+STIMULATE	IAV Pos SUPV Actv Other Power Causal 	
+STIPULATE	IAV SUPV Legal Comform Power 	
+STIPULATION	Noun COM Comform Legal Power 	
+STOP	DAV SUPV Intrel Hostile Power Actv Strng 	18% verb: To restrain, hinder, prevent 
+STRENGTH	Noun Virtue Strng Power 	noun: The quality of being strong or powerful physically, intellect- ually,  morally, etc. 
+STRENGTHEN	IAV SUPV Incr Strng Actv Power PFREQ 	91% verb: To make strong 
+STRENGTHEN	Noun Strng Incr Power Actv 	9% noun: "Strengthening" - gain or improvement in strength 
+STRICT	Neg Modif Power Ngtv Strng Vice 	52% adj: Exact, severe, rigorous, punctilious 
+STRICT	Neg Modif Power Ngtv Strng Vice 	9% adj: "Stricter" - comparative form of sense 1 
+STRONG	Modif Qual Strng Power 	67% adjective: Powerful, intense, secure 
+STRONG	Modif Qual Strng Power 	9% adjective: "Stronger"--comparative 
+STRONG	Modif Qual Strng Power 	5% adjective: "Strongest"--superlative 
+STRUT	IAV Pos SUPV Actv Travel Power 	
+STUD	Pos Noun HU Role Male Power 	
+STURDY	Pos Modif Qual Power Pstv Strng 	
+SUBDUE	IAV SUPV Intrel Strng Actv Power Hostile 	
+SUBVERSION	Neg Noun Power Hostile Exert Intrel 	
+SUBVERT	IAV Neg SUPV Actv Power Hostile Exert Intrel 	
+SUFFRAGE	Noun POLIT Polit* Power Virtue 	
+SUMMON	Noun Object COM Legal Power Strng Actv Comnobj 	
+SUMMON	IAV SUPV Legal Power Strng Actv Comform 	
+SUPERINTENDENT	Noun HU ECON Power Strng Role 	
+SUPERIOR	Pos Modif Virtue EVAL Pstv Strng Power 	
+SUPERIORITY	Pos Noun Virtue Pstv Strng Power 	
+SUPPLY	IAV SUPV Intrel Affil Power Strng Actv 	32% verb: To provide 
+SUPPORT	IAV Pos SUPV Intrel Power Affil Pstv Strng Actv 	44% verb: Sustain, provide for, maintain, encourage, back--"i support  the program" (48); to hold up (0) 
+SUPPORT	Pos Noun Affil Power Pstv Strng Virtue Actv 	44% noun: Encouragement, assistance, maintenance, backing--"he has our  full support," "emotional support," "financial support" (46); a brace  or foundation (2) 
+SUPPORT	Pos Modif Affil Power Pstv Strng Actv Virtue 	2% noun-adj: "Supporting"--auxiliary, aiding (2); holding up (0) 
+SUPPORT	Pos Modif Affil Power Pstv Psv Weak Virtue 	5% adj: "Supported"--sustained, backed, encouraged, aided (5) held up (0) 
+SUPPOSE	IAV SUPV Intrel Psv Power Subm 	36% adj: "Supposed (to)"--expected, under obligation 
+SUPPRESSION	Neg Noun Ngtv Strng Actv Power Hostile Intrel 	
+SUPREMACY	Noun Power Strng Virtue 	
+SUPREME	Pos Modif Comp EST EVAL Virtue Pstv Strng Power Ovrst 	5% adj: Highest, utmost 
+SUPREME	Pos LY Virtue Pstv Strng Power Ovrst 	5% adv: "Supremely" - ultimately 
+SURMOUNT	IAV Pos SUPV Actv Travel Power Other 	
+SURPASS	IAV Pos SUPV Actv Travel Power Other 	
+SURVEILLANCE	Noun Percv POLIT Power Strng Actv 	
+SURVIVOR	Pos Noun HU Role Power Stay 	
+TAKE	IAV SUPV Intrel Power Strng Actv 	3% verb-idiom: "Take advantage (of)"--make use (of), occasionally with  connotation of unfairness 
+TAKE	IAV SUPV Intrel Strng Actv Power Affil 	5% verb-idiom: "Take care (of)"--cure or solve, attend to, protect or nurse 
+TAKE	IAV SUPV Intrel Power Strng Actv 	2% verb-idiom: "Take over"--assume control 
+TAUGHT	IAV SUPV ED Acad Power Actv Comform 	verb: Past tense of teach 
+TEACH	IAV SUPV Acad Power Actv Comform 	61% verb: Impart knowledge or skill, give instruction, train; includes  gerundive forms like "he will start teaching soon." 
+TEACHER	Noun HU Acad Power Role 	noun: One who instructs, especially as a profession. 
+TEND	IAV SUPV Intrel Power Strng Actv Affil 	6% verb: To care for 
+TERM	Noun COM Comform Power 	9% noun: Conditions or stipulations 
+TEST	Noun Ritual Power Acad 	66% noun-adj: Examination, indication of competence 
+TEST	IAV SUPV Actv Intrel Power Acad 	28% verb: To examine, to determine competence 
+THWART	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+TRAIN	IAV SUPV Intrel Power Actv 	11% verb: To subject to instruction and/or discipline 
+TRAP	DAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	43% verb: To capture or ensnare 
+TREASURER	Noun HU ECON Econ* Power Role 	
+TRIUMPH	Pos Noun Goal Pstv Strng Power 	
+TRIUMPH	IAV Pos SUPV Complt Pstv Strng Power 	
+TRIUMPHAL	IndAdj Pos Modif Strng Power 	
+TRIUMPHANT	Pos Modif EMOT Power Pstv Strng Pleasur 	
+TROPHY	Pos Noun Object Power 	
+TRUST	Noun HU COLL Econ* Power Strng 	0% noun: A monopolistic organization, usually economic 
+TRY	IAV SUPV Intrel Legal Power Actv Hostile 	1% verb: To ascertain th rough judiciary means 
+TYRANNY	Neg Noun POLIT Polit* Power Ngtv Strng Vice 	
+UNDAUNTED	Modif Negate Strng Virtue Power 	
+UNDER	PREP Power Intrel Subm 	51% prep-adv: Subject to the influence, authority, guidance, supervision  or direction of 
+UNDISPUTED	Modif Negate Ovrst Strng Intrel Power 	
+UNION	Noun HU COLL POLIT Polit* Power Strng 	31% noun-adj: The state of being united, usually a political union 
+UNRESTRICTED	Modif Power Negate Ovrst EVAL Qual 	
+UNWAVERING	Modif Persist Negate Ovrst Strng Power 	
+UNWILLING	Neg Modif Hostile Negate Ngtv Pain Power Hostile 	
+UNWILLINGNESS	Neg Noun Hostile Negate Ngtv Strng Pain Power 	
+URGE	IAV SUPV Intrel Power Strng Actv 	
+USURP	IAV Neg SUPV Actv Hostile Polit Fetch Exert Intrel Power 	
+VANQUISH	IAV Pos SUPV Actv Power Exert Other 	
+VETO	DAV Neg SUPV Actv Comform Finish Power 	
+VICE	Noun HU POLIT ECON Polit* Power Role 	65% adj: Deputy--e.g. "vice president" 
+VICTOR	Noun HU POLIT Power Strng Role 	
+VICTORIOUS	IndAdj Pos Modif Power Virtue Strng 	
+VICTORY	Noun Goal POLIT Polit* Power Strng 	noun: Triumph 
+WAY	IAV SUPV Intrel Power 	0% verb: 'have one's way'--prevail 
+WEALTH	Noun Virtue ECON Econ* Power Strng PFREQ 	96% noun: Capital and/or material resources, riches 
+WIN	Noun Goal Strng Power 	2% noun-adj: "Winning" - victory, producing victory 
+WIN	Noun Goal Strng Power 	0% noun: "Win" - a victory 
+WINNER	Noun HU Role Power Strng 	
+WITHSTAND	IAV SUPV Intrel Strng Actv Power Hostile 	
+WORD	Noun Power Comform 	1% noun: 'the final word,' 'the last word'--the conclusive comment 
+WORLD-FAMOUS	Pos Modif Virtue Power Pstv Strng 	

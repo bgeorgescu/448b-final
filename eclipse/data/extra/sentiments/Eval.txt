@@ -1,0 +1,206 @@
+word	tags	comments
+ABOMINABLE	IndAdj Neg Modif Eval Vice Strng Ovrst 	
+ADMIRABLE	IPadj Pos Modif Eval Virtue 	
+ADORABLE	IndAdj Pos Modif Eval Virtue 	
+ADORN	IAV Pos SUPV Actv Eval Strng 	
+ADORNMENT	Pos Noun Eval Virtue 	
+ADULATION	Pos Noun Comform Emot Pleasure Strng Eval 	
+ADVISABLE	IPadj Pos Modif Eval Qual Know 	
+AFFIRMATION	Pos Noun Eval Comform 	
+ALLOWABLE	IPadj Pos Modif Eval Qual 	
+APPLAUD	DAV Pos SUPV Actv Comform Eval 	
+APPRECIATIVE	IPadj Pos Modif Intrel Eval Pleasure 	
+ARDUOUS	IndAdj Neg Modif Vice Eval 	
+ATROCIOUS	IndAdj Neg Modif Vice Ngtv Ovrst Eval Vice 	
+ATTRACTIVENESS	Pos Noun Eval Qual 	
+AUDACIOUS	IndAdj Neg Modif Eval Vice Strng Ovrst 	
+AUSPICIOUS	IndAdj Pos Modif Eval Qual 	
+AUSTERE	IndAdj Neg Modif Eval Hostile Strng 	
+BEAUTEOUS	IndAdj Pos Modif Eval Qual 	
+BEAUTIFY	IAV Pos SUPV Actv Strng Eval 	
+BEFIT	IAV Pos SUPV Psv Eval 	
+BEFITTING	IndAdj Pos Modif Psv Eval 	
+BENEFICENT	IPadj Pos Modif Eval Virtue 	
+BLAMELESS	IndAdj Pos Modif Eval Legal Virtue 	
+BLISSFUL	IndAdj Pos Modif Eval Emot Pleasure 	
+BOGUS	IndAdj Neg Modif Eval Vice 	
+BONNY	IndAdj Pos Modif Eval Virtue 	
+CHIC	IndAdj Pos Modif Eval Qual 	
+COARSENESS	Neg Noun Vice Qual Eval 	
+COLOSSAL	IndAdj Pos Modif Ovrst Eval Qual 	
+COMELY	IndAdj Pos Modif Eval Qual 	
+COMMENSURATE	IPadj Pos Modif Rel Eval Qual 	
+COMPETENCE	Pos Noun Virtue Pstv Strng Know Eval 	
+COMPETENCY	Pos Noun Strng Know Eval 	
+COMPLEMENTARY	IndAdj Pos Modif Eval Qual Rel 	
+CONDEMNATION	Neg Noun Vice Hostile Eval 	
+COUNTERFEIT	IndAdj Neg Modif Eval Vice 	
+COZY	IndAdj Pos Modif Eval Qual Pleasure 	
+CREDENTIALS	Pos Noun Qual Eval Affil 	
+CREDIBILITY	Pos Noun Eval Qual 	
+CREDIBLE	IndAdj Pos Modif Eval Qual 	
+CRUDE	IndAdj Neg Modif Eval Ovrst 	
+CUMBERSOME	IndAdj Neg Modif Qual Eval Strng 	
+CUTE	IndAdj Pos Modif Eval Virtue 	
+DAMNABLE	IndAdj Neg Modif Vice Hostile Eval 	
+DAMNED	IndAdj Neg Modif Vice Hostile Eval 	
+DARING	IndAdj Pos Modif Virtue Pstv Strng Eval Qual 	
+DARLING	IndAdj Pos Noun HU Pstv Role Affil Eval Virtue 	
+DECEIT	Neg Noun Vice Eval Hostile 	
+DECEITFUL	IPadj Neg Modif Vice Eval Hostile 	
+DECORATE	IAV Pos SUPV Actv Incr Eval Pleasure 	
+DECORATIVE	IndAdj Pos Modif Pleasure Eval 	
+DELICACY	Pos Noun Eval Qual Ovrst 	
+DEPRAVED	IndAdj Neg Modif Vice Eval 	
+DESIROUS	IndAdj Pos Modif Eval Qual Need 	
+DESPICABLE	IndAdj Neg Modif Eval Vice 	
+DETESTABLE	IndAdj Neg Modif Vice Eval 	
+DISAPPROVAL	Neg Noun Vice Eval 	
+DISCERN	IAV Pos SUPV Actv Percv Solve Eval 	
+DISCORDANT	IndAdj Neg Modif Eval Hostile Comform 	
+DISCREPANT	IndAdj Neg Modif Eval Comform Hostile 	
+DISCRIMINATE	IAV Neg SUPV Actv Eval 	
+DISDAIN	Neg Noun Vice Power Eval 	
+DISGRACE	Neg Noun Vice Weal Eval 	
+DISPROPORTIONATE	IndAdj Neg Modif Quan Eval 	
+ECCENTRIC	IndAdj Neg Modif Ovrst Eval Qual 	
+ECCENTRICITY	Neg Noun Ovrst Eval Qual 	
+EDIBLE	IndAdj Pos Modif Natpro Eval Qual 	
+ESPECIALLY	LY Ovrst Eval 	adverb: Particularly 
+ESTEEM	Pos Noun Feel Eval 	
+EXAGGERATION	Neg Noun Ovrst Eval Comform 	
+EXALT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXOTIC	IndAdj Pos Modif Eval Qual 	
+EXQUISITE	IndAdj Pos Modif Eval Qual 	
+EXTOL	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXTRAVAGANCE	Pos Noun Ovrst Eval 	
+EXULT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXULTATION	Pos Noun Psv Intrel Subm Eval 	
+FABULOUS	IndAdj Pos Modif Eval Qual 	
+FAKE	IndAdj Neg Modif Eval Qual 	
+FALLACY	Neg Noun Eval Qual 	
+FALSEHOOD	Neg Noun Eval Qual 	
+FASHIONABLE	IndAdj Pos Modif Eval Qual 	
+FLAGRANT	IndAdj Neg Modif Eval Qual Ovrst 	
+FLASHY	IndAdj Pos Modif Ovrst Eval Qual 	
+FRAGRANT	IndAdj Pos Modif Percv Eval Qual 	
+FRAUGHT	IndAdj Neg Modif Ovrst Eval Qual 	
+FRIVOLOUS	IndAdj Neg Modif Qual Eval 	
+GLAMOROUS	IndAdj Pos Modif Eval Qual 	
+GLAMOUR	Pos Noun Eval Qual 	
+GORGEOUS	IndAdj Pos Modif Eval Qual 	
+GRIZZLY	IndAdj Neg Modif Eval Pain 	
+HACKNEY	IndAdj Neg Modif Qual Eval 	
+HILARIOUS	IndAdj Pos Modif Eval Qual Pleasure 	
+HORRID	IndAdj Neg Modif Eval Vice 	
+IDIOT	Neg Noun Vice Eval 	
+IDIOTIC	IndAdj Neg Modif Eval Vice 	
+IGNOBLE	IndAdj Neg Modif Vice Eval 	
+ILLEGAL	IndAdj Neg Modif Legal Vice Eval 	
+ILLEGALITY	Neg Noun Vice Eval Legal 	
+ILLUSTRIOUS	IndAdj Pos Modif Ovrst Eval Qual 	
+IMMORAL	IndAdj Neg Modif Vice Eval Doctr 	
+IMMORALITY	Neg Noun Vice Eval Doctr 	
+IMPERATIVE	IndAdj Pos Modif Ought Eval 	
+IMPROPER	IndAdj Neg Modif Eval Vice 	
+IMPULSIVE	IndAdj Neg Modif Eval Vice Think Vary 	
+IMPURE	IndAdj Neg Modif Eval Vice 	
+IMPURITY	Neg Noun Eval Vice Fail 	
+INACCESSIBLE	IPadj Neg Modif Negate Eval Vice 	
+INACCURACY	Neg Noun Fail Eval 	
+INANE	IndAdj Neg Modif Eval Vice 	
+INCOMPETENCE	Neg Noun Fail Eval 	
+INCOMPETENT	IndAdj Neg Modif Fail Eval 	
+INCONVENIENT	IndAdj Neg Modif Eval Qual 	
+INDECENT	IndAdj Neg Modif Eval Vice 	
+INDESCRIBABLE	IndAdj Pos Modif Negate Comform Eval Qual 	
+INEQUALITY	Neg Noun Eval Intrel Qual 	
+INHUMANE	IndAdj Neg Modif Hostile Vice Eval 	
+INVALID	IndAdj Neg Modif Eval Vice 	
+INVALUABLE	IndAdj Pos Modif Eval Qual Econ 	
+IRRESISTIBLE	IPadj Pos Modif Negate Need Eval 	
+JUNK	Neg Noun Eval Qual 	
+LAUDABLE	IPadj Pos Modif Eval Qual Affil 	
+LAVISH	IndAdj Pos Modif Eval Qual 	
+LIKABLE	IPadj Pos Modif Eval Qual Virtue 	
+LUDICROUS	IndAdj Neg Modif Eval Vice 	
+LUNATIC	Neg Noun HU Role Eval Vice 	
+LUSTROUS	IndAdj Pos Modif Eval Qual 	
+LUXURIANT	IndAdj Pos Modif Eval Qual 	
+LUXURIOUS	IndAdj Pos Modif Eval Qual 	
+MADNESS	Neg Noun Eval Vice 	
+MAGICAL	IndAdj Pos Modif Eval Qual Relig 	
+MEMORABLE	IndAdj Pos Modif Eval Qual 	
+METICULOUS	IndAdj Pos Modif Eval Qual Work 	
+MILD	IndAdj Pos Modif Eval Qual 	
+MONOTONOUS	IndAdj Neg Modif Eval Vice 	
+MONOTONY	Neg Noun Eval Vice 	
+MUNDANE	IndAdj Neg Modif Eval Vice 	
+NEGLIGENCE	Neg Noun Causal Eval Legal Vice 	
+NEGLIGENT	IndAdj Neg Modif Causal Legal Eval Vice 	
+NOTORIOUS	IndAdj Neg Modif Eval Qual Ovrst Vice 	
+ODDITY	Neg Noun Eval Qual 	
+OFFEND	IAV Neg SUPV Actv Eval Hostile Other 	
+OFFENSIVE	IndAdj Neg Modif Vice Hostile Ngtv Strng Actv Eval 	noun-adj: Characterized by attack, physically or on the sensibilities 
+ORDEAL	Neg Noun Eval Vice 	
+OUTRAGEOUS	IndAdj Neg Modif Eval Vice 	
+PERIL	Neg Noun Eval Qual 	
+PERVERSE	IndAdj Neg Modif Eval Vice 	
+PICTURESQUE	IndAdj Pos Modif Percv Eval Qual 	
+PLAUSIBILITY	Pos Noun Causal Eval 	
+PREDICAMENT	Neg Noun Eval Vice 	
+PREEMINENT	IndAdj Pos Modif Strng Power Eval 	
+PREMIUM	IndAdj Pos Modif Eval Virtue 	
+PREPOSTEROUS	IndAdj Neg Modif Eval Vice 	
+PRETENTIOUS	IndAdj Neg Modif Eval Vice 	
+PRICELESS	IndAdj Pos Modif Econ Eval Virtue Ovrst 	
+PRIME	IndAdj Pos Modif Eval Virtue 	
+PRODIGIOUS	IndAdj Pos Modif Ovrst Eval Qual Dimn 	
+PROMINENCE	Pos Noun Ovrst Strng Eval 	
+RADIANT	IndAdj Pos Modif Eval Qual 	
+REDUNDANCY	Neg Noun Eval Vice 	
+REDUNDANT	IndAdj Neg Modif Eval Vice 	
+RELEVANCY	Pos Noun Ovrst Eval 	
+RENOWN	Pos Noun Affil Eval Virtue 	
+REPREHENSIBLE	IPadj Neg Modif Eval Vice 	
+REPUGNANT	IndAdj Neg Modif Eval Vice 	
+RUDE	IPadj Neg Modif Eval Vice 	
+SATISFACTORILY	Pos Modif Eval Virtue 	
+SHINY	IndAdj Pos Modif Eval Qual 	
+SLEEK	IndAdj Pos Modif Eval Qual 	
+SOFTNESS	Pos Noun Eval Qual 	
+SUMPTUOUS	IndAdj Pos Modif Eval Virtue 	
+SUPERFICIALITY	Neg Noun Eval Vice 	
+SUPERFLUOUS	IndAdj Neg Modif Eval Ovrst 	
+TEMPERATE	IndAdj Pos Modif Eval Qual Undrst 	
+TERRIFIC	IndAdj Pos Modif Eval Virtue 	
+THRIFT	Pos Noun Econ Eval Qual 	
+THRIFTY	IndAdj Pos Modif Econ Eval Qual 	
+UNATTRACTIVE	IndAdj Neg Modif Eval Vice 	
+UNDERSTANDABLE	IndAdj Pos Modif Comform Eval Virtue 	
+UNDESIRABLE	IndAdj Neg Modif Eval Vice 	
+UNDIGNIFIED	IndAdj Neg Modif Eval Vice 	
+UNECONOMICAL	IndAdj Neg Modif Econ Eval Vice 	
+UNEXPECTEDLY	Neg Modif Eval Vice 	
+UNFAMILIAR	IndAdj Neg Modif Eval Vice Weak 	
+UNFORGETTABLE	IndAdj Pos Modif Negate Eval Qual 	
+UNFRIENDLY	IPadj Neg Modif Eval Vice 	
+UNGRATEFUL	IPadj Neg Modif Eval Vice 	
+UNKIND	IPadj Neg Modif Eval Vice 	
+UNPOPULAR	IPadj Neg Modif Eval Vice 	
+UNWORTHY	IndAdj Neg Modif Eval Vice 	
+UTTERMOST	IndAdj Pos Modif Ovrst Eval Qual 	
+VENERABLE	IndAdj Pos Modif Eval Virtue 	
+VERITABLE	IndAdj Pos Modif Eval Virtue 	
+VIABILITY	Pos Noun Causal Eval Qual 	
+VULGAR	IndAdj Neg Modif Eval Vice 	
+WASTEFUL	IndAdj Neg Modif Eval Vice 	
+WASTEFULNESS	Neg Noun Eval Vice 	
+WEIRD	IndAdj Neg Modif Eval Vice 	
+WORKMANSHIP	Pos Noun Try Work Eval Qual 	
+WORTHINESS	IndAdj Pos Modif Eval Qual 	
+WRETCHEDNESS	Neg Noun Pain Eval Vice 	
+WRINKLE	Neg Noun Eval Vice 	
+WRONGFUL	IndAdj Neg Modif Eval Vice 	
+WROUGHT	IndAdj Neg Modif Eval Vice 	
+ZEALOUS	Modif Strng Comform Eval 	

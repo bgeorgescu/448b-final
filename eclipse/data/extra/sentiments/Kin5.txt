@@ -1,0 +1,51 @@
+word	tags	comments
+ANCESTOR	Noun HU KIN Kin* Role 	
+AUNT	Noun HU Female KIN Kin* Role 	noun: The sister of one's father or mother 
+BRIDE	Noun HU Female KIN Affil Kin* Role 	
+BROTHER	Noun HU MALE KIN Kin* Affil Role 	noun: Male sibling; fellow member of a religious or other organization  or group; comrade (13) 
+COUSIN	Noun HU KIN Kin* Role 	
+DAD	Noun HU MALE KIN Kin* Role 	noun: A nickname for father 
+DADDY	Noun HU MALE KIN Kin* Role 	noun: Father 
+DAUGHTER	Noun HU Female KIN Kin* Role 	noun: Female child. 
+DIVORCE	Neg Noun Hostile Kin* Legal Ngtv Vice 	84% noun: A legal marital separation 
+DIVORCE	DAV Neg SUPV Intrel Hostile Kin* Legal Ngtv Actv 	14% verb: To separate, usually to dissolve a marriage 
+DIVORCE	Neg Modif Hostile Kin* Legal Ngtv Intrel 	3% adj: "Divorced"--legally separated from a spouse 
+ENGAGE	Modif Intrel Affil Kin* 	38% adj: "Engaged"--bethrothed 
+FAMILY	Noun HU KIN COLL Kin* 	noun adjective: A specifically related group, usually referring to the  immediate kinship group of father, mother, and children, sometimes a biological  term. 
+FATHER	Noun HU MALE KIN Kin* Strng Role Affil 	noun: A male parent 
+FOLK	Noun HU COLL Kin* 	67% noun: People in general or people as a representation of a culture  esp. the composite of social mores, customs 
+FOLK	Noun HU KIN Kin* Role 	15% noun: Kin or relatives 
+GENETIC	Modif Kin* Natpro 	
+GRANDCHILD	Noun HU KIN Kin* Nonadlt Role 	noun: Son or daughter of someone's son or daughter. 
+GRANDCHILDREN	Noun HU KIN S Kin* Nonadlt Role 	noun: Plural of grandchild--sons or daughters of someone's son(s) or daughter(s) 
+GRANDFATHER	Noun HU MALE KIN Kin* Role 	noun: Father of someone's mother or father. 
+GRANDMA	Noun HU Female KIN Kin* Role 	
+GRANDMOTHER	Noun HU Female KIN Kin* Role 	noun: Mother of someone's mother or father. 
+GRANDPA	Noun HU MALE KIN Kin* Role 	
+GRANNY	Noun HU Female KIN Kin* Role 	
+HONEYMOON	Pos Noun Ritual Affil Kin* Pstv 	
+HUSBAND	Noun HU MALE KIN Kin* Role 	noun: Male spouse 
+KIN	Noun HU Kin* Role 	
+KINDRED	Noun HU Kin* COLL 	
+MA	Noun HU Female KIN Kin* Role 	
+MAMA	Noun HU Female KIN Kin* Role 	
+MARITAL	Pos Modif Kin* Ritual Pstv 	
+MARRIAGE	Pos Noun Ritual Affil Kin* Pstv 	noun-adj: Act of marrying or state of being married 
+MARRY	DAV Pos SUPV Affil Kin* Pstv Intrel 	83% verb: To take a husband or wife 
+MARRY	Pos Modif Affil Kin* Pstv Intrel 	17% adj: "Married"--wedded 
+MOTHER	Noun HU Female KIN Kin* Role Affil 	noun: Female parent 
+NEPHEW	Noun HU MALE Kin* Role 	
+PAPA	Noun HU MALE KIN Kin* Role 	
+PARENT	Noun HU KIN Kin* Role Affil 	noun: One who has offspring 
+RELATION	Noun HU KIN Kin* Role 	9% noun: A person in a family strain, connection by marriage or origin 
+RELATIVE	Noun HU KIN Kin* Role 	55% noun: Blood or marriage relation 
+SISTER	Noun HU Female KIN Kin* Role Affil 	noun: Female sibling 
+SON	Noun HU KIN Kin* MALE Role Affil 	noun: Male offspring. 
+TWIN	Noun HU Kin* Role 	
+UNCLE	Noun HU MALE KIN Kin* Role 	noun: A brother of one's parent (in our society) 
+WED	DAV SUPV Affil Intrel Kin* 	
+WEDDING	Noun Ritual Affil Kin* 	
+WIDOW	Noun HU Female KIN Kin* PFREQ Role 	91% noun: A deceased man's wife 
+WIDOW	Modif Kin* Female Psv HU Role 	9% adj: "Widowed"--rendered a widow, husbandless 
+WIFE	Noun HU KIN Kin* Female Role 	noun: A man's spouse 
+WIVES	Noun HU Female KIN S Kin* Role 	noun: Female spouses 

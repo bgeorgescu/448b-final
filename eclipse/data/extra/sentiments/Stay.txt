@@ -1,0 +1,126 @@
+word	tags	comments
+ADHERE	IAV SUPV Stay Psv 	
+ADJOIN	Modif Stay 	
+ANCHOR	IAV SUPV Stay Strng 	
+ARREST	DAV Neg SUPV Stay Hostile Legal Ngtv Strng Actv 	81% verb: To halt, stop, seize by legal authority 
+ATTENDANCE	Pos Noun Actv Stay 	
+AWAIT	IAV SUPV Stay Psv 	
+BED	IAV SUPV Stay 	18% verb: To go or put "to bed"--to retire, go to sleep, get someone ready  for sleep (3) 
+CAMP	DAV SUPV Stay Actv 	17% verb: To establish temporary lodging or shelter, to go into the woods 
+CLING	IAV SUPV Stay Weak Actv 	
+CLUNG	IAV SUPV Stay ED Weak Actv 	
+CONFINEMENT	Neg Noun Vice Stay 	
+CONGESTED	IndAdj Neg Modif Stay 	
+CONGESTION	Neg Noun Stay 	
+CONTENTMENT	Pos Noun Emot Pleasure Stay 	
+CRIPPLE	IAV Neg SUPV Actv Pain Stay Hostile Exert 	
+CROUCH	Modif Stay 	
+CROUCH	DAV SUPV Stay Subm 	
+CURTAIL	IAV Neg SUPV Actv Stay 	
+DAUNTING	IndAdj Neg Modif Stay 	
+DEADWEIGHT	Neg Noun Vice Stay 	
+DETAIN	IAV Neg SUPV Actv Stay Power 	
+DISINTEREST	Neg Noun Vice Stay 	
+DURABILITY	Pos Noun Strng Stay 	
+DWELL	DAV SUPV Stay Psv 	
+EVERLASTING	IndAdj Pos Modif Stay Freq Strng 	
+HALT	IAV SUPV Stay Strng Actv 	
+HANG	DAV SUPV Stay Psv 	59% verb: To be suspended or to remain (intransitive) 
+HANG	IAV Neg SUPV Stay Ngtv Psv 	6% idiom-verb: 'hang around'--linger 
+HARBOR	IAV SUPV Stay Strng 	
+HESITATE	IAV SUPV Stay Weak Psv Undrst 	
+HOLD	IAV SUPV Stay Hostile Actv Strng 	0% idiom-verb: "Hold one's own"--handled by "own" 
+HUDDLE	DAV SUPV Stay Psv Weak 	
+HUNG	DAV SUPV Stay ED Psv 	43% verb: To have suspended or attached (transitive) 
+IDLE	IAV SUPV Stay Psv 	
+IDLENESS	Neg Noun Stay Work Vice 	
+IMMOBILITY	Neg Noun Stay 	
+IMMORTAL	IndAdj Pos Modif Power Stay Ovrst 	
+IMMOVABLE	IndAdj Neg Modif Stay Strng 	
+IMPASSE	Neg Noun Stay Comform Intrel 	
+INCURABLE	IndAdj Neg Modif Fail Stay 	
+INEFFECTIVE	IndAdj Neg Modif Stay Fail 	
+INEFFECTIVENESS	Neg Noun Stay Fail 	
+INEFFECTUAL	IndAdj Neg Modif Stay Fail 	
+INEFFECTUALNESS	Neg Noun Stay Fail 	
+INEFFICIENCY	Neg Noun Stay Fail Work 	
+INHABIT	IAV SUPV Stay 	
+KNEEL	DAV SUPV Stay Subm Weak Psv 	
+KNELT	DAV SUPV Stay ED Subm Weak Psv 	
+LAID	DAV SUPV Stay ED 	72% verb: Past tense of "lay"--put, placed, set down; misuse for the past  tense of "lie"--reclined (6); had sexual intercourse with (1); produced  eggs (0); knocked down, incapacitated--"laid out," "laid up," etc. (0) 
+LAY	DAV SUPV Stay Psv PFREQ 	85% verb: Past tense of "lie"--reclined, was or remained at a horizontal  position; was or remained in a specified place or condition (4); had intercourse  with (0) 
+LEAN	DAV SUPV Stay Weak 	57% verb: To incline or bend from a vertical position, often resting on  something for support (mostly physical) 
+LIE	DAV SUPV Stay Psv 	64% verb: To recline, remain at a horizontal, be located 
+LIFELONG	IndAdj Pos Modif Stay 	
+LOCATE	IAV SUPV Stay Actv 	
+LOCK	DAV SUPV Stay Actv 	
+LONGEVITY	Pos Noun Stay Strng 	
+LULL	Neg Noun Stay Work Negate 	
+LYING	SV SUPV Stay ING Psv PFREQ 	88% verb: To maintain a prostrate position (of people), to be located (of things) 
+MARK	IAV SUPV Stay 	3% idiom-verb: "Mark time," to wait 
+MILL	IAV SUPV Stay Psv 	0% verb: "Mill around," "mill about" - move aimlessly 
+MOTIONLESS	IndAdj Neg Modif Stay 	
+OBSTINATE	IndAdj Neg Modif Hostile Feel Stay 	
+OBSTRUCTION	Neg Noun Stay Object 	
+OCCUPY	IAV SUPV Stay Strng 	
+ORIENT	IAV SUPV Stay 	
+PARALYSIS	Neg Noun Weak Stay 	
+PARALYZED	IndAdj Neg Modif Weak Stay 	
+PARK	DAV SUPV Stay Psv 	
+PAUSE	DAV SUPV Stay Weak 	
+POISE	IAV SUPV Stay Psv 	
+POSE	IAV SUPV Stay Psv 	
+PROCRASTINATE	IAV Neg SUPV Weak Stay Work Actv 	
+PROCRASTINATION	Neg Noun Weak Stay Work 	
+RAPT	IAV Pos SUPV Psv Think Stay 	
+RAPTURE	Pos Noun Think Stay 	
+REFRAIN	IAV Neg SUPV Actv Stay 	
+REMAIN	DAV SUPV VERB LINK Stay Psv PFREQ 	94% verb: To stay, to continue in the same condition, to be left or left over 
+REPOSE	IAV Pos SUPV Psv Pleasure Stay 	
+RESOLVED	IndAdj Pos Modif Strng Feel Stay 	
+RESPITE	Pos Noun Stay Pleasure 	
+REST	IAV SUPV Stay Psv 	25% verb: To relax, be at ease or inactive, to be set 
+REST	IAV SUPV Stay 	8% verb: To reside or be found (with, upon) "the decision rests with him" 
+RESTFUL	IndAdj Pos Modif Pleasure Stay 	
+RESTRICTION	Neg Noun Stay Legal 	
+RIGID	IndAdj Neg Modif Stay Feel Vice 	
+SEAT	Modif Psv Stay 	54% adj: Sitting (as in a chair) - "seated" 
+SEAT	DAV SUPV Actv Stay 	2% verb: To place, to position 
+SECURE	IAV SUPV Stay Strng Actv Ovrst 	79% verb: To obtain, insure, make fast 
+SEDENTARY	IndAdj Neg Modif Stay 	
+SEQUESTER	IAV Neg SUPV Stay Power Legal 	
+SET	IAV SUPV Stay Actv 	45% verb: Put, place, cause a change in condition, determine, fix, put forward 
+SETTLE	IAV SUPV Stay Actv Strng 	47% verb: To establish a household, to assume a certain form, to make  or become stable (3) 
+SETTLE	Pos Modif Stay Pstv Strng Psv 	18% adj: "Settled"--stable, calm 
+SHUT	IAV SUPV Stay Power Actv Strng 	15% verb: "Shut up"--confine 
+SIT	DAV SUPV Stay PFREQ 	98% verb: To be or become seated (sense of becoming seated less frequent;  to be located or situated (1) 
+SITUATE	IAV SUPV Stay Actv 	
+SLOTHFUL	IndAdj Neg Modif Weak Vice Stay 	
+SLUGGISH	IndAdj Neg Modif Weak Stay Vice 	
+SPRAWL	IAV SUPV Stay Psv 	
+SQUAT	DAV SUPV Stay Psv 	
+STABILIZE	IAV Pos SUPV Power Stay Pstv Strng Actv Ovrst 	
+STAGNANT	IndAdj Neg Modif Stay 	
+STALEMATE	Neg Noun Stay Comform Intrel 	
+STALL	IAV SUPV Stay Weak Hostile 	
+STAND	DAV SUPV Stay Strng 	71% verb: To be in or move into an upright position (182); abstract--  remain fixed, be in a specified condition or rank--"i stand convinced  of the fact," "we stand in need of money" (19) 
+STANDSTILL	Neg Noun Stay Intrel Comform 	
+STATIC	IndAdj Neg Modif Stay Vice 	
+STATION	IAV SUPV Stay Actv 	18% verb: To place or post in position 
+STATIONARY	Modif Psv Stay 	
+STAY	DAV SUPV Stay LINK PFREQ 	97% verb: To remain in a place, situation or condition or to dwell at  a particular place 
+STICK	Modif Psv Weak Stay 	10% adj: "Stuck"--caught, embedded, jammed (9); metaphorically used--  caught, saddled with, forced to remain--"i am stuck with her" (2) 
+STOOD	DAV SUPV Stay ED Strng PFREQ 	92% verb: Was in or moved into an upright position (72); existed, remained  fixed (6) 
+STOP	DAV SUPV Stay 	78% verb: To come to a stand, halt, pause, cease from 
+STUBBORNLY	IndAdj Neg Modif Stay Hostile Strng 	
+STUBBORNNESS	Neg Noun Stay Strng Hostile 	
+SURROUND	DAV SUPV Stay Strng Actv 	66% verb: To enclose or encompass 
+SURVIVOR	Pos Noun HU Role Power Stay 	
+SUSPEND	IAV Neg SUPV Actv Stay Compl 	
+SUSPENSION	Neg Noun Stay Compl 	
+UNREASONABLE	IndAdj Neg Modif Think Fail Stay 	
+VEX	IAV Neg SUPV Think Fail Stay 	
+VIGILANCE	Pos Noun Stay Strng Virtue Feel 	
+VIGILANT	IndAdj Pos Modif Stay Strng Virtue Feel 	
+WAIT	DAV SUPV Stay Psv PFREQ 	91% verb: To stay or rest in expectation or inaction, to be available  or in readiness, to be neglected or to postpone temporarily 
+WALLOW	SV Neg SUPV Actv Stay Emot Pain 	

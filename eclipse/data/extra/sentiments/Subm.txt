@@ -1,0 +1,286 @@
+word	tags	comments
+ABDICATE	IAV Neg SUPV Finish Weak Psv Subm 	
+ABJECT	IPadj Neg Modif Psv Subm Weak Vice 	
+ABSCOND	IAV Neg SUPV Travel Subm Weak Hostile Actv 	
+ACCEPT	IAV Pos SUPV Intrel Subm Pstv Psv 	verb: To take, receive or accede to something 
+ADJUST	Pos Modif Virtue Pstv Subm 	23% adj: "Adjusted"--adapted 
+ADMIRE	SV Pos SUPV Affil Subm Pstv Psv Pleasur 	
+ADMISSIBLE	Modif Comform Subm Psv 	
+ADMISSION	Noun COM Comform Subm Psv 	
+ADMIT	IAV Pos SUPV Subm Pstv Weak Psv Comform 	63% verb: To acknowledge, confess, agree 
+ADMIT	Pos LY Ovrst Comform Subm Pstv Weak Psv 	3% adv: "Admittedly"--adverbial form of sense 1 
+AFRAID	Modif EMOT Subm Psv PFREQ Pain 	adjective: Feeling fear, filled with apprehension 
+AIMLESS	IndAdj Neg Modif Subm Psv Fail 	
+ALIBI	Neg Noun Comform Subm Psv Weak 	
+APOLOGETIC	IPadj Modif Pain Weak Subm Intrel 	
+APOLOGIZE	IAV SUPV Subm Other Weak Intrel 	
+APOLOGY	Noun COM Comform Affil Subm Weak 	
+APPEAL	Noun COM Comform Subm Psv Affil 	38% noun-adj: A request for a decision, help, sympathy, etc. (6), a quality  arousing a favorable response (6) 
+APPEAL	IAV SUPV Legal Subm Psv Affil Intrel 	59% verb: To request a decision, help, sympathy, etc. (10), to arouse  a favorable response (9) 
+APPEASE	IAV Pos SUPV Actv Subm Other 	
+APPLICANT	Noun HU Subm Role 	
+APPLICATION	Noun COM Comform Subm 	
+APPLY	DAV SUPV Legal Subm Comform Actv 	12% verb: To make application or request--'to apply for a job' 
+APPRECIATE	SV Pos SUPV Subm Pstv Psv Arousal Affil 	verb: To be aware of, to be grateful 
+ASK	DAV SUPV Subm Comform Actv 	31% verb: To request, invite 
+ASSISTANT	Pos Noun HU Subm Pstv Actv Role 	
+ATTEND	IAV Pos SUPV Travl Subm Pstv PFREQ 	83% verb: To be present at. 
+ATTENDANT	Noun HU Subm Actv Role 	
+ATTENTION	Noun Percv Psv Subm 	noun: The act or faculty of attending, by directing the mind to an object 
+ATTENTIVE	Pos Modif Percv Pstv Psv Subm 	
+ATTEST	IAV SUPV Subm Psv Comform 	
+AWE	Noun EMOT Subm Arousal 	
+BEARER	Noun HU Role Subm 	
+BEAT	Neg Modif Vice Subm Ngtv Weak Psv 	2% adj: "Beaten"--hammered, trodden, thrashed 
+BEG	IAV Neg SUPV Intrel Subm Ngtv Weak Actv 	
+BELIEVE	SV SUPV Solve Subm Psv 	20% idiom-verb: "Believe in"--to be strongly (religiously) persuaded of  the truth, value, or existence of 
+BELIEVER	Noun HU Relig Psv Role Subm 	
+BELONG	IAV SUPV Intrel Subm Weak Psv PFREQ 	98% verb: To be in relation to something as owned or as a member or inhabitant 
+BEND	DAV SUPV Subm Weak Psv Rel 	
+BESEECH	IAV Neg SUPV Intrel Subm Weak Actv 	
+BONDAGE	Neg Noun Vice Subm Ngtv Weak Psv 	
+BOW	DAV SUPV Subm Weak Comform 	6% verb: To bend forward, usually in formal acknowledgement, submission or greeting 
+BUCKLE	IAV Neg SUPV Weak Subm Fail Psv 	
+CAPITULATE	IAV Neg SUPV Psv Subm Weak Fail 	
+CAPTIVE	IPadj Neg Modif Subm Weak Psv 	
+CAPTURE	Neg Modif Subm Ngtv Intrel 	
+CHAIN	Noun Object Tool Subm 	
+CHAIN	IAV SUPV Rel Subm 	
+COLONY	Neg Noun HU COLL POLIT ECON Polit* Ngtv Subm 	
+COMMIT	IAV SUPV Subm Actv Comform 	15% verb: To bind, to consign 
+COMMIT	Modif Subm Psv Pain 	15% adj: Consigned, bound 
+COMMONER	Neg Noun HU POLIT Econ* Subm Ngtv Weak Psv Role 	
+COMPLY	IAV SUPV Intrel Subm Psv 	
+COMPROMISE	Pos Modif POLIT Subm Pstv Psv Intrel 	
+COMPROMISE	IAV Pos SUPV Intrel Subm Pstv Psv 	
+CONCEDE	IAV SUPV Subm Weak Psv Comform 	
+CONCESSION	Pos Noun Pstv Weak Psv Intrel Subm 	
+CONFESS	IAV Neg SUPV Subm Ngtv Weak Psv Comform 	
+CONFESSION	Neg Noun COM Comform Subm Ngtv Weak Psv 	
+CONFIDENCE	Pos Noun EMOT Subm Pstv Strng Ovrst PFREQ Pleasur 	97% noun: Trust, self-assurance, a secret 
+CONFORM	IAV SUPV Intrel Subm Weak Psv 	
+CONFORMITY	Noun Virtue Subm Weak Psv 	
+CONSENT	Pos Noun COM Comform Subm Pstv Strng Psv 	
+CONSENT	DAV Pos SUPV Subm Pstv Strng Psv Comform 	
+CONVICT	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+COWARD	Neg Noun HU Subm Ngtv Weak Psv Role 	
+CREDULOUS	IndAdj Neg Modif Weak Subm 	
+CROUCH	DAV SUPV Stay Subm 	
+CRUMBLE	IAV Neg SUPV Psv Finish Weak Subm 	
+CRUMPLE	IAV Neg SUPV Psv Finish Weak Subm 	
+DEFER	IAV SUPV Intrel Subm Psv 	
+DEPEND	IAV SUPV Intrel Subm Weak Psv 	27% verb: Rely (upon) 
+DEPENDENCE	Noun Subm Weak Psv Vice 	
+DEPENDENT	IPadj Neg Modif Weak Subm Psv 	
+DESPAIR	Neg Noun EMOT Ngtv Weak Psv Pain Subm 	
+DESTITUTE	IndAdj Neg Modif Econ Pain Weak Subm 	
+DEVOTE	Pos Modif EMOT Subm Pstv Pleasur 	25% adj: "Devoted"--dedicated, faithful, committed 
+DEVOTION	Pos Noun EMOT Relig Subm Pstv Psv Arousal Affil 	
+DISCIPLE	Noun HU Subm Psv Role Affil 	noun: Follower 
+DISCOURAGEMENT	Neg Noun Vice Decr Weak Subm 	
+DISHEARTEN	IndAdj Neg Modif Weak Subm Pain Emot 	
+DISHONOR	IAV Neg SUPV Actv Weak Subm Pain 	
+DISPENSABILITY	Neg Noun Weak Subm 	
+DUE	Noun Doctr Subm 	8% noun-adj: That which is due, owed, or naturally belongs to someone,  rightful or fitting, e.g. "due respect" 
+DUTY	Neg Noun ABS Abs* Virtue Subm Ngtv Strng 	noun: Obligation 
+EMPLOYEE	Noun HU ECON Econ* Subm Weak Role 	
+ENROLL	DAV SUPV Intrel Subm Actv 	
+ENTREAT	IAV Neg SUPV Subm Weak Intrel 	
+EXALT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXCUSE	Noun COM Comform Subm Psv Weak 	
+EXTOL	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXULT	IAV Pos SUPV Psv Intrel Subm Eval 	
+EXULTATION	Pos Noun Psv Intrel Subm Eval 	
+FAITH	Pos Noun Virtue Affil Subm Pstv Psv 	10% idiom-noun: "Good faith"--honesty, trustworthiness 
+FAN	Noun HU Affil Subm Psv Role 	76% noun: Devotee, enthusiast 
+FEAR	Neg Noun EMOT Pain Ngtv Weak Psv Subm 	67% noun-adj: Anxiety, dread, fright 
+FEAR	SV Neg SUPV Ngtv Weak Psv Subm Pain 	33% verb: To be afraid of 
+FEARFUL	Neg Modif EMOT Subm Pain Ngtv Weak Psv 	
+FICKLE	IndAdj Neg Modif Emot Weak Subm 	
+FIDELITY	Pos Noun Doctr Subm Pstv Affil 	
+FLATTER	IAV Pos SUPV Intrel Affil Subm Psv Weak Comform 	
+FLATTERY	Pos Noun Intrel Affil Subm Psv Weak Comform 	
+FOLLOW	IAV SUPV Intrel Subm Weak Psv 	42% verb: To give allegiance to, obey, act in accordance with, "i wish  he would follow my advice," infrequently, understand--"i didn't follow  your argument" 
+FOLLOWER	Noun HU Subm Psv Role 	
+FORSAKE	IAV Neg SUPV Psv Weak Subm 	
+FUTILITY	Neg Noun Weak Subm Vice 	
+GINGERLY	LY Qual Subm Weak Undrst 	
+GO	IAV SUPV VERB GO Actv Intrel Affil Subm 	1% idiom-verb: 'go along with'--accord, acquiesce--handled by 'along' 
+GONE	Handels Intrel Affil Subm 	0% verb: 'gone along with'--accorded, agreed, acquiesced; handled by 'along' 
+GRATEFUL	Pos Modif EMOT Affil Subm Pstv Pleasur Arousal 	
+GRIND	Noun HU Acad Subm Role 	
+HALLOWED	IndAdj Pos Modif Qual Intrel Subm 	
+HAPLESS	IndAdj Neg Modif Weak Subm Vice Psv 	
+HARMLESS	Pos Modif Pstv Weak Psv Subm Virtue 	
+HEED	IAV SUPV Intrel Psv Subm Undrst 	
+HELP	IAV Neg SUPV Need Subm Passive Ngtv Weak Psv 	3% verb: To avoid or refrain from--"i can't help but . . . ," "not if  i can help it" 
+HELPLESS	Neg Modif EVAL Subm Ngtv Weak Psv Fail 	
+HELPLESSNESS	Neg Noun Weak Subm Vice 	
+HOMAGE	Pos Noun Subm Psv Arousal 	
+HONOR	IAV Pos SUPV Intrel Subm Pstv Psv 	35% verb: To esteem, exalt, respect 
+HUMBLE	Pos Modif Virtue Subm Pstv Weak Psv 	
+IMITATION	Noun Subm Weak Actv Intrel 	
+IMPLORE	IAV Neg SUPV Need Weak Subm Actv 	
+IMPOSSIBLE	Noun Negate Subm Causal 	6% noun: That which cannot be done 
+IMPRISONMENT	Neg Noun Weak Subm Legal 	
+INADEQUATE	IndAdj Neg Modif Vice EVAL Negate Ngtv Weak Subm Psv 	
+INCAPABLE	Neg Modif Vice EVAL Ngtv Weak Psv Subm Negate 	
+INDEBTED	Modif Subm Weak Psv Intrel 	
+INFERIORITY	Neg Noun Weak Subm 	
+KNEEL	DAV SUPV Stay Subm Weak Psv 	
+KNELT	DAV SUPV Stay ED Subm Weak Psv 	
+LABORER	Noun HU ECON Econ* Subm Role 	
+LEAN	IAV SUPV Intrel Subm Weak 	9% idiom-verb: "Lean on"--depend or rely on 
+LEARNER	Pos Noun HU Acad Subm Role Pstv 	
+LOOK	IAV SUPV Intrel Subm Weak 	1% verb-idiom: "Look up to"--to respect or esteem 
+LOWLY	IndAdj Neg Modif Weak Subm 	
+LOYAL	Pos Modif Virtue Polit* Subm Pstv 	
+LOYALTY	Pos Noun ABS Abs* POLIT Virtue Polit* Subm Pstv 	
+MAID	Noun HU Female Econ* Role Subm 	
+MEEK	IndAdj Neg Modif Weak Subm 	
+MENIAL	IndAdj Neg Modif Weak Subm 	
+MIND	IAV SUPV Intrel Subm Weak 	2% verb: Pay attention to; obey--"mind your master;" tend--"mind the children" 
+MINORITY	Noun HU COLL POLIT Polit* Subm Weak 	
+MODEST	Pos Modif Virtue EVAL Subm Pstv Weak 	
+MURMUR	Noun COM Comform Subm Weak 	
+MURMUR	DAV SUPV Subm Weak Comform 	
+NAME	Modif Intrel Subm Weak Psv 	4% idiom: "In (one's) name"; "in the name of"--with appeal to, on behalf of 
+OBEDIENCE	Pos Noun Affil Subm Actv 	
+OBEDIENT	IPadj Pos Modif Affil Subm Actv 	
+OBEY	IAV Pos SUPV Intrel Power Subm Pstv Weak Psv 	verb: To comply 
+OBLIGATION	Noun Subm Virtue 	
+OBLIGE	IAV Pos SUPV Intrel Subm Pstv Weak 	
+OPPRESSION	Neg Noun Power Hostile Subm Intrel 	
+OPPRESSIVE	IndAdj Neg Modif Emot Pain Power Subm 	
+PARTICIPANT	Noun HU Affil Subm Actv Role 	noun: One who participates or shares 
+PASSIVE	Modif Subm Psv Weak Arousal 	
+PATIENT	Noun HU Subm Weak Psv Role 	74% noun: Human or animal (0) under treatment 
+PAY	IAV SUPV Intrel Subm Actv Weak 	2% verb: To offer or give (tribute, honors, etc.) 
+PEASANT	Noun HU POLIT ECON Subm Econ* Weak Role 	noun-adj: A tiller of the soil, rustic 
+PETITION	Noun COM Ritual POLIT Polit* Subm Weak 	
+PETITION	IAV SUPV Polit* Actv Comform Subm Weak Actv 	
+PETITIONER	Noun HU POLIT Subm Weak Actv Role 	
+PLEA	Noun COM Comform Subm Weak Psv 	
+PLEAD	DAV SUPV Subm Weak Psv Comform 	
+PLEASE	LY Subm Comform 	70% adv: Shortened form of adverb phrase 'if you please.' cooperation  or obliging action. 
+PORTER	Noun HU Econ* Subm Role 	
+POWERLESS	IndAdj Neg Modif Weak Subm 	
+PRAY	DAV SUPV Relig Subm Comform 	verb: To offer devout petition 
+PRAYER	Noun COM Comform Relig Subm 	noun: The act, practice, or instance of praying, entreaty, earnest request 
+PRISONER	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+PRIVATE	Noun HU Milit Subm Weak Role 	0% noun: Lowest rank of enlisted man in the u.s. armed forces 
+PUPIL	Noun HU Acad Subm Role 	
+PUT	IAV SUPV Psv Intrel Subm 	0% verb: 'put up with'--to bear or suffer, to tolerate 
+QUESTIONER	Noun HU Role Subm 	
+QUIT	IAV Neg SUPV Finish Ngtv Weak Psv Subm 	verb: To stop, cease, give up; to leave (2) 
+REACT	IAV SUPV Intrel Psv Subm 	
+REACTION	Noun Psv Comform Subm 	noun: Response 
+RECEIVE	IAV SUPV Intrel Affil Psv Subm 	verb: To get, accept, admit, apprehend 
+RECEIVER	Noun HU Subm Psv Role 	
+RECOIL	IAV Neg SUPV Subm Weak Actv 	
+RECOMPENSE	Pos Noun Econ Exch Other Subm 	
+RECRUIT	Noun HU Milit Subm Role 	
+REDEMPTION	Pos Noun Subm Exch Intrel Solve 	
+REGARD	Pos Noun Affil Subm Pstv Arousal 	9% noun: Respect, esteem, affection or attention 
+REHABILITATION	Pos Noun Subm Solve 	
+RELAPSE	IAV Neg SUPV Psv Weak Subm 	
+RELIANCE	IAV SUPV Intrel Weak Subm 	
+RELINQUISH	DAV SUPV Intrel Weak Psv Subm 	
+RELY	IAV SUPV Intrel Subm Weak Psv Ovrst 	
+REPARATION	Pos Noun Subm Exch Intrel Solve 	
+REPENT	IAV Pos SUPV Actv Subm Solve 	
+REPENTANCE	Pos Noun Subm Solve 	
+REQUEST	Noun COM Comform Subm Psv Weak 	48% noun: A favor, petition, something asked 
+REQUEST	IAV SUPV Psv Weak Comform Subm 	40% verb: To ask for, to petition 
+RESIGN	IAV SUPV Intrel Subm Weak Psv 	
+RESPECT	IAV Pos SUPV Intrel Subm Pstv Psv 	48% verb-adj: To hold in esteem--esteemed 
+RESPECT	Pos Noun Subm Pstv Psv Arousal Affil 	31% noun: Esteem, regard 
+RESPECT	IAV Pos SUPV Affil Subm Pstv Psv Comform 	2% idiom-verb: 'pay one's respects'--visit, call on formally 
+RESPECTFUL	IndAdj Pos Modif Ought Virtue Subm 	
+RESPOND	IAV SUPV Subm Psv Comform Affil 	
+REVERE	IAV Pos SUPV Actv Affil Subm Ought 	
+REVERENCE	Pos Noun Affil Subm Ought 	
+REVERENT	IndAdj Pos Modif Affil Subm Ought 	
+REVERENTLY	Pos Modif Affil Subm Ought Actv 	
+SACRIFICE	IAV SUPV Intrel Subm 	
+SAG	IAV Neg SUPV Psv Weak Subm 	
+SALUTE	IAV Pos SUPV Actv Other Comform Legal Subm 	
+SAP	Neg Noun HU Weak Subm 	
+SCARE	Neg Noun EMOT Pain Ngtv Psv Subm Weak 	17% noun: A sudden or prolonged fright 
+SCARED	Neg Modif EMOT Pain Subm Ngtv Weak Psv PFREQ 	96% adj: Frightened, afraid 
+SECRETARY	Noun HU ECON Econ* Subm Role 	43% noun: Office helper 
+SERVANT	Noun HU ECON Econ* Subm Role 	noun: A person employed in the service of another person or a cause 
+SERVE	IAV SUPV Intrel Econ* Subm Actv Weak 	82% verb: To work for, be of assistance, or do one's duty; to answer the  purpose of, function as (17) 
+SERVE	IAV SUPV Work Actv Subm 	13% verb: To furnish and distribute food 
+SERVICE	Noun ECON Subm Virtue 	75% noun: Work done for another, generally public; a specific public agency  or function provided by the government, church, etc. (26) 
+SERVICE	IAV Neg SUPV Intrel Hostile Subm Ngtv Weak 	2% idiom: "Lip service" - insincere expression of support 
+SERVITUDE	Neg Noun Weak Subm Intrel 	
+SLAVE	Noun HU POLIT ECON Econ* Subm Weak PFREQ Role 	81% noun-adj: One who is the property of another 
+SLAVERY	Noun Doctr ECON POLIT Econ* Subm 	
+STAND	IAV SUPV Strng Psv Intrel Subm 	6% verb: Tolerate, bear, withstand 
+STOMACH	IAV SUPV Strng Intrel Subm 	3% verb: To endure 
+STOOD	IAV SUPV ED Strng Psv Intrel Subm 	2% verb: Tolerated, withstood 
+STUDENT	Noun HU Acad Subm Role 	noun adjective: One who engages in study or who participates in a course  of instruction and study 
+SUBJECTION	Neg Noun Subm Weak 	
+SUBJUGATE	IAV Neg SUPV Weak Subm Intrel Psv 	
+SUBJUGATION	Neg Noun Weak Subm Intrel 	
+SUBMISSIVE	IPadj Neg Modif Weak Subm Intrel 	
+SUBMIT	IAV SUPV Intrel Subm Weak Psv 	
+SUBORDINATE	Noun HU Subm Weak Psv Role 	
+SUBSERVIENCE	Neg Noun Weak Subm Intrel 	
+SUCCUMB	IAV Neg SUPV Psv Weak Subm 	
+SUCKER	Neg Noun Weak Subm HU 	
+SUFFER	IAV Neg SUPV Subm Ngtv Weak Psv Pain 	69% verb: To experience or tolerate physical or psychological pain or  other unpleasantness 
+SUFFER	IAV SUPV Intrel Subm Weak Psv 	0% verb: To allow, permit, or let some action take place 
+SUFFERER	Neg Noun HU Subm Weak Psv Role Ngtv 	
+SUICIDE	Noun Subm Vice 	
+SUPPORTER	Noun HU POLIT Affil Subm Role 	
+SUPPOSE	IAV SUPV Intrel Psv Power Subm 	36% adj: "Supposed (to)"--expected, under obligation 
+SURRENDER	Noun Ritual POLIT Polit* Subm Milit Weak Psv 	
+SURRENDER	DAV SUPV Intrel Polit* Subm Milit Weak Psv 	
+THANKFUL	IPadj Pos Modif Subm Need Other 	
+TIRE	IAV Neg SUPV Subm Ngtv Pain 	0% verb: To fatigue 
+TIRE	Neg Modif Subm Weak Pain Ngtv Psv 	25% adj: "Tiring"--exhausting 
+TIRED	Neg Modif Pain Subm Ngtv Weak Psv 	70% adj: Weary, exhausted, fatigued 
+TIRED	SV Neg SUPV Subm Pain Ngtv Weak Psv 	4% verb: To become weary or exhausted 
+TREMBLE	IAV SUPV Weak Psv Subm Comform 	
+TRIBUTE	Pos Noun COM Comform Subm Affil 	
+TRUE	Pos Modif Subm Pstv Arousal Affil 	4% adj-idiom: "True to"--faithful to 
+TRUST	IAV Pos SUPV Intrel Affil Subm Pstv Psv 	46% verb: To place or have confidence in someone or something 
+TRUST	Pos Modif Subm Pstv Psv Arousal Affil 	1% adj: "Trusting"--having confidence in, trustful 
+TRUST	Pos LY Subm Pstv Arousal Affil 	0% adv: "Trustingly"--with trust 
+TURN	IAV SUPV Intrel Subm Psv 	2% verb: "Turn in"--deliver up, submit, tender 
+UNCONDITIONAL	Modif Negate Ovrst Intrel Subm 	
+UNCONTESTED	Modif Negate Ovrst Strng Intrel Subm 	
+UNDER	PREP Power Intrel Subm 	51% prep-adv: Subject to the influence, authority, guidance, supervision  or direction of 
+UNDERGO	IAV SUPV Psv Intrel Subm 	
+UNDERGONE	IAV SUPV Psv Intrel Subm 	
+UNDERGRADUATE	Noun HU Acad Subm Role 	
+UNDERWENT	IAV SUPV Subm Psv Intrel 	
+UNFORTUNATE	Neg Noun HU COLL Negate Ngtv Weak Subm 	3% noun: "Unfortunates" - unlucky people 
+UNSUCCESSFUL	IndAdj Neg Modif Vice Negate Ngtv Weak Subm Fail 	
+VENERATE	IAV Pos SUPV Actv Subm Other Affil 	
+VICTIM	Noun HU Hostile Subm Weak Psv Role 	
+VOLUNTEER	Noun HU Affil PFREQ Role Subm 	96% noun-adj: A person who offers himself for a service or undertaking 
+VOLUNTEER	IAV SUPV Intrel Subm Affil 	4% verb: To offer oneself for a service or undertaking 
+VULNERABILITY	Noun Vice Subm Weak 	
+VULNERABLE	Modif Vice Subm Weak 	
+WAIT	IAV SUPV Intrel Subm 	4% verb: "Wait on"--to serve 
+WAITER	Noun HU Econ* Subm Role 	
+WEAKEN	IAV Neg SUPV Fail Weak Subm Decr 	
+WEAKLY	Modif Weak Undrst Subm Qual 	
+WEARY	Modif EMOT Subm Pain Weak 	
+WHINE	DAV Neg SUPV Hostile Subm Ngtv Weak Comform 	
+WHIP	Noun HU Subm Weak Psv Role 	4% idiom-noun: "Whipping boy" - scapegoat 
+WILLING	Pos Modif EMOT Affil Pleasur Pstv Subm 	adj: "Willing"--disposed or consenting 
+WILLINGNESS	Pos Noun EMOT Pleasur Pstv Affil Subm 	
+WISHFUL	Modif Subm Weak Need 	
+WITHDRAW	IAV SUPV Travl Subm Weak Subm 	
+WITHDRAW	IAV SUPV Travl Subm Weak Subm 	
+WITHDRAWN	Modif Subm Weak Vice 	
+WITHDREW	IAV SUPV Travl ED Subm Weak 	
+WORD	Noun COM Comform Subm Affil 	5% noun: Promise, assurance, affirmation 
+WORSEN	IAV Neg SUPV Psv Decr Weak Subm 	
+WORSHIP	Noun Ritual Relig Subm 	
+WORSHIP	IAV SUPV Relig Subm Comform 	
+YIELD	SUPV Intrel Subm Weak 	

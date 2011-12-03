@@ -1,0 +1,80 @@
+word	tags	comments
+ACQUIRE	Modif Strng Actv Fetch 	
+ALTRUISTIC	IPadj Pos Modif Virtue Affil Fetch 	
+APPREHEND	DAV Pos SUPV Actv Fetch Other 	
+BANDIT	Neg Noun HU Hostile Fetch 	
+BENEFACTOR	Pos Noun HU Role Econ Fetch Virtue 	
+BRING	DAV SUPV Fetch Actv 	69% verb: To transport, conduct, carry; to cause to come into being or  into a particular condition (much less frequent) 
+BURGLAR	Neg Noun HU Fetch Hostile Vice 	
+BURGLARY	Neg Noun Fetch Hostile Vice 	
+CARRY	DAV SUPV Fetch Strng Actv 	75% verb: To transport, transmit, convey, bear; influence, get a majority  or plurality (much less frequent) 
+CATCH	IAV SUPV Fetch Strng Actv PFREQ 	88% verb: To capture, ensnare, get hold of; attract (1); contract (disease)  (1); to absorb as to hear and understand (0) 
+CONFISCATE	IAV Neg SUPV Actv Fetch Power 	
+CONFISCATION	Neg Noun Vice Fetch Power 	
+CONSERVE	IAV Pos SUPV Actv Fetch Try 	
+CONSIGN	IAV Pos SUPV Actv Fetch 	
+CONVEY	IAV SUPV Fetch Actv 	
+DELIVER	IAV SUPV Fetch Strng Actv 	
+DISTRIBUTE	IAV SUPV Fetch Actv 	
+DONATE	DAV Pos SUPV Actv Exch Exprs Econ Fetch 	
+DONATION	Pos Noun Econ Exprs Fetch Exch 	
+DRAW	DAV SUPV Fetch Actv 	70% verb: To pull, move, pull back, extract, attract 
+ENTRUST	IAV Pos SUPV Actv Other Fetch Feel 	
+FETCH	IAV SUPV Fetch Actv 	verb: Bring, bring back, summon 
+GATHER	DAV SUPV Fetch Actv PFREQ 	89% verb: To collect into a group. 
+GET	DAV SUPV Fetch Actv 	29% verb: To have or gain possession or control of something--to obtain,  fetch, receive, acquire--includes use in past tense meaning "have"--"she's  got brown hair"; understand (1); overpower, injure, kill (0) 
+GLEAN	IAV Pos SUPV Actv Think Fetch 	
+GRASP	Noun DET Power Strng Actv Fetch 	
+GRASP	IAV SUPV Fetch Strng Actv 	
+GRIP	Noun Strng Actv Power Fetch 	
+GRIP	IAV SUPV Fetch Strng Actv Power 	
+HAND	IAV SUPV Fetch Actv 	6% verb: Deliver, give, pass 
+HARNESS	DAV Pos SUPV Actv Fetch Work 	
+HOARD	IAV Neg SUPV Fetch Incr 	
+HOLD	Noun Power Strng Fetch 	13% noun: Grip, control (very rarely- room, chamber) 
+KIDNAP	IAV Neg SUPV Legal Hostile Fetch Other Actv 	
+LAY	DAV SUPV Psv Fetch Actv 	10% verb: To place or put; to have intercourse with (4); to produce eggs  (0); to knock or press down (0) 
+LIFT	DAV SUPV Fetch Strng Actv 	
+LOSE	DAV Neg SUPV Fetch Ngtv Weak Psv 	77% verb: To come to be without 
+LOST	DAV Neg SUPV ED Ngtv Weak Psv Fetch 	59% verb-adj: Past tense of "lose"--came to be without, no longer owned  by-- "we lost our jobs," "we are lost" 
+LURE	IAV Neg SUPV Actv Other Fetch 	
+MISER	Neg Noun HU Role Econ Fetch 	
+OBTAINABLE	IndAdj Pos Modif Fetch Causal Rel 	
+PARASITE	Neg Noun Hostile Fetch Other 	
+PICK	IAV SUPV Fetch Actv 	59% verb: "To pick up"--take up, gather or acquire; to give a ride to--  "i went and picked him up at the station" (11); to become more frequent  or rapid (0); to tidy (0); to become acquainted with casually (0) 
+PLACE	DAV SUPV Fetch Actv 	11% verb: To put something in position, to arrange, to dispose 
+PORTABLE	IndAdj Pos Modif Fetch Dimn Qual 	
+PROCURE	IAV SUPV Fetch Strng Actv 	
+PUT	DAV SUPV Actv PFREQ Fetch 	98% verb: To place, present, or thrust something 
+RADIATE	IAV Pos SUPV Psv Fetch Incr 	
+RAVAGE	IAV Neg SUPV Actv Hostile Fetch 	
+REACH	DAV SUPV Fetch Actv 	11% verb: To extend the hand, to extend 
+REAP	IAV Pos SUPV Actv Fetch 	
+RECLAIM	IAV Pos SUPV Actv Fetch Power Comform Exert 	
+RELEASE	IAV SUPV Fetch Actv 	68% verb: To let out, let go, free 
+REMOVE	DAV SUPV Fetch Strng Actv 	verb: Take away or off, dismiss, eliminate 
+RESERVE	IAV SUPV Fetch Strng Actv Undrst 	35% verb: Save, withhold, restrain 
+RESTORATION	Pos Noun Affil Fetch 	
+RESURRECT	IAV Pos SUPV Actv Affil Fetch 	
+RETAIN	IAV SUPV Fetch Strng 	
+RETURN	IAV Pos SUPV Pstv Actv Fetch 	5% verb: To give back, cause to revert to original position, reciprocate 
+REVITALIZE	IAV Pos SUPV Actv Affil Fetch 	
+REVOKE	IAV Neg SUPV Actv Change Fetch 	
+ROBBER	Neg Noun HU Fetch Hostile Legal 	
+ROBBERY	Neg Noun Fetch Hostile Legal 	
+ROUND	IAV SUPV Fetch Actv 	3% idiom-verb: "Round up", to herd, collect 
+SAVE	IAV Pos SUPV Fetch Pstv Strng Actv 	79% verb-adj: To rescue, preserve, reserve, salvage, hold in safekeeping 
+SCARE	IAV SUPV Fetch Actv 	0% idiom-verb: "Scare up"--find with effort, gather 
+SEIZE	IAV Neg SUPV Hostile Ngtv Strng Actv Fetch 	verb: To take possession or control of 
+SELFISHNESS	IPadj Neg Modif Need Fetch Feel 	
+SEND	DAV SUPV Fetch Actv 	verb: To cause (permit or enable) to go, or to be taken 
+SENT	DAV SUPV Fetch ED Actv 	verb: Caused, permitted or enabled to go or be taken 
+SMUGGLE	IAV Neg SUPV Actv Fetch 	
+SNARE	Neg Noun Fetch Object 	
+SNATCH	DAV Neg SUPV Fetch Hostile Ngtv Strng Actv 	
+TAKE	DAV SUPV Actv Fetch 	46% verb: Used to denote acquisition, adoption or assumption, thus seize,  obtain, employ, assume, choose, get, receive, execute; assume to be, understand  or interpret in a certain way (10) 
+TAKE	IAV SUPV Fetch Actv 	26% verb: To move, move from, accompany, lead, transport 
+THEFT	Neg Noun Hostile Fetch Legal 	
+THIEF	Neg Noun HU Role Hostile Fetch Legal 	
+USURP	IAV Neg SUPV Actv Hostile Polit Fetch Exert Intrel Power 	
+VOUCHSAFE	IAV Pos SUPV Actv Comform Fetch Other 	

@@ -1,0 +1,193 @@
+word	tags	comments
+AMBIGUITY	Neg Noun Undrst Ngtv Percv 	
+AMBIGUOUS	Neg Modif Percv Undrst Ngtv 	
+APOCALYPSE	Pos Noun Think Percv Pleasure 	
+APPARENT	Modif Percv Undrst 	42% adj: Perceptible, evident 
+APPARENT	Modif Percv Undrst 	58% adv: "Apparently"--seemingly, evidently 
+APPEAR	IAV SUPV VERB LINK Psv Percv Undrst 	64% verb: To seem 
+APPEAR	DAV SUPV Percv Psv 	36% verb: To physically emerge, come into sight 
+APPEARANCE	Noun Percv Psv 	
+APPRECIABLE	Pos Modif Percv Pstv Strng Ovrst 	
+ATTENTION	Noun Percv Psv Subm 	noun: The act or faculty of attending, by directing the mind to an object 
+ATTENTIVE	Pos Modif Percv Pstv Psv Subm 	
+AWARE	IndAdj Pos Modif Percv Know Strng Psv 	
+AWARENESS	Pos Noun ABS Abs* Percv Pstv Strng Psv 	
+BEWARE	IAV Neg SUPV Percv Ngtv Strng Hostile Undrst 	
+CAPTIVATION	Pos Noun Think Ovrst Percv 	
+CASE	IAV SUPV Percv Legal 	0% verb: To examine or survey in planning a crime 
+CAST	Noun Percv 	7% noun: Aspect, appearance 
+CLEARNESS	Pos Noun Percv Know 	
+CLICK	Noun Percv 	
+COGNIZANCE	Pos Noun Think Percv Ovrst 	
+COGNIZANT	IndAdj Pos Modif Think Percv Ovrst 	
+COMPREHEND	SV Pos SUPV Actv Know Percv 	
+CONSCIOUS	Modif Percv 	adj-adv: Aware, deliberate; "consciously"--in a cognizant or deliberate manner (2) 
+CONSCIOUSNESS	Noun ABS Abs* Percv 	
+CONSPICUOUS	Modif Percv Ovrst 	
+DAZZLE	IAV Pos SUPV Actv Percv Other Strng 	
+DECEPTIVE	Neg Modif Percv Ngtv Hostile 	
+DESCRY	IAV Pos SUPV Actv Percv 	
+DETECT	Modif Percv Actv 	
+DETECT	IAV SUPV Percv Actv 	
+DETECTION	Noun Percv Actv 	
+DISAPPEAR	DAV SUPV Percv Psv 	verb: To pass out of sight 
+DISAPPEARANCE	Noun Percv Psv 	
+DISCERN	IAV Pos SUPV Actv Percv Solve Eval 	
+DISCERNIBLE	Modif Percv Psv 	
+DISCOVER	IAV SUPV Percv 	verb: To find or find out 
+DISCOVERY	Noun Percv 	
+DISREGARD	IAV Neg SUPV Actv Percv 	
+DISSOLUTION	Neg Noun Think Affil Pain Percv 	
+DISTINCT	Pos Modif Percv Ovrst Pstv 	
+DISTINCTIVE	Pos Modif Percv EVAL Pstv 	
+DISTORTION	Neg Noun Percv 	
+DISTRUSTFUL	IPadj Neg Modif Percv Pain 	
+DIVERSION	Neg Noun Percv Ovrst 	
+DOUBTFUL	IndAdj Neg Modif Undrst Ngtv Weak Vice Percv 	
+DREAMLAND	Pos Place Percv Think Pleasure 	
+ECHO	DAV SUPV Percv 	
+ENLIGHTENMENT	Pos Noun Know Percv 	
+ENVISION	IAV Pos SUPV Actv Percv 	
+EVIDENT	Modif Percv Ovrst Psv 	
+EVIDENTLY	Modif Percv Undrst Psv 	
+EXPERIENTIAL	Modif Percv Psv 	
+EXPOSE	IAV Neg SUPV Percv Actv Comform 	
+EYE	IAV SUPV Percv Psv 	1% verb: To look at 
+EYE	IAV SUPV Percv Actv 	3% verb: "Keep an eye (on)," fix eye(s) (on)--keep track of, observe, follow 
+EYE	IAV SUPV Percv Psv 	1% idiom-verb: "Set eyes on"--to see, often for the first time 
+FACE	IAV SUPV Percv Actv Strng 	30% verb: Confront, direct attention to 
+FAINT	Neg Modif Percv Ngtv Weak Psv Undrst 	
+FAMILIAR	Pos Modif Percv Pstv 	
+FAMILIARIZE	IAV Pos SUPV Actv Other Rel Know Percv 	
+FANTASY	Pos Noun Percv Pleasure 	
+FARSIGHTED	IndAdj Pos Modif Percv 	
+FEELER	Noun Percv 	
+FLAVOR	IAV SUPV Percv Psv 	
+FOCUS	Noun Percv 	
+FOCUS	IAV SUPV Percv 	
+FOREBODING	IndAdj Neg Modif Hostile Percv 	
+FORESEE	IAV SUPV Percv Psv 	
+FORESIGHT	Pos Noun Percv Strng Think Virtue 	
+FRAGRANT	IndAdj Pos Modif Percv Eval Qual 	
+GAZE	Noun Percv Psv 	
+GAZE	IAV SUPV Percv Psv 	
+GLANCE	Noun Percv Psv 	
+GLANCE	DAV SUPV Percv Psv 	
+GLARE	Neg Noun Percv Strng 	
+GLIMPSE	Noun Percv Psv 	
+GLIMPSE	DAV SUPV Percv Psv 	
+GLISTEN	IAV Pos SUPV Percv Pstv 	
+GLITTER	IAV Pos SUPV Percv Pstv 	
+GLOW	IAV Pos SUPV Percv Pstv 	
+GUISE	Neg Noun Object Percv 	
+HAZINESS	Neg Noun Ngtv Weak Percv Undrst 	
+HAZY	IndAdj Neg Modif Percv 	
+HEAR	IAV SUPV Percv Psv 	64% verb: To perceive sound, to listen; to pay attention (infrequent) 
+HEAR	Noun Percv 	1% noun: The faculty by which sound is perceived 
+HIDDEN	Modif Percv Psv 	52% adj: Concealed 
+HIDE	Modif Percv 	11% noun-adj: "Hiding"--concealment, e.g. "in hiding," "a hiding place" 
+IDENTIFY	IAV SUPV Percv Psv 	
+IMPRESS	IAV Pos SUPV Pstv Strng Actv PFREQ Percv 	97% verb: To have a strong, usually pleasing, effect on the mind or emotions 
+IMPRESS	Noun Percv Psv 	3% noun: A mark, an effect produced by a strong influence 
+IMPRESSION	Noun Percv 	noun: A mental effect, usually hazy--a perception, feeling or thought 
+INDETERMINABLE	IndAdj Neg Modif Percv Ovrst 	
+INDETERMINATE	IndAdj Neg Modif Percv Ovrst 	
+INDISTINCT	Modif Percv Undrst Negate 	
+INDISTINGUISHABLE	Modif Percv Negate Undrst 	
+INSPECT	IAV SUPV Percv Actv Power 	
+INSPECTION	Noun Percv Actv Power 	
+INTENSITY	Noun Strng Percv Ovrst Actv 	
+INTENSIVE	Modif Strng Percv Ovrst Actv 	
+INVISIBLE	IndAdj Neg Modif Percv Negate 	
+KEEP	IAV SUPV Percv Handels Actv Strng 	0% noun: Custody, care 
+LOOK	DAV SUPV Percv 	38% verb: To gaze, glance, set eyes upon in order to see, to give someone  or something a glance, to use the sight in seeking, examining, watching 
+LOOK	IAV SUPV VERB LINK Percv 	41% verb: To appear, to seem to one's eye or mind 
+LOOK	Noun Percv Psv 	1% noun: A glance, gaze, visual search or examination 
+LOOK	IAV SUPV Percv Actv 	2% verb-idiom: "Look out for"--to be on guard against, to be concerned about 
+LOOM	IAV Neg SUPV Psv Percv 	
+MAKE	IAV SUPV Percv Actv 	1% verb: "Make out"--decipher (6); survive--"he'll make out" (2); complete--"make  out a list (1) 
+MANIPULATION	Neg Noun Other Percv Comform 	
+MISTAKEN	IAV Neg SUPV Actv Percv Fail Undrst 	
+MISTRUST	IAV Neg SUPV Actv Percv Fail Undrst 	
+MUDDY	IndAdj Neg Modif Percv Undrst 	
+MURKY	IndAdj Neg Modif Percv Undrst 	
+NEBULOUS	IndAdj Neg Modif Undrst Percv 	
+NOTABLE	IndAdj Pos Modif Percv Pstv Strng Ovrst 	
+NOTE	IAV SUPV Percv Psv 	44% verb: To notice, recognize 
+NOTICE	IAV SUPV Percv Psv PFREQ 	86% verb: To perceive, to recognize, to note 
+NOTICEABLE	Modif Percv 	
+OBLIQUE	IndAdj Neg Modif Undrst Percv 	
+OBSCURE	Neg Modif Ngtv Percv Undrst 	
+OBSERVATION	Noun Percv Psv 	
+OBSERVE	IAV SUPV Percv Psv 	verb: To perceive or regard with attention, to remark, to notice 
+OBVIOUS	Modif Percv Ovrst 	adj: Easily perceived or understood, not needed to be said, patent 
+OVERLOOK	IAV Neg SUPV Percv Psv Ngtv 	
+OVERSIGHT	Neg Noun Percv Fail Vice 	
+PARANOID	IndAdj Neg Modif Weak Emot Pain Undrst Percv 	
+PAY	IAV SUPV Percv Actv 	8% verb-idiom: "Pay attention" 
+PERCEIVE	IAV SUPV Percv Psv 	
+PERCEPTION	Noun Percv Psv 	
+PICTURESQUE	IndAdj Pos Modif Percv Eval Qual 	
+PLAIN	Pos Modif Percv EVAL Pstv Ovrst 	58% adj: Obvious, clear, uncomplicated, simple 
+PLAIN	Pos Modif Percv Pstv Ovrst 	16% adv: "Plainly"--clearly, simply 
+PLAIN	Pos Modif Percv Pstv 	3% adj: "Plainer"--comparative of sense 1 
+PLAIN	Pos Modif Percv Pstv 	0% adj: "Plainest"--superlative of sense 1 
+POINT	IAV SUPV Actv Percv 	23% verb: To observe, note, indicate, call attention to, emphasize 
+PROSPECT	Noun Percv Ovrst 	
+READ	IAV SUPV Percv 	1% idiom-verb: "Sight read"--not handled 
+RECOGNITION	Noun Percv 	
+RECOGNIZE	IAV SUPV Percv Psv 	verb: To perceive, identify, acknowledge 
+SAW	DAV SUPV Percv ED Psv PFREQ 	98% verb: Past tense of see, witnessed by sight, or inferred 
+SCRUTINIZE	IAV Neg SUPV Percv Think Actv 	
+SCRUTINY	Noun Percv Ovrst 	
+SEE	DAV SUPV Percv Psv 	verb: To look at, witness, perceive, understand, imagine, visit 
+SEEM	SV SUPV VERB LINK Percv Undrst 	verb: To appear or appear to be 
+SEEM	Modif Percv Undrst 	1% adv: "Seemingly"--apparently 
+SEEN	DAV SUPV Percv ED Psv 	
+SEMBLANCE	Pos Noun Percv 	
+SENSE	Noun Percv 	10% noun-adj: The body's five senses and their functions 
+SENSE	IAV SUPV Percv Psv 	10% verb: To note, perceive, feel, intuit 
+SENSORY	Modif Percv 	
+SHORTSIGHTED	IndAdj Neg Modif Percv Weak 	
+SIGHT	Noun Percv 	49% noun: The power or range of vision, physical or mental 
+SIGHT	Noun Percv 	36% noun: Something seen - an appearance, view, scene, spectacle - or  a sighting - a glimpse, a look 
+SIGHT	IAV SUPV Percv Psv 	2% verb: To catch sight of, to spot 
+SMELL	DAV SUPV Percv Psv 	
+SPARKLE	IAV Pos SUPV Psv Change Percv 	
+SPOT	IAV SUPV Percv 	4% verb: To discover by sight 
+STAND	IAV Pos SUPV Percv Strng Pstv 	1% idiom-verb: "Stand out"--to be conspicuous or prominent 
+STARE	Noun Percv 	
+STARE	DAV SUPV Percv 	
+STIGMA	Neg Noun Percv Vice 	
+STIMULATION	Pos Noun Actv Causal Percv 	
+STINK	IAV Neg SUPV Percv Pain 	
+STOOD	IAV Pos SUPV Percv ED Strng Pstv 	0% verb: "Stood out"--was conspicuous 
+STRIKE	Modif Percv Ovrst 	9% adj: "Striking"--marked, pronounced; attacking (2) 
+SUGGESTIVE	Modif Percv 	
+SUPERSTITION	Neg Noun Vice Percv Feel 	
+SUPERSTITIOUS	IndAdj Neg Modif Vice Percv Feel 	
+SURVEILLANCE	Noun Percv POLIT Power Strng Actv 	
+SURVEY	IAV SUPV Percv Actv 	
+SWEETNESS	Pos Noun Percv Pleasure 	
+TABOO	IndAdj Neg Modif Hostile Percv 	
+TASTE	IAV SUPV Psv Percv 	50% verb: To savor or experience (transitive)--"i tasted the melon" 
+TASTE	SV SUPV Percv 	22% verb: To produce an oral sensation (intransitive)--"it tasted sweet" 
+TELL	IAV SUPV Percv 	4% verb: To discern or distinguish 
+THUD	Neg Noun Percv 	
+UNFORESEEN	IndAdj Neg Modif Percv Fail 	
+UNMISTAKABLE	Modif Percv Negate Strng Ovrst 	
+UNNOTICED	IndAdj Neg Modif Percv Fail 	
+UNOBSERVED	IndAdj Neg Modif Percv Fail 	
+UNSEEN	IndAdj Neg Modif Percv Fail 	
+VANISH	IAV Neg SUPV Actv Percv Decr 	
+VANTAGE	Noun Percv Strng 	
+VIEW	Noun Percv 	15% noun: Sight or the range of sight--refers to what is or can be 'seen,'  physically or mentally, a picture 
+VIEW	IAV SUPV Percv 	6% verb: To regard, observe, see 
+VISIBLE	Modif Percv 	
+VISION	Noun Percv 	noun: Sight, insight, apparition, image 
+VISUAL	Modif Percv 	
+VISUALIZATION	Pos Noun Percv 	
+WATCH	DAV SUPV Percv Actv PFREQ 	85% verb: To look at closely or attentively 
+WATCH	IAV SUPV Percv 	1% idiom: "Keep watch" 
+WATCHFUL	Modif Percv 	
+WITNESS	IAV SUPV Percv 	

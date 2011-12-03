@@ -1,0 +1,42 @@
+word	tags	comments
+ACCOUNT	LY Ovrst FREQ Negate 	3% adv: "On no account"--under no circumstances 
+AGAIN	LY FREQ 	adverb: Once more, anew, another time 
+AGAIN	LY FREQ Ovrst 	1% idiom-adv: 'again and again'--repeatedly 
+ANEW	LY FREQ 	
+ANNUAL	Modif FREQ 	
+ANYMORE	LY FREQ 	
+COMMON	Modif EVAL Ovrst FREQ 	24% adj: Ordinary, frequent, without distinction 
+DAILY	LY FREQ Ovrst 	
+DIURNAL	Modif FREQ 	
+FREQUENCY	Noun FREQ 	
+FREQUENT	Modif FREQ Ovrst 	45% adj: Occurring often, habitual 
+FREQUENT	LY FREQ Ovrst 	55% adv: 'frequently'--often 
+GENERAL	LY Ovrst FREQ 	48% adv: "Generally, in general"--as a rule, usually, commonly 
+HAPHAZARD	Neg Modif Ngtv FREQ 	
+INFREQUENT	Modif FREQ Negate Undrst 	
+MONTH	Modif FREQ 	0% adv-adj: "Monthly"--once a month 
+NEVER	Negate LY Undrst FREQ 	adv: Not ever, not at all 
+NIGHT	LY FREQ 	0% adv: "Nightly", at night or every night 
+OCCASION	LY Weak Undrst FREQ 	11% adv: "On occasion", "upon occasion", occasionally, from time to time 
+OCCASIONAL	Modif FREQ Undrst Weak 	adj: Infrequent, once in a while 
+OFTEN	LY FREQ Strng Ovrst 	adverb: Many times, frequently 
+ONCE	LY FREQ 	79% adverb: One time, at one time, when 
+OVER	LY FREQ Strng 	3% adv: Repeatedly--"i do this over and over" 
+QUARTER	LY FREQ 	4% adv: "Quarterly" - four times a year 
+RARE	LY Undrst FREQ 	35% adv: "Rarely"--seldom 
+RECURRENT	Modif FREQ Strng 	
+REGULAR	Modif EVAL FREQ Strng Ovrst 	adj: Ordinary, usual, standard, habitual, systematic--following some general  rule, custom, or habit 
+REGULARITY	Noun TIME FREQ 	
+REPEAT	Modif FREQ 	11% adj: "Repeated," done again, done over and over 
+REPEAT	LY FREQ Actv 	34% adv: "Repeatedly", more than once 
+REPETITION	Noun FREQ 	
+SELDOM	LY FREQ Ovrst 	
+SOMETIME	LY FREQ Undrst PFREQ 	91% adverb: "Sometimes"--on some occasions, at times 
+SPORADIC	Modif FREQ Weak 	
+TIME	Noun FREQ 	18% noun: An occasion, especially of a recurring event--"he fell three times" 
+TIME	LY FREQ Undrst 	0% verb: Multiplication symbol--'three times as big' 
+TIME	LY FREQ 	0% noun: 'timing' 
+TWICE	LY FREQ 	76% adv: Two times, on two occasions 
+UNCOMMON	Pos Modif FREQ Negate Pstv Ovrst 	
+WEEKLY	LY FREQ 	
+YEAR	LY FREQ 	0% adj-adv: "Yearly" 

@@ -1,0 +1,1903 @@
+word	tags	comments
+ABLE	Pos Modif EVAL Virtue Strng Pstv 	adjective: Having necessary power, skill, resources, etc. 
+ABOLISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+ABOMINABLE	IndAdj Neg Modif Eval Vice Strng Ovrst 	
+ABRASIVE	IPadj Neg Modif Vice Hostile Strng 	
+ABSOLUTE	Modif Virtue Strng Ovrst 	27% adj: Perfect, without limitation or qualification 
+ABSOLUTE	Yes LY Ovrst Strng 	73% adv: "Absolutely"--without qualification, certainly, totally 
+ABUNDANCE	Pos Noun Quan ECON Pstv Strng Ovrst 	
+ABUNDANT	Pos Modif Quan Pstv Strng Ovrst 	
+ABUSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ACCELERATE	DAV SUPV Incr Actv Strng 	
+ACCELERATION	Noun Strng Actv Incr 	
+ACCESSION	Pos Noun Incr Strng 	
+ACCOMPLISH	IAV Pos SUPV Pstv Strng Actv Power Complt 	verb: To bring to its goal or conclusion 
+ACCOMPLISHMENT	Pos Noun Goal Pstv Strng Actv Power 	
+ACHIEVE	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To accomplish or carry through 
+ACQUIRE	Modif Strng Actv Fetch 	
+ACQUIRE	DAV SUPV Complt Strng Actv 	
+ACQUISITION	Noun Object ECON Tool Strng Actv 	
+ACT	DAV SUPV Exert Strng Actv 	52% verb: To do something, to operate, perform a function; to feign (2),  to perform in the theatre (0) 
+ACT	IAV SUPV Work Strng Actv 	8% idiom-verb: 'act as'--to replace in function. 
+ACT	Noun Strng Exert Actv 	25% noun: A deed, performance, anything done; a law--"the mills act" (7) 
+ACTION	Noun ABS Abs* Strng Actv Exert 	noun: The doing or performance of something; an act or thing done 
+ACTIVE	Modif Strng Actv Exert 	86% adjective: In a state of action, in actual progress or motion, busy. 
+ADAMANT	IndAdj Pos Modif Know Strng Arousal 	
+ADAPT	IAV SUPV Work Strng Actv 	
+ADAPTABILITY	Pos Noun Strng Virtue Vary 	
+ADAPTABLE	IndAdj Pos Modif Strng Virtue Vary 	
+ADAPTATION	Pos Noun Vary Strng Virtue 	
+ADAPTIVE	IndAdj Pos Modif Strng Virtue Vary 	
+ADD	Modif Quan Strng 	13% adj: "Added," extra, further,increased--"the added expense" 
+ADDITION	LY Quan Strng 	82% idiom-adv: 'in addition,' besides, additionally 
+ADDITIONAL	Modif Quan Strng 	
+ADEPT	Pos Modif EVAL Virtue Pstv Strng 	
+ADEPTNESS	Pos Noun Virtue Strng 	
+ADJUST	IAV SUPV Work Strng 	77% verb: To adapt 
+ADMINISTER	IAV SUPV Intrel Power Strng Actv 	
+ADMINISTRATION	Noun HU COLL ABS TIME POLIT Polit* Power Strng 	69% noun-adj: A body entrusted with executive or administrative powers,  the time span over which such power is exercised (2) 
+ADMINISTRATION	Noun ECON Power Strng Actv Doctr 	31% noun: Direction or management of institutional activity 
+ADMINISTRATIVE	Modif POLIT ECON Doctr Power Strng Actv 	
+ADMINISTRATOR	Noun HU POLIT ECON Power Strng Role 	
+ADMIRATION	Pos Noun Strng Emot Pleasure Virtue 	
+ADMIRER	Pos Noun HU Emot Strng 	
+ADMONISH	IAV Neg SUPV Intrel Hostile Power Strng Actv 	
+ADORN	IAV Pos SUPV Actv Eval Strng 	
+ADROIT	IndAdj Pos Modif Strng Virtue 	
+ADROITLY	Pos Modif Strng Virtue 	
+ADULATION	Pos Noun Comform Emot Pleasure Strng Eval 	
+ADULT	Noun HU Strng Role 	70% noun: A mature organism, almost always human 
+ADULT	Pos Modif Virtue Pstv Strng 	30% adj: Mature, of or pertaining to adults 
+ADVANCE	IAV Pos SUPV Travl Pstv Strng Actv 	47% verb: To move or bring forward, improve, promote 
+ADVANCE	Pos Noun Pstv Strng Actv Means 	20% noun-adj: A moving forward, improvement, approach, in front, prior 
+ADVANTAGE	Pos Noun ABS Abs* ECON Virtue Pstv Strng 	noun: Any state or opportunity favorable to success, benefit, gain, position  of superiority. 
+ADVANTAGEOUS	Pos Modif Virtue Pstv Strng 	
+ADVENTURESOME	IndAdj Pos Modif Strng Actv 	
+ADVENTUROUS	IndAdj Pos Modif Strng Actv 	
+ADVOCATE	Noun HU POLIT Legal Strng Actv Role 	
+ADVOCATE	IAV SUPV Power Strng Actv Comform 	
+AFFINITY	Pos Noun Virtue Strng 	
+AFFIRM	IAV Pos SUPV Power Pstv Strng Comform 	
+AFFLICT	IAV Neg SUPV Ngtv Strng Actv Intrel Hostile 	
+AFFORD	IAV SUPV Complt Econ* Strng 	74% verb: To bear or meet the expense of 
+AFFORD	IAV SUPV Work Power Strng 	26% verb: To furnish, confer upon or be capable of providing 
+AFLOAT	IndAdj Pos Modif Strng Econ 	
+AGGRAVATE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+AGGRAVATION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGGRESSION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGGRESSIVE	Neg Modif EMOT Hostile Ngtv Strng Actv PFREQ V 	adjective: Characterized by aggression, tending to aggress, making the  first attack, energetic, vigorous. 
+AGGRESSIVENESS	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGILE	IndAdj Pos Modif Strng Virtue 	
+AGILITY	Pos Noun Strng Virtue 	
+AGITATE	IAV Neg SUPV Exert Ngtv Strng Actv 	
+AGITATION	Neg Noun Ngtv Strng Actv Vice 	
+AGREEMENT	Pos Noun COM Comform Affil Pstv Strng 	noun: Unanimity of opinion, state of accord, mutual arrangement. 
+AID	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	16% verb: To give help 
+AIR	IAV SUPV Strng Comform 	1% verb: To expose to air (0), to make known, publicize (1) 
+ALERT	Modif Strng Actv Arousal 	
+ALIVE	Pos Modif Natpro Strng Actv Pstv 	adjective: Living, existing, full of life. 
+ALLIANCE	Pos Noun HU COLL POLIT Polit* Power Pstv Strng 	
+ALLIED	IAV Pos SUPV Intrel Affil Polit* Strng Pstv 	
+ALLY	Pos Noun HU POLIT Affil Polit* Pstv Strng Role 	
+ALMIGHTY	IndAdj Pos Modif Strng Virtue Power 	
+ALTER	IAV SUPV Vary Strng Actv 	
+AMAZEMENT	Pos Noun Strng Power 	
+AMAZING	IndAdj Pos Modif Ovrst Power Strng 	
+AMBITION	Noun POLIT ECON Virtue Power Strng 	noun: Desire for success or distinction 
+AMBITIOUS	Modif Virtue Power Strng Actv 	
+AMBUSH	Neg Noun Ritual Hostile Milit Ngtv Strng Actv 	
+AMBUSH	IAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+AMPLE	Pos Modif Quan Pstv Strng 	
+AMPLIFY	DAV Pos SUPV Actv Incr Strng 	
+AMPLY	Pos Modif Strng Incr 	
+ANCHOR	IAV SUPV Stay Strng 	
+ANTAGONISM	Neg Noun EMOT Hostile Ngtv Arousal Strng Actv 	
+ANTAGONISTIC	Neg Modif EMOT Hostile Ngtv Strng Arousal Actv 	
+ANTAGONIZE	IAV Neg SUPV Ngtv Strng Actv Arousal Hostile 	
+APPRECIABLE	Pos Modif Percv Pstv Strng Ovrst 	
+APPREHENSION	Neg Noun EMOT Pain Ngtv Strng Actv 	
+APPROPRIATE	IAV SUPV Intrel Power Strng 	
+APPROVE	IAV Pos SUPV Affil Pstv Strng Comform 	
+APT	Pos Modif Virtue Strng Pstv Ovrst 	
+APTITUDE	Pos Noun Strng Virtue 	
+ARDENT	IndAdj Pos Modif Strng Power Affil 	
+ARISE	IAV SUPV Rise Strng Actv 	
+ARM	Noun Object POLIT Tool Hostile Milit Strng Power 	16% noun: "Arms"--weapons 
+ARM	IAV SUPV Intrel Milit Strng Actv Power 	1% verb: To equip with weapons 
+ARMED	Modif Object Tool Milit Power Strng Hostile 	adj: Equipped with weapons 
+ARMED	IAV SUPV ED Intrel Milit Strng Actv Power Hostile 	0% verb: To equip with weapons (past tense) 
+ARMY	Noun HU COLL POLIT Milit Strng Power Hosti 	noun: The military forces of a nation 
+AROSE	IAV SUPV ED Rise Strng Actv 	
+ARREST	Neg Modif Hostile Legal Power Ngtv Strng Actv Exert 	15% noun-adj: Halting, seizure, usually by legal authority, seized, halted, stopped 
+ARREST	DAV Neg SUPV Stay Hostile Legal Ngtv Strng Actv 	81% verb: To halt, stop, seize by legal authority 
+ARROGANT	Neg Modif Ngtv Strng Vice 	
+ARTICULATE	Modif Comform SUPV Strng Actv 	
+ASCEND	DAV SUPV Rise Strng Actv 	
+ASCENT	Noun Rise Strng Actv 	
+ASSAIL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ASSAULT	Neg Noun Hostile Ngtv Strng Actv Vice 	
+ASSAULT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+ASSERT	IAV SUPV Power Strng Actv Comform 	
+ASSERTION	Pos Noun Know Strng Comform Arousal 	
+ASSET	Pos Noun Strng Affil 	
+ASSIST	Pos Noun Affil Pstv Strng Actv Virtue 	
+ASSIST	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+ASSISTANCE	Pos Noun Affil Pstv Strng Actv Virtue 	noun: Act of assisting, help, aid. 
+ASSOCIATION	Pos Noun HU COLL Affil Pstv Strng Actv 	79% noun: An organization of people with a common purpose, having a formal  structure 
+ASSOCIATION	Pos Noun Know Pstv Strng 	21% noun: Any other connection, relation or combination 
+ASSURANCE	Pos Noun COM Comform Affil Pstv Strng Ovrst 	
+ASSURE	IAV Pos SUPV Complt Pstv Strng Ovrst 	50% verb: To guarantee, by virtue of some action, that something will come about 
+ASSURE	IAV Pos SUPV Power Pstv Strng Ovrst Comform 	33% verb: To pledge, to state with confidence, to make confident 
+ASSURE	Pos Modif EMOT Power Ovrst Pstv Strng Pleasur 	17% adj: "Assured"--confident (2), guaranteed (1) 
+ASSUREDLY	Pos LY Power Ovrst Pstv Strng 	
+ASTOUND	SV Pos SUPV Actv Ovrst Strng Power 	
+ATHLETIC	Pos Modif Exprs Pstv Strng Virtue 	
+ATOMIC	Modif POLIT ECON Strng Object Natobj 	
+ATTACK	Neg Noun POLIT Hostile Ngtv Strng Actv Vice 	55% noun: An onslaught, assault 
+ATTACK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	34% verb: To assault (physically or figuratively) 
+ATTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	
+ATTAINMENT	Pos Noun Pstv Strng Actv Complt 	
+ATTRACT	IAV Pos SUPV Intrel Affil Pstv Strng 	
+ATTRACTION	Pos Noun Affil Pstv Pleasur Strng 	
+AUDACIOUS	IndAdj Neg Modif Eval Vice Strng Ovrst 	
+AUDACITY	Neg Noun Vice Strng Ovrst 	
+AUDIBLE	IndAdj Pos Modif Comform Strng 	
+AUSTERE	IndAdj Neg Modif Eval Hostile Strng 	
+AUTHORITARIAN	Noun HU Power Strng POLIT Role 	
+AUTHORITATIVE	IPadj Pos Modif Legal Ovrst Strng Virtue Power Doctr 	
+AUTHORITY	Pos Noun Legal Power Strng 	
+AUTHORIZE	Modif Power Strng Legal Comform 	
+AUTHORIZE	IAV SUPV Power Strng Actv Comform Legal 	
+AUTOCRAT	Neg Noun HU Polit Doctr Power Strng 	
+AUTOCRATIC	IPadj Neg Modif Polit Doctr Power Strng 	
+AUTONOMOUS	IPadj Pos Modif Legal Power Undrst Strng 	
+AVAIL	IAV SUPV Try Strng Psv 	
+AVENGE	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AWARD	Pos Modif Comform Power Pstv Strng 	
+AWARD	IAV Pos SUPV Power Pstv Strng Comform Actv 	
+AWARE	IndAdj Pos Modif Percv Know Strng Psv 	
+AWARENESS	Pos Noun ABS Abs* Percv Pstv Strng Psv 	
+AWFUL	Neg Modif EVAL Vice Ngtv Strng Ovrst 	60% adjective-adv: Extremely bad, unpleasant, ugly; very (7) 
+AXE	Noun Object Tool Strng 	noun: Tool used to cleave and chop 
+BACK	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	1% verb: To support 
+BACK	IAV SUPV Fail Strng Actv 	1% verb: To move or cause to move backwards, to abandon a position or argument 
+BACK	Pos Noun Power Pstv Strng Intrel Affil Actv 	0% noun: "Backing"--support 
+BACKBONE	Pos Noun Strng Power 	
+BACKER	Pos Noun HU Econ* Pstv Strng Role 	
+BALANCE	Modif Means Strng 	
+BALANCE	DAV SUPV Work Strng 	
+BALL	Noun Bodypt Strng 	4% noun: Male genitals 
+BALL	Pos Modif Virtue Pstv Strng 	0% idiom-adj: "On the ball"--alert, efficient 
+BAND	IAV SUPV Intrel Affil Strng 	3% verb: To group together 
+BANISH	Neg Modif Polit* Ngtv Strng Actv Intrel Power 	
+BANISH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+BAR	DAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	19% verb: To obstruct or exclude 
+BASE	Noun PLACE Social Strng 	22% noun: A foundation, place of operation (2), minimum level (2) 
+BASE	IAV SUPV Solve Strng 	78% verb: To establish, ground, provide with a foundation or rationale,  to have as foundation - "based on". 
+BATTLE	Neg Noun POLIT Ritual Milit Ngtv Strng Actv 	86% noun-adj: Contest or fight, pertaining to same 
+BATTLE	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	14% verb: To engage in a fight 
+BEAR	IAV SUPV Work Power Strng 	21% verb: To carry, show, wear, conduct oneself, render, afford, support,  sustain, endure 
+BEAR	IAV SUPV Try Power Actv Strng 	0% idiom-verb: "Bear down"--to exert pressure on or effort toward accomplishing,  to approach 
+BEAT	IAV Neg SUPV Complt Hostile Power Strng Actv Ngtv 	88% verb: To strike repeatedly, defeat or outperform (6) 
+BEAT	Neg Noun Hostile Strng Ngtv Vice 	5% noun-adj: "Beating"--a whipping or thrashing, striking, throbbing (0) 
+BEAUTIFY	IAV Pos SUPV Actv Strng Eval 	
+BELT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BENEFIT	IAV Pos SUPV Intrel Affil Power Pstv Strng 	21% verb: Gain, do good for, to 
+BENEFIT	Pos Noun Goal Pstv Strng 	29% noun: Gain, good deed 
+BESTOW	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+BEWARE	IAV Neg SUPV Percv Ngtv Strng Hostile Undrst 	
+BIG	Modif DIM Quan Strng 	adj: Large, important (includes comparative and superlative) 
+BLAST	Neg Noun Natpro Ngtv Strng Actv 	
+BLAST	IAV Neg SUPV Rise Ngtv Strng Actv 	
+BLATANT	IndAdj Neg Modif Strng Ovrst 	
+BLIND	Neg Modif Vice Ngtv Strng 	5% adj: "Blinding"--producing blindness 
+BLOC	Noun HU POLIT COLL Strng 	
+BLOCK	Neg Noun Space Ngtv Psv Strng 	72% noun-adj: A barrier, solid mass, area, unit; street block (1) 
+BLOCK	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	28% verb: To thwart or barricade 
+BLOODTHIRSTY	IPadj Neg Modif Hostile Strng Power 	
+BLOW	Neg Noun Hostile Ngtv Strng Actv Exert 	24% noun: A hit or stroke, forcible effort, calamity 
+BLOW	IAV SUPV Exert Hostile Strng Actv 	60% verb: To propel as with wind, to set air in motion; fellation 
+BLOW	IAV Neg SUPV Ngtv Strng Actv Exert 	17% verb: "Blow up," "blow out"--to explode physically or emotionally 
+BLUNT	IPadj Neg Modif Qual Strng Ngtv 	
+BODY	Noun HU COLL POLIT Polit* Power Strng 	8% noun: A group of people, often political--as "electoral body," "student body" 
+BOISTEROUS	IndAdj Neg Modif Comform Strng 	
+BOLD	Modif Virtue Strng Actv 	
+BOLDNESS	Pos Noun Strng Power Virtue 	
+BOLSTER	IAV Pos SUPV Actv Affil Strng Incr 	
+BOMB	Neg Noun Object POLIT Tool Hostile Milit Ngtv Strng 	
+BOMB	DAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+BOND	Noun ECON COM Comform Affil Strng 	
+BOOM	Pos Noun Econ Incr Strng 	
+BOOST	Pos Modif Incr Pstv Strng Actv 	
+BOOST	IAV Pos SUPV Pstv Strng Actv Incr 	
+BORE	IAV SUPV ED Work Strng Actv 	28% verb: Carried, endured; manifested (3); drilled a hole (0); caused  loss of interest (2); exerted pressure or effort (1); approached (0) 
+BOSS	Noun HU ECON Econ* Power Strng Actv Role 	noun: Person in charge of something 
+BOUND	IAV SUPV ED Exert Strng 	10% verb: Past tense of "bind" 
+BOUNDLESS	IndAdj Pos Modif Strng Quan Incr 	
+BOUNTIFUL	IndAdj Pos Modif Incr Strng Quan 	
+BOX	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	9% verb: To fight with fists, strike 
+BOX	Noun ECON Ritual Exprs Strng Actv 	4% noun-adj: "Boxing"--the sport 
+BOXER	Noun HU Exprs Strng Actv Role 	
+BRACE	Noun Object Tool Strng 	
+BRACE	IAV SUPV Work Strng 	
+BRANDISH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+BRAVADO	Neg Noun Power Strng 	
+BRAVE	Pos Modif EVAL Virtue Pstv Strng Power 	
+BRAVERY	Pos Noun Strng Power Virtue 	
+BRAZEN	IndAdj Neg Modif Power Strng 	
+BREACH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+BREAK	DAV Neg SUPV Ngtv Strng Actv Hostile Exert 	75% verb: To fracture, split, stop or cause to stop functioning, cause  a division or change, enter forcibly, escape, begin suddenly, interrupt, etc. 
+BRIDGE	IAV SUPV Strng Space 	6% verb: To span or connect any two separated things or points 
+BROAD	Modif DIM Space Strng 	adj: Wide, extensive (includes comparative, superlative and adverb forms) 
+BROADEN	IAV SUPV Incr Strng 	
+BROADNESS	Noun Strng Space 	
+BROKE	DAV SUPV ED Hostile Actv Strng Exert 	72% verb: Past tense of "break"--fractured, split, stopped functioning,  caused a division or change; entered forcibly (1); escaped (3); interrupted  (1), etc. 
+BROTHERHOOD	Pos Noun Virtue Affil Pstv Strng 	
+BRUTALITY	Neg Noun Vice Hostile Ngtv Strng Actv Ovrst 	
+BUILD	Noun Bodypt Strng 	1% noun: Physical form, usually human 
+BUILD	IAV SUPV Incr Strng Actv 	14% idiom-verb: "Build up"--to strengthen, or increase, either quantitatively  or qualitatively 
+BULK	Noun Quan Ovrst Strng 	
+BULLET	Neg Noun Object Tool Hostile Ngtv Strng 	
+BUOYANT	IndAdj Pos Modif Strng Affil 	
+BURST	Noun Quan Strng Actv 	
+BURST	IAV SUPV Fall Strng Actv 	
+BUSY	Modif Strng Actv Virtue 	adj-adv: Active, engaged in work or pastime (includes comparative (1),  superlative (1) and adverb ( 
+BUTCHERY	Neg Noun Hostile Ngtv Strng Actv Vice 	
+CAN	SV SUPV VERB MOD Strng 	verb: To have the ability, power, means, qualification, permission, or right to 
+CANDID	IPadj Pos Modif Comform Strng 	
+CANDOR	Pos Noun Comform Strng 	
+CANNON	Neg Noun Object Tool Hostile Milit Ngtv Strng 	
+CAPABILITY	Pos Noun Means Power Strng Pstv 	noun: Power or potential 
+CAPABLE	Pos Modif Virtue Power Pstv Strng 	adj: Having power or ability 
+CAPACITY	Noun Means Power Strng 	72% noun: Ability to do or hold 
+CAPITAL	Noun POLIT Polit* ECON Econ* Strng PFREQ Virtue 	92% noun: Wealth, source of profit, moneyed interests; a center of government (11) 
+CAPITALIZE	IAV Pos SUPV Actv Strng Power Econ Incr Ach 	
+CAPTAIN	Noun HU Power Strng Role 	
+CAPTURE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+CARRY	DAV SUPV Fetch Strng Actv 	75% verb: To transport, transmit, convey, bear; influence, get a majority  or plurality (much less frequent) 
+CARRY	IAV SUPV Complt Strng Actv 	12% idiom-verb: 'carry out', 'carry through'--to execute or accomplish 
+CAST	IAV SUPV Intrel Power Strng 	7% verb: To place in a role 
+CAST	Noun Object Tool Strng 	11% noun: Rigid structure; set of actors (0) 
+CATCH	IAV SUPV Fetch Strng Actv PFREQ 	88% verb: To capture, ensnare, get hold of; attract (1); contract (disease)  (1); to absorb as to hear and understand (0) 
+CATCH	IAV SUPV Complt Strng Actv 	6% idiom-verb: To "catch up"--to come from behind and attain equal status  with someone or something 
+CAUGHT	IAV SUPV Intrel ED Hostile Strng Actv PFREQ 	96% verb: Past tense of "catch"--to have captured, ensnared, attracted  (0); contracted (0); to have absorbed, as to hear and understand (0) 
+CAUGHT	IAV SUPV Complt ED Strng Actv 	4% idiom-verb: "Caught up"--to have come from behind to attain equal status  with someone or something 
+CAUSAL	Modif Causal Strng Actv 	
+CAUSE	IAV SUPV Causal Strng Actv 	44% verb: To produce as an effect 
+CAUSE	Noun ABS Abs* Strng Actv Causal 	15% noun: The source or sufficient condition of some effect 
+CAVALRY	Noun HU COLL POLIT Milit Strng 	
+CEMENT	Noun Object Tool Strng 	
+CEMENT	IAV SUPV Rel Strng 	
+CENTER	Noun POS Strng PLACE Social 	78% noun: Middle or focal point; place where various generally public,  social services and activities are performed and provided-- "community  center," "center for the arts" (15) interest, social gathering place ('community  center') 
+CENTER	IAV SUPV Space Strng 	22% verb: To focus on or at ('attention centers around him') 
+CENTRAL	Modif Space POS Strng 	
+CERTAIN	DET PRE PRE1 Modif Know Strng 	57% adjective: Fixed, definite or particular but not named or specified 
+CERTAIN	Modif EVAL EMOT Virtue Strng Ovrst 	7% adjective: Free from doubt, sure, confident (state of mind) 
+CERTAIN	Modif Ovrst Strng Virtue 	4% adjective: Inevitable, unquestionable, definite 
+CERTAIN	LY Ovrst Strng 	31% adverb: 'certainly'--inevitably, unquestionably, definitely 
+CERTAINTY	Noun ABS Abs* Strng Ovrst Know 	
+CHAIRMAN	Noun HU POLIT ECON Power Strng Role 	noun: Presiding officer 
+CHAIRMEN	Noun HU POLIT ECON S Power Strng Role 	
+CHALLENGE	Neg Noun Ngtv Strng Means Actv 	72% noun: Confrontation, contest, difficult task, generally with a connotation  of provocativeness or stimulation 
+CHALLENGE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	19% verb: To confront with a contest or problem 
+CHAMP	Pos Noun HU Role Power Strng Ach 	
+CHAMPION	Pos Noun HU Pstv Strng Actv Power Role 	
+CHAMPIONSHIP	Pos Noun Power Strng Ach 	
+CHANCELLOR	Noun HU POLIT Polit* Power Strng Role 	noun: Title of west german chief of state, an executive title 
+CHARGE	Noun Means Power Strng 	35% noun: Authority, responsibility, custody 
+CHARGE	IAV Neg SUPV Hostile Strng Actv Ngtv Comform 	9% verb: To accuse, enjoin, attribute 
+CHARGE	Neg Noun Hostile Strng Actv Ngtv Exert 	2% noun: Attack, forward rush or thrust 
+CHARGE	IAV Neg SUPV Travl Hostile Strng Actv Ngtv 	7% verb: To attack, to rush or thrust forward 
+CHARGE	Noun Object Tool Strng 	2% noun: A load, quantity of energy; anything or anyone committed to one's care (0) 
+CHARGE	Modif Qual Strng 	2% adj: "Charged"--loaded, usually with some form of energy 
+CHARISMA	Pos Noun Virtue Strng 	
+CHIEF	Noun HU Power Strng PFREQ Role 	92% noun: Person highest in authority 
+CHIEF	Modif Quan Strng Ovrst 	6% adj: Most important, primary 
+CHIEF	LY Quan Strng Ovrst 	2% adv: "Chiefly"--principally 
+CIRCLE	DAV SUPV Travl Actv Strng 	14% verb: To encircle, to move in a circle 
+CLEVER	Pos Modif Virtue EVAL Pstv Strng 	
+CLIMAX	Noun Strng Finish 	
+CLIMB	IAV SUPV Rise Strng Actv 	verb: To move upward, to ascend. 
+CLOUT	Pos Noun Power Strng 	
+CLUB	Noun HU COLL Affil Strng PFREQ 	86% noun: A group of persons organized for social or other activities 
+CLUB	Neg Noun Object Tool Hostile Milit Ngtv Strng 	8% noun: A heavy stick suitable for use as a weapon 
+CLUB	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	5% verb: To beat with, or as with, a club 
+CLUSTER	Noun Quan Strng 	
+CLUSTER	IAV SUPV Space Strng 	
+COALITION	Noun HU COLL POLIT Affil Polit* Power Strng 	
+COCKINESS	Neg Noun Emot Power Strng Vice 	
+COCKY	IndAdj Neg Modif Emot Power Strng 	
+COGENT	IndAdj Pos Modif Power Comform Strng Ovrst 	
+COHERENT	IndAdj Pos Modif Strng Ovrst Rel 	
+COHESION	Pos Noun Affil Rel Ovrst Strng 	
+COLLABORATION	Pos Noun COM POLIT Affil Pstv Strng Actv Virtue 	
+COLLAR	IAV SUPV Intrel Power Strng Actv 	
+COLLECT	IAV SUPV Incr Actv Strng PFREQ 	87% verb: To accumulate, acquire 
+COLLECTIVE	Noun HU COLL ECON Econ* Strng 	
+COLONEL	Noun HU POLIT Milit Power Strng Role 	
+COMBAT	Neg Noun POLIT Ngtv Actv Strng Intrel Hostile 	
+COMBAT	IAV Neg SUPV Intrel Hostile Polit* Ngtv Actv Strng 	
+COMBINE	Modif Quan Strng Actv 	
+COMBINE	IAV SUPV Rel Strng Actv 	
+COMBUSTION	Noun Natpro Strng Actv 	
+COMEBACK	Pos Noun Actv Strng Incr 	
+COMFORT	Pos Noun Pstv Strng Pleasur 	61% noun: Physical or emotional ease 
+COMFORT	IAV Pos SUPV Intrel Affil Pstv Strng 	29% verb: To solace 
+COMFORT	Pos Modif Pstv Strng Affil Arousal 	10% adj: "Comforting"--consoling, heartening 
+COMFORTABLE	Pos Modif EVAL Pleasur Pstv Strng 	adj-adv: Producing ease, at ease; with ease (1) 
+COMMAND	Noun COM Comform Power Strng Actv 	
+COMMAND	IAV SUPV Power Strng Actv Comform 	
+COMMANDER	Noun HU POLIT Milit Power Strng Actv Role 	
+COMMISSION	Pos Noun Affil Ovrst Know Strng 	
+COMMISSIONER	Noun HU POLIT Power Polit* Strng Role 	
+COMMITTEE	Noun HU COLL POLIT Power Strng 	noun adjective: Group of persons elected or appointed to carry out a specific  task or function 
+COMMUNITY	Pos Noun HU COLL POLIT ECON Affil Pstv Strng 	noun-adjective: Town, collectivity formed by proximity or common interest. 
+COMPANY	Noun HU COLL ECON Econ* Strng 	78% noun-adj: A body of men joined in a common purpose, usually economic 
+COMPEL	Neg Modif Means Ngtv Strng Actv 	
+COMPEL	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+COMPENSATE	IAV Pos SUPV Work Econ* Strng Actv Pstv 	
+COMPETE	IAV Neg SUPV Try Hostile Ngtv Strng Actv 	
+COMPETENCE	Pos Noun Virtue Pstv Strng Know Eval 	
+COMPETENCY	Pos Noun Strng Know Eval 	
+COMPETENT	Pos Modif Virtue EVAL Pstv Strng 	
+COMPLETE	Pos Modif Quan Strng Ovrst Pstv 	30% adjective: Whole, entire, lacking nothing 
+COMPLETE	IAV Pos SUPV Strng Pstv Finish 	23% verb: To finish, to bring to a conclusion or consummation, to fulfill  or make whole or entire 
+COMPLETE	LY Quan Ovrst Strng 	46% adverb: Wholly, entirely--"completely" 
+COMPOSURE	Pos Noun Strng Virtue 	
+COMPOUND	Noun Rel Strng 	
+COMPOUND	IAV SUPV Work Strng 	
+COMPRESS	Modif Space Strng Actv 	
+COMPRESS	IAV SUPV Rel Strng Actv 	
+COMPRESSION	Noun Natpro Strng Actv 	
+COMPULSION	Neg Noun Power Ngtv Strng Actv Hostile Means 	
+CONCENTRATE	Noun Natpro Strng Actv 	
+CONCENTRATE	IAV SUPV Solve Strng Actv 	
+CONCENTRATION	Noun Rel Strng 	63% noun: Strength or density about a common center 
+CONCENTRATION	Noun Know Strng Actv 	38% noun: Close or fixed attention 
+CONCRETE	Modif Qual Strng 	
+CONDEMN	Neg Modif Ngtv Strng Intrel Hostile 	
+CONDEMN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+CONFIDENCE	Pos Noun EMOT Subm Pstv Strng Ovrst PFREQ Pleasur 	97% noun: Trust, self-assurance, a secret 
+CONFIDENT	Pos Modif EMOT Power Pstv Strng Ovrst Pleasur 	
+CONFINE	Neg Modif Space Ngtv Strng Actv 	
+CONFINE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+CONFIRM	Modif Strng Ovrst 	
+CONFIRM	IAV SUPV Solve Strng Ovrst 	
+CONFIRMATION	Noun COM Comform Ovrst Strng 	
+CONFRONT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To challenge, face 
+CONFRONTATION	Neg Noun POLIT Hostile Ngtv Strng Vice Actv 	
+CONGREGATION	Noun HU COLL Relig Strng 	
+CONGRESS	Noun HU COLL POLIT Polit* Power Strng PFREQ 	97% noun: The legislative branch of the u.s. government 
+CONGRESS	Noun HU COLL Polit* Strng 	3% noun: An organization, society, etc., an official gathering of same 
+CONGRESSIONAL	Modif POLIT Polit* Strng HU COLL 	
+CONGRESSMAN	Noun HU MALE POLIT Polit* Strng Role 	
+CONGRESSMEN	Noun HU S Polit* Power Strng Role 	
+CONJURE	IAV Pos SUPV Actv Exprs Strng Begin 	
+CONQUER	IAV Pos SUPV Actv Strng Power Travel Intrel Ach 	
+CONQUEROR	Pos Noun HU Role Power Strng Travel Intrel 	
+CONSENT	Pos Noun COM Comform Subm Pstv Strng Psv 	
+CONSENT	DAV Pos SUPV Subm Pstv Strng Psv Comform 	
+CONSIDERABLE	Modif Quan DIM Strng Ovrst 	77% adj: Substantial 
+CONSIDERABLE	LY Quan DIM Strng Ovrst 	23% adv: "Considerably"--substantially 
+CONSISTENCY	Pos Noun Virtue Pstv Strng 	
+CONSISTENT	Pos Modif Virtue Strng Pstv 	adj-adv: Compatible, invariant, even; "consistently"--steadily, constantly, evenly 
+CONSOLIDATE	IAV Pos SUPV Pstv Strng Persist 	
+CONSTABLE	Noun HU Legal Power Strng Role 	
+CONSTANT	Modif Strng Ovrst Persist 	40% adj: Steady, without interruption or variation 
+CONSTANT	Modif Strng 	60% adv: "Constantly"--continually 
+CONSTITUTE	IAV SUPV Psv Strng Rel 	
+CONSTITUTION	Noun Object COM POLIT Polit* Strng Comnobj 	
+CONSTITUTIONAL	Modif Doctr POLIT Polit* Strng 	
+CONSTRAIN	IAV Neg SUPV Intrel Hostile Power Ngtv Strng 	
+CONSTRAINT	Neg Noun COM Comform Power Ngtv Strng 	
+CONSTRUCT	DAV SUPV Work Strng Actv 	
+CONSTRUCTION	Noun Bldgpt ECON Strng Actv Object 	noun-adj: Building, or having to do with same 
+CONSTRUCTIVE	Pos Modif Virtue EVAL Pstv Strng 	
+CONSUMPTIVE	Neg Modif Vice Ngtv Actv Strng 	
+CONTAIN	DAV SUPV Rel Strng Actv 	
+CONTEND	IAV Neg SUPV Hostile Ngtv Strng Actv Try 	
+CONTENTION	Noun Strng Actv Comform 	
+CONTEST	Noun Ritual Strng Actv 	
+CONTEST	IAV SUPV Hostile Power Strng Actv Comform 	
+CONTINUAL	Modif Persist Ovrst Strng Actv 	10% adj: Constant 
+CONTINUAL	Modif Persist Ovrst Strng Actv 	90% adv: "Continually"--constantly 
+CONTINUE	IAV SUPV Persist Strng Actv PFREQ 	95% verb: To go on, keep on, extend 
+CONTINUE	Modif Strng Actv Persist 	5% adj: "Continued," "continuing," still in progress 
+CONTINUITY	Pos Noun ABS Abs* Persist Strng Actv Rel 	
+CONTINUOUS	Modif Ovrst Strng Actv Persist 	
+CONTRACT	Noun COM ECON Econ* Legal Strng PFREQ Comform 	95% noun-adj: "Contract," "contracting"--a legally binding agreement;  the making of same (1) 
+CONTRIBUTE	IAV Pos SUPV Work Affil Actv Econ* PFREQ Pstv Strng 	97% verb: To give or add 
+CONTRIBUTE	Pos Modif Pstv Strng Actv Intrel Affil 	0% adj: "Contributing"--giving or adding 
+CONTRIBUTION	Pos Noun ECON POLIT Affil Pstv Strng Actv Virt 	noun: Something given or added 
+CONTROL	Noun Power Strng Actv Exert 	61% noun: The agency, act or power of control 
+CONTROL	IAV SUPV Intrel Power Strng Actv 	26% verb: To restrain, direct, regulate 
+CONTROL	Modif Power Strng Actv Virtue 	2% adj: "Controlling"--regulating, restraining 
+CONTROLLER	Noun HU Econ* Power Strng Role 	
+CONVERT	IAV SUPV Work Strng Actv 	
+CONVICT	IAV Neg SUPV Intrel Hostile Legal Actv Ngtv Strng 	
+CONVICTION	Pos Noun Virtue Pstv Strng 	
+CONVINCE	IAV Pos SUPV Power Pstv Strng Actv Comform 	83% verb: To persuade by argument or proof, cause to believe 
+CONVINCE	Pos Modif Comform Power Pstv Strng Actv 	17% noun-adj: "Convincing"--persuasive; the act of persuading (1) 
+COOPERATE	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	
+COOPERATION	Pos Noun ABS Abs* Affil Pstv Strng Actv Virtue 	noun: Working together 
+COOPERATIVE	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	68% noun-adj: An organization for the benefit of producers or consumers 
+COOPERATIVE	Pos LY Affil Pstv Strng Virtue Actv 	5% adv: "Cooperatively"--with cooperation 
+COORDINATE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	
+COORDINATION	Pos Noun Strng Rel Affil Virtue 	
+COP	Noun HU POLIT Legal Power Strng Role 	
+CORE	Noun Space Strng 	
+CORPORAL	Noun HU Milit Power Strng Role 	
+CORPORATE	Modif ECON POLIT Strng HU COLL 	
+CORPORATION	Noun HU COLL ECON Econ* Strng 	
+CORRECT	IAV Pos SUPV Work Pstv Strng 	54% verb: To make right, improve; to point out error (0) 
+COUNCIL	Pos Noun HU COLL POLIT Power Pstv Polit* Strng 	noun-adj: A body of persons summoned or convened for deliberation, consultation  or advice 
+COUNTERACT	IAV Neg SUPV Ngtv Strng Actv Negate Decr 	
+COUNTERACTION	Neg Noun Ngtv Strng Actv Negate Decr 	
+COUNTLESS	DET PRE PRE1 Modif Quan Ovrst Strng 	
+COURAGE	Pos Noun ABS Abs* EMOT Pstv Strng Virtue 	noun: A difficulty with strength and without fear. 
+COURAGEOUS	IndAdj Pos Modif Strng Virtue 	
+COURT	Noun POLIT Legal HU COLL Polit* Strng 	65% noun-adj: A place where trials are held and the law is carried on--by  metonymy the process or authority of the law, or a given court or judge;  a sovereign entourage (3); a courtyard (0) 
+COURT	Noun HU COLL POLIT Legal Power Strng Polit* 	26% idiom-noun: "Supreme court" 
+CREAM	IAV SUPV Complt Strng Actv 	
+CREATE	IAV Pos SUPV Exprs Strng Actv Begin Pstv 	verb: To cause to come into being, to happen, to bring about. 
+CREATION	Noun Strng Actv Begin 	
+CREATOR	Noun HU Exprs Strng Actv Role 	
+CROWD	Noun HU COLL Strng 	62% noun: A throng 
+CROWD	IAV SUPV Rel Actv Strng 	21% verb: To throng 
+CRUSH	Neg Modif Qual Ngtv Strng Actv 	
+CRUSH	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+CRUSHING	IndAdj Neg Modif Power Strng Hostile Exert 	
+CUMBERSOME	IndAdj Neg Modif Qual Eval Strng 	
+CUMULATIVE	Modif Quan Strng 	
+CURB	IAV SUPV Intrel Power Strng Actv 	
+CUT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	88% verb-adj-noun: To penetrate or divide with or as with a sharp-edged  instrument; the resulting penetration or division (3); to isolate, snub,  or humiliate (1); the result of such action (0) 
+CUT	IAV Neg SUPV Decr Ngtv Strng Actv 	8% verb-noun: To abridge, shorten, reduce, terminate; reduction, termination (1) 
+DAMAGE	Neg Noun Vice Ngtv Strng Actv 	
+DAMAGE	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+DARING	IndAdj Pos Modif Virtue Pstv Strng Eval Qual 	
+DAUNTLESS	IndAdj Pos Modif Strng Power Freq 	
+DAZZLE	IAV Pos SUPV Actv Percv Other Strng 	
+DEADLY	Neg Modif Vice EVAL Ngtv Strng Hostile 	
+DEAN	Noun HU Acad Power Strng Role 	
+DECIDE	IAV SUPV Solve Strng Actv PFREQ 	98% verb: To settle something in dispute or in doubt, conclusion 
+DECIDE	Modif Means Ovrst Strng 	1% adjective: "Decided"--definite, pronounced 
+DECIDE	LY Ovrst Strng 	1% adv: "Decidedly"--definitely 
+DECISION	Noun ABS Abs* Goal Strng Actv 	noun: A judgment, deciding 
+DECISIVE	Modif Virtue Strng Actv Ovrst Power 	
+DECLARATION	Noun COM Comform Strng 	
+DECLARE	IAV SUPV Strng Comform 	verb: Proclaim or manifest 
+DEDICATE	Pos Modif Need Pstv Strng 	
+DEDICATE	IAV Pos SUPV Pstv Virtue Strng 	
+DEDICATION	Pos Noun ABS Abs* Virtue Pstv Strng 	
+DEEP	Modif Space DIM Strng 	64% adjective: Profound, intense, not superficial or light--"to my deep  delight, i see that he is a deep person"; extending to a considerable  extent physically downward or inward (21); extending considerably along  some other physical scale--"deep freez 
+DEEP	LY Ovrst Strng Virtue 	22% adverb: "Deeply"--to a thorough extent or profound degree 
+DEEP	Modif Space Strng 	11% adj-adv: "Deeper" 
+DEEP	Modif Space Strng 	3% adjective: "Deepest" 
+DEEPEN	IAV SUPV Incr Actv Strng 	
+DEFEAT	IAV Neg SUPV Hostile Ngtv Strng Actv Complt 	55% verb: To overthrow or overcome 
+DEFEND	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	verb: To ward off or repulse attacks, to uphold 
+DEFENDER	Pos Noun HU Pstv Strng Actv Role Affil 	
+DEFENSE	Pos Noun POLIT Strng Actv Affil Intrel Pstv 	noun-adj: Resistance or protection against attack, whether physical, verbal  or otherwise 
+DEFIANCE	Neg Noun Vice Strng Hostile 	
+DEFIANT	IPadj Neg Modif Vice Strng Hostile 	
+DEFINITE	Modif Know Strng Ovrst 	adj: Clearly defined, exact, certain 
+DEFINITIVE	IndAdj Pos Modif Know Compl Strng 	
+DEFY	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+DELIBERATE	Modif Causal Strng Actv 	
+DELIBERATE	IAV SUPV Strng Actv Comform 	
+DELIVER	IAV SUPV Fetch Strng Actv 	
+DELIVERY	Noun Strng Actv Means 	
+DELUGE	Neg Noun Ovrst Strng Power 	
+DEMAND	Noun COM Comform Power Strng 	37% noun: Strong or authoritative request or inquiry, something asked  of one, need, requirement--"he put forth several demands," "the job makes  great demands on our time" 
+DEMAND	IAV SUPV Power Strng Actv Comform 	52% verb: To ask for or about boldly or urgently, to need, require 
+DEMAND	Modif Virtue Strng Actv 	11% adj-noun: "Demanding", exacting 
+DEMAND	LY Strng Actv Vice 	0% adv: "Demandingly", exactingly 
+DEMOLISH	IAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+DEMONSTRATE	IAV SUPV Strng Actv Comform 	
+DEMONSTRATION	Noun Means Strng Actv 	10% noun-adj: A proof, a display of how something works 
+DEMONSTRATION	Noun Ritual POLIT Polit* Strng Actv PFREQ 	90% noun: A display of political sentiment 
+DEMORALIZE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+DENSE	Modif Qual Strng 	
+DENSITY	Noun Qual Strng 	
+DEPENDABILITY	Pos Modif Virtue Ovrst Pstv Strng 	
+DEPENDABLE	Pos Modif Virtue Pstv Strng Ovrst 	
+DEPLOY	IAV SUPV Intrel Power Strng Actv 	
+DEPRIVE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+DEPTH	Noun ABS DIST Space Strng 	
+DESERVEDLY	Pos Modif Strng Ought 	
+DESIGNATE	IAV SUPV Intrel Power Actv Strng 	
+DESPISE	Neg Modif Vice Ngtv Strng Hostile 	
+DESPISE	SV Neg SUPV Pain Hostile Ngtv Strng 	
+DESTINY	Noun ABS Abs* Goal Strng 	
+DESTROY	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	verb: To put an end to or reduce to useless form 
+DESTRUCTIVE	Neg Modif Hostile Ngtv Strng Actv Vice 	
+DETER	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+DETERMINATION	Noun Strng Ovrst Actv Arousal Power 	
+DETERMINE	IAV SUPV Solve Strng Actv Ovrst 	56% verb: To ascertain, decide or settle, authoritatively or resolutely 
+DETERMINE	Modif EMOT Strng Actv Power Pleasur 	43% adj: 'determined'--resolute, unwaveringly decided 
+DETERMINE	Modif Strng Actv Power Pleasur 	2% adv: 'determinedly'--with determination 
+DETERRENT	Neg Noun Hostile Ngtv Strng Means 	
+DETRIMENTAL	IndAdj Neg Modif Ngtv Strng Causal Vice 	
+DEVASTATE	IAV Neg SUPV Ngtv Strng Actv Hostile Exert 	
+DEVELOP	IAV SUPV Incr Strng Actv PFREQ 	verb: To evolve, strengthen, or elaborate. 
+DEVELOPMENT	Noun Strng Actv Incr 	noun-adj: The act of developing or a developed state or form 
+DEVOUT	IndAdj Pos Modif Strng Affil Doctr Other 	
+DEXTERITY	Pos Noun Vary Strng 	
+DICTATOR	Noun HU POLIT Polit* Power Strng Role 	
+DICTATORSHIP	Noun Doctr POLIT Polit* Strng 	
+DIGNIFIED	IndAdj Pos Modif Strng Power 	
+DIGNITY	Pos Noun ABS Abs* Virtue Pstv Strng 	
+DILIGENT	Pos Modif Pstv Strng Actv Virtue 	
+DIN	Neg Noun Comform Strng 	
+DIRECT	IAV SUPV Intrel Power Strng Actv 	44% verb: To manage, control, instruct, guide, aim 
+DIRECT	Modif Space Strng Actv 	23% adj: Unmediated, not oblique 
+DIRECT	LY Time* Strng Actv Ovrst 	28% adv: "Directly"--without mediation, not obliquely, straightaway, presently 
+DIRECTOR	Noun HU ECON Power Strng Role 	
+DISCHARGE	Neg Noun Ngtv Strng Actv Ritual Milit Polit* Power 	
+DISCHARGE	IAV Neg SUPV Intrel Legal Ngtv Strng Actv Power 	
+DISCIPLINE	Noun Virtue Strng 	39% noun: Behavior in accord with rules, or training intended to produce  such behavior; field of study (0) 
+DISCIPLINE	IAV SUPV Intrel Power Strng Actv 	25% verb-adj: To train, drill--especially in a punitive sense 
+DISPLACEMENT	Noun Space Strng Actv 	
+DISPOSE	Neg Modif Ngtv Strng Actv Arousal Hostile 	
+DISPOSE	IAV Neg SUPV Finish Ngtv Strng Actv 	
+DISSOLVE	Modif Natpro Strng Actv 	
+DISSOLVE	IAV SUPV Finish Strng Actv 	
+DISTINGUISHED	IndAdj Pos Modif Strng Power 	
+DIVIDE	DAV Neg SUPV Solve Ngtv Strng Actv PFREQ 	83% verb: Separate, classify, parcel out 
+DIVINE	Pos Modif Virtue EVAL Relig Pstv Strng 	
+DIVINE	IAV Pos SUPV Solve Pstv Strng 	
+DIVINITY	Pos Noun Virtue Relig Pstv Strng 	
+DO	DAV SUPV VERB DO Work Strng Actv 	29% verb: To perform, execute, accomplish, deal with as required 
+DOMINANT	Modif POLIT Power Strng Ovrst Vice 	
+DOMINATE	IAV Neg SUPV Intrel Power Ngtv Strng Actv PFREQ 	92% verb: To control 
+DOMINATE	Neg Modif Power Ngtv Strng Actv Intrel 	4% adj: "Dominating"--imperious 
+DOMINATE	Neg Modif Power Ngtv Strng Actv Intrel 	4% adv: "Dominatingly"--imperiously 
+DOMINATION	Neg Noun ECON POLIT Power Ngtv Strng Actv Vice 	
+DONE	DAV SUPV VERB DO ED Work Strng 	verb-adj: Completed, finished, performed, executed, dealt with, tried,  accomplished, committed, arranged, fixed. 
+DOUBLE	Modif Quan Strng 	47% adj: Twice, twofold in form, size, amount or number 
+DOUBLE	DAV SUPV Incr Strng Actv 	10% verb: To render or become twofold in form, size, amount or number;  serve a dual function (0) 
+DOUBLE	LY Quan Strng 	3% adv: "Doubly"--twice 
+DOUBTLESS	Pos LY Ovrst Pstv Strng Virtue 	
+DRAW	IAV SUPV Intrel Power Strng 	6% verb-idiom: "Draw the line," stop, take a negative stand 
+DRIVE	IAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	20% verb: To force, impel or push into some psychological or other state,  generally negative--"he is driving me crazy" 
+DRIVE	Noun Power Actv Strng Natpro 	6% noun-adj: Energy, need, motive ("sex drive") 
+DURABILITY	Pos Noun Strng Stay 	
+DURABLE	Pos Modif Means Pstv Strng 	
+DUTY	Neg Noun ABS Abs* Virtue Subm Ngtv Strng 	noun: Obligation 
+DYNAMIC	Pos Modif Virtue Strng Actv Pstv 	
+EAGER	Pos Modif EMOT Pstv Strng Pleasur 	adjective: Anxious, ardent in desire. 
+EARN	IAV SUPV Work Exch Econ* Strng Actv 	72% verb: To gain by dint of work 
+EARN	Noun ECON Econ* Strng Exch Actv 	28% noun-adj: "Earning(s)" income, or having to do with same 
+EARN	Noun ECON Econ* Exch Strng Actv 	0% adj: "Earned" 
+EARNER	Noun HU Econ* Strng Role 	
+EARNEST	Pos Modif Pstv Strng Pleasur 	
+EDITOR	Noun HU Econ* Power Strng Role 	
+EDUCATE	IAV SUPV Acad Power Actv Strng Comform 	verb: To instruct. 
+EFFECT	IAV SUPV Power Causal Strng Actv 	6% verb: To produce some result, to cause or make something happen 
+EFFECTIVE	Pos Modif Virtue EVAL Pstv Strng Actv 	adj: Accomplishing an end 
+EFFECTIVENESS	Pos Noun Virtue Pstv Strng Actv 	
+EFFICACY	Pos Noun ABS Abs* Virtue Pstv Strng Actv 	
+EFFICIENCY	Pos Noun ABS Abs* Virtue Pstv Strng 	
+EFFICIENT	Pos Modif Virtue EVAL Pstv Strng 	
+ELDER	Noun HU POLIT Power Strng Role 	33% noun: One of the older and more influential men of a tribe or community;  an adult (9) 
+ELDER	Modif Strng Time* 	67% adjective: Older, of greater age (my elder brother) 
+ELEVATE	Modif Space Strng Actv 	
+ELEVATE	DAV SUPV Rise Strng Actv 	
+ELIMINATE	IAV Neg SUPV Ngtv Strng Actv Finish 	
+ELIMINATION	Neg Noun Ngtv Actv Finish Strng 	
+EMANCIPATION	Noun Virtue POLIT Polit* Power Strng 	
+EMINENCE	Pos Noun Strng Power Ovrst 	
+EMINENT	Pos Modif Virtue EVAL Power Pstv Strng 	
+EMPEROR	Noun HU MALE POLIT Polit* Power Strng Role 	
+EMPHASIS	Noun Know Ovrst Strng 	
+EMPHASIZE	IAV SUPV Ovrst Strng Comform 	
+EMPHATIC	Modif Strng Ovrst Actv Comform 	
+EMPLOY	IAV SUPV Intrel Econ* Power Strng 	
+EMPLOYER	Noun HU ECON Power Econ* Strng Role 	noun: One who employs labor 
+EMPOWER	IAV Pos SUPV Actv Strng Power Incr 	
+EMPOWERMENT	Pos Noun Strng Power Incr 	
+ENABLE	IAV Pos SUPV Complt Pstv Strng 	
+ENACT	IAV SUPV Complt Strng Actv 	
+ENACTMENT	Noun Strng Actv Ritual 	
+ENCLOSE	Modif Space Strng Actv 	
+ENCLOSE	IAV SUPV Space Strng Actv 	
+ENCOMPASS	IAV SUPV Strng Space 	
+ENDLESS	Modif Space DIM Strng 	
+ENDORSE	IAV Pos SUPV Affil Pstv Strng Comform Power 	
+ENDURANCE	Pos Noun Persist Ovrst Strng 	
+ENDURE	Modif Ovrst Persist Strng Psv 	
+ENDURE	IAV SUPV Persist Strng Psv 	
+ENERGETIC	Pos Modif EVAL Pstv Strng Actv Exert 	
+ENERGIZE	IAV Pos SUPV Actv Other Strng 	
+ENERGY	Noun Natpro Strng 	noun: Capacity for work, activity, etc. 
+ENFORCE	IAV Neg SUPV Intrel Power Ngtv Strng Actv Hostile 	
+ENGULF	IAV Neg SUPV Strng Actv Decr Hostile Ovrst Ngtv 	
+ENHANCE	IAV Pos SUPV Pstv Strng Complt 	
+ENORMOUS	Modif Quan DIM Strng Ovrst 	
+ENRICH	IAV Pos SUPV Actv Incr Strng 	
+ENRICHMENT	Pos Noun Incr Strng 	
+ENSURE	IAV Pos SUPV Intrel Power Pstv Ovrst Strng 	
+ENTERPRISE	Noun HU COLL ECON Econ* Actv Strng 	
+ENTHUSIASTIC	IndAdj Pos Modif EMOT Pleasur Pstv Affil Feel Strng 	
+ENTIRE	Modif Quan Ovrst Strng 	adjective: Complete, whole. 
+ENTITLE	IAV SUPV Intrel Legal Power Strng 	
+EQUAL	DAV SUPV Rel Strng 	0% verb: To be or become equal 
+EQUILIBRIUM	Noun Strng Persist 	
+EQUIP	IAV SUPV Work Strng Actv 	
+ERECT	Noun Qual Strng Actv 	
+ERECT	IAV SUPV Work Strng Actv 	
+ESCAPE	IAV SUPV Travl Strng Actv Hostile PFREQ 	89% verb: To slip or get away, as from confinement or restraint, gain  or regain liberty--avoid capture, punishment or any threatened evil 
+ESCAPE	Noun Travl Strng Actv Hostile 	9% noun-adj: The act or an instance of escaping--the means of escape 
+ESSENCE	Noun Know Strng Ovrst 	
+ESSENTIAL	Pos Noun Virtue Ovrst Pstv Strng 	13% noun: That which is indispensable, "the essentials" 
+ESSENTIAL	Pos Modif Virtue EVAL Ovrst Pstv Strng 	70% adj: Basic, indispensable 
+ESTABLISH	IAV Pos SUPV Complt Power Strng Actv Ovrst PFREQ Pstv 	94% verb: To set up, institute, prove or demonstrate 
+ESTABLISH	Pos Modif Virtue Strng Ovrst Pstv 	6% adj: "Established"--proven, recognized, stable, firm 
+ETERNAL	Modif Relig Strng Ovrst Persist 	
+EVER	LY Ovrst Strng Quan 	4% idiom-adverb: "Ever so"--to a great extent or degree, exceedingly 
+EVERLASTING	IndAdj Pos Modif Stay Freq Strng 	
+EVERY	DET PRE PRE1 Modif Quan Ovrst Strng 	adj: Each and all, all possible 
+EVIDENCE	Noun Means Legal Strng 	83% noun: Something which tends to prove or suggest a fact 
+EVIDENCE	IAV SUPV Legal Actv Strng Comform 	17% verb: To show, make evident 
+EXACT	IAV SUPV Intrel Power Strng Actv 	2% verb: To force from, obtain 
+EXACT	Modif Means Strng Actv 	0% adj: "Exacting" - demanding 
+EXCEED	IAV SUPV Incr Ovrst Strng Actv 	
+EXCEL	IAV Pos SUPV Actv Strng Incr 	
+EXCLUDE	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXCLUSION	Neg Noun Hostile Ngtv Strng Actv Intrel Power 	
+EXCLUSIVE	Modif Virtue EVAL Strng Ovrst 	
+EXCUSE	IAV SUPV Power Strng Comform 	
+EXECUTION	Noun Strng Actv Intrel Hostile 	
+EXECUTIVE	Noun HU POLIT ECON Econ* Power Strng Role 	
+EXERCISE	Noun Ritual Strng Actv 	
+EXERCISE	IAV SUPV Work Strng Actv 	
+EXERT	IAV SUPV Exert Strng Actv 	
+EXPAND	Modif Incr Strng Actv 	
+EXPAND	IAV SUPV Incr Strng Actv 	
+EXPANSE	Noun Space Strng 	
+EXPANSION	Noun ECON POLIT Strng Actv Incr 	
+EXPERIENCE	Pos Noun Means Pstv Strng 	82% noun: What one has encountered or undergone and the knowledge gained thereby 
+EXPERIENCE	Pos Modif Virtue Pstv Strng Psv 	4% adj: "Experienced"--having practical knowledge of things, having gone  through things 
+EXPERT	Pos Noun HU Power Pstv Strng Role 	77% noun: "One who knows a great deal about something, and nothing about  a great deal." 
+EXPERT	Pos Modif Virtue EVAL Pstv Strng 	23% adj: Of expert quality 
+EXPLOIT	Modif Hostile Power Strng Intrel 	
+EXPLOIT	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+EXPLOSION	Neg Noun Natpro Ngtv Actv Strng 	
+EXPLOSIVE	Neg Modif Natpro Ngtv Actv Strng 	
+EXTEND	IAV SUPV Actv Strng PFREQ Incr 	87% verb: To expand, stretch or lengthen in space, time or degree 
+EXTENSION	Noun Space Strng 	
+EXTENSIVE	Modif Space DIM Ovrst Strng 	
+EXTINGUISH	IAV Neg SUPV Finish Ngtv Strng Actv 	
+EXTREME	Modif Quan POS Strng Ovrst 	20% adjective: Very far from the average (along some dimension conveyed  by accompanying noun) 
+EXTREME	LY Ovrst Strng Quan 	72% adverb: "Extremely"--exceedingly, extraordinarily 
+FACE	IAV SUPV Percv Actv Strng 	30% verb: Confront, direct attention to 
+FACILITATE	IAV Pos SUPV Work Pstv Strng Affil 	
+FACILITY	Noun Strng Means 	noun-adj: Physical means for expediting performance of an action, institutions  and equipment 
+FACULTY	Noun Means Strng 	9% noun: Ability 
+FAST	Modif Ovrst Strng Actv Time* 	53% adj-adv: Speedy, speedily 
+FAST	DAV SUPV Strng Actv Natpro 	4% verb: To abstain from eating 
+FAST	Modif Strng Persist 	16% adj-adv: Firm, not easily swayed 
+FAST	Modif Strng Actv Ovrst Time* 	19% adj: "Faster"--comparative--speedier, quicker 
+FAST	Modif Strng Actv Ovrst Time* 	3% adj: "Fastest"--superlative--speediest, quickest 
+FATE	Noun ABS Abs* Doctr Relig Strng 	
+FATHER	Noun HU MALE KIN Kin* Strng Role Affil 	noun: A male parent 
+FATHOM	Noun ABS DIST Strng Space 	
+FATHOM	IAV SUPV Solve Strng Actv 	
+FEAR	Neg Modif Ngtv Pain Strng 	0% adj: "Feared" - arousing fear 
+FEARLESS	IndAdj Pos Modif Strng 	
+FEASIBLE	IndAdj Pos Modif Strng Causal Ovrst 	
+FEDERATION	Noun HU COLL POLIT Affil Polit* Strng 	
+FEED	DAV SUPV Intrel Affil Power Strng 	78% verb: To supply a necessary input, usually nutritional 
+FELLOWSHIP	Pos Noun ECON Virtue Affil Pstv Strng 	
+FENCE	IAV SUPV Strng Actv Space 	3% verb: To enclose 
+FERVENT	IndAdj Pos Modif Strng Affil Feel 	
+FERVOR	Pos Noun Strng Affil Feel 	
+FEW	PRON INDEF Ovrst Modif Strng Impers 	2% idiom-adj-pron: 'quite a few'--a moderate number, numerous, many 
+FIERY	IndAdj Pos Modif Strng Feel 	
+FIGHT	Neg Noun Ritual Hostile Milit Ngtv Strng Actv 	24% noun: Conflict 
+FIGHT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To engage in conflict 
+FIGHT	Neg Modif Hostile Ngtv Strng Actv Vice 	8% noun-adj: "Fighting"--engaging in conflict 
+FIGHTER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+FILL	DAV SUPV Work Strng 	78% verb: To make or be full of, to pervade 
+FILL	IAV SUPV Work Strng Actv 	14% idiom-verb: 'fill in'--to satisfy (a requirement or need), to supply  with satisfactorily 
+FINAL	DET NUMB ORD POS Modif Time* Ovrst Strng 	24% adjective: Last, eventual, terminal 
+FINAL	LY Time* Ovrst Strng 	76% adverb: "Finally"--at last, eventually 
+FINANCE	Noun Doctr ECON Econ* Strng 	
+FINANCE	IAV SUPV Exch Econ* Strng 	
+FINE	IAV Neg SUPV Exch Hostile Legal Econ* Ngtv Strng Actv 	0% verb: To levy a fee in punishment 
+FIRE	DAV Neg SUPV Work Hostile Ngtv Strng Actv 	6% verb: To discharge a weapon, shoot, apply fire to 
+FIRE	DAV Neg SUPV Econ* Hostile Ngtv Strng Actv Exch 	8% verb: To terminate employment 
+FIRM	Modif Qual Strng 	56% adj: Not yielding--solid 
+FIRM	LY Qual Strng 	23% adv: "Firmly"--solidly, stiffly 
+FIRM	Modif Qual Strng 	5% adj: "Firmer"--more solid 
+FIRM	Modif Qual Strng 	0% adj: "Firmest"--most firm 
+FIRMNESS	Pos Noun Pstv Strng Qual 	
+FIST	Neg Noun Bodypt Hostile Ngtv Strng 	
+FITNESS	Pos Noun Natpro Strng 	
+FIX	IAV SUPV Work Strng Actv 	65% verb: To repair, mend, prepare, arrange; influence a result or action  to one's advantage (0); get even with (0) 
+FLAIR	Pos Noun Strng Virtue 	
+FLEET	Noun HU COLL POLIT Milit Strng 	
+FLEW	IAV SUPV Rise ED Strng Actv 	verb: Moved swiftly, usually through the air (past tense of fly) 
+FLOOD	Noun Strng PLACE Aquatic 	
+FLOOD	IAV SUPV Rise Strng 	
+FLOOR	Noun Ritual Power Strng 	3% noun: 'have the floor'--the right to speak 
+FLOOR	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	2% verb: To provide with a floor; to knock to the floor (0) 
+FLOURISH	Pos Modif Pstv Strng Power Incr 	
+FLY	IAV SUPV Rise Strng Actv 	62% verb: To move swiftly, usually through the air 
+FLY	Modif Strng Actv Travl 	6% noun-adj: "Flying," airborne, pertaining to aviation 
+FOCAL	Modif Space Strng Ovrst 	
+FORBID	Neg Modif Comform Power Ngtv Strng 	
+FORCE	Noun Natpro Power Strng 	29% noun: Strength, power, energy, a specific power or drive 
+FORCE	Noun HU COLL POLIT Milit Strng 	24% noun: A body of men, usually military, "the armed forces" 
+FORCE	IAV Neg SUPV Intrel Power Strng Actv Ngtv 	39% verb: To compel, impose, overcome the resistance of 
+FORCE	LY Qual Strng 	1% idiom-adv: "In force"--in operation, effective, enforced 
+FORCE	Neg Modif Power Hostile Ngtv Strng Actv Exert 	3% idiom-adv: "By force"--using physical force, generally against another's will 
+FOREMOST	Pos Modif Virtue Pstv Strng Ovrst 	
+FORESIGHT	Pos Noun Percv Strng Think Virtue 	
+FOREVER	LY Strng Ovrst Persist 	
+FORMATION	Noun Means Strng 	
+FORMIDABLE	Neg Modif Vice Strng Ngtv Power 	
+FORT	Noun PLACE Social POLIT Milit Strng 	
+FORTIFY	IAV Pos SUPV Actv Strng Power Incr 	
+FORTITUDE	Pos Noun Strng Virtue 	
+FORTUNE	Noun ABS Abs* Strng Virtue 	55% noun: Fate, chance, luck, success 
+FORTUNE	Noun Object Tool ECON Econ* Strng 	35% noun: Wealth, accumulated riches 
+FOUGHT	DAV Neg SUPV Intrel ED Hostile Ngtv Strng Actv 	verb: Past tense of "fight"--engaged in conflict 
+FOUND	IAV SUPV Begin Power Strng Actv 	3% verb: To establish, set up--'found a college' 
+FOUND	Noun Ritual Actv Strng 	1% noun-adj: "Founding"--establishing 
+FOUNDATION	Noun Doctr ECON Strng Econ* 	
+FOUNDER	Noun HU Power Strng Role 	
+FRAME	Noun Object Tool Strng 	
+FRAME	IAV SUPV Work Strng Actv 	
+FREE	Pos Modif Virtue Pstv Strng 	81% adjective: Exempt from external authority, interference, restriction,  etc., unimpeded, unoccupied; provided without a charge or payment (4) 
+FREE	IAV Pos SUPV Intrel Power Pstv Strng Actv 	5% verb: To make free, set at liberty, release from bondage, restraint 
+FREE	Pos Modif Means Pstv Strng 	10% adverb: "Freely"--in a free manner, openly 
+FREE	Pos Modif Virtue Pstv Strng 	4% adjective: "Freer"--(comparative of sense 1) 
+FREE	Pos Modif Virtue Pstv Strng 	0% adj: "Freest"--superlative of sense 1 
+FRUITFUL	Pos Modif Virtue EVAL Pstv Strng 	
+FRUSTRATE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	20% verb: To thwart 
+FUCK	IAV SUPV Intj Strng Actv Natpro 	
+FULFILL	IAV Pos SUPV Pstv Strng Complt 	
+FULFILLMENT	Pos Noun Goal Pstv Strng 	
+FULL	Modif Quan Strng Ovrst 	80% adjective: Complete or filled to capacity 
+FULL	Modif Strng Quan Ovrst 	2% adjective: "Fuller"--comparative 
+FULL	Modif Strng Ovrst Quan 	2% adjective: "Fullest"--superlative 
+FULL	LY Quan Ovrst Strng 	14% adverb: "Fully" 
+FUNCTION	IAV SUPV Work Strng Actv 	48% verb: To perform, act, serve, operate 
+FUNCTION	Modif Strng Actv Work 	3% noun-adj: "Functioning"--operation, operating 
+FUNDAMENTAL	Modif Know EVAL Strng Ovrst 	
+FURTHER	LY Comp ER Quan Strng 	57% adj-adv: Additional, more, more extended; additionally, in addition 
+FURTHER	IAV SUPV Incr Strng 	12% verb: To extend, increase, promote 
+GAIN	IAV Pos SUPV Complt Pstv Strng Actv 	83% verb: To get, obtain, win 
+GAIN	Pos Noun Goal ECON Econ* Pstv Strng 	17% noun: Profit, advantage, progress 
+GALL	Neg Noun Emot Strng Power 	
+GALLANT	IndAdj Pos Modif Strng Virtue 	
+GAME	Pos Modif Pleasur Pstv Strng 	1% adjective: "Game"--spirited, courageous 
+GANG	Noun HU COLL Strng 	
+GENERAL	Noun HU POLIT Milit Power Strng Role 	10% noun: A very high military rank--having extended command or superior  rank (e.g. general chairman) 
+GENIUS	Pos Noun HU Pstv Strng Role 	
+GET	IAV Neg SUPV Intrel Hostile Actv Ngtv Strng 	1% idiom-verb: "Get rid of"--get free from, destroy 
+GIANT	Noun HU Strng PFREQ Role 	85% noun: A human or animal extreme in size or some other aspect 
+GIANT	Modif Ovrst DIM Quan Strng 	15% adjective: Extra large 
+GIFTED	Pos Modif Virtue EVAL Pstv Strng 	
+GIGANTIC	Modif Quan Ovrst Strng 	
+GLARE	Neg Noun Percv Strng 	
+GLIMMER	IAV Pos SUPV Psv Strng 	
+GLOAT	IAV Neg SUPV Actv Comform Strng 	
+GLORIFY	IAV Pos SUPV Actv Other Strng Affil Power 	
+GO	DAV SUPV VERB GO Persist Actv Strng 	6% verb: "Go on"--continue, proceed, take place 
+GO	IAV SUPV VERB GO Strng Actv Travl 	0% idiom-adj: "On the go" 
+GOD	Noun HU Power Relig Strng Role 	noun: Deity; includes exclamations employing the word "god" with varying  degrees of irreverence 
+GODDESS	Noun HU Female Power Relig Strng Role 	
+GODLIKE	IndAdj Pos Modif Qual Power Strng 	
+GODLINESS	Pos Noun Power Strng Virtue 	
+GONE	DAV SUPV Persist ED Actv Strng 	10% verb: 'gone on'--continued, proceeded, taken place 
+GOVERN	Noun HU COLL Polit* Strng 	
+GOVERN	IAV SUPV Polit* Power Strng Intrel 	
+GOVERNMENT	Noun HU COLL POLIT Polit* Power Strng 	noun adjective: A specific administrative mechanism by which a body of  people is ruled, an abstract concept of the ruling power 
+GOVERNMENTAL	Modif Doctr POLIT Polit* Strng 	
+GOVERNOR	Noun HU POLIT Polit* Power Strng Role 	
+GRAND	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+GRANDEUR	Pos Noun Ritual Strng Ovrst 	
+GRANT	IAV SUPV Intrel Affil Power Strng 	42% verb: To confer or give in promise, to allow, acknowledge 
+GRAPPLE	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+GRASP	Noun DET Power Strng Actv Fetch 	
+GRASP	IAV SUPV Fetch Strng Actv 	
+GRAVITATIONAL	Modif Natpro Strng 	
+GRAVITY	Noun Natpro Strng 	
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	63% adj: Of more than ordinary size, extent, number, degree, importance, eminence 
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	9% adj: 'greater' 
+GREAT	Pos Modif Ovrst EVAL Quan Pstv Strng 	7% adj: 'greatest' 
+GREATNESS	Pos Noun Virtue Power Pstv Strng 	
+GRIND	DAV SUPV Work Strng Actv 	
+GRIP	Noun Strng Actv Power Fetch 	
+GRIP	IAV SUPV Fetch Strng Actv Power 	
+GROUND	Noun Know Strng 	9% noun: Foundation, basis of an effort usually intellectual, e.g. of  an argument, "on those grounds" 
+GROUND	Modif Means Strng 	0% adj: "Grounded"--based 
+GROUND	DAV SUPV Work ED Strng Actv 	3% verb: Past tense and participle of 'grind' 
+GROW	DAV SUPV Incr Strng Psv Actv 	34% verb: To increase in size, intensity, etc.--especially of living things 
+GROW	IAV SUPV Strng Incr 	29% idiom-verb: 'grow up'--to mature, attain maturity 
+GROW	DAV SUPV VERB VB Incr Strng 	22% verb: To come or become--'grow to realize,' 'grow dark' 
+GROW	IAV SUPV Work Power Strng Actv 	3% verb: To raise (transitive) 
+GROW	Modif Strng Incr Actv 	11% adj-noun: 'growing'--enlarging, increasing--growth 
+GROWER	Noun HU Econ* Strng Actv Role 	
+GROWN	DAV SUPV ED Strng Psv Incr 	8% verb: To have increased in size, intensity, etc. 
+GROWN	Modif Strng Virtue 	45% adj: 'grown,' 'grown up'--mature 
+GROWTH	Noun Strng Incr Psv 	noun: An increase in size or extent 
+GRUFF	IndAdj Neg Modif Qual Strng 	
+GUARANTEE	Pos Noun COM Comform Power Pstv Strng Legal 	
+GUARANTEE	IAV Pos SUPV Power Pstv Strng Legal Comform 	
+GUARD	IAV SUPV Intrel Affil Milit Power Strng Actv 	55% verb: To protect or watch out for 
+GUARD	Noun HU Milit Strng Role 	32% noun: Someone or something that guards 
+GUARDIAN	Pos Noun HU Role Strng 	
+GUERRILLA	Neg Noun HU POLIT Hostile Milit Ngtv Strng Actv 	
+GUIDANCE	Noun Power Strng Actv Virtue 	
+GUIDE	IAV Pos SUPV Intrel Power Strng Actv Pstv 	50% verb: To direct 
+GUIDE	Pos Noun HU Econ* Strng Actv Pstv Role 	32% noun: Someone or something that directs 
+GUIDE	Pos Modif Pstv Strng Actv Intrel 	5% adj: 'guiding'--giving direction 
+GUILD	Noun HU COLL ECON Affil Econ* Strng 	
+GUN	Neg Noun Object Tool Hostile Milit Strng Ngtv 	noun: A firearm 
+GUNMEN	Neg Noun HU MALE S Hostile Strng Ngtv Role 	
+GUSTO	Pos Noun Strng Power 	
+HALT	IAV SUPV Stay Strng Actv 	
+HAMPER	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+HAND	Neg Modif Vice Ngtv Strng 	1% idiom-adj: "Out of hand"--out of control 
+HAND	LY Means Strng Actv 	0% idiom-adv: "By hand"--manually 
+HANDLE	IAV SUPV Intrel Power Actv Strng 	83% verb: To manage, guide, have under one's jurisdiction or control 
+HANDLE	Noun Power Actv Strng Work 	0% noun: 'handling'--management, dealing with 
+HARBOR	IAV SUPV Stay Strng 	
+HARD	Neg Modif Vice EVAL Ngtv Strng 	47% adj: Difficult, trying, severe (especially of people) 
+HARD	Modif Qual Strng 	4% adj: Solid, brittle, unyielding (of physical things) 
+HARDY	IndAdj Pos Modif Virtue Pstv Strng Qual 	
+HARM	Neg Noun Hostile Ngtv Strng Psv Vice 	33% noun: Injury, damage, hurt 
+HARM	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	67% verb: To injure, damage, or hurt 
+HARMFUL	Neg Modif Vice Ngtv Strng 	
+HARSH	Neg Modif Vice EVAL Hostile Ngtv Strng 	
+HAUGHTY	IndAdj Neg Modif Emot Strng Power 	
+HEAD	Noun HU Power Strng Role 	12% noun-adj: The highest in authority, to be this 
+HEAD	IAV SUPV Intrel Power Strng Actv 	1% verb: To direct or lead 
+HEADQUARTERS	Noun PLACE Social POLIT Power Strng 	
+HEAL	IAV Pos SUPV Power Pstv Strng Natpro Change 	
+HEALTH	Pos Noun Pstv Strng Virtue 	noun-adj: Condition of body or mind, soundness 
+HEALTHY	Pos Modif Pstv Strng Virtue 	96% adj: Sound, well, not sick 
+HEALTHY	Pos Modif Pstv Strng Virtue 	4% adj: Comparative - "healthier" 
+HEALTHY	Pos Modif Pstv Strng Virtue 	0% adv: "Healthily" - adverb form of sense 1 
+HEART	Noun Goal Strng 	6% noun-adj: The center or vital part of anything non-organismic 
+HEARTILY	Pos Modif Strng 	
+HEAT	IAV SUPV Work Strng Actv 	23% verb: To make hot 
+HEAVY	Modif Qual EVAL Strng 	76% adj: Of great weight, intensity, degree, severity, etc. 
+HEAVY	LY Qual Strng 	18% adv: "Heavily", with great weight or force 
+HEAVY	Modif EVAL Qual Strng 	4% adj: "Heavier", greater in weight, intensity, etc. 
+HEAVY	Modif EVAL Qual Strng 	2% adj: "Heaviest", greatest in weight, intensity, etc. 
+HEIGHTEN	IAV SUPV Incr Strng 	
+HERD	Noun ANI Strng 	61% noun-adj: Animal group 
+HERD	IAV SUPV Intrel Power Strng Actv 	35% verb: To form and maintain such groups 
+HERO	Pos Noun HU MALE Power Pstv Strng Role Ovrst 	
+HEROIC	IndAdj Pos Modif Virtue Power Pstv Strng Ovrst 	
+HEROISM	Pos Noun Virtue Strng Power 	
+HIGH	Modif Space POS Strng DIM Ovrst 	39% adj: Lofty, tall, elevated, intensified, greater than usual, considerably  upward in some given scale of measurement, qualitative or quantitative,  generally subsequently specified 
+HIGH	LY Ovrst Strng Quan 	10% adverb: "Highly"--in or to a high degree 
+HIGH	Modif Space POS Strng DIM 	14% adjective: "Higher"--(comparative of sense 1) 
+HIGH	Modif Space POS Strng DIM 	5% adjective: "Highest"--(superlative of sense 1) 
+HINDER	IAV Neg SUPV Intrel Ngtv Strng Hostile 	
+HIRE	IAV SUPV Exch Econ* Power Actv Strng 	
+HIT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	verb: To strike or collide against, present and past tense 
+HIT	Noun Virtue Strng 	0% noun: Something which makes contact or strikes its mark 
+HOLD	Noun Power Strng Fetch 	13% noun: Grip, control (very rarely- room, chamber) 
+HOLD	IAV SUPV Stay Hostile Actv Strng 	0% idiom-verb: "Hold one's own"--handled by "own" 
+HOLDER	Noun Object Tool Strng 	
+HUGE	Modif Quan DIM Strng Ovrst 	adj: Very large in size, extent, or degree 
+HURT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv PFREQ 	89% verb: To injure or harm, to cause or experience pain or distress 
+IMMENSE	Modif Space Strng Ovrst 	
+IMMOVABLE	IndAdj Neg Modif Stay Strng 	
+IMPACT	Noun Natpro Power Strng 	
+IMPAIR	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile Power 	
+IMPEDE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+IMPEL	IAV SUPV Exert Power Strng Actv 	
+IMPERIAL	Modif POLIT Strng PLACE Region Polit* 	
+IMPERIALIST	Modif Doctr Strng Polit* 	
+IMPERVIOUS	IndAdj Pos Modif Strng Qual 	
+IMPETUS	Pos Noun Strng Causal 	
+IMPLEMENT	IAV SUPV Strng Actv Complt 	
+IMPLEMENTATION	Noun Means Power Strng Actv 	
+IMPOSE	IAV Neg SUPV Intrel Power Ngtv Strng Actv 	
+IMPRESS	IAV Pos SUPV Pstv Strng Actv PFREQ Percv 	97% verb: To have a strong, usually pleasing, effect on the mind or emotions 
+IMPRESSIVE	Pos Modif Ovrst EVAL Virtue Pstv Strng 	
+IMPROVE	IAV Pos SUPV Work Pstv Strng Actv 	76% verb: To make better in quality or condition 
+IMPROVE	IAV Pos SUPV Pstv Strng Actv Incr 	17% verb: To become better in quality or condition 
+IMPROVEMENT	Pos Noun Virtue Pstv Strng Actv 	
+INCESSANT	Neg Modif Ngtv Strng Ovrst Persist 	
+INCLUDE	IAV SUPV Rel Strng 	verb: To contain or embrace 
+INCREASE	DAV SUPV Incr Strng Actv 	39% verb: To make greater in any respect, augment 
+INCREASE	Noun Strng Incr 	20% noun: Growth or augmentation in numbers, etc. 
+INCREASE	Modif Strng Incr 	11% adj: "Increased"--larger or greater 
+INCREASE	Modif Strng Incr 	16% adj: "Increasing"--becoming larger or greater 
+INCREASE	LY Quan Strng 	13% adv: "Increasingly"--more and more 
+INDEPENDENT	Pos Modif Doctr POLIT Polit* Pstv Strng 	37% adj: Autonomous (refers to economic or political units other than  individual people) 
+INDEPENDENT	Pos Modif Virtue Pstv Strng Power 	49% adj: Self-reliant, autonomous, having independence (refers to a person) 
+INDEPENDENT	LY Strng Virtue 	0% adv: "Independently", autonomously 
+INDISPENSABILITY	Pos Noun Strng Power Virtue 	
+INDISPENSABLE	Pos Modif Pstv Strng Ovrst Means 	
+INDISPUTABLE	Modif Negate Ovrst Strng Virtue 	
+INDOMITABLE	IndAdj Pos Modif Power Strng 	
+INDUCE	IAV SUPV Strng Actv Begin Power 	
+INDUSTRIAL	Modif Doctr ECON Econ* Strng 	
+INDUSTRIALIZE	IAV SUPV Work Econ* Strng 	
+INDUSTRIOUS	IndAdj Pos Modif Work Try Strng 	
+INDUSTRY	Noun Doctr ECON Econ* Strng 	noun-adj: Any branch of trade, business, or manufacture 
+INEVITABILITY	Noun Strng Ovrst Persist 	
+INEVITABLE	Modif Persist Ovrst Strng 	adj: Unavoidable, certain to happen 
+INFALLIBILITY	Pos Noun Strng Know Virtue 	
+INFALLIBLE	Pos Modif Negate Ovrst Pstv Strng Virtue 	
+INFANTRY	Noun HU COLL POLIT Milit Strng 	
+INFILTRATION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+INFINITE	Modif Quan Ovrst Strng 	
+INFLUENCE	Noun POLIT Power Strng Virtue 	50% noun: Power to produce effects 
+INFLUENCE	IAV SUPV Intrel Power Strng Actv 	48% verb: To exercise such power 
+INFLUENTIAL	Modif POLIT Power Strng Virtue 	
+INFRINGEMENT	Neg Noun Hostile Ngtv Strng Actv Legal Vice 	
+INHERENT	Modif Know Strng Psv 	
+INHIBIT	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INHIBITION	Neg Noun Hostile Ngtv Strng Psv Vice 	
+INITIATE	IAV SUPV Begin Strng Actv Power 	
+INITIATIVE	Noun Strng Actv Begin 	
+INJUNCTION	Neg Noun COM Comform Hostile Legal Ngtv Strng 	
+INNER	Modif Space POS Strng 	
+INNUMERABLE	Modif Quan Ovrst Negate Strng 	
+INSIST	IAV SUPV Power Strng Actv Comform 	verb: To be emphatic or persistent in asserting or demanding 
+INSISTENCE	Noun COM Comform Power Strng Actv 	
+INSISTENT	IndAdj Pos Modif Arousal Know Strng Comform 	
+INSPIRE	Pos Modif Virtue EVAL Pstv Strng Actv 	
+INSPIRE	IAV Pos SUPV Intrel Pstv Strng Actv Affil 	
+INSTITUTION	Noun PLACE Social POLIT ECON Strng 	noun: An established pattern of behavior, an organization 
+INSTITUTIONAL	Modif Doctr Strng 	
+INSTRUCT	IAV SUPV Acad Power Actv Strng Comform 	
+INSTRUCTION	Noun COM Comform Acad Actv Power Strng 	
+INSTRUCTOR	Noun HU Acad Power Strng Role 	noun: One who teaches 
+INSTRUMENTAL	Modif Means Strng Actv 	
+INTACT	Modif Qual Strng Psv 	
+INTEGRATION	Noun Means POLIT Strng 	noun: The bringing together of various races, especially black and white;  the bringing of previously separated elements into one uniform system (10) 
+INTEGRITY	Pos Noun Virtue Pstv Strng 	
+INTELLECT	Pos Noun Virtue Acad Pstv Strng 	
+INTELLECTUAL	Pos Modif Virtue Acad Pstv Strng 	60% adj: Of or pertaining to the intellect 
+INTELLECTUAL	Pos Noun HU Acad Pstv Role Strng 	24% noun: Person with intellectual interests or tastes 
+INTELLECTUAL	Pos LY Virtue Acad Pstv Strng 	10% adv: "Intellectually"--cerebrally 
+INTELLIGENCE	Pos Noun ABS Abs* Virtue Acad Pstv Strng 	noun-adj: Ability to learn or understand 
+INTELLIGENT	Pos Modif Virtue EVAL Pstv Strng 	adj: Having knowledge, understanding, or awareness 
+INTENSE	Modif Qual Strng Ovrst Actv 	adj: Very strong, fervent 
+INTENSIFY	IAV SUPV Strng Incr Actv 	
+INTENSITY	Noun Strng Percv Ovrst Actv 	
+INTENSIVE	Modif Strng Percv Ovrst Actv 	
+INTERFERE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+INTERFERENCE	Neg Noun Hostile Ngtv Strng Actv Vice 	
+INTERNAL	Modif Space Strng 	
+INTERVENTION	Neg Noun ECON POLIT Milit Ngtv Strng Actv Vice 	
+INTIMIDATE	IAV Neg SUPV Actv Strng Power Other 	
+INUNDATE	IAV Neg SUPV Actv Incr Strng 	
+INVARIABLE	Modif Negate Persist Strng Ovrst 	
+INVARIABLY	LY Ovrst Persist Strng Negate 	
+INVENTORY	Noun Means ECON Econ* Strng 	
+INVINCIBLE	IndAdj Pos Modif Strng Power Virtue Negate 	
+INVITE	Pos Modif Virtue EVAL Pstv Strng 	0% adj: 'inviting'--alluring, tempting 
+INVOLVE	IAV SUPV Intrel Power Strng 	6% verb: To engage or cause to become involved 
+INVULNERABLE	IndAdj Pos Modif Strng Power Virtue Negate 	
+IRON	Noun Object Tool Strng 	73% adj-noun: The metal fe, made of this metal, or having to do with its  production--'the iron industry'; the instrument used for pressing clothes  (1); a branding iron (1) 
+IRON	Neg Noun Object Tool Hostile Strng Ngtv 	0% noun: "Irons"--chains, shackles 
+IRREFUTABLE	Modif Negate Ovrst Strng Know 	
+ISOLATE	IAV Neg SUPV Rel Ngtv Strng Actv 	
+ISSUE	IAV SUPV Exert Strng Actv 	4% verb: To go, pass, or flow out, come forth, discharge, emit 
+JAIL	DAV Neg SUPV Intrel Hostile Legal Power Ngtv Strng Actv 	4% verb: To imprison 
+JAR	IAV Neg SUPV Exert Ngtv Actv Strng 	
+JERK	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+JOIN	IAV Pos SUPV Intrel Affil Pstv Strng Actv 	33% verb: To unite with, agree with, come together--"let us join together,"  "i join you in praising him"; to get or come together in an informal way--'i'll  join you later' 
+JOIN	IAV SUPV Rel Strng Actv 	3% verb: To connect, engage (objects) 
+JOINTLY	Pos LY Affil Pstv Strng Rel 	
+JUDGE	IAV SUPV Legal Actv Solve Power Strng 	49% verb: To form an opinion, estimate, generally moral or evaluative,  usually about human matters; to pass sentence in a court of law (2) 
+JUDGE	Noun HU POLIT Legal Power Strng Actv Role 	41% noun: An appointed legal arbitrator 
+JUDGE	Noun HU Power Strng Actv Role 	10% noun: A person who evaluates or has the ability to evaluate--"he is  a judge of character" 
+JUDGMENT	Noun Means Power Strng 	21% noun: The faculty or capacity of decision 
+JUDICIAL	Modif Doctr POLIT Legal Strng 	
+JURISDICTION	Noun Doctr POLIT Legal Polit* Power Strng 	
+JUROR	Noun HU Legal Power Strng Role 	
+JURY	Noun HU COLL POLIT Legal Power Strng 	
+KEEN	Pos Modif Virtue Pstv Strng 	
+KEEP	IAV SUPV Intrel Hostile Power Strng Actv 	4% verb: Bar, restrain, prevent, preserve against 
+KEEP	IAV SUPV Complt Strng 	2% verb: Observe, fulfill--keep a promise or engagement 
+KEEP	IAV SUPV Percv Handels Actv Strng 	0% noun: Custody, care 
+KEEPER	Noun HU Power Strng Role 	
+KICK	DAV Neg SUPV Exert Hostile Strng Actv Ngtv 	75% verb: To strike with one's foot 
+KICK	IAV SUPV Begin Strng Actv 	13% idiom-verb: 'kick off'--eject, expel, commence 
+KICK	Neg Noun Strng Actv Hostile Ngtv Exert 	3% noun: The act of, or the blow from kicking 
+KICK	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	6% verb-idiom: 'kick out'--eject, expel 
+KILL	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv PFREQ 	98% verb: To deprive of life; figuratively 
+KILL	Neg Noun Hostile Ngtv Strng Actv Intrel 	2% noun: "Kill," "killing"--slaying, murder 
+KILLER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+KING	Noun HU MALE POLIT Polit* Power Strng Role 	noun-adj: A male sovereign or monarch 
+KNIFE	DAV Neg SUPV Exert Hostile Ngtv Strng 	3% verb: To stab 
+KNOCK	DAV Neg SUPV Intrel Hostile Ngtv Actv Strng 	36% verb: To strike, rap, collide, rattle, to criticize (1) 
+KNOCK	Neg Noun Hostile Ngtv Actv Strng Exert 	21% noun: A blow, rap, rattling, beating, or rapping; criticism (0) 
+KNOCK	IAV Neg SUPV Fall Ngtv Strng Actv 	39% verb: To knock down, over or out--to topple, dislodge, defeat, make unconscious 
+KNOWLEDGE	Pos Noun ABS Abs* Acad Pstv Strng Know 	noun-adj: Familiarity with or understanding of facts, principles, etc.--  what is known 
+LABOR	Noun HU COLL ECON Econ* Strng Actv 	69% noun: Hard work, effort, wage workers 
+LABOR	IAV SUPV Work Econ* Strng Actv 	2% verb: To do hard work 
+LABOR	Modif Strng Actv Work 	2% adj: "Laboring"--working hard 
+LANDLORD	Noun HU ECON Econ* Power Strng Role 	
+LARGE	Modif Quan DIM Strng Ovrst 	79% adj: Big, considerable, great 
+LARGE	Modif Quan DIM Strng Ovrst 	7% adj: 'larger'--bigger 
+LARGE	Modif Quan DIM Strng Ovrst 	7% adj: 'largest'--biggest 
+LAST	IAV SUPV Persist Strng 	6% verb: Endure, remain 
+LAST	Modif Strng Persist 	4% adj: "Lasting"--enduring, remaining 
+LAUNCH	IAV SUPV Begin Strng Actv 	
+LAY	IAV Neg SUPV Intrel Econ* Hostile Power Ngtv Strng Actv 	1% idiom-verb: "Lay off"--discharge employees 
+LEAD	IAV SUPV Intrel Power Strng Actv 	42% verb: To supply direction, orientation, guidance, to be in the vanguard 
+LEAD	Noun Means Ovrst Strng 	6% noun-adj: 'lead,' 'leading'--fact or position of leadership; the heavy metal (0) 
+LEAD	Pos Modif Virtue EVAL Strng Pstv Ovrst 	6% adj: Front, foremost, outstanding 
+LEADER	Noun HU POLIT Power Strng Actv Role 	noun: One who guides or leads others 
+LEADERSHIP	Noun ABS Abs* POLIT Doctr Power Strng 	noun: Control, direction, or the quality or role of giving direction or  exercising control. 
+LEAGUE	Noun HU COLL Affil Polit* Strng PFREQ 	86% noun: An association or alliance 
+LEAGUE	IAV SUPV Intrel Affil Strng 	5% idiom: "In league with", allied with 
+LEGION	Noun HU COLL Strng 	3% noun-adj: A multitude; an army division (0); numerous (0) 
+LEGISLATION	Noun Doctr POLIT Legal Polit* Power Strng 	noun: A law or body of laws enacted 
+LEGISLATIVE	Modif Doctr POLIT Legal Polit* Strng Power 	
+LEGISLATOR	Noun HU POLIT Legal Power Strng Role Polit* 	
+LENGTH	LY Strng Quan Ovrst 	17% idiom-adv: "At length"--at or to the full extent, completely 
+LET	IAV SUPV VERB MOD Intrel Power Strng 	63% verb: To allow, release, relax control, lease 
+LEVEL	DAV SUPV Work Strng Actv 	1% verb: To make flat or horizontal, to aim 
+LIBERATION	Noun Doctr POLIT Power Polit* Strng Actv 	
+LIEUTENANT	Noun HU POLIT Milit Power Strng Role 	
+LIFT	DAV SUPV Fetch Strng Actv 	
+LIGHTNING	Noun Natpro Strng 	noun: A flash of light, or a sudden illumination of the heavens, caused  by the discharge of atmospheric electricity. 
+LIMIT	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	19% verb: To restrict by or confine within limits 
+LIMITLESS	Modif Space Strng Ovrst 	
+LION	Noun ANI Strng MALE 	noun: The king of beasts 
+LIONESS	Noun ANI Female Strng 	
+LIQUIDATE	IAV Neg SUPV Intrel Ngtv Strng Actv Econ* Hostile 	
+LIQUIDATION	Neg Noun Ngtv Strng Actv ECON Econ* Hostile Vice 	
+LIVE	SV SUPV Strng Natpro 	79% verb: Exist, be alive, reside 
+LIVE	Modif Strng Natpro 	2% adj: 'live'--'living'--alive 
+LIVE	IAV Pos SUPV Complt Strng Pstv 	1% idiom-verb: 'live up to'--satisfy expectations 
+LIVELY	Pos Modif Pstv Strng Actv Qual 	adj: Animated 
+LOAD	IAV SUPV Work Strng Actv 	12% verb: To put on, fill, burden; bias (0) 
+LOAD	Modif Quan Ovrst Strng 	3% adj: 'loads of' a great quantity, much 
+LOCK	Noun Object Tool Strng 	
+LONG	Modif Space DIM Strng 	78% adj-adv: Having considerable extent in space or time, of a particular  extent--"twelve feet long" 
+LONGEVITY	Pos Noun Stay Strng 	
+LOOK	IAV SUPV Intrel Power Strng Actv 	1% verb-idiom: "Look after"--to minister to, care for, concern oneself with 
+LOT	Noun Quan Strng PFREQ 	91% adv-adj-noun: A great deal (colloq.), much, many 
+LOT	Noun ABS Abs* Strng Virtue 	2% noun: Fate or destiny 
+LOUD	Modif Qual Strng 	56% adj: Intense, often harsh, usually refers to sound 
+LOUD	Modif Qual Strng 	12% adj: "Louder" - comparative 
+LOUD	Modif Qual Strng 	0% adj: "Loudest" - superlative 
+LOUD	LY Qual Strng 	16% adv: "Loudly" 
+LOUD	LY Comform Strng 	12% idiom-adv: "Out loud" - aloud 
+LOVE	IAV SUPV Intrel Affil Strng Actv 	1% idiom-verb: 'make love' 
+LOWER	DAV SUPV Fall Strng Actv 	36% verb: To reduce, let down 
+LUCK	Pos Noun ABS Abs* Virtue Pstv Strng Undrst 	noun: Fortune, fate, good fortune 
+MAGNIFICENT	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+MAGNIFY	IAV SUPV Incr Strng Ovrst 	
+MAGNITUDE	Noun ABS Abs* Quan Strng Ovrst 	
+MAIN	Pos Modif Ovrst EVAL Know Strng Pstv 	74% adj: Principal, chief 
+MAIN	LY Ovrst Strng Know 	26% adv: "Mainly," "in the main"--principally, chiefly 
+MAINTAIN	IAV SUPV Persist Strng Actv PFREQ 	86% verb: To preserve, continue, retain, keep in good condition 
+MAINTAIN	IAV SUPV Power Strng Actv Comform 	14% verb: To assert, contend 
+MAJOR	Pos Modif Ovrst EVAL Strng Pstv Know 	56% adj: Principal, chief--"the major aim of this project" 
+MAJORITY	Noun HU COLL POLIT Power Strng Ovrst 	noun: The number greater than half or the excess of this greater number--state  of being major or greater, superiority. 
+MAKE	IAV SUPV Work Strng Actv 	77% verb: Create, produce, execute, construct; cause to be--"make him  happy," "make sure" (112); earn, acquire, attain--"make money" (72); become,  comprise--"he will make a good physician" (27) 
+MAKE	IAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	12% verb: Coerce, force to, cause to--"make him go" 
+MAKE	IAV SUPV Complt Strng Actv 	1% idiom-verb: "Make it"--succeed 
+MAKE	Noun Means Strng Actv 	0% noun: "Making"--creation, production, execution 
+MANAGE	IAV SUPV Intrel Power Strng Actv 	26% verb: To handle, control, get along. 
+MANAGE	IAV SUPV Complt Strng Actv 	69% verb-idiom: "Manage to"--to succeed in accomplishing, contrive 
+MANAGE	Modif Power Strng Actv Intrel 	6% adjective: "Managing"--directing, in charge 
+MANAGEABLE	IndAdj Pos Modif Strng Causal Ovrst 	
+MANAGEMENT	Noun HU COLL ECON Econ* Power Strng Actv 	
+MANAGER	Noun HU ECON Econ* Power Strng Role 	
+MANAGERIAL	Modif ECON Econ* Power Strng HU Role 	
+MANEUVER	IAV Noun Actv Strng Means Try Move 	
+MANIPULATE	IAV Neg SUPV Intrel Ngtv Strng Actv Power 	
+MANLY	IndAdj Pos Modif Virtue MALE Pstv Strng 	
+MANPOWER	Noun ABS Abs* POLIT ECON Strng Means 	
+MANUFACTURE	IAV SUPV Work Econ* Actv Strng 	
+MANUFACTURER	Noun HU Econ* Strng Role 	
+MANY	DET PRE PRE1 Modif Quan Strng Ovrst 	79% adj: A considerable number 
+MANY	PRON INDEF Strng Ovrst Impers 	20% pron: Many persons or things 
+MAR	Neg Noun Vice Ngtv Strng Actv 	
+MAR	Neg SUPV Exert Hostile Ngtv Strng Actv 	
+MARCH	SUPV Travl Milit Strng Actv 	29% verb: To walk with measured tread 
+MARCH	Noun Travl Strng Actv 	16% noun-adj: A parade or the accompanying music; a metaphorical advance--  "the march of progress" (2) 
+MARCHER	Noun HU Milit Actv Role Strng 	
+MARK	Modif Means Ovrst Strng 	9% adv-adj: "Marked," "markedly"--considerable, conspicuously 
+MASCULINE	Modif MALE Strng HU Role 	
+MASS	Noun Quan Ovrst Strng 	64% noun-adj: Large quantity or size, majority, widespread 
+MASS	Noun HU COLL POLIT Strng 	21% noun: "The masses"--the lower class, population at large 
+MASS	DAV SUPV Strng Space 	3% verb: To form or collect into a mass 
+MASSIVE	Modif Space DIM Strng 	
+MASTER	Noun HU Power Strng Role 	79% noun-adj: Person or thing which exercises control or is of the greatest  importance 
+MASTER	IAV SUPV Power Strng Actv Complt 	21% verb: To gain control of someone or something 
+MASTERFUL	IndAdj Pos Modif Power Strng Know 	
+MASTERY	Pos Noun Know Strng 	
+MATCH	Noun Ritual Exprs Strng 	
+MATCH	IAV SUPV Strng Actv Solve 	
+MATERIAL	LY Quan Strng 	1% adv: "Materially"--substantially 
+MATTER	IAV Pos SUPV Strng Pstv Solve Ovrst 	12% verb: To be significant 
+MATURE	Pos Modif Virtue Strng Pstv 	54% adj: Developed, adult 
+MATURE	IAV Pos SUPV Incr Strng Pstv 	31% verb: To develop, become mature, come to fruition 
+MATURE	Pos Modif Incr Strng Pstv 	12% noun-adj: "Maturing"--developing, maturation 
+MATURITY	Pos Noun ABS Abs* Time* Pstv Strng 	
+MAXIMIZATION	Noun Quan Strng Ovrst 	
+MAXIMUM	Modif Quan Comp EST Strng 	
+MAYOR	Noun HU POLIT Polit* Power Strng Role 	
+MEASURE	IAV SUPV Complt Strng 	6% verb: "Measure up to"--to meet (a standard) 
+MENACE	Neg Noun Ngtv Strng Actv Vice 	
+MERCILESS	IPadj Neg Modif Power Strng Hostile 	
+MERIT	IAV Pos SUPV Pstv Strng Intrel Affil 	
+METHODICAL	Modif Means Strng 	
+MIGHT	Noun Virtue POLIT Polit* Power Strng Ovrst 	2% noun: Force or power of any kind. 
+MIGHTY	Pos Modif EVAL Power Strng Pstv Ovrst Virtue 	
+MILITARY	Modif Doctr POLIT Milit Strng 	noun-adj: Of, for, or pertaining to the army, armed forces, affairs of  war, or to the soldiers themselves 
+MILITIA	Noun HU COLL POLIT Milit Strng 	
+MINE	Neg Noun Object Tool Hostile Milit Ngtv Strng 	5% noun: An explosive charge 
+MINIMIZE	IAV SUPV Actv Strng Decr Undrst 	
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	65% idiom-noun: "Prime minister"--executive head of government 
+MINISTER	Noun HU POLIT Polit* Power Strng Role 	16% noun: Person in charge of a department of state, a diplomatic officer 
+MINISTRY	Noun HU COLL POLIT Polit* Power Strng 	
+MISSILE	Noun Object Vehicle Hostile Milit Strng 	noun-adj: A weapon or object projected so as to strike a distant object,  especially a self-propelled rocket-like weapon 
+MOBILE	Modif Strng Actv Travl 	
+MODIFY	IAV SUPV Strng Actv Vary 	
+MOLD	IAV SUPV Work Strng Actv 	
+MOMENTUM	Noun Strng Incr 	
+MONITOR	IAV SUPV Intrel Power Strng 	
+MONOPOLY	Noun HU COLL ECON Econ* Strng Power 	
+MONSTER	Neg Noun ANI Ngtv Strng Hostile 	noun: A grotesque or unusually large animate or inanimate object 
+MONSTROUS	Neg Modif Vice Ovrst Ngtv Strng Hostile 	
+MONUMENT	Noun Object COM POLIT Strng Comnobj 	
+MORE	DET PRE PRE2 PRON LY Comp ER Quan Strng 	adv-adj-pron: A general intensifier--it takes its specific meaning - and  part of speech - from the word modified; and often the word modified is  implied rather than stated. 
+MOST	DET PRE PRE2 Comp EST Modif Quan Strng Ovrst 	63% adj-adv: Greatest in number, size, extent, nearly all, in the greatest degree. 
+MOST	PRON Strng Quan Ovrst 	26% pron: The greatest quantity or amount, the majority. 
+MOST	LY Quan Strng Ovrst 	8% adv: 'mostly'--chiefly. 
+MOVE	DAV SUPV Travl Strng Actv PFREQ 	82% verb: To change or cause to change place or position, to set in motion 
+MOVE	Noun Strng Actv Travl 	12% noun-adj: "Move," "moving"--changing or causing to change place or  position, an action, often strategic 
+MOVE	IAV SUPV Intrel Power Strng Actv 	2% verb: To rouse by appeal to the mind or emotions, to influence 
+MOVE	Modif Strng Arousal 	0% adj: "Moving"--arousing the emotions 
+MOVEMENT	Noun Actv Travl Strng 	noun: The act, process, or result of moving 
+MOVEMENT	Noun HU COLL POLIT Polit* Strng PFREQ 	85% noun: Group of persons or an organization tending toward a common goal 
+MOVER	NOUN HU Role Actv Strng 	
+MUCH	DET PRE PRE2 PRON LY Quan Strng 	pron-adj-adv: Being of great quantity, amount, measure or degree 
+MUFFLE	IAV SUPV Exert Power Strng Actv 	
+MULTIPLE	DET PRE PRE1 Modif Quan Strng 	
+MULTIPLICATION	Noun Quan Strng 	
+MULTIPLY	DAV SUPV Solve Strng Actv 	
+MURDER	Neg Noun Hostile Ngtv Strng Actv Vice 	
+MURDER	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+MUSCLE	Noun Bodypt Strng 	
+MUSCULAR	Modif Strng Bodypt 	
+MUSTER	IAV SUPV Exert Strng Actv 	
+NAVAL	Modif Doctr POLIT Milit Strng 	
+NAVY	Noun HU COLL POLIT Milit Strng 	
+NEAR	Modif Space POS Strng 	6% adj: Close, imminent 
+NECESSARY	Modif Means EVAL Strng Ovrst 	84% adj: Essential, required 
+NECESSARY	LY Means Ovrst Strng 	16% adv: "Necessarily"--of necessity 
+NECESSARY	Noun Means Strng Ovrst 	0% noun: Essentials 
+NECESSITATE	IAV SUPV Causal Strng Ovrst 	
+NECESSITY	Noun ABS Abs* Means Strng Ovrst 	noun: Need, something indispensible or required 
+NERVE	Noun Bodypt Strng 	
+NETWORK	Noun Means ECON Strng 	
+NEUTRALIZE	IAV Neg SUPV Actv Other Power Strng 	
+NEW	Modif ABS TIME Time* Strng PFREQ 	71% adj: Of recent origin, appearance, or development, novel 
+NEW	Modif ABS TIME Time* Strng 	0% adj: "Newer"--comparative 
+NEW	Modif ABS TIME Time* Strng 	0% adj: "Newest"--superlative 
+NEW	LY Time* Strng 	1% adv: "Newly"--recently 
+NIMBLE	IndAdj Pos Modif Strng Move 	
+NOBLE	Pos Modif Virtue EVAL Pstv Strng 	
+NONCHALANT	IndAdj Neg Modif Strng 	
+NORM	Noun Means Strng 	
+NOTABLE	IndAdj Pos Modif Percv Pstv Strng Ovrst 	
+NUCLEAR	Modif ECON POLIT Natpro Strng 	adjective: Pertaining to nuclear weapons or energy 
+NUCLEI	Noun Space Strng 	
+NUCLEUS	Noun Space Strng 	
+NUMBER	DET PRE PRE1 Modif Quan Strng Undrst 	25% idiom-adj: "A number of", several, many 
+NUMEROUS	DET PRE PRE1 Modif Quan Strng Ovrst 	
+OBJECTIVE	Noun ABS Abs* Goal Strng 	83% noun: Aim or goal 
+OBSTACLE	Neg Noun Ngtv Strng Object Natobj 	
+OBSTRUCT	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+OBTAIN	IAV Pos SUPV Complt Pstv Strng Actv 	verb: To acquire, to procure 
+OCCASION	IAV SUPV Causal Strng Actv 	7% verb: To give cause for, to bring about 
+OCCUPY	IAV SUPV Stay Strng 	
+OFFENSIVE	IndAdj Neg Modif Vice Hostile Ngtv Strng Actv Eval 	noun-adj: Characterized by attack, physically or on the sensibilities 
+OFFER	Pos Noun Object COM Affil Pstv Strng Psv Comnobj 	11% noun: "Offering", something presented, a donation 
+OFFICER	Noun HU POLIT Power Strng Role 	noun: One who holds a position of rank or authority in an organi- zation,  especially a policeman. 
+OFFICIAL	Noun HU POLIT Power Legal Strng Role 	69% noun: A person granted some authority 
+OFFICIAL	LY Doctr Legal Strng 	3% adv: "Officially"--formally, authoritatively 
+OFFICIAL	Modif Doctr Legal Strng 	28% adj: Authoritative, formal, adopted by the government in power 
+OFFICIATE	IAV SUPV Intrel Power Legal Strng 	
+OFTEN	LY FREQ Strng Ovrst 	adverb: Many times, frequently 
+OMINOUS	Neg Modif Vice Ngtv Strng Hostile 	
+ONCE	Intj Time* Ovrst Strng 	0% idiom: 'once and for all'--with decision and finality 
+OPERATE	IAV SUPV Work Actv Strng PFREQ 	65% verb: To work, perform, function, manage 
+OPERATE	Modif Actv Strng Work 	9% noun-adj: "Operating"--pertaining to surgery (2); functioning (1) 
+OPERATION	Noun Strng Work 	31% noun: The state of functioning, a transaction or scheme 
+OPERATIONAL	Modif Means Strng 	
+OPERATIVE	Modif Strng Means 	
+OPPOSE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	41% verb: To resist, combat, place opposite 
+OPPOSE	Neg Modif Doctr Ngtv Strng 	47% adj: "Opposed", against, contrary 
+OPPOSE	Neg Modif Rel Ngtv Strng Actv 	13% adj: "Opposing", contending, opposite 
+ORDER	Pos Noun Means Pstv Strng 	18% noun: Condition or sequence in general, proper condition or sequence,  an arrangement or system of arrangement, an organization 
+ORDER	Noun COM Power Strng Comform Actv 	17% noun: Command, directive, request 
+ORDER	IAV SUPV Power Strng Actv Comform 	7% verb: To command, direct, request; to arrange methodically or properly (2) 
+ORDER	Pos Modif Means Pstv Strng 	4% adj-noun: "Orderly"--methodical, systematic; a soldier or hospital attendant (1) 
+ORDER	Pos Modif Means Pstv Strng 	2% adj: "Ordered"--methodically or suitably arranged 
+ORDER	Modif Comform Strng Actv 	1% noun: "Ordering"--commanding, requesting; arranging methodically or properly (2) 
+ORDINANCE	Noun COM Comform Legal Power Strng 	
+ORGANIZATION	Noun HU COLL ABS Abs* Strng 	noun: A body of people organized for a purpose--"the veteran's organization";  the quality of having order, being organized, organizing (23) 
+ORGANIZE	IAV Pos SUPV Rel Power Pstv Strng Actv 	75% verb: To establish, to systematize 
+ORGANIZE	Pos Modif Virtue Pstv Strng 	25% adj: "Organized", systematic, orderly 
+ORIGINATE	IAV SUPV Begin Actv Strng 	
+OUST	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+OUTFIT	IAV SUPV Intrel Power Strng Actv 	
+OUTLIVE	DAV Pos SUPV Psv Strng Natpro Other 	
+OUTPUT	Noun ECON Econ* Strng Actv Object Tool 	
+OUTPUT	IAV SUPV Complt Econ* Strng Actv 	
+OUTREACH	IAV SUPV Rise Strng Actv 	
+OUTRUN	IAV Pos SUPV Actv Travel Strng Other 	
+OUTSTANDING	Pos Modif Virtue EVAL Pstv Strng 	
+OVER	LY FREQ Strng 	3% adv: Repeatedly--"i do this over and over" 
+OVERCAME	IAV SUPV Intrel Power Strng Actv 	
+OVERCOME	IAV Pos SUPV Intrel Power Strng Actv 	
+OVERHAUL	IAV SUPV Work Strng Actv 	
+OVERLYING	Modif Qual Strng 	
+OVERPOWER	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERRUN	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERSEER	Noun HU Econ* Power Strng Role 	
+OVERTHROW	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERWHELM	IAV SUPV Power Strng Arousal Intrel Ovrst 	
+OWN	DAV SUPV Rel Econ* Strng 	6% verb: To possess 
+OWN	Modif Strng Virtue 	4% adj-adv: 'on one's own'--independent, on one's own initiative and resources,  alone 
+OWN	IAV SUPV Try Strng Actv 	0% idiom-verb: 'hold one's own'--to keep up 
+OWNER	Noun HU ECON Legal Strng Role 	noun: One who owns, a proprietor 
+OWNERSHIP	Noun Doctr ECON Econ* Strng 	
+PAINSTAKING	IndAdj Pos Modif Work Try Strng 	
+PANDEMONIUM	Neg Noun Vary Ngtv Strng 	
+PARDON	Pos Noun COM Comform Power Pstv Actv Strng 	
+PARDON	DAV Pos SUPV Power Pstv Actv Strng Comform 	
+PARLIAMENT	Noun HU COLL POLIT Polit* Power Strng 	
+PART	DAV SUPV Rel Actv Strng 	1% verb: To separate or divide 
+PARTNER	Pos Noun HU ECON Affil Econ* Pstv Strng Role 	noun: One of two or more associated as joint principals in carrying on  some action, etc. 
+PARTNERSHIP	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	
+PARTY	Noun HU COLL POLIT Polit* Strng 	58% noun-adj: Organized political group 
+PASS	DAV Pos SUPV Complt Pstv Strng 	11% verb-adj: To undergo successfully ("pass an exam") 
+PASS	IAV SUPV Work Legal Strng Actv 	4% verb: To ratify or be ratified--"to pass a law" 
+PASSION	Noun EMOT Psv Strng Arousal Affil 	
+PASSIONATE	Pos Modif EMOT Affil Pstv Strng Arousal Psv 	
+PATIENCE	Pos Noun ABS Abs* Virtue Pstv Strng 	
+PATIENT	Pos Modif Virtue EVAL Pstv Strng 	26% adj: Unhurried, considerate, understanding 
+PATIENT	Pos LY Virtue Pstv Strng 	0% adv: "Patiently"--in an understanding or unhurried manner 
+PATROL	Noun HU COLL POLIT Milit Strng Power 	
+PATROL	IAV SUPV Travl Milit Power Strng 	
+PATRON	Pos Noun HU ECON Econ* Power Pstv Strng Role 	
+PATRONAGE	Pos Noun Doctr ECON Econ* Power Pstv Strng 	
+PEAK	IAV SUPV Rise Strng 	
+PENETRATE	IAV SUPV Strng Actv Hostile Exert 	
+PENETRATION	Noun Space Strng Actv Hostile 	
+PERFECT	Pos LY Ovrst Virtue Pstv Strng 	56% adv: 'perfectly'--in a perfect manner, totally 
+PERFECT	Pos Modif Virtue EVAL Pstv Strng Ovrst 	42% adj: Complete, sound, flawless, ideal 
+PERFECT	IAV Pos SUPV Complt Pstv Strng Actv 	3% verb: To make perfect, complete 
+PERMANENT	Modif Strng Undrst Persist 	
+PERMISSION	Pos Noun COM Comform Power Pstv Strng Psv 	
+PERMIT	IAV Pos SUPV Intrel Power Pstv Strng Psv PFREQ 	94% verb: To allow, to make possible 
+PERPETUAL	Modif Strng Persist Ovrst 	
+PERPETUATE	IAV SUPV Persist Strng Actv Ovrst 	
+PERSEVERANCE	Pos Noun Pstv Strng Virtue Actv 	
+PERSEVERE	IAV Pos SUPV Persist Actv Strng Pstv 	
+PERSIST	IAV SUPV Persist Strng Actv 	
+PERSISTENCE	Noun Strng Actv Persist 	
+PERSISTENT	Modif Virtue Strng Actv 	
+PERSUADE	IAV SUPV Power Strng Actv Comform 	
+PHYSICAL	Modif Strng Bodypt 	73% adjective: Of or pertaining to the body--also, of or pertaining to  natural or material things 
+PHYSICAL	LY Qual Strng 	27% adverb: "Physically"--bodily, materially 
+PICK	IAV Neg SUPV Intrel Hostile Power Actv Strng Ngtv 	9% idiom-verb: "(to) pick on, a fight"--to tease, bully, encourage a fight 
+PISTON	Noun Object Tool Strng 	
+PITILESS	IPadj Neg Modif Strng Power 	
+PLAGUE	Neg Noun Ngtv Strng Vice 	
+PLAGUE	IAV Neg SUPV Intrel Hostile Ngtv Strng 	
+PLAN	Noun Means POLIT Strng Actv 	57% noun: An organized program for some action 
+PLAN	IAV SUPV Solve Strng Actv 	35% verb: To construct such a program 
+PLAN	Noun Means Strng Actv 	8% noun-adj: "Planning"--the act of constructing such programs 
+PLAN	Modif Means Strng 	1% adj: "Planned"--prepared in advance, programmed for 
+PLANT	Modif Space Strng 	0% adj: "Planted"--set in the ground, established, implanted 
+PLEASE	IAV SUPV Power Strng Actv Pleasur 	3% verb: To will, like, desire..."to do what one pleases" 
+PLEASED	IAV SUPV ED Strng Actv Pleasur 	5% verb: Willed, liked, desired . . . "he did what he pleased" 
+PLENTIFUL	Pos Modif Quan Ovrst Pstv Strng 	
+PLENTY	Pos Noun Quan Ovrst Pstv Strng 	noun-adj: A full or abundant supply, more than sufficient, ample. 
+PLOT	IAV Neg SUPV Ngtv Actv Strng Solve 	
+POIGNANT	IndAdj Pos Modif Ovrst Strng Comform 	
+POINT	Neg Modif Hostile Ngtv Strng Know Ovrst 	1% adj: "Pointed"--incisive, penetrating, cutting 
+POINT	LY Comform Strng 	9% idiom-noun: "Point of view"--viewpoint (handled by view) 
+POISE	Pos Modif Pstv Strng Qual 	
+POLICE	Noun HU COLL POLIT Legal Power Strng 	noun-adjective: Of or pertaining to officers of the law. 
+POLICEMAN	Noun HU MALE POLIT Legal Power Strng Role 	
+POLICEMEN	Noun HU MALE POLIT S Legal Power Strng Role 	
+POLICY	Noun Doctr ECON POLIT Strng 	noun-adj: Course of action 
+POLITICIAN	Noun HU POLIT Polit* Power Strng Role 	noun: One versed or experienced in politics 
+POPULAR	Pos Modif Virtue Pstv Strng 	
+POSSE	Noun HU COLL Legal Power Hostile Strng 	
+POSSESS	DAV SUPV Rel Power Strng 	
+POSSIBLE	Modif Strng Causal Ovrst 	adjective: That which may or can be, exist, happen, be done, etc. 
+POTENCY	Pos Noun Qual Quan Strng Power 	
+POTENT	IndAdj Pos Modif Strng Qual 	
+POTENTIAL	Noun Strng Virtue 	noun-adj: That which is possible or latent, not actual or manifest 
+POTENTIALITY	Noun Strng Virtue 	
+POUND	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	27% verb: To strike heavily or repeatedly, pommel 
+POWER	Noun Power Strng Virtue 	71% noun-adj: Control, influence, strength, ability, faculty; physical energy (14) 
+POWER	Noun HU COLL POLIT Power Strng Polit* 	23% noun: Nation, group or individual having power 
+POWERFUL	Modif Polit* Power Strng Virtue 	adj: Having or exerting great force 
+PRECAUTION	Pos Noun Think Strng 	
+PRECIOUS	Pos Modif Virtue EVAL Econ* Pstv Strng 	
+PREDOMINANT	Modif Strng Ovrst Know 	
+PREDOMINATE	IAV SUPV Strng Ovrst Intrel Power 	
+PREEMINENT	IndAdj Pos Modif Strng Power Eval 	
+PREPARE	IAV SUPV Begin Strng Actv 	73% verb: To put things or oneself in readiness, to compose beforehand 
+PREPARE	Modif Means Strng 	26% adj: "Prepared"--ready 
+PRESERVE	IAV SUPV Work Strng Actv 	
+PRESIDE	IAV SUPV Intrel Power Strng Actv 	
+PRESIDENCY	Noun Doctr POLIT Polit* Power Strng 	
+PRESIDENT	Noun HU POLIT Polit* Power Strng Role 	noun: Highest officer of a country or other body. 
+PRESIDENTIAL	Modif POLIT Polit* Power Strng HU Role 	
+PRESS	DAV SUPV Exert Strng Actv 	43% verb: To exert pressure physically or verbally 
+PRESS	Modif Means Strng 	5% adj: "Pressing"--urgent 
+PRESSURE	Noun Natpro Power Strng PFREQ 	86% noun-adj: The exertion of psychological, social, or political forces  upon an individual or group, "he could not stand the pressure so he quit";  the physical exertion of force of one object, fluid, etc., resting on another (0) 
+PRESSURE	IAV SUPV Exert Power Strng Actv 	14% verb: To attempt to influence or force 
+PRESTIGE	Pos Noun Virtue Power Pstv Strng 	
+PREVAIL	IAV SUPV Persist Strng Actv 	
+PREVALENT	Modif Quan Strng 	
+PREVENT	IAV SUPV Intrel Power Strng Actv 	verb: Hinder, keep from occurring 
+PREVENTION	IAV SUPV Intrel Power Strng 	
+PREVENTIVE	Noun Power Strng Causal 	
+PRIDE	Pos Noun EMOT Pstv Strng Pleasur 	
+PRIMARY	Modif Strng Ovrst Know 	51% adj: First, most fundamental, primitive, central, important, etc. 
+PRIMARY	LY Strng Ovrst Know 	47% adv: "Primarily"--in the first place, originally, fundamentally, mainly 
+PRINCE	Noun HU MALE POLIT Polit* Power Strng Role 	noun: The one of highest rank, a sovereign, a title of nobility. 
+PRINCIPAL	Pos Modif EVAL Pstv Strng Ovrst PFREQ Know 	32% adj: Chief or most important 
+PRINCIPAL	Noun HU Power Strng Role 	44% noun: A leader, chief, or head 
+PRINCIPAL	LY Ovrst Strng Know 	0% adv: "Principally"--mainly 
+PRIORITY	Noun Means Strng 	
+PRIVILEGE	Noun Virtue Power Strng 	
+PRIVILEGED	IndAdj Pos Modif Econ Strng Ovrst 	
+PRIZE	Pos Noun Goal Pstv Strng 	
+PROACTIVE	IndAdj Pos Modif Actv Strng Exert 	
+PROBE	Noun Means Strng Actv 	
+PROCLAIM	IAV SUPV Power Strng Comform 	
+PROCLAMATION	Noun COM Comform POLIT Power Strng 	
+PROCTOR	Noun HU Acad Power Strng Role 	
+PROCURE	IAV SUPV Fetch Strng Actv 	
+PROCUREMENT	Noun Means ECON Strng 	
+PROD	IAV Neg SUPV Strng Comform 	
+PRODUCE	IAV SUPV Work Strng Actv PFREQ 	89% verb: To bring into existence or sight, create, make 
+PRODUCTIVE	Pos Modif Virtue Econ* Pstv Strng 	
+PROFICIENT	IndAdj Pos Modif Strng Know 	
+PROFIT	Pos Noun Goal ECON Econ* Pstv Strng 	
+PROFIT	IAV Pos SUPV Exch Pstv Strng Econ* 	
+PROFITABLE	Pos Modif Virtue Econ* Pstv Strng 	
+PROFOUND	Pos Modif Virtue EVAL Pstv Strng 	
+PROGRESS	Pos Noun ABS Abs* Virtue Pstv Strng Actv 	70% noun: Advancement of situation towards a goal 
+PROGRESS	IAV Pos SUPV Pstv Strng Actv Try 	27% verb: To move towards a goal or generally forward 
+PROHIBIT	IAV Neg SUPV Power Ngtv Strng Actv Intrel Legal 	
+PROHIBITION	Neg Noun Doctr POLIT Power Ngtv Strng Actv Legal 	
+PROHIBITIVE	Neg Modif Power Ngtv Strng Ovrst Vice 	
+PROJECT	IAV SUPV Solve Actv Strng 	4% verb: To forecast, look forward, extrapolate, externalize onto, place  onto (abstract) 
+PROLONG	IAV SUPV Persist Actv Strng 	
+PROMINENCE	Pos Noun Ovrst Strng Eval 	
+PROMINENT	Pos Modif Virtue Pstv Strng Power 	
+PROMOTE	IAV SUPV Intrel Econ* Power Strng Actv 	
+PROMOTION	Noun ECON Econ* Incr Strng 	
+PROMPT	Pos Modif Virtue Pstv Strng Ovrst 	
+PROMPT	IAV Pos SUPV Intrel Power Pstv Strng 	
+PROOF	Noun Know Ovrst Strng 	
+PROPONENT	Noun HU Power Strng Role 	
+PROPRIETOR	Noun HU ECON Econ* Power Legal Strng Role 	
+PROSECUTION	Neg Noun Hostile Legal Ngtv Actv Strng Comform 	
+PROTECT	IAV Pos SUPV Intrel Affil Power Pstv Strng Actv 	verb: To defend or guard from attack, damage, loss, etc. 
+PROTECTION	Pos Noun Power Pstv Strng Virtue 	noun: Safeguard 
+PROTECTIVE	IndAdj Pos Modif Strng Other Affil 	
+PROTECTOR	Pos Noun HU Role Affil Other Strng 	
+PROUD	Pos Modif EMOT Pleasur Pstv Strng Affil 	adj: Filled with pride 
+PROVE	IAV SUPV Solve Strng Actv 	65% verb: To establish beyond all reasonable doubt 
+PROVE	IAV SUPV VERB LINK Complt Strng Psv 	33% verb: Turn out (to be)--"prove difficult," "prove to be" 
+PROVIDE	IAV Pos SUPV Intrel Affil Power Pstv Strng PFREQ 	97% verb: To furnish, supply, afford 
+PROVIDENCE	Pos Noun POLIT Power Relig Pstv Strng Virtue 	
+PROVOKE	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+PROWESS	Pos Noun Know Strng 	
+PULL	IAV SUPV Strng Actv Exert 	verb: To tug at, draw, drag, move 
+PUNISH	IAV Neg SUPV Intrel Hostile Power Ngtv Strng Actv 	
+PURPOSE	Noun Causal Strng PFREQ 	noun: Reason for acting or being. 
+PURPOSE	LY Strng Causal Actv Ovrst 	1% adv: "On purpose," "purposely"--with intent 
+PURPOSEFUL	IndAdj Pos Modif Think Strng Goal Ach 	
+PURSUE	IAV SUPV Travl Strng Actv 	verb: To chase, follow, follow up 
+PUSH	DAV Neg SUPV Exert Ngtv Strng Actv PFREQ 	89% verb-adj: To exert force or pressure on something (or someone) in  order to move it (them) 
+PUSH	Neg Modif Ngtv Strng Actv Exert 	5% noun: A shove, or the act of shoving ("pushing") 
+PUSH	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	6% idiom-verb: "Push around"--to bully 
+PUT	IAV SUPV Complt Actv Strng 	0% verb: 'put through'--to have accepted; judged and passed 
+QUALIFY	IAV Pos SUPV Complt Pstv Strng Undrst 	28% verb: To meet some set of standards, ensure satisfaction of such standards 
+QUALIFY	IAV SUPV Strng Comform 	16% verb: To impose conditions on the validity of a statement 
+QUEST	Noun Strng Actv Means 	
+QUIET	DAV SUPV Intrel Power Strng Actv 	7% verb: To silence 
+RADIANCE	Pos Noun Qual Strng 	
+RADICAL	Neg Modif ECON POLIT Polit* Ngtv Strng Actv Vice 	
+RAGE	Neg Noun EMOT Hostile Ngtv Strng Arousal 	
+RAID	IAV Neg SUPV Intrel Ngtv Strng Actv Hostile 	
+RAISE	DAV SUPV Rise Strng Actv 	57% verb: To elevate, to make rise, to increase in number or volume; in  relation to money 
+RAISE	IAV supv Work Strng Actv 	14% verb: To grow, to bring to maturity 
+RAMPANT	Neg Modif Vice Ngtv Strng 	
+RATTLE	IAV Neg SUPV Exert Ngtv Strng 	
+RAVE	IAV Pos SUPV Actv Comform Affil Strng 	
+RAW	Modif Qual Strng 	
+REACH	IAV SUPV Complt Actv Strng 	80% verb: To attain, arrive at, come to, get to, extend to 
+READINESS	Noun Strng Arousal 	
+READY	Modif Means Strng PFREQ 	95% adj: Completely prepared, likely at any moment, prompt or quick in  action, manifestation, etc.; set, able to be used, etc. 
+REAFFIRM	IAV SUPV Strng Power Comform 	
+REALIZE	IAV SUPV Complt Strng Actv 	11% verb: To make real, see come true or happen--"he realized his dreams" 
+REASON	Noun COM Causal Strng PFREQ 	95% noun: The basis or cause of an act or event or a statement given in  justification 
+REASON	Noun ABS Abs* Causal Actv Strng 	2% noun: "Reason," "reasoning"--the uses of mental powers, common sense and logic 
+REASON	IAV SUPV Solve Actv Strng 	3% verb: To think or argue in a logical manner 
+REASSURANCE	Pos Noun COM Comform Affil Pstv Strng 	
+REASSURE	IAV Pos SUPV Pstv Strng Affil Power Comform 	
+REBEL	Neg Noun HU POLIT Hostile Ngtv Strng Actv Role 	
+REBEL	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+REBELLION	Neg Noun POLIT Ritual Hostile Milit Ngtv Strng 	
+REBUILD	IAV SUPV Work Strng Actv 	
+RECOMMEND	IAV SUPV Strng Comform 	
+RECOMMENDATION	Noun COM Comform Strng 	
+RECONSTRUCT	IAV SUPV Work Strng Actv 	
+RECONSTRUCTION	Noun Means ECON POLIT Strng Actv 	
+RECOVER	IAV SUPV Strng Complt 	
+RECOVERY	Noun ECON Strng Complt 	
+RECRUIT	IAV SUPV Intrel Power Milit Strng Actv 	
+RECRUITMENT	Noun Means Strng Actv Power 	
+RECURRENT	Modif FREQ Strng 	
+REDEEM	IAV Pos SUPV Actv Strng Try 	
+REDUCE	IAV SUPV Decr Strng 	verb: To diminish, degrade, subdue 
+REESTABLISH	IAV Pos SUPV Actv Begin Strng 	
+REGAIN	IAV SUPV Strng Actv Complt 	
+REGIME	Noun HU COLL POLIT Polit* Power Strng 	
+REGIMENT	Noun HU COLL POLIT Milit Strng 	
+REGULAR	Modif EVAL FREQ Strng Ovrst 	adj: Ordinary, usual, standard, habitual, systematic--following some general  rule, custom, or habit 
+REGULATE	IAV SUPV Intrel Strng Actv Power 	
+REGULATION	Noun ECON POLIT Doctr Strng 	
+REINFORCE	IAV SUPV Intrel Strng Actv Power 	
+REITERATE	IAV SUPV Strng Actv Comform 	
+REJECT	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	verb: To refuse, cast off, rebuff 
+REJECTION	Neg Noun Hostile Ngtv Strng Vice Actv 	
+RELENTLESS	Modif Power Strng Vice 	
+RELIABILITY	Pos Noun Ovrst Virtue Pstv Strng 	
+RELIABLE	IndAdj Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+RELIEVE	IAV SUPV Intrel Power Strng 	75% verb: To alleviate, disburden, ease 
+REMARKABLE	Pos Modif Ovrst EVAL Virtue Pstv Strng 	
+REMARKABLY	Pos LY Ovrst EVAL Virtue Pstv Strng 	
+REMOVAL	Noun Travl Strng Actv 	
+REMOVE	DAV SUPV Fetch Strng Actv 	verb: Take away or off, dismiss, eliminate 
+RENDER	IAV SUPV Work Strng 	
+RENEW	IAV SUPV Work Strng 	
+REPAIR	Pos Noun Pstv Strng Actv Means 	
+REPAIR	IAV Pos SUPV Work Pstv Strng Actv 	
+REPLENISH	IAV SUPV Work Strng Actv 	
+REPUDIATE	IAV Neg SUPV Actv Comform Strng 	
+REPULSE	IAV Neg SUPV Intrel Ngtv Strng Actv Power Hostile 	
+REQUIRE	IAV SUPV Intrel Power Actv Strng PFREQ 	98% verb: To need, demand, compel 
+REQUIREMENT	Noun Power Strng Means 	
+RESERVE	IAV SUPV Fetch Strng Actv Undrst 	35% verb: Save, withhold, restrain 
+RESERVE	Noun Means ECON Strng Undrst 	62% noun-adj: Surplus, secondary supply 
+RESIST	IAV SUPV Intrel Hostile Strng Actv 	
+RESISTANCE	Noun Hostile Strng Actv Vice 	
+RESOLUTE	IndAdj Pos Modif Strng Feel 	
+RESOLUTION	Noun COM Comform POLIT Strng 	
+RESOLVE	Pos Noun Pstv Strng Actv Pleasur 	
+RESOLVE	IAV Pos SUPV Solve Pstv Strng Actv 	
+RESOLVED	IndAdj Pos Modif Strng Feel Stay 	
+RESOUND	IAV Pos SUPV Actv Comform Travel Strng 	
+RESOURCE	Noun Means ECON Strng 	noun: Source of supply, support, aid 
+RESOURCEFUL	IndAdj Pos Modif Know Strng Virtue 	
+RESOURCEFULNESS	Pos Noun Know Strng Virtue 	
+RESTORE	IAV Pos SUPV Work Pstv Strng Actv 	
+RESTRAIN	IAV SUPV Intrel Hostile Power Strng Actv 	
+RESTRAINT	Noun Power Strng Arousal 	
+RESTRICT	IAV Neg SUPV Intrel Hostile Power Strng Actv PFREQ Ngtv 	96% verb: To confine or limit 
+RESTRICT	Neg Modif Vice Ngtv Strng 	0% adj: "Restricting", tending to limit 
+RESUMPTION	Noun Strng Actv DET Begin 	
+RETAIN	IAV SUPV Fetch Strng 	
+RETENTION	Noun Rel Strng 	
+REVENUE	Noun Means ECON POLIT Econ* Strng 	
+REVIVE	IAV Pos SUPV Begin Pstv Strng Actv 	
+REVOLUTIONARY	Modif Doctr ECON POLIT Polit* Hostile Strng 	
+REWARD	Pos Noun Goal ECON Econ* Pstv Strng 	33% noun: Compensation, profit, return 
+REWARD	IAV Pos SUPV Exch Pstv Actv Strng 	19% verb: To compensate, to give positive reinforcement 
+REWARD	Pos Modif Virtue EVAL Pstv Strng 	48% adj: "Rewarding", yielding satisfaction or profit 
+RICH	Pos Modif Virtue ECON Econ* Pstv Strng 	61% noun-adj: Wealthy, affluent; those who are wealthy or affluent (5) 
+RICH	Pos Modif Qual Pstv Strng 	13% adj: Full, abounding in 
+RICH	Pos Modif Virtue Econ* Pstv Strng 	10% adj: "Richer," comparative 
+RICH	Pos Modif Virtue Econ* Pstv Strng 	1% adj: "Richest," superlative 
+RICH	Pos LY Qual Pstv ECON Strng 	3% adv: "Richly" 
+RICH	Pos Noun Object ECON Econ* Power Pstv Strng Comnobj 	11% noun: Monetary wealth, "riches" 
+RIGHT	Pos Noun ABS Abs* Means Legal Power Pstv Strng 	14% noun: Legal or moral prerogative 
+RIGHT	LY Quan Strng Ovrst 	21% adv: Directly, straight, immediately, precisely, just 
+RIGHT	IAV Pos SUPV Work Pstv Strng 	0% verb: To set something right 
+RIP	DAV Neg SUPV Ngtv Strng Actv Exert Hostile 	
+RISE	DAV SUPV Rise Strng Actv 	56% verb: To move upward or ahead, increase in degree or capacity, expand 
+RISE	IAV SUPV Natpro Strng 	16% verb: To return to life 
+RISE	Noun Strng Actv Incr 	16% noun: An increase in degree, intensity, size, height--growth 
+RISE	IAV SUPV Causal Strng Actv 	2% verb-idiom: "Give rise (to)"--originate, cause 
+RISE	Modif Strng Actv Incr 	9% adj: "Rising"--increasing in degree, intensity, size, height 
+RIVAL	Neg Noun HU Hostile Ngtv Strng Role 	
+RIVAL	IAV Neg SUPV Try Ngtv Strng 	
+ROAR	Noun COM Comform Strng Actv 	
+ROAR	DAV SUPV Strng Actv Comform 	
+ROBUST	IndAdj Pos Modif Strng Ovrst Dimn 	
+ROOT	Noun Causal Strng 	83% noun-adj: Supporting, embedded or essential part, source, origin 
+ROOT	Modif Space Strng Psv 	13% adj: "Rooted", based, embedded 
+ROOT	IAV Neg SUPV Hostile Ngtv Strng Actv Exert 	0% idiom-verb: To "root out", to extirpate 
+ROSE	DAV SUPV Rise ED Strng Actv 	75% verb: Moved upward or ahead, increased in degree or capacity, expanded 
+ROSE	IAV SUPV ED Natpro Strng 	6% verb: Returned to life 
+ROUGHNESS	IndAdj Neg Modif Strng Vice 	
+ROYAL	Modif POLIT Polit* Power Strng HU COLL 	
+ROYALTY	Noun HU COLL POLIT Polit* Power Strng 	
+RUGGED	Modif Qual Power Strng Psv 	
+RUIN	IAV Neg SUPV Fail Ngtv Strng Actv 	65% verb: To destroy or spoil 
+RULE	Noun COM Comform Power Strng Legal 	58% noun: Regulation, standard, guideline 
+RULE	IAV SUPV Intrel Polit* Power Strng Actv 	13% verb: To govern, guide, determine 
+RULE	Noun Doctr POLIT Polit* Strng Actv 	8% noun: Government, reign, control 
+RULE	Modif Polit* Strng Actv Intrel Power 	12% noun-adj: "Ruling", judgement, determination, governing, in power 
+RUN	IAV SUPV Intrel Power Actv Strng 	9% verb: To manage, direct, control, guide, drive 
+SAGACITY	Pos Noun Know Strng 	
+SAGE	IndAdj Pos Modif Know Strng 	
+SANCTION	Noun ECON POLIT COM Comform Legal Power Strng 	
+SANCTION	IAV SUPV Intrel Legal Power Strng Psv 	
+SATISFY	IAV Pos SUPV Intrel Pstv Strng Affil 	28% verb: To give enjoyment or contentment, to fulfill 
+SATISFY	Pos Modif Virtue EVAL Pstv Strng 	12% adj: Giving contentment - "satisfying" 
+SAVE	IAV Pos SUPV Fetch Pstv Strng Actv 	79% verb-adj: To rescue, preserve, reserve, salvage, hold in safekeeping 
+SAVVY	Pos Noun Know Strng 	
+SAY	Noun Means Power Strng 	6% noun: The right or opportunity to speak, decide, exercise, influence 
+SCARE	IAV Neg SUPV Ngtv Strng Intrel Hostile Actv 	83% verb: To frighten 
+SCARED	IAV Neg SUPV Intrel ED Hostile Ngtv Strng 	4% verb: To frighten (past tense) 
+SCATTER	IAV SUPV Exert Actv Strng 	
+SEARCH	Modif Means Strng Actv 	2% adj: "Searching"--keenly observant, penetrating 
+SECOND	IAV SUPV Intrel Affil Strng 	2% verb: To assist or support 
+SECURE	IAV SUPV Stay Strng Actv Ovrst 	79% verb: To obtain, insure, make fast 
+SECURE	Pos LY Qual Ovrst Pstv Strng 	0% adv: "Securely"--safely, firmly 
+SEIZE	IAV Neg SUPV Hostile Ngtv Strng Actv Fetch 	verb: To take possession or control of 
+SELF-CONTAINED	Pos Modif Virtue Power Pstv Strng 	
+SENATE	Noun HU COLL POLIT Polit* Power Strng 	
+SENATOR	Noun HU POLIT ECON Polit* Power Strng Role 	
+SENIOR	Modif Time* Strng 	23% noun-adj: Older in years or experience, having 
+SENSATIONAL	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+SENTENCE	DAV Neg SUPV Legal Power Ngtv Strng Actv Comform 	
+SERENE	Pos Modif EMOT Pstv Strng Psv Arousal 	
+SET	Modif Qual Psv Strng 	3% adj: Fixed, determined, established 
+SETTLE	IAV SUPV Stay Actv Strng 	47% verb: To establish a household, to assume a certain form, to make  or become stable (3) 
+SETTLE	IAV SUPV Intrel Power Actv Strng 	31% verb: To resolve a dispute or problem, to calm. 
+SETTLE	Pos Modif Stay Pstv Strng Psv 	18% adj: "Settled"--stable, calm 
+SEVERE	Neg Modif Vice EVAL Ngtv Strng Ovrst 	
+SEVERITY	Neg Noun Vice Ngtv Strng 	
+SHAPE	DAV SUPV Work Strng Actv 	21% verb: To form, mold, determine 
+SHARP	Modif Qual Strng Ovrst 	
+SHATTER	DAV SUPV Exert Hostile Strng Actv 	
+SHELL	Noun Qual Strng PFREQ 	89% noun-adj: A hard protective covering, a framework or structure 
+SHELL	Neg Noun Object Tool Hostile Milit Strng Ngtv 	5% noun: Artillery warhead 
+SHELL	DAV Neg SUPV Intrel Hostile Milit Strng Ngtv Actv 	5% verb: To use (an) artillery warhead(s) 
+SHELTER	IAV Pos SUPV Intrel Power Pstv Strng Affil 	
+SHERIFF	Noun HU POLIT Legal Power Strng Role 	
+SHIFT	IAV SUPV Try Strng Actv 	3% verb: "To shift for oneself"--to get along by oneself 
+SHOCK	Neg Noun Pain Ngtv Strng 	40% noun-adj: Sudden disturbance of mental equilibrium; less frequently,  of physical equilibrium (1) 
+SHOCK	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	29% verb: To jar with intense surprise, horror, disgust 
+SHOCK	Neg Modif Pain Ngtv Strng 	2% adj: "Shocking"--having a disturbing, surprising, etc., effect 
+SHOCK	Neg LY Ovrst Ngtv Strng Pain 	0% adv: "Shockingly" 
+SHOOT	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	68% verb: To send forth or discharge a projectile, generally with a gun,  in order to hit or damage some object; to take pictures (0) 
+SHOOT	Neg Noun Hostile Ngtv Strng Actv Vice 	6% noun-adj: "Shooting"--the harming of a person by a projectile or weapon;  pertaining to a rapidly moving object (0) 
+SHOOT	IAV SUPV Incr Strng Actv 	0% idiom-verb: "Shoot up"--to grow or rise rapidly 
+SHOT	DAV Neg SUPV ED Exert Hostile Ngtv Strng Actv 	81% verb: Past participle of "shoot"--to launch or discharge a projectile; 
+SHOT	Neg Noun Object Tool Hostile Ngtv Strng Actv 	7% noun: A projectile or the process of launching a projectile; anything  sudden and/or forceful (2) 
+SHOULDER	IAV SUPV Exert Strng Actv 	15% verb: To take upon, to support or carry, to apply the shoulder 
+SHOW	IAV SUPV Strng PFREQ Comform Actv 	89% verb: To demonstrate, make evident, manifest, exhibit, often with  implication of guidance 
+SHOW	IAV SUPV Power Strng Actv Comform 	1% verb: "Show (in, around, out)"--to usher (in, around, out) 
+SHREWD	Pos Modif Pstv Strng Virtue 	
+SHREWDNESS	Pos Noun Know Strng Virtue 	
+SHRIEK	DAV Neg SUPV Comform Strng Pain 	
+SHUT	DAV SUPV Work Actv Strng 	35% verb: To close, keep enclosed 
+SHUT	IAV SUPV Finish Actv Strng 	12% verb: "Shut off," "shut out"--to close off, to stop, exclude 
+SHUT	IAV SUPV Stay Power Actv Strng 	15% verb: "Shut up"--confine 
+SIGNIFICANCE	Pos Noun ABS Abs* Virtue Pstv Strng Ovrst 	
+SIGNIFICANT	Pos Modif Virtue EVAL Pstv Strng Ovrst 	
+SIZABLE	Modif Quan DIM Strng Ovrst 	
+SLAM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+SLASH	DAV Neg SUPV Hostile Ngtv Strng Actv Exert 	
+SLAYER	Neg Noun HU Hostile Ngtv Strng Actv Role 	
+SMART	Pos Modif Virtue EVAL Pstv Strng 	82% adj: Bright, clever, brash, stylish 
+SMART	Pos Modif Virtue EVAL Pstv Strng 	18% adj: "Smarter" comparative form of sense one 
+SMART	Pos Modif Virtue EVAL Pstv Strng 	0% adj: "Smartest"--superlative form of sense one 
+SMASH	DAV Neg SUPV Exert Hostile Ngtv Strng Actv PFREQ 	85% verb: To strike violently, shatter, destroy 
+SMASH	Neg Noun Hostile Ngtv Strng Actv Exert 	10% noun: A violent blow, a crash 
+SMASH	Modif Virtue EVAL Strng 	5% adj: "Smashing" - marvelous, devastating 
+SNATCH	DAV Neg SUPV Fetch Hostile Ngtv Strng Actv 	
+SOAR	IAV SUPV Rise Strng 	
+SOBER	IndAdj Pos Modif Strng Think 	
+SOLID	Modif Qual EVAL Strng 	
+SOLIDARITY	Noun Virtue POLIT Affil Strng 	
+SOLIDITY	Noun Qual Strng 	
+SOUND	Pos Modif Virtue EVAL Pstv Strng Ovrst 	16% adj: Solid, firm, reliable, in good condition 
+SOUND	LY Qual Strng Ovrst 	1% adv: "Soundly"--thoroughly 
+SOUND	Pos Modif Virtue EVAL Pstv Strng Ovrst 	1% adj: "Sounder"--comparative of sense 4 
+SOUNDNESS	Pos Noun Virtue Pstv Strng Strng 	
+SOUNDNESS	Pos Noun Virtue Pstv Strng Strng 	
+SOURCE	Noun Know Strng 	
+SOVEREIGN	Modif Doctr POLIT Polit* Power Strng 	
+SOVEREIGNTY	Noun Doctr POLIT Polit* Power Strng 	
+SPARE	DAV Pos SUPV Intrel Affil Power Pstv Strng 	48% verb: To save from ill fortune 
+SPEAR	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	12% verb: To lance someone, or something 
+SPECTACULAR	Pos Modif Ovrst EVAL Virtue Pstv Strng 	
+SPEED	Modif Strng Actv Time* Ovrst 	
+SPEED	IAV SUPV Travl Strng Actv 	
+SPLIT	DAV SUPV Strng Actv Exert Hostile 	68% verb: To divide or to cut apart 
+SPONSOR	IAV SUPV Intrel Power Strng Actv 	
+SPONTANEOUS	Modif Strng Virtue 	
+SPRIGHTLY	IndAdj Pos Modif Actv Strng Move 	
+SQUARELY	Pos Modif Strng 	
+SQUEEZE	DAV SUPV Exert Actv Strng 	
+STABILITY	Pos Noun Virtue Pstv Strng Ovrst 	
+STABILIZE	IAV Pos SUPV Power Stay Pstv Strng Actv Ovrst 	
+STABLE	Pos Modif Qual Pstv Strng 	
+STAMP	DAV Neg SUPV Exert Hostile Ngtv Strng Actv 	
+STAND	DAV SUPV Stay Strng 	71% verb: To be in or move into an upright position (182); abstract--  remain fixed, be in a specified condition or rank--"i stand convinced  of the fact," "we stand in need of money" (19) 
+STAND	Noun Know Strng 	8% noun: Viewpoint, argument, position of defense; a platform stall or booth (1) 
+STAND	IAV SUPV Affil Strng Actv Intrel 	7% verb: "Stand for," "stand up for"; represent, favor, defend 
+STAND	IAV SUPV Strng Psv Intrel Subm 	6% verb: Tolerate, bear, withstand 
+STAND	IAV Pos SUPV Percv Strng Pstv 	1% idiom-verb: "Stand out"--to be conspicuous or prominent 
+STAND	Noun Qual Strng 	2% noun-adj: "Standing"--being in or moving into an upright position,  remaining fixed 
+STATE	Noun HU COLL POLIT Polit* Power Strng 	39% noun: Body politic--area of government 
+STATESMAN	Noun HU MALE POLIT Polit* Power Strng Role 	
+STATESMEN	Noun HU MALE POLIT S Polit* Power Strng Role 	
+STATUESQUE	IndAdj Pos Modif Strng Power 	
+STAUNCH	IndAdj Pos Modif Persist Strng Pstv 	
+STAUNCHNESS	Pos Noun Persist Strng Pstv 	
+STEADFAST	Pos Modif Persist Pstv Strng Ovrst 	
+STEADFASTNESS	Pos Noun Persist Pstv Strng Ovrst 	
+STEADILY	LY Strng Persist 	
+STEADINESS	Pos Noun Pstv Strng Persist 	
+STEADY	Pos Modif Qual Pstv Strng 	
+STEEL	Noun Object Tool ECON Strng 	
+STEP	IAV SUPV Intrel Power Actv Strng 	8% verb: "To step in"--to intervene 
+STERN	IndAdj Neg Modif Hostile Strng 	
+STICK	DAV SUPV Exert Strng Actv 	27% verb: Thrust into, pierce, put, extend 
+STICK	DAV SUPV Strng Actv Intrel 	18% verb: Adhere, remain, remain loyal 
+STICK	IAV SUPV Try Strng Actv 	1% verb: "Stick it out"--remain despite opposing pressure 
+STIFF	Modif Qual Strng 	
+STIFFLY	Modif Qual Strng 	
+STIFLE	IAV Neg SUPV Intrel Ngtv Strng Power Hostile Actv 	
+STILL	IAV SUPV Intrel Power Strng Actv 	0% verb: To make quiet 
+STOICISM	Noun Doctr Relig Strng 	
+STOMACH	IAV SUPV Strng Intrel Subm 	3% verb: To endure 
+STONE	Noun PLACE Land Strng PFREQ 	83% noun: Rock 
+STOOD	DAV SUPV Stay ED Strng PFREQ 	92% verb: Was in or moved into an upright position (72); existed, remained  fixed (6) 
+STOOD	IAV SUPV Intrel ED Affil Strng Actv 	4% verb: "Stood for," "stood up for"--favored, defended, represented 
+STOOD	IAV SUPV ED Strng Psv Intrel Subm 	2% verb: Tolerated, withstood 
+STOOD	IAV Pos SUPV Percv ED Strng Pstv 	0% verb: "Stood out"--was conspicuous 
+STOP	DAV SUPV Intrel Hostile Power Actv Strng 	18% verb: To restrain, hinder, prevent 
+STOP	IAV SUPV Work Strng 	1% idiom-verb: "Stop up"--to block up, plug 
+STORM	Noun PLACE Sky Strng PFREQ 	93% noun-adj: A tempest 
+STORM	IAV Neg SUPV Exert Hostile Ngtv Strng Actv 	7% verb: To rush, attack, rage 
+STRAIGHTFORWARD	IndAdj Pos Modif Comform Strng 	
+STRATEGIC	Modif Means POLIT Strng 	
+STRENGTH	Noun Virtue Strng Power 	noun: The quality of being strong or powerful physically, intellect- ually,  morally, etc. 
+STRENGTHEN	IAV SUPV Incr Strng Actv Power PFREQ 	91% verb: To make strong 
+STRENGTHEN	Noun Strng Incr Power Actv 	9% noun: "Strengthening" - gain or improvement in strength 
+STRENUOUS	Modif Virtue Strng 	
+STRICT	Neg Modif Power Ngtv Strng Vice 	52% adj: Exact, severe, rigorous, punctilious 
+STRICT	Neg LY Ovrst Ngtv Strng Vice 	39% adv: "Strictly" - adverb form of sense 1 
+STRICT	Neg Modif Power Ngtv Strng Vice 	9% adj: "Stricter" - comparative form of sense 1 
+STRIKE	DAV Neg SUPV Exert Ngtv Actv Hostile Strng 	56% verb: To attack, injure, hit (generally in retaliation and with speed),  hit upon and remove, move sharply, make an (physical) impact 
+STRIKE	Noun Ritual ECON Econ* Hostile Actv Strng 	19% noun: A work stoppage to secure some demand 
+STRIKE	LY Ovrst Strng Qual 	2% adv: "Strikingly" - markedly 
+STRINGENT	IndAdj Neg Modif Strng Hostile 	
+STRIP	IAV SUPV Work Hostile Strng Actv 	
+STRONG	Modif Qual Strng Power 	67% adjective: Powerful, intense, secure 
+STRONG	Modif Qual Strng Power 	9% adjective: "Stronger"--comparative 
+STRONG	Modif Qual Strng Power 	5% adjective: "Strongest"--superlative 
+STRONG	LY Ovrst Strng Qual 	19% adverb: "Strongly"--powerfully, forcefully 
+STRONGHOLD	Noun PLACE Social Milit Strng 	
+STRUCK	DAV Neg SUPV Exert ED Ngtv Hostile Actv Strng 	82% verb: Hit, hit upon, made an impact, attacked 
+STUBBORN	Neg Modif Vice EVAL Ngtv Strng Hostile 	
+STUBBORNLY	IndAdj Neg Modif Stay Hostile Strng 	
+STUBBORNNESS	Neg Noun Stay Strng Hostile 	
+STUFF	IAV SUPV Strng Actv Space 	7% verb: To fill, pack tight, cram 
+STUN	IAV SUPV Strng Intrel Hostile 	
+STURDY	Pos Modif Qual Power Pstv Strng 	
+SUAVE	IPadj Pos Modif Virtue Strng 	
+SUBDUE	IAV SUPV Intrel Strng Actv Power Hostile 	
+SUBSTANTIAL	Modif Quan EVAL Strng Ovrst 	
+SUCCESSOR	Noun HU POLIT Role Strng 	
+SUFFICE	IAV Pos SUPV Pstv Strng Finish 	
+SUFFICIENT	Pos Modif Virtue Strng Pstv 	adj: Enough, adequate 
+SUMMON	Noun Object COM Legal Power Strng Actv Comnobj 	
+SUMMON	IAV SUPV Legal Power Strng Actv Comform 	
+SUPERINTENDENT	Noun HU ECON Power Strng Role 	
+SUPERIOR	Pos Modif Virtue EVAL Pstv Strng Power 	
+SUPERIORITY	Pos Noun Virtue Pstv Strng Power 	
+SUPPLEMENT	IAV SUPV Incr Strng 	
+SUPPLIER	Noun HU ECON Econ* Role Strng 	
+SUPPLY	Noun Econ* ECON Virtue Strng 	64% noun: Provisions 
+SUPPLY	IAV SUPV Intrel Affil Power Strng Actv 	32% verb: To provide 
+SUPPORT	IAV Pos SUPV Intrel Power Affil Pstv Strng Actv 	44% verb: Sustain, provide for, maintain, encourage, back--"i support  the program" (48); to hold up (0) 
+SUPPORT	Pos Noun Affil Power Pstv Strng Virtue Actv 	44% noun: Encouragement, assistance, maintenance, backing--"he has our  full support," "emotional support," "financial support" (46); a brace  or foundation (2) 
+SUPPORT	Pos Modif Affil Power Pstv Strng Actv Virtue 	2% noun-adj: "Supporting"--auxiliary, aiding (2); holding up (0) 
+SUPPRESS	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+SUPPRESSION	Neg Noun Ngtv Strng Actv Power Hostile Intrel 	
+SUPREMACY	Noun Power Strng Virtue 	
+SUPREME	Pos Modif Comp EST EVAL Virtue Pstv Strng Power Ovrst 	5% adj: Highest, utmost 
+SUPREME	Pos LY Virtue Pstv Strng Power Ovrst 	5% adv: "Supremely" - ultimately 
+SUPREME	Noun HU COLL Legal Handels Strng PFREQ 	90% idiom-noun: "Supreme court" - handled by "court" 
+SURE	Modif Know Strng Ovrst 	65% adj: Certain 
+SURE	LY Ovrst Strng Know 	0% adj: "Surest"--most certain 
+SURPLUS	Noun Strng Econ* ECON Virtue 	
+SURROUND	DAV SUPV Stay Strng Actv 	66% verb: To enclose or encompass 
+SURVEILLANCE	Noun Percv POLIT Power Strng Actv 	
+SURVIVAL	Pos Noun ABS Abs* Goal Pstv Strng 	
+SURVIVE	IAV Pos SUPV Pstv Strng Complt 	
+SUSTAIN	IAV SUPV Strng Actv Complt 	
+SWIFT	Modif Time* Strng Ovrst 	
+SWING	Noun Strng Travl Ovrst Actv 	9% idiom-noun: "(in#into) full swing"--high gear, at full capacity 
+SWORD	Noun Object Tool Milit Strng Hostile 	noun: The weapon 
+SYSTEMATIC	Modif Means Strng 	
+SYSTEMATICALLY	Modif Means Strng 	
+TAKE	IAV SUPV Need Strng 	6% verb: Require, demand, need, "it takes great courage" 
+TAKE	Modif Virtue Strng Actv 	0% adj: "Taking"--captivating 
+TAKE	IAV SUPV Intrel Power Strng Actv 	3% verb-idiom: "Take advantage (of)"--make use (of), occasionally with  connotation of unfairness 
+TAKE	IAV SUPV Intrel Strng Actv Power Affil 	5% verb-idiom: "Take care (of)"--cure or solve, attend to, protect or nurse 
+TAKE	IAV SUPV Intrel Power Strng Actv 	2% verb-idiom: "Take over"--assume control 
+TALENT	Pos Noun ABS Abs* Virtue Pstv Strng 	
+TALENTED	IndAdj Pos Modif Know Strng Virtue 	
+TALL	Modif Space DIM Strng 	
+TAUT	Modif Qual Strng 	
+TENACIOUS	IndAdj Pos Modif Strng Actv Ach 	
+TENACITY	Pos Noun Strng Actv Means 	
+TEND	IAV SUPV Intrel Power Strng Actv Affil 	6% verb: To care for 
+TERMINATE	IAV SUPV Finish Strng Actv 	
+TERRITORIAL	Modif PLACE Region POLIT Strng 	
+THICK	Modif Space DIM Strng 	
+THICKEN	IAV SUPV Rel Strng Actv 	
+THOROUGH	IndAdj Pos Modif Virtue EVAL Strng Ovrst 	
+THREAT	Neg Noun COM Hostile Ngtv Strng Vice 	noun: A menace 
+THREATEN	IAV Neg SUPV Intrel Hostile Ngtv Strng 	verb: To menace 
+THRILL	IAV Pos Noun Pleasur Pstv Strng Arousal 	
+THRIVE	SV Pos SUPV Actv Strng Natpro Incr 	
+THROW	DAV SUPV Exert Strng Actv PFREQ 	85% verb: To hurl, to toss 
+THROW	IAV SUPV Strng Actv Finish 	5% verb: "Throw out"--to expel 
+THRUST	Noun Strng Actv Exert 	
+THRUST	IAV SUPV Exert Strng Actv 	
+THUNDER	Noun Strng PLACE Sky 	
+THWART	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv Power 	
+TILL	IAV SUPV Work Actv Strng 	0% verb: To cultivate 
+TOGETHER	LY Rel Strng 	adverb: Into or in a condition of unity, compactness, or coherence, along with 
+TOTAL	Modif Ovrst Strng Quan 	39% adj: Complete, intense 
+TOUGH	Modif EVAL Hostile Strng Qual 	
+TRADITION	Pos Noun ABS Abs* Doctr Pstv Strng 	
+TRADITIONAL	Pos Modif Doctr Pstv Strng 	
+TRANSFORM	IAV SUPV Vary Strng Actv 	
+TRANSFORMATION	Noun Strng Vary Actv 	
+TRAP	Neg Noun Object Tool Ngtv Strng 	57% noun: Device for capturing or ensnaring 
+TRAP	DAV Neg SUPV Intrel Hostile Power Strng Actv Ngtv 	43% verb: To capture or ensnare 
+TREMENDOUS	Pos Modif EVAL DIM Virtue Pstv Strng Ovrst 	78% adj: Great, enormous 
+TREMENDOUS	Pos LY Ovrst Pstv Strng Virtue 	23% adv: "Tremendously--greatly, enormously 
+TRIUMPH	Pos Noun Goal Pstv Strng Power 	
+TRIUMPH	IAV Pos SUPV Complt Pstv Strng Power 	
+TRIUMPHAL	IndAdj Pos Modif Strng Power 	
+TRIUMPHANT	Pos Modif EMOT Power Pstv Strng Pleasur 	
+TROOP	Noun HU COLL POLIT Milit Strng 	
+TRUST	Pos Modif Pstv Strng Psv Virtue Affil 	0% adj: "Trusted"--reliable, believed in 
+TRUST	Noun HU COLL Econ* Power Strng 	0% noun: A monopolistic organization, usually economic 
+TRUSTWORTHY	Pos Modif EVAL Virtue Pstv Affil Psv Strng 	
+TYRANNY	Neg Noun POLIT Polit* Power Ngtv Strng Vice 	
+ULTIMATE	Modif Comp EST EVAL Ovrst Strng Time* 	41% adj: Eventual, final, maximal 
+ULTIMATE	LY Time* Strng Ovrst 	59% adv: "Ultimately" - eventually, in the end 
+UNANIMOUS	Modif Strng HU COLL Ovrst 	
+UNCHECKED	Modif Negate Strng Vice 	
+UNCONTESTED	Modif Negate Ovrst Strng Intrel Subm 	
+UNDAUNTED	Modif Negate Strng Virtue Power 	
+UNDENIABLE	Modif Know Negate Ovrst Strng 	
+UNDERMINE	IAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	
+UNDERTAKE	Noun Means Strng Actv 	
+UNDERTAKE	IAV SUPV Try Strng Actv 	
+UNDERTAKEN	IAV SUPV Try ED Strng Actv 	
+UNDERTOOK	IAV SUPV Begin Strng Actv 	
+UNDISPUTED	Modif Negate Ovrst Strng Intrel Power 	
+UNDOUBTED	Pos Modif Virtue Negate Pstv Ovrst Strng 	
+UNDOUBTEDLY	Pos LY Negate Ovrst Strng Virtue Pstv 	
+UNEQUIVOCAL	Modif Negate Ovrst Strng Comform 	
+UNFAILING	Modif Persist Ovrst Strng Negate 	
+UNIFICATION	Noun POLIT Rel Strng 	
+UNIFY	IAV SUPV Intrel Affil Strng Actv 	
+UNION	Noun HU COLL POLIT Polit* Power Strng 	31% noun-adj: The state of being united, usually a political union 
+UNISON	Noun Time* Strng Affil 	
+UNITE	Modif Rel Strng 	6% adj: "United"--combined, linked, joined 
+UNITY	Pos Noun ABS Abs* POLIT Virtue Pstv Strng 	noun: Oneness, solidarity 
+UNIVERSAL	Modif Ovrst Strng PLACE Region 	
+UNLEASH	IAV SUPV Intrel Hostile Negate Strng Actv 	
+UNLIMITED	IndAdj Pos Modif Quan Ovrst Negate Strng Freq 	
+UNMISTAKABLE	Modif Percv Negate Strng Ovrst 	
+UNMITIGATED	Modif Negate Ovrst Strng Vice 	
+UNQUESTIONABLE	Modif Negate Ovrst Strng Know 	
+UNQUESTIONED	Modif Negate Ovrst Strng Know 	
+UNTOLD	Modif Negate Strng Ovrst Comform 	
+UNWAVERING	Modif Persist Negate Ovrst Strng Power 	
+UNWILLINGNESS	Neg Noun Hostile Negate Ngtv Strng Pain Power 	
+UPPERMOST	Pos Modif Pstv Strng Ovrst Comp EST Space 	
+UPRIGHT	Pos Modif Space POS Pstv Strng 	
+UPSET	Neg Modif Pain Ngtv Actv Strng 	8% adj: "Upsetting"--disturbing 
+UPSET	IAV Neg SUPV Ngtv Actv Strng Pain 	14% verb: To disturb emotionally (of persons) 
+UPSET	IAV Neg SUPV Hostile Ngtv Actv Strng Exert 	9% verb: To disrupt or overturn 
+URGE	Noun Strng Need 	
+URGE	IAV SUPV Intrel Power Strng Actv 	
+URGENT	Modif Time* Ovrst Strng 	
+UTILITY	Noun Means ECON Econ* Strng 	
+VANTAGE	Noun Percv Strng 	
+VAST	Modif Quan Ovrst DIM Strng PFREQ 	adj: Very large, enormous 
+VEHEMENT	IndAdj Neg Modif Strng Feel 	
+VENGEANCE	Neg Noun Goal Hostile Ngtv Strng Actv 	
+VICTOR	Noun HU POLIT Power Strng Role 	
+VICTORIOUS	IndAdj Pos Modif Power Virtue Strng 	
+VICTORY	Noun Goal POLIT Polit* Power Strng 	noun: Triumph 
+VIGILANCE	Pos Noun Stay Strng Virtue Feel 	
+VIGILANT	IndAdj Pos Modif Stay Strng Virtue Feel 	
+VIGOR	Noun Virtue Strng 	
+VIGOROUS	Modif Strng Virtue 	
+VIOLENCE	Neg Noun POLIT Hostile Ngtv Strng Actv Vice 	noun: Fury, force, conflict 
+VIOLENT	Neg Modif Hostile Ngtv Strng Actv Vice 	
+VITAL	Modif Virtue EVAL Strng Ovrst 	adj: Necessary, crucial 
+VITALITY	Pos Noun Pstv Virtue Strng Natpro 	
+VIVACIOUS	IndAdj Pos Modif Strng Virtue 	
+VIVID	Pos Modif Qual Pstv Strng 	
+WAGE	IAV SUPV Try Hostile Strng Actv 	
+WANT	Modif Means Strng Psv 	0% adj: "Wanted"--desired, required (occasionally) 
+WARFARE	Neg Noun ECON POLIT Ritual Milit Ngtv Strng Actv 	
+WARRIOR	Noun HU Hostile Milit Strng Actv Role 	
+WAY	Modif Strng Travl 	0% idiom-adj: 'under way'--in progress 
+WAY	IAV SUPV Intrel Affil Actv Strng 	0% verb: "Go out of one's way"--make an unusual effort 
+WEALTH	Noun Virtue ECON Econ* Power Strng PFREQ 	96% noun: Capital and/or material resources, riches 
+WEALTH	DET PRE PRE1 Modif Quan Strng Ovrst 	4% idiom-adj: "A wealth of"--many, multitudinous, much 
+WEALTHY	Modif Virtue ECON Econ* Strng 	
+WEIGHT	Noun Strng Qual 	83% noun-adj: Specific value in amount of heaviness; importance (8) 
+WEIGHT	IAV SUPV Incr Strng 	9% verb: To add weight or importance 
+WEIGHT	Noun Strng Work Affil 	9% noun: "To pull one's weight" to do one's share 
+WELL	IAV SUPV Rise Strng 	0% verb: To overflow, gush 
+WHACK	IAV Neg SUPV Actv Hostile Exert Strng Other 	
+WHIP	Neg Noun Object Tool Hostile Strng Ngtv 	38% noun: Instrument with long strips of leather bound together 
+WHIP	Neg Noun Hostile Ngtv Strng Actv Vice 	0% noun-adj: A beating 
+WHIP	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	50% verb: To hit, beat, drive, vanquish 
+WHIP	IAV SUPV Exert Strng Actv 	4% idiom-verb: "Whip up" - stir up 
+WHIRL	IAV SUPV Exert Strng 	
+WHOLE	Modif Quan Ovrst Strng 	74% adj: Entire, total 
+WHOLE	LY Quan Strng Ovrst 	11% adv: "As a whole"--in entirety 
+WHOLE	LY Ovrst Strng Know 	5% adv: "On the whole"--in general 
+WHOLE	Noun Quan Ovrst Strng 	3% idiom-noun: "A whole lot"--many, plenty 
+WHOLE	LY Ovrst Quan Strng 	4% adv: "Wholly"--totally 
+WHOLE	Noun Quan Ovrst Strng 	5% noun: The totality 
+WIDE	Modif Space DIM Strng 	62% adj: Broad, far-reaching, inclusive 
+WIDE	LY Space Strng 	14% adv: "Widely"--broadly 
+WIDE	Modif Space DIM Strng 	16% adj: "Wider"--comparative of sense 1 
+WIDE	Modif Space DIM Strng 	0% adj: "Widest"--superlative of sense 1 
+WIDEN	DAV SUPV Incr Strng Actv 	
+WIDESPREAD	Modif Space Ovrst Strng 	
+WILD	Neg Modif Ngtv Strng Qual 	80% adj: Untamed, undomesticated, uncontrolled 
+WILD	Neg Modif Ngtv Strng Qual 	7% adj: "Wilder" - comparative of sense 1 
+WILD	Neg Modif Ngtv Strng Qual 	2% adj: "Wildest" - superlative of sense 1 
+WILD	Neg LY Ovrst Qual Ngtv Strng 	11% adv: "Wildly" - adverbial form of sense 1 
+WIN	IAV SUPV Complt Strng PFREQ Actv 	93% verb: To gain, to gain a victory 
+WIN	Noun Goal Strng Power 	2% noun-adj: "Winning" - victory, producing victory 
+WIN	Noun Goal ECON Econ* Strng 	5% noun: "Winnings" - profit, usually from gambling 
+WIN	Noun Goal Strng Power 	0% noun: "Win" - a victory 
+WINNER	Noun HU Role Power Strng 	
+WITHHELD	IAV Neg SUPV Intrel ED Hostile Strng Actv Ngtv 	
+WITHHOLD	IAV Neg SUPV Intrel Hostile Strng Actv Ngtv 	
+WITHSTAND	IAV SUPV Intrel Strng Actv Power Hostile 	
+WON	IAV SUPV Complt ED Strng Actv 	verb: Past tense and past participle of "win"--gained a victory 
+WORLD-FAMOUS	Pos Modif Virtue Power Pstv Strng 	
+WORLD-WIDE	Modif Strng PLACE Region 	
+WOUND	DAV Neg SUPV Intrel Hostile Ngtv Strng Actv 	46% verb: Physically or emotionally injure 
+ZEAL	Noun Strng Actv Pleasur 	
+ZEALOUS	Modif Strng Comform Eval 	
+ZEST	Pos Noun Arousal Strng 	

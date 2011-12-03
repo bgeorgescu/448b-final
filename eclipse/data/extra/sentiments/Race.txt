@@ -1,0 +1,16 @@
+word	tags	comments
+BLACK	Noun HU POLIT Race Role 	17% noun-adj: Negro 
+COLOR	Modif POLIT Race HU COLL 	37% noun-adj: "Color"--racial complexion; "colored"--having a racial complexion  other than white 
+DESEGREGATION	Noun Doctr POLIT Race 	
+DISCRIMINATION	Noun ECON POLIT Hostile Race PFREQ Vice 	noun: Bias, favoritism in treatment, generally racially oriented 
+ETHNIC	Modif POLIT Race 	
+INDIAN	Noun Name POLIT ECON Race 	
+JEW	Noun HU Race Role 	
+NATIVE	Noun HU POLIT Race Role 	50% noun: One of the original inhabitants of a place 
+NEGRO	Noun HU POLIT Race Role 	
+NIGGER	Noun HU POLIT Race Role Hostile 	noun-adj: Negro, vulgar term used by negrophobes 
+PREJUDICE	Neg Noun EMOT Hostile Race Ngtv Arousal 	
+RACE	Noun HU COLL POLIT Race 	71% noun-adj: A major group of persons united by descent--pertaining to  groupings of this sort 
+RACIAL	Modif POLIT Race PFREQ HU COLL 	adjective: Concerning relations between races, e.g., 'racial discrimina-  tion', or characteristic of a race of people. 
+SEGREGATION	Neg Noun ECON POLIT Race Doctr Hostile Ngtv 	noun-adj: Separation of races 
+WHITE	Noun HU POLIT Race Role 	47% noun-adj: Caucasoid 

@@ -1,0 +1,156 @@
+word	tags	comments
+ACADEMIC	Modif Doctr Acad 	adjective: Of or pertaining to a college or other educational institution 
+ACADEMY	Noun PLACE Social Acad 	
+ART	Noun Doctr Acad 	17% noun: Technical--having to do with higher education 'liberal arts  education,' 'bachelor of arts' 
+ASTRONOMY	Noun Doctr Acad 	
+BIOLOGICAL	Modif Doctr Acad 	
+BOARD	Noun HU COLL POLIT ECON Acad Power 	48% noun: An administrative body, examination ("college boards") 
+BOARD	Noun Object COM Acad Comnobj 	7% noun: Blackboard 
+CAMPUS	Noun PLACE Social Acad 	
+CHEMISTRY	Noun Doctr Acad 	
+CLASSIC	Pos Noun COM Acad Pstv Comform 	
+CLASSROOM	Noun Bldgpt Acad Object 	noun: Room for a class 
+CLINICAL	Modif Doctr Acad 	
+COACH	Noun HU Acad Actv Role 	
+COACH	IAV SUPV Intrel Acad Actv Affil 	
+COLLEGE	Noun PLACE Social Acad 	noun-adj: Institution of higher learning, especially liberal arts 
+COUNSELOR	Noun HU Acad Role 	
+COURSE	Noun Ritual Acad 	40% noun: A program of instruction, a class 
+CREDIT	Pos Noun COM Virtue Acad Pstv 	23% noun: Recognition, honor (includes academic credit) 
+DEAN	Noun HU Acad Power Strng Role 	
+DEGREE	Noun COM Comform Acad 	28% noun: A title conferred at various stages of higher education 
+DISCOURSE	Noun COM Comform Acad 	
+DR	Modif HU Acad Role 	
+ECONOMICS	Noun Doctr Acad Econ* 	
+EDUCATE	IAV SUPV Acad Power Actv Strng Comform 	verb: To instruct. 
+EDUCATED	Pos Modif Virtue Acad Pstv PFREQ 	adj: Instructed, cultured 
+EDUCATED	IAV SUPV ED Acad Power Comform 	0% verb: Taught, instructed 
+EDUCATION	Pos Noun Doctr Acad Pstv 	noun: The act or process of imparting or acquiring knowledge--a degree,  level or kind of schooli 
+EDUCATIONAL	Pos Modif Doctr Acad Pstv 	adjective: Pertaining to education, formal schooling- instructive 
+ELECTRONICS	Noun Doctr Acad 	
+ENGLISH	Noun Name POLIT ECON COM Comform Acad 	
+ESSAY	Noun COM Exprs Comform Acad 	
+EXAM	Noun COM Acad Comform 	
+EXAMINATION	Noun Ritual Acad Actv 	
+EXAMINE	IAV SUPV Intrel Acad Power Actv 	verb: To scrutinize or test 
+EXAMINER	Noun HU Acad Power Role 	
+EXPERIMENT	Noun Ritual Acad Actv 	
+EXPERIMENT	IAV SUPV Try Acad Actv 	
+EXPERIMENTAL	Modif Ritual Acad Actv 	
+FACULTY	Noun HU COLL Acad PFREQ 	91% noun-adj: All the teachers of a school 
+FORM	Noun HU COLL Acad 	6% noun: Grade in british secondary school 
+FRESHMAN	Noun HU Acad Role 	
+FRESHMEN	Noun HU S Acad Role 	
+GEOMETRY	Noun ABS Abs* Doctr Acad 	
+GRADE	Noun ABS TIME Time* Acad 	23% noun: One of the divisions by year of a school curriculum 
+GRADUATE	Noun Doctr Acad 	37% adj: Of or pertaining to, or involved in academic study beyond the  first or bachelor's degree 
+GRADUATE	IAV SUPV Acad Complt 	32% verb: To graduate from 
+GRADUATE	Noun HU Acad Role 	30% noun: A person who has received a diploma on completing a course of  study, as in a university or school 
+GRADUATE	Modif Acad Means 	1% noun-adj: "Graduating"--receiving a diploma or degree 
+GRADUATION	Pos Noun Finish Acad 	
+GRAMMAR	Noun Comform Acad 	
+GRIND	Noun HU Acad Subm Role 	
+HEAD	Noun HU COLL Acad 	0% noun-idiom: 'head start' 
+HIGH	Noun PLACE Social Acad 	32% idiom-noun: "High school"--a school following the ordinary grammar school 
+HISTORIAN	Noun HU Acad Role 	
+HISTORIC	Modif Doctr Acad 	
+HISTORICAL	Modif Doctr Acad 	
+HISTORY	Noun ABS Abs* Doctr Acad 	noun: The aggregate of past events--the branch of knowledge dealing with  past events. 
+INSTITUTE	Noun PLACE Social POLIT ECON Acad PFREQ 	91% noun-adj: An organization with a social, educational, etc., purpose 
+INSTRUCT	IAV SUPV Acad Power Actv Strng Comform 	
+INSTRUCTION	Noun COM Comform Acad Actv Power Strng 	
+INSTRUCTOR	Noun HU Acad Power Strng Role 	noun: One who teaches 
+INTELLECT	Pos Noun Virtue Acad Pstv Strng 	
+INTELLECTUAL	Pos Modif Virtue Acad Pstv Strng 	60% adj: Of or pertaining to the intellect 
+INTELLECTUAL	Pos Noun HU Acad Pstv Role Strng 	24% noun: Person with intellectual interests or tastes 
+INTELLECTUAL	Pos LY Virtue Acad Pstv Strng 	10% adv: "Intellectually"--cerebrally 
+INTELLIGENCE	Pos Noun ABS Abs* Virtue Acad Pstv Strng 	noun-adj: Ability to learn or understand 
+JUNIOR	Modif Time* Acad 	84% noun-adj: Third year in college or high school, pertaining to same  or to person in that position, junior high school or college or pertaining to it 
+KNOWLEDGE	Pos Noun ABS Abs* Acad Pstv Strng Know 	noun-adj: Familiarity with or understanding of facts, principles, etc.--  what is known 
+LAB	Noun Bldgpt Acad Econ* Object 	
+LABORATORY	Noun ECON Acad Econ* Object Bldgpt 	
+LEARN	IAV SUPV Solve Acad PFREQ Actv 	90% verb: To acquire knowledge of or skill in by study, instruction, or experience 
+LEARN	Pos Noun ABS Abs* Virtue Acad Pstv 	9% noun: 'learning,' knowledge acquired, or the process of acquiring knowledge 
+LEARN	Pos Modif Virtue Acad Pstv 	0% adj: "Learned," knowledgeable, erudite 
+LEARNER	Pos Noun HU Acad Subm Role Pstv 	
+LECTURE	Noun COM Comform Acad Actv 	
+LECTURE	DAV SUPV Acad Comform Actv 	
+LESSON	Noun COM Comform Acad 	noun: Something from which one learns or should learn 
+LETTER	Noun Doctr Acad 	3% noun: "Letters"--literature 
+LIBERAL	Modif Doctr Acad 	23% adj: "Liberal education," "liberal arts" 
+LIBRARY	Noun PLACE Social Acad 	noun: A place set apart to contain books and other literary material for  reading, study, or reference. 
+LINGUIST	Noun HU Acad Role 	
+LITERALNESS	Noun Doctr Acad 	
+LITERARY	Modif Acad Exprs Comform 	
+LITERATURE	Noun COM Comform Acad Exprs 	
+MAJOR	Noun Doctr Acad 	28% noun: Principal field of study, or a person in it--'a math major';  military rank (3) 
+MAJOR	IAV SUPV Work Acad 	16% verb: To take a certain area as one's major 
+MATH	Noun Doctr Acad 	
+MATHEMATICAL	Modif Doctr Acad 	
+MATHEMATICS	Noun Doctr Acad 	
+MATRICULATE	DAV SUPV Acad Actv Complt 	
+MUSEUM	Noun PLACE Social Acad 	
+NUTRITION	Noun Doctr Acad 	
+PHILOSOPHER	Noun HU Acad Role 	
+PHILOSOPHIC	Modif Doctr Acad 	
+PHILOSOPHICAL	Modif Doctr Acad 	
+PHILOSOPHY	Noun ABS Abs* Doctr Acad 	noun-adj: The specific academic disipline and/or its content--more generally  and loosely, any more or less systematic set of beliefs, a point of view 
+PHYSICIAN	Noun HU Role Acad 	
+PHYSICIST	Noun HU Acad Role 	
+PHYSICS	Noun Doctr Acad 	
+PLATONISM	Noun Doctr Acad 	
+PROCTOR	Noun HU Acad Power Strng Role 	
+PROFESSOR	Noun HU Acad Power Role 	noun: A college-level teacher 
+PSYCHIATRIST	Noun HU Acad Role 	noun: A physician who treats mental disorders 
+PSYCHOLOGICAL	Modif Doctr Acad 	
+PSYCHOLOGIST	Noun HU Acad Role 	
+PTA	Noun HU COLL Acad 	
+PUPIL	Noun HU Acad Subm Role 	
+QUESTIONNAIRE	Noun Object COM Acad Comnobj 	
+RATIONAL	Pos Modif Virtue EVAL Pstv Acad 	
+READ	Noun COM Comform Acad 	21% noun-adj: Material thus apprehended, an occasion or the practise of reading 
+RESEARCH	Noun Means Acad Actv 	
+RESEARCHER	Noun HU Acad Role Actv 	
+SCHOLAR	Noun HU Acad Role 	
+SCHOLARSHIP	Noun Doctr ECON Acad 	
+SCHOLASTIC	Modif Doctr Acad 	
+SCHOOL	Noun PLACE Social Acad PFREQ 	87% noun-adj: Place of instruction 
+SCHOOL	IAV SUPV Acad Actv Comform Power 	0% verb: To teach 
+SCHOOL	Noun COM Acad Work 	1% noun: "Schooling"--process of instruction 
+SCHOOLROOM	Noun Acad Object Bldgpt 	
+SCIENCE	Noun ABS Abs* POLIT ECON Doctr Acad PFREQ 	93% noun: Systematic pursuit of knowledge 
+SCIENTIFIC	Modif Doctr Acad 	
+SCIENTIST	Noun HU Acad Role 	
+SEMANTIC	Modif Doctr Acad 	
+SEMESTER	Noun ABS TIME Time* Acad 	
+SEMINARY	Noun PLACE Social Acad Relig 	
+SENIOR	Noun Modif Acad Role 	77% noun-adj: Fourth year of high school or college, person in that position 
+SOCIOLOGICAL	Modif Doctr Acad 	
+SOCIOLOGY	Noun Doctr Acad 	
+STATISTICAL	Modif Doctr Acad 	
+STATISTICS	Noun Doctr Acad 	
+STUDENT	Noun HU Acad Subm Role 	noun adjective: One who engages in study or who participates in a course  of instruction and study 
+STUDY	IAV SUPV Solve Acad Actv 	73% verb: To apply oneself to the acquisition of knowledge 
+STUDY	Noun Means Acad Actv 	22% noun-adj: Application of oneself to acquiring knowledge, a course of learning 
+STUDY	Noun Acad Actv Means 	4% noun: "Studying" 
+TAUGHT	IAV SUPV ED Acad Power Actv Comform 	verb: Past tense of teach 
+TEACH	IAV SUPV Acad Power Actv Comform 	61% verb: Impart knowledge or skill, give instruction, train; includes  gerundive forms like "he will start teaching soon." 
+TEACH	Noun Doctr Acad 	37% noun: "Teaching"--the profession, the activity of instruction 
+TEACH	Noun Doctr Acad 	2% noun: "Teaching"--doctrine, the specific content of what is taught,  especially in religious contexts 
+TEACHER	Noun HU Acad Power Role 	noun: One who instructs, especially as a profession. 
+TEST	Noun Ritual Power Acad 	66% noun-adj: Examination, indication of competence 
+TEST	IAV SUPV Actv Intrel Power Acad 	28% verb: To examine, to determine competence 
+TEXT	Noun Object COM Acad Comnobj 	
+THEORETICAL	Modif Doctr Acad 	
+THEORY	Noun ABS Abs* Doctr Acad 	
+THINKER	Noun HU Acad Role 	
+TRAIN	Noun Doctr Acad 	49% noun-adj: 'training'--instruction and/or discipline 
+TYPOGRAPHY	Noun Doctr Acad 	
+UNDERGRADUATE	Noun HU Acad Subm Role 	
+UNIVERSITY	Noun PLACE Social POLIT Acad 	noun-adj: An institution of learning of the highest level 
+WISDOM	Pos Noun ABS Abs* Virtue Pstv Acad 	
+WISE	Pos Modif Virtue EVAL Pstv Acad 	50% adj: Knowing, clever 
+WISE	Pos Modif Virtue EVAL Pstv Acad 	20% adj: Comparative of sense 1 - "wiser" 
+WISE	Pos Modif Virtue EVAL Pstv Acad 	10% adj: "Wisest" - superlative of sense 1 
+WISE	Pos LY Virtue Pstv Acad 	10% adv: "Wisely" - adverbial form of sense 1 
+WORD	DAV SUPV Acad Comform 	1% verb: To phrase 

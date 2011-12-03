@@ -1,0 +1,24 @@
+word	tags	comments
+AVENUE	Noun PLACE Route 	
+BOULEVARD	Noun PLACE Route 	
+BRIDGE	Noun PLACE Route 	81% noun: A structure spanning a river, chasm; of a nose (0) 
+CROSS	Noun PLACE Route 	6% noun: "Crossing"--place where one passes a barrier, or a passage as such 
+CROSSROAD	Noun PLACE Route 	
+DRIVEWAY	Noun PLACE Route 	
+ESCAPE	Noun PLACE Route 	2% noun-idiom: 'fire escape' 
+ESPLANADE	Noun PLACE Route 	
+HIGHWAY	Noun PLACE Route 	
+LANE	Noun PLACE Route 	
+PARKWAY	Noun PLACE Route 	
+PATH	Noun PLACE Route 	noun: A trodden footway, a route or course 
+RAILROAD	Noun PLACE Route ECON 	
+RAILWAY	Noun PLACE Route ECON 	
+ROAD	Noun PLACE Route PFREQ 	85% noun-adj: A long narrow stretch with a smooth surface, over which one travels 
+ROUTE	Noun PLACE Route 	
+SIDEWALK	Noun PLACE Route 	
+STREET	Noun PLACE Route 	noun-adj: Public thoroughfare. 
+TRACK	Noun PLACE Route 	
+TRAIL	Noun PLACE Route 	
+TUNNEL	Noun PLACE Route 	
+WAKE	Noun PLACE Route 	0% noun: "Wake"--trail 
+WAY	Noun PLACE Route 	16% noun: Direction, route, course, path 

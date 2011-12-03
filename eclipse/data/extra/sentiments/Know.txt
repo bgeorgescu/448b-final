@@ -1,0 +1,349 @@
+word	tags	comments
+ABSENCE	Noun Know Weak 	
+ABSTRACT	Modif Know 	
+ABSTRACTION	Noun Know 	
+ACCORDANCE	Pos Noun Know Pstv 	
+ACCOUNT	Noun Know 	8% noun: "On that (this) account"--in that regard 
+ACCOUNT	Noun Know 	5% noun: To "take into account," "take account of"--to take into consideration 
+ADAMANT	IndAdj Pos Modif Know Strng Arousal 	
+ADDITION	Noun Know 	18% noun: The process or result of adding or uniting 
+ADVISABLE	IPadj Pos Modif Eval Qual Know 	
+AKIN	Modif Know 	
+ALIKE	Modif Know 	
+ALTERNATIVE	Noun Know 	
+ANALOGOUS	Modif Know 	
+ANALYSIS	Noun ABS Abs* Know Actv 	
+ANALYTIC	Modif Know Actv 	
+ANALYTICAL	Modif Know Actv 	
+APPLICABLE	Modif Know 	
+ARGUMENT	Noun COM Know Actv 	31% noun: A reason, a statement attempting to demonstrate the correctness  of a position 
+ASPECT	Noun Know 	noun: A way in which a thing may be viewed or regarded, the different  components of a thing or problem, facets, 'the problem has many aspects.' 
+ASSERTION	Pos Noun Know Strng Comform Arousal 	
+ASSOCIATION	Pos Noun Know Pstv Strng 	21% noun: Any other connection, relation or combination 
+ASSUMPTION	Noun Know Psv 	
+ASTUTE	IndAdj Pos Modif Know Virtue 	
+AWARE	IndAdj Pos Modif Percv Know Strng Psv 	
+BAFFLEMENT	Neg Noun Ngtv Undrst Know 	
+BASIS	Noun Know Ovrst 	noun: Fundamental principle, bottom or foundation of something 
+BEAR	Noun Know 	3% noun: "Bearing"--relevance 
+BEWILDERMENT	Neg Noun Ngtv Undrst Know 	
+CALCULATION	Noun Know Actv 	
+CASE	Noun Know PFREQ 	80% noun: Situation, condition, argument or evidence, occurrence or example  of; a container (1) 
+CATEGORY	Noun ABS Abs* Know 	
+CERTAIN	DET PRE PRE1 Modif Know Strng 	57% adjective: Fixed, definite or particular but not named or specified 
+CERTAINTY	Noun ABS Abs* Strng Ovrst Know 	
+CHARACTER	Noun Know 	24% noun: The nature or quality of an act, place, etc. 
+CHARACTERISTIC	Noun Know 	
+CIRCUMSTANCE	Noun Know 	noun: Fact or condition 
+CLASSIFICATION	Noun ABS Abs* Know Actv 	
+CLASSIFY	Modif Know Actv 	
+CLEAR	Pos LY Ovrst Know Pstv 	23% adv: "Clearly"--plainly, understandably 
+CLEARNESS	Pos Noun Percv Know 	
+CLUE	Noun Know 	
+COMMISSION	Pos Noun Affil Ovrst Know Strng 	
+COMMONSENSE	Pos Noun Know 	
+COMPARABLE	Modif Know 	
+COMPARATIVE	Modif Undrst Know 	
+COMPARATIVELY	Modif Undrst Know 	
+COMPARISON	Noun ABS Abs* Know Actv 	
+COMPETENCE	Pos Noun Virtue Pstv Strng Know Eval 	
+COMPETENCY	Pos Noun Strng Know Eval 	
+COMPLEX	Neg Modif Know EVAL Ngtv Ovrst 	
+COMPLEXITY	Neg Noun ABS Abs* Know Ngtv Ovrst 	
+COMPLICATE	Neg Modif Know Ngtv 	
+COMPREHEND	SV Pos SUPV Actv Know Percv 	
+COMPREHENSION	Pos Noun Know Pstv 	
+CONCEIVABLE	Modif Know Psv Undrst 	
+CONCENTRATION	Noun Know Strng Actv 	38% noun: Close or fixed attention 
+CONCEPT	Noun ABS Abs* Know 	noun: An idea 
+CONCEPTION	Noun ABS Abs* Know Psv 	
+CONCLUSIVE	IndAdj Pos Modif Know Ovrst Compl 	
+CONSEQUENT	Modif Know Causal Psv Ovrst 	
+CONSIDERATION	Pos Noun Know Pstv 	69% noun: Thought, deliberation; thoughtfulness, respect (4) 
+CONTENT	Noun Know 	21% noun: Meaning or constituent elements 
+CONTEXT	Noun Know 	
+CORRELATION	Noun Know 	
+COUNTERPART	Noun Know 	noun-adj: Person or thing that corresponds to or resembles another 
+CRITERIA	Noun ABS Abs* Know 	
+CUSTOMARY	Modif Know Undrst 	
+DEFINITE	Modif Know Strng Ovrst 	adj: Clearly defined, exact, certain 
+DEFINITION	Noun Know 	
+DEFINITIVE	IndAdj Pos Modif Know Compl Strng 	
+DEGREE	Noun Know 	63% noun: A point or stage in an unspecific scale of intensity or scope,  a progression 
+DESCRIPTION	Noun ABS Abs* COM Know 	
+DESCRIPTIVE	Modif Know 	
+DESIGN	Noun ABS Abs* Know 	43% noun: An outline, sketch or plan 
+DESIGNATE	Modif Know Actv 	
+DETAIL	Noun Know 	
+DEVOID	Neg Modif Know Ngtv Weak 	
+DIAGNOSIS	Noun Know 	
+DIFFERENCE	Noun ABS Abs* Know 	noun: State of unlikeness, disagreement or change 
+DIFFERENT	DET PRE PRE1 PFREQ Know 	97% adjective: Differing in character or quality, not alike, dissimilar,  various, unusual, not ordinary 
+DIFFERENT	Modif Know 	3% adverb: "Differently," variously 
+DIFFERENTIAL	Modif Know 	
+DISCREPANCY	Noun Know 	
+DISTINCTION	Pos Noun Know Pstv 	
+DIVERSITY	Noun Know 	
+DUPLICATION	Noun Know Actv 	
+EITHER	CONJ CONJ2 Know 	47% conj: Introduces coordinated alternatives 
+ELEMENT	Noun Know 	
+ELEMENTAL	Modif Know 	
+ELEMENTARY	Modif Know 	
+ELSE	LY Ovrst Know 	6% adv: Usually with 'or'--otherwise 
+EMPHASIS	Noun Know Ovrst Strng 	
+EMPIRICAL	Modif Know 	
+ENLIGHTENMENT	Pos Noun Know Percv 	
+ENTITY	Noun Know Psv 	
+EQUATION	Noun Know 	
+EQUIVALENT	Modif Know 	
+ESSENCE	Noun Know Strng Ovrst 	
+EVENT	CONJ CONJ2 Know 	5% idiom: "In the event (that, of)," "in that event" . . . if, in case 
+EXAMPLE	Noun Know 	noun: An instance or specimen used to show the character of the general  type, often used in the expression "for example" (27) 
+EXCEPT	PREP CONJ CONJ2 Know 	prep-conj: But, with the exclusion of, save 
+EXCEPTION	Noun Know PFREQ 	86% noun: Instance or case not conforming to the general rule. 
+EXPECT	Modif Know Psv 	2% adj-noun: "Expected"--anticipated 
+EXTRAPOLATION	Noun Know Actv 	
+FACT	Noun Know 	77% noun: Something known to be true, to exist or have happened. 
+FACT	LY Ovrst Know 	20% idiom-adverb: "In fact"--actually, in actuality 
+FACT	LY Ovrst Handels Know 	3% idiom-adv: "As a matter of fact"--handled by matter 
+FACTOR	Noun Know 	noun: Contributor, cause, consideration, element. 
+FACTUAL	IndAdj Pos Modif Know 	
+FAMILIARITY	Pos Noun Know 	
+FAMILIARIZE	IAV Pos SUPV Actv Other Rel Know Percv 	
+FEATURE	Noun Know 	
+FORGOTTEN	Modif Know Psv Weak 	
+FORMULA	Noun ABS Abs* Know 	
+FORTH	LY Know 	22% idiom: "And so forth"--and continuing in the same manner 
+FRAMEWORK	Noun Know 	
+FUNCTIONAL	Modif Know 	
+FUNDAMENTAL	Modif Know EVAL Strng Ovrst 	
+GENERAL	Modif Know Ovrst 	43% adjective: Not limited to one, miscellaneous, not specific or definite--  dealing with all or the overall, universal aspects of the subject 
+GENERALITY	Modif Know 	
+GENERALIZATION	Noun ABS Abs* Know 	
+GRANT	Modif Know 	26% adj: "Granted"--assumed, acknowledged, allowed, valid, true 
+GROUND	Noun Know Strng 	9% noun: Foundation, basis of an effort usually intellectual, e.g. of  an argument, "on those grounds" 
+GROUP	Noun Know 	0% noun: 'grouping'--a category or classification 
+GUIDEPOST	Noun Know 	
+HENCE	LY Know Causal 	adv: Thus, therefore 
+HUNCH	Noun Know Psv 	
+IDEA	Noun ABS Abs* Know COM 	noun: Any conception existing in the mind as a result of mental activity,  an opinion, view or belief 
+IDENTITY	Noun ABS Abs* Know 	
+ILLUSION	Noun ABS Abs* Know Psv 	
+IMAGINABLE	Modif Know Exprs 	
+IMAGINARY	Modif Psv Know Exprs 	
+IMAGINATION	Pos Noun Pstv Psv Know Exprs 	
+IMPARTIAL	IndAdj Pos Modif Arousal Know 	
+IMPARTIALITY	Pos Noun Arousal Know 	
+IMPLICATION	Noun Know 	
+IMPORTANCE	Pos Noun Know Pstv Ovrst 	noun: Significance, consequence, value 
+INCONCEIVABLE	Modif Negate Ovrst Know 	
+INCONTESTABILITY	Noun Negate Ovrst Know 	
+INCONTESTABLE	Modif Negate Ovrst Know 	
+INCREDIBILITY	Modif Ovrst Know Negate 	
+INCREDIBLE	Neg Modif EVAL Negate Ngtv Ovrst Know 	
+INDICATION	Noun Know 	
+INDICES	Noun Know 	
+INFALLIBILITY	Pos Noun Strng Know Virtue 	
+INFER	IAV Pos SUPV Actv Think Know 	
+INFERENCE	Pos Noun Think Know 	
+INFORMAL	Modif Affil Know Negate 	
+INGENIOUS	IndAdj Pos Modif Know Virtue 	
+INGENUITY	Pos Noun Think Try Know 	
+INHERENT	Modif Know Strng Psv 	
+INSIGHT	Pos Noun ABS Abs* Know Pstv Psv 	
+INSISTENT	IndAdj Pos Modif Arousal Know Strng Comform 	
+INSTANCE	Noun Know 	27% noun: A representative example. 
+INSTANCE	LY Know 	73% idiom-adverb: 'for instance'--for example 
+INSTEAD	LY Know 	26% adverb: Rather, in lieu. 
+INSTINCTIVE	IndAdj Pos Modif Natpro Know 	
+INTERPRETATION	Noun ABS Abs* Know Actv 	
+INTUITION	Noun Psv Know 	
+INTUITIVE	Modif Psv Know 	
+IRREFUTABLE	Modif Negate Ovrst Strng Know 	
+ISSUE	Noun Know POLIT Legal Actv COM PFREQ 	91% noun: A point in question or a matter that is in dispute 
+ITEM	Noun Know 	
+KIND	Noun ABS Abs* Know 	66% noun: A particular or representative type, species, character, or  quality of something 
+KNOW	Pos Modif Know Psv Pstv 	1% noun-adj: "Knowing"--having knowledge or information, shrewd, deliberate 
+KNOW	Pos LY Know Actv Pstv 	0% adv: "Knowingly"--in a shrewd, informed or deliberate manner 
+KNOWLEDGE	Pos Noun ABS Abs* Acad Pstv Strng Know 	noun-adj: Familiarity with or understanding of facts, principles, etc.--  what is known 
+KNOWN	Modif Know Undrst Psv 	3% adj: Recognized 
+LARGE	LY Undrst Know 	1% idiom-adv: 'by and large'--on the whole 
+LATENT	Modif Know Psv 	
+LEAN	Noun Know 	9% noun: "Leaning"--inclination, tendency 
+LIGHT	PREP Know 	7% prep: "In light of," "in the light of," in view of, considering, with  this in mind 
+LIKEWISE	CONJ CONJ2 Know 	
+LITERAL	Modif Know 	
+LITERALLY	LY Ovrst Know 	
+LOGIC	Pos Noun Know Pstv 	
+LOGICAL	Pos Modif Know Pstv 	
+MAIN	Pos Modif Ovrst EVAL Know Strng Pstv 	74% adj: Principal, chief 
+MAIN	LY Ovrst Strng Know 	26% adv: "Mainly," "in the main"--principally, chiefly 
+MAJOR	Pos Modif Ovrst EVAL Strng Pstv Know 	56% adj: Principal, chief--"the major aim of this project" 
+MANIFESTATION	Noun Know 	
+MASTERFUL	IndAdj Pos Modif Power Strng Know 	
+MASTERY	Pos Noun Know Strng 	
+MATTER	Noun Know ABS COM 	40% noun: Subject, thing, affair, concern, set of circumstances, material  (abstract); physical material (0) 
+MATTER	Noun Know 	10% noun: "A matter of"--a case or case in point of a subject or thing,  an issue--"it's a matter of politics," "in a matter of minutes" 
+MATTER	Modif Ovrst Know 	5% idiom: "As a matter of fact" 
+MEAN	Noun Know 	5% noun: "Meaning"--sense, significance, purport 
+MEAN	Yes LY Ovrst Know 	0% idiom-adv: "By all means"--certainly 
+MEANING	Noun ABS Abs* Know 	
+MEMORY	Noun Know 	68% noun: The faculty of remembering 
+MEMORY	Noun ABS Abs* Know 	32% noun: Any particular act or experience as remembered 
+MENTAL	Modif Know 	adjective: Of or pertaining to mind. 
+MENTOR	Pos Noun HU Role Power Know 	
+MIND	Noun Know 	6% noun: Will, intentions, plans--"change one's mind" 
+MIND	Modif Know 	2% adj: "Minded"--having a certain kind of mind, inclined or disposed  ("politically minded") 
+MIND	Modif Know 	9% idiom-adj: "On (one's) mind"--persistantly, naggingly present or conscious 
+MIND	Modif Know 	1% idiom-adj: "Out of or off (one's) mind"--removed from consciousness 
+MIND	Modif Know Actv 	4% idiom: "In mind"--consciously, in one's thoughts 
+MYSTERIOUS	Modif Know 	
+MYSTERY	Noun Know 	
+NAME	LY Know 	2% adv: "Namely"--to wit 
+NATURE	Noun ABS Abs* Know 	72% noun: Inherent quality or character 
+NAVIGABLE	IndAdj Pos Modif Ovrst Know 	
+NEUTRAL	Modif Know POLIT Psv 	
+NEVERTHELESS	LY Know 	adv: Nonetheless, however 
+NOMINAL	Modif Know Weak Psv Undrst 	
+NONETHELESS	LY Know 	
+NONSPECIFIC	Modif Negate Know 	
+NOR	Negate CONJ CONJ1 Know 	conjunction: Used in negative phrases--negative or 
+NOTION	Noun ABS Abs* Know 	
+NOTWITHSTANDING	CONJ CONJ2 Know 	
+OR	CONJ CONJ1 Know 	conj.: Used to connect words, phrases, or clauses representing alternatives. 
+OTHERWISE	LY Know 	adv-adj: Alternatively, also, differently; different 
+OUTLOOK	Noun Know Psv 	
+OUTSIDE	PREP Know 	6% prep: "Outside of"--with the exception of, in addition to 
+OVERALL	Modif Know Ovrst 	
+PARAMETER	Noun Know 	
+PART	Noun Know 	1% noun: A side of an issue 
+PASS	Noun Know 	3% verb: "Pass over"--to omit, disregard 
+PERHAPS	LY Undrst Know 	adverb: Maybe, possibly 
+PERSPECTIVE	Noun ABS Abs* Know 	
+PHENOMENA	Noun Know S 	
+PHENOMENON	Noun Know 	
+POINT	Noun COM Know 	27% noun: Observation, argument, main idea, purpose, thrust, gist, meaning 
+POINT	Noun Handels Know Ovrst 	0% adv: "Pointedly"--incisively 
+POINT	Neg Modif Hostile Ngtv Strng Know Ovrst 	1% adj: "Pointed"--incisive, penetrating, cutting 
+PREDOMINANT	Modif Strng Ovrst Know 	
+PRESENCE	Noun Know 	
+PRESUMABLY	LY Know Ovrst 	
+PRESUMPTION	Noun Psv Know 	
+PRIMARY	Modif Strng Ovrst Know 	51% adj: First, most fundamental, primitive, central, important, etc. 
+PRIMARY	LY Strng Ovrst Know 	47% adv: "Primarily"--in the first place, originally, fundamentally, mainly 
+PRINCIPAL	Pos Modif EVAL Pstv Strng Ovrst PFREQ Know 	32% adj: Chief or most important 
+PRINCIPAL	LY Ovrst Strng Know 	0% adv: "Principally"--mainly 
+PRINCIPLE	LY Know 	1% adv: 'in principle'--theoretically 
+PRO	Pos Noun HU Role Know 	
+PROBLEM	Neg Noun Know Ngtv 	noun: A question or matter involving doubt or difficulty, a question proposed  for discussion or solution 
+PRODIGY	Pos Noun HU Role Know 	
+PROFICIENT	IndAdj Pos Modif Strng Know 	
+PROJECT	Modif Know Psv 	2% adj: "Projected"--predicted, externalized 
+PROOF	Noun Know Ovrst Strng 	
+PROWESS	Pos Noun Know Strng 	
+PURELY	LY Ovrst Know 	
+PUZZLE	Noun Know Undrst 	
+RANGE	Noun Know 	81% noun: Scope, series 
+RATHER	LY Negate Know 	44% adv: Instead, on the contrary, instead of, "rather than," etc. 
+RATHER	LY Know Ovrst 	3% adv: More correctly, precisely 
+REALIZATION	Noun Know Psv 	
+REALM	Noun Know 	
+RECALL	Noun Know Psv 	
+RECONSIDERATION	Noun Know 	
+REFLECTION	Noun Know Psv 	
+REGARD	Modif Know 	1% adj: "In (this, that, etc.) regard"--in (this, that, etc.) respect 
+RELATED	Modif Know 	57% adj: Associated 
+RELATION	Noun ABS Abs* Know 	74% noun: Connection, correspondence, association 
+RELATIVE	Modif Know Weak Psv Undrst 	16% adj: Comparative, considered in relation to something else 
+RELATIVE	LY Undrst Weak Psv Know 	27% adv: "Relatively"--comparatively 
+RELEVANCE	Pos Noun Know Pstv 	
+RELEVANT	Pos Modif Know EVAL Pstv 	
+RESOURCEFUL	IndAdj Pos Modif Know Strng Virtue 	
+RESOURCEFULNESS	Pos Noun Know Strng Virtue 	
+RESPECT	Noun Know 	13% noun: A particular or point--'in some respects' 
+RESPECT	Noun Know 	6% noun: Relation, reference--'with respect to' 
+RESPECTIVE	Modif Know 	
+RULE	LY Undrst Know 	6% idiom-adv: "As a rule", generally 
+SAGACITY	Pos Noun Know Strng 	
+SAGE	IndAdj Pos Modif Know Strng 	
+SAMPLE	Noun Know 	
+SANITY	Pos Noun Know 	
+SAVVY	Pos Noun Know Strng 	
+SAY	LY Ovrst Know 	0% verb: "Needless to say"--obviously 
+SCHEMATICALLY	Modif Know 	
+SENSE	Noun Know 	21% noun: A specific meaning, interpretation, or understanding--"in a  sense he is right" 
+SENSE	Pos Noun ABS Abs* Know Pstv 	5% idiom-noun: "Make, made sense"--to be reasonable or comprehensible 
+SET	Noun Know 	7% noun: Collection, group, series 
+SETUP	Noun Know 	
+SHOE	Modif Know Affil 	0% adj: "In ___ shoes"--in another's situation 
+SHREWDNESS	Pos Noun Know Strng Virtue 	
+SIMILAR	LY Know 	13% adverb: "Similarly"--likewise, in similar fashion 
+SIMILARITY	Noun Know 	
+SIMPLE	Modif Know EVAL Ovrst 	32% adj: Not complicated, plain, easy 
+SIMPLE	Modif Know EVAL 	1% adj: "Simpler" - comparative of sense 1 
+SIMPLE	Modif Know EVAL 	1% adj: "Simplest" - superlative of sense 1 
+SIMULATE	Modif Know Actv 	
+SITUATION	Noun ABS Abs* Know 	noun: State of affairs, condition 
+SLIGHT	Neg Modif Know Ngtv Weak Undrst 	19% adj: "Slightest" - least, tiniest, most insignificant 
+SOLD	Modif Psv Know 	14% adj: Convinced - "i am sold on it" 
+SORT	Noun ABS Abs* Know 	57% noun: A particular or representative kind, species, character, or  quality of something 
+SOURCE	Noun Know Strng 	
+SPECIFIC	DET PRE PRE1 Modif Know PFREQ 	92% adj: Particular, precisely designated or delineated 
+SPECIFIC	Noun Know 	8% noun: "Specifics" - particulars, concrete items 
+SPECIFICALLY	LY Know 	
+SPECIFICATION	Noun Know 	
+SPECULATION	Noun Know Undrst 	
+SPECULATIVE	Modif Know Undrst 	
+SPITE	PREP PFREQ Know Ovrst 	96% idiom-prep: 'in spite of'--in disregard of, despite 
+STAND	Noun Know Strng 	8% noun: Viewpoint, argument, position of defense; a platform stall or booth (1) 
+STATE	Noun Know 	7% noun: Condition, often relating to consciousness or perception 
+STATE	Noun ABS Abs* Know 	1% idiom-noun: "State of affairs"--situation 
+STEREOTYPE	Noun Know 	
+STILL	CONJ CONJ2 Know 	6% conj: Nevertheless 
+STUFF	LY Know 	24% idiom: "And stuff" - and so forth, etc. 
+SUBJECTIVE	Modif Know 	
+SUBTRACTION	Noun Know 	
+SUCH	Modif Know 	3% idiom: "As such"--in itself, in that capacity 
+SUM	Noun Know ECON 	
+SUPPOSE	Modif Undrst Know 	4% adj: "Supposed" - putative, hypothetical 
+SUPPOSE	LY Undrst Know 	4% adv: "Supposedly" - putatively, hypothetically 
+SURE	Modif Know Strng Ovrst 	65% adj: Certain 
+SURE	LY Ovrst Strng Know 	0% adj: "Surest"--most certain 
+SYSTEM	Noun ABS Abs* Know 	noun: A bounded collection of interacting components 
+TALENTED	IndAdj Pos Modif Know Strng Virtue 	
+TENTATIVE	Modif Know Weak 	
+THEME	Noun COM Know 	
+THINK	Modif Know 	1% noun-adj: "Thinking"--cogitation, cogitating, thoughtful 
+THINK	Noun ABS Abs* Know 	6% noun: "Thought"--cogitation, or the results of cogitation, singly or  collectively 
+TRACE	Noun Know 	
+TRAIN	Noun Know 	3% noun: A connected sequence of things--e.g. 'train of thought' 
+TRAIT	Noun Know 	
+TYPE	Noun ABS Abs* Know PFREQ 	89% noun-adj: A kind or class of something, a person or thing with definitive  features of a certain class 
+UNAWARE	Modif Know Negate Weak Psv 	
+UNCERTAIN	Modif Negate Weak Undrst Know 	
+UNCERTAINTY	Noun Know Negate Weak Undrst 	
+UNCONSCIOUS	Modif Know Negate Psv 	
+UNDECIDED	Modif Know Negate Weak Psv Undrst 	
+UNDEFINED	Modif Know Negate Undrst 	
+UNDENIABLE	Modif Know Negate Ovrst Strng 	
+UNDETERMINED	Modif Know Negate Undrst 	
+UNKNOWN	Modif Know Negate 	noun-adj: Not known 
+UNQUESTIONABLE	Modif Negate Ovrst Strng Know 	
+UNQUESTIONED	Modif Negate Ovrst Strng Know 	
+VAGUE	Neg Modif Know Undrst Ngtv Weak 	
+VAGUENESS	Neg Noun Know Ngtv Weak Undrst 	
+VARIABLE	Noun Know 	
+VERIFICATION	Pos Noun Pstv Ovrst Know 	
+VERSION	Noun Know 	
+VERY	Modif Know Ovrst 	6% adj: Actual, precise, absolutely identical--'that very day' 
+VICE	LY Know Negate 	10% idiom-adv: "Vice versa" - conversely 
+VIEW	Noun COM Know 	49% noun: Opinion, attitude, viewpoint 
+VIEW	Noun Know 	19% idiom-noun: 'point of view'--viewpoint, opinion 
+VIEW	PREP Know 	6% idiom: 'in view of'--considering 
+VISIONARY	Pos Noun HU Role Know Think 	
+WHEREAS	Modif Know 	
+WHETHER	CONJ CONJ2 Know 	conjunction: Used to introduce one or more alternatives 
+WHITE	Modif Know 	1% idiom-adj: 'black and white'--clear cut--not handled 
+WHOLE	LY Ovrst Strng Know 	5% adv: "On the whole"--in general 
+YET	LY Ovrst Know 	2% adv: With comparatives--still, even 
+YET	CONJ CONJ2 Know 	56% conj: But, nevertheless, even so 

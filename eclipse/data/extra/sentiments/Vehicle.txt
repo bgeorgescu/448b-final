@@ -1,0 +1,40 @@
+word	tags	comments
+AIRCRAFT	Noun Object Vehicle 	
+AIRPLANE	Noun Object Vehicle 	
+AUTO	Noun Vehicle Object 	
+AUTOMOBILE	Noun Vehicle Object 	
+AUTOMOTIVE	Modif Object Vehicle 	
+BOAT	Noun Object Vehicle 	noun: Aquatic vehicle 
+BUS	Noun Vehicle Object 	noun: Public transport vehicle 
+CADILLAC	Noun Object Vehicle 	
+CANOE	Noun Object Vehicle 	noun: A light slender boat 
+CAR	Noun Vehicle Object 	noun: Automobile, streetcar, small passenger vehicle. 
+CARRIAGE	Noun Object Vehicle 	
+DESTROYER	Noun Object Vehicle Milit 	
+HOT	Noun Object Vehicle 	5% idiom-noun: Hot rod 
+JEEP	Noun Object Vehicle 	
+JET	Noun Object Vehicle 	
+LIMOUSINE	Noun Object Vehicle 	
+MISSILE	Noun Object Vehicle Hostile Milit Strng 	noun-adj: A weapon or object projected so as to strike a distant object,  especially a self-propelled rocket-like weapon 
+PARACHUTE	Noun Object Vehicle PFREQ 	94% noun: Large umbrella-shaped cloth used to slow the descent of an object  or person dropped from an airplane. 
+PLANE	Noun Object Vehicle PFREQ 	88% noun: Airplane 
+ROCKET	Noun Object Vehicle Milit 	
+SATELLITE	Noun Object Vehicle POLIT 	
+SEDAN	Noun Object Vehicle 	
+SHIP	Noun Object Vehicle PFREQ 	88% noun: Naval or other vessel 
+SHIP	Noun Object Vehicle 	2% noun: "Shipping" - naval commerce 
+SKI	Noun Object Vehicle Exprs 	
+STAGECOACH	Noun Object Vehicle 	
+STATION	Noun Object Vehicle 	0% noun-idiom: "Station wagon" 
+STEAMER	Noun Object Vehicle 	
+SUBMARINE	Noun Object Vehicle POLIT Milit 	
+TANK	Noun Object Vehicle 	
+TAXI	Noun Object Vehicle 	
+TRACTOR	Noun Object Vehicle ECON Econ* 	
+TRAIN	Noun Object Vehicle 	23% noun: Railroad train and related carriers (camel, wagon--one each), retinue 
+TRANSPORT	Noun Object Vehicle Actv 	
+TRUCK	Noun Object Vehicle 	
+VAN	Noun Object Vehicle 	
+VEHICLE	Noun Object Vehicle 	
+VESSEL	Noun Object Vehicle 	
+WAGON	Noun Object Vehicle 	

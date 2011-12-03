@@ -1,0 +1,664 @@
+word	tags	comments
+ACQUISITION	Noun Object ECON Tool Strng Actv 	
+AIR	Noun Object Tool 	3% idiom-noun: "Air conditioner" 
+AIRCRAFT	Noun Object Vehicle 	
+AIRPLANE	Noun Object Vehicle 	
+ALBUM	Noun Object COM Comnobj 	
+ALUMINUM	Noun Object ECON Tool Econ* 	
+AMENITY	Pos Noun Object 	
+AMMUNITION	Noun Object Tool Milit 	
+ANCHOR	Noun Object Tool 	
+APARTMENT	Noun Bldgpt Object 	noun: A room or set of rooms designed for use as a dwelling. 
+APPARATUS	Noun Object Tool 	
+ARCH	Noun Bldgpt Object 	
+ARM	Noun Object POLIT Tool Hostile Milit Strng Power 	16% noun: "Arms"--weapons 
+ARMED	Modif Object Tool Milit Power Strng Hostile 	adj: Equipped with weapons 
+ARROW	Noun Object Tool Hostile Milit 	noun: Straight, pointed weapon 
+ART	Pos Noun Object COM Exprs Pstv Comnobj 	63% noun-adj: Painting, and more generally all the 'fine arts,' having  to do with beauty 
+ARTICLE	Noun Object Tool 	
+ASH	Noun Object Natobj 	noun: Powdery residue of burned matter 
+ATLAS	Noun Object COM Comnobj 	
+ATOM	Noun POLIT ECON Object Natobj 	
+ATOMIC	Modif POLIT ECON Strng Object Natobj 	
+ATTIC	Noun Bldgpt Object 	
+AUTO	Noun Vehicle Object 	
+AUTOMATIC	Modif Object Tool 	
+AUTOMOBILE	Noun Vehicle Object 	
+AUTOMOTIVE	Modif Object Vehicle 	
+AXE	Noun Object Tool Strng 	noun: Tool used to cleave and chop 
+AXLE	Noun Object Tool 	
+BACON	Noun Object Food 	
+BAG	Noun Object Tool 	97% noun: Flexible container, sack 
+BALE	Noun Object Tool 	
+BALL	Noun Object Tool 	50% noun-adj: A spherical object, a kind of bullet (0) 
+BALLISTIC	Noun Object POLIT Tool Modif 	
+BALLOON	Noun Object Tool 	
+BAR	Noun Object Tool 	12% noun: An oblong piece of soap, chocolate, etc.; including sand bar,  prison bars, etc.(1); a strip or stripe (0 
+BAR	Noun Object Tool Exprs Actv 	0% noun: Athletic equipment 
+BARREL	Noun Object Tool 	
+BARRIER	Neg Noun Object 	
+BASEMENT	Noun Bldgpt Object 	
+BASKET	Noun Object Tool 	noun: A receptacle made of interwoven materials 
+BATH	Noun Object Tool 	
+BATHROOM	Noun Bldgpt Object 	68% noun-adj: Lavatory 
+BEAN	Noun Object Food 	
+BEAR	Noun Object Tool 	0% noun: "(ball) bearing"--mechanical part 
+BEAR	Noun Object Tool 	1% idiom-noun: "Teddy bear" 
+BED	Noun Object Tool 	80% noun: Furniture, place to sleep 
+BED	Noun Object Natobj 	1% noun: Foundation layer or stratum 
+BEDROOM	Noun Bldgpt Object 	noun: Room or place where people sleep 
+BEEF	Noun Object Food 	
+BEER	Noun Object Food 	noun-adj: The beverage, pertaining to this beverage 
+BELONG	Noun Object Tool Econ* 	2% noun: "Belongings"--possessions 
+BELT	Noun Object Tool 	
+BIBLE	Noun Object COM Relig Comnobj 	
+BIBLICAL	Modif Relig Object Comnobj 	
+BILL	Noun Object POLIT COM Polit* Comnobj 	33% noun: Draft of proposed, or enacted statute (rarely, playbill, notice,  advertisement (0)) 
+BILL	Noun Object ECON COM Econ* Comnobj 	53% noun: Statement of money owed for goods or services 
+BIN	Noun Object Tool 	
+BLADE	Noun Object Tool 	
+BLANKET	Noun Object Tool 	noun: A layer or covering 
+BLIND	Noun Object Tool 	0% noun: Something which keeps out light or prevents sight 
+BLOWER	Noun Object Tool 	
+BOARD	Noun Object COM Acad Comnobj 	7% noun: Blackboard 
+BOARD	Noun Object Tool 	11% noun: Slab of wood, panel (includes diving board, dash board, etc.) 
+BOAT	Noun Object Vehicle 	noun: Aquatic vehicle 
+BOMB	Neg Noun Object POLIT Tool Hostile Milit Ngtv Strng 	
+BOOK	Noun Object COM Comnobj 	noun-adj: Printed volume 
+BORE	Noun Object Tool 	0% noun: A tool 
+BOTTLE	Noun Object Tool 	noun-adj: Container-pertaining to same 
+BOULDER	Noun Object Natobj 	
+BOW	Noun Object Tool Milit PFREQ 	89% noun: Anything curved or bent, includes bow and arrow (13); forepart  of a ship (2); bowknot (1); inclination of the head or body (3) 
+BOWL	Noun Object Tool 	
+BOX	Noun Object Tool 	83% noun: Container 
+BRACE	Noun Object Tool Strng 	
+BRAKE	Noun Object Tool 	
+BRANDY	Noun Object Food 	
+BRASS	Noun Object Tool 	
+BREAD	Noun Object Food 	
+BREAKFAST	Noun Object Food 	
+BRUSH	Noun Object Tool 	
+BULLET	Neg Noun Object Tool Hostile Ngtv Strng 	
+BULLETIN	Noun Object COM Comnobj 	
+BUNK	Noun Object Tool 	
+BUS	Noun Vehicle Object 	noun: Public transport vehicle 
+BUSH	Noun Object Natobj 	noun: A shrub, shrubbery 
+BUTTER	Noun Object Food 	
+CADILLAC	Noun Object Vehicle 	
+CAGE	Noun Object Tool 	
+CAKE	Noun Object Food 	
+CALCIUM	Noun Object Natobj 	
+CAMERA	Noun Object Tool Exprs 	
+CANDLE	Noun Object Tool 	noun: Light source 
+CANDY	Noun Object Food 	
+CANNON	Neg Noun Object Tool Hostile Milit Ngtv Strng 	
+CANOE	Noun Object Vehicle 	noun: A light slender boat 
+CANVAS	Noun Object Tool 	
+CAP	Noun Object Tool 	
+CAR	Noun Vehicle Object 	noun: Automobile, streetcar, small passenger vehicle. 
+CARD	Noun Object Tool 	noun-adj: Rectangular piece of stiff paper--used for games, greetings,  identification, etc. 
+CARRIAGE	Noun Object Vehicle 	
+CASH	Noun Object COM ECON Econ* Comnobj 	
+CAST	Noun Object Tool Strng 	11% noun: Rigid structure; set of actors (0) 
+CATCH	Noun Psv Object Natobj 	3% noun: That which is caught, such as game or fish 
+CEILING	Noun Object Bldgpt 	
+CELL	Noun Object Bldgpt 	
+CELLAR	Noun Bldgpt Object 	
+CEMENT	Noun Object Tool Strng 	
+CENT	Noun Object COM ECON Econ* Comnobj 	
+CEREAL	Noun Object Food 	
+CERTIFICATE	Noun Object Legal Power Comnobj 	
+CHAIN	Noun Object Tool Subm 	
+CHAIR	Noun Object Tool 	noun: A seat 
+CHAMBER	Noun Bldgpt Object 	
+CHARGE	Noun Object Tool Strng 	2% noun: A load, quantity of energy; anything or anyone committed to one's care (0) 
+CHART	Noun Object COM Comnobj 	
+CHARTER	Noun Object COM Comnobj 	
+CHECK	Noun Object COM ECON Econ* Comnobj 	41% noun: A bank money order, a bill 
+CHECKER	Noun Object Tool 	
+CHEMICAL	Modif Object Tool 	
+CHEQUE	Noun Object COM Econ* ECON Comnobj 	
+CHIP	Noun Object Natobj 	
+CHOKE	Neg Noun Object Tool Ngtv Weak 	
+CIGARETTE	Noun Object Tool 	
+CLASSROOM	Noun Bldgpt Acad Object 	noun: Room for a class 
+CLAY	Noun Object Natobj 	
+CLOCK	Noun Object Tool 	60% noun: Timepiece 
+CLOSET	Noun Object Tool 	
+CLOTH	Noun Object Tool 	
+CLOTHE	Noun PFREQ Object Tool 	92% noun: "Clothes," "clothing"--garments 
+CLUB	Neg Noun Object Tool Hostile Milit Ngtv Strng 	8% noun: A heavy stick suitable for use as a weapon 
+COAL	Noun ECON Object Natobj 	
+COAT	Noun Object Tool 	
+COCKPIT	Noun Object Tool 	
+COCKTAIL	Noun Object Food 	
+COCOA	Noun Object Food 	noun-adj: Processed cacao seeds 
+COFFEE	Noun Object Food 	noun-adj: Java 
+COFFIN	Noun Object Tool 	
+COIN	Noun Object COM ECON Econ* Comnobj 	
+COLLAR	Noun Object Tool 	
+COMFORTER	Noun Object Tool 	
+COMMODITY	Noun ECON Econ* Object Tool 	
+COMPASS	Noun Object Tool 	
+COMPONENT	Noun Object Tool 	
+COMPUTER	Noun Object Tool ECON 	
+CONDITION	Noun Object Tool 	1% idiom-noun: "Air conditioning," "air conditioner" 
+CONSTITUTION	Noun Object COM POLIT Polit* Strng Comnobj 	
+CONSTRUCTION	Noun Bldgpt ECON Strng Actv Object 	noun-adj: Building, or having to do with same 
+CONTENT	Noun Object Comnobj 	8% noun: "Contents"--that which is contained 
+COOKIE	Noun Object Food 	
+COOKY	Noun Object Food 	
+COPPER	Noun ECON Object Natobj Econ* 	
+COPY	Noun Object COM Actv Comnobj 	
+CORD	Noun Object Tool 	
+CORN	Noun Object Food 	
+CORPUS	Noun Object COM Comnobj 	
+COSTUME	Noun Object Tool 	
+COTTON	Noun Object Tool ECON 	
+COVER	Noun Object Tool 	9% noun: "Cover," "covering"--that which conceals or protects 
+CREAM	Noun Object Food 	
+CROP	Noun Object Food ECON PFREQ 	96% noun: Agricultural product 
+CROWN	Noun Object Tool POLIT Polit* Power 	
+CRUCIFIX	Noun Object Tool Relig 	
+CRUTCH	Noun Object Tool 	
+CUP	Noun Object Tool 	noun: Small open container 
+CURB	Noun Object Tool 	
+CURRENCY	Noun Object COM ECON Econ* Comnobj 	
+CURTAIN	Noun Object Tool 	
+CYLINDER	Noun Object Tool 	
+DAGGER	Noun Object Tool Hostile 	
+DECK	Noun Bldgpt Object 	
+DECORATION	Pos Noun Object Pleasure 	
+DESK	Noun Object Tool 	
+DESTROYER	Noun Object Vehicle Milit 	
+DEVICE	Noun Object Tool 	
+DICE	Noun Object Tool S 	
+DICTIONARY	Noun Object COM Comnobj 	
+DINNER	Noun Object Food 	noun: Meal 
+DIPPER	Noun Object Tool 	
+DIRT	Neg Noun Ngtv Object Natobj 	
+DISC	Noun Object Tool 	
+DISGUISE	Neg Noun Object 	
+DISH	Noun Object Tool 	
+DOCUMENT	Noun Object COM Comnobj 	
+DOLL	Noun Object Tool 	
+DOLLAR	Noun Object ECON POLIT COM Econ* Comnobj 	noun-adj: Monetary unit 
+DOLLY	Noun Object Tool 	
+DOORWAY	Noun Object Bldgpt 	
+DRAIN	Noun Object Tool 	
+DRAW	Noun Object COM Comnobj 	5% noun-adj: "Drawing"--a picture, the making of sketches 
+DRESS	Noun Object Tool 	39% noun: Clothing or covering, most often women's garments 
+DRESS	Modif Object Tool 	38% adj: "Dressed"--clothed 
+DRESSER	Noun Object Tool 	
+DRILL	Noun Object Tool 	
+DRINK	Noun Object Food 	21% noun: Beverage 
+DROP	Noun Object Natobj 	5% noun: A particle, usually of liquid, a minute amount 
+DRUG	Noun Object Food 	noun-verb: A chemical substance administered to a person or animal, the  act of administering it, or its effec 
+DRUM	Noun Object Tool Exprs 	
+DRYER	Noun Object Tool 	
+DUCT	Noun Object Tool 	
+DUST	Noun Object Natobj 	
+EAR	Noun Object Food 	7% noun: 'ear of corn' 
+EDITION	Noun Object COM Comnobj 	
+EFFECT	Noun Object Tool 	1% noun: 'effects'--possessions, belongings 
+EGG	Noun Object Food 	
+ELECTRIC	Modif Object Tool 	
+ELECTRON	Noun Object Natobj 	
+ELECTRONIC	Modif Object Tool 	
+ELEVATOR	Noun Bldgpt Object 	
+END	Noun Object Tool 	1% noun-idiom: 'odds and ends' 
+ENGINE	Noun Object Tool 	
+ENTRANCE	Noun PFREQ Object Bldgpt 	81% noun-adj: An opening through which one enters something, a way in 
+ENTRY	Noun Bldgpt Object 	
+EQUIPMENT	Noun Object Tool 	noun: Gear for a specified purpose 
+FABRIC	Noun Object Tool 	
+FAN	Noun Object Tool 	5% noun: A cooling device, or anything shaped like a paper fan 
+FEED	Noun Object Food 	9% noun: Nourishment, input 
+FENCE	Noun Object Tool PFREQ 	97% noun-adj: A boundary-marking barrier 
+FERTILIZER	Noun Object Tool 	
+FIBER	Noun Object Tool 	
+FIBERGLAS	Noun Object Tool 	
+FIG	Noun Object Food 	
+FILE	Noun Object Tool 	
+FILL	Noun Object Tool 	2% noun-adj: "Filling"--the act of making full, something used to fill  something else 
+FILM	Noun Object COM Comnobj 	noun-adj: Motion pictures or photographs, pertaining to same 
+FLAG	Noun Object COM POLIT Polit* Comnobj 	
+FLASHLIGHT	Noun Object Tool 	
+FLINT	Noun Object Natobj 	
+FLOOR	Noun Object Bldgpt 	84% noun: The lowest surface of a room 
+FLOOR	Noun Bldgpt Object 	11% noun: A story of a building 
+FLOOR	Noun Object Tool 	0% noun: 'flooring'--material used in floors 
+FLOWER	Noun Object Natobj 	noun-adj: Blossom, blossoming plant 
+FLY	Noun Object Tool 	2% noun: The flap of trousers 
+FOLDER	Noun Object COM Comnobj 	
+FOOD	Noun Object Food 	noun: Aliment 
+FORK	Noun Object Tool 	
+FORTUNE	Noun Object Tool ECON Econ* Strng 	35% noun: Wealth, accumulated riches 
+FRAME	Noun Object Tool Strng 	
+FREIGHT	Noun ECON Econ* Object Tool 	
+FRUIT	Noun Object Food 	noun-adj.: Anything produced or accruing, effect, result or product--  usually with reference to vegetable gro 
+FUEL	Noun Object Tool 	
+FUND	Noun Object Tool ECON Econ* 	66% noun-adj: A sum of money, usually earmarked 
+FURNACE	Noun Object Tool 	
+FURNITURE	Noun Object Tool 	
+GALLEY	Noun Bldgpt Object 	
+GASKET	Noun Object Tool 	
+GASOLINE	Noun Object Tool 	
+GATE	Noun Bldgpt Object 	
+GAUGE	Noun Object Tool 	
+GAZETTE	Noun Object COM Comnobj 	
+GEAR	Noun Object Tool 	
+GERM	Neg Noun Object Hostile 	
+GIFT	Pos Noun Object COM ECON Affil Pstv Comnobj 	
+GIN	Noun Object Food 	
+GINGER	Noun Object Food 	
+GLASS	Noun Object Tool 	
+GLUE	Noun Object Tool 	
+GOLD	Pos Noun ECON Pstv Object Natobj Econ* 	
+GOODS	Noun Object Tool ECON Econ* 	noun: Property, possessions, products 
+GOSPEL	Noun Object COM Relig Comnobj 	
+GRAIN	Noun Object Food 	
+GRANT	Noun Object Tool ECON Econ* 	29% noun: Something which has been promised, land, money 
+GRAPE	Noun Object Food 	
+GRASS	Noun Object Natobj 	noun: A thin green plant, a lawn 
+GREASE	Noun Object Tool 	
+GREATCOAT	Noun Object Tool 	
+GRENADE	Noun Object Tool Hostile Milit 	
+GUISE	Neg Noun Object Percv 	
+GUITAR	Noun Object Tool Exprs 	
+GUN	Neg Noun Object Tool Hostile Milit Strng Ngtv 	noun: A firearm 
+HALL	Noun Object Bldgpt 	noun: A corridor, or large room for public use 
+HAMBURGER	Noun Object Food 	
+HAMMOCK	Noun Object Tool 	
+HANDLE	Noun Object Tool 	17% noun: That part of something which is meant for grasping 
+HARDTACK	Noun Object Food 	
+HARVEST	Noun Object Food ECON Econ* 	
+HAT	Noun Object Tool 	noun: A shaped covering for the head 
+HAY	Noun Object Food 	
+HEAD	Noun Object COM Comnobj 	0% noun: 'heading'--top line, caption 
+HEADLIGHT	Noun Object Tool 	
+HEAP	Noun Psv Object Natobj 	
+HEAR	Noun Object Tool 	1% idiom-noun: "Hearing aid" 
+HEATER	Noun Object Tool Actv 	
+HEROIN	Noun Object Food 	
+HIDE	Noun Object Tool 	3% noun: A pelt 
+HINGE	Noun Object Tool 	
+HOLD	Noun ECON Object Tool 	0% noun: "Holdings"--possessions 
+HOLDER	Noun Object Tool Strng 	
+HOLLY	Noun Object Natobj 	
+HORN	Noun Object Tool Exprs PFREQ 	88% noun: The animal bodypart of analogous structures; a wind instrument (1) 
+HOT	Noun Object Food 	5% idiom-noun: Hot dog 
+HOT	Noun Object Vehicle 	5% idiom-noun: Hot rod 
+HULL	Noun Object Tool 	
+ICE	Noun Object Natobj 	62% noun-adj: Frozen water, of or as cold as frozen water 
+ICE	Noun Object Food 	33% idiom-noun-adj: "Ice cream" 
+ICE	Noun Object Food 	0% noun: "Icing" - frosting 
+ILLUSTRATION	Noun Object COM Comnobj 	
+INDEX	Noun Object COM Comnobj 	
+INSERT	Noun Object COM Actv Comnobj 	
+INSTRUMENT	Noun Object Tool 	noun: A device for making music (18); a tool or implement (3) 
+INSULATION	Noun Object Tool 	
+INTERIOR	Noun Object Bldgpt 	
+IRON	Noun Object Tool Strng 	73% adj-noun: The metal fe, made of this metal, or having to do with its  production--'the iron industry'; the instrument used for pressing clothes  (1); a branding iron (1) 
+IRON	Neg Noun Object Tool Hostile Strng Ngtv 	0% noun: "Irons"--chains, shackles 
+ISSUE	Noun Object COM Comnobj 	5% noun: That which is printed or published and distributed 
+JACKET	Noun Object Tool 	
+JAR	Noun Object Tool 	
+JEEP	Noun Object Vehicle 	
+JET	Noun Object Vehicle 	
+JOURNAL	Noun Object COM Comnobj 	
+JUG	Noun Object Tool 	
+JUICE	Noun Object Food 	
+KEEL	Noun Object Tool 	
+KEY	Noun Object Tool 	
+KEYBOARD	Noun Object Tool Exprs 	
+KITCHEN	Noun Object Bldgpt 	noun-adj: A room equipped for cooking 
+KNIFE	Noun Object Tool Hostile PFREQ 	97% noun-adj: Single-bladed cutting instrument 
+KNOCKER	Noun Object Tool 	
+LAB	Noun Bldgpt Acad Econ* Object 	
+LABEL	Noun Object COM Comnobj 	
+LABORATORY	Noun ECON Acad Econ* Object Bldgpt 	
+LADDER	Noun Object Tool 	
+LAVATORY	Noun Object Bldgpt 	
+LEAF	Noun Natpro Object Natobj 	
+LEATHER	Noun Object Tool 	
+LEAVE	Noun Object Natobj 	9% noun: Plural of "leaf" 
+LEDGER	Noun Object COM ECON Econ* Comnobj 	
+LEMON	Noun Object Food 	
+LEMONADE	Noun Object Food 	
+LETTER	Noun Object COM PFREQ Comnobj 	90% noun: A communication in writing or printing addressed to a person  or a number of persons 
+LETTER	Noun Object COM Comnobj 	6% noun: One of the marks or signs conventionally used in writing and  printing to represent speech sounds 
+LICENSE	Noun Object COM Legal Comnobj 	
+LIGNITE	Noun Object Natobj 	
+LIMOUSINE	Noun Object Vehicle 	
+LINK	Noun Object Tool 	
+LIQUID	Noun Object Tool 	
+LIQUOR	Noun Object Food 	
+LIST	Noun Object COM Comnobj 	
+LIVERY	Noun Object Tool 	
+LOAD	Noun Object Tool 	71% noun: A burden 
+LOAN	Noun Object COM ECON Econ* PFREQ Comnobj 	90% noun: Something lent or furnished on condition of being returned,  especially a sum of money 
+LOBBY	Noun POLIT ECON Object Bldgpt 	
+LOCK	Noun Object Tool Strng 	
+LOG	Noun Object Natobj 	
+LUGGAGE	Noun Object Tool 	
+LUNCH	Noun Object Food 	
+LUNCHEON	Noun Object Food 	
+MACHINE	Noun Object Tool 	noun-adj: Mechanical apparatus; organized group controlling a party or  other organization (1) 
+MACHINERY	Noun Object Tool 	
+MAGAZINE	Noun Object COM Comnobj 	
+MAHOGANY	Noun Object Natobj 	
+MAIL	Noun Object COM Comnobj 	
+MAKE	Noun Object Tool 	0% noun: "Makings"--ingredients 
+MANTLE	Noun Object Tool 	
+MANURE	Noun Object Natobj 	
+MAP	Noun Object COM Comnobj 	
+MAPLE	Noun Object Natobj 	
+MARBLE	Noun Object Natobj 	
+MARK	Noun Object COM Comnobj 	47% noun-adj: A symbol, indication, differentiated by a sign 
+MARK	Noun Object COM Comnobj 	3% noun-adj: "Marking(s)"--a written or visual pattern 
+MARKER	Noun Object COM Comnobj 	
+MAST	Noun Object Tool 	
+MAT	Noun Object Tool 	
+MATERIAL	Noun Object Tool 	81% noun: The substance of which something is composed 
+MATERIAL	Modif Object Tool 	16% adj: Of the physical, corporal, real 
+MEAL	Noun Object Food 	noun: An occasion when food is taken, or the food itself 
+MEAT	Noun Object Food 	noun: The flesh of animals 
+MECHANISM	Noun Object Tool 	
+MEDAL	Noun Object COM Exprs Comnobj 	
+MEDICINE	Noun Object Tool 	76% noun: Substance used in treating disease 
+MERCHANDISE	Noun Object Tool ECON Econ* 	
+METAL	Noun Object Natobj Econ* 	
+MILK	Noun Object Food 	
+MINE	Neg Noun Object Tool Hostile Milit Ngtv Strng 	5% noun: An explosive charge 
+MINERAL	Noun Object Natobj Econ* 	
+MIRROR	Noun Object Tool 	
+MISSILE	Noun Object Vehicle Hostile Milit Strng 	noun-adj: A weapon or object projected so as to strike a distant object,  especially a self-propelled rocket-like weapon 
+MIX	Noun Object Tool 	3% noun: Blend, combination, hodgepodge, pot pourri 
+MOLD	Noun Object Tool 	
+MOLECULAR	Modif Object Natobj 	
+MONETARY	Modif Object ECON Econ* Comnobj 	adjective: Pertaining to money or finance 
+MONEY	Noun Object COM ECON Econ* Comnobj 	noun-adj: Currency, medium of exchange, wealth 
+MONUMENT	Noun Object COM POLIT Strng Comnobj 	
+MORTAR	Noun Object Tool 	
+MOTOR	Noun Object Tool 	
+MOVIE	Noun Object COM Exprs Comnobj 	
+MUD	Noun Object Natobj 	noun: A slimy, sticky mixture of dirt with water. 
+MUNITION	Noun Object Tool Milit 	
+MUTTON	Noun Object Food 	
+NAIL	Noun Object Tool 	
+NEEDLE	Noun Object Tool 	
+NEST	Noun Object Natobj 	
+NEWSPAPER	Noun Object COM Comnobj 	noun-adj: Periodical containing current news and events 
+NICKEL	Noun Object Natobj Econ* 	
+NOTE	Noun Object COM Comnobj 	56% noun: Memorandum, letter, annotation (16); mark of some quality, condition  or fact (9); tone, hint (4); musical tone (4) 
+NOTICE	Noun Object COM Comnobj 	14% noun: Perception, recognition, information, announcement, warning 
+NOVEL	Noun Object COM Exprs Comnobj 	
+NUT	Noun Object Food 	
+OAK	Noun Object Natobj 	
+OAT	Noun Object Food 	
+OBJECT	Noun Object Tool 	59% noun: A visible or tangible thing 
+OBSTACLE	Neg Noun Ngtv Strng Object Natobj 	
+OBSTRUCTION	Neg Noun Stay Object 	
+OFFER	Pos Noun Object COM Affil Pstv Strng Psv Comnobj 	11% noun: "Offering", something presented, a donation 
+OIL	Noun ECON Object Natobj Econ* 	
+ONION	Noun Object Food 	
+ORE	Noun Object Natobj 	
+ORNAMENT	Noun Object Tool Exprs 	
+OUTFIT	Noun Object Tool ECON 	
+OUTPUT	Noun ECON Econ* Strng Actv Object Tool 	
+PACK	Noun Object Tool 	52% noun-adj: A bundle prepared to be carried or something used for carrying  it--package, packet, a bunch of objects or animals 
+PACK	Noun Actv Object Tool 	5% noun-adj: "Packing"--filling, cramming, storing 
+PACKAGE	Noun Object Comnobj 	
+PAGE	Noun Object COM Comnobj 	
+PAINT	Noun Object Tool 	22% noun-adj: A colored liquid coating substance 
+PAINT	Noun Object COM Exprs Comnobj 	27% noun: 'painting' . . . the end product of an artist's work 
+PAN	Noun Object Tool 	
+PAPER	Noun Object COM Tool 	noun-adj: Fibrous substance, in various forms 
+PARACHUTE	Noun Object Vehicle PFREQ 	94% noun: Large umbrella-shaped cloth used to slow the descent of an object  or person dropped from an airplane. 
+PARLOR	Noun Object Bldgpt 	
+PART	Noun Object Natobj 	59% noun: A piece, portion or aspect of something 
+PARTICLE	Noun Object Natobj Undrst 	
+PASS	Noun Object COM Comnobj Power 	1% noun: A certificate or other token giving permission or authorization;  a route of access (0) 
+PASTE	Noun Object Tool 	
+PATENT	Noun Object COM ECON Legal Comnobj Ovrst 	
+PEA	Noun Object Food 	
+PEARL	Noun Object Tool 	
+PEN	Noun Object COM Tool 	
+PENCIL	Noun Object COM Tool 	
+PENSION	Noun Object COM ECON Econ* Comnobj 	
+PEONY	Noun Object Natobj 	
+PERMIT	Noun Object COM Legal Comnobj Power 	6% noun: A written license 
+PHONE	Noun Object COM Tool 	
+PHOTO	Noun Object COM Comnobj 	
+PHOTOGRAPH	Noun Object COM Comnobj 	
+PHOTOGRAPHIC	Modif Object Comnobj 	
+PIANO	Noun Object Tool Exprs 	noun: A musical instrument 
+PICK	Noun Object Tool 	1% noun: Pointed tool 
+PICTURE	Noun Object COM Exprs Comnobj 	noun: A visual representation--a painting, drawing, photograph, movie mental image 
+PIECE	Noun PFREQ Object Natobj 	92% noun-adj: A part, section, bit, fragment, specimen or example of something.  vivaldi' (6) 
+PIECE	Noun Object COM Econ* Comnobj 	3% noun: A coin 
+PIGMENT	Noun Object Tool 	
+PILE	Noun Object Natobj 	28% noun: A heap or stack of something 
+PILL	Noun Object Tool 	
+PILLOW	Noun Object Tool 	
+PIN	Noun Object Tool 	
+PISTOL	Noun Object Tool Hostile Milit 	
+PISTON	Noun Object Tool Strng 	
+PLANE	Noun Object Vehicle PFREQ 	88% noun: Airplane 
+PLANT	Noun Natpro Object Natobj 	21% noun: Member of the vegetable group of living organisms 
+PLAQUE	Noun Object Tool 	
+PLASTIC	Noun Object Tool 	
+PLATE	Noun Object Tool 	
+PLATFORM	Noun Object Bldgpt 	43% noun: A raised, flat, horizontal surface. 
+PLAYTHING	Pos Noun Object 	
+PLOW	Noun Object Tool Econ* 	
+PLUG	Noun Object Tool 	
+PLYWOOD	Noun Object Tool 	
+POCKET	Noun Object Tool 	noun: A piece of fabric in a garment forming a pouch, a recess; a small,  isolated instance (3) 
+POD	Noun Object Natobj 	
+POINTER	Noun Object COM Comnobj 	
+POISON	Neg Noun Object 	
+POLE	Noun Object Tool PFREQ 	94% noun: A long, slender shaft 
+PORCH	Noun Object Bldgpt 	
+PORTRAIT	Noun Object COM Exprs Comnobj 	
+POST	Noun Object Tool 	39% noun-adj: A piece of timber firmly fixed upright, a pillar; a station  for trading, soldiers, etc. (2) 
+POSTER	Noun Object COM Comnobj 	
+POT	Noun Object Tool 	noun-adj: A container used for cooking or serving 
+POWDER	Noun Object Tool 	
+PRESENT	Noun Affil Object Comnobj 	7% noun: A gift 
+PRESS	Noun Object Tool Power 	10% noun: A mechanical device for crushing or printing 
+PRINT	Noun Object COM Actv Comnobj 	
+PRODUCE	Noun Object Food ECON Econ* 	11% noun: Products (agricultural) 
+PRODUCT	Noun ECON Econ* Object Tool 	noun: Something produced 
+PUBLICATION	Noun Object COM Comnobj 	
+PULLEY	Noun Object Tool 	
+PUMP	Noun Object Tool 	
+QUESTIONNAIRE	Noun Object COM Acad Comnobj 	
+RADAR	Noun Object Tool Milit 	
+RADIO	Noun Object COM Tool 	noun-adj: The wireless 
+RAG	Noun Object Tool 	
+RAIL	Noun Object Tool 	
+RAKE	Noun Object Tool 	
+RANGE	Noun Object Tool 	0% noun: Kitchen stove 
+RATTLE	Noun Object Tool 	
+RAZOR	Noun Object Tool 	
+RECORD	Noun Object COM Exprs Comnobj 	29% noun-adj: "Record," "recording"--a disk or tape imprinted with sound,  the act of such imprinting 
+REFRIGERATOR	Noun Object Tool 	
+REGISTER	Noun Object Comnobj 	
+REPORT	Noun Object COM Actv Comnobj 	52% noun-adj: A document describing something used for official business 
+RESUME	Noun Object COM Comnobj 	
+RIBBON	Noun Object Tool 	
+RICE	Noun Object Food 	noun adjective: A grain 
+RICH	Pos Noun Object ECON Econ* Power Pstv Strng Comnobj 	11% noun: Monetary wealth, "riches" 
+RICHES	Pos Noun Econ Power Object 	
+RIFLE	Noun Object Tool Hostile Milit 	
+ROCK	Noun PFREQ Object Natobj 	80% noun: Stone 
+ROCKER	Noun Object Tool 	
+ROCKET	Noun Object Vehicle Milit 	
+ROLL	Noun Object COM Comnobj 	5% noun: A list or scroll ('roll call,' 'welfare roll') 
+ROLL	Noun Object Tool 	2% idiom-noun: "Bed roll"--sleeping bag 
+ROLL	Noun Object Food 	0% noun: A pastry 
+ROLLER	Noun Object Tool 	
+ROOF	Noun PFREQ Object Bldgpt 	95% noun: Top covering 
+ROOM	Noun PFREQ Object Bldgpt 	92% noun-adj: A specific amount of space within a building which is separated  by walls 
+ROPE	Noun Object Tool PFREQ 	98% noun: Heavy cord 
+ROSE	Noun Object Natobj 	19% noun: The flower 
+RUBBISH	Neg Noun Object 	
+SAFETY	Noun Object Tool 	10% idiom-noun: "Safety pin" 
+SAIL	Noun Object Tool 	
+SALAMI	Noun Object Food 	
+SALT	Noun Object Food 	
+SATELLITE	Noun Object Vehicle POLIT 	
+SAW	Noun Object Tool 	1% noun-adj: A tool for cutting wood, metal, etc. 
+SCANDAL	Neg Noun Object 	
+SCHOOLROOM	Noun Acad Object Bldgpt 	
+SCREW	Noun Object Tool 	
+SCULPTURE	Noun Object COM Exprs Comnobj 	
+SEAT	Noun Object Tool 	38% noun: Chair, place where one sits; basis, position (4) 
+SECURITY	Pos Noun Econ* Pstv Object Comnobj 	5% noun: Bonds etc., issues of capital surety, or generalized body of issues 
+SEDAN	Noun Object Vehicle 	
+SEDIMENT	Noun Object Natobj 	
+SEED	Noun Object Natobj 	
+SERUM	Noun Object Tool 	
+SET	Noun Object Tool 	4% noun: Electronic gear--tv, radio sets 
+SHAFT	Noun Object Tool 	
+SHAKER	Noun Object Tool 	
+SHEET	Noun Object Tool 	
+SHELF	Noun Object Tool 	
+SHELL	Neg Noun Object Tool Hostile Milit Strng Ngtv 	5% noun: Artillery warhead 
+SHELVES	Noun Object Tool 	
+SHIP	Noun Object Vehicle PFREQ 	88% noun: Naval or other vessel 
+SHIP	Noun Object Vehicle 	2% noun: "Shipping" - naval commerce 
+SHIPWRECK	Neg Noun Object 	
+SHIRT	Noun Object Tool 	
+SHOE	Noun Object Tool 	noun-adj: Footwear 
+SHORT	Noun Object Tool 	1% noun: "Shorts" - short pants 
+SHOT	Neg Noun Object Tool Hostile Ngtv Strng Actv 	7% noun: A projectile or the process of launching a projectile; anything  sudden and/or forceful (2) 
+SHROUD	Neg Noun Object 	
+SHUTTER	Noun Bldgpt Object 	
+SIGHT	Noun Object Tool 	2% noun: Device for aiming 
+SIGNATURE	Noun Object COM Comnobj 	
+SILK	Noun Object Tool 	
+SINK	Noun Object Tool 	
+SKETCH	Noun Object COM Exprs Actv Comnobj 	
+SKI	Noun Object Vehicle Exprs 	
+SKIRT	Noun Object Tool 	
+SLACKS	Noun Object Tool S 	
+SLIME	Neg Noun Object 	
+SLIP	Noun Object Tool 	6% noun: Woman's garment 
+SLIP	Noun Object COM Tool 	6% noun: Piece of paper 
+SLIPPER	Noun Object Tool 	
+SNACK	Noun Object Food Undrst 	
+SNARE	Neg Noun Fetch Object 	
+SOFT	Noun Object Food 	3% idiom-noun: "Soft drink" - beverage 
+SOIL	Noun Object Natobj 	
+SPEAR	Noun Object Tool Hostile Milit PFREQ 	88% noun: A lance 
+SPOKE	Noun Object Tool 	1% noun: Brace extending between rim and hub of wheel 
+SPREADER	Noun Object Tool 	
+SPUR	Noun Object Tool 	
+STAGECOACH	Noun Object Vehicle 	
+STAIR	Noun Bldgpt Object 	
+STAIRWAY	Noun Bldgpt Object 	
+STAMP	Noun Object COM Econ* Comnobj 	
+STARTER	Noun Object Tool 	
+STATION	Noun Object Vehicle 	0% noun-idiom: "Station wagon" 
+STEAK	Noun Object Food 	
+STEAMER	Noun Object Vehicle 	
+STEEL	Noun Object Tool ECON Strng 	
+STEM	Noun Object Natobj 	
+STEREO	Noun Object Tool Exprs 	
+STICK	Noun Object Natobj 	39% noun: A bar-shaped object 
+STOPPER	Noun Object Tool 	
+STORY	Noun Bldgpt Object 	3% noun: One floor of a building 
+STOVE	Noun Object Tool 	
+STRAW	Noun Object Natobj 	
+STREAMER	Noun Object Exprs Tool 	
+STRING	Noun Object Tool 	
+STRIP	Noun Object Tool 	
+STRUCTURE	Noun Bldgpt PFREQ Object 	95% noun: A framework, organization or composition; also, a building 
+STUFF	Noun Object Natobj 	63% noun: Unspecified material, matter, things 
+STUFF	Noun Object Tool 	0% noun: "Stuffing" - something used to stuff 
+SUBMARINE	Noun Object Vehicle POLIT Milit 	
+SUGAR	Noun Object Food 	noun-adj: Sweet substance, pertaining to same 
+SUIT	Noun Object Tool 	40% noun: A set of clothes, armor, etc. worn together, includes bathing suit 
+SUITCASE	Noun Object Tool 	
+SUMMON	Noun Object COM Legal Power Strng Actv Comnobj 	
+SUPPER	Noun Object Food 	
+SWEET	Noun Object Food 	4% noun: "Sweets" - candies 
+SWITCH	Noun Object Tool 	
+SWORD	Noun Object Tool Milit Strng Hostile 	noun: The weapon 
+SYRUP	Noun Object Food 	
+TABLE	Noun Object Tool PFREQ 	96% noun: An article of furniture 
+TANK	Noun Object Vehicle 	
+TAP	Noun Object Tool 	
+TAXI	Noun Object Vehicle 	
+TEA	Noun Object Food 	
+TELEGRAM	Noun Object COM Comnobj 	
+TELEVISION	Noun Object COM Comnobj 	noun-adj: Mass (visual) medium 
+TESTAMENT	Noun Object COM Legal Relig Comnobj 	
+TESTIMONY	Noun Object COM Legal Comnobj 	
+TEXT	Noun Object COM Acad Comnobj 	
+TEXTILE	Noun Object Tool ECON 	
+THING	Noun Object Natobj 	noun: A tangible or intangible object, an entity, matter, state of affairs,  action, idea or emotion 
+THORN	Noun Object Natobj 	
+THRESHOLD	Noun Object Bldgpt 	
+TICKET	Noun Object COM Econ* Comnobj 	
+TIE	Noun Object Tool 	8% noun: A piece of clothing 
+TIMER	Noun Object Tool 	
+TIRE	Noun Object Tool 	63% noun: The wheel covering 
+TNT	Noun Object Tool Hostile Milit 	
+TOAST	Noun Object Food 	
+TOBACCO	Noun ECON Object Food Econ* 	
+TOILET	Noun Object Bldgpt 	
+TOWER	Noun Bldgpt Object 	
+TRACTOR	Noun Object Vehicle ECON Econ* 	
+TRAIN	Noun Object Vehicle 	23% noun: Railroad train and related carriers (camel, wagon--one each), retinue 
+TRANSOM	Noun Object Tool 	
+TRANSPORT	Noun Object Vehicle Actv 	
+TRAP	Neg Noun Object Tool Ngtv Strng 	57% noun: Device for capturing or ensnaring 
+TRAY	Noun Object Tool 	
+TREATISE	Pos Noun Object Legal Polit Doctr 	
+TREE	Noun Object Natobj 	noun-adj: Plant 
+TRIGGER	Noun Object Tool Hostile Milit 	
+TROPHY	Pos Noun Object Power 	
+TRUCK	Noun Object Vehicle 	
+TRUMPET	Noun Object Tool Exprs 	
+TRUNK	Noun Object Tool 	
+TYPEWRITER	Noun Object COM Comnobj 	
+UPSTAIRS	Noun Object Bldgpt 	
+URANIUM	Noun ECON POLIT Object Natobj Econ* 	
+VAN	Noun Object Vehicle 	
+VEGETABLE	Noun Object Food 	
+VEHICLE	Noun Object Vehicle 	
+VEIL	Noun Object Tool 	
+VERANDA	Noun Object Bldgpt 	
+VERSE	Noun Object COM Exprs Comnobj 	
+VESSEL	Noun Object Vehicle 	
+VIOLIN	Noun Object Tool Exprs 	noun: A stringed musical instrument 
+VITAMIN	Noun Object Food 	
+WAGON	Noun Object Vehicle 	
+WALL	Noun PFREQ Object Bldgpt 	97% noun-adj: Solid, upright structure for shelter, boundary, or barrier 
+WALLPAPER	Noun Object Tool 	
+WALNUT	Noun Object Food 	
+WARD	Noun POLIT PFREQ Object Bldgpt 	noun: A section of an institution 
+WARDROBE	Noun Object Tool 	
+WARRANT	Noun Object COM Legal Comnobj 	
+WASH	Noun Object Tool 	4% noun-adj: Laundry, pertaining to same 
+WASHER	Noun Object Tool 	
+WATCH	Noun Object Tool 	3% noun: A timepiece 
+WAX	Noun Object Tool 	
+WEAPON	Noun Object Tool POLIT Hostile Milit 	noun-adj: An instrument or tactic used for attack or defense in combat 
+WEAR	Noun Object Tool 	2% noun: Clothing 
+WEED	Neg Noun Object Natpro Hostile 	
+WELL	Noun Object Tool 	1% noun: Hole drilled into earth 
+WHEEL	Noun Object Tool 	
+WHIP	Neg Noun Object Tool Hostile Strng Ngtv 	38% noun: Instrument with long strips of leather bound together 
+WHISKY	Noun Object Food 	
+WILL	Noun Legal Object Comnobj 	0% noun: Legal document 
+WINDOW	Noun Object Tool 	noun: Opening in the wall of a building or the side of a vehicle for purposes  of ventilation and/or lighting 
+WINDSHIELD	Noun Object Tool 	
+WINE	Noun Object Food 	noun: The fermented juice of various fruits or plants 
+WIRE	Noun Object Tool 	
+WOOD	Noun Object Natpro 	54% noun: Lumber, fuel, the material 
+ZINC	Noun ECON Object Tool Econ*  	

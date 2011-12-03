@@ -1,0 +1,442 @@
+word	tags	comments
+ACCOUNT	Noun ECON Econ* Comform 	26% noun: A bank account, charge account, etc.--a business relation; a  record of business transactions 
+ACCOUNT	Modif ECON Econ* Work 	3% noun-adj: "Accounting"--keeping, analyzing or settling commercial accounts 
+AFFORD	IAV SUPV Complt Econ* Strng 	74% verb: To bear or meet the expense of 
+AGENCY	Noun HU COLL POLIT ECON Econ* Power 	noun: A commercial or other bureau furnishing some form of service for  the public, the office of an agent. 
+AGRICULTURAL	Modif ECON Doctr Econ* 	adjective: Having to do with agriculture. 
+AGRICULTURE	Noun POLIT ECON Doctr Econ* 	
+ALUMINUM	Noun Object ECON Tool Econ* 	
+ANTI-TRUST	Modif POLIT ECON Doctr Econ* 	
+ASSOCIATE	Pos Noun HU ECON Econ* Pstv Actv Role 	33% noun-adj: A partner or peer 
+AUCTION	Noun ECON Ritual Econ* 	
+AUDITOR	Noun HU ECON Econ* Power Legal Role 	
+BABY	Noun HU Econ* Role 	3% idiom-noun: "Baby sitter"--a person given charge of a child 
+BACKER	Pos Noun HU Econ* Pstv Strng Role 	
+BAKER	Noun HU Econ* Role 	
+BANK	Noun HU COLL ECON Econ* 	62% noun: Financial institution . . . the business of finance ('banking') 
+BANKER	Noun HU ECON Econ* Role 	
+BARBER	Noun HU Econ* Role 	
+BARN	Noun PLACE Social Econ* 	
+BELONG	Noun Object Tool Econ* 	2% noun: "Belongings"--possessions 
+BENEFIT	Pos Noun ECON COM Comform Econ* Pstv 	50% noun: Incremental monetary payments 
+BET	Noun ECON COM Comform Econ* Actv 	25% noun: A wager, a risk 
+BET	IAV SUPV Try Econ* Actv 	71% verb: To wager or risk 
+BID	Noun POLIT ECON COM Econ* Actv Comform 	
+BID	IAV SUPV Econ* Actv Comform 	
+BILL	Noun Object ECON COM Econ* Comnobj 	53% noun: Statement of money owed for goods or services 
+BLUE	Noun HU COLL ECON Econ* 	11% noun-idiom: "Blue cross"--insurance company 
+BOARD	Noun ECON COM Comform Econ* 	4% noun: Provision of food for pay 
+BOARD	Modif Comform Econ* 	7% adj: 'boarding,' pertaining to food and lodging 
+BOARDER	Noun HU Econ* Role 	
+BOATSWAIN	Noun HU Econ* Role 	
+BONUS	Pos Noun ECON Pstv Econ* Comform 	
+BOOKKEEPING	Noun Means Econ* 	
+BORROW	Modif Econ* Exch 	
+BORROW	IAV SUPV Exch Econ* Weak 	
+BOSS	Noun HU ECON Econ* Power Strng Actv Role 	noun: Person in charge of something 
+BOUGHT	DAV SUPV ED Work Actv Econ* 	verb: Past tense of "buy" - purchased 
+BRANCH	Noun HU COLL POLIT ECON Econ* Polit* 	21% noun: Political#economic subdivision 
+BRAND	Noun ECON COM Comform Econ* 	
+BROKE	Neg Modif ECON Vice Econ* Ngtv 	3% adjective: Destitute 
+BROKER	Noun HU ECON Econ* Role 	
+BUDGET	Noun ECON Means Econ* 	
+BUILDER	Noun HU Econ* Role 	
+BUSINESS	Noun ECON Doctr Econ* 	82% noun-adj: Economic or political activities, either one's own trade  or occupation, the business community at large, or specific transactions 
+BUSINESSMAN	Noun HU MALE ECON Econ* Role 	
+BUSINESSMEN	Noun HU MALE ECON S Econ* Role 	
+BUTCHER	Noun HU Econ* Role 	
+BUY	DAV SUPV Exch Econ* Actv 	verb: To purchase 
+BUY	Pos Noun ECON Virtue Econ* Pstv 	0% noun: A bargain 
+CAFE	Noun PLACE Social Econ* 	
+CANNERY	Noun HU COLL ECON Econ* 	
+CAPITAL	Noun POLIT Polit* ECON Econ* Strng PFREQ Virtue 	92% noun: Wealth, source of profit, moneyed interests; a center of government (11) 
+CAPITALISM	Noun ABS Abs* POLIT ECON Doctr Econ* Polit* 	
+CAREER	Noun Means Econ* 	noun: General course of action or development of some phase of one's life,  especially the occupational. 
+CARPENTER	Noun HU Econ* Role 	
+CASH	Noun Object COM ECON Econ* Comnobj 	
+CASH	IAV SUPV Exch Econ* 	
+CENT	Noun Object COM ECON Econ* Comnobj 	
+CHARGE	Noun COM ECON Econ* Comform 	15% noun-adj: Cost, fee, liability to pay, system of deferred payment 
+CHARGE	DAV SUPV Exch Econ* Actv 	13% verb: To ask payment, to buy with deferred payment 
+CHARITY	Pos Noun Virtue ECON Econ* Pstv 	
+CHARTER	IAV SUPV Work Econ* 	
+CHEAP	Neg Modif EVAL ECON Vice Econ* Ngtv Weak 	
+CHEAT	Noun HU Econ* Role 	
+CHECK	Noun Object COM ECON Econ* Comnobj 	41% noun: A bank money order, a bill 
+CHEQUE	Noun Object COM Econ* ECON Comnobj 	
+CLEAR	Noun PLACE Social Econ* ECON 	0% idiom-noun: "Clearing house"--place where mutual claims are settled 
+CLERK	Noun HU Econ* Role 	
+CLIENT	Noun HU ECON Econ* Role 	
+COACHMAN	Noun HU MALE Econ* Role 	
+COIN	Noun Object COM ECON Econ* Comnobj 	
+COLLECTIVE	Noun HU COLL ECON Econ* Strng 	
+COMMERCE	Noun Doctr ECON Econ* Actv 	
+COMMERCIAL	Modif Doctr ECON Econ* Actv 	
+COMMODITY	Noun ECON Econ* Object Tool 	
+COMMON	Noun HU COLL POLIT ECON Econ* 	18% noun-idiom: "Common market"--the eec 
+COMMONER	Neg Noun HU POLIT Econ* Subm Ngtv Weak Psv Role 	
+COMMUNISM	Noun ABS Abs* POLIT ECON Doctr Econ* Polit* 	
+COMMUNIST	Noun HU POLIT Econ* Polit* Role 	noun-adj: Anyone or anything characterized by communism 
+COMPANY	Noun HU COLL ECON Econ* Strng 	78% noun-adj: A body of men joined in a common purpose, usually economic 
+COMPENSATE	IAV Pos SUPV Work Econ* Strng Actv Pstv 	
+CONCERN	Noun HU COLL ECON Econ* 	1% noun: Business concern--commercial enterprise 
+CONSULTANT	Noun HU ECON Econ* Role 	
+CONSUME	DAV SUPV Finish Econ* Actv 	
+CONSUMER	Noun HU ECON Econ* Role 	
+CONSUMPTION	Noun ECON Econ* Actv Exch 	
+CONTRACT	Noun COM ECON Econ* Legal Strng PFREQ Comform 	95% noun-adj: "Contract," "contracting"--a legally binding agreement;  the making of same (1) 
+CONTRIBUTE	IAV Pos SUPV Work Affil Actv Econ* PFREQ Pstv Strng 	97% verb: To give or add 
+CONTROLLER	Noun HU Econ* Power Strng Role 	
+COOK	Noun HU Econ* Role 	9% noun: One who cooks 
+COOPERATIVE	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	68% noun-adj: An organization for the benefit of producers or consumers 
+COPPER	Noun ECON Object Natobj Econ* 	
+CORP	Noun HU COLL ECON Econ* 	
+CORPORATION	Noun HU COLL ECON Econ* Strng 	
+COST	Neg Noun COM ECON Quan Econ* Ngtv 	67% noun-adj: Expense, outlay, sacrifice, loss, penalty 
+COST	DAV Neg SUPV Exch Ngtv Econ* 	33% verb: To require or result in an expenditure 
+COSTLY	Neg LY Econ* Ngtv Vice 	adj: Expensive 
+COVERAGE	Noun COM Comform ECON Econ* 	
+CRAFT	Noun Doctr ECON Econ* 	
+CREDIT	Noun COM Comform ECON Econ* 	66% noun-adj: Deferred payment, borrowing, financial trust 
+CREDIT	IAV SUPV Exch Econ* 	9% verb: To place in an account 
+CURRENCY	Noun Object COM ECON Econ* Comnobj 	
+CUSTOM	Noun ECON POLIT COM Econ* Comform 	43% noun-adj: Duties on the import and export of goods 
+CUSTOMER	Noun HU ECON Econ* Role 	
+DEAL	Noun ECON POLIT Ritual Econ* Polit* 	3% idiom-noun: "New deal"--political program 
+DEALER	Noun HU ECON Econ* Role 	
+DEBT	Noun Means ECON Econ* Weak 	
+DEFICIT	Neg Noun Vice ECON Econ* Ngtv Weak 	
+DENTIST	Noun HU Econ* Role 	
+DEPARTMENT	Noun PLACE Social ECON Econ* 	4% noun-idiom: Department store 
+DEPRECIATION	Neg Noun ECON Ngtv Psv Decr Econ* 	
+DEPRESSION	Neg Noun Econ* Ngtv Weak Vice 	77% noun: Economic decline 
+DESIGNER	Noun HU Econ* Role 	
+DISCOUNT	Noun Quan ECON Econ* Psv 	
+DISTRIBUTOR	Noun HU ECON Econ* Role 	
+DOCTOR	Noun HU Econ* PFREQ Role 	96% noun: A practitioner of medicine 
+DOLLAR	Noun Object ECON POLIT COM Econ* Comnobj 	noun-adj: Monetary unit 
+DUE	Noun COM ECON Econ* Comform 	3% noun: Dues--a regular fee or charge payable at specific intervals 
+EARN	IAV SUPV Work Exch Econ* Strng Actv 	72% verb: To gain by dint of work 
+EARN	Noun ECON Econ* Strng Exch Actv 	28% noun-adj: "Earning(s)" income, or having to do with same 
+EARN	Noun ECON Econ* Exch Strng Actv 	0% adj: "Earned" 
+EARNER	Noun HU Econ* Strng Role 	
+ECONOMIC	Modif ECON POLIT Doctr Econ* 	adjective: Pertaining to the allocation of resources 
+ECONOMICAL	Modif Virtue ECON Econ* 	
+ECONOMICS	Noun Doctr Acad Econ* 	
+ECONOMY	Noun ECON POLIT Doctr Econ* 	
+EDITOR	Noun HU Econ* Power Strng Role 	
+EMPLOY	IAV SUPV Intrel Econ* Power Strng 	
+EMPLOYEE	Noun HU ECON Econ* Subm Weak Role 	
+EMPLOYER	Noun HU ECON Power Econ* Strng Role 	noun: One who employs labor 
+EMPLOYMENT	Noun ECON POLIT Doctr Econ* 	noun: State of being employed 
+ENGINEER	Noun Econ* Role HU 	
+ENROLLMENT	Noun Comform Econ* 	
+ENTERPRISE	Noun HU COLL ECON Econ* Actv Strng 	
+EQUITY	Pos Noun COM Comform ECON Econ* Legal Pstv 	
+ESTABLISHMENT	Noun HU COLL POLIT ECON Econ* Polit* Ovrst 	
+ESTIMATE	Noun COM Comform Econ* 	
+EXCHANGE	Noun ECON POLIT COM Comform Econ* Polit* Actv 	94% noun-adj: Giving of like for like, dialogue, trade, commerce 
+EXCHANGE	IAV SUPV Exch Actv Econ* 	6% verb: To give like for like, to trade 
+EXCHEQUER	Noun ECON Econ* PLACE Social 	
+EXECUTIVE	Noun HU POLIT ECON Econ* Power Strng Role 	
+EXPEND	IAV SUPV Exch Econ* Actv 	
+EXPENDITURE	Noun ECON POLIT COM Comform Econ* 	
+EXPENSE	Neg Noun COM Comform ECON Econ* Ngtv PFREQ 	90% noun: Cost, price of exchange 
+EXPENSIVE	Neg Modif ECON Econ* Ngtv Vice 	
+EXTRAVAGANT	Neg Modif Vice EVAL Econ* Ngtv Ovrst 	
+FACTORY	Noun PLACE Social ECON Econ* 	
+FARE	Noun COM Comform Econ* 	
+FARM	Noun PLACE ECON Econ* Social 	78% noun-adj: Facility for raising crops or animals 
+FARM	IAV SUPV Work Econ* 	12% verb: To operate such a facility 
+FARM	Noun ECON Econ* Work 	10% noun-adj: "Farming" - operation of such facilities 
+FARMER	Noun HU ECON Econ* Role 	noun: One who farms 
+FEE	Noun COM Comform ECON Econ* 	
+FILL	Noun PLACE Social Econ* 	0% noun-idiom: "Filling station"--gas station 
+FINANCE	Noun Doctr ECON Econ* Strng 	
+FINANCE	IAV SUPV Exch Econ* Strng 	
+FINANCIAL	Modif Doctr ECON Econ* 	adjective: Pertaining to monetary matters or situations 
+FINE	Neg Noun COM Comform ECON Econ* Legal Ngtv 	0% noun: A violator's fee 
+FINE	IAV Neg SUPV Exch Hostile Legal Econ* Ngtv Strng Actv 	0% verb: To levy a fee in punishment 
+FIRE	DAV Neg SUPV Econ* Hostile Ngtv Strng Actv Exch 	8% verb: To terminate employment 
+FIRM	Noun HU COLL ECON Econ* 	15% noun: A partnership or unincorporated association for carrying out business 
+FISCAL	Modif ECON POLIT Doctr Econ* 	
+FISH	Modif ECON Econ* Work 	3% noun-adj: "Fishing"--catching fish 
+FLYER	Noun HU Econ* Role 	
+FORTUNE	Noun Object Tool ECON Econ* Strng 	35% noun: Wealth, accumulated riches 
+FOUNDATION	Noun Doctr ECON Strng Econ* 	
+FREIGHT	Noun ECON Econ* Object Tool 	
+FUND	Noun Object Tool ECON Econ* 	66% noun-adj: A sum of money, usually earmarked 
+FUND	Handels Means Econ* 	34% idiom-noun: "Trust fund"--handled by "trust" 
+GAIN	Pos Noun Goal ECON Econ* Pstv Strng 	17% noun: Profit, advantage, progress 
+GAMBLE	Neg Noun Econ* Ngtv Actv Undrst Ritual 	
+GAMBLE	IAV Neg SUPV Try Econ* Ngtv Actv Undrst 	
+GARDENER	Noun HU Econ* Role 	
+GOLD	Pos Noun ECON Pstv Object Natobj Econ* 	
+GOODS	Noun Object Tool ECON Econ* 	noun: Property, possessions, products 
+GRANT	Noun Object Tool ECON Econ* 	29% noun: Something which has been promised, land, money 
+GROSS	Modif Quan Econ* EVAL Ovrst 	
+GROSS	IAV SUPV Complt Econ* 	
+GROWER	Noun HU Econ* Strng Actv Role 	
+GUIDE	Pos Noun HU Econ* Strng Actv Pstv Role 	32% noun: Someone or something that directs 
+GUILD	Noun HU COLL ECON Affil Econ* Strng 	
+HANGER	Noun HU Econ* Role 	
+HARBOR	Noun PLACE Aquatic ECON Econ* 	
+HARVEST	Noun Object Food ECON Econ* 	
+HARVEST	IAV SUPV Complt Econ* Actv 	
+HIRE	IAV SUPV Exch Econ* Power Actv Strng 	
+HOLE	Neg Modif Vice Econ* Ngtv Weak 	2% idiom-adj: "In the hole"--in the red, suffering a deficit 
+HOTEL	Noun PLACE Social ECON Econ* 	noun-adj: Establishment for accommodation of travelers 
+IMPORT	IAV SUPV Exch Actv Econ* 	
+INC.	Modif ECON Econ* Legal HU COLL 	
+INCOME	Noun COM Comform ECON Econ* 	79% noun-adj: Revenue received periodically 
+INCORPORATE	Modif Econ* HU COLL 	
+INDUSTRIAL	Modif Doctr ECON Econ* Strng 	
+INDUSTRIALIZE	IAV SUPV Work Econ* Strng 	
+INDUSTRY	Noun Doctr ECON Econ* Strng 	noun-adj: Any branch of trade, business, or manufacture 
+INSURANCE	Noun Means ECON Econ* 	noun: The system or act of insuring by contract against loss 
+INSURE	IAV SUPV Exch Econ* 	
+INTEREST	Noun COM Comform ECON Econ* 	4% noun: The cost of borrowing money 
+INVENTORY	Noun Means ECON Econ* Strng 	
+INVEST	IAV SUPV Exch Econ* Actv 	
+INVESTMENT	Noun COM Comform ECON Econ* Actv 	
+INVESTOR	Noun HU Econ* Actv Role 	
+JANITOR	Noun HU Econ* Role 	
+JOB	Noun Means ECON Econ* 	noun: Piece of work, task, occupation 
+JOURNALIST	Noun HU Econ* Role 	
+LAB	Noun Bldgpt Acad Econ* Object 	
+LABOR	Noun HU COLL ECON Econ* Strng Actv 	69% noun: Hard work, effort, wage workers 
+LABOR	IAV SUPV Work Econ* Strng Actv 	2% verb: To do hard work 
+LABORATORY	Noun ECON Acad Econ* Object Bldgpt 	
+LABORER	Noun HU ECON Econ* Subm Role 	
+LAID	IAV Neg SUPV Intrel Econ* Power Hostile Ngtv 	28% idiom-verb: "Laid off"--discharged employees 
+LANDLORD	Noun HU ECON Econ* Power Strng Role 	
+LAY	IAV Neg SUPV Intrel Econ* Hostile Power Ngtv Strng Actv 	1% idiom-verb: "Lay off"--discharge employees 
+LEDGER	Noun Object COM ECON Econ* Comnobj 	
+LEND	DAV SUPV Exch Affil Econ* Actv 	
+LENT	DAV SUPV ED Exch Affil Econ* Actv 	
+LIQUIDATE	IAV Neg SUPV Intrel Ngtv Strng Actv Econ* Hostile 	
+LIQUIDATION	Neg Noun Ngtv Strng Actv ECON Econ* Hostile Vice 	
+LIVE	Noun Means ECON Econ* 	13% noun-adj: Pertaining to the process or conditions of life, livelihood--  "he makes a good living," "my living conditions" 
+LIVELIHOOD	Noun Means ECON Econ* 	
+LIVESTOCK	Noun ANI ECON Econ* 	
+LOAN	Noun Object COM ECON Econ* PFREQ Comnobj 	90% noun: Something lent or furnished on condition of being returned,  especially a sum of money 
+LOAN	DAV SUPV Exch Econ* Actv 	10% verb: The act of lending, a grant of the temporary use of something 
+LUXURY	Pos Noun Virtue ECON Econ* Pstv 	
+MAID	Noun HU Female Econ* Role Subm 	
+MANAGEMENT	Noun HU COLL ECON Econ* Power Strng Actv 	
+MANAGER	Noun HU ECON Econ* Power Strng Role 	
+MANAGERIAL	Modif ECON Econ* Power Strng HU Role 	
+MANUFACTURE	IAV SUPV Work Econ* Actv Strng 	
+MANUFACTURER	Noun HU Econ* Strng Role 	
+MARKET	Noun PLACE Social ECON Econ* 	43% noun-adj: A place where goods are bought and sold, trade, business,  demand for a commodity 
+MARKET	Noun Ritual ECON Econ* Actv 	14% noun-adj: "Marketing"--the activity of buying, or that of selling 
+MECHANIC	Noun HU Econ* Role 	
+MERCHANDISE	Noun Object Tool ECON Econ* 	
+MERCHANT	Noun HU ECON Econ* Role 	noun: Tradesman 
+METAL	Noun Object Natobj Econ* 	
+MIDDLE-CLASS	Modif ECON POLIT Econ* Polit* HU COLL 	
+MILL	Noun PLACE Social ECON Econ* 	25% noun-adj: "Mill"--tool, building, or factory 
+MILL	Noun Econ* Actv Work 	0% noun-adj: "Milling"--work done with or in a mill 
+MILLER	Noun HU ECON Econ* Role 	
+MINE	Noun PLACE Social ECON Econ* 	32% noun-adj: A pit or excavation from which ores, precious stones, etc.  are extracted 
+MINE	Modif ECON Econ* Work 	1% noun-adj: "Mining"--the activity of extracting ores, etc. from a mine;  "mined"--extracted from a mine 
+MINER	Noun HU ECON Econ* Role 	
+MINERAL	Noun Object Natobj Econ* 	
+MONETARY	Modif Object ECON Econ* Comnobj 	adjective: Pertaining to money or finance 
+MONEY	Noun Object COM ECON Econ* Comnobj 	noun-adj: Currency, medium of exchange, wealth 
+MONOPOLY	Noun HU COLL ECON Econ* Strng Power 	
+MORTGAGE	Noun COM Comform ECON Econ* 	
+MORTGAGE	IAV SUPV Exch Econ* 	
+MOTEL	Noun PLACE Social Econ* 	
+NEWSMEN	Noun HU S Econ* Role 	
+NEWSPAPERMAN	Noun HU Econ* Role 	
+NICKEL	Noun Object Natobj Econ* 	
+NURSE	Noun HU Econ* Role 	63% noun: A medical aid, usually female 
+OCCUPATION	Noun Doctr ECON Econ* 	
+OCCUPATIONAL	Modif Doctr ECON Econ* 	
+OFFICE	Noun PLACE Social Econ* 	60% noun-adj: Room or building where business is transacted; a branch  of an organization (8) 
+OIL	Noun ECON Object Natobj Econ* 	
+OPERATOR	Noun HU Econ* Role Actv 	
+OUTPUT	Noun ECON Econ* Strng Actv Object Tool 	
+OUTPUT	IAV SUPV Complt Econ* Strng Actv 	
+OVERSEER	Noun HU Econ* Power Strng Role 	
+OWE	IAV Neg SUPV Exch Econ* Ngtv Weak 	
+OWN	DAV SUPV Rel Econ* Strng 	6% verb: To possess 
+OWNERSHIP	Noun Doctr ECON Econ* Strng 	
+PARTNER	Pos Noun HU ECON Affil Econ* Pstv Strng Role 	noun: One of two or more associated as joint principals in carrying on  some action, etc. 
+PARTNERSHIP	Pos Noun HU COLL ECON Pstv Strng Affil Econ* 	
+PASTURE	Noun PLACE Land Econ* 	
+PATRON	Pos Noun HU ECON Econ* Power Pstv Strng Role 	
+PATRONAGE	Pos Noun Doctr ECON Econ* Power Pstv Strng 	
+PAY	DAV SUPV Exch Econ* Actv PFREQ 	80% verb: To give or yield as recompense or return 
+PAY	Noun COM ECON Econ* Comform 	4% noun-adj: Remuneration, return 
+PAY	Modif Econ* Exch 	3% adj: "Paid"--receiving pay, hired, as "a paid hand" 
+PAYER	Noun HU ECON Econ* Role 	
+PAYMENT	Noun Means ECON Econ* 	noun: The act of paying, also that which is paid. 
+PAYROLL	Noun Means ECON Econ* 	
+PEASANT	Noun HU POLIT ECON Subm Econ* Weak Role 	noun-adj: A tiller of the soil, rustic 
+PENSION	Noun Object COM ECON Econ* Comnobj 	
+PERSONNEL	Noun HU COLL ECON S Econ* 	
+PIECE	Noun Object COM Econ* Comnobj 	3% noun: A coin 
+PILOT	Noun HU Econ* Role 	
+PLANER	Noun HU Econ* Role 	
+PLANNER	Noun HU ECON Econ* Role 	
+PLANT	Noun PLACE Social ECON Econ* 	26% noun-adj: The buildings, equipment, etc., for a particular operation  or institution 
+PLANTATION	Noun PLACE Social ECON Econ* 	
+PLANTER	Noun HU ECON Econ* Role 	
+PLOW	Noun Object Tool Econ* 	
+PLOW	IAV SUPV Work Actv Econ* 	
+PLUMBER	Noun HU ECON Econ* Role 	
+POOR	Neg Modif Vice Ngtv Weak Econ* Psv 	30% adj: Lacking material goods 
+POOR	Neg Modif Vice EVAL Econ* Ngtv Weak Psv 	3% adj: "Poorer"--comparative of senses 1 and 2 
+POOR	Neg Modif Vice EVAL Econ* Ngtv Weak Psv 	0% adj: "Poorest"--superlative of senses 1 and 2 
+PORT	Noun PLACE ECON Econ* Land 	
+PORTER	Noun HU Econ* Subm Role 	
+POSSESSION	Noun Econ* ECON Rel 	
+POST	Noun ECON POLIT Econ* HU Role 	14% noun: A position, as of employment 
+POVERTY	Neg Noun Vice Econ* ECON POLIT Ngtv Weak Psv 	noun: Quality or state of being poor--need, destitution 
+PRECIOUS	Pos Modif Virtue EVAL Econ* Pstv Strng 	
+PRESS	Noun HU COLL ECON COM Econ* 	30% noun-adj: The body of newsmen, news media 
+PRICE	Noun COM Comform ECON Econ* PFREQ 	noun-adj: Cost--usually in money but figuratively in sacrifice (3), of  or pertaining to determining a price 
+PROCEED	Noun Goal ECON Econ* 	3% noun: "Proceeds"--that which results or accrues from some action 
+PRODUCE	Noun Object Food ECON Econ* 	11% noun: Products (agricultural) 
+PRODUCER	Noun HU ECON Econ* Role 	
+PRODUCT	Noun ECON Econ* Object Tool 	noun: Something produced 
+PRODUCTIVE	Pos Modif Virtue Econ* Pstv Strng 	
+PRODUCTIVITY	Pos Noun Virtue ECON Econ* Pstv 	
+PROFESSION	Noun HU COLL ECON Econ* 	noun: Technically specialized vocation 
+PROFESSIONAL	Modif EVAL ECON Econ* HU Role 	
+PROFIT	Pos Noun Goal ECON Econ* Pstv Strng 	
+PROFIT	IAV Pos SUPV Exch Pstv Strng Econ* 	
+PROFITABLE	Pos Modif Virtue Econ* Pstv Strng 	
+PROGRAMMER	Noun HU Econ* Role 	
+PROMOTE	IAV SUPV Intrel Econ* Power Strng Actv 	
+PROMOTION	Noun ECON Econ* Incr Strng 	
+PROPERTY	Noun PLACE Land ECON Econ* 	noun-adj: Real estate, possessions 
+PROPRIETOR	Noun HU ECON Econ* Power Legal Strng Role 	
+PUBLISH	IAV SUPV Econ* Actv Comform 	
+PURCHASE	Noun ECON Econ* Comform 	
+PURCHASE	IAV SUPV Exch Actv Econ* 	
+RAISE	Noun Incr ECON Econ* 	3% noun: An increase, a salary increase 
+RANCH	Noun PLACE Social ECON Econ* 	
+RANCHER	Noun HU Econ* Role 	
+RANGER	Noun HU Econ* Role 	
+REAL	Noun PLACE ECON Econ* Social 	0% idiom-noun-adj: "Real estate"--property in the form of buildings and land 
+REFUND	Noun COM Comform ECON Econ* 	
+REFUND	IAV SUPV Exch Econ* Actv 	
+RENT	Noun COM ECON POLIT Comform Econ* 	57% noun-adj: Payment for temporary possession or use of something 
+RENT	DAV SUPV Exch Econ* 	43% verb: To hire 
+RENTAL	Noun Means ECON Econ* 	
+REPAID	IAV SUPV Exch ED Econ* Actv 	
+REPAY	IAV SUPV Exch Econ* Actv 	
+REPORTER	Noun HU Econ* Role 	
+RESTAURANT	Noun PLACE Social ECON Econ* 	
+RETAIL	Noun Means ECON Econ* 	
+RETAIL	IAV SUPV Exch Econ* 	
+RETURN	Noun Goal ECON Econ* 	3% noun: Yield, profit 
+REVENUE	Noun Means ECON POLIT Econ* Strng 	
+REWARD	Pos Noun Goal ECON Econ* Pstv Strng 	33% noun: Compensation, profit, return 
+RICH	Pos Modif Virtue ECON Econ* Pstv Strng 	61% noun-adj: Wealthy, affluent; those who are wealthy or affluent (5) 
+RICH	Pos Modif Virtue Econ* Pstv Strng 	10% adj: "Richer," comparative 
+RICH	Pos Modif Virtue Econ* Pstv Strng 	1% adj: "Richest," superlative 
+RICH	Pos Noun Object ECON Econ* Power Pstv Strng Comnobj 	11% noun: Monetary wealth, "riches" 
+ROOFER	Noun HU ECON Econ* Role 	
+ROOM	Noun Means Econ* 	1% idiom-noun: 'room and board'--referring to living and eating expenses 
+ROOM	Noun PLACE Social ECON Econ* 	0% adj: "Rooming"--boarding 
+RUN	IAV SUPV Incr Econ* Actv 	0% verb: 'run up (debts)'--accumulate 
+SALARY	Noun Means ECON Econ* 	
+SALE	Noun Means ECON Econ* 	
+SALESMAN	Noun HU MALE ECON Econ* Role Actv 	
+SALESMANSHIP	Noun Means Econ* Actv 	
+SALESMEN	Noun HU MALE ECON S Econ* Role Actv 	
+SAVE	Noun Means ECON Econ* 	15% noun-adj: "Savings" - accumulated wealth, advantage 
+SEAMAN	Noun HU Econ* Role 	
+SEAMEN	Noun HU S Econ* Role 	
+SECRETARY	Noun HU ECON Econ* Subm Role 	43% noun: Office helper 
+SECURITY	Pos Noun Econ* Pstv Object Comnobj 	5% noun: Bonds etc., issues of capital surety, or generalized body of issues 
+SECURITY	Noun Means ECON Econ* HU COLL 	5% idiom-noun: "Security council"--organ of the united nations 
+SECURITY	Noun POLIT Polit* Econ* Means 	49% idiom-noun: "Social security"--handled by "social" 
+SELL	DAV SUPV Exch Econ* Actv PFREQ 	95% verb: To offer for sale, dispose of for a price, deal in; persuade (infrequent) 
+SELL	Noun Econ* Actv Exch 	5% noun-adj: "Selling"--the act of offering for sale, persuading a customer, etc. 
+SELLER	Noun HU Econ* Role 	
+SERVANT	Noun HU ECON Econ* Subm Role 	noun: A person employed in the service of another person or a cause 
+SERVE	IAV SUPV Intrel Econ* Subm Actv Weak 	82% verb: To work for, be of assistance, or do one's duty; to answer the  purpose of, function as (17) 
+SHIPMENT	Noun Means ECON Econ* 	
+SHOP	Noun PLACE Social ECON Econ* 	54% noun-adj: A small store 
+SHOP	DAV SUPV Exch Econ* Actv 	17% verb: To look for articles in stores with intent to buy 
+SHOP	Noun Means ECON Econ* Actv 	29% noun-adj: "Shopping"--the act of one who shops 
+SLAVE	Noun HU POLIT ECON Econ* Subm Weak PFREQ Role 	81% noun-adj: One who is the property of another 
+SLAVERY	Noun Doctr ECON POLIT Econ* Subm 	
+SLUM	Noun PLACE ECON Econ* Region 	
+SOCIAL	Noun ECON POLIT Doctr Econ* 	26% idiom-noun: "Social security"--government insurance system 
+SOCIAL	Noun HU POLIT ECON Econ* Role 	5% idiom-noun: "Social work(er)"--work for (or one who works toward) the  betterment of social conditions in the community 
+SOLD	DAV SUPV Exch ED Actv Econ* 	82% verb: Past tense of "sell" - effected a sale, exchanged for money 
+SPECIALIST	Noun HU Econ* Role 	
+SPEND	DAV SUPV Exch Econ* PFREQ 	94% verb: To consume, especially time or money 
+SPEND	Noun Econ* Actv Exch 	4% noun-adj: "Spending"--disbursing money 
+SPONSOR	Noun HU ECON Econ* Role Actv 	
+STAMP	Noun Object COM Econ* Comnobj 	
+STORE	Noun PLACE Social ECON Econ* PFREQ 	87% noun-adj: Establishment where merchandise is sold or kept 
+STORE	Noun Econ* ECON Means 	4% noun: Supplies 
+STRIKE	Noun Ritual ECON Econ* Hostile Actv Strng 	19% noun: A work stoppage to secure some demand 
+SUBSCRIBER	Noun HU Econ* Role 	
+SUPPLIER	Noun HU ECON Econ* Role Strng 	
+SUPPLY	Noun Econ* ECON Virtue Strng 	64% noun: Provisions 
+SURGEON	Noun HU Econ* Role 	
+SURPLUS	Noun Strng Econ* ECON Virtue 	
+SWEEP	Noun Econ* Travl Actv 	
+SYNDICATE	Noun HU COLL ECON Econ* 	
+TAILOR	Noun HU Econ* Role 	
+TAX	Noun Means ECON POLIT Econ* 	71% noun-adj: Payment of money to government for public services, etc. 
+TAX	Noun COM ECON POLIT Comform Econ* 	13% noun-idiom: "Income tax" 
+TAX	Noun COM ECON POLIT Comform Econ* 	10% noun-idiom: "Social security tax" 
+TAXABLE	Modif Means Econ* 	
+TAXATION	Noun Means ECON POLIT Econ* 	
+TAXPAYER	Noun HU POLIT ECON Econ* Role 	
+TEAMSTER	Noun HU ECON Econ* Role 	
+TECHNICAL	Modif Doctr ECON Econ* 	adj: Complex and specialized 
+TECHNICIAN	Noun HU Econ* Role 	
+TECHNOLOGICAL	Modif Doctr ECON Econ* 	
+TECHNOLOGY	Noun Doctr ECON Econ* 	
+TELLER	Noun HU ECON Econ* Role 	
+THERAPIST	Noun HU Econ* Role 	
+TICKET	Noun Object COM Econ* Comnobj 	
+TOBACCO	Noun ECON Object Food Econ* 	
+TOLL	Noun COM Comform ECON Econ* 	
+TOURIST	Noun HU ECON Econ* Exprs Role 	
+TRACTOR	Noun Object Vehicle ECON Econ* 	
+TRADE	Noun Doctr ECON Econ* PFREQ 	82% noun-adj: The buying and selling of goods, commerce, exchange; or  particular classes of occupational skills--'the building trades,' etc. (6) 
+TRADE	IAV SUPV Exch Econ* Actv 	14% verb: To buy, sell, exchange 
+TRADER	Noun HU ECON Econ* Role 	
+TREASURE	Pos Noun Econ* ECON Pstv Virtue 	
+TREASURER	Noun HU ECON Econ* Power Role 	
+TREASURY	Noun PLACE Social POLIT ECON Econ* 	
+TRUST	Noun Means ECON Econ* 	28% idiom-noun: "Trust fund" 
+TRUST	Noun HU COLL Econ* Power Strng 	0% noun: A monopolistic organization, usually economic 
+UNDERTAKER	Noun HU Econ* Role 	
+UNEMPLOYMENT	Noun Econ* ECON POLIT Vice Negate 	
+UNION	Noun HU COLL POLIT ECON Econ* Polit* 	18% noun-adj: A labor organization 
+URANIUM	Noun ECON POLIT Object Natobj Econ* 	
+URBANIZATION	Noun Doctr ECON POLIT Econ* 	
+USE	Modif Econ* Vice 	0% adj: "Used"--second hand 
+USER	Noun HU Econ* Role 	
+UTILITY	Noun Means ECON Econ* Strng 	
+VALUABLE	Pos Modif Virtue EVAL Econ* Pstv 	
+VALUATION	Noun ECON Means Econ* 	
+VOCATIONAL	Modif Doctr ECON Econ* 	
+WAGE	Noun Means ECON Econ* 	
+WAITER	Noun HU Econ* Subm Role 	
+WALK	Noun Econ* HU Role 	0% idiom-noun: 'walk of life'--one's occupation or position 
+WASTE	Neg Noun ECON Ngtv Econ* Weak Vice 	34% noun-adj: Anything unproductive or improperly utilized 
+WASTE	IAV Neg SUPV Work Ngtv Weak Econ* 	66% verb: To use inefficiently or unproductively 
+WEALTH	Noun Virtue ECON Econ* Power Strng PFREQ 	96% noun: Capital and/or material resources, riches 
+WEALTHY	Modif Virtue ECON Econ* Strng 	
+WELFARE	Noun HU COLL POLIT ECON Econ* Polit* 	44% noun-adj: Political-economic organizations of various kinds 
+WHITE	Modif Econ* ECON POLIT HU Role 	1% idiom-adj: 'white collar' 
+WHOLESALE	Noun Comform ECON Econ* 	
+WIN	Noun Goal ECON Econ* Strng 	5% noun: "Winnings" - profit, usually from gambling 
+WORKER	Noun HU ECON Econ* Role 	noun-adj: A laborer, employee, or any person engaged in a particular field,  activity, or cause 
+WORKSHOP	Noun ECON Econ* PLACE Social 	
+WORTH	Pos Noun Virtue ECON Econ* Pstv 	14% noun: Economic value 
+YIELD	Noun Econ* ECON Goal 	
+ZINC	Noun ECON Object Tool Econ*  	

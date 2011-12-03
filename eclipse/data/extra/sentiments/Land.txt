@@ -1,0 +1,64 @@
+word	tags	comments
+ABYSS	Neg Noun Ngtv PLACE Land 	
+BANK	Noun PLACE Land 	38% noun: Sloping elevation along a watercourse ('river bank'), slope  or aclivity, heap 
+BEACH	Noun PLACE Land 	noun-adjective: An expanse of sand or pebbles along the shore of a sea,  ocean, or lake. 
+BORDER	Noun PLACE POLIT Land Polit* 	
+CANYON	Noun PLACE Land 	
+CAVE	Noun PLACE Land PFREQ 	95% noun: A hollow in the earth, esp. perpendicular to the face of a mountain 
+CLEAR	Noun PLACE Land 	3% noun: "Clearing"--an open space 
+CLIFF	Noun PLACE Land 	noun: Precipice 
+COAST	Noun PLACE Land 	
+DESERT	Noun PLACE Land 	66% noun: An expanse of land so arid as to be devoid of vegetation 
+DITCH	Noun PLACE Land 	
+EARTH	Noun PLACE Land 	70% noun: Soil, ground, the planet, the world, that which is below our feet 
+FALL	Noun PLACE Land Weak 	1% noun: Descent, drop, collapse (includes waterfalls) 
+FIELD	Noun PLACE Land PFREQ 	noun: A piece of land (53); a realm of knowledge, work, or observation,  a area where someone or something is active, background (52) 
+FOREST	Noun PLACE Land ECON 	noun-adj: Woodland 
+FRONTIER	Noun PLACE Land POLIT Polit* 	
+GLEN	Noun PLACE Land 	
+GLOBE	Noun PLACE Land 	
+GROUND	Noun PLACE Land 	82% noun-adj: Surface of the earth and its immediate surroundings, the  territory or dimensions within which an action takes place, e.g. "camping  ground" (1) 
+GROVE	Noun PLACE Land 	
+GULLY	Noun PLACE Land 	
+HEMISPHERE	Noun POLIT PLACE Land 	noun: Half the surface of a sphere; usually referring to half of the earth 
+HILL	Noun PLACE Land 	noun: A rise, mound, small mountain 
+HILLSIDE	Noun PLACE Land 	
+HILLY	Modif PLACE Land 	
+HOLE	Noun PLACE Land PFREQ 	97% noun: Cavity, opening, aperture 
+INCLINE	Noun PLACE Land 	
+ISLAND	Noun PLACE Land 	noun-adj: A tract of land completely surrounded by water and not large  enough to be called a continent 
+JUNGLE	Noun PLACE Land 	noun: Tropical land overgrown with vegetation 
+LAND	Noun PLACE Land POLIT PFREQ 	87% noun: Ground, earth, area, country 
+LANDMARK	Noun PLACE Land 	
+LANDSCAPE	Noun PLACE Land 	
+LEDGE	Noun PLACE Land 	
+LOT	Noun PLACE Land 	1% noun: A portion of land 
+MAINLAND	Noun PLACE Land 	
+MARSH	Noun PLACE Land 	
+MOUND	Noun PLACE Land 	
+MOUNT	Noun PLACE Land 	
+MOUNTAIN	Noun PLACE Land 	noun: A large abrupt elevation of the earth's surface 
+PASTURE	Noun PLACE Land Econ* 	
+PEAK	Noun PLACE Land 	
+PIT	Noun PLACE Land 	
+PLAIN	Noun PLACE Land 	23% noun: Flat expanse of land 
+PORT	Noun PLACE ECON Econ* Land 	
+PRAIRIE	Noun PLACE Land 	
+PROPERTY	Noun PLACE Land ECON Econ* 	noun-adj: Real estate, possessions 
+RANGE	Noun PLACE Land 	6% noun-adj: Open land 
+REEF	Noun PLACE Land 	
+RIDGE	Noun PLACE Land 	
+RISE	Noun PLACE Land 	2% noun: A small hill or ridge 
+SAND	Noun PLACE Land 	noun-adj.: Fine particles of rock, or pertaining to same 
+SCENE	Noun PLACE Land 	noun: Site, setting, situation 
+SCENERY	Noun PLACE Land 	
+SCRUB	Noun PLACE Land 	
+SEASHORE	Noun PLACE Land 	
+SHORE	Noun PLACE Land 	
+STONE	Noun PLACE Land Strng PFREQ 	83% noun: Rock 
+VALE	Noun PLACE Land 	
+VALLEY	Noun PLACE Land 	
+WILD	Noun PLACE Land 	0% noun: "Wilds"--wilderness 
+WILDERNESS	Noun PLACE Land 	
+WOOD	Noun PLACE Land 	45% noun: Forest 
+WOOD	Modif PLACE Land 	2% adj: "Wooded"--forested 

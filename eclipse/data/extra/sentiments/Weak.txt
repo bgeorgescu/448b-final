@@ -1,0 +1,757 @@
+word	tags	comments
+ABANDON	IAV Neg SUPV Fail Ngtv Weak 	
+ABANDONMENT	Neg Noun Fail Weak 	
+ABDICATE	IAV Neg SUPV Finish Weak Psv Subm 	
+ABJECT	IPadj Neg Modif Psv Subm Weak Vice 	
+ABSCOND	IAV Neg SUPV Travel Subm Weak Hostile Actv 	
+ABSENCE	Noun Know Weak 	
+ABSENCE	Neg Noun Weak Fail 	
+ABSENT	IndAdj Neg Modif Weak Psv Fail 	
+ABSENT-MINDED	IndAdj Neg Modif Weak Psv Fail 	
+ABSENTEE	Neg Noun Hostile Weak Fail Intrel Vice 	
+ADDICT	Neg Noun Need Weak HU 	
+ADDICTION	Neg Noun Need Weak Ovrst 	
+ADMIT	IAV Pos SUPV Subm Pstv Weak Psv Comform 	63% verb: To acknowledge, confess, agree 
+ADMIT	Pos LY Ovrst Comform Subm Pstv Weak Psv 	3% adv: "Admittedly"--adverbial form of sense 1 
+AFFLICTION	Neg Noun Ngtv Weak Vice Psv 	
+AFRAID	Neg LY Negate Ngtv Weak 	1% idiom: "Afraid not" 
+ALIBI	Neg Noun Comform Subm Psv Weak 	
+ALLEGE	IAV Neg SUPV Comform Weak Undrst 	
+ALONE	LY Space Weak 	76% adj-adv: Apart from others, solitary, undisturbed 
+AMATEUR	Noun HU Weak Role 	
+AMBIVALENT	Neg Modif EMOT Ngtv Weak Pain 	
+ANCIENT	Modif Time* Weak 	
+ANTIQUATED	IPadj Neg Modif Weak Time 	
+ANXIETY	Neg Noun EMOT Ngtv Weak Psv Pain 	noun: Mental distress or uneasiness caused by apprehension of danger or misfortune. 
+ANXIOUS	Neg Modif EMOT Ngtv Weak Psv Pain 	21% adjective: Apprehensive, worried 
+ANXIOUS	Neg Modif Ngtv Weak Psv Pain 	13% adverb: "Anxiously"--nervously, excitedly 
+ANXIOUSNESS	Neg Noun EMOT Ngtv Weak Psv Pain 	
+APART	LY Space Weak 	54% adv-adj: Spatial, away from-'he went apart from the rest', divided,  separated--'his feet were apart,' 'they find themselves further apart  every day.' (3 abstract) 
+APATHETIC	IndAdj Neg Modif Weak Undrst Feeling Psv 	
+APATHY	Neg Noun Vice Weak Undrst Psv Feeling 	
+APOLOGETIC	IPadj Modif Pain Weak Subm Intrel 	
+APOLOGIZE	IAV SUPV Subm Other Weak Intrel 	
+APOLOGY	Noun COM Comform Affil Subm Weak 	
+APPREHENSIVE	IPadj Neg Modif Psv Emot Pain Weak 	
+ASHAMED	Neg Modif EMOT Pain Ngtv Weak Psv 	
+ASLEEP	LY Weak Psv Natpro 	adj-adv: In or into a state of sleep 
+ASTRAY	Neg Modif Weak Psv Fail 	
+ASUNDER	IndAdj Neg Modif Weak Psv Fail 	
+ATROPHY	IAV Neg SUPV Decr Ngtv Weak Psv 	
+AVERAGE	Modif EVAL Quan Weak 	65% adj: Constituting a numerical average, typical, ordinary 
+AVERT	IAV Neg SUPV Intrel Hostile Weak Psv 	
+AVOID	IAV Neg SUPV Intrel Hostile Ngtv Weak Psv 	verb: To keep away from, keep clear of 
+AVOIDANCE	Neg Noun Hostile Ngtv Weak Psv Intrel 	
+AWKWARD	Neg Modif EVAL Vice Ngtv Weak 	
+AWKWARDNESS	Neg Noun Vice Weak 	
+BABY	Noun HU KIN Nonadlt Weak PFREQ Role 	95% noun-adj: An infant 
+BACKWARD	Neg LY ECON Ngtv Weak Space 	
+BACKWARDNESS	Neg Noun ECON Ngtv Weak Vice 	
+BAIL	IAV Neg SUPV Fail Weak Actv 	
+BALK	IAV Neg SUPV Psv Weak Fail 	
+BANE	Neg Noun Weak Vice Psv 	
+BANTER	Noun COM Comform Weak 	
+BANTER	IAV SUPV Weak Comform 	
+BARREN	IndAdj Neg Modif Psv Weak Quan 	
+BASHFUL	IPadj Neg Modif Emot Weak Psv Arousal 	
+BEAT	Neg Modif Vice Subm Ngtv Weak Psv 	2% adj: "Beaten"--hammered, trodden, thrashed 
+BEG	IAV Neg SUPV Intrel Subm Ngtv Weak Actv 	
+BEGGAR	Neg Noun HU Weak Econ 	
+BELONG	IAV SUPV Intrel Subm Weak Psv PFREQ 	98% verb: To be in relation to something as owned or as a member or inhabitant 
+BEND	DAV SUPV Subm Weak Psv Rel 	
+BENT	Modif Qual Weak Psv 	
+BEREAVEMENT	Neg Noun Vice Weak Psv 	
+BEREFT	Neg Noun HU Weak Role 	
+BESEECH	IAV Neg SUPV Intrel Subm Weak Actv 	
+BIT	Noun Quan Undrst Weak PFREQ 	93% noun-adv: A small quantity; a role or routine (2) (rarely, mouthpiece  of a bridle, tool (0)) 
+BLAND	IndAdj Neg Modif Weak 	
+BLEED	Modif Weak Psv Natpro 	
+BLEED	DAV SUPV Weak Psv Natpro 	
+BLEMISH	Neg Noun Weak Vice 	
+BLIND	Neg Noun HU Ngtv Weak Role 	71% noun-adj: (those who are) without sight; without understanding or control (2) 
+BLIND	Neg Modif Vice Ngtv Weak 	14% adv: "Blindly" 
+BLINDNESS	IndAdj Neg Modif Weak Vice 	
+BLOCKHEAD	IndAdj Neg Modif Weak Fail Vice 	
+BLOODSHED	Neg Noun Hostile Pain Weak 	
+BLUNDER	Neg Noun Ngtv Weak Actv Fail 	
+BLUR	IAV Neg SUPV Undrst Weak Comform Actv 	
+BONDAGE	Neg Noun Vice Subm Ngtv Weak Psv 	
+BORROW	IAV SUPV Exch Econ* Weak 	
+BOUND	Neg Modif Vice Ngtv Weak Psv 	30% adj: Limited, tied, 
+BOW	DAV SUPV Subm Weak Comform 	6% verb: To bend forward, usually in formal acknowledgement, submission or greeting 
+BOW	Modif Weak Psv Vice 	6% adj: "Bowed"--bent or stooped, overwhelmed 
+BREAK	IAV Neg SUPV Fail Ngtv Weak Psv 	8% verb: "Break down"--to collapse, go out of working order 
+BREAKDOWN	IAV Neg SUPV Psv Weak Fail 	
+BRITTLE	IndAdj Neg Modif Weak 	
+BROKE	IAV Neg SUPV ED Fail Ngtv Weak Psv 	3% verb: "Broke (broken) down"--collapsed, went out of working order 
+BROKEN-HEARTED	IPadj Neg Modif Weak Pain Emot Intrel 	
+BUCKLE	IAV Neg SUPV Weak Subm Fail Psv 	
+BUM	Neg Noun Weak Econ 	
+BUNGLE	IAV Neg SUPV Undrst Weak 	
+BURDEN	Neg Noun Vice Ngtv Weak 	
+BURDEN	IAV Neg SUPV Work Ngtv Weak 	
+CAN'T	SV SUPV VERB MOD NEG Weak Negate 	verb: Contraction of "cannot" 
+CANNOT	SV Negate SUPV VERB MOD NEG Weak 	verb: A form of can not. 
+CAPITULATE	IAV Neg SUPV Psv Subm Weak Fail 	
+CAPTIVE	IPadj Neg Modif Subm Weak Psv 	
+CAREEN	IAV Neg SUPV Psv Weak Travel 	
+CAVE	IAV Neg SUPV Fall Weak Psv Ngtv 	5% idiom-verb: "Cave in"--collapse 
+CEASE	DAV SUPV Finish Weak Psv 	
+CHEAP	Neg Modif EVAL ECON Vice Econ* Ngtv Weak 	
+CHEAPEN	IAV Neg SUPV Actv Decr Weak 	
+CHOKE	Neg Noun Object Tool Ngtv Weak 	
+CHOKE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+CHRONIC	Neg Modif Vice Ngtv Weak Psv Ovrst 	
+CLING	IAV SUPV Stay Weak Actv 	
+CLUNG	IAV SUPV Stay ED Weak Actv 	
+COLLAPSE	Neg Modif Decr Ngtv Weak Psv 	
+COLLAPSE	IAV Neg SUPV Fall Ngtv Weak Psv 	
+COMMONER	Neg Noun HU POLIT Econ* Subm Ngtv Weak Psv Role 	
+CONCEDE	IAV SUPV Subm Weak Psv Comform 	
+CONCESSION	Pos Noun Pstv Weak Psv Intrel Subm 	
+CONFESS	IAV Neg SUPV Subm Ngtv Weak Psv Comform 	
+CONFESSION	Neg Noun COM Comform Subm Ngtv Weak Psv 	
+CONFORM	IAV SUPV Intrel Subm Weak Psv 	
+CONFORMITY	Noun Virtue Subm Weak Psv 	
+CONFUSE	IAV Neg SUPV Solve Weak Ngtv Undrst 	2% verb: To fail to distinguish 
+CONFUSE	Neg Modif Vice Ngtv Weak Psv Undrst 	82% adj: "Confused"--jumbled, disturbed, bewildered 
+CONFUSION	Neg Noun Vice Ngtv Undrst Weak 	
+CONTROL	Modif Power Weak Psv Virtue 	7% adj: "Controlled"--regulated, restrained 
+CONVICT	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+COVET	SV Neg SUPV Psv Need Feel Weak 	
+COWARD	Neg Noun HU Subm Ngtv Weak Psv Role 	
+CRACK	Modif Qual Weak 	
+CRACK	DAV SUPV Work Weak Actv 	
+CRAVE	SV Neg SUPV Psv Need Feel Weak 	
+CRAWL	DAV SUPV Travl Weak Actv PFREQ 	92% verb: To move laboriously, close to the ground 
+CRAWL	IAV Neg SUPV Rel Ngtv Weak 	4% verb: To swarm with 
+CRAWL	Modif Weak Travl 	4% adj: Having a crawl as mode of locomotion 
+CREDULOUS	IndAdj Neg Modif Weak Subm 	
+CREEP	Modif Vice Weak Actv 	
+CREEP	DAV SUPV Travl Weak Actv 	
+CREPT	DAV SUPV Travl ED Weak Actv 	
+CRUMBLE	IAV Neg SUPV Psv Finish Weak Subm 	
+CRUMPLE	IAV Neg SUPV Psv Finish Weak Subm 	
+DEAD	Neg Modif Natpro Ngtv Weak Psv 	adj: Not living; very rarely, absolute--"dead center," the heart of --"the  dead of winter" (0) 
+DEADLOCK	Neg Noun Persist Ngtv Weak Hostile 	
+DEARTH	Neg Noun Weak Psv Vice 	
+DEATH	Neg Noun ABS Abs* Ngtv Weak Psv Natpro 	noun-adj: End of life, and thereafter 
+DEBT	Noun Means ECON Econ* Weak 	
+DEBTOR	Neg Noun HU Weak Econ 	
+DECAY	Neg Noun Ngtv Weak Psv Decr 	
+DECAY	DAV Neg SUPV Decr Ngtv Weak Psv 	
+DECLINE	Neg Noun Ngtv Weak Psv Decr 	
+DECLINE	IAV Neg SUPV Decr Ngtv Weak Psv 	
+DECREASE	Neg Noun Ngtv Weak Decr Psv 	
+DECREASE	DAV Neg SUPV Decr Ngtv Weak Psv 	
+DEFECT	Neg Noun Vice Ngtv Weak 	
+DEFECTIVE	Neg Modif Vice EVAL Ngtv Weak 	
+DEFENDANT	Neg Noun HU Role Weak 	
+DEFENSIVE	Neg Modif Hostile Ngtv Weak Psv Intrel 	
+DEFICIENCY	Neg Noun Vice Ngtv Weak 	
+DEFICIENT	IndAdj Neg Modif Weak Vice 	
+DEFICIT	Neg Noun Vice ECON Econ* Ngtv Weak 	
+DEGENERATE	Neg Modif Vice Ngtv Weak Psv Ovrst 	
+DEJECTED	IndAdj Neg Modif Weak Emot Pain 	
+DELAY	Neg Noun Time* Ngtv Weak Psv 	
+DELAY	IAV Neg SUPV Persist Ngtv Weak Psv 	
+DELICATE	Pos Modif Qual EVAL Pstv Weak 	
+DELINQUENCY	Neg Noun Vice Weak Fail 	
+DELINQUENT	IndAdj Neg Modif Vice Weak Fail 	
+DELIRIUM	Neg Noun Think Weak Vice Ovrst 	
+DELUSION	Neg Noun Weak Think Vice 	
+DEMISE	Neg Noun Finish Ngtv Weak Psv 	
+DEPEND	IAV SUPV Causal Weak Psv 	73% verb: Be contingent 
+DEPEND	IAV SUPV Intrel Subm Weak Psv 	27% verb: Rely (upon) 
+DEPENDENCE	Noun Subm Weak Psv Vice 	
+DEPENDENT	IPadj Neg Modif Weak Subm Psv 	
+DEPRECIATE	IAV Neg SUPV Decr Ngtv Weak Psv 	
+DEPRESS	Neg Modif EMOT Pain Ngtv Weak Psv 	71% adj: "Depressed"--dejected, low; lower than some norm (0) 
+DEPRESSION	Neg Noun EMOT Pain Ngtv Weak 	23% noun: Psychological decline; a hole or hollow (0) 
+DEPRESSION	Neg Noun Econ* Ngtv Weak Vice 	77% noun: Economic decline 
+DESCEND	DAV SUPV Fall Weak 	verb: To come down 
+DESERT	Neg Modif Space Ngtv Weak Psv 	3% adj: "Deserted"--abandoned 
+DESOLATE	Neg Modif Ngtv Weak Vice 	
+DESPAIR	Neg Noun EMOT Ngtv Weak Psv Pain Subm 	
+DESPAIR	SV Neg SUPV Ngtv Weak Psv Pain 	
+DESPERATE	Neg Modif EMOT Ngtv Weak Pain 	
+DESTITUTE	IndAdj Neg Modif Econ Pain Weak Subm 	
+DEVOID	Neg Modif Know Ngtv Weak 	
+DIMINISH	DAV SUPV Decr Weak Psv 	
+DIRE	IndAdj Neg Modif Vice Weak 	
+DISADVANTAGE	Neg Noun Vice Ngtv Weak Negate 	
+DISADVANTAGEOUS	Neg Modif EVAL Negate Ngtv Weak Vice 	
+DISASTER	Neg Noun Vice Ngtv Weak 	
+DISASTROUS	Neg Modif Vice EVAL Ngtv Weak 	
+DISCONCERTED	Neg Modif Pain Ngtv Weak Psv Undrst 	
+DISCONTENT	Neg Modif Ngtv Weak Psv Pain Negate 	
+DISCORD	Neg Modif Ngtv Weak Vice Hostile 	
+DISCOURAGEMENT	Neg Noun Vice Decr Weak Subm 	
+DISEASED	IndAdj Neg Modif Vice Weak 	
+DISGUST	Neg Noun EMOT Pain Ngtv Weak Psv Hostile 	16% noun: Revulsion 
+DISGUST	Neg LY Ngtv Pain Weak 	6% adv: "Disgustingly"--revoltingly 
+DISGUST	Neg Modif EMOT Pain Ngtv Weak Psv Hostile 	59% adj: "Disgusted"--revolted 
+DISGUST	Neg Modif EVAL Ngtv Pain Weak 	13% adj: "Disgusting"--revolting 
+DISHEARTEN	IndAdj Neg Modif Weak Subm Pain Emot 	
+DISHONEST	IPadj Neg Modif Weak Comform 	
+DISHONOR	IAV Neg SUPV Actv Weak Subm Pain 	
+DISINGENUOUS	IPadj Neg Modif Weak Comform 	
+DISMAL	Neg Modif EVAL Vice Ngtv Weak 	
+DISORDER	Neg Noun Negate Ngtv Weak Vice 	
+DISORGANIZED	IndAdj Neg Modif Ngtv Weak Psv Vice Negate 	
+DISPENSABILITY	Neg Noun Weak Subm 	
+DISPLEASE	IAV Neg SUPV Psv Weak 	
+DISPLEASURE	Neg Noun EMOT Hostile Pain Negate Ngtv Weak Psv 	
+DISSATISFY	IAV Neg SUPV Weak Fail 	
+DISTRESS	Neg Noun EMOT Pain Ngtv Weak Psv 	
+DISTRESS	IAV Neg SUPV Ngtv Weak Psv Pain 	
+DIVIDE	Neg Modif Space Ngtv Weak Psv 	14% adj: "Divided"--separated 
+DIVISION	Neg Noun HU COLL POLIT Ngtv Weak 	
+DOOM	Neg Noun Ngtv Weak Psv Vice 	
+DOOM	IAV Neg SUPV Finish Ngtv Weak Psv 	
+DOUBTFUL	IndAdj Neg Modif Undrst Ngtv Weak Vice Percv 	
+DREADFUL	Neg Modif Vice Ovrst Ngtv Weak Psv 	
+DROOP	DAV Neg SUPV Psv Weak Fail 	
+DROP	Neg Noun Ngtv Weak Psv Fall 	5% noun: Fall or decline 
+DROP	DAV Neg SUPV Fall Ngtv Weak Psv 	32% verb: To fall--intransitive 
+DROP	DAV Neg SUPV Fail Ngtv Weak Actv 	56% verb: To let fall, give up--transitive 
+DROWN	Neg Noun Natpro Ngtv Weak Psv 	0% noun-adj: A suffocation by water--killed by such an act--"the drowned child" 
+DROWN	DAV Neg SUPV Ngtv Weak Psv Natpro 	verb: To die by suffocation in water, generally by accident 
+DRUNK	Neg Modif Vice Ngtv Weak Psv PFREQ 	83% adjective: Intoxicated 
+DRUNK	Neg Noun HU Ngtv Weak Psv Role 	4% noun: An intoxicated person, one perpetually so 
+DRUNKARD	Neg Noun HU Vice Weak 	
+DRUNKEN	IndAdj Neg Modif Weak Psv Vice 	
+DULL	Neg Modif Qual EVAL Ngtv Weak Psv 	
+DUMB	Neg Modif Comform Ngtv Weak Psv 	
+DYING	SV Neg SUPV ING Natpro Ngtv Weak Psv PFREQ 	87% verb: Ceasing to live or exist; eager (with "to") (1) 
+DYING	IndAdj Neg Modif Natpro Ngtv Weak Psv 	13% noun-adj: The process of ceasing to live, in this process 
+EDGE	Neg Modif EMOT Pain Ngtv Weak 	0% idiom-adj: "On edge"--nervous, irritable, keyed up 
+ELASTIC	Modif Qual Weak 	
+ELASTICITY	Noun Qual Weak 	
+ELDERLY	Modif Time* Weak 	
+EMBARRASSMENT	Neg Noun Weak Vice 	
+EMPLOYEE	Noun HU ECON Econ* Subm Weak Role 	
+EMPTY	Neg Modif Ngtv Weak PFREQ Quan 	96% adj: Devoid of content 
+ENTREAT	IAV Neg SUPV Subm Weak Intrel 	
+EQUIVOCAL	Neg Modif Undrst Ngtv Weak Vice 	
+ERR	IAV Neg SUPV Actv Fail Weak 	
+ERRONEOUS	IndAdj Neg Modif Fail Weak 	
+EXCUSE	Noun COM Comform Subm Psv Weak 	
+EXPIRE	IAV SUPV Finish Weak Psv 	
+FAIL	IAV Neg SUPV Fail Ngtv Weak Psv 	56% verb: To be unsuccessful or lose strength 
+FAIL	IAV Neg SUPV Fail Ngtv Weak Psv 	39% verb: To neglect, omit, or fall short of - "fail to" 
+FAIL	IAV Neg SUPV Hostile Ngtv Weak Psv Fail 	2% verb: To disappoint or be inadequate for 
+FAIL	Neg Noun Vice Ngtv Weak Psv 	4% noun-adj: "Failing"--a fault or failure, unsatisfactory 
+FAILURE	Neg Noun Vice Ngtv Weak Psv 	noun: A general instance of proving unsuccessful, one who or that which  proves unsuccessful or fails to perform something expected or required 
+FAINT	Neg Modif Percv Ngtv Weak Psv Undrst 	
+FALL	DAV SUPV Fall Weak Psv 	74% verb: General verb sense--drop, descend, collapse, sink, decline 
+FALL	Noun PLACE Land Weak 	1% noun: Descent, drop, collapse (includes waterfalls) 
+FALL	Modif Weak Psv Fall 	1% adj: 'fallen' 
+FALL	IAV Neg SUPV Decr Ngtv Weak Psv 	5% verb-idiom: 'fall apart'--disintegrate 
+FALL	Modif Weak Psv Fall 	4% adj: 'falling' 
+FALTER	IAV Neg SUPV Ngtv Weak Undrst Decr 	
+FAMINE	Neg Noun Weak Need Pain 	
+FATIGUE	Neg Noun Pain Ngtv Weak Psv 	
+FAULT	Neg Noun Vice Ngtv Weak 	
+FEAR	Neg Noun EMOT Pain Ngtv Weak Psv Subm 	67% noun-adj: Anxiety, dread, fright 
+FEAR	SV Neg SUPV Ngtv Weak Psv Subm Pain 	33% verb: To be afraid of 
+FEARFUL	Neg Modif EMOT Subm Pain Ngtv Weak Psv 	
+FEEBLE	Neg Modif Vice Ngtv Weak Psv Undrst 	
+FEMININE	Modif Female Weak HU Role 	
+FEVER	Neg Noun Ngtv Weak Psv Vice 	
+FEVERISH	Neg Modif Ngtv Weak Psv 	
+FEW	DET PRE PRE1 Modif Quan Undrst Weak PFREQ 	82% adj: Not many, a small number of 
+FEW	PRON INDEF Undrst Weak Impers 	14% pron: Not many people or things, a small number 
+FEW	DET PRE PRE1 Modif Quan Undrst Weak 	1% adj: "Fewer"--a smaller number of--comparative 
+FEW	DET PRE PRE1 Modif Quan Undrst Weak 	0% adj: "Fewest"--superlative 
+FIASCO	Neg Noun Weak Fail Ovrst 	
+FICKLE	IndAdj Neg Modif Emot Weak Subm 	
+FIDGET	IAV Neg SUPV Actv Weak Move 	
+FLATTER	IAV Pos SUPV Intrel Affil Subm Psv Weak Comform 	
+FLATTERY	Pos Noun Intrel Affil Subm Psv Weak Comform 	
+FLAW	Neg Noun Weak Fail 	
+FLED	IAV Neg SUPV Travl ED Hostile Actv Ngtv Weak 	verb: To have run or passed away quickly 
+FLEE	IAV Neg SUPV Actv Travel Weak 	
+FLIMSY	IndAdj Neg Modif Weak 	
+FLOUNDER	IAV Neg SUPV Fail Weak Psv 	
+FOIBLE	Neg Noun Weak Fail 	
+FOLLOW	IAV SUPV Intrel Subm Weak Psv 	42% verb: To give allegiance to, obey, act in accordance with, "i wish  he would follow my advice," infrequently, understand--"i didn't follow  your argument" 
+FOOL	Neg Noun HU Ngtv Weak Role 	48% noun: Simpleton 
+FOOLISH	Neg Modif Vice EVAL Ngtv Weak 	adj: Imprudent, ridiculous 
+FOOLISHNESS	Neg Noun Weak Vice 	
+FORFEIT	IAV Neg SUPV Fail Ngtv Weak Psv 	
+FORGET	IAV SUPV Weak Psv Solve 	verb: To fail to remember, lose memory of 
+FORGOT	IAV SUPV ED Weak Psv Solve 	
+FORGOTTEN	Modif Know Psv Weak 	
+FORGOTTEN	IAV SUPV ED Weak Psv Solve 	
+FORLORN	IndAdj Neg Modif Emot Pain Weak 	
+FORSAKE	IAV Neg SUPV Psv Weak Subm 	
+FOUNDER	IAV Neg SUPV Fail Ngtv Weak Psv 	
+FRACTURE	IAV Neg SUPV Weak Psv Vice 	
+FRAGILE	IndAdj Neg Modif Weak 	
+FRAIL	Modif Vice Weak 	
+FRANTIC	Neg Modif EMOT Pain Ngtv Weak 	
+FRAUD	Neg Noun Weak Comform Fail 	
+FRAUDULENT	IndAdj Neg Modif Weak Comform Fail 	
+FRET	SV Neg SUPV Think Actv Weak 	
+FRETFUL	IndAdj Neg Modif Think Weak 	
+FRUITLESS	Neg Modif Vice EVAL Ngtv Weak 	
+FUMBLE	IAV Neg SUPV Actv Weak Fail 	
+FUSS	IAV Neg SUPV Actv Weak Comform 	
+FUTILITY	Neg Noun Weak Subm Vice 	
+GENTLE	Pos Modif EVAL Affil Pstv Weak Psv Virtue 	
+GINGERLY	LY Qual Subm Weak Undrst 	
+GIVE	DAV SUPV Fail Weak 	6% idiom-verb: "Give up," "give in," "give way," "give ground"--yield 
+GIVE	DAV SUPV Weak Psv Fail 	2% verb: "Give up"--abandon hope, cease effort 
+GRIEF	Neg Noun EMOT Pain Ngtv Weak Psv Affil 	
+GUILTY	IndAdj Neg Modif Vice EVAL Legal Ngtv Psv Causal Weak 	adj: Culpable 
+GULLIBLE	IPadj Neg Modif Weak Think Qual 	
+HACK	Neg Noun Vice HU Weak 	
+HAGGARD	IndAdj Neg Modif Weak 	
+HALFWAY	LY Space Weak 	
+HANDFUL	Noun Quan Weak Undrst 	
+HANDICAP	Neg Noun Weak Vice 	
+HANG	IAV SUPV Rel Weak Actv 	18% verb: 'hang on to'--cling to, retain 
+HAPLESS	IndAdj Neg Modif Weak Subm Vice Psv 	
+HARD	LY Weak Undrst 	11% adv: 'hardly'--barely 
+HARD	Neg Modif Pain Ngtv Psv Weak 	1% idiom-adj: 'hard up' 
+HARMLESS	Pos Modif Pstv Weak Psv Subm Virtue 	
+HAVE	SV SUPV VERB HAV MOD Need Power Weak Psv 	7% verb: To be compelled or under obligation to do something--"have to" 
+HAZINESS	Neg Noun Ngtv Weak Percv Undrst 	
+HEDGE	IAV Neg SUPV Intrel Hostile Ngtv Weak 	
+HELP	IAV Neg SUPV Need Subm Passive Ngtv Weak Psv 	3% verb: To avoid or refrain from--"i can't help but . . . ," "not if  i can help it" 
+HELPLESS	Neg Modif EVAL Subm Ngtv Weak Psv Fail 	
+HELPLESSNESS	Neg Noun Weak Subm Vice 	
+HESITANT	Modif Weak Psv Undrst Vice 	
+HESITATE	IAV SUPV Stay Weak Psv Undrst 	
+HESITATION	Noun Weak Psv Undrst Vice 	
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	57% verb: To conceal oneself 
+HIDE	IAV SUPV Intrel Hostile Weak Actv 	28% verb: To conceal something other than oneself 
+HOBBLE	IAV Neg SUPV Weak Move Actv 	
+HOLE	Neg Modif Vice Econ* Ngtv Weak 	2% idiom-adj: "In the hole"--in the red, suffering a deficit 
+HOLE	Neg Noun ABS Abs* Vice Ngtv Weak Psv 	2% idiom-adj: "In a hole"--in a tough spot, difficult situation--not handled 
+HOLLOW	Neg Modif Qual Ngtv Weak 	
+HOPELESS	Neg Modif Pain Ngtv Weak Psv Ovrst 	
+HUDDLE	DAV SUPV Stay Psv Weak 	
+HUMBLE	Pos Modif Virtue Subm Pstv Weak Psv 	
+HUNG	IAV SUPV Try Weak Actv 	4% idiom-verb: 'hung on to'--clung to 
+HYSTERICAL	Neg Modif EMOT Pain Ngtv Weak Psv 	
+IGNORANCE	Neg Noun Vice Ngtv Weak 	
+IGNORANT	Neg Modif Vice EVAL Ngtv Weak 	
+ILL	Neg Modif Ngtv Weak Psv Vice 	59% adj: Of unsound physical or mental health, sick 
+ILLITERATE	IndAdj Neg Modif Weak Fail 	
+ILLNESS	Neg Noun Ngtv Weak Psv Vice 	noun: Sickness of the body or mind 
+ILLOGICAL	IndAdj Neg Modif Weak Fail 	
+IMITATION	Noun Subm Weak Actv Intrel 	
+IMMATURE	IndAdj Neg Modif Nonadlt Weak 	
+IMPLORE	IAV Neg SUPV Need Weak Subm Actv 	
+IMPRISONMENT	Neg Noun Weak Subm Legal 	
+INABILITY	Neg Noun Negate Ngtv Weak Psv Vice 	
+INADEQUATE	IndAdj Neg Modif Vice EVAL Negate Ngtv Weak Subm Psv 	
+INCAPABLE	Neg Modif Vice EVAL Ngtv Weak Psv Subm Negate 	
+INCOMPLETE	Modif Negate Weak Quan 	
+INCORRECT	Neg Modif Negate Ngtv Weak Vice Undrst 	
+INDEBTED	Modif Subm Weak Psv Intrel 	
+INDECISION	Noun Negate Weak Psv Undrst Vice 	
+INDECISIVE	Modif Negate Weak Psv Undrst Vice 	
+INDECISIVENESS	Noun Negate Weak Psv Undrst Vice 	
+INDIRECT	Modif Means Negate Weak Undrst 	
+INFANT	Noun HU Nonadlt Weak Role 	
+INFERIOR	Neg Modif Vice EVAL Ngtv Weak 	
+INFERIORITY	Neg Noun Weak Subm 	
+INJURIOUS	Neg Modif Vice Ngtv Weak Hostile 	
+INJURY	Neg Noun Vice Ngtv Weak Hostile 	
+INSECURE	Neg Modif Negate Ngtv Weak Psv Vice Undrst 	
+INSECURITY	Neg Noun Negate Ngtv Weak Psv Vice Undrst 	
+INSIGNIFICANT	Neg Modif Negate Ngtv Weak EVAL Undrst Vice 	
+INSTABILITY	Neg Noun Negate Vice Ngtv Weak Psv 	
+INSTABLE	Neg Modif Negate Vice Ngtv Weak Psv 	
+INSUFFICIENCY	Neg Noun Fail Decr Weak 	
+INSUFFICIENT	Neg Modif Vice EVAL Ngtv Weak Negate 	
+INTERIM	Modif Time* Undrst Weak 	
+INTOLERABLE	IPadj Neg Modif Emot Pain Weak 	
+IRRESPONSIBLE	Neg Modif Vice EVAL Negate Ngtv Weak 	
+KNEEL	DAV SUPV Stay Subm Weak Psv 	
+KNELT	DAV SUPV Stay ED Subm Weak Psv 	
+LACK	Neg Noun Ngtv Weak Psv Vice 	70% noun: Dearth, need, absence, deficit 
+LACK	IAV Neg SUPV Need Ngtv Weak Psv 	11% verb: To need, be deficient in 
+LACK	Neg Modif Vice Ngtv Weak Psv 	19% adj: "Lacking"--wanting, absent, deficient (in) 
+LAG	IAV Neg SUPV Fail Weak Psv 	
+LAME	IndAdj Neg Modif Weak Fail 	
+LANGUISH	SV Neg SUPV Psv Fail Weak Decr 	
+LAZILY	Neg Modif Weak Fail 	
+LAZY	Neg Modif Vice Ngtv Weak Psv 	
+LEAN	DAV SUPV Stay Weak 	57% verb: To incline or bend from a vertical position, often resting on  something for support (mostly physical) 
+LEAN	IAV SUPV Intrel Subm Weak 	9% idiom-verb: "Lean on"--depend or rely on 
+LEAST	Modif Comp EST DIM Quan Weak Undrst 	8% adj-adv: Slightest, to the smallest degree 
+LESS	LY Quan Comp ER Weak 	75% adv-adj: To a smaller extent, amount, or degree, not so large, great or much 
+LESS	Noun Quan Weak Undrst 	3% adj: "Lesser"--smaller, less important 
+LIABILITY	Neg Noun Causal Weak 	
+LIFELESS	IndAdj Neg Modif Natpro Weak 	
+LIGHT	Modif Weak Undrst Qual 	4% adj: Not heavy (includes -er, -est) 
+LIMIT	Neg Modif Space Psv Weak Undrst Ngtv 	37% adj: "Limited"--confined within limits, circumscribed or narrow 
+LIMP	IndAdj Neg Modif Weak 	
+LITTLE	Modif Quan DIM Weak Undrst 	adj-adv: Small in degree, may refer to size, duration, number, etc. 
+LONE	Neg Modif Affil Pain Weak Ngtv Psv PFREQ 	97% adj: "Lonely" - sad and alone 
+LONE	Modif Quan Weak 	3% adj: Single, solitary 
+LONELINESS	Neg Noun Affil Pain Ngtv Weak Psv 	
+LONELY	Neg Modif Affil Pain Ngtv Weak Psv 	
+LONER	Neg Noun HU Affil Role Ngtv Weak Psv 	
+LONG	SV SUPV Need Weak Psv 	2% verb: To yearn 
+LONG	Noun EMOT Affil Weak Psv Need 	1% noun: 'longing'--an intense desire 
+LOOK	IAV SUPV Intrel Subm Weak 	1% verb-idiom: "Look up to"--to respect or esteem 
+LOSE	DAV Neg SUPV Fetch Ngtv Weak Psv 	77% verb: To come to be without 
+LOSE	DAV Neg SUPV Fail Ngtv Weak 	20% verb: To be defeated, to fail 
+LOSER	Neg Noun HU Ngtv Weak Role 	
+LOSS	Neg Noun Vice Ngtv Weak 	noun: Detriment or disadvantage from failure to keep, have, or get- or  that which is lost 
+LOST	DAV Neg SUPV ED Ngtv Weak Psv Fetch 	59% verb-adj: Past tense of "lose"--came to be without, no longer owned  by-- "we lost our jobs," "we are lost" 
+LOST	DAV Neg SUPV ED Ngtv Weak Fail Psv 	6% verb: Past tense of "lose"--failed, was defeated 
+LOST	Neg Modif Vice Ngtv Weak Psv 	31% adj: Missing, confused, immersed, without knowledge of where one is  (of people)--"i am lost"--"he was lost in thought" 
+LOST	Neg Modif Ngtv Weak Finish 	0% adj: "Lost on (someone)"--wasted, without effect 
+LOW	Neg Modif POS DIM Space Ngtv Weak 	84% adv-adj: Of little height, value or extent, not refined, below average 
+LOW	Neg Modif POS DIM Space Ngtv Weak 	14% adv-adj: 'lowest'--superlative of sense 1. 
+LOWER	Neg Modif Comp ER POS Space Ngtv Weak 	60% adj-adv: Of less height, value, or extent, less refined (comparative of "low") 
+LOWLY	IndAdj Neg Modif Weak Subm 	
+MAD	Neg Modif Ngtv Weak Psv Vice 	10% adj-noun: Insane, crazy, those who are insane or crazy 
+MALADJUSTED	Neg Modif Vice Ngtv Weak 	
+MALADJUSTMENT	Neg Noun Vice Ngtv Weak 	
+MALADY	Neg Noun Natpro Weak 	
+MEAGER	IndAdj Neg Modif Undrst Quan Ngtv Weak 	
+MEANINGLESS	Neg Modif Vice EVAL Ngtv Weak 	
+MEDIOCRE	IndAdj Neg Modif Weak 	
+MEEK	IndAdj Neg Modif Weak Subm 	
+MELT	DAV SUPV Decr Weak 	
+MENIAL	IndAdj Neg Modif Weak Subm 	
+MERE	Modif Quan Weak Undrst 	38% adjective: Only this and nothing else, nothing more than, such and no more 
+MERE	LY Weak Undrst Quan 	62% adverb: 'merely'--not otherwise than, simply, barely, only. 
+MIND	IAV SUPV Intrel Subm Weak 	2% verb: Pay attention to; obey--"mind your master;" tend--"mind the children" 
+MIND	IAV Neg SUPV Fail Ngtv Weak Psv 	0% idiom-verb: "Lose (one's) mind"--lose one's sanity 
+MINIMAL	Modif Quan Comp EST Weak Undrst 	
+MINIMUM	Modif Quan Comp EST Weak Undrst 	
+MINOR	Modif EVAL Quan Weak Undrst 	
+MINORITY	Noun HU COLL POLIT Polit* Subm Weak 	
+MISERABLE	Neg Modif EVAL EMOT Pain Ngtv Weak Psv 	
+MISERY	Neg Noun Pain Ngtv Weak Psv 	
+MISFORTUNE	Neg Noun Vice Ngtv Weak Psv 	
+MISS	IAV Neg SUPV Fail Ngtv Weak 	80% verb: To fail to do or take advantage of, to escape, to notice or  regret the absence of 
+MISS	Modif Weak Psv Fail 	8% adj: "Missing"--absent, lacking 
+MIX	Neg Modif EMOT Vice Ngtv Weak Psv 	33% idiom-adj: "Mixed up"--mentally confused 
+MIX	Modif Rel Psv Weak 	3% idiom-adj: "Mixed up with"--involved with 
+MODEST	Pos Modif Virtue EVAL Subm Pstv Weak 	
+MOMENTARY	LY Time* Weak Undrst 	
+MOURN	Neg Noun Affil Pain Ngtv Psv Weak 	
+MOURN	IAV Neg SUPV Affil Ngtv Psv Weak Pain 	
+MURMUR	Noun COM Comform Subm Weak 	
+MURMUR	DAV SUPV Subm Weak Comform 	
+MUTTER	DAV Neg SUPV Hostile Ngtv Weak Comform 	
+MYSELF>	LY Space Weak 	4% idiom-adj-adv: "By myself"--alone or without help 
+MYSELF>	Neg Modif EMOT Pain Ngtv Weak Psv 	0% idiom-adj: "Beside myself"--almost out of one's senses with fear or  other emotion 
+NAIVE	Neg Modif Vice EVAL Ngtv Weak Psv 	
+NAME	Modif Intrel Subm Weak Psv 	4% idiom: "In (one's) name"; "in the name of"--with appeal to, on behalf of 
+NARROW	Modif Space DIM Weak 	
+NEED	SV Neg SUPV Need Weak Psv Ngtv 	67% verb: To want, lack, require, have (to) 
+NEED	Neg Noun ABS Abs* Ngtv Weak Need Psv 	29% noun: Lack of something wanted, requirement, exigency 
+NEEDY	IndAdj Neg Modif Weak Need 	
+NEGLIGIBLE	Modif Quan Weak Undrst 	
+NERVOUS	Neg Modif EMOT Pain Ngtv Weak Psv 	adj: Uneasy, excitable; pertaining to the nerves (1) 
+NERVOUSNESS	Neg Noun Weak Emot Pain 	
+NEWBORN	Modif Time* Nonadlt Weak 	
+NOMINAL	Modif Know Weak Psv Undrst 	
+NOTHING	PRON INDEF LY Negate Weak Undrst Impers 	noun-adv: Not anything--not a thing, not at all 
+NOVICE	IndAdj Neg Modif Weak 	
+OBEY	IAV Pos SUPV Intrel Power Subm Pstv Weak Psv 	verb: To comply 
+OBLIGE	IAV Pos SUPV Intrel Subm Pstv Weak 	
+OBSOLETE	IndAdj Neg Modif Weak 	
+OCCASION	LY Weak Undrst FREQ 	11% adv: "On occasion", "upon occasion", occasionally, from time to time 
+OCCASIONAL	Modif FREQ Undrst Weak 	adj: Infrequent, once in a while 
+OLD	Modif Time* Weak 	67% adjective: Aged, long standing, prior, used affectionately toward  something or someone known a long time 
+OLD	Modif Time* Weak 	15% adjective: "Older"--comparative 
+OLD	Modif Time* Weak 	4% adjective: "Oldest"--superlative 
+OMISSION	Neg Noun Means Ngtv Weak Psv 	
+OMIT	IAV Neg SUPV Fail Ngtv Weak Psv 	
+ONLY	DET PRE PRE1 Quan Weak Undrst 	21% adj: Sole, single 
+ORDER	IAV Neg SUPV Fail Weak Psv Ngtv 	1% idiom-adj: "Out of order"--not functioning, disabled 
+OVERWORKED	IndAdj Neg Modif Work Try Weak 	
+OWE	IAV Neg SUPV Exch Econ* Ngtv Weak 	
+PALE	Modif Qual Weak 	
+PALTRY	IndAdj Neg Modif Weak 	
+PANIC	Neg Noun EMOT Pain Ngtv Weak Psv 	
+PARALYSIS	Neg Noun Weak Stay 	
+PARALYZED	IndAdj Neg Modif Weak Stay 	
+PARANOID	IndAdj Neg Modif Weak Emot Pain Undrst Percv 	
+PARTIAL	Modif Quan Weak Undrst 	
+PASS	IAV Neg SUPV Ngtv Weak Psv Natpro 	3% verb: "Pass away"--to die 
+PASS	IAV SUPV Weak Psv Natpro 	0% verb: "Pass out"--to become unconscious 
+PASS	Neg Noun Natpro Ngtv Weak Psv 	1% noun: "Passing"--disappearance, death 
+PASSE	IndAdj Neg Modif Weak 	
+PASSIVE	Modif Subm Psv Weak Arousal 	
+PATHETIC	IndAdj Neg Modif Weak 	
+PATIENT	Noun HU Subm Weak Psv Role 	74% noun: Human or animal (0) under treatment 
+PAUSE	Noun Time* Weak 	
+PAUSE	DAV SUPV Stay Weak 	
+PAY	IAV SUPV Intrel Subm Actv Weak 	2% verb: To offer or give (tribute, honors, etc.) 
+PEASANT	Noun HU POLIT ECON Subm Econ* Weak Role 	noun-adj: A tiller of the soil, rustic 
+PERPLEX	IAV Neg SUPV Ngtv Weak Solve Undrst 	
+PETITION	Noun COM Ritual POLIT Polit* Subm Weak 	
+PETITION	IAV SUPV Polit* Actv Comform Subm Weak Actv 	
+PETITIONER	Noun HU POLIT Subm Weak Actv Role 	
+PHOBIA	Neg Noun Emot Pain Weak 	
+PIECE	IAV Neg SUPV Ngtv Weak Psv Fail 	1% verb: "Go to pieces"--suffer a breakdown 
+PITIFUL	IPadj Neg Modif Weak 	
+PLEA	Noun COM Comform Subm Weak Psv 	
+PLEAD	DAV SUPV Subm Weak Psv Comform 	
+PLOD	IAV Neg SUPV Travel Weak Actv 	
+POINTLESS	IndAdj Neg Modif Weak Undrst 	
+POLITE	Pos Modif Affil Pstv Weak Virtue 	
+POOR	Neg Modif Vice EVAL ECON Ngtv Weak Psv 	44% adj: Destitute of some normal or desirable quality, unfortunate 
+POOR	Neg Modif Vice Ngtv Weak Econ* Psv 	30% adj: Lacking material goods 
+POOR	Neg Modif Vice EVAL Econ* Ngtv Weak Psv 	3% adj: "Poorer"--comparative of senses 1 and 2 
+POOR	Neg Modif Vice EVAL Econ* Ngtv Weak Psv 	0% adj: "Poorest"--superlative of senses 1 and 2 
+POOR	Neg Noun HU COLL POLIT ECON Weak Psv Ngtv 	8% noun: Those wanting in material goods 
+POVERTY	Neg Noun Vice Econ* ECON POLIT Ngtv Weak Psv 	noun: Quality or state of being poor--need, destitution 
+POWERLESS	IndAdj Neg Modif Weak Subm 	
+PRECARIOUS	Neg Modif Ngtv Weak Psv Vice Undrst 	
+PREMATURE	LY Weak Time* 	
+PRESS	Neg Modif Pain Ngtv Weak Psv 	8% adj: "Pressed"--under pressure, strained 
+PREY	Noun ANI Weak 	
+PRISONER	Neg Noun HU Legal Subm Ngtv Weak Psv Role 	
+PRIVATE	Noun HU Milit Subm Weak Role 	0% noun: Lowest rank of enlisted man in the u.s. armed forces 
+PROCRASTINATE	IAV Neg SUPV Weak Stay Work Actv 	
+PROCRASTINATION	Neg Noun Weak Stay Work 	
+PROVISIONAL	Modif Weak Time* 	
+PUNY	Neg Modif Weak Ngtv Undrst Vice 	
+PUZZLEMENT	Neg Noun Ngtv Weak Psv Arousal Undrst 	
+QUAINT	Pos Modif Virtue Weak Pstv 	
+QUANDARY	Neg Noun Arousal Undrst Ngtv Weak Psv 	
+QUIT	IAV Neg SUPV Finish Ngtv Weak Psv Subm 	verb: To stop, cease, give up; to leave (2) 
+QUITTER	Neg Noun HU Fail Weak 	
+RANDOM	Noun Weak Vary 	
+RECOIL	IAV Neg SUPV Subm Weak Actv 	
+REDUCTION	Noun Decr Weak 	
+REFUGEE	Neg Noun HU Weak Polit 	
+REGRESS	IAV Neg SUPV Fail Ngtv Weak Psv 	
+REGRESSION	Neg Noun Ngtv Weak Psv Vice 	
+REGRET	SV Neg SUPV Ngtv Weak Psv Pain 	79% verb: To feel sorry about 
+REGRET	Neg Noun EMOT Ngtv Weak Psv Pain 	21% noun: A sense of loss, sorrow, dismay, disappointment 
+RELAPSE	IAV Neg SUPV Psv Weak Subm 	
+RELATIVE	Modif Know Weak Psv Undrst 	16% adj: Comparative, considered in relation to something else 
+RELATIVE	LY Undrst Weak Psv Know 	27% adv: "Relatively"--comparatively 
+RELAX	IAV SUPV Weak Psv Natpro 	
+RELIANCE	IAV SUPV Intrel Weak Subm 	
+RELINQUISH	DAV SUPV Intrel Weak Psv Subm 	
+RELUCTANT	IndAdj Neg Modif Ngtv Weak Psv Arousal 	
+RELY	IAV SUPV Intrel Subm Weak Psv Ovrst 	
+REMOTE	Modif Space Weak 	
+REQUEST	Noun COM Comform Subm Psv Weak 	48% noun: A favor, petition, something asked 
+REQUEST	IAV SUPV Psv Weak Comform Subm 	40% verb: To ask for, to petition 
+REQUEST	Modif Comform Psv Weak 	0% adj: "Requested", asked for 
+RESIGN	IAV SUPV Intrel Subm Weak Psv 	
+RESTRICT	Neg Modif Space Power Ngtv Weak Psv 	4% adj: "Restricted", confined, limited 
+RETREAT	Neg Noun Ritual Ngtv Weak Actv 	
+RETREAT	IAV Neg SUPV Travl Milit Ngtv Weak Actv 	
+REVERT	IAV Neg SUPV Actv Weak 	
+RIDICULOUS	Neg Modif Vice EVAL Ngtv Weak Ovrst 	
+RUIN	Neg Noun Vice ECON Ngtv Weak 	20% noun: Downfall, destruction 
+RUIN	Neg Modif Vice Ngtv Weak Psv 	0% adj: "Ruined," destroyed 
+RUN	IAV Neg SUPV Finish Weak Ngtv Psv 	1% verb: 'run out'--to become depleted 
+RUN	IAV SUPV Travl Actv Weak 	16% verb: 'run away,' 'run off'--to flee, escape 
+RUNAWAY	Neg Noun HU Nonadlt Travel Weak 	
+RUPTURE	DAV Neg SUPV Hostile Ngtv Weak Exert 	
+RUSTY	IndAdj Neg Modif Weak 	
+SAG	IAV Neg SUPV Psv Weak Subm 	
+SANK	DAV Neg SUPV Fall ED Ngtv Weak 	
+SAP	Neg Noun HU Weak Subm 	
+SCANT	Modif Quan Weak Undrst 	
+SCAPEGOAT	Neg Noun HU Weak 	
+SCAR	Neg Noun Bodypt Ngtv Weak Psv 	
+SCARCE	Modif Quan Weak Undrst 	
+SCARCELY	LY Weak Quan Undrst 	
+SCARE	Neg Noun EMOT Pain Ngtv Psv Subm Weak 	17% noun: A sudden or prolonged fright 
+SCARED	Neg Modif EMOT Pain Subm Ngtv Weak Psv PFREQ 	96% adj: Frightened, afraid 
+SCRAMBLE	IAV SUPV Travl Actv Weak 	
+SCRATCH	DAV SUPV Actv Work Weak 	
+SCRAWL	IAV SUPV Comform Weak 	
+SENTIMENT	Noun EMOT Weak Psv Arousal 	
+SENTIMENTAL	Modif EMOT Weak Psv Arousal 	
+SERVE	IAV SUPV Intrel Econ* Subm Actv Weak 	82% verb: To work for, be of assistance, or do one's duty; to answer the  purpose of, function as (17) 
+SERVICE	IAV Neg SUPV Intrel Hostile Subm Ngtv Weak 	2% idiom: "Lip service" - insincere expression of support 
+SERVITUDE	Neg Noun Weak Subm Intrel 	
+SHABBY	IndAdj Neg Modif Weak 	
+SHALLOW	Neg Noun Space Ngtv Weak 	
+SHIFT	Modif Vary Weak 	10% noun-adj: "Shifting"--changing 
+SHIRK	IAV Neg SUPV Fail Weak Actv 	
+SHOCK	Neg Modif EMOT Ngtv Weak Pain Psv 	29% adj: "Shocked"--jarred with intense surprise, etc. 
+SHODDY	IndAdj Neg Modif Weak Fail 	
+SHORT	Neg PREP Vice Ngtv Weak 	6% idiom-prep: "Short of" - lacking, less than, except for 
+SHORTAGE	Neg Noun ECON Ngtv Weak Quan 	
+SHORTSIGHTED	IndAdj Neg Modif Percv Weak 	
+SHRANK	DAV SUPV ED Decr Weak Psv 	
+SHRINK	DAV SUPV Decr Weak Psv 	
+SHRUNK	DAV SUPV Decr Weak Psv 	
+SHY	Modif EMOT Weak Psv Arousal 	
+SHYNESS	Neg Noun Weak 	
+SICK	Neg Modif Ngtv Weak Psv PFREQ Vice 	94% adj: Unhealthy 
+SICK	Neg Modif Ngtv Weak Psv Vice 	0% adj: "Sicker"--comparative of sense 1 
+SICK	Neg Modif Ngtv Weak Psv Vice 	1% adj: "Sickest"--superlative of sense 1 
+SICKLY	Neg Modif Ngtv Weak Psv Vice 	
+SICKNESS	Neg Noun Ngtv Weak Psv Vice 	noun: Illness, disease 
+SILLY	Neg Modif Vice EVAL Ngtv Weak 	
+SIMPLISTIC	IndAdj Neg Modif Weak 	
+SINK	DAV SUPV Fall Weak Psv 	
+SLAVE	Noun HU POLIT ECON Econ* Subm Weak PFREQ Role 	81% noun-adj: One who is the property of another 
+SLEAZY	IndAdj Neg Modif Weak Hostile 	
+SLENDER	Modif Qual DIM Weak 	
+SLEPT	DAV SUPV ED Weak Psv Natpro 	verb: Past participle of sleep 
+SLIGHT	Modif Space Weak Undrst 	14% adj: Small, insignificant in degree, size or extent 
+SLIGHT	Neg Modif Know Ngtv Weak Undrst 	19% adj: "Slightest" - least, tiniest, most insignificant 
+SLIGHT	Neg LY Ngtv Weak Undrst Quan 	57% adv: "Slightly" - a bit, somewhat 
+SLIM	Modif Qual DIM Weak 	
+SLOPPY	IndAdj Neg Modif Weak 	
+SLOTH	Neg Noun Weak Animal Vice 	
+SLOTHFUL	IndAdj Neg Modif Weak Vice Stay 	
+SLUG	Neg Noun Animal Weak Vice 	
+SLUGGISH	IndAdj Neg Modif Weak Stay Vice 	
+SMALL	Modif Quan DIM Weak Undrst 	86% adjective: Of little size, weight, importance. 
+SMALL	Modif Quan DIM Weak Undrst 	11% adj: "Smaller"--comparative 
+SMALL	Modif Quan DIM Weak Undrst 	3% adjective: "Smallest"--diminutive 
+SOFT	Modif Qual Weak 	67% adj: Not hard or harsh, gentle, quiet 
+SOFT	Modif Qual Weak 	3% adj: "Softer" - comparative form of sense 1 
+SOFT	LY Qual Weak 	20% adv: "Softly" - adverb form of sense 1 
+SOFT	Noun HU Handels Weak Psv Role 	3% idiom-noun: "Soft touch"--credulous person--handled by "touch" 
+SORROW	Neg Noun EMOT Pain Ngtv Affil Weak Psv 	noun: Sadness, grief 
+SORRY	Neg Modif EMOT Ngtv Weak Psv Pain PFREQ 	98% adj: Feeling regret or sorrow 
+SORRY	Neg Modif EVAL Ngtv Weak Psv Vice 	2% noun-adj: Wretched, poor, useless, pitiful 
+SPEECHLESS	Modif Comform Ovrst Psv Weak 	
+SPEND	Modif Weak Psv Arousal 	1% adj: "Spent"--used up 
+SPLIT	Noun Qual Weak Psv 	28% noun-adj: A division; divided (2) 
+SPORADIC	Modif FREQ Weak 	
+STAGGER	IAV SUPV Fall Weak Psv 	
+STALE	IndAdj Neg Modif Weak Vice 	
+STALL	IAV SUPV Stay Weak Hostile 	
+STARVATION	Neg Noun Need Weak Natpro 	
+STARVE	IAV Neg SUPV Psv Need Weak Natpro 	
+STICK	Modif Psv Weak Stay 	10% adj: "Stuck"--caught, embedded, jammed (9); metaphorically used--  caught, saddled with, forced to remain--"i am stuck with her" (2) 
+STRAGGLE	IAV Neg SUPV Move Weak Actv 	
+STRAGGLER	Neg Noun Weak 	
+STRICKEN	IndAdj Neg Modif Weak Pain 	
+STRIFE	Neg Noun Vice Ngtv Weak Actv Hostile 	
+STUMBLE	IAV SUPV Weak Psv Fall 	
+SUBJECTION	Neg Noun Subm Weak 	
+SUBJUGATE	IAV Neg SUPV Weak Subm Intrel Psv 	
+SUBJUGATION	Neg Noun Weak Subm Intrel 	
+SUBMISSIVE	IPadj Neg Modif Weak Subm Intrel 	
+SUBMIT	IAV SUPV Intrel Subm Weak Psv 	
+SUBORDINATE	Noun HU Subm Weak Psv Role 	
+SUBSERVIENCE	Neg Noun Weak Subm Intrel 	
+SUBTLE	Pos Modif EVAL Pstv Weak Virtue 	
+SUCCUMB	IAV Neg SUPV Psv Weak Subm 	
+SUCKER	Neg Noun Weak Subm HU 	
+SUFFER	IAV Neg SUPV Subm Ngtv Weak Psv Pain 	69% verb: To experience or tolerate physical or psychological pain or  other unpleasantness 
+SUFFER	IAV SUPV Intrel Subm Weak Psv 	0% verb: To allow, permit, or let some action take place 
+SUFFER	Neg Modif EMOT Pain Ngtv Weak Psv Weak 	30% noun-adj: "Suffering" 
+SUFFER	Neg Modif EMOT Pain Ngtv Weak Psv Weak 	30% noun-adj: "Suffering" 
+SUFFERER	Neg Noun HU Subm Weak Psv Role Ngtv 	
+SUFFOCATE	IAV Neg SUPV Psv Weak Need 	
+SUNK	DAV SUPV Fall Weak Psv 	
+SUNKEN	SV SUPV ED Fall Weak Psv 	
+SUPERFICIAL	Neg Modif Vice Ngtv Weak Undrst 	
+SUPPORT	Pos Modif Affil Power Pstv Psv Weak Virtue 	5% adj: "Supported"--sustained, backed, encouraged, aided (5) held up (0) 
+SURRENDER	Noun Ritual POLIT Polit* Subm Milit Weak Psv 	
+SURRENDER	DAV SUPV Intrel Polit* Subm Milit Weak Psv 	
+SURROUND	Modif Space Weak Psv 	3% adj: "Surrounded"--enclosed, encompassed 
+SUSCEPTIBLE	IPadj Neg Modif Weak 	
+TEMPORARY	Modif Time* Weak 	
+TENDER	Modif Qual Weak Affil 	
+TENSION	Neg Noun EMOT Ngtv Weak Pain 	noun: Stress 
+TENTATIVE	Modif Know Weak 	
+THIN	Modif Space DIM Weak 	
+TIMID	Modif Weak Psv Vice 	
+TINY	Modif DIM Weak Quan Undrst 	
+TIRE	IAV Neg SUPV Hostile Ngtv Weak Psv Pain 	13% verb: To become bored or disinterested--"tire of" 
+TIRE	Neg Modif Subm Weak Pain Ngtv Psv 	25% adj: "Tiring"--exhausting 
+TIRED	Neg Modif Pain Subm Ngtv Weak Psv 	70% adj: Weary, exhausted, fatigued 
+TIRED	Neg Modif Pain Hostile Ngtv Weak Psv 	27% adj: Exhausted in patience or interest, bored--"tired of doing this" 
+TIRED	SV Neg SUPV Subm Pain Ngtv Weak Psv 	4% verb: To become weary or exhausted 
+TIRED	SV Neg SUPV Hostile Pain Ngtv Weak Psv 	0% verb: To become bored or uninterested 
+TRAMP	Neg Noun HU Role Weak Need 	
+TREMBLE	IAV SUPV Weak Psv Subm Comform 	
+TRIFLE	Modif Weak Undrst Quan 	
+TRIVIAL	IndAdj Neg Modif Weak Undrst 	
+UNABLE	Modif Vice Weak Negate Psv 	adj: Not able 
+UNACCUSTOMED	IndAdj Neg Modif Weak 	
+UNARM	IndAdj Neg Modif Weak 	
+UNASSURED	Modif Negate Weak Pain 	
+UNAWARE	Modif Know Negate Weak Psv 	
+UNCERTAIN	Modif Negate Weak Undrst Know 	
+UNCERTAINTY	Noun Know Negate Weak Undrst 	
+UNDECIDED	Modif Know Negate Weak Psv Undrst 	
+UNDEPENDABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNDEPENDABLE	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNEASY	IndAdj Neg Modif EMOT Negate Ngtv Weak Pain 	
+UNEMPLOYED	IndAdj Neg Modif Econ Weak Vice 	
+UNFAITHFUL	IPadj Neg Modif Fail Vice Weak 	
+UNFAMILIAR	IndAdj Neg Modif Eval Vice Weak 	
+UNFINISHED	IAV SUPV Finish Negate Weak 	
+UNFIT	Neg Modif Vice Negate Ngtv Weak 	
+UNFORTUNATE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	49% adj: Unlucky, inauspicious 
+UNFORTUNATE	Neg Noun HU COLL Negate Ngtv Weak Subm 	3% noun: "Unfortunates" - unlucky people 
+UNGUARDED	IndAdj Neg Modif Weak 	
+UNHEALTHY	IndAdj Neg Modif Natpro Weak 	
+UNINFORMED	IndAdj Neg Modif Weak 	
+UNLUCKY	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNPREPARED	Modif Negate Weak Vice 	
+UNRELIABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNRELIABLE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	
+UNSCRUPULOUS	IndAdj Neg Modif Vice Weak 	
+UNSOUND	IndAdj Neg Modif Vice Negate Weak Undrst 	
+UNSOUNDNESS	Noun Vice Negate Weak Undrst 	
+UNSTABLE	Neg Modif EVAL Vice Negate Weak Ngtv 	
+UNSTEADINESS	Neg Noun Qual Negate Weak Ngtv 	
+UNSTEADY	Neg Modif Qual Negate Weak Ngtv 	
+UNSUCCESSFUL	IndAdj Neg Modif Vice Negate Ngtv Weak Subm Fail 	
+UNSURE	Modif Negate Weak Undrst Vice 	
+UNSURENESS	Noun Negate Weak Undrst Vice 	
+UNTRAINED	IndAdj Neg Modif Weak Fail 	
+UPSET	Neg Modif EMOT Ngtv Weak Pain Psv 	62% adj: "Upset"--disturbed 
+UPSET	Neg Noun Hostile Ngtv Weak Vary 	3% noun: Instance of being overturned, overthrown 
+VACILLATE	IAV SUPV Weak Undrst Solve 	
+VAGABOND	Neg Noun HU Role Econ Weak Travel 	
+VAGRANT	Neg Noun HU Role Econ Weak Travel 	
+VAGUE	Neg Modif Know Undrst Ngtv Weak 	
+VAGUENESS	Neg Noun Know Ngtv Weak Undrst 	
+VICTIM	Noun HU Hostile Subm Weak Psv Role 	
+VULNERABILITY	Noun Vice Subm Weak 	
+VULNERABLE	Modif Vice Subm Weak 	
+WANTON	IndAdj Neg Modif Need Weak 	
+WASTE	Neg Noun ECON Ngtv Econ* Weak Vice 	34% noun-adj: Anything unproductive or improperly utilized 
+WASTE	IAV Neg SUPV Work Ngtv Weak Econ* 	66% verb: To use inefficiently or unproductively 
+WAVER	IAV SUPV Vary Weak 	
+WAYWARD	IndAdj Neg Modif Weak 	
+WEAK	Modif EVAL Weak PFREQ Qual Undrst 	95% adj: Lacking strength 
+WEAK	Modif EVAL Weak Qual Undrst 	5% adj: "Weaker", comparative of sense 1 
+WEAKEN	IAV Neg SUPV Fail Weak Subm Decr 	
+WEAKLY	Modif Weak Undrst Subm Qual 	
+WEAKNESS	Noun ABS Abs* Vice Weak Undrst 	
+WEARINESS	Neg Noun Try Weak 	
+WEARISOME	IndAdj Neg Modif Try Weak 	
+WEARY	Modif EMOT Subm Pain Weak 	
+WEE	IndAdj Neg Modif Weak Ovrst 	
+WHINE	DAV Neg SUPV Hostile Subm Ngtv Weak Comform 	
+WHIP	Noun HU Subm Weak Psv Role 	4% idiom-noun: "Whipping boy" - scapegoat 
+WIND	Modif Pain Weak Psv 	0% adj: "Winded"--out of breath 
+WISH	Noun EMOT Weak Need 	9% noun: A desire or hope 
+WISH	IAV SUPV Need Weak PFREQ 	91% verb: To desire or hope for something 
+WISHFUL	Modif Subm Weak Need 	
+WITHDRAW	IAV SUPV Travl Subm Weak Subm 	
+WITHDRAWN	Modif Subm Weak Vice 	
+WITHDREW	IAV SUPV Travl ED Subm Weak 	
+WITHER	IAV SUPV Decr Weak Psv 	
+WORN	Neg Modif Vice Weak Psv Ngtv 	30% adj: Deteriorated 
+WORRIER	Neg Noun HU Role Weak Psv Ngtv 	
+WORRY	SV Neg SUPV Ngtv Weak Psv Pain 	49% verb: To feel anxious (includes gerunds--"stop worrying") 
+WORRY	Neg Modif EMOT Pain Ngtv Weak Psv 	29% adj: "Worried"--anxious 
+WORRY	Neg LY Pain Ngtv Weak Psv 	0% adv: "Worriedly"--in a worried manner 
+WORSEN	IAV Neg SUPV Psv Decr Weak Subm 	
+WOUND	Neg Noun Ngtv Weak Actv Vice 	25% noun: A physical or emotional injury 
+WOUND	Neg Modif Ngtv Vice Weak Psv 	18% adj: "Wounded"--injured 
+YIELD	SUPV Intrel Subm Weak 	

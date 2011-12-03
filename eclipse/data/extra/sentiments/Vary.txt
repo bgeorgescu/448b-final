@@ -1,0 +1,99 @@
+word	tags	comments
+ACCOMMODATE	IAV Pos SUPV Vary Pstv Actv 	
+ADAPTABILITY	Pos Noun Strng Virtue Vary 	
+ADAPTABLE	IndAdj Pos Modif Strng Virtue Vary 	
+ADAPTATION	Pos Noun Vary Strng Virtue 	
+ADAPTIVE	IndAdj Pos Modif Strng Virtue Vary 	
+ADJUSTABLE	IndAdj Pos Modif Vary 	
+AFFAIR	Noun Actv Vary 	71% noun: Anything requiring action or attention, business, social event,  any matter, occurrence or thing 
+AFFECT	IAV SUPV Actv Vary 	verb: To produce a change in 
+ALTER	IAV SUPV Vary Strng Actv 	
+ALTERATION	Noun Vary 	
+ALTERNATE	IAV SUPV Vary Actv 	
+AMENABLE	IndAdj Pos Modif Affil Vary Virtue 	
+AMEND	Modif Vary 	
+AMEND	IAV SUPV Vary Actv 	
+BOIL	DAV SUPV Vary Actv 	
+CHANCE	IAV SUPV Vary Psv 	4% verb: To happen or occur without plan or intent 
+CHANGE	IAV SUPV Vary Actv 	59% verb: To alter, modify, convert, transform 
+CHANGE	Noun Actv Vary 	32% noun: Alteration, modification, conversion, transformation 
+CHANGE	Modif Actv Vary 	3% noun-adj: "Changing"--(in) the process of change 
+CHANGE	Modif Psv Vary 	1% adj: 'changed'--altered, transformed 
+CHANGEABLE	Modif Psv Undrst Vary 	
+COME	IAV SUPV Vary 	1% idiom-verb: "Come to pass"--happen 
+COME	IAV SUPV Vary 	0% idiom-verb: "Come off"--become detached, happen, occur 
+CONVERSION	Noun Vary 	
+DEXTERITY	Pos Noun Vary Strng 	
+DIVERT	IAV Neg SUPV Actv Vary Move 	
+EVENT	Noun Vary PFREQ 	93% noun: Occurrence, situation 
+EVOLUTION	Noun Psv Vary 	
+EVOLVE	IAV SUPV Vary Psv 	
+FLASH	IAV SUPV Vary Actv 	
+FLUX	Noun ABS Abs* Vary Psv 	
+FOAM	IAV SUPV Vary 	
+FORTH	LY Vary 	17% idiom-adv: "Back and forth"--from one direction to another and back 
+GO	DAV SUPV VERB GO Actv PFREQ Vary 	88% verb: Indicates motion, action, change of state 
+GO	IAV SUPV VERB MOD GO Vary 	5% verb: "Going to"--auxiliary indicating future tense 
+GONE	DAV SUPV VERB GO ED Actv Vary 	77% verb: Indicates past motion, action, change of state 
+GONNA	IAV SUPV VERB MOD GO Vary 	
+HAPPEN	DAV SUPV Vary Psv PFREQ 	92% verb: To take place or occur 
+HAPPEN	IAV SUPV Vary 	7% verb: 'happen (to)'--chance (to) 
+HAPPEN	Noun Vary 	0% noun: 'happening'--an event 
+HIT	Neg Modif Vary Ngtv Psv 	1% idiom-adj: "Hit or miss"--haphazard 
+IMPETUOUS	IndAdj Neg Modif Think Vary Vice 	
+IMPULSIVE	IndAdj Neg Modif Eval Vice Think Vary 	
+IRREGULAR	Neg Modif Negate Ngtv Vary 	
+JUMPY	IndAdj Neg Modif Vary Move 	
+MITIGATE	IAV SUPV Vary 	
+MODIFICATION	Noun Actv Vary 	
+MODIFY	IAV SUPV Strng Actv Vary 	
+MOODY	IndAdj Neg Modif Emot Vary 	
+OCCUR	IAV SUPV Vary Psv PFREQ 	86% verb: To happen, take place 
+OCCURRENCE	Noun Vary Psv 	
+PANDEMONIUM	Neg Noun Vary Ngtv Strng 	
+PASS	Modif Vary Psv 	3% idiom-verb: "Come to pass"--happen--handled by "come" 
+PEND	IAV SUPV Vary Psv 	
+PLACE	LY Vary 	7% idiom: "Take place" 
+POSTPONE	IAV SUPV Vary Actv 	
+PREPARATION	Noun Actv Vary 	
+PROCESS	Noun Actv PFREQ Vary 	97% noun: A series of actions directed towards some end, pertaining to  this series of actions ("processi 
+RANDOM	Noun Weak Vary 	
+REFORM	IAV SUPV Actv Vary 	
+REORGANIZATION	Noun Vary Actv 	
+REPLACEMENT	Noun Vary 	
+RESUME	IAV SUPV Vary Actv 	
+RETURN	Noun Vary 	8% noun-adj: A coming back, reversion, recurrence 
+REVERSE	Noun Decr Vary 	
+REVERSE	IAV SUPV Vary Actv 	
+REVISE	Modif Vary 	
+REVISION	Noun Vary 	
+ROUND	IAV SUPV Actv Vary 	0% idiom-verb: "Round off", to make round, remove excess 
+SHADE	DAV SUPV Vary 	
+SHIFT	DAV SUPV Vary Actv 	55% verb: To change directions, to transfer, to switch 
+SHIFT	Noun Vary 	10% noun: Switch, change, transfer 
+SHIFT	Modif Vary Weak 	10% noun-adj: "Shifting"--changing 
+STORMY	IndAdj Neg Modif Hostile Vary 	
+SUBSTITUTE	IAV SUPV Vary 	
+SWITCH	IAV SUPV Vary Actv 	
+TAKE	IAV SUPV Vary 	3% verb-idiom: "Take place"--happen 
+TEMPORARILY	IndAdj Neg Modif Vary Time 	
+TRANSFORM	IAV SUPV Vary Strng Actv 	
+TRANSFORMATION	Noun Strng Vary Actv 	
+TRANSITION	Noun ABS Abs* Vary 	
+TURBULENT	IndAdj Neg Modif Vary Hostile 	
+TURN	IAV SUPV VERB VB Vary 	15% verb: To become, change--"turn cowardly and craven" 
+TWIST	Noun Actv Vary 	
+UNLIKE	IndAdj PREP Negate Rel Vary 	
+UNREST	Neg Noun Vice Vary 	
+UPHEAVAL	Neg Noun Vary Change 	
+UPSET	Neg Noun Hostile Ngtv Weak Vary 	3% noun: Instance of being overturned, overthrown 
+VARIATION	Noun ABS Abs* Vary 	
+VARIETY	Noun ABS Abs* Vary 	
+VARY	Modif Vary 	
+VARY	IAV SUPV Vary 	
+VERSATILE	IndAdj Pos Modif Vary Virtue 	
+VERSATILITY	Pos Noun Vary Virtue 	
+VOLATILE	IndAdj Neg Modif Vary 	
+VOLATILITY	Neg Noun Vary 	
+WAVER	IAV SUPV Vary Weak 	
+WHIM	Noun Vary 	

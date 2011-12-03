@@ -1,0 +1,16 @@
+word	tags	comments
+EIGHTEENTH	DET NUMB ORD Quan 	
+EIGHTH	DET NUMB ORD POS PFREQ Rel 	95% noun-adj: The ordinal number 
+FIFTEENTH	DET NUMB ORD Rel 	
+FINAL	DET NUMB ORD POS Modif Time* Ovrst Strng 	24% adjective: Last, eventual, terminal 
+FIRST	DET NUMB ORD POS Modif Rel 	61% adj: Initial, foremost 
+FOLLOW	DET ORD NUMB POS 	11% adj-noun: "Following"--that which comes immediately after or next  in order or time, ensuing 
+FORMER	DET NUMB ORD PRE PRE2 Modif Time* 	76% adj: Previous 
+LAST	DET NUMB ORD Modif Time* 	45% adj: Previous, past, prior, most recent 
+LAST	DET NUMB ORD POS Modif Ovrst Rel 	28% adj-adv: Final, finally 
+NEXT	DET NUMB ORD POS Modif Time* 	81% adj-adv: Immediately succeeding in some sequence, usually temporal-- 95 percent 
+PRIOR	DET NUMB ORD Modif Time* 	
+SECOND	DET NUMB ORD POS PRON PFREQ Rel 	84% pron-adj-adv: Unit of series following the first 
+SUBSEQUENT	DET NUMB ORD Modif Time* 	
+SUCCEED	DET NUMB ORD Modif Time* 	6% adj: "Succeeding"--following 
+THIRD	DET NUMB ORD POS PFREQ Rel 	83% noun-adj: The ordinal number 

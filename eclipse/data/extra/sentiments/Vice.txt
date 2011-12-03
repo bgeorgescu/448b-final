@@ -1,0 +1,687 @@
+word	tags	comments
+ABJECT	IPadj Neg Modif Psv Subm Weak Vice 	
+ABNORMAL	Neg Modif Vice Ngtv 	
+ABOMINABLE	IndAdj Neg Modif Eval Vice Strng Ovrst 	
+ABRASIVE	IPadj Neg Modif Vice Hostile Strng 	
+ABSENTEE	Neg Noun Hostile Weak Fail Intrel Vice 	
+ABSURD	Neg Modif Vice Ngtv Ovrst 	
+ABSURDITY	Neg Noun Vice 	
+ABUSE	Neg Noun Vice Ngtv Hostile Actv 	
+ACCURSED	IPadj Neg Modif Vice Hostile 	
+ACRIMONY	Neg Noun Hostile Psv Arousal Vice 	
+ADULTERATION	Neg Noun Vice Change 	
+ADULTERY	Neg Noun Vice Intrel 	
+ADVERSE	Neg Modif Vice Ngtv 	
+ADVERSITY	Neg Noun Vice 	
+AFFECTATION	Neg Noun Vice 	
+AFFLICTION	Neg Noun Ngtv Weak Vice Psv 	
+AGGRAVATION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGGRESSION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGGRESSIVENESS	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AGHAST	IPadj Neg Modif Vice Ovrst 	
+AGITATION	Neg Noun Ngtv Strng Actv Vice 	
+ALARMING	IndAdj Neg Modif Vice Ovrst 	
+ALIENATION	Neg Noun ABS Abs* EMOT Vice Ngtv 	
+AMISS	Neg LY Ngtv Vice 	
+ANIMOSITY	Neg Noun Hostile Intrel Vice 	
+ANNIHILATION	Neg Noun Vice Finish Hostile 	
+ANTI-SOCIAL	IPadj Neg Modif Ovrst Intrel Vice 	
+ANTIPATHY	Neg Noun Vice Undrst Feeling 	
+APATHY	Neg Noun Vice Weak Undrst Psv Feeling 	
+APPALL	Neg Modif Vice Ngtv 	
+ARBITRARY	Neg Modif Vice Ngtv Undrst 	
+ARDUOUS	IndAdj Neg Modif Vice Eval 	
+ARROGANCE	Neg Noun Vice Power 	
+ARROGANT	Neg Modif Ngtv Strng Vice 	
+ARTIFICIAL	Neg Modif Vice Ngtv 	
+ASSAULT	Neg Noun Hostile Ngtv Strng Actv Vice 	
+ATROCIOUS	IndAdj Neg Modif Vice Ngtv Ovrst Eval Vice 	
+ATROCIOUS	IndAdj Neg Modif Vice Ngtv Ovrst Eval Vice 	
+ATTACK	Neg Noun POLIT Hostile Ngtv Strng Actv Vice 	55% noun: An onslaught, assault 
+ATTACK	Neg Noun Vice Ngtv Hostile 	10% noun: A seizure by disease, especially "heart attack" 
+AUDACIOUS	IndAdj Neg Modif Eval Vice Strng Ovrst 	
+AUDACITY	Neg Noun Vice Strng Ovrst 	
+AVARICE	Neg Noun Vice 	
+AVARICIOUS	IPadj Neg Modif Vice 	
+AVENGE	Neg Noun Hostile Ngtv Strng Actv Vice 	
+AWFUL	Neg Modif EVAL Vice Ngtv Strng Ovrst 	60% adjective-adv: Extremely bad, unpleasant, ugly; very (7) 
+AWKWARD	Neg Modif EVAL Vice Ngtv Weak 	
+AWKWARDNESS	Neg Noun Vice Weak 	
+BACKWARDNESS	Neg Noun ECON Ngtv Weak Vice 	
+BAD	Neg Modif EVAL Vice Ngtv Ovrst 	adj: Marks negative evaluation on a dimension specified by context--not  good, of poor quality, offensive, unfortunate 
+BADLY	Neg Modif EVAL Vice Ovrst Ngtv 	
+BANAL	IndAdj Neg Modif Vice 	
+BANE	Neg Noun Weak Vice Psv 	
+BANKRUPT	IndAdj Neg Modif Vice Econ Fail Quan 	
+BANKRUPTCY	Neg Noun Vice Econ Fail Quan 	
+BARBARIAN	Neg Noun HU Hostile Vice 	
+BARBAROUS	IndAdj Neg Modif Hostile Exert Vice 	
+BEASTLY	IndAdj Neg Modif Hostile Vice 	
+BEAT	Neg Noun Hostile Strng Ngtv Vice 	5% noun-adj: "Beating"--a whipping or thrashing, striking, throbbing (0) 
+BEAT	Neg Modif Vice Subm Ngtv Weak Psv 	2% adj: "Beaten"--hammered, trodden, thrashed 
+BEREAVEMENT	Neg Noun Vice Weak Psv 	
+BESIDE	PREP CONJ CONJ2 Vice 	2% idiom-adv: Out of emotional control--"beside oneself"--handled by reflexive  pronouns 
+BIZARRE	IndAdj Neg Modif Vice 	
+BLAME	Neg Noun Vice Hostile Ngtv 	25% noun: Reproof, culpability 
+BLEAK	Neg Modif Vice Ngtv 	
+BLEMISH	Neg Noun Weak Vice 	
+BLIND	Neg Modif Vice Ngtv Weak 	14% adv: "Blindly" 
+BLIND	Neg Modif Vice Ngtv Strng 	5% adj: "Blinding"--producing blindness 
+BLINDNESS	IndAdj Neg Modif Weak Vice 	
+BLOCKHEAD	IndAdj Neg Modif Weak Fail Vice 	
+BOARD	Neg LY Vice Ngtv 	2% idiom-adv: 'by the board'--over the side (naut.), in or into neglect or oblivion 
+BOAST	IAV Neg SUPV Comform Power Vice Actv 	
+BOASTFUL	IndAdj Neg Modif Comform Power Vice 	
+BOGUS	IndAdj Neg Modif Eval Vice 	
+BONDAGE	Neg Noun Vice Subm Ngtv Weak Psv 	
+BORE	Neg Noun Vice Ngtv 	0% noun: Someone or something that causes loss of interest 
+BORE	Neg Modif Vice Ngtv Psv 	50% adj: "Bored"--not interested, frustrated 
+BORE	Neg Modif Vice Ngtv 	13% adj: "Boring"--not interesting 
+BOREDOM	Neg Noun Vice 	
+BOTHER	Neg Noun Vice Ngtv 	2% noun: Something troublesome or annoying 
+BOTHERSOME	Neg Noun Vice Ngtv 	
+BOUND	Neg Modif Vice Ngtv Weak Psv 	30% adj: Limited, tied, 
+BOW	Modif Weak Psv Vice 	6% adj: "Bowed"--bent or stooped, overwhelmed 
+BRAT	IndAdj Neg Modif Vice 	
+BRIBE	IAV Neg SUPV Econ Vice 	
+BROKE	Neg Modif ECON Vice Econ* Ngtv 	3% adjective: Destitute 
+BROKE	Neg Modif Vice Ngtv Psv 	5% adj: "Broken" 
+BRUTALITY	Neg Noun Vice Hostile Ngtv Strng Actv Ovrst 	
+BRUTE	Neg Noun HU Hostile Vice 	
+BRUTISH	IndAdj Neg Modif Hostile Vice 	
+BURDEN	Neg Noun Vice Ngtv Weak 	
+BURDENSOME	IPadj Neg Modif Pain Vice 	
+BURGLAR	Neg Noun HU Fetch Hostile Vice 	
+BURGLARY	Neg Noun Fetch Hostile Vice 	
+BURN	Neg Noun Ngtv Vice 	3% noun: An injury from fire; rarely--a brook (0) 
+BUSYBODY	Neg Noun HU Comform Vice 	
+BUTCHERY	Neg Noun Hostile Ngtv Strng Actv Vice 	
+CANCER	Neg Noun Vice Ngtv 	
+CANNIBAL	Neg Noun HU Vice Hostile Exert 	
+CAPITAL	Neg Modif Vice Legal Ngtv 	3% adj: Punishable by death 
+CAPRICIOUS	IPadj Neg Modif Vice 	
+CARELESS	Neg Modif Vice Ngtv 	
+CARELESSNESS	Neg Noun Vice 	
+CARRY	Modif Vice 	1% idiom-adj: 'carried away'--excessively moved 
+CATASTROPHE	Neg Noun Vice Ngtv Ovrst 	
+CATCH	Neg Noun Vice Ngtv 	2% noun: A reservation or qualification in an agreement. 
+CHAOS	Neg Noun Vice Ngtv Ovrst 	
+CHAOTIC	IndAdj Neg Modif Vice EVAL Ngtv Ovrst 	
+CHEAP	Neg Modif EVAL ECON Vice Econ* Ngtv Weak 	
+CHEATER	Neg Noun HU Vice 	
+CHILDISH	IndAdj Neg Modif Nonadlt Vice 	
+CHRONIC	Neg Modif Vice Ngtv Weak Psv Ovrst 	
+CIRCLE	Neg Noun Vice Ovrst Ngtv 	6% idiom: "Vicious circle" 
+CLAMOR	Neg Noun Pain Comform Vice 	
+CLUMSY	IndAdj Neg Modif Vice 	
+CLUTTER	Neg Noun Vice 	
+COARSENESS	Neg Noun Vice Qual Eval 	
+COCKINESS	Neg Noun Emot Power Strng Vice 	
+COERCION	Neg Noun Power Comform Intrel Vice 	
+COLD	Neg Noun Vice Ngtv 	10% noun: The common illness 
+COMMISERATION	Neg Noun Emot Pain Vice Intrel 	
+COMMOTION	Neg Noun Ngtv Actv Vice Ovrst 	
+COMPLICATION	Neg Noun Vice Ngtv 	
+COMPLICITY	Neg Noun Ngtv Psv Vice 	
+CONCEIT	Neg Noun Vice Hostile Power 	
+CONDEMNATION	Neg Noun Vice Hostile Eval 	
+CONDESCENDING	IPadj Neg Modif Power Hostile Vice 	
+CONDESCENSION	Neg Noun Vice Power Hostile Intrel 	
+CONFINEMENT	Neg Noun Vice Stay 	
+CONFISCATION	Neg Noun Vice Fetch Power 	
+CONFRONTATION	Neg Noun POLIT Hostile Ngtv Strng Vice Actv 	
+CONFUSE	Neg Modif Vice Ngtv Weak Psv Undrst 	82% adj: "Confused"--jumbled, disturbed, bewildered 
+CONFUSE	Neg Modif Vice Ngtv Undrst 	7% adj: "Confusing"--bewildering 
+CONFUSION	Neg Noun Vice Ngtv Undrst Weak 	
+CONSTERNATION	Neg Noun Think Solve Vice 	
+CONSUMPTIVE	Neg Modif Vice Ngtv Actv Strng 	
+CONTAMINATION	Neg Noun Vice Change Hostile 	
+CONTEMPT	Neg Noun Hostile Intrel Emot Vice 	
+CONTEMPTIBLE	IndAdj Neg Modif Hostile Intrel Vice 	
+CONTEMPTUOUS	IndAdj Neg Modif Hostile Intrel Vice 	
+CORRUPT	IPadj Neg Modif Vice Econ 	
+CORRUPTION	Neg Noun Vice POLIT Hostile Ngtv 	
+COSTLY	Neg LY Econ* Ngtv Vice 	adj: Expensive 
+COUNTERFEIT	IndAdj Neg Modif Eval Vice 	
+COVERT	IndAdj Neg Modif Vice 	
+CRAFTY	IndAdj Neg Modif Think Solve Vice 	
+CRASH	Noun Vice 	
+CRASS	IndAdj Neg Modif Vice Hostile 	
+CRAZE	Neg Noun Vice 	
+CRAZINESS	Neg Noun Vice 	
+CRAZY	Neg Modif EVAL EMOT Vice Ngtv 	
+CREEP	Modif Vice Weak Actv 	
+CRIME	Neg Noun Vice POLIT Legal Ngtv 	
+CRISIS	Neg Noun ECON POLIT Vice Ngtv 	
+CROOK	Neg Noun HU Vice 	
+CROOKED	IndAdj Neg Modif Vice Hostile 	
+CRUEL	Neg Modif Vice EVAL Hostile Ngtv 	
+CRUELTY	Neg Noun Vice Hostile Ngtv 	
+CULPRIT	Neg Noun Vice Causal HU 	
+CURSORY	IndAdj Neg Modif Psv Undrst Vice 	
+CYNICAL	Neg Modif Hostile Ngtv Vice 	
+CYNICISM	IndAdj Neg Modif Vice Ovrst 	
+DAMAGE	Neg Noun Vice Ngtv Strng Actv 	
+DAMNABLE	IndAdj Neg Modif Vice Hostile Eval 	
+DAMNED	IndAdj Neg Modif Vice Hostile Eval 	
+DANGER	Neg Noun Vice Ngtv Ovrst 	noun: Threat or state of exposure to harm 
+DANGEROUS	Neg Modif Vice EVAL Ngtv Ovrst 	adj: Potentially harmful 
+DEADLY	Neg Modif Vice EVAL Ngtv Strng Hostile 	
+DEADWEIGHT	Neg Noun Vice Stay 	
+DEAF	IndAdj Neg Modif Vice 	
+DEAFNESS	Neg Noun Vice 	
+DEARTH	Neg Noun Weak Psv Vice 	
+DECADENCE	Neg Noun Vice Need Ovrst 	
+DECADENT	IndAdj Neg Modif Vice Need Ovrst 	
+DECEIT	Neg Noun Vice Eval Hostile 	
+DECEITFUL	IPadj Neg Modif Vice Eval Hostile 	
+DECEIVE	Neg Modif Vice Ngtv Actv Hostile 	
+DECEPTION	Neg Noun Hostile Ngtv Vice Actv 	
+DEFEAT	Neg Noun Vice POLIT Ngtv 	45% noun: A lost contest 
+DEFECT	Neg Noun Vice Ngtv Weak 	
+DEFECTIVE	Neg Modif Vice EVAL Ngtv Weak 	
+DEFIANCE	Neg Noun Vice Strng Hostile 	
+DEFIANT	IPadj Neg Modif Vice Strng Hostile 	
+DEFICIENCY	Neg Noun Vice Ngtv Weak 	
+DEFICIENT	IndAdj Neg Modif Weak Vice 	
+DEFICIT	Neg Noun Vice ECON Econ* Ngtv Weak 	
+DEGENERATE	Neg Modif Vice Ngtv Weak Psv Ovrst 	
+DELINQUENCY	Neg Noun Vice Weak Fail 	
+DELINQUENT	IndAdj Neg Modif Vice Weak Fail 	
+DELIRIUM	Neg Noun Think Weak Vice Ovrst 	
+DELUSION	Neg Noun Weak Think Vice 	
+DEMAND	LY Strng Actv Vice 	0% adv: "Demandingly", exactingly 
+DEMON	Neg Noun Vice Hostile 	
+DEPENDENCE	Noun Subm Weak Psv Vice 	
+DEPLORABLE	IndAdj Neg Modif Vice Ngtv 	
+DEPRAVED	IndAdj Neg Modif Vice Eval 	
+DEPRESS	Neg Modif Vice Ngtv 	17% adj: "Depressing"--discouraging, gloomy 
+DEPRESSION	Neg Noun Econ* Ngtv Weak Vice 	77% noun: Economic decline 
+DERISION	Neg Noun Vice Hostile 	
+DERISIVE	IndAdj Neg Modif Vice 	
+DESERTION	Neg Noun Travel Affil Vice Ovrst 	
+DESOLATE	Neg Modif Ngtv Weak Vice 	
+DESOLATION	Neg Noun Vice Power Emot 	
+DESPICABLE	IndAdj Neg Modif Eval Vice 	
+DESPISE	Neg Modif Vice Ngtv Strng Hostile 	
+DESTRUCTION	Neg Noun Hostile Ngtv Actv Vice Power Fail 	noun: The act of destroying, fact or state of being destroyed 
+DESTRUCTIVE	Neg Modif Hostile Ngtv Strng Actv Vice 	
+DETACHMENT	Neg Noun Vice Ovrst 	
+DETESTABLE	IndAdj Neg Modif Vice Eval 	
+DETRIMENTAL	IndAdj Neg Modif Ngtv Strng Causal Vice 	
+DEVASTATION	Neg Noun Vice Hostile 	
+DIFFICULT	Neg Modif Vice EVAL Ngtv 	adjective: Not readily done, demanding, hard 
+DIFFICULTY	Neg Noun ABS Abs* Vice Ngtv 	noun: The fact or condition of being difficult--a trouble or embarrassment,  a cause thereof. 
+DILEMMA	Neg Noun ABS Abs* Vice Ngtv Undrst 	
+DIRE	IndAdj Neg Modif Vice Weak 	
+DIRTY	Neg Modif Vice Ngtv 	adj: Unclean, contemptible 
+DISADVANTAGE	Neg Noun Vice Ngtv Weak Negate 	
+DISADVANTAGEOUS	Neg Modif EVAL Negate Ngtv Weak Vice 	
+DISAPPOINT	Neg Modif Vice Ngtv 	8% adj: "Disappointing"--producing letdown, displeasing 
+DISAPPOINT	Neg Modif Vice Ngtv 	4% adv: "Disappointingly"--displeasingly 
+DISAPPROVAL	Neg Noun Vice Eval 	
+DISASTER	Neg Noun Vice Ngtv Weak 	
+DISASTROUS	Neg Modif Vice EVAL Ngtv Weak 	
+DISCORD	Neg Modif Ngtv Weak Vice Hostile 	
+DISCOURAGEMENT	Neg Noun Vice Decr Weak Subm 	
+DISCRIMINATION	Noun ECON POLIT Hostile Race PFREQ Vice 	noun: Bias, favoritism in treatment, generally racially oriented 
+DISDAIN	Neg Noun Vice Power Eval 	
+DISEASE	Neg Noun Vice Ngtv 	
+DISEASED	IndAdj Neg Modif Vice Weak 	
+DISGRACE	Neg Noun Vice Weal Eval 	
+DISINTEREST	Neg Noun Vice Stay 	
+DISMAL	Neg Modif EVAL Vice Ngtv Weak 	
+DISOBEDIENCE	Neg Noun Vice Hostile 	
+DISOBEDIENT	IPadj Neg Modif Vice Hostile 	
+DISORDER	Neg Noun Negate Ngtv Weak Vice 	
+DISORGANIZED	IndAdj Neg Modif Ngtv Weak Psv Vice Negate 	
+DISPUTABLE	Neg Modif Hostile Legal Ngtv Undrst Vice 	
+DISRUPTION	Neg Noun Hostile Vice 	
+DISSATISFACTION	Neg Noun Pain Vice 	
+DISSENT	Neg Noun Vice Affil Hostile 	
+DISSENTION	Neg Noun Vice Affil Hostile 	
+DISTRACTION	Neg Noun Ovrst Vice 	
+DISTURB	Neg Modif Vice Ngtv Actv 	22% adj: "Disturbing"--disquieting 
+DISTURBANCE	Neg Noun Hostile Ngtv Actv Vice 	
+DIVORCE	Neg Noun Hostile Kin* Legal Ngtv Vice 	84% noun: A legal marital separation 
+DOLDRUMS	Neg Noun Pain Vice 	
+DOMINANT	Modif POLIT Power Strng Ovrst Vice 	
+DOMINATION	Neg Noun ECON POLIT Power Ngtv Strng Actv Vice 	
+DOOM	Neg Noun Ngtv Weak Psv Vice 	
+DOPE	Neg Noun HU Vice 	
+DOUBLE	Neg Noun Hostile Ngtv Vice 	0% idiom-noun: 'double cross'--treachery 
+DOUBTFUL	IndAdj Neg Modif Undrst Ngtv Weak Vice Percv 	
+DRAB	IndAdj Neg Modif Vice 	
+DREADFUL	Neg Modif Vice Ovrst Ngtv Weak Psv 	
+DREARY	IndAdj Neg Modif Vice 	
+DRUNK	Neg Modif Vice Ngtv Weak Psv PFREQ 	83% adjective: Intoxicated 
+DRUNKARD	Neg Noun HU Vice Weak 	
+DRUNKEN	IndAdj Neg Modif Weak Psv Vice 	
+DUBIOUS	Neg Modif Undrst Ngtv Vice 	
+DUNCE	Neg Noun HU Vice 	
+EGOTISTICAL	IndAdj Neg Modif Vice Power Hostile 	
+EMBARRASSMENT	Neg Noun Weak Vice 	
+EMERGENCY	Neg Noun Vice Ngtv 	noun-adj: An unexpected dangerous situation 
+ENVIOUS	IPadj Neg Modif Vice Other Need 	
+ENVY	Neg Noun Vice Need Other 	
+EQUIVOCAL	Neg Modif Undrst Ngtv Weak Vice 	
+ERROR	Neg Noun Vice Ngtv 	
+EVIL	Neg Noun Vice Ngtv 	55% noun: Wickedness 
+EVIL	Neg Modif EVAL Vice Ngtv 	45% adj: Wicked 
+EXCESSIVE	Neg Modif Vice EVAL Ngtv Ovrst 	
+EXPENSIVE	Neg Modif ECON Econ* Ngtv Vice 	
+EXTRAVAGANT	Neg Modif Vice EVAL Econ* Ngtv Ovrst 	
+FABRICATION	Neg Noun Vice Comform 	
+FAIL	Neg Noun Vice Ngtv Weak Psv 	4% noun-adj: "Failing"--a fault or failure, unsatisfactory 
+FAILURE	Neg Noun Vice Ngtv Weak Psv 	noun: A general instance of proving unsuccessful, one who or that which  proves unsuccessful or fails to perform something expected or required 
+FALSE	Neg Modif Vice EVAL Ngtv 	
+FANATIC	Neg Noun HU Need Vice 	
+FANATICAL	IndAdj Neg Modif Need Vice 	
+FAULT	Neg Noun Vice Ngtv Weak 	
+FEEBLE	Neg Modif Vice Ngtv Weak Psv Undrst 	
+FEVER	Neg Noun Ngtv Weak Psv Vice 	
+FIGHT	Neg Modif Hostile Ngtv Strng Actv Vice 	8% noun-adj: "Fighting"--engaging in conflict 
+FILTH	Neg Noun Vice 	
+FILTHY	IndAdj Neg Modif Vice 	
+FIX	Neg Noun Vice Ngtv 	3% noun: "A fix"--a predicament 
+FLU	Noun Vice 	
+FOOLISH	Neg Modif Vice EVAL Ngtv Weak 	adj: Imprudent, ridiculous 
+FOOLISHNESS	Neg Noun Weak Vice 	
+FORCE	Neg Modif Power Ngtv Psv Vice Hostile 	4% adj: "Forced"--compulsory, constrained 
+FOREIGN	Neg Modif Vice EVAL Ngtv 	1% adjective: Strange, unknown, alien, hostile, or irrelevant to a person  or matter. 
+FORGETFULNESS	Neg Noun Vice Think 	
+FORMIDABLE	Neg Modif Vice Strng Ngtv Power 	
+FRACTURE	IAV Neg SUPV Weak Psv Vice 	
+FRAIL	Modif Vice Weak 	
+FRONT	Neg Noun Vice Ngtv 	4% noun: A facade 
+FRUITLESS	Neg Modif Vice EVAL Ngtv Weak 	
+FUSSY	IndAdj Neg Modif Ovrst Vice 	
+FUTILITY	Neg Noun Weak Subm Vice 	
+GHASTLY	Neg Modif Vice EVAL Ngtv Ovrst 	
+GRAVE	Neg Modif Vice EVAL Ngtv Ovrst 	8% adjective: Serious 
+GRAVE	Neg Modif Vice EVAL Ngtv Ovrst 	3% adjective: "Graver"--more serious--comparative of sense 2 
+GRAVE	Neg Modif Vice EVAL Ngtv Ovrst 	3% adverb: "Gravely"--seriously 
+GRAVE	Neg Modif Vice EVAL Ngtv Ovrst 	0% adjective: "Gravest"--most serious 
+GRIM	IndAdj Neg Modif EVAL Vice Ngtv 	
+GROTESQUE	Neg Modif Vice EVAL Ngtv Ovrst 	
+GUILTY	IndAdj Neg Modif Vice EVAL Legal Ngtv Psv Causal Weak 	adj: Culpable 
+HACK	Neg Noun Vice HU Weak 	
+HAND	Neg Modif Vice Ngtv Strng 	1% idiom-adj: "Out of hand"--out of control 
+HAND	Handels Vice 	0% idiom-adv-adj: "Off hand" 
+HANDICAP	Neg Noun Weak Vice 	
+HAPLESS	IndAdj Neg Modif Weak Subm Vice Psv 	
+HARD	Neg Modif Vice EVAL Ngtv Strng 	47% adj: Difficult, trying, severe (especially of people) 
+HARDSHIP	Neg Noun Vice Ngtv 	
+HARM	Neg Noun Hostile Ngtv Strng Psv Vice 	33% noun: Injury, damage, hurt 
+HARMFUL	Neg Modif Vice Ngtv Strng 	
+HARSH	Neg Modif Vice EVAL Hostile Ngtv Strng 	
+HAVOC	Neg Noun Vice Ovrst 	
+HAZARD	Neg Noun Vice Ngtv 	
+HAZARDOUS	Neg Modif Vice Ngtv 	
+HEAD	Modif Vice 	3% adj: 'x-headed'--where x denotes properties attributed to the head.  should be hyphenated. 
+HEADACHE	Neg Noun Ngtv Vice 	
+HECTIC	IndAdj Neg Modif Vice Ovrst 	
+HEDONISTIC	IndAdj Neg Modif Vice Need 	
+HELPLESSNESS	Neg Noun Weak Subm Vice 	
+HESITANT	Modif Weak Psv Undrst Vice 	
+HESITATION	Noun Weak Psv Undrst Vice 	
+HIDEOUS	Neg Modif Vice EVAL Ngtv Ovrst 	
+HINDRANCE	Neg Noun Ngtv Hostile Vice 	
+HOLE	Neg Modif Vice Econ* Ngtv Weak 	2% idiom-adj: "In the hole"--in the red, suffering a deficit 
+HOLE	Neg Noun ABS Abs* Vice Ngtv Weak Psv 	2% idiom-adj: "In a hole"--in a tough spot, difficult situation--not handled 
+HOMELY	Neg Modif Vice EVAL Ngtv 	
+HORN	Neg LY Vice Ngtv 	3% idiom-noun: "The horns of a dilemma" 
+HORRIBLE	Neg Modif Vice EVAL Ngtv PFREQ 	adj: Frightful, unpleasant 
+HORRID	IndAdj Neg Modif Eval Vice 	
+HOT	Neg Modif Ngtv Vice 	0% idiom-adv: "Not so hot"--not too well 
+HURTFUL	IPadj Neg Modif Vice Emot Pain 	
+HYPOCRISY	Neg Noun Vice Comform 	
+HYPOCRITE	Neg Noun Comform Vice 	
+HYSTERIA	Neg Noun Vice Emot Pain 	
+IDIOT	Neg Noun Vice Eval 	
+IDIOTIC	IndAdj Neg Modif Eval Vice 	
+IDLE	Modif Psv Vice 	
+IDLENESS	Neg Noun Stay Work Vice 	
+IGNOBLE	IndAdj Neg Modif Vice Eval 	
+IGNORANCE	Neg Noun Vice Ngtv Weak 	
+IGNORANT	Neg Modif Vice EVAL Ngtv Weak 	
+ILL	Neg Modif Ngtv Weak Psv Vice 	59% adj: Of unsound physical or mental health, sick 
+ILL	Neg LY Vice Ngtv 	28% adj-adv: Objectionable, unsatisfactory, bad, adverse, poorly 
+ILL	Neg Noun Ngtv Vice 	7% noun: Evil, harm, injury, disease 
+ILLEGAL	IndAdj Neg Modif Legal Vice Eval 	
+ILLEGALITY	Neg Noun Vice Eval Legal 	
+ILLNESS	Neg Noun Ngtv Weak Psv Vice 	noun: Sickness of the body or mind 
+IMMORAL	IndAdj Neg Modif Vice Eval Doctr 	
+IMMORALITY	Neg Noun Vice Eval Doctr 	
+IMPATIENT	IndAdj Neg Modif Vice Need 	
+IMPEDIMENT	Neg Noun Hostile Ngtv Vice 	
+IMPERFECT	IndAdj Neg Modif Vice Fail 	
+IMPERSONAL	Neg Modif Vice Ngtv 	
+IMPETUOUS	IndAdj Neg Modif Think Vary Vice 	
+IMPROPER	IndAdj Neg Modif Eval Vice 	
+IMPULSIVE	IndAdj Neg Modif Eval Vice Think Vary 	
+IMPURE	IndAdj Neg Modif Eval Vice 	
+IMPURITY	Neg Noun Eval Vice Fail 	
+INABILITY	Neg Noun Negate Ngtv Weak Psv Vice 	
+INACCESSIBLE	IPadj Neg Modif Negate Eval Vice 	
+INADEQUATE	IndAdj Neg Modif Vice EVAL Negate Ngtv Weak Subm Psv 	
+INANE	IndAdj Neg Modif Eval Vice 	
+INCAPABLE	Neg Modif Vice EVAL Ngtv Weak Psv Subm Negate 	
+INCOMPATIBILITY	Neg Noun Negate Ngtv Vice 	
+INCOMPATIBLE	Neg Modif Negate Ngtv Vice 	
+INCORRECT	Neg Modif Negate Ngtv Weak Vice Undrst 	
+INDECENT	IndAdj Neg Modif Eval Vice 	
+INDECISION	Noun Negate Weak Psv Undrst Vice 	
+INDECISIVE	Modif Negate Weak Psv Undrst Vice 	
+INDECISIVENESS	Noun Negate Weak Psv Undrst Vice 	
+INDEFINITE	Neg Modif Negate Ngtv Psv Undrst Vice 	
+INEXACT	Neg Modif Negate Vice Ngtv Undrst 	
+INFAMOUS	IndAdj Neg Modif Vice 	
+INFERIOR	Neg Modif Vice EVAL Ngtv Weak 	
+INFILTRATION	Neg Noun Hostile Ngtv Strng Actv Vice 	
+INFRINGEMENT	Neg Noun Hostile Ngtv Strng Actv Legal Vice 	
+INGRATITUDE	Neg Noun Vice 	
+INHIBITION	Neg Noun Hostile Ngtv Strng Psv Vice 	
+INHUMANE	IndAdj Neg Modif Hostile Vice Eval 	
+INJURIOUS	Neg Modif Vice Ngtv Weak Hostile 	
+INJURY	Neg Noun Vice Ngtv Weak Hostile 	
+INSANE	IndAdj Neg Modif Think Fail Vice 	
+INSECURE	Neg Modif Negate Ngtv Weak Psv Vice Undrst 	
+INSECURITY	Neg Noun Negate Ngtv Weak Psv Vice Undrst 	
+INSIDIOUS	Neg Modif Ngtv Vice 	
+INSIGNIFICANT	Neg Modif Negate Ngtv Weak EVAL Undrst Vice 	
+INSTABILITY	Neg Noun Negate Vice Ngtv Weak Psv 	
+INSTABLE	Neg Modif Negate Vice Ngtv Weak Psv 	
+INSUFFICIENT	Neg Modif Vice EVAL Ngtv Weak Negate 	
+INTERFERENCE	Neg Noun Hostile Ngtv Strng Actv Vice 	
+INTERVENTION	Neg Noun ECON POLIT Milit Ngtv Strng Actv Vice 	
+INVALID	IndAdj Neg Modif Eval Vice 	
+INVOLVE	Neg Modif Vice Ngtv 	4% adj-adv: 'involved'--complicated 
+IRONIC	Neg Modif Vice Ngtv Undrst 	
+IRONY	Neg Noun Vice Ngtv Undrst 	
+IRRATIONAL	Neg Modif Vice EVAL Ngtv Psv 	
+IRRESPONSIBLE	Neg Modif Vice EVAL Negate Ngtv Weak 	
+LACK	Neg Noun Ngtv Weak Psv Vice 	70% noun: Dearth, need, absence, deficit 
+LACK	Neg Modif Vice Ngtv Weak Psv 	19% adj: "Lacking"--wanting, absent, deficient (in) 
+LAZY	Neg Modif Vice Ngtv Weak Psv 	
+LIMIT	Neg Modif Power Actv Vice Ngtv 	2% adj: "Limiting"--restricting 
+LIMITATION	Neg Noun Ngtv Vice 	
+LIQUIDATION	Neg Noun Ngtv Strng Actv ECON Econ* Hostile Vice 	
+LITTER	Neg Noun Ngtv Vice 	
+LOAD	Neg Modif Vice EVAL Ngtv 	15% adj: "Loaded"--biased (loaded question, dice) 
+LOSS	Neg Noun Vice Ngtv Weak 	noun: Detriment or disadvantage from failure to keep, have, or get- or  that which is lost 
+LOST	Neg Modif Vice Ngtv Weak Psv 	31% adj: Missing, confused, immersed, without knowledge of where one is  (of people)--"i am lost"--"he was lost in thought" 
+LOVELESS	Neg Modif Vice Affil Ngtv Psv 	
+LUDICROUS	IndAdj Neg Modif Eval Vice 	
+LUNATIC	Neg Noun HU Role Eval Vice 	
+MAD	Neg Modif Ngtv Weak Psv Vice 	10% adj-noun: Insane, crazy, those who are insane or crazy 
+MADMAN	Neg Noun HU Role Vice 	
+MADNESS	Neg Noun Eval Vice 	
+MALADJUSTED	Neg Modif Vice Ngtv Weak 	
+MALADJUSTMENT	Neg Noun Vice Ngtv Weak 	
+MANNER	Modif Vice 	0% adj: "Mannered"--affected 
+MANSLAUGHTER	Neg Noun Hostile Legal Ngtv Vice 	
+MAR	Neg Noun Vice Ngtv Strng Actv 	
+MATTER	Neg Modif Vice EVAL Ngtv 	7% adj: "(be) the matter (with)"--amiss with 
+MEAN	Neg Modif Vice EVAL Ngtv 	3% adj: Base, despicable, selfish, common 
+MEANINGLESS	Neg Modif Vice EVAL Ngtv Weak 	
+MENACE	Neg Noun Ngtv Strng Actv Vice 	
+MESS	Neg Noun Vice Ngtv 	81% noun: A shambles, a jumble, a state of trouble; a place for meals (0) 
+MISBEHAVIOR	Neg Noun Vice Ngtv Actv 	
+MISFORTUNE	Neg Noun Vice Ngtv Weak Psv 	
+MISTAKE	Neg Noun Vice Ngtv Psv PFREQ 	93% noun: An error 
+MISTAKE	Neg LY Ngtv Psv Vice 	3% idiom-adverb: "By mistake," accidentally 
+MISUSE	Neg Noun Fail Vice 	
+MIX	Neg Modif EMOT Vice Ngtv Weak Psv 	33% idiom-adj: "Mixed up"--mentally confused 
+MONOTONOUS	IndAdj Neg Modif Eval Vice 	
+MONOTONY	Neg Noun Eval Vice 	
+MONSTROUS	Neg Modif Vice Ovrst Ngtv Strng Hostile 	
+MUNDANE	IndAdj Neg Modif Eval Vice 	
+MURDER	Neg Noun Hostile Ngtv Strng Actv Vice 	
+NAIVE	Neg Modif Vice EVAL Ngtv Weak Psv 	
+NEGATION	Neg Noun Ngtv Negate Vice 	
+NEGATIVE	Neg Modif Ngtv Vice 	
+NEGLIGENCE	Neg Noun Causal Eval Legal Vice 	
+NEGLIGENT	IndAdj Neg Modif Causal Legal Eval Vice 	
+NONSENSE	Neg Noun Vice Ngtv 	
+NOTORIOUS	IndAdj Neg Modif Eval Qual Ovrst Vice 	
+NUISANCE	Neg Noun Vice 	
+OBNOXIOUS	Neg Modif Vice EVAL Ngtv Hostile 	
+ODD	Neg Modif Vice EVAL Ngtv 	
+OFFENSIVE	IndAdj Neg Modif Vice Hostile Ngtv Strng Actv Eval 	noun-adj: Characterized by attack, physically or on the sensibilities 
+OMINOUS	Neg Modif Vice Ngtv Strng Hostile 	
+ORDEAL	Neg Noun Eval Vice 	
+OUTRAGEOUS	IndAdj Neg Modif Eval Vice 	
+OVERSIGHT	Neg Noun Percv Fail Vice 	
+PAINFUL	Neg Modif Vice Ngtv 	
+PARTICULAR	Neg Modif Ngtv Vice 	1% adj: Fussy, choosy 
+PECULIAR	Neg Modif Vice EVAL Ngtv 	
+PENALTY	Noun Vice Hostile Legal 	
+PERILOUS	IndAdj Neg Modif Vice EVAL Ngtv 	
+PERVERSE	IndAdj Neg Modif Eval Vice 	
+PERVERT	Neg Noun HU Vice 	
+PEST	Neg Noun Vice Intrel 	
+PETTY	IndAdj Neg Modif Vice 	
+PINCH	Neg Noun Vice Ngtv 	
+PLAGUE	Neg Noun Ngtv Strng Vice 	
+POLLUTION	Neg Noun ECON POLIT Ngtv Vice 	
+POOR	Neg Modif Vice EVAL ECON Ngtv Weak Psv 	44% adj: Destitute of some normal or desirable quality, unfortunate 
+POOR	Neg Modif Vice Ngtv Weak Econ* Psv 	30% adj: Lacking material goods 
+POOR	Neg Modif Vice EVAL Econ* Ngtv Weak Psv 	3% adj: "Poorer"--comparative of senses 1 and 2 
+POOR	Neg Modif Vice EVAL Econ* Ngtv Weak Psv 	0% adj: "Poorest"--superlative of senses 1 and 2 
+POOR	Neg LY Vice Ngtv 	8% adv: "Poorly"--badly, in an unsatisfactory manner 
+POVERTY	Neg Noun Vice Econ* ECON POLIT Ngtv Weak Psv 	noun: Quality or state of being poor--need, destitution 
+PRECARIOUS	Neg Modif Ngtv Weak Psv Vice Undrst 	
+PREDICAMENT	Neg Noun Eval Vice 	
+PREPOSTEROUS	IndAdj Neg Modif Eval Vice 	
+PRESUMPTUOUS	Neg Modif Vice Ngtv 	
+PRETENTIOUS	IndAdj Neg Modif Eval Vice 	
+PRIMITIVE	Modif Vice 	
+PROHIBITIVE	Neg Modif Power Ngtv Strng Ovrst Vice 	
+PUNY	Neg Modif Weak Ngtv Undrst Vice 	
+QUEER	IndAdj Neg Modif Ovrst Vice 	
+QUESTIONABLE	Neg Modif Vice Ngtv Undrst 	
+RADICAL	Neg Modif ECON POLIT Polit* Ngtv Strng Actv Vice 	
+RAGGED	Modif Vice 	
+RAMPANT	Neg Modif Vice Ngtv Strng 	
+RASCAL	Neg Noun HU Vice 	
+RASH	IndAdj Neg Modif Think Fail Vice 	
+RAT	Neg Noun HU Comform Vice 	
+RECALCITRANT	IndAdj Neg Modif Hostile Vice 	
+RECKLESS	Neg Modif Vice EVAL Ngtv 	
+RECKLESSNESS	Neg Noun Vice 	
+REDUNDANCY	Neg Noun Eval Vice 	
+REDUNDANT	IndAdj Neg Modif Eval Vice 	
+REFUSE	Noun Vice 	3% noun: Rubbish, trash 
+REGRESSION	Neg Noun Ngtv Weak Psv Vice 	
+REGRETTABLE	IndAdj Neg Modif Emot Pain Vice 	
+REJECTION	Neg Noun Hostile Ngtv Strng Vice Actv 	
+RELENTLESS	Modif Power Strng Vice 	
+REPREHENSIBLE	IPadj Neg Modif Eval Vice 	
+REPUGNANT	IndAdj Neg Modif Eval Vice 	
+REPULSIVE	Neg Modif Vice EVAL Ngtv 	
+RESISTANCE	Noun Hostile Strng Actv Vice 	
+RESTRICT	Neg Modif Vice Ngtv Strng 	0% adj: "Restricting", tending to limit 
+RIDICULOUS	Neg Modif Vice EVAL Ngtv Weak Ovrst 	
+RIGID	IndAdj Neg Modif Stay Feel Vice 	
+RIGOROUS	IndAdj Neg Modif Work Vice 	
+RISKY	IndAdj Neg Modif Vice 	
+ROTTEN	IndAdj Neg Modif Natpro Vice 	
+ROUGHNESS	IndAdj Neg Modif Strng Vice 	
+ROUNDABOUT	IndAdj Neg Modif Undrst Vice 	
+RUDE	IPadj Neg Modif Eval Vice 	
+RUIN	Neg Noun Vice ECON Ngtv Weak 	20% noun: Downfall, destruction 
+RUIN	Neg Modif Vice Ngtv Weak Psv 	0% adj: "Ruined," destroyed 
+RUINOUS	IndAdj Neg Modif Hostile Vice 	
+RUPTURE	Neg Noun Ngtv Vice 	
+SCOUNDREL	Neg Noun Hostile Vice HU 	
+SCUM	Neg Noun Vice 	
+SELFISH	Neg Modif Vice Ngtv 	
+SERVE	IAV SUPV Vice 	1% idiom-verb: "Serve (one) right"--punish justly 
+SEVERE	Neg Modif Vice EVAL Ngtv Strng Ovrst 	
+SEVERITY	Neg Noun Vice Ngtv Strng 	
+SHADY	IndAdj Neg Modif Undrst Vice 	
+SHAGGY	IndAdj Neg Modif Vice 	
+SHAMELESS	IPadj Neg Modif Emot Power Vice 	
+SHOOT	Neg Noun Hostile Ngtv Strng Actv Vice 	6% noun-adj: "Shooting"--the harming of a person by a projectile or weapon;  pertaining to a rapidly moving object (0) 
+SHORT	Neg PREP Vice Ngtv Weak 	6% idiom-prep: "Short of" - lacking, less than, except for 
+SHORTCOMING	Neg Noun Vice Ngtv 	
+SICK	Neg Modif Ngtv Weak Psv PFREQ Vice 	94% adj: Unhealthy 
+SICK	Neg Modif Ngtv Weak Psv Vice 	0% adj: "Sicker"--comparative of sense 1 
+SICK	Neg Modif Ngtv Weak Psv Vice 	1% adj: "Sickest"--superlative of sense 1 
+SICK	Neg Modif Vice EMOT Ngtv Psv Hostile 	5% idiom-adj: "Sick of"--be disgusted with, tired of 
+SICKLY	Neg Modif Ngtv Weak Psv Vice 	
+SICKNESS	Neg Noun Ngtv Weak Psv Vice 	noun: Illness, disease 
+SILLY	Neg Modif Vice EVAL Ngtv Weak 	
+SIN	Neg Noun Relig Ngtv Vice 	
+SIN	IAV Neg SUPV Relig Ngtv Vice 	
+SINISTER	Neg Modif Vice EVAL Ngtv Hostile 	
+SKEPTICAL	Neg Modif Ngtv Vice 	
+SKETCHY	IndAdj Neg Modif Undrst Vice 	
+SLOTH	Neg Noun Weak Animal Vice 	
+SLOTHFUL	IndAdj Neg Modif Weak Vice Stay 	
+SLUG	Neg Noun Animal Weak Vice 	
+SLUGGISH	IndAdj Neg Modif Weak Stay Vice 	
+SLY	Neg Modif Vice EVAL Hostile Ngtv 	
+SORRY	Neg Modif EVAL Ngtv Weak Psv Vice 	2% noun-adj: Wretched, poor, useless, pitiful 
+SORT	Neg Modif Vice Undrst Ngtv 	5% idiom-adj: "Of sorts"--of a mediocre or poor kind 
+SOUR	IndAdj Neg Modif Vice 	
+SPOT	Neg Modif Vice Ngtv 	4% adj: "On the spot"--in a difficult or embarrassing situation 
+STALE	IndAdj Neg Modif Weak Vice 	
+STATIC	IndAdj Neg Modif Stay Vice 	
+STEAL	Neg Noun Vice ECON Ngtv Actv Hostile 	40% noun: "Stealing" - theft, thievery 
+STICK	Neg Modif Vice Ngtv 	1% idiom-adj: "Stuck up"--conceited 
+STIGMA	Neg Noun Percv Vice 	
+STOLEN	Neg Modif Ngtv Legal Vice 	
+STRICT	Neg Modif Power Ngtv Strng Vice 	52% adj: Exact, severe, rigorous, punctilious 
+STRICT	Neg LY Ovrst Ngtv Strng Vice 	39% adv: "Strictly" - adverb form of sense 1 
+STRICT	Neg Modif Power Ngtv Strng Vice 	9% adj: "Stricter" - comparative form of sense 1 
+STRIFE	Neg Noun Vice Ngtv Weak Actv Hostile 	
+STRIKE	Neg Noun Vice Ngtv 	5% noun: A liability, derived from baseball - "two strikes against me" 
+STUBBORN	Neg Modif Vice EVAL Ngtv Strng Hostile 	
+STUDY	Neg Modif Actv Vice Ngtv Actv 	1% adj: "Studied"--not spontaneous or natural 
+STUFFY	Neg Modif Vice Ngtv 	
+STUNT	Neg Noun Vice 	
+STUPID	Neg Modif Vice EVAL Ngtv PFREQ 	97% adj: Dull, insipid, witless 
+STUPID	Neg Modif Vice EVAL Ngtv 	3% adj: "Stupider", "stupidest" - comparatives of sense 1 
+STUPID	Neg LY Ngtv Vice 	0% adv: "Stupidly" - adverb form of sense 1 
+STUPIDITY	Neg Noun Vice Ngtv 	
+SUICIDE	Noun Subm Vice 	
+SUNBURN	Noun Vice 	
+SUPERFICIAL	Neg Modif Vice Ngtv Weak Undrst 	
+SUPERFICIALITY	Neg Noun Eval Vice 	
+SUPERSTITION	Neg Noun Vice Percv Feel 	
+SUPERSTITIOUS	IndAdj Neg Modif Vice Percv Feel 	
+SYMPTOM	Neg Noun Vice Ngtv 	
+TEDIOUS	Neg Modif Vice EVAL Ngtv 	
+TEMPTATION	Neg Noun Vice Ngtv 	
+TERRIBLE	Neg Modif Vice EVAL Ngtv Ovrst 	adj: Very bad 
+THREAT	Neg Noun COM Hostile Ngtv Strng Vice 	noun: A menace 
+TIMID	Modif Weak Psv Vice 	
+TIMIDITY	Neg Noun Vice 	
+TIRESOME	IndAdj Neg Modif Vice 	
+TOO	LY Ovrst Vice 	67% adv: To an excessive degree or extent 
+TOO	Neg Modif Vice EVAL Ngtv 	1% adj: 'too bad'--unfortunate 
+TOUCH	Modif Vice 	4% idiom-adj: "Touch and go," precarious 
+TOUCH	Noun Vice 	2% idiom-noun: "Soft touch"--credulous person 
+TOUCHY	IndAdj Neg Modif Emot Pain Vice 	
+TRAGIC	IndAdj Neg Modif Vice EVAL Ngtv 	
+TRAUMA	Neg Noun Ngtv Psv Vice 	
+TREACHEROUS	Neg Modif Vice Ngtv Hostile 	
+TRICK	Neg Noun Ngtv Actv Vice Hostile 	
+TROUBLE	Neg Noun Vice Ngtv PFREQ 	90% noun: Difficulty, annoyance, disturbance, malfunction 
+TROUBLESOME	Neg Modif Vice Ngtv 	
+TURMOIL	Neg Noun Ngtv Vice 	
+TYRANNY	Neg Noun POLIT Polit* Power Ngtv Strng Vice 	
+UGLY	Neg Modif Vice Ngtv 	adj: Unattractive, gross, offensive 
+UNABLE	Modif Vice Weak Negate Psv 	adj: Not able 
+UNATTRACTIVE	IndAdj Neg Modif Eval Vice 	
+UNAUTHENTIC	Neg Modif Negate Vice Ngtv 	
+UNBELIEVABLE	Neg Modif Negate Ngtv Ovrst Vice 	
+UNCHECKED	Modif Negate Strng Vice 	
+UNCLEAN	IndAdj Neg Modif Vice 	
+UNCLEAR	Neg Modif Vice Negate Ngtv Undrst 	
+UNCOUTH	IPadj Neg Modif Vice 	
+UNDEPENDABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNDEPENDABLE	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNDESIRABLE	IndAdj Neg Modif Eval Vice 	
+UNDIGNIFIED	IndAdj Neg Modif Eval Vice 	
+UNDUE	Neg Modif Vice EVAL Negate Ngtv 	
+UNECONOMICAL	IndAdj Neg Modif Econ Eval Vice 	
+UNEMPLOYED	IndAdj Neg Modif Econ Weak Vice 	
+UNEMPLOYMENT	Noun Econ* ECON POLIT Vice Negate 	
+UNEXPECTEDLY	Neg Modif Eval Vice 	
+UNFAIR	Neg Modif Vice EVAL Negate Ngtv Hostile 	
+UNFAITHFUL	IPadj Neg Modif Fail Vice Weak 	
+UNFAMILIAR	IndAdj Neg Modif Eval Vice Weak 	
+UNFAVORABLE	Neg Modif Ngtv Vice Negate Undrst 	
+UNFEELING	IndAdj Neg Modif Feel Vice 	
+UNFIT	Neg Modif Vice Negate Ngtv Weak 	
+UNFORTUNATE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	49% adj: Unlucky, inauspicious 
+UNFORTUNATE	Neg LY Vice Negate Ngtv Undrst 	49% adv: "Unfortunately"--inauspiciously 
+UNFRIENDLY	IPadj Neg Modif Eval Vice 	
+UNGRATEFUL	IPadj Neg Modif Eval Vice 	
+UNIMPORTANT	Neg Modif Vice EVAL Negate Ngtv Undrst 	
+UNJUST	IndAdj Neg Modif Vice EVAL Legal Hostile Ngtv Negate 	
+UNJUSTIFIED	Neg Modif Vice Negate Ngtv Hostile 	
+UNKIND	IPadj Neg Modif Eval Vice 	
+UNLUCKY	Neg Modif Vice Negate Ngtv Weak Undrst 	
+UNMITIGATED	Modif Negate Ovrst Strng Vice 	
+UNNECESSARY	Neg Modif EVAL Negate Ngtv Vice Undrst 	
+UNPLEASANT	Neg Modif Vice EVAL Negate Ngtv Undrst 	
+UNPOPULAR	IPadj Neg Modif Eval Vice 	
+UNPREDICTABLE	Modif Negate Vice Undrst 	
+UNPREPARED	Modif Negate Weak Vice 	
+UNQUALIFIED	Neg Modif Vice Negate Ngtv 	
+UNREAL	Modif Negate Vice 	
+UNREALISTIC	Modif Vice EVAL Negate 	
+UNRELIABILITY	Neg Noun Vice Negate Ngtv Weak Undrst 	
+UNRELIABLE	Neg Modif Vice EVAL Negate Ngtv Weak Undrst 	
+UNREST	Neg Noun Vice Vary 	
+UNSATISFACTORY	Neg Modif Vice Negate Ngtv Undrst 	
+UNSCRUPULOUS	IndAdj Neg Modif Vice Weak 	
+UNSOUND	IndAdj Neg Modif Vice Negate Weak Undrst 	
+UNSOUNDNESS	Noun Vice Negate Weak Undrst 	
+UNSTABLE	Neg Modif EVAL Vice Negate Weak Ngtv 	
+UNSUCCESSFUL	IndAdj Neg Modif Vice Negate Ngtv Weak Subm Fail 	
+UNSURE	Modif Negate Weak Undrst Vice 	
+UNSURENESS	Noun Negate Weak Undrst Vice 	
+UNTRUE	Neg Modif Vice Negate Ngtv Undrst 	
+UNTRUSTWORTHY	Neg Modif Vice Negate Ngtv 	
+UNWISE	Neg Modif Vice Negate Ngtv 	
+UNWORTHY	IndAdj Neg Modif Eval Vice 	
+USE	Modif Econ* Vice 	0% adj: "Used"--second hand 
+USELESS	Neg Modif Vice EVAL Ngtv 	
+VAIN	Neg Modif Vice Ngtv 	
+VANITY	Neg Noun Vice 	
+VENOM	Neg Noun Vice Hostile 	
+VICE	Neg Noun Vice Legal Ngtv 	25% noun: Evil, wickedness, prurient pursuits 
+VICIOUS	Neg Modif Vice EVAL Hostile Ngtv 	
+VILE	Neg Modif Vice EVAL Ngtv Ovrst 	
+VIOLATION	Neg Noun Vice Legal Ngtv Actv Hostile 	
+VIOLENCE	Neg Noun POLIT Hostile Ngtv Strng Actv Vice 	noun: Fury, force, conflict 
+VIOLENT	Neg Modif Hostile Ngtv Strng Actv Vice 	
+VOID	Neg Noun Need Vice 	
+VULGAR	IndAdj Neg Modif Eval Vice 	
+VULNERABILITY	Noun Vice Subm Weak 	
+VULNERABLE	Modif Vice Subm Weak 	
+WASTE	Neg Noun ECON Ngtv Econ* Weak Vice 	34% noun-adj: Anything unproductive or improperly utilized 
+WASTEFUL	IndAdj Neg Modif Eval Vice 	
+WASTEFULNESS	Neg Noun Eval Vice 	
+WEAKNESS	Noun ABS Abs* Vice Weak Undrst 	
+WEAR	Noun ABS Abs* Vice 	0% noun: Deterioration, depreciation through continued employment 
+WEIRD	IndAdj Neg Modif Eval Vice 	
+WHIP	Neg Noun Hostile Ngtv Strng Actv Vice 	0% noun-adj: A beating 
+WITHDRAWN	Modif Subm Weak Vice 	
+WORN	Neg Modif Vice Weak Psv Ngtv 	30% adj: Deteriorated 
+WORSE	Neg Modif Comp ER EVAL Vice Ngtv 	adj: Comparative of "bad" and "ill" 
+WORST	Neg Modif Comp EST EVAL Vice Ngtv Ovrst 	
+WORTHLESS	Neg Modif Ngtv Vice Undrst 	
+WOUND	Neg Noun Ngtv Weak Actv Vice 	25% noun: A physical or emotional injury 
+WOUND	Neg Modif Ngtv Vice Weak Psv 	18% adj: "Wounded"--injured 
+WRETCHEDNESS	Neg Noun Pain Eval Vice 	
+WRINKLE	Neg Noun Eval Vice 	
+WRONG	No Noun Vice Ngtv PFREQ 	noun-adj: Not in accordance with truth, morality, appropriateness, justice,  or the like 
+WRONG	Neg LY Ngtv Vice 	1% adv: "Wrongly"--incorrectly, improperly 
+WRONGFUL	IndAdj Neg Modif Eval Vice 	
+WROUGHT	IndAdj Neg Modif Eval Vice 	

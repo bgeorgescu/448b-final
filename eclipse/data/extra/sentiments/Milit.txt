@@ -1,0 +1,87 @@
+word	tags	comments
+AIR	Noun HU COLL POLIT Milit 	12% adj: "Air force," "air defense"--referring to airborne military divisions,  and operations 
+AMBUSH	Neg Noun Ritual Hostile Milit Ngtv Strng Actv 	
+AMBUSH	IAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+AMMUNITION	Noun Object Tool Milit 	
+ARM	Noun Object POLIT Tool Hostile Milit Strng Power 	16% noun: "Arms"--weapons 
+ARM	IAV SUPV Intrel Milit Strng Actv Power 	1% verb: To equip with weapons 
+ARMED	Modif Object Tool Milit Power Strng Hostile 	adj: Equipped with weapons 
+ARMED	IAV SUPV ED Intrel Milit Strng Actv Power Hostile 	0% verb: To equip with weapons (past tense) 
+ARMISTICE	Noun POLIT Ritual Affil Milit Polit* 	
+ARMY	Noun HU COLL POLIT Milit Strng Power Hosti 	noun: The military forces of a nation 
+ARROW	Noun Object Tool Hostile Milit 	noun: Straight, pointed weapon 
+BATTLE	Neg Noun POLIT Ritual Milit Ngtv Strng Actv 	86% noun-adj: Contest or fight, pertaining to same 
+BOMB	Neg Noun Object POLIT Tool Hostile Milit Ngtv Strng 	
+BOMB	DAV Neg SUPV Intrel Hostile Milit Ngtv Strng Actv 	
+BOW	Noun Object Tool Milit PFREQ 	89% noun: Anything curved or bent, includes bow and arrow (13); forepart  of a ship (2); bowknot (1); inclination of the head or body (3) 
+CANNON	Neg Noun Object Tool Hostile Milit Ngtv Strng 	
+CASTLE	Noun PLACE Social Milit 	
+CAVALRY	Noun HU COLL POLIT Milit Strng 	
+CIVIL	Noun Milit POLIT Ritual 	4% idiom-noun: "Civil war" 
+CLUB	Neg Noun Object Tool Hostile Milit Ngtv Strng 	8% noun: A heavy stick suitable for use as a weapon 
+COLONEL	Noun HU POLIT Milit Power Strng Role 	
+COMMANDER	Noun HU POLIT Milit Power Strng Actv Role 	
+CORPORAL	Noun HU Milit Power Strng Role 	
+CORPS	Noun HU COLL POLIT ECON Milit 	7% noun: A unit or group, usually of the military 
+COUP	Noun Milit Ritual Hostile 	
+DESTROYER	Noun Object Vehicle Milit 	
+DISCHARGE	Neg Noun Ngtv Strng Actv Ritual Milit Polit* Power 	
+DRAFT	Noun POLIT Ritual Milit Polit* Power 	
+FIGHT	Neg Noun Ritual Hostile Milit Ngtv Strng Actv 	24% noun: Conflict 
+FLEET	Noun HU COLL POLIT Milit Strng 	
+FORCE	Noun HU COLL POLIT Milit Strng 	24% noun: A body of men, usually military, "the armed forces" 
+FORT	Noun PLACE Social POLIT Milit Strng 	
+GENERAL	Noun HU POLIT Milit Power Strng Role 	10% noun: A very high military rank--having extended command or superior  rank (e.g. general chairman) 
+GRENADE	Noun Object Tool Hostile Milit 	
+GUARD	IAV SUPV Intrel Affil Milit Power Strng Actv 	55% verb: To protect or watch out for 
+GUARD	Noun HU Milit Strng Role 	32% noun: Someone or something that guards 
+GUERRILLA	Neg Noun HU POLIT Hostile Milit Ngtv Strng Actv 	
+GUN	Neg Noun Object Tool Hostile Milit Strng Ngtv 	noun: A firearm 
+INFANTRY	Noun HU COLL POLIT Milit Strng 	
+INTERVENTION	Neg Noun ECON POLIT Milit Ngtv Strng Actv Vice 	
+LEGION	Noun HU COLL POLIT Polit* Milit PFREQ 	98% idiom-noun: "American legion" 
+LIEUTENANT	Noun HU POLIT Milit Power Strng Role 	
+MARCH	SUPV Travl Milit Strng Actv 	29% verb: To walk with measured tread 
+MARCHER	Noun HU Milit Actv Role Strng 	
+MILITARY	Modif Doctr POLIT Milit Strng 	noun-adj: Of, for, or pertaining to the army, armed forces, affairs of  war, or to the soldiers themselves 
+MILITIA	Noun HU COLL POLIT Milit Strng 	
+MINE	Neg Noun Object Tool Hostile Milit Ngtv Strng 	5% noun: An explosive charge 
+MINUTEMEN	Noun HU POLIT S Milit Polit* Role 	
+MISSILE	Noun Object Vehicle Hostile Milit Strng 	noun-adj: A weapon or object projected so as to strike a distant object,  especially a self-propelled rocket-like weapon 
+MUNITION	Noun Object Tool Milit 	
+NAVAL	Modif Doctr POLIT Milit Strng 	
+NAVY	Noun HU COLL POLIT Milit Strng 	
+PARACHUTER	Noun HU Milit Role 	
+PARADE	Noun POLIT Ritual Milit Actv 	
+PARADE	DAV SUPV Travl Actv Milit 	
+PATROL	Noun HU COLL POLIT Milit Strng Power 	
+PATROL	IAV SUPV Travl Milit Power Strng 	
+PENTAGON	Noun ECON POLIT Milit Name 	
+PISTOL	Noun Object Tool Hostile Milit 	
+PRIVATE	Noun HU Milit Subm Weak Role 	0% noun: Lowest rank of enlisted man in the u.s. armed forces 
+RADAR	Noun Object Tool Milit 	
+REBELLION	Neg Noun POLIT Ritual Hostile Milit Ngtv Strng 	
+RECRUIT	Noun HU Milit Subm Role 	
+RECRUIT	IAV SUPV Intrel Power Milit Strng Actv 	
+REGIMENT	Noun HU COLL POLIT Milit Strng 	
+RETREAT	IAV Neg SUPV Travl Milit Ngtv Weak Actv 	
+RIFLE	Noun Object Tool Hostile Milit 	
+ROCKET	Noun Object Vehicle Milit 	
+SERGEANT	Noun HU Power Milit Role 	
+SERVICE	Noun Ritual Milit 	20% noun: Military service, the draft 
+SHELL	Neg Noun Object Tool Hostile Milit Strng Ngtv 	5% noun: Artillery warhead 
+SHELL	DAV Neg SUPV Intrel Hostile Milit Strng Ngtv Actv 	5% verb: To use (an) artillery warhead(s) 
+SOLDIER	Noun HU Milit Role 	noun: A person engaged in military service 
+SPEAR	Noun Object Tool Hostile Milit PFREQ 	88% noun: A lance 
+STRONGHOLD	Noun PLACE Social Milit Strng 	
+SUBMARINE	Noun Object Vehicle POLIT Milit 	
+SURRENDER	Noun Ritual POLIT Polit* Subm Milit Weak Psv 	
+SURRENDER	DAV SUPV Intrel Polit* Subm Milit Weak Psv 	
+SWORD	Noun Object Tool Milit Strng Hostile 	noun: The weapon 
+TNT	Noun Object Tool Hostile Milit 	
+TRIGGER	Noun Object Tool Hostile Milit 	
+TROOP	Noun HU COLL POLIT Milit Strng 	
+VETERAN	Noun HU POLIT Milit Role 	
+WARFARE	Neg Noun ECON POLIT Ritual Milit Ngtv Strng Actv 	
+WARRIOR	Noun HU Hostile Milit Strng Actv Role 	
+WEAPON	Noun Object Tool POLIT Hostile Milit 	noun-adj: An instrument or tactic used for attack or defense in combat 

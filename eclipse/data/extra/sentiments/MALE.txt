@@ -1,0 +1,56 @@
+word	tags	comments
+ACTOR	Noun HU MALE Exprs Actv Role 	
+BACHELOR	Noun HU MALE Role 	
+BOY	Noun HU MALE Nonadlt Role 	noun: A male child 
+BROTHER	Noun HU MALE KIN Kin* Affil Role 	noun: Male sibling; fellow member of a religious or other organization  or group; comrade (13) 
+BUDDY	Noun HU MALE Affil Role 	
+BULL	Noun ANI MALE 	noun: Male bovine animal 
+BUSINESSMAN	Noun HU MALE ECON Econ* Role 	
+BUSINESSMEN	Noun HU MALE ECON S Econ* Role 	
+CHRIST	Noun HU MALE Relig Role 	
+CLERGYMAN	Noun HU MALE Relig Role 	
+COACHMAN	Noun HU MALE Econ* Role 	
+CONGRESSMAN	Noun HU MALE POLIT Polit* Strng Role 	
+DAD	Noun HU MALE KIN Kin* Role 	noun: A nickname for father 
+DADDY	Noun HU MALE KIN Kin* Role 	noun: Father 
+EMPEROR	Noun HU MALE POLIT Polit* Power Strng Role 	
+FATHER	Noun HU MALE KIN Kin* Strng Role Affil 	noun: A male parent 
+FELLOW	Noun HU MALE Role 	73% noun: A person; a member or trustee (1) 
+GENTLEMAN	Noun HU MALE Role 	noun-adj: A man, especially one of good breeding or manners 
+GENTLEMEN	Noun HU MALE S Role 	
+GRANDFATHER	Noun HU MALE KIN Kin* Role 	noun: Father of someone's mother or father. 
+GRANDPA	Noun HU MALE KIN Kin* Role 	
+GUNMEN	Neg Noun HU MALE S Hostile Strng Ngtv Role 	
+GUY	Noun HU MALE Role 	noun: Fellow, person 
+HE	PRON DEF DEF1 MALE Thrdp Other 	pronoun: The male being in question, or last mentioned, or anyone, that person 
+HERO	Pos Noun HU MALE Power Pstv Strng Role Ovrst 	
+HIM	PRON DEF DEF2 MALE Thrdp Other 	pronoun: Objective form of 'he' 
+HIMSELF	MALE Thrdp Other 	
+HIS	DET GEN Thrdp MALE Other 	pronoun: Possessive form of 'he' 
+HORSEMEN	Noun HU MALE S Role 	
+HOST	Noun HU MALE Affil Role 	
+HUSBAND	Noun HU MALE KIN Kin* Role 	noun: Male spouse 
+KING	Noun HU MALE POLIT Polit* Power Strng Role 	noun-adj: A male sovereign or monarch 
+LION	Noun ANI Strng MALE 	noun: The king of beasts 
+LORD	Noun HU MALE POLIT Polit* Power Role 	noun: The supreme being or his secular counterpart, one who has dominion  over others, a master, chief, or ruler. 
+MALE	Noun HU MALE Role 	noun-adj: Consisting of men or boys; a male plant, person, animal; masculine 
+MAN	Noun HU MALE Role 	noun: An adult male person, a given type of such a person--"a working  man," "the common man"; mankind, humanity (24); used as an interjection  in slang (5) 
+MANLY	IndAdj Pos Modif Virtue MALE Pstv Strng 	
+MARKSMAN	Noun HU MALE Exprs Role Hostile 	
+MASCULINE	Modif MALE Strng HU Role 	
+MEN	Noun HU MALE S Role 	noun: Human beings, especially males 
+MISTER	Noun HU MALE Role 	
+MR.	Modif HU MALE Role 	
+NEPHEW	Noun HU MALE Kin* Role 	
+PAPA	Noun HU MALE KIN Kin* Role 	
+POLICEMAN	Noun HU MALE POLIT Legal Power Strng Role 	
+POLICEMEN	Noun HU MALE POLIT S Legal Power Strng Role 	
+POPE	Noun HU MALE POLIT ECON Power Relig Role 	
+PRINCE	Noun HU MALE POLIT Polit* Power Strng Role 	noun: The one of highest rank, a sovereign, a title of nobility. 
+SALESMAN	Noun HU MALE ECON Econ* Role Actv 	
+SALESMEN	Noun HU MALE ECON S Econ* Role Actv 	
+SIR	Noun HU MALE Role Power 	noun-adj: Title of respect applied to men 
+SON	Noun HU KIN Kin* MALE Role Affil 	noun: Male offspring. 
+STATESMAN	Noun HU MALE POLIT Polit* Power Strng Role 	
+STATESMEN	Noun HU MALE POLIT S Polit* Power Strng Role 	
+UNCLE	Noun HU MALE KIN Kin* Role 	noun: A brother of one's parent (in our society) 

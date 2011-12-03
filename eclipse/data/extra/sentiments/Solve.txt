@@ -1,0 +1,190 @@
+word	tags	comments
+ACCOUNT	IAV SUPV Solve Actv 	11% verb: To explain, dispose of (usually with "for") 
+ACQUAINT	IAV Pos SUPV Pstv Solve 	
+ACQUIT	DAV Pos SUPV Legal Solve 	
+ACQUITTAL	Pos Noun Legal Solve 	
+ACROSS	IAV SUPV Solve 	8% idiom-verb: "Come across"--discover, encounter 
+ADD	DAV SUPV Solve PFREQ 	87% verb: To combine with so as to increase number, size, importance, completeness 
+ALLOW	IAV SUPV Solve 	3% idiom-verb: "Allow for"--make provision for 
+ANALYZE	IAV SUPV Solve Actv 	
+APPLY	IAV SUPV Solve Actv 	79% verb: To have relevance to, put to use on, use or consider in regard  to, to bring to bear (only 2 physical--i.e. "she applied the paint") 
+ARBITER	Pos Noun HU Role Solve Affil Intrel Comform 	
+ARBITRATE	IAV Pos SUPV Actv Solve Affil Intrel Comform 	
+ARBITRATION	Pos Noun Solve Affil Intrel Comform 	
+ARGUE	IAV SUPV Solve Actv 	56% verb: To present reasons for, to maintain in reasoning--'to argue  that,' or 'to argue for'--(sense of reasoning) 
+ASCERTAIN	IAV SUPV Solve Actv Ovrst 	
+ASSOCIATE	IAV Pos SUPV Solve Pstv Actv 	59% verb: To make a connection between things, to mix with socially 
+ASSUME	IAV SUPV Psv Solve 	56% verb: To take for granted, suppose, postulate 
+ATTRIBUTE	IAV SUPV Solve 	
+ATTUNE	IndAdj Pos Modif Think Solve 	
+AVERAGE	IAV SUPV Solve 	3% verb: To reduce to or result in a mean 
+BAFFLE	IAV Neg SUPV Ngtv Undrst Solve 	
+BASE	IAV SUPV Solve Strng 	78% verb: To establish, ground, provide with a foundation or rationale,  to have as foundation - "based on". 
+BEAR	IAV SUPV Solve 	4% verb: "Bear on," "(bring) to bear"--to have relevance or relation to 
+BELIEVE	SV SUPV Solve Psv 	68% verb: To be of the opinion that--to think or consider 
+BELIEVE	SV SUPV Solve Subm Psv 	20% idiom-verb: "Believe in"--to be strongly (religiously) persuaded of  the truth, value, or existence of 
+BEWILDER	IAV Neg SUPV Ngtv Undrst Solve 	
+BRING	IAV SUPV Solve Actv 	1% idiom-verb: (to) "bring to mind"--to become conscious of 
+CALCULATE	DAV SUPV Solve Actv 	
+CALL	DAV SUPV Solve 	37% verb: To name, give a name to 
+CHARACTERIZE	IAV SUPV Solve 	
+CHART	IAV SUPV Solve Actv 	
+CHECK	IAV SUPV Solve Actv 	45% verb: To investigate, verify, restrain 
+CHOOSE	IAV SUPV Psv Solve 	verb: To make a choice 
+CHOSE	IAV SUPV ED Psv Solve 	
+CHOSEN	IAV SUPV ED Psv PFREQ Solve 	88% verb: Past tense of 'choose'--selected 
+CLASSIFY	IAV SUPV Solve Actv 	
+CLEAR	IAV SUPV Solve 	3% idiom-verb: "Clear up"--make orderly or understandable 
+CODE	IAV SUPV Solve 	
+COMPARE	IAV SUPV Actv Solve 	
+COMPLICATE	IAV Neg SUPV Solve Ngtv 	
+COMPUTE	IAV SUPV Solve Actv 	
+CONCEIVE	IAV SUPV Solve Psv 	
+CONCENTRATE	IAV SUPV Solve Strng Actv 	
+CONFIRM	IAV SUPV Solve Strng Ovrst 	
+CONFUSE	IAV Neg SUPV Solve Weak Ngtv Undrst 	2% verb: To fail to distinguish 
+CONSIDER	IAV Pos SUPV Pstv PFREQ Solve 	verb: To think about or bear in mind--to regard or deem to be; to regard  with respect, thoughtfulness, etc. (2) 
+CONSTERNATION	Neg Noun Think Solve Vice 	
+CONSTRUE	IAV SUPV Solve 	
+CONTEMPLATE	IAV SUPV Psv Solve 	
+CORRELATE	IAV SUPV Solve 	
+COUNT	DAV SUPV Solve 	
+CRAFTY	IndAdj Neg Modif Think Solve Vice 	
+DAWN	IAV SUPV Solve 	3% idiom-verb: 'dawn on'--to occur to 
+DECIDE	IAV SUPV Solve Strng Actv PFREQ 	98% verb: To settle something in dispute or in doubt, conclusion 
+DECIPHER	IAV Pos SUPV Actv Comform Solve 	
+DEDUCE	IAV Pos SUPV Actv Think Solve 	
+DEDUCT	IAV SUPV Solve Actv 	
+DEEM	IAV SUPV Psv Solve 	
+DEFINE	IAV SUPV Solve 	
+DENOTE	IAV SUPV Solve 	
+DERIVE	IAV SUPV Solve Actv 	
+DETERMINE	IAV SUPV Solve Strng Actv Ovrst 	56% verb: To ascertain, decide or settle, authoritatively or resolutely 
+DIG	IAV SUPV Actv Solve 	7% verb-idiom: To find or expose--"dig up" 
+DISCERN	IAV Pos SUPV Actv Percv Solve Eval 	
+DISPROVE	IAV Neg SUPV Solve Negate Ngtv Actv 	
+DISTINGUISH	IAV Pos SUPV Solve Pstv 	
+DIVIDE	DAV Neg SUPV Solve Ngtv Strng Actv PFREQ 	83% verb: Separate, classify, parcel out 
+DIVINE	IAV Pos SUPV Solve Pstv Strng 	
+DO	IAV SUPV VERB DO Solve 	0% verb-idiom: "Have to do (with)"--have relevance to 
+EAR	IAV SUPV Solve Handels 	2% idiom: "Play (it) by ear"--handled by "play" 
+ENLIGHTEN	IAV Pos SUPV Pstv Solve 	
+ESTIMATE	IAV SUPV Solve 	
+EVALUATE	IAV SUPV Actv Solve 	
+EXPECT	IAV SUPV Psv PFREQ Solve 	98% verb: To regard as likely to happen 
+EXPLORE	IAV SUPV Solve Actv 	
+EXTRAPOLATE	IAV SUPV Solve Actv 	
+FATHOM	IAV SUPV Solve Strng Actv 	
+FEEL	SV SUPV Solve Psv 	42% verb: To believe (that), to hold as an opinion 
+FIGURE	IAV SUPV Actv Solve 	17% verb: To believe, conclude, or assume 
+FIGURE	IAV SUPV Solve Actv 	31% verb: To solve, calculate, or reason out 
+FIND	IAV SUPV Solve Actv 	verb: Locate, discover, learn, adjudge, encounter 
+FOLLOW	IAV SUPV Solve 	1% verb: To result as a logical or necessary consequence--e.g. "it follows  that . . . " 
+FORECAST	IAV SUPV Solve 	
+FORGET	IAV SUPV Weak Psv Solve 	verb: To fail to remember, lose memory of 
+FORGOT	IAV SUPV ED Weak Psv Solve 	
+FORGOTTEN	IAV SUPV ED Weak Psv Solve 	
+FORM	IAV SUPV Actv Solve 	31% verb: To constitute or bring into existence 
+FORMULATE	IAV SUPV Solve Actv 	
+GAUGE	IAV SUPV Actv Solve 	
+GENERALIZE	IAV SUPV Solve Actv 	
+GUESS	IAV SUPV Solve PFREQ 	verb: To form an opinion from uncertain evidence, to estimate or conjecture,  or to think or suppose (as interjection) 
+HAVE	Handels Solve 	2% idiom-verb: "Have to do with"--have relevance to--handled by "do" 
+HIT	IAV SUPV Solve Actv 	1% verb: To discover, light upon 
+HOLD	IAV SUPV Psv Solve 	12% verb: Believe, feel, profess, say--"we hold these truths to be . . ." 
+IGNORE	IAV SUPV Solve Actv 	
+IMAGINE	IAV SUPV Psv Solve Exprs 	verb: To form a mental image, to speculate, conjecture, suppose, or fantasize 
+INTERPRET	IAV SUPV Solve Actv 	
+INVESTIGATE	IAV SUPV Solve Actv 	
+JUDGE	IAV SUPV Legal Actv Solve Power Strng 	49% verb: To form an opinion, estimate, generally moral or evaluative,  usually about human matters; to pass sentence in a court of law (2) 
+KNEW	SV SUPV ED Psv Solve 	verb: Past tense of 'know' 
+KNOW	SV SUPV Psv PFREQ Solve 	92% verb: To perceive, understand, be acquainted with, to have fixed in  the mind, to be cognizant or aware of 
+KNOWN	SV SUPV ED Solve 	82% verb: Past participle of 'know' sense 1 
+LEARN	IAV SUPV Solve Acad PFREQ Actv 	90% verb: To acquire knowledge of or skill in by study, instruction, or experience 
+LOOK	IAV SUPV Solve 	1% verb-idiom: "Look back"--to review the past, return in thought, recollect  reminisce 
+LOOK	IAV SUPV Solve 	1% verb-idiom: "Look upon"--to regard or consider 
+LOOK	IAV SUPV Solve Actv 	1% verb-idiom: "Look forward (to)"--to anticipate in the future, expect 
+MAKE	IAV SUPV Solve Actv 	1% idiom-verb: "Make up (one's) mind"--decide 
+MATCH	IAV SUPV Strng Actv Solve 	
+MATTER	IAV Pos SUPV Strng Pstv Solve Ovrst 	12% verb: To be significant 
+MEASURE	IAV SUPV Solve Actv 	16% verb: To quantify, guage, to be of a specified dimension 
+MEDIATE	IAV Pos SUPV Actv Comform Intrel Solve 	
+MEET	IAV SUPV Solve Actv 	17% verb: Pertaining to the abstract, to be confronted with, to solve,  to pay, to fulfill (of things)--"he tried to meet the challenge," "money  to meet the needs" 
+MISTAKE	IAV Neg SUPV Ngtv Psv Solve 	3% verb: To 'mistake' one thing for another --to confuse 
+MISUNDERSTAND	IAV Neg SUPV Ngtv Psv Solve 	
+MISUNDERSTOOD	IAV Neg SUPV Ngtv Psv Solve 	
+MULTIPLY	DAV SUPV Solve Strng Actv 	
+NEGOTIATE	IAV Pos SUPV Actv Comform Intrel Exch Solve 	
+NUMBER	DAV SUPV Solve 	1% verb: To assign numbers to, to count, to comprise 
+OCCUR	IAV SUPV Solve Psv 	14% verb: 'occur to'--dawn on 
+OUTWIT	IAV Pos SUPV Actv Think Solve Other 	
+PERPLEX	IAV Neg SUPV Ngtv Weak Solve Undrst 	
+PLAN	IAV SUPV Solve Strng Actv 	35% verb: To construct such a program 
+PLOT	IAV Neg SUPV Ngtv Actv Strng Solve 	
+PONDER	IAV SUPV Psv Solve 	
+PREDICT	IAV SUPV Psv Solve 	
+PRESUME	IAV SUPV Psv Solve 	
+PROJECT	IAV SUPV Solve Actv Strng 	4% verb: To forecast, look forward, extrapolate, externalize onto, place  onto (abstract) 
+PROVE	IAV SUPV Solve Strng Actv 	65% verb: To establish beyond all reasonable doubt 
+PUT	IAV SUPV Actv Solve 	0% verb: 'put off'--postpone, delay; divert 
+PUZZLE	IAV SUPV Solve Undrst 	
+RANGE	IAV SUPV Solve 	13% verb: To extend, rank 
+RATE	IAV SUPV Actv Solve 	
+REALIZE	IAV SUPV Psv PFREQ Solve 	88% verb: To apprehend, come to see or know 
+REASON	IAV SUPV Solve Actv Strng 	3% verb: To think or argue in a logical manner 
+RECALL	IAV SUPV Psv Solve 	
+RECONCILIATION	Pos Noun Comform Intrel Solve 	
+REDEMPTION	Pos Noun Subm Exch Intrel Solve 	
+REFLECT	IAV SUPV Solve Psv 	
+REGARD	IAV SUPV Psv Solve 	41% verb: To conceive of, look upon in a particular way 
+REGISTER	IAV SUPV Psv Solve 	
+REHABILITATION	Pos Noun Subm Solve 	
+REMEMBER	DAV SUPV Psv Solve 	verb: Bear in mind or call to mind 
+REPARATION	Pos Noun Subm Exch Intrel Solve 	
+REPENT	IAV Pos SUPV Actv Subm Solve 	
+REPENTANCE	Pos Noun Subm Solve 	
+RESOLVE	IAV Pos SUPV Solve Pstv Strng Actv 	
+REVELATION	Pos Noun Think Solve 	
+REVIEW	IAV SUPV Solve 	
+RULE	IAV SUPV Solve Actv 	2% idiom-verb: "Rule out", to exclude by decision 
+SAMPLE	IAV SUPV Solve 	
+SAY	IAV SUPV Solve 	0% verb: "That is to say"--in other words 
+SCHEDULE	IAV SUPV Actv Solve 	
+SCHEME	IAV Neg SUPV Ngtv Solve 	
+SCORE	IAV SUPV Solve 	
+SELECT	IAV SUPV Actv Solve Power 	
+SIMPLIFY	IAV Pos SUPV Solve Pstv Actv 	
+SIMULATE	IAV SUPV Solve Actv 	
+SINGLE	IAV SUPV Solve 	4% verb-idiom: "Single out"--to point out an individual item or group 
+SIZE	IAV SUPV Actv Solve 	10% verb: To gauge or measure 
+SOLD	IAV SUPV ED Psv Solve 	5% verb: Convinced - "that sold me on it" 
+SOLVE	IAV SUPV Solve Actv 	verb: To find the remedy for or explanation of a problem 
+SPECULATE	IAV SUPV Solve Undrst 	
+STRESS	IAV Neg SUPV Ngtv Actv Solve 	
+STRIKE	IAV SUPV Solve 	9% verb: To impress as, to occur to - "it strikes one funny;" "when did  that strike you?" 
+STRUCK	IAV SUPV ED Solve 	12% verb: Impressed as, with, or by, occurred to 
+STRUCTURE	IAV SUPV Actv Solve 	3% verb: To organize 
+STUDY	IAV SUPV Solve Acad Actv 	73% verb: To apply oneself to the acquisition of knowledge 
+SUM	IAV SUPV Actv Solve 	
+SUPPOSE	IAV SUPV Solve 	55% verb: To assume, expect, consider, think (that) 
+SURMISE	IAV Pos SUPV Actv Think Solve 	
+SUSPECT	IAV Neg SUPV Ngtv Solve Hostile 	
+THINK	SV SUPV Solve 	64% verb: To hold as an opinion, to suppose, believe, consider 
+THINK	IAV SUPV Solve 	28% verb: To conceive, imagine, cogitate, contemplate, talk to oneself 
+TIME	DAV SUPV Solve 	0% verb: To ascertain the duration of something 
+TIME	IAV SUPV Solve 	0% idiom-adv: "Time and (time) again"--repeatedly 
+TOTAL	DAV SUPV Solve Actv 	3% verb: To add, to add up to 
+TRACE	IAV SUPV Solve 	
+TRACK	IAV SUPV Solve 	
+TYPE	IAV SUPV Actv Solve 	0% verb: To classify 
+UNDERSTAND	IAV Pos SUPV ED Pstv Solve 	65% verb: To comprehend 
+UNDERSTOOD	IAV Pos SUPV ED Pstv Solve 	verb: Past tense of 'understand' 
+VACILLATE	IAV SUPV Weak Undrst Solve 	
+VERIFY	IAV Pos SUPV Solve Pstv Actv Ovrst 	
+WARRANT	IAV SUPV Solve 	
+WATCH	IAV SUPV Actv Solve 	5% verb: To be careful or cautious--"watch yourself" 
+WEIGH	IAV SUPV Solve 	
+WILY	IndAdj Neg Modif Hostile Think Solve 	
+WISE	IAV Pos SUPV Solve Pstv 	5% verb-idiom: "Wise up" - become aware of the true situation 
+WONDER	IAV SUPV PFREQ Solve 	95% verb: To speculate, to be curious about 
+WORK	IAV SUPV Solve Actv 	3% verb-idiom: "Work out"--develop, find a solution (transitive and intransitive) 

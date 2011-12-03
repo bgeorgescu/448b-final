@@ -1,0 +1,166 @@
+word	tags	comments
+ALIENATE	IAV Neg SUPV Affil Intrel Hostile Other 	
+ALL	PRON INDEF LY Ovrst Other 	36% pron-adv: Each and every one or thing, the whole--entirely, completely 
+ANNOY	IAV Neg SUPV Actv Hostile Intrel Other 	
+ANOINT	DAV Pos SUPV Actv Affil Other Exert 	
+ANOTHER	PRON DEF DEF3 Other 	9% idiom: 'one another'--each other 
+ANYBODY	PRON DEF DEF4 Ovrst Other 	pronoun: Any person 
+ANYONE	PRON DEF DEF4 Ovrst Other 	pronoun: Any person at all, anybody 
+APOLOGIZE	IAV SUPV Subm Other Weak Intrel 	
+APPEASE	IAV Pos SUPV Actv Subm Other 	
+APPREHEND	DAV Pos SUPV Actv Fetch Other 	
+ASSAILANT	Neg Noun HU Hostile Exert Other 	
+ASSASSINATE	IAV Neg SUPV Actv Hostile Exert Other 	
+BAIT	IAV Neg SUPV Actv Other Comform 	
+BEHEAD	Neg Noun Hostile Exert Other Finish 	
+BEQUEATH	DAV Pos SUPV Actv Econ Other Exch 	
+BETROTH	IAV Pos SUPV Actv Econ Other Exch 	
+BLACKMAIL	IAV Neg SUPV Actv Power Intrel Other Econ 	
+BODY	PRON DEF DEF4 Other 	6% noun: 'a body'--a person, one 
+BOOT	IAV Neg SUPV Actv Affil Power Other 	
+CENSURE	IAV Neg SUPV Power Actv Other Hostile Comform 	
+CHASTISE	IAV Neg SUPV Actv Power Other Hostile Comform 	
+CHIDE	IAV Neg SUPV Actv Hostile Comform Power Other 	
+COAX	IAV Pos SUPV Actv Intrel Comform Other 	
+CODDLE	IAV Pos SUPV Actv Intrel Other Affil 	
+CONDONE	SV Pos SUPV Actv Other Power Affil 	
+CONGRATULATE	IAV Pos SUPV Actv Comform Other  Affil 	
+CONSOLE	IAV Pos SUPV Actv Affil Other 	
+CUDDLE	IAV Pos SUPV Actv Other Pleasure 	
+DAZZLE	IAV Pos SUPV Actv Percv Other Strng 	
+DEFERENCE	Pos Noun Other Ought 	
+DEMEAN	IAV Neg SUPV Actv Other Hostile Power 	
+DEVOUT	IndAdj Pos Modif Strng Affil Doctr Other 	
+DIGNIFY	IAV Pos SUPV Actv Comform Other 	
+DISRUPT	IAV Neg SUPV Actv Hostile Other 	
+DISTRACT	IAV Neg SUPV Actv Other 	
+DOMINANCE	Pos Noun Power Other 	
+DOTE	IAV Pos SUPV Actv Other Pleasure 	
+EACH	PRON DEF DEF3 Other 	37% idiom: 'each other'--each, the other (with verbs of interaction) 
+EMBARRASS	IAV Neg SUPV Other Actv 	
+EMPATHY	Pos Noun Emot Other 	
+ENCHANTMENT	Pos Noun Emot Pleasure Other 	
+ENDEAR	IAV Pos SUPV Actv Other Pleasure Affil 	
+ENDOW	DAV Pos SUPV Actv Econ Other Exch 	
+ENERGIZE	IAV Pos SUPV Actv Other Strng 	
+ENRAGE	IAV Neg SUPV Hostile Emot Other 	
+ENSLAVE	IAV Neg SUPV Other Power Polit 	
+ENTANGLE	IAV Neg SUPV Other Power Polit 	
+ENTRUST	IAV Pos SUPV Actv Other Fetch Feel 	
+ENVIOUS	IPadj Neg Modif Vice Other Need 	
+ENVY	Neg Noun Vice Need Other 	
+EVERYBODY	PRON DEF DEF4 Ovrst Other 	pronoun: Every person 
+EVERYONE	PRON DEF DEF4 Ovrst Other 	pronoun: Every person 
+FAMILIARIZE	IAV Pos SUPV Actv Other Rel Know Percv 	
+FASCINATION	Pos Noun Need Think Other 	
+FLIRT	IAV Pos SUPV Actv Other Emot Pleasure 	
+FONDNESS	Pos Noun Emot Pleasure Other 	
+GENEROSITY	Pos Noun Econ Other Virtue 	
+GLORIFY	IAV Pos SUPV Actv Other Strng Affil Power 	
+GRATIFY	IAV Pos SUPV Actv Pleasure Other 	
+GRATITUDE	Pos Noun Feel Other 	
+HARASS	IAV Neg SUPV Actv Hostile Other Exert 	
+HARASSMENT	Neg Noun Other Hostile Intrel Exert 	
+HE	PRON DEF DEF1 MALE Thrdp Other 	pronoun: The male being in question, or last mentioned, or anyone, that person 
+HER	PRON DEF DEF2 Female Other 	49% pron: Objective (def2) 
+HERS	PRON Thrdp Other Female 	
+HERSELF	Female Thrdp Other 	
+HIM	PRON DEF DEF2 MALE Thrdp Other 	pronoun: Objective form of 'he' 
+HIMSELF	MALE Thrdp Other 	
+HIS	DET GEN Thrdp MALE Other 	pronoun: Possessive form of 'he' 
+HORRIFY	IAV Neg SUPV Actv Hostile Other 	
+HUG	DAV Pos SUPV Actv Intrel Other 	
+HUMILIATE	IAV Neg SUPV Actv Hostile Other 	
+IDOLIZE	SV Pos SUPV Actv Other Goal 	
+IMPLICATE	IAV Neg SUPV Comform Hostile Causal Other Actv 	
+IMPRISON	IAV Neg SUPV Actv Other Power Legal 	
+INFLICT	IAV Neg SUPV Actv Other Exert 	
+INFURIATE	IAV Neg SUPV Actv Other Hostile 	
+INSPIRATION	Pos Noun Other Ach Goal Arousal 	
+INSPIRATIONAL	IndAdj Pos Modif Other Ach Goal Arousal 	
+INSULT	IAV Neg SUPV Actv Comform Other 	
+INTIMIDATE	IAV Neg SUPV Actv Strng Power Other 	
+INTRIGUE	IAV Pos SUPV Psv Other Think 	
+KIDNAP	IAV Neg SUPV Legal Hostile Fetch Other Actv 	
+LIBERATE	IAV Pos SUPV Actv Other Power Affil 	
+LONESOME	IPadj Neg Modif Emot Pain Other 	
+LURE	IAV Neg SUPV Actv Other Fetch 	
+MALICIOUS	IPadj Neg Modif Hostile Pain Other 	
+MANGLE	IAV Neg SUPV Actv Exert Hostile Other 	
+MANIPULATION	Neg Noun Other Percv Comform 	
+MOCK	IAV Neg SUPV Actv Comform Other Power 	
+MOCKERY	Neg Noun Comform Other Power 	
+MOLEST	IAV Neg SUPV Actv Other Hostile 	
+MOTIVATE	IAV Pos SUPV Actv Other Causal Arousal 	
+NEUTRALIZE	IAV Neg SUPV Actv Other Power Strng 	
+NO	Negate PRON DEF DEF4 Other 	5% idiom-pron: "No one" 
+NOBODY	PRON DEF DEF4 LY Negate Other Undrst 	pron: No person, a person of no importance 
+NOMINATE	DAV Pos SUPV Actv Comform Affil Polit Other 	
+NURTURE	IAV Pos SUPV Actv Affil Other 	
+OFFEND	IAV Neg SUPV Actv Eval Hostile Other 	
+OFFSET	IAV Pos SUPV Psv Other Rel 	
+ONE	PRON DEF DEF4 INDEF Other 	61% pron: A single person or thing 
+OPPRESS	IAV Neg SUPV Power Actv Hostile Other 	
+OSTRACIZE	IAV Neg SUPV Ovrst Hostile Affil Other Actv 	
+OTHER	PRON DEF DEF4 Handels Other 	21% pron: "Others"--refers almost always to people 
+OUTCAST	Neg Noun Ovrst Affil Other 	
+OUTLIVE	DAV Pos SUPV Psv Strng Natpro Other 	
+OUTRUN	IAV Pos SUPV Actv Travel Strng Other 	
+OUTWIT	IAV Pos SUPV Actv Think Solve Other 	
+OVERPOWER	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERRUN	IAV Neg SUPV Actv Other Power Strng Exert 	
+OVERTHROW	IAV Neg SUPV Actv Other Power Strng Exert 	
+PAMPER	IAV Pos SUPV Actv Other Intrel Affil Arousal 	
+PARASITE	Neg Noun Hostile Fetch Other 	
+PATRONIZE	IAV Neg SUPV Power Actv Other 	
+PERSECUTE	IAV Neg SUPV Actv Other Hostile 	
+PROSECUTE	IAV Pos SUPV Actv Other Legal Exert 	
+PROTECTIVE	IndAdj Pos Modif Strng Other Affil 	
+PROTECTOR	Pos Noun HU Role Affil Other Strng 	
+PUNCH	IAV Neg SUPV Actv Other Hostile Exert 	
+REBUFF	IAV Neg SUPV Actv Other Hostile Comform 	
+REBUKE	IAV Neg SUPV Actv Other Hostile Comform 	
+RECOMPENSE	Pos Noun Econ Exch Other Subm 	
+REINSTATE	IAV Pos SUPV Actv Other Polit Legal Power 	
+RENOUNCE	IAV Neg SUPV Actv Other Comform Hostile 	
+REPROACH	IAV Neg SUPV Other Actv Hostile Comform 	
+ROMANTICIZE	IAV Pos SUPV Actv Other Pleasure Think 	
+SABOTAGE	IAV Neg SUPV Actv Hostile Other Exert 	
+SAFEGUARD	IAV Pos SUPV Actv Other Power 	
+SALUTE	IAV Pos SUPV Actv Other Comform Legal Subm 	
+SANCTIFY	IAV Pos SUPV Actv Affil Other 	
+SHE	PRON DEF DEF1 Female Thrdp Other 	pronoun: First person singular, feminine 
+SHIELD	IAV Pos SUPV Actv Other Power Affil 	
+SHUN	IAV Neg SUPV Actv Affil Ovrst Hostile Other 	
+SLANDER	IAV Neg SUPV Comform Hostile Other Actv 	
+SLANDEROUS	IPadj Neg Modif Comform Hostile Other 	
+SOMEBODY	PRON DEF DEF4 Undrst Other 	pronoun: Some person, someone 
+SOMEONE	PRON DEF DEF4 Other Undrst 	pronoun: Somebody 
+SOOTHE	IAV Pos SUPV Actv Other Affil 	
+STANDARDIZE	IAV Pos SUPV Actv Ovrst Other 	
+STIMULATE	IAV Pos SUPV Actv Other Power Causal 	
+STRANGLE	DAV Neg SUPV Hostile Exert Actv Other 	
+SUBSIDIZE	IAV Pos SUPV Actv Affil Econ Other 	
+SURMOUNT	IAV Pos SUPV Actv Travel Power Other 	
+SURPASS	IAV Pos SUPV Actv Travel Power Other 	
+TEASE	IAV Neg SUPV Actv Comform Hostile Other 	
+TEMPT	IAV Pos SUPV Actv Other Need 	
+TERRIFY	IAV Neg SUPV Actv Emot Pain Other 	
+TERRORISM	Neg Noun Hostile Exert Other 	
+TERRORIZE	IAV Neg SUPV Actv Hostile Exert Other 	
+THANKFUL	IPadj Pos Modif Subm Need Other 	
+THEIR	DET GEN S Thrdp Other 	pronoun: Possessive form of 'they' 
+THEIRS	PRON S Thrdp Other 	
+THEM	PRON DEF DEF2 S Thrdp Plrlp Other 	pronoun: Object form of 'they' 
+THEMSELVES	S Thrdp Other 	
+THEY	PRON DEF DEF1 S Thrdp Plrlp Other 	pronoun: Plural of he, she, or it. 
+TORMENT	IAV Neg SUPV Actv Hostile Exert Other 	
+UNNERVE	IAV Neg SUPV Psv Emot Pain Other 	
+UTILIZATION	Pos Noun Work Other 	
+UTILIZE	IAV Pos SUPV Actv Work Other 	
+VANQUISH	IAV Pos SUPV Actv Power Exert Other 	
+VENERATE	IAV Pos SUPV Actv Subm Other Affil 	
+VOUCHSAFE	IAV Pos SUPV Actv Comform Fetch Other 	
+WHACK	IAV Neg SUPV Actv Hostile Exert Strng Other 	
+WOO	IAV Pos SUPV Actv Other Affil Intrel Comform 	
+WRECK	IAV Neg SUPV Actv Hostile Exert Finish Other 	
