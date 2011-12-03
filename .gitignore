@@ -5,3 +5,5 @@
 /eclipse/data/bin
 /eclipse/data/.classpath
 /eclipse/data/.project
+/eclipse/data/extra/enwiki-latest-page.sql
+/eclipse/data/extra/enwiki-latest-redirect.sql

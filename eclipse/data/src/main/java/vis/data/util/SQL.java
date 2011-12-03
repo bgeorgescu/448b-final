@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Iterator;
@@ -190,6 +192,21 @@ public class SQL {
 				throw new RuntimeException("failed to import database code " + res);
 		} catch (Exception e) {
 			throw new RuntimeException("failed to import database", e);
+		}
+	}
+	//check and swallow exceptions
+	public static boolean tableExists(String table) {
+		try {
+			DatabaseMetaData dbm = SQL.forThread().getMetaData();
+			// check if "employee" table is there
+			ResultSet tables = dbm.getTables(null, null, table, null);
+			try {
+				return tables.next();
+			} finally {
+				tables.close();
+			}
+		} catch(SQLException e) {
+			return false;
 		}
 	}
 }

@@ -13,10 +13,14 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import vis.data.model.WikiPage;
+import vis.data.model.WikiRedirect;
 import vis.data.util.SQL;
 
 public class WikipediaEntityResolution {
 	public static void pages() {
+		if(SQL.tableExists(WikiPage.TABLE))
+			return;
 		HttpClient hc = new DefaultHttpClient();
         File f = new File("extra/enwiki-latest-page.sql");
         if(!f.exists()) {
@@ -48,6 +52,8 @@ public class WikipediaEntityResolution {
         SQL.importMysqlDump(f);
 	}
 	public static void redirects() {
+		if(SQL.tableExists(WikiRedirect.TABLE))
+			return;
 		HttpClient hc = new DefaultHttpClient();
         File f = new File("extra/enwiki-latest-redirect.sql");
         if(!f.exists()) {
@@ -79,7 +85,7 @@ public class WikipediaEntityResolution {
         SQL.importMysqlDump(f);
 	}
 	public static void main(String[] args) {
-		//redirects();
+		redirects();
 		pages();
         
 	}
