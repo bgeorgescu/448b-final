@@ -22,6 +22,14 @@ public class All {
 		//not parallel without multiple jvm instances because of global
 		//state in the stanford nlp library
 		//Coreferences.main(new String[0]);
-	
+		
+		//loads the word lists for sentiment
+		GeneralInquirerSentiment.main(null);
+
+		//do basic resolution of entities via wikipedia redirects
+		WikipediaEntityResolution.main(null);
+		
+		//load wordnet databases
+		LoadWordNet.main(null);
 	}
 }
