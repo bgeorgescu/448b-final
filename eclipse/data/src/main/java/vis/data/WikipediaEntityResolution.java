@@ -167,13 +167,8 @@ public class WikipediaEntityResolution {
 			throw new RuntimeException("unknwon interrupt", e);
 		}
 	}
-	public static void main(String[] args) {
-		ExceptionHandler.terminateOnUncaught();
-		loadRedirects();
-		loadPages();
-		resolveEntities();
-
-		//experimental stuff
+	//useful as a template for other passes
+	public static void countHonorifics() {
 		
 		try {
 			TObjectIntHashMap<String> hs = new TObjectIntHashMap<String>();
@@ -185,8 +180,14 @@ public class WikipediaEntityResolution {
 				while((entity = it.next()) != null) {
 					String e = entity[0];
 					String parts[] = e.split("\\s+");
-					for(int i = 0; i < 1/*parts.length*/; ++i) {
+					if(parts.length < 2)
+						continue;
+					for(int i = 0; i < 1; ++i) {
+						if(parts[i].charAt(parts[i].length() - 1) != '.')
+							continue;
 						if(parts[i].indexOf('.') == -1)
+							continue;
+						if(parts[i].indexOf('.') != parts[i].lastIndexOf('.'))
 							continue;
 						hs.adjustOrPutValue(parts[i], 1, 1);
 					}
@@ -228,6 +229,13 @@ public class WikipediaEntityResolution {
 		} catch (SQLException e) {
 			throw new RuntimeException("error scanning for features to handle", e);
 		}
+	}
+	public static void main(String[] args) {
+		ExceptionHandler.terminateOnUncaught();
+		loadRedirects();
+		loadPages();
+		resolveEntities();
+		//countHonorifics();
 		
 	}
 
