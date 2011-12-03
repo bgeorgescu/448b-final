@@ -16,7 +16,38 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import vis.data.util.SQL;
 
 public class WikipediaEntityResolution {
-	public static void main(String[] args) {
+	public static void pages() {
+		HttpClient hc = new DefaultHttpClient();
+        File f = new File("extra/enwiki-latest-page.sql");
+        if(!f.exists()) {
+	        try {
+	            HttpGet hg = new HttpGet("http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page.sql.gz");
+	            System.out.println("downloading wikipedia dump " + hg.getURI());
+	            HttpResponse hr = hc.execute(hg);
+	            InputStream in = hr.getEntity().getContent();
+	            byte[] buffer = new byte[1024*1024];
+	            if(!f.createNewFile())
+	            	throw new RuntimeException("failed to open file");
+	            OutputStream out = new FileOutputStream(f);
+	            GZIPInputStream gzin = new GZIPInputStream(in);
+	            for(;;) {
+	            	int bytes_read = gzin.read(buffer);
+	            	if(bytes_read == -1)
+	            		break;
+	            	out.write(buffer, 0, bytes_read);
+	            }
+	            out.close();
+	        } catch (ClientProtocolException e) {
+	        	throw new RuntimeException("protocol failure downloading", e);
+			} catch (IOException e) {
+	        	throw new RuntimeException("ioexception failure downloading", e);
+			} finally {
+	            hc.getConnectionManager().shutdown();
+	        }
+        }
+        SQL.importMysqlDump(f);
+	}
+	public static void redirects() {
 		HttpClient hc = new DefaultHttpClient();
         File f = new File("extra/enwiki-latest-redirect.sql");
         if(!f.exists()) {
@@ -46,6 +77,11 @@ public class WikipediaEntityResolution {
 	        }
 	    }
         SQL.importMysqlDump(f);
+	}
+	public static void main(String[] args) {
+		//redirects();
+		pages();
+        
 	}
 
 }
