@@ -6,7 +6,7 @@ import java.util.Arrays;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawEntity;
-import vis.data.model.meta.DocFroEntityAccessor;
+import vis.data.model.meta.DocForEntityAccessor;
 import vis.data.model.meta.EntityAccessor;
 import vis.data.util.CountAggregator;
 import vis.data.util.SetAggregator;
@@ -53,7 +53,7 @@ public class EntityTerm extends Term {
 		}	
 	}
 
-	DocFroEntityAccessor deh = new DocFroEntityAccessor();
+	DocForEntityAccessor deh = new DocForEntityAccessor();
 	
 	public final int[] entities_;
 	public final boolean filterOnly_;
@@ -99,9 +99,9 @@ public class EntityTerm extends Term {
 			docs_ = new int[0];
 			count_ = new int[0];
 		} else {
-			DocFroEntityAccessor.Counts initial = deh.getDocCounts(entities_[0]);
+			DocForEntityAccessor.Counts initial = deh.getDocCounts(entities_[0]);
 			for(int i = 1; i < entities_.length; ++i) {
-				DocFroEntityAccessor.Counts partial = deh.getDocCounts(entities_[1]);
+				DocForEntityAccessor.Counts partial = deh.getDocCounts(entities_[1]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
 				initial.docId_ = res.getKey();
 				initial.count_ = res.getValue();

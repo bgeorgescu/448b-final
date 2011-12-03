@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 import vis.data.model.DocLemma;
 import vis.data.model.EntityDoc;
-import vis.data.model.meta.DocFroEntityAccessor;
+import vis.data.model.meta.DocForEntityAccessor;
 import vis.data.model.meta.EntityForDocAccessor;
 import vis.data.model.meta.EntityForDocAccessor.Counts;
 import vis.data.model.meta.IdListAccessor;
@@ -186,7 +186,7 @@ public class EntityDocs {
 								"INSERT INTO " + EntityDoc.TABLE + "(" + EntityDoc.ENTITY_ID + "," + EntityDoc.DOC_LIST  + ") " + 
 								"VALUES (?, ?)");
 						for(;;) {
-							DocFroEntityAccessor.Counts dec = new DocFroEntityAccessor.Counts();
+							DocForEntityAccessor.Counts dec = new DocForEntityAccessor.Counts();
 							dec.entityId_ = -1;
 							synchronized(mysql_threads) {
 								if(g_next_entity == all_entity_ids.length) {
@@ -199,7 +199,7 @@ public class EntityDocs {
 							dec.docId_ = pdc.docId_.toArray();
 							dec.count_ = pdc.count_.toArray();
 							CountAggregator.sortByIdAsc(dec.docId_, dec.count_);
-							EntityDoc ld = DocFroEntityAccessor.pack(dec);
+							EntityDoc ld = DocForEntityAccessor.pack(dec);
 							
 							insert.setInt(1, ld.entityId_);
 							insert.setBytes(2, ld.docList_);
