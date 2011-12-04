@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.HashSet;
 
+import org.apache.commons.dbutils.DbUtils;
+
 import vis.data.model.AutoComplete;
 import vis.data.model.AutoComplete.Type;
 import vis.data.model.Term;
@@ -64,17 +66,21 @@ public class BuildAutoComplete {
 				LemmaAccessor.ScoredResultSetIterator lemmas = la.lemmaIteratorWithScore();
 				ScoredLemma lemma;
 				while((lemma = lemmas.nextLemma()) != null) {
-					int id = tic.getOrAddTerm(lemma.lemma_);
+					String part = lemma.lemma_;
+					if(part.length() > Term.TERM_LENGTH)
+						part = part.substring(0, Term.TERM_LENGTH);
+					int id = tic.getOrAddTerm(part);
 					aca.addAutoComplete(id, Type.LEMMA, lemma.id_, lemma.score_);
 				}
 			} catch (SQLException e) {
 				throw new RuntimeException("failed to scan lemma table", e);
 			}	
+			SQL.createAllIndexes(SQL.forThread(), AutoComplete.class);
 		} catch (SQLException e) {
 			throw new RuntimeException("failed to add autocomplete entries", e);
 		} finally {
-//			DbUtils.closeQuietly(second);
-//			DbUtils.closeQuietly(SQL.forThread());
+			DbUtils.closeQuietly(second);
+			DbUtils.closeQuietly(SQL.forThread());
 		}
 	}
 }

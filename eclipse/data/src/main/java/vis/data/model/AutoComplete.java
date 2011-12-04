@@ -15,7 +15,7 @@ import vis.data.model.annotations.NonUniqueIndexes;
 public class AutoComplete {
 		public static final String TABLE = "autocomplete";
 		
-		public static final String TERM_ID="term";
+		public static final String TERM_ID="term_id";
 		@Column(name=TERM_ID, columnDefinition="INT NOT NULL")
 		public int termId_;
 
