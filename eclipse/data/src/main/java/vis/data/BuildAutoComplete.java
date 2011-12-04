@@ -6,11 +6,13 @@ import java.util.HashSet;
 
 import vis.data.model.AutoComplete;
 import vis.data.model.AutoComplete.Type;
+import vis.data.model.Term;
 import vis.data.model.meta.AutoCompleteAccessor;
 import vis.data.model.meta.EntityAccessor;
 import vis.data.model.meta.EntityAccessor.ScoredEntity;
 import vis.data.model.meta.LemmaAccessor;
 import vis.data.model.meta.LemmaAccessor.ScoredLemma;
+import vis.data.model.meta.TermInsertionCache;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 import vis.data.util.StopWords;
@@ -29,6 +31,7 @@ public class BuildAutoComplete {
 		}
 		
 		Connection second = SQL.open();
+		TermInsertionCache tic = TermInsertionCache.getInstance();
 		try {
 			AutoCompleteAccessor aca = new AutoCompleteAccessor();
 			try {
@@ -41,14 +44,15 @@ public class BuildAutoComplete {
 					uniques.clear();
 					for(String part : parts) {
 						//this could create duplicates... but it is a pretty long length
-						if(part.length() > AutoComplete.TERM_LENGTH)
-							part = part.substring(0, AutoComplete.TERM_LENGTH);
+						if(part.length() > Term.TERM_LENGTH)
+							part = part.substring(0, Term.TERM_LENGTH);
 						uniques.add(part);
 					}
 					for(String s : uniques) {
 						if(StopWords.STOP_WORDS.contains(s))
 							continue;
-						aca.addAutoComplete(s, Type.ENTITY, entity.id_, entity.score_);
+						int id = tic.getOrAddTerm(s);
+						aca.addAutoComplete(id, Type.ENTITY, entity.id_, entity.score_);
 					}
 				}
 			} catch (SQLException e) {
@@ -60,7 +64,8 @@ public class BuildAutoComplete {
 				LemmaAccessor.ScoredResultSetIterator lemmas = la.lemmaIteratorWithScore();
 				ScoredLemma lemma;
 				while((lemma = lemmas.nextLemma()) != null) {
-					aca.addAutoComplete(lemma.lemma_, Type.LEMMA, lemma.id_, lemma.score_);
+					int id = tic.getOrAddTerm(lemma.lemma_);
+					aca.addAutoComplete(id, Type.LEMMA, lemma.id_, lemma.score_);
 				}
 			} catch (SQLException e) {
 				throw new RuntimeException("failed to scan lemma table", e);

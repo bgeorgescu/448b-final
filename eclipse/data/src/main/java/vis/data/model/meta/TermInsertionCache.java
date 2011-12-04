@@ -8,89 +8,84 @@ import java.sql.Statement;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.commons.dbutils.DbUtils;
-import org.apache.commons.lang3.tuple.Pair;
 
-import vis.data.model.RawLemma;
+import vis.data.model.Term;
 import vis.data.util.SQL;
 
 //basically this talks to the db and caches the word to id mapping.
 //it will automatically add new words, so no one else should mess with
 //this table while the cache is active
-public class LemmaInsertionCache {
-	private static LemmaInsertionCache g_instance;
-	private ConcurrentHashMap<Pair<String, String>, Integer> mapping_ = new ConcurrentHashMap<Pair<String, String>, Integer>();
+public class TermInsertionCache {
+	private static TermInsertionCache g_instance;
+	private ConcurrentHashMap<String, Integer> mapping_ = new ConcurrentHashMap<String, Integer>();
 	private PreparedStatement insert_;
 	private int maxId_ = 0;
 	//this has ites own connection which they handle synchronization because it does insertion on whatever thread happens to call
 	private Connection conn_;
-	private LemmaInsertionCache(Connection conn){
+	private TermInsertionCache(Connection conn){
 		conn_ = conn;
 		try {
 			//load the whole word list
 			Statement st = conn_.createStatement();
-			ResultSet rs = st.executeQuery("SELECT " + RawLemma.ID + "," + RawLemma.LEMMA + "," + RawLemma.POS + " FROM " + RawLemma.TABLE);
+			ResultSet rs = st.executeQuery("SELECT " + Term.ID + "," + Term.TERM + " FROM " + Term.TABLE);
 	
 			if(rs.first()) do {
 				int i = rs.getInt(1);
 				String w = rs.getString(2);
-				String p = rs.getString(3);
-				mapping_.put(Pair.of(w, p), i);
+				mapping_.put(w, i);
 				if(i > maxId_)
 					maxId_ = i;
 			} while(rs.next());
 			st.close();
 			
-			insert_ = conn_.prepareStatement("INSERT INTO " + RawLemma.TABLE + " (" + RawLemma.ID + "," + RawLemma.LEMMA + "," + RawLemma.POS + ") VALUES (?, ?, ?)");
+			insert_ = conn_.prepareStatement("INSERT INTO " + Term.TABLE + " (" + Term.ID + "," + Term.TERM + ") VALUES (?, ?)");
 		} catch(SQLException e) {
 			try {
 				conn_.close();
 			} catch (SQLException e1) {
 				throw new RuntimeException("weird close failure", e);
 			}
-			throw new RuntimeException("failed to prepare  cache", e);
+			throw new RuntimeException("failed to prepare term cache", e);
 		}
 	}
 	public void close() {
 		DbUtils.closeQuietly(insert_);
 		DbUtils.closeQuietly(conn_);
 	}
-	public static synchronized LemmaInsertionCache getInstance() {
+	public static synchronized TermInsertionCache getInstance() {
 		if(g_instance != null)
 			return g_instance;
 		Connection conn = SQL.open();
 		try {
-			SQL.createTable(conn, RawLemma.class);
+			SQL.createTable(conn, Term.class);
 		} catch(SQLException e) {
-			System.err.println("WARNING rawlemma table already exists!");
+			System.err.println("WARNING Term table already exists!");
 		}
-		return new LemmaInsertionCache(conn);
+		return new TermInsertionCache(conn);
 	}
-	public int getLemma(String word, String pos) {
-		word = word.toLowerCase();
-		Pair<String, String> key = Pair.of(word, pos);
-		return mapping_.get(key);
+	public int getEntity(String term) {
+		term = term.toLowerCase();
+		return mapping_.get(term);
 	}
-	public int getOrAddLemma(String word, String pos) {
-		word = word.toLowerCase();
+	public int getOrAddTerm(String term) {
+		term = term.toLowerCase();
 		try {
-			Pair<String, String> key = Pair.of(word, pos);
-			Integer i = mapping_.get(key);
+			Integer i = mapping_.get(term);
 			if(i != null)
 				return i;
 			synchronized(this) {
-				i = mapping_.get(key);
+				i = mapping_.get(term);
 				if(i != null)
 					return i;
 				insert_.setInt(1, ++maxId_);
-				insert_.setString(2, word);
-				insert_.setString(3, pos);
+				insert_.setString(2, term);
 				insert_.executeUpdate();
-				mapping_.put(key, maxId_);
+				mapping_.put(term, maxId_);
 				return maxId_;
 				
 			}
 		} catch(SQLException e) {
-			throw new RuntimeException("lemma cache failed to insert word", e);
+			throw new RuntimeException("term cache failed to insert word", e);
 		}
 	}
 }

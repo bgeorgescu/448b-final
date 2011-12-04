@@ -57,7 +57,7 @@ public class EntityInsertionCache {
 	public static synchronized EntityInsertionCache getInstance() {
 		if(g_instance != null)
 			return g_instance;
-		Connection conn = SQL.forThread();
+		Connection conn = SQL.open();
 		try {
 			SQL.createTable(conn, RawEntity.class);
 		} catch(SQLException e) {

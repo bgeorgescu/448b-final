@@ -7,19 +7,17 @@ import javax.persistence.UniqueConstraint;
 import vis.data.model.annotations.Index;
 import vis.data.model.annotations.NonUniqueIndexes;
 
-@Table(name=AutoComplete.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={AutoComplete.TERM, AutoComplete.TYPE, AutoComplete.REFERENCE_ID})})
+@Table(name=AutoComplete.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={AutoComplete.TERM_ID, AutoComplete.TYPE, AutoComplete.REFERENCE_ID})})
 @NonUniqueIndexes(indexes={
-	@Index(columnNames={AutoComplete.TERM}),
-	@Index(columnNames={AutoComplete.TYPE, AutoComplete.TERM})
+	@Index(columnNames={AutoComplete.TERM_ID}),
+	@Index(columnNames={AutoComplete.TYPE, AutoComplete.TERM_ID})
 })
 public class AutoComplete {
 		public static final String TABLE = "autocomplete";
 		
-		public static final int TERM_LENGTH=64;
-		public static final String TERM="term";
-		//also want index
-		@Column(name=TERM, columnDefinition="VARCHAR(" + TERM_LENGTH + ") NOT NULL")
-		public String term_;
+		public static final String TERM_ID="term";
+		@Column(name=TERM_ID, columnDefinition="INT NOT NULL")
+		public int termId_;
 
 		public static enum Type {
 			//basic types
@@ -37,7 +35,6 @@ public class AutoComplete {
 			PUBLICATION,
 		}
 		public static final String TYPE="termtype";
-		//also want index
 		@Column(name=TYPE, columnDefinition="INT NOT NULL")
 		public Type type_;
 		
@@ -46,7 +43,6 @@ public class AutoComplete {
 		public int referenceId_;
 		
 		public static final String SCORE="score";
-		//also want index
 		@Column(name=SCORE, columnDefinition="INT NOT NULL")
 		public int score_;
 }
