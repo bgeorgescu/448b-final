@@ -7,6 +7,8 @@ TALLY_HITS = "/api/tally/hits";
 TALLY_DOCS = "/api/tally/docs";
 TALLY_LEMMAS = "/api/tally/lemmas";
 TALLY_ENTITIES = "/api/tally/entities";
+AUTOCOMPLETE_BASE = "/api/autocomplete/term/";
+AUTOCOMPLETE_TYPE_LIST = "/api/autocomplete/types";
 
 //error callbacks get the raw text
 //success ones are preprocessed from JSON
@@ -21,10 +23,10 @@ wrappedXHRCallback = function(xhr,callback) {
         }
     }
 }
-buildXHR = function(service, callback) {
+buildXHR = function(method, service, callback) {
     var xhr = new XMLHttpRequest();
     xhr.startTime = new Date();
-    xhr.open("POST", SERVER + service, true);
+    xhr.open(method, SERVER + service, true);
     xhr.setRequestHeader("Content-type", "application/json");
     xhr.onreadystatechange = function() {wrappedXHRCallback(xhr, callback)};
     return xhr;
@@ -45,6 +47,25 @@ MonthTerm = function(year, month) {
 
 
 arbitraryQuery = function(endpoint, query, onResult) {
-    var xhr = buildXHR(endpoint, onResult);
+    var xhr = buildXHR("POST", endpoint, onResult);
     xhr.send(JSON.stringify(query));
+}
+
+//for now it is dynamic, but we will pull these out as constants.  this is just a nice
+//method to be able to check if the server is speaking our language at that point.
+listAutoCompleteTypes = function(onResult) {
+    var xhr = buildXHR("GET", AUTOCOMPLETE_TYPE_LIST, onResult);
+    xhr.send(null);
+}
+//pass in something to autocomplete, a term is required, its probably best to set a limit
+autoCompleteTerm = function(term, type, limit, onResult) {
+    var url = AUTOCOMPLETE_BASE + term;
+    if(undefined != type) {
+        url += "/type/" + type;
+    }
+    if(undefined != limit) {
+        url += "/limit/" + limit;
+    }
+    var xhr = buildXHR("GET", url, onResult);
+    xhr.send(null);
 }

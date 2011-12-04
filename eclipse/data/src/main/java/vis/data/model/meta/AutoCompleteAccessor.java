@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.LinkedList;
+import java.util.List;
 
 import vis.data.model.AutoCompleteEntry;
 import vis.data.model.AutoCompleteEntry.Type;
@@ -17,26 +19,23 @@ public class AutoCompleteAccessor {
 		this(SQL.forThread());
 	}
 	public AutoCompleteAccessor(Connection conn) throws SQLException {
-		query_ = conn.prepareStatement("SELECT " + 
-			AutoCompleteEntry.TERM_ID + "," + AutoCompleteTerm.TERM + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE + 
+		String columns = AutoCompleteEntry.TERM_ID + "," + AutoCompleteTerm.TERM + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE;
+		query_ = conn.prepareStatement("SELECT " + columns +
 			" FROM " + AutoCompleteEntry.TABLE + 
 			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" +
 			" ORDER BY " + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.SCORE + " DESC");
-		queryLimit_ = conn.prepareStatement("SELECT " + 
-			AutoCompleteEntry.TERM_ID + "," + AutoCompleteTerm.TERM + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID +
+		queryLimit_ = conn.prepareStatement("SELECT " + columns +
 			" FROM " + AutoCompleteEntry.TABLE + 
 			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" + 
 			" ORDER BY " + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.SCORE + " DESC LIMIT ?");
-		queryType_ = conn.prepareStatement("SELECT " + 
-			AutoCompleteEntry.TERM_ID + "," + AutoCompleteTerm.TERM + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE + 
+		queryType_ = conn.prepareStatement("SELECT " + columns +
 			" FROM " + AutoCompleteEntry.TABLE + 
 			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?"  + " AND " + AutoCompleteEntry.TYPE + " = ?" +
 			" ORDER BY " + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.SCORE + " DESC");
-		queryTypeLimit_ = conn.prepareStatement("SELECT " + 
-			AutoCompleteEntry.TERM_ID + "," + AutoCompleteTerm.TERM + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID +
+		queryTypeLimit_ = conn.prepareStatement("SELECT " + columns +
 			" FROM " + AutoCompleteEntry.TABLE + 
 			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" + " AND " + AutoCompleteEntry.TYPE + " = ?" +
@@ -50,32 +49,27 @@ public class AutoCompleteAccessor {
 		return processResults(query_.executeQuery());
 	}
 	public NamedAutoComplete[] lookup(String q, AutoCompleteEntry.Type t) throws SQLException {
-		queryLimit_.setString(1, q);
-		queryLimit_.setInt(2, t.ordinal());
-		return processResults(queryLimit_.executeQuery());
+		queryType_.setString(1, q);
+		queryType_.setInt(2, t.ordinal());
+		return processResults(queryType_.executeQuery());
 	}
 	public NamedAutoComplete[] lookup(String q, int limit) throws SQLException {
-		queryType_.setString(1, q);
-		queryType_.setInt(2, limit);
-		return processResults(queryType_.executeQuery());
+		queryLimit_.setString(1, q);
+		queryLimit_.setInt(2, limit);
+		return processResults(queryLimit_.executeQuery());
 	}
 	public NamedAutoComplete[] lookup(String q, AutoCompleteEntry.Type t, int limit) throws SQLException {
 		queryTypeLimit_.setString(1, q);
-		queryTypeLimit_.setInt(2, limit);
-		queryTypeLimit_.setInt(3, t.ordinal());
+		queryTypeLimit_.setInt(2, t.ordinal());
+		queryTypeLimit_.setInt(3, limit);
 		return processResults(queryTypeLimit_.executeQuery());
 	}
 	public static class NamedAutoComplete extends AutoCompleteEntry {
 		public String term_;
 	}
-	//trying a new pattern - since the resultset caches the whole thing anyway
 	static NamedAutoComplete[] processResults(ResultSet rs) throws SQLException {
 		try {
-			rs.afterLast();
-			int count = rs.getRow();
-			NamedAutoComplete res[] = new NamedAutoComplete[count];
-			rs.beforeFirst();
-			int i = 0;
+			List<NamedAutoComplete> res = new LinkedList<NamedAutoComplete>();
 			while(rs.next()) {
 				NamedAutoComplete ac = new NamedAutoComplete();
 				ac.termId_ = rs.getInt(1);
@@ -83,9 +77,9 @@ public class AutoCompleteAccessor {
 				ac.type_ = AutoCompleteEntry.Type.values()[rs.getInt(3)];
 				ac.referenceId_ = rs.getInt(4);
 				ac.score_ = rs.getInt(5);
-				res[++i] = ac;
+				res.add(ac);
 			}
-			return res;
+			return res.toArray(new NamedAutoComplete[res.size()]);
 		} finally {
 			rs.close();
 		}
@@ -135,29 +129,29 @@ public class AutoCompleteAccessor {
 	public ResultSetIterator autoCompleteIterator(String q, AutoCompleteEntry.Type t) throws SQLException {
 		int fetch_size = query_.getFetchSize();
 		try {
-			queryLimit_.setString(1, q);
-			queryLimit_.setInt(2, t.ordinal());
-			return new ResultSetIterator(queryLimit_.executeQuery());
+			queryType_.setString(1, q);
+			queryType_.setInt(2, t.ordinal());
+			return new ResultSetIterator(queryType_.executeQuery());
 		} finally {
-			queryLimit_.setFetchSize(fetch_size);
+			queryType_.setFetchSize(fetch_size);
 		}
 	}
 	public ResultSetIterator autoCompleteIterator(String q, int limit) throws SQLException {
 		int fetch_size = query_.getFetchSize();
 		try {
-			queryType_.setString(1, q);
-			queryType_.setInt(2, limit);
-			return new ResultSetIterator(queryType_.executeQuery());
+			queryLimit_.setString(1, q);
+			queryLimit_.setInt(2, limit);
+			return new ResultSetIterator(queryLimit_.executeQuery());
 		} finally {
-			queryType_.setFetchSize(fetch_size);
+			queryLimit_.setFetchSize(fetch_size);
 		}
 	}
 	public ResultSetIterator autoCompleteIterator(String q, AutoCompleteEntry.Type t, int limit) throws SQLException {
 		int fetch_size = query_.getFetchSize();
 		try {
 			queryTypeLimit_.setString(1, q);
-			queryTypeLimit_.setInt(2, limit);
-			queryTypeLimit_.setInt(3, t.ordinal());
+			queryTypeLimit_.setInt(2, t.ordinal());
+			queryTypeLimit_.setInt(3, limit);
 			return new ResultSetIterator(queryTypeLimit_.executeQuery());
 		} finally {
 			queryTypeLimit_.setFetchSize(fetch_size);

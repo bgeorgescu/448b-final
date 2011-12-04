@@ -26,7 +26,7 @@ public class AutoComplete {
 		}
 	}
 
-	@Path("/api/autocomplete/{term}")
+	@Path("/api/autocomplete/term/{term}")
 	public static class AutoCompleteFull {
 		@GET
 		@Produces("application/json")
@@ -38,7 +38,7 @@ public class AutoComplete {
 			return aca.lookup(term);
 		}
 	}
-	@Path("/api/autocomplete/{term}/limit/{limit}")
+	@Path("/api/autocomplete/term/{term}/limit/{limit}")
 	public static class AutoCompleteLimited {
 		@GET
 		@Produces("application/json")
@@ -51,7 +51,7 @@ public class AutoComplete {
 			return aca.lookup(term, limit);
 		}
 	}
-	@Path("/api/autocomplete/{term}/type/{type}")
+	@Path("/api/autocomplete/term/{term}/type/{type}")
 	public static class AutoCompleteTypedFull {
 		@GET
 		@Produces("application/json")
@@ -64,7 +64,7 @@ public class AutoComplete {
 			return aca.lookup(term, AutoCompleteEntry.Type.values()[type]);
 		}
 	}	
-	@Path("/api/autocomplete/{term}/type/{type}/limit/{limit}")
+	@Path("/api/autocomplete/term/{term}/type/{type}/limit/{limit}")
 	public static class AutoCompleteTypedLimited {
 		@GET
 		@Produces("application/json")

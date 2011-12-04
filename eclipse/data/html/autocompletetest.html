@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AutoComplete Test</title>
+    <script type="text/javascript" src="/js/config.js"></script>
+    <script type="text/javascript" src="/js/query.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/global.css" type="text/css" />
+  </head>
+  <body>
+    <h1>AutoComplete Test</h1>
+    <script type="text/javascript">
+        //gimme bind!
+        if (!Function.prototype.bind) {
+          Function.prototype.bind = function (oThis) {
+            if (typeof this !== "function") {
+              // closest thing possible to the ECMAScript 5 internal IsCallable function
+              throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+            }
+
+            var aArgs = Array.prototype.slice.call(arguments, 1), 
+                fToBind = this, 
+                fNOP = function () {},
+                fBound = function () {
+                  return fToBind.apply(this instanceof fNOP
+                                         ? this
+                                         : oThis || window,
+                                       aArgs.concat(Array.prototype.slice.call(arguments)));
+                };
+
+            fNOP.prototype = this.prototype;
+            fBound.prototype = new fNOP();
+
+            return fBound;
+          };
+        }
+
+        function report(query, code, result, duration) {
+            $("<div/>")
+                .text("query for " + query)
+                .appendTo("body");
+            if(!success(code)) {
+                $("<div/>")
+                    .html(result)
+                    .css("color", "red")
+                    .appendTo("body");
+            } else {
+                $("<div/>")
+                    .text("Success " + code + " in " + duration + "ms")
+                    .appendTo("body");
+                $("<div/>")
+                    .text(JSON.stringify(result))
+                    .appendTo("body");
+            }
+            doNextAutoComplete();
+        }
+    
+        autocompletes = [];
+        function doNextAutoComplete() {
+            var q = autocompletes.shift();
+            q();
+        }
+
+        autocompletes.push(function() { 
+            listAutoCompleteTypes(function(c,r,d){report("types",c,r,d);});
+        });
+        autocompletes.push(function() { 
+            autoCompleteTerm("ca", undefined, 100, function(c,r,d){report("ca-limit-100",c,r,d);});
+        });
+        autocompletes.push(function() { 
+            autoCompleteTerm("ma", 0, 100, function(c,r,d){report("ma-type-0-limit-100",c,r,d);});
+        });
+        autocompletes.push(function() { 
+            autoCompleteTerm("ma", 1, 100, function(c,r,d){report("ma-type-1-limit-100",c,r,d);});
+        });
+        autocompletes.push(function() { 
+            autoCompleteTerm("ma", undefined, 100, function(c,r,d){report("ma-limit-100",c,r,d);});
+        });
+        autocompletes.push(function() { 
+            autoCompleteTerm("obama", undefined, undefined, function(c,r,d){report("obama",c,r,d);});
+        });
+        autocompletes.push(function() { 
+            autoCompleteTerm("hillary", 0, undefined, function(c,r,d){report("hillary-type=0",c,r,d);});
+        });
+        doNextAutoComplete();
+    </script>
+  </body>
+</html>
