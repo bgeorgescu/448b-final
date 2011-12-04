@@ -16,6 +16,7 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.zip.GZIPInputStream;
 
+import org.apache.commons.dbutils.DbUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
@@ -147,7 +148,7 @@ public class WikipediaEntityResolution {
 								throw e;
 							}
 						} finally {
-							second.close();
+							DbUtils.closeQuietly(second);
 						} 
 					} catch (SQLException e) {
 						throw new RuntimeException("wiki redirect processing failed", e);
@@ -197,7 +198,7 @@ public class WikipediaEntityResolution {
 					throw e;
 				}
 			} finally {
-				second.close();
+				DbUtils.closeQuietly(second);
 			} 
 			class Word {
 				String word_;

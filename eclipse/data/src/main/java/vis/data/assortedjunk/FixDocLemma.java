@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import org.apache.commons.dbutils.DbUtils;
+
 import vis.data.model.DocLemma;
 import vis.data.model.meta.EntityForDocAccessor;
 import vis.data.model.meta.IdListAccessor;
@@ -85,12 +87,8 @@ public class FixDocLemma {
 					}
 					finally
 					{
-						try {
-							conn.close();
-							System.out.println ("Database connection terminated");
-						} catch (SQLException e) {
-							throw new RuntimeException("Database connection terminated funny", e);
-						}
+						DbUtils.closeQuietly(conn);
+						System.out.println ("Database connection terminated");
 					}
 				}
 			};

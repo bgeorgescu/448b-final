@@ -21,9 +21,16 @@ public class AutoComplete {
 		public String term_;
 
 		public static enum Type {
+			//basic types
 			ENTITY,
 			LEMMA,
-			WORDNET,
+			//wordnet types
+			SISTER,
+			PARENT,
+			CHILD,
+			//sentiment groups
+			SENTIMENT,
+			//article metadata
 			PAGE,
 			SECTION,
 			PUBLICATION,

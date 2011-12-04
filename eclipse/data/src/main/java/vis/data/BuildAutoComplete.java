@@ -1,6 +1,9 @@
 package vis.data;
 
+import java.sql.Connection;
 import java.sql.SQLException;
+
+import org.apache.commons.dbutils.DbUtils;
 
 import vis.data.model.AutoComplete;
 import vis.data.util.ExceptionHandler;
@@ -17,6 +20,13 @@ public class BuildAutoComplete {
 			SQL.createTable(SQL.forThread(), AutoComplete.class);
 		} catch (SQLException e) {
 			throw new RuntimeException("failed to create autocomplete table", e);
+		}
+		
+		Connection second = SQL.open();
+		try {
+			
+		} finally {
+			DbUtils.closeQuietly(second);
 		}
 	}
 }

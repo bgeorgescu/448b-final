@@ -5,9 +5,9 @@ import java.io.FileInputStream;
 import java.io.FilenameFilter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.List;
 
+import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.io.IOUtils;
 
 import vis.data.model.RawSentiment;
@@ -65,7 +65,7 @@ public class GeneralInquirerSentiment {
 		} catch (Exception e) {
 			throw new RuntimeException("error loading sentiments from disk", e);
 		} finally {
-			try { conn.close(); } catch (SQLException e) {}
+			DbUtils.closeQuietly(conn);
 		}
 	}
 }

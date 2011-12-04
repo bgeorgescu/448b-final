@@ -28,6 +28,7 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import org.apache.commons.dbutils.DbUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -267,12 +268,8 @@ public class LoadXML {
 				}
 				finally
 				{
-					try {
-						conn.close();
-						System.out.println ("Database connection terminated");
-					} catch (SQLException e) {
-						throw new RuntimeException("Database connection terminated funny", e);
-					}
+					DbUtils.closeQuietly(conn);
+					System.out.println ("Database connection terminated");
 				}
 			}
 		};

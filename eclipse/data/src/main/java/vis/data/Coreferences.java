@@ -13,6 +13,8 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
+import org.apache.commons.dbutils.DbUtils;
+
 import vis.data.model.DocCoref;
 import vis.data.model.RawDoc;
 import vis.data.model.meta.DocAccessor;
@@ -93,12 +95,8 @@ public class Coreferences {
 					}
 					finally
 					{
-						try {
-							conn.close();
-							System.out.println ("Database connection terminated");
-						} catch (SQLException e) {
-							throw new RuntimeException("Database connection terminated funny", e);
-						}
+						DbUtils.closeQuietly(conn);
+						System.out.println ("Database connection terminated");
 					}
 				}
 			};

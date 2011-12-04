@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.RawLemma;
@@ -50,12 +51,8 @@ public class LemmaInsertionCache {
 		}
 	}
 	public void close() {
-		try {
-			insert_.close();
-			conn_.close();
-		} catch(SQLException e) {
-			throw new RuntimeException("weird close failure", e);
-		}
+		DbUtils.closeQuietly(insert_);
+		DbUtils.closeQuietly(conn_);
 	}
 	public static synchronized LemmaInsertionCache getInstance() {
 		if(g_instance != null)

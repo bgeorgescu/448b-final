@@ -3,6 +3,8 @@ package vis.data.assortedjunk;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import org.apache.commons.dbutils.DbUtils;
+
 import vis.data.model.RawDoc;
 import vis.data.model.meta.DocAccessor;
 import vis.data.model.meta.EntityAccessor;
@@ -31,7 +33,7 @@ public class DumpCoreferences {
 		} catch (SQLException e) {
 			throw new RuntimeException("sql error", e);
 		} finally {
-			try { conn.close(); } catch (SQLException e) {}
+			DbUtils.closeQuietly(conn);
 		}
 
 	}
