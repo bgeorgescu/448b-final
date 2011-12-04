@@ -6,9 +6,9 @@ import java.util.HashSet;
 
 import org.apache.commons.dbutils.DbUtils;
 
-import vis.data.model.AutoComplete;
-import vis.data.model.AutoComplete.Type;
-import vis.data.model.Term;
+import vis.data.model.AutoCompleteEntry;
+import vis.data.model.AutoCompleteEntry.Type;
+import vis.data.model.AutoCompleteTerm;
 import vis.data.model.meta.AutoCompleteAccessor;
 import vis.data.model.meta.EntityAccessor;
 import vis.data.model.meta.EntityAccessor.ScoredEntity;
@@ -24,10 +24,10 @@ public class BuildAutoComplete {
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
 		
-		if(SQL.tableExists(AutoComplete.TABLE))
+		if(SQL.tableExists(AutoCompleteEntry.TABLE))
 			return;
 		try {
-			SQL.createTable(SQL.forThread(), AutoComplete.class, false);
+			SQL.createTable(SQL.forThread(), AutoCompleteEntry.class, false);
 		} catch (SQLException e) {
 			throw new RuntimeException("failed to create autocomplete table", e);
 		}
@@ -46,8 +46,8 @@ public class BuildAutoComplete {
 					uniques.clear();
 					for(String part : parts) {
 						//this could create duplicates... but it is a pretty long length
-						if(part.length() > Term.TERM_LENGTH)
-							part = part.substring(0, Term.TERM_LENGTH);
+						if(part.length() > AutoCompleteTerm.TERM_LENGTH)
+							part = part.substring(0, AutoCompleteTerm.TERM_LENGTH);
 						uniques.add(part);
 					}
 					for(String s : uniques) {
@@ -67,15 +67,15 @@ public class BuildAutoComplete {
 				ScoredLemma lemma;
 				while((lemma = lemmas.nextLemma()) != null) {
 					String part = lemma.lemma_;
-					if(part.length() > Term.TERM_LENGTH)
-						part = part.substring(0, Term.TERM_LENGTH);
+					if(part.length() > AutoCompleteTerm.TERM_LENGTH)
+						part = part.substring(0, AutoCompleteTerm.TERM_LENGTH);
 					int id = tic.getOrAddTerm(part);
 					aca.addAutoComplete(id, Type.LEMMA, lemma.id_, lemma.score_);
 				}
 			} catch (SQLException e) {
 				throw new RuntimeException("failed to scan lemma table", e);
 			}	
-			SQL.createAllIndexes(SQL.forThread(), AutoComplete.class);
+			SQL.createAllIndexes(SQL.forThread(), AutoCompleteEntry.class);
 		} catch (SQLException e) {
 			throw new RuntimeException("failed to add autocomplete entries", e);
 		} finally {

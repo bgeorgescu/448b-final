@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.commons.dbutils.DbUtils;
 
-import vis.data.model.Term;
+import vis.data.model.AutoCompleteTerm;
 import vis.data.util.SQL;
 
 //basically this talks to the db and caches the word to id mapping.
@@ -27,7 +27,7 @@ public class TermInsertionCache {
 		try {
 			//load the whole word list
 			Statement st = conn_.createStatement();
-			ResultSet rs = st.executeQuery("SELECT " + Term.ID + "," + Term.TERM + " FROM " + Term.TABLE);
+			ResultSet rs = st.executeQuery("SELECT " + AutoCompleteTerm.ID + "," + AutoCompleteTerm.TERM + " FROM " + AutoCompleteTerm.TABLE);
 	
 			if(rs.first()) do {
 				int i = rs.getInt(1);
@@ -38,7 +38,7 @@ public class TermInsertionCache {
 			} while(rs.next());
 			st.close();
 			
-			insert_ = conn_.prepareStatement("INSERT INTO " + Term.TABLE + " (" + Term.ID + "," + Term.TERM + ") VALUES (?, ?)");
+			insert_ = conn_.prepareStatement("INSERT INTO " + AutoCompleteTerm.TABLE + " (" + AutoCompleteTerm.ID + "," + AutoCompleteTerm.TERM + ") VALUES (?, ?)");
 		} catch(SQLException e) {
 			try {
 				conn_.close();
@@ -57,7 +57,7 @@ public class TermInsertionCache {
 			return g_instance;
 		Connection conn = SQL.open();
 		try {
-			SQL.createTable(conn, Term.class);
+			SQL.createTable(conn, AutoCompleteTerm.class);
 		} catch(SQLException e) {
 			System.err.println("WARNING Term table already exists!");
 		}

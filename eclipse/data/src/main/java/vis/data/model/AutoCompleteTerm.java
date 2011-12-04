@@ -5,8 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-@Table(name=Term.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={Term.TERM})})
-public class Term {
+@Table(name=AutoCompleteTerm.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={AutoCompleteTerm.TERM})})
+public class AutoCompleteTerm {
 	public static final String TABLE = "term";
 	
 	public static final String ID="id";

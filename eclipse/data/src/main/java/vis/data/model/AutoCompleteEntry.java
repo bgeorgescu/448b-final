@@ -7,12 +7,12 @@ import javax.persistence.UniqueConstraint;
 import vis.data.model.annotations.Index;
 import vis.data.model.annotations.NonUniqueIndexes;
 
-@Table(name=AutoComplete.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={AutoComplete.TERM_ID, AutoComplete.TYPE, AutoComplete.REFERENCE_ID})})
+@Table(name=AutoCompleteEntry.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={AutoCompleteEntry.TERM_ID, AutoCompleteEntry.TYPE, AutoCompleteEntry.REFERENCE_ID})})
 @NonUniqueIndexes(indexes={
-	@Index(columnNames={AutoComplete.TERM_ID}),
-	@Index(columnNames={AutoComplete.TYPE, AutoComplete.TERM_ID})
+	@Index(columnNames={AutoCompleteEntry.TERM_ID}),
+	@Index(columnNames={AutoCompleteEntry.TYPE, AutoCompleteEntry.TERM_ID})
 })
-public class AutoComplete {
+public class AutoCompleteEntry {
 		public static final String TABLE = "autocomplete";
 		
 		public static final String TERM_ID="term_id";
