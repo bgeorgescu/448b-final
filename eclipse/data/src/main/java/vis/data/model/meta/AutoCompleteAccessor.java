@@ -57,21 +57,21 @@ public class AutoCompleteAccessor {
 			" VALUES (?,?,?,?)");
 	}
 	public NamedAutoComplete[] lookup(String q) throws SQLException {
-		query_.setString(1, q);
+		query_.setString(1, q + "%");
 		return processResults(query_.executeQuery());
 	}
 	public NamedAutoComplete[] lookup(String q, AutoCompleteEntry.Type t) throws SQLException {
-		queryType_.setString(1, q);
+		queryType_.setString(1, q + "%");
 		queryType_.setInt(2, t.ordinal());
 		return processResults(queryType_.executeQuery());
 	}
 	public NamedAutoComplete[] lookup(String q, int limit) throws SQLException {
-		queryLimit_.setString(1, q);
+		queryLimit_.setString(1, q + "%");
 		queryLimit_.setInt(2, limit);
 		return processResults(queryLimit_.executeQuery());
 	}
 	public NamedAutoComplete[] lookup(String q, AutoCompleteEntry.Type t, int limit) throws SQLException {
-		queryTypeLimit_.setString(1, q);
+		queryTypeLimit_.setString(1, q + "%");
 		queryTypeLimit_.setInt(2, t.ordinal());
 		queryTypeLimit_.setInt(3, limit);
 		return processResults(queryTypeLimit_.executeQuery());
@@ -133,7 +133,7 @@ public class AutoCompleteAccessor {
 		int fetch_size = query_.getFetchSize();
 		try {
 			query_.setFetchSize(Integer.MIN_VALUE);
-			query_.setString(1, q);
+			query_.setString(1, q + "%");
 			return new ResultSetIterator(query_.executeQuery());
 		} finally {
 			query_.setFetchSize(fetch_size);
@@ -142,7 +142,7 @@ public class AutoCompleteAccessor {
 	public ResultSetIterator autoCompleteIterator(String q, AutoCompleteEntry.Type t) throws SQLException {
 		int fetch_size = query_.getFetchSize();
 		try {
-			queryType_.setString(1, q);
+			queryType_.setString(1, q + "%");
 			queryType_.setInt(2, t.ordinal());
 			return new ResultSetIterator(queryType_.executeQuery());
 		} finally {
@@ -152,7 +152,7 @@ public class AutoCompleteAccessor {
 	public ResultSetIterator autoCompleteIterator(String q, int limit) throws SQLException {
 		int fetch_size = query_.getFetchSize();
 		try {
-			queryLimit_.setString(1, q);
+			queryLimit_.setString(1, q + "%");
 			queryLimit_.setInt(2, limit);
 			return new ResultSetIterator(queryLimit_.executeQuery());
 		} finally {
@@ -162,7 +162,7 @@ public class AutoCompleteAccessor {
 	public ResultSetIterator autoCompleteIterator(String q, AutoCompleteEntry.Type t, int limit) throws SQLException {
 		int fetch_size = query_.getFetchSize();
 		try {
-			queryTypeLimit_.setString(1, q);
+			queryTypeLimit_.setString(1, q + "%");
 			queryTypeLimit_.setInt(2, t.ordinal());
 			queryTypeLimit_.setInt(3, limit);
 			return new ResultSetIterator(queryTypeLimit_.executeQuery());
