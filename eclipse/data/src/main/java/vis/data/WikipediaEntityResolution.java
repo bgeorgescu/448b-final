@@ -175,10 +175,10 @@ public class WikipediaEntityResolution {
 			Connection second = SQL.open();
 			EntityAccessor ea = new EntityAccessor(second);
 			try {
-				StringArrayResultSetIterator it = ea.entityIterator();
-				String entity[];
-				while((entity = it.next()) != null) {
-					String e = entity[0];
+				EntityAccessor.ResultSetIterator it = ea.entityIterator();
+				RawEntity entity;
+				while((entity = it.nextEntity()) != null) {
+					String e = entity.entity_;
 					String parts[] = e.split("\\s+");
 					if(parts.length < 2)
 						continue;

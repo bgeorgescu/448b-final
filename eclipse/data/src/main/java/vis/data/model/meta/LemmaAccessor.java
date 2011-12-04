@@ -10,13 +10,17 @@ import vis.data.model.RawLemma;
 import vis.data.util.SQL;
 
 public class LemmaAccessor {
-	PreparedStatement query_, queryByWord_, queryByLemma_, queryByPos_;
+	PreparedStatement query_, queryByWord_, queryByLemma_, queryByPos_, queryList_;
 	public LemmaAccessor() throws SQLException {
-		Connection conn = SQL.forThread();
+		this(SQL.forThread());
+	}
+	public LemmaAccessor(Connection conn) throws SQLException {
 		query_ = conn.prepareStatement("SELECT " + RawLemma.LEMMA + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.ID + " = ?");
 		queryByWord_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.POS + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.LEMMA + " = ?");
 		queryByLemma_ = conn.prepareStatement("SELECT " + RawLemma.ID + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.LEMMA + " = ? AND " + RawLemma.POS + " = ?");
 		queryByPos_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.LEMMA + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.POS + " = ?");
+		queryList_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.LEMMA + "," + RawLemma.POS + " FROM " + RawLemma.TABLE);
+		queryList_.setFetchSize(Integer.MIN_VALUE); //streaming
 	}
 	public RawLemma getLemma(int lemma_id) throws SQLException {
 		query_.setInt(1, lemma_id);
@@ -94,5 +98,23 @@ public class LemmaAccessor {
 		} finally {
 			rs.close();
 		}
+	}
+	public static class ResultSetIterator extends org.apache.commons.dbutils.ResultSetIterator {
+		public ResultSetIterator(ResultSet rs) {
+			super(rs);
+		}
+
+		public RawLemma nextLemma() {
+			RawLemma rl = new RawLemma();
+			Object fields[] = super.next();
+			rl.id_ = (Integer)fields[0];
+			rl.lemma_ = (String)fields[1];
+			rl.pos_ = (String)fields[2];
+			return rl;
+		}
+	}
+	public ResultSetIterator lemmaIterator() throws SQLException {
+		ResultSet rs = queryList_.executeQuery();
+		return new ResultSetIterator(rs);
 	}
 }

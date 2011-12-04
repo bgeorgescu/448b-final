@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 import vis.data.model.RawEntity;
 import vis.data.util.SQL;
-import vis.data.util.StringArrayResultSetIterator;
 
 public class EntityAccessor {
 	PreparedStatement query_, queryByEntity_, queryByBoth_, queryByType_, queryList_;
@@ -17,7 +16,7 @@ public class EntityAccessor {
 	}
 	public EntityAccessor(Connection conn) throws SQLException {
 		query_ = conn.prepareStatement("SELECT " + RawEntity.ENTITY + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + " = ?");
-		queryList_ = conn.prepareStatement("SELECT " + RawEntity.ENTITY + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE);
+		queryList_ = conn.prepareStatement("SELECT " + RawEntity.ID + "," + RawEntity.ENTITY + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE);
 		queryList_.setFetchSize(Integer.MIN_VALUE); //streaming
 		queryByEntity_ = conn.prepareStatement("SELECT " + RawEntity.ID + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ENTITY + " = ?");
 		queryByBoth_ = conn.prepareStatement("SELECT " + RawEntity.ID + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ENTITY + " = ? AND " + RawEntity.TYPE + " = ?");
@@ -100,8 +99,22 @@ public class EntityAccessor {
 			rs.close();
 		}
 	}
-	public StringArrayResultSetIterator entityIterator() throws SQLException {
+	public static class ResultSetIterator extends org.apache.commons.dbutils.ResultSetIterator {
+		public ResultSetIterator(ResultSet rs) {
+			super(rs);
+		}
+		
+		public RawEntity nextEntity() {
+			RawEntity re = new RawEntity();
+			Object fields[] = super.next();
+			re.id_ = (Integer)fields[0];
+			re.entity_ = (String)fields[1];
+			re.type_ = (String)fields[2];
+			return re;
+		}
+	}
+	public ResultSetIterator entityIterator() throws SQLException {
 		ResultSet rs = queryList_.executeQuery();
-		return new StringArrayResultSetIterator(rs);
+		return new ResultSetIterator(rs);
 	}
 }
