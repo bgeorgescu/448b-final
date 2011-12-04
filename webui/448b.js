@@ -125,7 +125,7 @@ var viewModel = {
     lastSavedJson: new ko.observable("")
 }
 
-function addMockSettings() {
+function addMockData() {
 	var f = new SearchFilter();
 	f.addLiteral("election");
 	viewModel.addFilter(f);
@@ -153,7 +153,7 @@ function addMockSettings() {
 	viewModel.suggestions().push("kucinich");
 }
 
-addMockSettings();
+addMockData();
 ko.applyBindings(viewModel);
 
 
@@ -183,3 +183,51 @@ function newFilterWithEmptyLiteralTo(f) {
 	n.addLiteral('');
 	f(n);
 }
+
+$("#filterList").droppable({
+	accept: '.suggestion',
+	activeClass: "filterListHover",
+	drop: function(event, ui) {
+			var n = new SearchFilter();
+			n.addLiteral($(ui.draggable).text());
+			viewModel.addFilter(n);
+	}
+});
+$("#bucketList").droppable({
+	accept: '.suggestion',
+	activeClass: "filterListHover",
+	drop: function(event, ui) {
+			var n = new SearchFilter();
+			n.addLiteral($(ui.draggable).text());
+			viewModel.addBucket(n);
+	}
+});
+
+function bindAutocomplete() {
+	//$("input.justAdded")
+}
+
+viewModel.filters.subscribe(bindAutocomplete);
+viewModel.buckets.subscribe(bindAutocomplete);
+bindAutocomplete();
+
+function suggestionsAdded() {
+	$(".suggestion.justAdded").removeClass(".justAdded").draggable({helper: 'clone'});
+}
+
+viewModel.suggestions.subscribe(suggestionsAdded);
+suggestionsAdded();
+
+function queryChanged() {
+	// will get called anytime the query gets changed in any way
+	// we probably want to do some rate-limiting to avoid DoSing the server with queries
+	viewModel.save();
+}
+
+viewModel.filters.subscribe(queryChanged);
+viewModel.buckets.subscribe(queryChanged);
+viewModel.startYear.subscribe(queryChanged);
+viewModel.endYear.subscribe(queryChanged);
+viewModel.horizontalAxis.subscribe(queryChanged);
+viewModel.dateGranularity.subscribe(queryChanged);
+viewModel.dateGranularityFixed.subscribe(queryChanged);

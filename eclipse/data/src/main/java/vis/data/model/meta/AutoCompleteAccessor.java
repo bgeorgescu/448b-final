@@ -35,7 +35,7 @@ public class AutoCompleteAccessor {
 		    " END";
 		String columns = AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE + "," + resolved;
 		String joinTermTable = " JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID;
-		String orderBy = " ORDER BY " + AutoCompleteEntry.SCORE + "," + AutoCompleteEntry.TYPE + " DESC";
+		String orderBy = " ORDER BY " + AutoCompleteEntry.SCORE + " DESC," + AutoCompleteEntry.TYPE;
 		query_ = conn.prepareStatement("SELECT " + columns +
 			" FROM " + AutoCompleteEntry.TABLE + joinTermTable +
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" +
