@@ -8,6 +8,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 import vis.data.model.AutoCompleteEntry;
+import vis.data.model.RawEntity;
+import vis.data.model.RawLemma;
 import vis.data.model.AutoCompleteEntry.Type;
 import vis.data.model.AutoCompleteTerm;
 import vis.data.util.SQL;
@@ -19,27 +21,37 @@ public class AutoCompleteAccessor {
 		this(SQL.forThread());
 	}
 	public AutoCompleteAccessor(Connection conn) throws SQLException {
-		String columns = AutoCompleteEntry.TERM_ID + "," + AutoCompleteTerm.TERM + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE;
+		String resolved = "CASE " + AutoCompleteEntry.TYPE +
+			" WHEN " + AutoCompleteEntry.Type.LEMMA.ordinal() + " THEN (SELECT CONCAT(" + RawLemma.LEMMA + ",'/'," + RawLemma.POS + ") FROM " + RawLemma.TABLE + " WHERE " + RawLemma.ID + "=" + AutoCompleteEntry.REFERENCE_ID + ")" +
+		    " WHEN " + AutoCompleteEntry.Type.ENTITY.ordinal() + " THEN (SELECT CONCAT(" + RawEntity.ENTITY + ",'/'," + RawEntity.TYPE + ") FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + "=" + AutoCompleteEntry.REFERENCE_ID + ")" +
+		    " WHEN " + AutoCompleteEntry.Type.CHILD.ordinal() + " THEN " + AutoCompleteTerm.TERM +
+		    " WHEN " + AutoCompleteEntry.Type.PARENT.ordinal() + " THEN " + AutoCompleteTerm.TERM + 
+		    " WHEN " + AutoCompleteEntry.Type.SISTER.ordinal() + " THEN " + AutoCompleteTerm.TERM + 
+		    " WHEN " + AutoCompleteEntry.Type.SENTIMENT.ordinal() + " THEN " + AutoCompleteTerm.TERM + 
+		    " WHEN " + AutoCompleteEntry.Type.PUBLICATION.ordinal() + " THEN " + AutoCompleteTerm.TERM + 
+		    " WHEN " + AutoCompleteEntry.Type.SECTION.ordinal() + " THEN " + AutoCompleteTerm.TERM +
+		    " WHEN " + AutoCompleteEntry.Type.PAGE.ordinal() + " THEN " + AutoCompleteTerm.TERM +
+		    " ELSE CONCAT('unknown type:'," + AutoCompleteEntry.TYPE + ",':'," + AutoCompleteTerm.TERM + ")" +
+		    " END";
+		String columns = AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE + "," + resolved;
+		String joinTermTable = " JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID;
+		String orderBy = " ORDER BY " + AutoCompleteEntry.SCORE + "," + AutoCompleteEntry.TYPE + " DESC";
 		query_ = conn.prepareStatement("SELECT " + columns +
-			" FROM " + AutoCompleteEntry.TABLE + 
-			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
+			" FROM " + AutoCompleteEntry.TABLE + joinTermTable +
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" +
-			" ORDER BY " + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.SCORE + " DESC");
+			orderBy);
 		queryLimit_ = conn.prepareStatement("SELECT " + columns +
-			" FROM " + AutoCompleteEntry.TABLE + 
-			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
+			" FROM " + AutoCompleteEntry.TABLE + joinTermTable +
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" + 
-			" ORDER BY " + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.SCORE + " DESC LIMIT ?");
+			orderBy + " LIMIT ?");
 		queryType_ = conn.prepareStatement("SELECT " + columns +
-			" FROM " + AutoCompleteEntry.TABLE + 
-			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
+			" FROM " + AutoCompleteEntry.TABLE + joinTermTable +
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?"  + " AND " + AutoCompleteEntry.TYPE + " = ?" +
-			" ORDER BY " + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.SCORE + " DESC");
+			orderBy);
 		queryTypeLimit_ = conn.prepareStatement("SELECT " + columns +
-			" FROM " + AutoCompleteEntry.TABLE + 
-			" JOIN " + AutoCompleteTerm.TABLE + " ON " + AutoCompleteTerm.ID + "=" + AutoCompleteEntry.TERM_ID + 
+			" FROM " + AutoCompleteEntry.TABLE + joinTermTable + 
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" + " AND " + AutoCompleteEntry.TYPE + " = ?" +
-			" ORDER BY " + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.SCORE + " DESC LIMIT ?");
+			orderBy + " LIMIT ?");
 		insert_ = conn.prepareStatement("INSERT INTO " + AutoCompleteEntry.TABLE + 
 			" (" + AutoCompleteEntry.TERM_ID + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE + ")" +
 			" VALUES (?,?,?,?)");
@@ -64,19 +76,21 @@ public class AutoCompleteAccessor {
 		queryTypeLimit_.setInt(3, limit);
 		return processResults(queryTypeLimit_.executeQuery());
 	}
-	public static class NamedAutoComplete extends AutoCompleteEntry {
-		public String term_;
+	public static class NamedAutoComplete {
+		public AutoCompleteEntry.Type type_;
+		public int referenceId_;
+		public int score_;
+		public String resolved_;
 	}
 	static NamedAutoComplete[] processResults(ResultSet rs) throws SQLException {
 		try {
 			List<NamedAutoComplete> res = new LinkedList<NamedAutoComplete>();
 			while(rs.next()) {
 				NamedAutoComplete ac = new NamedAutoComplete();
-				ac.termId_ = rs.getInt(1);
-				ac.term_ = rs.getString(2);
-				ac.type_ = AutoCompleteEntry.Type.values()[rs.getInt(3)];
-				ac.referenceId_ = rs.getInt(4);
-				ac.score_ = rs.getInt(5);
+				ac.type_ = AutoCompleteEntry.Type.values()[rs.getInt(1)];
+				ac.referenceId_ = rs.getInt(2);
+				ac.score_ = rs.getInt(3);
+				ac.resolved_ = rs.getString(4);
 				res.add(ac);
 			}
 			return res.toArray(new NamedAutoComplete[res.size()]);
@@ -108,11 +122,10 @@ public class AutoCompleteAccessor {
 			if(fields == null)
 				return null;
 			NamedAutoComplete ac = new NamedAutoComplete();
-			ac.termId_ = (Integer)fields[0];
-			ac.term_ = (String)fields[1];
-			ac.type_ = AutoCompleteEntry.Type.values()[(Integer)fields[2]];
-			ac.referenceId_ = (Integer)fields[3];
-			ac.score_ = (Integer)fields[4];
+			ac.type_ = AutoCompleteEntry.Type.values()[(Integer)fields[0]];
+			ac.referenceId_ = (Integer)fields[1];
+			ac.score_ = (Integer)fields[2];
+			ac.resolved_ = (String)fields[3];
 			return ac;
 		}
 	}
