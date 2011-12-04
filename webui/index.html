@@ -4,6 +4,8 @@
 <script src="lib/jquery.tmpl.js" type="text/javascript"></script>
 <script src="lib/knockout-1.2.1.js" type="text/javascript"></script>
 <script type="text/javascript" src="lib/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="lib/date-en-US.js"></script>
+
 
 <link type="text/css" href="lib/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
 <link type="text/css" rel="stylesheet" href="lib/reset.css" />
@@ -73,7 +75,7 @@
 {{each(i, literal) disjunction()}}                    
 <div class="literal">
 	<span data-bind="text: literal"></span>
-	<input data-bind="value: literal" size="10"/>
+	<input data-bind="value: literal" size="10" class="justAdded" />
 	<a href="#" data-bind="click: function() { removeLiteral(literal) }" class="btn">x</a>
 </div>
 {{/each}}
@@ -86,7 +88,7 @@
 
 <script type="text/html" id="suggestionTemplate">
 {{each(i, suggestion) suggestions()}}                    
-<div data-bind="text: suggestion" class="suggestion"></div>
+<div data-bind="text: suggestion" class="suggestion justAdded"></div>
 {{/each}}
 </script>
 
@@ -95,37 +97,10 @@
 
 <div class="container_16" style="margin-top:50px;" data-bind="visible: debug">
 <h3>Debug</h3>
-<p>
-    <button data-bind="click: save">Save to JSON</button>
-</p>
-<textarea data-bind="value: lastSavedJson" rows="5" cols="60" disabled="disabled"> </textarea>
+<textarea data-bind="value: lastSavedJson" rows="10" cols="90" disabled="disabled"> </textarea>
 </div>
 
 <script type="text/javascript" src="448b.js"></script>
-<script>
-$(document).ready(function() {
-    $("#filterList").droppable({
-        accept: '.suggestion',
-        activeClass: "filterListHover",
-        drop: function(event, ui) {
-        		var n = new SearchFilter();
-				n.addLiteral($(ui.draggable).text());
-                viewModel.addFilter(n);
-        }
-    });
-    $("#bucketList").droppable({
-        accept: '.suggestion',
-        activeClass: "filterListHover",
-        drop: function(event, ui) {
-        		var n = new SearchFilter();
-				n.addLiteral($(ui.draggable).text());
-                viewModel.addBucket(n);
-        }
-    });
-    $(".suggestion").draggable({
-        helper: 'clone',
-    });
-});
-</script>
+<script type="text/javascript" src="448b-query.js"></script>
 </body>
 </html>
