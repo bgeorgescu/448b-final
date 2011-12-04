@@ -156,10 +156,8 @@ function addMockSettings() {
 addMockSettings();
 ko.applyBindings(viewModel);
 
-// TODO: figure out a way to subscribe slider to changes in model (i.e. 2 way updates)
 
-
-$( "#slider-range" ).slider({
+$("#slider-range").slider({
 	range: true,
 	min: 2000,
 	max: 2010,
@@ -169,6 +167,16 @@ $( "#slider-range" ).slider({
 		viewModel.endYear(ui.values[1])
 	}
 });
+
+
+// Fix for two-way binding when the start/end years are changed. This might be brittle
+function updateSlider() {
+	$("#slider-range").slider({values: [viewModel.startYear(), viewModel.endYear()]});
+}
+viewModel.startYear.subscribe(updateSlider);
+viewModel.endYear.subscribe(updateSlider);
+
+
 
 function newFilterWithEmptyLiteralTo(f) {
 	var n = new SearchFilter();
