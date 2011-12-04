@@ -44,7 +44,34 @@ YearTerm = function(year) {
 MonthTerm = function(year, month) {
     return {date_:{before_:(year+1)*10000+(month+2)*100, after_:(year*10000 - 1)+(month+1)*100}};
 }
-
+//new not yet implemented
+OrTerm = function(a, b) {
+    return {or_:{a_:a, b_:b}};
+}
+AndTerm = function(a, b) {
+    return {and_:{a_:a, b_:b}};
+}
+NotTerm = function(a) {
+    return {not_:{a_:a}};
+}
+PageTerm = function(begin_inclusive, end_exclusive) {
+    return {page_:{begin_:begin_inclusive, end_:end_exclusive}};
+}
+SectionTerm = function(name) {
+    return {section_:{name_:name}};
+}
+PublicationTerm = function(id) {
+    return {publication_:{id_:id}};
+}
+DocLemmaTerm = function(word) {
+    return {docLemma_:{lemma_:word}};
+}
+DocEntityTerm = function(entity) {
+    return {docEntity_:{entity_:entity}};
+}
+ThresholdTerm = function(minimum_hits) {
+    return {threshold_:{min_:minimum_hits}};
+}
 
 arbitraryQuery = function(endpoint, query, onResult) {
     var xhr = buildXHR("POST", endpoint, onResult);
