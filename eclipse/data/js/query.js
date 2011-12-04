@@ -42,7 +42,7 @@ YearTerm = function(year) {
     return {date_:{before_:(year+1)*10000, after_:(year*10000 - 1)}};
 }
 MonthTerm = function(year, month) {
-    return {date_:{before_:(year+1)*10000+(month+2)*100, after_:(year*10000 - 1)+(month+1)*100}};
+    return {date_:{before_:(year)*10000+(month+1)*100, after_:(year*10000)+(month)*100}};
 }
 //new not yet implemented
 OrTerm = function(a, b) {

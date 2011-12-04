@@ -40,7 +40,6 @@ AbstractFilter.prototype.toPlainObject = function() {
 
 
 
-
 SearchFilter.inheritsFrom(AbstractFilter);
 function SearchFilter() {
 	this.parent.constructor.call(this);
@@ -50,6 +49,7 @@ function SearchFilter() {
 SearchFilter.prototype.addLiteral = function(literal) {
 	this.disjunction.push(new ko.observable(literal));
 	this.disjunction.valueHasMutated();
+	this.mutateParent();
 }
 SearchFilter.prototype.removeLiteral = function(literal) {
 	ko.utils.arrayRemoveItem(this.disjunction, literal);
@@ -65,13 +65,6 @@ SearchFilter.prototype.toPlainObject = function() {
 	return retval;
 }
 
-
-
-DateFilter.inheritsFrom(AbstractFilter);
-function DateFilter() {
-	this.parent.constructor.call(this);
-	this.filterType = "date";
-}
 
  
 var viewModel = {
@@ -123,6 +116,73 @@ var viewModel = {
         viewModel.lastSavedJson(ko.utils.stringifyJson(this.toPlainObject(), null, 2));
     },
     lastSavedJson: new ko.observable("")
+}
+
+/*
+	{
+   filter_:AndTerm(
+       OrTerm(
+           EntityTerm('obama'),
+           EntityTerm('clinton')
+       )
+   ),
+   series_:[
+       OrTerm(
+           LemmaTerm('healthcare'),
+           LemmaTermm('medicare'),
+       )
+   ];
+   buckets_:[
+       YearTerm(2001),
+       YearTerm(2002),
+       YearTerm(2003),
+       YearTerm(2004),
+       YearTerm(2005),
+       YearTerm(2006),
+       YearTerm(2007),
+       YearTerm(2008),
+       YearTerm(2009),
+   ]
+} */
+
+function LemmaOrEntityTerm(a) {
+	return OrTerm(DocLemmaTerm(a),DocEntityTerm(a));
+}
+
+function queryForModelState(state) {
+	var query = { filter_: false, series_: [], buckets_:[] };
+	
+	query.filter_ = state.filters
+		.filter(function(x) { return x.filterType == "text" })
+		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).reduce(OrTerm)})
+		.reduce(AndTerm);
+	
+	query.series_ = state.buckets
+		.filter(function(x) { return x.filterType == "text" })
+		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).reduce(OrTerm)});
+	
+	if(state.horizontalAxis == "date") {
+		if(state.dateGranularity == "year") {
+			for(var i = state.startYear; i <= state.endYear; i++) {
+				query.buckets_.push(YearTerm(i));
+			}
+		} else if (state.dateGranularity == "month") {
+			for(var i = state.startYear; i <= state.endYear; i++) {
+				for(var j = 1; j <= 12; j++) {
+					query.buckets_.push(MonthTerm(i,j));
+				}
+			}
+		} else if (state.dateGranularity == "fixed #") {
+			// TODO
+		}
+	} else if (state.horizontalAxis == "page number") {
+		// TODO: make clever buckets rather than 1 by 1
+		for(var i = 1; i <= 30; i++) {
+			query.buckets_.push(PageTerm(i,i+1));
+		}
+	}
+	
+	return query;
 }
 
 function addMockData() {
@@ -203,13 +263,13 @@ $("#bucketList").droppable({
 	}
 });
 
-function bindAutocomplete() {
-	//$("input.justAdded")
+function newInputsCallback() {
+	$("input.justAdded").blur(queryChanged);
 }
 
-viewModel.filters.subscribe(bindAutocomplete);
-viewModel.buckets.subscribe(bindAutocomplete);
-bindAutocomplete();
+viewModel.filters.subscribe(newInputsCallback);
+viewModel.buckets.subscribe(newInputsCallback);
+newInputsCallback();
 
 function suggestionsAdded() {
 	$(".suggestion.justAdded").removeClass(".justAdded").draggable({helper: 'clone'});
@@ -231,3 +291,9 @@ viewModel.endYear.subscribe(queryChanged);
 viewModel.horizontalAxis.subscribe(queryChanged);
 viewModel.dateGranularity.subscribe(queryChanged);
 viewModel.dateGranularityFixed.subscribe(queryChanged);
+
+
+
+
+
+
