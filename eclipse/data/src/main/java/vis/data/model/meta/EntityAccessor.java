@@ -1,16 +1,19 @@
 package vis.data.model.meta;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import vis.data.model.EntityDoc;
 import vis.data.model.RawEntity;
 import vis.data.util.SQL;
+import vis.data.util.SQL.NullForLastRowProcessor;
 
 public class EntityAccessor {
-	PreparedStatement query_, queryByEntity_, queryByBoth_, queryByType_, queryList_;
+	PreparedStatement query_, queryByEntity_, queryByBoth_, queryByType_, queryList_, queryListScore_;
 	public EntityAccessor() throws SQLException {
 		this(SQL.forThread());
 	}
@@ -21,6 +24,11 @@ public class EntityAccessor {
 		queryByEntity_ = conn.prepareStatement("SELECT " + RawEntity.ID + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ENTITY + " = ?");
 		queryByBoth_ = conn.prepareStatement("SELECT " + RawEntity.ID + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ENTITY + " = ? AND " + RawEntity.TYPE + " = ?");
 		queryByType_ = conn.prepareStatement("SELECT " + RawEntity.ID + "," + RawEntity.ENTITY + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.TYPE + " = ?");
+		queryListScore_ = conn.prepareStatement("SELECT " + 
+				RawEntity.ID + "," + RawEntity.ENTITY + "," + RawEntity.TYPE + ", LENGTH(" + EntityDoc.DOC_LIST + ")/8" + 
+				" FROM " + RawEntity.TABLE +
+				" JOIN " + EntityDoc.TABLE + " ON " + RawEntity.ID + "=" + EntityDoc.ENTITY_ID);
+			queryListScore_.setFetchSize(Integer.MIN_VALUE); //streaming
 	}
 	public RawEntity getEntity(int entity_id) throws SQLException {
 		query_.setInt(1, entity_id);
@@ -101,12 +109,14 @@ public class EntityAccessor {
 	}
 	public static class ResultSetIterator extends org.apache.commons.dbutils.ResultSetIterator {
 		public ResultSetIterator(ResultSet rs) {
-			super(rs);
+			super(rs, new NullForLastRowProcessor());
 		}
 		
 		public RawEntity nextEntity() {
 			RawEntity re = new RawEntity();
 			Object fields[] = super.next();
+			if(fields == null)
+				return null;
 			re.id_ = (Integer)fields[0];
 			re.entity_ = (String)fields[1];
 			re.type_ = (String)fields[2];
@@ -116,5 +126,29 @@ public class EntityAccessor {
 	public ResultSetIterator entityIterator() throws SQLException {
 		ResultSet rs = queryList_.executeQuery();
 		return new ResultSetIterator(rs);
+	}
+	public static class ScoredResultSetIterator extends org.apache.commons.dbutils.ResultSetIterator {
+		public ScoredResultSetIterator(ResultSet rs) {
+			super(rs, new NullForLastRowProcessor());
+		}
+		
+		public ScoredEntity nextEntity() {
+			ScoredEntity se = new ScoredEntity();
+			Object fields[] = super.next();
+			if(fields == null)
+				return null;
+			se.id_ = (Integer)fields[0];
+			se.entity_ = (String)fields[1];
+			se.type_ = (String)fields[2];
+			se.score_ = ((BigDecimal)fields[3]).toBigInteger().intValue();
+			return se;
+		}
+	}
+	public static class ScoredEntity extends RawEntity {
+		public int score_;
+	}
+	public ScoredResultSetIterator entityIteratorWithScore() throws SQLException {
+		ResultSet rs = queryListScore_.executeQuery();
+		return new ScoredResultSetIterator(rs);
 	}
 }

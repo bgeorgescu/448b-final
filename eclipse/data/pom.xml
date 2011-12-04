@@ -119,6 +119,16 @@
     	<artifactId>commons-dbutils</artifactId>
     	<version>1.4</version>
     </dependency>
+    <dependency>
+    	<groupId>org.lazyluke</groupId>
+    	<artifactId>log4jdbc-remix</artifactId>
+    	<version>0.2.6</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-simple</artifactId>
+    	<version>1.6.4</version>
+    </dependency>
     </dependencies>
   
   <build>

@@ -20,7 +20,7 @@ public class RunSomeSQL {
 				Statement st = conn.createStatement();
 				try {
 					
-					SQL.createIndexes(conn, RawLemma.class);
+					SQL.createUniqueIndexes(conn, RawLemma.class);
 					SQL.createNonUniqueIndexes(conn, RawDoc.class);
 					
 				} finally {

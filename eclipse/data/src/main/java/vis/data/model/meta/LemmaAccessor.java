@@ -1,16 +1,19 @@
 package vis.data.model.meta;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import vis.data.model.LemmaDoc;
 import vis.data.model.RawLemma;
 import vis.data.util.SQL;
+import vis.data.util.SQL.NullForLastRowProcessor;
 
 public class LemmaAccessor {
-	PreparedStatement query_, queryByWord_, queryByLemma_, queryByPos_, queryList_;
+	PreparedStatement query_, queryByWord_, queryByLemma_, queryByPos_, queryList_, queryListScore_;
 	public LemmaAccessor() throws SQLException {
 		this(SQL.forThread());
 	}
@@ -21,6 +24,11 @@ public class LemmaAccessor {
 		queryByPos_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.LEMMA + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.POS + " = ?");
 		queryList_ = conn.prepareStatement("SELECT " + RawLemma.ID + "," + RawLemma.LEMMA + "," + RawLemma.POS + " FROM " + RawLemma.TABLE);
 		queryList_.setFetchSize(Integer.MIN_VALUE); //streaming
+		queryListScore_ = conn.prepareStatement("SELECT " + 
+			RawLemma.ID + "," + RawLemma.LEMMA + "," + RawLemma.POS + ", LENGTH(" + LemmaDoc.DOC_LIST + ")/8" + 
+			" FROM " + RawLemma.TABLE +
+			" JOIN " + LemmaDoc.TABLE + " ON " + RawLemma.ID + "=" + LemmaDoc.LEMMA_ID);
+		queryListScore_.setFetchSize(Integer.MIN_VALUE); //streaming
 	}
 	public RawLemma getLemma(int lemma_id) throws SQLException {
 		query_.setInt(1, lemma_id);
@@ -101,12 +109,14 @@ public class LemmaAccessor {
 	}
 	public static class ResultSetIterator extends org.apache.commons.dbutils.ResultSetIterator {
 		public ResultSetIterator(ResultSet rs) {
-			super(rs);
+			super(rs, new NullForLastRowProcessor());
 		}
 
 		public RawLemma nextLemma() {
 			RawLemma rl = new RawLemma();
 			Object fields[] = super.next();
+			if(fields == null)
+				return null;
 			rl.id_ = (Integer)fields[0];
 			rl.lemma_ = (String)fields[1];
 			rl.pos_ = (String)fields[2];
@@ -116,5 +126,29 @@ public class LemmaAccessor {
 	public ResultSetIterator lemmaIterator() throws SQLException {
 		ResultSet rs = queryList_.executeQuery();
 		return new ResultSetIterator(rs);
+	}
+	public static class ScoredResultSetIterator extends org.apache.commons.dbutils.ResultSetIterator {
+		public ScoredResultSetIterator(ResultSet rs) {
+			super(rs, new NullForLastRowProcessor());
+		}
+		
+		public ScoredLemma nextLemma() {
+			ScoredLemma sl = new ScoredLemma();
+			Object fields[] = super.next();
+			if(fields == null)
+				return null;
+			sl.id_ = (Integer)fields[0];
+			sl.lemma_ = (String)fields[1];
+			sl.pos_ = (String)fields[2];
+			sl.score_ = ((BigDecimal)fields[3]).toBigInteger().intValue();
+			return sl;
+		}
+	}
+	public static class ScoredLemma extends RawLemma {
+		public int score_;
+	}
+	public ScoredResultSetIterator lemmaIteratorWithScore() throws SQLException {
+		ResultSet rs = queryListScore_.executeQuery();
+		return new ScoredResultSetIterator(rs);
 	}
 }

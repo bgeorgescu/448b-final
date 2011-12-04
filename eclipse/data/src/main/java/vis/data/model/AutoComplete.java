@@ -7,7 +7,7 @@ import javax.persistence.UniqueConstraint;
 import vis.data.model.annotations.Index;
 import vis.data.model.annotations.NonUniqueIndexes;
 
-@Table(name=AutoComplete.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={AutoComplete.TYPE, AutoComplete.REFERENCE_ID})})
+@Table(name=AutoComplete.TABLE, uniqueConstraints={@UniqueConstraint(columnNames={AutoComplete.TERM, AutoComplete.TYPE, AutoComplete.REFERENCE_ID})})
 @NonUniqueIndexes(indexes={
 	@Index(columnNames={AutoComplete.TERM}),
 	@Index(columnNames={AutoComplete.TYPE, AutoComplete.TERM})
@@ -15,9 +15,10 @@ import vis.data.model.annotations.NonUniqueIndexes;
 public class AutoComplete {
 		public static final String TABLE = "autocomplete";
 		
+		public static final int TERM_LENGTH=64;
 		public static final String TERM="term";
 		//also want index
-		@Column(name=TERM, columnDefinition="VARCHAR(64) NOT NULL")
+		@Column(name=TERM, columnDefinition="VARCHAR(" + TERM_LENGTH + ") NOT NULL")
 		public String term_;
 
 		public static enum Type {

@@ -10,6 +10,8 @@ public class StringArrayResultSetIterator extends ResultSetIterator {
 		super(rs, new BasicRowProcessor() {
 			@Override
 			public Object[] toArray(ResultSet rs) throws SQLException {
+				if(rs.isAfterLast())
+					return null;
 				String[] res = new String[rs.getMetaData().getColumnCount()];
 				for(int i = 0; i < res.length; ++i)
 					res[i] = rs.getString(i + 1);
@@ -19,6 +21,9 @@ public class StringArrayResultSetIterator extends ResultSetIterator {
 	}
 	@Override
 	public String[] next() {
-		return (String[])super.next();
+		Object fields[] = super.next();
+		if(fields == null)
+			return null;
+		return (String[])fields;
 	}
 }

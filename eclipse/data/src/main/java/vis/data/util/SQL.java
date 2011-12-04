@@ -26,6 +26,11 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.sql.DataSource;
+
+import net.sf.log4jdbc.Log4jdbcProxyDataSource;
+
+import org.apache.commons.dbutils.BasicRowProcessor;
 
 import vis.data.model.annotations.Index;
 import vis.data.model.annotations.NonUniqueIndexes;
@@ -50,6 +55,9 @@ public class SQL {
 	}
 
 	public static <T> void createTable(Connection conn, Class<T> cls) throws SQLException {
+		createTable(conn, cls, true);
+	}
+	public static <T> void createTable(Connection conn, Class<T> cls, boolean indexes) throws SQLException {
 		String TABLE_NAME = cls.getAnnotation(Table.class).name();
 
 		TreeMap<String, String> col_def = new TreeMap<String, String>();
@@ -82,10 +90,15 @@ public class SQL {
 		} finally {
 			st.close();
 		}
-		createIndexes(conn, cls);
+		if(indexes) {
+			createAllIndexes(conn, cls);
+		}
+	}
+	public static <T> void createAllIndexes(Connection conn, Class<T> cls) throws SQLException {
+		createUniqueIndexes(conn, cls);
 		createNonUniqueIndexes(conn, cls);
 	}
-	public static <T> void createIndexes(Connection conn, Class<T> cls) throws SQLException {
+	public static <T> void createUniqueIndexes(Connection conn, Class<T> cls) throws SQLException {
 		String TABLE_NAME = cls.getAnnotation(Table.class).name();
 		UniqueConstraint uniq[] = cls.getAnnotation(Table.class).uniqueConstraints();
 		for(UniqueConstraint u : uniq) {
@@ -128,16 +141,23 @@ public class SQL {
 			}
 		}
 	}
-	final static MysqlConnectionPoolDataSource cpds = new MysqlConnectionPoolDataSource();
+	final static MysqlConnectionPoolDataSource base = new MysqlConnectionPoolDataSource();
+	final static DataSource cpds;
+	final static boolean TRACE_SQL = false;
 	static {
-		cpds.setUser("vis");
-		cpds.setPassword("vis");
-		cpds.setUrl("jdbc:mysql://127.0.0.1/vis");
+		base.setUser("vis");
+		base.setPassword("vis");
+		base.setUrl("jdbc:mysql://127.0.0.1/vis");
+		if(TRACE_SQL)
+			cpds = new Log4jdbcProxyDataSource(base);
+		else
+			cpds = base;
 	}
 
 	public static Connection open() {
 		try {
-			return cpds.getConnection();
+			Connection conn = cpds.getConnection();
+			return conn;
 		} catch (SQLException e) {
 			System.err.println ("Cannot connect to database server");
 			throw new RuntimeException("Sql connection failed", e);
@@ -214,6 +234,14 @@ public class SQL {
 			}
 		} catch(SQLException e) {
 			return false;
+		}
+	}
+	public static class NullForLastRowProcessor extends BasicRowProcessor {
+		@Override
+		public Object[] toArray(ResultSet rs) throws SQLException {
+			if(rs.isAfterLast())
+				return null;
+			return super.toArray(rs);
 		}
 	}
 }

@@ -143,10 +143,6 @@ public class WikipediaEntityResolution {
 									rea.setResolution(re[i].id_, to);  // batch?
 								}
 							}
-						} catch(RuntimeException e) {
-							if(!e.getMessage().toLowerCase().startsWith("after end of result set")) {
-								throw e;
-							}
 						} finally {
 							DbUtils.closeQuietly(second);
 						} 
@@ -192,10 +188,6 @@ public class WikipediaEntityResolution {
 							continue;
 						hs.adjustOrPutValue(parts[i], 1, 1);
 					}
-				}
-			} catch(RuntimeException e) {
-				if(!e.getMessage().toLowerCase().startsWith("after end of result set")) {
-					throw e;
 				}
 			} finally {
 				DbUtils.closeQuietly(second);

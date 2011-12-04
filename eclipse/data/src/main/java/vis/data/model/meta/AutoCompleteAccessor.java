@@ -87,4 +87,11 @@ public class AutoCompleteAccessor {
 		insert_.setInt(4, score);
 		insert_.executeUpdate();
 	}
+	public void addAutoCompleteBatch(String query, Type type, int ref, int score) throws SQLException {
+		insert_.setString(1, query);
+		insert_.setInt(2, type.ordinal());
+		insert_.setInt(3, ref);
+		insert_.setInt(4, score);
+		insert_.addBatch();
+	}
 }
