@@ -9,10 +9,9 @@ import vis.data.model.RawLemma;
 import vis.data.model.meta.DocForLemmaAccessor;
 import vis.data.model.meta.LemmaAccessor;
 import vis.data.util.CountAggregator;
-import vis.data.util.SetAggregator;
 
 public class LemmaTerm extends Term {
-	public static class Parameters extends RawLemma {
+	public static class Parameters extends RawLemma implements Term.Parameters {
 		public boolean filterOnly_;
 
 		@Override
@@ -52,35 +51,43 @@ public class LemmaTerm extends Term {
 			}
 			return true;
 		}	
+		@Override
+		public ResultType resultType() {
+			return ResultType.DOC_HITS;
+		}
+
+		@Override
+		public void validate() {
+			if(id_ == 0 && lemma_ == null && pos_ == null)
+				throw new RuntimeException("must specify either a lemma id, lemma, or pos");
+		}
 	}
 	
-	public final boolean filterOnly_;
 	public final Parameters parameters_;
 	public final int docs_[];
 	public final int count_[];
-	public LemmaTerm(Parameters p) throws SQLException {
+	public LemmaTerm(Parameters parameters) throws SQLException {
 		int lemmas[];
 		DocForLemmaAccessor dlh = new DocForLemmaAccessor();
-		parameters_ = p;
-		filterOnly_ = p.filterOnly_;
-		if(p.id_ != 0) {
+		parameters_ = parameters;
+		if(parameters.id_ != 0) {
 			lemmas = new int[1];
-			lemmas[0] = p.id_;
-		} else if (p.lemma_ != null || p.pos_ != null){
+			lemmas[0] = parameters.id_;
+		} else if (parameters.lemma_ != null || parameters.pos_ != null){
 			LemmaAccessor lr = new LemmaAccessor();
 			RawLemma rls[] = null;
-			if(p.lemma_ != null && p.pos_ != null) {
-				RawLemma rl = lr.lookupLemma(p.lemma_, p.pos_);
+			if(parameters.lemma_ != null && parameters.pos_ != null) {
+				RawLemma rl = lr.lookupLemma(parameters.lemma_, parameters.pos_);
 				if(rl == null) {
 					rls = new RawLemma[0];
 				} else {
 					rls = new RawLemma[1];
 					rls[0] = rl; 
 				}
-			} else if(p.lemma_ != null) {
-				rls = lr.lookupLemmaByWord(p.lemma_);
-			} else if(p.pos_ != null) {
-				rls = lr.lookupLemmaByPos(p.pos_);
+			} else if(parameters.lemma_ != null) {
+				rls = lr.lookupLemmaByWord(parameters.lemma_);
+			} else if(parameters.pos_ != null) {
+				rls = lr.lookupLemmaByPos(parameters.pos_);
 			} else {
 				throw new RuntimeException("incomplete lemma term");
 			}
@@ -107,53 +114,19 @@ public class LemmaTerm extends Term {
 				initial.count_ = res.getValue();
 			}
 			docs_ = initial.docId_;
-			count_ = initial.count_;
+			//TODO: wasteful
+			count_ = parameters_.filterOnly_ ? new int[docs_.length] : initial.count_;
 		}
 	}
 
-	public Object parameters() {
+	public Term.Parameters parameters() {
 		return parameters_;
 	}	
 
 	@Override
-	public boolean isFilter() {
-		return filterOnly_;
-	}
-
-	@Override
-	public int size() {
-		return docs_.length;
-	}
-
-	@Override
-	public int[] filter(int[] items) throws SQLException {
-		if(docs_.length == 0)
-			return new int[0];
-		if(items == null)
-			return docs_;
-		else
-			return SetAggregator.and(docs_, items);
-	}
-
-	@Override
-	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
-			throws SQLException {
-		if(docs_.length == 0)
-			return Pair.of(new int[0], new int[0]);
-		if(in_docs == null)
+	public Pair<int[], int[]> compute() throws SQLException {
+		if(parameters_.filterOnly_)
 			return Pair.of(docs_, new int[docs_.length]);
-		else
-			return CountAggregator.filter(in_docs, in_counts, docs_);
-	}
-
-	@Override
-	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
-			throws SQLException {
-		if(docs_.length == 0)
-			return Pair.of(new int[0], new int[0]);
-		if(in_docs == null)
-			return Pair.of(docs_, count_);
-		else
-			return CountAggregator.and(docs_, count_, in_docs, in_counts);
+		return Pair.of(docs_, count_);
 	}
 }

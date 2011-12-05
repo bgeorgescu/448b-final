@@ -11,9 +11,14 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.util.CountAggregator;
 import vis.data.util.SQL;
-import vis.data.util.SetAggregator;
 
 public abstract class SQLTerm extends Term {
+	public abstract static class Parameters implements Term.Parameters {
+		@Override
+		public ResultType resultType() {
+			return ResultType.DOC_HITS;
+		}
+	}
 	final int ids_[];
 	final String query_;
 	protected SQLTerm(String id_query) throws SQLException {
@@ -39,27 +44,6 @@ public abstract class SQLTerm extends Term {
 		return query.replaceAll("[A-Za-z0-9 ]+", "");
 	}
 
-	@Override
-	public int size() {
-		return ids_.length;
-	}
-
-	@Override
-	public boolean isFilter() {
-		return true;
-	}
-
-	@Override
-	public int[] filter(int[] items) throws SQLException {
-		if(ids_.length == 0)
-			return new int[0];
-		if(items == null)
-			return ids_;
-		else
-			return SetAggregator.and(items, ids_);
-	}
-
-	@Override
 	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
 			throws SQLException {
 		if(ids_.length == 0)
@@ -71,8 +55,7 @@ public abstract class SQLTerm extends Term {
 	}
 
 	@Override
-	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
-			throws SQLException {
-		return filter(in_docs, in_counts);
+	public Pair<int[], int[]> compute() throws SQLException {
+		return Pair.of(ids_, new int[ids_.length]);
 	}
 }

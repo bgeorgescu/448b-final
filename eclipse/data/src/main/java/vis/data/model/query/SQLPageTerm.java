@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import vis.data.model.RawDoc;
 
 public class SQLPageTerm extends SQLTerm {
-	public static class Parameters {
+	public static class Parameters extends SQLTerm.Parameters {
 		public String section_;
 		
 		@Override
@@ -24,6 +24,11 @@ public class SQLPageTerm extends SQLTerm {
 			}
 			return true;
 		}
+		@Override
+		public void validate() {
+			if(section_ == null)
+				throw new RuntimeException("missing section");
+		}
 	}
 	
 	public final Parameters parameters_;
@@ -40,7 +45,7 @@ public class SQLPageTerm extends SQLTerm {
 	}
 
 	@Override
-	public Object parameters() {
+	public Term.Parameters parameters() {
 		return parameters_;
 	}	
 }

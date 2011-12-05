@@ -9,10 +9,9 @@ import vis.data.model.RawEntity;
 import vis.data.model.meta.DocForEntityAccessor;
 import vis.data.model.meta.EntityAccessor;
 import vis.data.util.CountAggregator;
-import vis.data.util.SetAggregator;
 
 public class EntityTerm extends Term {
-	public static class Parameters extends RawEntity {
+	public static class Parameters extends RawEntity implements Term.Parameters {
 		public boolean filterOnly_;
 
 		@Override
@@ -52,35 +51,43 @@ public class EntityTerm extends Term {
 			}
 			return true;
 		}	
+		@Override
+		public ResultType resultType() {
+			return ResultType.DOC_HITS;
+		}
+
+		@Override
+		public void validate() {
+			if(id_ == 0 && entity_ == null && type_ == null)
+				throw new RuntimeException("must specify either an entity id, entity, or type");
+		}
 	}
 	
-	public final boolean filterOnly_;
 	public final Parameters parameters_;
 	public final int docs_[];
 	public final int count_[];
-	public EntityTerm(Parameters p) throws SQLException {
+	public EntityTerm(Parameters parameters) throws SQLException {
 		DocForEntityAccessor deh = new DocForEntityAccessor();
 		int entities[];
-		parameters_ = p;
-		filterOnly_ = p.filterOnly_;
-		if(p.id_ != 0) {
+		parameters_ = parameters;
+		if(parameters.id_ != 0) {
 			entities = new int[1];
-			entities[0] = p.id_;
-		} else if (p.entity_ != null || p.type_ != null){
+			entities[0] = parameters.id_;
+		} else if (parameters.entity_ != null || parameters.type_ != null){
 			EntityAccessor er = new EntityAccessor();
 			RawEntity rls[] = null;
-			if(p.entity_ != null && p.type_ != null) {
-				RawEntity rl = er.lookupEntity(p.entity_, p.type_);
+			if(parameters.entity_ != null && parameters.type_ != null) {
+				RawEntity rl = er.lookupEntity(parameters.entity_, parameters.type_);
 				if(rl == null) {
 					rls = new RawEntity[0];
 				} else {
 					rls = new RawEntity[1];
 					rls[0] = rl; 
 				}
-			} else if(p.entity_ != null) {
-				rls = er.lookupEntityByName(p.entity_);
-			} else if(p.type_ != null) {
-				rls = er.lookupEntityByType(p.type_);
+			} else if(parameters.entity_ != null) {
+				rls = er.lookupEntityByName(parameters.entity_);
+			} else if(parameters.type_ != null) {
+				rls = er.lookupEntityByType(parameters.type_);
 			} else {
 				throw new RuntimeException("incomplete lemma term");
 			}
@@ -107,53 +114,17 @@ public class EntityTerm extends Term {
 				initial.count_ = res.getValue();
 			}
 			docs_ = initial.docId_;
-			count_ = initial.count_;
+			//TODO: wasteful
+			count_ = parameters_.filterOnly_ ? new int[docs_.length] : initial.count_;
 		}
 	}
 
-	public Object parameters() {
+	public Term.Parameters parameters() {
 		return parameters_;
 	}	
 
 	@Override
-	public boolean isFilter() {
-		return filterOnly_;
-	}
-
-	@Override
-	public int size() {
-		return docs_.length;
-	}
-
-	@Override
-	public int[] filter(int[] items) throws SQLException {
-		if(docs_.length == 0)
-			return new int[0];
-		if(items == null)
-			return docs_;
-		else
-			return SetAggregator.and(docs_, items);
-	}
-
-	@Override
-	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
-			throws SQLException {
-		if(docs_.length == 0)
-			return Pair.of(new int[0], new int[0]);
-		if(in_docs == null)
-			return Pair.of(docs_, new int[docs_.length]);
-		else
-			return CountAggregator.filter(in_docs, in_counts, docs_);
-	}
-
-	@Override
-	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
-			throws SQLException {
-		if(docs_.length == 0)
-			return Pair.of(new int[0], new int[0]);
-		if(in_docs == null)
-			return Pair.of(docs_, count_);
-		else
-			return CountAggregator.and(docs_, count_, in_docs, in_counts);
+	public Pair<int[], int[]> compute() throws SQLException {
+		return Pair.of(docs_, count_);
 	}
 }

@@ -6,11 +6,9 @@ import java.util.Arrays;
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.meta.TimeSortedDocCache;
-import vis.data.util.CountAggregator;
-import vis.data.util.SetAggregator;
 
 public class DateTerm extends Term {
-	public static class Parameters {
+	public static class Parameters implements Term.Parameters {
 		public Integer before_;
 		public Integer after_;
 		
@@ -44,6 +42,18 @@ public class DateTerm extends Term {
 			}
 			return true;
 		}
+
+		@Override
+		public void validate() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public ResultType resultType() {
+			// TODO Auto-generated method stub
+			return null;
+		}
 	}
 	
 	public final Parameters parameters_;
@@ -64,40 +74,11 @@ public class DateTerm extends Term {
 		Arrays.sort(docs_);
 	}
 
-	public Object parameters() {
+	public Term.Parameters parameters() {
 		return parameters_;
 	}	
-
 	@Override
-	public boolean isFilter() {
-		return true;
-	}
-
-	@Override
-	public int size() {
-		return docs_.length;
-	}
-
-	@Override
-	public int[] filter(int[] items) throws SQLException {
-		if(items == null)
-			return docs_;
-		else
-			return SetAggregator.and(docs_, items);
-	}
-
-	@Override
-	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
-			throws SQLException {
-		if(in_docs == null)
-			return Pair.of(docs_, new int[docs_.length]);
-		else
-			return CountAggregator.filter(in_docs, in_counts, docs_);
-	}
-
-	@Override
-	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
-			throws SQLException {
-		return filter(in_docs, in_counts);
+	public Pair<int[], int[]> compute() throws SQLException {
+		return Pair.of(docs_, new int[docs_.length]);
 	}
 }

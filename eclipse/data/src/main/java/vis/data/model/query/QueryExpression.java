@@ -24,4 +24,15 @@ public class QueryExpression {
 	//some things might return a lot of results we don't care about, e.g.
 	//the tag cloud queries returning lemmas with 1 hit.  allow thresholding
 	public ThresholdTerm.Parameters threshold_;
+	
+	
+	//This is the processed state for the term
+	public Term.Parameters parameters_;
+	
+	public void validate() {
+		need to have this actually pick out the good one and place it in paramters
+	}
+	public Term term() {
+		need to have this actually return a term
+	}
 }

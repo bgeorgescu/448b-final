@@ -7,7 +7,7 @@ import vis.data.model.RawDoc;
 
 //warning, hella slow.  thnx mysql
 public class SQLDateTerm extends SQLTerm {
-	public static class Parameters {
+	public static class Parameters extends SQLTerm.Parameters {
 		public Integer before_;
 		public Integer after_;
 		
@@ -41,6 +41,11 @@ public class SQLDateTerm extends SQLTerm {
 			}
 			return true;
 		}
+		@Override
+		public void validate() {
+			if(before_ == null && after_ == null)
+				throw new RuntimeException("missing at least one restriction in date term");
+		}
 	}
 	
 	public final Parameters parameters_;
@@ -65,7 +70,7 @@ public class SQLDateTerm extends SQLTerm {
 	}
 
 	@Override
-	public Object parameters() {
+	public Term.Parameters parameters() {
 		return parameters_;
 	}	
 }

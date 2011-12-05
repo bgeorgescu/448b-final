@@ -4,8 +4,8 @@ import java.sql.SQLException;
 import vis.data.model.RawDoc;
 
 public class SQLPublicationTerm extends SQLTerm {
-	public static class Parameters {
-		public int publication_;
+	public static class Parameters extends SQLTerm.Parameters {
+		public Integer publication_;
 		
 		@Override
 		public int hashCode() {
@@ -24,6 +24,12 @@ public class SQLPublicationTerm extends SQLTerm {
 			}
 			return true;
 		}
+
+		@Override
+		public void validate() {
+			if(publication_ == null)
+				throw new RuntimeException("missing publication");
+		}
 	}
 	
 	public final Parameters parameters_;
@@ -40,7 +46,7 @@ public class SQLPublicationTerm extends SQLTerm {
 	}
 
 	@Override
-	public Object parameters() {
+	public Term.Parameters parameters() {
 		return parameters_;
 	}	
 }
