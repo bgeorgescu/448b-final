@@ -99,24 +99,6 @@
                 function(c,r,d){report("dog, cat, bucketed by month",c,r,d);}
             );
         });
-        queries.push(function() {
-            arbitraryQuery("/api/query/docs/bucketed", 
-                {
-                    filter_:YearTerm(2010),
-                    series_:[
-                        LemmaTerm('dog'),
-                        LemmaTerm('cat'),
-                    ],
-                    buckets_:[
-                        LemmaTerm('bite'),
-                        LemmaTerm('scratch'),
-                        LemmaTerm('claw'),
-                        LemmaTerm('hurt'),
-                    ],
-                },
-                function(c,r,d){report("bite,scratch,claw,hurt x dog, cat",c,r,d);}
-            );
-        });
         queries.push(function() { 
             getLemmaCountsForMatchingDocs(
                 [
@@ -130,119 +112,274 @@
                 function(c,r,d){report("obama",c,r,d);});
         });
 
-        queries.push(function() { 
-            arbitraryQuery("/api/tally/docs", 
+        allMonths = function() {
+            var terms = [];
+            for(var y = 2000; y <= 2010; ++y) {
+                for(var m = 1; m <= 12; ++m) {
+                    terms.push(MonthTerm(y,m));
+                }
+            }
+            return terms;
+        }
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
                 {
-                    "filter_":{
-                        "terms_":[
-                            [{"lemma_":{"lemma_":"dog"}},{"date_":{"after_":20099999}}],
-                            [{"lemma_":{"lemma_":"cat"}},{"date_":{"after_":20099999}}],
-                        ]
-                    },
-                    "buckets_":[
-                        {
-                            "terms_":[
-                                [{"lemma_":{"lemma_":"scratch"}}]
-                            ]
-                        },
-                        {   
-                            "terms_":[
-                                [{"lemma_":{"lemma_":"bite"}}]
-                            ]
-                        }
-                    ]
+                    series_:[
+                        OrTerm(EntityTerm('hillary clinton'), EntityTerm('clinton')),
+                        OrTerm(EntityTerm('sarah palin'), EntityTerm('palin')),
+                        OrTerm(EntityTerm('barack obama'), EntityTerm('obama')),
+                        OrTerm(EntityTerm('john mccain'), EntityTerm('mccain')),
+                    ],
+                    buckets_:allMonths()
                 },
-                function(c,r,d){report("arbitrary query",c,r,d);}
+                function(c,r,d){report("clinton, palin, obama, mccain monthly",c,r,d);}
             );
         });
-        queries.push(function() { 
-            getMonthlyDocHits(
-                [
-                    [
-                        [EntityTerm('hillary clinton')],
-                        [EntityTerm('clinton')],
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {
+                    series_:[
+                        LemmaTerm('snake'),
+                        LemmaTerm('dog'),
+                        LemmaTerm('cat'),
+                        LemmaTerm('lion'),
+                        LemmaTerm('zebra'),
+                        LemmaTerm('elephant'),
                     ],
-                    [
-                        [EntityTerm('sarah palin')],
-                        [EntityTerm('palin')],
+                    buckets_:allMonths()
+                },
+                function(c,r,d){report("snake,dog,cat,lion,zebra,elephant monthly",c,r,d);}
+            );
+        });        
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docids", 
+                {
+                    series_:[
+                        LemmaTerm('cat'),
                     ],
-                    [
-                        [EntityTerm('barack obama')],
-                        [EntityTerm('obama')],
+                },
+                function(c,r,d){report("docs for cat",c,r,d);}
+            );
+        });        
+        queries.push(function() {
+            arbitraryQuery("/api/query/docids", 
+                {
+                    series_:[
+                        LemmaTerm('dog'),
                     ],
-                    [
-                        [EntityTerm('john mccain')],
-                        [EntityTerm('mccain')],
+                },
+                function(c,r,d){report("docs for dog",c,r,d);}
+            );
+        });        
+        
+        queries.push(function() {
+            arbitraryQuery("/api/query/docids", 
+                {
+                    series_:[
+                        OrTerm(LemmaTerm('dog'), LemmaTerm('cat')),
                     ],
-                ], function(c,r,d){report("clinton, palin, obama, mccain",c,r,d);});
+                },
+                function(c,r,d){report("docs for dog|cat",c,r,d);}
+            );
+        });        
+        
+        queries.push(function() {
+            arbitraryQuery("/api/query/docids", 
+                {
+                    series_:[
+                        AndTerm(
+                            LemmaTerm('the'),
+                            LemmaTerm('and'),
+                            LemmaTerm('or'),
+                            LemmaTerm('but'),
+                            LemmaTerm('then')
+                        ),
+                    ],
+                },
+                function(c,r,d){report("docs for 5 stop words",c,r,d);}
+            );
+        });        
+        
+        queries.push(function() {
+            arbitraryQuery("/api/query/docids", 
+                {
+                    series_:[
+                        AndTerm(
+                            LemmaTerm('the'),
+                            LemmaTerm('and'),
+                            LemmaTerm('or'),
+                            LemmaTerm('but'),
+                            LemmaTerm('then'),
+                            LemmaTerm('be'),
+                            LemmaTerm('make'),
+                            LemmaTerm('say'),
+                            LemmaTerm('of'),
+                            LemmaTerm('not')
+                        ),
+                    ],
+                },
+                function(c,r,d){report("docs for 10 stop words",c,r,d);}
+            );
+        });        
+
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docids", 
+                {
+                    series_:[
+                        OrTerm(LemmaTerm('dog'), LemmaTerm('cat')),
+                    ],
+                },
+                function(c,r,d){report("docs for dog|cat",c,r,d);}
+            );
+        });        
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {
+                    series_:[
+                        LemmaTerm('dog'),
+                        LemmaTerm('cat'),
+                    ],
+                    buckets_:[
+                        LemmaTerm('cat'),
+                        LemmaTerm('dog'),
+                        LemmaTerm('bite'),
+                        LemmaTerm('scratch'),
+                        LemmaTerm('claw'),
+                        LemmaTerm('hurt'),
+                        LemmaTerm('bark'),
+                    ],
+                },
+                function(c,r,d){report("cat,dog,bite,scratch,claw,hurt.bark x dog, cat",c,r,d);}
+            );
+        });
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/one", 
+                {
+                    series_:[
+                        AndTerm(LemmaTerm('cat'), LemmaTerm('bite')),
+                        AndTerm(LemmaTerm('dog'), LemmaTerm('bite')),
+                        AndTerm(LemmaTerm('cat'), LemmaTerm('scratch')),
+                        AndTerm(LemmaTerm('dog'), LemmaTerm('scratch')),
+                    ],
+                },
+                function(c,r,d){report("cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);}
+            );
         });
 
-        queries.push(function() { 
-            getMonthlyComboDocHits([['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']],  function(c,r,d){report("[['snake'], ['cat'], ['dog'], ['lion'], ['zebra'], ['elephant']]",c,r,d);});
+        allYears = function() {
+            var terms = [];
+            for(var y = 2000; y <= 2010; ++y) {
+                terms.push(YearTerm(y));
+            }
+            return terms;
+        }
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {   
+                    filter_:OrTerm(LemmaTerm('dog'),LemmaTerm('cat')),
+                    series_:[
+                        AndTerm(LemmaTerm('cat'), LemmaTerm('bite')),
+                        AndTerm(LemmaTerm('dog'), LemmaTerm('bite')),
+                        AndTerm(LemmaTerm('cat'), LemmaTerm('scratch')),
+                        AndTerm(LemmaTerm('dog'), LemmaTerm('scratch'))
+                    ],
+                    buckets_:allYears(),
+                },
+                function(c,r,d){report("yearly: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);}
+            );
+        });        
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {   
+                    filter_:LemmaTerm('the'),
+                    series_:[
+                        LemmaTerm('the'),
+                    ],
+                    buckets_:allYears(),
+                },
+                function(c,r,d){report("yearly: the",c,r,d);}
+            );
+        });        
+
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/hits/one", 
+                {
+                    filter_:OrTerm(LemmaTerm('cat'), LemmaTerm('dog')),
+                    series_:[
+                        LemmaTerm('cat'),
+                        LemmaTerm('dog'),
+                        LemmaTerm('bite'),
+                        LemmaTerm('scratch'),
+                        LemmaTerm('claw'),
+                        LemmaTerm('bark'),
+                    ],
+                },
+                function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);}
+            );
+        });
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/hits/one", 
+                {
+                    series_:[
+                        AndTerm(LemmaTerm('cat'), LemmaTerm('bite')),
+                        AndTerm(LemmaTerm('dog'), LemmaTerm('bite')),
+                        AndTerm(LemmaTerm('cat'), LemmaTerm('scratch')),
+                        AndTerm(LemmaTerm('dog'), LemmaTerm('scratch')),
+                    ],
+                },
+                function(c,r,d){report("hitcount: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);}
+            );
         });
         
+        
+        repeat = function(o, c) {
+            var terms = [];
+            while(terms.length < c) {
+                terms.push(o);
+            }
+            return terms;
+        }
 
-        queries.push(function() { 
-            getDocumentsForLemmas("cat", function(c,r,d){report("cat",c,r,d);});
+        queries.push(function() {
+            arbitraryQuery("/api/query/hits/bucketed", 
+                {
+                    filter_:LemmaTerm('the'),
+                    series_:[
+                        LemmaTerm('cat'),
+                        LemmaTerm('dog'),
+                        LemmaTerm('bite'),
+                        LemmaTerm('scratch'),
+                        LemmaTerm('claw'),
+                        LemmaTerm('bark'),
+                    ],
+                    buckets_:repeat(LemmaTerm('cat'), 100)
+                },
+                function(c,r,d){report("benmark 100x: the X cat,dog,bite,scratch,claw,bark",c,r,d);}
+            );
         });
         
-        queries.push(function() { 
-            getDocumentsForLemmas("dog", function(c,r,d){report("dog",c,r,d);});
-        });
-        
-        queries.push(function() { 
-            getDocumentsForAllLemmas(["dog", "cat"], function(c,r,d){report("cat+dog",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getDocumentsForAllLemmas(["the", "and", "or", "but", "then"], function(c,r,d){report("5 stop words",c,r,d);});
-        });
-
-        queries.    push(function() { 
-            getDocumentsForAllLemmas(["the", "and", "or", "but", "then", "be", "make", "say", "of", "not"], function(c,r,d){report("10 stop words",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getDocumentsForAnyLemmas(["dog", "cat"], function(c,r,d){report("cat,dog",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getDocHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-                function(c,r,d){report("cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
-                function(c,r,d){report("cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getYearlyComboDocHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
-                function(c,r,d){report("yearly: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getYearlyComboDocHitsForAnyLemmas(["the"], [['the']],
-                function(c,r,d){report("the by year",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-                function(c,r,d){report("hitcount: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
-        });
-
-        queries.push(function() { 
-            getComboHitsForAnyLemmas(["dog", "cat"], [['cat','bite'], ['dog','bite'], ['cat', 'scratch'], ['dog','scratch']],
-                function(c,r,d){report("hitcount: cat+bite,dog+bite,cat+scratch,dog+scratch",c,r,d);});
-        });
-        queries.push(function() { 
-            bencmarkHitsForAnyLemmas(["the"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-                function(c,r,d){report("benmark 100x: the X cat,dog,bite,scratch,claw,bark",c,r,d);});
-        });
-
-        queries.push(function() { 
-            bencmarkHitsForAnyLemmas(["dog", "cat"], ['cat', 'dog','bite', 'scratch', 'claw', 'bark'], 
-                function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);});
+        queries.push(function() {
+            arbitraryQuery("/api/query/hits/bucketed", 
+                {
+                    filter_:OrTerm(LemmaTerm('cat'), LemmaTerm('dog')),
+                    series_:[
+                        LemmaTerm('cat'),
+                        LemmaTerm('dog'),
+                        LemmaTerm('bite'),
+                        LemmaTerm('scratch'),
+                        LemmaTerm('claw'),
+                        LemmaTerm('bark'),
+                    ],
+                    buckets_:repeat(LemmaTerm('cat'), 100)
+                },
+                function(c,r,d){report("benmark 100x: cat,dog X cat,dog,bite,scratch,claw,bark",c,r,d);}
+            );
         });
 
         queries.push(function() { 
