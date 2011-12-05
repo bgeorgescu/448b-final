@@ -126,7 +126,9 @@ public class Coreferences {
 					Connection conn = SQL.forThread();
 					try {
 						//used for logging only
+						@SuppressWarnings("unused")
 						EntityAccessor er = new EntityAccessor();
+						@SuppressWarnings("unused")
 						LemmaAccessor lr = new LemmaAccessor();
 						for(;;) {
 							if(doc_to_process.isEmpty()) {

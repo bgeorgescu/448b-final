@@ -45,14 +45,22 @@ MonthTerm = function(year, month) {
     return {date_:{before_:(year)*10000+(month+2)*100, after_:(year*10000)+(month+1)*100}};
 }
 //new not yet implemented
-OrTerm = function(a, b) {
-    return {or_:{a_:a, b_:b}};
+OrTerm = function() {
+    var terms = [];
+    for(var i = 0; i < arguments.length; ++i) {
+        terms.push(arguments[i]);
+    }
+    return {or_:{terms_:terms}};
 }
-AndTerm = function(a, b) {
-    return {and_:{a_:a, b_:b}};
+AndTerm = function() {
+    var terms = [];
+    for(var i = 0; i < arguments.length; ++i) {
+        terms.push(arguments[i]);
+    }
+    return {and_:{terms_:terms}};
 }
 NotTerm = function(a) {
-    return {not_:{a_:a}};
+    return {not_:{term_:a}};
 }
 PageTerm = function(begin_inclusive, end_exclusive) {
     return {page_:{begin_:begin_inclusive, end_:end_exclusive}};

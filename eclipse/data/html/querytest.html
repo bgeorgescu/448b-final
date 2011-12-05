@@ -61,6 +61,62 @@
             var q = queries.shift();
             q();
         }
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/one", 
+                {
+                    filter_:YearTerm(2010),
+                    series_:[
+                        LemmaTerm('dog'),
+                        LemmaTerm('cat'),
+                    ],
+                },
+                function(c,r,d){report("dog, cat, all > 2010",c,r,d);}
+            );
+        });
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {
+                    filter_:YearTerm(2010),
+                    series_:[
+                        LemmaTerm('dog'),
+                        LemmaTerm('cat'),
+                    ],
+                    buckets_:[
+                        MonthTerm(2010, 1),
+                        MonthTerm(2010, 2),
+                        MonthTerm(2010, 3),
+                        MonthTerm(2010, 4),
+                        MonthTerm(2010, 5),
+                        MonthTerm(2010, 6),
+                        MonthTerm(2010, 7),
+                        MonthTerm(2010, 8),
+                        MonthTerm(2010, 9),
+                        MonthTerm(2010, 10),
+                        MonthTerm(2010, 11),
+                        MonthTerm(2010, 12),
+                    ],
+                },
+                function(c,r,d){report("dog, cat, bucketed by month",c,r,d);}
+            );
+        });
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {
+                    filter_:YearTerm(2010),
+                    series_:[
+                        LemmaTerm('dog'),
+                        LemmaTerm('cat'),
+                    ],
+                    buckets_:[
+                        LemmaTerm('bite'),
+                        LemmaTerm('scratch'),
+                        LemmaTerm('claw'),
+                        LemmaTerm('hurt'),
+                    ],
+                },
+                function(c,r,d){report("bite,scratch,claw,hurt x dog, cat",c,r,d);}
+            );
+        });
         queries.push(function() { 
             getLemmaCountsForMatchingDocs(
                 [

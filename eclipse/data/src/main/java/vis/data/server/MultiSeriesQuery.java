@@ -65,7 +65,7 @@ public class MultiSeriesQuery {
 		}
 	}
 	static void mergeAndValidate(FilteredBucketed fb) {
-		mergeAndValidate(fb);
+		mergeAndValidate((Filtered)fb);
 		if(fb.buckets_ == null) {
 			throw new RuntimeException("bucketed query must have buckets, yo!");
 		}

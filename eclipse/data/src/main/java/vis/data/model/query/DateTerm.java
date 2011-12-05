@@ -46,18 +46,17 @@ public class DateTerm extends Term {
 
 		@Override
 		public void validate() {
-			// TODO Auto-generated method stub
-			
+			if(before_ == null && after_ == null)
+				throw new RuntimeException("missing at least one restriction in date term");
 		}
 
 		@Override
 		public ResultType resultType() {
-			// TODO Auto-generated method stub
-			return null;
+			return ResultType.DOC_HITS;
 		}
 		@Override
 		public Collection<Term.Parameters> withChildren() {
-			return null;
+			return Arrays.asList((Term.Parameters)this);
 		}
 		@Override
 		public void setFilterOnly() {

@@ -67,6 +67,7 @@ public class QueryExpression {
 		return parameters_;
 	}
 	//must validate first
+	@SuppressWarnings("unchecked")
 	public Term term() {
 		Term cache = QueryExpression.getCache(parameters_);
 		if(cache != null)

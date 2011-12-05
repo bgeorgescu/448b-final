@@ -64,7 +64,7 @@ public class EntityTerm extends Term {
 		}
 		@Override
 		public Collection<Term.Parameters> withChildren() {
-			return null;
+			return Arrays.asList((Term.Parameters)this);
 		}
 		@Override
 		public void setFilterOnly() {

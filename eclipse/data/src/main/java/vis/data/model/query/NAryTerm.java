@@ -32,9 +32,11 @@ public abstract class NAryTerm extends Term {
 				throw new RuntimeException("terms missing for nary operation");
 			if(terms_.length < 2)
 				throw new RuntimeException("too few terms for nary operation");
-			ResultType rt = terms_[0].parameters_.resultType();
 			for(QueryExpression qe : terms_) {
 				qe.validate();
+			}
+			ResultType rt = terms_[0].parameters_.resultType();
+			for(QueryExpression qe : terms_) {
 				if(qe.parameters_.resultType() != rt) 
 					throw new RuntimeException("result type mismatch " + rt + " != " + qe.parameters_.resultType());
 			}
