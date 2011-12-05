@@ -13,9 +13,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import vis.data.model.RawEntity;
 import vis.data.model.RawLemma;
 import vis.data.model.meta.EntityAccessor;
-import vis.data.model.meta.EntityForDocAccessor;
 import vis.data.model.meta.LemmaAccessor;
-import vis.data.model.meta.LemmaForDocHitsAccessor;
 import vis.data.model.query.AndTerm;
 import vis.data.model.query.QueryExpression;
 import vis.data.model.query.Term;
@@ -176,11 +174,7 @@ public class MultiSeriesQuery {
 
 			LemmaCounts lc[] = new LemmaCounts[rf.series_.length];
 			for(int i = 0; i < rf.series_.length; ++i) {
-				if(rf.series_[i].validate().resultType() != ResultType.LEMMA_HITS)
-					throw new RuntimeException("expression does not produce a lemma type");
-
-				LemmaForDocHitsAccessor lh = new LemmaForDocHitsAccessor();
-				Pair<int[], int[]> result = lh.getLemmaCounts(r.items_[i]); 
+				Pair<int[], int[]> result = Pair.of(r.items_[i], r.counts_[i]);
 				if(rf.threshold_ != null) {
 					result = CountAggregator.threshold(result.getKey(), result.getValue(), rf.threshold_);
 				}
@@ -233,8 +227,7 @@ public class MultiSeriesQuery {
 				if(rf.series_[i].validate().resultType() != ResultType.ENTITY_HITS)
 					throw new RuntimeException("expression does not produce a entity type");
 
-				EntityForDocAccessor eda = new EntityForDocAccessor();
-				Pair<int[], int[]> result = eda.getEntityCounts(r.items_[i]); 
+				Pair<int[], int[]> result = Pair.of(r.items_[i], r.counts_[i]);
 				if(rf.threshold_ != null) {
 					result = CountAggregator.threshold(result.getKey(), result.getValue(), rf.threshold_);
 				}
