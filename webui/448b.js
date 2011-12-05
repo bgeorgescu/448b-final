@@ -212,7 +212,7 @@ function fakeData(state) {
 
 
 function LemmaOrEntityTerm(a) {
-	return OrTerm(DocLemmaTerm(a),DocEntityTerm(a));
+	return OrTerm(LemmaTerm(a), EntityTerm(a));
 }
 
 function queryForModelState(state) {
@@ -229,15 +229,15 @@ function queryForModelState(state) {
 	
 	
 	if (state.horizontalAxis == "page")
-		query.buckets = array_range(1, 30).map(function(a) {
+		query.buckets_ = array_range(1, 30).map(function(a) {
 			return PageTerm(a,a+1);
 		});
 	else if(state.dateGranularity == "year")
-		query.buckets = array_range(state.startYear, state.endYear).map(function(a) {
+		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
 			return YearTerm(a);
 		});
 	else if (state.dateGranularity == "month")
-		query.buckets = array_range(state.startYear, state.endYear).map(function(a) {
+		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
 			return array_range(0,11).map(function(b) {
 				return MonthTerm(a,b);
 			});
