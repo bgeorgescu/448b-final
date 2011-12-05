@@ -121,6 +121,7 @@ var viewModel = {
 	graphModeOptions: ["bars","lines","steps"],
 	graphMode: ko.observable("bars"),
 	graphStack: ko.observable(true),
+	graphFill: ko.observable(true),
 	graphData: ko.observable([]),
 }
 
@@ -128,9 +129,9 @@ viewModel.graphOptions = ko.dependentObservable(function() {
     var retval = {
 		series: {
 			stack: this.graphStack() ? 1 : null,
-			lines: { show: (this.graphMode() == "lines" || this.graphMode() == "steps"), fill: true, steps: this.graphMode() == "steps" },
+			lines: { show: (this.graphMode() == "lines" || this.graphMode() == "steps"), fill: this.graphFill(), steps: this.graphMode() == "steps" },
 			bars: { show: this.graphMode() == "bars",
-					barWidth: 1 }
+					barWidth: 0.8 }
 		},
 		xaxis: {}
     };
@@ -138,20 +139,31 @@ viewModel.graphOptions = ko.dependentObservable(function() {
     if(this.horizontalAxis() == "page") {
 		// noop
     }
-    else if(this.dateGranularity() == "year") {
+    else if(this.horizontalAxis() == "date") {
     	retval.xaxis.mode = "time";
-    	retval.xaxis.minTickWidth = [1, "year"];
-    	retval.series.bars.barWidth = 0.8*365*86400000;
-    	retval.xaxis.min = new Date(this.startYear(), 1, 1).getTime();
-    	retval.xaxis.max = new Date(this.endYear(), 12, 31).getTime();
-    } else if(this.dateGranularity() == "month") {
-		retval.xaxis.mode = "time";
-    	retval.series.bars.barWidth = 0.8*28*86400000;
-    	retval.xaxis.minTickWidth = [1, "month"];
-        retval.xaxis.min = new Date(this.startYear(), 0, 1).getTime();
-    	retval.xaxis.max = new Date(this.endYear(), 11, 31).getTime();	
-	}
-    
+		retval.xaxis.min = new Date(this.startYear(), 1, 1).getTime();
+		if(this.graphMode() == "lines" || this.graphMode() == "steps") {
+			if(this.dateGranularity() == "year") {
+				retval.xaxis.max = new Date(this.endYear(), 0, 1).getTime();
+			} else if(this.dateGranularity() == "month") {
+				retval.xaxis.max = new Date(this.endYear(), 11, 0).getTime();
+			}
+		}
+		else {
+			retval.xaxis.max = new Date(this.endYear(), 11, 30).getTime();
+			if(this.dateGranularity() == "year") {
+				retval.series.bars.barWidth = 0.8*365*86400000;	
+			} else if(this.dateGranularity() == "month") {
+				retval.series.bars.barWidth = 0.8*28*86400000;
+			}
+		}
+		if(this.dateGranularity() == "year") {
+			retval.xaxis.minTickWidth = [1, "year"];
+
+		} else if(this.dateGranularity() == "month") {
+			retval.xaxis.minTickWidth = [1, "month"];
+		}
+    }
     return retval;
 }, viewModel);
 
@@ -159,7 +171,6 @@ viewModel.graphOptions = ko.dependentObservable(function() {
 function updatePlot() {
 	$.plot($("#graph_container"), viewModel.graphData(), viewModel.graphOptions());
 }
-
 
 viewModel.graphOptions.subscribe(updatePlot);
 viewModel.graphData.subscribe(updatePlot);
@@ -180,12 +191,12 @@ function fakeData(state) {
 			});
 		else if(state.dateGranularity == "year")
 			return array_range(state.startYear, state.endYear).map(function(a) {
-				return [new Date(a,1,1).getTime(), parseInt(Math.random() * 30)];
+				return [new Date(a,0,0).getTime(), parseInt(Math.random() * 30)];
 			});
 		else if (state.dateGranularity == "month")
 			return array_range(state.startYear, state.endYear).map(function(a) {
 				return array_range(0,11).map(function(b) {
-					return [new Date(a,b,1).getTime(),parseInt(Math.random() * 30)]
+					return [new Date(a,b,0).getTime(),parseInt(Math.random() * 30)]
 				});
 			}).reduce(function(m,n) {
 				return m.concat(n);
@@ -268,8 +279,6 @@ function addMockData() {
 	viewModel.suggestions().push("kucinich");
 }
 
-addMockData();
-ko.applyBindings(viewModel);
 
 
 
@@ -324,14 +333,12 @@ function newInputsCallback() {
 
 viewModel.filters.subscribe(newInputsCallback);
 viewModel.buckets.subscribe(newInputsCallback);
-newInputsCallback();
 
 function suggestionsAdded() {
 	$(".suggestion.justAdded").removeClass(".justAdded").draggable({helper: 'clone'});
 }
 
 viewModel.suggestions.subscribe(suggestionsAdded);
-suggestionsAdded();
 
 function queryChanged() {
 	// will get called anytime the query gets changed in any way
@@ -350,5 +357,11 @@ viewModel.horizontalAxis.subscribe(queryChanged);
 viewModel.dateGranularity.subscribe(queryChanged);
 viewModel.dateGranularityFixed.subscribe(queryChanged);
 
+
+addMockData();
+ko.applyBindings(viewModel);
+
 viewModel.graphData(fakeData(viewModel.toPlainObject()));
 updatePlot();
+suggestionsAdded();
+newInputsCallback();

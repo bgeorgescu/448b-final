@@ -66,6 +66,7 @@
 		  <strong>Display settings</strong>
 		  <select data-bind="options: graphModeOptions, value: graphMode"></select>
 		  <label><input type="checkbox" data-bind="checked: graphStack" />stacked</label>
+		  <label data-bind="visible: graphMode()=='lines' || graphMode()=='steps'"><input type="checkbox" data-bind="checked: graphFill" />fill</label>
 	  </div>
   </div>
   
