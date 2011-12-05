@@ -17,7 +17,6 @@ Function.prototype.inheritsFrom = function( parentClassOrObject ){
 	return this;
 } 
 
-
 function AbstractFilter() {
 	this.filterType = "abstract";
 	this.container = undefined;
@@ -216,18 +215,37 @@ function LemmaOrEntityTerm(a) {
 	return OrTerm(LemmaTerm(a), EntityTerm(a));
 }
 
+
 function queryForModelState(state) {
 	var query = { filter_: false, series_: [], buckets_:[] };
+	var AndHelper = function(arr) { return arr.length > 1 ? {and_:{terms_: arr }} : arr[0]; };
+	var OrHelper = function(arr) { return arr.length > 1 ? {or_:{terms_: arr }} : arr[0]; };
 	
+	var WordToTerm = LemmaTerm;
+	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
+	
+	query.filter_ = 
+		AndHelper(state.filters
+		.filter(function(x) { return x.filterType == "text" })
+		.map(function(x) { return OrHelper(x.disjunction.map(WordToTerm)); }))
+	
+	
+	/*
 	query.filter_ = state.filters
 		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).reduce(OrTerm)})
+		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).filter(isNaN).reduce(OrTerm)})
 		.reduce(AndTerm);
+	*/
 	
 	query.series_ = state.buckets
 		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).reduce(OrTerm)});
+		.map(function(x) { return  OrHelper(x.disjunction.map(WordToTerm)); });
 	
+	/*
+	query.series_ = state.buckets
+		.filter(function(x) { return x.filterType == "text" })
+		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).filter(isNaN).reduce(OrTerm)}).filter(isNaN);
+	*/
 	
 	if (state.horizontalAxis == "page")
 		query.buckets_ = array_range(1, 30).map(function(a) {
