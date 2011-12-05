@@ -83,7 +83,21 @@ div[isFilterList] span, .suggestion {
 
 .filterListHover {
 	padding: 10px;
+	background: #CCFFCC;
+	border:3px solid green;
+	color:black !important;
+}
+
+.dropzone {
+	display:inline;
+	color:white;
+}
+
+
+.filterTextHover {
+	padding: 10px;
 	background: #FFFFCC;
+	margin:5px 10px 5px 0px;
 }
 
 
