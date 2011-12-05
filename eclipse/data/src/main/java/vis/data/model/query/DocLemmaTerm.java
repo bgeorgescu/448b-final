@@ -4,18 +4,15 @@ import java.sql.SQLException;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import vis.data.util.CountAggregator;
+import vis.data.model.meta.LemmaForDocHitsAccessor;
 
 
-public class ThresholdTerm extends UnaryTerm {
+public class DocLemmaTerm extends UnaryTerm {
 
 	public static class Parameters extends UnaryTerm.Parameters {
-		public Integer threshold_;
-
 		@Override
 		public int hashCode() {
 			int hashCode = super.hashCode();
-			hashCode ^= new Integer(threshold_).hashCode();
 			hashCode ^= Parameters.class.hashCode();
 			return hashCode;
 		}
@@ -24,35 +21,33 @@ public class ThresholdTerm extends UnaryTerm {
 		public boolean equals(Object obj) {
 			if(!Parameters.class.isInstance(obj))
 				return false;
-			Parameters p = (Parameters)obj;
-			if(threshold_ == p.threshold_)
-				return false;
 			return super.equals(obj);
 		}
 
 		@Override
 		public void validate() {
-			if(threshold_ == null)
-				throw new RuntimeException("missing threshold");
-			if(threshold_ < 0)
-				throw new RuntimeException("threshold " + threshold_ + " doesn't make sense");
 			super.validate();
+			if(resultType() != ResultType.DOC_HITS)
+				throw new RuntimeException("doclemma term must transform a document hit count map");
 		}
 
 		@Override
 		public ResultType resultType() {
-			return term_.parameters_.resultType();
+			return ResultType.LEMMA_HITS;
 		}
 		
 	}
 
-	public ThresholdTerm(Parameters p) {
+	public DocLemmaTerm(Parameters p) {
 		super(p);
 	}
 
 	public Pair<int[], int[]> compute() throws SQLException {
 		Pair<int[], int[]> operand = parameters_.term_.term().result();
-		Pair<int[], int[]> result = CountAggregator.threshold(operand.getKey(), operand.getValue(), ((Parameters)parameters_).threshold_);
+
+		LemmaForDocHitsAccessor lh = new LemmaForDocHitsAccessor();
+		Pair<int[], int[]> result = lh.getLemmaCounts(operand.getKey()); 
+		
 		if(parameters_.filterOnly_)
 			return Pair.of(result.getKey(), new int[result.getKey().length]);
 		return result;

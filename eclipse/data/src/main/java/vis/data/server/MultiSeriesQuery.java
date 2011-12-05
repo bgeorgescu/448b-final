@@ -76,8 +76,9 @@ public class MultiSeriesQuery {
 	@Path("/api/query/evaluate/one")
 	public static class EvaluateOne {
 		public static class Results {
-			public int items_[/*series*/][/*doc*/];
-			public int counts_[/*series*/][/*doc*/];
+			public int items_[/*series*/][/*item*/];
+			public int counts_[/*series*/][/*item*/];
+			public ResultType type_;
 		}
 		@POST
 		@Consumes("application/json")
@@ -87,7 +88,10 @@ public class MultiSeriesQuery {
 			Results r = new Results();
 			r.items_ = new int[f.series_.length][];
 			r.counts_ = new int[f.series_.length][];
+			r.type_ = f.series_[0].validate().resultType();
 			for(int i = 0; i < f.series_.length; ++i) {
+				if(r.type_ != f.series_[i].validate().resultType()) 
+					throw new RuntimeException("inconsistent result types");
 				Pair<int[], int[]> result = f.series_[i].term().result();
 				r.items_[i] = result.getKey();
 				r.counts_[i] = result.getValue();
@@ -101,6 +105,7 @@ public class MultiSeriesQuery {
 		public static class Results {
 			public int items_[/*series*/][/*bucket*/][/*doc*/];
 			public int counts_[/*series*/][/*bucket*/][/*doc*/];
+			public ResultType type_;
 		}
 		@POST
 		@Consumes("application/json")
@@ -110,7 +115,14 @@ public class MultiSeriesQuery {
 			Results r = new Results();
 			r.items_ = new int[f.series_.length][][];
 			r.counts_ = new int[f.series_.length][][];
+			r.type_ = f.series_[0].validate().resultType();
+			for(int i = 0; i < f.buckets_.length; ++i) {
+				if(r.type_ != f.buckets_[i].validate().resultType()) 
+					throw new RuntimeException("inconsistent result types");
+			}
 			for(int i = 0; i < f.series_.length; ++i) {
+				if(r.type_ != f.series_[i].validate().resultType()) 
+					throw new RuntimeException("inconsistent result types");
 				r.items_[i] = new int[f.buckets_.length][];
 				r.counts_[i] = new int[f.buckets_.length][];
 				for(int j = 0; j < f.buckets_.length; ++j) {
@@ -133,6 +145,8 @@ public class MultiSeriesQuery {
 		@Produces("application/json")
 		public int[/*series*/][/*doc*/] filterDocs(Filtered f) throws SQLException {
 			EvaluateOne.Results r = eo.evaluateOne(f);
+			if(r.type_ != ResultType.DOC_HITS)
+				throw new RuntimeException("query not returning correct type " + r.type_);
 			return r.items_;
 		}
 	}
@@ -156,6 +170,8 @@ public class MultiSeriesQuery {
 		@Produces("application/json")
 		public LemmaCounts[] tallyLemmas(ReferencedFiltered rf) throws SQLException {
 			EvaluateOne.Results r = eo.evaluateOne(rf);
+			if(r.type_ != ResultType.LEMMA_HITS)
+				throw new RuntimeException("query not returning correct type " + r.type_);
 			
 
 			LemmaCounts lc[] = new LemmaCounts[rf.series_.length];
@@ -208,6 +224,8 @@ public class MultiSeriesQuery {
 		@Produces("application/json")
 		public EntityCounts[] tallyEntities(ReferencedFiltered rf) throws SQLException {
 			EvaluateOne.Results r = eo.evaluateOne(rf);
+			if(r.type_ != ResultType.ENTITY_HITS)
+				throw new RuntimeException("query not returning correct type " + r.type_);
 			
 
 			EntityCounts ec[] = new EntityCounts[rf.series_.length];
@@ -254,6 +272,8 @@ public class MultiSeriesQuery {
 		@Produces("application/json")
 		public int[] tallyHits(Filtered f) throws SQLException {
 			EvaluateOne.Results r = eo.evaluateOne(f);
+			if(r.type_ != ResultType.DOC_HITS)
+				throw new RuntimeException("query not returning correct type " + r.type_);
 			int hits[] = new int[f.series_.length];
 			for(int i = 0; i < f.series_.length; ++i) {
 				for(int k : r.counts_[i])
@@ -271,6 +291,8 @@ public class MultiSeriesQuery {
 		@Produces("application/json")
 		public int[][] tallyHits(FilteredBucketed fb) throws SQLException {
 			EvaluateBucketed.Results r = eb.evalueteBucketed(fb);
+			if(r.type_ != ResultType.DOC_HITS)
+				throw new RuntimeException("query not returning correct type " + r.type_);
 			int hits[][] = new int[fb.series_.length][fb.buckets_.length];
 			for(int i = 0; i < fb.series_.length; ++i) {
 				hits[i] = new int[fb.buckets_.length];
@@ -290,6 +312,8 @@ public class MultiSeriesQuery {
 		@Produces("application/json")
 		public int[] tallyHits(Filtered f) throws SQLException {
 			EvaluateOne.Results r = eo.evaluateOne(f);
+			if(r.type_ != ResultType.DOC_HITS)
+				throw new RuntimeException("query not returning correct type " + r.type_);
 			int hits[] = new int[f.series_.length];
 			for(int i = 0; i < f.series_.length; ++i) {
 				hits[i] += r.counts_[i].length;
@@ -306,6 +330,8 @@ public class MultiSeriesQuery {
 		@Produces("application/json")
 		public int[][] tallyHits(FilteredBucketed fb) throws SQLException {
 			EvaluateBucketed.Results r = eb.evalueteBucketed(fb);
+			if(r.type_ != ResultType.DOC_HITS)
+				throw new RuntimeException("query not returning correct type " + r.type_);
 			int hits[][] = new int[fb.series_.length][fb.buckets_.length];
 			for(int i = 0; i < fb.series_.length; ++i) {
 				hits[i] = new int[fb.buckets_.length];
