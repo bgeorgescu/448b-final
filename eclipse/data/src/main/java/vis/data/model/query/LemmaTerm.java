@@ -2,6 +2,7 @@ package vis.data.model.query;
 
 import java.sql.SQLException;
 import java.util.Arrays;
+import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -60,6 +61,14 @@ public class LemmaTerm extends Term {
 		public void validate() {
 			if(id_ == 0 && lemma_ == null && pos_ == null)
 				throw new RuntimeException("must specify either a lemma id, lemma, or pos");
+		}
+		@Override
+		public Collection<Term.Parameters> withChildren() {
+			return null;
+		}
+		@Override
+		public void setFilterOnly() {
+			filterOnly_ = true;
 		}
 	}
 	

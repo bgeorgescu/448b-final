@@ -1,6 +1,8 @@
 package vis.data.model.query;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.LinkedList;
 
 public abstract class NAryTerm extends Term {
 	public abstract static class Parameters implements Term.Parameters {
@@ -40,6 +42,22 @@ public abstract class NAryTerm extends Term {
 		@Override
 		public ResultType resultType() {
 			return terms_[0].parameters_.resultType();
+		}
+		@Override
+		public Collection<Term.Parameters> withChildren() {
+			LinkedList<Term.Parameters> c = new LinkedList<Term.Parameters>();
+			for(QueryExpression qe : terms_) {
+				c.add(qe.parameters_);
+				Collection<Term.Parameters> cc = qe.parameters_.withChildren();
+				if(cc != null)
+					c.addAll(cc);
+			}
+			c.add(this);
+			return c;
+		}
+		@Override
+		public void setFilterOnly() {
+			filterOnly_ = true;
 		}
 	}
 	final Parameters parameters_;

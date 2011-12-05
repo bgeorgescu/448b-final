@@ -1,6 +1,7 @@
 package vis.data.model.query;
 
 import java.sql.SQLException;
+import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -16,6 +17,8 @@ public abstract class Term {
 		//throw if the parameters are bad
 		public void validate();
 		public ResultType resultType();
+		public Collection<Term.Parameters> withChildren();
+		public void setFilterOnly();
 	}
 	
 	//terms are cached
@@ -27,5 +30,4 @@ public abstract class Term {
 		//TODO: do the caching transparently here
 		return compute();
 	}
-	
 }

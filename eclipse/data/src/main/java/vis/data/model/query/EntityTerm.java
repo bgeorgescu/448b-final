@@ -2,6 +2,7 @@ package vis.data.model.query;
 
 import java.sql.SQLException;
 import java.util.Arrays;
+import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -60,6 +61,14 @@ public class EntityTerm extends Term {
 		public void validate() {
 			if(id_ == 0 && entity_ == null && type_ == null)
 				throw new RuntimeException("must specify either an entity id, entity, or type");
+		}
+		@Override
+		public Collection<Term.Parameters> withChildren() {
+			return null;
+		}
+		@Override
+		public void setFilterOnly() {
+			filterOnly_ = true;
 		}
 	}
 	

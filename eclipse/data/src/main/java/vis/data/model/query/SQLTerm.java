@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -17,6 +18,14 @@ public abstract class SQLTerm extends Term {
 		@Override
 		public ResultType resultType() {
 			return ResultType.DOC_HITS;
+		}
+		@Override
+		public Collection<Term.Parameters> withChildren() {
+			return null;
+		}
+		@Override
+		public void setFilterOnly() {
+			//always is
 		}
 	}
 	final int ids_[];

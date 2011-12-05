@@ -2,6 +2,7 @@ package vis.data.model.query;
 
 import java.sql.SQLException;
 import java.util.Arrays;
+import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -53,6 +54,14 @@ public class DateTerm extends Term {
 		public ResultType resultType() {
 			// TODO Auto-generated method stub
 			return null;
+		}
+		@Override
+		public Collection<Term.Parameters> withChildren() {
+			return null;
+		}
+		@Override
+		public void setFilterOnly() {
+			//always is
 		}
 	}
 	
