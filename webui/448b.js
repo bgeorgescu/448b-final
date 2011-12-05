@@ -133,7 +133,8 @@ viewModel.graphOptions = ko.dependentObservable(function() {
 			bars: { show: this.graphMode() == "bars",
 					barWidth: 0.8 }
 		},
-		xaxis: {}
+		xaxis: {},
+		yaxis: {min: 0 },
     };
     
     if(this.horizontalAxis() == "page") {
@@ -226,8 +227,8 @@ function queryForModelState(state) {
 	
 	query.filter_ = 
 		AndHelper(state.filters
-		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return OrHelper(x.disjunction.map(WordToTerm)); }))
+		.filter(function(x) { return (x.filterType == "text") && (x.disjunction.length) })
+		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm)); }))
 	
 	
 	/*
@@ -238,8 +239,8 @@ function queryForModelState(state) {
 	*/
 	
 	query.series_ = state.buckets
-		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return  OrHelper(x.disjunction.map(WordToTerm)); });
+		.filter(function(x) { return x.filterType == "text" && (x.disjunction.length) })
+		.map(function(x) { return  OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm)); });
 	
 	/*
 	query.series_ = state.buckets
