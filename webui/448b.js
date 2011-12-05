@@ -80,12 +80,13 @@ var viewModel = {
 	addFilter: function (filter) {
 		filter.container = viewModel.filters;
         viewModel.filters.push(filter);
-        //viewModel.contacts.valueHasMutated();
+        viewModel.filters.valueHasMutated();
     },
     
     addBucket: function (filter) {
 		filter.container = viewModel.buckets;
         viewModel.buckets.push(filter);
+        viewModel.buckets.valueHasMutated();
     },
     
     toPlainObject: function () {
@@ -308,7 +309,8 @@ function newFilterWithEmptyLiteralTo(f) {
 	f(n);
 }
 
-$("#filterList").droppable({
+
+$("#filterList").parent().find(".dropzone").droppable({
 	accept: '.suggestion',
 	activeClass: "filterListHover",
 	drop: function(event, ui) {
@@ -317,7 +319,8 @@ $("#filterList").droppable({
 			viewModel.addFilter(n);
 	}
 });
-$("#bucketList").droppable({
+
+$("#bucketList").parent().find(".dropzone").droppable({
 	accept: '.suggestion',
 	activeClass: "filterListHover",
 	drop: function(event, ui) {
@@ -327,8 +330,16 @@ $("#bucketList").droppable({
 	}
 });
 
+var debug;
 function newInputsCallback() {
-	$("input.justAdded").blur(queryChanged);
+	$("input.justAdded").removeClass("justAdded").blur(queryChanged);
+	$(".textFilterItem.justAdded").removeClass("justAdded").droppable({
+		accept: '.suggestion',
+		activeClass: "filterTextHover",
+		drop: function(event, ui) {
+			ko.dataFor(this).addLiteral($(ui.draggable).text());
+		}
+	});
 }
 
 viewModel.filters.subscribe(newInputsCallback);
