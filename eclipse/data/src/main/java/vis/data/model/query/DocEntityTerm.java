@@ -27,7 +27,7 @@ public class DocEntityTerm extends UnaryTerm {
 		@Override
 		public void validate() {
 			super.validate();
-			if(resultType() != ResultType.DOC_HITS)
+			if(term_.parameters_.resultType() != ResultType.DOC_HITS)
 				throw new RuntimeException("docentity term must transform a document hit count map");
 		}
 

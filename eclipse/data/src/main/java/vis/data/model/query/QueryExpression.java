@@ -28,8 +28,8 @@ public class QueryExpression {
 	
 	//tag cloud queries - requires all full text queries to be filter only
 	//also these two are mutually exclusive
-//	public DocLemmaTerm.Parameters docLemma_;
-//	public DocEntity.Parameters docEntity_;
+	public DocLemmaTerm.Parameters docLemma_;
+	public DocEntityTerm.Parameters docEntity_;
 	
 	//some things might return a lot of results we don't care about, e.g.
 	//the tag cloud queries returning lemmas with 1 hit.  allow thresholding

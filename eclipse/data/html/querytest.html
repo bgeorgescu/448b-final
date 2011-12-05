@@ -99,17 +99,42 @@
                 function(c,r,d){report("dog, cat, bucketed by month",c,r,d);}
             );
         });
-        queries.push(function() { 
-            getLemmaCountsForMatchingDocs(
-                [
-                    [EntityTerm('barack obama')],
-                    [EntityTerm('obama')],
-                    [LemmaTerm('obama')],
-                ],
-                true, 
-                undefined,
-                1000,
-                function(c,r,d){report("obama",c,r,d);});
+        queries.push(function() {
+            arbitraryQuery("/api/query/lemmas", 
+                {
+                    series_:[
+                        DocLemmaTerm(
+                            OrTerm(
+                                EntityTerm('barack obama'),
+                                EntityTerm('obama'),
+                                LemmaTerm('obama')
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                },
+                function(c,r,d){report("lemmas for obama",c,r,d);}
+            );
+        });
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/lemmas", 
+                {
+                    series_:[
+                        DocLemmaTerm(
+                            OrTerm(
+                                EntityTerm('barack obama'),
+                                EntityTerm('obama'),
+                                LemmaTerm('obama')
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:100,
+                },
+                function(c,r,d){report("top 100 terms for obama",c,r,d);}
+            );
         });
 
         allMonths = function() {
@@ -382,68 +407,112 @@
             );
         });
 
-        queries.push(function() { 
-            getLemmaCountsForMatchingDocs(
-                [
-                    [EntityTerm('hillary clinton')],
-                    [EntityTerm('clinton')],
-                    [LemmaTerm('clinton')],
-                ],
-                false,
-                100000,
-                undefined,
-                function(c,r,d){report("terms (no word fetch) for clinton",c,r,d);});
-        });
-        for(var i = 2000; i <= 2010; ++i) {
-            queries.push(function(y) { 
-                getLemmaCountsForMatchingDocs(
-                    [
-                        [EntityTerm('hillary clinton'), YearTerm(y)],
-                        [EntityTerm('clinton'), YearTerm(y)],
-                        [LemmaTerm('clinton'), YearTerm(y)],
+        queries.push(function() {
+            arbitraryQuery("/api/query/lemmas", 
+                {
+                    series_:[
+                        DocLemmaTerm(
+                            OrTerm(
+                                EntityTerm('hillary clinton'),
+                                EntityTerm('clinton'),
+                                LemmaTerm('clinton')
+                            )
+                        ),
                     ],
-                    true,
-                    undefined,
-                    60,
-                    function(c,r,d){report("terms  for clinton for " + y ,c,r,d);});
-            }.bind(undefined, i));
-        }
-        queries.push(function() { 
-            getLemmaCountsForMatchingDocs(
-                [
-                    [EntityTerm('hillary clinton')],
-                    [EntityTerm('clinton')],
-                    [LemmaTerm('clinton')],
-                ],
-                true,
-                undefined,
-                10,
-                function(c,r,d){report("terms for clinton",c,r,d);});
+                    includeText_:false,
+                    threshold_:10000,
+                    maxResults_:undefined,
+                },
+                function(c,r,d){report("terms (no word fetch) for clinton",c,r,d);}
+            );
         });
 
-        queries.push(function() { 
-            getLemmaCountsForMatchingDocs(
-                [
-                    [EntityTerm('barack obama')],
-                    [EntityTerm('obama')],
-                    [LemmaTerm('obama')],
-                ],
-                true, 
-                undefined,
-                100,
-                function(c,r,d){report("obama",c,r,d);});
-        });
         for(var i = 2000; i <= 2010; ++i) {
             queries.push(function(y) { 
-                getEntityCountsForMatchingDocs(
-                    [
-                        [LemmaTerm('election'), YearTerm(y)],
-                        [LemmaTerm('vote'), YearTerm(y)],
+                arbitraryQuery("/api/query/lemmas", 
+                    {
+                        series_:[
+                            DocLemmaTerm(
+                                AndTerm(
+                                    OrTerm(
+                                        EntityTerm('hillary clinton'),
+                                        EntityTerm('clinton'),
+                                        LemmaTerm('clinton')
+                                    ),
+                                    YearTerm(y)
+                                )
+                            ),
+                        ],
+                        includeText_:true,
+                        threshold_:undefined,
+                        maxResults_:60,
+                    },
+                    function(c,r,d){report(y + "terms for clinton",c,r,d);}
+                );
+            }.bind(undefined, i));
+        }
+        queries.push(function() {
+            arbitraryQuery("/api/query/lemmas", 
+                {
+                    series_:[
+                        DocLemmaTerm(
+                            OrTerm(
+                                EntityTerm('hillary clinton'),
+                                EntityTerm('clinton'),
+                                LemmaTerm('clinton')
+                            )
+                        ),
                     ],
-                    true,
-                    undefined,
-                    10,
-                    function(c,r,d){report("entities for election or vote for " + y,c,r,d);});
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:10,
+                },
+                function(c,r,d){report("top 10 terms for clinton",c,r,d);}
+            );
+        });
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/lemmas", 
+                {
+                    series_:[
+                        DocLemmaTerm(
+                            OrTerm(
+                                EntityTerm('barack obama'),
+                                EntityTerm('obama'),
+                                LemmaTerm('obama')
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:100,
+                },
+                function(c,r,d){report("top 100 terms for obama",c,r,d);}
+            );
+        });
+
+
+        for(var i = 2000; i <= 2010; ++i) {
+            queries.push(function(y) { 
+                arbitraryQuery("/api/query/entities", 
+                    {
+                        series_:[
+                            DocEntityTerm(
+                                AndTerm(
+                                    OrTerm(
+                                        LemmaTerm('election'),
+                                        LemmaTerm('vote')
+                                    ),
+                                    YearTerm(y)
+                                )
+                            ),
+                        ],
+                        includeText_:true,
+                        threshold_:undefined,
+                        maxResults_:10,
+                    },
+                    function(c,r,d){report(y + "entities for election or vote for ",c,r,d);}
+                );
             }.bind(undefined, i));
         }
         doNextQuery();

@@ -71,11 +71,11 @@ SectionTerm = function(name) {
 PublicationTerm = function(id) {
     return {publication_:{id_:id}};
 }
-DocLemmaTerm = function(word) {
-    return {docLemma_:{lemma_:word}};
+DocLemmaTerm = function(expr) {
+    return {docLemma_:{term_:expr}};
 }
-DocEntityTerm = function(entity) {
-    return {docEntity_:{entity_:entity}};
+DocEntityTerm = function(expr) {
+    return {docEntity_:{term_:expr}};
 }
 ThresholdTerm = function(minimum_hits) {
     return {threshold_:{min_:minimum_hits}};
