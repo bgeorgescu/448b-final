@@ -167,6 +167,8 @@ public class MultiSeriesQuery {
 		@Consumes("application/json")
 		@Produces("application/json")
 		public LemmaCounts[] tallyLemmas(ReferencedFiltered rf) throws SQLException {
+			if(rf.filter_ != null)
+				throw new RuntimeException("filter_ not supported for lemma tally, put it in a series");
 			EvaluateOne.Results r = eo.evaluateOne(rf);
 			if(r.type_ != ResultType.LEMMA_HITS)
 				throw new RuntimeException("query not returning correct type " + r.type_);
@@ -217,6 +219,8 @@ public class MultiSeriesQuery {
 		@Consumes("application/json")
 		@Produces("application/json")
 		public EntityCounts[] tallyEntities(ReferencedFiltered rf) throws SQLException {
+			if(rf.filter_ != null)
+				throw new RuntimeException("filter_ not supported for entity tally, put it in a series");
 			EvaluateOne.Results r = eo.evaluateOne(rf);
 			if(r.type_ != ResultType.ENTITY_HITS)
 				throw new RuntimeException("query not returning correct type " + r.type_);
