@@ -73,6 +73,13 @@
                 function(c,r,d){report("dog, cat, all > 2010",c,r,d);}
             );
         });
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+{"filter_":{"or_":{"terms_":[{"lemma_":{"lemma_":"election"}},{"entity_":{"entity_":"election"}}]}},"series_":[{"or_":{"terms_":[{"or_":{"terms_":[{"lemma_":{"lemma_":"clinton"}},{"entity_":{"entity_":"clinton"}}]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"hillary"}},{"entity_":{"entity_":"hillary"}}]}},1,[{"or_":{"terms_":[{"lemma_":{"lemma_":"clinton"}},{"entity_":{"entity_":"clinton"}}]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"hillary"}},{"entity_":{"entity_":"hillary"}}]}}]]}},{"or_":{"terms_":[{"or_":{"terms_":[{"or_":{"terms_":[{"lemma_":{"lemma_":"obama"}},{"entity_":{"entity_":"obama"}}]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"hope"}},{"entity_":{"entity_":"hope"}}]}},1,[{"or_":{"terms_":[{"lemma_":{"lemma_":"obama"}},{"entity_":{"entity_":"obama"}}]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"hope"}},{"entity_":{"entity_":"hope"}}]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"barack"}},{"entity_":{"entity_":"barack"}}]}}]]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"barack"}},{"entity_":{"entity_":"barack"}}]}},2,[{"or_":{"terms_":[{"lemma_":{"lemma_":"obama"}},{"entity_":{"entity_":"obama"}}]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"hope"}},{"entity_":{"entity_":"hope"}}]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"barack"}},{"entity_":{"entity_":"barack"}}]}}]]}},{"or_":{"terms_":[{"lemma_":{"lemma_":"mccain"}},{"entity_":{"entity_":"mccain"}}]}}],"buckets_":[{"date_":{"before_":20070000,"after_":20059999}},{"date_":{"before_":20080000,"after_":20069999}},{"date_":{"before_":20090000,"after_":20079999}},{"date_":{"before_":20100000,"after_":20089999}}]}
+                ,function(c,r,d){report("dog, cat, bucketed by month",c,r,d);}
+            );
+        });
         queries.push(function() {
             arbitraryQuery("/api/query/docs/bucketed", 
                 {

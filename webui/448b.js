@@ -369,11 +369,32 @@ function suggestionsAdded() {
 
 viewModel.suggestions.subscribe(suggestionsAdded);
 
+var current_generation = 0;
 function queryChanged() {
 	// will get called anytime the query gets changed in any way
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
 	viewModel.save();
-	viewModel.graphData(fakeData(viewModel.toPlainObject()));
+    var query = queryForModelState(viewModel.toPlainObject());
+    arbitraryQuery("/api/query/docs/bucketed",    
+        query,
+        function(gen,query,c,r,d){
+            if(!success(c)) {
+                alert("query failed to run: " + r);
+                alert(JSON.stringify(query));
+                return;
+            }
+            if(gen != current_generation)
+                return;
+            //mapping needs work for other graph params
+            viewModel.graphData(
+                r
+                .map(function(x, x_i) {
+                    
+                    return {data: x.map(function(y,y_i) {
+                        return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
+                    }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                }));
+        }.bind(this, ++current_generation, query));
 }
 
 
