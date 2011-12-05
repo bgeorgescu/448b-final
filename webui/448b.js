@@ -394,3 +394,12 @@ viewModel.graphData(fakeData(viewModel.toPlainObject()));
 updatePlot();
 suggestionsAdded();
 newInputsCallback();
+
+	viewModel.graphData(
+		[[465,679,1311,293],[1263,1101,3475,2150],[135,194,1581,72]]
+		.map(function(x, x_i) {
+			
+			return {data: x.map(function(y,y_i) {
+				return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
+			}), label: viewModel.buckets()[x_i].disjunction()[0]() };
+		}));
