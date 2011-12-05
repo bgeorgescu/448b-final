@@ -68,7 +68,7 @@ SearchFilter.prototype.toPlainObject = function() {
 
  
 var viewModel = {
-	debug: true,
+
 	filters: ko.observableArray([]),
 	buckets: ko.observableArray([]),
 	startYear: ko.observable(2000),
@@ -77,8 +77,6 @@ var viewModel = {
 	dateGranularity: ko.observable("year"),
 	dateGranularityOptions: ["year", "month", "fixed #"],
 	dateGranularityFixed: ko.observable(100),
-	suggestions: ko.observableArray([]), // note this doesn't need to be persisted to JSON
-
 	
 	addFilter: function (filter) {
 		filter.container = viewModel.filters;
@@ -113,37 +111,91 @@ var viewModel = {
     },
 	
 	save: function () {
-        viewModel.lastSavedJson(ko.utils.stringifyJson(this.toPlainObject(), null, 2));
+        viewModel.lastSavedJson(ko.utils.stringifyJson(queryForModelState(this.toPlainObject()), null, 2));
     },
-    lastSavedJson: new ko.observable("")
+    lastSavedJson: new ko.observable(""),
+    
+    // State below this does not reflect query stuff and doesn't need to be saved to JSON
+    
+    debug: true,
+	suggestions: ko.observableArray([]), 
+	graphMode: ko.observable("bars"),
+	graphStack: ko.observable(true),
+	graphData: ko.observable([]),
 }
 
-/*
-	{
-   filter_:AndTerm(
-       OrTerm(
-           EntityTerm('obama'),
-           EntityTerm('clinton')
-       )
-   ),
-   series_:[
-       OrTerm(
-           LemmaTerm('healthcare'),
-           LemmaTermm('medicare'),
-       )
-   ];
-   buckets_:[
-       YearTerm(2001),
-       YearTerm(2002),
-       YearTerm(2003),
-       YearTerm(2004),
-       YearTerm(2005),
-       YearTerm(2006),
-       YearTerm(2007),
-       YearTerm(2008),
-       YearTerm(2009),
-   ]
-} */
+viewModel.graphOptions = ko.dependentObservable(function() {
+    var retval = {
+		series: {
+			stack: this.graphStack(),
+			lines: { show: (this.graphMode() == "lines" || this.graphMode() == "steps"), fill: true, steps: this.graphMode() == "steps" },
+			bars: { show: this.graphMode() == "bars",
+					barWidth: 1 }
+		},
+		xaxis: {}
+    };
+    
+    if(this.horizontalAxis() == "page") {
+    	retval.series.bars.barWidth = 1;
+    }
+    else if(this.dateGranularity() == "year") {
+    	retval.xaxis.mode = "time";
+    	retval.xaxis.minTickWidth = [1, "year"];
+    	retval.series.bars.barWidth = 0.8*365*86400000;
+    } else if(this.dateGranularity() == "month") {
+		retval.xaxis.mode = "time";
+    	retval.series.bars.barWidth = 0.8*28*86400000;
+    	retval.xaxis.minTickWidth = [1, "month"];
+	}
+    
+    return retval;
+}, viewModel);
+
+
+function updatePlot() {
+	$.plot($("#graph_container"), viewModel.graphData(), viewModel.graphOptions());
+}
+
+viewModel.graphOptions.subscribe(updatePlot);
+viewModel.graphData.subscribe(updatePlot);
+
+function array_range(x,y,step) {
+	var retval = [];
+	if(!step) step = 1;
+	for(var i = x; i <= y; i+=step)
+		retval.push(i);
+	return retval;
+}
+
+
+
+function fakeData(state) {
+	return state.buckets.map(function(x) {
+		if (state.horizontalAxis == "page")
+			return array_range(1, 30).map(function(a) {
+				return [a, parseInt(Math.random() * 30)];
+			});
+		else if(state.dateGranularity == "year")
+			return array_range(state.startYear, state.endYear).map(function(a) {
+				return [new Date(a-1,7,1).getTime(), parseInt(Math.random() * 30)];
+			});
+		else if (state.dateGranularity == "month")
+			return array_range(state.startYear, state.endYear).map(function(a) {
+				return array_range(0,11).map(function(b) {
+					return [new Date(a,b,1).getTime(),parseInt(Math.random() * 30)]
+				});
+			}).reduce(function(m,n) {
+				return m.concat(n);
+			});
+		else if (state.dateGranularity == "fixed #")
+			return array_range(1, state.dateGranularityFixed).map(function(a) {
+				return [a, parseInt(Math.random() * 30)];
+			});
+	}).map(function(x,x_i) { 
+		return { data: x, label: "series "+(x_i+1) };
+	});
+}
+
 
 function LemmaOrEntityTerm(a) {
 	return OrTerm(DocLemmaTerm(a),DocEntityTerm(a));
@@ -168,14 +220,14 @@ function queryForModelState(state) {
 			}
 		} else if (state.dateGranularity == "month") {
 			for(var i = state.startYear; i <= state.endYear; i++) {
-				for(var j = 1; j <= 12; j++) {
+				for(var j = 0; j < 12; j++) {
 					query.buckets_.push(MonthTerm(i,j));
 				}
 			}
 		} else if (state.dateGranularity == "fixed #") {
 			// TODO
 		}
-	} else if (state.horizontalAxis == "page number") {
+	} else if (state.horizontalAxis == "page") {
 		// TODO: make clever buckets rather than 1 by 1
 		for(var i = 1; i <= 30; i++) {
 			query.buckets_.push(PageTerm(i,i+1));
@@ -217,6 +269,7 @@ addMockData();
 ko.applyBindings(viewModel);
 
 
+
 $("#slider-range").slider({
 	range: true,
 	min: 2000,
@@ -227,7 +280,6 @@ $("#slider-range").slider({
 		viewModel.endYear(ui.values[1])
 	}
 });
-
 
 // Fix for two-way binding when the start/end years are changed. This might be brittle
 function updateSlider() {
@@ -282,7 +334,10 @@ function queryChanged() {
 	// will get called anytime the query gets changed in any way
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
 	viewModel.save();
+	viewModel.graphData(fakeData(viewModel.toPlainObject()));
 }
+
+
 
 viewModel.filters.subscribe(queryChanged);
 viewModel.buckets.subscribe(queryChanged);
@@ -292,8 +347,5 @@ viewModel.horizontalAxis.subscribe(queryChanged);
 viewModel.dateGranularity.subscribe(queryChanged);
 viewModel.dateGranularityFixed.subscribe(queryChanged);
 
-
-
-
-
-
+viewModel.graphData(fakeData(viewModel.toPlainObject()));
+updatePlot();

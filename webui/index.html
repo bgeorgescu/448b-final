@@ -6,6 +6,8 @@
 <script type="text/javascript" src="lib/jquery-ui-1.8.16.custom.min.js"></script>
 <script type="text/javascript" src="lib/date-en-US.js"></script>
 <script type="text/javascript" src="../eclipse/data/js/query.js"></script>
+<script type="text/javascript" src="lib/jquery.flot.min.js""></script>
+<script type="text/javascript" src="lib/jquery.flot.stack.min.js""></script>
 
 
 <link type="text/css" href="lib/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
@@ -35,13 +37,13 @@
 
 <div class="container_16">
   <div class="grid_3">
-  	<strong>Buckets:</strong> <a href="#" onclick="$('#bucketList').toggleClass('edit'); $(this).children().toggle(); return false;" class="btn"><span style="display:none;">done editing</span><span>edit</span></a>
+  	<strong>Series:</strong> <a href="#" onclick="$('#bucketList').toggleClass('edit'); $(this).children().toggle(); return false;" class="btn"><span style="display:none;">done editing</span><span>edit</span></a>
   	<div isFilterList id="bucketList" data-bind='template: {name: "filterItemTemplate", foreach: buckets() }'> </div>
   	<a href="#" data-bind="click: function() { newFilterWithEmptyLiteralTo(viewModel.addBucket); }" class="btn onlyedit">+bucket</a>
   </div>
   <div class="grid_11">
-	<div style="width:100%; height:400px; background:green;color:white;">
-	<h1>Graph goes here</h1>
+	<div style="width:100%; height:400px;" id="graph_container">
+	
 	</div>
   </div>
   <div class="grid_2">
@@ -102,6 +104,5 @@
 </div>
 
 <script type="text/javascript" src="448b.js"></script>
-<script type="text/javascript" src="448b-query.js"></script>
 </body>
 </html>
