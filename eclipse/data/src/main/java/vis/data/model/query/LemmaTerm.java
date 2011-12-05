@@ -19,6 +19,7 @@ public class LemmaTerm extends Term {
 		public int hashCode() {
 			int hashCode = new Boolean(filterOnly_).hashCode();
 			hashCode ^= id_;
+			hashCode ^= Parameters.class.hashCode();
 			if(lemma_ != null)
 				hashCode ^= lemma_.hashCode();
 			if(pos_ != null)
@@ -52,20 +53,19 @@ public class LemmaTerm extends Term {
 			return true;
 		}	
 	}
-
-	DocForLemmaAccessor dlh = new DocForLemmaAccessor();
 	
-	public final int[] lemmas_;
 	public final boolean filterOnly_;
 	public final Parameters parameters_;
 	public final int docs_[];
 	public final int count_[];
 	public LemmaTerm(Parameters p) throws SQLException {
+		int lemmas[];
+		DocForLemmaAccessor dlh = new DocForLemmaAccessor();
 		parameters_ = p;
 		filterOnly_ = p.filterOnly_;
 		if(p.id_ != 0) {
-			lemmas_ = new int[1];
-			lemmas_[0] = p.id_;
+			lemmas = new int[1];
+			lemmas[0] = p.id_;
 		} else if (p.lemma_ != null || p.pos_ != null){
 			LemmaAccessor lr = new LemmaAccessor();
 			RawLemma rls[] = null;
@@ -90,18 +90,18 @@ public class LemmaTerm extends Term {
 				ids[i] = rls[i].id_;
 			}
 			Arrays.sort(ids);
-			lemmas_ = ids;
+			lemmas = ids;
 		} else {
 			throw new RuntimeException("failed setting up LemmaTerm");
 		}
 
-		if(lemmas_.length == 0) {
+		if(lemmas.length == 0) {
 			docs_ = new int[0];
 			count_ = new int[0];
 		} else {
-			DocForLemmaAccessor.Counts initial = dlh.getDocCounts(lemmas_[0]);
-			for(int i = 1; i < lemmas_.length; ++i) {
-				DocForLemmaAccessor.Counts partial = dlh.getDocCounts(lemmas_[1]);
+			DocForLemmaAccessor.Counts initial = dlh.getDocCounts(lemmas[0]);
+			for(int i = 1; i < lemmas.length; ++i) {
+				DocForLemmaAccessor.Counts partial = dlh.getDocCounts(lemmas[1]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
 				initial.docId_ = res.getKey();
 				initial.count_ = res.getValue();
@@ -127,7 +127,7 @@ public class LemmaTerm extends Term {
 
 	@Override
 	public int[] filter(int[] items) throws SQLException {
-		if(lemmas_.length == 0)
+		if(docs_.length == 0)
 			return new int[0];
 		if(items == null)
 			return docs_;
@@ -138,7 +138,7 @@ public class LemmaTerm extends Term {
 	@Override
 	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
 			throws SQLException {
-		if(lemmas_.length == 0)
+		if(docs_.length == 0)
 			return Pair.of(new int[0], new int[0]);
 		if(in_docs == null)
 			return Pair.of(docs_, new int[docs_.length]);
@@ -149,7 +149,7 @@ public class LemmaTerm extends Term {
 	@Override
 	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
 			throws SQLException {
-		if(lemmas_.length == 0)
+		if(docs_.length == 0)
 			return Pair.of(new int[0], new int[0]);
 		if(in_docs == null)
 			return Pair.of(docs_, count_);

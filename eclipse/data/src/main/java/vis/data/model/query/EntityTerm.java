@@ -19,6 +19,7 @@ public class EntityTerm extends Term {
 		public int hashCode() {
 			int hashCode = new Boolean(filterOnly_).hashCode();
 			hashCode ^= id_;
+			hashCode ^= Parameters.class.hashCode();
 			if(entity_ != null)
 				hashCode ^= entity_.hashCode();
 			if(type_ != null)
@@ -52,20 +53,19 @@ public class EntityTerm extends Term {
 			return true;
 		}	
 	}
-
-	DocForEntityAccessor deh = new DocForEntityAccessor();
 	
-	public final int[] entities_;
 	public final boolean filterOnly_;
 	public final Parameters parameters_;
 	public final int docs_[];
 	public final int count_[];
 	public EntityTerm(Parameters p) throws SQLException {
+		DocForEntityAccessor deh = new DocForEntityAccessor();
+		int entities[];
 		parameters_ = p;
 		filterOnly_ = p.filterOnly_;
 		if(p.id_ != 0) {
-			entities_ = new int[1];
-			entities_[0] = p.id_;
+			entities = new int[1];
+			entities[0] = p.id_;
 		} else if (p.entity_ != null || p.type_ != null){
 			EntityAccessor er = new EntityAccessor();
 			RawEntity rls[] = null;
@@ -90,18 +90,18 @@ public class EntityTerm extends Term {
 				ids[i] = rls[i].id_;
 			}
 			Arrays.sort(ids);
-			entities_ = ids;
+			entities = ids;
 		} else {
 			throw new RuntimeException("failed setting up LemmaTerm");
 		}
 
-		if(entities_.length == 0) {
+		if(entities.length == 0) {
 			docs_ = new int[0];
 			count_ = new int[0];
 		} else {
-			DocForEntityAccessor.Counts initial = deh.getDocCounts(entities_[0]);
-			for(int i = 1; i < entities_.length; ++i) {
-				DocForEntityAccessor.Counts partial = deh.getDocCounts(entities_[1]);
+			DocForEntityAccessor.Counts initial = deh.getDocCounts(entities[0]);
+			for(int i = 1; i < entities.length; ++i) {
+				DocForEntityAccessor.Counts partial = deh.getDocCounts(entities[1]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
 				initial.docId_ = res.getKey();
 				initial.count_ = res.getValue();
@@ -127,7 +127,7 @@ public class EntityTerm extends Term {
 
 	@Override
 	public int[] filter(int[] items) throws SQLException {
-		if(entities_.length == 0)
+		if(docs_.length == 0)
 			return new int[0];
 		if(items == null)
 			return docs_;
@@ -138,7 +138,7 @@ public class EntityTerm extends Term {
 	@Override
 	public Pair<int[], int[]> filter(int[] in_docs, int[] in_counts)
 			throws SQLException {
-		if(entities_.length == 0)
+		if(docs_.length == 0)
 			return Pair.of(new int[0], new int[0]);
 		if(in_docs == null)
 			return Pair.of(docs_, new int[docs_.length]);
@@ -149,7 +149,7 @@ public class EntityTerm extends Term {
 	@Override
 	public Pair<int[], int[]> aggregate(int[] in_docs, int[] in_counts)
 			throws SQLException {
-		if(entities_.length == 0)
+		if(docs_.length == 0)
 			return Pair.of(new int[0], new int[0]);
 		if(in_docs == null)
 			return Pair.of(docs_, count_);

@@ -14,6 +14,7 @@ public class SQLDateTerm extends SQLTerm {
 		@Override
 		public int hashCode() {
 			int hashCode = 0;
+			hashCode ^= Parameters.class.hashCode();
 			if(before_ != null)
 				hashCode ^= before_.hashCode();
 			if(after_ != null)
@@ -42,10 +43,6 @@ public class SQLDateTerm extends SQLTerm {
 		}
 	}
 	
-	@Override
-	public boolean isFilter() {
-		return false;
-	}
 	public final Parameters parameters_;
 	public SQLDateTerm(Parameters p) throws SQLException {
 		super(buildQuery(p));

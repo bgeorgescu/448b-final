@@ -8,20 +8,16 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-import vis.data.model.RawSentiment;
-import vis.data.model.meta.SentimentAccessor;
-
-public class Sentiments {
-	@Path("/api/sentiments")
+public class Publications {
+	@Path("/api/publications")
 	public static class All {
 		@GET
 		@Produces("application/json")
 		public Map<Integer, String> listAll() throws SQLException {
-			SentimentAccessor sr = new SentimentAccessor();
-			Map<Integer, String> m = new TreeMap<Integer, String>();
-			for(RawSentiment rs : sr.listSentiments()) {
-				m.put(rs.id_, rs.sentiment_);
-			}
+			Map<Integer,String> m = new TreeMap<Integer, String>();
+			m.put(7556, "Baltimore Sun");
+			m.put(7683, "Los Angeles Times");
+			m.put(7684, "Chicago Tribune");
 			return m;
 		}
 	}

@@ -35,10 +35,18 @@ public abstract class SQLTerm extends Term {
 			st.close();
 		}
 	}
+	protected static String clean(String query) {
+		return query.replaceAll("[A-Za-z0-9 ]+", "");
+	}
 
 	@Override
 	public int size() {
 		return ids_.length;
+	}
+
+	@Override
+	public boolean isFilter() {
+		return true;
 	}
 
 	@Override

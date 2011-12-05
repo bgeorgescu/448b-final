@@ -17,6 +17,7 @@ public class DateTerm extends Term {
 		@Override
 		public int hashCode() {
 			int hashCode = 0;
+			hashCode ^= Parameters.class.hashCode();
 			if(before_ != null)
 				hashCode ^= before_.hashCode();
 			if(after_ != null)
