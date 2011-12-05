@@ -55,12 +55,20 @@
   &nbsp;
   </div>
   <div class="grid_13">
-  <strong>Horizontal axis:</strong>
-  <label><input type="radio" value="page" data-bind="checked: horizontalAxis" />page number</label>
-  <label><input type="radio" value="date" data-bind="checked: horizontalAxis" />date</label>
-  <select data-bind="options: dateGranularityOptions, value: dateGranularity, visible: horizontalAxis()=='date' "></select>
-  <input data-bind="value: dateGranularityFixed, visible: horizontalAxis()=='date' && dateGranularity()=='fixed #'" />
+	  <div>
+		  <strong>Horizontal axis:</strong>
+		  <label><input type="radio" value="page" data-bind="checked: horizontalAxis" />page number</label>
+		  <label><input type="radio" value="date" data-bind="checked: horizontalAxis" />date</label>
+		  <select data-bind="options: dateGranularityOptions, value: dateGranularity, visible: horizontalAxis()=='date' "></select>
+		  <input data-bind="value: dateGranularityFixed, visible: horizontalAxis()=='date' && dateGranularity()=='fixed #'" />
+	  </div>
+	  <div>
+		  <strong>Display settings</strong>
+		  <select data-bind="options: graphModeOptions, value: graphMode"></select>
+		  <label><input type="checkbox" data-bind="checked: graphStack" />stacked</label>
+	  </div>
   </div>
+  
   <div class="clear"></div>
 </div>
 

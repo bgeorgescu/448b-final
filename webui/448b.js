@@ -68,14 +68,13 @@ SearchFilter.prototype.toPlainObject = function() {
 
  
 var viewModel = {
-
 	filters: ko.observableArray([]),
 	buckets: ko.observableArray([]),
 	startYear: ko.observable(2000),
 	endYear: ko.observable(2010),
 	horizontalAxis: ko.observable("date"),
 	dateGranularity: ko.observable("year"),
-	dateGranularityOptions: ["year", "month", "fixed #"],
+	dateGranularityOptions: ["year", "month" /*, "fixed #"*/],
 	dateGranularityFixed: ko.observable(100),
 	
 	addFilter: function (filter) {
@@ -119,6 +118,7 @@ var viewModel = {
     
     debug: true,
 	suggestions: ko.observableArray([]), 
+	graphModeOptions: ["bars","lines","steps"],
 	graphMode: ko.observable("bars"),
 	graphStack: ko.observable(true),
 	graphData: ko.observable([]),
@@ -127,7 +127,7 @@ var viewModel = {
 viewModel.graphOptions = ko.dependentObservable(function() {
     var retval = {
 		series: {
-			stack: this.graphStack(),
+			stack: this.graphStack() ? 1 : null,
 			lines: { show: (this.graphMode() == "lines" || this.graphMode() == "steps"), fill: true, steps: this.graphMode() == "steps" },
 			bars: { show: this.graphMode() == "bars",
 					barWidth: 1 }
@@ -136,16 +136,20 @@ viewModel.graphOptions = ko.dependentObservable(function() {
     };
     
     if(this.horizontalAxis() == "page") {
-    	retval.series.bars.barWidth = 1;
+		// noop
     }
     else if(this.dateGranularity() == "year") {
     	retval.xaxis.mode = "time";
     	retval.xaxis.minTickWidth = [1, "year"];
     	retval.series.bars.barWidth = 0.8*365*86400000;
+    	retval.xaxis.min = new Date(this.startYear(), 1, 1).getTime();
+    	retval.xaxis.max = new Date(this.endYear(), 12, 31).getTime();
     } else if(this.dateGranularity() == "month") {
 		retval.xaxis.mode = "time";
     	retval.series.bars.barWidth = 0.8*28*86400000;
     	retval.xaxis.minTickWidth = [1, "month"];
+        retval.xaxis.min = new Date(this.startYear(), 0, 1).getTime();
+    	retval.xaxis.max = new Date(this.endYear(), 11, 31).getTime();	
 	}
     
     return retval;
@@ -155,6 +159,7 @@ viewModel.graphOptions = ko.dependentObservable(function() {
 function updatePlot() {
 	$.plot($("#graph_container"), viewModel.graphData(), viewModel.graphOptions());
 }
+
 
 viewModel.graphOptions.subscribe(updatePlot);
 viewModel.graphData.subscribe(updatePlot);
@@ -167,8 +172,6 @@ function array_range(x,y,step) {
 	return retval;
 }
 
-
-
 function fakeData(state) {
 	return state.buckets.map(function(x) {
 		if (state.horizontalAxis == "page")
@@ -177,7 +180,7 @@ function fakeData(state) {
 			});
 		else if(state.dateGranularity == "year")
 			return array_range(state.startYear, state.endYear).map(function(a) {
-				return [new Date(a-1,7,1).getTime(), parseInt(Math.random() * 30)];
+				return [new Date(a,1,1).getTime(), parseInt(Math.random() * 30)];
 			});
 		else if (state.dateGranularity == "month")
 			return array_range(state.startYear, state.endYear).map(function(a) {
@@ -192,7 +195,7 @@ function fakeData(state) {
 				return [a, parseInt(Math.random() * 30)];
 			});
 	}).map(function(x,x_i) { 
-		return { data: x, label: "series "+(x_i+1) };
+		return { data: x, label: state.buckets[x_i].disjunction[0] };
 	});
 }
 
@@ -213,25 +216,25 @@ function queryForModelState(state) {
 		.filter(function(x) { return x.filterType == "text" })
 		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).reduce(OrTerm)});
 	
-	if(state.horizontalAxis == "date") {
-		if(state.dateGranularity == "year") {
-			for(var i = state.startYear; i <= state.endYear; i++) {
-				query.buckets_.push(YearTerm(i));
-			}
-		} else if (state.dateGranularity == "month") {
-			for(var i = state.startYear; i <= state.endYear; i++) {
-				for(var j = 0; j < 12; j++) {
-					query.buckets_.push(MonthTerm(i,j));
-				}
-			}
-		} else if (state.dateGranularity == "fixed #") {
-			// TODO
-		}
-	} else if (state.horizontalAxis == "page") {
-		// TODO: make clever buckets rather than 1 by 1
-		for(var i = 1; i <= 30; i++) {
-			query.buckets_.push(PageTerm(i,i+1));
-		}
+	
+	if (state.horizontalAxis == "page")
+		query.buckets = array_range(1, 30).map(function(a) {
+			return PageTerm(a,a+1);
+		});
+	else if(state.dateGranularity == "year")
+		query.buckets = array_range(state.startYear, state.endYear).map(function(a) {
+			return YearTerm(a);
+		});
+	else if (state.dateGranularity == "month")
+		query.buckets = array_range(state.startYear, state.endYear).map(function(a) {
+			return array_range(0,11).map(function(b) {
+				return MonthTerm(a,b);
+			});
+		}).reduce(function(m,n) {
+			return m.concat(n);
+		});
+	else if (state.dateGranularity == "fixed #") {
+		// ?
 	}
 	
 	return query;
