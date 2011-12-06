@@ -2,11 +2,6 @@ success = function(code){
     return code >= 200 && code <= 300;
 }
 
-FILTER_DOCS = "/api/filter/docs";
-TALLY_HITS = "/api/tally/hits";
-TALLY_DOCS = "/api/tally/docs";
-TALLY_LEMMAS = "/api/tally/lemmas";
-TALLY_ENTITIES = "/api/tally/entities";
 AUTOCOMPLETE_BASE = "/api/autocomplete/term/";
 AUTOCOMPLETE_TYPE_LIST = "/api/autocomplete/types";
 
@@ -44,7 +39,6 @@ YearTerm = function(year) {
 MonthTerm = function(year, month) {
     return {date_:{before_:(year)*10000+(month+2)*100, after_:(year*10000)+(month+1)*100}};
 }
-//new not yet implemented
 OrTerm = function() {
     var terms = [];
     for(var i = 0; i < arguments.length; ++i) {

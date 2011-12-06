@@ -137,9 +137,51 @@
                     ],
                     includeText_:true,
                     threshold_:undefined,
-                    maxResults_:100,
+                    maxResults_:10,
                 },
-                function(c,r,d){report("top 100 terms for obama",c,r,d);}
+                function(c,r,d){report("top 10 terms for obama",c,r,d);}
+            );
+        });
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/lemmas", 
+                {
+                    series_:[
+                        DocLemmaTerm(
+                            OrTerm(
+                                EntityTerm('barack obama'),
+                                EntityTerm('obama'),
+                                LemmaTerm('obama')
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:100,
+                    posPrefix_:"N"
+                },
+                function(c,r,d){report("top 100 noun terms for obama",c,r,d);}
+            );
+        });
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/lemmas", 
+                {
+                    series_:[
+                        DocLemmaTerm(
+                            OrTerm(
+                                EntityTerm('barack obama'),
+                                EntityTerm('obama'),
+                                LemmaTerm('obama')
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:100,
+                    posPrefix_:"V"
+                },
+                function(c,r,d){report("top 100 verb terms for obama",c,r,d);}
             );
         });
 

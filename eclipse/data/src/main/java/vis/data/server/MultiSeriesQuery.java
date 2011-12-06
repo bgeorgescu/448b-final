@@ -153,12 +153,15 @@ public class MultiSeriesQuery {
 		public int id_[];
 		public int count_[];
 		public String lemma_[];
-		public String pos_[];
+		public String posPrefix_[];
 	}
 	public static class ReferencedFiltered extends Filtered {
 		public boolean includeText_;
 		public Integer threshold_;
 		public Integer maxResults_;
+	}
+	public static class ReferencedFilteredPosed extends ReferencedFiltered {
+		public String posPrefix_;
 	}
 	@Path("/api/query/lemmas")
 	public static class TallyLemmas {
@@ -166,7 +169,7 @@ public class MultiSeriesQuery {
 		@POST
 		@Consumes("application/json")
 		@Produces("application/json")
-		public LemmaCounts[] tallyLemmas(ReferencedFiltered rf) throws SQLException {
+		public LemmaCounts[] tallyLemmas(ReferencedFilteredPosed rf) throws SQLException {
 			if(rf.filter_ != null)
 				throw new RuntimeException("filter_ not supported for lemma tally, put it in a series");
 			EvaluateOne.Results r = eo.evaluateOne(rf);
@@ -180,8 +183,7 @@ public class MultiSeriesQuery {
 				if(rf.threshold_ != null) {
 					result = CountAggregator.threshold(result.getKey(), result.getValue(), rf.threshold_);
 				}
-				if(rf.maxResults_ != null) {
-					CountAggregator.sortByCountDesc(result.getKey(), result.getValue());
+				if(rf.maxResults_ != null && rf.posPrefix_ == null) {
 					result = Pair.of(
 						ArrayUtils.subarray(result.getKey(), 0, rf.maxResults_),
 						ArrayUtils.subarray(result.getValue(), 0, rf.maxResults_));
@@ -191,21 +193,42 @@ public class MultiSeriesQuery {
 				lc[i].count_ = result.getValue();
 				
 				
-				if(rf.includeText_) {
+				if(rf.includeText_ || rf.posPrefix_ != null) {
+					int id[] = lc[i].id_;
+					int count[] = lc[i].count_;
 					LemmaAccessor lr = new LemmaAccessor();
 					//TODO: make this batched
-					lc[i].lemma_ = new String[lc[i].id_.length];
-					lc[i].pos_ = new String[lc[i].id_.length];
-					for(int j = 0; j < lc[i].id_.length; ++j) {
-						RawLemma rl = lr.getLemma(lc[i].id_[j]);
-						lc[i].lemma_[j] = rl.lemma_;
-						lc[i].pos_[j] = rl.pos_;
+					lc[i].id_ = new int[id.length];
+					lc[i].count_ = new int[id.length];
+					lc[i].lemma_ = new String[id.length];
+					lc[i].posPrefix_ = new String[id.length];
+					int j, k;
+					for(j = 0, k = 0; j < id.length; ++j) {
+						RawLemma rl = lr.getLemma(id[j]);
+						if(rf.posPrefix_ == null || rl.pos_.startsWith(rf.posPrefix_)) {
+							lc[i].id_[k] = id[j];
+							lc[i].count_[k] = count[j];
+							lc[i].lemma_[k] = rl.lemma_;
+							lc[i].posPrefix_[k] = rl.pos_;
+							++k;
+						}
+						if(rf.maxResults_ != null && k == rf.maxResults_)
+							break;
+					}
+					if(j != k) {
+						lc[i].id_ = ArrayUtils.subarray(lc[i].id_, 0, k);
+						lc[i].count_ = ArrayUtils.subarray(lc[i].count_, 0, k);
+						lc[i].lemma_ = ArrayUtils.subarray(lc[i].lemma_, 0, k);
+						lc[i].posPrefix_ = ArrayUtils.subarray(lc[i].posPrefix_, 0, k);
 					}
 				}
 			}
 			return lc;
 		}
 	}	
+	public static class ReferencedFilteredTyped extends ReferencedFiltered {
+		public String type_;
+	}
 	public static class EntityCounts {
 		public int id_[];
 		public int count_[];
@@ -218,7 +241,7 @@ public class MultiSeriesQuery {
 		@POST
 		@Consumes("application/json")
 		@Produces("application/json")
-		public EntityCounts[] tallyEntities(ReferencedFiltered rf) throws SQLException {
+		public EntityCounts[] tallyEntities(ReferencedFilteredTyped rf) throws SQLException {
 			if(rf.filter_ != null)
 				throw new RuntimeException("filter_ not supported for entity tally, put it in a series");
 			EvaluateOne.Results r = eo.evaluateOne(rf);
@@ -235,8 +258,7 @@ public class MultiSeriesQuery {
 				if(rf.threshold_ != null) {
 					result = CountAggregator.threshold(result.getKey(), result.getValue(), rf.threshold_);
 				}
-				if(rf.maxResults_ != null) {
-					CountAggregator.sortByCountDesc(result.getKey(), result.getValue());
+				if(rf.maxResults_ != null && rf.type_ == null) {
 					result = Pair.of(
 						ArrayUtils.subarray(result.getKey(), 0, rf.maxResults_),
 						ArrayUtils.subarray(result.getValue(), 0, rf.maxResults_));
@@ -246,15 +268,33 @@ public class MultiSeriesQuery {
 				ec[i].count_ = result.getValue();
 				
 				
-				if(rf.includeText_) {
+				if(rf.includeText_ || rf.type_ != null) {
+					int id[] = ec[i].id_;
+					int count[] = ec[i].count_;
 					EntityAccessor ea = new EntityAccessor();
 					//TODO: make this batched
-					ec[i].entity_ = new String[ec[i].id_.length];
-					ec[i].type_ = new String[ec[i].id_.length];
-					for(int j = 0; j < ec[i].id_.length; ++j) {
-						RawEntity re = ea.getEntity(ec[i].id_[j]);
-						ec[i].entity_[j] = re.entity_;
-						ec[i].type_[j] = re.type_;
+					ec[i].id_ = new int[id.length];
+					ec[i].count_ = new int[id.length];
+					ec[i].entity_ = new String[id.length];
+					ec[i].type_ = new String[id.length];
+					int j, k;
+					for(j = 0, k = 0; j < id.length; ++j) {
+						RawEntity re = ea.getEntity(id[j]);
+						if(rf.type_ == null || re.type_.equals(rf.type_)) {
+							ec[i].id_[k] = id[j];
+							ec[i].count_[k] = count[j];
+							ec[i].entity_[k] = re.entity_;
+							ec[i].type_[k] = re.type_;
+							++k;
+						}
+						if(rf.maxResults_ != null && k == rf.maxResults_)
+							break;
+					}
+					if(j != k) {
+						ec[i].id_ = ArrayUtils.subarray(ec[i].id_, 0, k);
+						ec[i].count_ = ArrayUtils.subarray(ec[i].count_, 0, k);
+						ec[i].entity_ = ArrayUtils.subarray(ec[i].entity_, 0, k);
+						ec[i].type_ = ArrayUtils.subarray(ec[i].type_, 0, k);
 					}
 				}
 			}
