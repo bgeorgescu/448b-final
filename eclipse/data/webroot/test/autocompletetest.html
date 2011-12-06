@@ -57,7 +57,7 @@
     
         autocompletes = [];
         function doNextAutoComplete() {
-            if(queries.length == 0) {
+            if(autocompletes.length == 0) {
                 $("<h1/>")
                     .text("DONE")
                     .appendTo("body");
