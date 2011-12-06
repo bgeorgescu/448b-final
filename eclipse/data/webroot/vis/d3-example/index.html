@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Pie Chart</title>
-    <script type="text/javascript" src="/js/d3/d3.min.js"></script>
-    <script type="text/javascript" src="/js/d3/d3.layout.min.js"></script>
-   <link rel="stylesheet" href="/css/global.css" type="text/css" />
+    <script type="text/javascript" src="d3/d3.min.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.min.js"></script>
+   <link rel="stylesheet" href="../../css/global.css" type="text/css" />
     <style type="text/css">
 
 body {
@@ -21,7 +21,7 @@ var w = 400,
     h = 400,
     r = Math.min(w, h) / 2,
     data = d3.range(10).map(Math.random),
-    color = d3.scale.category20(),
+    color = d3.scale.category20b(),
     arc = d3.svg.arc().outerRadius(r),
     donut = d3.layout.pie();
 

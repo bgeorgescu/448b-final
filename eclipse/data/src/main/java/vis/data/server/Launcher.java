@@ -51,7 +51,7 @@ public class Launcher {
         Server server = new Server(port);
 		ServletContextHandler root = new ServletContextHandler(ServletContextHandler.SESSIONS);
 		root.setContextPath("/");
-		root.setResourceBase(new File(".").getAbsolutePath());
+		root.setResourceBase(new File("webroot").getAbsolutePath());
 		//make the default page go to the top level thing
 		root.setWelcomeFiles(new String[] { "index.html" } );
 
@@ -68,6 +68,8 @@ public class Launcher {
 		root.addServlet(ssh, "/html/*");
 		root.addServlet(ssh, "/css/*");
 		root.addServlet(ssh, "/js/*");
+		root.addServlet(ssh, "/vis/*");
+		root.addServlet(ssh, "/test/*");
 
 		
 		//add redirects for the root
