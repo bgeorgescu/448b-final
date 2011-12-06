@@ -133,7 +133,8 @@ viewModel.graphOptions = ko.dependentObservable(function() {
 			bars: { show: this.graphMode() == "bars",
 					barWidth: 0.8 }
 		},
-		xaxis: {}
+		xaxis: {},
+		yaxis: {min: 0 },
     };
     
     if(this.horizontalAxis() == "page") {
@@ -220,14 +221,15 @@ function queryForModelState(state) {
 	var query = { filter_: false, series_: [], buckets_:[] };
 	var AndHelper = function(arr) { return arr.length > 1 ? {and_:{terms_: arr }} : arr[0]; };
 	var OrHelper = function(arr) { return arr.length > 1 ? {or_:{terms_: arr }} : arr[0]; };
+	var NotNull = function(a) { return a != null; };
 	
 	var WordToTerm = LemmaTerm;
 	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
 	
 	query.filter_ = 
 		AndHelper(state.filters
-		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return OrHelper(x.disjunction.map(WordToTerm)); }))
+		.filter(function(x) { return (x.filterType == "text") && (x.disjunction.length) })
+		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm).filter(NotNull)); }))
 	
 	
 	/*
@@ -238,8 +240,8 @@ function queryForModelState(state) {
 	*/
 	
 	query.series_ = state.buckets
-		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return  OrHelper(x.disjunction.map(WordToTerm)); });
+		.filter(function(x) { return x.filterType == "text" && (x.disjunction.length) })
+		.map(function(x) { return  OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm)); }).filter(NotNull);
 	
 	/*
 	query.series_ = state.buckets
