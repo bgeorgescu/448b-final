@@ -344,30 +344,7 @@ function queryChanged() {
             }
             if(gen != current_generation)
                 return;
-            //TODO: maybe a better way to do this
-            if(viewModel.horizontalAxis() == "time") {
-                if(viewModel.dateGranularity() == "year") {
-                    viewModel.graphData(
-                        r
-                        .map(function(x, x_i) {
-                            
-                            return {data: x.map(function(y,y_i) {
-                                return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
-                            }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
-                        }));
-                } else if(viewModel.dateGranularity() == "month") {
-                    viewModel.graphData(
-                        r
-                        .map(function(x, x_i) {
-                            
-                            return {data: x.map(function(y,y_i) {
-                                return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
-                            }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
-                        }));
-                } else {
-                    //?
-                }
-            } else if(viewModel.horizontalAxis() == "page") {
+			if(viewModel.horizontalAxis() == "page") {
                 viewModel.graphData(
                     r
                     .map(function(x, x_i) {
@@ -376,18 +353,25 @@ function queryChanged() {
                             return [y_i + 1,y];
                         }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]() */};
                     }));
-            } else if(viewModel.dateGranularity() == "month") {
-                viewModel.graphData(
-                    r
-                    .map(function(x, x_i) {
-                        
-                        return {data: x.map(function(y,y_i) {
-                            return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
-                        }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
-                    }));
-            } else {
-                //?
-            }
+			} else if(viewModel.dateGranularity() == "year") {
+				viewModel.graphData(
+					r
+					.map(function(x, x_i) {
+						
+						return {data: x.map(function(y,y_i) {
+							return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
+						}), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
+					}));
+			} else if(viewModel.dateGranularity() == "month") {
+				viewModel.graphData(
+					r
+					.map(function(x, x_i) {
+					
+						return {data: x.map(function(y,y_i) {
+							return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
+						}), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
+					}));
+			}
         }.bind(this, ++current_generation, query));
     
 }
