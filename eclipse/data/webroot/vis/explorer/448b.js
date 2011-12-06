@@ -142,7 +142,7 @@ viewModel.graphOptions = ko.dependentObservable(function() {
     }
     else if(this.horizontalAxis() == "date") {
     	retval.xaxis.mode = "time";
-		retval.xaxis.min = new Date(this.startYear(), 1, 1).getTime();
+		retval.xaxis.min = new Date(this.startYear(), 0, 1).getTime();
 		if(this.graphMode() == "lines" || this.graphMode() == "steps") {
 			if(this.dateGranularity() == "year") {
 				retval.xaxis.max = new Date(this.endYear(), 0, 1).getTime();
@@ -249,15 +249,15 @@ function queryForModelState(state) {
 		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).filter(isNaN).reduce(OrTerm)}).filter(isNaN);
 	*/
 	
-	if (state.horizontalAxis == "page")
+	if (state.horizontalAxis == "page") {
 		query.buckets_ = array_range(1, 30).map(function(a) {
 			return PageTerm(a,a+1);
 		});
-	else if(state.dateGranularity == "year")
+	} else if(state.dateGranularity == "year") {
 		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
 			return YearTerm(a);
 		});
-	else if (state.dateGranularity == "month")
+	} else if (state.dateGranularity == "month") {
 		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
 			return array_range(0,11).map(function(b) {
 				return MonthTerm(a,b);
@@ -265,7 +265,7 @@ function queryForModelState(state) {
 		}).reduce(function(m,n) {
 			return m.concat(n);
 		});
-	else if (state.dateGranularity == "fixed #") {
+	} else if (state.dateGranularity == "fixed #") {
 		// ?
 	}
 	
@@ -387,15 +387,29 @@ function queryChanged() {
             }
             if(gen != current_generation)
                 return;
-            //mapping needs work for other graph params
-            viewModel.graphData(
-                r
-                .map(function(x, x_i) {
-                    
-                    return {data: x.map(function(y,y_i) {
-                        return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
-                    }), label: viewModel.buckets()[x_i].disjunction()[0]() };
-                }));
+            //TODO: maybe a better way to do this
+            if(viewModel.dateGranularity() == "year") {
+                viewModel.graphData(
+                    r
+                    .map(function(x, x_i) {
+                        
+                        return {data: x.map(function(y,y_i) {
+                            return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
+                        }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                    }));
+            } else if(viewModel.dateGranularity() == "month") {
+                alert(JSON.stringify(r));
+                viewModel.graphData(
+                    r
+                    .map(function(x, x_i) {
+                        
+                        return {data: x.map(function(y,y_i) {
+                            return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
+                        }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                    }));
+            } else {
+                //?
+            }
         }.bind(this, ++current_generation, query));
 }
 
