@@ -183,6 +183,7 @@ public class MultiSeriesQuery {
 				if(rf.threshold_ != null) {
 					result = CountAggregator.threshold(result.getKey(), result.getValue(), rf.threshold_);
 				}
+				CountAggregator.sortByCountDesc(result.getKey(), result.getValue());
 				if(rf.maxResults_ != null && rf.posPrefix_ == null) {
 					result = Pair.of(
 						ArrayUtils.subarray(result.getKey(), 0, rf.maxResults_),
@@ -258,6 +259,7 @@ public class MultiSeriesQuery {
 				if(rf.threshold_ != null) {
 					result = CountAggregator.threshold(result.getKey(), result.getValue(), rf.threshold_);
 				}
+				CountAggregator.sortByCountDesc(result.getKey(), result.getValue());
 				if(rf.maxResults_ != null && rf.type_ == null) {
 					result = Pair.of(
 						ArrayUtils.subarray(result.getKey(), 0, rf.maxResults_),
