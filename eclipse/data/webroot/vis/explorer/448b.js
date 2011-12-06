@@ -353,7 +353,7 @@ function queryChanged() {
                             
                             return {data: x.map(function(y,y_i) {
                                 return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
-                            }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                            }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
                         }));
                 } else if(viewModel.dateGranularity() == "month") {
                     viewModel.graphData(
@@ -362,7 +362,7 @@ function queryChanged() {
                             
                             return {data: x.map(function(y,y_i) {
                                 return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
-                            }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                            }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
                         }));
                 } else {
                     //?
