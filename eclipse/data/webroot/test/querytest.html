@@ -563,6 +563,72 @@
                 );
             }.bind(undefined, i));
         }
+        queries.push(function(y) { 
+            arbitraryQuery("/api/query/entities", 
+                {
+                    series_:[
+                        DocEntityTerm(
+                            AndTerm(
+                                OrTerm(
+                                    LemmaTerm('election'),
+                                    LemmaTerm('vote')
+                                ),
+                                YearTerm(2010)
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:25,
+                    type_:"LOCATION",
+                },
+                function(c,r,d){report(y + "locations for election or vote 2010 for ",c,r,d);}
+            );
+        });
+        queries.push(function(y) { 
+            arbitraryQuery("/api/query/entities", 
+                {
+                    series_:[
+                        DocEntityTerm(
+                            AndTerm(
+                                OrTerm(
+                                    LemmaTerm('election'),
+                                    LemmaTerm('vote')
+                                ),
+                                YearTerm(2010)
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:25,
+                    type_:"ORGANIZATION",
+                },
+                function(c,r,d){report(y + "organizations for election or vote 2010 for ",c,r,d);}
+            );
+        });
+        queries.push(function(y) { 
+            arbitraryQuery("/api/query/entities", 
+                {
+                    series_:[
+                        DocEntityTerm(
+                            AndTerm(
+                                OrTerm(
+                                    LemmaTerm('election'),
+                                    LemmaTerm('vote')
+                                ),
+                                YearTerm(2010)
+                            )
+                        ),
+                    ],
+                    includeText_:true,
+                    threshold_:undefined,
+                    maxResults_:25,
+                    type_:"PERSON",
+                },
+                function(c,r,d){report(y + "people for election or vote 2010 for ",c,r,d);}
+            );
+        });
         doNextQuery();
     </script>
   </body>
