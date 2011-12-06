@@ -72,8 +72,7 @@ var viewModel = {
 	endYear: ko.observable(2010),
 	horizontalAxis: ko.observable("date"),
 	dateGranularity: ko.observable("year"),
-	dateGranularityOptions: ["year", "month" /*, "fixed #"*/],
-	dateGranularityFixed: ko.observable(100),
+	dateGranularityOptions: ["year", "month"],
     
     
     addBucket: function (observableArr) {
@@ -97,8 +96,6 @@ var viewModel = {
 		}
 		if(retval.horizontalAxis == "date") {
 			retval.dateGranularity = this.dateGranularity();
-			if(retval.dateGranularity == "fixed #")
-				retval.dateGranularityFixed = this.dateGranularityFixed();
 		}
 		return retval;
     },
@@ -165,12 +162,7 @@ viewModel.graphOptions = ko.dependentObservable(function() {
 }, viewModel);
 
 
-function updatePlot() {
-	$.plot($("#graph_container"), viewModel.graphData(), viewModel.graphOptions());
-}
 
-viewModel.graphOptions.subscribe(updatePlot);
-viewModel.graphData.subscribe(updatePlot);
 
 function array_range(x,y,step) {
 	var retval = [];
@@ -198,15 +190,15 @@ function fakeData(state) {
 			}).reduce(function(m,n) {
 				return m.concat(n);
 			});
-		else if (state.dateGranularity == "fixed #")
-			return array_range(1, state.dateGranularityFixed).map(function(a) {
-				return [a, parseInt(Math.random() * 30)];
-			});
 	}).map(function(x,x_i) { 
 		return { data: x, label: ""/*state.buckets[x_i].disjunction[0]*/ };
 	});
 }
 
+
+function updatePlot() {
+	$.plot($("#graph_container"), viewModel.graphData(), viewModel.graphOptions());
+}
 
 function LemmaOrEntityTerm(a) {
 	return OrTerm(LemmaTerm(a), EntityTerm(a));
@@ -222,37 +214,12 @@ function queryForModelState(state) {
 	var WordToTerm = LemmaTerm;
 	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
 	
-	/*
-	query.filter_ = 
-		AndHelper(state.filters
-		.filter(function(x) { return (x.filterType == "text") && (x.disjunction.length) })
-		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm).filter(NotNull)); }))
-	*/
-	
-	/*
-	query.filter_ = state.filters
-		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).filter(isNaN).reduce(OrTerm)})
-		.reduce(AndTerm);
-	*/
-	
-	/*
-	query.series_ = state.buckets
-		.filter(function(x) { return x.filterType == "text" && (x.disjunction.length) })
-		.map(function(x) { return  OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm)); }).filter(NotNull);
-	*/
 	
 	query.series_ = state.buckets.map(function(y) {
 		return AndHelper(y
 		.filter(function(x) { return (x.filterType == "text") && (x.disjunction.length) })
 		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm).filter(NotNull)); }))
 	});
-	
-	/*
-	query.series_ = state.buckets
-		.filter(function(x) { return x.filterType == "text" })
-		.map(function(x) { return x.disjunction.map(LemmaOrEntityTerm).filter(isNaN).reduce(OrTerm)}).filter(isNaN);
-	*/
 	
 	if (state.horizontalAxis == "page") {
 		query.buckets_ = array_range(1, 30).map(function(a) {
@@ -270,26 +237,16 @@ function queryForModelState(state) {
 		}).reduce(function(m,n) {
 			return m.concat(n);
 		});
-	} else if (state.dateGranularity == "fixed #") {
-		// ?
 	}
 	
 	return query;
 }
 
-function coolObservable() {
-	var c = new ko.observableArray([]);
-	c.prototype.oldpush = c.prototype.push;
-	c.prototype.push = function(x) { x.parent = this; this.push(x); };
-	return c;
-}
-
-
 containerPush = function(arr, x) {
 	x.container = arr;
 	arr.push(x);
+	if(x.disjunctions) x.subscribe.disjunctions(arr.valueHasMutated);
 }
-
 
 function addMockData() {
 	
@@ -367,23 +324,6 @@ $("#bucketList").parent().find(".dropzone").droppable({
 	}
 });
 
-var debug;
-function newInputsCallback() {
-	$("input.justAdded").removeClass("justAdded").blur(queryChanged);
-	$(".textFilterItem.justAdded").removeClass("justAdded").droppable({
-		accept: '.suggestion',
-		activeClass: "filterTextHover",
-		drop: function(event, ui) {
-			ko.dataFor(this).addLiteral($(ui.draggable).text());
-		}
-	});
-}
-
-viewModel.buckets.subscribe(newInputsCallback);
-
-function suggestionsAdded() {
-	$(".suggestion.justAdded").removeClass(".justAdded").draggable({helper: 'clone'});
-}
 
 viewModel.suggestions.subscribe(suggestionsAdded);
 
@@ -459,15 +399,34 @@ addMockData();
 ko.applyBindings(viewModel);
 
 
+function newInputsCallback() {
+	$("input.justAdded").removeClass("justAdded").blur(queryChanged);
+	$(".textFilterItem.justAdded").removeClass("justAdded").droppable({
+		accept: '.suggestion',
+		activeClass: "filterTextHover",
+		drop: function(event, ui) {
+			ko.dataFor(this).addLiteral($(ui.draggable).text());
+		}
+	});
+}
+
+viewModel.buckets.subscribe(newInputsCallback);
+
+function suggestionsAdded() {
+	$(".suggestion.justAdded").removeClass(".justAdded").draggable({helper: 'clone'});
+}
+
+
+viewModel.graphOptions.subscribe(updatePlot);
+viewModel.graphData.subscribe(updatePlot);
+
 viewModel.buckets.subscribe(queryChanged);
 viewModel.startYear.subscribe(queryChanged);
 viewModel.endYear.subscribe(queryChanged);
 viewModel.horizontalAxis.subscribe(queryChanged);
 viewModel.dateGranularity.subscribe(queryChanged);
-viewModel.dateGranularityFixed.subscribe(queryChanged);
 queryChanged();
 
-viewModel.graphData(fakeData(viewModel.toPlainObject()));
 updatePlot();
 suggestionsAdded();
 newInputsCallback();
@@ -480,3 +439,4 @@ newInputsCallback();
 				return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
 			}), label: ""/*viewModel.buckets()[x_i].disjunction()[0]()*/ };
 		}));
+
