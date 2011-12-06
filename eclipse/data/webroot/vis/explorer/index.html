@@ -19,29 +19,26 @@
 
 </head>
 <body>
-<div class="container_16"  id="filterBar">
-<h1>Newspaper Explorer</h1>
-
+<!--
   <div class="grid_14">
   	<strong>Filter:</strong> <a href="#" onclick="$('#filterList').toggleClass('edit'); $(this).children().toggle(); return false;" class="btn"><span style="display:none;">done editing</span><span>edit</span></a>
 	<div isFilterList id="filterList" data-bind='template: {name: "filterItemTemplate", foreach: filters() }'> </div>
 	<a href="#" data-bind="click: function() { newFilterWithEmptyLiteralTo(viewModel.addFilter); }" class="btn onlyedit">+clause</a>
 	<div class="dropzone">Drop for +clause</div>
   </div>
-    <div class="grid_2">
-    <div id="slider-range"></div>
+-->
+
+<div class="container_16">
+<h1>Newspaper Explorer</h1>
+
+  <div class="grid_3">
+      <div id="slider-range"></div>
 	<div id="amount">
 		<span data-bind="text: startYear"></span> - <span data-bind="text: endYear"></span>
 	</div>
-  </div>
-  <div class="clear"></div>
-</div>
-
-<div class="container_16">
-  <div class="grid_3">
-  	<strong>Series:</strong> <a href="#" onclick="$('#bucketList').toggleClass('edit'); $(this).children().toggle(); return false;" class="btn"><span style="display:none;">done editing</span><span>edit</span></a>
-  	<div isFilterList id="bucketList" data-bind='template: {name: "filterItemTemplate", foreach: buckets() }'> </div>
-  	<a href="#" data-bind="click: function() { newFilterWithEmptyLiteralTo(viewModel.addBucket); }" class="btn onlyedit">+series</a>
+  	<strong>Series:</strong> <a href="#" onclick="$('.series').toggleClass('edit'); $(this).children().toggle(); return false;" class="btn"><span style="display:none;">done editing</span><span>edit</span></a>
+  	<div id="bucketList" data-bind='template: "filterParentTemplate"'> </div>
+ <!-- 	<a href="#" data-bind="click: function() { newFilterWithEmptyLiteralTo(viewModel.addBucket); }" class="btn onlyedit">+series</a> -->
   	<div class="dropzone">Drop for +series</div>
 
   </div>
@@ -79,6 +76,12 @@
 
 
 <!--- TEMPLATES --->
+
+<script type="text/html" id="filterParentTemplate">
+{{each(i, $item) buckets()}}                    
+<div class="series" data-bind='template: {name:"filterItemTemplate", foreach: $item()}'></div>
+{{/each}}
+</script>
 
 <script type="text/html" id="filterItemTemplate">
 	{{if filterType=="text"}}

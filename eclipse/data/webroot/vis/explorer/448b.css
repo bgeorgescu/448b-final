@@ -1,8 +1,8 @@
-div[isFilterList] div {
-	display:inline;
+.series div {
+	display:block;
 }
 
-#filterList {
+.series {
 	/*background:#EEE;
 	display:block;
 	padding:10px;*/
@@ -10,25 +10,23 @@ div[isFilterList] div {
 	display:inline;
 }
 
-#filterList>div>div {
+.series>div>div {
 
 }
 
-#filterList>div>div {
-	white-space: nowrap;
-}
 
-#filterList>div:first-child:before {
+
+.series>div:first-child:before {
 	content: "("
 }
 
-#filterList>div:not(:first-child):before {
+.series>div:not(:first-child):before {
 	content: " and ("
 }
 
 
 
-#filterList>div:after {
+.series>div:after {
 	content: ")"
 }
 
@@ -38,12 +36,13 @@ div[isFilterList] div {
 }
 */
 
-div[isFilterList] .literal:not(:first-child):before {
+.series .literal:not(:first-child):before {
 	content: "or ";
 }
 
 .literal {
 	white-space:nowrap;
+    display:inline;
 }
 
 a.btn {
@@ -52,7 +51,7 @@ a.btn {
 	padding: 2px 3px 2px 3px;
 }
 
-div[isFilterList] span, .suggestion {
+.series span, .suggestion {
 	display:inline;
 	color: white;
 	background-color: #0064CD;
@@ -109,7 +108,7 @@ div[isFilterList] span, .suggestion {
 	padding-right:30px;
 }
 
-#bucketList .textFilterItem {
+#bucketList .series {
 	display:block;
 	border: 1px solid #CCC;
 	padding:10px;
@@ -117,20 +116,13 @@ div[isFilterList] span, .suggestion {
 	margin:3px 0 5px 0;
 }
 
-#bucketList .literal {
-	display:block;
-}
 
 
-div[isFilterList] .btn, div[isFilterList] .literal input, div[isFilterList] .filterText, div[isFilterList].edit span, .onlyedit  {
+.series .btn, .series .literal input, .series .filterText, .series.edit span, .onlyedit  {
 	display:none;
 }
 
-div[isFilterList].edit .btn, div[isFilterList].edit .literal input, div[isFilterList].edit .filterText , .edit + .onlyedit {
+.series.edit .btn, .series.edit .literal input, .series.edit .filterText , .edit + .onlyedit {
 	display:inline;
 }
 
-#filterBar {
-	border-bottom: 3px solid #AAA;
-	margin-bottom: 5px;
-}

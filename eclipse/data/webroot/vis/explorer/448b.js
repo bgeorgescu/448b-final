@@ -67,7 +67,6 @@ SearchFilter.prototype.toPlainObject = function() {
 
  
 var viewModel = {
-	filters: ko.observableArray([]),
 	buckets: ko.observableArray([]),
 	startYear: ko.observable(2000),
 	endYear: ko.observable(2010),
@@ -75,31 +74,26 @@ var viewModel = {
 	dateGranularity: ko.observable("year"),
 	dateGranularityOptions: ["year", "month" /*, "fixed #"*/],
 	dateGranularityFixed: ko.observable(100),
-	
-	addFilter: function (filter) {
-		filter.container = viewModel.filters;
-        viewModel.filters.push(filter);
-        viewModel.filters.valueHasMutated();
-    },
     
-    addBucket: function (filter) {
-		filter.container = viewModel.buckets;
-        viewModel.buckets.push(filter);
+    
+    addBucket: function (observableArr) {
+    	observableArr.subscribe(viewModel.buckets.valueHasMutated);
+    	viewModel.buckets.push(observableArr);
         viewModel.buckets.valueHasMutated();
     },
     
     toPlainObject: function () {
     	var retval = {
-    		filters: [],
     		buckets: [],
     		startYear: this.startYear(),
     		endYear: this.endYear(),
     		horizontalAxis: this.horizontalAxis()};
-    	for(i = 0; i < this.filters().length; i++) {
-			retval.filters.push(this.filters()[i].toPlainObject());
-		}
 		for(i = 0; i < this.buckets().length; i++) {
-			retval.buckets.push(this.buckets()[i].toPlainObject());
+			retval.buckets.push(
+				this.buckets()[i]()
+					.reduce(function(prev,x) {
+						 prev.push(x.toPlainObject());return prev;
+					}, []));
 		}
 		if(retval.horizontalAxis == "date") {
 			retval.dateGranularity = this.dateGranularity();
@@ -209,7 +203,7 @@ function fakeData(state) {
 				return [a, parseInt(Math.random() * 30)];
 			});
 	}).map(function(x,x_i) { 
-		return { data: x, label: state.buckets[x_i].disjunction[0] };
+		return { data: x, label: ""/*state.buckets[x_i].disjunction[0]*/ };
 	});
 }
 
@@ -220,7 +214,7 @@ function LemmaOrEntityTerm(a) {
 
 
 function queryForModelState(state) {
-	var query = { filter_: false, series_: [], buckets_:[] };
+	var query = {  series_: [], buckets_:[] };
 	var AndHelper = function(arr) { return arr.length > 1 ? {and_:{terms_: arr }} : arr[0]; };
 	var OrHelper = function(arr) { return arr.length > 1 ? {or_:{terms_: arr }} : arr[0]; };
 	var NotNull = function(a) { return a != null; };
@@ -228,11 +222,12 @@ function queryForModelState(state) {
 	var WordToTerm = LemmaTerm;
 	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
 	
+	/*
 	query.filter_ = 
 		AndHelper(state.filters
 		.filter(function(x) { return (x.filterType == "text") && (x.disjunction.length) })
 		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm).filter(NotNull)); }))
-	
+	*/
 	
 	/*
 	query.filter_ = state.filters
@@ -241,9 +236,17 @@ function queryForModelState(state) {
 		.reduce(AndTerm);
 	*/
 	
+	/*
 	query.series_ = state.buckets
 		.filter(function(x) { return x.filterType == "text" && (x.disjunction.length) })
 		.map(function(x) { return  OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm)); }).filter(NotNull);
+	*/
+	
+	query.series_ = state.buckets.map(function(y) {
+		return AndHelper(y
+		.filter(function(x) { return (x.filterType == "text") && (x.disjunction.length) })
+		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm).filter(NotNull)); }))
+	});
 	
 	/*
 	query.series_ = state.buckets
@@ -274,25 +277,46 @@ function queryForModelState(state) {
 	return query;
 }
 
+function coolObservable() {
+	var c = new ko.observableArray([]);
+	c.prototype.oldpush = c.prototype.push;
+	c.prototype.push = function(x) { x.parent = this; this.push(x); };
+	return c;
+}
+
+
+containerPush = function(arr, x) {
+	x.container = arr;
+	arr.push(x);
+}
+
+
 function addMockData() {
-	var f = new SearchFilter();
-	f.addLiteral("election");
-	viewModel.addFilter(f);
 	
 	f = new SearchFilter();
 	f.addLiteral("clinton");
 	f.addLiteral("hillary");
-	viewModel.addBucket(f);
+	c = new ko.observableArray([]);
+	containerPush(c,f);
+	viewModel.addBucket(c);
 	
 	f = new SearchFilter();
 	f.addLiteral("obama");
 	f.addLiteral("hope");
 	f.addLiteral("barack");
-	viewModel.addBucket(f);
+	g = new SearchFilter();
+	g.addLiteral("election");
+	c = new ko.observableArray([]);
+	containerPush(c,f);
+	containerPush(c,g);
+	viewModel.addBucket(c);
 	
 	f = new SearchFilter();
 	f.addLiteral("mccain");
-	viewModel.addBucket(f);
+	c = new ko.observableArray([]);
+	containerPush(c,f);
+	viewModel.addBucket(c);
+
 	
 	viewModel.startYear(2006);
 	viewModel.endYear(2009);
@@ -332,15 +356,6 @@ function newFilterWithEmptyLiteralTo(f) {
 }
 
 
-$("#filterList").parent().find(".dropzone").droppable({
-	accept: '.suggestion',
-	activeClass: "filterListHover",
-	drop: function(event, ui) {
-			var n = new SearchFilter();
-			n.addLiteral($(ui.draggable).text());
-			viewModel.addFilter(n);
-	}
-});
 
 $("#bucketList").parent().find(".dropzone").droppable({
 	accept: '.suggestion',
@@ -364,7 +379,6 @@ function newInputsCallback() {
 	});
 }
 
-viewModel.filters.subscribe(newInputsCallback);
 viewModel.buckets.subscribe(newInputsCallback);
 
 function suggestionsAdded() {
@@ -379,6 +393,7 @@ function queryChanged() {
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
 	viewModel.save();
     var query = queryForModelState(viewModel.toPlainObject());
+    
     arbitraryQuery("/api/query/docs/bucketed",    
         query,
         function(gen,query,c,r,d){
@@ -419,27 +434,38 @@ function queryChanged() {
                         
                         return {data: x.map(function(y,y_i) {
                             return [y_i + 1,y];
-                        }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                        }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]() */};
+                    }));
+            } else if(viewModel.dateGranularity() == "month") {
+                viewModel.graphData(
+                    r
+                    .map(function(x, x_i) {
+                        
+                        return {data: x.map(function(y,y_i) {
+                            return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
+                        }), label: "" /*viewModel.buckets()[x_i].disjunction()[0]()*/ };
                     }));
             } else {
                 //?
             }
         }.bind(this, ++current_generation, query));
+    
 }
 
 
 
-viewModel.filters.subscribe(queryChanged);
+
+addMockData();
+ko.applyBindings(viewModel);
+
+
 viewModel.buckets.subscribe(queryChanged);
 viewModel.startYear.subscribe(queryChanged);
 viewModel.endYear.subscribe(queryChanged);
 viewModel.horizontalAxis.subscribe(queryChanged);
 viewModel.dateGranularity.subscribe(queryChanged);
 viewModel.dateGranularityFixed.subscribe(queryChanged);
-
-
-addMockData();
-ko.applyBindings(viewModel);
+queryChanged();
 
 viewModel.graphData(fakeData(viewModel.toPlainObject()));
 updatePlot();
@@ -452,5 +478,5 @@ newInputsCallback();
 			
 			return {data: x.map(function(y,y_i) {
 				return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
-			}), label: viewModel.buckets()[x_i].disjunction()[0]() };
+			}), label: ""/*viewModel.buckets()[x_i].disjunction()[0]()*/ };
 		}));
