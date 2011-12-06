@@ -398,7 +398,6 @@ function queryChanged() {
                         }), label: viewModel.buckets()[x_i].disjunction()[0]() };
                     }));
             } else if(viewModel.dateGranularity() == "month") {
-                alert(JSON.stringify(r));
                 viewModel.graphData(
                     r
                     .map(function(x, x_i) {
