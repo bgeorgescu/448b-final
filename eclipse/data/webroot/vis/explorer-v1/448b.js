@@ -228,11 +228,13 @@ function queryForModelState(state) {
 	var WordToTerm = LemmaTerm;
 	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
 	
-	query.filter_ = 
-		AndHelper(state.filters
+	var t = state.filters
 		.filter(function(x) { return (x.filterType == "text") && (x.disjunction.length) })
-		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm).filter(NotNull)); }))
+		.map(function(x) { return OrHelper(x.disjunction.filter(function(x) {return x != ""}).map(WordToTerm).filter(NotNull)); });
 	
+	t.push({date_:{before_:(state.endYear+1)*10000, after_:(state.startYear*10000 - 1)}});
+	
+	query.filter_ = AndHelper(t);
 	
 	/*
 	query.filter_ = state.filters
@@ -429,6 +431,10 @@ function queryChanged() {
 
 
 
+
+addMockData();
+ko.applyBindings(viewModel);
+
 viewModel.filters.subscribe(queryChanged);
 viewModel.buckets.subscribe(queryChanged);
 viewModel.startYear.subscribe(queryChanged);
@@ -436,12 +442,10 @@ viewModel.endYear.subscribe(queryChanged);
 viewModel.horizontalAxis.subscribe(queryChanged);
 viewModel.dateGranularity.subscribe(queryChanged);
 viewModel.dateGranularityFixed.subscribe(queryChanged);
+queryChanged();
 
 
-addMockData();
-ko.applyBindings(viewModel);
-
-viewModel.graphData(fakeData(viewModel.toPlainObject()));
+//viewModel.graphData(fakeData(viewModel.toPlainObject()));
 updatePlot();
 suggestionsAdded();
 newInputsCallback();
