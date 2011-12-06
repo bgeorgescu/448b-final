@@ -23,7 +23,7 @@ public class QueryExpression {
 	//meta data queries - filter only
 	public DateTerm.Parameters date_;
 	public SQLSectionTerm.Parameters section_;
-	public SQLPageTerm.Parameters page_;
+	public PageTerm.Parameters page_;
 	public SQLPublicationTerm.Parameters publication_;
 	
 	//tag cloud queries - requires all full text queries to be filter only
