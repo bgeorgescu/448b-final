@@ -138,7 +138,9 @@ viewModel.graphOptions = ko.dependentObservable(function() {
     };
     
     if(this.horizontalAxis() == "page") {
-		// noop
+    	retval.xaxis.mode = null;
+		retval.xaxis.min = 0;
+		retval.xaxis.max = 32;
     }
     else if(this.horizontalAxis() == "date") {
     	retval.xaxis.mode = "time";
@@ -388,22 +390,35 @@ function queryChanged() {
             if(gen != current_generation)
                 return;
             //TODO: maybe a better way to do this
-            if(viewModel.dateGranularity() == "year") {
+            if(viewModel.horizontalAxis() == "time") {
+                if(viewModel.dateGranularity() == "year") {
+                    viewModel.graphData(
+                        r
+                        .map(function(x, x_i) {
+                            
+                            return {data: x.map(function(y,y_i) {
+                                return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
+                            }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                        }));
+                } else if(viewModel.dateGranularity() == "month") {
+                    viewModel.graphData(
+                        r
+                        .map(function(x, x_i) {
+                            
+                            return {data: x.map(function(y,y_i) {
+                                return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
+                            }), label: viewModel.buckets()[x_i].disjunction()[0]() };
+                        }));
+                } else {
+                    //?
+                }
+            } else if(viewModel.horizontalAxis() == "page") {
                 viewModel.graphData(
                     r
                     .map(function(x, x_i) {
                         
                         return {data: x.map(function(y,y_i) {
-                            return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
-                        }), label: viewModel.buckets()[x_i].disjunction()[0]() };
-                    }));
-            } else if(viewModel.dateGranularity() == "month") {
-                viewModel.graphData(
-                    r
-                    .map(function(x, x_i) {
-                        
-                        return {data: x.map(function(y,y_i) {
-                            return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
+                            return [y_i + 1,y];
                         }), label: viewModel.buckets()[x_i].disjunction()[0]() };
                     }));
             } else {

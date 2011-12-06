@@ -38,7 +38,7 @@ public class PageAccessor {
 	public int[] getDocsForPageRange(Integer begin_inclusive, Integer end_exclusive) throws SQLException {
 		Statement st = SQL.forThread().createStatement();
 		try {
-			String query = "SELECT " + ResolvedPage.PAGE_NUMBER +" FROM " + ResolvedPage.TABLE;
+			String query = "SELECT " + ResolvedPage.DOC_ID +" FROM " + ResolvedPage.TABLE;
 			if(begin_inclusive != null && end_exclusive != null) {
 				query += " WHERE " + ResolvedPage.PAGE_NUMBER + ">=" + begin_inclusive + " AND " + ResolvedPage.PAGE_NUMBER + "<" + end_exclusive;
 			} else if(begin_inclusive != null) {
