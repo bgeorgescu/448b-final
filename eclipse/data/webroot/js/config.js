@@ -1,1 +1,1 @@
-SERVER = "http://wrldsuksgo2mars.doesntexist.org:6543";
+SERVER = "http://localhost:8080";
