@@ -7,27 +7,45 @@ div {
 }
 
 .droppable {
-	background:green;
+	background:#c3e8cc;
 }
 
 .series.droppable {
-	background:yellow;
+	background:#e7e8c3;
 }
 
 .hover, .series.droppable.hover {
-	background:red !important;
+	background:#e8c3c3 !important;
 }
 
 .series {
 	display:block;
-	margin:5px;
-	border:1px solid black;
+	padding:3px;
+	margin-bottom:2px;
+	background:#EEE;
 }
 
 .disjunction .contents .literal:not(:first-child):before {
 	content: " or ";
 }
 
+.disjunction {
+	padding:3px;
+}
+
 .series .contents .disjunction:not(:first-child):before {
-	content: " and ";
+	content: "and ";
+}
+
+.series .contents .disjunction {
+	margin-right:4px;
+
+}
+
+.sGrip, .dGrip {
+	padding-left:2px;
+	color:#CCC;
+	font-weight:900;
+	letter-spacing:1px;
+	text-shadow: #BBB 1px 1px;
 }

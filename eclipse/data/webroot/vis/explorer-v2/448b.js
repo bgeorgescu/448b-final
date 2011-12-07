@@ -53,7 +53,7 @@ function Series() {
 	});
 	t.draggable({
 		revert:"invalid",
-		handle: "sGrip",
+		handle: ".sGrip",
 		revertDuration: globalRevertDuration,
 	});
 	return t;
@@ -76,7 +76,7 @@ function Disjunction() {
 	});
 	t.draggable({
 		revert:"invalid",
-		handle: "dGrip",
+		handle: ".dGrip",
 		//z-index: 1000,
 		helper: function() { return $(this).css("z-index",10000) },
 		revertDuration: globalRevertDuration,
