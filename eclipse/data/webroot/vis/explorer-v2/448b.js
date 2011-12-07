@@ -11,20 +11,52 @@ function Literal() {
 	});
 }
 
-$("#trash").droppable({
-	accept: function(x) {
-		return x.hasClass("literal") && x.hasClass("dropped")
-			|| x.hasClass("disjunction")
-			|| x.hasClass("series")
-	},
-	drop: function(event, ui) {
-		$(ui.draggable).remove();
-	},
-	activeClass:"droppable",
-	hoverClass: "hover",
-	tolerance: "pointer",
-	greedy:true,
-})
+function SetLiteralType(literal, type) {
+	// TODO
+}
+
+function GetLiteralType(literal) {
+	// TODO
+	return "default";
+}
+
+function GetLiteralText(literal) {
+	return literal.text();
+}
+
+function SetLiteralText(literal, text) {
+	literal.text(text);
+}
+
+
+function AddDisjunctionToSeries(disjunction, series) {
+	disjunction.appendTo(series.find(".contents")[0]);
+}
+
+function CopyLiteral(literal) {
+	var l = Literal();
+	SetLiteralType(l, GetLiteralType(literal));
+	SetLiteralText(l, GetLiteralText(literal));
+	return l;
+}
+
+function AddLiteralCopyToDisjunction(literal, disjunction) {
+	CopyLiteral(literal)
+		.addClass("dropped")
+		.appendTo(disjunction.find(".contents")[0]);
+}
+
+function AddLiteralToDisjunction(literal, disjunction) {
+	literal
+		.addClass("dropped")
+		.appendTo(disjunction.find(".contents")[0]);
+}
+
+function AddLiteralCopyToSeries(literal, series) {
+	var d = Disjunction();
+	AddLiteralCopyToDisjunction(literal, d);
+	AddDisjunctionToSeries(d, series);
+}
 
 function Series() {
 	var t = TemplateInstance("series");
@@ -36,17 +68,11 @@ function Series() {
 		activeClass: "droppable",
 		hoverClass: "hover",
 		drop: function(event, ui) {
-			if(ui.draggable.hasClass("disjunction")) {			
-				ui.draggable //.css({'top':'','left':'','position':''})
-					.appendTo($(this).find(".contents")[0])
+			if(ui.draggable.hasClass("disjunction")) {
+				AddDisjunctionToSeries(ui.draggable, $(this));
 			}
 			else if(ui.draggable.hasClass("literal")) {
-				var d = Disjunction();
-				Literal()
-				.text(ui.draggable.text())
-				.addClass("dropped")
-				.appendTo(d.find(".contents")[0]);
-				d.appendTo($(this).find(".contents")[0]);
+				AddLiteralCopyToSeries(ui.draggable, $(this));
 			}
 		},
 		greedy:true
@@ -67,17 +93,13 @@ function Disjunction() {
 		activeClass: "droppable",
 		hoverClass: "hover",
 		drop: function(event, ui) {
-			Literal()
-				.text(ui.draggable.text())
-				.addClass("dropped")
-				.appendTo($(this).find(".contents")[0]);
+			AddLiteralCopyToDisjunction(ui.draggable, $(this));
 		},
 		greedy:true
 	});
 	t.draggable({
 		revert:"invalid",
 		handle: ".dGrip",
-		//z-index: 1000,
 		helper: function() { return $(this).css("z-index",10000) },
 		revertDuration: globalRevertDuration,
 	});
@@ -85,20 +107,58 @@ function Disjunction() {
 }
 
 
-function stateToObject() {
-	return $(".series > .contents").get().map(function(x) {
-		return $(x).find(".disjunction > .contents").get().map(function(y) {
-			return $(y).find(".literal").get().map(function(z) {
-				var elem = $(z);
-				var retval = {value: elem.text(), type: "default"};
-				if(elem.hasClass("lemma")) {
-					retval.type = "lemma";
+$("#trash").droppable({
+	accept: function(x) {
+		return x.hasClass("literal") && x.hasClass("dropped")
+			|| x.hasClass("disjunction")
+			|| x.hasClass("series")
+	},
+	drop: function(event, ui) {
+		$(ui.draggable).remove();
+	},
+	activeClass:"droppable",
+	hoverClass: "hover",
+	tolerance: "pointer",
+	greedy:true,
+})
+
+
+function domStateToObject() {
+	return {
+		series:
+			$(".series:not(#series_template) > .contents").get().map(function(x) {
+				return {
+					contents:		
+						$(x).find(".disjunction > .contents").get().map(function(y) {
+							return $(y).find(".literal").get().map(function(z) {
+								return {text: GetLiteralText($(z)), type: GetLiteralType($(z))};
+							});
+						})
 				}
-				return retval;
+			})
+	}
+}
+
+function objectToDomState(obj) {
+	var series_container = $("#series");
+	series_container.empty();
+	$.each(obj.series, function(i,series) {
+		var s = Series();
+		series_container.append(s);
+		$.each(series.contents, function(j, disjunction) {
+			var d = Disjunction();
+			AddDisjunctionToSeries(d,s);
+			$.each(disjunction, function(k, literal) {
+				var l = Literal();
+				SetLiteralText(l, literal.text);
+				SetLiteralType(l, literal.type);
+				AddLiteralToDisjunction(l,d);
 			});
 		});
 	});
 }
+
+
 
 
 
@@ -116,5 +176,5 @@ $("#series").append(s3);
 d1 = Disjunction();
 s1.find(".contents").append(d1);
 
-l1 = Literal().text("cool").draggable("option","helper","clone");
+l1 = Literal().text("cool")//.draggable("option","helper","clone");
 s3.append(l1);
