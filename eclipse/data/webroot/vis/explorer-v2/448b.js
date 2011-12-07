@@ -85,6 +85,24 @@ function Disjunction() {
 }
 
 
+function stateToObject() {
+	return $(".series > .contents").get().map(function(x) {
+		return $(x).find(".disjunction > .contents").get().map(function(y) {
+			return $(y).find(".literal").get().map(function(z) {
+				var elem = $(z);
+				var retval = {value: elem.text(), type: "default"};
+				if(elem.hasClass("lemma")) {
+					retval.type = "lemma";
+				}
+				return retval;
+			});
+		});
+	});
+}
+
+
+
+
 s1 = Series();
 s2 = Series();
 s3 = Series();
