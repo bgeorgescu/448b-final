@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>AutoComplete Prototype</title>
+		<link type="text/css" href="lib/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="lib/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="lib/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="../../js/config.js"></script>
+		<script type="text/javascript" src="../../js/query.js"></script>
+		<style type="text/css">
+		</style>	
+	</head>
+	<body>
+        <script>
+            $(function() {
+                function autocompleteUpdate(callback, code, response, duration) {
+                    if(!success(code)) {
+                        alert('query failed\n' + response);
+                        callback([]);
+                        return;
+                    }
+                    callback(response.map(function(x) { return x.resolved_ + " (" + x.score_ + ")"; }).slice(0,15));
+                }
+
+                $( "#query" ).autocomplete({source:function(req, resp) {
+                        var xhr = buildXHR("GET", "/api/autocomplete/term/" + req.term, autocompleteUpdate.bind(undefined, resp));
+                        xhr.send(null);                
+                }});
+            });
+        </script>
+
+        <div class="demo">
+            <div class="ui-widget">
+                <label for="query">Query: </label>
+                <input id="query">
+            </div>
+        </div>          
+	</body>
+</html>
+
+
