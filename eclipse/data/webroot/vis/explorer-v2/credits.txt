@@ -1,0 +1,5 @@
+Third-party libraries:
+- jQuery	http://jquery.com/
+- jQuery UI	http://jqueryui.com/
+- 960 Grid System	http://960.gs/
+- Flot	http://code.google.com/p/flot/
