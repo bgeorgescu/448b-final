@@ -16,7 +16,7 @@ import vis.data.util.SQL;
 import vis.data.util.SQL.NullForLastRowProcessor;
 
 public class AutoCompleteAccessor {
-	PreparedStatement insert_, query_, queryLimit_, queryType_, queryTypeLimit_;
+	PreparedStatement insert_, query_, queryLimit_, queryType_, queryTypeLimit_, queryCountRows_;
 	public AutoCompleteAccessor() throws SQLException {
 		this(SQL.forThread());
 	}
@@ -40,6 +40,9 @@ public class AutoCompleteAccessor {
 			" FROM " + AutoCompleteEntry.TABLE + joinTermTable +
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" +
 			orderBy);
+		queryCountRows_ = conn.prepareStatement("SELECT COUNT(*)" +
+				" FROM " + AutoCompleteEntry.TABLE + joinTermTable +
+				" WHERE " + AutoCompleteTerm.TERM + " LIKE ?");
 		queryLimit_ = conn.prepareStatement("SELECT " + columns +
 			" FROM " + AutoCompleteEntry.TABLE + joinTermTable +
 			" WHERE " + AutoCompleteTerm.TERM + " LIKE ?" + 
@@ -55,6 +58,17 @@ public class AutoCompleteAccessor {
 		insert_ = conn.prepareStatement("INSERT INTO " + AutoCompleteEntry.TABLE + 
 			" (" + AutoCompleteEntry.TERM_ID + "," + AutoCompleteEntry.TYPE + "," + AutoCompleteEntry.REFERENCE_ID + "," + AutoCompleteEntry.SCORE + ")" +
 			" VALUES (?,?,?,?)");
+	}
+	public int countPossibilites(String q) throws SQLException {
+		queryCountRows_.setString(1, q + "%");
+		ResultSet rs = queryCountRows_.executeQuery();
+		try {
+			if(!rs.next())
+				return 0;
+			return rs.getInt(1);
+		} finally {
+			rs.close();
+		}
 	}
 	public NamedAutoComplete[] lookup(String q) throws SQLException {
 		query_.setString(1, q + "%");
