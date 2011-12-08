@@ -15,6 +15,7 @@
         <script>
             $(function() {
                 function autocompleteUpdate(callback, code, response, duration) {
+                    $("#duration").text(duration + "ms");
                     if(!success(code)) {
                         alert('query failed\n' + response);
                         callback([]);
@@ -33,7 +34,7 @@
         <div class="demo">
             <div class="ui-widget">
                 <label for="query">Query: </label>
-                <input id="query">
+                <input id="query">Duration: <span id="duration"></span>
             </div>
         </div>          
 	</body>
