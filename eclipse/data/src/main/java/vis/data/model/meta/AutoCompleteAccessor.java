@@ -1,5 +1,7 @@
 package vis.data.model.meta;
 
+import gnu.trove.map.hash.TIntObjectHashMap;
+
 import java.nio.ByteBuffer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,7 +26,7 @@ import vis.data.util.SQL;
 import vis.data.util.SQL.NullForLastRowProcessor;
 
 public class AutoCompleteAccessor {
-	PreparedStatement insert_, insertPrecomputed_, query_, queryRaw_, queryLimit_, queryType_, queryTypeLimit_, queryCountRows_, queryPrecomputed_;
+	PreparedStatement insert_, insertPrecomputed_, query_, queryRaw_, queryLimit_, queryType_, queryTypeLimit_, queryCountRows_, queryPartialPrecomputed_;
 	public AutoCompleteAccessor() throws SQLException {
 		this(SQL.forThread());
 	}
@@ -76,7 +78,7 @@ public class AutoCompleteAccessor {
 				" (" + AutoCompletePrecomputed.PARTIAL_TERM + "," + AutoCompletePrecomputed.PACKED_COMPLETIONS + "," + AutoCompletePrecomputed.PACKED_PARTIAL_COMPLETIONS + ")" +
 				" VALUES (?,?,?)");
 
-		queryPrecomputed_ = conn.prepareStatement("SELECT " + AutoCompletePrecomputed.PACKED_COMPLETIONS + " FROM " + AutoCompletePrecomputed.TABLE + " WHERE " + AutoCompletePrecomputed.PARTIAL_TERM + " = ?");
+		queryPartialPrecomputed_ = conn.prepareStatement("SELECT " + AutoCompletePrecomputed.PACKED_PARTIAL_COMPLETIONS + " FROM " + AutoCompletePrecomputed.TABLE + " WHERE " + AutoCompletePrecomputed.PARTIAL_TERM + " = ?");
 	
 	}
 	//this is slow for big result sets and is just used in the precomputation process
@@ -92,9 +94,9 @@ public class AutoCompleteAccessor {
 		}
 	}
 	//returns null if there was no entry, look up with the slower variant
-	public NamedAutoComplete[] lookupPrecomputed(String q) throws SQLException {
-		query_.setString(1, q);
-		ResultSet rs = queryPrecomputed_.executeQuery();
+	public NamedAutoComplete[] lookupPartialPrecomputed(String q) throws SQLException {
+		queryPartialPrecomputed_.setString(1, q);
+		ResultSet rs = queryPartialPrecomputed_.executeQuery();
 		try {
 			if(!rs.next()) {
 				return null;
@@ -104,8 +106,12 @@ public class AutoCompleteAccessor {
 			
 			NamedAutoComplete ae[] = new NamedAutoComplete[data.length / (4 * Integer.SIZE / 8)];
 			int ids[] = new int[ae.length];
+			TIntObjectHashMap<NamedAutoComplete> lemma_entry = new TIntObjectHashMap<NamedAutoComplete>();
+			TIntObjectHashMap<NamedAutoComplete> entity_entry = new TIntObjectHashMap<NamedAutoComplete>();
+			TIntObjectHashMap<NamedAutoComplete> term_entry = new TIntObjectHashMap<NamedAutoComplete>();
 			for(int i = 0; i < ae.length; ++i) {
 				ids[i] = bb.getInt();
+				ae[i] = new NamedAutoComplete();
 				ae[i].type_ =   AutoCompleteEntry.Type.values()[bb.getInt()];
 				ae[i].referenceId_ = bb.getInt();
 				ae[i].score_ = bb.getInt();
@@ -113,44 +119,55 @@ public class AutoCompleteAccessor {
 			Statement st = SQL.forThread().createStatement();
 			try {
 				//these need to match the ones defined in the query methods from the constructor
-				String query_term = "SELECT " + AutoCompleteTerm.TERM + " FROM " + AutoCompleteTerm.TABLE + " WHERE " + AutoCompleteTerm.ID + " IN (";
-				String query_lemma = "SELECT CONCAT(" + RawLemma.LEMMA + ",'/'," + RawLemma.POS + ") FROM " + RawLemma.TABLE + " WHERE " + RawLemma.ID + " IN (";
-				String query_entity = "SELECT CONCAT(" + RawEntity.ENTITY + ",'/'," + RawEntity.TYPE + ") FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + " IN (";
+				StringBuilder query_term = new StringBuilder("SELECT " + AutoCompleteTerm.ID + "," + AutoCompleteTerm.TERM + " FROM " + AutoCompleteTerm.TABLE + " WHERE " + AutoCompleteTerm.ID + " IN (");
+				StringBuilder query_lemma = new StringBuilder("SELECT " + RawLemma.ID + "," + " CONCAT(" + RawLemma.LEMMA + ",'/'," + RawLemma.POS + ") FROM " + RawLemma.TABLE + " WHERE " + RawLemma.ID + " IN (");
+				StringBuilder query_entity = new StringBuilder("SELECT " + RawEntity.ID + "," + " CONCAT(" + RawEntity.ENTITY + ",'/'," + RawEntity.TYPE + ") FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + " IN (");
 				
-				query_term += "0"; // there will never be one of these
-				query_lemma += "0"; // there will never be one of these
-				query_entity += "0"; // there will never be one of these
+				query_term.append("0"); // there will never be one of these
+				query_lemma.append("0"); // there will never be one of these
+				query_entity.append("0"); // there will never be one of these
 				for(int i = 0; i < ids.length; ++i) {
 					switch(ae[i].type_) {
 					case LEMMA:
-						query_lemma += "," + ids[i];
+						lemma_entry.put(ae[i].referenceId_, ae[i]);
+						query_lemma.append("," + ae[i].referenceId_);
 						break;
 					case ENTITY:
-						query_entity += "," + ids[i];
+						entity_entry.put(ae[i].referenceId_, ae[i]);
+						query_entity.append("," + ae[i].referenceId_);
 						break;
 					default:
-						query_term += "," + ids[i];
+						term_entry.put(ids[i], ae[i]);
+						query_term.append("," + ids[i]);
 						break;
 					}
 				}
-				ResultSet terms = st.executeQuery(query_term);
-				ResultSet lemmas = st.executeQuery(query_lemma);
-				ResultSet entities = st.executeQuery(query_entity);
-				terms.next();
-				lemmas.next();
-				entities.next();
-				for(int i = 0; i < ids.length; ++i) {
-					switch(ae[i].type_) {
-					case LEMMA:
-						ae[i].resolved_ = lemmas.getString(1);
-						break;
-					case ENTITY:
-						ae[i].resolved_ = entities.getString(1);
-						break;
-					default:
-						ae[i].resolved_ = terms.getString(1);
-						break;
+				query_lemma.append(")");
+				query_entity.append(")");
+				query_term.append(")");
+				ResultSet terms = st.executeQuery(query_term.toString());
+				try {
+					while(terms.next()) {
+						term_entry.get(terms.getInt(1)).resolved_ = terms.getString(2);
 					}
+				} finally {
+					rs.close();
+				}
+				ResultSet lemmas = st.executeQuery(query_lemma.toString());
+				try {
+					while(lemmas.next()) {
+						lemma_entry.get(lemmas.getInt(1)).resolved_ = lemmas.getString(2);
+					}
+				} finally {
+					rs.close();
+				}
+				ResultSet entities = st.executeQuery(query_entity.toString());
+				try {
+					while(entities.next()) {
+						entity_entry.get(entities.getInt(1)).resolved_ = entities.getString(2);
+					}
+				} finally {
+					rs.close();
 				}
 				return ae;
 			} finally {

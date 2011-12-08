@@ -27,6 +27,21 @@ public class AutoComplete {
 	}
 
 	@Path("/api/autocomplete/term/{term}")
+	public static class AutoCompleteAccelerated {
+		@GET
+		@Produces("application/json")
+		public AutoCompleteAccessor.NamedAutoComplete[] get(
+			@PathParam("term") String term) 
+			throws SQLException 
+		{
+			AutoCompleteAccessor aca = new AutoCompleteAccessor();
+			AutoCompleteAccessor.NamedAutoComplete nac[] = aca.lookupPartialPrecomputed(term);
+			if(nac != null)
+				return nac;
+			return aca.lookup(term);
+		}
+	}
+	@Path("/api/autocomplete/full/term/{term}")
 	public static class AutoCompleteFull {
 		@GET
 		@Produces("application/json")
