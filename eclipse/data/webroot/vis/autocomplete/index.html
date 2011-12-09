@@ -10,6 +10,12 @@
 		<script type="text/javascript" src="../../js/query.js"></script>
         <script type="text/javascript" src="lib/jquery.ui.autocomplete.html.js"></script>
 		<style type="text/css">
+            #term-completes ul {
+                -webkit-column-count: 2; -webkit-column-gap:20px;
+                -moz-column-count:2; -moz-column-gap:20px;
+                -o-column-count:2; -o-column-gap:20px;
+                column-count:2; column-gap:20px;
+            }
 		</style>	
 	</head>
 	<body>
@@ -22,31 +28,18 @@
                         callback([]);
                         return;
                     }
-                    var items = [];
-                    var raw = response.slice(0,2 * 15);
-                    var makeItem = function(x) {
-                        return x.resolved_ + " (" + x.score_ + ")";
-                    }
-                    for(var i = 0; i < raw.length; i += 2) {
-                        
-                        items.push(
-                            {
-                                label:"<table width='100%'><tr><td width='50%'>" +
-                                makeItem(raw[i]) +
-                                "</td><td width='50%'>" +
-                                makeItem(raw[i + 1]) +
-                                "</td></tr></table>",
-                                value:'never should get this'
-                            }
-                        );
-                    }
-                    callback(items);
+                    callback(response.slice(0,15).map(function(x) { 
+                        return {
+                            label:x.resolved_ + " (" + x.score_ + ")", 
+                            value:x.resolved_.substring(0, x.resolved_.indexOf('/')),
+                        };
+                    }));
                 }
 
                 $( "#query" ).autocomplete(
                     {
                         source:function(req, resp) {
-                            var xhr = buildXHR("GET", "/api/autocomplete/term/" + req.term, autocompleteUpdate.bind(undefined, resp));
+                            var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(req.term), autocompleteUpdate.bind(undefined, resp));
                             xhr.send(null);                
                         },
                         appendTo:$("#term-completes"),
