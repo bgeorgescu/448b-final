@@ -33,6 +33,24 @@
                     achit.category_ = achit.type_;
                 }
             }
+            function scoreSort(a,b) {
+                if(a.score_ < b.score_) {
+                    return 1; 
+                } else if(a.score_ > b.score_) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            }
+            function categorizedSort(a,b) {
+                if(a.category_ < b.category_) {
+                    return -1; 
+                } else if(a.category_ > b.category_) {
+                    return 1;
+                } else {
+                    return scoreSort(a,b);
+                }
+            }
             $(function() {
                 function autocompleteUpdate(callback, code, response, duration) {
                     $("#duration").text(duration + "ms");
@@ -43,13 +61,7 @@
                     }
                     var top = response.slice(0,50);
                     top.map(categorize);
-                    top.sort(function(a,b) { 
-                        if(a.category_ < b.category_) 
-                            return -1; 
-                        if(a.category_ > b.category_)
-                            return 1;
-                        return 0;
-                    });
+                    top.sort(categorizedSort);
                     callback(top.map(function(x) { 
                         var id = Math.uuid();
                         return {
