@@ -90,6 +90,46 @@
                 function(c,r,d){report("yearly: all docs",c,r,d);}
             );
         });        
+        
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {   
+                    filter_:PublicationTerm(7556),
+                    series_:[
+                        AllDocsTerm()
+                    ],
+                    buckets_:allYears(),
+                },
+                function(c,r,d){report("yearly: all docs for pub 7556",c,r,d);}
+            );
+        });        
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {   
+                    filter_:PublicationTerm(7683),
+                    series_:[
+                        AllDocsTerm()
+                    ],
+                    buckets_:allYears(),
+                },
+                function(c,r,d){report("yearly: all docs for pub 7683",c,r,d);}
+            );
+        });        
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {   
+                    filter_:PublicationTerm(7684),
+                    series_:[
+                        AllDocsTerm()
+                    ],
+                    buckets_:allYears(),
+                },
+                function(c,r,d){report("yearly: all docs for pub 7684",c,r,d);}
+            );
+        });        
+        
 
         
         queries.push(function() {

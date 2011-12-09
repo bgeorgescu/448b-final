@@ -19,7 +19,7 @@ public class SQLPublicationTerm extends SQLTerm {
 			if(!Parameters.class.isInstance(obj))
 				return false;
 			Parameters p = (Parameters)obj;
-			if(publication_ != p.publication_) {
+			if(publication_.intValue() != p.publication_.intValue()) {
 				return false;
 			}
 			return true;

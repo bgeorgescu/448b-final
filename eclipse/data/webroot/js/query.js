@@ -63,7 +63,7 @@ SectionTerm = function(name) {
     return {section_:{name_:name}};
 }
 PublicationTerm = function(id) {
-    return {publication_:{id_:id}};
+    return {publication_:{publication_:id}};
 }
 DocLemmaTerm = function(expr) {
     return {docLemma_:{term_:expr}};
