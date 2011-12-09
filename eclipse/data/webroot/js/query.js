@@ -74,6 +74,15 @@ DocEntityTerm = function(expr) {
 ThresholdTerm = function(minimum_hits) {
     return {threshold_:{min_:minimum_hits}};
 }
+AllDocsTerm = function() {
+    return {allDocs_:{}};
+}
+AllLemmasTerm = function() {
+    return {allLemmas_:{}};
+}
+AllEntitiesTerm = function() {
+    return {allEntities_:{}};
+}
 
 arbitraryQuery = function(endpoint, query, onResult) {
     var xhr = buildXHR("POST", endpoint, onResult);

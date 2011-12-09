@@ -35,6 +35,9 @@ public class QueryExpression {
 	//the tag cloud queries returning lemmas with 1 hit.  allow thresholding
 	public ThresholdTerm.Parameters threshold_;
 	
+	public AllDocsTerm.Parameters allDocs_;
+	public AllLemmasTerm.Parameters allLemmas_;
+	public AllEntitiesTerm.Parameters allEntities_;
 	
 	//This is the processed state for the term
 	protected Term.Parameters parameters_;

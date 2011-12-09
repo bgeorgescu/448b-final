@@ -81,6 +81,19 @@
 
         queries.push(function() {
             arbitraryQuery("/api/query/docs/bucketed", 
+                {   
+                    series_:[
+                        AllDocsTerm()
+                    ],
+                    buckets_:allYears(),
+                },
+                function(c,r,d){report("yearly: all docs",c,r,d);}
+            );
+        });        
+
+        
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
                 {
                     filter_:YearTerm(2010),
                     series_:[
