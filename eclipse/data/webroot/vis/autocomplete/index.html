@@ -55,10 +55,20 @@
             function atBeginningOfTerm(s) {
                 return /(?:^|[,+\(\)\s])\s*$/.test(s);
             }
-            function getTerm(before,after) {
+            function getOneTerm(before,after) {
                 var a = /(?:^|[,+\(\)\s])([^,+\(\)\s]*)$/.exec(before);
                 var b = /^[^,+\(\)\s]*/.exec(after);
                 return (a[1] + b[0]).replace(/\s*/, "");
+            }
+            function getAllTokens(before,after) {
+                var tokenize = /(?:,|\+|\(|\)|[a-zA-Z0-9]+)/g;
+                var a = before.match(tokenize);
+                var b = after.match(tokenize);
+                a.push.apply(a, b);
+                return a;
+            }
+            function diceTerms() {
+                
             }
             $(function() {
                 function autocompleteUpdate(callback, code, response, duration) {
@@ -73,8 +83,9 @@
                     top.sort(categorizedSort);
                     callback(top.map(function(x) { 
                         var id = Math.uuid();
+                        var checked = false;
                         return {
-                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox'>" +
+                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox' checked='" + checked + "'>" +
                                 "<label for='" + id + "'>" + 
                                 x.resolved_.substring(0, x.resolved_.indexOf('/')) + " (" + x.score_ + ")" +
                                 "</label>",
@@ -96,7 +107,8 @@
                             }
                             var before = req.term.substring(0, caret.start);
                             var after = req.term.substring(caret.start);
-                            var term = getTerm(before, after);
+                            console.log(getAllTokens(before, after));
+                            var term = getOneTerm(before, after);
                             console.log(term);
                             var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, resp));
                             xhr.send(null);                
