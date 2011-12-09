@@ -84,6 +84,11 @@ AllEntitiesTerm = function() {
     return {allEntities_:{}};
 }
 
+//from /api/autocomplete/publications
+var PUBLICATIONS = {"7556":"Baltimore Sun","7683":"Los Angeles Times","7684":"Chicago Tribune"};
+//from /api/autocomplete/types
+var AUTOCOMPLETE_TYPES = {"0":"ENTITY","1":"LEMMA","2":"SISTER","3":"PARENT","4":"CHILD","5":"SENTIMENT","6":"PAGE","7":"SECTION","8":"PUBLICATION"};
+
 arbitraryQuery = function(endpoint, query, onResult) {
     var xhr = buildXHR("POST", endpoint, onResult);
     xhr.send(JSON.stringify(query));

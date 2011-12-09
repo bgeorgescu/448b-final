@@ -13,15 +13,26 @@
         <script type="text/javascript" src="lib/Math.uuid.js"></script>
 		<style type="text/css">
             #term-completes ul {
-                -webkit-column-count: 2; -webkit-column-gap:20px;
-                -moz-column-count:2; -moz-column-gap:20px;
-                -o-column-count:2; -o-column-gap:20px;
-                column-count:2; column-gap:20px;
+                -webkit-column-count: 5; -webkit-column-gap:20px;
+                -moz-column-count:5; -moz-column-gap:20px;
+                -o-column-count:5; -o-column-gap:20px;
+                column-count:5; column-gap:20px;
+            }
+            #term-completes .ui-autocomplete {
+                width:80%;
             }
 		</style>	
 	</head>
 	<body>
         <script>
+            //modifies in place
+            function categorize(achit) {
+                if(achit.type_ == 'ENTITY') {
+                    achit.category_ = achit.resolved_.substring(achit.resolved_.indexOf('/') + 1);
+                } else {
+                    achit.category_ = achit.type_;
+                }
+            }
             $(function() {
                 function autocompleteUpdate(callback, code, response, duration) {
                     $("#duration").text(duration + "ms");
@@ -30,7 +41,16 @@
                         callback([]);
                         return;
                     }
-                    callback(response.slice(0,15).map(function(x) { 
+                    var top = response.slice(0,50);
+                    top.map(categorize);
+                    top.sort(function(a,b) { 
+                        if(a.category_ < b.category_) 
+                            return -1; 
+                        if(a.category_ > b.category_)
+                            return 1;
+                        return 0;
+                    });
+                    callback(top.map(function(x) { 
                         var id = Math.uuid();
                         return {
                             label:"<input class='autocomplete-check' id='" + id + "' type='checkbox'>" +
@@ -38,6 +58,7 @@
                                 x.resolved_ + " (" + x.score_ + ")" +
                                 "</label>",
                             value:x.resolved_.substring(0, x.resolved_.indexOf('/')),
+                            category:x.category_,
                         };
                     }));
                 }
@@ -52,7 +73,10 @@
                         html:true,
                         select:function (event, ui) {
                             return false;
-                        }
+                        },
+                        focus:function (event, ui) {
+                            return false;
+                        },
                     }
                 );
             });

@@ -40,7 +40,44 @@ $.extend( proto, {
             self.term = self.element.val();
             self.selectedItem = item;
         }
-    }
+        // var suppress = false;
+        // //TODO: should lookup using namespace
+        // var events = this.element.data("events");
+        // var old_down = events.keydown[0];
+        // this.element.unbind('keydown.autocomplete', old_down);
+        // this.element.bind("keydown.autocomplete", function(event, ui){
+            // var keyCode = $.ui.keyCode;
+            // if(self.menu.element.is(":visible") && undefined !== self.selectedItem ) {
+                // switch( event.keyCode ) {
+                // case keyCode.SPACE:
+                    // $(".autocomplete-check", self.selectedItem).attr("checked", 1);
+                    // suppress = true;
+                    // return;
+                // default:
+                // }
+            // }
+            // old_down.handler(event, ui);
+        // });
+        // var old_press = events.keydown[0];
+        // this.element.unbind('keypress.autocomplete', old_down);
+        // this.element.bind("keypress.autocomplete", function(event, ui){
+            // if(suppress) {
+                // suppress = false;
+                // event.preventDefault();
+            // }
+        // });
+    },
+    _renderMenu: function( ul, items ) {
+        var self = this,
+            currentCategory = "";
+        $.each( items, function( index, item ) {
+            if ( item.category != currentCategory ) {
+                ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+                currentCategory = item.category;
+            }
+            self._renderItem( ul, item );
+        });
+    },
 });
 
 })( jQuery );
