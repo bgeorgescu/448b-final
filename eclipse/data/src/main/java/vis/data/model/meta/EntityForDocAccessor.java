@@ -17,6 +17,10 @@ public class EntityForDocAccessor extends BaseHitsAccessor {
 		update_ = conn.prepareStatement("UPDATE " + DocLemma.TABLE + " SET " + DocLemma.ENTITY_LIST + " = ? " + " WHERE " + DocLemma.DOC_ID + " = ? ");
 	}
 	@Override
+	String bulkCountsQueryBase() {
+		return "SELECT " + DocLemma.ENTITY_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " IN ";
+	}
+	@Override
 	PreparedStatement countsQuery() {
 		return query_;
 	}

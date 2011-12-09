@@ -4,14 +4,17 @@ import java.nio.ByteBuffer;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.util.CountAggregator;
+import vis.data.util.SQL;
 import vis.data.util.SetAggregator;
 
 public abstract class BaseHitsAccessor {
 	final static int BATCH_SIZE = 1024;
+	abstract String bulkCountsQueryBase();
 	abstract PreparedStatement countsQuery();
 	abstract PreparedStatement updateQuery();
 	abstract int maxItemId();
@@ -61,47 +64,65 @@ public abstract class BaseHitsAccessor {
 				counts = new int[0];
 				return Pair.of(items, counts);
 			}
-			
-			byte[] data = rs.getBytes(1);
-			int num = data.length / (Integer.SIZE / 8) / 2;
-			items = new int[num];
-			counts = new int[num];
-			ByteBuffer bb = ByteBuffer.wrap(data);
-			for(int i = 0; i < num; ++i) {
-				items[i] = bb.getInt();
-				counts[i] = bb.getInt();
-			}
-			return Pair.of(items, counts);
+			return processRow(rs);
 		} finally {
 			rs.close();
 		}
+	}
+	private Pair<int[], int[]> processRow(ResultSet rs) throws SQLException {
+		byte[] data = rs.getBytes(1);
+		int num = data.length / (Integer.SIZE / 8) / 2;
+		int[] items = new int[num];
+		int[] counts = new int[num];
+		ByteBuffer bb = ByteBuffer.wrap(data);
+		for(int i = 0; i < num; ++i) {
+			items[i] = bb.getInt();
+			counts[i] = bb.getInt();
+		}
+		return Pair.of(items, counts);
 	}
 	static final int COUNT_TRADEOFF = 8192;
 	//TODO: batching? maybe not; these ones cause the result sets to be large
 	public Pair<int[], int[]> getCounts(int docs[]) throws SQLException {
 		if(docs.length == 0)
 			return Pair.of(new int[0], new int[0]);
-		int i = 0;
-		Pair<int[], int[]> partial = getCounts(docs[0]);
-		Pair<int[], int[]> res;
-		for(i = 1; i < docs.length; ++i) {
-			res = getCounts(docs[i]);
-			if(res.getKey().length > COUNT_TRADEOFF || partial.getKey().length > COUNT_TRADEOFF)
-				break;
-			partial = CountAggregator.or(res.getKey(), res.getValue(), partial.getKey(), partial.getValue());
+		StringBuilder sb = new StringBuilder(docs.length * 16);
+		sb.append(bulkCountsQueryBase());
+		sb.append("(");
+		sb.append(docs[0]);
+		for(int i = 1; i < docs.length; ++i) {
+			sb.append(",");
+			sb.append(docs[i]);
 		}
-
-		//bail if we finished in short mode
-		if(i == docs.length) {
-			return partial;
-		}		
-		int[] all = new int[maxItemId() + 1];
-		explodeItems(all, partial.getKey(), partial.getValue());
-		for(; i < docs.length; ++i) {
-			res = getCounts(docs[i]);
-			explodeItems(all, res.getKey(), res.getValue());
+		sb.append(")");
+		Statement st = SQL.forThread().createStatement();
+		ResultSet rs = st.executeQuery(sb.toString());
+		try {
+			if(!rs.next())
+				return Pair.of(new int[0], new int[0]);
+			Pair<int[], int[]> partial = processRow(rs);
+			Pair<int[], int[]> res;
+			while(rs.next()) {
+				res = processRow(rs);
+				if(res.getKey().length > COUNT_TRADEOFF || partial.getKey().length > COUNT_TRADEOFF)
+					break;
+				partial = CountAggregator.or(res.getKey(), res.getValue(), partial.getKey(), partial.getValue());
+			}
+	
+			//bail if we finished in short mode
+			if(rs.isAfterLast()) {
+				return partial;
+			}		
+			int[] all = new int[maxItemId() + 1];
+			explodeItems(all, partial.getKey(), partial.getValue());
+			while(rs.next()) {
+				res = processRow(rs);
+				explodeItems(all, res.getKey(), res.getValue());
+			}
+			return squishItems(all);
+		} finally {
+			rs.close();
 		}
-		return squishItems(all);
 	}
 	public int updateHitList(int item, int items[], int counts[]) throws SQLException {
 		PreparedStatement st =updateQuery();

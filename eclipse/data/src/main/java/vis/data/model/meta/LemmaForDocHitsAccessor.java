@@ -17,6 +17,10 @@ public class LemmaForDocHitsAccessor extends BaseHitsAccessor {
 		update_ = conn.prepareStatement("UPDATE " + DocLemma.TABLE + " SET " + DocLemma.LEMMA_LIST + " = ? " + " WHERE " + DocLemma.DOC_ID + " = ? ");
 	}
 	@Override
+	String bulkCountsQueryBase() {
+		return "SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE  + " WHERE " + DocLemma.DOC_ID + " IN ";
+	}
+	@Override
 	PreparedStatement countsQuery() {
 		return query_;
 	}
