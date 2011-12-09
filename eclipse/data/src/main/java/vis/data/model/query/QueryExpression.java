@@ -42,6 +42,18 @@ public class QueryExpression {
 	//This is the processed state for the term
 	protected Term.Parameters parameters_;
 	
+	@Override
+	public int hashCode() {
+		return QueryExpression.class.hashCode() ^ validate().hashCode();
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(!QueryExpression.class.isInstance(obj))
+			return false;
+		QueryExpression qe = (QueryExpression)obj;
+		return validate().equals(qe.validate());
+	}
+	
 	private void checkOnly() {
 		if(parameters_ != null) 
 			throw new RuntimeException("an expression can only have one operator");
@@ -85,8 +97,6 @@ public class QueryExpression {
 			throw new RuntimeException("failed to create term", e);
 		}
 	}
-	//this discards stuff too early
-	//static Map<Object, Term> g_term_cache = Collections.synchronizedMap(new WeakHashMap<Object, Term>());
 	//this "leaks" term parameter blocks
 	static Map<Object, SoftReference<Term>> g_term_cache = Collections.synchronizedMap(new HashMap<Object, SoftReference<Term>>());
 	static Term getCache(Object param) {

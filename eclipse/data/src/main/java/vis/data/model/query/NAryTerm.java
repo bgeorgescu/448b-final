@@ -30,7 +30,7 @@ public abstract class NAryTerm extends Term {
 		public void validate() {
 			if(terms_ == null)
 				throw new RuntimeException("terms missing for nary operation");
-			if(terms_.length < 2)
+			if(terms_.length < 1)
 				throw new RuntimeException("too few terms for nary operation");
 			for(QueryExpression qe : terms_) {
 				qe.validate();
