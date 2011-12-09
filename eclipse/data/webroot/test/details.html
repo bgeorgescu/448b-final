@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Article Details Test</title>
+    <script type="text/javascript" src="../js/config.js"></script>
+    <script type="text/javascript" src="../js/query.js"></script>
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/global.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Article Details Test</h1>
+    <script type="text/javascript">
+        //gimme bind!
+        if (!Function.prototype.bind) {
+          Function.prototype.bind = function (oThis) {
+            if (typeof this !== "function") {
+              // closest thing possible to the ECMAScript 5 internal IsCallable function
+              throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+            }
+
+            var aArgs = Array.prototype.slice.call(arguments, 1), 
+                fToBind = this, 
+                fNOP = function () {},
+                fBound = function () {
+                  return fToBind.apply(this instanceof fNOP
+                                         ? this
+                                         : oThis || window,
+                                       aArgs.concat(Array.prototype.slice.call(arguments)));
+                };
+
+            fNOP.prototype = this.prototype;
+            fBound.prototype = new fNOP();
+
+            return fBound;
+          };
+        }
+
+        function report(query, code, result, duration) {
+            $("<div/>")
+                .text("query for " + query)
+                .appendTo("body");
+            if(!success(code)) {
+                $("<div/>")
+                    .html(result)
+                    .css("color", "red")
+                    .appendTo("body");
+            } else {
+                $("<div/>")
+                    .text("Success " + code + " in " + duration + "ms")
+                    .appendTo("body");
+                $("<div/>")
+                    .text(JSON.stringify(result))
+                    .appendTo("body");
+            }
+            doNextQuery();
+        }
+    
+        queries = [];
+        function doNextQuery() {
+            if(queries.length == 0) {
+                $("<h1/>")
+                    .text("DONE")
+                    .appendTo("body");
+                return;
+            }
+            var q = queries.shift();
+            q();
+        }
+
+        for(var i = 2000; i <= 2010; ++i) {
+            queries.push(function(y) { 
+                arbitraryQuery("/api/query/details/one", 
+                    {
+                        series_:[
+                            AndTerm(
+                                OrTerm(
+                                    EntityTerm('hillary clinton'),
+                                    EntityTerm('clinton'),
+                                    LemmaTerm('clinton')
+                                ),
+                                YearTerm(y)
+                            )
+                        ],
+                        maxResults_:5
+                    },
+                    function(c,r,d){report(y + "article details (max=5) for clinton",c,r,d);}
+                );
+            }.bind(undefined, i));
+        }
+        doNextQuery();
+    </script>
+  </body>
+</html>
