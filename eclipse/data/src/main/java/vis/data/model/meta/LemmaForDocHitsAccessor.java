@@ -10,14 +10,19 @@ import vis.data.model.DocLemma;
 import vis.data.util.SQL;
 
 public class LemmaForDocHitsAccessor extends BaseHitsAccessor {
-	PreparedStatement query_;
+	PreparedStatement query_, update_;
 	public LemmaForDocHitsAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + DocLemma.LEMMA_LIST + " FROM " + DocLemma.TABLE + " WHERE " + DocLemma.DOC_ID + " = ?");
+		update_ = conn.prepareStatement("UPDATE " + DocLemma.TABLE + " SET " + DocLemma.LEMMA_LIST + " = ? " + " WHERE " + DocLemma.DOC_ID + " = ? ");
 	}
 	@Override
 	PreparedStatement countsQuery() {
 		return query_;
+	}
+	@Override
+	PreparedStatement updateQuery() {
+		return update_;
 	}
 	@Override
 	int maxItemId() {

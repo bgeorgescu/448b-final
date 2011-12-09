@@ -13,6 +13,7 @@ import vis.data.util.SetAggregator;
 public abstract class BaseHitsAccessor {
 	final static int BATCH_SIZE = 1024;
 	abstract PreparedStatement countsQuery();
+	abstract PreparedStatement updateQuery();
 	abstract int maxItemId();
 	abstract int maxCountedItemId();
 	public int[] getItems(int doc_id) throws SQLException {
@@ -70,8 +71,6 @@ public abstract class BaseHitsAccessor {
 				items[i] = bb.getInt();
 				counts[i] = bb.getInt();
 			}
-			//TODO: XXXX evil and slow and wasteful... resort the lists in the doc table
-			CountAggregator.sortByIdAsc(items, counts);
 			return Pair.of(items, counts);
 		} finally {
 			rs.close();
@@ -103,6 +102,12 @@ public abstract class BaseHitsAccessor {
 			explodeItems(all, res.getKey(), res.getValue());
 		}
 		return squishItems(all);
+	}
+	public int updateHitList(int item, int items[], int counts[]) throws SQLException {
+		PreparedStatement st =updateQuery();
+		st.setBytes(1, pack(items, counts));
+		st.setInt(2, item);
+		return st.executeUpdate();
 	}
 	public static byte[] pack(int items[], int counts[]) {
 		int num = items.length;
@@ -136,4 +141,5 @@ public abstract class BaseHitsAccessor {
 			all[id[i]] += count[i];
 		}
 	}
+	
 }

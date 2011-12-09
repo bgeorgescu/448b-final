@@ -3,8 +3,6 @@ package vis.data.util;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Map.Entry;
-import java.util.TreeMap;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
@@ -12,14 +10,34 @@ import org.apache.commons.lang3.tuple.Pair;
 public class CountAggregator {
 	public static void sortByIdAsc(int a[], int a_count[]) {
 		assert(a.length == a_count.length);
-		TreeMap<Integer, Integer> v = new TreeMap<Integer, Integer>();
-		for(int i = 0; i < a.length; ++i) {
-			v.put(a[i], a_count[i]);
+		class CountTuple implements Comparable<CountTuple>{ 
+			int a, count;
+
+			@Override
+			public int compareTo(CountTuple o) {
+				if(a < o.a)
+					return -1;
+				if(a > o.a)
+					return 1;
+				if(count > o.count)
+					return -1;
+				if(count < o.count)
+					return 1;
+				return 0;
+			}
 		}
+		ArrayList<CountTuple> act = new ArrayList<CountTuple>(a.length);
+		for(int i = 0; i < a.length; ++i) {
+			CountTuple ct = new CountTuple();
+			ct.a = a[i];
+			ct.count = a_count[i];
+			act.add(ct);
+		}
+		Collections.sort(act);
 		int i = 0;
-		for(Entry<Integer, Integer> e : v.entrySet()) {
-			a[i] = e.getKey();
-			a_count[i] = e.getValue();
+		for(CountTuple e : act) {
+			a[i] = e.a;
+			a_count[i] = e.count;
 			++i;
 		}
 	}	
