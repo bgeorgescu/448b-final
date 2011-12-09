@@ -53,11 +53,11 @@
                 }
             }
             function atBeginningOfTerm(s) {
-                return /(?:^|[,+\(\)])\s*$/.test(s);
+                return /(?:^|[,+\(\)\s])\s*$/.test(s);
             }
             function getTerm(before,after) {
-                var a = /(?:^|[,+\(\)])([^,+\(\)]*)$/.exec(before);
-                var b = /[^,+\(\)]*/.exec(after);
+                var a = /(?:^|[,+\(\)\s])([^,+\(\)\s]*)$/.exec(before);
+                var b = /^[^,+\(\)\s]*/.exec(after);
                 return (a[1] + b[0]).replace(/\s*/, "");
             }
             $(function() {
@@ -76,7 +76,7 @@
                         return {
                             label:"<input class='autocomplete-check' id='" + id + "' type='checkbox'>" +
                                 "<label for='" + id + "'>" + 
-                                x.resolved_ + " (" + x.score_ + ")" +
+                                x.resolved_.substring(0, x.resolved_.indexOf('/')) + " (" + x.score_ + ")" +
                                 "</label>",
                             value:x.resolved_.substring(0, x.resolved_.indexOf('/')),
                             category:x.category_,
