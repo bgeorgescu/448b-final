@@ -11,6 +11,7 @@ function Literal() {
 	});
 }
 
+
 function SetLiteralType(literal, type) {
 	// TODO
 }
@@ -184,6 +185,9 @@ function queryForObject(state) {
 	var OrHelper = function(arr) { return arr.length > 1 ? {or_:{terms_: arr }} : arr[0]; };
 	var WordToTerm = LemmaTerm;
 	
+	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
+
+	
 	query.filter_ = {date_:{before_:(state.endYear+1)*10000, after_:(state.startYear*10000 - 1)}};
 	
 	query.series_ = state.series
@@ -251,6 +255,11 @@ viewModel.graphData = function(data) {
 
 var current_generation = 0;
 function queryChanged() {
+
+	hashIgnore = true;
+	window.location.hash = encodeURIComponent(JSON.stringify(domStateToObject()));
+	hashIgnore = false;
+
 	// will get called anytime the query gets changed in any way
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
     var query = queryForObject(domStateToObject());
@@ -346,18 +355,51 @@ function updatePlot() {
 	$.plot($("#plot"), viewModel.graphData(), viewModel.graphOptions());
 }
 
-s1 = Series();
-s2 = Series();
-s3 = Series();
+function AddSeries(s) {
+	$("#series").append(s);
+}
 
 
-$("#series").append(s1);
-$("#series").append(s2);
-$("#series").append(s3);
 
+$("#newseries").click(function(x) { AddSeries(Series()); return false; })
+	.droppable({
+		accept: function(x) {
+			return x.hasClass("literal") && !x.hasClass("dropped")
+				|| x.hasClass("disjunction")
+		},
+		activeClass: "droppable",
+		hoverClass: "hover",
+		drop: function(event, ui) {
+			if(ui.draggable.hasClass("disjunction")) {
+				var s = Series();
+				AddDisjunctionToSeries(ui.draggable, s);
+				AddSeries(s);
+			}
+			else if(ui.draggable.hasClass("literal")) {
+				var s = Series();
+				AddLiteralCopyToSeries(ui.draggable, s);
+				AddSeries(s);
+			}
+		},
+		greedy:true
+	});
 
-d1 = Disjunction();
-s1.find(".contents").append(d1);
+$("#palette input").keyup(function() {
+	var pval = $(this).val();
+	$("#palette .contents .literal").each(function() {
+		SetLiteralText($(this), pval);
+	});
+});
 
-l1 = Literal().text("cool")//.draggable("option","helper","clone");
-s3.append(l1);
+l1 = Literal().text("").draggable("option","helper","clone");
+$("#palette .contents").append(l1);
+
+var hashIgnore = false;
+function hashChange() {
+	if(!hashIgnore && window.location.hash != "") {
+		objectToDomState(JSON.parse(decodeURIComponent(window.location.hash.slice(1))));
+		queryChanged();
+	}
+}
+
+window.onhashchange = hashChange;

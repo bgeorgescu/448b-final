@@ -1,4 +1,4 @@
-div {
+.series div {
 	display:inline;
 }
 
@@ -48,4 +48,8 @@ div {
 	font-weight:900;
 	letter-spacing:1px;
 	text-shadow: #BBB 1px 1px;
+}
+
+.literal {
+	background: yellow;
 }

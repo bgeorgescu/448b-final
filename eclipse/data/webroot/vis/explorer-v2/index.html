@@ -16,17 +16,37 @@
 
 </head>
 <body>
+<br />
 <div class="container_16">
 <h1>Newspaper Explorer</h1>
-  <div class="grid_14" id="series">
+  <div class="grid_12" id="series">
 	&nbsp;
   </div>
-  <div class="grid_2" id="trash">
-	trash
+  <div class="grid_4">
+  <strong>Interesting graphs:</strong>
+  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22pakistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22afghanistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iraq%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22north%20korea%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iran%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
+  effect on 9/11 on coverage of selected countries</a>
+  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22soccer%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22basketball%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22football%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22baseball%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22hockey%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
+  yearly sports seasons
+  </a>
   </div>
   <div class="clear"></div>
+  <div class="grid_12" id="series">
+	<a id="newseries" href="#">new series</a>
+	<span id="trash">trash</span>
+	<a id="updateplot" href="#" onclick="queryChanged(); return false;">update plot</a>
+  </div>
+
+  <div class="clear"></div>
+  <div class="grid_12" id="plot" style="height:600px;">&nbsp;</div>
+  <div class="grid_4" id="palette">
+  	<strong>Palette:</strong>
+  	<input type="text"/>
+  	<div class="contents">
+  	</div>
+  </div>
+
 </div>
-<div id="plot" style="width:100%;height:600px;"></div>
 
 
 <!--- TEMPLATES --->
