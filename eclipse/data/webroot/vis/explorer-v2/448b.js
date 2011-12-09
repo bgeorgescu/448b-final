@@ -8,6 +8,7 @@ function Literal() {
 	return TemplateInstance("literal").draggable({
 		revert:"invalid",
 		revertDuration: globalRevertDuration,
+		zIndex: 2700
 	});
 }
 
@@ -71,6 +72,7 @@ function Series() {
 		drop: function(event, ui) {
 			if(ui.draggable.hasClass("disjunction")) {
 				AddDisjunctionToSeries(ui.draggable, $(this));
+				ui.draggable.attr('style','');
 			}
 			else if(ui.draggable.hasClass("literal")) {
 				AddLiteralCopyToSeries(ui.draggable, $(this));
@@ -81,6 +83,7 @@ function Series() {
 	t.draggable({
 		revert:"invalid",
 		handle: ".sGrip",
+		zIndex: 2700,
 		revertDuration: globalRevertDuration,
 	});
 	return t;
@@ -101,7 +104,8 @@ function Disjunction() {
 	t.draggable({
 		revert:"invalid",
 		handle: ".dGrip",
-		helper: function() { return $(this).css("z-index",10000) },
+		zIndex: 2700,
+		//helper: function() { return $(this).css("z-index",10000) },
 		revertDuration: globalRevertDuration,
 	});
 	return t;
@@ -147,6 +151,7 @@ function domStateToObject() {
 function objectToDomState(obj) {
 	var series_container = $("#series");
 	series_container.empty();
+	series_container.html("&nbsp;");
 	$.each(obj.series, function(i,series) {
 		var s = Series();
 		series_container.append(s);
@@ -403,3 +408,4 @@ function hashChange() {
 }
 
 window.onhashchange = hashChange;
+hashChange();
