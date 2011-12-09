@@ -147,7 +147,7 @@ public class SQL {
 	static {
 		base.setUser("vis");
 		base.setPassword("vis");
-		base.setUrl("jdbc:mysql://127.0.0.1/vis");
+		base.setUrl("jdbc:mysql://127.0.0.1/vis?useServerPrepStmts=true");
 		if(TRACE_SQL)
 			cpds = new Log4jdbcProxyDataSource(base);
 		else
