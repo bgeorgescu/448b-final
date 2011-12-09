@@ -30,11 +30,14 @@
                     for(var i = 0; i < raw.length; i += 2) {
                         
                         items.push(
-                            "<table width='100%'><tr><td width='50%'>" +
-                            makeItem(raw[i]) +
-                            "</td><td width='50%'>" +
-                            makeItem(raw[i + 1]) +
-                            "</td></tr></table>"
+                            {
+                                label:"<table width='100%'><tr><td width='50%'>" +
+                                makeItem(raw[i]) +
+                                "</td><td width='50%'>" +
+                                makeItem(raw[i + 1]) +
+                                "</td></tr></table>",
+                                value:'never should get this'
+                            }
                         );
                     }
                     callback(items);
