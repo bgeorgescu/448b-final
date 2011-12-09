@@ -11,6 +11,7 @@
         <script type="text/javascript" src="lib/jquery.ui.autocomplete.html.js"></script>
         <script type="text/javascript" src="lib/jquery.ui.autocomplete.toggle.js"></script>
         <script type="text/javascript" src="lib/Math.uuid.js"></script>
+        <script type="text/javascript" src="lib/jquery.caret.1.02.js"></script>
 		<style type="text/css">
             #term-completes ul {
                 -webkit-column-count: 5; -webkit-column-gap:20px;
@@ -51,6 +52,14 @@
                     return scoreSort(a,b);
                 }
             }
+            function atBeginningOfTerm(s) {
+                return /(?:^|[,+\(\)])\s*$/.test(s);
+            }
+            function getTerm(before,after) {
+                var a = /(?:^|[,+\(\)])([^,+\(\)]*)$/.exec(before);
+                var b = /[^,+\(\)]*/.exec(after);
+                return (a[1] + b[0]).replace(/\s*/, "");
+            }
             $(function() {
                 function autocompleteUpdate(callback, code, response, duration) {
                     $("#duration").text(duration + "ms");
@@ -74,13 +83,24 @@
                         };
                     }));
                 }
-
+                
                 $( "#query" ).autocomplete(
                     {
                         source:function(req, resp) {
-                            var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(req.term), autocompleteUpdate.bind(undefined, resp));
+                            var caret = this.caret();
+                            console.log(req.term + " : " + req.term.substring(0, caret.start));
+                            //if previous char is a space, no ac
+                            if(atBeginningOfTerm(req.term.substring(0, caret.start))) {
+                                resp([]);
+                                return;
+                            }
+                            var before = req.term.substring(0, caret.start);
+                            var after = req.term.substring(caret.start);
+                            var term = getTerm(before, after);
+                            console.log(term);
+                            var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, resp));
                             xhr.send(null);                
-                        },
+                        }.bind($("#query")),
                         appendTo:$("#term-completes"),
                         html:true,
                         select:function (event, ui) {
@@ -97,7 +117,7 @@
         <div class="demo">
             <div class="grid-autocomplete ui-widget">
                 <label for="query">Query: </label>
-                <input id="query">Duration: <span id="duration"></span>
+                <input type="text" id="query">Duration: <span id="duration"></span>
             </div>
         </div>     
         <div id="term-completes"></div>
