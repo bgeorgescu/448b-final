@@ -9,6 +9,8 @@
 		<script type="text/javascript" src="../../js/config.js"></script>
 		<script type="text/javascript" src="../../js/query.js"></script>
         <script type="text/javascript" src="lib/jquery.ui.autocomplete.html.js"></script>
+        <script type="text/javascript" src="lib/jquery.ui.autocomplete.toggle.js"></script>
+        <script type="text/javascript" src="lib/Math.uuid.js"></script>
 		<style type="text/css">
             #term-completes ul {
                 -webkit-column-count: 2; -webkit-column-gap:20px;
@@ -29,8 +31,12 @@
                         return;
                     }
                     callback(response.slice(0,15).map(function(x) { 
+                        var id = Math.uuid();
                         return {
-                            label:x.resolved_ + " (" + x.score_ + ")", 
+                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox'>" +
+                                "<label for='" + id + "'>" + 
+                                x.resolved_ + " (" + x.score_ + ")" +
+                                "</label>",
                             value:x.resolved_.substring(0, x.resolved_.indexOf('/')),
                         };
                     }));
@@ -43,7 +49,10 @@
                             xhr.send(null);                
                         },
                         appendTo:$("#term-completes"),
-                        html:true
+                        html:true,
+                        select:function (event, ui) {
+                            return false;
+                        }
                     }
                 );
             });
