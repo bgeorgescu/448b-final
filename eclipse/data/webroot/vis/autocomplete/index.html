@@ -22,6 +22,9 @@
             #term-completes .ui-autocomplete {
                 width:80%;
             }
+            #query {
+                width:80%;
+            }
 		</style>	
 	</head>
 	<body>
@@ -102,7 +105,7 @@
                         a.push(a_last + b_first);
                     }
                 }
-                var start_or = undefined;
+                var start_or = 0;
                 var start_word = undefined;
                 for(var i = a.length - 1; i >= 0; --i) {
                     if(undefined === start_word && !ok_word_expr.test(a[i])) {
@@ -111,18 +114,17 @@
                     if(!ok_or_expr.test(a[i])) {
                         if(a[i] == '(') {
                             start_or = i + 1;
+                        } else {
+                            start_or = undefined;
                         }
                         break;
                     }
-                }
-                if(undefined === start_or) {
-                    start_or = 0;
                 }
                 if(undefined === start_word) {
                     start_word = a.length;
                 }
                 var end_word = undefined;
-                var end_or = undefined;
+                var end_or = b.length;
                 for(var i = 0; i < b.length; ++i) {
                     if(undefined === end_word && !ok_word_expr.test(b[i])) {
                         end_word = i;
@@ -130,15 +132,14 @@
                     if(!ok_or_expr.test(b[i])) {
                         if(b[i] == ')') {
                             end_or = i;
+                        } else {
+                            end_or = undefined;
                         }
                         break;
                     }
                 }
                 if(undefined === end_word) {
                     end_word = 0;
-                }
-                if(undefined === end_or) {
-                    end_or = 0;
                 }
                 var txt = "";
                 if(undefined === start_or || undefined === end_or) {
@@ -166,7 +167,7 @@
                         a.push(a_last + b_first);
                     }
                 }
-                var start_or = undefined;
+                var start_or = 0;
                 var start_word = undefined;
                 for(var i = a.length - 1; i >= 0; --i) {
                     if(undefined === start_word && !ok_word_expr.test(a[i])) {
@@ -175,12 +176,11 @@
                     if(!ok_or_expr.test(a[i])) {
                         if(a[i] == '(') {
                             start_or = i + 1;
+                        } else {
+                            start_or = undefined;
                         }
                         break;
                     }
-                }
-                if(undefined === start_or) {
-                    start_or = 0;
                 }
                 if(undefined === start_word) {
                     start_word = a.length;
@@ -188,21 +188,20 @@
                 var end_word = undefined;
                 var end_or = undefined;
                 for(var i = 0; i < b.length; ++i) {
+                    if(undefined === end_word && !ok_word_expr.test(b[i])) {
+                        end_word = i;
+                    }
                     if(!ok_or_expr.test(b[i])) {
                         if(b[i] == ')') {
                             end_or = i;
+                        } else {
+                            end_or = undefined;
                         }
                         break;
-                    }
-                    if(undefined === end_word && !ok_word_expr.test(b[i])) {
-                        end_word = i;
                     }
                 }
                 if(undefined === end_word) {
                     end_word = 0;
-                }
-                if(undefined === end_or) {
-                    end_or = 0;
                 }
                 var replacement = "";
                 for(var i = 0; i < replacement_ors.length; ++i) {
@@ -244,10 +243,11 @@
                     var hits = top.map(function(x) { 
                         var id = Math.uuid();
                         var checked = "";
+                        var word = x.resolved_.substring(0, x.resolved_.indexOf('/'));
                         return {
-                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox' " + checked + ">" +
+                            label:"<input class='autocomplete-check'  id='" + id + "' alt='" + word + "' type='checkbox' " + checked + ">" +
                                 "<label for='" + id + "'>" + 
-                                x.resolved_.substring(0, x.resolved_.indexOf('/')) + " (" + x.score_ + ")" +
+                                word + " (" + x.score_ + ")" +
                                 "</label>",
                             value:x.resolved_.substring(0, x.resolved_.indexOf('/')),
                             category:x.category_,
@@ -257,7 +257,7 @@
                         var id = Math.uuid();
                         var checked = "checked";
                         hits.unshift({
-                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox' " + checked + ">" +
+                            label:"<input class='autocomplete-check' id='" + id + "' alt='" + ors[i] + "' type='checkbox' " + checked + ">" +
                                 "<label for='" + id + "'>" + 
                                 ors[i] +
                                 "</label>",
@@ -297,10 +297,20 @@
                             console.log("commit");
                             var before = term.substring(0, caret.start);
                             var after = term.substring(caret.start);
-                            var old_terms = extractOrList(before, after);
-                            console.log(old_terms);
-                            old_terms.push("%&%");
-                            var new_terms = replaceOrList(before, after, old_terms);
+                            //var old_terms = extractOrList(before, after);
+                            //old_terms.push("%&%");
+                            //var new_terms = replaceOrList(before, after, old_terms);
+                            var selected = [];
+                            var check = $("#term-completes .autocomplete-check");
+                            for(var i = 0; i < check.length; ++i) {
+                                var a_check = $(check[i]);
+                                if(a_check.attr("checked") || a_check.next().hasClass("ui-state-active")) {
+                                    selected.push(a_check.attr("alt"));
+                                }
+                            }
+                            if(selected.length > 0)
+                                selected.push("%&%");
+                            var new_terms = replaceOrList(before, after, selected);
                             var replacement = "";
                             for(var i = 0; i < new_terms.length; ++i) {
                                 if(i != 0) replacement += ",";
