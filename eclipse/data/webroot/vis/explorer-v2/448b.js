@@ -301,12 +301,9 @@ function array_range(x,y,step) {
 }
 
 
-/*
-
-snippet to find first literal of plottable series (to be used for legend):
-$(".series").filter(function(x) { return $(this).find(".literal").length; }).find(".literal").first();
-
-*/
+function GetSeriesLabels() {
+	return $(".series").filter(function(x) { return $(this).find(".literal").length; }).find(".literal").map(function() {return GetLiteralText($(this));});
+}
 
 function queryForObject(state) {
 	var query = {};
@@ -383,6 +380,7 @@ function queryChanged() {
             }
             if(gen != current_generation)
                 return;
+            var labels=GetSeriesLabels();
             //TODO: maybe a better way to do this
             if(viewModel.horizontalAxis() == "page") {
                 viewModel._graphData(
@@ -391,7 +389,7 @@ function queryChanged() {
                         
                         return {data: x.map(function(y,y_i) {
                             return [y_i + 1,y];
-                        }), label: "" };
+                        }), label: labels[x_i] };
                     }));
             } 
             else if(viewModel.dateGranularity() == "year") {
@@ -401,7 +399,7 @@ function queryChanged() {
 						
 						return {data: x.map(function(y,y_i) {
 							return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
-						}), label: "" };
+						}), label: labels[x_i]  };
 					}));
             } else if(viewModel.dateGranularity() == "month") {
 				viewModel._graphData(
@@ -410,7 +408,7 @@ function queryChanged() {
 						
 						return {data: x.map(function(y,y_i) {
 							return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
-						}), label: "" };
+						}), label: labels[x_i]  };
 					}));
             }
         }.bind(this, ++current_generation, query));
