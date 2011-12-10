@@ -5,9 +5,14 @@
 <script type="text/javascript" src="../../js/query.js"></script>
 <script type="text/javascript" src="lib/jquery.flot.min.js"></script>
 <script type="text/javascript" src="lib/jquery.flot.stack.min.js"></script>
+<script src="lib/jquery.mousewheel.min.js"></script>
+
+<script src="lib/jQAllRangeSliders-min.js"></script>
+
 <script type="text/javascript" src="../../js/config.js"></script>
 
 
+<link rel="stylesheet" href="lib/range-css/dev.css"> 
 <link type="text/css" href="lib/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
 <link type="text/css" rel="stylesheet" href="lib/reset.css" />
 <link type="text/css" rel="stylesheet" href="lib/text.css" />
@@ -23,15 +28,8 @@
 	&nbsp;
   </div>
   <div class="grid_4">
-  <strong>Interesting graphs:</strong><br />
-  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22pakistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22afghanistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iraq%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22north%20korea%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iran%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
-  effect on 9/11 on coverage of selected countries</a><br />
-  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22soccer%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22basketball%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22football%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22baseball%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22hockey%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
-  yearly sports seasons
-  </a><br />
-  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22the%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
-  "the" decline of american journalism
-  </a><br />
+  <div id="daterange">
+  </div>
   </div>
   <div class="clear"></div>
   <div class="grid_12" id="series">
@@ -41,12 +39,26 @@
   </div>
 
   <div class="clear"></div>
-  <div class="grid_12" id="plot" style="height:600px;">&nbsp;</div>
   <div class="grid_4" id="palette">
-  	<strong>Palette:</strong>
-  	<input type="text"/>
-  	<div class="contents">
-  	</div>
+    <strong>Palette:</strong>
+    <input type="text"/>
+    <div class="contents">
+    </div>
+  </div>
+  <div class="grid_12" id="plot" style="height:400px;">&nbsp;</div>
+
+  <div class="clear"></div>
+
+  <div class="grid_16">
+  <strong>Interesting graphs:</strong><br />
+  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22pakistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22afghanistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iraq%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22north%20korea%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iran%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
+  effect on 9/11 on coverage of selected countries</a><br />
+  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22soccer%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22basketball%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22football%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22baseball%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22hockey%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
+  yearly sports seasons
+  </a><br />
+  <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22the%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
+  "the" decline of american journalism
+  </a><br />
   </div>
 
 </div>

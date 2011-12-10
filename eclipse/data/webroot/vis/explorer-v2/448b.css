@@ -48,8 +48,10 @@
 	font-weight:900;
 	letter-spacing:1px;
 	text-shadow: #BBB 1px 1px;
+	cursor:move;
 }
 
 .literal {
 	background: yellow;
+	cursor:move;
 }

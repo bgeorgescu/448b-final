@@ -1,5 +1,97 @@
 var globalRevertDuration=100;
 
+
+var viewModel = {
+	_horizontalAxis: "date",
+	_dateGranularity: "month",
+	_graphStack: true,
+	_graphFill: true,
+	_graphMode: "bars",
+	_startYear: 2000,
+	_endYear: 2010
+};
+
+viewModel.horizontalAxis = function(data) {
+	if(data) {
+		viewModel._horizontalAxis = data;
+		queryChanged();
+	}
+	else {
+		return viewModel._horizontalAxis;
+	}
+};
+viewModel.dateGranularity =function(data) {
+	if(data) {
+		viewModel._dateGranularity = data;
+		queryChanged();
+	}
+	else {
+		return viewModel._dateGranularity;
+	}
+};
+viewModel.graphStack = function(data) {
+	if(data) {
+		viewModel._graphStack = data;
+		updatePlot();
+	}
+	else {
+		return viewModel._graphStack;
+	}
+};
+viewModel.graphFill = function(data) {
+	if(data) {
+		viewModel._graphFill = data;
+		updatePlot();
+	}
+	else {
+		return viewModel._graphFill;
+	}
+};
+viewModel.graphMode = function(data) {
+	if(data) {
+		viewModel._graphMode = data;
+		updatePlot();
+	}
+	else {
+		return viewModel._graphMode;
+	}
+};
+viewModel.startYear = function(data) {
+	if(data) {
+		viewModel._startYear = data;
+		$("#daterange").rangeSlider("min", data);
+		queryChanged();
+	}
+	else {
+		return viewModel._startYear;
+	}
+};
+viewModel.endYear = function(data) {
+	if(data) {
+		viewModel._endYear = data;
+		$("#daterange").rangeSlider("max", data);
+		queryChanged();
+	}
+	else {
+		return viewModel._endYear;
+	}
+};
+viewModel._graphData = function(data) {
+	if(data) {
+		viewModel.__graphData = data;
+		updatePlot();
+	}
+	else {
+		return viewModel.__graphData;
+	}
+};
+
+viewModelContents = [];
+for(i in viewModel) {
+	if(i[0]!='_')
+		viewModelContents.push(i);
+}
+
 function TemplateInstance(t) {
 	return $("#"+t+"_template").clone(true, true).removeAttr("id");
 }
@@ -129,7 +221,7 @@ $("#trash").droppable({
 
 
 function domStateToObject() {
-	return {
+	var retval = {
 		series:
 			$(".series:not(#series_template) > .contents").get().map(function(x) {
 				return {
@@ -141,14 +233,18 @@ function domStateToObject() {
 						})
 				}
 			}),
-		startYear: 2000,
-		endYear: 2010,
-		horizontalAxis: "date",
-		dateGranularity: "month"
-	}
+	};
+	
+	$.each(viewModelContents, function(i,c) {
+		retval[c] = viewModel[c]();
+	});	
+	
+	return retval;
 }
 
+
 function objectToDomState(obj) {
+	ignoreQueryChange = true;
 	var series_container = $("#series");
 	series_container.empty();
 	series_container.html("&nbsp;");
@@ -166,6 +262,14 @@ function objectToDomState(obj) {
 			});
 		});
 	});
+	
+	$.each(viewModelContents, function(i,c) {
+		if(typeof obj[c] != "undefined") {
+			viewModel[c](obj[c]);
+		}
+	});	
+	ignoreQueryChange = false;
+	queryChanged();
 }
 
 function array_range(x,y,step) {
@@ -235,31 +339,12 @@ function queryForObject(state) {
 }
 
 
-var viewModel = {};
 
-viewModel.horizontalAxis = function() { return "date" };
-viewModel.dateGranularity = function() { return "month" };
-viewModel.graphStack = function() { return true; };
-viewModel.graphFill = function() { return true; };
-viewModel.graphMode = function() { return "bars"; };
-viewModel.startYear = function() { return 2000; };
-viewModel.endYear = function() { return 2010; };
-
-
-viewModel.graphData = function(data) {
-	if(data) {
-		viewModel.graphData_ = data;
-		updatePlot();
-	}
-	else {
-		return viewModel.graphData_;
-	}
-};
-
-
-
+ignoreQueryChange = false;
 var current_generation = 0;
 function queryChanged() {
+	if(ignoreQueryChange)
+		return;
 
 	hashIgnore = true;
 	window.location.hash = encodeURIComponent(JSON.stringify(domStateToObject()));
@@ -280,7 +365,7 @@ function queryChanged() {
                 return;
             //TODO: maybe a better way to do this
             if(viewModel.horizontalAxis() == "page") {
-                viewModel.graphData(
+                viewModel._graphData(
                     r
                     .map(function(x, x_i) {
                         
@@ -290,7 +375,7 @@ function queryChanged() {
                     }));
             } 
             else if(viewModel.dateGranularity() == "year") {
-				viewModel.graphData(
+				viewModel._graphData(
 					r
 					.map(function(x, x_i) {
 						
@@ -299,7 +384,7 @@ function queryChanged() {
 						}), label: "" };
 					}));
             } else if(viewModel.dateGranularity() == "month") {
-				viewModel.graphData(
+				viewModel._graphData(
 					r
 					.map(function(x, x_i) {
 						
@@ -311,7 +396,7 @@ function queryChanged() {
         }.bind(this, ++current_generation, query));
 }
 
-viewModel.graphOptions = function() {
+viewModel._graphOptions = function() {
     var retval = {
 		series: {
 			stack: viewModel.graphStack() ? 1 : null,
@@ -357,7 +442,8 @@ viewModel.graphOptions = function() {
 }
 
 function updatePlot() {
-	$.plot($("#plot"), viewModel.graphData(), viewModel.graphOptions());
+	if(!ignoreQueryChange)
+	$.plot($("#plot"), viewModel._graphData(), viewModel._graphOptions());
 }
 
 function AddSeries(s) {
@@ -396,9 +482,6 @@ $("#palette input").keyup(function() {
 	});
 });
 
-l1 = Literal().text("").draggable("option","helper","clone");
-$("#palette .contents").append(l1);
-
 var hashIgnore = false;
 function hashChange() {
 	if(!hashIgnore && window.location.hash != "") {
@@ -406,6 +489,31 @@ function hashChange() {
 		queryChanged();
 	}
 }
+
+var rangeSlider= $("#daterange").rangeSlider({
+  defaultValues:{min:2000, max:2010},
+  bounds:{min:2000, max:2010},
+  wheelMode: null,
+  wheelSpeed: 8,
+  arrows: false,
+  valueLabels: "show",
+  formatter: function(value){return Math.round(value)},
+  durationIn: 0,
+  durationOut: 400,
+  delayOut: 200,
+  range: {min: false, max: false}
+});
+rangeSlider.bind("valuesChanged", function(event, ui){
+	viewModel.startYear(Math.round(ui.values.min));
+	viewModel.endYear(Math.round(ui.values.max));
+});
+
+
+
+
+
+l1 = Literal().text("").draggable("option","helper","clone");
+$("#palette .contents").append(l1);
 
 window.onhashchange = hashChange;
 hashChange();
