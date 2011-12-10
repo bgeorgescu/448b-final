@@ -300,9 +300,8 @@ function array_range(x,y,step) {
 	return retval;
 }
 
-
 function GetSeriesLabels() {
-	return $(".series").filter(function(x) { return $(this).find(".literal").length; }).find(".literal").map(function() {return GetLiteralText($(this));});
+	return $(".series").filter(function(x) { return $(this).find(".literal").length; }).map(function() { return GetLiteralText($(this).find('.literal').first())});
 }
 
 function queryForObject(state) {
