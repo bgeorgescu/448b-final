@@ -47,15 +47,40 @@ $.extend( proto, {
         this.element.unbind('keydown.autocomplete', old_down);
         this.element.bind("keydown.autocomplete", function(event, ui){
             var keyCode = $.ui.keyCode;
-            if(self.menu.element.is(":visible") && self.menu.active) {
-                switch( event.keyCode ) {
-                case keyCode.ENTER:
-                    var checkbox = $(".autocomplete-check", self.menu.active);
-                    var old = checkbox.attr("checked");
-                    checkbox.attr("checked", !old);
-                    checkbox.button("refresh");
-                    return;
-                default:
+            if(self.menu.element.is(":visible")) {
+                if(self.menu.active) {
+                    switch( event.keyCode ) {
+                    case keyCode.ESCAPE:
+                        self.options.revert();
+                        self.close();
+                        return;
+                    case keyCode.ENTER:
+                    case keyCode.PLUS:
+                    case keyCode.OPEN_BRACKET:
+                    case keyCode.CLOSE_BRACKET:
+                        self.options.commit(self.term);
+                        self.close();
+                        return;
+                    case keyCode.SPACE:
+                        var checkbox = $(".autocomplete-check", self.menu.active);
+                        var old = checkbox.attr("checked");
+                        checkbox.attr("checked", !old);
+                        checkbox.button("refresh");
+                        suppress = true;
+                        return;
+                    default:
+                    }
+                } else {
+                    switch( event.keyCode ) {
+                    case keyCode.ENTER:
+                    case keyCode.PLUS:
+                    case keyCode.OPEN_BRACKET:
+                    case keyCode.CLOSE_BRACKET:
+                    case keyCode.SPACE:
+                        self.options.commit(self.term);
+                        self.close();
+                    default:
+                    }
                 }
             }
             old_down.handler(event, ui);
@@ -65,7 +90,7 @@ $.extend( proto, {
         this.element.bind("keypress.autocomplete", function(event, ui){
             if(suppress) {
                 suppress = false;
-                event.preventdefault();
+                event.preventDefault();
             }
         });
     },

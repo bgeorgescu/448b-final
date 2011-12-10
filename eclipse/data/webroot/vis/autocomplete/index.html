@@ -102,23 +102,21 @@
                         a.push(a_last + b_first);
                     }
                 }
-                a.unshift('(');
-                b.push(')');
-                var or = [];
-                var word = [];
-                var ok_or = true;
                 var start_or = undefined;
                 var start_word = undefined;
                 for(var i = a.length - 1; i >= 0; --i) {
+                    if(undefined === start_word && !ok_word_expr.test(a[i])) {
+                        start_word = i + 1;
+                    }
                     if(!ok_or_expr.test(a[i])) {
                         if(a[i] == '(') {
                             start_or = i + 1;
                         }
                         break;
                     }
-                    if(undefined === start_word && !ok_word_expr.test(a[i])) {
-                        start_word = i + 1;
-                    }
+                }
+                if(undefined === start_or) {
+                    start_or = 0;
                 }
                 if(undefined === start_word) {
                     start_word = a.length;
@@ -153,7 +151,7 @@
                 }
                 return terms;
             }
-            function replaceOrList(before,after,replacement) {
+            function replaceOrList(before,after,replacement_ors) {
                 var a = getTokens(before);
                 var b = getTokens(after);
                 if(a.length > 0 && b.length > 0) {
@@ -165,23 +163,21 @@
                         a.push(a_last + b_first);
                     }
                 }
-                a.unshift('(');
-                b.push(')');
-                var or = [];
-                var word = [];
-                var ok_or = true;
                 var start_or = undefined;
                 var start_word = undefined;
                 for(var i = a.length - 1; i >= 0; --i) {
+                    if(undefined === start_word && !ok_word_expr.test(a[i])) {
+                        start_word = i + 1;
+                    }
                     if(!ok_or_expr.test(a[i])) {
                         if(a[i] == '(') {
                             start_or = i + 1;
                         }
                         break;
                     }
-                    if(undefined === start_word && !ok_word_expr.test(a[i])) {
-                        start_word = i + 1;
-                    }
+                }
+                if(undefined === start_or) {
+                    start_or = 0;
                 }
                 if(undefined === start_word) {
                     start_word = a.length;
@@ -202,14 +198,19 @@
                 if(undefined === end_word) {
                     end_word = 0;
                 }
+                var replacement = "";
+                for(var i = 0; i < replacement_ors.length; ++i) {
+                    if(i != 0) replacement += ",";
+                    replacement += replacement_ors[i];
+                }
                 var txt = "";
                 if(undefined === start_or || undefined === end_or) {
                     var front = "".concat.apply("", a.slice(0, start_word));
-                    front = front.concat(front, replacement);
+                    front = front.concat(replacement);
                     txt = front.concat.apply(front, b.slice(end_word));
                 } else {
                     var front = "".concat.apply("", a.slice(0, start_or));
-                    front = front.concat(front, replacement);
+                    front = front.concat(replacement);
                     txt = front.concat.apply(front, b.slice(end_or));
                 }
                 var terms = txt.replace(/\s+/g, " ").split(',');
@@ -279,6 +280,27 @@
                         },
                         focus:function (event, ui) {
                             return false;
+                        },
+                        commit:function(term) {
+                            var caret = $("#query").caret();
+                            console.log("commit");
+                            var before = term.substring(0, caret.start);
+                            var after = term.substring(caret.start);
+                            var old_terms = extractOrList(before, after);
+                            old_terms.push("%&%");
+                            var new_terms = replaceOrList(before, after, old_terms);
+                            var replacement = "";
+                            for(var i = 0; i < new_terms.length; ++i) {
+                                if(i != 0) replacement += ",";
+                                replacement += new_terms[i];
+                            }
+                            var cursor = replacement.indexOf(",%&%");
+                            replacement = replacement.replace(",%&%", "");
+                            $("#query").attr("value", replacement);
+                            $("#query").caret({start:cursor, end:cursor});
+                        },
+                        revert:function() {
+                            console.log("revert");
                         },
                     }
                 );
