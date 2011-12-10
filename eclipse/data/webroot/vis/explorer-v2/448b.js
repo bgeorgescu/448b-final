@@ -1,5 +1,24 @@
 var globalRevertDuration=100;
 
+var rangeSlider= $("#daterange").rangeSlider({
+  /*defaultValues:{min:2000, max:2010},*/
+  bounds:{min:2000, max:2010},
+  wheelMode: null,
+  wheelSpeed: 8,
+  arrows: false,
+  valueLabels: "show",
+  formatter: function(value){return Math.round(value)},
+  durationIn: 0,
+  durationOut: 400,
+  delayOut: 200,
+  range: {min: false, max: false}
+});
+rangeSlider.bind("valuesChanged", function(event, ui){
+	queryChanged();
+});
+
+
+
 
 var viewModel = {
 	_horizontalAxis: "date",
@@ -10,6 +29,7 @@ var viewModel = {
 	_startYear: 2000,
 	_endYear: 2010
 };
+
 
 viewModel.horizontalAxis = function(data) {
 	if(data) {
@@ -58,22 +78,18 @@ viewModel.graphMode = function(data) {
 };
 viewModel.startYear = function(data) {
 	if(data) {
-		viewModel._startYear = data;
-		$("#daterange").rangeSlider("min", data);
-		queryChanged();
+		rangeSlider.rangeSlider("min",data);
 	}
 	else {
-		return viewModel._startYear;
+		return 	Math.round(rangeSlider.rangeSlider("min"));
 	}
 };
 viewModel.endYear = function(data) {
 	if(data) {
-		viewModel._endYear = data;
-		$("#daterange").rangeSlider("max", data);
-		queryChanged();
+		rangeSlider.rangeSlider("max",data);
 	}
 	else {
-		return viewModel._endYear;
+		return 	Math.round(rangeSlider.rangeSlider("max"));
 	}
 };
 viewModel._graphData = function(data) {
@@ -125,6 +141,7 @@ function SetLiteralText(literal, text) {
 
 function AddDisjunctionToSeries(disjunction, series) {
 	disjunction.appendTo(series.find(".contents")[0]);
+	queryChanged();
 }
 
 function CopyLiteral(literal) {
@@ -138,12 +155,14 @@ function AddLiteralCopyToDisjunction(literal, disjunction) {
 	CopyLiteral(literal)
 		.addClass("dropped")
 		.appendTo(disjunction.find(".contents")[0]);
+	queryChanged();
 }
 
 function AddLiteralToDisjunction(literal, disjunction) {
 	literal
 		.addClass("dropped")
 		.appendTo(disjunction.find(".contents")[0]);
+	queryChanged();
 }
 
 function AddLiteralCopyToSeries(literal, series) {
@@ -212,6 +231,7 @@ $("#trash").droppable({
 	},
 	drop: function(event, ui) {
 		$(ui.draggable).remove();
+		queryChanged();
 	},
 	activeClass:"droppable",
 	hoverClass: "hover",
@@ -442,12 +462,14 @@ viewModel._graphOptions = function() {
 }
 
 function updatePlot() {
-	if(!ignoreQueryChange)
-	$.plot($("#plot"), viewModel._graphData(), viewModel._graphOptions());
+	if(!ignoreQueryChange) {
+		$.plot($("#plot"), viewModel._graphData(), viewModel._graphOptions());
+	}
 }
 
 function AddSeries(s) {
 	$("#series").append(s);
+	queryChanged();
 }
 
 
@@ -489,25 +511,6 @@ function hashChange() {
 		queryChanged();
 	}
 }
-
-var rangeSlider= $("#daterange").rangeSlider({
-  defaultValues:{min:2000, max:2010},
-  bounds:{min:2000, max:2010},
-  wheelMode: null,
-  wheelSpeed: 8,
-  arrows: false,
-  valueLabels: "show",
-  formatter: function(value){return Math.round(value)},
-  durationIn: 0,
-  durationOut: 400,
-  delayOut: 200,
-  range: {min: false, max: false}
-});
-rangeSlider.bind("valuesChanged", function(event, ui){
-	viewModel.startYear(Math.round(ui.values.min));
-	viewModel.endYear(Math.round(ui.values.max));
-});
-
 
 
 
