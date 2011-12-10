@@ -65,14 +65,23 @@
                 var b = /^[^,+\(\)\s]*/.exec(after);
                 return (a[1] + b[0]).replace(/\s*/, "");
             }
-            function getAllTokens(before,after) {
+            function getTokens(text) {
                 var tokenize = /(?:,|\+|\(|\)|[a-zA-Z0-9]+)/g;
-                var a = before.match(tokenize);
-                var b = after.match(tokenize);
+                return text.match(tokenize);
+            }
+            function getAllTokens(before,after) {
+                var a = getTokens(before);
+                var b = getTokens(after);
                 a.push.apply(a, b);
                 return a;
             }
-            function diceTerms() {
+            function extractOrList(before,after) {
+                var a = getTokens(before);
+                var b = getTokens(after);
+                
+            }
+            function buildExpression(text) {
+                var terms = getTokens(text);
                 
             }
             $(function() {
