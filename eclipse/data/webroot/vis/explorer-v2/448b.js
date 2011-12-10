@@ -434,7 +434,7 @@ viewModel._graphOptions = function() {
     else if(viewModel.horizontalAxis() == "year" || viewModel.horizontalAxis() == "month") {
     	retval.xaxis.mode = "time";
 		retval.xaxis.min = new Date(viewModel.startYear(), 0, 1).getTime();
-		if(viewModel.graphMode() == "lines" || viewModel.graphMode() == "steps") {
+		if(viewModel.graphMode() == "lines" || viewModel.graphMode() == "steps" || viewModel.graphMode() == "areas" ) {
 			if(viewModel.horizontalAxis() == "year") {
 				retval.xaxis.max = new Date(viewModel.endYear(), 0, 1).getTime();
 			} else if(viewModel.horizontalAxis() == "month") {
