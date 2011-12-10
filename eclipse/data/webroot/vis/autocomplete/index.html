@@ -33,7 +33,7 @@
             function categorize(achit) {
                 if(achit.type_ == 'ENTITY') {
                     var i = achit.resolved_.indexOf('/');
-                    if(i < 0) {
+                    if(i >= 0) {
                         achit.category_ = achit.resolved_.substring(i + 1);
                     } else {
                         achit.category_ = achit.type_;
@@ -41,6 +41,7 @@
                 } else {
                     achit.category_ = achit.type_;
                 }
+                return achit;
             }
             function scoreSort(a,b) {
                 if(a.score_ < b.score_) {
@@ -258,7 +259,9 @@
                     var top = response.slice(0,50);
                     top.map(categorize);
                     top.sort(categorizedSort);
+                    console.log(top);
                     //TODO, remove duplicate words/ones already added
+                    //TODO, remove base term if it isn't somewhere in the autocomplete
                     var hits = top.map(function(x) { 
                         var id = Math.uuid();
                         var checked = "";
@@ -272,6 +275,7 @@
                             category:x.category_,
                         };
                     });
+                    console.log(hits);
                     for(var i = ors.length - 1; i >= 0; --i) {
                         var id = Math.uuid();
                         var checked = "checked";
