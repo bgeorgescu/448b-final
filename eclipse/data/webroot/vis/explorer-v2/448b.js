@@ -141,6 +141,7 @@ function SetLiteralText(literal, text) {
 
 function AddDisjunctionToSeries(disjunction, series) {
 	disjunction.appendTo(series.find(".contents")[0]);
+	queryChanged();
 }
 
 function CopyLiteral(literal) {
@@ -154,12 +155,14 @@ function AddLiteralCopyToDisjunction(literal, disjunction) {
 	CopyLiteral(literal)
 		.addClass("dropped")
 		.appendTo(disjunction.find(".contents")[0]);
+	queryChanged();
 }
 
 function AddLiteralToDisjunction(literal, disjunction) {
 	literal
 		.addClass("dropped")
 		.appendTo(disjunction.find(".contents")[0]);
+	queryChanged();
 }
 
 function AddLiteralCopyToSeries(literal, series) {
@@ -228,6 +231,7 @@ $("#trash").droppable({
 	},
 	drop: function(event, ui) {
 		$(ui.draggable).remove();
+		queryChanged();
 	},
 	activeClass:"droppable",
 	hoverClass: "hover",
@@ -465,6 +469,7 @@ function updatePlot() {
 
 function AddSeries(s) {
 	$("#series").append(s);
+	queryChanged();
 }
 
 
