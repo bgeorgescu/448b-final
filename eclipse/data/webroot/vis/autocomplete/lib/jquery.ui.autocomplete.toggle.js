@@ -47,7 +47,7 @@ $.extend( proto, {
         this.element.unbind('keydown.autocomplete', old_down);
         this.element.bind("keydown.autocomplete", function(event, ui){
             var keyCode = $.ui.keyCode;
-            if(self.menu.element.is(":visible")) {
+            if(self.menu.element.is(":visible") && self.menu.active) {
                 switch( event.keyCode ) {
                 case keyCode.ENTER:
                     var checkbox = $(".autocomplete-check", self.menu.active);
