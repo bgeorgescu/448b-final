@@ -155,7 +155,7 @@
                 }
                 return terms;
             }
-            function replaceOrList(before,after,replacement_ors) {
+            function replaceOrList(before,after,replacement_ors, pos_token) {
                 var a = getTokens(before);
                 var b = getTokens(after);
                 if(a.length > 0 && b.length > 0) {
@@ -212,15 +212,27 @@
                 console.log({start_or:start_or, end_or:end_or});
                 if(undefined === start_or || undefined === end_or) {
                     var front = "".concat.apply("", a.slice(0, start_word));
+                    //wrap an expanded word on completion
+                    if(replacement.indexOf(',') != -1) {
+                        front = front.concat("(");
+                        replacement = replacement.concat(")");
+                    }
                     console.log(front);
                     front = front.concat(replacement);
+                    front = front.concat(pos_token);
                     console.log(front);
                     txt = front.concat.apply(front, b.slice(end_word));
                     console.log(txt);
                 } else {
                     var front = "".concat.apply("", a.slice(0, start_or));
+                    //wrap the top level thing in parens on completion
+                    if(replacement.indexOf(',') != -1 && start_or == 0) {
+                        front = front.concat("(");
+                        replacement = replacement.concat(")");
+                    }
                     console.log(front);
                     front = front.concat(replacement);
+                    front = front.concat(pos_token);
                     console.log(front);
                     txt = front.concat.apply(front, b.slice(end_or));
                     console.log(txt);
@@ -318,16 +330,14 @@
                                     selected.push(a_check.attr("alt"));
                                 }
                             }
-                            if(selected.length > 0)
-                                selected.push("%&%");
-                            var new_terms = replaceOrList(before, after, selected);
-                            var replacement = "";
+                            var new_terms = replaceOrList(before, after, selected, "%&%");
+                            var replacement = "";   
                             for(var i = 0; i < new_terms.length; ++i) {
                                 if(i != 0) replacement += ",";
                                 replacement += new_terms[i];
                             }
-                            var cursor = replacement.indexOf(",%&%");
-                            replacement = replacement.replace(",%&%", "");
+                            var cursor = replacement.indexOf("%&%");
+                            replacement = replacement.replace("%&%", "");
                             $("#query").attr("value", replacement);
                             $("#query").caret({start:cursor, end:cursor});
                         },
