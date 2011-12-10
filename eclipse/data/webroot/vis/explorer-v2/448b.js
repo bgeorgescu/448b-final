@@ -262,12 +262,17 @@ function domStateToObject() {
 	return retval;
 }
 
+function ClearSeries() {
+	var series_container = $("#series");
+	series_container.empty();
+	series_container.html("&nbsp;");
+	queryChanged();
+}
 
 function objectToDomState(obj) {
 	ignoreQueryChange = true;
 	var series_container = $("#series");
-	series_container.empty();
-	series_container.html("&nbsp;");
+	ClearSeries();
 	$.each(obj.series, function(i,series) {
 		var s = Series();
 		series_container.append(s);
@@ -373,8 +378,8 @@ function queryChanged() {
         query,
         function(gen,query,c,r,d){
             if(!success(c)) {
-                alert("query failed to run: " + r);
-                alert(JSON.stringify(query));
+                //alert("query failed to run: " + r);
+                //alert(JSON.stringify(query));
                 return;
             }
             if(gen != current_generation)
@@ -493,6 +498,8 @@ $("#newseries").click(function(x) { AddSeries(Series()); return false; })
 		},
 		greedy:true
 	});
+	
+$("#clearseries").click(function(x) { ClearSeries(); return false; })
 
 $("#palette input").keyup(function() {
 	var pval = $(this).val();
