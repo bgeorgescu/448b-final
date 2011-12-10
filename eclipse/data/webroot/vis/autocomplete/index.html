@@ -29,7 +29,12 @@
             //modifies in place
             function categorize(achit) {
                 if(achit.type_ == 'ENTITY') {
-                    achit.category_ = achit.resolved_.substring(achit.resolved_.indexOf('/') + 1);
+                    var i = achit.resolved_.indexOf('/');
+                    if(i < 0) {
+                        achit.category_ = achit.resolved_.substring(i + 1);
+                    } else {
+                        achit.category_ = achit;
+                    }
                 } else {
                     achit.category_ = achit.type_;
                 }

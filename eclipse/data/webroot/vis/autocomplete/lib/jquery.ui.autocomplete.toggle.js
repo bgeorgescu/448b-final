@@ -50,7 +50,7 @@ $.extend( proto, {
             if(self.menu.element.is(":visible")) {
                 switch( event.keyCode ) {
                 case keyCode.ENTER:
-                    var checkbox = $(".autocomplete-check");
+                    var checkbox = $(".autocomplete-check", self.menu.active);
                     var old = checkbox.attr("checked");
                     checkbox.attr("checked", !old);
                     checkbox.button("refresh");
