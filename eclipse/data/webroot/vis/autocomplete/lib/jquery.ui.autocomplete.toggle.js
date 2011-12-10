@@ -65,7 +65,7 @@ $.extend( proto, {
                         var checkbox = $(".autocomplete-check", self.menu.active);
                         var old = checkbox.attr("checked");
                         if(old)
-                            checbox.removeAttr("checked");
+                            checkbox.removeAttr("checked");
                         else
                             checkbox.attr("checked", true);
                         checkbox.button("refresh");

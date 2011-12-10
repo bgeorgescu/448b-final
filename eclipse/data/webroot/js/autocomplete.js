@@ -59,9 +59,22 @@ function atBeginningOfTerm(s) {
     return /(?:^|[,+\(\)\s])\s*$/.test(s);
 }
 function getOneTerm(before,after) {
-    var a = /(?:^|[,+\(\)\s])([^,+\(\)\s]*)$/.exec(before);
-    var b = /^[^,+\(\)\s]*/.exec(after);
-    return (a[1] + b[0]).replace(/\s*/g, "");
+    var a = getTokens(before);
+    var b = getTokens(after);
+    if(a.length > 0 && b.length > 0) {
+        var a_last = a[a.length - 1];
+        var b_first = b[0];
+        if(word_expr.test(a_last) && word_expr.test(b_first)) {
+            a.pop();
+            b.shift();
+            a.push(a_last + b_first);
+        }
+    }
+    for(var i = a.length - 1; i >= 0; --i) {
+        if(ok_word_expr.test(a[i]))
+            return a[i];
+    }
+    return undefined;
 }
 function getTokens(text) {
     var tokenize = /(?:,|\+|\(|\)|\s+|[a-zA-Z0-9]+)/g;
@@ -146,6 +159,7 @@ function extractOrList(before,after) {
         txt = front.concat.apply(front, b.slice(0, end_or));
     }
     var terms = txt.replace(/\s+/g, " ").split(',');
+    terms = terms.filter(function(x) { return x.length > 0; });
     for(var i = 0; i < terms.length; ++i) {
         terms[i] = terms[i].replace(/(?:^\s*)|(?:\s*$)/g, "");
     }
@@ -282,15 +296,14 @@ function createAutoComplete(jqs, onQueryChanged, start_at) {
         {
             source:function(req, resp) {
                 var caret = jqs.caret();
-                //if previous char is a space, no ac
-                if(atBeginningOfTerm(req.term.substring(0, caret.start))) {
-                    resp([]);
-                    return;
-                }
                 var before = req.term.substring(0, caret.start);
                 var after = req.term.substring(caret.start);
                 var ors = extractOrList(before, after);
                 var term = getOneTerm(before, after);
+                if(undefined === term) {
+                    resp([]);
+                    return;
+                }
                 var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, ors, resp));
                 xhr.send(null);                
             }.bind(jqs),
