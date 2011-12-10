@@ -124,18 +124,21 @@
                 var end_word = undefined;
                 var end_or = undefined;
                 for(var i = 0; i < b.length; ++i) {
+                    if(undefined === end_word && !ok_word_expr.test(b[i])) {
+                        end_word = i;
+                    }
                     if(!ok_or_expr.test(b[i])) {
                         if(b[i] == ')') {
                             end_or = i;
                         }
                         break;
                     }
-                    if(undefined === end_word && !ok_word_expr.test(b[i])) {
-                        end_word = i;
-                    }
                 }
                 if(undefined === end_word) {
                     end_word = 0;
+                }
+                if(undefined === end_or) {
+                    end_or = 0;
                 }
                 var txt = "";
                 if(undefined === start_or || undefined === end_or) {
@@ -198,6 +201,9 @@
                 if(undefined === end_word) {
                     end_word = 0;
                 }
+                if(undefined === end_or) {
+                    end_or = 0;
+                }
                 var replacement = "";
                 for(var i = 0; i < replacement_ors.length; ++i) {
                     if(i != 0) replacement += ",";
@@ -224,7 +230,7 @@
                 
             }
             $(function() {
-                function autocompleteUpdate(callback, code, response, duration) {
+                function autocompleteUpdate(ors, callback, code, response, duration) {
                     $("#duration").text(duration + "ms");
                     if(!success(code)) {
                         alert('query failed\n' + response);
@@ -234,13 +240,10 @@
                     var top = response.slice(0,50);
                     top.map(categorize);
                     top.sort(categorizedSort);
-                    callback(top.map(function(x) { 
+                    //TODO, remove duplicate words/ones already added
+                    var hits = top.map(function(x) { 
                         var id = Math.uuid();
                         var checked = "";
-                        if(false) {
-                            //TODO, peek at expression and decide if we have this term in the or clause
-                            checked = "checked";
-                        }
                         return {
                             label:"<input class='autocomplete-check' id='" + id + "' type='checkbox' " + checked + ">" +
                                 "<label for='" + id + "'>" + 
@@ -249,14 +252,26 @@
                             value:x.resolved_.substring(0, x.resolved_.indexOf('/')),
                             category:x.category_,
                         };
-                    }));
+                    });
+                    for(var i = ors.length - 1; i >= 0; --i) {
+                        var id = Math.uuid();
+                        var checked = "checked";
+                        hits.unshift({
+                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox' " + checked + ">" +
+                                "<label for='" + id + "'>" + 
+                                ors[i] +
+                                "</label>",
+                            value:ors[i],
+                            category:"Already Added",
+                        });
+                    }                    
+                    callback(hits);
                 }
                 
                 $( "#query" ).autocomplete(
                     {
                         source:function(req, resp) {
                             var caret = this.caret();
-                            console.log(req.term + " : " + req.term.substring(0, caret.start));
                             //if previous char is a space, no ac
                             if(atBeginningOfTerm(req.term.substring(0, caret.start))) {
                                 resp([]);
@@ -264,13 +279,9 @@
                             }
                             var before = req.term.substring(0, caret.start);
                             var after = req.term.substring(caret.start);
-                            console.log("all tokens");
-                            console.log(getAllTokens(before, after));
-                            console.log("or list");
-                            console.log(extractOrList(before, after));
+                            var ors = extractOrList(before, after);
                             var term = getOneTerm(before, after);
-                            console.log(term);
-                            var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, resp));
+                            var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, ors, resp));
                             xhr.send(null);                
                         }.bind($("#query")),
                         appendTo:$("#term-completes"),
@@ -287,6 +298,7 @@
                             var before = term.substring(0, caret.start);
                             var after = term.substring(caret.start);
                             var old_terms = extractOrList(before, after);
+                            console.log(old_terms);
                             old_terms.push("%&%");
                             var new_terms = replaceOrList(before, after, old_terms);
                             var replacement = "";
