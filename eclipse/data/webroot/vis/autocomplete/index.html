@@ -63,22 +63,160 @@
             function getOneTerm(before,after) {
                 var a = /(?:^|[,+\(\)\s])([^,+\(\)\s]*)$/.exec(before);
                 var b = /^[^,+\(\)\s]*/.exec(after);
-                return (a[1] + b[0]).replace(/\s*/, "");
+                return (a[1] + b[0]).replace(/\s*/g, "");
             }
             function getTokens(text) {
-                var tokenize = /(?:,|\+|\(|\)|[a-zA-Z0-9]+)/g;
-                return text.match(tokenize);
+                var tokenize = /(?:,|\+|\(|\)|\s+|[a-zA-Z0-9]+)/g;
+                var toks = text.match(tokenize);
+                if(toks == null)
+                    return [];
+                return toks;
             }
+            var word_expr = /[^,+\(\)\s]+/;
             function getAllTokens(before,after) {
                 var a = getTokens(before);
                 var b = getTokens(after);
+                if(a.length > 0 && b.length > 0) {
+                    var a_last = a[a.length - 1];
+                    var b_first = b[0];
+                    if(word_expr.test(a_last) && word_expr.test(b_first)) {
+                        a.pop();
+                        b.shift();
+                        a.push(a_last + b_first);
+                    }
+                }
                 a.push.apply(a, b);
                 return a;
             }
+            var ok_or_expr = /[^+\(\)]+/;
+            var ok_word_expr = /[^,+\(\)]+/;
             function extractOrList(before,after) {
                 var a = getTokens(before);
                 var b = getTokens(after);
-                
+                if(a.length > 0 && b.length > 0) {
+                    var a_last = a[a.length - 1];
+                    var b_first = b[0];
+                    if(word_expr.test(a_last) && word_expr.test(b_first)) {
+                        a.pop();
+                        b.shift();
+                        a.push(a_last + b_first);
+                    }
+                }
+                a.unshift('(');
+                b.push(')');
+                var or = [];
+                var word = [];
+                var ok_or = true;
+                var start_or = undefined;
+                var start_word = undefined;
+                for(var i = a.length - 1; i >= 0; --i) {
+                    if(!ok_or_expr.test(a[i])) {
+                        if(a[i] == '(') {
+                            start_or = i + 1;
+                        }
+                        break;
+                    }
+                    if(undefined === start_word && !ok_word_expr.test(a[i])) {
+                        start_word = i + 1;
+                    }
+                }
+                if(undefined === start_word) {
+                    start_word = a.length;
+                }
+                var end_word = undefined;
+                var end_or = undefined;
+                for(var i = 0; i < b.length; ++i) {
+                    if(!ok_or_expr.test(b[i])) {
+                        if(b[i] == ')') {
+                            end_or = i;
+                        }
+                        break;
+                    }
+                    if(undefined === end_word && !ok_word_expr.test(b[i])) {
+                        end_word = i;
+                    }
+                }
+                if(undefined === end_word) {
+                    end_word = 0;
+                }
+                var txt = "";
+                if(undefined === start_or || undefined === end_or) {
+                    var front = "".concat.apply("", a.slice(start_word));
+                    txt = front.concat.apply(front, b.slice(0, end_word));
+                } else {
+                    var front = "".concat.apply("", a.slice(start_or));
+                    txt = front.concat.apply(front, b.slice(0, end_or));
+                }
+                var terms = txt.replace(/\s+/g, " ").split(',');
+                for(var i = 0; i < terms.length; ++i) {
+                    terms[i] = terms[i].replace(/(?:^\s*)|(?:\s*$)/g, "");
+                }
+                return terms;
+            }
+            function replaceOrList(before,after,replacement) {
+                var a = getTokens(before);
+                var b = getTokens(after);
+                if(a.length > 0 && b.length > 0) {
+                    var a_last = a[a.length - 1];
+                    var b_first = b[0];
+                    if(word_expr.test(a_last) && word_expr.test(b_first)) {
+                        a.pop();
+                        b.shift();
+                        a.push(a_last + b_first);
+                    }
+                }
+                a.unshift('(');
+                b.push(')');
+                var or = [];
+                var word = [];
+                var ok_or = true;
+                var start_or = undefined;
+                var start_word = undefined;
+                for(var i = a.length - 1; i >= 0; --i) {
+                    if(!ok_or_expr.test(a[i])) {
+                        if(a[i] == '(') {
+                            start_or = i + 1;
+                        }
+                        break;
+                    }
+                    if(undefined === start_word && !ok_word_expr.test(a[i])) {
+                        start_word = i + 1;
+                    }
+                }
+                if(undefined === start_word) {
+                    start_word = a.length;
+                }
+                var end_word = undefined;
+                var end_or = undefined;
+                for(var i = 0; i < b.length; ++i) {
+                    if(!ok_or_expr.test(b[i])) {
+                        if(b[i] == ')') {
+                            end_or = i;
+                        }
+                        break;
+                    }
+                    if(undefined === end_word && !ok_word_expr.test(b[i])) {
+                        end_word = i;
+                    }
+                }
+                if(undefined === end_word) {
+                    end_word = 0;
+                }
+                var txt = "";
+                if(undefined === start_or || undefined === end_or) {
+                    var front = "".concat.apply("", a.slice(0, start_word));
+                    front = front.concat(front, replacement);
+                    txt = front.concat.apply(front, b.slice(end_word));
+                } else {
+                    var front = "".concat.apply("", a.slice(0, start_or));
+                    front = front.concat(front, replacement);
+                    txt = front.concat.apply(front, b.slice(end_or));
+                }
+                var terms = txt.replace(/\s+/g, " ").split(',');
+                for(var i = 0; i < terms.length; ++i) {
+                    terms[i] = terms[i].replace(/(?:^\s*)|(?:\s*$)/g, "");
+                }
+                return terms;
             }
             function buildExpression(text) {
                 var terms = getTokens(text);
@@ -125,7 +263,10 @@
                             }
                             var before = req.term.substring(0, caret.start);
                             var after = req.term.substring(caret.start);
+                            console.log("all tokens");
                             console.log(getAllTokens(before, after));
+                            console.log("or list");
+                            console.log(extractOrList(before, after));
                             var term = getOneTerm(before, after);
                             console.log(term);
                             var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, resp));
