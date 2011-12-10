@@ -21,10 +21,8 @@ rangeSlider.bind("valuesChanged", function(event, ui){
 
 
 var viewModel = {
-	_horizontalAxis: "date",
-	_dateGranularity: "month",
+	_horizontalAxis: "month",
 	_graphStack: true,
-	_graphFill: true,
 	_graphMode: "bars",
 	_startYear: 2000,
 	_endYear: 2010
@@ -33,26 +31,20 @@ var viewModel = {
 
 viewModel.horizontalAxis = function(data) {
 	if(data) {
-		viewModel._horizontalAxis = data;
+		if(data == "date") data = "month";
+		$("#graphAxis .graphOption").removeClass("selected");
+		$("#"+data).addClass("selected");
 		queryChanged();
 	}
 	else {
-		return viewModel._horizontalAxis;
-	}
-};
-viewModel.dateGranularity =function(data) {
-	if(data) {
-		viewModel._dateGranularity = data;
-		queryChanged();
-	}
-	else {
-		return viewModel._dateGranularity;
+		return $("#graphAxis .selected").first().attr("id");
 	}
 };
 
+
 $("#stacked").click(function() { viewModel.graphStack(!$(this).hasClass("selected")); });
-$("#bars").click(function() { viewModel.graphMode("bars"); });
-$("#lines").click(function() { viewModel.graphMode("lines"); });
+$("#bars,#lines,#areas").click(function() { viewModel.graphMode($(this).attr("id")); });
+$("#month,#year,#page").click(function() { viewModel.horizontalAxis($(this).attr("id")); });
 
 
 
@@ -63,38 +55,21 @@ viewModel.graphStack = function(data) {
 		} else {
 			$("#stacked").removeClass("selected");
 		}
-		updatePlot();
+		queryChanged();
 	}
 	else {
 		return $("#stacked").hasClass("selected");
 	}
 };
-viewModel.graphFill = function(data) {
-	if(typeof data != "undefined") {
-		viewModel._graphFill = data;
-		updatePlot();
-	}
-	else {
-		return viewModel._graphFill;
-	}
-};
+
 viewModel.graphMode = function(data) {
 	if(data) {
-		if(data == "bars") {
-			$("#bars").addClass("selected");
-			$("#lines").removeClass("selected");
-		}
-		else if(data == "lines") {
-			$("#lines").addClass("selected");
-			$("#bars").removeClass("selected");
-		}
-		updatePlot();
+		$("#graphType .graphOption").removeClass("selected");
+		$("#"+data).addClass("selected");
+		queryChanged();
 	}
 	else {
-		if($("#bars").hasClass("selected"))
-			return "bars";
-		else if($("#lines").hasClass("selected"))
-			return "lines";
+		return $("#graphType .selected").first().attr("id");
 	}
 };
 viewModel.startYear = function(data) {
@@ -363,11 +338,11 @@ function queryForObject(state) {
 		query.buckets_ = array_range(1, 30).map(function(a) {
 			return PageTerm(a,a+1);
 		});
-	} else if(state.dateGranularity == "year") {
+	} else if(state.horizontalAxis == "year") {
 		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
 			return YearTerm(a);
 		});
-	} else if (state.dateGranularity == "month") {
+	} else if (state.horizontalAxis == "month") {
 		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
 			return array_range(0,11).map(function(b) {
 				return MonthTerm(a,b);
@@ -417,7 +392,7 @@ function queryChanged() {
                         }), label: labels[x_i] };
                     }));
             } 
-            else if(viewModel.dateGranularity() == "year") {
+            else if(viewModel.horizontalAxis() == "year") {
 				viewModel._graphData(
 					r
 					.map(function(x, x_i) {
@@ -426,7 +401,7 @@ function queryChanged() {
 							return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
 						}), label: labels[x_i]  };
 					}));
-            } else if(viewModel.dateGranularity() == "month") {
+            } else if(viewModel.horizontalAxis() == "month") {
 				viewModel._graphData(
 					r
 					.map(function(x, x_i) {
@@ -443,7 +418,7 @@ viewModel._graphOptions = function() {
     var retval = {
 		series: {
 			stack: viewModel.graphStack() ? 1 : null,
-			lines: { show: (viewModel.graphMode() == "lines" || viewModel.graphMode() == "steps"), fill: viewModel.graphFill(), steps: viewModel.graphMode() == "steps" },
+			lines: { show: (viewModel.graphMode() == "lines" || viewModel.graphMode() == "areas"), fill: viewModel.graphMode() == "areas", steps: viewModel.graphMode() == "steps" },
 			bars: { show: viewModel.graphMode() == "bars",
 					barWidth: 0.8 }
 		},
@@ -456,28 +431,28 @@ viewModel._graphOptions = function() {
 		retval.xaxis.min = 0;
 		retval.xaxis.max = 32;
     }
-    else if(viewModel.horizontalAxis() == "date") {
+    else if(viewModel.horizontalAxis() == "year" || viewModel.horizontalAxis() == "month") {
     	retval.xaxis.mode = "time";
 		retval.xaxis.min = new Date(viewModel.startYear(), 0, 1).getTime();
 		if(viewModel.graphMode() == "lines" || viewModel.graphMode() == "steps") {
-			if(viewModel.dateGranularity() == "year") {
+			if(viewModel.horizontalAxis() == "year") {
 				retval.xaxis.max = new Date(viewModel.endYear(), 0, 1).getTime();
-			} else if(viewModel.dateGranularity() == "month") {
+			} else if(viewModel.horizontalAxis() == "month") {
 				retval.xaxis.max = new Date(viewModel.endYear(), 11, 0).getTime();
 			}
 		}
 		else {
 			retval.xaxis.max = new Date(viewModel.endYear(), 11, 30).getTime();
-			if(viewModel.dateGranularity() == "year") {
+			if(viewModel.horizontalAxis() == "year") {
 				retval.series.bars.barWidth = 0.8*365*86400000;	
-			} else if(viewModel.dateGranularity() == "month") {
+			} else if(viewModel.horizontalAxis() == "month") {
 				retval.series.bars.barWidth = 0.8*28*86400000;
 			}
 		}
-		if(viewModel.dateGranularity() == "year") {
+		if(viewModel.horizontalAxis() == "year") {
 			retval.xaxis.minTickWidth = [1, "year"];
 
-		} else if(viewModel.dateGranularity() == "month") {
+		} else if(viewModel.horizontalAxis() == "month") {
 			retval.xaxis.minTickWidth = [1, "month"];
 		}
     }
