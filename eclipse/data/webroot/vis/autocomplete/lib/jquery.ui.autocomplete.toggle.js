@@ -101,12 +101,15 @@ $.extend( proto, {
         var self = this,
             currentCategory = "";
         $.each( items, function( index, item ) {
+            console.log(index);
             if ( item.category != currentCategory ) {
-                ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+               //need float or categories can be reordered
+               ul.append( "<li style='float:left' class='ui-autocomplete-category'>" + item.category + "</li>" );
                 currentCategory = item.category;
             }
             self._renderItem( ul, item );
         });
+        $(".autocomplete-category", ul).button({disabled:true});
     },
 });
 

@@ -29,11 +29,27 @@
 	</head>
 	<body>
         <script>
+            start_at = window.location + "";
+            start_at = start_at.split('#');
+            if(start_at.length > 1)
+                start_at = start_at[1];
+            else 
+                start_at = undefined;
+                
+            if(start_at) {
+                start_at = decodeURIComponent(start_at);
+            }
+        </script>
+        <script>
             //modifies in place
             function categorize(achit) {
                 if(achit.type_ == 'ENTITY') {
                     var i = achit.resolved_.indexOf('/');
-                    if(i >= 0) {
+                    //its definitely more usable with only two categories (lemma/entity)
+                    //looking at the two for your result requires a different
+                    //search strategy so splitting entities is confusing because the tagging
+                    //is not so good
+                    if(false && i >= 0) {
                         achit.category_ = achit.resolved_.substring(i + 1);
                     } else {
                         achit.category_ = achit.type_;
@@ -350,6 +366,14 @@
                         },
                     }
                 );
+                $("#query").bind( "autocompleteclose", function(event, ui) {
+                    try {
+                        history.replaceState(undefined, 'NewsWiz', (window.location +"").split('#')[0] + '#' + encodeURIComponent($("#query").attr("value")));
+                    } catch(err) {
+                    }
+                });
+                if(start_at)
+                    $("#query").attr("value", start_at);
             });
         </script>
 
