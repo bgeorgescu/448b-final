@@ -143,6 +143,7 @@
                         a.push(a_last + b_first);
                     }
                 }
+
                 var start_or = 0;
                 var start_word = undefined;
                 for(var i = a.length - 1; i >= 0; --i) {
@@ -159,7 +160,7 @@
                     }
                 }
                 if(undefined === start_word) {
-                    start_word = a.length;
+                    start_word = 0;
                 }
                 var end_word = undefined;
                 var end_or = b.length;
@@ -221,7 +222,7 @@
                     }
                 }
                 if(undefined === start_word) {
-                    start_word = a.length;
+                    start_word = 0;
                 }
                 var end_word = undefined;
                 var end_or = b.length;
@@ -247,7 +248,6 @@
                     replacement += replacement_ors[i];
                 }
                 var txt = "";
-                console.log({start_or:start_or, end_or:end_or});
                 if(undefined === start_or || undefined === end_or) {
                     var front = "".concat.apply("", a.slice(0, start_word));
                     //wrap an expanded word on completion
@@ -255,12 +255,9 @@
                         front = front.concat("(");
                         replacement = replacement.concat(")");
                     }
-                    console.log(front);
                     front = front.concat(replacement);
                     front = front.concat(pos_token);
-                    console.log(front);
                     txt = front.concat.apply(front, b.slice(end_word));
-                    console.log(txt);
                 } else {
                     var front = "".concat.apply("", a.slice(0, start_or));
                     //wrap the top level thing in parens on completion
@@ -268,12 +265,9 @@
                         front = front.concat("(");
                         replacement = replacement.concat(")");
                     }
-                    console.log(front);
                     front = front.concat(replacement);
                     front = front.concat(pos_token);
-                    console.log(front);
                     txt = front.concat.apply(front, b.slice(end_or));
-                    console.log(txt);
                 }
                 var terms = txt.replace(/\s+/g, " ").split(',');
                 for(var i = 0; i < terms.length; ++i) {
@@ -297,7 +291,6 @@
                     top.map(categorize);
                     //top.sort(categorizedSort);
                     top.sort(typeDependentSort);
-                    console.log(top);
                     //TODO, remove duplicate words/ones already added
                     //TODO, remove base term if it isn't somewhere in the autocomplete
                     var hits = top.map(function(x) { 
@@ -313,7 +306,6 @@
                             category:x.category_,
                         };
                     });
-                    console.log(hits);
                     for(var i = ors.length - 1; i >= 0; --i) {
                         var id = Math.uuid();
                         var checked = "checked";
