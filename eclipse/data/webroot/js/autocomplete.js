@@ -277,11 +277,11 @@ function autocompleteUpdate(ors, callback, code, response, duration) {
     callback(hits);
 }
 
-function createAutoComplete(jqs, start_at) {
+function createAutoComplete(jqs, onQueryChanged, start_at) {
     jqs.autocomplete(
         {
             source:function(req, resp) {
-                var caret = this.caret();
+                var caret = jqs.caret();
                 //if previous char is a space, no ac
                 if(atBeginningOfTerm(req.term.substring(0, caret.start))) {
                     resp([]);
@@ -293,7 +293,7 @@ function createAutoComplete(jqs, start_at) {
                 var term = getOneTerm(before, after);
                 var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, ors, resp));
                 xhr.send(null);                
-            }.bind($("#query")),
+            }.bind(jqs),
             appendTo:$("#term-completes"),
             html:true,
             select:function (event, ui) {
@@ -303,7 +303,7 @@ function createAutoComplete(jqs, start_at) {
                 return false;
             },
             commit:function(term) {
-                var caret = $("#query").caret();
+                var caret = jqs.caret();
                 console.log("commit");
                 var before = term.substring(0, caret.start);
                 var after = term.substring(caret.start);
@@ -329,20 +329,21 @@ function createAutoComplete(jqs, start_at) {
                 }
                 var cursor = replacement.indexOf("%&%");
                 replacement = replacement.replace("%&%", "");
-                $("#query").attr("value", replacement);
-                $("#query").caret({start:cursor, end:cursor});
+                jqs.attr("value", replacement);
+                jqs.caret({start:cursor, end:cursor});
+                onQueryChanged && onQueryChanged(replacement);
             },
             revert:function() {
                 console.log("revert");
             },
         }
     );
-    jqs.bind( "autocompleteclose", function(event, ui) {
-        try {
-            history.replaceState(undefined, 'NewsWiz', (window.location +"").split('#')[0] + '#' + encodeURIComponent($("#query").attr("value")));
-        } catch(err) {
-        }
-    });
+    // jqs.bind( "autocompleteclose", function(event, ui) {
+        // try {
+            // history.replaceState(undefined, 'NewsWiz', (window.location +"").split('#')[0] + '#' + encodeURIComponent(jqs.attr("value")));
+        // } catch(err) {
+        // }
+    // });
     if(start_at)
         jqs.attr("value", start_at);
 };

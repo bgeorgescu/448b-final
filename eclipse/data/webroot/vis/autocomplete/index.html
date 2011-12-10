@@ -50,7 +50,13 @@
         </div>     
         <div id="term-completes"></div>
         <script>
-            createAutoComplete($("#query"), start_at);
+            function onQueryChanged(q) {
+                try {
+                    history.replaceState(undefined, 'NewsWiz', (window.location +"").split('#')[0] + '#' + encodeURIComponent(q));
+                } catch(err) {
+                }
+            }
+            createAutoComplete($("#query"), onQueryChanged, start_at);
         </script>
         
 	</body>
