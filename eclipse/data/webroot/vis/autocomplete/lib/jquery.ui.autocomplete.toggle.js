@@ -64,7 +64,10 @@ $.extend( proto, {
                     case keyCode.SPACE:
                         var checkbox = $(".autocomplete-check", self.menu.active);
                         var old = checkbox.attr("checked");
-                        checkbox.attr("checked", !old);
+                        if(old)
+                            checbox.removeAttr("checked");
+                        else
+                            checkbox.attr("checked", true);
                         checkbox.button("refresh");
                         suppress = true;
                         return;
