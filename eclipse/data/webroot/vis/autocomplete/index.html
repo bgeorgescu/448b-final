@@ -83,9 +83,13 @@
                     top.sort(categorizedSort);
                     callback(top.map(function(x) { 
                         var id = Math.uuid();
-                        var checked = false;
+                        var checked = "";
+                        if(false) {
+                            //TODO, peek at expression and decide if we have this term in the or clause
+                            checked = "checked";
+                        }
                         return {
-                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox' checked='" + checked + "'>" +
+                            label:"<input class='autocomplete-check' id='" + id + "' type='checkbox' " + checked + ">" +
                                 "<label for='" + id + "'>" + 
                                 x.resolved_.substring(0, x.resolved_.indexOf('/')) + " (" + x.score_ + ")" +
                                 "</label>",
