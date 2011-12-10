@@ -60,5 +60,26 @@
 }
 
 .graphOption.selected {
-	border:2px solid red;
+	border:2px solid red !important;
+}
+
+#bars, #lines, #areas {
+	background-repeat:no-repeat;
+	background-position:2px 2px;
+	padding-top:52px;
+	width:54px;
+	display:inline-block;
+	text-align:center;
+	margin:3px 2px;
+	border:2px solid #DDD;
+}
+
+#bars {
+	background-image:url("img/bars.png");
+}
+#lines {
+	background-image:url("img/lines.png");
+}
+#areas {
+	background-image:url("img/areas.png");
 }
