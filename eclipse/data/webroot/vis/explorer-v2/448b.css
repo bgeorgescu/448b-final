@@ -58,3 +58,7 @@
 	border-radius: 4px;
 	display:inline;
 }
+
+.graphOption.selected {
+	border:2px solid red;
+}

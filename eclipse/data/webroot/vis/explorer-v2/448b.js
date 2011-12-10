@@ -49,17 +49,28 @@ viewModel.dateGranularity =function(data) {
 		return viewModel._dateGranularity;
 	}
 };
+
+$("#stacked").click(function() { viewModel.graphStack(!$(this).hasClass("selected")); });
+$("#bars").click(function() { viewModel.graphMode("bars"); });
+$("#lines").click(function() { viewModel.graphMode("lines"); });
+
+
+
 viewModel.graphStack = function(data) {
-	if(data) {
-		viewModel._graphStack = data;
+	if(typeof data != "undefined") {
+		if(data) {
+			$("#stacked").addClass("selected");
+		} else {
+			$("#stacked").removeClass("selected");
+		}
 		updatePlot();
 	}
 	else {
-		return viewModel._graphStack;
+		return $("#stacked").hasClass("selected");
 	}
 };
 viewModel.graphFill = function(data) {
-	if(data) {
+	if(typeof data != "undefined") {
 		viewModel._graphFill = data;
 		updatePlot();
 	}
@@ -69,11 +80,21 @@ viewModel.graphFill = function(data) {
 };
 viewModel.graphMode = function(data) {
 	if(data) {
-		viewModel._graphMode = data;
+		if(data == "bars") {
+			$("#bars").addClass("selected");
+			$("#lines").removeClass("selected");
+		}
+		else if(data == "lines") {
+			$("#lines").addClass("selected");
+			$("#bars").removeClass("selected");
+		}
 		updatePlot();
 	}
 	else {
-		return viewModel._graphMode;
+		if($("#bars").hasClass("selected"))
+			return "bars";
+		else if($("#lines").hasClass("selected"))
+			return "lines";
 	}
 };
 viewModel.startYear = function(data) {
