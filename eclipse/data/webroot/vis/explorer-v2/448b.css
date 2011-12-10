@@ -63,7 +63,7 @@
 	border:2px solid red !important;
 }
 
-#bars, #lines, #areas {
+#bars, #lines, #areas, #year, #month, #page {
 	background-repeat:no-repeat;
 	background-position:2px 2px;
 	padding-top:52px;
@@ -72,6 +72,16 @@
 	text-align:center;
 	margin:3px 2px;
 	border:2px solid #DDD;
+}
+
+#year, #month {
+	background-image:url("img/cal.png");
+	background-size:50px 50px;
+}
+
+#page {
+	background-image:url("img/knewsticker.png");
+	background-size:50px 50px;
 }
 
 #bars {
