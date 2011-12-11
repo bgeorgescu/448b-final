@@ -396,6 +396,10 @@ function queryForObject(state) {
 		});
 	} 
 	
+	if(query.series_.length == 0) {
+		query.series_.push(AllDocsTerm());
+	}
+	
 	return query;
 }
 
@@ -626,3 +630,4 @@ function populateAutocomplete(gen, c, data) {
 
 window.onhashchange = hashChange;
 hashChange();
+
