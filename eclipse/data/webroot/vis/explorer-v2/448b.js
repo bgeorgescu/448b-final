@@ -589,10 +589,12 @@ $("#palette input").keyup(function() {
 
 var hashIgnore = false;
 function hashChange() {
-	if(!hashIgnore && window.location.hash != "") {
+	if(hashIgnore)
+		return;
+	if(window.location.hash != "") {
 		objectToDomState(JSON.parse(decodeURIComponent(window.location.hash.slice(1))));
-		queryChanged();
 	}
+	queryChanged();
 }
 
 function PaletteLiteral(type, text) {
@@ -617,8 +619,12 @@ for(i in pubMapping) {
 function populateAutocomplete(gen, c, data) {
 	if(gen == autocomplete_gen && success(c)) {
 		$("#suggestions").empty();
+		var lemma_dedup = {};
 		$.each(data, function(i,suggestion) {
 			var resolved = suggestion.resolved_.split("/");
+			if(suggestion.type_ == "LEMMA" && lemma_dedup[resolved[0]])
+				return;
+			lemma_dedup[resolved[0]]=true;
 			var literal = PaletteLiteral(suggestion.type_.toLowerCase(), resolved[0]);
 			if(resolved.length > 1) {
 				literal.addClass(resolved[1]);
