@@ -249,6 +249,9 @@ function replaceOrList(before,after,replacement_ors, pos_token) {
     return terms;
 }
 function handleTerminal(x) {
+    //its possible we already converted it
+    if(typeof x != "string")
+        return x;
     return OrTerm(EntityTerm(x), LemmaTerm(x));
 }
 function processTerms(terms) {
@@ -259,28 +262,53 @@ function processTerms(terms) {
     var parts = [];
     while(terms.length > 0) {
         var term = terms.shift();
-        if(term == '(') {
+        if(typeof term != "string") {
+            //we may be passing a parenthesized expression into another operator
+            parts.push(term);
+        } else if(term == '(') {
+            //recurse for parens
             parts.push(processTerms(terms));
         } else if(term == ')') {
+            //pop out of parens
             break;
         } else if(ok_word_expr.test(term)) {
+            //plain word, just add it
             parts.push(term);
         } else if(term == ',') {
+            if(undefined === type) {
+                type = term;
+            } else if(type != term) {
+                //must be an and, recurse
+                terms.unshift(term);
+                if(parts.length == 0)
+                    throw "and without preceding term";
+                terms.unshift(parts.pop());
+                parts.push(processTerms(terms));
+            }
         } else if(term == '+') {
+            //todo, screwed up for a+b,c
+            if(undefined === type) {
+                type = term;
+            } else if(type != term) {
+                //must be an or, pop up
+                terms.unshift(term);
+                break;
+            }
         } else {
             throw "unknown term '" + term + "'";
         }
     }
+    console.log(parts);
     if(undefined === type) {
         if(parts.length == 1) {
             return handleTerminal(parts[0]);
         }
         throw "must have an or/and to combine terms";
     }
-    if(type == '+') {
-        return OrTerm.apply(parts.map(handleTerminal));
+    if(type == ',') {
+        return OrTerm.apply(undefined, parts.map(handleTerminal));
     } else {
-        return AndTerm.apply(parts.map(handleTerminal));
+        return AndTerm.apply(undefined, parts.map(handleTerminal));
     }
 }
 
