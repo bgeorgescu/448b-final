@@ -129,10 +129,12 @@
 
 #newseries {
 	background-image: url("img/add.png");
+	cursor: pointer;
 }
 
 #clearseries {
 	background-image: url("img/delete.png");
+	cursor: pointer;
 }
 
 #trash {
