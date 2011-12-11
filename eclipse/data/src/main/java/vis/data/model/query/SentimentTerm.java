@@ -9,7 +9,6 @@ import org.apache.commons.lang3.tuple.Pair;
 import vis.data.model.RawSentiment;
 import vis.data.model.meta.DocForLemmaAccessor;
 import vis.data.model.meta.SentimentAccessor;
-import vis.data.util.CountAggregator;
 
 public class SentimentTerm extends Term {
 	public static class Parameters implements Term.Parameters {
@@ -75,16 +74,10 @@ public class SentimentTerm extends Term {
 			docs_ = new int[0];
 			count_ = new int[0];
 		} else {
-			DocForLemmaAccessor.Counts initial = dlh.getDocCounts(lemmas[0]);
-			for(int i = 1; i < lemmas.length; ++i) {
-				DocForLemmaAccessor.Counts partial = dlh.getDocCounts(lemmas[i]);
-				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
-				initial.docId_ = res.getKey();
-				initial.count_ = res.getValue();
-			}
-			docs_ = initial.docId_;
+			Pair<int[], int[]> res = dlh.getCounts(lemmas);
+			docs_ = res.getKey();
 			//TODO: wasteful
-			count_ = parameters_.filterOnly_ ? new int[docs_.length] : initial.count_;
+			count_ = parameters_.filterOnly_ ? new int[docs_.length] : res.getValue();
 		}
 	}
 

@@ -56,9 +56,6 @@ public class LemmaForDocHitsAccessor extends BaseHitsAccessor {
 		c.count_ = rc.getValue();
 		return c;
 	}
-	public Pair<int[], int[]> getLemmaCounts(int docs[]) throws SQLException {
-		return getCounts(docs);
-	}
 
 	public static void pack(DocLemma dl, Counts c) {
 		dl.lemmaList_ = pack(c.lemmaId_, c.count_);

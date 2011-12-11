@@ -1,80 +1,59 @@
 package vis.data.model.meta;
 
-import java.nio.ByteBuffer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.LemmaDoc;
 import vis.data.util.SQL;
 
-public class DocForLemmaAccessor {
-	PreparedStatement query_;
+public class DocForLemmaAccessor extends BaseHitsAccessor {
+	PreparedStatement query_, update_;
 	public DocForLemmaAccessor() throws SQLException {
 		Connection conn = SQL.forThread();
 		query_ = conn.prepareStatement("SELECT " + LemmaDoc.DOC_LIST + " FROM " + LemmaDoc.TABLE + " WHERE " + LemmaDoc.LEMMA_ID + " = ?");
+		update_ = conn.prepareStatement("UPDATE " + LemmaDoc.TABLE + " SET " + LemmaDoc.DOC_LIST + " = ? " + " WHERE " + LemmaDoc.LEMMA_ID + " = ? ");
 	}
-	public int[] getDocs(int lemma_id) throws SQLException {
-		query_.setInt(1, lemma_id);
-		ResultSet rs = query_.executeQuery();
-		try {
-			if(!rs.next())
-				return new int[0];
-			
-			byte[] data = rs.getBytes(1);
-			int[] doc_ids = new int[data.length / (Integer.SIZE / 8) / 2];
-			ByteBuffer bb = ByteBuffer.wrap(data);
-			for(int i = 0; i < doc_ids.length; ++i) {
-				doc_ids[i] = bb.getInt();
-				/*int count =*/ bb.getInt();
-			}
-			return doc_ids;
-		} finally {
-			rs.close();
-		}
+	@Override
+	String bulkCountsQueryBase() {
+		return "SELECT " + LemmaDoc.DOC_LIST + " FROM " + LemmaDoc.TABLE  + " WHERE " + LemmaDoc.LEMMA_ID + " IN ";
 	}
+	@Override
+	PreparedStatement countsQuery() {
+		return query_;
+	}
+	@Override
+	PreparedStatement updateQuery() {
+		return update_;
+	}
+	@Override
+	int maxItemId() {
+		return IdListAccessor.maxDocs();
+	}
+	@Override
+	int maxCountedItemId() {
+		return IdListAccessor.maxLemmas();
+	}
+
 	public static class Counts {
 		public int lemmaId_;
 		public int[] docId_;
 		public int[] count_;
 	}
 	public Counts getDocCounts(int lemma_id) throws SQLException {
+		Pair<int[], int[]> rc = getCounts(lemma_id);
 		Counts c = new Counts();
 		c.lemmaId_ = lemma_id;
-		query_.setInt(1, lemma_id);
-		ResultSet rs = query_.executeQuery();
-		try {
-			if(!rs.next()) {
-				c.count_ = new int[0];
-				c.docId_ = new int[0];
-				return c;
-			}
-			
-			byte[] data = rs.getBytes(1);
-			int num = data.length / (Integer.SIZE / 8) / 2;
-			c.docId_ = new int[num];
-			c.count_ = new int[num];
-			ByteBuffer bb = ByteBuffer.wrap(data);
-			for(int i = 0; i < num; ++i) {
-				c.docId_[i] = bb.getInt();
-				c.count_[i] = bb.getInt();
-			}
-			return c;
-		} finally {
-			rs.close();
-		}
+		c.docId_ = rc.getKey();
+		c.count_ = rc.getValue();
+		return c;
 	}
 	public static LemmaDoc pack(Counts c) {
-		int num = c.docId_.length;
-		ByteBuffer bb = ByteBuffer.allocate(num * 2 * Integer.SIZE / 8);
-		for(int i = 0; i < num; ++i) {
-			bb.putInt(c.docId_[i]);
-			bb.putInt(c.count_[i]);
-		}
 		LemmaDoc ld = new LemmaDoc();
+		ld.docList_ = pack(c.docId_, c.count_);
 		ld.lemmaId_ = c.lemmaId_;
-		ld.docList_ = bb.array();
 		return ld;
 	}
 }

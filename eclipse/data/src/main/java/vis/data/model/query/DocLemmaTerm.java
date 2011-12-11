@@ -46,7 +46,7 @@ public class DocLemmaTerm extends UnaryTerm {
 		Pair<int[], int[]> operand = parameters_.term_.term().result();
 
 		LemmaForDocHitsAccessor lh = new LemmaForDocHitsAccessor();
-		Pair<int[], int[]> result = lh.getLemmaCounts(operand.getKey()); 
+		Pair<int[], int[]> result = lh.getCounts(operand.getKey()); 
 		
 		if(parameters_.filterOnly_)
 			return Pair.of(result.getKey(), new int[result.getKey().length]);

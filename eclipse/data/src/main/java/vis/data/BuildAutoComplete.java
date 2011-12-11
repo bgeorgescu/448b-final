@@ -45,7 +45,7 @@ public class BuildAutoComplete {
 				int lemmas[] = sa.getLemmasForSentiment(rs.id_);
 				int docs[] = new int[0];
 				for(int lemma_id : lemmas) {
-					docs = SetAggregator.or(docs, dla.getDocs(lemma_id));
+					docs = SetAggregator.or(docs, dla.getItems(lemma_id));
 				}
 				int id = tic.getOrAddTerm(rs.sentiment_);
 				aca.addAutoComplete(id, Type.SENTIMENT, rs.id_, docs.length);
