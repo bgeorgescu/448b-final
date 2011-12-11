@@ -248,7 +248,9 @@ function replaceOrList(before,after,replacement_ors, pos_token) {
 }
 function buildExpression(text) {
     var terms = getTokens(text);
-    
+    var q = EntityTerm('obama');
+    console.log(q);
+    return q;
 }
 function autocompleteUpdate(ors, callback, code, response, duration) {
     $("#duration").text(duration + "ms");

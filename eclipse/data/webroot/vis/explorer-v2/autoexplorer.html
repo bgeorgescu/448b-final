@@ -50,9 +50,6 @@
             <input type="text" id="query">Duration: <span id="duration"></span>
         </div>
         <div id="term-completes"></div>
-        <script>
-            createAutoComplete($("#query"));
-        </script>
   </div>
   <div class="grid_4">
   <div id="daterange">
@@ -104,6 +101,99 @@
 </div>
 <!--- /TEMPLATES --->
 <script type="text/javascript" src="448b.js"></script>
+<script>
+function queryForTextArray(state, text) {
+	var query = {};
+	var AndHelper = function(arr) { return arr.length > 1 ? {and_:{terms_: arr }} : arr[0]; };
+	var OrHelper = function(arr) { return arr.length > 1 ? {or_:{terms_: arr }} : arr[0]; };
+	var WordToTerm = LemmaTerm;
+	
+	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
 
+	
+	query.filter_ = {date_:{before_:(state.endYear+1)*10000, after_:(state.startYear*10000 - 1)}};
+	
+	query.series_ = text
+		.map(function(x) {
+			return buildExpression(x);
+		});
+	
+	if (state.horizontalAxis == "page") {
+		query.buckets_ = array_range(1, 30).map(function(a) {
+			return PageTerm(a,a+1);
+		});
+	} else if(state.horizontalAxis == "year") {
+		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
+			return YearTerm(a);
+		});
+	} else if (state.horizontalAxis == "month") {
+		query.buckets_ = array_range(state.startYear, state.endYear).map(function(a) {
+			return array_range(0,11).map(function(b) {
+				return MonthTerm(a,b);
+			});
+		}).reduce(function(m,n) {
+			return m.concat(n);
+		});
+	} 
+	console.log(query);
+	return query;
+}
+function queryChanged(q) {
+	if(ignoreQueryChange)
+		return;
+
+	hashIgnore = true;
+	window.location.hash = encodeURIComponent(JSON.stringify(domStateToObject()));
+	hashIgnore = false;
+
+	// will get called anytime the query gets changed in any way
+	// we probably want to do some rate-limiting to avoid DoSing the server with queries
+    var query = queryForTextArray(domStateToObject(), [q]);
+    arbitraryQuery("/api/query/docs/bucketed",    
+        query,
+        function(gen,query,c,r,d){
+            if(!success(c)) {
+                //alert("query failed to run: " + r);
+                //alert(JSON.stringify(query));
+                return;
+            }
+            if(gen != current_generation)
+                return;
+            var labels=GetSeriesLabels();
+            //TODO: maybe a better way to do this
+            if(viewModel.horizontalAxis() == "page") {
+                viewModel._graphData(
+                    r
+                    .map(function(x, x_i) {
+                        
+                        return {data: x.map(function(y,y_i) {
+                            return [y_i + 1,y];
+                        }), label: labels[x_i] };
+                    }));
+            } 
+            else if(viewModel.horizontalAxis() == "year") {
+				viewModel._graphData(
+					r
+					.map(function(x, x_i) {
+						
+						return {data: x.map(function(y,y_i) {
+							return [new Date(viewModel.startYear()+y_i,0,0).getTime(),y];
+						}), label: labels[x_i]  };
+					}));
+            } else if(viewModel.horizontalAxis() == "month") {
+				viewModel._graphData(
+					r
+					.map(function(x, x_i) {
+						
+						return {data: x.map(function(y,y_i) {
+							return [new Date(viewModel.startYear(),y_i,0).getTime(),y];
+						}), label: labels[x_i]  };
+					}));
+            }
+        }.bind(this, ++current_generation, query)
+    );
+}
+createAutoComplete($("#query"), queryChanged);
+</script>
 </body>
 </html>
