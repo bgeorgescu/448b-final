@@ -527,10 +527,10 @@ $("#palette input").keyup(function() {
 		$("#palette .contents .literal").show();
 	}
 	else if(isNaN(pval)) {
-		$("#palette .contents .literal.lemma, #palette .contents .literal.entity").show();
+		$("#palette .contents .literal").show();
 		$("#palette .contents .literal.page").hide();
 	} else {
-		$("#palette .contents .literal.lemma, #palette .contents .literal.entity").hide();
+		$("#palette .contents .literal").hide();
 		$("#palette .contents .literal.page").show();
 
 	}
@@ -547,12 +547,9 @@ function hashChange() {
 	}
 }
 
-
-
-
 l1 = Literal().draggable("option","helper","clone");
 SetLiteralText(l1, "");
-SetLiteralType(l1, "lemma");
+SetLiteralType(l1, "page");
 $("#palette .contents").append(l1);
 
 l1 = Literal().draggable("option","helper","clone");
@@ -562,8 +559,16 @@ $("#palette .contents").append(l1);
 
 l1 = Literal().draggable("option","helper","clone");
 SetLiteralText(l1, "");
-SetLiteralType(l1, "page");
+SetLiteralType(l1, "lemma");
 $("#palette .contents").append(l1);
+
+
+l1 = Literal().draggable("option","helper","clone");
+SetLiteralText(l1, "");
+$("#palette .contents").append(l1);
+
+
+
 
 for(i in pubMapping) {
 	var l = Literal().draggable("option","helper","clone");

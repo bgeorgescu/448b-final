@@ -136,6 +136,10 @@
 
 }
 
+#palette .contents {
+	padding-top:10px;
+}
+
 #palette .literal {
 	display:block;
 	margin-bottom:3px;
@@ -165,16 +169,20 @@
 	background: #CDEB8B !important;
 }
 
+#palette .literal span:before {
+	content: "lemma/entity: "
+}
+
 #palette .pub span:before {
-	content: "pub: "
+	content: "pub: " !important;
 }
 
 #palette .lemma span:before {
-	content: "lemma: "
+	content: "lemma: " !important;
 }
 
 #palette .page span:before {
-	content: "page: "
+	content: "page: " !important;
 }
 
 #palette .entity span:before {
