@@ -72,17 +72,20 @@ $.extend( proto, {
                         suppress = true;
                         return;
                     default:
+                        self.options.revert();
+                        self.close();
+                        break;
                     }
                 } else {
                     switch( event.keyCode ) {
                     case keyCode.ENTER:
-                    case keyCode.PLUS:
-                    case keyCode.OPEN_BRACKET:
-                    case keyCode.CLOSE_BRACKET:
-                    case keyCode.SPACE:
                         self.options.commit(self.term);
                         self.close();
+                        break;
                     default:
+                        self.options.revert();
+                        self.close();
+                        break;
                     }
                 }
             }

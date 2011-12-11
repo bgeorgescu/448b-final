@@ -244,7 +244,13 @@ $("#trash").droppable({
 	greedy:true,
 })
 
-
+function seriesCount() {
+    var count = $(".series:not(#series_template) > .contents").length;
+    console.log(count);
+    if(count <= 0)
+        return 1;
+    return count;
+}
 function domStateToObject() {
 	var retval = {
 		series:
@@ -444,7 +450,7 @@ viewModel._graphOptions = function() {
 			stack: viewModel.graphStack() ? 1 : null,
 			lines: { show: (viewModel.graphMode() == "lines" || viewModel.graphMode() == "areas"), fill: viewModel.graphMode() == "areas", steps: viewModel.graphMode() == "steps" },
 			bars: { show: viewModel.graphMode() == "bars",
-					barWidth: 0.8 }
+					barWidth: 0.8}
 		},
 		xaxis: {},
 		yaxis: {min: 0 },
@@ -454,11 +460,12 @@ viewModel._graphOptions = function() {
     	retval.xaxis.mode = null;
 		retval.xaxis.min = 0;
 		retval.xaxis.max = 32;
+        retval.series.bars.barWidth = 0.5;
     }
     else if(viewModel.horizontalAxis() == "year" || viewModel.horizontalAxis() == "month") {
     	retval.xaxis.mode = "time";
-		retval.xaxis.min = new Date(viewModel.startYear(), 0, 1).getTime();
 		if(viewModel.graphMode() == "lines" || viewModel.graphMode() == "steps" || viewModel.graphMode() == "areas" ) {
+            retval.xaxis.min = new Date(viewModel.startYear(), 0, 1).getTime();
 			if(viewModel.horizontalAxis() == "year") {
 				retval.xaxis.max = new Date(viewModel.endYear(), 0, 1).getTime();
 			} else if(viewModel.horizontalAxis() == "month") {
@@ -466,10 +473,19 @@ viewModel._graphOptions = function() {
 			}
 		}
 		else {
+            retval.xaxis.min = new Date(viewModel.startYear(), 0, 1).getTime();
 			retval.xaxis.max = new Date(viewModel.endYear(), 11, 30).getTime();
 			if(viewModel.horizontalAxis() == "year") {
+                if(!viewModel.graphStack()) {
+                    retval.xaxis.min -= 365*86400000 / 2;
+                    retval.xaxis.max -= 365*86400000 / 2;
+                }
 				retval.series.bars.barWidth = 0.8*365*86400000;	
 			} else if(viewModel.horizontalAxis() == "month") {
+                if(!viewModel.graphStack()) {
+                    retval.xaxis.min -= 28*86400000 / 2;
+                    retval.xaxis.max -= 28*86400000 / 2;
+                }
 				retval.series.bars.barWidth = 0.8*28*86400000;
 			}
 		}
@@ -479,6 +495,10 @@ viewModel._graphOptions = function() {
 		} else if(viewModel.horizontalAxis() == "month") {
 			retval.xaxis.minTickWidth = [1, "month"];
 		}
+    }
+    if(!viewModel.graphStack()) {
+        retval.series.bars.barWidth /= seriesCount();
+        retval.series.bars.order = 1;
     }
     return retval;
 }
