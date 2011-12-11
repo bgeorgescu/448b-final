@@ -107,7 +107,11 @@
 }
 
 #settings fieldset :not(:first-child) {
-	margin-left:20px;
+	margin-left:15px;
+}
+
+#settings fieldset:not(:first-child) {
+	margin-left:10px;
 }
 
 #newseries, #clearseries, #trash {

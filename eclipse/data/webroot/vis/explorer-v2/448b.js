@@ -575,7 +575,7 @@ $("#palette input").keyup(function() {
 		$("#palette .contents .literal").show();
 		$("#palette .contents .literal.page").hide();
 		if(pval.length>1)
-			autoCompleteTerm(pval, undefined,  8, populateAutocomplete.bind(undefined, ++autocomplete_gen));
+			autoCompleteTerm(pval, undefined,  10, populateAutocomplete.bind(undefined, ++autocomplete_gen));
 	} else {
 		$("#palette .contents .literal").hide();
 		$("#palette .contents .literal.page").show();
