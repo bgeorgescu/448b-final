@@ -634,6 +634,3 @@ function populateAutocomplete(gen, c, data) {
 	}
 }
 
-window.onhashchange = hashChange;
-hashChange();
-

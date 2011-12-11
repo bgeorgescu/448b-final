@@ -138,17 +138,20 @@ function queryForTextArray(state, text) {
 	console.log(query);
 	return query;
 }
+
 function queryChanged() {
 	if(ignoreQueryChange)
 		return;
-
+        
+    var q = $("#query").attr("value");
+    console.log(q);
 	hashIgnore = true;
-	window.location.hash = encodeURIComponent(JSON.stringify(domStateToObject()));
+	window.location.hash = encodeURIComponent(JSON.stringify({graph:domStateToObject(),expr:q}));
 	hashIgnore = false;
 
 	// will get called anytime the query gets changed in any way
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
-    var query = queryForTextArray(domStateToObject(), [$("#query").attr("value")]);
+    var query = queryForTextArray(domStateToObject(), [q]);
     arbitraryQuery("/api/query/docs/bucketed",    
         query,
         function(gen,query,c,r,d){
@@ -193,7 +196,22 @@ function queryChanged() {
         }.bind(this, ++current_generation, query)
     );
 }
+function hashChange() {
+	if(hashIgnore)
+		return;
+	if(window.location.hash != "") {
+        var s = JSON.parse(decodeURIComponent(window.location.hash.slice(1)));
+		objectToDomState(s.graph);
+        $("#query").attr("value", s.expr);
+	}
+	queryChanged();
+}
+hashChange();
+window.onhashchange = hashChange;
+
 createAutoComplete($("#query"), queryChanged);
+
+
 queryChanged("");
 </script>
 </body>
