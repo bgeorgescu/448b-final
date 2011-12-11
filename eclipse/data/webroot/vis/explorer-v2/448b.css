@@ -7,15 +7,15 @@
 }
 
 .droppable {
-	background:#c3e8cc;
+	background-color:#c3e8cc !important;
 }
 
 .series.droppable {
-	background:#e7e8c3;
+	background-color:#e7e8c3 !important;
 }
 
 .hover, .series.droppable.hover {
-	background:#e8c3c3 !important;
+	background-color:#e8c3c3 !important;
 }
 
 .series {
@@ -115,4 +115,28 @@
 
 #settings fieldset :not(:first-child) {
 	margin-left:20px;
+}
+
+#newseries, #clearseries, #trash {
+	background: #EFEFEF;
+	border:2px solid #DDD;
+	padding: 2px 2px 2px 20px;
+	margin: 6px 2px;
+	background-repeat:no-repeat;
+	background-position:2px 2px;
+	display:inline;
+}
+
+#newseries {
+	background-image: url("img/add.png");
+}
+
+#clearseries {
+	background-image: url("img/delete.png");
+}
+
+#trash {
+	background-size:16px 16px;
+	background-image: url("img/trashcan_full.png");
+
 }
