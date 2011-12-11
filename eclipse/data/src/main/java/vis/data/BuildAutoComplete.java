@@ -9,18 +9,21 @@ import org.apache.commons.dbutils.DbUtils;
 import vis.data.model.AutoCompleteEntry;
 import vis.data.model.AutoCompleteEntry.Type;
 import vis.data.model.AutoCompleteTerm;
+import vis.data.model.RawSentiment;
 import vis.data.model.meta.AutoCompleteAccessor;
+import vis.data.model.meta.DocForLemmaAccessor;
 import vis.data.model.meta.EntityAccessor;
 import vis.data.model.meta.EntityAccessor.ScoredEntity;
 import vis.data.model.meta.LemmaAccessor;
 import vis.data.model.meta.LemmaAccessor.ScoredLemma;
+import vis.data.model.meta.SentimentAccessor;
 import vis.data.model.meta.TermInsertionCache;
 import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
+import vis.data.util.SetAggregator;
 import vis.data.util.StopWords;
 
 public class BuildAutoComplete {
-
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
 		
@@ -36,6 +39,17 @@ public class BuildAutoComplete {
 		TermInsertionCache tic = TermInsertionCache.getInstance();
 		try {
 			AutoCompleteAccessor aca = new AutoCompleteAccessor();
+			SentimentAccessor sa = new SentimentAccessor();
+			DocForLemmaAccessor dla = new DocForLemmaAccessor();
+			for(RawSentiment rs : sa.listSentiments()) {
+				int lemmas[] = sa.getLemmasForSentiment(rs.id_);
+				int docs[] = new int[0];
+				for(int lemma_id : lemmas) {
+					docs = SetAggregator.or(docs, dla.getDocs(lemma_id));
+				}
+				int id = tic.getOrAddTerm(rs.sentiment_);
+				aca.addAutoComplete(id, Type.SENTIMENT, rs.id_, docs.length);
+			}
 			try {
 				EntityAccessor ea = new EntityAccessor(second);
 				EntityAccessor.ScoredResultSetIterator entities = ea.entityIteratorWithScore();

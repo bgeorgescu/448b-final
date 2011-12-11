@@ -32,6 +32,9 @@ public class All {
 		//load wordnet databases
 		LoadWordNet.main(null);
 		
+		//build an autocomplete database table
+		BuildAutoComplete.main(null);
+		
 		//optimize tables now that we are done
 		OptimizeTables.main(null);
 	}
