@@ -117,7 +117,7 @@ public class EntityTerm extends Term {
 		} else {
 			DocForEntityAccessor.Counts initial = deh.getDocCounts(entities[0]);
 			for(int i = 1; i < entities.length; ++i) {
-				DocForEntityAccessor.Counts partial = deh.getDocCounts(entities[1]);
+				DocForEntityAccessor.Counts partial = deh.getDocCounts(entities[i]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
 				initial.docId_ = res.getKey();
 				initial.count_ = res.getValue();

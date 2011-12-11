@@ -33,7 +33,7 @@ public class SentimentTerm extends Term {
 			if(filterOnly_ != p.filterOnly_) {
 				return false;
 			}
-			if(category_ != null ^ p.category_ != null) {
+			if(!category_.equals(p.category_)) {
 				return false;
 			}
 			return true;
@@ -77,7 +77,7 @@ public class SentimentTerm extends Term {
 		} else {
 			DocForLemmaAccessor.Counts initial = dlh.getDocCounts(lemmas[0]);
 			for(int i = 1; i < lemmas.length; ++i) {
-				DocForLemmaAccessor.Counts partial = dlh.getDocCounts(lemmas[1]);
+				DocForLemmaAccessor.Counts partial = dlh.getDocCounts(lemmas[i]);
 				Pair<int[], int[]> res = CountAggregator.or(initial.docId_, initial.count_, partial.docId_, partial.count_);
 				initial.docId_ = res.getKey();
 				initial.count_ = res.getValue();
