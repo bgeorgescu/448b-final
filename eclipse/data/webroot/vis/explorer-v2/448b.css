@@ -150,7 +150,7 @@
 }
 
 .lemma span {
-	background: green !important;
+	background: #EEEEEE !important;
 }
 
 .page span {
@@ -158,9 +158,25 @@
 }
 
 .entity span {
-	background: yellow !important;
+	background: #F9F7ED !important;
 }
 
 .pub span {
-	background: red !important;
+	background: #CDEB8B !important;
+}
+
+#palette .pub span:before {
+	content: "pub: "
+}
+
+#palette .lemma span:before {
+	content: "lemma: "
+}
+
+#palette .page span:before {
+	content: "page: "
+}
+
+#palette .entity span:before {
+	content: "entity: "
 }

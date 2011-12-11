@@ -523,6 +523,17 @@ $("#clearseries").click(function(x) { ClearSeries(); return false; })
 
 $("#palette input").keyup(function() {
 	var pval = $(this).val();
+	if(pval=="") {
+		$("#palette .contents .literal").show();
+	}
+	else if(isNaN(pval)) {
+		$("#palette .contents .literal.lemma, #palette .contents .literal.entity").show();
+		$("#palette .contents .literal.page").hide();
+	} else {
+		$("#palette .contents .literal.lemma, #palette .contents .literal.entity").hide();
+		$("#palette .contents .literal.page").show();
+
+	}
 	$("#palette .contents .literal").each(function() {
 		SetLiteralText($(this), pval);
 	});
@@ -547,6 +558,11 @@ $("#palette .contents").append(l1);
 l1 = Literal().draggable("option","helper","clone");
 SetLiteralText(l1, "");
 SetLiteralType(l1, "entity");
+$("#palette .contents").append(l1);
+
+l1 = Literal().draggable("option","helper","clone");
+SetLiteralText(l1, "");
+SetLiteralType(l1, "page");
 $("#palette .contents").append(l1);
 
 for(i in pubMapping) {
