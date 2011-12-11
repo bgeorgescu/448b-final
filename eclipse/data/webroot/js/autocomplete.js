@@ -59,8 +59,8 @@ function atBeginningOfTerm(s) {
     return /(?:^|[,+\(\)\s])\s*$/.test(s);
 }
 function getOneTerm(before,after) {
-    var a = getTokens(before);
-    var b = getTokens(after);
+    var a = getSingleWordTokens(before);
+    var b = getSingleWordTokens(after);
     if(a.length > 0 && b.length > 0) {
         var a_last = a[a.length - 1];
         var b_first = b[0];
@@ -76,8 +76,15 @@ function getOneTerm(before,after) {
     }
     return undefined;
 }
+function getSingleWordTokens(text) {
+    var tokenize = /(?:,|\+|\(|\)|\s+|[a-zA-Z0-9.]+)/g;
+    var toks = text.match(tokenize);
+    if(toks == null)
+        return [];
+    return toks;
+}
 function getTokens(text) {
-    var tokenize = /(?:,|\+|\(|\)|\s+|(?:[a-zA-Z0-9\.]+(?:\s+[a-zA-Z0-9\.]+)*))/g;
+    var tokenize = /(?:,|\+|\(|\)|\s+|(?:[a-zA-Z0-9.]+(?:\s+[a-zA-Z0-9.]+)*))/g;
     var toks = text.match(tokenize);
     if(toks == null)
         return [];
@@ -317,9 +324,7 @@ function buildExpression(text) {
     text = text.replace(/\s+/g, " ");
     var terms = getTokens(text);
     terms = terms.filter(function(x) { return !/^\s*$/.test(x); });
-    var q = processTerms(terms);
-    //var q = EntityTerm('obama');
-    
+    var q = processTerms(terms);    
     console.log(q);
     return q;
 }

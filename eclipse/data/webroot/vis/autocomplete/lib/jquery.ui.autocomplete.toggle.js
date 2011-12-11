@@ -71,6 +71,9 @@ $.extend( proto, {
                         checkbox.button("refresh");
                         suppress = true;
                         return;
+                    case keyCode.UP:
+                    case keyCode.DOWN:
+                        break;
                     default:
                         self.options.revert();
                         self.close();
@@ -81,6 +84,10 @@ $.extend( proto, {
                     case keyCode.ENTER:
                         self.options.commit(self.term);
                         self.close();
+                        break;
+                    case keyCode.UP:
+                    case keyCode.DOWN:
+                    case keyCode.SHIFT:
                         break;
                     default:
                         self.options.revert();
