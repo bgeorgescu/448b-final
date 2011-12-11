@@ -1,5 +1,8 @@
 var globalRevertDuration=100;
 
+var literalTypes = ["entity","lemma","page","publication","sentiment"];
+
+
 var rangeSlider= $("#daterange").rangeSlider({
   /*defaultValues:{min:2000, max:2010},*/
   bounds:{min:2000, max:2010},
@@ -116,7 +119,6 @@ function Literal() {
 	});
 }
 
-var literalTypes = ["entity","lemma","page","pub"];
 
 function SetLiteralType(literal, type) {
 	$.each(literalTypes, function(i, lt) {
@@ -327,8 +329,6 @@ function GetSeriesLabels() {
 	return $(".series").filter(function(x) { return $(this).find(".literal").length; }).map(function() { return GetLiteralText($(this).find('.literal').first())});
 }
 
-// var literalTypes = ["entity","lemma","page","pub"];
-// var PUBLICATIONS = {"7556":"Baltimore Sun","7683":"Los Angeles Times","7684":"Chicago Tribune"};
 var pubMapping = {};
 for(i in PUBLICATIONS)
 	pubMapping[PUBLICATIONS[i]] = parseFloat(i);
@@ -341,8 +341,10 @@ function literalObjectToQueryTerm(obj) {
 		return LemmaTerm(obj.text);
 	else if(obj.type == "page")
 		return PageTerm(parseInt(obj.text), parseInt(obj.text)+1);
-	else if(obj.type == "pub")
+	else if(obj.type == "publication")
 		return PublicationTerm(pubMapping[obj.text]);
+	else if(obj.type == "sentiment")
+		return SentimentTerm(obj.text);	
 	else
 		return WordToTerm(obj.text);
 }
@@ -596,14 +598,19 @@ $("#palette .contents").append(PaletteLiteral("page"));
 
 
 for(i in pubMapping) {
-	$("#pubs").append(PaletteLiteral("pub",i));
+	$("#pubs").append(PaletteLiteral("publication",i));
 }
 
 function populateAutocomplete(gen, c, data) {
 	if(gen == autocomplete_gen && success(c)) {
 		$("#suggestions").empty();
 		$.each(data, function(i,suggestion) {
-			$("#suggestions").append(PaletteLiteral(suggestion.type_.toLowerCase(),suggestion.resolved_.split("/")[0]).addClass(suggestion.resolved_.split("/")[1]));
+			var resolved = suggestion.resolved_.split("/");
+			var literal = PaletteLiteral(suggestion.type_.toLowerCase(), resolved[0]);
+			if(resolved.length > 1) {
+				literal.addClass(resolved[1]);
+			}
+			$("#suggestions").append(literal);
 		});
 	}
 }

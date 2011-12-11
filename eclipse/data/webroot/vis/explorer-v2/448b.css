@@ -165,7 +165,11 @@
 	background: #CDEB8B !important;
 }
 
-.pub span {
+.sentiment span {
+	background: #C7ADE0 !important;
+}
+
+.publication span {
 	background: #F5D3F4 !important;
 }
 
@@ -173,7 +177,7 @@
 	content: "lemma/entity: "
 }
 
-#palette .pub span:before {
+#palette .publication span:before {
 	content: "pub: " !important;
 }
 
@@ -189,8 +193,20 @@
 	content: "entity: "
 }
 
-#palette .contents:before {
-	/*content:"drag:"*/
+#palette .sentiment span:before {
+	content: "sentiment: "
+}
+
+#palette .sister span:before {
+	content: "sister term: "
+}
+
+#palette .parent span:before {
+	content: "parent term: "
+}
+
+#palette .child span:before {
+	content: "child term: "
 }
 
 #suggestions .ORGANIZATION, #suggestions .PERSON, #suggestions .LOCATION {
