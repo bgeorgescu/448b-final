@@ -51,13 +51,6 @@
 	cursor:move;
 }
 
-.literal {
-	background: #99CCFF;
-	cursor:move;
-	padding: 2px 4px 2px 4px;
-	border-radius: 4px;
-	display:inline;
-}
 
 .graphOption.selected {
 	border-color:red !important;
@@ -141,4 +134,33 @@
 	background-size:16px 16px;
 	background-image: url("img/trashcan_full.png");
 
+}
+
+#palette .literal {
+	display:block;
+	margin-bottom:3px;
+}
+
+.literal span {
+	background: #99CCFF;
+	cursor:move;
+	padding: 2px 4px 2px 4px;
+	border-radius: 4px;
+	display:inline;
+}
+
+.lemma span {
+	background: green !important;
+}
+
+.page span {
+	background: orange !important;
+}
+
+.entity span {
+	background: yellow !important;
+}
+
+.pub span {
+	background: red !important;
 }
