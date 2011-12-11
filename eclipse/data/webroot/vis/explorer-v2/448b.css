@@ -131,8 +131,7 @@
 }
 
 #trash {
-	background-size:16px 16px;
-	background-image: url("img/trashcan_full.png");
+	background-image: url("img/bin_closed.png");
 
 }
 
@@ -209,9 +208,13 @@
 	content: "child term: "
 }
 
-#suggestions .ORGANIZATION, #suggestions .PERSON, #suggestions .LOCATION {
+#suggestions .ORGANIZATION, #suggestions .PERSON, #suggestions .LOCATION, #suggestions .parent, #suggestions .sister, #suggestions .child {
 	background-repeat:no-repeat;
 	padding-left:18px;
+}
+
+#suggestions .parent, #suggestions .sister, #suggestions .child {
+	background-image: url("img/blocks.png");
 }
 
 #suggestions .ORGANIZATION {

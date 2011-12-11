@@ -6,3 +6,4 @@ Third-party libraries:
 - jQuery mousewheel	https://github.com/brandonaaron/jquery-mousewheel/
 - jQRangeSlider	https://github.com/ghusse/jQRangeSlider/
 - KDE crystal icons	http://www.everaldo.com/crystal/?action=license
+- Silk icons	http://www.famfamfam.com/lab/icons/silk/
