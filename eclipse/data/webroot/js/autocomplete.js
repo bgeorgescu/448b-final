@@ -341,31 +341,47 @@ function autocompleteUpdate(ors, callback, code, response, duration) {
     top.sort(typeDependentSort);
     //TODO, remove duplicate words/ones already added
     //TODO, remove base term if it isn't somewhere in the autocomplete
-    var hits = top.map(function(x) { 
+    var already = {};
+    var hits = ors.map(function(x) { 
+        var id = Math.uuid();
+        var checked = "checked";
+        if(x in already)
+            return undefined;
+        already[x]=true;
+        return {
+            label:"<input class='autocomplete-check' id='" + id + "' alt='" + x + "' type='checkbox' " + checked + ">" +
+                "<label for='" + id + "'>" + 
+                x +
+                "</label>",
+            value:x,
+            category:"Already Added",
+        };
+    });
+
+    hits = hits.concat(top.map(function(x) { 
         var id = Math.uuid();
         var checked = "";
-        var word = x.resolved_.substring(0, x.resolved_.indexOf('/'));
+        var word;
+        if(x.resolved_.indexOf('/') != -1)
+            word = x.resolved_.substring(0, x.resolved_.indexOf('/'));
+        else
+            word = x.resolved_;
+        var value = word;
+        if(x.type_ == 'SENTIMENT')
+            value = "sentiment:" + word;
+        if(value in already)
+            return undefined;    
+        already[word]=true;
         return {
             label:"<input class='autocomplete-check'  id='" + id + "' alt='" + word + "' type='checkbox' " + checked + ">" +
                 "<label for='" + id + "'>" + 
                 word + " (" + x.score_ + ")" +
                 "</label>",
-            value:x.resolved_.substring(0, x.resolved_.indexOf('/')),
+            value:value,
             category:x.category_,
         };
-    });
-    for(var i = ors.length - 1; i >= 0; --i) {
-        var id = Math.uuid();
-        var checked = "checked";
-        hits.unshift({
-            label:"<input class='autocomplete-check' id='" + id + "' alt='" + ors[i] + "' type='checkbox' " + checked + ">" +
-                "<label for='" + id + "'>" + 
-                ors[i] +
-                "</label>",
-            value:ors[i],
-            category:"Already Added",
-        });
-    }                    
+    }));
+    hits = hits.filter(function(x){return undefined !== x;});
     callback(hits);
 }
 
