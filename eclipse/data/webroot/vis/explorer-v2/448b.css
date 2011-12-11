@@ -188,3 +188,7 @@
 #palette .entity span:before {
 	content: "entity: "
 }
+
+#palette .contents:before {
+	/*content:"drag:"*/
+}

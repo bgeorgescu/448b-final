@@ -529,10 +529,10 @@ $("#palette input").keyup(function() {
 	else if(isNaN(pval)) {
 		$("#palette .contents .literal").show();
 		$("#palette .contents .literal.page").hide();
+		autoCompleteTerm(pval, undefined,  8, populateAutocomplete);
 	} else {
 		$("#palette .contents .literal").hide();
 		$("#palette .contents .literal.page").show();
-
 	}
 	$("#palette .contents .literal").each(function() {
 		SetLiteralText($(this), pval);
@@ -547,34 +547,38 @@ function hashChange() {
 	}
 }
 
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-SetLiteralType(l1, "page");
-$("#palette .contents").append(l1);
-
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-SetLiteralType(l1, "entity");
-$("#palette .contents").append(l1);
-
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-SetLiteralType(l1, "lemma");
-$("#palette .contents").append(l1);
+function PaletteLiteral(type, text) {
+	var l1 = Literal().draggable("option","helper","clone");
+	if(text) SetLiteralText(l1, text);
+	if(type) SetLiteralType(l1, type);
+	return l1;
+}
 
 
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-$("#palette .contents").append(l1);
+$("#palette .contents").append(PaletteLiteral("page"));
+$("#palette .contents").append(PaletteLiteral("entity"));
+$("#palette .contents").append(PaletteLiteral("lemma"));
+$("#palette .contents").append(PaletteLiteral());
 
 
+//http://wrldsuksgo2mars.doesntexist.org:9876/api/autocomplete/term/barack/limit/10
 
 
 for(i in pubMapping) {
-	var l = Literal().draggable("option","helper","clone");
-	SetLiteralText(l, i);
-	SetLiteralType(l, "pub");
-	$("#palette").append(l);
+	$("#pubs").append(PaletteLiteral("pub",i));
+}
+
+
+
+var autoexample = [{"type_":"LEMMA","referenceId_":106,"score_":86985,"resolved_":"obituary/NNS"},{"type_":"LEMMA","referenceId_":7682,"score_":54588,"resolved_":"obviously/RB"},{"type_":"LEMMA","referenceId_":6442,"score_":39856,"resolved_":"obvious/JJ"},{"type_":"ENTITY","referenceId_":1814,"score_":28132,"resolved_":"obama/PERSON"},{"type_":"LEMMA","referenceId_":17834,"score_":20861,"resolved_":"observer/NNS"},{"type_":"LEMMA","referenceId_":4121,"score_":20853,"resolved_":"obtain/VB"},{"type_":"ENTITY","referenceId_":561,"score_":20123,"resolved_":"barack obama/PERSON"},{"type_":"LEMMA","referenceId_":15350,"score_":14958,"resolved_":"object/NNS"},{"type_":"LEMMA","referenceId_":3421,"score_":14300,"resolved_":"obtain/VBN"},{"type_":"LEMMA","referenceId_":11719,"score_":12338,"resolved_":"obligation/NN"}];
+
+function populateAutocomplete(c, data) {
+	if(success(c)) {
+		$("#suggestions").empty();
+		$.each(data, function(i,suggestion) {
+			$("#suggestions").append(PaletteLiteral(suggestion.type_.toLowerCase(),suggestion.resolved_.split("/")[0]));
+		});
+	}
 }
 
 window.onhashchange = hashChange;
