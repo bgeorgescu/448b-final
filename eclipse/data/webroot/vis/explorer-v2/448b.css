@@ -214,7 +214,7 @@
 }
 
 #suggestions .parent, #suggestions .sister, #suggestions .child {
-	background-image: url("img/blocks.png");
+	background-image: url("img/bricks.png");
 }
 
 #suggestions .ORGANIZATION {
