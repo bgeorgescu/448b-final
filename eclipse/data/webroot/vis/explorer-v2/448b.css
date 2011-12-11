@@ -154,7 +154,7 @@
 }
 
 .lemma span {
-	background: #EEEEEE !important;
+	background: #D0F5E0 !important;
 }
 
 .page span {
@@ -162,11 +162,11 @@
 }
 
 .entity span {
-	background: #F9F7ED !important;
+	background: #CDEB8B !important;
 }
 
 .pub span {
-	background: #CDEB8B !important;
+	background: #F5D3F4 !important;
 }
 
 #palette .literal span:before {

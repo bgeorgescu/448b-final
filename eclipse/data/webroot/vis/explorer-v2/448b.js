@@ -521,6 +521,8 @@ $("#newseries").click(function(x) { AddSeries(Series()); return false; })
 	
 $("#clearseries").click(function(x) { ClearSeries(); return false; })
 
+
+var autocomplete_gen = 0;
 $("#palette input").keyup(function() {
 	var pval = $(this).val();
 	if(pval=="") {
@@ -529,10 +531,13 @@ $("#palette input").keyup(function() {
 	else if(isNaN(pval)) {
 		$("#palette .contents .literal").show();
 		$("#palette .contents .literal.page").hide();
-		autoCompleteTerm(pval, undefined,  8, populateAutocomplete);
+		if(pval.length>1)
+			autoCompleteTerm(pval, undefined,  8, populateAutocomplete.bind(undefined, ++autocomplete_gen));
 	} else {
 		$("#palette .contents .literal").hide();
 		$("#palette .contents .literal.page").show();
+		$("#suggestions").empty();
+		++autocomplete_gen;
 	}
 	$("#palette .contents .literal").each(function() {
 		SetLiteralText($(this), pval);
@@ -555,25 +560,18 @@ function PaletteLiteral(type, text) {
 }
 
 
-$("#palette .contents").append(PaletteLiteral("page"));
-$("#palette .contents").append(PaletteLiteral("entity"));
-$("#palette .contents").append(PaletteLiteral("lemma"));
+//$("#palette .contents").append(PaletteLiteral("entity"));
+//$("#palette .contents").append(PaletteLiteral("lemma"));
 $("#palette .contents").append(PaletteLiteral());
-
-
-//http://wrldsuksgo2mars.doesntexist.org:9876/api/autocomplete/term/barack/limit/10
+$("#palette .contents").append(PaletteLiteral("page"));
 
 
 for(i in pubMapping) {
 	$("#pubs").append(PaletteLiteral("pub",i));
 }
 
-
-
-var autoexample = [{"type_":"LEMMA","referenceId_":106,"score_":86985,"resolved_":"obituary/NNS"},{"type_":"LEMMA","referenceId_":7682,"score_":54588,"resolved_":"obviously/RB"},{"type_":"LEMMA","referenceId_":6442,"score_":39856,"resolved_":"obvious/JJ"},{"type_":"ENTITY","referenceId_":1814,"score_":28132,"resolved_":"obama/PERSON"},{"type_":"LEMMA","referenceId_":17834,"score_":20861,"resolved_":"observer/NNS"},{"type_":"LEMMA","referenceId_":4121,"score_":20853,"resolved_":"obtain/VB"},{"type_":"ENTITY","referenceId_":561,"score_":20123,"resolved_":"barack obama/PERSON"},{"type_":"LEMMA","referenceId_":15350,"score_":14958,"resolved_":"object/NNS"},{"type_":"LEMMA","referenceId_":3421,"score_":14300,"resolved_":"obtain/VBN"},{"type_":"LEMMA","referenceId_":11719,"score_":12338,"resolved_":"obligation/NN"}];
-
-function populateAutocomplete(c, data) {
-	if(success(c)) {
+function populateAutocomplete(gen, c, data) {
+	if(gen == autocomplete_gen && success(c)) {
 		$("#suggestions").empty();
 		$.each(data, function(i,suggestion) {
 			$("#suggestions").append(PaletteLiteral(suggestion.type_.toLowerCase(),suggestion.resolved_.split("/")[0]));
