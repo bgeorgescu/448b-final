@@ -574,8 +574,7 @@ $("#palette input").keyup(function() {
 	else if(isNaN(pval)) {
 		$("#palette .contents .literal").show();
 		$("#palette .contents .literal.page").hide();
-		if(pval.length>1)
-			autoCompleteTerm(pval, undefined,  10, populateAutocomplete.bind(undefined, ++autocomplete_gen));
+        autoCompleteTerm(pval, undefined,  30, populateAutocomplete.bind(undefined, ++autocomplete_gen));
 	} else {
 		$("#palette .contents .literal").hide();
 		$("#palette .contents .literal.page").show();
@@ -618,6 +617,9 @@ for(i in pubMapping) {
 
 function populateAutocomplete(gen, c, data) {
 	if(gen == autocomplete_gen && success(c)) {
+        if(data.length > 10) {
+            data = data.slice(0,10);
+        }
 		$("#suggestions").empty();
 		var lemma_dedup = {};
 		$.each(data, function(i,suggestion) {
