@@ -199,7 +199,10 @@ function Series() {
 				ui.draggable.attr('style','');
 			}
 			else if(ui.draggable.hasClass("literal")) {
-				AddLiteralToSeries(ui.draggable, $(this));
+				if(ui.draggable.hasClass("palette"))
+					AddLiteralCopyToSeries(ui.draggable, $(this));
+				else
+					AddLiteralToSeries(ui.draggable, $(this));
 			}
 		},
 		greedy:true
@@ -221,8 +224,10 @@ function Disjunction() {
 		activeClass: "droppable",
 		hoverClass: "hover",
 		drop: function(event, ui) {
-			
-			AddLiteralToDisjunction(ui.draggable, $(this));
+			if(ui.draggable.hasClass("palette"))
+				AddLiteralCopyToDisjunction(ui.draggable, $(this));
+			else
+				AddLiteralToDisjunction(ui.draggable, $(this));
 		},
 		greedy:true
 	});
@@ -255,7 +260,7 @@ $("#trash").droppable({
 
 function seriesCount() {
     var count = $(".series:not(#series_template) > .contents").length;
-    console.log(count);
+    //console.log(count);
     if(count <= 0)
         return 1;
     return count;
@@ -409,6 +414,9 @@ function queryChanged() {
 	// will get called anytime the query gets changed in any way
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
     var query = queryForObject(domStateToObject());
+    if(query.series_.length == 0)
+    	return;
+    
     arbitraryQuery("/api/query/docs/bucketed",    
         query,
         function(gen,query,c,r,d){
@@ -587,6 +595,7 @@ function PaletteLiteral(type, text) {
 	var l1 = Literal().draggable("option","helper","clone");
 	if(text) SetLiteralText(l1, text);
 	if(type) SetLiteralType(l1, type);
+	l1.addClass("palette");
 	return l1;
 }
 
