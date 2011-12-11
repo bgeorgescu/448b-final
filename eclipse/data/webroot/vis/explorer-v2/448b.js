@@ -116,22 +116,31 @@ function Literal() {
 	});
 }
 
+var literalTypes = ["entity","lemma","page","pub"];
 
 function SetLiteralType(literal, type) {
-	// TODO
+	$.each(literalTypes, function(i, lt) {
+		literal.removeClass(lt);
+	});
+	literal.addClass(type);
+	
 }
 
 function GetLiteralType(literal) {
-	// TODO
-	return "default";
+	var type;
+	$.each(literalTypes, function(i, lt) {
+		if(literal.hasClass(lt))
+			type=lt;
+	});
+	return type;
 }
 
 function GetLiteralText(literal) {
-	return literal.text();
+	return literal.find("span").text();
 }
 
 function SetLiteralText(literal, text) {
-	literal.text(text);
+	literal.find("span").text(text);
 }
 
 
@@ -261,7 +270,7 @@ function domStateToObject() {
 function ClearSeries() {
 	var series_container = $("#series");
 	series_container.empty();
-	series_container.html("&nbsp;");
+	//series_container.html("&nbsp;");
 	queryChanged();
 }
 
@@ -305,13 +314,30 @@ function GetSeriesLabels() {
 	return $(".series").filter(function(x) { return $(this).find(".literal").length; }).map(function() { return GetLiteralText($(this).find('.literal').first())});
 }
 
+// var literalTypes = ["entity","lemma","page","pub"];
+// var PUBLICATIONS = {"7556":"Baltimore Sun","7683":"Los Angeles Times","7684":"Chicago Tribune"};
+var pubMapping = {};
+for(i in PUBLICATIONS)
+	pubMapping[PUBLICATIONS[i]] = parseFloat(i);
+	
+function literalObjectToQueryTerm(obj) {
+	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
+	if(obj.type == "entity")
+		return EntityTerm(obj.text);
+	else if(obj.type == "lemma")
+		return LemmaTerm(obj.text);
+	else if(obj.type == "page")
+		return PageTerm(parseInt(obj.text), parseInt(obj.text)+1);
+	else if(obj.type == "pub")
+		return PublicationTerm(pubMapping[obj.text]);
+	else
+		return WordToTerm(obj.text);
+}
+
 function queryForObject(state) {
 	var query = {};
 	var AndHelper = function(arr) { return arr.length > 1 ? {and_:{terms_: arr }} : arr[0]; };
 	var OrHelper = function(arr) { return arr.length > 1 ? {or_:{terms_: arr }} : arr[0]; };
-	var WordToTerm = LemmaTerm;
-	
-	WordToTerm = function(a) { return OrTerm(LemmaTerm(a), EntityTerm(a)); };
 
 	
 	query.filter_ = {date_:{before_:(state.endYear+1)*10000, after_:(state.startYear*10000 - 1)}};
@@ -326,9 +352,7 @@ function queryForObject(state) {
 					return y.length;
 				})
 				.map(function(y) {
-					return OrHelper(y.map(function(z) {
-							return WordToTerm(z.text);
-						}));
+					return OrHelper(y.map(literalObjectToQueryTerm));
 				}));
 		}).filter(function(x) {
 			return x;
@@ -499,6 +523,17 @@ $("#clearseries").click(function(x) { ClearSeries(); return false; })
 
 $("#palette input").keyup(function() {
 	var pval = $(this).val();
+	if(pval=="") {
+		$("#palette .contents .literal").show();
+	}
+	else if(isNaN(pval)) {
+		$("#palette .contents .literal").show();
+		$("#palette .contents .literal.page").hide();
+	} else {
+		$("#palette .contents .literal").hide();
+		$("#palette .contents .literal.page").show();
+
+	}
 	$("#palette .contents .literal").each(function() {
 		SetLiteralText($(this), pval);
 	});
@@ -512,11 +547,35 @@ function hashChange() {
 	}
 }
 
-
-
-
-l1 = Literal().text("").draggable("option","helper","clone");
+l1 = Literal().draggable("option","helper","clone");
+SetLiteralText(l1, "");
+SetLiteralType(l1, "page");
 $("#palette .contents").append(l1);
+
+l1 = Literal().draggable("option","helper","clone");
+SetLiteralText(l1, "");
+SetLiteralType(l1, "entity");
+$("#palette .contents").append(l1);
+
+l1 = Literal().draggable("option","helper","clone");
+SetLiteralText(l1, "");
+SetLiteralType(l1, "lemma");
+$("#palette .contents").append(l1);
+
+
+l1 = Literal().draggable("option","helper","clone");
+SetLiteralText(l1, "");
+$("#palette .contents").append(l1);
+
+
+
+
+for(i in pubMapping) {
+	var l = Literal().draggable("option","helper","clone");
+	SetLiteralText(l, i);
+	SetLiteralType(l, "pub");
+	$("#palette").append(l);
+}
 
 window.onhashchange = hashChange;
 hashChange();
