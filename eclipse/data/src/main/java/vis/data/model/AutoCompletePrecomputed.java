@@ -5,6 +5,7 @@ import javax.persistence.Table;
 
 @Table(name=AutoCompletePrecomputed.TABLE)
 public class AutoCompletePrecomputed {
+		public static final int ROW_THRESHOLD = 1000;
 		public static final String TABLE = "autocompleteprecomputed";
 		
 		public static final String PARTIAL_TERM="partial_term";

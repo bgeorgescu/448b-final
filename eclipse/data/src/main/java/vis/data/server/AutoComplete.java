@@ -9,7 +9,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import vis.data.model.AutoCompleteEntry;
+import vis.data.model.AutoCompletePrecomputed;
 import vis.data.model.meta.AutoCompleteAccessor;
 
 public class AutoComplete {
@@ -41,7 +44,7 @@ public class AutoComplete {
 			return aca.lookup(term);
 		}
 	}
-	@Path("/api/autocomplete/full/term/{term}")
+	@Path("/api/autocomplete/term/{term}/full")
 	public static class AutoCompleteFull {
 		@GET
 		@Produces("application/json")
@@ -63,6 +66,14 @@ public class AutoComplete {
 			throws SQLException 
 		{
 			AutoCompleteAccessor aca = new AutoCompleteAccessor();
+			if(limit < AutoCompletePrecomputed.ROW_THRESHOLD) {
+				AutoCompleteAccessor.NamedAutoComplete nac[] = aca.lookupPartialPrecomputed(term);
+				if(nac != null) {
+					if(nac.length <= limit)
+						return nac;
+					return ArrayUtils.subarray(nac, 0, limit);
+				}
+			}
 			return aca.lookup(term, limit);
 		}
 	}
