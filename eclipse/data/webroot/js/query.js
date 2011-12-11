@@ -62,6 +62,9 @@ PageTerm = function(begin_inclusive, end_exclusive) {
 SectionTerm = function(name) {
     return {section_:{name_:name}};
 }
+SentimentTerm = function(name) {
+    return {sentiment_:{category_:name}};
+}
 PublicationTerm = function(id) {
     return {publication_:{publication_:id}};
 }
