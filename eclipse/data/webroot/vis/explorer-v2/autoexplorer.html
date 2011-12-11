@@ -138,7 +138,7 @@ function queryForTextArray(state, text) {
 	console.log(query);
 	return query;
 }
-function queryChanged(q) {
+function queryChanged() {
 	if(ignoreQueryChange)
 		return;
 
@@ -148,7 +148,7 @@ function queryChanged(q) {
 
 	// will get called anytime the query gets changed in any way
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
-    var query = queryForTextArray(domStateToObject(), [q]);
+    var query = queryForTextArray(domStateToObject(), [$("#query").attr("value")]);
     arbitraryQuery("/api/query/docs/bucketed",    
         query,
         function(gen,query,c,r,d){
@@ -194,6 +194,7 @@ function queryChanged(q) {
     );
 }
 createAutoComplete($("#query"), queryChanged);
+queryChanged("");
 </script>
 </body>
 </html>

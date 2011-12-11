@@ -100,6 +100,7 @@ function getAllTokens(before,after) {
     return a;
 }
 var ok_or_expr = /[^+\(\)]+/;
+var ok_and_expr = /[^,\(\)]+/;
 var ok_word_expr = /[^,+\(\)]+/;
 function extractOrList(before,after) {
     var a = getTokens(before);
@@ -247,8 +248,21 @@ function replaceOrList(before,after,replacement_ors, pos_token) {
     return terms;
 }
 function buildExpression(text) {
+    if(/^\s*$/.test(text)) {
+        return AllDocsTerm();
+    }
+    text = text.replace(/\s+/g, " ");
     var terms = getTokens(text);
+    terms = terms.filter(function(x) { return !/^\s*$/.test(x); });
+    if(terms[0] == '(') {
+        return buildExpression(terms.slice(1, terms.lastIndexOf(')')));
+    }
+    var terms = [];
+    var type = undefined;
+    for(var i = 0; i < terms.length; ++i) {
+    }
     var q = EntityTerm('obama');
+    
     console.log(q);
     return q;
 }
