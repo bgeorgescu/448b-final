@@ -176,11 +176,17 @@ function AddLiteralCopyToSeries(literal, series) {
 	AddDisjunctionToSeries(d, series);
 }
 
+function AddLiteralToSeries(literal, series) {
+	var d = Disjunction();
+	AddLiteralToDisjunction(literal, d);
+	AddDisjunctionToSeries(d, series);
+}
+
 function Series() {
 	var t = TemplateInstance("series");
 	t.droppable({
 		accept: function(x) {
-			return x.hasClass("literal") && !x.hasClass("dropped")
+			return x.hasClass("literal") 
 				|| x.hasClass("disjunction")
 		},
 		activeClass: "droppable",
@@ -191,7 +197,7 @@ function Series() {
 				ui.draggable.attr('style','');
 			}
 			else if(ui.draggable.hasClass("literal")) {
-				AddLiteralCopyToSeries(ui.draggable, $(this));
+				AddLiteralToSeries(ui.draggable, $(this));
 			}
 		},
 		greedy:true
@@ -209,11 +215,12 @@ function Series() {
 function Disjunction() {
 	var t = TemplateInstance("disjunction");
 	t.droppable({
-		accept: function(x) { return x.hasClass("literal") && !x.hasClass("dropped")},
+		accept: function(x) { return x.hasClass("literal")},
 		activeClass: "droppable",
 		hoverClass: "hover",
 		drop: function(event, ui) {
-			AddLiteralCopyToDisjunction(ui.draggable, $(this));
+			
+			AddLiteralToDisjunction(ui.draggable, $(this));
 		},
 		greedy:true
 	});
@@ -541,18 +548,25 @@ $("#newseries").click(function(x) { AddSeries(Series()); return false; })
 	
 $("#clearseries").click(function(x) { ClearSeries(); return false; })
 
+
+var autocomplete_gen = 0;
 $("#palette input").keyup(function() {
 	var pval = $(this).val();
 	if(pval=="") {
 		$("#palette .contents .literal").show();
+		$("#suggestions").empty();
+		++autocomplete_gen;
 	}
 	else if(isNaN(pval)) {
 		$("#palette .contents .literal").show();
 		$("#palette .contents .literal.page").hide();
+		if(pval.length>1)
+			autoCompleteTerm(pval, undefined,  8, populateAutocomplete.bind(undefined, ++autocomplete_gen));
 	} else {
 		$("#palette .contents .literal").hide();
 		$("#palette .contents .literal.page").show();
-
+		$("#suggestions").empty();
+		++autocomplete_gen;
 	}
 	$("#palette .contents .literal").each(function() {
 		SetLiteralText($(this), pval);
@@ -567,34 +581,31 @@ function hashChange() {
 	}
 }
 
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-SetLiteralType(l1, "page");
-$("#palette .contents").append(l1);
-
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-SetLiteralType(l1, "entity");
-$("#palette .contents").append(l1);
-
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-SetLiteralType(l1, "lemma");
-$("#palette .contents").append(l1);
+function PaletteLiteral(type, text) {
+	var l1 = Literal().draggable("option","helper","clone");
+	if(text) SetLiteralText(l1, text);
+	if(type) SetLiteralType(l1, type);
+	return l1;
+}
 
 
-l1 = Literal().draggable("option","helper","clone");
-SetLiteralText(l1, "");
-$("#palette .contents").append(l1);
-
-
+//$("#palette .contents").append(PaletteLiteral("entity"));
+//$("#palette .contents").append(PaletteLiteral("lemma"));
+$("#palette .contents").append(PaletteLiteral());
+$("#palette .contents").append(PaletteLiteral("page"));
 
 
 for(i in pubMapping) {
-	var l = Literal().draggable("option","helper","clone");
-	SetLiteralText(l, i);
-	SetLiteralType(l, "pub");
-	$("#palette").append(l);
+	$("#pubs").append(PaletteLiteral("pub",i));
+}
+
+function populateAutocomplete(gen, c, data) {
+	if(gen == autocomplete_gen && success(c)) {
+		$("#suggestions").empty();
+		$.each(data, function(i,suggestion) {
+			$("#suggestions").append(PaletteLiteral(suggestion.type_.toLowerCase(),suggestion.resolved_.split("/")[0]).addClass(suggestion.resolved_.split("/")[1]));
+		});
+	}
 }
 
 window.onhashchange = hashChange;
