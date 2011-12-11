@@ -107,7 +107,11 @@
 }
 
 #settings fieldset :not(:first-child) {
-	margin-left:20px;
+	margin-left:15px;
+}
+
+#settings fieldset:not(:first-child) {
+	margin-left:10px;
 }
 
 #newseries, #clearseries, #trash {
@@ -214,7 +218,7 @@
 }
 
 #suggestions .parent, #suggestions .sister, #suggestions .child {
-	background-image: url("img/blocks.png");
+	background-image: url("img/bricks.png");
 }
 
 #suggestions .ORGANIZATION {

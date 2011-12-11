@@ -575,7 +575,7 @@ $("#palette input").keyup(function() {
 		$("#palette .contents .literal").show();
 		$("#palette .contents .literal.page").hide();
 		if(pval.length>1)
-			autoCompleteTerm(pval, undefined,  8, populateAutocomplete.bind(undefined, ++autocomplete_gen));
+			autoCompleteTerm(pval, undefined,  10, populateAutocomplete.bind(undefined, ++autocomplete_gen));
 	} else {
 		$("#palette .contents .literal").hide();
 		$("#palette .contents .literal.page").show();
@@ -589,10 +589,12 @@ $("#palette input").keyup(function() {
 
 var hashIgnore = false;
 function hashChange() {
-	if(!hashIgnore && window.location.hash != "") {
+	if(hashIgnore)
+		return;
+	if(window.location.hash != "") {
 		objectToDomState(JSON.parse(decodeURIComponent(window.location.hash.slice(1))));
-		queryChanged();
 	}
+	queryChanged();
 }
 
 function PaletteLiteral(type, text) {
@@ -617,8 +619,12 @@ for(i in pubMapping) {
 function populateAutocomplete(gen, c, data) {
 	if(gen == autocomplete_gen && success(c)) {
 		$("#suggestions").empty();
+		var lemma_dedup = {};
 		$.each(data, function(i,suggestion) {
 			var resolved = suggestion.resolved_.split("/");
+			if(suggestion.type_ == "LEMMA" && lemma_dedup[resolved[0]])
+				return;
+			lemma_dedup[resolved[0]]=true;
 			var literal = PaletteLiteral(suggestion.type_.toLowerCase(), resolved[0]);
 			if(resolved.length > 1) {
 				literal.addClass(resolved[1]);
