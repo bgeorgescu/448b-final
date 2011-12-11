@@ -274,25 +274,23 @@ function processTerms(terms) {
         } else if(ok_word_expr.test(term)) {
             //plain word, just add it
             parts.push(term);
-        } else if(term == ',') {
+        } else if(term == ',' || term == '+') {
             if(undefined === type) {
                 type = term;
             } else if(type != term) {
-                //must be an and, recurse
-                terms.unshift(term);
-                if(parts.length == 0)
-                    throw "and without preceding term";
-                terms.unshift(parts.pop());
-                parts.push(processTerms(terms));
-            }
-        } else if(term == '+') {
-            //todo, screwed up for a+b,c
-            if(undefined === type) {
-                type = term;
-            } else if(type != term) {
-                //must be an or, pop up
-                terms.unshift(term);
-                break;
+                if(type == ',') {
+                    //must be an and, recurse
+                    terms.unshift(term);
+                    if(parts.length == 0)
+                        throw "and without preceding term";
+                    terms.unshift(parts.pop());
+                    parts.push(processTerms(terms));
+                } else {
+                    //must be an or, scruntch what we have
+                    terms.unshift(term);
+                    parts = [AndTerm.apply(undefined, parts.map(handleTerminal))];
+                    type = undefined;
+                }
             }
         } else {
             throw "unknown term '" + term + "'";
