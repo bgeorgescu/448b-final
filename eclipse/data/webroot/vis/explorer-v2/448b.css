@@ -192,3 +192,20 @@
 #palette .contents:before {
 	/*content:"drag:"*/
 }
+
+#suggestions .ORGANIZATION, #suggestions .PERSON, #suggestions .LOCATION {
+	background-repeat:no-repeat;
+	padding-left:18px;
+}
+
+#suggestions .ORGANIZATION {
+	background-image: url("img/building.png");
+}
+
+#suggestions .PERSON {
+	background-image: url("img/user.png");
+}
+
+#suggestions .LOCATION {
+	background-image: url("img/map.png");
+}

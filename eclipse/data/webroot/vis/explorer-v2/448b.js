@@ -527,6 +527,8 @@ $("#palette input").keyup(function() {
 	var pval = $(this).val();
 	if(pval=="") {
 		$("#palette .contents .literal").show();
+		$("#suggestions").empty();
+		++autocomplete_gen;
 	}
 	else if(isNaN(pval)) {
 		$("#palette .contents .literal").show();
@@ -574,7 +576,7 @@ function populateAutocomplete(gen, c, data) {
 	if(gen == autocomplete_gen && success(c)) {
 		$("#suggestions").empty();
 		$.each(data, function(i,suggestion) {
-			$("#suggestions").append(PaletteLiteral(suggestion.type_.toLowerCase(),suggestion.resolved_.split("/")[0]));
+			$("#suggestions").append(PaletteLiteral(suggestion.type_.toLowerCase(),suggestion.resolved_.split("/")[0]).addClass(suggestion.resolved_.split("/")[1]));
 		});
 	}
 }
