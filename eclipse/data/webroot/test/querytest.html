@@ -66,6 +66,26 @@
             var q = queries.shift();
             q();
         }
+
+        queries.push(function() {
+            arbitraryQuery("/api/query/docs/bucketed", 
+                {   
+                    filter_:
+                        OrTerm(
+                            EntityTerm('hillary clinton'),
+                            EntityTerm('clinton'),
+                            LemmaTerm('clinton')
+                        ),
+                    series_:[
+                        SentimentTerm('vice'),
+                        SentimentTerm('virtue'),
+                    ],
+                    buckets_:allYears(),
+                },
+                function(c,r,d){alert('yo');report("yearly: sentiment vice,virtue for clinton",c,r,d);}
+            );
+            
+        });        
         queries.push(function() {
             arbitraryQuery("/api/query/docs/one", 
                 {
@@ -129,7 +149,6 @@
                 function(c,r,d){report("yearly: all docs for pub 7684",c,r,d);}
             );
         });        
-        
 
         
         queries.push(function() {

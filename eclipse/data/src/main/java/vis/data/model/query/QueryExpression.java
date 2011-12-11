@@ -19,6 +19,8 @@ public class QueryExpression {
 	//full text queries - can be aggregated
 	public LemmaTerm.Parameters lemma_;
 	public EntityTerm.Parameters entity_;
+	//sentiment word lists for lemma queries
+	public SentimentTerm.Parameters sentiment_;
 	
 	//meta data queries - filter only
 	public DateTerm.Parameters date_;
