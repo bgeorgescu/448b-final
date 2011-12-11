@@ -77,7 +77,7 @@ function getOneTerm(before,after) {
     return undefined;
 }
 function getTokens(text) {
-    var tokenize = /(?:,|\+|\(|\)|\s+|[a-zA-Z0-9]+)/g;
+    var tokenize = /(?:,|\+|\(|\)|\s+|(?:[a-zA-Z0-9\.]+(?:\s+[a-zA-Z0-9\.]+)*))/g;
     var toks = text.match(tokenize);
     if(toks == null)
         return [];
@@ -101,6 +101,7 @@ function getAllTokens(before,after) {
 }
 var ok_or_expr = /[^+\(\)]+/;
 var ok_and_expr = /[^,\(\)]+/;
+var ok_word_expr = /[^,+\(\)]+/;
 var ok_word_expr = /[^,+\(\)]+/;
 function extractOrList(before,after) {
     var a = getTokens(before);
@@ -247,6 +248,42 @@ function replaceOrList(before,after,replacement_ors, pos_token) {
     }
     return terms;
 }
+function handleTerminal(x) {
+    return OrTerm(EntityTerm(x), LemmaTerm(x));
+}
+function processTerms(terms) {
+    if(terms.length == 0)
+        throw "shouldn't end up with no terms left";
+    
+    var type = undefined;
+    var parts = [];
+    while(terms.length > 0) {
+        var term = terms.shift();
+        if(term == '(') {
+            parts.push(processTerms(terms));
+        } else if(term == ')') {
+            break;
+        } else if(ok_word_expr.test(term)) {
+            parts.push(term);
+        } else if(term == ',') {
+        } else if(term == '+') {
+        } else {
+            throw "unknown term '" + term + "'";
+        }
+    }
+    if(undefined === type) {
+        if(parts.length == 1) {
+            return handleTerminal(parts[0]);
+        }
+        throw "must have an or/and to combine terms";
+    }
+    if(type == '+') {
+        return OrTerm.apply(parts.map(handleTerminal));
+    } else {
+        return AndTerm.apply(parts.map(handleTerminal));
+    }
+}
+
 function buildExpression(text) {
     if(/^\s*$/.test(text)) {
         return AllDocsTerm();
@@ -254,14 +291,8 @@ function buildExpression(text) {
     text = text.replace(/\s+/g, " ");
     var terms = getTokens(text);
     terms = terms.filter(function(x) { return !/^\s*$/.test(x); });
-    if(terms[0] == '(') {
-        return buildExpression(terms.slice(1, terms.lastIndexOf(')')));
-    }
-    var terms = [];
-    var type = undefined;
-    for(var i = 0; i < terms.length; ++i) {
-    }
-    var q = EntityTerm('obama');
+    var q = processTerms(terms);
+    //var q = EntityTerm('obama');
     
     console.log(q);
     return q;
