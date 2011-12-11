@@ -324,7 +324,7 @@ function buildExpression(text) {
     return q;
 }
 function autocompleteUpdate(ors, callback, code, response, duration) {
-    $("#duration").text(duration + "ms");
+    console.log("finished in " + duration);
     if(!success(code)) {
         alert('query failed\n' + response);
         callback([]);
