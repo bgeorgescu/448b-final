@@ -261,7 +261,7 @@ function domStateToObject() {
 function ClearSeries() {
 	var series_container = $("#series");
 	series_container.empty();
-	series_container.html("&nbsp;");
+	//series_container.html("&nbsp;");
 	queryChanged();
 }
 

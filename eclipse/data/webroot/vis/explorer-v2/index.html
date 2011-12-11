@@ -21,21 +21,12 @@
 
 </head>
 <body>
-<br />
 <div class="container_16">
-<h1>Newspaper Explorer</h1>
-  <div class="grid_12" id="series">
+<h1 style="margin-bottom:3px">Newspaper Explorer</h1>
+  <div class="grid_16" id="series">
 	&nbsp;
   </div>
-  <div class="grid_4">
-  <div id="daterange">
-  </div>
-  <div id="graphType"><span class="graphOption selected" id="bars">Bars</span> <span class="graphOption" id="lines">Lines</span> <span class="graphOption" id="areas">Area</span></div>
-  <div id="graphAxis"><span class="graphOption selected" id="month">Months</span> <span class="graphOption" id="year">Years</span> <span class="graphOption" id="page">Pages</span></div>
-  <div><span class="graphOption selected" id="stacked">Stacked</span></div>
 
-
-  </div>
   <div class="clear"></div>
   <div class="grid_12" id="series">
 	<a id="newseries" href="#">new series</a>
@@ -46,16 +37,26 @@
   </div>
 
   <div class="clear"></div>
-  <div class="grid_4" id="palette">
+  <div class="grid_2" id="palette">
     <strong>Palette:</strong>
-    <input type="text"/>
+    <input type="text" size="10"/>
     <div class="contents">
     </div>
   </div>
-  <div class="grid_12" id="plot" style="height:400px;">&nbsp;</div>
+  <div class="grid_14" id="plot" style="height:400px;">&nbsp;</div>
 
   <div class="clear"></div>
 
+  <div class="grid_3" style="padding-top:60px">
+	  <div id="daterange">
+	  </div>
+  </div>
+  <div class="grid_13" id="settings">
+	  <fieldset><legend>Chart style</legend><div id="graphType"><span class="graphOption selected" id="bars">Bars</span> <span class="graphOption" id="lines">Lines</span> <span class="graphOption" id="areas">Area</span></div></fieldset>
+	  <fieldset><legend>Horizontal axis</legend><div id="graphAxis"><span class="graphOption selected" id="month">Months</span> <span class="graphOption" id="year">Years</span> <span class="graphOption" id="page">Pages</span></div></fieldset>
+	  <fieldset><legend>Other options</legend><span class="graphOption selected" id="stacked">Stacked</span></fieldset>
+  </div>
+  <div class="clear"></div>
   <div class="grid_16">
   <strong>Interesting graphs:</strong><br />
   <a href="#%7B%22series%22%3A%5B%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22pakistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22afghanistan%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iraq%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22north%20korea%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%2C%7B%22contents%22%3A%5B%5B%7B%22text%22%3A%22iran%22%2C%22type%22%3A%22default%22%7D%5D%5D%7D%5D%2C%22startYear%22%3A2000%2C%22endYear%22%3A2010%2C%22horizontalAxis%22%3A%22date%22%2C%22dateGranularity%22%3A%22month%22%7D">
