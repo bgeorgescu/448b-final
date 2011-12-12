@@ -33,9 +33,15 @@ public class QueryExpression {
 	public DocLemmaTerm.Parameters docLemma_;
 	public DocEntityTerm.Parameters docEntity_;
 	
+	//wrappers for tag cloud queries that do filtering
+	public PosTerm.Parameters pos_;
+	public TypeTerm.Parameters type_;
+	
 	//some things might return a lot of results we don't care about, e.g.
 	//the tag cloud queries returning lemmas with 1 hit.  allow thresholding
 	public ThresholdTerm.Parameters threshold_;
+	public CountSortTerm.Parameters countSort_;
+	public LimitTerm.Parameters limit_;
 	
 	public AllDocsTerm.Parameters allDocs_;
 	public AllLemmasTerm.Parameters allLemmas_;

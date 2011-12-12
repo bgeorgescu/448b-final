@@ -74,8 +74,20 @@ DocLemmaTerm = function(expr) {
 DocEntityTerm = function(expr) {
     return {docEntity_:{term_:expr}};
 }
-ThresholdTerm = function(minimum_hits) {
-    return {threshold_:{min_:minimum_hits}};
+PosTerm = function(pos, a) {
+    return {pos_:{pos_:pos,term_:a}};
+}
+PosPrefixTerm = function(posPrefix, a) {
+    return {pos_:{posPrefix_:posPrefix,term_:a}};
+}
+ThresholdTerm = function(minimum_hits, a) {
+    return {threshold_:{min_:minimum_hits,term_:a}};
+}
+CountSortTerm = function(minimum_hits, a) {
+    return {countSort_:{term_:a}};
+}
+LimitTerm = function(limit, a) {
+    return {limit_:{limit_:limit,term_:a}};
 }
 AllDocsTerm = function() {
     return {allDocs_:{}};

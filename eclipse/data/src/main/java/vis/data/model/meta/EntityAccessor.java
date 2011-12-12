@@ -1,19 +1,24 @@
 package vis.data.model.meta;
 
+import gnu.trove.list.linked.TIntLinkedList;
+import gnu.trove.map.hash.TIntObjectHashMap;
+
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import vis.data.model.EntityDoc;
 import vis.data.model.RawEntity;
+import vis.data.model.RawLemma;
 import vis.data.util.SQL;
 import vis.data.util.SQL.NullForLastRowProcessor;
 
 public class EntityAccessor {
-	PreparedStatement query_, queryByEntity_, queryByBoth_, queryByType_, queryList_, queryListScore_;
+	PreparedStatement query_, queryByEntity_, queryByBoth_, queryByType_, queryList_, queryListScore_, queryIdsByType_;
 	public EntityAccessor() throws SQLException {
 		this(SQL.forThread());
 	}
@@ -28,7 +33,8 @@ public class EntityAccessor {
 				RawEntity.ID + "," + RawEntity.ENTITY + "," + RawEntity.TYPE + ", LENGTH(" + EntityDoc.DOC_LIST + ")/8" + 
 				" FROM " + RawEntity.TABLE +
 				" JOIN " + EntityDoc.TABLE + " ON " + RawEntity.ID + "=" + EntityDoc.ENTITY_ID);
-			queryListScore_.setFetchSize(Integer.MIN_VALUE); //streaming
+		queryListScore_.setFetchSize(Integer.MIN_VALUE); //streaming
+		queryIdsByType_ = conn.prepareStatement("SELECT " + RawEntity.ID + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.TYPE + " = ?");
 	}
 	public RawEntity getEntity(int entity_id) throws SQLException {
 		query_.setInt(1, entity_id);
@@ -150,5 +156,48 @@ public class EntityAccessor {
 	public ScoredResultSetIterator entityIteratorWithScore() throws SQLException {
 		ResultSet rs = queryListScore_.executeQuery();
 		return new ScoredResultSetIterator(rs);
+	}
+	public TIntObjectHashMap<RawEntity> getEntities(int[] id) throws SQLException {
+		TIntObjectHashMap<RawEntity> res = new TIntObjectHashMap<RawEntity>();
+		if(id.length == 0)
+			return res;
+		StringBuilder sb = new StringBuilder(id.length * 16);
+		sb.append("SELECT " + RawLemma.ID + "," + RawEntity.ENTITY + "," + RawEntity.TYPE + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.ID + " IN ");
+		sb.append("(");
+		sb.append(id[0]);
+		for(int i = 1; i < id.length; ++i) {
+			sb.append(",");
+			sb.append(id[i]);
+		}
+		sb.append(")");
+		Statement st = SQL.forThread().createStatement();
+		ResultSet rs = st.executeQuery(sb.toString());
+		try {
+			while(rs.next()) {
+				RawEntity rl = new RawEntity();
+				rl.id_ =  rs.getInt(1);
+				rl.entity_ = rs.getString(2);
+				rl.type_ = rs.getString(3);
+				res.put(rl.id_, rl);
+			}
+	
+			return res;
+		} finally {
+			rs.close();
+		}
+	}
+	public int[] lookupEntityIdsByType(String type) throws SQLException {
+		type = type.toUpperCase();
+		queryIdsByType_.setString(1, type);
+		ResultSet rs = queryIdsByType_.executeQuery();
+		try {
+			TIntLinkedList hits = new TIntLinkedList();
+			while(rs.next())
+				hits.add(rs.getInt(1));
+			
+			return hits.toArray();
+		} finally {
+			rs.close();
+		}
 	}
 }
