@@ -11,7 +11,6 @@ import vis.data.util.ExceptionHandler;
 import vis.data.util.SQL;
 
 public class PrecomputeAutoComplete {
-	static final int ROW_THRESHOLD = 1000;
 	public static void main(String[] args) {
 		ExceptionHandler.terminateOnUncaught();
 		
@@ -31,7 +30,7 @@ public class PrecomputeAutoComplete {
 				String prefix = work.pollLast();
 				if(prefix.length() > 0) {
 					int possibilities = aca.countPossibilites(prefix);
-					if(possibilities < ROW_THRESHOLD)
+					if(possibilities < AutoCompletePrecomputed.ROW_THRESHOLD)
 						continue;
 					System.out.println(prefix + ":" + possibilities);
 					RawResultSetIterator i = ac_enum.autoCompleteRawIterator(prefix);
