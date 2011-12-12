@@ -34,6 +34,15 @@
                 -o-column-count:4; -o-column-gap:0px;
                 column-count:4; column-gap:0px;
             }
+            /*float breaks multi-column on firefox*/
+            #term-completes .ui-menu-item {
+                float:none;
+            }
+            /*fixes sizing issues*/
+            #term-completes #ui-active-menuitem {
+                border:none;
+                margin:0px;
+            }
             #term-completes .ui-autocomplete {
                 min-width:660;
                 font-size:75%;

@@ -113,7 +113,7 @@ $.extend( proto, {
         $.each( items, function( index, item ) {
             if ( item.category != currentCategory ) {
                //need float or categories can be reordered
-               ul.append( "<li style='float:left' class='ui-autocomplete-category'>" + item.category + "</li>" );
+               ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
                 currentCategory = item.category;
             }
             self._renderItem( ul, item );
