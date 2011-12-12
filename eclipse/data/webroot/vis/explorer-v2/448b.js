@@ -567,17 +567,17 @@ var autocomplete_gen = 0;
 $("#palette input").keyup(function() {
 	var pval = $(this).val();
 	if(pval=="") {
-		$("#palette .contents .literal").show();
+		$("#palette .contents .literal").show().draggable("disable");
 		$("#suggestions").empty();
 		++autocomplete_gen;
 	}
 	else if(isNaN(pval)) {
-		$("#palette .contents .literal").show();
+		$("#palette .contents .literal").show().draggable("enable");
 		$("#palette .contents .literal.page").hide();
         autoCompleteTerm(pval, undefined,  30, populateAutocomplete.bind(undefined, ++autocomplete_gen));
 	} else {
 		$("#palette .contents .literal").hide();
-		$("#palette .contents .literal.page").show();
+		$("#palette .contents .literal.page").show().draggable("enable");
 		$("#suggestions").empty();
 		++autocomplete_gen;
 	}
@@ -609,6 +609,7 @@ function PaletteLiteral(type, text) {
 //$("#palette .contents").append(PaletteLiteral("lemma"));
 $("#palette .contents").append(PaletteLiteral());
 $("#palette .contents").append(PaletteLiteral("page"));
+$("#palette .contents .literal").draggable("disable");
 
 
 for(i in pubMapping) {
