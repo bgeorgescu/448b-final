@@ -148,7 +148,6 @@ function queryForTextArray(state, text) {
 			return m.concat(n);
 		});
 	} 
-	console.log(query);
 	return query;
 }
 
@@ -161,7 +160,6 @@ function queryChanged() {
     for(var i = 0; i < jqs.length; ++i) {
         qs.push($(jqs[i]).attr("value"))
     }
-    console.log(qs);
 	hashIgnore = true;
 	window.location.hash = encodeURIComponent(JSON.stringify({graph:domStateToObject(),expr:qs}));
 	hashIgnore = false;
@@ -220,7 +218,6 @@ function hashChange() {
         var s = JSON.parse(decodeURIComponent(window.location.hash.slice(1)));
 		objectToDomState(s.graph);
         $("#query_holder").children().remove();
-        console.log(s.expr);
         for(var i in s.expr) {
             addSeries(s.expr[i], true);
         }

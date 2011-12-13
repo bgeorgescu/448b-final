@@ -303,7 +303,6 @@ function processTerms(terms) {
             throw "unknown term '" + term + "'";
         }
     }
-    console.log(parts);
     if(undefined === type) {
         if(parts.length == 1) {
             return handleTerminal(parts[0]);
@@ -325,11 +324,9 @@ function buildExpression(text) {
     var terms = getTokens(text);
     terms = terms.filter(function(x) { return !/^\s*$/.test(x); });
     var q = processTerms(terms);    
-    console.log(q);
     return q;
 }
 function autocompleteUpdate(ors, callback, code, response, duration) {
-    console.log("finished in " + duration);
     if(!success(code)) {
         alert('query failed\n' + response);
         callback([]);
@@ -401,7 +398,7 @@ function createAutoComplete(jqs, onQueryChanged, start_at) {
                 var xhr = buildXHR("GET", "/api/autocomplete/term/" + encodeURIComponent(term), autocompleteUpdate.bind(undefined, ors, resp));
                 xhr.send(null);                
             }.bind(jqs),
-            appendTo:$("#term-completes"),
+            appendTo:$(".term-completes", jqs.parent()),
             html:true,
             select:function (event, ui) {
                 return false;
@@ -414,14 +411,8 @@ function createAutoComplete(jqs, onQueryChanged, start_at) {
                 console.log("commit");
                 var before = term.substring(0, caret.start);
                 var after = term.substring(caret.start);
-                //var old_terms = extractOrList(before, after);
-                //old_terms.push("%&%");
-                //var new_terms = replaceOrList(before, after, old_terms);
-                console.log({before:before, after:after});
-                console.log(getAllTokens(before, after));
-                console.log(extractOrList(before, after));
                 var selected = [];
-                var check = $("#term-completes .autocomplete-check");
+                var check = $(".term-completes .autocomplete-check", jqs.parent());
                 for(var i = 0; i < check.length; ++i) {
                     var a_check = $(check[i]);
                     if(a_check.next().hasClass("ui-state-active")) {
