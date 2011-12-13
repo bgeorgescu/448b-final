@@ -24,7 +24,7 @@ public class LimitTerm extends UnaryTerm {
 			if(!Parameters.class.isInstance(obj))
 				return false;
 			Parameters p = (Parameters)obj;
-			if(limit_ != p.limit_)
+			if(!limit_.equals(p.limit_))
 				return false;
 			return super.equals(obj);
 		}
@@ -49,7 +49,7 @@ public class LimitTerm extends UnaryTerm {
 		if(operand.getKey().length <= limit_)
 			return operand;
 		return Pair.of(
-			ArrayUtils.subarray(operand.getKey().clone(), 0, limit_), 
-			ArrayUtils.subarray(operand.getValue().clone(), 0, limit_));
+			ArrayUtils.subarray(operand.getKey(), 0, limit_), 
+			ArrayUtils.subarray(operand.getValue(), 0, limit_));
 	}
 }

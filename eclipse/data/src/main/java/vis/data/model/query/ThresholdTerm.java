@@ -25,7 +25,7 @@ public class ThresholdTerm extends UnaryTerm {
 			if(!Parameters.class.isInstance(obj))
 				return false;
 			Parameters p = (Parameters)obj;
-			if(threshold_ == p.threshold_)
+			if(!threshold_.equals(p.threshold_))
 				return false;
 			return super.equals(obj);
 		}
