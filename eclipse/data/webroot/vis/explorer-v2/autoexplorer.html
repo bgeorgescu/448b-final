@@ -28,26 +28,26 @@
 <title>Newspaper Explorer</title>
 </head>
 		<style type="text/css">
-            #term-completes ul {
+            .term-completes ul {
                 -webkit-column-count: 4; -webkit-column-gap:0px;
                 -moz-column-count:4; -moz-column-gap:0px;
                 -o-column-count:4; -o-column-gap:0px;
                 column-count:4; column-gap:0px;
             }
             /*float breaks multi-column on firefox*/
-            #term-completes .ui-menu-item {
+            .term-completes .ui-menu-item {
                 float:none;
             }
             /*fixes sizing issues*/
-            #term-completes #ui-active-menuitem {
+            .term-completes #ui-active-menuitem {
                 border:none;
                 margin:0px;
             }
-            #term-completes .ui-autocomplete {
+            .term-completes .ui-autocomplete {
                 min-width:660;
                 font-size:75%;
             }
-            #query {
+            .query {
                 min-width:660;
             }
 		</style>	
@@ -56,12 +56,8 @@
 <body>
 <div class="container_16">
 <h1 style="margin-bottom:3px">Newspaper Explorer</h1>
-        <div class="grid-autocomplete ui-widget">
-            <span>Query:</span><input type="text" id="query">
-  </div>
-        <div id="term-completes"></div>
+  <div id="query_holder"></div>
   <div class="grid_12" id="plot" style="height:400px;">&nbsp;</div>
-
   <div class="clear"></div>
 
   <div class="grid_4" style="padding-top:60px">
@@ -103,6 +99,13 @@
 		<div class="contents"></div>
 		)
 	</div>
+    
+    <div id="query_template">
+      <div class="grid-autocomplete ui-widget">
+        <span>Query:</span><input type="text" class="query"><button class="series-remove">Remove</button><button class="series-add">Add</button>
+        <div class="term-completes"></div>
+      </div>
+    </div>
 
 	
 	<div id="literal_template" class="literal">
@@ -153,15 +156,19 @@ function queryChanged() {
 	if(ignoreQueryChange)
 		return;
         
-    var q = $("#query").attr("value");
-    console.log(q);
+    var qs = [];
+    var jqs = $("#query_holder .query");
+    for(var i = 0; i < jqs.length; ++i) {
+        qs.push($(jqs[i]).attr("value"))
+    }
+    console.log(qs);
 	hashIgnore = true;
-	window.location.hash = encodeURIComponent(JSON.stringify({graph:domStateToObject(),expr:q}));
+	window.location.hash = encodeURIComponent(JSON.stringify({graph:domStateToObject(),expr:qs}));
 	hashIgnore = false;
 
 	// will get called anytime the query gets changed in any way
 	// we probably want to do some rate-limiting to avoid DoSing the server with queries
-    var query = queryForTextArray(domStateToObject(), [q]);
+    var query = queryForTextArray(domStateToObject(), qs);
     arbitraryQuery("/api/query/docs/bucketed",    
         query,
         function(gen,query,c,r,d){
@@ -212,17 +219,61 @@ function hashChange() {
 	if(window.location.hash != "") {
         var s = JSON.parse(decodeURIComponent(window.location.hash.slice(1)));
 		objectToDomState(s.graph);
-        $("#query").attr("value", s.expr);
-	}
-	queryChanged();
+        $("#query_holder").children().remove();
+        console.log(s.expr);
+        for(var i in s.expr) {
+            addSeries(s.expr[i], true);
+        }
+        queryChanged();
+    }
+}
+function seriesCount() {
+    var count = $("#query_holder .query").length;
+    return count;
+}
+function removeSeries(qt) {
+    if($("#query_holder .query").length == 1) {
+        qt.attr("value","");
+    } else {
+        qt.remove();
+    }
+    queryChanged();
+}
+
+function addSeries(q, wait) {
+    var qt = $("#query_template").clone().attr("id", null).appendTo($("#query_holder"));
+    var nq = $(".query", qt);
+    if(q)
+        nq.attr("value", q);
+    createAutoComplete(nq, queryChanged);
+    var remove = $(".series-remove", qt).button(
+        {
+            icons: {
+                primary: "ui-icon-circle-close"
+            },
+            text: false
+        }
+    );
+    remove.click(removeSeries.bind(undefined, qt));
+    var add = $(".series-add", qt).button(
+        {
+            icons: {
+                primary: "ui-icon-circle-plus"
+            },
+            text: false
+        }
+    );
+    add.click(addSeries.bind(undefined, undefined, undefined));
+    if(!wait)
+        queryChanged();
+    return nq;
 }
 hashChange();
 window.onhashchange = hashChange;
-
-createAutoComplete($("#query"), queryChanged);
-
-
-queryChanged("");
+if(seriesCount() == 0) {
+    addSeries();
+}
+queryChanged();
 </script>
 </body>
 </html>
