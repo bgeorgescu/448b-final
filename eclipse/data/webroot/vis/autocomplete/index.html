@@ -14,16 +14,25 @@
         <script type="text/javascript" src="lib/jquery.caret.1.02.js"></script>
         <script type="text/javascript" src="../../js/autocomplete.js"></script>
 		<style type="text/css">
-            #term-completes ul {
-                -webkit-column-count: 5; -webkit-column-gap:20px;
-                -moz-column-count:5; -moz-column-gap:20px;
-                -o-column-count:5; -o-column-gap:20px;
-                column-count:5; column-gap:20px;
+            .term-completes ul {
+                -webkit-column-count: 4; -webkit-column-gap:0px;
+                -moz-column-count:4; -moz-column-gap:0px;
+                -o-column-count:4; -o-column-gap:0px;
+                column-count:4; column-gap:0px;
             }
-            #term-completes .ui-autocomplete {
-                width:80%;
+            /*float breaks multi-column on firefox*/
+            .term-completes .ui-menu-item {
+                float:none;
             }
-            #query {
+            /*fixes sizing issues*/
+            .term-completes #ui-active-menuitem {
+                border:none;
+                margin:0px;
+            }
+            .term-completes .ui-autocomplete {
+                font-size:75%;
+            }
+            .query {
                 width:80%;
             }
 		</style>	
@@ -45,10 +54,10 @@
         <div class="demo">
             <div class="grid-autocomplete ui-widget">
                 <label for="query">Query: </label>
-                <input type="text" id="query">Duration: <span id="duration"></span>
+                <input type="text" class="query">Duration: <span id="duration"></span>
+                <div class="term-completes"></div>
             </div>
         </div>     
-        <div id="term-completes"></div>
         <script>
             function onQueryChanged(q) {
                 try {
@@ -56,7 +65,7 @@
                 } catch(err) {
                 }
             }
-            createAutoComplete($("#query"), onQueryChanged, start_at);
+            createAutoComplete($(".query"), onQueryChanged, start_at);
         </script>
         
 	</body>
