@@ -27,10 +27,10 @@ public class TypeTerm extends Term {
 			if(type_ != null ^ p.type_ != null) {
 				return false;
 			}
-			if(type_ != null && !type_.equals(p.type_)) {
+			if(!type_.equals(p.type_)) {
 				return false;
 			}
-			return super.equals(obj);
+			return true;
 		}	
 		@Override
 		public void validate() {

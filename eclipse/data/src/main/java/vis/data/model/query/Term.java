@@ -41,8 +41,11 @@ public abstract class Term {
 	static Map<Term.Parameters, SoftReference<Pair<int[], int[]> >> g_result_cache = Collections.synchronizedMap(new HashMap<Term.Parameters, SoftReference<Pair<int[], int[]> >>());
 	static Pair<int[], int[]> getCache(Term.Parameters param) {
 		SoftReference<Pair<int[], int[]>> srs = g_result_cache.get(param);
-		if(srs == null)
+		if(srs == null) {
+			System.out.println("missed cache: " + param.getClass().getName());
 			return null;
+		}
+		System.out.println("partial hit cache: " + param.getClass().getName());
 		Pair<int[], int[]> res = srs.get();
 		if(res == null)
 			return null;
