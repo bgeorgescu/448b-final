@@ -5,10 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import vis.data.model.annotations.Index;
+import vis.data.model.annotations.NonUniqueIndexes;
+
 @Table(name=RawEntity.TABLE,
 	uniqueConstraints={
-		@UniqueConstraint(columnNames={RawEntity.ENTITY + "(255)", RawEntity.TYPE}), 
-		@UniqueConstraint(columnNames={RawEntity.TYPE, RawEntity.ENTITY + "(255)"})})
+	@UniqueConstraint(columnNames={RawEntity.ENTITY + "(255)", RawEntity.TYPE})})
+@NonUniqueIndexes(indexes=@Index(columnNames={RawEntity.TYPE, RawEntity.ID}))
 public class RawEntity {
 	public static final String TABLE = "rawentity";
 	

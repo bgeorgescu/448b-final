@@ -5,10 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import vis.data.model.annotations.Index;
+import vis.data.model.annotations.NonUniqueIndexes;
+
 @Table(name=RawLemma.TABLE, 
 	uniqueConstraints={
-		@UniqueConstraint(columnNames={RawLemma.LEMMA, RawLemma.POS}), 
-		@UniqueConstraint(columnNames={RawLemma.POS, RawLemma.LEMMA})})
+		@UniqueConstraint(columnNames={RawLemma.LEMMA, RawLemma.POS})
+	})
+@NonUniqueIndexes(indexes=@Index(columnNames={RawLemma.POS, RawLemma.ID}))
 public class RawLemma {
 	public static final String TABLE = "rawlemma";
 	
