@@ -56,7 +56,7 @@
 	border-color:red !important;
 }
 
-#bars, #lines, #areas, #year, #month, #page, #stacked {
+#bars, #lines, #areas, #year, #month, #page, #stacked, #countmode {
 	background-repeat:no-repeat;
 	background-position:2px 2px;
 	padding-top:52px;
@@ -68,10 +68,24 @@
 	background-color:white;
 }
 
-#year, #month, #page, #stacked {
+#year, #month, #page, #stacked, #countmode {
 	background-size:50px 50px;
 }
-
+#countmode  {
+	background-image:url("img/venn.png");
+}
+#countmode.selected {
+	background-image:url("img/boolean.png");
+}
+#countmode .hidewhenoff {
+    display:none;
+}
+#countmode.selected .hidewhenoff {
+    display:inline;
+}
+#countmode.selected .hidewhenon {
+    display:none;
+}
 #year {
 	background-image:url("img/vcalendar.png");
 }
@@ -104,14 +118,6 @@
 	border: 4px solid #EFEFEF;
 	background:#EFEFEF;
 	padding-right:10px;
-}
-
-#settings fieldset :not(:first-child) {
-	margin-left:15px;
-}
-
-#settings fieldset:not(:first-child) {
-	margin-left:10px;
 }
 
 #newseries, #clearseries, #trash {

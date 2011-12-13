@@ -26,6 +26,7 @@ rangeSlider.bind("valuesChanged", function(event, ui){
 var viewModel = {
 	_horizontalAxis: "month",
 	_graphStack: true,
+    _countMode: false,
 	_graphMode: "bars",
 	_startYear: 2000,
 	_endYear: 2010
@@ -46,6 +47,7 @@ viewModel.horizontalAxis = function(data) {
 
 
 $("#stacked").click(function() { viewModel.graphStack(!$(this).hasClass("selected")); });
+$("#countmode").click(function() { viewModel.graphCountMode(!$(this).hasClass("selected")); });
 $("#bars,#lines,#areas").click(function() { viewModel.graphMode($(this).attr("id")); });
 $("#month,#year,#page").click(function() { viewModel.horizontalAxis($(this).attr("id")); });
 
@@ -62,6 +64,20 @@ viewModel.graphStack = function(data) {
 	}
 	else {
 		return $("#stacked").hasClass("selected");
+	}
+};
+
+viewModel.graphCountMode = function(data) {
+	if(typeof data != "undefined") {
+		if(data) {
+			$("#countmode").addClass("selected");
+		} else {
+			$("#countmode").removeClass("selected");
+		}
+		queryChanged();
+	}
+	else {
+		return $("#countmode").hasClass("selected");
 	}
 };
 
@@ -421,7 +437,7 @@ function queryChanged() {
     if(query.series_.length == 0)
     	return;
     
-    arbitraryQuery("/api/query/docs/bucketed",    
+    arbitraryQuery(viewModel.graphCountMode() ? "/api/query/winnerdocs/bucketed" :"/api/query/docs/bucketed",    
         query,
         function(gen,query,c,r,d){
             if(!success(c)) {
@@ -475,6 +491,7 @@ viewModel._graphOptions = function() {
 		},
 		xaxis: {},
 		yaxis: {min: 0 },
+        countmode: viewModel.graphCountMode(),
     };
     
     if(viewModel.horizontalAxis() == "page") {

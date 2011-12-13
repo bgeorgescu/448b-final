@@ -91,8 +91,10 @@ public class CountAggregator {
 				j++;
 			}
 		}
-		while(i < a.length)
-			c[k++] = a[i++];
+		while(i < a.length) {
+			c[k] = a[i];
+			c_count[k++] = a_count[i++];
+		}
 		
 		if(c.length != k) {
 			c = ArrayUtils.subarray(c, 0, k);
@@ -190,10 +192,14 @@ public class CountAggregator {
 				c_count[k++] = b_count[j++];
 			}
 		}
-		while(i < a.length)
-			c[k++] = a[i++];
-		while(j < b.length)
-			c[k++] = b[j++];
+		while(i < a.length) {
+			c[k] = a[i];
+			c_count[k++] = a_count[i++];
+		}
+		while(j < b.length) {
+			c[k] = b[j];
+			c_count[k++] = b_count[j++];
+		}
 		
 		if(c.length != k) {
 			c = ArrayUtils.subarray(c, 0, k);
