@@ -1,8 +1,6 @@
 package vis.data.model.query;
 
 import java.sql.SQLException;
-import java.util.Arrays;
-import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -49,10 +47,6 @@ public class PosTerm extends Term {
 			super.validate();
 			if(term_.parameters_.resultType() != ResultType.LEMMA_HITS)
 				throw new RuntimeException("pos term requires lemma hits child expresion");
-		}
-		@Override
-		public Collection<Term.Parameters> withChildren() {
-			return Arrays.asList((Term.Parameters)this);
 		}
 	}
 	

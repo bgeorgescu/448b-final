@@ -15,12 +15,16 @@ public class LimitTerm extends UnaryTerm {
 		public int hashCode() {
 			int hashCode = super.hashCode();
 			hashCode ^= Parameters.class.hashCode();
+			hashCode ^= limit_.hashCode();
 			return hashCode;
 		}
 
 		@Override
 		public boolean equals(Object obj) {
 			if(!Parameters.class.isInstance(obj))
+				return false;
+			Parameters p = (Parameters)obj;
+			if(limit_ != p.limit_)
 				return false;
 			return super.equals(obj);
 		}

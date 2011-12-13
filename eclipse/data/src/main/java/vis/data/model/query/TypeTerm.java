@@ -1,8 +1,6 @@
 package vis.data.model.query;
 
 import java.sql.SQLException;
-import java.util.Arrays;
-import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -40,10 +38,6 @@ public class TypeTerm extends Term {
 			super.validate();
 			if(term_.parameters_.resultType() != ResultType.ENTITY_HITS)
 				throw new RuntimeException("type term requires entity hits child expresion");
-		}
-		@Override
-		public Collection<Term.Parameters> withChildren() {
-			return Arrays.asList((Term.Parameters)this);
 		}
 	}
 	
