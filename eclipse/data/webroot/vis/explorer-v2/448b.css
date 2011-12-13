@@ -238,3 +238,13 @@
 #suggestions .LOCATION {
 	background-image: url("img/map.png");
 }
+
+#hint {
+display:inline;
+margin-left:10px;
+color:#CCC;
+}
+
+#hint strong {
+color:#777;
+}

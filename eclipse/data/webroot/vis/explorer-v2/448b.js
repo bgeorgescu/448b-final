@@ -485,13 +485,14 @@ viewModel._graphOptions = function() {
     var retval = {
 		series: {
 			stack: viewModel.graphStack() ? 1 : null,
-			lines: { show: (viewModel.graphMode() == "lines" || viewModel.graphMode() == "areas"), fill: viewModel.graphMode() == "areas", steps: viewModel.graphMode() == "steps" },
-			bars: { show: viewModel.graphMode() == "bars",
+			lines: { hoverable:true, clickable:true, show: (viewModel.graphMode() == "lines" || viewModel.graphMode() == "areas"), fill: viewModel.graphMode() == "areas", steps: viewModel.graphMode() == "steps" },
+			bars: { hoverable:true, clickable:true, show: viewModel.graphMode() == "bars",
 					barWidth: 0.8}
 		},
 		xaxis: {},
 		yaxis: {min: 0 },
         countmode: viewModel.graphCountMode(),
+        grid: {clickable:true, hoverable:true}
     };
     
     if(viewModel.horizontalAxis() == "page") {
@@ -654,3 +655,45 @@ function populateAutocomplete(gen, c, data) {
 	}
 }
 
+
+
+details_gen = 0;
+$("#plot").bind("plotclick", function (event, pos, item) {
+	if (item) {
+		var q = queryForObject(domStateToObject());
+		q.series_ = [AndTerm(q.series_[item.seriesIndex],q.buckets_[item.dataIndex])];
+		delete q.buckets_;
+		delete q.filter_;
+		q.maxResults_ = 20;
+			
+		arbitraryQuery("/api/query/details/one", 
+			q,
+			function(gen, query, clickItem, c,r,d) {
+				if(!success(c)) {
+					//alert("query failed to run: " + r);
+					//alert(JSON.stringify(query));
+					return;
+				}
+				if(gen != details_gen)
+					return;
+				
+				r = "<ul>"+r[0].map(function(x) {
+					return "<li>"+x.title_+"</li>";
+				}).join("")+"</ul>";
+
+				$("#inspector_dialog")
+					.html(r)
+				
+				if(!$("#inspector_dialog").dialog("isOpen"))
+					$("#inspector_dialog")
+						.dialog("option", "position", [clickItem.pageX, clickItem.pageY])
+						.dialog("option", "height", 300)
+						.dialog("open");
+
+			}.bind(this, ++details_gen, q, item)
+		);
+
+	}
+});
+
+$( "#inspector_dialog" ).dialog({ autoOpen: false });
