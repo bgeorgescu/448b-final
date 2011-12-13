@@ -33,8 +33,8 @@ public class LemmaAccessor {
 			" FROM " + RawLemma.TABLE +
 			" JOIN " + LemmaDoc.TABLE + " ON " + RawLemma.ID + "=" + LemmaDoc.LEMMA_ID);
 		queryListScore_.setFetchSize(Integer.MIN_VALUE); //streaming
-		queryIdsByPos_ = conn.prepareStatement("SELECT " + RawLemma.ID + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.POS + " = ?");
-		queryIdsByPosPrefix_ = conn.prepareStatement("SELECT " + RawLemma.ID + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.POS + " LIKE CONCAT(?,'%')");
+		queryIdsByPos_ = conn.prepareStatement("SELECT " + RawLemma.ID + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.POS + " = ? ORDER BY " + RawLemma.ID);
+		queryIdsByPosPrefix_ = conn.prepareStatement("SELECT " + RawLemma.ID + " FROM " + RawLemma.TABLE + " WHERE " + RawLemma.POS + " LIKE CONCAT(?,'%')"+ " ORDER BY " + RawLemma.ID);
 	}
 	public RawLemma getLemma(int lemma_id) throws SQLException {
 		query_.setInt(1, lemma_id);

@@ -1,19 +1,20 @@
 package vis.data.model.query;
 
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.meta.LemmaAccessor;
-import vis.data.util.CountAggregator;
 
 public class PosTerm extends Term {
-	public static class Parameters extends UnaryTerm.Parameters {
+	public static class Parameters implements Term.Parameters {
 		public String pos_;
 		public String posPrefix_;
 		@Override
 		public int hashCode() {
-			int hashCode = super.hashCode();
+			int hashCode = Parameters.class.hashCode();
 			if(posPrefix_ != null)
 				hashCode ^= posPrefix_.hashCode();
 			if(pos_ != null)
@@ -44,9 +45,19 @@ public class PosTerm extends Term {
 		public void validate() {
 			if(posPrefix_ == null && pos_ == null)
 				throw new RuntimeException("must specify either a pos or posPrefix");
-			super.validate();
-			if(term_.parameters_.resultType() != ResultType.LEMMA_HITS)
-				throw new RuntimeException("pos term requires lemma hits child expresion");
+		}
+
+		@Override
+		public ResultType resultType() {
+			return ResultType.LEMMA_HITS;		}
+
+		@Override
+		public Collection<vis.data.model.query.Term.Parameters> withChildren() {
+			return Arrays.asList((Term.Parameters)this);
+		}
+		@Override
+		public void setFilterOnly() {
+			//always is
 		}
 	}
 	
@@ -67,7 +78,6 @@ public class PosTerm extends Term {
 
 	@Override
 	public Pair<int[], int[]> compute() throws SQLException {
-		Pair<int[], int[]> r = parameters_.term_.term().result();
-		return CountAggregator.filter(r.getKey(), r.getValue(), lemmas_);
+		return Pair.of(lemmas_, new int[lemmas_.length]);
 	}
 }

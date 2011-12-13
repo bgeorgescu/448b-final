@@ -34,7 +34,7 @@ public class EntityAccessor {
 				" FROM " + RawEntity.TABLE +
 				" JOIN " + EntityDoc.TABLE + " ON " + RawEntity.ID + "=" + EntityDoc.ENTITY_ID);
 		queryListScore_.setFetchSize(Integer.MIN_VALUE); //streaming
-		queryIdsByType_ = conn.prepareStatement("SELECT " + RawEntity.ID + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.TYPE + " = ?");
+		queryIdsByType_ = conn.prepareStatement("SELECT " + RawEntity.ID + " FROM " + RawEntity.TABLE + " WHERE " + RawEntity.TYPE + " = ? ORDER BY " + RawEntity.ID);
 	}
 	public RawEntity getEntity(int entity_id) throws SQLException {
 		query_.setInt(1, entity_id);

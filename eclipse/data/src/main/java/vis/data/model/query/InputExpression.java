@@ -76,9 +76,13 @@ public class InputExpression {
 		if(rfp.posPrefix_ != null) {
 			for(int i = 0; i < rfp.series_.length; ++i) {
 				QueryExpression qe = new QueryExpression();
-				qe.pos_= new PosTerm.Parameters();
-				qe.pos_.posPrefix_ = rfp.posPrefix_;
-				qe.pos_.term_ = rfp.series_[i];
+				qe.and_= new AndTerm.Parameters();
+				qe.and_.terms_ = new QueryExpression[2];
+				qe.and_.terms_[0] = rfp.series_[i];
+				QueryExpression qeFilter = new QueryExpression();
+				qeFilter.pos_ = new PosTerm.Parameters();
+				qeFilter.pos_.posPrefix_ = rfp.posPrefix_;
+				qe.and_.terms_[1] = qeFilter;
 				qe.validate();
 				rfp.series_[i] = qe;
 			}
@@ -117,9 +121,13 @@ public class InputExpression {
 		if(rft.type_ != null) {
 			for(int i = 0; i < rft.series_.length; ++i) {
 				QueryExpression qe = new QueryExpression();
-				qe.type_= new TypeTerm.Parameters();
-				qe.type_.type_ = rft.type_;
-				qe.type_.term_ = rft.series_[i];
+				qe.and_= new AndTerm.Parameters();
+				qe.and_.terms_ = new QueryExpression[2];
+				qe.and_.terms_[0] = rft.series_[i];
+				QueryExpression qeFilter = new QueryExpression();
+				qeFilter.type_ = new TypeTerm.Parameters();
+				qeFilter.type_.type_ = rft.type_;
+				qe.and_.terms_[1] = qeFilter;
 				qe.validate();
 				rft.series_[i] = qe;
 			}

@@ -1,18 +1,19 @@
 package vis.data.model.query;
 
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.Collection;
 
 import org.apache.commons.lang3.tuple.Pair;
 
 import vis.data.model.meta.EntityAccessor;
-import vis.data.util.CountAggregator;
 
 public class TypeTerm extends Term {
-	public static class Parameters extends UnaryTerm.Parameters {
+	public static class Parameters implements Term.Parameters {
 		public String type_;
 		@Override
 		public int hashCode() {
-			int hashCode = super.hashCode();
+			int hashCode = Parameters.class.hashCode();
 			if(type_ != null)
 				hashCode ^= type_.hashCode();
 			return hashCode;
@@ -35,9 +36,19 @@ public class TypeTerm extends Term {
 		public void validate() {
 			if(type_ == null)
 				throw new RuntimeException("must specify either type to filter on");
-			super.validate();
-			if(term_.parameters_.resultType() != ResultType.ENTITY_HITS)
-				throw new RuntimeException("type term requires entity hits child expresion");
+		}
+
+		@Override
+		public ResultType resultType() {
+			return ResultType.ENTITY_HITS;		}
+
+		@Override
+		public Collection<vis.data.model.query.Term.Parameters> withChildren() {
+			return Arrays.asList((Term.Parameters)this);
+		}
+		@Override
+		public void setFilterOnly() {
+			//always is
 		}
 	}
 	
@@ -55,7 +66,6 @@ public class TypeTerm extends Term {
 
 	@Override
 	public Pair<int[], int[]> compute() throws SQLException {
-		Pair<int[], int[]> r = parameters_.term_.term().result();
-		return CountAggregator.filter(r.getKey(), r.getValue(), entities_);
+		return Pair.of(entities_, new int[entities_.length]);
 	}
 }
