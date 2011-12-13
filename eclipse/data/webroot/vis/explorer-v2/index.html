@@ -21,6 +21,15 @@
 <link type="text/css" rel="stylesheet" href="lib/text.css" />
 <link type="text/css" rel="stylesheet" href="lib/960.css" />
 <link type="text/css" rel="stylesheet" href="448b.css" />
+<style>
+.dGrip, .sGrip {
+	padding:10px;
+}
+
+.ui-rangeslider .ui-rangeslider-handle {
+	width:20px;
+}
+</style>
 <title>Newspaper Explorer</title>
 </head>
 <body>
@@ -40,8 +49,10 @@
   </div>
 
   <div class="grid_4" id="palette">
+    <div onclick="$('input').focus()">
     <strong>type:</strong><br/>
     <input type="text" size="15"/><br/>
+	</div>
 
     <div class="contents">
     </div>
