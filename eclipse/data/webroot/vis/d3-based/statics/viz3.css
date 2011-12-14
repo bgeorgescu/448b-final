@@ -20,6 +20,14 @@ li{
   margin: auto;
   text-align: left;
 }
+.chart_label{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.chart_label span{
+  font-weight:bold;
+  font-size:14px;
+}
 
 #thank-yous-wrap {
   margin-top: 70px;
@@ -32,6 +40,7 @@ li{
 }
 .date_span_text span{
   font-weight:bold;
+  font-size:16px;
 }
 
 .extra_terms {
@@ -84,6 +93,11 @@ li{
   float:left;
   margin-left:20px;
 }
+.attribute_list_header{
+  float:left;
+  margin-left:20px;
+  width:500px;
+}
 .lists{
   height:250px;
 }
@@ -115,14 +129,18 @@ li{
 .minigraph {
   height:20px;
 }
-.viz_top, .main_viz{
+.viz_top{
   margin:20px 0;
   overflow:auto;
   /*border:1px solid #777; */
 }
 .main_viz {
-  height:110px;
+  height:160px;
   /*left: 170px;*/
+}
+.subtext{
+  font-size:10px;
+  color: #999999;
 }
 .cleared {
   clear:both;
@@ -130,10 +148,30 @@ li{
 .cleared_left{
   clear:left;
 }
+.overlay{
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #212121;
+  background:white;
+}
+.overlay .header{
+  padding:2px;
+  background: #212121;
+  color:white;
+  font-weight:bold;
+}
+.overlay p{
+  padding:2px;
+  margin:0;
+}
 path {
     stroke: green;
     stroke-width: 2;
     fill: none;
+}
+.hl_path path{
+  stroke-width: 4;
 }
 line {
   stroke: black;
@@ -143,7 +181,7 @@ line {
 .range_selector {
   opacity:0.4;
   filter:alpha(opacity=40); /* For IE8 and earlier */
-  background: #ffffb2;
+  background: #ffff79;
 }
 .range_selector .handle{
   border:1px solid black;
@@ -153,8 +191,6 @@ line {
 .slidable{
   cursor: move;
 }
-
-.date_span_text { font-size: 18px;}
 .viz_top {
   box-shadow: rgba(0,0,0,0.4) 2px 2px;
   background-color: #fff;

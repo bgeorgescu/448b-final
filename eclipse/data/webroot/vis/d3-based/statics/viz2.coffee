@@ -68,19 +68,35 @@ Viz2 =
     @search = $('#js_search_box')
     @search.keyup (event) =>
       @loadData() if event.keyCode == 13
+    @loadStateFromHash()
     @loadData()
     $('#js_filter_entities').change => @loadRelatedData() if @mainSparkline
     $('#js_filter_newspapers').change => @loadData()
     
+    $('#js_filter_entities').buttonset();
+
+    $( "#help-dialog" ).dialog
+      autoOpen: false
+      height: 400
+      modal: true
+      width: 600
+      show: "fade"
+      hide: "fade"
+    $('.help-link').click ->
+      $( "#help-dialog" ).css("visibility", "visible")
+      $( "#help-dialog" ).dialog( "open" )
+      return false
+    
   loadData: ->
     $('.js_roller').show()
     term = $.trim(@search.val())
-    @search.val('')
-    term = null if @term == ""
-    @addTerm(term) if term
+    #@search.val('')
+    term = null if term == ""
+    @setTerm(term)
+    #@addTerm(term) if term
     @mainSparkline.clear() if @mainSparkline
     DatabaseInterface.query(
-      terms: @getSearchTerms()
+      terms: term #@getSearchTerms()
       callback: $.proxy(@drawGraph, this)
       pubid: @getPubid()
       useAnd: true
@@ -91,6 +107,7 @@ Viz2 =
     $('.js_attr_list').empty()
     $('#js_related_nouns_roller').show()
     @loadTimeSpan()
+    @pushStateToHash()
     DatabaseInterface.similarEntities(
       terms: @getSearchTerms()
       useAnd: true
@@ -112,9 +129,12 @@ Viz2 =
     else
       @mainSparkline = new EnhancedSparkline('#js_main_viz', results[0],
         width: 700
+        height:150
         xOffset: 20
         marginX: 30
-        marginY: 10
+        marginY: 15
+        drawXLabels: true
+        popup: true
         onRescale: (dateSpan) =>
           $('#js_date_start').html(DateFormatter.format(dateSpan.start))
           $('#js_date_end').html(DateFormatter.format(dateSpan.end))
@@ -127,11 +147,18 @@ Viz2 =
   getEntityType: ->
     @filteringEntity = $('input[name=js_filter_entities]:checked').val()
     return if @filteringEntity == 'all' then null else @filteringEntity
+  setEntityType: (type) ->  
+    type or= 'all'
+    $("input[name=js_filter_entities][value=#{type}]")[0].checked = true
     
   getPubid: ->
     @pubid = $('input[name=js_filter_newspapers]:checked').val()
     return if @pubid == 'all' then null else @pubid
-
+  setPubid: (value)->
+    value or= 'all'
+    $("input[name=js_filter_newspapers][value=#{value}]")[0].checked = true
+  
+  
   setRelatedNouns: (code, results, duration) ->
     $('#js_related_nouns_roller').hide()
     $('.js_nouns_list').empty()
@@ -144,9 +171,9 @@ Viz2 =
         @loadData()
       @terms.push(termObj)
         
-  setTerm: (term) ->
-    @search.val(term)
-    @loadData()
+  setTerm: (@term) ->
+    @search.val(@term)
+    $('#js_current_term').text(@term || 'All Articles')
     
   setListValues: (ul, values, counts) ->
     currentUl = $(ul)
@@ -155,33 +182,39 @@ Viz2 =
       currentUl = $(ul + '2') if i > 4
       currentUl = $(ul + '3') if i > 9
       currentUl = $(ul + '4') if i > 14
-      sparkline = new SimilarityResult(currentUl, value, count, @getSearchTerms(),
+      sparkline = new SimilarityResult(currentUl, value, count, [], #@getSearchTerms(),
         onClick: (result) =>
-          #@setTerm(result.term)
-          @addTerm(result.term)
+          @setTerm(result.term)
+          #@addTerm(result.term)
           @loadData()
         pubid: @getPubid()
       )
       sparkline.highlight(@timeSpan)
-
-DateFormatter =
-  months:
-    0: 'January'
-    1: 'February'
-    2: 'March'
-    3: 'April'
-    4: 'May'
-    5: 'June'
-    6: 'July'
-    7: 'August'
-    8: 'September'
-    9: 'October'
-    10: 'November'
-    11: 'December'
-  format: (date) ->
-    month = @months[date.getMonth()]
-    return month + ' ' + date.getFullYear()
-
+      
+  getState: ->
+    state = {}
+    state.term = @term if @term
+    state.pubid = @getPubid() if @getPubid()
+    state.entityType = @getEntityType() if @getEntityType()
+    state.start = @timeSpan.start.toDateString() if @timeSpan.start
+    state.end = @timeSpan.end.toDateString() if @timeSpan.end
+    return state
+      
+  pushStateToHash: ->
+    window.location.hash = encodeURIComponent(JSON.stringify(@getState()))
+          
+  loadStateFromHash: ->
+    if window.location.hash != ""
+      state = JSON.parse(decodeURIComponent(window.location.hash.slice(1)))
+      @setTerm(state.term)
+      @setPubid(state.pubid)
+      @setEntityType(state.entityType)
+      @timeSpan = {}
+      @timeSpan.start = new Date(state.start) if state.start
+      @timeSpan.end = new Date(state.end) if state.end
+    
+    
+      
 window.Viz2 = Viz2
     
 $ ->

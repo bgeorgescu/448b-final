@@ -23,79 +23,86 @@
             </div>
           </div>
           <div id="js_extra_terms" class="extra_terms"></div>
-          <div class="cleared"></div>
+          <div class="cleared"></div>  	
+        	<div class="right_filters">
+      			<h4>Newspapers</h4>
+      			<form id="js_filter_newspapers">
+        			<ul>
+        				<li>
+        					<input type="radio" value="7556" id="js_baltimore_sun" name="js_filter_newspapers" />
+        					<label for="js_baltimore_sun">Baltimore Sun</label>
+        				</li>
+        				<li>
+        					<input type="radio" value="7683" id="js_la_times" name="js_filter_newspapers" />
+        					<label for="js_la_times">LA Times</label>
+        				</li>
+        				<li>
+        					<input type="radio" value="7684" id="js_chicago_tribune" name="js_filter_newspapers" />
+        					<label for="js_chicago_tribune">Chicago Tribune</label>
+        				</li>
+        				<li>
+        					<input type="radio" value="all" id="js_all_papers" checked="true" name="js_filter_newspapers" />
+        					<label for="js_all_papers">All</label>
+        				</li>
+        			</ul>
+      			</form>
+      		</div>
+      		<div class="main_viz_container">
+      			<div class="chart_label">
+      				Total articles / month for 
+      				<span id="js_current_term">All Articles</span>
+      			</div>
+	        	<div class="main_viz" id="js_main_viz">
+	        		<img src="statics/images/roller.gif" id="js_sparkline_roller" class="js_roller" />            		
+	        	</div>
+	        	<div class="date_span_text">
+	        		<span id="js_date_start">January 2000</span> to <span id="js_date_end">December 2010</span>
+	        	</div>  
+        	</div>   
           
+          <div class="cleared"></div>
+          <div class="viz">            	
+          	<div class="cleared"></div>
           	
-          	<div class="right_filters">
-        			<h4>Newspapers</h4>
-        			<form id="js_filter_newspapers">
-          			<ul>
-          				<li>
-          					<input type="radio" value="7556" id="js_baltimore_sun" name="js_filter_newspapers" />
-          					<label for="js_baltimore_sun">Baltimore Sun</label>
-          				</li>
-          				<li>
-          					<input type="radio" value="7683" id="js_la_times" name="js_filter_newspapers" />
-          					<label for="js_la_times">LA Times</label>
-          				</li>
-          				<li>
-          					<input type="radio" value="7684" id="js_chicago_tribune" name="js_filter_newspapers" />
-          					<label for="js_chicago_tribune">Chicago Tribune</label>
-          				</li>
-          				<li>
-          					<input type="radio" value="all" id="js_all_papers" checked="true" name="js_filter_newspapers" />
-          					<label for="js_all_papers">All</label>
-          				</li>
-          			</ul>
-        			</form>
-        		</div>
-        		<div class="main_viz_container">
-		        	<div class="main_viz" id="js_main_viz">
-		        		<img src="statics/images/roller.gif" id="js_sparkline_roller" class="js_roller" />            		
-		        	</div>
-		        	<div class="date_span_text">
-		        		<span id="js_date_start">January 2000</span> to <span id="js_date_end">December 2010</span>
-		        	</div>  
-	        	</div>   
-            
-            <div class="cleared"></div>
-            <div class="viz">            	
-            	<div class="cleared"></div>
-            	
-            	<div class="viz_top"> 
-            		<div class="left_side">
-		            	<div class="top_labels">
-		            		<h2 class="attribute_list">
-		            			Related Terms
-		            		</h2>
-		            		
-		            		<div id="js_filter_entities">
-            					<input type="radio" value="PERSON" id="js_view_people" name="js_filter_entities" />
-            					<label for="js_view_people">People</label>
-            					<input type="radio" value="LOCATION" id="js_view_places" name="js_filter_entities" />
-            					<label for="js_view_places">Places</label>
-            					<input type="radio" value="ORGANIZATION" id="js_view_orgs" name="js_filter_entities" />
-            					<label for="js_view_orgs">Organizations</label>
-            					<input type="radio" value="all" id="js_view_all" checked="true" name="js_filter_entities" />
-            					<label for="js_view_all">All</label>
-	            			</div>		
-		            		
-		            		<div class="attribute_list">
-		            			<img src="statics/images/roller.gif" id="js_related_nouns_roller" class="js_roller" />
-		            		</div>
-		            		<div class="cleared_left"></div>
-		            	</div>
-		            	<div class="lists">
-		            		<ul class="attribute_list js_attr_list js_nouns_list" id="js_related_nouns">
-		            		</ul>
-		            		<ul class="attribute_list js_attr_list js_nouns_list" id="js_related_nouns2">
-		            		</ul>
-		            		<ul class="attribute_list js_attr_list js_nouns_list" id="js_related_nouns3">
-		            		</ul>
-		            	</div>
+          	<div class="viz_top"> 
+          		<div class="left_side">
+	            	<div class="top_labels">
+	            		<h2 class="attribute_list_header">
+	            			Related Terms
+	            			<span class="subtext">
+	            				(click on a term to switch your search)
+	            			</span>
+	            		</h2>
+	            		
+	            		<div id="js_filter_entities">
+          					<input type="radio" value="PERSON" id="js_view_people" name="js_filter_entities" />
+          					<label for="js_view_people">People</label>
+          					<input type="radio" value="LOCATION" id="js_view_places" name="js_filter_entities" />
+          					<label for="js_view_places">Places</label>
+          					<input type="radio" value="ORGANIZATION" id="js_view_orgs" name="js_filter_entities" />
+          					<label for="js_view_orgs">Organizations</label>
+          					<input type="radio" value="all" id="js_view_all" checked="true" name="js_filter_entities" />
+          					<label for="js_view_all">All</label>
+            			</div>		
+	            		
+	            		<div class="attribute_list">
+	            			<img src="statics/images/roller.gif" id="js_related_nouns_roller" class="js_roller" />
+	            		</div>
+	            		<div class="cleared_left"></div>
+	            	</div>
+	            	<div class="lists">
+	            		<ul class="attribute_list js_attr_list js_nouns_list" id="js_related_nouns">
+	            		</ul>
+	            		<ul class="attribute_list js_attr_list js_nouns_list" id="js_related_nouns2">
+	            		</ul>
+	            		<ul class="attribute_list js_attr_list js_nouns_list" id="js_related_nouns3">
+	            		</ul>
+	            		<ul class="attribute_list js_attr_list js_nouns_list" id="js_related_nouns4">
+	            		</ul>
 	            	</div>
             	</div>
-            </div>
+          	</div>
+          </div>
         </div>
 
         <div id="thank-yous-wrap">
@@ -108,8 +115,11 @@
           </ul>
         </div>
         
-        <div class="overlay" style="visibility:hidden;position: absolute; display:none;">
-          <p id="overlay-text">Bar</p>
+        <div class="overlay" id="js_viz_popup" style="position: absolute; display:none;">
+          <div class="header"></div>
+          <p>
+          	
+          </p>
         </div>
         
         <div id="help-dialog" title="Visualization Information" style="visibility:hidden; display:none;">
@@ -144,7 +154,6 @@
   <script src='statics/sparklineplot.js' type='text/javascript'></script>
   <script src='statics/enhanced_sparkline.js' type='text/javascript'></script>
   <script src='statics/highlightable_sparkline.js' type='text/javascript'></script>
-  <script src='statics/ui_tweaks_wo_coffee.js' type='text/javascript'></script>
   <script src='statics/viz2.js' type='text/javascript'></script>
   </body>
 </html>
