@@ -1,5 +1,5 @@
 (function() {
-  var DateFormatter, ExtraTerm, SimilarityResult, Viz2;
+  var ExtraTerm, SimilarityResult, Viz2;
   var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
   SimilarityResult = (function() {
     SimilarityResult.prototype.defaultOptions = {
@@ -108,32 +108,44 @@
           return this.loadData();
         }
       }, this));
+      this.loadStateFromHash();
       this.loadData();
       $('#js_filter_entities').change(__bind(function() {
         if (this.mainSparkline) {
           return this.loadRelatedData();
         }
       }, this));
-      return $('#js_filter_newspapers').change(__bind(function() {
+      $('#js_filter_newspapers').change(__bind(function() {
         return this.loadData();
       }, this));
+      $('#js_filter_entities').buttonset();
+      $("#help-dialog").dialog({
+        autoOpen: false,
+        height: 400,
+        modal: true,
+        width: 600,
+        show: "fade",
+        hide: "fade"
+      });
+      return $('.help-link').click(function() {
+        $("#help-dialog").css("visibility", "visible");
+        $("#help-dialog").dialog("open");
+        return false;
+      });
     },
     loadData: function() {
       var term;
       $('.js_roller').show();
       term = $.trim(this.search.val());
-      this.search.val('');
-      if (this.term === "") {
+      if (term === "") {
         term = null;
       }
-      if (term) {
-        this.addTerm(term);
-      }
+      this.setTerm(term);
       if (this.mainSparkline) {
         this.mainSparkline.clear();
       }
       DatabaseInterface.query({
-        terms: this.getSearchTerms(),
+        terms: term,
         callback: $.proxy(this.drawGraph, this),
         pubid: this.getPubid(),
         useAnd: true
@@ -144,8 +156,9 @@
       $('.js_attr_list').empty();
       $('#js_related_nouns_roller').show();
       this.loadTimeSpan();
+      this.pushStateToHash();
       return DatabaseInterface.similarEntities({
-        terms: this.getSearchTerms(),
+        terms: this.term,
         useAnd: true,
         startDate: this.timeSpan.start,
         endDate: this.timeSpan.end,
@@ -167,9 +180,12 @@
       } else {
         return this.mainSparkline = new EnhancedSparkline('#js_main_viz', results[0], {
           width: 700,
+          height: 150,
           xOffset: 20,
           marginX: 30,
-          marginY: 10,
+          marginY: 15,
+          drawXLabels: true,
+          popup: true,
           onRescale: __bind(function(dateSpan) {
             $('#js_date_start').html(DateFormatter.format(dateSpan.start));
             return $('#js_date_end').html(DateFormatter.format(dateSpan.end));
@@ -191,6 +207,10 @@
         return this.filteringEntity;
       }
     },
+    setEntityType: function(type) {
+      type || (type = 'all');
+      return $("input[name=js_filter_entities][value=" + type + "]")[0].checked = true;
+    },
     getPubid: function() {
       this.pubid = $('input[name=js_filter_newspapers]:checked').val();
       if (this.pubid === 'all') {
@@ -198,6 +218,10 @@
       } else {
         return this.pubid;
       }
+    },
+    setPubid: function(value) {
+      value || (value = 'all');
+      return $("input[name=js_filter_newspapers][value=" + value + "]")[0].checked = true;
     },
     setRelatedNouns: function(code, results, duration) {
       $('#js_related_nouns_roller').hide();
@@ -215,8 +239,9 @@
       }
     },
     setTerm: function(term) {
-      this.search.val(term);
-      return this.loadData();
+      this.term = term;
+      this.search.val(this.term);
+      return $('#js_current_term').text(this.term || 'All Articles');
     },
     setListValues: function(ul, values, counts) {
       var count, currentUl, i, sparkline, value, _len, _results;
@@ -234,9 +259,9 @@
         if (i > 14) {
           currentUl = $(ul + '4');
         }
-        sparkline = new SimilarityResult(currentUl, value, count, this.getSearchTerms(), {
+        sparkline = new SimilarityResult(currentUl, value, count, [], {
           onClick: __bind(function(result) {
-            this.addTerm(result.term);
+            this.setTerm(result.term);
             return this.loadData();
           }, this),
           pubid: this.getPubid()
@@ -244,27 +269,45 @@
         _results.push(sparkline.highlight(this.timeSpan));
       }
       return _results;
-    }
-  };
-  DateFormatter = {
-    months: {
-      0: 'January',
-      1: 'February',
-      2: 'March',
-      3: 'April',
-      4: 'May',
-      5: 'June',
-      6: 'July',
-      7: 'August',
-      8: 'September',
-      9: 'October',
-      10: 'November',
-      11: 'December'
     },
-    format: function(date) {
-      var month;
-      month = this.months[date.getMonth()];
-      return month + ' ' + date.getFullYear();
+    getState: function() {
+      var state;
+      state = {};
+      if (this.term) {
+        state.term = this.term;
+      }
+      if (this.getPubid()) {
+        state.pubid = this.getPubid();
+      }
+      if (this.getEntityType()) {
+        state.entityType = this.getEntityType();
+      }
+      if (this.timeSpan.start) {
+        state.start = this.timeSpan.start.toDateString();
+      }
+      if (this.timeSpan.end) {
+        state.end = this.timeSpan.end.toDateString();
+      }
+      return state;
+    },
+    pushStateToHash: function() {
+      return window.location.hash = encodeURIComponent(JSON.stringify(this.getState()));
+    },
+    loadStateFromHash: function() {
+      var state;
+      if (window.location.hash !== "") {
+        state = JSON.parse(decodeURIComponent(window.location.hash.slice(1)));
+        this.setTerm(state.term);
+        this.setPubid(state.pubid);
+        this.setEntityType(state.entityType);
+        this.timeSpan = {};
+        if (state.start) {
+          this.timeSpan.start = new Date(state.start);
+        }
+        if (state.end) {
+          return this.timeSpan.end = new Date(state.end);
+        }
+      }
     }
   };
   window.Viz2 = Viz2;
