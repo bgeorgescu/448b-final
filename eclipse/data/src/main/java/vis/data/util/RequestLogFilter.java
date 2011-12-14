@@ -20,7 +20,6 @@ import org.apache.commons.io.IOUtils;
 import vis.data.model.meta.RequestLogAccessor;
 
 public class RequestLogFilter implements Filter {
-	ThreadLocal<RequestLogAccessor> rla_ = new ThreadLocal<RequestLogAccessor>();
 	@Override
 	public void destroy() {
 	}
@@ -29,14 +28,11 @@ public class RequestLogFilter implements Filter {
 	public void doFilter(ServletRequest req, ServletResponse resp,
 			FilterChain chain) throws IOException, ServletException 
 	{
-		RequestLogAccessor rla = rla_.get();
-		if(rla == null) {
-			try {
-				rla = new RequestLogAccessor();
-			} catch (SQLException e) {
-				throw new RuntimeException("request logger creation failed", e);
-			}
-			rla_.set(rla);
+		RequestLogAccessor rla;
+		try {
+			rla = new RequestLogAccessor();
+		} catch (SQLException e) {
+			throw new RuntimeException("request logger creation failed", e);
 		}
 		HttpServletRequest hr = (HttpServletRequest)req;
 		String uri = hr.getPathInfo(), json = null;
