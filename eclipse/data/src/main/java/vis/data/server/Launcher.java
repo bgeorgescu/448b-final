@@ -3,6 +3,7 @@ package vis.data.server;
 import java.io.File;
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.sql.SQLException;
 import java.util.EnumSet;
 
 import javax.servlet.DispatcherType;
@@ -15,7 +16,10 @@ import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
+import vis.data.model.RequestLogEntry;
 import vis.data.util.CrossDomainRequestFilter;
+import vis.data.util.RequestLogFilter;
+import vis.data.util.SQL;
 import vis.data.util.SQL.SQLCloseFilter;
 
 import com.sun.jersey.spi.container.servlet.ServletContainer;
@@ -38,6 +42,8 @@ public class Launcher {
 
 		FilterHolder xfh = new FilterHolder(CrossDomainRequestFilter.class);
 
+		FilterHolder rlfh = new FilterHolder(RequestLogFilter.class);
+
 		ServletHolder ssh = new ServletHolder(DefaultServlet.class);
 		
 		try {
@@ -46,6 +52,12 @@ public class Launcher {
 			s.close();
 		} catch (IOException e) {
 			throw new RuntimeException("port in use " + port);
+		}
+		
+		try {
+			SQL.createTable(SQL.forThread(), RequestLogEntry.class);
+		} catch(SQLException e) {
+			System.err.println("failed to create request log table: " + e.getMessage());
 		}
 
         Server server = new Server(port);
@@ -59,6 +71,7 @@ public class Launcher {
 		root.addFilter(fh, "/", fd);
 		root.addFilter(fh, "/*", fd);
 		root.addFilter(xfh, "/api/*", fd);
+		root.addFilter(rlfh, "/api/*", fd);
 		//map api
 		root.addServlet(sh, "/");
 		root.addServlet(sh, "/*");

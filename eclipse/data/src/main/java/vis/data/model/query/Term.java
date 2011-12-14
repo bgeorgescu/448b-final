@@ -42,14 +42,14 @@ public abstract class Term {
 	static Pair<int[], int[]> getCache(Term.Parameters param) {
 		SoftReference<Pair<int[], int[]>> srs = g_result_cache.get(param);
 		if(srs == null) {
-			System.out.println("missed cache: " + param.getClass().getName());
+//			System.out.println("missed cache: " + param.getClass().getName());
 			return null;
 		}
-		System.out.println("partial hit cache: " + param.getClass().getName());
+//		System.out.println("partial hit cache: " + param.getClass().getName());
 		Pair<int[], int[]> res = srs.get();
 		if(res == null)
 			return null;
-		System.out.println("hit result cache, sz: " + res.getKey().length);
+//		System.out.println("hit result cache, sz: " + res.getKey().length);
 		return res;
 	}
 	static void putCache(Term.Parameters param, Pair<int[], int[]> t) {
