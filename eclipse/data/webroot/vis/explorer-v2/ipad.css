@@ -1,0 +1,13 @@
+.ui-rangeslider .ui-rangeslider-handle {
+	width:20px;
+}
+
+.dGrip, .sGrip, .series {
+	padding:10px;
+}
+
+ #newseries, #clearseries, #trash {
+ 	padding-top:10px;
+ 	padding-bottom:10px;
+ 	background-position:0px 10px;
+ }
